@@ -4,7 +4,7 @@
 
 ### ComputeHttpHealthCheck <a name="ComputeHttpHealthCheck" id="@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheck"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_http_health_check google_compute_http_health_check}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_http_health_check google_compute_http_health_check}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheck.Initializer"></a>
 
@@ -52,9 +52,9 @@ ComputeHttpHealthCheck.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheck.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | An optional description of this resource. Provide this property when you create the resource. |
 | <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheck.Initializer.parameter.healthyThreshold">healthyThreshold</a></code> | <code>java.lang.Number</code> | A so-far unhealthy instance will be marked healthy after this many consecutive successes. The default value is 2. |
 | <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheck.Initializer.parameter.host">host</a></code> | <code>java.lang.String</code> | The value of the host header in the HTTP health check request. |
-| <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheck.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_http_health_check#id ComputeHttpHealthCheck#id}. |
+| <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheck.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_http_health_check#id ComputeHttpHealthCheck#id}. |
 | <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheck.Initializer.parameter.port">port</a></code> | <code>java.lang.Number</code> | The TCP port number for the HTTP health check request. The default value is 80. |
-| <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheck.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_http_health_check#project ComputeHttpHealthCheck#project}. |
+| <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheck.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_http_health_check#project ComputeHttpHealthCheck#project}. |
 | <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheck.Initializer.parameter.requestPath">requestPath</a></code> | <code>java.lang.String</code> | The request path of the HTTP health check request. The default value is /. |
 | <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheck.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheckTimeouts">ComputeHttpHealthCheckTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheck.Initializer.parameter.timeoutSec">timeoutSec</a></code> | <code>java.lang.Number</code> | How long (in seconds) to wait before claiming failure. |
@@ -136,7 +136,7 @@ the first character must be a lowercase letter, and all following
 characters must be a dash, lowercase letter, or digit, except the
 last character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_http_health_check#name ComputeHttpHealthCheck#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_http_health_check#name ComputeHttpHealthCheck#name}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 How often (in seconds) to send a health check. The default value is 5 seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_http_health_check#check_interval_sec ComputeHttpHealthCheck#check_interval_sec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_http_health_check#check_interval_sec ComputeHttpHealthCheck#check_interval_sec}
 
 ---
 
@@ -163,7 +163,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_http_health_check#deletion_policy ComputeHttpHealthCheck#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_http_health_check#deletion_policy ComputeHttpHealthCheck#deletion_policy}
 
 ---
 
@@ -173,7 +173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 An optional description of this resource. Provide this property when you create the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_http_health_check#description ComputeHttpHealthCheck#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_http_health_check#description ComputeHttpHealthCheck#description}
 
 ---
 
@@ -183,7 +183,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A so-far unhealthy instance will be marked healthy after this many consecutive successes. The default value is 2.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_http_health_check#healthy_threshold ComputeHttpHealthCheck#healthy_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_http_health_check#healthy_threshold ComputeHttpHealthCheck#healthy_threshold}
 
 ---
 
@@ -197,7 +197,7 @@ If
 left empty (default value), the public IP on behalf of which this
 health check is performed will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_http_health_check#host ComputeHttpHealthCheck#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_http_health_check#host ComputeHttpHealthCheck#host}
 
 ---
 
@@ -205,7 +205,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_http_health_check#id ComputeHttpHealthCheck#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_http_health_check#id ComputeHttpHealthCheck#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -218,7 +218,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The TCP port number for the HTTP health check request. The default value is 80.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_http_health_check#port ComputeHttpHealthCheck#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_http_health_check#port ComputeHttpHealthCheck#port}
 
 ---
 
@@ -226,7 +226,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_http_health_check#project ComputeHttpHealthCheck#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_http_health_check#project ComputeHttpHealthCheck#project}.
 
 ---
 
@@ -236,7 +236,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The request path of the HTTP health check request. The default value is /.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_http_health_check#request_path ComputeHttpHealthCheck#request_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_http_health_check#request_path ComputeHttpHealthCheck#request_path}
 
 ---
 
@@ -246,7 +246,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_http_health_check#timeouts ComputeHttpHealthCheck#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_http_health_check#timeouts ComputeHttpHealthCheck#timeouts}
 
 ---
 
@@ -259,7 +259,7 @@ How long (in seconds) to wait before claiming failure.
 The default value is 5 seconds.  It is invalid for timeoutSec to have
 greater value than checkIntervalSec.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_http_health_check#timeout_sec ComputeHttpHealthCheck#timeout_sec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_http_health_check#timeout_sec ComputeHttpHealthCheck#timeout_sec}
 
 ---
 
@@ -269,7 +269,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A so-far healthy instance will be marked unhealthy after this many consecutive failures. The default value is 2.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_http_health_check#unhealthy_threshold ComputeHttpHealthCheck#unhealthy_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_http_health_check#unhealthy_threshold ComputeHttpHealthCheck#unhealthy_threshold}
 
 ---
 
@@ -815,7 +815,7 @@ The construct id used in the generated config for the ComputeHttpHealthCheck to 
 
 The id of the existing ComputeHttpHealthCheck that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_http_health_check#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_http_health_check#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1366,9 +1366,9 @@ ComputeHttpHealthCheckConfig.builder()
 | <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheckConfig.property.description">description</a></code> | <code>java.lang.String</code> | An optional description of this resource. Provide this property when you create the resource. |
 | <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheckConfig.property.healthyThreshold">healthyThreshold</a></code> | <code>java.lang.Number</code> | A so-far unhealthy instance will be marked healthy after this many consecutive successes. The default value is 2. |
 | <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheckConfig.property.host">host</a></code> | <code>java.lang.String</code> | The value of the host header in the HTTP health check request. |
-| <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheckConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_http_health_check#id ComputeHttpHealthCheck#id}. |
+| <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheckConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_http_health_check#id ComputeHttpHealthCheck#id}. |
 | <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheckConfig.property.port">port</a></code> | <code>java.lang.Number</code> | The TCP port number for the HTTP health check request. The default value is 80. |
-| <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheckConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_http_health_check#project ComputeHttpHealthCheck#project}. |
+| <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheckConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_http_health_check#project ComputeHttpHealthCheck#project}. |
 | <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheckConfig.property.requestPath">requestPath</a></code> | <code>java.lang.String</code> | The request path of the HTTP health check request. The default value is /. |
 | <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheckConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheckTimeouts">ComputeHttpHealthCheckTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheckConfig.property.timeoutSec">timeoutSec</a></code> | <code>java.lang.Number</code> | How long (in seconds) to wait before claiming failure. |
@@ -1464,7 +1464,7 @@ the first character must be a lowercase letter, and all following
 characters must be a dash, lowercase letter, or digit, except the
 last character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_http_health_check#name ComputeHttpHealthCheck#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_http_health_check#name ComputeHttpHealthCheck#name}
 
 ---
 
@@ -1478,7 +1478,7 @@ public java.lang.Number getCheckIntervalSec();
 
 How often (in seconds) to send a health check. The default value is 5 seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_http_health_check#check_interval_sec ComputeHttpHealthCheck#check_interval_sec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_http_health_check#check_interval_sec ComputeHttpHealthCheck#check_interval_sec}
 
 ---
 
@@ -1499,7 +1499,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_http_health_check#deletion_policy ComputeHttpHealthCheck#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_http_health_check#deletion_policy ComputeHttpHealthCheck#deletion_policy}
 
 ---
 
@@ -1513,7 +1513,7 @@ public java.lang.String getDescription();
 
 An optional description of this resource. Provide this property when you create the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_http_health_check#description ComputeHttpHealthCheck#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_http_health_check#description ComputeHttpHealthCheck#description}
 
 ---
 
@@ -1527,7 +1527,7 @@ public java.lang.Number getHealthyThreshold();
 
 A so-far unhealthy instance will be marked healthy after this many consecutive successes. The default value is 2.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_http_health_check#healthy_threshold ComputeHttpHealthCheck#healthy_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_http_health_check#healthy_threshold ComputeHttpHealthCheck#healthy_threshold}
 
 ---
 
@@ -1545,7 +1545,7 @@ If
 left empty (default value), the public IP on behalf of which this
 health check is performed will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_http_health_check#host ComputeHttpHealthCheck#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_http_health_check#host ComputeHttpHealthCheck#host}
 
 ---
 
@@ -1557,7 +1557,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_http_health_check#id ComputeHttpHealthCheck#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_http_health_check#id ComputeHttpHealthCheck#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1574,7 +1574,7 @@ public java.lang.Number getPort();
 
 The TCP port number for the HTTP health check request. The default value is 80.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_http_health_check#port ComputeHttpHealthCheck#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_http_health_check#port ComputeHttpHealthCheck#port}
 
 ---
 
@@ -1586,7 +1586,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_http_health_check#project ComputeHttpHealthCheck#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_http_health_check#project ComputeHttpHealthCheck#project}.
 
 ---
 
@@ -1600,7 +1600,7 @@ public java.lang.String getRequestPath();
 
 The request path of the HTTP health check request. The default value is /.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_http_health_check#request_path ComputeHttpHealthCheck#request_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_http_health_check#request_path ComputeHttpHealthCheck#request_path}
 
 ---
 
@@ -1614,7 +1614,7 @@ public ComputeHttpHealthCheckTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_http_health_check#timeouts ComputeHttpHealthCheck#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_http_health_check#timeouts ComputeHttpHealthCheck#timeouts}
 
 ---
 
@@ -1631,7 +1631,7 @@ How long (in seconds) to wait before claiming failure.
 The default value is 5 seconds.  It is invalid for timeoutSec to have
 greater value than checkIntervalSec.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_http_health_check#timeout_sec ComputeHttpHealthCheck#timeout_sec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_http_health_check#timeout_sec ComputeHttpHealthCheck#timeout_sec}
 
 ---
 
@@ -1645,7 +1645,7 @@ public java.lang.Number getUnhealthyThreshold();
 
 A so-far healthy instance will be marked unhealthy after this many consecutive failures. The default value is 2.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_http_health_check#unhealthy_threshold ComputeHttpHealthCheck#unhealthy_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_http_health_check#unhealthy_threshold ComputeHttpHealthCheck#unhealthy_threshold}
 
 ---
 
@@ -1667,9 +1667,9 @@ ComputeHttpHealthCheckTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheckTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_http_health_check#create ComputeHttpHealthCheck#create}. |
-| <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheckTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_http_health_check#delete ComputeHttpHealthCheck#delete}. |
-| <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheckTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_http_health_check#update ComputeHttpHealthCheck#update}. |
+| <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheckTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_http_health_check#create ComputeHttpHealthCheck#create}. |
+| <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheckTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_http_health_check#delete ComputeHttpHealthCheck#delete}. |
+| <code><a href="#@cdktn/provider-google.computeHttpHealthCheck.ComputeHttpHealthCheckTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_http_health_check#update ComputeHttpHealthCheck#update}. |
 
 ---
 
@@ -1681,7 +1681,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_http_health_check#create ComputeHttpHealthCheck#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_http_health_check#create ComputeHttpHealthCheck#create}.
 
 ---
 
@@ -1693,7 +1693,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_http_health_check#delete ComputeHttpHealthCheck#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_http_health_check#delete ComputeHttpHealthCheck#delete}.
 
 ---
 
@@ -1705,7 +1705,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_http_health_check#update ComputeHttpHealthCheck#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_http_health_check#update ComputeHttpHealthCheck#update}.
 
 ---
 

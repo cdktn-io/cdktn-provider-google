@@ -4,7 +4,7 @@
 
 ### DataGoogleCloudRunV2Service <a name="DataGoogleCloudRunV2Service" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2Service"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/cloud_run_v2_service google_cloud_run_v2_service}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/cloud_run_v2_service google_cloud_run_v2_service}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2Service.Initializer"></a>
 
@@ -40,9 +40,9 @@ dataGoogleCloudRunV2Service.DataGoogleCloudRunV2Service(
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2Service.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2Service.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2Service.Initializer.parameter.name">name</a></code> | <code>str</code> | Name of the Service. |
-| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2Service.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/cloud_run_v2_service#id DataGoogleCloudRunV2Service#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2Service.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/cloud_run_v2_service#id DataGoogleCloudRunV2Service#id}. |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2Service.Initializer.parameter.location">location</a></code> | <code>str</code> | The location of the cloud run service. |
-| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2Service.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/cloud_run_v2_service#project DataGoogleCloudRunV2Service#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2Service.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/cloud_run_v2_service#project DataGoogleCloudRunV2Service#project}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 Name of the Service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/cloud_run_v2_service#name DataGoogleCloudRunV2Service#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/cloud_run_v2_service#name DataGoogleCloudRunV2Service#name}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/cloud_run_v2_service#id DataGoogleCloudRunV2Service#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/cloud_run_v2_service#id DataGoogleCloudRunV2Service#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -133,7 +133,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The location of the cloud run service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/cloud_run_v2_service#location DataGoogleCloudRunV2Service#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/cloud_run_v2_service#location DataGoogleCloudRunV2Service#location}
 
 ---
 
@@ -141,7 +141,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/cloud_run_v2_service#project DataGoogleCloudRunV2Service#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/cloud_run_v2_service#project DataGoogleCloudRunV2Service#project}.
 
 ---
 
@@ -545,7 +545,7 @@ The construct id used in the generated config for the DataGoogleCloudRunV2Servic
 
 The id of the existing DataGoogleCloudRunV2Service that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/cloud_run_v2_service#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/cloud_run_v2_service#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1324,9 +1324,9 @@ dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceConfig(
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceConfig.property.name">name</a></code> | <code>str</code> | Name of the Service. |
-| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/cloud_run_v2_service#id DataGoogleCloudRunV2Service#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/cloud_run_v2_service#id DataGoogleCloudRunV2Service#id}. |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceConfig.property.location">location</a></code> | <code>str</code> | The location of the cloud run service. |
-| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/cloud_run_v2_service#project DataGoogleCloudRunV2Service#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/cloud_run_v2_service#project DataGoogleCloudRunV2Service#project}. |
 
 ---
 
@@ -1410,7 +1410,7 @@ name: str
 
 Name of the Service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/cloud_run_v2_service#name DataGoogleCloudRunV2Service#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/cloud_run_v2_service#name DataGoogleCloudRunV2Service#name}
 
 ---
 
@@ -1422,7 +1422,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/cloud_run_v2_service#id DataGoogleCloudRunV2Service#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/cloud_run_v2_service#id DataGoogleCloudRunV2Service#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1439,7 +1439,7 @@ location: str
 
 The location of the cloud run service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/cloud_run_v2_service#location DataGoogleCloudRunV2Service#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/cloud_run_v2_service#location DataGoogleCloudRunV2Service#location}
 
 ---
 
@@ -1451,7 +1451,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/cloud_run_v2_service#project DataGoogleCloudRunV2Service#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/cloud_run_v2_service#project DataGoogleCloudRunV2Service#project}.
 
 ---
 
@@ -1727,6 +1727,50 @@ dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateContainersVolumeM
 from cdktn_provider_google import data_google_cloud_run_v2_service
 
 dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateNodeSelector()
+```
+
+
+### DataGoogleCloudRunV2ServiceTemplateSandboxes <a name="DataGoogleCloudRunV2ServiceTemplateSandboxes" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxes"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxes.Initializer"></a>
+
+```python
+from cdktn_provider_google import data_google_cloud_run_v2_service
+
+dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxes()
+```
+
+
+### DataGoogleCloudRunV2ServiceTemplateSandboxesTemplates <a name="DataGoogleCloudRunV2ServiceTemplateSandboxesTemplates" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplates"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplates.Initializer"></a>
+
+```python
+from cdktn_provider_google import data_google_cloud_run_v2_service
+
+dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplates()
+```
+
+
+### DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnv <a name="DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnv" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnv"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnv.Initializer"></a>
+
+```python
+from cdktn_provider_google import data_google_cloud_run_v2_service
+
+dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnv()
+```
+
+
+### DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMounts <a name="DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMounts" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMounts"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMounts.Initializer"></a>
+
+```python
+from cdktn_provider_google import data_google_cloud_run_v2_service
+
+dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMounts()
 ```
 
 
@@ -15619,6 +15663,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateOutputReference.property.maxInstanceRequestConcurrency">max_instance_request_concurrency</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateOutputReference.property.nodeSelector">node_selector</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateNodeSelectorList">DataGoogleCloudRunV2ServiceTemplateNodeSelectorList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateOutputReference.property.revision">revision</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateOutputReference.property.sandboxes">sandboxes</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesList">DataGoogleCloudRunV2ServiceTemplateSandboxesList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateOutputReference.property.scaling">scaling</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateScalingList">DataGoogleCloudRunV2ServiceTemplateScalingList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateOutputReference.property.serviceAccount">service_account</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateOutputReference.property.sessionAffinity">session_affinity</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
@@ -15753,6 +15798,16 @@ revision: str
 
 ---
 
+##### `sandboxes`<sup>Required</sup> <a name="sandboxes" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateOutputReference.property.sandboxes"></a>
+
+```python
+sandboxes: DataGoogleCloudRunV2ServiceTemplateSandboxesList
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesList">DataGoogleCloudRunV2ServiceTemplateSandboxesList</a>
+
+---
+
 ##### `scaling`<sup>Required</sup> <a name="scaling" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateOutputReference.property.scaling"></a>
 
 ```python
@@ -15820,6 +15875,1961 @@ internal_value: DataGoogleCloudRunV2ServiceTemplate
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplate">DataGoogleCloudRunV2ServiceTemplate</a>
+
+---
+
+
+### DataGoogleCloudRunV2ServiceTemplateSandboxesList <a name="DataGoogleCloudRunV2ServiceTemplateSandboxesList" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesList.Initializer"></a>
+
+```python
+from cdktn_provider_google import data_google_cloud_run_v2_service
+
+dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+
+### DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference <a name="DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_google import data_google_cloud_run_v2_service
+
+dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.property.templates">templates</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesList">DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxes">DataGoogleCloudRunV2ServiceTemplateSandboxes</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `templates`<sup>Required</sup> <a name="templates" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.property.templates"></a>
+
+```python
+templates: DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesList
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesList">DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesList</a>
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.property.internalValue"></a>
+
+```python
+internal_value: DataGoogleCloudRunV2ServiceTemplateSandboxes
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxes">DataGoogleCloudRunV2ServiceTemplateSandboxes</a>
+
+---
+
+
+### DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvList <a name="DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvList" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvList.Initializer"></a>
+
+```python
+from cdktn_provider_google import data_google_cloud_run_v2_service
+
+dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+
+### DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference <a name="DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_google import data_google_cloud_run_v2_service
+
+dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnv">DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnv</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.property.name"></a>
+
+```python
+name: str
+```
+
+- *Type:* str
+
+---
+
+##### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.property.value"></a>
+
+```python
+value: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.property.internalValue"></a>
+
+```python
+internal_value: DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnv
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnv">DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnv</a>
+
+---
+
+
+### DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesList <a name="DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesList" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesList.Initializer"></a>
+
+```python
+from cdktn_provider_google import data_google_cloud_run_v2_service
+
+dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+
+### DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference <a name="DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_google import data_google_cloud_run_v2_service
+
+dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.property.args">args</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.property.command">command</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.property.env">env</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvList">DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.property.image">image</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.property.volumeMounts">volume_mounts</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsList">DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.property.workingDir">working_dir</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplates">DataGoogleCloudRunV2ServiceTemplateSandboxesTemplates</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `args`<sup>Required</sup> <a name="args" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.property.args"></a>
+
+```python
+args: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `command`<sup>Required</sup> <a name="command" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.property.command"></a>
+
+```python
+command: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `env`<sup>Required</sup> <a name="env" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.property.env"></a>
+
+```python
+env: DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvList
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvList">DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvList</a>
+
+---
+
+##### `image`<sup>Required</sup> <a name="image" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.property.image"></a>
+
+```python
+image: str
+```
+
+- *Type:* str
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.property.name"></a>
+
+```python
+name: str
+```
+
+- *Type:* str
+
+---
+
+##### `volume_mounts`<sup>Required</sup> <a name="volume_mounts" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.property.volumeMounts"></a>
+
+```python
+volume_mounts: DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsList
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsList">DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsList</a>
+
+---
+
+##### `working_dir`<sup>Required</sup> <a name="working_dir" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.property.workingDir"></a>
+
+```python
+working_dir: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.property.internalValue"></a>
+
+```python
+internal_value: DataGoogleCloudRunV2ServiceTemplateSandboxesTemplates
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplates">DataGoogleCloudRunV2ServiceTemplateSandboxesTemplates</a>
+
+---
+
+
+### DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsList <a name="DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsList" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsList.Initializer"></a>
+
+```python
+from cdktn_provider_google import data_google_cloud_run_v2_service
+
+dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+
+### DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference <a name="DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_google import data_google_cloud_run_v2_service
+
+dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.property.mountPath">mount_path</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.property.subPath">sub_path</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMounts">DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMounts</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `mount_path`<sup>Required</sup> <a name="mount_path" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.property.mountPath"></a>
+
+```python
+mount_path: str
+```
+
+- *Type:* str
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.property.name"></a>
+
+```python
+name: str
+```
+
+- *Type:* str
+
+---
+
+##### `sub_path`<sup>Required</sup> <a name="sub_path" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.property.subPath"></a>
+
+```python
+sub_path: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.property.internalValue"></a>
+
+```python
+internal_value: DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMounts
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMounts">DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMounts</a>
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### AccessContextManagerGcpUserAccessBinding <a name="AccessContextManagerGcpUserAccessBinding" id="@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/access_context_manager_gcp_user_access_binding google_access_context_manager_gcp_user_access_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/access_context_manager_gcp_user_access_binding google_access_context_manager_gcp_user_access_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding.Initializer"></a>
 
@@ -74,12 +74,16 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding.putPrincipal">PutPrincipal</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding.putScopedAccessSettings">PutScopedAccessSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding.putSessionSettings">PutSessionSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding.resetAccessLevels">ResetAccessLevels</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding.resetDryRunAccessLevels">ResetDryRunAccessLevels</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding.resetGroupKey">ResetGroupKey</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding.resetPrincipal">ResetPrincipal</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding.resetScopedAccessSettings">ResetScopedAccessSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding.resetSessionSettings">ResetSessionSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
@@ -395,6 +399,18 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `PutPrincipal` <a name="PutPrincipal" id="@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding.putPrincipal"></a>
+
+```go
+func PutPrincipal(value AccessContextManagerGcpUserAccessBindingPrincipal)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding.putPrincipal.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipal">AccessContextManagerGcpUserAccessBindingPrincipal</a>
+
+---
+
 ##### `PutScopedAccessSettings` <a name="PutScopedAccessSettings" id="@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding.putScopedAccessSettings"></a>
 
 ```go
@@ -443,10 +459,28 @@ func ResetAccessLevels()
 func ResetDeletionPolicy()
 ```
 
+##### `ResetDryRunAccessLevels` <a name="ResetDryRunAccessLevels" id="@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding.resetDryRunAccessLevels"></a>
+
+```go
+func ResetDryRunAccessLevels()
+```
+
+##### `ResetGroupKey` <a name="ResetGroupKey" id="@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding.resetGroupKey"></a>
+
+```go
+func ResetGroupKey()
+```
+
 ##### `ResetId` <a name="ResetId" id="@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding.resetId"></a>
 
 ```go
 func ResetId()
+```
+
+##### `ResetPrincipal` <a name="ResetPrincipal" id="@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding.resetPrincipal"></a>
+
+```go
+func ResetPrincipal()
 ```
 
 ##### `ResetScopedAccessSettings` <a name="ResetScopedAccessSettings" id="@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding.resetScopedAccessSettings"></a>
@@ -570,7 +604,7 @@ The construct id used in the generated config for the AccessContextManagerGcpUse
 
 The id of the existing AccessContextManagerGcpUserAccessBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/access_context_manager_gcp_user_access_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/access_context_manager_gcp_user_access_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -601,19 +635,23 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding.property.principal">Principal</a></code> | <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipalOutputReference">AccessContextManagerGcpUserAccessBindingPrincipalOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding.property.scopedAccessSettings">ScopedAccessSettings</a></code> | <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingScopedAccessSettingsList">AccessContextManagerGcpUserAccessBindingScopedAccessSettingsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding.property.sessionSettings">SessionSettings</a></code> | <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingSessionSettingsOutputReference">AccessContextManagerGcpUserAccessBindingSessionSettingsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingTimeoutsOutputReference">AccessContextManagerGcpUserAccessBindingTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding.property.accessLevelsInput">AccessLevelsInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding.property.dryRunAccessLevelsInput">DryRunAccessLevelsInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding.property.groupKeyInput">GroupKeyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding.property.organizationIdInput">OrganizationIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding.property.principalInput">PrincipalInput</a></code> | <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipal">AccessContextManagerGcpUserAccessBindingPrincipal</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding.property.scopedAccessSettingsInput">ScopedAccessSettingsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding.property.sessionSettingsInput">SessionSettingsInput</a></code> | <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingSessionSettings">AccessContextManagerGcpUserAccessBindingSessionSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding.property.accessLevels">AccessLevels</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding.property.dryRunAccessLevels">DryRunAccessLevels</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding.property.groupKey">GroupKey</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding.property.organizationId">OrganizationId</a></code> | <code>*string</code> | *No description.* |
@@ -772,6 +810,16 @@ func Name() *string
 
 ---
 
+##### `Principal`<sup>Required</sup> <a name="Principal" id="@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding.property.principal"></a>
+
+```go
+func Principal() AccessContextManagerGcpUserAccessBindingPrincipalOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipalOutputReference">AccessContextManagerGcpUserAccessBindingPrincipalOutputReference</a>
+
+---
+
 ##### `ScopedAccessSettings`<sup>Required</sup> <a name="ScopedAccessSettings" id="@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding.property.scopedAccessSettings"></a>
 
 ```go
@@ -822,6 +870,16 @@ func DeletionPolicyInput() *string
 
 ---
 
+##### `DryRunAccessLevelsInput`<sup>Optional</sup> <a name="DryRunAccessLevelsInput" id="@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding.property.dryRunAccessLevelsInput"></a>
+
+```go
+func DryRunAccessLevelsInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
 ##### `GroupKeyInput`<sup>Optional</sup> <a name="GroupKeyInput" id="@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding.property.groupKeyInput"></a>
 
 ```go
@@ -849,6 +907,16 @@ func OrganizationIdInput() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `PrincipalInput`<sup>Optional</sup> <a name="PrincipalInput" id="@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding.property.principalInput"></a>
+
+```go
+func PrincipalInput() AccessContextManagerGcpUserAccessBindingPrincipal
+```
+
+- *Type:* <a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipal">AccessContextManagerGcpUserAccessBindingPrincipal</a>
 
 ---
 
@@ -899,6 +967,16 @@ func DeletionPolicy() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `DryRunAccessLevels`<sup>Required</sup> <a name="DryRunAccessLevels" id="@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBinding.property.dryRunAccessLevels"></a>
+
+```go
+func DryRunAccessLevels() *[]*string
+```
+
+- *Type:* *[]*string
 
 ---
 
@@ -967,11 +1045,13 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextman
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	GroupKey: *string,
 	OrganizationId: *string,
 	AccessLevels: *[]*string,
 	DeletionPolicy: *string,
+	DryRunAccessLevels: *[]*string,
+	GroupKey: *string,
 	Id: *string,
+	Principal: github.com/cdktn-io/cdktn-provider-google-go/google/v20.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipal,
 	ScopedAccessSettings: interface{},
 	SessionSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingSessionSettings,
 	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingTimeouts,
@@ -989,11 +1069,13 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextman
 | <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingConfig.property.groupKey">GroupKey</a></code> | <code>*string</code> | Required. |
 | <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingConfig.property.organizationId">OrganizationId</a></code> | <code>*string</code> | Required. ID of the parent organization. |
 | <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingConfig.property.accessLevels">AccessLevels</a></code> | <code>*[]*string</code> | Optional. |
 | <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/access_context_manager_gcp_user_access_binding#id AccessContextManagerGcpUserAccessBinding#id}. |
+| <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingConfig.property.dryRunAccessLevels">DryRunAccessLevels</a></code> | <code>*[]*string</code> | Optional. |
+| <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingConfig.property.groupKey">GroupKey</a></code> | <code>*string</code> | Immutable. |
+| <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/access_context_manager_gcp_user_access_binding#id AccessContextManagerGcpUserAccessBinding#id}. |
+| <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingConfig.property.principal">Principal</a></code> | <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipal">AccessContextManagerGcpUserAccessBindingPrincipal</a></code> | principal block. |
 | <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingConfig.property.scopedAccessSettings">ScopedAccessSettings</a></code> | <code>interface{}</code> | scoped_access_settings block. |
 | <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingConfig.property.sessionSettings">SessionSettings</a></code> | <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingSessionSettings">AccessContextManagerGcpUserAccessBindingSessionSettings</a></code> | session_settings block. |
 | <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingTimeouts">AccessContextManagerGcpUserAccessBindingTimeouts</a></code> | timeouts block. |
@@ -1070,22 +1152,6 @@ Provisioners *[]interface{}
 
 ---
 
-##### `GroupKey`<sup>Required</sup> <a name="GroupKey" id="@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingConfig.property.groupKey"></a>
-
-```go
-GroupKey *string
-```
-
-- *Type:* *string
-
-Required.
-
-Immutable. Google Group id whose members are subject to this binding's restrictions. See "id" in the G Suite Directory API's Groups resource. If a group's email address/alias is changed, this resource will continue to point at the changed group. This field does not accept group email addresses or aliases. Example: "01d520gv4vjcrht"
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/access_context_manager_gcp_user_access_binding#group_key AccessContextManagerGcpUserAccessBinding#group_key}
-
----
-
 ##### `OrganizationId`<sup>Required</sup> <a name="OrganizationId" id="@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingConfig.property.organizationId"></a>
 
 ```go
@@ -1096,7 +1162,7 @@ OrganizationId *string
 
 Required. ID of the parent organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/access_context_manager_gcp_user_access_binding#organization_id AccessContextManagerGcpUserAccessBinding#organization_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/access_context_manager_gcp_user_access_binding#organization_id AccessContextManagerGcpUserAccessBinding#organization_id}
 
 ---
 
@@ -1112,7 +1178,7 @@ Optional.
 
 Access level that a user must have to be granted access. Only one access level is supported, not multiple. This repeated field must have exactly one element. Example: "accessPolicies/9522/accessLevels/device_trusted"
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/access_context_manager_gcp_user_access_binding#access_levels AccessContextManagerGcpUserAccessBinding#access_levels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/access_context_manager_gcp_user_access_binding#access_levels AccessContextManagerGcpUserAccessBinding#access_levels}
 
 ---
 
@@ -1133,7 +1199,46 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/access_context_manager_gcp_user_access_binding#deletion_policy AccessContextManagerGcpUserAccessBinding#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/access_context_manager_gcp_user_access_binding#deletion_policy AccessContextManagerGcpUserAccessBinding#deletion_policy}
+
+---
+
+##### `DryRunAccessLevels`<sup>Optional</sup> <a name="DryRunAccessLevels" id="@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingConfig.property.dryRunAccessLevels"></a>
+
+```go
+DryRunAccessLevels *[]*string
+```
+
+- *Type:* *[]*string
+
+Optional.
+
+Dry run access level that will be evaluated but will not be enforced. The
+access denial based on dry run policy will be logged. Only one access
+level is supported, not multiple. This list must have exactly one element.
+Example: "accessPolicies/9522/accessLevels/device_trusted"
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/access_context_manager_gcp_user_access_binding#dry_run_access_levels AccessContextManagerGcpUserAccessBinding#dry_run_access_levels}
+
+---
+
+##### `GroupKey`<sup>Optional</sup> <a name="GroupKey" id="@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingConfig.property.groupKey"></a>
+
+```go
+GroupKey *string
+```
+
+- *Type:* *string
+
+Immutable.
+
+Google Group id whose members are subject to this binding's restrictions.
+See "id" in the Google Workspace Directory API's Group Resource (https://developers.google.com/admin-sdk/directory/v1/reference/groups#resource).
+If a group's email address/alias is changed, this resource will continue to point at the changed group.
+This field does not accept group email addresses or aliases.
+Example: "01d520gv4vjcrht"
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/access_context_manager_gcp_user_access_binding#group_key AccessContextManagerGcpUserAccessBinding#group_key}
 
 ---
 
@@ -1145,10 +1250,24 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/access_context_manager_gcp_user_access_binding#id AccessContextManagerGcpUserAccessBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/access_context_manager_gcp_user_access_binding#id AccessContextManagerGcpUserAccessBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Principal`<sup>Optional</sup> <a name="Principal" id="@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingConfig.property.principal"></a>
+
+```go
+Principal AccessContextManagerGcpUserAccessBindingPrincipal
+```
+
+- *Type:* <a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipal">AccessContextManagerGcpUserAccessBindingPrincipal</a>
+
+principal block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/access_context_manager_gcp_user_access_binding#principal AccessContextManagerGcpUserAccessBinding#principal}
 
 ---
 
@@ -1162,7 +1281,7 @@ ScopedAccessSettings interface{}
 
 scoped_access_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/access_context_manager_gcp_user_access_binding#scoped_access_settings AccessContextManagerGcpUserAccessBinding#scoped_access_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/access_context_manager_gcp_user_access_binding#scoped_access_settings AccessContextManagerGcpUserAccessBinding#scoped_access_settings}
 
 ---
 
@@ -1176,7 +1295,7 @@ SessionSettings AccessContextManagerGcpUserAccessBindingSessionSettings
 
 session_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/access_context_manager_gcp_user_access_binding#session_settings AccessContextManagerGcpUserAccessBinding#session_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/access_context_manager_gcp_user_access_binding#session_settings AccessContextManagerGcpUserAccessBinding#session_settings}
 
 ---
 
@@ -1190,7 +1309,63 @@ Timeouts AccessContextManagerGcpUserAccessBindingTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/access_context_manager_gcp_user_access_binding#timeouts AccessContextManagerGcpUserAccessBinding#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/access_context_manager_gcp_user_access_binding#timeouts AccessContextManagerGcpUserAccessBinding#timeouts}
+
+---
+
+### AccessContextManagerGcpUserAccessBindingPrincipal <a name="AccessContextManagerGcpUserAccessBindingPrincipal" id="@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipal"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipal.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagergcpuseraccessbinding"
+
+&accesscontextmanagergcpuseraccessbinding.AccessContextManagerGcpUserAccessBindingPrincipal {
+	ServiceAccount: *string,
+	ServiceAccountProjectNumber: *string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipal.property.serviceAccount">ServiceAccount</a></code> | <code>*string</code> | Immutable. |
+| <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipal.property.serviceAccountProjectNumber">ServiceAccountProjectNumber</a></code> | <code>*string</code> | Immutable. Cloud project number used to assign policies to all service accounts owned by the project. |
+
+---
+
+##### `ServiceAccount`<sup>Optional</sup> <a name="ServiceAccount" id="@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipal.property.serviceAccount"></a>
+
+```go
+ServiceAccount *string
+```
+
+- *Type:* *string
+
+Immutable.
+
+Service account email used to assign policies to a single service account.
+If a service account is subject to multiple policies (e.g., if there is a policy for all
+service accounts in a project and a policy for the service account), the closest (i.e.
+the most specific) dry-run policy will be used for the dry-run functionality and the
+closest policy will be used for the enforcement.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/access_context_manager_gcp_user_access_binding#service_account AccessContextManagerGcpUserAccessBinding#service_account}
+
+---
+
+##### `ServiceAccountProjectNumber`<sup>Optional</sup> <a name="ServiceAccountProjectNumber" id="@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipal.property.serviceAccountProjectNumber"></a>
+
+```go
+ServiceAccountProjectNumber *string
+```
+
+- *Type:* *string
+
+Immutable. Cloud project number used to assign policies to all service accounts owned by the project.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/access_context_manager_gcp_user_access_binding#service_account_project_number AccessContextManagerGcpUserAccessBinding#service_account_project_number}
 
 ---
 
@@ -1228,7 +1403,7 @@ ActiveSettings AccessContextManagerGcpUserAccessBindingScopedAccessSettingsActiv
 
 active_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/access_context_manager_gcp_user_access_binding#active_settings AccessContextManagerGcpUserAccessBinding#active_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/access_context_manager_gcp_user_access_binding#active_settings AccessContextManagerGcpUserAccessBinding#active_settings}
 
 ---
 
@@ -1242,7 +1417,7 @@ DryRunSettings AccessContextManagerGcpUserAccessBindingScopedAccessSettingsDryRu
 
 dry_run_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/access_context_manager_gcp_user_access_binding#dry_run_settings AccessContextManagerGcpUserAccessBinding#dry_run_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/access_context_manager_gcp_user_access_binding#dry_run_settings AccessContextManagerGcpUserAccessBinding#dry_run_settings}
 
 ---
 
@@ -1256,7 +1431,7 @@ Scope AccessContextManagerGcpUserAccessBindingScopedAccessSettingsScope
 
 scope block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/access_context_manager_gcp_user_access_binding#scope AccessContextManagerGcpUserAccessBinding#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/access_context_manager_gcp_user_access_binding#scope AccessContextManagerGcpUserAccessBinding#scope}
 
 ---
 
@@ -1294,7 +1469,7 @@ Optional.
 
 Access level that a user must have to be granted access. Only one access level is supported, not multiple. This repeated field must have exactly one element. Example: "accessPolicies/9522/accessLevels/device_trusted"
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/access_context_manager_gcp_user_access_binding#access_levels AccessContextManagerGcpUserAccessBinding#access_levels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/access_context_manager_gcp_user_access_binding#access_levels AccessContextManagerGcpUserAccessBinding#access_levels}
 
 ---
 
@@ -1308,7 +1483,7 @@ SessionSettings AccessContextManagerGcpUserAccessBindingScopedAccessSettingsActi
 
 session_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/access_context_manager_gcp_user_access_binding#session_settings AccessContextManagerGcpUserAccessBinding#session_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/access_context_manager_gcp_user_access_binding#session_settings AccessContextManagerGcpUserAccessBinding#session_settings}
 
 ---
 
@@ -1352,7 +1527,7 @@ Optional.
 
 How long a user is allowed to take between actions before a new access token must be issued. Only set for Google Cloud apps.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/access_context_manager_gcp_user_access_binding#max_inactivity AccessContextManagerGcpUserAccessBinding#max_inactivity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/access_context_manager_gcp_user_access_binding#max_inactivity AccessContextManagerGcpUserAccessBinding#max_inactivity}
 
 ---
 
@@ -1367,8 +1542,9 @@ SessionLength *string
 Optional.
 
 The session length. Setting this field to zero is equal to disabling session. Also can set infinite session by flipping the enabled bit to false below. If useOidcMaxAge is true, for OIDC apps, the session length will be the minimum of this field and OIDC max_age param.
+If this field is set to zero, 'session_length_enabled' must be set to false or left unset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/access_context_manager_gcp_user_access_binding#session_length AccessContextManagerGcpUserAccessBinding#session_length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/access_context_manager_gcp_user_access_binding#session_length AccessContextManagerGcpUserAccessBinding#session_length}
 
 ---
 
@@ -1383,8 +1559,9 @@ SessionLengthEnabled interface{}
 Optional.
 
 This field enables or disables Google Cloud session length. When false, all fields set above will be disregarded and the session length is basically infinite.
+If 'session_length' is set to zero, this field must be false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/access_context_manager_gcp_user_access_binding#session_length_enabled AccessContextManagerGcpUserAccessBinding#session_length_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/access_context_manager_gcp_user_access_binding#session_length_enabled AccessContextManagerGcpUserAccessBinding#session_length_enabled}
 
 ---
 
@@ -1400,7 +1577,7 @@ Optional.
 
 The session challenges proposed to users when the Google Cloud session length is up. Possible values: ["LOGIN", "SECURITY_KEY", "PASSWORD"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/access_context_manager_gcp_user_access_binding#session_reauth_method AccessContextManagerGcpUserAccessBinding#session_reauth_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/access_context_manager_gcp_user_access_binding#session_reauth_method AccessContextManagerGcpUserAccessBinding#session_reauth_method}
 
 ---
 
@@ -1416,7 +1593,7 @@ Optional.
 
 Only useful for OIDC apps. When false, the OIDC max_age param, if passed in the authentication request will be ignored. When true, the re-auth period will be the minimum of the sessionLength field and the max_age OIDC param.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/access_context_manager_gcp_user_access_binding#use_oidc_max_age AccessContextManagerGcpUserAccessBinding#use_oidc_max_age}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/access_context_manager_gcp_user_access_binding#use_oidc_max_age AccessContextManagerGcpUserAccessBinding#use_oidc_max_age}
 
 ---
 
@@ -1452,7 +1629,7 @@ Optional.
 
 Access level that a user must have to be granted access. Only one access level is supported, not multiple. This repeated field must have exactly one element. Example: "accessPolicies/9522/accessLevels/device_trusted"
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/access_context_manager_gcp_user_access_binding#access_levels AccessContextManagerGcpUserAccessBinding#access_levels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/access_context_manager_gcp_user_access_binding#access_levels AccessContextManagerGcpUserAccessBinding#access_levels}
 
 ---
 
@@ -1486,7 +1663,7 @@ ClientScope AccessContextManagerGcpUserAccessBindingScopedAccessSettingsScopeCli
 
 client_scope block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/access_context_manager_gcp_user_access_binding#client_scope AccessContextManagerGcpUserAccessBinding#client_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/access_context_manager_gcp_user_access_binding#client_scope AccessContextManagerGcpUserAccessBinding#client_scope}
 
 ---
 
@@ -1520,7 +1697,7 @@ RestrictedClientApplication AccessContextManagerGcpUserAccessBindingScopedAccess
 
 restricted_client_application block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/access_context_manager_gcp_user_access_binding#restricted_client_application AccessContextManagerGcpUserAccessBinding#restricted_client_application}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/access_context_manager_gcp_user_access_binding#restricted_client_application AccessContextManagerGcpUserAccessBinding#restricted_client_application}
 
 ---
 
@@ -1556,7 +1733,7 @@ ClientId *string
 
 The OAuth client ID of the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/access_context_manager_gcp_user_access_binding#client_id AccessContextManagerGcpUserAccessBinding#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/access_context_manager_gcp_user_access_binding#client_id AccessContextManagerGcpUserAccessBinding#client_id}
 
 ---
 
@@ -1570,7 +1747,7 @@ Name *string
 
 The name of the application. Example: "Cloud Console".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/access_context_manager_gcp_user_access_binding#name AccessContextManagerGcpUserAccessBinding#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/access_context_manager_gcp_user_access_binding#name AccessContextManagerGcpUserAccessBinding#name}
 
 ---
 
@@ -1614,7 +1791,7 @@ Optional.
 
 How long a user is allowed to take between actions before a new access token must be issued. Only set for Google Cloud apps.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/access_context_manager_gcp_user_access_binding#max_inactivity AccessContextManagerGcpUserAccessBinding#max_inactivity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/access_context_manager_gcp_user_access_binding#max_inactivity AccessContextManagerGcpUserAccessBinding#max_inactivity}
 
 ---
 
@@ -1629,8 +1806,9 @@ SessionLength *string
 Optional.
 
 The session length. Setting this field to zero is equal to disabling session. Also can set infinite session by flipping the enabled bit to false below. If useOidcMaxAge is true, for OIDC apps, the session length will be the minimum of this field and OIDC max_age param.
+If this field is set to zero, 'session_length_enabled' must be set to false or left unset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/access_context_manager_gcp_user_access_binding#session_length AccessContextManagerGcpUserAccessBinding#session_length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/access_context_manager_gcp_user_access_binding#session_length AccessContextManagerGcpUserAccessBinding#session_length}
 
 ---
 
@@ -1645,8 +1823,9 @@ SessionLengthEnabled interface{}
 Optional.
 
 This field enables or disables Google Cloud session length. When false, all fields set above will be disregarded and the session length is basically infinite.
+If 'session_length' is set to zero, this field must be false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/access_context_manager_gcp_user_access_binding#session_length_enabled AccessContextManagerGcpUserAccessBinding#session_length_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/access_context_manager_gcp_user_access_binding#session_length_enabled AccessContextManagerGcpUserAccessBinding#session_length_enabled}
 
 ---
 
@@ -1662,7 +1841,7 @@ Optional.
 
 The session challenges proposed to users when the Google Cloud session length is up. Possible values: ["LOGIN", "SECURITY_KEY", "PASSWORD"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/access_context_manager_gcp_user_access_binding#session_reauth_method AccessContextManagerGcpUserAccessBinding#session_reauth_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/access_context_manager_gcp_user_access_binding#session_reauth_method AccessContextManagerGcpUserAccessBinding#session_reauth_method}
 
 ---
 
@@ -1678,7 +1857,7 @@ Optional.
 
 Only useful for OIDC apps. When false, the OIDC max_age param, if passed in the authentication request will be ignored. When true, the re-auth period will be the minimum of the sessionLength field and the max_age OIDC param.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/access_context_manager_gcp_user_access_binding#use_oidc_max_age AccessContextManagerGcpUserAccessBinding#use_oidc_max_age}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/access_context_manager_gcp_user_access_binding#use_oidc_max_age AccessContextManagerGcpUserAccessBinding#use_oidc_max_age}
 
 ---
 
@@ -1700,9 +1879,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextman
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/access_context_manager_gcp_user_access_binding#create AccessContextManagerGcpUserAccessBinding#create}. |
-| <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/access_context_manager_gcp_user_access_binding#delete AccessContextManagerGcpUserAccessBinding#delete}. |
-| <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/access_context_manager_gcp_user_access_binding#update AccessContextManagerGcpUserAccessBinding#update}. |
+| <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/access_context_manager_gcp_user_access_binding#create AccessContextManagerGcpUserAccessBinding#create}. |
+| <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/access_context_manager_gcp_user_access_binding#delete AccessContextManagerGcpUserAccessBinding#delete}. |
+| <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/access_context_manager_gcp_user_access_binding#update AccessContextManagerGcpUserAccessBinding#update}. |
 
 ---
 
@@ -1714,7 +1893,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/access_context_manager_gcp_user_access_binding#create AccessContextManagerGcpUserAccessBinding#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/access_context_manager_gcp_user_access_binding#create AccessContextManagerGcpUserAccessBinding#create}.
 
 ---
 
@@ -1726,7 +1905,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/access_context_manager_gcp_user_access_binding#delete AccessContextManagerGcpUserAccessBinding#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/access_context_manager_gcp_user_access_binding#delete AccessContextManagerGcpUserAccessBinding#delete}.
 
 ---
 
@@ -1738,11 +1917,318 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/access_context_manager_gcp_user_access_binding#update AccessContextManagerGcpUserAccessBinding#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/access_context_manager_gcp_user_access_binding#update AccessContextManagerGcpUserAccessBinding#update}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### AccessContextManagerGcpUserAccessBindingPrincipalOutputReference <a name="AccessContextManagerGcpUserAccessBindingPrincipalOutputReference" id="@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipalOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipalOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagergcpuseraccessbinding"
+
+accesscontextmanagergcpuseraccessbinding.NewAccessContextManagerGcpUserAccessBindingPrincipalOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessContextManagerGcpUserAccessBindingPrincipalOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipalOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipalOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipalOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipalOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipalOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipalOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipalOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipalOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipalOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipalOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipalOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipalOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipalOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipalOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipalOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipalOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipalOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipalOutputReference.resetServiceAccount">ResetServiceAccount</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipalOutputReference.resetServiceAccountProjectNumber">ResetServiceAccountProjectNumber</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipalOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipalOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipalOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipalOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipalOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipalOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipalOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipalOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipalOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipalOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipalOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipalOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipalOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipalOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipalOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipalOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipalOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipalOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipalOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipalOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipalOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipalOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipalOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipalOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetServiceAccount` <a name="ResetServiceAccount" id="@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipalOutputReference.resetServiceAccount"></a>
+
+```go
+func ResetServiceAccount()
+```
+
+##### `ResetServiceAccountProjectNumber` <a name="ResetServiceAccountProjectNumber" id="@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipalOutputReference.resetServiceAccountProjectNumber"></a>
+
+```go
+func ResetServiceAccountProjectNumber()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipalOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipalOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipalOutputReference.property.serviceAccountInput">ServiceAccountInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipalOutputReference.property.serviceAccountProjectNumberInput">ServiceAccountProjectNumberInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipalOutputReference.property.serviceAccount">ServiceAccount</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipalOutputReference.property.serviceAccountProjectNumber">ServiceAccountProjectNumber</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipalOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipal">AccessContextManagerGcpUserAccessBindingPrincipal</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipalOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipalOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ServiceAccountInput`<sup>Optional</sup> <a name="ServiceAccountInput" id="@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipalOutputReference.property.serviceAccountInput"></a>
+
+```go
+func ServiceAccountInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ServiceAccountProjectNumberInput`<sup>Optional</sup> <a name="ServiceAccountProjectNumberInput" id="@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipalOutputReference.property.serviceAccountProjectNumberInput"></a>
+
+```go
+func ServiceAccountProjectNumberInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ServiceAccount`<sup>Required</sup> <a name="ServiceAccount" id="@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipalOutputReference.property.serviceAccount"></a>
+
+```go
+func ServiceAccount() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ServiceAccountProjectNumber`<sup>Required</sup> <a name="ServiceAccountProjectNumber" id="@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipalOutputReference.property.serviceAccountProjectNumber"></a>
+
+```go
+func ServiceAccountProjectNumber() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipalOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() AccessContextManagerGcpUserAccessBindingPrincipal
+```
+
+- *Type:* <a href="#@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingPrincipal">AccessContextManagerGcpUserAccessBindingPrincipal</a>
+
+---
+
 
 ### AccessContextManagerGcpUserAccessBindingScopedAccessSettingsActiveSettingsOutputReference <a name="AccessContextManagerGcpUserAccessBindingScopedAccessSettingsActiveSettingsOutputReference" id="@cdktn/provider-google.accessContextManagerGcpUserAccessBinding.AccessContextManagerGcpUserAccessBindingScopedAccessSettingsActiveSettingsOutputReference"></a>
 

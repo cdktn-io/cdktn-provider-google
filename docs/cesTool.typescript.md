@@ -4,7 +4,7 @@
 
 ### CesTool <a name="CesTool" id="@cdktn/provider-google.cesTool.CesTool"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool google_ces_tool}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool google_ces_tool}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cesTool.CesTool.Initializer"></a>
 
@@ -704,7 +704,7 @@ The construct id used in the generated config for the CesTool to import.
 
 The id of the existing CesTool that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1424,7 +1424,7 @@ public readonly name: string;
 
 Required. The name of the agent tool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#name CesTool#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#name CesTool#name}
 
 ---
 
@@ -1438,7 +1438,7 @@ public readonly agent: string;
 
 Optional. The resource name of the agent that is the entry point of the tool. Format: projects/{project}/locations/{location}/agents/{agent}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#agent CesTool#agent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#agent CesTool#agent}
 
 ---
 
@@ -1452,7 +1452,7 @@ public readonly description: string;
 
 Optional. Description of the tool's purpose.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#description CesTool#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#description CesTool#description}
 
 ---
 
@@ -1487,7 +1487,7 @@ public readonly name: string;
 
 The function name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#name CesTool#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#name CesTool#name}
 
 ---
 
@@ -1501,7 +1501,7 @@ public readonly description: string;
 
 The function description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#description CesTool#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#description CesTool#description}
 
 ---
 
@@ -1515,7 +1515,7 @@ public readonly parameters: CesToolClientFunctionParameters;
 
 parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#parameters CesTool#parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#parameters CesTool#parameters}
 
 ---
 
@@ -1529,7 +1529,7 @@ public readonly response: CesToolClientFunctionResponse;
 
 response block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#response CesTool#response}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#response CesTool#response}
 
 ---
 
@@ -1579,7 +1579,7 @@ public readonly type: string;
 
 The type of the data. Possible values: STRING INTEGER NUMBER BOOLEAN OBJECT ARRAY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#type CesTool#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#type CesTool#type}
 
 ---
 
@@ -1596,7 +1596,7 @@ Defines the schema for additional properties allowed in an object.
 The value must be a valid JSON string representing the Schema object.
 (Note: OpenAPI also allows a boolean, this definition expects a Schema JSON).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#additional_properties CesTool#additional_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#additional_properties CesTool#additional_properties}
 
 ---
 
@@ -1610,7 +1610,7 @@ public readonly anyOf: string;
 
 The instance value should be valid against at least one of the schemas in this list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#any_of CesTool#any_of}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#any_of CesTool#any_of}
 
 ---
 
@@ -1629,7 +1629,7 @@ which can be either null, a number, a string, a boolean, a struct,
 or a list of values. The provided default value must be compatible
 with the defined 'type' and other schema constraints.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#default CesTool#default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#default CesTool#default}
 
 ---
 
@@ -1643,7 +1643,7 @@ public readonly defs: string;
 
 A map of definitions for use by ref. Only allowed at the root of the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#defs CesTool#defs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#defs CesTool#defs}
 
 ---
 
@@ -1657,7 +1657,7 @@ public readonly description: string;
 
 The description of the data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#description CesTool#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#description CesTool#description}
 
 ---
 
@@ -1677,7 +1677,7 @@ Examples:
 2. We can define apartment number as :
 {type:INTEGER, format:enum, enum:["101", "201", "301"]}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#enum CesTool#enum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#enum CesTool#enum}
 
 ---
 
@@ -1691,7 +1691,7 @@ public readonly items: string;
 
 Schema of the elements of Type.ARRAY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#items CesTool#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#items CesTool#items}
 
 ---
 
@@ -1705,7 +1705,7 @@ public readonly maximum: number;
 
 Maximum value for Type.INTEGER and Type.NUMBER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#maximum CesTool#maximum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#maximum CesTool#maximum}
 
 ---
 
@@ -1719,7 +1719,7 @@ public readonly maxItems: number;
 
 Maximum number of the elements for Type.ARRAY. (int64 format).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#max_items CesTool#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#max_items CesTool#max_items}
 
 ---
 
@@ -1733,7 +1733,7 @@ public readonly minimum: number;
 
 Minimum value for Type.INTEGER and Type.NUMBER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#minimum CesTool#minimum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#minimum CesTool#minimum}
 
 ---
 
@@ -1747,7 +1747,7 @@ public readonly minItems: number;
 
 Minimum number of the elements for Type.ARRAY. (int64 format).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#min_items CesTool#min_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#min_items CesTool#min_items}
 
 ---
 
@@ -1761,7 +1761,7 @@ public readonly nullable: boolean | IResolvable;
 
 Indicates if the value may be null.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#nullable CesTool#nullable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#nullable CesTool#nullable}
 
 ---
 
@@ -1775,7 +1775,7 @@ public readonly prefixItems: string;
 
 Schemas of initial elements of Type.ARRAY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#prefix_items CesTool#prefix_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#prefix_items CesTool#prefix_items}
 
 ---
 
@@ -1789,7 +1789,7 @@ public readonly properties: string;
 
 Properties of Type.OBJECT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#properties CesTool#properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#properties CesTool#properties}
 
 ---
 
@@ -1822,7 +1822,7 @@ named "Pet".
 See details in
 https://json-schema.org/understanding-json-schema/structuring.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#ref CesTool#ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#ref CesTool#ref}
 
 ---
 
@@ -1836,7 +1836,7 @@ public readonly required: string[];
 
 Required properties of Type.OBJECT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#required CesTool#required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#required CesTool#required}
 
 ---
 
@@ -1850,7 +1850,7 @@ public readonly title: string;
 
 The title of the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#title CesTool#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#title CesTool#title}
 
 ---
 
@@ -1864,7 +1864,7 @@ public readonly uniqueItems: boolean | IResolvable;
 
 Indicate the items in the array must be unique. Only applies to TYPE.ARRAY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#unique_items CesTool#unique_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#unique_items CesTool#unique_items}
 
 ---
 
@@ -1914,7 +1914,7 @@ public readonly type: string;
 
 The type of the data. Possible values: STRING INTEGER NUMBER BOOLEAN OBJECT ARRAY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#type CesTool#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#type CesTool#type}
 
 ---
 
@@ -1931,7 +1931,7 @@ Defines the schema for additional properties allowed in an object.
 The value must be a valid JSON string representing the Schema object.
 (Note: OpenAPI also allows a boolean, this definition expects a Schema JSON).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#additional_properties CesTool#additional_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#additional_properties CesTool#additional_properties}
 
 ---
 
@@ -1945,7 +1945,7 @@ public readonly anyOf: string;
 
 The instance value should be valid against at least one of the schemas in this list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#any_of CesTool#any_of}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#any_of CesTool#any_of}
 
 ---
 
@@ -1964,7 +1964,7 @@ which can be either null, a number, a string, a boolean, a struct,
 or a list of values. The provided default value must be compatible
 with the defined 'type' and other schema constraints.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#default CesTool#default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#default CesTool#default}
 
 ---
 
@@ -1978,7 +1978,7 @@ public readonly defs: string;
 
 A map of definitions for use by ref. Only allowed at the root of the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#defs CesTool#defs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#defs CesTool#defs}
 
 ---
 
@@ -1992,7 +1992,7 @@ public readonly description: string;
 
 The description of the data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#description CesTool#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#description CesTool#description}
 
 ---
 
@@ -2012,7 +2012,7 @@ Examples:
 2. We can define apartment number as :
 {type:INTEGER, format:enum, enum:["101", "201", "301"]}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#enum CesTool#enum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#enum CesTool#enum}
 
 ---
 
@@ -2026,7 +2026,7 @@ public readonly items: string;
 
 Schema of the elements of Type.ARRAY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#items CesTool#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#items CesTool#items}
 
 ---
 
@@ -2040,7 +2040,7 @@ public readonly maximum: number;
 
 Maximum value for Type.INTEGER and Type.NUMBER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#maximum CesTool#maximum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#maximum CesTool#maximum}
 
 ---
 
@@ -2054,7 +2054,7 @@ public readonly maxItems: number;
 
 Maximum number of the elements for Type.ARRAY. (int64 format).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#max_items CesTool#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#max_items CesTool#max_items}
 
 ---
 
@@ -2068,7 +2068,7 @@ public readonly minimum: number;
 
 Minimum value for Type.INTEGER and Type.NUMBER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#minimum CesTool#minimum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#minimum CesTool#minimum}
 
 ---
 
@@ -2082,7 +2082,7 @@ public readonly minItems: number;
 
 Minimum number of the elements for Type.ARRAY. (int64 format).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#min_items CesTool#min_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#min_items CesTool#min_items}
 
 ---
 
@@ -2096,7 +2096,7 @@ public readonly nullable: boolean | IResolvable;
 
 Indicates if the value may be null.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#nullable CesTool#nullable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#nullable CesTool#nullable}
 
 ---
 
@@ -2110,7 +2110,7 @@ public readonly prefixItems: string;
 
 Schemas of initial elements of Type.ARRAY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#prefix_items CesTool#prefix_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#prefix_items CesTool#prefix_items}
 
 ---
 
@@ -2124,7 +2124,7 @@ public readonly properties: string;
 
 Properties of Type.OBJECT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#properties CesTool#properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#properties CesTool#properties}
 
 ---
 
@@ -2157,7 +2157,7 @@ named "Pet".
 See details in
 https://json-schema.org/understanding-json-schema/structuring.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#ref CesTool#ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#ref CesTool#ref}
 
 ---
 
@@ -2171,7 +2171,7 @@ public readonly required: string[];
 
 Required properties of Type.OBJECT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#required CesTool#required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#required CesTool#required}
 
 ---
 
@@ -2185,7 +2185,7 @@ public readonly title: string;
 
 The title of the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#title CesTool#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#title CesTool#title}
 
 ---
 
@@ -2199,7 +2199,7 @@ public readonly uniqueItems: boolean | IResolvable;
 
 Indicate the items in the array must be unique. Only applies to TYPE.ARRAY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#unique_items CesTool#unique_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#unique_items CesTool#unique_items}
 
 ---
 
@@ -2234,8 +2234,8 @@ const cesToolConfig: cesTool.CesToolConfig = { ... }
 | <code><a href="#@cdktn/provider-google.cesTool.CesToolConfig.property.executionType">executionType</a></code> | <code>string</code> | Possible values: SYNCHRONOUS ASYNCHRONOUS. |
 | <code><a href="#@cdktn/provider-google.cesTool.CesToolConfig.property.fileSearchTool">fileSearchTool</a></code> | <code><a href="#@cdktn/provider-google.cesTool.CesToolFileSearchTool">CesToolFileSearchTool</a></code> | file_search_tool block. |
 | <code><a href="#@cdktn/provider-google.cesTool.CesToolConfig.property.googleSearchTool">googleSearchTool</a></code> | <code><a href="#@cdktn/provider-google.cesTool.CesToolGoogleSearchTool">CesToolGoogleSearchTool</a></code> | google_search_tool block. |
-| <code><a href="#@cdktn/provider-google.cesTool.CesToolConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#id CesTool#id}. |
-| <code><a href="#@cdktn/provider-google.cesTool.CesToolConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#project CesTool#project}. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#id CesTool#id}. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#project CesTool#project}. |
 | <code><a href="#@cdktn/provider-google.cesTool.CesToolConfig.property.pythonFunction">pythonFunction</a></code> | <code><a href="#@cdktn/provider-google.cesTool.CesToolPythonFunction">CesToolPythonFunction</a></code> | python_function block. |
 | <code><a href="#@cdktn/provider-google.cesTool.CesToolConfig.property.timeout">timeout</a></code> | <code>string</code> | The timeout for the tool execution. |
 | <code><a href="#@cdktn/provider-google.cesTool.CesToolConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.cesTool.CesToolTimeouts">CesToolTimeouts</a></code> | timeouts block. |
@@ -2324,7 +2324,7 @@ public readonly app: string;
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#app CesTool#app}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#app CesTool#app}
 
 ---
 
@@ -2338,7 +2338,7 @@ public readonly location: string;
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#location CesTool#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#location CesTool#location}
 
 ---
 
@@ -2355,7 +2355,7 @@ The ID to use for the tool, which will become the final component of the tool's 
 If not provided, a unique ID will be
 automatically assigned for the tool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#tool_id CesTool#tool_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#tool_id CesTool#tool_id}
 
 ---
 
@@ -2369,7 +2369,7 @@ public readonly agentTool: CesToolAgentTool;
 
 agent_tool block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#agent_tool CesTool#agent_tool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#agent_tool CesTool#agent_tool}
 
 ---
 
@@ -2383,7 +2383,7 @@ public readonly clientFunction: CesToolClientFunction;
 
 client_function block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#client_function CesTool#client_function}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#client_function CesTool#client_function}
 
 ---
 
@@ -2397,7 +2397,7 @@ public readonly dataStoreTool: CesToolDataStoreTool;
 
 data_store_tool block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#data_store_tool CesTool#data_store_tool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#data_store_tool CesTool#data_store_tool}
 
 ---
 
@@ -2419,7 +2419,7 @@ management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#deletion_policy CesTool#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#deletion_policy CesTool#deletion_policy}
 
 ---
 
@@ -2433,7 +2433,7 @@ public readonly executionType: string;
 
 Possible values: SYNCHRONOUS ASYNCHRONOUS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#execution_type CesTool#execution_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#execution_type CesTool#execution_type}
 
 ---
 
@@ -2447,7 +2447,7 @@ public readonly fileSearchTool: CesToolFileSearchTool;
 
 file_search_tool block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#file_search_tool CesTool#file_search_tool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#file_search_tool CesTool#file_search_tool}
 
 ---
 
@@ -2461,7 +2461,7 @@ public readonly googleSearchTool: CesToolGoogleSearchTool;
 
 google_search_tool block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#google_search_tool CesTool#google_search_tool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#google_search_tool CesTool#google_search_tool}
 
 ---
 
@@ -2473,7 +2473,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#id CesTool#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#id CesTool#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2488,7 +2488,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#project CesTool#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#project CesTool#project}.
 
 ---
 
@@ -2502,7 +2502,7 @@ public readonly pythonFunction: CesToolPythonFunction;
 
 python_function block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#python_function CesTool#python_function}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#python_function CesTool#python_function}
 
 ---
 
@@ -2519,7 +2519,7 @@ The timeout for the tool execution.
 If not set, the default timeout is 30
 seconds for SYNCHRONOUS tools and 60 seconds for ASYNCHRONOUS tools.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#timeout CesTool#timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#timeout CesTool#timeout}
 
 ---
 
@@ -2533,7 +2533,7 @@ public readonly timeouts: CesToolTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#timeouts CesTool#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#timeouts CesTool#timeouts}
 
 ---
 
@@ -2547,7 +2547,7 @@ public readonly toolFakeConfig: CesToolToolFakeConfig;
 
 tool_fake_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#tool_fake_config CesTool#tool_fake_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#tool_fake_config CesTool#tool_fake_config}
 
 ---
 
@@ -2561,7 +2561,7 @@ public readonly widgetTool: CesToolWidgetTool;
 
 widget_tool block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#widget_tool CesTool#widget_tool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#widget_tool CesTool#widget_tool}
 
 ---
 
@@ -2633,7 +2633,7 @@ public readonly name: string;
 
 The data store tool name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#name CesTool#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#name CesTool#name}
 
 ---
 
@@ -2647,7 +2647,7 @@ public readonly boostSpecs: IResolvable | CesToolDataStoreToolBoostSpecs[];
 
 boost_specs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#boost_specs CesTool#boost_specs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#boost_specs CesTool#boost_specs}
 
 ---
 
@@ -2661,7 +2661,7 @@ public readonly dataStoreSource: CesToolDataStoreToolDataStoreSource;
 
 data_store_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#data_store_source CesTool#data_store_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#data_store_source CesTool#data_store_source}
 
 ---
 
@@ -2675,7 +2675,7 @@ public readonly description: string;
 
 The tool description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#description CesTool#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#description CesTool#description}
 
 ---
 
@@ -2689,7 +2689,7 @@ public readonly engineSource: CesToolDataStoreToolEngineSource;
 
 engine_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#engine_source CesTool#engine_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#engine_source CesTool#engine_source}
 
 ---
 
@@ -2703,7 +2703,7 @@ public readonly filterParameterBehavior: string;
 
 Optional. The filter parameter behavior. Possible values: FILTER_PARAMETER_BEHAVIOR_UNSPECIFIED ALWAYS_INCLUDE NEVER_INCLUDE Possible values: ["FILTER_PARAMETER_BEHAVIOR_UNSPECIFIED", "ALWAYS_INCLUDE", "NEVER_INCLUDE"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#filter_parameter_behavior CesTool#filter_parameter_behavior}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#filter_parameter_behavior CesTool#filter_parameter_behavior}
 
 ---
 
@@ -2717,7 +2717,7 @@ public readonly maxResults: number;
 
 Number of search results to return per query. The default value is 10. The maximum allowed value is 10.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#max_results CesTool#max_results}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#max_results CesTool#max_results}
 
 ---
 
@@ -2731,7 +2731,7 @@ public readonly modalityConfigs: IResolvable | CesToolDataStoreToolModalityConfi
 
 modality_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#modality_configs CesTool#modality_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#modality_configs CesTool#modality_configs}
 
 ---
 
@@ -2764,7 +2764,7 @@ public readonly dataStores: string[];
 
 The Data Store where the boosting configuration is applied. Full resource name of DataStore, such as projects/{project}/locations/{location}/collections/{collection}/dataStores/{dataStore}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#data_stores CesTool#data_stores}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#data_stores CesTool#data_stores}
 
 ---
 
@@ -2778,7 +2778,7 @@ public readonly spec: IResolvable | CesToolDataStoreToolBoostSpecsSpec[];
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#spec CesTool#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#spec CesTool#spec}
 
 ---
 
@@ -2810,7 +2810,7 @@ public readonly conditionBoostSpecs: IResolvable | CesToolDataStoreToolBoostSpec
 
 condition_boost_specs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#condition_boost_specs CesTool#condition_boost_specs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#condition_boost_specs CesTool#condition_boost_specs}
 
 ---
 
@@ -2850,7 +2850,7 @@ a list of BCP-47 lang codes.
 Example: To boost suggestions in languages en or fr:
 (lang_code: ANY("en", "fr"))
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#condition CesTool#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#condition CesTool#condition}
 
 ---
 
@@ -2873,7 +2873,7 @@ suggestions that are relevant might still be shown.
 Setting to 0.0 means no boost applied. The boosting condition is
 ignored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#boost CesTool#boost}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#boost CesTool#boost}
 
 ---
 
@@ -2887,7 +2887,7 @@ public readonly boostControlSpec: CesToolDataStoreToolBoostSpecsSpecConditionBoo
 
 boost_control_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#boost_control_spec CesTool#boost_control_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#boost_control_spec CesTool#boost_control_spec}
 
 ---
 
@@ -2931,7 +2931,7 @@ Possible values:
 NUMERICAL
 FRESHNESS
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#attribute_type CesTool#attribute_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#attribute_type CesTool#attribute_type}
 
 ---
 
@@ -2945,7 +2945,7 @@ public readonly controlPoints: IResolvable | CesToolDataStoreToolBoostSpecsSpecC
 
 control_points block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#control_points CesTool#control_points}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#control_points CesTool#control_points}
 
 ---
 
@@ -2959,7 +2959,7 @@ public readonly fieldName: string;
 
 The name of the field whose value will be used to determine the boost amount.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#field_name CesTool#field_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#field_name CesTool#field_name}
 
 ---
 
@@ -2973,7 +2973,7 @@ public readonly interpolationType: string;
 
 The interpolation type to be applied to connect the control points listed below. Possible values: LINEAR.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#interpolation_type CesTool#interpolation_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#interpolation_type CesTool#interpolation_type}
 
 ---
 
@@ -3012,7 +3012,7 @@ The value must be formatted as an XSD 'dayTimeDuration' value (a
 restricted subset of an ISO 8601 duration value). The pattern for
 this is: 'nDnM]'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#attribute_value CesTool#attribute_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#attribute_value CesTool#attribute_value}
 
 ---
 
@@ -3026,7 +3026,7 @@ public readonly boostAmount: number;
 
 The value between -1 to 1 by which to boost the score if the attribute_value evaluates to the value specified above.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#boost_amount CesTool#boost_amount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#boost_amount CesTool#boost_amount}
 
 ---
 
@@ -3059,7 +3059,7 @@ public readonly dataStore: CesToolDataStoreToolDataStoreSourceDataStore;
 
 data_store block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#data_store CesTool#data_store}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#data_store CesTool#data_store}
 
 ---
 
@@ -3073,7 +3073,7 @@ public readonly filter: string;
 
 Optional. Filter specification for the DataStore. See: https://cloud.google.com/generative-ai-app-builder/docs/filter-search-metadata.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#filter CesTool#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#filter CesTool#filter}
 
 ---
 
@@ -3105,7 +3105,7 @@ public readonly name: string;
 
 Full resource name of the DataStore. Format: projects/{project}/locations/{location}/collections/{collection}/dataStores/{dataStore}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#name CesTool#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#name CesTool#name}
 
 ---
 
@@ -3150,7 +3150,7 @@ public readonly engine: string;
 
 Full resource name of the Engine. Format: 'projects/{project}/locations/{location}/collections/{collection}/engines/{engine}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#engine CesTool#engine}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#engine CesTool#engine}
 
 ---
 
@@ -3164,7 +3164,7 @@ public readonly dataStoreSources: IResolvable | CesToolDataStoreToolEngineSource
 
 data_store_sources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#data_store_sources CesTool#data_store_sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#data_store_sources CesTool#data_store_sources}
 
 ---
 
@@ -3178,7 +3178,7 @@ public readonly filter: string;
 
 A filter applied to the search across the Engine. Not relevant and not used if 'data_store_sources' is provided. See: https://cloud.google.com/generative-ai-app-builder/docs/filter-search-metadata.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#filter CesTool#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#filter CesTool#filter}
 
 ---
 
@@ -3211,7 +3211,7 @@ public readonly dataStore: CesToolDataStoreToolEngineSourceDataStoreSourcesDataS
 
 data_store block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#data_store CesTool#data_store}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#data_store CesTool#data_store}
 
 ---
 
@@ -3225,7 +3225,7 @@ public readonly filter: string;
 
 Filter specification for the DataStore. See: https://cloud.google.com/generative-ai-app-builder/docs/filter-search-metadata.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#filter CesTool#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#filter CesTool#filter}
 
 ---
 
@@ -3257,7 +3257,7 @@ public readonly name: string;
 
 Full resource name of the DataStore. Format: 'projects/{project}/locations/{location}/collections/{collection}/dataStores/{dataStore}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#name CesTool#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#name CesTool#name}
 
 ---
 
@@ -3289,6 +3289,7 @@ const cesToolDataStoreToolModalityConfigs: cesTool.CesToolDataStoreToolModalityC
 | <code><a href="#@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigs.property.modalityType">modalityType</a></code> | <code>string</code> | The modality type. Possible values: TEXT AUDIO. |
 | <code><a href="#@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigs.property.groundingConfig">groundingConfig</a></code> | <code><a href="#@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsGroundingConfig">CesToolDataStoreToolModalityConfigsGroundingConfig</a></code> | grounding_config block. |
 | <code><a href="#@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigs.property.rewriterConfig">rewriterConfig</a></code> | <code><a href="#@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsRewriterConfig">CesToolDataStoreToolModalityConfigsRewriterConfig</a></code> | rewriter_config block. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigs.property.snippetsConfig">snippetsConfig</a></code> | <code><a href="#@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfig">CesToolDataStoreToolModalityConfigsSnippetsConfig</a></code> | snippets_config block. |
 | <code><a href="#@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigs.property.summarizationConfig">summarizationConfig</a></code> | <code><a href="#@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSummarizationConfig">CesToolDataStoreToolModalityConfigsSummarizationConfig</a></code> | summarization_config block. |
 
 ---
@@ -3303,7 +3304,7 @@ public readonly modalityType: string;
 
 The modality type. Possible values: TEXT AUDIO.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#modality_type CesTool#modality_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#modality_type CesTool#modality_type}
 
 ---
 
@@ -3317,7 +3318,7 @@ public readonly groundingConfig: CesToolDataStoreToolModalityConfigsGroundingCon
 
 grounding_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#grounding_config CesTool#grounding_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#grounding_config CesTool#grounding_config}
 
 ---
 
@@ -3331,7 +3332,21 @@ public readonly rewriterConfig: CesToolDataStoreToolModalityConfigsRewriterConfi
 
 rewriter_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#rewriter_config CesTool#rewriter_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#rewriter_config CesTool#rewriter_config}
+
+---
+
+##### `snippetsConfig`<sup>Optional</sup> <a name="snippetsConfig" id="@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigs.property.snippetsConfig"></a>
+
+```typescript
+public readonly snippetsConfig: CesToolDataStoreToolModalityConfigsSnippetsConfig;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfig">CesToolDataStoreToolModalityConfigsSnippetsConfig</a>
+
+snippets_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#snippets_config CesTool#snippets_config}
 
 ---
 
@@ -3345,7 +3360,7 @@ public readonly summarizationConfig: CesToolDataStoreToolModalityConfigsSummariz
 
 summarization_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#summarization_config CesTool#summarization_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#summarization_config CesTool#summarization_config}
 
 ---
 
@@ -3378,7 +3393,7 @@ public readonly disabled: boolean | IResolvable;
 
 Whether grounding is disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#disabled CesTool#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#disabled CesTool#disabled}
 
 ---
 
@@ -3399,7 +3414,7 @@ relevant snippets only.
 For example, a level of 3 means that the groundedness score must be
 3 or higher for the response to be returned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#grounding_level CesTool#grounding_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#grounding_level CesTool#grounding_level}
 
 ---
 
@@ -3433,7 +3448,7 @@ public readonly modelSettings: CesToolDataStoreToolModalityConfigsRewriterConfig
 
 model_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#model_settings CesTool#model_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#model_settings CesTool#model_settings}
 
 ---
 
@@ -3447,7 +3462,7 @@ public readonly disabled: boolean | IResolvable;
 
 Whether the rewriter is disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#disabled CesTool#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#disabled CesTool#disabled}
 
 ---
 
@@ -3461,7 +3476,7 @@ public readonly prompt: string;
 
 The prompt definition. If not set, default prompt will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#prompt CesTool#prompt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#prompt CesTool#prompt}
 
 ---
 
@@ -3496,7 +3511,7 @@ The LLM model that the agent should use.
 
 If not set, the agent will inherit the model from its parent agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#model CesTool#model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#model CesTool#model}
 
 ---
 
@@ -3515,7 +3530,39 @@ controls the randomness of the model's responses. Lower temperatures
 produce responses that are more predictable. Higher temperatures produce
 responses that are more creative.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#temperature CesTool#temperature}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#temperature CesTool#temperature}
+
+---
+
+### CesToolDataStoreToolModalityConfigsSnippetsConfig <a name="CesToolDataStoreToolModalityConfigsSnippetsConfig" id="@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfig.Initializer"></a>
+
+```typescript
+import { cesTool } from '@cdktn/provider-google'
+
+const cesToolDataStoreToolModalityConfigsSnippetsConfig: cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfig.property.enableSnippets">enableSnippets</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether snippets are enabled. |
+
+---
+
+##### `enableSnippets`<sup>Optional</sup> <a name="enableSnippets" id="@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfig.property.enableSnippets"></a>
+
+```typescript
+public readonly enableSnippets: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktn.IResolvable
+
+Whether snippets are enabled.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#enable_snippets CesTool#enable_snippets}
 
 ---
 
@@ -3549,7 +3596,7 @@ public readonly disabled: boolean | IResolvable;
 
 Whether summarization is disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#disabled CesTool#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#disabled CesTool#disabled}
 
 ---
 
@@ -3563,7 +3610,7 @@ public readonly modelSettings: CesToolDataStoreToolModalityConfigsSummarizationC
 
 model_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#model_settings CesTool#model_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#model_settings CesTool#model_settings}
 
 ---
 
@@ -3577,7 +3624,7 @@ public readonly prompt: string;
 
 The prompt definition. If not set, default prompt will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#prompt CesTool#prompt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#prompt CesTool#prompt}
 
 ---
 
@@ -3612,7 +3659,7 @@ The LLM model that the agent should use.
 
 If not set, the agent will inherit the model from its parent agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#model CesTool#model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#model CesTool#model}
 
 ---
 
@@ -3631,7 +3678,7 @@ controls the randomness of the model's responses. Lower temperatures
 produce responses that are more predictable. Higher temperatures produce
 responses that are more creative.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#temperature CesTool#temperature}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#temperature CesTool#temperature}
 
 ---
 
@@ -3666,7 +3713,7 @@ public readonly name: string;
 
 Required. The tool name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#name CesTool#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#name CesTool#name}
 
 ---
 
@@ -3680,7 +3727,7 @@ public readonly corpusType: string;
 
 Optional. The type of the corpus. Default is FULLY_MANAGED. Possible values: CORPUS_TYPE_UNSPECIFIED USER_OWNED FULLY_MANAGED Possible values: ["CORPUS_TYPE_UNSPECIFIED", "USER_OWNED", "FULLY_MANAGED"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#corpus_type CesTool#corpus_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#corpus_type CesTool#corpus_type}
 
 ---
 
@@ -3694,7 +3741,7 @@ public readonly description: string;
 
 Optional. The tool description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#description CesTool#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#description CesTool#description}
 
 ---
 
@@ -3708,7 +3755,7 @@ public readonly fileCorpus: string;
 
 Optional. The corpus where files are stored. Format: projects/{project}/locations/{location}/ragCorpora/{rag_corpus}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#file_corpus CesTool#file_corpus}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#file_corpus CesTool#file_corpus}
 
 ---
 
@@ -3745,7 +3792,7 @@ public readonly name: string;
 
 The name of the tool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#name CesTool#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#name CesTool#name}
 
 ---
 
@@ -3762,7 +3809,7 @@ Content will be fetched directly from these URLs for context and grounding.
 More details: https://cloud.google.com/vertex-ai/generative-ai/docs/url-context.
 Example: "https://example.com/path.html". A maximum of 20 URLs are allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#context_urls CesTool#context_urls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#context_urls CesTool#context_urls}
 
 ---
 
@@ -3776,7 +3823,7 @@ public readonly description: string;
 
 Description of the tool's purpose.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#description CesTool#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#description CesTool#description}
 
 ---
 
@@ -3790,7 +3837,7 @@ public readonly excludeDomains: string[];
 
 List of domains to be excluded from the search results. Example: "example.com". A maximum of 2000 domains can be excluded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#exclude_domains CesTool#exclude_domains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#exclude_domains CesTool#exclude_domains}
 
 ---
 
@@ -3811,7 +3858,7 @@ not be exclusively reflected in the final search results.
 Example: "example.com", "another.site".
 A maximum of 20 domains can be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#preferred_domains CesTool#preferred_domains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#preferred_domains CesTool#preferred_domains}
 
 ---
 
@@ -3825,7 +3872,7 @@ public readonly promptConfig: CesToolGoogleSearchToolPromptConfig;
 
 prompt_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#prompt_config CesTool#prompt_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#prompt_config CesTool#prompt_config}
 
 ---
 
@@ -3861,7 +3908,7 @@ Optional.
 Defines the prompt used for the system instructions when interacting with the
 agent in chat conversations. If not set, default prompt will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#text_prompt CesTool#text_prompt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#text_prompt CesTool#text_prompt}
 
 ---
 
@@ -3878,7 +3925,7 @@ Optional.
 Defines the prompt used for the system instructions when interacting with the
 agent in voice conversations. If not set, default prompt will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#voice_prompt CesTool#voice_prompt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#voice_prompt CesTool#voice_prompt}
 
 ---
 
@@ -4118,6 +4165,7 @@ const cesToolPythonFunction: cesTool.CesToolPythonFunction = { ... }
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.cesTool.CesToolPythonFunction.property.name">name</a></code> | <code>string</code> | The name of the Python function to execute. |
 | <code><a href="#@cdktn/provider-google.cesTool.CesToolPythonFunction.property.pythonCode">pythonCode</a></code> | <code>string</code> | The Python code to execute for the tool. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolPythonFunction.property.serviceDirectoryConfig">serviceDirectoryConfig</a></code> | <code><a href="#@cdktn/provider-google.cesTool.CesToolPythonFunctionServiceDirectoryConfig">CesToolPythonFunctionServiceDirectoryConfig</a></code> | service_directory_config block. |
 
 ---
 
@@ -4135,7 +4183,7 @@ Must match a Python function
 name defined in the python code. Case sensitive. If the name is not
 provided, the first function defined in the python code will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#name CesTool#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#name CesTool#name}
 
 ---
 
@@ -4149,7 +4197,53 @@ public readonly pythonCode: string;
 
 The Python code to execute for the tool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#python_code CesTool#python_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#python_code CesTool#python_code}
+
+---
+
+##### `serviceDirectoryConfig`<sup>Optional</sup> <a name="serviceDirectoryConfig" id="@cdktn/provider-google.cesTool.CesToolPythonFunction.property.serviceDirectoryConfig"></a>
+
+```typescript
+public readonly serviceDirectoryConfig: CesToolPythonFunctionServiceDirectoryConfig;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesTool.CesToolPythonFunctionServiceDirectoryConfig">CesToolPythonFunctionServiceDirectoryConfig</a>
+
+service_directory_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#service_directory_config CesTool#service_directory_config}
+
+---
+
+### CesToolPythonFunctionServiceDirectoryConfig <a name="CesToolPythonFunctionServiceDirectoryConfig" id="@cdktn/provider-google.cesTool.CesToolPythonFunctionServiceDirectoryConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.cesTool.CesToolPythonFunctionServiceDirectoryConfig.Initializer"></a>
+
+```typescript
+import { cesTool } from '@cdktn/provider-google'
+
+const cesToolPythonFunctionServiceDirectoryConfig: cesTool.CesToolPythonFunctionServiceDirectoryConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolPythonFunctionServiceDirectoryConfig.property.service">service</a></code> | <code>string</code> | The name of Service Directory service. Format: projects/{project}/locations/{location}/namespaces/{namespace}/services/{service}. |
+
+---
+
+##### `service`<sup>Required</sup> <a name="service" id="@cdktn/provider-google.cesTool.CesToolPythonFunctionServiceDirectoryConfig.property.service"></a>
+
+```typescript
+public readonly service: string;
+```
+
+- *Type:* string
+
+The name of Service Directory service. Format: projects/{project}/locations/{location}/namespaces/{namespace}/services/{service}.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#service CesTool#service}
 
 ---
 
@@ -4222,9 +4316,9 @@ const cesToolTimeouts: cesTool.CesToolTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cesTool.CesToolTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#create CesTool#create}. |
-| <code><a href="#@cdktn/provider-google.cesTool.CesToolTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#delete CesTool#delete}. |
-| <code><a href="#@cdktn/provider-google.cesTool.CesToolTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#update CesTool#update}. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#create CesTool#create}. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#delete CesTool#delete}. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#update CesTool#update}. |
 
 ---
 
@@ -4236,7 +4330,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#create CesTool#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#create CesTool#create}.
 
 ---
 
@@ -4248,7 +4342,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#delete CesTool#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#delete CesTool#delete}.
 
 ---
 
@@ -4260,7 +4354,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#update CesTool#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#update CesTool#update}.
 
 ---
 
@@ -4293,7 +4387,7 @@ public readonly codeBlock: CesToolToolFakeConfigCodeBlock;
 
 code_block block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#code_block CesTool#code_block}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#code_block CesTool#code_block}
 
 ---
 
@@ -4307,7 +4401,7 @@ public readonly enableFakeMode: boolean | IResolvable;
 
 Whether the tool is using fake mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#enable_fake_mode CesTool#enable_fake_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#enable_fake_mode CesTool#enable_fake_mode}
 
 ---
 
@@ -4339,7 +4433,7 @@ public readonly pythonCode: string;
 
 Python code which will be invoked in tool fake mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#python_code CesTool#python_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#python_code CesTool#python_code}
 
 ---
 
@@ -4377,7 +4471,7 @@ public readonly name: string;
 
 Required. The display name of the widget tool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#name CesTool#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#name CesTool#name}
 
 ---
 
@@ -4391,7 +4485,7 @@ public readonly dataMapping: CesToolWidgetToolDataMapping;
 
 data_mapping block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#data_mapping CesTool#data_mapping}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#data_mapping CesTool#data_mapping}
 
 ---
 
@@ -4405,7 +4499,7 @@ public readonly description: string;
 
 Optional. The description of the widget tool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#description CesTool#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#description CesTool#description}
 
 ---
 
@@ -4419,7 +4513,7 @@ public readonly parameters: CesToolWidgetToolParameters;
 
 parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#parameters CesTool#parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#parameters CesTool#parameters}
 
 ---
 
@@ -4433,7 +4527,7 @@ public readonly textResponseConfig: CesToolWidgetToolTextResponseConfig;
 
 text_response_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#text_response_config CesTool#text_response_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#text_response_config CesTool#text_response_config}
 
 ---
 
@@ -4447,7 +4541,7 @@ public readonly uiConfig: string;
 
 Optional. Configuration for rendering the widget. Represents a JSON object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#ui_config CesTool#ui_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#ui_config CesTool#ui_config}
 
 ---
 
@@ -4477,7 +4571,7 @@ APPOINTMENT_DETAILS
 APPOINTMENT_SCHEDULER
 CONTACT_FORM Possible values: ["WIDGET_TYPE_UNSPECIFIED", "CUSTOM", "PRODUCT_CAROUSEL", "PRODUCT_DETAILS", "QUICK_ACTIONS", "PRODUCT_COMPARISON", "ADVANCED_PRODUCT_DETAILS", "SHORT_FORM", "OVERALL_SATISFACTION", "ORDER_SUMMARY", "APPOINTMENT_DETAILS", "APPOINTMENT_SCHEDULER", "CONTACT_FORM"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#widget_type CesTool#widget_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#widget_type CesTool#widget_type}
 
 ---
 
@@ -4515,7 +4609,7 @@ Optional.
 A map of widget input parameter fields to the corresponding output fields of the source tool.
 An object containing a list of "key": value pairs. Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#field_mappings CesTool#field_mappings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#field_mappings CesTool#field_mappings}
 
 ---
 
@@ -4529,7 +4623,7 @@ public readonly mode: string;
 
 Optional. The mode of the data mapping. Possible values: MODE_UNSPECIFIED FIELD_MAPPING PYTHON_SCRIPT Possible values: ["MODE_UNSPECIFIED", "FIELD_MAPPING", "PYTHON_SCRIPT"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#mode CesTool#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#mode CesTool#mode}
 
 ---
 
@@ -4543,7 +4637,7 @@ public readonly pythonFunction: CesToolWidgetToolDataMappingPythonFunction;
 
 python_function block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#python_function CesTool#python_function}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#python_function CesTool#python_function}
 
 ---
 
@@ -4560,7 +4654,7 @@ Optional.
 The resource name of the tool that provides the data for the widget (e.g., a search tool or a custom function).
 Format: projects/{project}/locations/{location}/agents/{agent}/tools/{tool}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#source_tool_name CesTool#source_tool_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#source_tool_name CesTool#source_tool_name}
 
 ---
 
@@ -4597,7 +4691,7 @@ The name of the Python function to execute. Must match a Python function
 name defined in the python code. Case sensitive. If the name is not
 provided, the first function defined in the python code will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#name CesTool#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#name CesTool#name}
 
 ---
 
@@ -4611,7 +4705,7 @@ public readonly pythonCode: string;
 
 Optional. The Python code to execute for the tool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#python_code CesTool#python_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#python_code CesTool#python_code}
 
 ---
 
@@ -4661,7 +4755,7 @@ public readonly type: string;
 
 The type of the data. Possible values: STRING INTEGER NUMBER BOOLEAN OBJECT ARRAY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#type CesTool#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#type CesTool#type}
 
 ---
 
@@ -4678,7 +4772,7 @@ Defines the schema for additional properties allowed in an object.
 The value must be a valid JSON string representing the Schema object.
 (Note: OpenAPI also allows a boolean, this definition expects a Schema JSON).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#additional_properties CesTool#additional_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#additional_properties CesTool#additional_properties}
 
 ---
 
@@ -4692,7 +4786,7 @@ public readonly anyOf: string;
 
 The instance value should be valid against at least one of the schemas in this list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#any_of CesTool#any_of}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#any_of CesTool#any_of}
 
 ---
 
@@ -4711,7 +4805,7 @@ which can be either null, a number, a string, a boolean, a struct,
 or a list of values. The provided default value must be compatible
 with the defined 'type' and other schema constraints.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#default CesTool#default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#default CesTool#default}
 
 ---
 
@@ -4725,7 +4819,7 @@ public readonly defs: string;
 
 A map of definitions for use by ref. Only allowed at the root of the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#defs CesTool#defs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#defs CesTool#defs}
 
 ---
 
@@ -4739,7 +4833,7 @@ public readonly description: string;
 
 The description of the data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#description CesTool#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#description CesTool#description}
 
 ---
 
@@ -4759,7 +4853,7 @@ Examples:
 2. We can define apartment number as :
 {type:INTEGER, format:enum, enum:["101", "201", "301"]}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#enum CesTool#enum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#enum CesTool#enum}
 
 ---
 
@@ -4773,7 +4867,7 @@ public readonly items: string;
 
 Schema of the elements of Type.ARRAY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#items CesTool#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#items CesTool#items}
 
 ---
 
@@ -4787,7 +4881,7 @@ public readonly maximum: number;
 
 Maximum value for Type.INTEGER and Type.NUMBER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#maximum CesTool#maximum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#maximum CesTool#maximum}
 
 ---
 
@@ -4801,7 +4895,7 @@ public readonly maxItems: number;
 
 Maximum number of the elements for Type.ARRAY. (int64 format).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#max_items CesTool#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#max_items CesTool#max_items}
 
 ---
 
@@ -4815,7 +4909,7 @@ public readonly minimum: number;
 
 Minimum value for Type.INTEGER and Type.NUMBER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#minimum CesTool#minimum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#minimum CesTool#minimum}
 
 ---
 
@@ -4829,7 +4923,7 @@ public readonly minItems: number;
 
 Minimum number of the elements for Type.ARRAY. (int64 format).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#min_items CesTool#min_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#min_items CesTool#min_items}
 
 ---
 
@@ -4843,7 +4937,7 @@ public readonly nullable: boolean | IResolvable;
 
 Indicates if the value may be null.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#nullable CesTool#nullable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#nullable CesTool#nullable}
 
 ---
 
@@ -4857,7 +4951,7 @@ public readonly prefixItems: string;
 
 Schemas of initial elements of Type.ARRAY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#prefix_items CesTool#prefix_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#prefix_items CesTool#prefix_items}
 
 ---
 
@@ -4871,7 +4965,7 @@ public readonly properties: string;
 
 Properties of Type.OBJECT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#properties CesTool#properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#properties CesTool#properties}
 
 ---
 
@@ -4904,7 +4998,7 @@ named "Pet".
 See details in
 https://json-schema.org/understanding-json-schema/structuring.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#ref CesTool#ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#ref CesTool#ref}
 
 ---
 
@@ -4918,7 +5012,7 @@ public readonly required: string[];
 
 Required properties of Type.OBJECT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#required CesTool#required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#required CesTool#required}
 
 ---
 
@@ -4932,7 +5026,7 @@ public readonly title: string;
 
 The title of the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#title CesTool#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#title CesTool#title}
 
 ---
 
@@ -4946,7 +5040,7 @@ public readonly uniqueItems: boolean | IResolvable;
 
 Indicate the items in the array must be unique. Only applies to TYPE.ARRAY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#unique_items CesTool#unique_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#unique_items CesTool#unique_items}
 
 ---
 
@@ -4980,7 +5074,7 @@ public readonly staticText: string;
 
 Optional. The static text response to return when type is STATIC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#static_text CesTool#static_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#static_text CesTool#static_text}
 
 ---
 
@@ -4997,7 +5091,7 @@ Optional.
 Instruction for the LLM on how to generate the text response. Used as
 the description for the text response parameter if type is LLM_GENERATED.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#text_response_instruction CesTool#text_response_instruction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#text_response_instruction CesTool#text_response_instruction}
 
 ---
 
@@ -5011,7 +5105,7 @@ public readonly type: string;
 
 Optional. The strategy for providing the text response. Possible values: TYPE_UNSPECIFIED NONE LLM_GENERATED STATIC Possible values: ["TYPE_UNSPECIFIED", "NONE", "LLM_GENERATED", "STATIC"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/ces_tool#type CesTool#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_tool#type CesTool#type}
 
 ---
 
@@ -14261,9 +14355,11 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsOutputReference.putGroundingConfig">putGroundingConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsOutputReference.putRewriterConfig">putRewriterConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsOutputReference.putSnippetsConfig">putSnippetsConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsOutputReference.putSummarizationConfig">putSummarizationConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsOutputReference.resetGroundingConfig">resetGroundingConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsOutputReference.resetRewriterConfig">resetRewriterConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsOutputReference.resetSnippetsConfig">resetSnippetsConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsOutputReference.resetSummarizationConfig">resetSummarizationConfig</a></code> | *No description.* |
 
 ---
@@ -14442,6 +14538,18 @@ public putRewriterConfig(value: CesToolDataStoreToolModalityConfigsRewriterConfi
 
 ---
 
+##### `putSnippetsConfig` <a name="putSnippetsConfig" id="@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsOutputReference.putSnippetsConfig"></a>
+
+```typescript
+public putSnippetsConfig(value: CesToolDataStoreToolModalityConfigsSnippetsConfig): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsOutputReference.putSnippetsConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfig">CesToolDataStoreToolModalityConfigsSnippetsConfig</a>
+
+---
+
 ##### `putSummarizationConfig` <a name="putSummarizationConfig" id="@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsOutputReference.putSummarizationConfig"></a>
 
 ```typescript
@@ -14466,6 +14574,12 @@ public resetGroundingConfig(): void
 public resetRewriterConfig(): void
 ```
 
+##### `resetSnippetsConfig` <a name="resetSnippetsConfig" id="@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsOutputReference.resetSnippetsConfig"></a>
+
+```typescript
+public resetSnippetsConfig(): void
+```
+
 ##### `resetSummarizationConfig` <a name="resetSummarizationConfig" id="@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsOutputReference.resetSummarizationConfig"></a>
 
 ```typescript
@@ -14481,10 +14595,12 @@ public resetSummarizationConfig(): void
 | <code><a href="#@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsOutputReference.property.groundingConfig">groundingConfig</a></code> | <code><a href="#@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsGroundingConfigOutputReference">CesToolDataStoreToolModalityConfigsGroundingConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsOutputReference.property.rewriterConfig">rewriterConfig</a></code> | <code><a href="#@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsRewriterConfigOutputReference">CesToolDataStoreToolModalityConfigsRewriterConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsOutputReference.property.snippetsConfig">snippetsConfig</a></code> | <code><a href="#@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfigOutputReference">CesToolDataStoreToolModalityConfigsSnippetsConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsOutputReference.property.summarizationConfig">summarizationConfig</a></code> | <code><a href="#@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSummarizationConfigOutputReference">CesToolDataStoreToolModalityConfigsSummarizationConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsOutputReference.property.groundingConfigInput">groundingConfigInput</a></code> | <code><a href="#@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsGroundingConfig">CesToolDataStoreToolModalityConfigsGroundingConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsOutputReference.property.modalityTypeInput">modalityTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsOutputReference.property.rewriterConfigInput">rewriterConfigInput</a></code> | <code><a href="#@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsRewriterConfig">CesToolDataStoreToolModalityConfigsRewriterConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsOutputReference.property.snippetsConfigInput">snippetsConfigInput</a></code> | <code><a href="#@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfig">CesToolDataStoreToolModalityConfigsSnippetsConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsOutputReference.property.summarizationConfigInput">summarizationConfigInput</a></code> | <code><a href="#@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSummarizationConfig">CesToolDataStoreToolModalityConfigsSummarizationConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsOutputReference.property.modalityType">modalityType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigs">CesToolDataStoreToolModalityConfigs</a></code> | *No description.* |
@@ -14535,6 +14651,16 @@ public readonly rewriterConfig: CesToolDataStoreToolModalityConfigsRewriterConfi
 
 ---
 
+##### `snippetsConfig`<sup>Required</sup> <a name="snippetsConfig" id="@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsOutputReference.property.snippetsConfig"></a>
+
+```typescript
+public readonly snippetsConfig: CesToolDataStoreToolModalityConfigsSnippetsConfigOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfigOutputReference">CesToolDataStoreToolModalityConfigsSnippetsConfigOutputReference</a>
+
+---
+
 ##### `summarizationConfig`<sup>Required</sup> <a name="summarizationConfig" id="@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsOutputReference.property.summarizationConfig"></a>
 
 ```typescript
@@ -14572,6 +14698,16 @@ public readonly rewriterConfigInput: CesToolDataStoreToolModalityConfigsRewriter
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsRewriterConfig">CesToolDataStoreToolModalityConfigsRewriterConfig</a>
+
+---
+
+##### `snippetsConfigInput`<sup>Optional</sup> <a name="snippetsConfigInput" id="@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsOutputReference.property.snippetsConfigInput"></a>
+
+```typescript
+public readonly snippetsConfigInput: CesToolDataStoreToolModalityConfigsSnippetsConfig;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfig">CesToolDataStoreToolModalityConfigsSnippetsConfig</a>
 
 ---
 
@@ -15251,6 +15387,284 @@ public readonly internalValue: CesToolDataStoreToolModalityConfigsRewriterConfig
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsRewriterConfig">CesToolDataStoreToolModalityConfigsRewriterConfig</a>
+
+---
+
+
+### CesToolDataStoreToolModalityConfigsSnippetsConfigOutputReference <a name="CesToolDataStoreToolModalityConfigsSnippetsConfigOutputReference" id="@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfigOutputReference.Initializer"></a>
+
+```typescript
+import { cesTool } from '@cdktn/provider-google'
+
+new cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfigOutputReference.resetEnableSnippets">resetEnableSnippets</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfigOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfigOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfigOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfigOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfigOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfigOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfigOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfigOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfigOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfigOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfigOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfigOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfigOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetEnableSnippets` <a name="resetEnableSnippets" id="@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfigOutputReference.resetEnableSnippets"></a>
+
+```typescript
+public resetEnableSnippets(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfigOutputReference.property.enableSnippetsInput">enableSnippetsInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfigOutputReference.property.enableSnippets">enableSnippets</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfig">CesToolDataStoreToolModalityConfigsSnippetsConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfigOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfigOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `enableSnippetsInput`<sup>Optional</sup> <a name="enableSnippetsInput" id="@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfigOutputReference.property.enableSnippetsInput"></a>
+
+```typescript
+public readonly enableSnippetsInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktn.IResolvable
+
+---
+
+##### `enableSnippets`<sup>Required</sup> <a name="enableSnippets" id="@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfigOutputReference.property.enableSnippets"></a>
+
+```typescript
+public readonly enableSnippets: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktn.IResolvable
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfigOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: CesToolDataStoreToolModalityConfigsSnippetsConfig;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesTool.CesToolDataStoreToolModalityConfigsSnippetsConfig">CesToolDataStoreToolModalityConfigsSnippetsConfig</a>
 
 ---
 
@@ -26528,8 +26942,10 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-google.cesTool.CesToolPythonFunctionOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesTool.CesToolPythonFunctionOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-google.cesTool.CesToolPythonFunctionOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolPythonFunctionOutputReference.putServiceDirectoryConfig">putServiceDirectoryConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesTool.CesToolPythonFunctionOutputReference.resetName">resetName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesTool.CesToolPythonFunctionOutputReference.resetPythonCode">resetPythonCode</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolPythonFunctionOutputReference.resetServiceDirectoryConfig">resetServiceDirectoryConfig</a></code> | *No description.* |
 
 ---
 
@@ -26683,6 +27099,18 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `putServiceDirectoryConfig` <a name="putServiceDirectoryConfig" id="@cdktn/provider-google.cesTool.CesToolPythonFunctionOutputReference.putServiceDirectoryConfig"></a>
+
+```typescript
+public putServiceDirectoryConfig(value: CesToolPythonFunctionServiceDirectoryConfig): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.cesTool.CesToolPythonFunctionOutputReference.putServiceDirectoryConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.cesTool.CesToolPythonFunctionServiceDirectoryConfig">CesToolPythonFunctionServiceDirectoryConfig</a>
+
+---
+
 ##### `resetName` <a name="resetName" id="@cdktn/provider-google.cesTool.CesToolPythonFunctionOutputReference.resetName"></a>
 
 ```typescript
@@ -26695,6 +27123,12 @@ public resetName(): void
 public resetPythonCode(): void
 ```
 
+##### `resetServiceDirectoryConfig` <a name="resetServiceDirectoryConfig" id="@cdktn/provider-google.cesTool.CesToolPythonFunctionOutputReference.resetServiceDirectoryConfig"></a>
+
+```typescript
+public resetServiceDirectoryConfig(): void
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -26703,8 +27137,10 @@ public resetPythonCode(): void
 | <code><a href="#@cdktn/provider-google.cesTool.CesToolPythonFunctionOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.cesTool.CesToolPythonFunctionOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesTool.CesToolPythonFunctionOutputReference.property.description">description</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolPythonFunctionOutputReference.property.serviceDirectoryConfig">serviceDirectoryConfig</a></code> | <code><a href="#@cdktn/provider-google.cesTool.CesToolPythonFunctionServiceDirectoryConfigOutputReference">CesToolPythonFunctionServiceDirectoryConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesTool.CesToolPythonFunctionOutputReference.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesTool.CesToolPythonFunctionOutputReference.property.pythonCodeInput">pythonCodeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolPythonFunctionOutputReference.property.serviceDirectoryConfigInput">serviceDirectoryConfigInput</a></code> | <code><a href="#@cdktn/provider-google.cesTool.CesToolPythonFunctionServiceDirectoryConfig">CesToolPythonFunctionServiceDirectoryConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesTool.CesToolPythonFunctionOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesTool.CesToolPythonFunctionOutputReference.property.pythonCode">pythonCode</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesTool.CesToolPythonFunctionOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.cesTool.CesToolPythonFunction">CesToolPythonFunction</a></code> | *No description.* |
@@ -26745,6 +27181,16 @@ public readonly description: string;
 
 ---
 
+##### `serviceDirectoryConfig`<sup>Required</sup> <a name="serviceDirectoryConfig" id="@cdktn/provider-google.cesTool.CesToolPythonFunctionOutputReference.property.serviceDirectoryConfig"></a>
+
+```typescript
+public readonly serviceDirectoryConfig: CesToolPythonFunctionServiceDirectoryConfigOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesTool.CesToolPythonFunctionServiceDirectoryConfigOutputReference">CesToolPythonFunctionServiceDirectoryConfigOutputReference</a>
+
+---
+
 ##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktn/provider-google.cesTool.CesToolPythonFunctionOutputReference.property.nameInput"></a>
 
 ```typescript
@@ -26762,6 +27208,16 @@ public readonly pythonCodeInput: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `serviceDirectoryConfigInput`<sup>Optional</sup> <a name="serviceDirectoryConfigInput" id="@cdktn/provider-google.cesTool.CesToolPythonFunctionOutputReference.property.serviceDirectoryConfigInput"></a>
+
+```typescript
+public readonly serviceDirectoryConfigInput: CesToolPythonFunctionServiceDirectoryConfig;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesTool.CesToolPythonFunctionServiceDirectoryConfig">CesToolPythonFunctionServiceDirectoryConfig</a>
 
 ---
 
@@ -26792,6 +27248,277 @@ public readonly internalValue: CesToolPythonFunction;
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.cesTool.CesToolPythonFunction">CesToolPythonFunction</a>
+
+---
+
+
+### CesToolPythonFunctionServiceDirectoryConfigOutputReference <a name="CesToolPythonFunctionServiceDirectoryConfigOutputReference" id="@cdktn/provider-google.cesTool.CesToolPythonFunctionServiceDirectoryConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cesTool.CesToolPythonFunctionServiceDirectoryConfigOutputReference.Initializer"></a>
+
+```typescript
+import { cesTool } from '@cdktn/provider-google'
+
+new cesTool.CesToolPythonFunctionServiceDirectoryConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolPythonFunctionServiceDirectoryConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolPythonFunctionServiceDirectoryConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cesTool.CesToolPythonFunctionServiceDirectoryConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolPythonFunctionServiceDirectoryConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolPythonFunctionServiceDirectoryConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolPythonFunctionServiceDirectoryConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolPythonFunctionServiceDirectoryConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolPythonFunctionServiceDirectoryConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolPythonFunctionServiceDirectoryConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolPythonFunctionServiceDirectoryConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolPythonFunctionServiceDirectoryConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolPythonFunctionServiceDirectoryConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolPythonFunctionServiceDirectoryConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolPythonFunctionServiceDirectoryConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolPythonFunctionServiceDirectoryConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolPythonFunctionServiceDirectoryConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolPythonFunctionServiceDirectoryConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.cesTool.CesToolPythonFunctionServiceDirectoryConfigOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.cesTool.CesToolPythonFunctionServiceDirectoryConfigOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolPythonFunctionServiceDirectoryConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.cesTool.CesToolPythonFunctionServiceDirectoryConfigOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolPythonFunctionServiceDirectoryConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.cesTool.CesToolPythonFunctionServiceDirectoryConfigOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolPythonFunctionServiceDirectoryConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.cesTool.CesToolPythonFunctionServiceDirectoryConfigOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolPythonFunctionServiceDirectoryConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.cesTool.CesToolPythonFunctionServiceDirectoryConfigOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolPythonFunctionServiceDirectoryConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.cesTool.CesToolPythonFunctionServiceDirectoryConfigOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolPythonFunctionServiceDirectoryConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.cesTool.CesToolPythonFunctionServiceDirectoryConfigOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolPythonFunctionServiceDirectoryConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.cesTool.CesToolPythonFunctionServiceDirectoryConfigOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolPythonFunctionServiceDirectoryConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.cesTool.CesToolPythonFunctionServiceDirectoryConfigOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolPythonFunctionServiceDirectoryConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.cesTool.CesToolPythonFunctionServiceDirectoryConfigOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.cesTool.CesToolPythonFunctionServiceDirectoryConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cesTool.CesToolPythonFunctionServiceDirectoryConfigOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cesTool.CesToolPythonFunctionServiceDirectoryConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.cesTool.CesToolPythonFunctionServiceDirectoryConfigOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolPythonFunctionServiceDirectoryConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolPythonFunctionServiceDirectoryConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolPythonFunctionServiceDirectoryConfigOutputReference.property.serviceInput">serviceInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolPythonFunctionServiceDirectoryConfigOutputReference.property.service">service</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolPythonFunctionServiceDirectoryConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.cesTool.CesToolPythonFunctionServiceDirectoryConfig">CesToolPythonFunctionServiceDirectoryConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.cesTool.CesToolPythonFunctionServiceDirectoryConfigOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cesTool.CesToolPythonFunctionServiceDirectoryConfigOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `serviceInput`<sup>Optional</sup> <a name="serviceInput" id="@cdktn/provider-google.cesTool.CesToolPythonFunctionServiceDirectoryConfigOutputReference.property.serviceInput"></a>
+
+```typescript
+public readonly serviceInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `service`<sup>Required</sup> <a name="service" id="@cdktn/provider-google.cesTool.CesToolPythonFunctionServiceDirectoryConfigOutputReference.property.service"></a>
+
+```typescript
+public readonly service: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.cesTool.CesToolPythonFunctionServiceDirectoryConfigOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: CesToolPythonFunctionServiceDirectoryConfig;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesTool.CesToolPythonFunctionServiceDirectoryConfig">CesToolPythonFunctionServiceDirectoryConfig</a>
 
 ---
 

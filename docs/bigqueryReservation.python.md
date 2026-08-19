@@ -4,7 +4,7 @@
 
 ### BigqueryReservation <a name="BigqueryReservation" id="@cdktn/provider-google.bigqueryReservation.BigqueryReservation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/bigquery_reservation google_bigquery_reservation}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_reservation google_bigquery_reservation}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.bigqueryReservation.BigqueryReservation.Initializer"></a>
 
@@ -29,6 +29,7 @@ bigqueryReservation.BigqueryReservation(
   edition: str = None,
   id: str = None,
   ignore_idle_slots: bool | IResolvable = None,
+  labels: typing.Mapping[str] = None,
   location: str = None,
   project: str = None,
   reservation_group: str = None,
@@ -54,10 +55,11 @@ bigqueryReservation.BigqueryReservation(
 | <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservation.Initializer.parameter.concurrency">concurrency</a></code> | <code>typing.Union[int, float]</code> | Maximum number of queries that are allowed to run concurrently in this reservation. |
 | <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservation.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservation.Initializer.parameter.edition">edition</a></code> | <code>str</code> | The edition type. Valid values are STANDARD, ENTERPRISE, ENTERPRISE_PLUS. |
-| <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservation.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/bigquery_reservation#id BigqueryReservation#id}. |
+| <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservation.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_reservation#id BigqueryReservation#id}. |
 | <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservation.Initializer.parameter.ignoreIdleSlots">ignore_idle_slots</a></code> | <code>bool \| cdktn.IResolvable</code> | If false, any query using this reservation will use idle slots from other reservations within the same admin project. |
+| <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservation.Initializer.parameter.labels">labels</a></code> | <code>typing.Mapping[str]</code> | The labels associated with this reservation. You can use these to organize and group your reservations. |
 | <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservation.Initializer.parameter.location">location</a></code> | <code>str</code> | The geographic location where the transfer config should reside. Examples: US, EU, asia-northeast1. The default value is US. |
-| <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservation.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/bigquery_reservation#project BigqueryReservation#project}. |
+| <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservation.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_reservation#project BigqueryReservation#project}. |
 | <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservation.Initializer.parameter.reservationGroup">reservation_group</a></code> | <code>str</code> | The reservation group that this reservation belongs to. |
 | <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservation.Initializer.parameter.secondaryLocation">secondary_location</a></code> | <code>str</code> | The current location of the reservation's secondary replica. |
 | <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservation.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservationTimeouts">BigqueryReservationTimeouts</a></code> | timeouts block. |
@@ -130,7 +132,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the reservation. This field must only contain alphanumeric characters or dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/bigquery_reservation#name BigqueryReservation#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_reservation#name BigqueryReservation#name}
 
 ---
 
@@ -143,7 +145,7 @@ Minimum slots available to this reservation.
 A slot is a unit of computational power in BigQuery, and serves as the
 unit of parallelism. Queries using this reservation might use more slots during runtime if ignoreIdleSlots is set to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/bigquery_reservation#slot_capacity BigqueryReservation#slot_capacity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_reservation#slot_capacity BigqueryReservation#slot_capacity}
 
 ---
 
@@ -153,7 +155,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 autoscale block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/bigquery_reservation#autoscale BigqueryReservation#autoscale}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_reservation#autoscale BigqueryReservation#autoscale}
 
 ---
 
@@ -165,7 +167,7 @@ Maximum number of queries that are allowed to run concurrently in this reservati
 
 This is a soft limit due to asynchronous nature of the system and various optimizations for small queries. Default value is 0 which means that concurrency will be automatically set based on the reservation size.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/bigquery_reservation#concurrency BigqueryReservation#concurrency}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_reservation#concurrency BigqueryReservation#concurrency}
 
 ---
 
@@ -182,7 +184,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/bigquery_reservation#deletion_policy BigqueryReservation#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_reservation#deletion_policy BigqueryReservation#deletion_policy}
 
 ---
 
@@ -192,7 +194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The edition type. Valid values are STANDARD, ENTERPRISE, ENTERPRISE_PLUS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/bigquery_reservation#edition BigqueryReservation#edition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_reservation#edition BigqueryReservation#edition}
 
 ---
 
@@ -200,7 +202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/bigquery_reservation#id BigqueryReservation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_reservation#id BigqueryReservation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -216,7 +218,20 @@ If false, any query using this reservation will use idle slots from other reserv
 If true, a query using this reservation will execute with the slot
 capacity specified above at most.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/bigquery_reservation#ignore_idle_slots BigqueryReservation#ignore_idle_slots}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_reservation#ignore_idle_slots BigqueryReservation#ignore_idle_slots}
+
+---
+
+##### `labels`<sup>Optional</sup> <a name="labels" id="@cdktn/provider-google.bigqueryReservation.BigqueryReservation.Initializer.parameter.labels"></a>
+
+- *Type:* typing.Mapping[str]
+
+The labels associated with this reservation. You can use these to organize and group your reservations.
+
+**Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+Please refer to the field 'effective_labels' for all of the labels present on the resource.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_reservation#labels BigqueryReservation#labels}
 
 ---
 
@@ -226,7 +241,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The geographic location where the transfer config should reside. Examples: US, EU, asia-northeast1. The default value is US.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/bigquery_reservation#location BigqueryReservation#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_reservation#location BigqueryReservation#location}
 
 ---
 
@@ -234,7 +249,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/bigquery_reservation#project BigqueryReservation#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_reservation#project BigqueryReservation#project}.
 
 ---
 
@@ -244,7 +259,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The reservation group that this reservation belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/bigquery_reservation#reservation_group BigqueryReservation#reservation_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_reservation#reservation_group BigqueryReservation#reservation_group}
 
 ---
 
@@ -259,7 +274,7 @@ reservations using the managed disaster recovery feature. Users can set this in 
 reservation calls to create a failover reservation or in update reservation calls to convert
 a non-failover reservation to a failover reservation(or vice versa).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/bigquery_reservation#secondary_location BigqueryReservation#secondary_location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_reservation#secondary_location BigqueryReservation#secondary_location}
 
 ---
 
@@ -269,7 +284,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/bigquery_reservation#timeouts BigqueryReservation#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_reservation#timeouts BigqueryReservation#timeouts}
 
 ---
 
@@ -309,6 +324,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservation.resetEdition">reset_edition</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservation.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservation.resetIgnoreIdleSlots">reset_ignore_idle_slots</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservation.resetLabels">reset_labels</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservation.resetLocation">reset_location</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservation.resetProject">reset_project</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservation.resetReservationGroup">reset_reservation_group</a></code> | *No description.* |
@@ -679,7 +695,7 @@ def put_autoscale(
 
 Number of slots to be scaled when needed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/bigquery_reservation#max_slots BigqueryReservation#max_slots}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_reservation#max_slots BigqueryReservation#max_slots}
 
 ---
 
@@ -697,7 +713,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/bigquery_reservation#create BigqueryReservation#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_reservation#create BigqueryReservation#create}.
 
 ---
 
@@ -705,7 +721,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/bigquery_reservation#delete BigqueryReservation#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_reservation#delete BigqueryReservation#delete}.
 
 ---
 
@@ -713,7 +729,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/bigquery_reservation#update BigqueryReservation#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_reservation#update BigqueryReservation#update}.
 
 ---
 
@@ -751,6 +767,12 @@ def reset_id() -> None
 
 ```python
 def reset_ignore_idle_slots() -> None
+```
+
+##### `reset_labels` <a name="reset_labels" id="@cdktn/provider-google.bigqueryReservation.BigqueryReservation.resetLabels"></a>
+
+```python
+def reset_labels() -> None
 ```
 
 ##### `reset_location` <a name="reset_location" id="@cdktn/provider-google.bigqueryReservation.BigqueryReservation.resetLocation"></a>
@@ -897,7 +919,7 @@ The construct id used in the generated config for the BigqueryReservation to imp
 
 The id of the existing BigqueryReservation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/bigquery_reservation#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_reservation#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -928,9 +950,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservation.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservation.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservation.property.autoscale">autoscale</a></code> | <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservationAutoscaleOutputReference">BigqueryReservationAutoscaleOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservation.property.effectiveLabels">effective_labels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservation.property.originalPrimaryLocation">original_primary_location</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservation.property.primaryLocation">primary_location</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservation.property.replicationStatus">replication_status</a></code> | <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservationReplicationStatusList">BigqueryReservationReplicationStatusList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservation.property.terraformLabels">terraform_labels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservation.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservationTimeoutsOutputReference">BigqueryReservationTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservation.property.autoscaleInput">autoscale_input</a></code> | <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservationAutoscale">BigqueryReservationAutoscale</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservation.property.concurrencyInput">concurrency_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -938,6 +962,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservation.property.editionInput">edition_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservation.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservation.property.ignoreIdleSlotsInput">ignore_idle_slots_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservation.property.labelsInput">labels_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservation.property.locationInput">location_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservation.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservation.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
@@ -950,6 +975,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservation.property.edition">edition</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservation.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservation.property.ignoreIdleSlots">ignore_idle_slots</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservation.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservation.property.location">location</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservation.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservation.property.project">project</a></code> | <code>str</code> | *No description.* |
@@ -1111,6 +1137,16 @@ autoscale: BigqueryReservationAutoscaleOutputReference
 
 ---
 
+##### `effective_labels`<sup>Required</sup> <a name="effective_labels" id="@cdktn/provider-google.bigqueryReservation.BigqueryReservation.property.effectiveLabels"></a>
+
+```python
+effective_labels: StringMap
+```
+
+- *Type:* cdktn.StringMap
+
+---
+
 ##### `original_primary_location`<sup>Required</sup> <a name="original_primary_location" id="@cdktn/provider-google.bigqueryReservation.BigqueryReservation.property.originalPrimaryLocation"></a>
 
 ```python
@@ -1138,6 +1174,16 @@ replication_status: BigqueryReservationReplicationStatusList
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservationReplicationStatusList">BigqueryReservationReplicationStatusList</a>
+
+---
+
+##### `terraform_labels`<sup>Required</sup> <a name="terraform_labels" id="@cdktn/provider-google.bigqueryReservation.BigqueryReservation.property.terraformLabels"></a>
+
+```python
+terraform_labels: StringMap
+```
+
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -1208,6 +1254,16 @@ ignore_idle_slots_input: bool | IResolvable
 ```
 
 - *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `labels_input`<sup>Optional</sup> <a name="labels_input" id="@cdktn/provider-google.bigqueryReservation.BigqueryReservation.property.labelsInput"></a>
+
+```python
+labels_input: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
 
 ---
 
@@ -1331,6 +1387,16 @@ ignore_idle_slots: bool | IResolvable
 
 ---
 
+##### `labels`<sup>Required</sup> <a name="labels" id="@cdktn/provider-google.bigqueryReservation.BigqueryReservation.property.labels"></a>
+
+```python
+labels: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
+
+---
+
 ##### `location`<sup>Required</sup> <a name="location" id="@cdktn/provider-google.bigqueryReservation.BigqueryReservation.property.location"></a>
 
 ```python
@@ -1441,7 +1507,7 @@ max_slots: typing.Union[int, float]
 
 Number of slots to be scaled when needed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/bigquery_reservation#max_slots BigqueryReservation#max_slots}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_reservation#max_slots BigqueryReservation#max_slots}
 
 ---
 
@@ -1468,6 +1534,7 @@ bigqueryReservation.BigqueryReservationConfig(
   edition: str = None,
   id: str = None,
   ignore_idle_slots: bool | IResolvable = None,
+  labels: typing.Mapping[str] = None,
   location: str = None,
   project: str = None,
   reservation_group: str = None,
@@ -1493,10 +1560,11 @@ bigqueryReservation.BigqueryReservationConfig(
 | <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservationConfig.property.concurrency">concurrency</a></code> | <code>typing.Union[int, float]</code> | Maximum number of queries that are allowed to run concurrently in this reservation. |
 | <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservationConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservationConfig.property.edition">edition</a></code> | <code>str</code> | The edition type. Valid values are STANDARD, ENTERPRISE, ENTERPRISE_PLUS. |
-| <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservationConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/bigquery_reservation#id BigqueryReservation#id}. |
+| <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservationConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_reservation#id BigqueryReservation#id}. |
 | <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservationConfig.property.ignoreIdleSlots">ignore_idle_slots</a></code> | <code>bool \| cdktn.IResolvable</code> | If false, any query using this reservation will use idle slots from other reservations within the same admin project. |
+| <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservationConfig.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | The labels associated with this reservation. You can use these to organize and group your reservations. |
 | <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservationConfig.property.location">location</a></code> | <code>str</code> | The geographic location where the transfer config should reside. Examples: US, EU, asia-northeast1. The default value is US. |
-| <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservationConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/bigquery_reservation#project BigqueryReservation#project}. |
+| <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservationConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_reservation#project BigqueryReservation#project}. |
 | <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservationConfig.property.reservationGroup">reservation_group</a></code> | <code>str</code> | The reservation group that this reservation belongs to. |
 | <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservationConfig.property.secondaryLocation">secondary_location</a></code> | <code>str</code> | The current location of the reservation's secondary replica. |
 | <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservationConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservationTimeouts">BigqueryReservationTimeouts</a></code> | timeouts block. |
@@ -1583,7 +1651,7 @@ name: str
 
 The name of the reservation. This field must only contain alphanumeric characters or dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/bigquery_reservation#name BigqueryReservation#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_reservation#name BigqueryReservation#name}
 
 ---
 
@@ -1600,7 +1668,7 @@ Minimum slots available to this reservation.
 A slot is a unit of computational power in BigQuery, and serves as the
 unit of parallelism. Queries using this reservation might use more slots during runtime if ignoreIdleSlots is set to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/bigquery_reservation#slot_capacity BigqueryReservation#slot_capacity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_reservation#slot_capacity BigqueryReservation#slot_capacity}
 
 ---
 
@@ -1614,7 +1682,7 @@ autoscale: BigqueryReservationAutoscale
 
 autoscale block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/bigquery_reservation#autoscale BigqueryReservation#autoscale}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_reservation#autoscale BigqueryReservation#autoscale}
 
 ---
 
@@ -1630,7 +1698,7 @@ Maximum number of queries that are allowed to run concurrently in this reservati
 
 This is a soft limit due to asynchronous nature of the system and various optimizations for small queries. Default value is 0 which means that concurrency will be automatically set based on the reservation size.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/bigquery_reservation#concurrency BigqueryReservation#concurrency}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_reservation#concurrency BigqueryReservation#concurrency}
 
 ---
 
@@ -1651,7 +1719,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/bigquery_reservation#deletion_policy BigqueryReservation#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_reservation#deletion_policy BigqueryReservation#deletion_policy}
 
 ---
 
@@ -1665,7 +1733,7 @@ edition: str
 
 The edition type. Valid values are STANDARD, ENTERPRISE, ENTERPRISE_PLUS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/bigquery_reservation#edition BigqueryReservation#edition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_reservation#edition BigqueryReservation#edition}
 
 ---
 
@@ -1677,7 +1745,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/bigquery_reservation#id BigqueryReservation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_reservation#id BigqueryReservation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1697,7 +1765,24 @@ If false, any query using this reservation will use idle slots from other reserv
 If true, a query using this reservation will execute with the slot
 capacity specified above at most.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/bigquery_reservation#ignore_idle_slots BigqueryReservation#ignore_idle_slots}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_reservation#ignore_idle_slots BigqueryReservation#ignore_idle_slots}
+
+---
+
+##### `labels`<sup>Optional</sup> <a name="labels" id="@cdktn/provider-google.bigqueryReservation.BigqueryReservationConfig.property.labels"></a>
+
+```python
+labels: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
+
+The labels associated with this reservation. You can use these to organize and group your reservations.
+
+**Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+Please refer to the field 'effective_labels' for all of the labels present on the resource.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_reservation#labels BigqueryReservation#labels}
 
 ---
 
@@ -1711,7 +1796,7 @@ location: str
 
 The geographic location where the transfer config should reside. Examples: US, EU, asia-northeast1. The default value is US.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/bigquery_reservation#location BigqueryReservation#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_reservation#location BigqueryReservation#location}
 
 ---
 
@@ -1723,7 +1808,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/bigquery_reservation#project BigqueryReservation#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_reservation#project BigqueryReservation#project}.
 
 ---
 
@@ -1737,7 +1822,7 @@ reservation_group: str
 
 The reservation group that this reservation belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/bigquery_reservation#reservation_group BigqueryReservation#reservation_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_reservation#reservation_group BigqueryReservation#reservation_group}
 
 ---
 
@@ -1756,7 +1841,7 @@ reservations using the managed disaster recovery feature. Users can set this in 
 reservation calls to create a failover reservation or in update reservation calls to convert
 a non-failover reservation to a failover reservation(or vice versa).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/bigquery_reservation#secondary_location BigqueryReservation#secondary_location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_reservation#secondary_location BigqueryReservation#secondary_location}
 
 ---
 
@@ -1770,7 +1855,7 @@ timeouts: BigqueryReservationTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/bigquery_reservation#timeouts BigqueryReservation#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_reservation#timeouts BigqueryReservation#timeouts}
 
 ---
 
@@ -1814,9 +1899,9 @@ bigqueryReservation.BigqueryReservationTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservationTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/bigquery_reservation#create BigqueryReservation#create}. |
-| <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservationTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/bigquery_reservation#delete BigqueryReservation#delete}. |
-| <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservationTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/bigquery_reservation#update BigqueryReservation#update}. |
+| <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservationTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_reservation#create BigqueryReservation#create}. |
+| <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservationTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_reservation#delete BigqueryReservation#delete}. |
+| <code><a href="#@cdktn/provider-google.bigqueryReservation.BigqueryReservationTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_reservation#update BigqueryReservation#update}. |
 
 ---
 
@@ -1828,7 +1913,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/bigquery_reservation#create BigqueryReservation#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_reservation#create BigqueryReservation#create}.
 
 ---
 
@@ -1840,7 +1925,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/bigquery_reservation#delete BigqueryReservation#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_reservation#delete BigqueryReservation#delete}.
 
 ---
 
@@ -1852,7 +1937,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/bigquery_reservation#update BigqueryReservation#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_reservation#update BigqueryReservation#update}.
 
 ---
 

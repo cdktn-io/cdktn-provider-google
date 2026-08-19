@@ -4,7 +4,7 @@
 
 ### AccessContextManagerAccessPolicy <a name="AccessContextManagerAccessPolicy" id="@cdktn/provider-google.accessContextManagerAccessPolicy.AccessContextManagerAccessPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/access_context_manager_access_policy google_access_context_manager_access_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/access_context_manager_access_policy google_access_context_manager_access_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerAccessPolicy.AccessContextManagerAccessPolicy.Initializer"></a>
 
@@ -530,7 +530,7 @@ The construct id used in the generated config for the AccessContextManagerAccess
 
 The id of the existing AccessContextManagerAccessPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/access_context_manager_access_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/access_context_manager_access_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -928,7 +928,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextman
 | <code><a href="#@cdktn/provider-google.accessContextManagerAccessPolicy.AccessContextManagerAccessPolicyConfig.property.parent">Parent</a></code> | <code>*string</code> | The parent of this AccessPolicy in the Cloud Resource Hierarchy. Format: 'organizations/{{organization_id}}'. |
 | <code><a href="#@cdktn/provider-google.accessContextManagerAccessPolicy.AccessContextManagerAccessPolicyConfig.property.title">Title</a></code> | <code>*string</code> | Human readable title. Does not affect behavior. |
 | <code><a href="#@cdktn/provider-google.accessContextManagerAccessPolicy.AccessContextManagerAccessPolicyConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.accessContextManagerAccessPolicy.AccessContextManagerAccessPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/access_context_manager_access_policy#id AccessContextManagerAccessPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.accessContextManagerAccessPolicy.AccessContextManagerAccessPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/access_context_manager_access_policy#id AccessContextManagerAccessPolicy#id}. |
 | <code><a href="#@cdktn/provider-google.accessContextManagerAccessPolicy.AccessContextManagerAccessPolicyConfig.property.scopes">Scopes</a></code> | <code>*[]*string</code> | Folder or project on which this policy is applicable. Format: 'folders/{{folder_id}}' or 'projects/{{project_number}}'. |
 | <code><a href="#@cdktn/provider-google.accessContextManagerAccessPolicy.AccessContextManagerAccessPolicyConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.accessContextManagerAccessPolicy.AccessContextManagerAccessPolicyTimeouts">AccessContextManagerAccessPolicyTimeouts</a></code> | timeouts block. |
 
@@ -1014,7 +1014,7 @@ Parent *string
 
 The parent of this AccessPolicy in the Cloud Resource Hierarchy. Format: 'organizations/{{organization_id}}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/access_context_manager_access_policy#parent AccessContextManagerAccessPolicy#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/access_context_manager_access_policy#parent AccessContextManagerAccessPolicy#parent}
 
 ---
 
@@ -1028,7 +1028,7 @@ Title *string
 
 Human readable title. Does not affect behavior.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/access_context_manager_access_policy#title AccessContextManagerAccessPolicy#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/access_context_manager_access_policy#title AccessContextManagerAccessPolicy#title}
 
 ---
 
@@ -1049,7 +1049,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/access_context_manager_access_policy#deletion_policy AccessContextManagerAccessPolicy#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/access_context_manager_access_policy#deletion_policy AccessContextManagerAccessPolicy#deletion_policy}
 
 ---
 
@@ -1061,7 +1061,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/access_context_manager_access_policy#id AccessContextManagerAccessPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/access_context_manager_access_policy#id AccessContextManagerAccessPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1078,7 +1078,7 @@ Scopes *[]*string
 
 Folder or project on which this policy is applicable. Format: 'folders/{{folder_id}}' or 'projects/{{project_number}}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/access_context_manager_access_policy#scopes AccessContextManagerAccessPolicy#scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/access_context_manager_access_policy#scopes AccessContextManagerAccessPolicy#scopes}
 
 ---
 
@@ -1092,7 +1092,7 @@ Timeouts AccessContextManagerAccessPolicyTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/access_context_manager_access_policy#timeouts AccessContextManagerAccessPolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/access_context_manager_access_policy#timeouts AccessContextManagerAccessPolicy#timeouts}
 
 ---
 
@@ -1114,9 +1114,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextman
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.accessContextManagerAccessPolicy.AccessContextManagerAccessPolicyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/access_context_manager_access_policy#create AccessContextManagerAccessPolicy#create}. |
-| <code><a href="#@cdktn/provider-google.accessContextManagerAccessPolicy.AccessContextManagerAccessPolicyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/access_context_manager_access_policy#delete AccessContextManagerAccessPolicy#delete}. |
-| <code><a href="#@cdktn/provider-google.accessContextManagerAccessPolicy.AccessContextManagerAccessPolicyTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/access_context_manager_access_policy#update AccessContextManagerAccessPolicy#update}. |
+| <code><a href="#@cdktn/provider-google.accessContextManagerAccessPolicy.AccessContextManagerAccessPolicyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/access_context_manager_access_policy#create AccessContextManagerAccessPolicy#create}. |
+| <code><a href="#@cdktn/provider-google.accessContextManagerAccessPolicy.AccessContextManagerAccessPolicyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/access_context_manager_access_policy#delete AccessContextManagerAccessPolicy#delete}. |
+| <code><a href="#@cdktn/provider-google.accessContextManagerAccessPolicy.AccessContextManagerAccessPolicyTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/access_context_manager_access_policy#update AccessContextManagerAccessPolicy#update}. |
 
 ---
 
@@ -1128,7 +1128,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/access_context_manager_access_policy#create AccessContextManagerAccessPolicy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/access_context_manager_access_policy#create AccessContextManagerAccessPolicy#create}.
 
 ---
 
@@ -1140,7 +1140,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/access_context_manager_access_policy#delete AccessContextManagerAccessPolicy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/access_context_manager_access_policy#delete AccessContextManagerAccessPolicy#delete}.
 
 ---
 
@@ -1152,7 +1152,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/access_context_manager_access_policy#update AccessContextManagerAccessPolicy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/access_context_manager_access_policy#update AccessContextManagerAccessPolicy#update}.
 
 ---
 

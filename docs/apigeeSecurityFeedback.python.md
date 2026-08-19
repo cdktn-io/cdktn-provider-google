@@ -4,7 +4,7 @@
 
 ### ApigeeSecurityFeedback <a name="ApigeeSecurityFeedback" id="@cdktn/provider-google.apigeeSecurityFeedback.ApigeeSecurityFeedback"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apigee_security_feedback google_apigee_security_feedback}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apigee_security_feedback google_apigee_security_feedback}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeSecurityFeedback.ApigeeSecurityFeedback.Initializer"></a>
 
@@ -52,7 +52,7 @@ apigeeSecurityFeedback.ApigeeSecurityFeedback(
 | <code><a href="#@cdktn/provider-google.apigeeSecurityFeedback.ApigeeSecurityFeedback.Initializer.parameter.comment">comment</a></code> | <code>str</code> | Optional text the user can provide for additional, unstructured context. |
 | <code><a href="#@cdktn/provider-google.apigeeSecurityFeedback.ApigeeSecurityFeedback.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.apigeeSecurityFeedback.ApigeeSecurityFeedback.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | The display name of the feedback. |
-| <code><a href="#@cdktn/provider-google.apigeeSecurityFeedback.ApigeeSecurityFeedback.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apigee_security_feedback#id ApigeeSecurityFeedback#id}. |
+| <code><a href="#@cdktn/provider-google.apigeeSecurityFeedback.ApigeeSecurityFeedback.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apigee_security_feedback#id ApigeeSecurityFeedback#id}. |
 | <code><a href="#@cdktn/provider-google.apigeeSecurityFeedback.ApigeeSecurityFeedback.Initializer.parameter.reason">reason</a></code> | <code>str</code> | The reason for the feedback. Possible values: ["INTERNAL_SYSTEM", "NON_RISK_CLIENT", "NAT", "PENETRATION_TEST", "OTHER"]. |
 | <code><a href="#@cdktn/provider-google.apigeeSecurityFeedback.ApigeeSecurityFeedback.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.apigeeSecurityFeedback.ApigeeSecurityFeedbackTimeouts">ApigeeSecurityFeedbackTimeouts</a></code> | timeouts block. |
 
@@ -124,7 +124,7 @@ Must be unique amongst siblings in the same scope
 
 feedback_contexts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apigee_security_feedback#feedback_contexts ApigeeSecurityFeedback#feedback_contexts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apigee_security_feedback#feedback_contexts ApigeeSecurityFeedback#feedback_contexts}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Resource ID of the security feedback.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apigee_security_feedback#feedback_id ApigeeSecurityFeedback#feedback_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apigee_security_feedback#feedback_id ApigeeSecurityFeedback#feedback_id}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The type of feedback being submitted. Possible values: ["EXCLUDED_DETECTION"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apigee_security_feedback#feedback_type ApigeeSecurityFeedback#feedback_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apigee_security_feedback#feedback_type ApigeeSecurityFeedback#feedback_type}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The Apigee Organization associated with the Apigee Security Feedback, in the format 'organizations/{{org_name}}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apigee_security_feedback#org_id ApigeeSecurityFeedback#org_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apigee_security_feedback#org_id ApigeeSecurityFeedback#org_id}
 
 ---
 
@@ -164,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Optional text the user can provide for additional, unstructured context.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apigee_security_feedback#comment ApigeeSecurityFeedback#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apigee_security_feedback#comment ApigeeSecurityFeedback#comment}
 
 ---
 
@@ -181,7 +181,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apigee_security_feedback#deletion_policy ApigeeSecurityFeedback#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apigee_security_feedback#deletion_policy ApigeeSecurityFeedback#deletion_policy}
 
 ---
 
@@ -191,7 +191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The display name of the feedback.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apigee_security_feedback#display_name ApigeeSecurityFeedback#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apigee_security_feedback#display_name ApigeeSecurityFeedback#display_name}
 
 ---
 
@@ -199,7 +199,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apigee_security_feedback#id ApigeeSecurityFeedback#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apigee_security_feedback#id ApigeeSecurityFeedback#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -212,7 +212,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The reason for the feedback. Possible values: ["INTERNAL_SYSTEM", "NON_RISK_CLIENT", "NAT", "PENETRATION_TEST", "OTHER"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apigee_security_feedback#reason ApigeeSecurityFeedback#reason}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apigee_security_feedback#reason ApigeeSecurityFeedback#reason}
 
 ---
 
@@ -222,7 +222,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apigee_security_feedback#timeouts ApigeeSecurityFeedback#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apigee_security_feedback#timeouts ApigeeSecurityFeedback#timeouts}
 
 ---
 
@@ -641,7 +641,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apigee_security_feedback#create ApigeeSecurityFeedback#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apigee_security_feedback#create ApigeeSecurityFeedback#create}.
 
 ---
 
@@ -649,7 +649,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apigee_security_feedback#delete ApigeeSecurityFeedback#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apigee_security_feedback#delete ApigeeSecurityFeedback#delete}.
 
 ---
 
@@ -657,7 +657,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apigee_security_feedback#update ApigeeSecurityFeedback#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apigee_security_feedback#update ApigeeSecurityFeedback#update}.
 
 ---
 
@@ -811,7 +811,7 @@ The construct id used in the generated config for the ApigeeSecurityFeedback to 
 
 The id of the existing ApigeeSecurityFeedback that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apigee_security_feedback#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apigee_security_feedback#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1305,7 +1305,7 @@ apigeeSecurityFeedback.ApigeeSecurityFeedbackConfig(
 | <code><a href="#@cdktn/provider-google.apigeeSecurityFeedback.ApigeeSecurityFeedbackConfig.property.comment">comment</a></code> | <code>str</code> | Optional text the user can provide for additional, unstructured context. |
 | <code><a href="#@cdktn/provider-google.apigeeSecurityFeedback.ApigeeSecurityFeedbackConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.apigeeSecurityFeedback.ApigeeSecurityFeedbackConfig.property.displayName">display_name</a></code> | <code>str</code> | The display name of the feedback. |
-| <code><a href="#@cdktn/provider-google.apigeeSecurityFeedback.ApigeeSecurityFeedbackConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apigee_security_feedback#id ApigeeSecurityFeedback#id}. |
+| <code><a href="#@cdktn/provider-google.apigeeSecurityFeedback.ApigeeSecurityFeedbackConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apigee_security_feedback#id ApigeeSecurityFeedback#id}. |
 | <code><a href="#@cdktn/provider-google.apigeeSecurityFeedback.ApigeeSecurityFeedbackConfig.property.reason">reason</a></code> | <code>str</code> | The reason for the feedback. Possible values: ["INTERNAL_SYSTEM", "NON_RISK_CLIENT", "NAT", "PENETRATION_TEST", "OTHER"]. |
 | <code><a href="#@cdktn/provider-google.apigeeSecurityFeedback.ApigeeSecurityFeedbackConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.apigeeSecurityFeedback.ApigeeSecurityFeedbackTimeouts">ApigeeSecurityFeedbackTimeouts</a></code> | timeouts block. |
 
@@ -1391,7 +1391,7 @@ feedback_contexts: IResolvable | typing.List[ApigeeSecurityFeedbackFeedbackConte
 
 feedback_contexts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apigee_security_feedback#feedback_contexts ApigeeSecurityFeedback#feedback_contexts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apigee_security_feedback#feedback_contexts ApigeeSecurityFeedback#feedback_contexts}
 
 ---
 
@@ -1405,7 +1405,7 @@ feedback_id: str
 
 Resource ID of the security feedback.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apigee_security_feedback#feedback_id ApigeeSecurityFeedback#feedback_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apigee_security_feedback#feedback_id ApigeeSecurityFeedback#feedback_id}
 
 ---
 
@@ -1419,7 +1419,7 @@ feedback_type: str
 
 The type of feedback being submitted. Possible values: ["EXCLUDED_DETECTION"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apigee_security_feedback#feedback_type ApigeeSecurityFeedback#feedback_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apigee_security_feedback#feedback_type ApigeeSecurityFeedback#feedback_type}
 
 ---
 
@@ -1433,7 +1433,7 @@ org_id: str
 
 The Apigee Organization associated with the Apigee Security Feedback, in the format 'organizations/{{org_name}}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apigee_security_feedback#org_id ApigeeSecurityFeedback#org_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apigee_security_feedback#org_id ApigeeSecurityFeedback#org_id}
 
 ---
 
@@ -1447,7 +1447,7 @@ comment: str
 
 Optional text the user can provide for additional, unstructured context.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apigee_security_feedback#comment ApigeeSecurityFeedback#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apigee_security_feedback#comment ApigeeSecurityFeedback#comment}
 
 ---
 
@@ -1468,7 +1468,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apigee_security_feedback#deletion_policy ApigeeSecurityFeedback#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apigee_security_feedback#deletion_policy ApigeeSecurityFeedback#deletion_policy}
 
 ---
 
@@ -1482,7 +1482,7 @@ display_name: str
 
 The display name of the feedback.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apigee_security_feedback#display_name ApigeeSecurityFeedback#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apigee_security_feedback#display_name ApigeeSecurityFeedback#display_name}
 
 ---
 
@@ -1494,7 +1494,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apigee_security_feedback#id ApigeeSecurityFeedback#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apigee_security_feedback#id ApigeeSecurityFeedback#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1511,7 +1511,7 @@ reason: str
 
 The reason for the feedback. Possible values: ["INTERNAL_SYSTEM", "NON_RISK_CLIENT", "NAT", "PENETRATION_TEST", "OTHER"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apigee_security_feedback#reason ApigeeSecurityFeedback#reason}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apigee_security_feedback#reason ApigeeSecurityFeedback#reason}
 
 ---
 
@@ -1525,7 +1525,7 @@ timeouts: ApigeeSecurityFeedbackTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apigee_security_feedback#timeouts ApigeeSecurityFeedback#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apigee_security_feedback#timeouts ApigeeSecurityFeedback#timeouts}
 
 ---
 
@@ -1561,7 +1561,7 @@ attribute: str
 
 The attribute the user is providing feedback about. Possible values: ["ATTRIBUTE_ENVIRONMENTS", "ATTRIBUTE_IP_ADDRESS_RANGES"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apigee_security_feedback#attribute ApigeeSecurityFeedback#attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apigee_security_feedback#attribute ApigeeSecurityFeedback#attribute}
 
 ---
 
@@ -1575,7 +1575,7 @@ values: typing.List[str]
 
 The values of the attribute the user is providing feedback about, separated by commas.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apigee_security_feedback#values ApigeeSecurityFeedback#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apigee_security_feedback#values ApigeeSecurityFeedback#values}
 
 ---
 
@@ -1597,9 +1597,9 @@ apigeeSecurityFeedback.ApigeeSecurityFeedbackTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apigeeSecurityFeedback.ApigeeSecurityFeedbackTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apigee_security_feedback#create ApigeeSecurityFeedback#create}. |
-| <code><a href="#@cdktn/provider-google.apigeeSecurityFeedback.ApigeeSecurityFeedbackTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apigee_security_feedback#delete ApigeeSecurityFeedback#delete}. |
-| <code><a href="#@cdktn/provider-google.apigeeSecurityFeedback.ApigeeSecurityFeedbackTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apigee_security_feedback#update ApigeeSecurityFeedback#update}. |
+| <code><a href="#@cdktn/provider-google.apigeeSecurityFeedback.ApigeeSecurityFeedbackTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apigee_security_feedback#create ApigeeSecurityFeedback#create}. |
+| <code><a href="#@cdktn/provider-google.apigeeSecurityFeedback.ApigeeSecurityFeedbackTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apigee_security_feedback#delete ApigeeSecurityFeedback#delete}. |
+| <code><a href="#@cdktn/provider-google.apigeeSecurityFeedback.ApigeeSecurityFeedbackTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apigee_security_feedback#update ApigeeSecurityFeedback#update}. |
 
 ---
 
@@ -1611,7 +1611,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apigee_security_feedback#create ApigeeSecurityFeedback#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apigee_security_feedback#create ApigeeSecurityFeedback#create}.
 
 ---
 
@@ -1623,7 +1623,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apigee_security_feedback#delete ApigeeSecurityFeedback#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apigee_security_feedback#delete ApigeeSecurityFeedback#delete}.
 
 ---
 
@@ -1635,7 +1635,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apigee_security_feedback#update ApigeeSecurityFeedback#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apigee_security_feedback#update ApigeeSecurityFeedback#update}.
 
 ---
 

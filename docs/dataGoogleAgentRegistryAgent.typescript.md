@@ -4,7 +4,7 @@
 
 ### DataGoogleAgentRegistryAgent <a name="DataGoogleAgentRegistryAgent" id="@cdktn/provider-google.dataGoogleAgentRegistryAgent.DataGoogleAgentRegistryAgent"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/agent_registry_agent google_agent_registry_agent}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/agent_registry_agent google_agent_registry_agent}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleAgentRegistryAgent.DataGoogleAgentRegistryAgent.Initializer"></a>
 
@@ -415,7 +415,7 @@ The construct id used in the generated config for the DataGoogleAgentRegistryAge
 
 The id of the existing DataGoogleAgentRegistryAgent that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/agent_registry_agent#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/agent_registry_agent#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -832,8 +832,8 @@ const dataGoogleAgentRegistryAgentConfig: dataGoogleAgentRegistryAgent.DataGoogl
 | <code><a href="#@cdktn/provider-google.dataGoogleAgentRegistryAgent.DataGoogleAgentRegistryAgentConfig.property.location">location</a></code> | <code>string</code> | The location of the resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleAgentRegistryAgent.DataGoogleAgentRegistryAgentConfig.property.agentId">agentId</a></code> | <code>string</code> | The unique identifier for the Agent. |
 | <code><a href="#@cdktn/provider-google.dataGoogleAgentRegistryAgent.DataGoogleAgentRegistryAgentConfig.property.filter">filter</a></code> | <code>string</code> | A filter string that identifies a unique Agent. |
-| <code><a href="#@cdktn/provider-google.dataGoogleAgentRegistryAgent.DataGoogleAgentRegistryAgentConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/agent_registry_agent#id DataGoogleAgentRegistryAgent#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleAgentRegistryAgent.DataGoogleAgentRegistryAgentConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/agent_registry_agent#project DataGoogleAgentRegistryAgent#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleAgentRegistryAgent.DataGoogleAgentRegistryAgentConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/agent_registry_agent#id DataGoogleAgentRegistryAgent#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleAgentRegistryAgent.DataGoogleAgentRegistryAgentConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/agent_registry_agent#project DataGoogleAgentRegistryAgent#project}. |
 
 ---
 
@@ -917,7 +917,7 @@ public readonly location: string;
 
 The location of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/agent_registry_agent#location DataGoogleAgentRegistryAgent#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/agent_registry_agent#location DataGoogleAgentRegistryAgent#location}
 
 ---
 
@@ -931,7 +931,7 @@ public readonly agentId: string;
 
 The unique identifier for the Agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/agent_registry_agent#agent_id DataGoogleAgentRegistryAgent#agent_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/agent_registry_agent#agent_id DataGoogleAgentRegistryAgent#agent_id}
 
 ---
 
@@ -945,7 +945,7 @@ public readonly filter: string;
 
 A filter string that identifies a unique Agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/agent_registry_agent#filter DataGoogleAgentRegistryAgent#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/agent_registry_agent#filter DataGoogleAgentRegistryAgent#filter}
 
 ---
 
@@ -957,7 +957,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/agent_registry_agent#id DataGoogleAgentRegistryAgent#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/agent_registry_agent#id DataGoogleAgentRegistryAgent#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -972,7 +972,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/agent_registry_agent#project DataGoogleAgentRegistryAgent#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/agent_registry_agent#project DataGoogleAgentRegistryAgent#project}.
 
 ---
 

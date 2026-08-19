@@ -4,7 +4,7 @@
 
 ### DataGoogleComputeInterconnectLocation <a name="DataGoogleComputeInterconnectLocation" id="@cdktn/provider-google.dataGoogleComputeInterconnectLocation.DataGoogleComputeInterconnectLocation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/compute_interconnect_location google_compute_interconnect_location}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/compute_interconnect_location google_compute_interconnect_location}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeInterconnectLocation.DataGoogleComputeInterconnectLocation.Initializer"></a>
 
@@ -38,9 +38,9 @@ dataGoogleComputeInterconnectLocation.DataGoogleComputeInterconnectLocation(
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeInterconnectLocation.DataGoogleComputeInterconnectLocation.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeInterconnectLocation.DataGoogleComputeInterconnectLocation.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeInterconnectLocation.DataGoogleComputeInterconnectLocation.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleComputeInterconnectLocation.DataGoogleComputeInterconnectLocation.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/compute_interconnect_location#name DataGoogleComputeInterconnectLocation#name}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleComputeInterconnectLocation.DataGoogleComputeInterconnectLocation.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/compute_interconnect_location#id DataGoogleComputeInterconnectLocation#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleComputeInterconnectLocation.DataGoogleComputeInterconnectLocation.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/compute_interconnect_location#project DataGoogleComputeInterconnectLocation#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeInterconnectLocation.DataGoogleComputeInterconnectLocation.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/compute_interconnect_location#name DataGoogleComputeInterconnectLocation#name}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeInterconnectLocation.DataGoogleComputeInterconnectLocation.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/compute_interconnect_location#id DataGoogleComputeInterconnectLocation#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeInterconnectLocation.DataGoogleComputeInterconnectLocation.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/compute_interconnect_location#project DataGoogleComputeInterconnectLocation#project}. |
 
 ---
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/compute_interconnect_location#name DataGoogleComputeInterconnectLocation#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/compute_interconnect_location#name DataGoogleComputeInterconnectLocation#name}.
 
 ---
 
@@ -116,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/compute_interconnect_location#id DataGoogleComputeInterconnectLocation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/compute_interconnect_location#id DataGoogleComputeInterconnectLocation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -127,7 +127,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/compute_interconnect_location#project DataGoogleComputeInterconnectLocation#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/compute_interconnect_location#project DataGoogleComputeInterconnectLocation#project}.
 
 ---
 
@@ -524,7 +524,7 @@ The construct id used in the generated config for the DataGoogleComputeInterconn
 
 The id of the existing DataGoogleComputeInterconnectLocation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/compute_interconnect_location#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/compute_interconnect_location#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -905,9 +905,9 @@ dataGoogleComputeInterconnectLocation.DataGoogleComputeInterconnectLocationConfi
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeInterconnectLocation.DataGoogleComputeInterconnectLocationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeInterconnectLocation.DataGoogleComputeInterconnectLocationConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeInterconnectLocation.DataGoogleComputeInterconnectLocationConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleComputeInterconnectLocation.DataGoogleComputeInterconnectLocationConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/compute_interconnect_location#name DataGoogleComputeInterconnectLocation#name}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleComputeInterconnectLocation.DataGoogleComputeInterconnectLocationConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/compute_interconnect_location#id DataGoogleComputeInterconnectLocation#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleComputeInterconnectLocation.DataGoogleComputeInterconnectLocationConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/compute_interconnect_location#project DataGoogleComputeInterconnectLocation#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeInterconnectLocation.DataGoogleComputeInterconnectLocationConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/compute_interconnect_location#name DataGoogleComputeInterconnectLocation#name}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeInterconnectLocation.DataGoogleComputeInterconnectLocationConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/compute_interconnect_location#id DataGoogleComputeInterconnectLocation#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeInterconnectLocation.DataGoogleComputeInterconnectLocationConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/compute_interconnect_location#project DataGoogleComputeInterconnectLocation#project}. |
 
 ---
 
@@ -989,7 +989,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/compute_interconnect_location#name DataGoogleComputeInterconnectLocation#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/compute_interconnect_location#name DataGoogleComputeInterconnectLocation#name}.
 
 ---
 
@@ -1001,7 +1001,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/compute_interconnect_location#id DataGoogleComputeInterconnectLocation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/compute_interconnect_location#id DataGoogleComputeInterconnectLocation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1016,7 +1016,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/compute_interconnect_location#project DataGoogleComputeInterconnectLocation#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/compute_interconnect_location#project DataGoogleComputeInterconnectLocation#project}.
 
 ---
 

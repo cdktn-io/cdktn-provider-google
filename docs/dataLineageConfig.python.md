@@ -4,7 +4,7 @@
 
 ### DataLineageConfig <a name="DataLineageConfig" id="@cdktn/provider-google.dataLineageConfig.DataLineageConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/data_lineage_config google_data_lineage_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/data_lineage_config google_data_lineage_config}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLineageConfig.DataLineageConfig.Initializer"></a>
 
@@ -45,7 +45,7 @@ dataLineageConfig.DataLineageConfig(
 | <code><a href="#@cdktn/provider-google.dataLineageConfig.DataLineageConfig.Initializer.parameter.location">location</a></code> | <code>str</code> | The region of the data lineage configuration for integration. |
 | <code><a href="#@cdktn/provider-google.dataLineageConfig.DataLineageConfig.Initializer.parameter.parent">parent</a></code> | <code>str</code> | Parent scope for the config. Format: projects/{project-id\|project-number} or folders/{folder-number} or organizations/{organization-number}. |
 | <code><a href="#@cdktn/provider-google.dataLineageConfig.DataLineageConfig.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.dataLineageConfig.DataLineageConfig.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/data_lineage_config#id DataLineageConfig#id}. |
+| <code><a href="#@cdktn/provider-google.dataLineageConfig.DataLineageConfig.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/data_lineage_config#id DataLineageConfig#id}. |
 | <code><a href="#@cdktn/provider-google.dataLineageConfig.DataLineageConfig.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.dataLineageConfig.DataLineageConfigTimeouts">DataLineageConfigTimeouts</a></code> | timeouts block. |
 
 ---
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 ingestion block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/data_lineage_config#ingestion DataLineageConfig#ingestion}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/data_lineage_config#ingestion DataLineageConfig#ingestion}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The region of the data lineage configuration for integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/data_lineage_config#location DataLineageConfig#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/data_lineage_config#location DataLineageConfig#location}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Parent scope for the config. Format: projects/{project-id|project-number} or folders/{folder-number} or organizations/{organization-number}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/data_lineage_config#parent DataLineageConfig#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/data_lineage_config#parent DataLineageConfig#parent}
 
 ---
 
@@ -153,7 +153,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/data_lineage_config#deletion_policy DataLineageConfig#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/data_lineage_config#deletion_policy DataLineageConfig#deletion_policy}
 
 ---
 
@@ -161,7 +161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/data_lineage_config#id DataLineageConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/data_lineage_config#id DataLineageConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -174,7 +174,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/data_lineage_config#timeouts DataLineageConfig#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/data_lineage_config#timeouts DataLineageConfig#timeouts}
 
 ---
 
@@ -576,7 +576,7 @@ def put_ingestion(
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/data_lineage_config#rule DataLineageConfig#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/data_lineage_config#rule DataLineageConfig#rule}
 
 ---
 
@@ -594,7 +594,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/data_lineage_config#create DataLineageConfig#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/data_lineage_config#create DataLineageConfig#create}.
 
 ---
 
@@ -602,7 +602,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/data_lineage_config#delete DataLineageConfig#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/data_lineage_config#delete DataLineageConfig#delete}.
 
 ---
 
@@ -610,7 +610,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/data_lineage_config#update DataLineageConfig#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/data_lineage_config#update DataLineageConfig#update}.
 
 ---
 
@@ -746,7 +746,7 @@ The construct id used in the generated config for the DataLineageConfig to impor
 
 The id of the existing DataLineageConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/data_lineage_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/data_lineage_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1134,7 +1134,7 @@ dataLineageConfig.DataLineageConfigConfig(
 | <code><a href="#@cdktn/provider-google.dataLineageConfig.DataLineageConfigConfig.property.location">location</a></code> | <code>str</code> | The region of the data lineage configuration for integration. |
 | <code><a href="#@cdktn/provider-google.dataLineageConfig.DataLineageConfigConfig.property.parent">parent</a></code> | <code>str</code> | Parent scope for the config. Format: projects/{project-id\|project-number} or folders/{folder-number} or organizations/{organization-number}. |
 | <code><a href="#@cdktn/provider-google.dataLineageConfig.DataLineageConfigConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.dataLineageConfig.DataLineageConfigConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/data_lineage_config#id DataLineageConfig#id}. |
+| <code><a href="#@cdktn/provider-google.dataLineageConfig.DataLineageConfigConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/data_lineage_config#id DataLineageConfig#id}. |
 | <code><a href="#@cdktn/provider-google.dataLineageConfig.DataLineageConfigConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.dataLineageConfig.DataLineageConfigTimeouts">DataLineageConfigTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1219,7 +1219,7 @@ ingestion: DataLineageConfigIngestion
 
 ingestion block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/data_lineage_config#ingestion DataLineageConfig#ingestion}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/data_lineage_config#ingestion DataLineageConfig#ingestion}
 
 ---
 
@@ -1233,7 +1233,7 @@ location: str
 
 The region of the data lineage configuration for integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/data_lineage_config#location DataLineageConfig#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/data_lineage_config#location DataLineageConfig#location}
 
 ---
 
@@ -1247,7 +1247,7 @@ parent: str
 
 Parent scope for the config. Format: projects/{project-id|project-number} or folders/{folder-number} or organizations/{organization-number}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/data_lineage_config#parent DataLineageConfig#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/data_lineage_config#parent DataLineageConfig#parent}
 
 ---
 
@@ -1268,7 +1268,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/data_lineage_config#deletion_policy DataLineageConfig#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/data_lineage_config#deletion_policy DataLineageConfig#deletion_policy}
 
 ---
 
@@ -1280,7 +1280,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/data_lineage_config#id DataLineageConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/data_lineage_config#id DataLineageConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1297,7 +1297,7 @@ timeouts: DataLineageConfigTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/data_lineage_config#timeouts DataLineageConfig#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/data_lineage_config#timeouts DataLineageConfig#timeouts}
 
 ---
 
@@ -1331,7 +1331,7 @@ rule: IResolvable | typing.List[DataLineageConfigIngestionRule]
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/data_lineage_config#rule DataLineageConfig#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/data_lineage_config#rule DataLineageConfig#rule}
 
 ---
 
@@ -1367,7 +1367,7 @@ integration_selector: DataLineageConfigIngestionRuleIntegrationSelector
 
 integration_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/data_lineage_config#integration_selector DataLineageConfig#integration_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/data_lineage_config#integration_selector DataLineageConfig#integration_selector}
 
 ---
 
@@ -1381,7 +1381,7 @@ lineage_enablement: DataLineageConfigIngestionRuleLineageEnablement
 
 lineage_enablement block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/data_lineage_config#lineage_enablement DataLineageConfig#lineage_enablement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/data_lineage_config#lineage_enablement DataLineageConfig#lineage_enablement}
 
 ---
 
@@ -1415,7 +1415,7 @@ integration: str
 
 Integration to which the rule applies. Possible values: ["DATAPROC", "LOOKER_CORE"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/data_lineage_config#integration DataLineageConfig#integration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/data_lineage_config#integration DataLineageConfig#integration}
 
 ---
 
@@ -1449,7 +1449,7 @@ enabled: bool | IResolvable
 
 Whether ingestion of lineage should be enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/data_lineage_config#enabled DataLineageConfig#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/data_lineage_config#enabled DataLineageConfig#enabled}
 
 ---
 
@@ -1471,9 +1471,9 @@ dataLineageConfig.DataLineageConfigTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataLineageConfig.DataLineageConfigTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/data_lineage_config#create DataLineageConfig#create}. |
-| <code><a href="#@cdktn/provider-google.dataLineageConfig.DataLineageConfigTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/data_lineage_config#delete DataLineageConfig#delete}. |
-| <code><a href="#@cdktn/provider-google.dataLineageConfig.DataLineageConfigTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/data_lineage_config#update DataLineageConfig#update}. |
+| <code><a href="#@cdktn/provider-google.dataLineageConfig.DataLineageConfigTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/data_lineage_config#create DataLineageConfig#create}. |
+| <code><a href="#@cdktn/provider-google.dataLineageConfig.DataLineageConfigTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/data_lineage_config#delete DataLineageConfig#delete}. |
+| <code><a href="#@cdktn/provider-google.dataLineageConfig.DataLineageConfigTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/data_lineage_config#update DataLineageConfig#update}. |
 
 ---
 
@@ -1485,7 +1485,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/data_lineage_config#create DataLineageConfig#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/data_lineage_config#create DataLineageConfig#create}.
 
 ---
 
@@ -1497,7 +1497,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/data_lineage_config#delete DataLineageConfig#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/data_lineage_config#delete DataLineageConfig#delete}.
 
 ---
 
@@ -1509,7 +1509,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/data_lineage_config#update DataLineageConfig#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/data_lineage_config#update DataLineageConfig#update}.
 
 ---
 
@@ -2852,7 +2852,7 @@ def put_integration_selector(
 
 Integration to which the rule applies. Possible values: ["DATAPROC", "LOOKER_CORE"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/data_lineage_config#integration DataLineageConfig#integration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/data_lineage_config#integration DataLineageConfig#integration}
 
 ---
 
@@ -2870,7 +2870,7 @@ def put_lineage_enablement(
 
 Whether ingestion of lineage should be enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/data_lineage_config#enabled DataLineageConfig#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/data_lineage_config#enabled DataLineageConfig#enabled}
 
 ---
 

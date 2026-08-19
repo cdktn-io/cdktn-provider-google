@@ -4,7 +4,7 @@
 
 ### EphemeralGoogleClientConfig <a name="EphemeralGoogleClientConfig" id="@cdktn/provider-google.ephemeralGoogleClientConfig.EphemeralGoogleClientConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/ephemeral-resources/client_config google_client_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/ephemeral-resources/client_config google_client_config}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.ephemeralGoogleClientConfig.EphemeralGoogleClientConfig.Initializer"></a>
 

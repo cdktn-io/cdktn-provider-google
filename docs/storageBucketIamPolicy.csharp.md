@@ -4,7 +4,7 @@
 
 ### StorageBucketIamPolicy <a name="StorageBucketIamPolicy" id="@cdktn/provider-google.storageBucketIamPolicy.StorageBucketIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/storage_bucket_iam_policy google_storage_bucket_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/storage_bucket_iam_policy google_storage_bucket_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageBucketIamPolicy.StorageBucketIamPolicy.Initializer"></a>
 
@@ -516,7 +516,7 @@ The construct id used in the generated config for the StorageBucketIamPolicy to 
 
 The id of the existing StorageBucketIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/storage_bucket_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/storage_bucket_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -843,9 +843,9 @@ new StorageBucketIamPolicyConfig {
 | <code><a href="#@cdktn/provider-google.storageBucketIamPolicy.StorageBucketIamPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucketIamPolicy.StorageBucketIamPolicyConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucketIamPolicy.StorageBucketIamPolicyConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.storageBucketIamPolicy.StorageBucketIamPolicyConfig.property.bucket">Bucket</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/storage_bucket_iam_policy#bucket StorageBucketIamPolicy#bucket}. |
-| <code><a href="#@cdktn/provider-google.storageBucketIamPolicy.StorageBucketIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/storage_bucket_iam_policy#policy_data StorageBucketIamPolicy#policy_data}. |
-| <code><a href="#@cdktn/provider-google.storageBucketIamPolicy.StorageBucketIamPolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/storage_bucket_iam_policy#id StorageBucketIamPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.storageBucketIamPolicy.StorageBucketIamPolicyConfig.property.bucket">Bucket</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/storage_bucket_iam_policy#bucket StorageBucketIamPolicy#bucket}. |
+| <code><a href="#@cdktn/provider-google.storageBucketIamPolicy.StorageBucketIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/storage_bucket_iam_policy#policy_data StorageBucketIamPolicy#policy_data}. |
+| <code><a href="#@cdktn/provider-google.storageBucketIamPolicy.StorageBucketIamPolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/storage_bucket_iam_policy#id StorageBucketIamPolicy#id}. |
 | <code><a href="#@cdktn/provider-google.storageBucketIamPolicy.StorageBucketIamPolicyConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.storageBucketIamPolicy.StorageBucketIamPolicyTimeouts">StorageBucketIamPolicyTimeouts</a></code> | timeouts block. |
 
 ---
@@ -928,7 +928,7 @@ public string Bucket { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/storage_bucket_iam_policy#bucket StorageBucketIamPolicy#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/storage_bucket_iam_policy#bucket StorageBucketIamPolicy#bucket}.
 
 ---
 
@@ -940,7 +940,7 @@ public string PolicyData { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/storage_bucket_iam_policy#policy_data StorageBucketIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/storage_bucket_iam_policy#policy_data StorageBucketIamPolicy#policy_data}.
 
 ---
 
@@ -952,7 +952,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/storage_bucket_iam_policy#id StorageBucketIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/storage_bucket_iam_policy#id StorageBucketIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -969,7 +969,7 @@ public StorageBucketIamPolicyTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/storage_bucket_iam_policy#timeouts StorageBucketIamPolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/storage_bucket_iam_policy#timeouts StorageBucketIamPolicy#timeouts}
 
 ---
 
@@ -989,7 +989,7 @@ new StorageBucketIamPolicyTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.storageBucketIamPolicy.StorageBucketIamPolicyTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/storage_bucket_iam_policy#create StorageBucketIamPolicy#create}. |
+| <code><a href="#@cdktn/provider-google.storageBucketIamPolicy.StorageBucketIamPolicyTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/storage_bucket_iam_policy#create StorageBucketIamPolicy#create}. |
 
 ---
 
@@ -1001,7 +1001,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/storage_bucket_iam_policy#create StorageBucketIamPolicy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/storage_bucket_iam_policy#create StorageBucketIamPolicy#create}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### IamProjectAccessPolicy <a name="IamProjectAccessPolicy" id="@cdktn/provider-google.iamProjectAccessPolicy.IamProjectAccessPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_project_access_policy google_iam_project_access_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_project_access_policy google_iam_project_access_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iamProjectAccessPolicy.IamProjectAccessPolicy.Initializer"></a>
 
@@ -564,7 +564,7 @@ The construct id used in the generated config for the IamProjectAccessPolicy to 
 
 The id of the existing IamProjectAccessPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_project_access_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_project_access_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1050,8 +1050,8 @@ const iamProjectAccessPolicyConfig: iamProjectAccessPolicy.IamProjectAccessPolic
 | <code><a href="#@cdktn/provider-google.iamProjectAccessPolicy.IamProjectAccessPolicyConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.iamProjectAccessPolicy.IamProjectAccessPolicyConfig.property.details">details</a></code> | <code><a href="#@cdktn/provider-google.iamProjectAccessPolicy.IamProjectAccessPolicyDetails">IamProjectAccessPolicyDetails</a></code> | details block. |
 | <code><a href="#@cdktn/provider-google.iamProjectAccessPolicy.IamProjectAccessPolicyConfig.property.displayName">displayName</a></code> | <code>string</code> | The description of the access policy. Must be less than or equal to 63 characters. |
-| <code><a href="#@cdktn/provider-google.iamProjectAccessPolicy.IamProjectAccessPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_project_access_policy#id IamProjectAccessPolicy#id}. |
-| <code><a href="#@cdktn/provider-google.iamProjectAccessPolicy.IamProjectAccessPolicyConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_project_access_policy#project IamProjectAccessPolicy#project}. |
+| <code><a href="#@cdktn/provider-google.iamProjectAccessPolicy.IamProjectAccessPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_project_access_policy#id IamProjectAccessPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.iamProjectAccessPolicy.IamProjectAccessPolicyConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_project_access_policy#project IamProjectAccessPolicy#project}. |
 | <code><a href="#@cdktn/provider-google.iamProjectAccessPolicy.IamProjectAccessPolicyConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.iamProjectAccessPolicy.IamProjectAccessPolicyTimeouts">IamProjectAccessPolicyTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1141,7 +1141,7 @@ lowercase letters, numbers, hyphens, or dots. Pattern,
 /a-z{2,62}/.
 This value must be unique among all access policies with the same parent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_project_access_policy#access_policy_id IamProjectAccessPolicy#access_policy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_project_access_policy#access_policy_id IamProjectAccessPolicy#access_policy_id}
 
 ---
 
@@ -1155,7 +1155,7 @@ public readonly location: string;
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_project_access_policy#location IamProjectAccessPolicy#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_project_access_policy#location IamProjectAccessPolicy#location}
 
 ---
 
@@ -1172,7 +1172,7 @@ User defined annotations. See https://google.aip.dev/148#annotations for more de
 **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
 Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_project_access_policy#annotations IamProjectAccessPolicy#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_project_access_policy#annotations IamProjectAccessPolicy#annotations}
 
 ---
 
@@ -1194,7 +1194,7 @@ management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_project_access_policy#deletion_policy IamProjectAccessPolicy#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_project_access_policy#deletion_policy IamProjectAccessPolicy#deletion_policy}
 
 ---
 
@@ -1208,7 +1208,7 @@ public readonly details: IamProjectAccessPolicyDetails;
 
 details block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_project_access_policy#details IamProjectAccessPolicy#details}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_project_access_policy#details IamProjectAccessPolicy#details}
 
 ---
 
@@ -1222,7 +1222,7 @@ public readonly displayName: string;
 
 The description of the access policy. Must be less than or equal to 63 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_project_access_policy#display_name IamProjectAccessPolicy#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_project_access_policy#display_name IamProjectAccessPolicy#display_name}
 
 ---
 
@@ -1234,7 +1234,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_project_access_policy#id IamProjectAccessPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_project_access_policy#id IamProjectAccessPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1249,7 +1249,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_project_access_policy#project IamProjectAccessPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_project_access_policy#project IamProjectAccessPolicy#project}.
 
 ---
 
@@ -1263,7 +1263,7 @@ public readonly timeouts: IamProjectAccessPolicyTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_project_access_policy#timeouts IamProjectAccessPolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_project_access_policy#timeouts IamProjectAccessPolicy#timeouts}
 
 ---
 
@@ -1295,7 +1295,7 @@ public readonly rules: IResolvable | IamProjectAccessPolicyDetailsRules[];
 
 rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_project_access_policy#rules IamProjectAccessPolicy#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_project_access_policy#rules IamProjectAccessPolicy#rules}
 
 ---
 
@@ -1332,7 +1332,7 @@ public readonly effect: string;
 
 The effect of the rule. Possible values: DENY ALLOW Possible values: ["DENY", "ALLOW"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_project_access_policy#effect IamProjectAccessPolicy#effect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_project_access_policy#effect IamProjectAccessPolicy#effect}
 
 ---
 
@@ -1346,7 +1346,7 @@ public readonly operation: IamProjectAccessPolicyDetailsRulesOperation;
 
 operation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_project_access_policy#operation IamProjectAccessPolicy#operation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_project_access_policy#operation IamProjectAccessPolicy#operation}
 
 ---
 
@@ -1393,7 +1393,7 @@ A Google Cloud service account that was deleted recently. For example,
 If the service account is undeleted, this identifier reverts to the
 standard identifier for a service account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_project_access_policy#principals IamProjectAccessPolicy#principals}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_project_access_policy#principals IamProjectAccessPolicy#principals}
 
 ---
 
@@ -1407,7 +1407,7 @@ public readonly conditions: IResolvable | IamProjectAccessPolicyDetailsRulesCond
 
 conditions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_project_access_policy#conditions IamProjectAccessPolicy#conditions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_project_access_policy#conditions IamProjectAccessPolicy#conditions}
 
 ---
 
@@ -1421,7 +1421,7 @@ public readonly description: string;
 
 Customer specified description of the rule. Must be less than or equal to 256 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_project_access_policy#description IamProjectAccessPolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_project_access_policy#description IamProjectAccessPolicy#description}
 
 ---
 
@@ -1439,7 +1439,7 @@ For example, you could add a Google
 group to the 'principals', then exclude specific users who belong to
 that group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_project_access_policy#excluded_principals IamProjectAccessPolicy#excluded_principals}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_project_access_policy#excluded_principals IamProjectAccessPolicy#excluded_principals}
 
 ---
 
@@ -1457,7 +1457,7 @@ const iamProjectAccessPolicyDetailsRulesConditions: iamProjectAccessPolicy.IamPr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.iamProjectAccessPolicy.IamProjectAccessPolicyDetailsRulesConditions.property.service">service</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_project_access_policy#service IamProjectAccessPolicy#service}. |
+| <code><a href="#@cdktn/provider-google.iamProjectAccessPolicy.IamProjectAccessPolicyDetailsRulesConditions.property.service">service</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_project_access_policy#service IamProjectAccessPolicy#service}. |
 | <code><a href="#@cdktn/provider-google.iamProjectAccessPolicy.IamProjectAccessPolicyDetailsRulesConditions.property.expression">expression</a></code> | <code>string</code> | Textual representation of an expression in Common Expression Language syntax. |
 
 ---
@@ -1470,7 +1470,7 @@ public readonly service: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_project_access_policy#service IamProjectAccessPolicy#service}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_project_access_policy#service IamProjectAccessPolicy#service}.
 
 ---
 
@@ -1484,7 +1484,7 @@ public readonly expression: string;
 
 Textual representation of an expression in Common Expression Language syntax.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_project_access_policy#expression IamProjectAccessPolicy#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_project_access_policy#expression IamProjectAccessPolicy#expression}
 
 ---
 
@@ -1523,7 +1523,7 @@ permission uses the format '{service_fqdn}/{resource}.{verb}', where
 Currently supported permissions are as follows:
 * 'eventarc.googleapis.com/messageBuses.publish'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_project_access_policy#permissions IamProjectAccessPolicy#permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_project_access_policy#permissions IamProjectAccessPolicy#permissions}
 
 ---
 
@@ -1543,7 +1543,7 @@ subject to the policy effect.
 The excluded permissions can be specified using the same syntax as
 'permissions'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_project_access_policy#excluded_permissions IamProjectAccessPolicy#excluded_permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_project_access_policy#excluded_permissions IamProjectAccessPolicy#excluded_permissions}
 
 ---
 
@@ -1561,9 +1561,9 @@ const iamProjectAccessPolicyTimeouts: iamProjectAccessPolicy.IamProjectAccessPol
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.iamProjectAccessPolicy.IamProjectAccessPolicyTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_project_access_policy#create IamProjectAccessPolicy#create}. |
-| <code><a href="#@cdktn/provider-google.iamProjectAccessPolicy.IamProjectAccessPolicyTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_project_access_policy#delete IamProjectAccessPolicy#delete}. |
-| <code><a href="#@cdktn/provider-google.iamProjectAccessPolicy.IamProjectAccessPolicyTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_project_access_policy#update IamProjectAccessPolicy#update}. |
+| <code><a href="#@cdktn/provider-google.iamProjectAccessPolicy.IamProjectAccessPolicyTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_project_access_policy#create IamProjectAccessPolicy#create}. |
+| <code><a href="#@cdktn/provider-google.iamProjectAccessPolicy.IamProjectAccessPolicyTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_project_access_policy#delete IamProjectAccessPolicy#delete}. |
+| <code><a href="#@cdktn/provider-google.iamProjectAccessPolicy.IamProjectAccessPolicyTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_project_access_policy#update IamProjectAccessPolicy#update}. |
 
 ---
 
@@ -1575,7 +1575,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_project_access_policy#create IamProjectAccessPolicy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_project_access_policy#create IamProjectAccessPolicy#create}.
 
 ---
 
@@ -1587,7 +1587,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_project_access_policy#delete IamProjectAccessPolicy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_project_access_policy#delete IamProjectAccessPolicy#delete}.
 
 ---
 
@@ -1599,7 +1599,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iam_project_access_policy#update IamProjectAccessPolicy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iam_project_access_policy#update IamProjectAccessPolicy#update}.
 
 ---
 

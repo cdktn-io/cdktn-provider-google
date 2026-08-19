@@ -4,7 +4,7 @@
 
 ### DataGoogleCloudRunV2Service <a name="DataGoogleCloudRunV2Service" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2Service"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/cloud_run_v2_service google_cloud_run_v2_service}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/cloud_run_v2_service google_cloud_run_v2_service}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2Service.Initializer"></a>
 
@@ -38,9 +38,9 @@ DataGoogleCloudRunV2Service.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2Service.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2Service.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2Service.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Name of the Service. |
-| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2Service.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/cloud_run_v2_service#id DataGoogleCloudRunV2Service#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2Service.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/cloud_run_v2_service#id DataGoogleCloudRunV2Service#id}. |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2Service.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | The location of the cloud run service. |
-| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2Service.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/cloud_run_v2_service#project DataGoogleCloudRunV2Service#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2Service.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/cloud_run_v2_service#project DataGoogleCloudRunV2Service#project}. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 Name of the Service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/cloud_run_v2_service#name DataGoogleCloudRunV2Service#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/cloud_run_v2_service#name DataGoogleCloudRunV2Service#name}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/cloud_run_v2_service#id DataGoogleCloudRunV2Service#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/cloud_run_v2_service#id DataGoogleCloudRunV2Service#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -131,7 +131,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The location of the cloud run service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/cloud_run_v2_service#location DataGoogleCloudRunV2Service#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/cloud_run_v2_service#location DataGoogleCloudRunV2Service#location}
 
 ---
 
@@ -139,7 +139,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/cloud_run_v2_service#project DataGoogleCloudRunV2Service#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/cloud_run_v2_service#project DataGoogleCloudRunV2Service#project}.
 
 ---
 
@@ -505,7 +505,7 @@ The construct id used in the generated config for the DataGoogleCloudRunV2Servic
 
 The id of the existing DataGoogleCloudRunV2Service that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/cloud_run_v2_service#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/cloud_run_v2_service#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1287,9 +1287,9 @@ DataGoogleCloudRunV2ServiceConfig.builder()
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceConfig.property.name">name</a></code> | <code>java.lang.String</code> | Name of the Service. |
-| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/cloud_run_v2_service#id DataGoogleCloudRunV2Service#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/cloud_run_v2_service#id DataGoogleCloudRunV2Service#id}. |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceConfig.property.location">location</a></code> | <code>java.lang.String</code> | The location of the cloud run service. |
-| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/cloud_run_v2_service#project DataGoogleCloudRunV2Service#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/cloud_run_v2_service#project DataGoogleCloudRunV2Service#project}. |
 
 ---
 
@@ -1373,7 +1373,7 @@ public java.lang.String getName();
 
 Name of the Service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/cloud_run_v2_service#name DataGoogleCloudRunV2Service#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/cloud_run_v2_service#name DataGoogleCloudRunV2Service#name}
 
 ---
 
@@ -1385,7 +1385,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/cloud_run_v2_service#id DataGoogleCloudRunV2Service#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/cloud_run_v2_service#id DataGoogleCloudRunV2Service#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1402,7 +1402,7 @@ public java.lang.String getLocation();
 
 The location of the cloud run service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/cloud_run_v2_service#location DataGoogleCloudRunV2Service#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/cloud_run_v2_service#location DataGoogleCloudRunV2Service#location}
 
 ---
 
@@ -1414,7 +1414,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/cloud_run_v2_service#project DataGoogleCloudRunV2Service#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/cloud_run_v2_service#project DataGoogleCloudRunV2Service#project}.
 
 ---
 
@@ -1714,6 +1714,54 @@ DataGoogleCloudRunV2ServiceTemplateContainersVolumeMounts.builder()
 import io.cdktn.providers.google.data_google_cloud_run_v2_service.DataGoogleCloudRunV2ServiceTemplateNodeSelector;
 
 DataGoogleCloudRunV2ServiceTemplateNodeSelector.builder()
+    .build();
+```
+
+
+### DataGoogleCloudRunV2ServiceTemplateSandboxes <a name="DataGoogleCloudRunV2ServiceTemplateSandboxes" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxes"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxes.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.data_google_cloud_run_v2_service.DataGoogleCloudRunV2ServiceTemplateSandboxes;
+
+DataGoogleCloudRunV2ServiceTemplateSandboxes.builder()
+    .build();
+```
+
+
+### DataGoogleCloudRunV2ServiceTemplateSandboxesTemplates <a name="DataGoogleCloudRunV2ServiceTemplateSandboxesTemplates" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplates"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplates.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.data_google_cloud_run_v2_service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplates;
+
+DataGoogleCloudRunV2ServiceTemplateSandboxesTemplates.builder()
+    .build();
+```
+
+
+### DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnv <a name="DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnv" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnv"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnv.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.data_google_cloud_run_v2_service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnv;
+
+DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnv.builder()
+    .build();
+```
+
+
+### DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMounts <a name="DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMounts" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMounts"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMounts.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.data_google_cloud_run_v2_service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMounts;
+
+DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMounts.builder()
     .build();
 ```
 
@@ -14584,6 +14632,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateOutputReference.property.maxInstanceRequestConcurrency">maxInstanceRequestConcurrency</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateOutputReference.property.nodeSelector">nodeSelector</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateNodeSelectorList">DataGoogleCloudRunV2ServiceTemplateNodeSelectorList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateOutputReference.property.revision">revision</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateOutputReference.property.sandboxes">sandboxes</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesList">DataGoogleCloudRunV2ServiceTemplateSandboxesList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateOutputReference.property.scaling">scaling</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateScalingList">DataGoogleCloudRunV2ServiceTemplateScalingList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateOutputReference.property.serviceAccount">serviceAccount</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateOutputReference.property.sessionAffinity">sessionAffinity</a></code> | <code>io.cdktn.cdktn.IResolvable</code> | *No description.* |
@@ -14718,6 +14767,16 @@ public java.lang.String getRevision();
 
 ---
 
+##### `sandboxes`<sup>Required</sup> <a name="sandboxes" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateOutputReference.property.sandboxes"></a>
+
+```java
+public DataGoogleCloudRunV2ServiceTemplateSandboxesList getSandboxes();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesList">DataGoogleCloudRunV2ServiceTemplateSandboxesList</a>
+
+---
+
 ##### `scaling`<sup>Required</sup> <a name="scaling" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateOutputReference.property.scaling"></a>
 
 ```java
@@ -14785,6 +14844,1813 @@ public DataGoogleCloudRunV2ServiceTemplate getInternalValue();
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplate">DataGoogleCloudRunV2ServiceTemplate</a>
+
+---
+
+
+### DataGoogleCloudRunV2ServiceTemplateSandboxesList <a name="DataGoogleCloudRunV2ServiceTemplateSandboxesList" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesList.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.data_google_cloud_run_v2_service.DataGoogleCloudRunV2ServiceTemplateSandboxesList;
+
+new DataGoogleCloudRunV2ServiceTemplateSandboxesList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesList.allWithMapKey"></a>
+
+```java
+public DynamicListTerraformIterator allWithMapKey(java.lang.String mapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesList.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesList.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesList.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesList.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesList.get"></a>
+
+```java
+public DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference get(java.lang.Number index)
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesList.get.parameter.index"></a>
+
+- *Type:* java.lang.Number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesList.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesList.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+
+### DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference <a name="DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.data_google_cloud_run_v2_service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference;
+
+new DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* java.lang.Number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.property.templates">templates</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesList">DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxes">DataGoogleCloudRunV2ServiceTemplateSandboxes</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `templates`<sup>Required</sup> <a name="templates" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.property.templates"></a>
+
+```java
+public DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesList getTemplates();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesList">DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesList</a>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesOutputReference.property.internalValue"></a>
+
+```java
+public DataGoogleCloudRunV2ServiceTemplateSandboxes getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxes">DataGoogleCloudRunV2ServiceTemplateSandboxes</a>
+
+---
+
+
+### DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvList <a name="DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvList" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvList.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.data_google_cloud_run_v2_service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvList;
+
+new DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvList.allWithMapKey"></a>
+
+```java
+public DynamicListTerraformIterator allWithMapKey(java.lang.String mapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvList.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvList.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvList.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvList.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvList.get"></a>
+
+```java
+public DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference get(java.lang.Number index)
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvList.get.parameter.index"></a>
+
+- *Type:* java.lang.Number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvList.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvList.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+
+### DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference <a name="DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.data_google_cloud_run_v2_service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference;
+
+new DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* java.lang.Number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnv">DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnv</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.property.value"></a>
+
+```java
+public java.lang.String getValue();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvOutputReference.property.internalValue"></a>
+
+```java
+public DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnv getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnv">DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnv</a>
+
+---
+
+
+### DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesList <a name="DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesList" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesList.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.data_google_cloud_run_v2_service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesList;
+
+new DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesList.allWithMapKey"></a>
+
+```java
+public DynamicListTerraformIterator allWithMapKey(java.lang.String mapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesList.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesList.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesList.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesList.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesList.get"></a>
+
+```java
+public DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference get(java.lang.Number index)
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesList.get.parameter.index"></a>
+
+- *Type:* java.lang.Number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesList.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesList.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+
+### DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference <a name="DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.data_google_cloud_run_v2_service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference;
+
+new DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* java.lang.Number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.property.args">args</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.property.command">command</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.property.env">env</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvList">DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.property.image">image</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.property.volumeMounts">volumeMounts</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsList">DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.property.workingDir">workingDir</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplates">DataGoogleCloudRunV2ServiceTemplateSandboxesTemplates</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `args`<sup>Required</sup> <a name="args" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.property.args"></a>
+
+```java
+public java.util.List<java.lang.String> getArgs();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `command`<sup>Required</sup> <a name="command" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.property.command"></a>
+
+```java
+public java.util.List<java.lang.String> getCommand();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `env`<sup>Required</sup> <a name="env" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.property.env"></a>
+
+```java
+public DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvList getEnv();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvList">DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesEnvList</a>
+
+---
+
+##### `image`<sup>Required</sup> <a name="image" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.property.image"></a>
+
+```java
+public java.lang.String getImage();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `volumeMounts`<sup>Required</sup> <a name="volumeMounts" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.property.volumeMounts"></a>
+
+```java
+public DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsList getVolumeMounts();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsList">DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsList</a>
+
+---
+
+##### `workingDir`<sup>Required</sup> <a name="workingDir" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.property.workingDir"></a>
+
+```java
+public java.lang.String getWorkingDir();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesOutputReference.property.internalValue"></a>
+
+```java
+public DataGoogleCloudRunV2ServiceTemplateSandboxesTemplates getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplates">DataGoogleCloudRunV2ServiceTemplateSandboxesTemplates</a>
+
+---
+
+
+### DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsList <a name="DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsList" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsList.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.data_google_cloud_run_v2_service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsList;
+
+new DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsList.allWithMapKey"></a>
+
+```java
+public DynamicListTerraformIterator allWithMapKey(java.lang.String mapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsList.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsList.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsList.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsList.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsList.get"></a>
+
+```java
+public DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference get(java.lang.Number index)
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsList.get.parameter.index"></a>
+
+- *Type:* java.lang.Number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsList.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsList.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+
+### DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference <a name="DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.data_google_cloud_run_v2_service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference;
+
+new DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* java.lang.Number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.property.mountPath">mountPath</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.property.subPath">subPath</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMounts">DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMounts</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `mountPath`<sup>Required</sup> <a name="mountPath" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.property.mountPath"></a>
+
+```java
+public java.lang.String getMountPath();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `subPath`<sup>Required</sup> <a name="subPath" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.property.subPath"></a>
+
+```java
+public java.lang.String getSubPath();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMountsOutputReference.property.internalValue"></a>
+
+```java
+public DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMounts getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dataGoogleCloudRunV2Service.DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMounts">DataGoogleCloudRunV2ServiceTemplateSandboxesTemplatesVolumeMounts</a>
 
 ---
 

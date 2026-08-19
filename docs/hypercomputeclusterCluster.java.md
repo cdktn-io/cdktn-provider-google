@@ -4,7 +4,7 @@
 
 ### HypercomputeclusterCluster <a name="HypercomputeclusterCluster" id="@cdktn/provider-google.hypercomputeclusterCluster.HypercomputeclusterCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster google_hypercomputecluster_cluster}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster google_hypercomputecluster_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.hypercomputeclusterCluster.HypercomputeclusterCluster.Initializer"></a>
 
@@ -51,10 +51,10 @@ HypercomputeclusterCluster.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.hypercomputeclusterCluster.HypercomputeclusterCluster.Initializer.parameter.computeResources">computeResources</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterComputeResources">HypercomputeclusterClusterComputeResources</a>></code> | compute_resources block. |
 | <code><a href="#@cdktn/provider-google.hypercomputeclusterCluster.HypercomputeclusterCluster.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.hypercomputeclusterCluster.HypercomputeclusterCluster.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | User-provided description of the cluster. |
-| <code><a href="#@cdktn/provider-google.hypercomputeclusterCluster.HypercomputeclusterCluster.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#id HypercomputeclusterCluster#id}. |
+| <code><a href="#@cdktn/provider-google.hypercomputeclusterCluster.HypercomputeclusterCluster.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#id HypercomputeclusterCluster#id}. |
 | <code><a href="#@cdktn/provider-google.hypercomputeclusterCluster.HypercomputeclusterCluster.Initializer.parameter.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | [Labels](https://cloud.google.com/compute/docs/labeling-resources) applied to the cluster. Labels can be used to organize clusters and to filter them in queries. |
 | <code><a href="#@cdktn/provider-google.hypercomputeclusterCluster.HypercomputeclusterCluster.Initializer.parameter.orchestrator">orchestrator</a></code> | <code><a href="#@cdktn/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterOrchestrator">HypercomputeclusterClusterOrchestrator</a></code> | orchestrator block. |
-| <code><a href="#@cdktn/provider-google.hypercomputeclusterCluster.HypercomputeclusterCluster.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#project HypercomputeclusterCluster#project}. |
+| <code><a href="#@cdktn/provider-google.hypercomputeclusterCluster.HypercomputeclusterCluster.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#project HypercomputeclusterCluster#project}. |
 | <code><a href="#@cdktn/provider-google.hypercomputeclusterCluster.HypercomputeclusterCluster.Initializer.parameter.storageResources">storageResources</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterStorageResources">HypercomputeclusterClusterStorageResources</a>></code> | storage_resources block. |
 | <code><a href="#@cdktn/provider-google.hypercomputeclusterCluster.HypercomputeclusterCluster.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterTimeouts">HypercomputeclusterClusterTimeouts</a></code> | timeouts block. |
 
@@ -129,7 +129,7 @@ ID of the cluster to create.
 Must start with a lowercase letter,
 use only lowercase letters and numbers, and be at most 10 characters long.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#cluster_id HypercomputeclusterCluster#cluster_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#cluster_id HypercomputeclusterCluster#cluster_id}
 
 ---
 
@@ -139,7 +139,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#location HypercomputeclusterCluster#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#location HypercomputeclusterCluster#location}
 
 ---
 
@@ -149,7 +149,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 network_resources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#network_resources HypercomputeclusterCluster#network_resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#network_resources HypercomputeclusterCluster#network_resources}
 
 ---
 
@@ -159,7 +159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 compute_resources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#compute_resources HypercomputeclusterCluster#compute_resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#compute_resources HypercomputeclusterCluster#compute_resources}
 
 ---
 
@@ -176,7 +176,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#deletion_policy HypercomputeclusterCluster#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#deletion_policy HypercomputeclusterCluster#deletion_policy}
 
 ---
 
@@ -186,7 +186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 User-provided description of the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#description HypercomputeclusterCluster#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#description HypercomputeclusterCluster#description}
 
 ---
 
@@ -194,7 +194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#id HypercomputeclusterCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#id HypercomputeclusterCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -210,7 +210,7 @@ If you experience problems setting this value it might not be settable. Please t
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#labels HypercomputeclusterCluster#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#labels HypercomputeclusterCluster#labels}
 
 ---
 
@@ -220,7 +220,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 orchestrator block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#orchestrator HypercomputeclusterCluster#orchestrator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#orchestrator HypercomputeclusterCluster#orchestrator}
 
 ---
 
@@ -228,7 +228,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#project HypercomputeclusterCluster#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#project HypercomputeclusterCluster#project}.
 
 ---
 
@@ -238,7 +238,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 storage_resources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#storage_resources HypercomputeclusterCluster#storage_resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#storage_resources HypercomputeclusterCluster#storage_resources}
 
 ---
 
@@ -248,7 +248,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#timeouts HypercomputeclusterCluster#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#timeouts HypercomputeclusterCluster#timeouts}
 
 ---
 
@@ -825,7 +825,7 @@ The construct id used in the generated config for the HypercomputeclusterCluster
 
 The id of the existing HypercomputeclusterCluster that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1368,7 +1368,7 @@ HypercomputeclusterClusterComputeResources.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterComputeResources.property.config">config</a></code> | <code><a href="#@cdktn/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterComputeResourcesConfig">HypercomputeclusterClusterComputeResourcesConfig</a></code> | config block. |
-| <code><a href="#@cdktn/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterComputeResources.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#id HypercomputeclusterCluster#id}. |
+| <code><a href="#@cdktn/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterComputeResources.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#id HypercomputeclusterCluster#id}. |
 
 ---
 
@@ -1382,7 +1382,7 @@ public HypercomputeclusterClusterComputeResourcesConfig getConfig();
 
 config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#config HypercomputeclusterCluster#config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#config HypercomputeclusterCluster#config}
 
 ---
 
@@ -1394,7 +1394,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#id HypercomputeclusterCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#id HypercomputeclusterCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1437,7 +1437,7 @@ public HypercomputeclusterClusterComputeResourcesConfigNewFlexStartInstances get
 
 new_flex_start_instances block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#new_flex_start_instances HypercomputeclusterCluster#new_flex_start_instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#new_flex_start_instances HypercomputeclusterCluster#new_flex_start_instances}
 
 ---
 
@@ -1451,7 +1451,7 @@ public HypercomputeclusterClusterComputeResourcesConfigNewOnDemandInstances getN
 
 new_on_demand_instances block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#new_on_demand_instances HypercomputeclusterCluster#new_on_demand_instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#new_on_demand_instances HypercomputeclusterCluster#new_on_demand_instances}
 
 ---
 
@@ -1465,7 +1465,7 @@ public HypercomputeclusterClusterComputeResourcesConfigNewReservedInstances getN
 
 new_reserved_instances block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#new_reserved_instances HypercomputeclusterCluster#new_reserved_instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#new_reserved_instances HypercomputeclusterCluster#new_reserved_instances}
 
 ---
 
@@ -1479,7 +1479,7 @@ public HypercomputeclusterClusterComputeResourcesConfigNewSpotInstances getNewSp
 
 new_spot_instances block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#new_spot_instances HypercomputeclusterCluster#new_spot_instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#new_spot_instances HypercomputeclusterCluster#new_spot_instances}
 
 ---
 
@@ -1517,7 +1517,7 @@ public java.lang.String getMachineType();
 
 Name of the Compute Engine [machine type](https://cloud.google.com/compute/docs/machine-resource) to use, e.g. 'n2-standard-2'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#machine_type HypercomputeclusterCluster#machine_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#machine_type HypercomputeclusterCluster#machine_type}
 
 ---
 
@@ -1531,7 +1531,7 @@ public java.lang.String getMaxDuration();
 
 Specifies the time limit for created instances. Instances will be terminated at the end of this duration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#max_duration HypercomputeclusterCluster#max_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#max_duration HypercomputeclusterCluster#max_duration}
 
 ---
 
@@ -1545,7 +1545,7 @@ public java.lang.String getZone();
 
 Name of the zone in which VM instances should run, e.g., 'us-central1-a'. Must be in the same region as the cluster, and must match the zone of any other resources specified in the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#zone HypercomputeclusterCluster#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#zone HypercomputeclusterCluster#zone}
 
 ---
 
@@ -1581,7 +1581,7 @@ public java.lang.String getMachineType();
 
 Name of the Compute Engine [machine type](https://cloud.google.com/compute/docs/machine-resource) to use, e.g. 'n2-standard-2'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#machine_type HypercomputeclusterCluster#machine_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#machine_type HypercomputeclusterCluster#machine_type}
 
 ---
 
@@ -1595,7 +1595,7 @@ public java.lang.String getZone();
 
 Name of the zone in which VM instances should run, e.g., 'us-central1-a'. Must be in the same region as the cluster, and must match the zone of any other resources specified in the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#zone HypercomputeclusterCluster#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#zone HypercomputeclusterCluster#zone}
 
 ---
 
@@ -1629,7 +1629,7 @@ public java.lang.String getReservation();
 
 Name of the reservation from which VM instances should be created, in the format 'projects/{project}/zones/{zone}/reservations/{reservation}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#reservation HypercomputeclusterCluster#reservation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#reservation HypercomputeclusterCluster#reservation}
 
 ---
 
@@ -1667,7 +1667,7 @@ public java.lang.String getMachineType();
 
 Name of the Compute Engine [machine type](https://cloud.google.com/compute/docs/machine-resource) to use, e.g. 'n2-standard-2'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#machine_type HypercomputeclusterCluster#machine_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#machine_type HypercomputeclusterCluster#machine_type}
 
 ---
 
@@ -1681,7 +1681,7 @@ public java.lang.String getZone();
 
 Name of the zone in which VM instances should run, e.g., 'us-central1-a'. Must be in the same region as the cluster, and must match the zone of any other resources specified in the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#zone HypercomputeclusterCluster#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#zone HypercomputeclusterCluster#zone}
 
 ---
 
@@ -1695,7 +1695,7 @@ public java.lang.String getTerminationAction();
 
 Specifies the termination action of the instance Possible values: STOP DELETE.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#termination_action HypercomputeclusterCluster#termination_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#termination_action HypercomputeclusterCluster#termination_action}
 
 ---
 
@@ -1746,10 +1746,10 @@ HypercomputeclusterClusterConfig.builder()
 | <code><a href="#@cdktn/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterConfig.property.computeResources">computeResources</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterComputeResources">HypercomputeclusterClusterComputeResources</a>></code> | compute_resources block. |
 | <code><a href="#@cdktn/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterConfig.property.description">description</a></code> | <code>java.lang.String</code> | User-provided description of the cluster. |
-| <code><a href="#@cdktn/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#id HypercomputeclusterCluster#id}. |
+| <code><a href="#@cdktn/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#id HypercomputeclusterCluster#id}. |
 | <code><a href="#@cdktn/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterConfig.property.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | [Labels](https://cloud.google.com/compute/docs/labeling-resources) applied to the cluster. Labels can be used to organize clusters and to filter them in queries. |
 | <code><a href="#@cdktn/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterConfig.property.orchestrator">orchestrator</a></code> | <code><a href="#@cdktn/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterOrchestrator">HypercomputeclusterClusterOrchestrator</a></code> | orchestrator block. |
-| <code><a href="#@cdktn/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#project HypercomputeclusterCluster#project}. |
+| <code><a href="#@cdktn/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#project HypercomputeclusterCluster#project}. |
 | <code><a href="#@cdktn/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterConfig.property.storageResources">storageResources</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterStorageResources">HypercomputeclusterClusterStorageResources</a>></code> | storage_resources block. |
 | <code><a href="#@cdktn/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterTimeouts">HypercomputeclusterClusterTimeouts</a></code> | timeouts block. |
 
@@ -1838,7 +1838,7 @@ ID of the cluster to create.
 Must start with a lowercase letter,
 use only lowercase letters and numbers, and be at most 10 characters long.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#cluster_id HypercomputeclusterCluster#cluster_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#cluster_id HypercomputeclusterCluster#cluster_id}
 
 ---
 
@@ -1852,7 +1852,7 @@ public java.lang.String getLocation();
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#location HypercomputeclusterCluster#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#location HypercomputeclusterCluster#location}
 
 ---
 
@@ -1866,7 +1866,7 @@ public IResolvable|java.util.List<HypercomputeclusterClusterNetworkResources> ge
 
 network_resources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#network_resources HypercomputeclusterCluster#network_resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#network_resources HypercomputeclusterCluster#network_resources}
 
 ---
 
@@ -1880,7 +1880,7 @@ public IResolvable|java.util.List<HypercomputeclusterClusterComputeResources> ge
 
 compute_resources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#compute_resources HypercomputeclusterCluster#compute_resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#compute_resources HypercomputeclusterCluster#compute_resources}
 
 ---
 
@@ -1901,7 +1901,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#deletion_policy HypercomputeclusterCluster#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#deletion_policy HypercomputeclusterCluster#deletion_policy}
 
 ---
 
@@ -1915,7 +1915,7 @@ public java.lang.String getDescription();
 
 User-provided description of the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#description HypercomputeclusterCluster#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#description HypercomputeclusterCluster#description}
 
 ---
 
@@ -1927,7 +1927,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#id HypercomputeclusterCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#id HypercomputeclusterCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1947,7 +1947,7 @@ public java.util.Map<java.lang.String, java.lang.String> getLabels();
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#labels HypercomputeclusterCluster#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#labels HypercomputeclusterCluster#labels}
 
 ---
 
@@ -1961,7 +1961,7 @@ public HypercomputeclusterClusterOrchestrator getOrchestrator();
 
 orchestrator block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#orchestrator HypercomputeclusterCluster#orchestrator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#orchestrator HypercomputeclusterCluster#orchestrator}
 
 ---
 
@@ -1973,7 +1973,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#project HypercomputeclusterCluster#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#project HypercomputeclusterCluster#project}.
 
 ---
 
@@ -1987,7 +1987,7 @@ public IResolvable|java.util.List<HypercomputeclusterClusterStorageResources> ge
 
 storage_resources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#storage_resources HypercomputeclusterCluster#storage_resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#storage_resources HypercomputeclusterCluster#storage_resources}
 
 ---
 
@@ -2001,7 +2001,7 @@ public HypercomputeclusterClusterTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#timeouts HypercomputeclusterCluster#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#timeouts HypercomputeclusterCluster#timeouts}
 
 ---
 
@@ -2022,7 +2022,7 @@ HypercomputeclusterClusterNetworkResources.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterNetworkResources.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#id HypercomputeclusterCluster#id}. |
+| <code><a href="#@cdktn/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterNetworkResources.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#id HypercomputeclusterCluster#id}. |
 | <code><a href="#@cdktn/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterNetworkResources.property.config">config</a></code> | <code><a href="#@cdktn/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterNetworkResourcesConfig">HypercomputeclusterClusterNetworkResourcesConfig</a></code> | config block. |
 
 ---
@@ -2035,7 +2035,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#id HypercomputeclusterCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#id HypercomputeclusterCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2052,7 +2052,7 @@ public HypercomputeclusterClusterNetworkResourcesConfig getConfig();
 
 config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#config HypercomputeclusterCluster#config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#config HypercomputeclusterCluster#config}
 
 ---
 
@@ -2088,7 +2088,7 @@ public HypercomputeclusterClusterNetworkResourcesConfigExistingNetwork getExisti
 
 existing_network block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#existing_network HypercomputeclusterCluster#existing_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#existing_network HypercomputeclusterCluster#existing_network}
 
 ---
 
@@ -2102,7 +2102,7 @@ public HypercomputeclusterClusterNetworkResourcesConfigNewNetwork getNewNetwork(
 
 new_network block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#new_network HypercomputeclusterCluster#new_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#new_network HypercomputeclusterCluster#new_network}
 
 ---
 
@@ -2138,7 +2138,7 @@ public java.lang.String getNetwork();
 
 Name of the network to import, in the format 'projects/{project}/global/networks/{network}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#network HypercomputeclusterCluster#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#network HypercomputeclusterCluster#network}
 
 ---
 
@@ -2152,7 +2152,7 @@ public java.lang.String getSubnetwork();
 
 Particular subnetwork to use, in the format 'projects/{project}/regions/{region}/subnetworks/{subnetwork}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#subnetwork HypercomputeclusterCluster#subnetwork}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#subnetwork HypercomputeclusterCluster#subnetwork}
 
 ---
 
@@ -2188,7 +2188,7 @@ public java.lang.String getNetwork();
 
 Name of the network to create, in the format 'projects/{project}/global/networks/{network}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#network HypercomputeclusterCluster#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#network HypercomputeclusterCluster#network}
 
 ---
 
@@ -2202,7 +2202,7 @@ public java.lang.String getDescription();
 
 Description of the network. Maximum of 2048 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#description HypercomputeclusterCluster#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#description HypercomputeclusterCluster#description}
 
 ---
 
@@ -2248,7 +2248,7 @@ public HypercomputeclusterClusterOrchestratorSlurm getSlurm();
 
 slurm block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#slurm HypercomputeclusterCluster#slurm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#slurm HypercomputeclusterCluster#slurm}
 
 ---
 
@@ -2292,7 +2292,7 @@ public HypercomputeclusterClusterOrchestratorSlurmLoginNodes getLoginNodes();
 
 login_nodes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#login_nodes HypercomputeclusterCluster#login_nodes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#login_nodes HypercomputeclusterCluster#login_nodes}
 
 ---
 
@@ -2306,7 +2306,7 @@ public IResolvable|java.util.List<HypercomputeclusterClusterOrchestratorSlurmNod
 
 node_sets block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#node_sets HypercomputeclusterCluster#node_sets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#node_sets HypercomputeclusterCluster#node_sets}
 
 ---
 
@@ -2320,7 +2320,7 @@ public IResolvable|java.util.List<HypercomputeclusterClusterOrchestratorSlurmPar
 
 partitions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#partitions HypercomputeclusterCluster#partitions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#partitions HypercomputeclusterCluster#partitions}
 
 ---
 
@@ -2337,7 +2337,7 @@ Default partition to use for submitted jobs that do not explicitly specify a par
 Required if and only if there is more than one partition, in
 which case it must match the id of one of the partitions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#default_partition HypercomputeclusterCluster#default_partition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#default_partition HypercomputeclusterCluster#default_partition}
 
 ---
 
@@ -2351,7 +2351,7 @@ public java.util.List<java.lang.String> getEpilogBashScripts();
 
 Slurm [epilog scripts](https://slurm.schedmd.com/prolog_epilog.html), which will be executed by compute nodes whenever a node finishes running a job. Values must not be empty.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#epilog_bash_scripts HypercomputeclusterCluster#epilog_bash_scripts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#epilog_bash_scripts HypercomputeclusterCluster#epilog_bash_scripts}
 
 ---
 
@@ -2365,7 +2365,7 @@ public java.util.List<java.lang.String> getPrologBashScripts();
 
 Slurm [prolog scripts](https://slurm.schedmd.com/prolog_epilog.html), which will be executed by compute nodes before a node begins running a new job. Values must not be empty.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#prolog_bash_scripts HypercomputeclusterCluster#prolog_bash_scripts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#prolog_bash_scripts HypercomputeclusterCluster#prolog_bash_scripts}
 
 ---
 
@@ -2415,7 +2415,7 @@ public java.lang.String getCount();
 
 Number of login node instances to create.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#count HypercomputeclusterCluster#count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#count HypercomputeclusterCluster#count}
 
 ---
 
@@ -2429,7 +2429,7 @@ public java.lang.String getMachineType();
 
 Name of the Compute Engine [machine type](https://cloud.google.com/compute/docs/machine-resource) to use for login nodes, e.g. 'n2-standard-2'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#machine_type HypercomputeclusterCluster#machine_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#machine_type HypercomputeclusterCluster#machine_type}
 
 ---
 
@@ -2443,7 +2443,7 @@ public java.lang.String getZone();
 
 Name of the zone in which login nodes should run, e.g., 'us-central1-a'. Must be in the same region as the cluster, and must match the zone of any other resources specified in the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#zone HypercomputeclusterCluster#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#zone HypercomputeclusterCluster#zone}
 
 ---
 
@@ -2457,7 +2457,7 @@ public HypercomputeclusterClusterOrchestratorSlurmLoginNodesBootDisk getBootDisk
 
 boot_disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#boot_disk HypercomputeclusterCluster#boot_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#boot_disk HypercomputeclusterCluster#boot_disk}
 
 ---
 
@@ -2471,7 +2471,7 @@ public java.lang.Boolean|IResolvable getEnableOsLogin();
 
 Whether [OS Login](https://cloud.google.com/compute/docs/oslogin) should be enabled on login node instances.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#enable_os_login HypercomputeclusterCluster#enable_os_login}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#enable_os_login HypercomputeclusterCluster#enable_os_login}
 
 ---
 
@@ -2485,7 +2485,7 @@ public java.lang.Boolean|IResolvable getEnablePublicIps();
 
 Whether login node instances should be assigned [external IP addresses](https://cloud.google.com/compute/docs/ip-addresses#externaladdresses).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#enable_public_ips HypercomputeclusterCluster#enable_public_ips}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#enable_public_ips HypercomputeclusterCluster#enable_public_ips}
 
 ---
 
@@ -2499,7 +2499,7 @@ public java.util.Map<java.lang.String, java.lang.String> getLabels();
 
 [Labels](https://cloud.google.com/compute/docs/labeling-resources) that should be applied to each login node instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#labels HypercomputeclusterCluster#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#labels HypercomputeclusterCluster#labels}
 
 ---
 
@@ -2513,7 +2513,7 @@ public java.lang.String getStartupScript();
 
 [Startup script](https://cloud.google.com/compute/docs/instances/startup-scripts/linux) to be run on each login node instance. Max 256KB. The script must complete within the system-defined default timeout of 5 minutes. For tasks that require more time, consider running them in the background using methods such as '&' or 'nohup'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#startup_script HypercomputeclusterCluster#startup_script}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#startup_script HypercomputeclusterCluster#startup_script}
 
 ---
 
@@ -2527,7 +2527,7 @@ public IResolvable|java.util.List<HypercomputeclusterClusterOrchestratorSlurmLog
 
 storage_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#storage_configs HypercomputeclusterCluster#storage_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#storage_configs HypercomputeclusterCluster#storage_configs}
 
 ---
 
@@ -2563,7 +2563,7 @@ public java.lang.String getSizeGb();
 
 Size of the disk in gigabytes. Must be at least 10GB.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#size_gb HypercomputeclusterCluster#size_gb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#size_gb HypercomputeclusterCluster#size_gb}
 
 ---
 
@@ -2577,7 +2577,7 @@ public java.lang.String getType();
 
 [Persistent disk type](https://cloud.google.com/compute/docs/disks#disk-types), in the format 'projects/{project}/zones/{zone}/diskTypes/{disk_type}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#type HypercomputeclusterCluster#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#type HypercomputeclusterCluster#type}
 
 ---
 
@@ -2625,7 +2625,7 @@ public java.lang.String getId();
 
 ID of the storage resource to mount, which must match a key in the cluster's [storage_resources](Cluster.storage_resources).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#id HypercomputeclusterCluster#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#id HypercomputeclusterCluster#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2642,7 +2642,7 @@ public java.lang.String getLocalMount();
 
 A directory inside the VM instance's file system where the storage resource should be mounted (e.g., '/mnt/share').
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#local_mount HypercomputeclusterCluster#local_mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#local_mount HypercomputeclusterCluster#local_mount}
 
 ---
 
@@ -2690,7 +2690,7 @@ Must conform to
 [RFC-1034](https://datatracker.ietf.org/doc/html/rfc1034) (lower-case,
 alphanumeric, and at most 63 characters).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#id HypercomputeclusterCluster#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#id HypercomputeclusterCluster#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2707,7 +2707,7 @@ public java.lang.String getComputeId();
 
 ID of the compute resource on which this nodeset will run. Must match a key in the cluster's [compute_resources](Cluster.compute_resources).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#compute_id HypercomputeclusterCluster#compute_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#compute_id HypercomputeclusterCluster#compute_id}
 
 ---
 
@@ -2721,7 +2721,7 @@ public HypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeInstance getCom
 
 compute_instance block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#compute_instance HypercomputeclusterCluster#compute_instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#compute_instance HypercomputeclusterCluster#compute_instance}
 
 ---
 
@@ -2740,7 +2740,7 @@ number of additional nodes the cluster can bring online. Leave empty if you
 do not want the cluster to create nodes dynamically, and instead rely only
 on static nodes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#max_dynamic_node_count HypercomputeclusterCluster#max_dynamic_node_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#max_dynamic_node_count HypercomputeclusterCluster#max_dynamic_node_count}
 
 ---
 
@@ -2757,7 +2757,7 @@ Number of nodes to be statically created for this nodeset.
 The cluster will
 attempt to ensure that at least this many nodes exist at all times.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#static_node_count HypercomputeclusterCluster#static_node_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#static_node_count HypercomputeclusterCluster#static_node_count}
 
 ---
 
@@ -2771,7 +2771,7 @@ public IResolvable|java.util.List<HypercomputeclusterClusterOrchestratorSlurmNod
 
 storage_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#storage_configs HypercomputeclusterCluster#storage_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#storage_configs HypercomputeclusterCluster#storage_configs}
 
 ---
 
@@ -2809,7 +2809,7 @@ public HypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeInstanceBootDis
 
 boot_disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#boot_disk HypercomputeclusterCluster#boot_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#boot_disk HypercomputeclusterCluster#boot_disk}
 
 ---
 
@@ -2823,7 +2823,7 @@ public java.util.Map<java.lang.String, java.lang.String> getLabels();
 
 [Labels](https://cloud.google.com/compute/docs/labeling-resources) that should be applied to each VM instance in the nodeset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#labels HypercomputeclusterCluster#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#labels HypercomputeclusterCluster#labels}
 
 ---
 
@@ -2837,7 +2837,7 @@ public java.lang.String getStartupScript();
 
 [Startup script](https://cloud.google.com/compute/docs/instances/startup-scripts/linux) to be run on each VM instance in the nodeset. Max 256KB.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#startup_script HypercomputeclusterCluster#startup_script}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#startup_script HypercomputeclusterCluster#startup_script}
 
 ---
 
@@ -2873,7 +2873,7 @@ public java.lang.String getSizeGb();
 
 Size of the disk in gigabytes. Must be at least 10GB.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#size_gb HypercomputeclusterCluster#size_gb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#size_gb HypercomputeclusterCluster#size_gb}
 
 ---
 
@@ -2887,7 +2887,7 @@ public java.lang.String getType();
 
 [Persistent disk type](https://cloud.google.com/compute/docs/disks#disk-types), in the format 'projects/{project}/zones/{zone}/diskTypes/{disk_type}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#type HypercomputeclusterCluster#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#type HypercomputeclusterCluster#type}
 
 ---
 
@@ -2923,7 +2923,7 @@ public java.lang.String getId();
 
 ID of the storage resource to mount, which must match a key in the cluster's [storage_resources](Cluster.storage_resources).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#id HypercomputeclusterCluster#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#id HypercomputeclusterCluster#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2940,7 +2940,7 @@ public java.lang.String getLocalMount();
 
 A directory inside the VM instance's file system where the storage resource should be mounted (e.g., '/mnt/share').
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#local_mount HypercomputeclusterCluster#local_mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#local_mount HypercomputeclusterCluster#local_mount}
 
 ---
 
@@ -2980,7 +2980,7 @@ Must conform to
 [RFC-1034](https://datatracker.ietf.org/doc/html/rfc1034) (lower-case,
 alphanumeric, and at most 63 characters).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#id HypercomputeclusterCluster#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#id HypercomputeclusterCluster#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2997,7 +2997,7 @@ public java.util.List<java.lang.String> getNodeSetIds();
 
 IDs of the nodesets that make up this partition. Values must match SlurmNodeSet.id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#node_set_ids HypercomputeclusterCluster#node_set_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#node_set_ids HypercomputeclusterCluster#node_set_ids}
 
 ---
 
@@ -3019,7 +3019,7 @@ HypercomputeclusterClusterStorageResources.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterStorageResources.property.config">config</a></code> | <code><a href="#@cdktn/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterStorageResourcesConfig">HypercomputeclusterClusterStorageResourcesConfig</a></code> | config block. |
-| <code><a href="#@cdktn/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterStorageResources.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#id HypercomputeclusterCluster#id}. |
+| <code><a href="#@cdktn/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterStorageResources.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#id HypercomputeclusterCluster#id}. |
 
 ---
 
@@ -3033,7 +3033,7 @@ public HypercomputeclusterClusterStorageResourcesConfig getConfig();
 
 config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#config HypercomputeclusterCluster#config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#config HypercomputeclusterCluster#config}
 
 ---
 
@@ -3045,7 +3045,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#id HypercomputeclusterCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#id HypercomputeclusterCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -3104,7 +3104,7 @@ public HypercomputeclusterClusterStorageResourcesConfigExistingBucket getExistin
 
 existing_bucket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#existing_bucket HypercomputeclusterCluster#existing_bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#existing_bucket HypercomputeclusterCluster#existing_bucket}
 
 ---
 
@@ -3118,7 +3118,7 @@ public HypercomputeclusterClusterStorageResourcesConfigExistingFilestore getExis
 
 existing_filestore block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#existing_filestore HypercomputeclusterCluster#existing_filestore}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#existing_filestore HypercomputeclusterCluster#existing_filestore}
 
 ---
 
@@ -3132,7 +3132,7 @@ public HypercomputeclusterClusterStorageResourcesConfigExistingLustre getExistin
 
 existing_lustre block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#existing_lustre HypercomputeclusterCluster#existing_lustre}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#existing_lustre HypercomputeclusterCluster#existing_lustre}
 
 ---
 
@@ -3146,7 +3146,7 @@ public HypercomputeclusterClusterStorageResourcesConfigNewBucket getNewBucket();
 
 new_bucket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#new_bucket HypercomputeclusterCluster#new_bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#new_bucket HypercomputeclusterCluster#new_bucket}
 
 ---
 
@@ -3160,7 +3160,7 @@ public HypercomputeclusterClusterStorageResourcesConfigNewFilestore getNewFilest
 
 new_filestore block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#new_filestore HypercomputeclusterCluster#new_filestore}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#new_filestore HypercomputeclusterCluster#new_filestore}
 
 ---
 
@@ -3174,7 +3174,7 @@ public HypercomputeclusterClusterStorageResourcesConfigNewLustre getNewLustre();
 
 new_lustre block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#new_lustre HypercomputeclusterCluster#new_lustre}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#new_lustre HypercomputeclusterCluster#new_lustre}
 
 ---
 
@@ -3208,7 +3208,7 @@ public java.lang.String getBucket();
 
 Name of the Cloud Storage bucket to import.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#bucket HypercomputeclusterCluster#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#bucket HypercomputeclusterCluster#bucket}
 
 ---
 
@@ -3242,7 +3242,7 @@ public java.lang.String getFilestore();
 
 Name of the Filestore instance to import, in the format 'projects/{project}/locations/{location}/instances/{instance}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#filestore HypercomputeclusterCluster#filestore}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#filestore HypercomputeclusterCluster#filestore}
 
 ---
 
@@ -3276,7 +3276,7 @@ public java.lang.String getLustre();
 
 Name of the Managed Lustre instance to import, in the format 'projects/{project}/locations/{location}/instances/{instance}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#lustre HypercomputeclusterCluster#lustre}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#lustre HypercomputeclusterCluster#lustre}
 
 ---
 
@@ -3316,7 +3316,7 @@ public java.lang.String getBucket();
 
 Name of the Cloud Storage bucket to create.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#bucket HypercomputeclusterCluster#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#bucket HypercomputeclusterCluster#bucket}
 
 ---
 
@@ -3330,7 +3330,7 @@ public HypercomputeclusterClusterStorageResourcesConfigNewBucketAutoclass getAut
 
 autoclass block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#autoclass HypercomputeclusterCluster#autoclass}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#autoclass HypercomputeclusterCluster#autoclass}
 
 ---
 
@@ -3344,7 +3344,7 @@ public HypercomputeclusterClusterStorageResourcesConfigNewBucketHierarchicalName
 
 hierarchical_namespace block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#hierarchical_namespace HypercomputeclusterCluster#hierarchical_namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#hierarchical_namespace HypercomputeclusterCluster#hierarchical_namespace}
 
 ---
 
@@ -3358,7 +3358,7 @@ public java.lang.String getStorageClass();
 
 If set, uses the provided storage class as the bucket's default storage class. Possible values: STANDARD NEARLINE COLDLINE ARCHIVE.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#storage_class HypercomputeclusterCluster#storage_class}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#storage_class HypercomputeclusterCluster#storage_class}
 
 ---
 
@@ -3394,7 +3394,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 Enables Auto-class feature.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#enabled HypercomputeclusterCluster#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#enabled HypercomputeclusterCluster#enabled}
 
 ---
 
@@ -3408,7 +3408,7 @@ public java.lang.String getTerminalStorageClass();
 
 Terminal storage class of the autoclass bucket Possible values: NEARLINE ARCHIVE.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#terminal_storage_class HypercomputeclusterCluster#terminal_storage_class}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#terminal_storage_class HypercomputeclusterCluster#terminal_storage_class}
 
 ---
 
@@ -3442,7 +3442,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 Enables hierarchical namespace setup for the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#enabled HypercomputeclusterCluster#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#enabled HypercomputeclusterCluster#enabled}
 
 ---
 
@@ -3484,7 +3484,7 @@ public IResolvable|java.util.List<HypercomputeclusterClusterStorageResourcesConf
 
 file_shares block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#file_shares HypercomputeclusterCluster#file_shares}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#file_shares HypercomputeclusterCluster#file_shares}
 
 ---
 
@@ -3498,7 +3498,7 @@ public java.lang.String getFilestore();
 
 Name of the Filestore instance to create, in the format 'projects/{project}/locations/{location}/instances/{instance}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#filestore HypercomputeclusterCluster#filestore}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#filestore HypercomputeclusterCluster#filestore}
 
 ---
 
@@ -3512,7 +3512,7 @@ public java.lang.String getTier();
 
 Service tier to use for the instance. Possible values: ZONAL REGIONAL Possible values: ["TIER_UNSPECIFIED", "ZONAL", "REGIONAL"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#tier HypercomputeclusterCluster#tier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#tier HypercomputeclusterCluster#tier}
 
 ---
 
@@ -3526,7 +3526,7 @@ public java.lang.String getDescription();
 
 Description of the instance. Maximum of 2048 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#description HypercomputeclusterCluster#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#description HypercomputeclusterCluster#description}
 
 ---
 
@@ -3546,7 +3546,7 @@ Possible values:
 NFSV3
 NFSV41 Possible values: ["PROTOCOL_UNSPECIFIED", "NFSV3", "NFSV41"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#protocol HypercomputeclusterCluster#protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#protocol HypercomputeclusterCluster#protocol}
 
 ---
 
@@ -3582,7 +3582,7 @@ public java.lang.String getCapacityGb();
 
 Size of the filestore in GB. Must be between 1024 and 102400, and must meet scalability requirements described at https://cloud.google.com/filestore/docs/service-tiers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#capacity_gb HypercomputeclusterCluster#capacity_gb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#capacity_gb HypercomputeclusterCluster#capacity_gb}
 
 ---
 
@@ -3596,7 +3596,7 @@ public java.lang.String getFileShare();
 
 Filestore share location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#file_share HypercomputeclusterCluster#file_share}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#file_share HypercomputeclusterCluster#file_share}
 
 ---
 
@@ -3638,7 +3638,7 @@ public java.lang.String getCapacityGb();
 
 Storage capacity of the instance in gibibytes (GiB). Allowed values are between 18000 and 7632000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#capacity_gb HypercomputeclusterCluster#capacity_gb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#capacity_gb HypercomputeclusterCluster#capacity_gb}
 
 ---
 
@@ -3656,7 +3656,7 @@ This name is used by client-side tools,
 including when mounting the instance. Must be 8 characters or less and can
 only contain letters and numbers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#filesystem HypercomputeclusterCluster#filesystem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#filesystem HypercomputeclusterCluster#filesystem}
 
 ---
 
@@ -3670,7 +3670,7 @@ public java.lang.String getLustre();
 
 Name of the Managed Lustre instance to create, in the format 'projects/{project}/locations/{location}/instances/{instance}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#lustre HypercomputeclusterCluster#lustre}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#lustre HypercomputeclusterCluster#lustre}
 
 ---
 
@@ -3684,7 +3684,7 @@ public java.lang.String getDescription();
 
 Description of the Managed Lustre instance. Maximum of 2048 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#description HypercomputeclusterCluster#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#description HypercomputeclusterCluster#description}
 
 ---
 
@@ -3703,7 +3703,7 @@ Valid values are 125, 250,
 capacities](https://cloud.google.com/managed-lustre/docs/create-instance#performance-tiers)
 for more information.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#per_unit_storage_throughput HypercomputeclusterCluster#per_unit_storage_throughput}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#per_unit_storage_throughput HypercomputeclusterCluster#per_unit_storage_throughput}
 
 ---
 
@@ -3749,9 +3749,9 @@ HypercomputeclusterClusterTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#create HypercomputeclusterCluster#create}. |
-| <code><a href="#@cdktn/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#delete HypercomputeclusterCluster#delete}. |
-| <code><a href="#@cdktn/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#update HypercomputeclusterCluster#update}. |
+| <code><a href="#@cdktn/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#create HypercomputeclusterCluster#create}. |
+| <code><a href="#@cdktn/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#delete HypercomputeclusterCluster#delete}. |
+| <code><a href="#@cdktn/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#update HypercomputeclusterCluster#update}. |
 
 ---
 
@@ -3763,7 +3763,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#create HypercomputeclusterCluster#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#create HypercomputeclusterCluster#create}.
 
 ---
 
@@ -3775,7 +3775,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#delete HypercomputeclusterCluster#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#delete HypercomputeclusterCluster#delete}.
 
 ---
 
@@ -3787,7 +3787,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/hypercomputecluster_cluster#update HypercomputeclusterCluster#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/hypercomputecluster_cluster#update HypercomputeclusterCluster#update}.
 
 ---
 

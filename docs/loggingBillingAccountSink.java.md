@@ -4,7 +4,7 @@
 
 ### LoggingBillingAccountSink <a name="LoggingBillingAccountSink" id="@cdktn/provider-google.loggingBillingAccountSink.LoggingBillingAccountSink"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/logging_billing_account_sink google_logging_billing_account_sink}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/logging_billing_account_sink google_logging_billing_account_sink}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.loggingBillingAccountSink.LoggingBillingAccountSink.Initializer"></a>
 
@@ -52,7 +52,7 @@ LoggingBillingAccountSink.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.loggingBillingAccountSink.LoggingBillingAccountSink.Initializer.parameter.disabled">disabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | If set to True, then this sink is disabled and it does not export any log entries. |
 | <code><a href="#@cdktn/provider-google.loggingBillingAccountSink.LoggingBillingAccountSink.Initializer.parameter.exclusions">exclusions</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.loggingBillingAccountSink.LoggingBillingAccountSinkExclusions">LoggingBillingAccountSinkExclusions</a>></code> | exclusions block. |
 | <code><a href="#@cdktn/provider-google.loggingBillingAccountSink.LoggingBillingAccountSink.Initializer.parameter.filter">filter</a></code> | <code>java.lang.String</code> | The filter to apply when exporting logs. Only log entries that match the filter are exported. |
-| <code><a href="#@cdktn/provider-google.loggingBillingAccountSink.LoggingBillingAccountSink.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/logging_billing_account_sink#id LoggingBillingAccountSink#id}. |
+| <code><a href="#@cdktn/provider-google.loggingBillingAccountSink.LoggingBillingAccountSink.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/logging_billing_account_sink#id LoggingBillingAccountSink#id}. |
 
 ---
 
@@ -122,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 The billing account exported to the sink.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/logging_billing_account_sink#billing_account LoggingBillingAccountSink#billing_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/logging_billing_account_sink#billing_account LoggingBillingAccountSink#billing_account}
 
 ---
 
@@ -134,7 +134,7 @@ The destination of the sink (or, in other words, where logs are written to).
 
 Can be a Cloud Storage bucket, a PubSub topic, or a BigQuery dataset. Examples: "storage.googleapis.com/[GCS_BUCKET]" "bigquery.googleapis.com/projects/[PROJECT_ID]/datasets/[DATASET]" "pubsub.googleapis.com/projects/[PROJECT_ID]/topics/[TOPIC_ID]" The writer associated with the sink must have access to write to the above resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/logging_billing_account_sink#destination LoggingBillingAccountSink#destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/logging_billing_account_sink#destination LoggingBillingAccountSink#destination}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The name of the logging sink.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/logging_billing_account_sink#name LoggingBillingAccountSink#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/logging_billing_account_sink#name LoggingBillingAccountSink#name}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 bigquery_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/logging_billing_account_sink#bigquery_options LoggingBillingAccountSink#bigquery_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/logging_billing_account_sink#bigquery_options LoggingBillingAccountSink#bigquery_options}
 
 ---
 
@@ -171,7 +171,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/logging_billing_account_sink#deletion_policy LoggingBillingAccountSink#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/logging_billing_account_sink#deletion_policy LoggingBillingAccountSink#deletion_policy}
 
 ---
 
@@ -181,7 +181,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A description of this sink. The maximum length of the description is 8000 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/logging_billing_account_sink#description LoggingBillingAccountSink#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/logging_billing_account_sink#description LoggingBillingAccountSink#description}
 
 ---
 
@@ -191,7 +191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 If set to True, then this sink is disabled and it does not export any log entries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/logging_billing_account_sink#disabled LoggingBillingAccountSink#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/logging_billing_account_sink#disabled LoggingBillingAccountSink#disabled}
 
 ---
 
@@ -201,7 +201,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 exclusions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/logging_billing_account_sink#exclusions LoggingBillingAccountSink#exclusions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/logging_billing_account_sink#exclusions LoggingBillingAccountSink#exclusions}
 
 ---
 
@@ -211,7 +211,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The filter to apply when exporting logs. Only log entries that match the filter are exported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/logging_billing_account_sink#filter LoggingBillingAccountSink#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/logging_billing_account_sink#filter LoggingBillingAccountSink#filter}
 
 ---
 
@@ -219,7 +219,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/logging_billing_account_sink#id LoggingBillingAccountSink#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/logging_billing_account_sink#id LoggingBillingAccountSink#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -746,7 +746,7 @@ The construct id used in the generated config for the LoggingBillingAccountSink 
 
 The id of the existing LoggingBillingAccountSink that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/logging_billing_account_sink#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/logging_billing_account_sink#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1204,7 +1204,7 @@ Whether to use BigQuery's partition tables.
 
 By default, Logging creates dated tables based on the log entries' timestamps, e.g. syslog_20170523. With partitioned tables the date suffix is no longer present and special query syntax has to be used instead. In both cases, tables are sharded based on UTC timezone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/logging_billing_account_sink#use_partitioned_tables LoggingBillingAccountSink#use_partitioned_tables}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/logging_billing_account_sink#use_partitioned_tables LoggingBillingAccountSink#use_partitioned_tables}
 
 ---
 
@@ -1256,7 +1256,7 @@ LoggingBillingAccountSinkConfig.builder()
 | <code><a href="#@cdktn/provider-google.loggingBillingAccountSink.LoggingBillingAccountSinkConfig.property.disabled">disabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | If set to True, then this sink is disabled and it does not export any log entries. |
 | <code><a href="#@cdktn/provider-google.loggingBillingAccountSink.LoggingBillingAccountSinkConfig.property.exclusions">exclusions</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.loggingBillingAccountSink.LoggingBillingAccountSinkExclusions">LoggingBillingAccountSinkExclusions</a>></code> | exclusions block. |
 | <code><a href="#@cdktn/provider-google.loggingBillingAccountSink.LoggingBillingAccountSinkConfig.property.filter">filter</a></code> | <code>java.lang.String</code> | The filter to apply when exporting logs. Only log entries that match the filter are exported. |
-| <code><a href="#@cdktn/provider-google.loggingBillingAccountSink.LoggingBillingAccountSinkConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/logging_billing_account_sink#id LoggingBillingAccountSink#id}. |
+| <code><a href="#@cdktn/provider-google.loggingBillingAccountSink.LoggingBillingAccountSinkConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/logging_billing_account_sink#id LoggingBillingAccountSink#id}. |
 
 ---
 
@@ -1340,7 +1340,7 @@ public java.lang.String getBillingAccount();
 
 The billing account exported to the sink.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/logging_billing_account_sink#billing_account LoggingBillingAccountSink#billing_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/logging_billing_account_sink#billing_account LoggingBillingAccountSink#billing_account}
 
 ---
 
@@ -1356,7 +1356,7 @@ The destination of the sink (or, in other words, where logs are written to).
 
 Can be a Cloud Storage bucket, a PubSub topic, or a BigQuery dataset. Examples: "storage.googleapis.com/[GCS_BUCKET]" "bigquery.googleapis.com/projects/[PROJECT_ID]/datasets/[DATASET]" "pubsub.googleapis.com/projects/[PROJECT_ID]/topics/[TOPIC_ID]" The writer associated with the sink must have access to write to the above resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/logging_billing_account_sink#destination LoggingBillingAccountSink#destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/logging_billing_account_sink#destination LoggingBillingAccountSink#destination}
 
 ---
 
@@ -1370,7 +1370,7 @@ public java.lang.String getName();
 
 The name of the logging sink.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/logging_billing_account_sink#name LoggingBillingAccountSink#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/logging_billing_account_sink#name LoggingBillingAccountSink#name}
 
 ---
 
@@ -1384,7 +1384,7 @@ public LoggingBillingAccountSinkBigqueryOptions getBigqueryOptions();
 
 bigquery_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/logging_billing_account_sink#bigquery_options LoggingBillingAccountSink#bigquery_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/logging_billing_account_sink#bigquery_options LoggingBillingAccountSink#bigquery_options}
 
 ---
 
@@ -1405,7 +1405,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/logging_billing_account_sink#deletion_policy LoggingBillingAccountSink#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/logging_billing_account_sink#deletion_policy LoggingBillingAccountSink#deletion_policy}
 
 ---
 
@@ -1419,7 +1419,7 @@ public java.lang.String getDescription();
 
 A description of this sink. The maximum length of the description is 8000 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/logging_billing_account_sink#description LoggingBillingAccountSink#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/logging_billing_account_sink#description LoggingBillingAccountSink#description}
 
 ---
 
@@ -1433,7 +1433,7 @@ public java.lang.Boolean|IResolvable getDisabled();
 
 If set to True, then this sink is disabled and it does not export any log entries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/logging_billing_account_sink#disabled LoggingBillingAccountSink#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/logging_billing_account_sink#disabled LoggingBillingAccountSink#disabled}
 
 ---
 
@@ -1447,7 +1447,7 @@ public IResolvable|java.util.List<LoggingBillingAccountSinkExclusions> getExclus
 
 exclusions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/logging_billing_account_sink#exclusions LoggingBillingAccountSink#exclusions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/logging_billing_account_sink#exclusions LoggingBillingAccountSink#exclusions}
 
 ---
 
@@ -1461,7 +1461,7 @@ public java.lang.String getFilter();
 
 The filter to apply when exporting logs. Only log entries that match the filter are exported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/logging_billing_account_sink#filter LoggingBillingAccountSink#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/logging_billing_account_sink#filter LoggingBillingAccountSink#filter}
 
 ---
 
@@ -1473,7 +1473,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/logging_billing_account_sink#id LoggingBillingAccountSink#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/logging_billing_account_sink#id LoggingBillingAccountSink#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1518,7 +1518,7 @@ An advanced logs filter that matches the log entries to be excluded.
 
 By using the sample function, you can exclude less than 100% of the matching log entries
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/logging_billing_account_sink#filter LoggingBillingAccountSink#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/logging_billing_account_sink#filter LoggingBillingAccountSink#filter}
 
 ---
 
@@ -1534,7 +1534,7 @@ A client-assigned identifier, such as "load-balancer-exclusion".
 
 Identifiers are limited to 100 characters and can include only letters, digits, underscores, hyphens, and periods. First character has to be alphanumeric.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/logging_billing_account_sink#name LoggingBillingAccountSink#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/logging_billing_account_sink#name LoggingBillingAccountSink#name}
 
 ---
 
@@ -1548,7 +1548,7 @@ public java.lang.String getDescription();
 
 A description of this exclusion.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/logging_billing_account_sink#description LoggingBillingAccountSink#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/logging_billing_account_sink#description LoggingBillingAccountSink#description}
 
 ---
 
@@ -1562,7 +1562,7 @@ public java.lang.Boolean|IResolvable getDisabled();
 
 If set to True, then this exclusion is disabled and it does not exclude any log entries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/logging_billing_account_sink#disabled LoggingBillingAccountSink#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/logging_billing_account_sink#disabled LoggingBillingAccountSink#disabled}
 
 ---
 

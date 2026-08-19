@@ -4,7 +4,7 @@
 
 ### DataGoogleDataformRepositoryIamPolicy <a name="DataGoogleDataformRepositoryIamPolicy" id="@cdktn/provider-google.dataGoogleDataformRepositoryIamPolicy.DataGoogleDataformRepositoryIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/dataform_repository_iam_policy google_dataform_repository_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/dataform_repository_iam_policy google_dataform_repository_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleDataformRepositoryIamPolicy.DataGoogleDataformRepositoryIamPolicy.Initializer"></a>
 
@@ -408,7 +408,7 @@ The construct id used in the generated config for the DataGoogleDataformReposito
 
 The id of the existing DataGoogleDataformRepositoryIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/dataform_repository_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/dataform_repository_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -724,10 +724,10 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogledatafo
 | <code><a href="#@cdktn/provider-google.dataGoogleDataformRepositoryIamPolicy.DataGoogleDataformRepositoryIamPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleDataformRepositoryIamPolicy.DataGoogleDataformRepositoryIamPolicyConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleDataformRepositoryIamPolicy.DataGoogleDataformRepositoryIamPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleDataformRepositoryIamPolicy.DataGoogleDataformRepositoryIamPolicyConfig.property.repository">Repository</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/dataform_repository_iam_policy#repository DataGoogleDataformRepositoryIamPolicy#repository}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleDataformRepositoryIamPolicy.DataGoogleDataformRepositoryIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/dataform_repository_iam_policy#id DataGoogleDataformRepositoryIamPolicy#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleDataformRepositoryIamPolicy.DataGoogleDataformRepositoryIamPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/dataform_repository_iam_policy#project DataGoogleDataformRepositoryIamPolicy#project}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleDataformRepositoryIamPolicy.DataGoogleDataformRepositoryIamPolicyConfig.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/dataform_repository_iam_policy#region DataGoogleDataformRepositoryIamPolicy#region}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleDataformRepositoryIamPolicy.DataGoogleDataformRepositoryIamPolicyConfig.property.repository">Repository</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/dataform_repository_iam_policy#repository DataGoogleDataformRepositoryIamPolicy#repository}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleDataformRepositoryIamPolicy.DataGoogleDataformRepositoryIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/dataform_repository_iam_policy#id DataGoogleDataformRepositoryIamPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleDataformRepositoryIamPolicy.DataGoogleDataformRepositoryIamPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/dataform_repository_iam_policy#project DataGoogleDataformRepositoryIamPolicy#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleDataformRepositoryIamPolicy.DataGoogleDataformRepositoryIamPolicyConfig.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/dataform_repository_iam_policy#region DataGoogleDataformRepositoryIamPolicy#region}. |
 
 ---
 
@@ -809,7 +809,7 @@ Repository *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/dataform_repository_iam_policy#repository DataGoogleDataformRepositoryIamPolicy#repository}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/dataform_repository_iam_policy#repository DataGoogleDataformRepositoryIamPolicy#repository}.
 
 ---
 
@@ -821,7 +821,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/dataform_repository_iam_policy#id DataGoogleDataformRepositoryIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/dataform_repository_iam_policy#id DataGoogleDataformRepositoryIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -836,7 +836,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/dataform_repository_iam_policy#project DataGoogleDataformRepositoryIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/dataform_repository_iam_policy#project DataGoogleDataformRepositoryIamPolicy#project}.
 
 ---
 
@@ -848,7 +848,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/dataform_repository_iam_policy#region DataGoogleDataformRepositoryIamPolicy#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/dataform_repository_iam_policy#region DataGoogleDataformRepositoryIamPolicy#region}.
 
 ---
 
