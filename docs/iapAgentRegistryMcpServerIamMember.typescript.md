@@ -4,7 +4,7 @@
 
 ### IapAgentRegistryMcpServerIamMember <a name="IapAgentRegistryMcpServerIamMember" id="@cdktn/provider-google.iapAgentRegistryMcpServerIamMember.IapAgentRegistryMcpServerIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iap_agent_registry_mcp_server_iam_member google_iap_agent_registry_mcp_server_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iap_agent_registry_mcp_server_iam_member google_iap_agent_registry_mcp_server_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iapAgentRegistryMcpServerIamMember.IapAgentRegistryMcpServerIamMember.Initializer"></a>
 
@@ -530,7 +530,7 @@ The construct id used in the generated config for the IapAgentRegistryMcpServerI
 
 The id of the existing IapAgentRegistryMcpServerIamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iap_agent_registry_mcp_server_iam_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iap_agent_registry_mcp_server_iam_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -904,9 +904,9 @@ const iapAgentRegistryMcpServerIamMemberCondition: iapAgentRegistryMcpServerIamM
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.iapAgentRegistryMcpServerIamMember.IapAgentRegistryMcpServerIamMemberCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iap_agent_registry_mcp_server_iam_member#expression IapAgentRegistryMcpServerIamMember#expression}. |
-| <code><a href="#@cdktn/provider-google.iapAgentRegistryMcpServerIamMember.IapAgentRegistryMcpServerIamMemberCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iap_agent_registry_mcp_server_iam_member#title IapAgentRegistryMcpServerIamMember#title}. |
-| <code><a href="#@cdktn/provider-google.iapAgentRegistryMcpServerIamMember.IapAgentRegistryMcpServerIamMemberCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iap_agent_registry_mcp_server_iam_member#description IapAgentRegistryMcpServerIamMember#description}. |
+| <code><a href="#@cdktn/provider-google.iapAgentRegistryMcpServerIamMember.IapAgentRegistryMcpServerIamMemberCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iap_agent_registry_mcp_server_iam_member#expression IapAgentRegistryMcpServerIamMember#expression}. |
+| <code><a href="#@cdktn/provider-google.iapAgentRegistryMcpServerIamMember.IapAgentRegistryMcpServerIamMemberCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iap_agent_registry_mcp_server_iam_member#title IapAgentRegistryMcpServerIamMember#title}. |
+| <code><a href="#@cdktn/provider-google.iapAgentRegistryMcpServerIamMember.IapAgentRegistryMcpServerIamMemberCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iap_agent_registry_mcp_server_iam_member#description IapAgentRegistryMcpServerIamMember#description}. |
 
 ---
 
@@ -918,7 +918,7 @@ public readonly expression: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iap_agent_registry_mcp_server_iam_member#expression IapAgentRegistryMcpServerIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iap_agent_registry_mcp_server_iam_member#expression IapAgentRegistryMcpServerIamMember#expression}.
 
 ---
 
@@ -930,7 +930,7 @@ public readonly title: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iap_agent_registry_mcp_server_iam_member#title IapAgentRegistryMcpServerIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iap_agent_registry_mcp_server_iam_member#title IapAgentRegistryMcpServerIamMember#title}.
 
 ---
 
@@ -942,7 +942,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iap_agent_registry_mcp_server_iam_member#description IapAgentRegistryMcpServerIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iap_agent_registry_mcp_server_iam_member#description IapAgentRegistryMcpServerIamMember#description}.
 
 ---
 
@@ -967,13 +967,13 @@ const iapAgentRegistryMcpServerIamMemberConfig: iapAgentRegistryMcpServerIamMemb
 | <code><a href="#@cdktn/provider-google.iapAgentRegistryMcpServerIamMember.IapAgentRegistryMcpServerIamMemberConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iapAgentRegistryMcpServerIamMember.IapAgentRegistryMcpServerIamMemberConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iapAgentRegistryMcpServerIamMember.IapAgentRegistryMcpServerIamMemberConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.iapAgentRegistryMcpServerIamMember.IapAgentRegistryMcpServerIamMemberConfig.property.mcpServerId">mcpServerId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iap_agent_registry_mcp_server_iam_member#mcp_server_id IapAgentRegistryMcpServerIamMember#mcp_server_id}. |
-| <code><a href="#@cdktn/provider-google.iapAgentRegistryMcpServerIamMember.IapAgentRegistryMcpServerIamMemberConfig.property.member">member</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iap_agent_registry_mcp_server_iam_member#member IapAgentRegistryMcpServerIamMember#member}. |
-| <code><a href="#@cdktn/provider-google.iapAgentRegistryMcpServerIamMember.IapAgentRegistryMcpServerIamMemberConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iap_agent_registry_mcp_server_iam_member#role IapAgentRegistryMcpServerIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.iapAgentRegistryMcpServerIamMember.IapAgentRegistryMcpServerIamMemberConfig.property.mcpServerId">mcpServerId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iap_agent_registry_mcp_server_iam_member#mcp_server_id IapAgentRegistryMcpServerIamMember#mcp_server_id}. |
+| <code><a href="#@cdktn/provider-google.iapAgentRegistryMcpServerIamMember.IapAgentRegistryMcpServerIamMemberConfig.property.member">member</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iap_agent_registry_mcp_server_iam_member#member IapAgentRegistryMcpServerIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.iapAgentRegistryMcpServerIamMember.IapAgentRegistryMcpServerIamMemberConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iap_agent_registry_mcp_server_iam_member#role IapAgentRegistryMcpServerIamMember#role}. |
 | <code><a href="#@cdktn/provider-google.iapAgentRegistryMcpServerIamMember.IapAgentRegistryMcpServerIamMemberConfig.property.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.iapAgentRegistryMcpServerIamMember.IapAgentRegistryMcpServerIamMemberCondition">IapAgentRegistryMcpServerIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.iapAgentRegistryMcpServerIamMember.IapAgentRegistryMcpServerIamMemberConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iap_agent_registry_mcp_server_iam_member#id IapAgentRegistryMcpServerIamMember#id}. |
-| <code><a href="#@cdktn/provider-google.iapAgentRegistryMcpServerIamMember.IapAgentRegistryMcpServerIamMemberConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iap_agent_registry_mcp_server_iam_member#location IapAgentRegistryMcpServerIamMember#location}. |
-| <code><a href="#@cdktn/provider-google.iapAgentRegistryMcpServerIamMember.IapAgentRegistryMcpServerIamMemberConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iap_agent_registry_mcp_server_iam_member#project IapAgentRegistryMcpServerIamMember#project}. |
+| <code><a href="#@cdktn/provider-google.iapAgentRegistryMcpServerIamMember.IapAgentRegistryMcpServerIamMemberConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iap_agent_registry_mcp_server_iam_member#id IapAgentRegistryMcpServerIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.iapAgentRegistryMcpServerIamMember.IapAgentRegistryMcpServerIamMemberConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iap_agent_registry_mcp_server_iam_member#location IapAgentRegistryMcpServerIamMember#location}. |
+| <code><a href="#@cdktn/provider-google.iapAgentRegistryMcpServerIamMember.IapAgentRegistryMcpServerIamMemberConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iap_agent_registry_mcp_server_iam_member#project IapAgentRegistryMcpServerIamMember#project}. |
 
 ---
 
@@ -1055,7 +1055,7 @@ public readonly mcpServerId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iap_agent_registry_mcp_server_iam_member#mcp_server_id IapAgentRegistryMcpServerIamMember#mcp_server_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iap_agent_registry_mcp_server_iam_member#mcp_server_id IapAgentRegistryMcpServerIamMember#mcp_server_id}.
 
 ---
 
@@ -1067,7 +1067,7 @@ public readonly member: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iap_agent_registry_mcp_server_iam_member#member IapAgentRegistryMcpServerIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iap_agent_registry_mcp_server_iam_member#member IapAgentRegistryMcpServerIamMember#member}.
 
 ---
 
@@ -1079,7 +1079,7 @@ public readonly role: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iap_agent_registry_mcp_server_iam_member#role IapAgentRegistryMcpServerIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iap_agent_registry_mcp_server_iam_member#role IapAgentRegistryMcpServerIamMember#role}.
 
 ---
 
@@ -1093,7 +1093,7 @@ public readonly condition: IapAgentRegistryMcpServerIamMemberCondition;
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iap_agent_registry_mcp_server_iam_member#condition IapAgentRegistryMcpServerIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iap_agent_registry_mcp_server_iam_member#condition IapAgentRegistryMcpServerIamMember#condition}
 
 ---
 
@@ -1105,7 +1105,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iap_agent_registry_mcp_server_iam_member#id IapAgentRegistryMcpServerIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iap_agent_registry_mcp_server_iam_member#id IapAgentRegistryMcpServerIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1120,7 +1120,7 @@ public readonly location: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iap_agent_registry_mcp_server_iam_member#location IapAgentRegistryMcpServerIamMember#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iap_agent_registry_mcp_server_iam_member#location IapAgentRegistryMcpServerIamMember#location}.
 
 ---
 
@@ -1132,7 +1132,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/iap_agent_registry_mcp_server_iam_member#project IapAgentRegistryMcpServerIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/iap_agent_registry_mcp_server_iam_member#project IapAgentRegistryMcpServerIamMember#project}.
 
 ---
 

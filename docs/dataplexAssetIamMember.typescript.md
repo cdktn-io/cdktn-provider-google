@@ -4,7 +4,7 @@
 
 ### DataplexAssetIamMember <a name="DataplexAssetIamMember" id="@cdktn/provider-google.dataplexAssetIamMember.DataplexAssetIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_asset_iam_member google_dataplex_asset_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_asset_iam_member google_dataplex_asset_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataplexAssetIamMember.DataplexAssetIamMember.Initializer"></a>
 
@@ -530,7 +530,7 @@ The construct id used in the generated config for the DataplexAssetIamMember to 
 
 The id of the existing DataplexAssetIamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_asset_iam_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_asset_iam_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -948,9 +948,9 @@ const dataplexAssetIamMemberCondition: dataplexAssetIamMember.DataplexAssetIamMe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataplexAssetIamMember.DataplexAssetIamMemberCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_asset_iam_member#expression DataplexAssetIamMember#expression}. |
-| <code><a href="#@cdktn/provider-google.dataplexAssetIamMember.DataplexAssetIamMemberCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_asset_iam_member#title DataplexAssetIamMember#title}. |
-| <code><a href="#@cdktn/provider-google.dataplexAssetIamMember.DataplexAssetIamMemberCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_asset_iam_member#description DataplexAssetIamMember#description}. |
+| <code><a href="#@cdktn/provider-google.dataplexAssetIamMember.DataplexAssetIamMemberCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_asset_iam_member#expression DataplexAssetIamMember#expression}. |
+| <code><a href="#@cdktn/provider-google.dataplexAssetIamMember.DataplexAssetIamMemberCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_asset_iam_member#title DataplexAssetIamMember#title}. |
+| <code><a href="#@cdktn/provider-google.dataplexAssetIamMember.DataplexAssetIamMemberCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_asset_iam_member#description DataplexAssetIamMember#description}. |
 
 ---
 
@@ -962,7 +962,7 @@ public readonly expression: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_asset_iam_member#expression DataplexAssetIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_asset_iam_member#expression DataplexAssetIamMember#expression}.
 
 ---
 
@@ -974,7 +974,7 @@ public readonly title: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_asset_iam_member#title DataplexAssetIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_asset_iam_member#title DataplexAssetIamMember#title}.
 
 ---
 
@@ -986,7 +986,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_asset_iam_member#description DataplexAssetIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_asset_iam_member#description DataplexAssetIamMember#description}.
 
 ---
 
@@ -1011,15 +1011,15 @@ const dataplexAssetIamMemberConfig: dataplexAssetIamMember.DataplexAssetIamMembe
 | <code><a href="#@cdktn/provider-google.dataplexAssetIamMember.DataplexAssetIamMemberConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexAssetIamMember.DataplexAssetIamMemberConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexAssetIamMember.DataplexAssetIamMemberConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataplexAssetIamMember.DataplexAssetIamMemberConfig.property.asset">asset</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_asset_iam_member#asset DataplexAssetIamMember#asset}. |
-| <code><a href="#@cdktn/provider-google.dataplexAssetIamMember.DataplexAssetIamMemberConfig.property.dataplexZone">dataplexZone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_asset_iam_member#dataplex_zone DataplexAssetIamMember#dataplex_zone}. |
-| <code><a href="#@cdktn/provider-google.dataplexAssetIamMember.DataplexAssetIamMemberConfig.property.lake">lake</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_asset_iam_member#lake DataplexAssetIamMember#lake}. |
-| <code><a href="#@cdktn/provider-google.dataplexAssetIamMember.DataplexAssetIamMemberConfig.property.member">member</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_asset_iam_member#member DataplexAssetIamMember#member}. |
-| <code><a href="#@cdktn/provider-google.dataplexAssetIamMember.DataplexAssetIamMemberConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_asset_iam_member#role DataplexAssetIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.dataplexAssetIamMember.DataplexAssetIamMemberConfig.property.asset">asset</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_asset_iam_member#asset DataplexAssetIamMember#asset}. |
+| <code><a href="#@cdktn/provider-google.dataplexAssetIamMember.DataplexAssetIamMemberConfig.property.dataplexZone">dataplexZone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_asset_iam_member#dataplex_zone DataplexAssetIamMember#dataplex_zone}. |
+| <code><a href="#@cdktn/provider-google.dataplexAssetIamMember.DataplexAssetIamMemberConfig.property.lake">lake</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_asset_iam_member#lake DataplexAssetIamMember#lake}. |
+| <code><a href="#@cdktn/provider-google.dataplexAssetIamMember.DataplexAssetIamMemberConfig.property.member">member</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_asset_iam_member#member DataplexAssetIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.dataplexAssetIamMember.DataplexAssetIamMemberConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_asset_iam_member#role DataplexAssetIamMember#role}. |
 | <code><a href="#@cdktn/provider-google.dataplexAssetIamMember.DataplexAssetIamMemberConfig.property.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.dataplexAssetIamMember.DataplexAssetIamMemberCondition">DataplexAssetIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.dataplexAssetIamMember.DataplexAssetIamMemberConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_asset_iam_member#id DataplexAssetIamMember#id}. |
-| <code><a href="#@cdktn/provider-google.dataplexAssetIamMember.DataplexAssetIamMemberConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_asset_iam_member#location DataplexAssetIamMember#location}. |
-| <code><a href="#@cdktn/provider-google.dataplexAssetIamMember.DataplexAssetIamMemberConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_asset_iam_member#project DataplexAssetIamMember#project}. |
+| <code><a href="#@cdktn/provider-google.dataplexAssetIamMember.DataplexAssetIamMemberConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_asset_iam_member#id DataplexAssetIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.dataplexAssetIamMember.DataplexAssetIamMemberConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_asset_iam_member#location DataplexAssetIamMember#location}. |
+| <code><a href="#@cdktn/provider-google.dataplexAssetIamMember.DataplexAssetIamMemberConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_asset_iam_member#project DataplexAssetIamMember#project}. |
 
 ---
 
@@ -1101,7 +1101,7 @@ public readonly asset: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_asset_iam_member#asset DataplexAssetIamMember#asset}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_asset_iam_member#asset DataplexAssetIamMember#asset}.
 
 ---
 
@@ -1113,7 +1113,7 @@ public readonly dataplexZone: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_asset_iam_member#dataplex_zone DataplexAssetIamMember#dataplex_zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_asset_iam_member#dataplex_zone DataplexAssetIamMember#dataplex_zone}.
 
 ---
 
@@ -1125,7 +1125,7 @@ public readonly lake: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_asset_iam_member#lake DataplexAssetIamMember#lake}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_asset_iam_member#lake DataplexAssetIamMember#lake}.
 
 ---
 
@@ -1137,7 +1137,7 @@ public readonly member: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_asset_iam_member#member DataplexAssetIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_asset_iam_member#member DataplexAssetIamMember#member}.
 
 ---
 
@@ -1149,7 +1149,7 @@ public readonly role: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_asset_iam_member#role DataplexAssetIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_asset_iam_member#role DataplexAssetIamMember#role}.
 
 ---
 
@@ -1163,7 +1163,7 @@ public readonly condition: DataplexAssetIamMemberCondition;
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_asset_iam_member#condition DataplexAssetIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_asset_iam_member#condition DataplexAssetIamMember#condition}
 
 ---
 
@@ -1175,7 +1175,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_asset_iam_member#id DataplexAssetIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_asset_iam_member#id DataplexAssetIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1190,7 +1190,7 @@ public readonly location: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_asset_iam_member#location DataplexAssetIamMember#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_asset_iam_member#location DataplexAssetIamMember#location}.
 
 ---
 
@@ -1202,7 +1202,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_asset_iam_member#project DataplexAssetIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_asset_iam_member#project DataplexAssetIamMember#project}.
 
 ---
 

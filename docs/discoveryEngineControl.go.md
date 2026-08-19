@@ -4,7 +4,7 @@
 
 ### DiscoveryEngineControl <a name="DiscoveryEngineControl" id="@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControl"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/discovery_engine_control google_discovery_engine_control}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/discovery_engine_control google_discovery_engine_control}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControl.Initializer"></a>
 
@@ -664,7 +664,7 @@ The construct id used in the generated config for the DiscoveryEngineControl to 
 
 The id of the existing DiscoveryEngineControl that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/discovery_engine_control#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/discovery_engine_control#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1280,7 +1280,7 @@ DataStore *string
 
 The data store to boost.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/discovery_engine_control#data_store DiscoveryEngineControl#data_store}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/discovery_engine_control#data_store DiscoveryEngineControl#data_store}
 
 ---
 
@@ -1294,7 +1294,7 @@ Filter *string
 
 The filter to apply to the search results.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/discovery_engine_control#filter DiscoveryEngineControl#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/discovery_engine_control#filter DiscoveryEngineControl#filter}
 
 ---
 
@@ -1310,7 +1310,7 @@ The fixed boost value to apply to the search results.
 
 Positive values will increase the relevance of the results, while negative values will decrease the relevance. The value must be between -100 and 100.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/discovery_engine_control#fixed_boost DiscoveryEngineControl#fixed_boost}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/discovery_engine_control#fixed_boost DiscoveryEngineControl#fixed_boost}
 
 ---
 
@@ -1324,7 +1324,7 @@ InterpolationBoostSpec DiscoveryEngineControlBoostActionInterpolationBoostSpec
 
 interpolation_boost_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/discovery_engine_control#interpolation_boost_spec DiscoveryEngineControl#interpolation_boost_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/discovery_engine_control#interpolation_boost_spec DiscoveryEngineControl#interpolation_boost_spec}
 
 ---
 
@@ -1364,7 +1364,7 @@ AttributeType *string
 
 The attribute type to be used to determine the boost amount. Possible values: ["NUMERICAL", "FRESHNESS"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/discovery_engine_control#attribute_type DiscoveryEngineControl#attribute_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/discovery_engine_control#attribute_type DiscoveryEngineControl#attribute_type}
 
 ---
 
@@ -1378,7 +1378,7 @@ ControlPoint DiscoveryEngineControlBoostActionInterpolationBoostSpecControlPoint
 
 control_point block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/discovery_engine_control#control_point DiscoveryEngineControl#control_point}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/discovery_engine_control#control_point DiscoveryEngineControl#control_point}
 
 ---
 
@@ -1392,7 +1392,7 @@ FieldName *string
 
 The name of the field whose value will be used to determine the boost amount.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/discovery_engine_control#field_name DiscoveryEngineControl#field_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/discovery_engine_control#field_name DiscoveryEngineControl#field_name}
 
 ---
 
@@ -1406,7 +1406,7 @@ InterpolationType *string
 
 The interpolation type to be applied to connect the control points. Possible values: ["LINEAR"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/discovery_engine_control#interpolation_type DiscoveryEngineControl#interpolation_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/discovery_engine_control#interpolation_type DiscoveryEngineControl#interpolation_type}
 
 ---
 
@@ -1442,7 +1442,7 @@ AttributeValue *string
 
 The attribute value of the control point.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/discovery_engine_control#attribute_value DiscoveryEngineControl#attribute_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/discovery_engine_control#attribute_value DiscoveryEngineControl#attribute_value}
 
 ---
 
@@ -1456,7 +1456,7 @@ BoostAmount *f64
 
 The value between -1 to 1 by which to boost the score if the attributeValue evaluates to the value specified above.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/discovery_engine_control#boost_amount DiscoveryEngineControl#boost_amount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/discovery_engine_control#boost_amount DiscoveryEngineControl#boost_amount}
 
 ---
 
@@ -1494,7 +1494,7 @@ ActiveTimeRange interface{}
 
 active_time_range block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/discovery_engine_control#active_time_range DiscoveryEngineControl#active_time_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/discovery_engine_control#active_time_range DiscoveryEngineControl#active_time_range}
 
 ---
 
@@ -1508,7 +1508,7 @@ QueryRegex *string
 
 The regular expression that the query must match for this condition to be met.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/discovery_engine_control#query_regex DiscoveryEngineControl#query_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/discovery_engine_control#query_regex DiscoveryEngineControl#query_regex}
 
 ---
 
@@ -1522,7 +1522,7 @@ QueryTerms interface{}
 
 query_terms block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/discovery_engine_control#query_terms DiscoveryEngineControl#query_terms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/discovery_engine_control#query_terms DiscoveryEngineControl#query_terms}
 
 ---
 
@@ -1558,7 +1558,7 @@ EndTime *string
 
 The end time of the active time range.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/discovery_engine_control#end_time DiscoveryEngineControl#end_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/discovery_engine_control#end_time DiscoveryEngineControl#end_time}
 
 ---
 
@@ -1572,7 +1572,7 @@ StartTime *string
 
 The start time of the active time range.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/discovery_engine_control#start_time DiscoveryEngineControl#start_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/discovery_engine_control#start_time DiscoveryEngineControl#start_time}
 
 ---
 
@@ -1608,7 +1608,7 @@ FullMatch interface{}
 
 If true, the query term must be an exact match. Otherwise, the query term can be a partial match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/discovery_engine_control#full_match DiscoveryEngineControl#full_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/discovery_engine_control#full_match DiscoveryEngineControl#full_match}
 
 ---
 
@@ -1622,7 +1622,7 @@ Value *string
 
 The value of the query term.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/discovery_engine_control#value DiscoveryEngineControl#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/discovery_engine_control#value DiscoveryEngineControl#value}
 
 ---
 
@@ -1682,8 +1682,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginec
 | <code><a href="#@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlConfig.property.conditions">Conditions</a></code> | <code>interface{}</code> | conditions block. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlConfig.property.filterAction">FilterAction</a></code> | <code><a href="#@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlFilterAction">DiscoveryEngineControlFilterAction</a></code> | filter_action block. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/discovery_engine_control#id DiscoveryEngineControl#id}. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/discovery_engine_control#project DiscoveryEngineControl#project}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/discovery_engine_control#id DiscoveryEngineControl#id}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/discovery_engine_control#project DiscoveryEngineControl#project}. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlConfig.property.promoteAction">PromoteAction</a></code> | <code><a href="#@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlPromoteAction">DiscoveryEngineControlPromoteAction</a></code> | promote_action block. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlConfig.property.redirectAction">RedirectAction</a></code> | <code><a href="#@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlRedirectAction">DiscoveryEngineControlRedirectAction</a></code> | redirect_action block. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlConfig.property.synonymsAction">SynonymsAction</a></code> | <code><a href="#@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlSynonymsAction">DiscoveryEngineControlSynonymsAction</a></code> | synonyms_action block. |
@@ -1772,7 +1772,7 @@ ControlId *string
 
 The unique id of the control.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/discovery_engine_control#control_id DiscoveryEngineControl#control_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/discovery_engine_control#control_id DiscoveryEngineControl#control_id}
 
 ---
 
@@ -1789,7 +1789,7 @@ The display name of the control.
 This field must be a UTF-8 encoded
 string with a length limit of 128 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/discovery_engine_control#display_name DiscoveryEngineControl#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/discovery_engine_control#display_name DiscoveryEngineControl#display_name}
 
 ---
 
@@ -1803,7 +1803,7 @@ EngineId *string
 
 The engine to add the control to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/discovery_engine_control#engine_id DiscoveryEngineControl#engine_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/discovery_engine_control#engine_id DiscoveryEngineControl#engine_id}
 
 ---
 
@@ -1817,7 +1817,7 @@ Location *string
 
 The geographic location where the data store should reside. The value can only be one of "global", "us" and "eu".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/discovery_engine_control#location DiscoveryEngineControl#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/discovery_engine_control#location DiscoveryEngineControl#location}
 
 ---
 
@@ -1831,7 +1831,7 @@ SolutionType *string
 
 The solution type that the control belongs to. Possible values: ["SOLUTION_TYPE_RECOMMENDATION", "SOLUTION_TYPE_SEARCH", "SOLUTION_TYPE_CHAT", "SOLUTION_TYPE_GENERATIVE_CHAT"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/discovery_engine_control#solution_type DiscoveryEngineControl#solution_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/discovery_engine_control#solution_type DiscoveryEngineControl#solution_type}
 
 ---
 
@@ -1845,7 +1845,7 @@ BoostAction DiscoveryEngineControlBoostAction
 
 boost_action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/discovery_engine_control#boost_action DiscoveryEngineControl#boost_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/discovery_engine_control#boost_action DiscoveryEngineControl#boost_action}
 
 ---
 
@@ -1859,7 +1859,7 @@ CollectionId *string
 
 The collection ID. Currently only accepts "default_collection".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/discovery_engine_control#collection_id DiscoveryEngineControl#collection_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/discovery_engine_control#collection_id DiscoveryEngineControl#collection_id}
 
 ---
 
@@ -1873,7 +1873,7 @@ Conditions interface{}
 
 conditions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/discovery_engine_control#conditions DiscoveryEngineControl#conditions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/discovery_engine_control#conditions DiscoveryEngineControl#conditions}
 
 ---
 
@@ -1894,7 +1894,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/discovery_engine_control#deletion_policy DiscoveryEngineControl#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/discovery_engine_control#deletion_policy DiscoveryEngineControl#deletion_policy}
 
 ---
 
@@ -1908,7 +1908,7 @@ FilterAction DiscoveryEngineControlFilterAction
 
 filter_action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/discovery_engine_control#filter_action DiscoveryEngineControl#filter_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/discovery_engine_control#filter_action DiscoveryEngineControl#filter_action}
 
 ---
 
@@ -1920,7 +1920,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/discovery_engine_control#id DiscoveryEngineControl#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/discovery_engine_control#id DiscoveryEngineControl#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1935,7 +1935,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/discovery_engine_control#project DiscoveryEngineControl#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/discovery_engine_control#project DiscoveryEngineControl#project}.
 
 ---
 
@@ -1949,7 +1949,7 @@ PromoteAction DiscoveryEngineControlPromoteAction
 
 promote_action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/discovery_engine_control#promote_action DiscoveryEngineControl#promote_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/discovery_engine_control#promote_action DiscoveryEngineControl#promote_action}
 
 ---
 
@@ -1963,7 +1963,7 @@ RedirectAction DiscoveryEngineControlRedirectAction
 
 redirect_action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/discovery_engine_control#redirect_action DiscoveryEngineControl#redirect_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/discovery_engine_control#redirect_action DiscoveryEngineControl#redirect_action}
 
 ---
 
@@ -1977,7 +1977,7 @@ SynonymsAction DiscoveryEngineControlSynonymsAction
 
 synonyms_action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/discovery_engine_control#synonyms_action DiscoveryEngineControl#synonyms_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/discovery_engine_control#synonyms_action DiscoveryEngineControl#synonyms_action}
 
 ---
 
@@ -1991,7 +1991,7 @@ Timeouts DiscoveryEngineControlTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/discovery_engine_control#timeouts DiscoveryEngineControl#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/discovery_engine_control#timeouts DiscoveryEngineControl#timeouts}
 
 ---
 
@@ -2005,7 +2005,7 @@ UseCases *[]*string
 
 The use cases that the control is used for. Possible values: ["SEARCH_USE_CASE_SEARCH", "SEARCH_USE_CASE_BROWSE"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/discovery_engine_control#use_cases DiscoveryEngineControl#use_cases}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/discovery_engine_control#use_cases DiscoveryEngineControl#use_cases}
 
 ---
 
@@ -2041,7 +2041,7 @@ DataStore *string
 
 The data store to filter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/discovery_engine_control#data_store DiscoveryEngineControl#data_store}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/discovery_engine_control#data_store DiscoveryEngineControl#data_store}
 
 ---
 
@@ -2055,7 +2055,7 @@ Filter *string
 
 The filter to apply to the search results.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/discovery_engine_control#filter DiscoveryEngineControl#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/discovery_engine_control#filter DiscoveryEngineControl#filter}
 
 ---
 
@@ -2091,7 +2091,7 @@ DataStore *string
 
 The data store to promote.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/discovery_engine_control#data_store DiscoveryEngineControl#data_store}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/discovery_engine_control#data_store DiscoveryEngineControl#data_store}
 
 ---
 
@@ -2105,7 +2105,7 @@ SearchLinkPromotion DiscoveryEngineControlPromoteActionSearchLinkPromotion
 
 search_link_promotion block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/discovery_engine_control#search_link_promotion DiscoveryEngineControl#search_link_promotion}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/discovery_engine_control#search_link_promotion DiscoveryEngineControl#search_link_promotion}
 
 ---
 
@@ -2149,7 +2149,7 @@ Title *string
 
 The title of the promoted link.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/discovery_engine_control#title DiscoveryEngineControl#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/discovery_engine_control#title DiscoveryEngineControl#title}
 
 ---
 
@@ -2163,7 +2163,7 @@ Description *string
 
 The description of the promoted link.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/discovery_engine_control#description DiscoveryEngineControl#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/discovery_engine_control#description DiscoveryEngineControl#description}
 
 ---
 
@@ -2177,7 +2177,7 @@ Document *string
 
 The document to promote.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/discovery_engine_control#document DiscoveryEngineControl#document}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/discovery_engine_control#document DiscoveryEngineControl#document}
 
 ---
 
@@ -2191,7 +2191,7 @@ Enabled interface{}
 
 Return promotions for basic site search.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/discovery_engine_control#enabled DiscoveryEngineControl#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/discovery_engine_control#enabled DiscoveryEngineControl#enabled}
 
 ---
 
@@ -2205,7 +2205,7 @@ ImageUri *string
 
 The image URI of the promoted link.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/discovery_engine_control#image_uri DiscoveryEngineControl#image_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/discovery_engine_control#image_uri DiscoveryEngineControl#image_uri}
 
 ---
 
@@ -2219,7 +2219,7 @@ Uri *string
 
 The URI to promote.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/discovery_engine_control#uri DiscoveryEngineControl#uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/discovery_engine_control#uri DiscoveryEngineControl#uri}
 
 ---
 
@@ -2253,7 +2253,7 @@ RedirectUri *string
 
 The URI to redirect to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/discovery_engine_control#redirect_uri DiscoveryEngineControl#redirect_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/discovery_engine_control#redirect_uri DiscoveryEngineControl#redirect_uri}
 
 ---
 
@@ -2287,7 +2287,7 @@ Synonyms *[]*string
 
 The synonyms to apply to the search results.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/discovery_engine_control#synonyms DiscoveryEngineControl#synonyms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/discovery_engine_control#synonyms DiscoveryEngineControl#synonyms}
 
 ---
 
@@ -2309,9 +2309,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginec
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/discovery_engine_control#create DiscoveryEngineControl#create}. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/discovery_engine_control#delete DiscoveryEngineControl#delete}. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/discovery_engine_control#update DiscoveryEngineControl#update}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/discovery_engine_control#create DiscoveryEngineControl#create}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/discovery_engine_control#delete DiscoveryEngineControl#delete}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/discovery_engine_control#update DiscoveryEngineControl#update}. |
 
 ---
 
@@ -2323,7 +2323,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/discovery_engine_control#create DiscoveryEngineControl#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/discovery_engine_control#create DiscoveryEngineControl#create}.
 
 ---
 
@@ -2335,7 +2335,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/discovery_engine_control#delete DiscoveryEngineControl#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/discovery_engine_control#delete DiscoveryEngineControl#delete}.
 
 ---
 
@@ -2347,7 +2347,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/discovery_engine_control#update DiscoveryEngineControl#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/discovery_engine_control#update DiscoveryEngineControl#update}.
 
 ---
 

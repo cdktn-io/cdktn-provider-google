@@ -4,7 +4,7 @@
 
 ### ChronicleRuleDeployment <a name="ChronicleRuleDeployment" id="@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/chronicle_rule_deployment google_chronicle_rule_deployment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/chronicle_rule_deployment google_chronicle_rule_deployment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.Initializer"></a>
 
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.putScheduleCustomizations">putScheduleCustomizations</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.resetAlerting">resetAlerting</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.resetArchived">resetArchived</a></code> | *No description.* |
@@ -81,6 +82,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.resetProject">resetProject</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.resetRunFrequency">resetRunFrequency</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.resetScheduleCustomizations">resetScheduleCustomizations</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 
 ---
@@ -394,6 +396,18 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `putScheduleCustomizations` <a name="putScheduleCustomizations" id="@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.putScheduleCustomizations"></a>
+
+```typescript
+public putScheduleCustomizations(value: ChronicleRuleDeploymentScheduleCustomizations): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.putScheduleCustomizations.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizations">ChronicleRuleDeploymentScheduleCustomizations</a>
+
+---
+
 ##### `putTimeouts` <a name="putTimeouts" id="@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.putTimeouts"></a>
 
 ```typescript
@@ -440,6 +454,12 @@ public resetProject(): void
 
 ```typescript
 public resetRunFrequency(): void
+```
+
+##### `resetScheduleCustomizations` <a name="resetScheduleCustomizations" id="@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.resetScheduleCustomizations"></a>
+
+```typescript
+public resetScheduleCustomizations(): void
 ```
 
 ##### `resetTimeouts` <a name="resetTimeouts" id="@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.resetTimeouts"></a>
@@ -551,7 +571,7 @@ The construct id used in the generated config for the ChronicleRuleDeployment to
 
 The id of the existing ChronicleRuleDeployment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/chronicle_rule_deployment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/chronicle_rule_deployment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -587,6 +607,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.property.lastAlertStatusChangeTime">lastAlertStatusChangeTime</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.property.producerRules">producerRules</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.property.scheduleCustomizations">scheduleCustomizations</a></code> | <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizationsOutputReference">ChronicleRuleDeploymentScheduleCustomizationsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentTimeoutsOutputReference">ChronicleRuleDeploymentTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.property.alertingInput">alertingInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.property.archivedInput">archivedInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
@@ -597,6 +618,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.property.ruleInput">ruleInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.property.runFrequencyInput">runFrequencyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.property.scheduleCustomizationsInput">scheduleCustomizationsInput</a></code> | <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizations">ChronicleRuleDeploymentScheduleCustomizations</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentTimeouts">ChronicleRuleDeploymentTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.property.alerting">alerting</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.property.archived">archived</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
@@ -812,6 +834,16 @@ public readonly producerRules: string[];
 
 ---
 
+##### `scheduleCustomizations`<sup>Required</sup> <a name="scheduleCustomizations" id="@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.property.scheduleCustomizations"></a>
+
+```typescript
+public readonly scheduleCustomizations: ChronicleRuleDeploymentScheduleCustomizationsOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizationsOutputReference">ChronicleRuleDeploymentScheduleCustomizationsOutputReference</a>
+
+---
+
 ##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.property.timeouts"></a>
 
 ```typescript
@@ -909,6 +941,16 @@ public readonly runFrequencyInput: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `scheduleCustomizationsInput`<sup>Optional</sup> <a name="scheduleCustomizationsInput" id="@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeployment.property.scheduleCustomizationsInput"></a>
+
+```typescript
+public readonly scheduleCustomizationsInput: ChronicleRuleDeploymentScheduleCustomizations;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizations">ChronicleRuleDeploymentScheduleCustomizations</a>
 
 ---
 
@@ -1059,9 +1101,10 @@ const chronicleRuleDeploymentConfig: chronicleRuleDeployment.ChronicleRuleDeploy
 | <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentConfig.property.alerting">alerting</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether detections resulting from this deployment should be considered alerts. |
 | <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentConfig.property.archived">archived</a></code> | <code>boolean \| cdktn.IResolvable</code> | The archive state of the rule deployment. |
 | <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether the rule is currently deployed continuously against incoming data. |
-| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/chronicle_rule_deployment#id ChronicleRuleDeployment#id}. |
-| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/chronicle_rule_deployment#project ChronicleRuleDeployment#project}. |
-| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentConfig.property.runFrequency">runFrequency</a></code> | <code>string</code> | The run frequency of the rule deployment. Possible values: LIVE HOURLY DAILY. |
+| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/chronicle_rule_deployment#id ChronicleRuleDeployment#id}. |
+| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/chronicle_rule_deployment#project ChronicleRuleDeployment#project}. |
+| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentConfig.property.runFrequency">runFrequency</a></code> | <code>string</code> | The run frequency of the rule deployment. Possible values: LIVE HOURLY DAILY LIVE_CUSTOMIZABLE HOURLY_CUSTOMIZABLE. |
+| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentConfig.property.scheduleCustomizations">scheduleCustomizations</a></code> | <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizations">ChronicleRuleDeploymentScheduleCustomizations</a></code> | schedule_customizations block. |
 | <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentTimeouts">ChronicleRuleDeploymentTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1146,7 +1189,7 @@ public readonly instance: string;
 
 The unique identifier for the Chronicle instance, which is the same as the customer ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/chronicle_rule_deployment#instance ChronicleRuleDeployment#instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/chronicle_rule_deployment#instance ChronicleRuleDeployment#instance}
 
 ---
 
@@ -1162,7 +1205,7 @@ The location of the resource.
 
 This is the geographical region where the Chronicle instance resides, such as "us" or "europe-west2".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/chronicle_rule_deployment#location ChronicleRuleDeployment#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/chronicle_rule_deployment#location ChronicleRuleDeployment#location}
 
 ---
 
@@ -1176,7 +1219,7 @@ public readonly rule: string;
 
 The Rule ID of the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/chronicle_rule_deployment#rule ChronicleRuleDeployment#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/chronicle_rule_deployment#rule ChronicleRuleDeployment#rule}
 
 ---
 
@@ -1190,7 +1233,7 @@ public readonly alerting: boolean | IResolvable;
 
 Whether detections resulting from this deployment should be considered alerts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/chronicle_rule_deployment#alerting ChronicleRuleDeployment#alerting}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/chronicle_rule_deployment#alerting ChronicleRuleDeployment#alerting}
 
 ---
 
@@ -1211,7 +1254,7 @@ If set to true, alerting will automatically be set to false.
 If currently set to true, enabled, alerting, and run_frequency cannot be
 updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/chronicle_rule_deployment#archived ChronicleRuleDeployment#archived}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/chronicle_rule_deployment#archived ChronicleRuleDeployment#archived}
 
 ---
 
@@ -1225,7 +1268,7 @@ public readonly enabled: boolean | IResolvable;
 
 Whether the rule is currently deployed continuously against incoming data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/chronicle_rule_deployment#enabled ChronicleRuleDeployment#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/chronicle_rule_deployment#enabled ChronicleRuleDeployment#enabled}
 
 ---
 
@@ -1237,7 +1280,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/chronicle_rule_deployment#id ChronicleRuleDeployment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/chronicle_rule_deployment#id ChronicleRuleDeployment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1252,7 +1295,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/chronicle_rule_deployment#project ChronicleRuleDeployment#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/chronicle_rule_deployment#project ChronicleRuleDeployment#project}.
 
 ---
 
@@ -1264,9 +1307,28 @@ public readonly runFrequency: string;
 
 - *Type:* string
 
-The run frequency of the rule deployment. Possible values: LIVE HOURLY DAILY.
+The run frequency of the rule deployment. Possible values: LIVE HOURLY DAILY LIVE_CUSTOMIZABLE HOURLY_CUSTOMIZABLE.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/chronicle_rule_deployment#run_frequency ChronicleRuleDeployment#run_frequency}
+Note: Certain legacy run frequencies are deprecated. For multi-event rules, use LIVE_CUSTOMIZABLE or HOURLY_CUSTOMIZABLE (for match windows <=2d), or DAILY (for match windows >2d).
+Legacy values LIVE and HOURLY are mapped to their customizable counterparts on the backend. DAILY for <=2d match window multi-event rules will be happed to HOURLY_CUSTOMIZABLE.
+For single-event rules, HOURLY and DAILY are deprecated and mapped to LIVE. If you continue to use deprecated values in your Terraform configuration, Terraform will silently
+suppress the diff and ignore the changes to prevent infinite update loops.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/chronicle_rule_deployment#run_frequency ChronicleRuleDeployment#run_frequency}
+
+---
+
+##### `scheduleCustomizations`<sup>Optional</sup> <a name="scheduleCustomizations" id="@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentConfig.property.scheduleCustomizations"></a>
+
+```typescript
+public readonly scheduleCustomizations: ChronicleRuleDeploymentScheduleCustomizations;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizations">ChronicleRuleDeploymentScheduleCustomizations</a>
+
+schedule_customizations block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/chronicle_rule_deployment#schedule_customizations ChronicleRuleDeployment#schedule_customizations}
 
 ---
 
@@ -1280,7 +1342,54 @@ public readonly timeouts: ChronicleRuleDeploymentTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/chronicle_rule_deployment#timeouts ChronicleRuleDeployment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/chronicle_rule_deployment#timeouts ChronicleRuleDeployment#timeouts}
+
+---
+
+### ChronicleRuleDeploymentScheduleCustomizations <a name="ChronicleRuleDeploymentScheduleCustomizations" id="@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizations"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizations.Initializer"></a>
+
+```typescript
+import { chronicleRuleDeployment } from '@cdktn/provider-google'
+
+const chronicleRuleDeploymentScheduleCustomizations: chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizations = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizations.property.ensureEnrichmentCompleteness">ensureEnrichmentCompleteness</a></code> | <code>boolean \| cdktn.IResolvable</code> | Indicates whether to add additional delays and runs to rules to ensure enrichment completeness, with the trade-off of more late-arriving detections. |
+| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizations.property.lateArrivingDataAdjustment">lateArrivingDataAdjustment</a></code> | <code>string</code> | Delay the first rule execution run to account for late-arriving data. |
+
+---
+
+##### `ensureEnrichmentCompleteness`<sup>Optional</sup> <a name="ensureEnrichmentCompleteness" id="@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizations.property.ensureEnrichmentCompleteness"></a>
+
+```typescript
+public readonly ensureEnrichmentCompleteness: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktn.IResolvable
+
+Indicates whether to add additional delays and runs to rules to ensure enrichment completeness, with the trade-off of more late-arriving detections.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/chronicle_rule_deployment#ensure_enrichment_completeness ChronicleRuleDeployment#ensure_enrichment_completeness}
+
+---
+
+##### `lateArrivingDataAdjustment`<sup>Optional</sup> <a name="lateArrivingDataAdjustment" id="@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizations.property.lateArrivingDataAdjustment"></a>
+
+```typescript
+public readonly lateArrivingDataAdjustment: string;
+```
+
+- *Type:* string
+
+Delay the first rule execution run to account for late-arriving data.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/chronicle_rule_deployment#late_arriving_data_adjustment ChronicleRuleDeployment#late_arriving_data_adjustment}
 
 ---
 
@@ -1298,9 +1407,9 @@ const chronicleRuleDeploymentTimeouts: chronicleRuleDeployment.ChronicleRuleDepl
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/chronicle_rule_deployment#create ChronicleRuleDeployment#create}. |
-| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/chronicle_rule_deployment#delete ChronicleRuleDeployment#delete}. |
-| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/chronicle_rule_deployment#update ChronicleRuleDeployment#update}. |
+| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/chronicle_rule_deployment#create ChronicleRuleDeployment#create}. |
+| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/chronicle_rule_deployment#delete ChronicleRuleDeployment#delete}. |
+| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/chronicle_rule_deployment#update ChronicleRuleDeployment#update}. |
 
 ---
 
@@ -1312,7 +1421,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/chronicle_rule_deployment#create ChronicleRuleDeployment#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/chronicle_rule_deployment#create ChronicleRuleDeployment#create}.
 
 ---
 
@@ -1324,7 +1433,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/chronicle_rule_deployment#delete ChronicleRuleDeployment#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/chronicle_rule_deployment#delete ChronicleRuleDeployment#delete}.
 
 ---
 
@@ -1336,11 +1445,318 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/chronicle_rule_deployment#update ChronicleRuleDeployment#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/chronicle_rule_deployment#update ChronicleRuleDeployment#update}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### ChronicleRuleDeploymentScheduleCustomizationsOutputReference <a name="ChronicleRuleDeploymentScheduleCustomizationsOutputReference" id="@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizationsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizationsOutputReference.Initializer"></a>
+
+```typescript
+import { chronicleRuleDeployment } from '@cdktn/provider-google'
+
+new chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizationsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizationsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizationsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizationsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizationsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizationsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizationsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizationsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizationsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizationsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizationsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizationsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizationsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizationsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizationsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizationsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizationsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizationsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizationsOutputReference.resetEnsureEnrichmentCompleteness">resetEnsureEnrichmentCompleteness</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizationsOutputReference.resetLateArrivingDataAdjustment">resetLateArrivingDataAdjustment</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizationsOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizationsOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizationsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizationsOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizationsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizationsOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizationsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizationsOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizationsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizationsOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizationsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizationsOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizationsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizationsOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizationsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizationsOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizationsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizationsOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizationsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizationsOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizationsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizationsOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizationsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizationsOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetEnsureEnrichmentCompleteness` <a name="resetEnsureEnrichmentCompleteness" id="@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizationsOutputReference.resetEnsureEnrichmentCompleteness"></a>
+
+```typescript
+public resetEnsureEnrichmentCompleteness(): void
+```
+
+##### `resetLateArrivingDataAdjustment` <a name="resetLateArrivingDataAdjustment" id="@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizationsOutputReference.resetLateArrivingDataAdjustment"></a>
+
+```typescript
+public resetLateArrivingDataAdjustment(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizationsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizationsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizationsOutputReference.property.ensureEnrichmentCompletenessInput">ensureEnrichmentCompletenessInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizationsOutputReference.property.lateArrivingDataAdjustmentInput">lateArrivingDataAdjustmentInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizationsOutputReference.property.ensureEnrichmentCompleteness">ensureEnrichmentCompleteness</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizationsOutputReference.property.lateArrivingDataAdjustment">lateArrivingDataAdjustment</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizationsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizations">ChronicleRuleDeploymentScheduleCustomizations</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizationsOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizationsOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `ensureEnrichmentCompletenessInput`<sup>Optional</sup> <a name="ensureEnrichmentCompletenessInput" id="@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizationsOutputReference.property.ensureEnrichmentCompletenessInput"></a>
+
+```typescript
+public readonly ensureEnrichmentCompletenessInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktn.IResolvable
+
+---
+
+##### `lateArrivingDataAdjustmentInput`<sup>Optional</sup> <a name="lateArrivingDataAdjustmentInput" id="@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizationsOutputReference.property.lateArrivingDataAdjustmentInput"></a>
+
+```typescript
+public readonly lateArrivingDataAdjustmentInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `ensureEnrichmentCompleteness`<sup>Required</sup> <a name="ensureEnrichmentCompleteness" id="@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizationsOutputReference.property.ensureEnrichmentCompleteness"></a>
+
+```typescript
+public readonly ensureEnrichmentCompleteness: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktn.IResolvable
+
+---
+
+##### `lateArrivingDataAdjustment`<sup>Required</sup> <a name="lateArrivingDataAdjustment" id="@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizationsOutputReference.property.lateArrivingDataAdjustment"></a>
+
+```typescript
+public readonly lateArrivingDataAdjustment: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizationsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: ChronicleRuleDeploymentScheduleCustomizations;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentScheduleCustomizations">ChronicleRuleDeploymentScheduleCustomizations</a>
+
+---
+
 
 ### ChronicleRuleDeploymentTimeoutsOutputReference <a name="ChronicleRuleDeploymentTimeoutsOutputReference" id="@cdktn/provider-google.chronicleRuleDeployment.ChronicleRuleDeploymentTimeoutsOutputReference"></a>
 

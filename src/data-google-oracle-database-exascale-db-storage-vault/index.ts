@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/oracle_database_exascale_db_storage_vault
+// https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/oracle_database_exascale_db_storage_vault
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -18,11 +18,11 @@ export interface DataGoogleOracleDatabaseExascaleDbStorageVaultConfig extends cd
   * 63 characters in length. The value must start with a letter and end with a
   * letter or a number.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/oracle_database_exascale_db_storage_vault#exascale_db_storage_vault_id DataGoogleOracleDatabaseExascaleDbStorageVault#exascale_db_storage_vault_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/oracle_database_exascale_db_storage_vault#exascale_db_storage_vault_id DataGoogleOracleDatabaseExascaleDbStorageVault#exascale_db_storage_vault_id}
   */
   readonly exascaleDbStorageVaultId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/oracle_database_exascale_db_storage_vault#id DataGoogleOracleDatabaseExascaleDbStorageVault#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/oracle_database_exascale_db_storage_vault#id DataGoogleOracleDatabaseExascaleDbStorageVault#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -31,11 +31,11 @@ export interface DataGoogleOracleDatabaseExascaleDbStorageVaultConfig extends cd
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/oracle_database_exascale_db_storage_vault#location DataGoogleOracleDatabaseExascaleDbStorageVault#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/oracle_database_exascale_db_storage_vault#location DataGoogleOracleDatabaseExascaleDbStorageVault#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/oracle_database_exascale_db_storage_vault#project DataGoogleOracleDatabaseExascaleDbStorageVault#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/oracle_database_exascale_db_storage_vault#project DataGoogleOracleDatabaseExascaleDbStorageVault#project}
   */
   readonly project?: string;
 }
@@ -323,7 +323,7 @@ export class DataGoogleOracleDatabaseExascaleDbStorageVaultPropertiesList extend
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/oracle_database_exascale_db_storage_vault google_oracle_database_exascale_db_storage_vault}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/oracle_database_exascale_db_storage_vault google_oracle_database_exascale_db_storage_vault}
 */
 export class DataGoogleOracleDatabaseExascaleDbStorageVault extends cdktn.TerraformDataSource {
 
@@ -339,7 +339,7 @@ export class DataGoogleOracleDatabaseExascaleDbStorageVault extends cdktn.Terraf
   * Generates CDKTN code for importing a DataGoogleOracleDatabaseExascaleDbStorageVault resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleOracleDatabaseExascaleDbStorageVault to import
-  * @param importFromId The id of the existing DataGoogleOracleDatabaseExascaleDbStorageVault that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/oracle_database_exascale_db_storage_vault#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleOracleDatabaseExascaleDbStorageVault that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/oracle_database_exascale_db_storage_vault#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleOracleDatabaseExascaleDbStorageVault to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -351,7 +351,7 @@ export class DataGoogleOracleDatabaseExascaleDbStorageVault extends cdktn.Terraf
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/oracle_database_exascale_db_storage_vault google_oracle_database_exascale_db_storage_vault} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/oracle_database_exascale_db_storage_vault google_oracle_database_exascale_db_storage_vault} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -362,7 +362,7 @@ export class DataGoogleOracleDatabaseExascaleDbStorageVault extends cdktn.Terraf
       terraformResourceType: 'google_oracle_database_exascale_db_storage_vault',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.44.0',
+        providerVersion: '7.45.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

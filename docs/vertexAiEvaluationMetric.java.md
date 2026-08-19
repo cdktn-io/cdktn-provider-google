@@ -4,7 +4,7 @@
 
 ### VertexAiEvaluationMetric <a name="VertexAiEvaluationMetric" id="@cdktn/provider-google.vertexAiEvaluationMetric.VertexAiEvaluationMetric"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_evaluation_metric google_vertex_ai_evaluation_metric}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vertex_ai_evaluation_metric google_vertex_ai_evaluation_metric}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiEvaluationMetric.VertexAiEvaluationMetric.Initializer"></a>
 
@@ -52,10 +52,10 @@ VertexAiEvaluationMetric.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.vertexAiEvaluationMetric.VertexAiEvaluationMetric.Initializer.parameter.encryptionSpec">encryptionSpec</a></code> | <code><a href="#@cdktn/provider-google.vertexAiEvaluationMetric.VertexAiEvaluationMetricEncryptionSpec">VertexAiEvaluationMetricEncryptionSpec</a></code> | encryption_spec block. |
 | <code><a href="#@cdktn/provider-google.vertexAiEvaluationMetric.VertexAiEvaluationMetric.Initializer.parameter.evaluationMetricId">evaluationMetricId</a></code> | <code>java.lang.String</code> | The ID to use for the EvaluationMetric, which will become the final component of the resource name. |
 | <code><a href="#@cdktn/provider-google.vertexAiEvaluationMetric.VertexAiEvaluationMetric.Initializer.parameter.gcsUri">gcsUri</a></code> | <code>java.lang.String</code> | The Google Cloud Storage URI that stores the metric specification. |
-| <code><a href="#@cdktn/provider-google.vertexAiEvaluationMetric.VertexAiEvaluationMetric.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_evaluation_metric#id VertexAiEvaluationMetric#id}. |
+| <code><a href="#@cdktn/provider-google.vertexAiEvaluationMetric.VertexAiEvaluationMetric.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vertex_ai_evaluation_metric#id VertexAiEvaluationMetric#id}. |
 | <code><a href="#@cdktn/provider-google.vertexAiEvaluationMetric.VertexAiEvaluationMetric.Initializer.parameter.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Labels for the EvaluationMetric. |
 | <code><a href="#@cdktn/provider-google.vertexAiEvaluationMetric.VertexAiEvaluationMetric.Initializer.parameter.metric">metric</a></code> | <code>java.lang.String</code> | The metric configuration as a JSON string. |
-| <code><a href="#@cdktn/provider-google.vertexAiEvaluationMetric.VertexAiEvaluationMetric.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_evaluation_metric#project VertexAiEvaluationMetric#project}. |
+| <code><a href="#@cdktn/provider-google.vertexAiEvaluationMetric.VertexAiEvaluationMetric.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vertex_ai_evaluation_metric#project VertexAiEvaluationMetric#project}. |
 | <code><a href="#@cdktn/provider-google.vertexAiEvaluationMetric.VertexAiEvaluationMetric.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.vertexAiEvaluationMetric.VertexAiEvaluationMetricTimeouts">VertexAiEvaluationMetricTimeouts</a></code> | timeouts block. |
 
 ---
@@ -126,7 +126,7 @@ Must be unique amongst siblings in the same scope
 
 The user-friendly display name for the EvaluationMetric.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_evaluation_metric#display_name VertexAiEvaluationMetric#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vertex_ai_evaluation_metric#display_name VertexAiEvaluationMetric#display_name}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The region of the EvaluationMetric. eg us-central1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_evaluation_metric#region VertexAiEvaluationMetric#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vertex_ai_evaluation_metric#region VertexAiEvaluationMetric#region}
 
 ---
 
@@ -153,7 +153,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_evaluation_metric#deletion_policy VertexAiEvaluationMetric#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vertex_ai_evaluation_metric#deletion_policy VertexAiEvaluationMetric#deletion_policy}
 
 ---
 
@@ -163,7 +163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A description of the EvaluationMetric.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_evaluation_metric#description VertexAiEvaluationMetric#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vertex_ai_evaluation_metric#description VertexAiEvaluationMetric#description}
 
 ---
 
@@ -173,7 +173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 encryption_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_evaluation_metric#encryption_spec VertexAiEvaluationMetric#encryption_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vertex_ai_evaluation_metric#encryption_spec VertexAiEvaluationMetric#encryption_spec}
 
 ---
 
@@ -188,7 +188,7 @@ and valid characters are /[a-z][0-9]-/. The first character must be
 a lowercase letter, and the last character must be a lowercase letter
 or number. If not provided, the server will generate a unique ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_evaluation_metric#evaluation_metric_id VertexAiEvaluationMetric#evaluation_metric_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vertex_ai_evaluation_metric#evaluation_metric_id VertexAiEvaluationMetric#evaluation_metric_id}
 
 ---
 
@@ -198,7 +198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The Google Cloud Storage URI that stores the metric specification.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_evaluation_metric#gcs_uri VertexAiEvaluationMetric#gcs_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vertex_ai_evaluation_metric#gcs_uri VertexAiEvaluationMetric#gcs_uri}
 
 ---
 
@@ -206,7 +206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_evaluation_metric#id VertexAiEvaluationMetric#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vertex_ai_evaluation_metric#id VertexAiEvaluationMetric#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -222,7 +222,7 @@ Labels for the EvaluationMetric.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_evaluation_metric#labels VertexAiEvaluationMetric#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vertex_ai_evaluation_metric#labels VertexAiEvaluationMetric#labels}
 
 ---
 
@@ -238,7 +238,7 @@ execution metrics.
 See the [API documentation](https://cloud.google.com/vertex-ai/docs/reference/rest/v1/Metric)
 for the full schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_evaluation_metric#metric VertexAiEvaluationMetric#metric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vertex_ai_evaluation_metric#metric VertexAiEvaluationMetric#metric}
 
 ---
 
@@ -246,7 +246,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_evaluation_metric#project VertexAiEvaluationMetric#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vertex_ai_evaluation_metric#project VertexAiEvaluationMetric#project}.
 
 ---
 
@@ -256,7 +256,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_evaluation_metric#timeouts VertexAiEvaluationMetric#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vertex_ai_evaluation_metric#timeouts VertexAiEvaluationMetric#timeouts}
 
 ---
 
@@ -801,7 +801,7 @@ The construct id used in the generated config for the VertexAiEvaluationMetric t
 
 The id of the existing VertexAiEvaluationMetric that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_evaluation_metric#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vertex_ai_evaluation_metric#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1363,10 +1363,10 @@ VertexAiEvaluationMetricConfig.builder()
 | <code><a href="#@cdktn/provider-google.vertexAiEvaluationMetric.VertexAiEvaluationMetricConfig.property.encryptionSpec">encryptionSpec</a></code> | <code><a href="#@cdktn/provider-google.vertexAiEvaluationMetric.VertexAiEvaluationMetricEncryptionSpec">VertexAiEvaluationMetricEncryptionSpec</a></code> | encryption_spec block. |
 | <code><a href="#@cdktn/provider-google.vertexAiEvaluationMetric.VertexAiEvaluationMetricConfig.property.evaluationMetricId">evaluationMetricId</a></code> | <code>java.lang.String</code> | The ID to use for the EvaluationMetric, which will become the final component of the resource name. |
 | <code><a href="#@cdktn/provider-google.vertexAiEvaluationMetric.VertexAiEvaluationMetricConfig.property.gcsUri">gcsUri</a></code> | <code>java.lang.String</code> | The Google Cloud Storage URI that stores the metric specification. |
-| <code><a href="#@cdktn/provider-google.vertexAiEvaluationMetric.VertexAiEvaluationMetricConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_evaluation_metric#id VertexAiEvaluationMetric#id}. |
+| <code><a href="#@cdktn/provider-google.vertexAiEvaluationMetric.VertexAiEvaluationMetricConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vertex_ai_evaluation_metric#id VertexAiEvaluationMetric#id}. |
 | <code><a href="#@cdktn/provider-google.vertexAiEvaluationMetric.VertexAiEvaluationMetricConfig.property.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Labels for the EvaluationMetric. |
 | <code><a href="#@cdktn/provider-google.vertexAiEvaluationMetric.VertexAiEvaluationMetricConfig.property.metric">metric</a></code> | <code>java.lang.String</code> | The metric configuration as a JSON string. |
-| <code><a href="#@cdktn/provider-google.vertexAiEvaluationMetric.VertexAiEvaluationMetricConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_evaluation_metric#project VertexAiEvaluationMetric#project}. |
+| <code><a href="#@cdktn/provider-google.vertexAiEvaluationMetric.VertexAiEvaluationMetricConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vertex_ai_evaluation_metric#project VertexAiEvaluationMetric#project}. |
 | <code><a href="#@cdktn/provider-google.vertexAiEvaluationMetric.VertexAiEvaluationMetricConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.vertexAiEvaluationMetric.VertexAiEvaluationMetricTimeouts">VertexAiEvaluationMetricTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1451,7 +1451,7 @@ public java.lang.String getDisplayName();
 
 The user-friendly display name for the EvaluationMetric.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_evaluation_metric#display_name VertexAiEvaluationMetric#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vertex_ai_evaluation_metric#display_name VertexAiEvaluationMetric#display_name}
 
 ---
 
@@ -1465,7 +1465,7 @@ public java.lang.String getRegion();
 
 The region of the EvaluationMetric. eg us-central1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_evaluation_metric#region VertexAiEvaluationMetric#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vertex_ai_evaluation_metric#region VertexAiEvaluationMetric#region}
 
 ---
 
@@ -1486,7 +1486,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_evaluation_metric#deletion_policy VertexAiEvaluationMetric#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vertex_ai_evaluation_metric#deletion_policy VertexAiEvaluationMetric#deletion_policy}
 
 ---
 
@@ -1500,7 +1500,7 @@ public java.lang.String getDescription();
 
 A description of the EvaluationMetric.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_evaluation_metric#description VertexAiEvaluationMetric#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vertex_ai_evaluation_metric#description VertexAiEvaluationMetric#description}
 
 ---
 
@@ -1514,7 +1514,7 @@ public VertexAiEvaluationMetricEncryptionSpec getEncryptionSpec();
 
 encryption_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_evaluation_metric#encryption_spec VertexAiEvaluationMetric#encryption_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vertex_ai_evaluation_metric#encryption_spec VertexAiEvaluationMetric#encryption_spec}
 
 ---
 
@@ -1533,7 +1533,7 @@ and valid characters are /[a-z][0-9]-/. The first character must be
 a lowercase letter, and the last character must be a lowercase letter
 or number. If not provided, the server will generate a unique ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_evaluation_metric#evaluation_metric_id VertexAiEvaluationMetric#evaluation_metric_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vertex_ai_evaluation_metric#evaluation_metric_id VertexAiEvaluationMetric#evaluation_metric_id}
 
 ---
 
@@ -1547,7 +1547,7 @@ public java.lang.String getGcsUri();
 
 The Google Cloud Storage URI that stores the metric specification.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_evaluation_metric#gcs_uri VertexAiEvaluationMetric#gcs_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vertex_ai_evaluation_metric#gcs_uri VertexAiEvaluationMetric#gcs_uri}
 
 ---
 
@@ -1559,7 +1559,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_evaluation_metric#id VertexAiEvaluationMetric#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vertex_ai_evaluation_metric#id VertexAiEvaluationMetric#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1579,7 +1579,7 @@ Labels for the EvaluationMetric.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_evaluation_metric#labels VertexAiEvaluationMetric#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vertex_ai_evaluation_metric#labels VertexAiEvaluationMetric#labels}
 
 ---
 
@@ -1599,7 +1599,7 @@ execution metrics.
 See the [API documentation](https://cloud.google.com/vertex-ai/docs/reference/rest/v1/Metric)
 for the full schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_evaluation_metric#metric VertexAiEvaluationMetric#metric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vertex_ai_evaluation_metric#metric VertexAiEvaluationMetric#metric}
 
 ---
 
@@ -1611,7 +1611,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_evaluation_metric#project VertexAiEvaluationMetric#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vertex_ai_evaluation_metric#project VertexAiEvaluationMetric#project}.
 
 ---
 
@@ -1625,7 +1625,7 @@ public VertexAiEvaluationMetricTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_evaluation_metric#timeouts VertexAiEvaluationMetric#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vertex_ai_evaluation_metric#timeouts VertexAiEvaluationMetric#timeouts}
 
 ---
 
@@ -1664,7 +1664,7 @@ used to protect a resource. Has the form:
 'projects/my-project/locations/my-region/keyRings/my-kr/cryptoKeys/my-key'.
 The key needs to be in the same region as where the resource is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_evaluation_metric#kms_key_name VertexAiEvaluationMetric#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vertex_ai_evaluation_metric#kms_key_name VertexAiEvaluationMetric#kms_key_name}
 
 ---
 
@@ -1686,9 +1686,9 @@ VertexAiEvaluationMetricTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.vertexAiEvaluationMetric.VertexAiEvaluationMetricTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_evaluation_metric#create VertexAiEvaluationMetric#create}. |
-| <code><a href="#@cdktn/provider-google.vertexAiEvaluationMetric.VertexAiEvaluationMetricTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_evaluation_metric#delete VertexAiEvaluationMetric#delete}. |
-| <code><a href="#@cdktn/provider-google.vertexAiEvaluationMetric.VertexAiEvaluationMetricTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_evaluation_metric#update VertexAiEvaluationMetric#update}. |
+| <code><a href="#@cdktn/provider-google.vertexAiEvaluationMetric.VertexAiEvaluationMetricTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vertex_ai_evaluation_metric#create VertexAiEvaluationMetric#create}. |
+| <code><a href="#@cdktn/provider-google.vertexAiEvaluationMetric.VertexAiEvaluationMetricTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vertex_ai_evaluation_metric#delete VertexAiEvaluationMetric#delete}. |
+| <code><a href="#@cdktn/provider-google.vertexAiEvaluationMetric.VertexAiEvaluationMetricTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vertex_ai_evaluation_metric#update VertexAiEvaluationMetric#update}. |
 
 ---
 
@@ -1700,7 +1700,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_evaluation_metric#create VertexAiEvaluationMetric#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vertex_ai_evaluation_metric#create VertexAiEvaluationMetric#create}.
 
 ---
 
@@ -1712,7 +1712,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_evaluation_metric#delete VertexAiEvaluationMetric#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vertex_ai_evaluation_metric#delete VertexAiEvaluationMetric#delete}.
 
 ---
 
@@ -1724,7 +1724,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vertex_ai_evaluation_metric#update VertexAiEvaluationMetric#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vertex_ai_evaluation_metric#update VertexAiEvaluationMetric#update}.
 
 ---
 

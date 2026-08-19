@@ -4,7 +4,7 @@
 
 ### DataGoogleSourcerepoRepository <a name="DataGoogleSourcerepoRepository" id="@cdktn/provider-google.dataGoogleSourcerepoRepository.DataGoogleSourcerepoRepository"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/sourcerepo_repository google_sourcerepo_repository}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/sourcerepo_repository google_sourcerepo_repository}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleSourcerepoRepository.DataGoogleSourcerepoRepository.Initializer"></a>
 
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataGoogleSourcerepoReposi
 
 The id of the existing DataGoogleSourcerepoRepository that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/sourcerepo_repository#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/sourcerepo_repository#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -717,8 +717,8 @@ const dataGoogleSourcerepoRepositoryConfig: dataGoogleSourcerepoRepository.DataG
 | <code><a href="#@cdktn/provider-google.dataGoogleSourcerepoRepository.DataGoogleSourcerepoRepositoryConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleSourcerepoRepository.DataGoogleSourcerepoRepositoryConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleSourcerepoRepository.DataGoogleSourcerepoRepositoryConfig.property.name">name</a></code> | <code>string</code> | Resource name of the repository, of the form '{{repo}}'. The repo name may contain slashes. eg, 'name/with/slash'. |
-| <code><a href="#@cdktn/provider-google.dataGoogleSourcerepoRepository.DataGoogleSourcerepoRepositoryConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/sourcerepo_repository#id DataGoogleSourcerepoRepository#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleSourcerepoRepository.DataGoogleSourcerepoRepositoryConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/sourcerepo_repository#project DataGoogleSourcerepoRepository#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleSourcerepoRepository.DataGoogleSourcerepoRepositoryConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/sourcerepo_repository#id DataGoogleSourcerepoRepository#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleSourcerepoRepository.DataGoogleSourcerepoRepositoryConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/sourcerepo_repository#project DataGoogleSourcerepoRepository#project}. |
 
 ---
 
@@ -802,7 +802,7 @@ public readonly name: string;
 
 Resource name of the repository, of the form '{{repo}}'. The repo name may contain slashes. eg, 'name/with/slash'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/sourcerepo_repository#name DataGoogleSourcerepoRepository#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/sourcerepo_repository#name DataGoogleSourcerepoRepository#name}
 
 ---
 
@@ -814,7 +814,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/sourcerepo_repository#id DataGoogleSourcerepoRepository#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/sourcerepo_repository#id DataGoogleSourcerepoRepository#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -829,7 +829,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/sourcerepo_repository#project DataGoogleSourcerepoRepository#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/sourcerepo_repository#project DataGoogleSourcerepoRepository#project}.
 
 ---
 

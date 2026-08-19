@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/certificate_manager_dns_authorization
+// https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/certificate_manager_dns_authorization
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -17,11 +17,11 @@ export interface DataGoogleCertificateManagerDnsAuthorizationConfig extends cdkt
   * single domain and its wildcard, e.g. authorization for "example.com" can
   * be used to issue certificates for "example.com" and "*.example.com".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/certificate_manager_dns_authorization#domain DataGoogleCertificateManagerDnsAuthorization#domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/certificate_manager_dns_authorization#domain DataGoogleCertificateManagerDnsAuthorization#domain}
   */
   readonly domain: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/certificate_manager_dns_authorization#id DataGoogleCertificateManagerDnsAuthorization#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/certificate_manager_dns_authorization#id DataGoogleCertificateManagerDnsAuthorization#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -30,7 +30,7 @@ export interface DataGoogleCertificateManagerDnsAuthorizationConfig extends cdkt
   /**
   * The Certificate Manager location. If not specified, "global" is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/certificate_manager_dns_authorization#location DataGoogleCertificateManagerDnsAuthorization#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/certificate_manager_dns_authorization#location DataGoogleCertificateManagerDnsAuthorization#location}
   */
   readonly location?: string;
   /**
@@ -38,11 +38,11 @@ export interface DataGoogleCertificateManagerDnsAuthorizationConfig extends cdkt
   * The name must be 1-64 characters long, and match the regular expression [a-zA-Z][a-zA-Z0-9_-]* which means the first character must be a letter,
   * and all following characters must be a dash, underscore, letter or digit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/certificate_manager_dns_authorization#name DataGoogleCertificateManagerDnsAuthorization#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/certificate_manager_dns_authorization#name DataGoogleCertificateManagerDnsAuthorization#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/certificate_manager_dns_authorization#project DataGoogleCertificateManagerDnsAuthorization#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/certificate_manager_dns_authorization#project DataGoogleCertificateManagerDnsAuthorization#project}
   */
   readonly project?: string;
 }
@@ -133,7 +133,7 @@ export class DataGoogleCertificateManagerDnsAuthorizationDnsResourceRecordList e
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/certificate_manager_dns_authorization google_certificate_manager_dns_authorization}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/certificate_manager_dns_authorization google_certificate_manager_dns_authorization}
 */
 export class DataGoogleCertificateManagerDnsAuthorization extends cdktn.TerraformDataSource {
 
@@ -149,7 +149,7 @@ export class DataGoogleCertificateManagerDnsAuthorization extends cdktn.Terrafor
   * Generates CDKTN code for importing a DataGoogleCertificateManagerDnsAuthorization resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleCertificateManagerDnsAuthorization to import
-  * @param importFromId The id of the existing DataGoogleCertificateManagerDnsAuthorization that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/certificate_manager_dns_authorization#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleCertificateManagerDnsAuthorization that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/certificate_manager_dns_authorization#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleCertificateManagerDnsAuthorization to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -161,7 +161,7 @@ export class DataGoogleCertificateManagerDnsAuthorization extends cdktn.Terrafor
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/certificate_manager_dns_authorization google_certificate_manager_dns_authorization} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/certificate_manager_dns_authorization google_certificate_manager_dns_authorization} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -172,7 +172,7 @@ export class DataGoogleCertificateManagerDnsAuthorization extends cdktn.Terrafor
       terraformResourceType: 'google_certificate_manager_dns_authorization',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.44.0',
+        providerVersion: '7.45.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

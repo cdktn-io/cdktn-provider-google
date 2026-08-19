@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/biglake_iceberg_catalog
+// https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_iceberg_catalog
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -18,13 +18,13 @@ export interface BiglakeIcebergCatalogConfig extends cdktn.TerraformMetaArgument
   * * 'CATALOG_TYPE_BIGLAKE': BigLake catalog type.
   * * 'CATALOG_TYPE_FEDERATED': Federated catalog type, for integrating with external Iceberg REST Catalogs such as Databricks Unity Catalog or AWS Glue. Possible values: ["CATALOG_TYPE_GCS_BUCKET", "CATALOG_TYPE_BIGLAKE", "CATALOG_TYPE_FEDERATED"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/biglake_iceberg_catalog#catalog_type BiglakeIcebergCatalog#catalog_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_iceberg_catalog#catalog_type BiglakeIcebergCatalog#catalog_type}
   */
   readonly catalogType: string;
   /**
   * The credential mode used for the catalog. CREDENTIAL_MODE_END_USER - End user credentials, default. The authenticating user must have access to the catalog resources and the corresponding Google Cloud Storage files. CREDENTIAL_MODE_VENDED_CREDENTIALS - Use credential vending. The authenticating user must have access to the catalog resources and the system will provide the caller with downscoped credentials to access the Google Cloud Storage files. All table operations in this mode would require 'X-Iceberg-Access-Delegation' header with 'vended-credentials' value included. System will generate a service account and the catalog administrator must grant the service account appropriate permissions. Possible values: ["CREDENTIAL_MODE_END_USER", "CREDENTIAL_MODE_VENDED_CREDENTIALS"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/biglake_iceberg_catalog#credential_mode BiglakeIcebergCatalog#credential_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_iceberg_catalog#credential_mode BiglakeIcebergCatalog#credential_mode}
   */
   readonly credentialMode?: string;
   /**
@@ -32,7 +32,7 @@ export interface BiglakeIcebergCatalogConfig extends cdktn.TerraformMetaArgument
   * Output only when the catalog type is CATALOG_TYPE_GCS_BUCKET.
   * Required when the catalog type is CATALOG_TYPE_BIGLAKE.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/biglake_iceberg_catalog#default_location BiglakeIcebergCatalog#default_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_iceberg_catalog#default_location BiglakeIcebergCatalog#default_location}
   */
   readonly defaultLocation?: string;
   /**
@@ -44,17 +44,17 @@ export interface BiglakeIcebergCatalogConfig extends cdktn.TerraformMetaArgument
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/biglake_iceberg_catalog#deletion_policy BiglakeIcebergCatalog#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_iceberg_catalog#deletion_policy BiglakeIcebergCatalog#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * A user-provided description of the catalog. Maximum 1024 UTF-8 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/biglake_iceberg_catalog#description BiglakeIcebergCatalog#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_iceberg_catalog#description BiglakeIcebergCatalog#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/biglake_iceberg_catalog#id BiglakeIcebergCatalog#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_iceberg_catalog#id BiglakeIcebergCatalog#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -66,7 +66,7 @@ export interface BiglakeIcebergCatalogConfig extends cdktn.TerraformMetaArgument
   * exact same value of the GCS bucket's name. For example, for a bucket:
   * gs://bucket-name, the catalog name will be exactly "bucket-name".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/biglake_iceberg_catalog#name BiglakeIcebergCatalog#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_iceberg_catalog#name BiglakeIcebergCatalog#name}
   */
   readonly name: string;
   /**
@@ -74,29 +74,29 @@ export interface BiglakeIcebergCatalogConfig extends cdktn.TerraformMetaArgument
   * a BigLake-supported location, and it should be proximate to the remote
   * catalog's location.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/biglake_iceberg_catalog#primary_location BiglakeIcebergCatalog#primary_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_iceberg_catalog#primary_location BiglakeIcebergCatalog#primary_location}
   */
   readonly primaryLocation?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/biglake_iceberg_catalog#project BiglakeIcebergCatalog#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_iceberg_catalog#project BiglakeIcebergCatalog#project}
   */
   readonly project?: string;
   /**
   * federated_catalog_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/biglake_iceberg_catalog#federated_catalog_options BiglakeIcebergCatalog#federated_catalog_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_iceberg_catalog#federated_catalog_options BiglakeIcebergCatalog#federated_catalog_options}
   */
   readonly federatedCatalogOptions?: BiglakeIcebergCatalogFederatedCatalogOptions;
   /**
   * restricted_locations_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/biglake_iceberg_catalog#restricted_locations_config BiglakeIcebergCatalog#restricted_locations_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_iceberg_catalog#restricted_locations_config BiglakeIcebergCatalog#restricted_locations_config}
   */
   readonly restrictedLocationsConfig?: BiglakeIcebergCatalogRestrictedLocationsConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/biglake_iceberg_catalog#timeouts BiglakeIcebergCatalog#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_iceberg_catalog#timeouts BiglakeIcebergCatalog#timeouts}
   */
   readonly timeouts?: BiglakeIcebergCatalogTimeouts;
 }
@@ -350,19 +350,19 @@ export interface BiglakeIcebergCatalogFederatedCatalogOptionsGlueCatalogInfo {
   /**
   * The AWS region where the Glue catalog is located.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/biglake_iceberg_catalog#aws_region BiglakeIcebergCatalog#aws_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_iceberg_catalog#aws_region BiglakeIcebergCatalog#aws_region}
   */
   readonly awsRegion: string;
   /**
   * The ARN of the AWS IAM role to assume for accessing the Glue catalog.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/biglake_iceberg_catalog#aws_role_arn BiglakeIcebergCatalog#aws_role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_iceberg_catalog#aws_role_arn BiglakeIcebergCatalog#aws_role_arn}
   */
   readonly awsRoleArn: string;
   /**
   * The AWS Glue warehouse identifier (account ID or S3 table bucket).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/biglake_iceberg_catalog#warehouse BiglakeIcebergCatalog#warehouse}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_iceberg_catalog#warehouse BiglakeIcebergCatalog#warehouse}
   */
   readonly warehouse: string;
 }
@@ -499,7 +499,7 @@ export interface BiglakeIcebergCatalogFederatedCatalogOptionsRefreshOptionsRefre
   * string (e.g., '300s').
   * The value must be at least 300s or 0s to disable refresh.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/biglake_iceberg_catalog#refresh_interval BiglakeIcebergCatalog#refresh_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_iceberg_catalog#refresh_interval BiglakeIcebergCatalog#refresh_interval}
   */
   readonly refreshInterval?: string;
 }
@@ -586,7 +586,7 @@ export interface BiglakeIcebergCatalogFederatedCatalogOptionsRefreshOptionsRefre
   * A list of namespace filters to limit which namespaces are
   * synchronized from the remote catalog.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/biglake_iceberg_catalog#namespace_filters BiglakeIcebergCatalog#namespace_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_iceberg_catalog#namespace_filters BiglakeIcebergCatalog#namespace_filters}
   */
   readonly namespaceFilters?: string[];
 }
@@ -672,13 +672,13 @@ export interface BiglakeIcebergCatalogFederatedCatalogOptionsRefreshOptions {
   /**
   * refresh_schedule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/biglake_iceberg_catalog#refresh_schedule BiglakeIcebergCatalog#refresh_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_iceberg_catalog#refresh_schedule BiglakeIcebergCatalog#refresh_schedule}
   */
   readonly refreshSchedule?: BiglakeIcebergCatalogFederatedCatalogOptionsRefreshOptionsRefreshSchedule;
   /**
   * refresh_scope block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/biglake_iceberg_catalog#refresh_scope BiglakeIcebergCatalog#refresh_scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_iceberg_catalog#refresh_scope BiglakeIcebergCatalog#refresh_scope}
   */
   readonly refreshScope?: BiglakeIcebergCatalogFederatedCatalogOptionsRefreshOptionsRefreshScope;
 }
@@ -793,19 +793,19 @@ export interface BiglakeIcebergCatalogFederatedCatalogOptionsUnityCatalogInfo {
   /**
   * The name of the catalog within the Unity Catalog instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/biglake_iceberg_catalog#catalog_name BiglakeIcebergCatalog#catalog_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_iceberg_catalog#catalog_name BiglakeIcebergCatalog#catalog_name}
   */
   readonly catalogName: string;
   /**
   * The Databricks workspace instance name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/biglake_iceberg_catalog#instance_name BiglakeIcebergCatalog#instance_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_iceberg_catalog#instance_name BiglakeIcebergCatalog#instance_name}
   */
   readonly instanceName: string;
   /**
   * The application ID of the Databricks service principal for OIDC authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/biglake_iceberg_catalog#service_principal_application_id BiglakeIcebergCatalog#service_principal_application_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_iceberg_catalog#service_principal_application_id BiglakeIcebergCatalog#service_principal_application_id}
   */
   readonly servicePrincipalApplicationId?: string;
 }
@@ -945,32 +945,32 @@ export interface BiglakeIcebergCatalogFederatedCatalogOptions {
   * 'projects/{projectId}/locations/{location}/secrets/{secret_id}'.
   * Used to store credentials for authenticating with the remote catalog.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/biglake_iceberg_catalog#secret_name BiglakeIcebergCatalog#secret_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_iceberg_catalog#secret_name BiglakeIcebergCatalog#secret_name}
   */
   readonly secretName?: string;
   /**
   * The Service Directory service name for private network connectivity
   * through Cross-Cloud Interconnect.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/biglake_iceberg_catalog#service_directory_name BiglakeIcebergCatalog#service_directory_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_iceberg_catalog#service_directory_name BiglakeIcebergCatalog#service_directory_name}
   */
   readonly serviceDirectoryName?: string;
   /**
   * glue_catalog_info block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/biglake_iceberg_catalog#glue_catalog_info BiglakeIcebergCatalog#glue_catalog_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_iceberg_catalog#glue_catalog_info BiglakeIcebergCatalog#glue_catalog_info}
   */
   readonly glueCatalogInfo?: BiglakeIcebergCatalogFederatedCatalogOptionsGlueCatalogInfo;
   /**
   * refresh_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/biglake_iceberg_catalog#refresh_options BiglakeIcebergCatalog#refresh_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_iceberg_catalog#refresh_options BiglakeIcebergCatalog#refresh_options}
   */
   readonly refreshOptions?: BiglakeIcebergCatalogFederatedCatalogOptionsRefreshOptions;
   /**
   * unity_catalog_info block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/biglake_iceberg_catalog#unity_catalog_info BiglakeIcebergCatalog#unity_catalog_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_iceberg_catalog#unity_catalog_info BiglakeIcebergCatalog#unity_catalog_info}
   */
   readonly unityCatalogInfo?: BiglakeIcebergCatalogFederatedCatalogOptionsUnityCatalogInfo;
 }
@@ -1180,7 +1180,7 @@ export interface BiglakeIcebergCatalogRestrictedLocationsConfig {
   * permitted for use by resources within this catalog. Each entry can be
   * either a GCS bucket or a path within it.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/biglake_iceberg_catalog#restricted_locations BiglakeIcebergCatalog#restricted_locations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_iceberg_catalog#restricted_locations BiglakeIcebergCatalog#restricted_locations}
   */
   readonly restrictedLocations?: string[];
 }
@@ -1264,15 +1264,15 @@ export class BiglakeIcebergCatalogRestrictedLocationsConfigOutputReference exten
 }
 export interface BiglakeIcebergCatalogTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/biglake_iceberg_catalog#create BiglakeIcebergCatalog#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_iceberg_catalog#create BiglakeIcebergCatalog#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/biglake_iceberg_catalog#delete BiglakeIcebergCatalog#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_iceberg_catalog#delete BiglakeIcebergCatalog#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/biglake_iceberg_catalog#update BiglakeIcebergCatalog#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_iceberg_catalog#update BiglakeIcebergCatalog#update}
   */
   readonly update?: string;
 }
@@ -1424,7 +1424,7 @@ export class BiglakeIcebergCatalogTimeoutsOutputReference extends cdktn.ComplexO
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/biglake_iceberg_catalog google_biglake_iceberg_catalog}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_iceberg_catalog google_biglake_iceberg_catalog}
 */
 export class BiglakeIcebergCatalog extends cdktn.TerraformResource {
 
@@ -1440,7 +1440,7 @@ export class BiglakeIcebergCatalog extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a BiglakeIcebergCatalog resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BiglakeIcebergCatalog to import
-  * @param importFromId The id of the existing BiglakeIcebergCatalog that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/biglake_iceberg_catalog#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing BiglakeIcebergCatalog that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_iceberg_catalog#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BiglakeIcebergCatalog to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1452,7 +1452,7 @@ export class BiglakeIcebergCatalog extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/biglake_iceberg_catalog google_biglake_iceberg_catalog} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_iceberg_catalog google_biglake_iceberg_catalog} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1463,7 +1463,7 @@ export class BiglakeIcebergCatalog extends cdktn.TerraformResource {
       terraformResourceType: 'google_biglake_iceberg_catalog',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.44.0',
+        providerVersion: '7.45.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

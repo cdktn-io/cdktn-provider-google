@@ -4,7 +4,7 @@
 
 ### DataprocMetastoreService <a name="DataprocMetastoreService" id="@cdktn/provider-google.dataprocMetastoreService.DataprocMetastoreService"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service google_dataproc_metastore_service}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service google_dataproc_metastore_service}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataprocMetastoreService.DataprocMetastoreService.Initializer"></a>
 
@@ -61,7 +61,7 @@ DataprocMetastoreService.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.dataprocMetastoreService.DataprocMetastoreService.Initializer.parameter.deletionProtection">deletionProtection</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Indicates if the dataproc metastore should be protected against accidental deletions. |
 | <code><a href="#@cdktn/provider-google.dataprocMetastoreService.DataprocMetastoreService.Initializer.parameter.encryptionConfig">encryptionConfig</a></code> | <code><a href="#@cdktn/provider-google.dataprocMetastoreService.DataprocMetastoreServiceEncryptionConfig">DataprocMetastoreServiceEncryptionConfig</a></code> | encryption_config block. |
 | <code><a href="#@cdktn/provider-google.dataprocMetastoreService.DataprocMetastoreService.Initializer.parameter.hiveMetastoreConfig">hiveMetastoreConfig</a></code> | <code><a href="#@cdktn/provider-google.dataprocMetastoreService.DataprocMetastoreServiceHiveMetastoreConfig">DataprocMetastoreServiceHiveMetastoreConfig</a></code> | hive_metastore_config block. |
-| <code><a href="#@cdktn/provider-google.dataprocMetastoreService.DataprocMetastoreService.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#id DataprocMetastoreService#id}. |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreService.DataprocMetastoreService.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#id DataprocMetastoreService#id}. |
 | <code><a href="#@cdktn/provider-google.dataprocMetastoreService.DataprocMetastoreService.Initializer.parameter.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | User-defined labels for the metastore service. |
 | <code><a href="#@cdktn/provider-google.dataprocMetastoreService.DataprocMetastoreService.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | The location where the metastore service should reside. The default value is 'global'. |
 | <code><a href="#@cdktn/provider-google.dataprocMetastoreService.DataprocMetastoreService.Initializer.parameter.maintenanceWindow">maintenanceWindow</a></code> | <code><a href="#@cdktn/provider-google.dataprocMetastoreService.DataprocMetastoreServiceMaintenanceWindow">DataprocMetastoreServiceMaintenanceWindow</a></code> | maintenance_window block. |
@@ -69,7 +69,7 @@ DataprocMetastoreService.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.dataprocMetastoreService.DataprocMetastoreService.Initializer.parameter.network">network</a></code> | <code>java.lang.String</code> | The relative resource name of the VPC network on which the instance can be accessed. |
 | <code><a href="#@cdktn/provider-google.dataprocMetastoreService.DataprocMetastoreService.Initializer.parameter.networkConfig">networkConfig</a></code> | <code><a href="#@cdktn/provider-google.dataprocMetastoreService.DataprocMetastoreServiceNetworkConfig">DataprocMetastoreServiceNetworkConfig</a></code> | network_config block. |
 | <code><a href="#@cdktn/provider-google.dataprocMetastoreService.DataprocMetastoreService.Initializer.parameter.port">port</a></code> | <code>java.lang.Number</code> | The TCP port at which the metastore service is reached. Default: 9083. |
-| <code><a href="#@cdktn/provider-google.dataprocMetastoreService.DataprocMetastoreService.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#project DataprocMetastoreService#project}. |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreService.DataprocMetastoreService.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#project DataprocMetastoreService#project}. |
 | <code><a href="#@cdktn/provider-google.dataprocMetastoreService.DataprocMetastoreService.Initializer.parameter.releaseChannel">releaseChannel</a></code> | <code>java.lang.String</code> | The release channel of the service. If unspecified, defaults to 'STABLE'. Default value: "STABLE" Possible values: ["CANARY", "STABLE"]. |
 | <code><a href="#@cdktn/provider-google.dataprocMetastoreService.DataprocMetastoreService.Initializer.parameter.scalingConfig">scalingConfig</a></code> | <code><a href="#@cdktn/provider-google.dataprocMetastoreService.DataprocMetastoreServiceScalingConfig">DataprocMetastoreServiceScalingConfig</a></code> | scaling_config block. |
 | <code><a href="#@cdktn/provider-google.dataprocMetastoreService.DataprocMetastoreService.Initializer.parameter.scheduledBackup">scheduledBackup</a></code> | <code><a href="#@cdktn/provider-google.dataprocMetastoreService.DataprocMetastoreServiceScheduledBackup">DataprocMetastoreServiceScheduledBackup</a></code> | scheduled_backup block. |
@@ -150,7 +150,7 @@ The id must contain only letters (a-z, A-Z), numbers (0-9), underscores (_),
 and hyphens (-). Cannot begin or end with underscore or hyphen. Must consist of between
 3 and 63 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#service_id DataprocMetastoreService#service_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#service_id DataprocMetastoreService#service_id}
 
 ---
 
@@ -160,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The database type that the Metastore service stores its data. Default value: "MYSQL" Possible values: ["MYSQL", "SPANNER"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#database_type DataprocMetastoreService#database_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#database_type DataprocMetastoreService#database_type}
 
 ---
 
@@ -177,7 +177,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#deletion_policy DataprocMetastoreService#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#deletion_policy DataprocMetastoreService#deletion_policy}
 
 ---
 
@@ -187,7 +187,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Indicates if the dataproc metastore should be protected against accidental deletions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#deletion_protection DataprocMetastoreService#deletion_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#deletion_protection DataprocMetastoreService#deletion_protection}
 
 ---
 
@@ -197,7 +197,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 encryption_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#encryption_config DataprocMetastoreService#encryption_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#encryption_config DataprocMetastoreService#encryption_config}
 
 ---
 
@@ -207,7 +207,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 hive_metastore_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#hive_metastore_config DataprocMetastoreService#hive_metastore_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#hive_metastore_config DataprocMetastoreService#hive_metastore_config}
 
 ---
 
@@ -215,7 +215,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#id DataprocMetastoreService#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#id DataprocMetastoreService#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -231,7 +231,7 @@ User-defined labels for the metastore service.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#labels DataprocMetastoreService#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#labels DataprocMetastoreService#labels}
 
 ---
 
@@ -241,7 +241,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The location where the metastore service should reside. The default value is 'global'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#location DataprocMetastoreService#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#location DataprocMetastoreService#location}
 
 ---
 
@@ -251,7 +251,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 maintenance_window block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#maintenance_window DataprocMetastoreService#maintenance_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#maintenance_window DataprocMetastoreService#maintenance_window}
 
 ---
 
@@ -261,7 +261,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 metadata_integration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#metadata_integration DataprocMetastoreService#metadata_integration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#metadata_integration DataprocMetastoreService#metadata_integration}
 
 ---
 
@@ -275,7 +275,7 @@ It is specified in the following form:
 
 "projects/{projectNumber}/global/networks/{network_id}".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#network DataprocMetastoreService#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#network DataprocMetastoreService#network}
 
 ---
 
@@ -285,7 +285,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 network_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#network_config DataprocMetastoreService#network_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#network_config DataprocMetastoreService#network_config}
 
 ---
 
@@ -295,7 +295,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The TCP port at which the metastore service is reached. Default: 9083.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#port DataprocMetastoreService#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#port DataprocMetastoreService#port}
 
 ---
 
@@ -303,7 +303,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#project DataprocMetastoreService#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#project DataprocMetastoreService#project}.
 
 ---
 
@@ -313,7 +313,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The release channel of the service. If unspecified, defaults to 'STABLE'. Default value: "STABLE" Possible values: ["CANARY", "STABLE"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#release_channel DataprocMetastoreService#release_channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#release_channel DataprocMetastoreService#release_channel}
 
 ---
 
@@ -323,7 +323,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 scaling_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#scaling_config DataprocMetastoreService#scaling_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#scaling_config DataprocMetastoreService#scaling_config}
 
 ---
 
@@ -333,7 +333,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 scheduled_backup block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#scheduled_backup DataprocMetastoreService#scheduled_backup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#scheduled_backup DataprocMetastoreService#scheduled_backup}
 
 ---
 
@@ -346,7 +346,7 @@ A map of resource manager tags.
 Resource manager tag keys and values have the same definition as resource manager tags.
 Keys must be in the format tagKeys/{tag_key_id}, and values are in the format tagValues/{tag_value_id}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#tags DataprocMetastoreService#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#tags DataprocMetastoreService#tags}
 
 ---
 
@@ -356,7 +356,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 telemetry_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#telemetry_config DataprocMetastoreService#telemetry_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#telemetry_config DataprocMetastoreService#telemetry_config}
 
 ---
 
@@ -366,7 +366,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The tier of the service. Possible values: ["DEVELOPER", "ENTERPRISE"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#tier DataprocMetastoreService#tier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#tier DataprocMetastoreService#tier}
 
 ---
 
@@ -376,7 +376,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#timeouts DataprocMetastoreService#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#timeouts DataprocMetastoreService#timeouts}
 
 ---
 
@@ -1089,7 +1089,7 @@ The construct id used in the generated config for the DataprocMetastoreService t
 
 The id of the existing DataprocMetastoreService that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1935,7 +1935,7 @@ DataprocMetastoreServiceConfig.builder()
 | <code><a href="#@cdktn/provider-google.dataprocMetastoreService.DataprocMetastoreServiceConfig.property.deletionProtection">deletionProtection</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Indicates if the dataproc metastore should be protected against accidental deletions. |
 | <code><a href="#@cdktn/provider-google.dataprocMetastoreService.DataprocMetastoreServiceConfig.property.encryptionConfig">encryptionConfig</a></code> | <code><a href="#@cdktn/provider-google.dataprocMetastoreService.DataprocMetastoreServiceEncryptionConfig">DataprocMetastoreServiceEncryptionConfig</a></code> | encryption_config block. |
 | <code><a href="#@cdktn/provider-google.dataprocMetastoreService.DataprocMetastoreServiceConfig.property.hiveMetastoreConfig">hiveMetastoreConfig</a></code> | <code><a href="#@cdktn/provider-google.dataprocMetastoreService.DataprocMetastoreServiceHiveMetastoreConfig">DataprocMetastoreServiceHiveMetastoreConfig</a></code> | hive_metastore_config block. |
-| <code><a href="#@cdktn/provider-google.dataprocMetastoreService.DataprocMetastoreServiceConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#id DataprocMetastoreService#id}. |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreService.DataprocMetastoreServiceConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#id DataprocMetastoreService#id}. |
 | <code><a href="#@cdktn/provider-google.dataprocMetastoreService.DataprocMetastoreServiceConfig.property.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | User-defined labels for the metastore service. |
 | <code><a href="#@cdktn/provider-google.dataprocMetastoreService.DataprocMetastoreServiceConfig.property.location">location</a></code> | <code>java.lang.String</code> | The location where the metastore service should reside. The default value is 'global'. |
 | <code><a href="#@cdktn/provider-google.dataprocMetastoreService.DataprocMetastoreServiceConfig.property.maintenanceWindow">maintenanceWindow</a></code> | <code><a href="#@cdktn/provider-google.dataprocMetastoreService.DataprocMetastoreServiceMaintenanceWindow">DataprocMetastoreServiceMaintenanceWindow</a></code> | maintenance_window block. |
@@ -1943,7 +1943,7 @@ DataprocMetastoreServiceConfig.builder()
 | <code><a href="#@cdktn/provider-google.dataprocMetastoreService.DataprocMetastoreServiceConfig.property.network">network</a></code> | <code>java.lang.String</code> | The relative resource name of the VPC network on which the instance can be accessed. |
 | <code><a href="#@cdktn/provider-google.dataprocMetastoreService.DataprocMetastoreServiceConfig.property.networkConfig">networkConfig</a></code> | <code><a href="#@cdktn/provider-google.dataprocMetastoreService.DataprocMetastoreServiceNetworkConfig">DataprocMetastoreServiceNetworkConfig</a></code> | network_config block. |
 | <code><a href="#@cdktn/provider-google.dataprocMetastoreService.DataprocMetastoreServiceConfig.property.port">port</a></code> | <code>java.lang.Number</code> | The TCP port at which the metastore service is reached. Default: 9083. |
-| <code><a href="#@cdktn/provider-google.dataprocMetastoreService.DataprocMetastoreServiceConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#project DataprocMetastoreService#project}. |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreService.DataprocMetastoreServiceConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#project DataprocMetastoreService#project}. |
 | <code><a href="#@cdktn/provider-google.dataprocMetastoreService.DataprocMetastoreServiceConfig.property.releaseChannel">releaseChannel</a></code> | <code>java.lang.String</code> | The release channel of the service. If unspecified, defaults to 'STABLE'. Default value: "STABLE" Possible values: ["CANARY", "STABLE"]. |
 | <code><a href="#@cdktn/provider-google.dataprocMetastoreService.DataprocMetastoreServiceConfig.property.scalingConfig">scalingConfig</a></code> | <code><a href="#@cdktn/provider-google.dataprocMetastoreService.DataprocMetastoreServiceScalingConfig">DataprocMetastoreServiceScalingConfig</a></code> | scaling_config block. |
 | <code><a href="#@cdktn/provider-google.dataprocMetastoreService.DataprocMetastoreServiceConfig.property.scheduledBackup">scheduledBackup</a></code> | <code><a href="#@cdktn/provider-google.dataprocMetastoreService.DataprocMetastoreServiceScheduledBackup">DataprocMetastoreServiceScheduledBackup</a></code> | scheduled_backup block. |
@@ -2038,7 +2038,7 @@ The id must contain only letters (a-z, A-Z), numbers (0-9), underscores (_),
 and hyphens (-). Cannot begin or end with underscore or hyphen. Must consist of between
 3 and 63 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#service_id DataprocMetastoreService#service_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#service_id DataprocMetastoreService#service_id}
 
 ---
 
@@ -2052,7 +2052,7 @@ public java.lang.String getDatabaseType();
 
 The database type that the Metastore service stores its data. Default value: "MYSQL" Possible values: ["MYSQL", "SPANNER"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#database_type DataprocMetastoreService#database_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#database_type DataprocMetastoreService#database_type}
 
 ---
 
@@ -2073,7 +2073,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#deletion_policy DataprocMetastoreService#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#deletion_policy DataprocMetastoreService#deletion_policy}
 
 ---
 
@@ -2087,7 +2087,7 @@ public java.lang.Boolean|IResolvable getDeletionProtection();
 
 Indicates if the dataproc metastore should be protected against accidental deletions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#deletion_protection DataprocMetastoreService#deletion_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#deletion_protection DataprocMetastoreService#deletion_protection}
 
 ---
 
@@ -2101,7 +2101,7 @@ public DataprocMetastoreServiceEncryptionConfig getEncryptionConfig();
 
 encryption_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#encryption_config DataprocMetastoreService#encryption_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#encryption_config DataprocMetastoreService#encryption_config}
 
 ---
 
@@ -2115,7 +2115,7 @@ public DataprocMetastoreServiceHiveMetastoreConfig getHiveMetastoreConfig();
 
 hive_metastore_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#hive_metastore_config DataprocMetastoreService#hive_metastore_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#hive_metastore_config DataprocMetastoreService#hive_metastore_config}
 
 ---
 
@@ -2127,7 +2127,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#id DataprocMetastoreService#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#id DataprocMetastoreService#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2147,7 +2147,7 @@ User-defined labels for the metastore service.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#labels DataprocMetastoreService#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#labels DataprocMetastoreService#labels}
 
 ---
 
@@ -2161,7 +2161,7 @@ public java.lang.String getLocation();
 
 The location where the metastore service should reside. The default value is 'global'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#location DataprocMetastoreService#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#location DataprocMetastoreService#location}
 
 ---
 
@@ -2175,7 +2175,7 @@ public DataprocMetastoreServiceMaintenanceWindow getMaintenanceWindow();
 
 maintenance_window block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#maintenance_window DataprocMetastoreService#maintenance_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#maintenance_window DataprocMetastoreService#maintenance_window}
 
 ---
 
@@ -2189,7 +2189,7 @@ public DataprocMetastoreServiceMetadataIntegration getMetadataIntegration();
 
 metadata_integration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#metadata_integration DataprocMetastoreService#metadata_integration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#metadata_integration DataprocMetastoreService#metadata_integration}
 
 ---
 
@@ -2207,7 +2207,7 @@ It is specified in the following form:
 
 "projects/{projectNumber}/global/networks/{network_id}".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#network DataprocMetastoreService#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#network DataprocMetastoreService#network}
 
 ---
 
@@ -2221,7 +2221,7 @@ public DataprocMetastoreServiceNetworkConfig getNetworkConfig();
 
 network_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#network_config DataprocMetastoreService#network_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#network_config DataprocMetastoreService#network_config}
 
 ---
 
@@ -2235,7 +2235,7 @@ public java.lang.Number getPort();
 
 The TCP port at which the metastore service is reached. Default: 9083.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#port DataprocMetastoreService#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#port DataprocMetastoreService#port}
 
 ---
 
@@ -2247,7 +2247,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#project DataprocMetastoreService#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#project DataprocMetastoreService#project}.
 
 ---
 
@@ -2261,7 +2261,7 @@ public java.lang.String getReleaseChannel();
 
 The release channel of the service. If unspecified, defaults to 'STABLE'. Default value: "STABLE" Possible values: ["CANARY", "STABLE"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#release_channel DataprocMetastoreService#release_channel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#release_channel DataprocMetastoreService#release_channel}
 
 ---
 
@@ -2275,7 +2275,7 @@ public DataprocMetastoreServiceScalingConfig getScalingConfig();
 
 scaling_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#scaling_config DataprocMetastoreService#scaling_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#scaling_config DataprocMetastoreService#scaling_config}
 
 ---
 
@@ -2289,7 +2289,7 @@ public DataprocMetastoreServiceScheduledBackup getScheduledBackup();
 
 scheduled_backup block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#scheduled_backup DataprocMetastoreService#scheduled_backup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#scheduled_backup DataprocMetastoreService#scheduled_backup}
 
 ---
 
@@ -2306,7 +2306,7 @@ A map of resource manager tags.
 Resource manager tag keys and values have the same definition as resource manager tags.
 Keys must be in the format tagKeys/{tag_key_id}, and values are in the format tagValues/{tag_value_id}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#tags DataprocMetastoreService#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#tags DataprocMetastoreService#tags}
 
 ---
 
@@ -2320,7 +2320,7 @@ public DataprocMetastoreServiceTelemetryConfig getTelemetryConfig();
 
 telemetry_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#telemetry_config DataprocMetastoreService#telemetry_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#telemetry_config DataprocMetastoreService#telemetry_config}
 
 ---
 
@@ -2334,7 +2334,7 @@ public java.lang.String getTier();
 
 The tier of the service. Possible values: ["DEVELOPER", "ENTERPRISE"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#tier DataprocMetastoreService#tier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#tier DataprocMetastoreService#tier}
 
 ---
 
@@ -2348,7 +2348,7 @@ public DataprocMetastoreServiceTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#timeouts DataprocMetastoreService#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#timeouts DataprocMetastoreService#timeouts}
 
 ---
 
@@ -2382,7 +2382,7 @@ public java.lang.String getKmsKey();
 
 The fully qualified customer provided Cloud KMS key name to use for customer data encryption. Use the following format: 'projects/([^/]+)/locations/([^/]+)/keyRings/([^/]+)/cryptoKeys/([^/]+)'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#kms_key DataprocMetastoreService#kms_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#kms_key DataprocMetastoreService#kms_key}
 
 ---
 
@@ -2424,7 +2424,7 @@ public java.lang.String getVersion();
 
 The Hive metastore schema version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#version DataprocMetastoreService#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#version DataprocMetastoreService#version}
 
 ---
 
@@ -2438,7 +2438,7 @@ public IResolvable|java.util.List<DataprocMetastoreServiceHiveMetastoreConfigAux
 
 auxiliary_versions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#auxiliary_versions DataprocMetastoreService#auxiliary_versions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#auxiliary_versions DataprocMetastoreService#auxiliary_versions}
 
 ---
 
@@ -2452,7 +2452,7 @@ public java.util.Map<java.lang.String, java.lang.String> getConfigOverrides();
 
 A mapping of Hive metastore configuration key-value pairs to apply to the Hive metastore (configured in hive-site.xml). The mappings override system defaults (some keys cannot be overridden).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#config_overrides DataprocMetastoreService#config_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#config_overrides DataprocMetastoreService#config_overrides}
 
 ---
 
@@ -2468,7 +2468,7 @@ The protocol to use for the metastore service endpoint.
 
 If unspecified, defaults to 'THRIFT'. Default value: "THRIFT" Possible values: ["THRIFT", "GRPC"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#endpoint_protocol DataprocMetastoreService#endpoint_protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#endpoint_protocol DataprocMetastoreService#endpoint_protocol}
 
 ---
 
@@ -2482,7 +2482,7 @@ public DataprocMetastoreServiceHiveMetastoreConfigKerberosConfig getKerberosConf
 
 kerberos_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#kerberos_config DataprocMetastoreService#kerberos_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#kerberos_config DataprocMetastoreService#kerberos_config}
 
 ---
 
@@ -2504,7 +2504,7 @@ DataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersions.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocMetastoreService.DataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersions.property.key">key</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#key DataprocMetastoreService#key}. |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreService.DataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersions.property.key">key</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#key DataprocMetastoreService#key}. |
 | <code><a href="#@cdktn/provider-google.dataprocMetastoreService.DataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersions.property.version">version</a></code> | <code>java.lang.String</code> | The Hive metastore version of the auxiliary service. It must be less than the primary Hive metastore service's version. |
 | <code><a href="#@cdktn/provider-google.dataprocMetastoreService.DataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersions.property.configOverrides">configOverrides</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | A mapping of Hive metastore configuration key-value pairs to apply to the auxiliary Hive metastore (configured in hive-site.xml) in addition to the primary version's overrides. If keys are present in both the auxiliary version's overrides and the primary version's overrides, the value from the auxiliary version's overrides takes precedence. |
 
@@ -2518,7 +2518,7 @@ public java.lang.String getKey();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#key DataprocMetastoreService#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#key DataprocMetastoreService#key}.
 
 ---
 
@@ -2532,7 +2532,7 @@ public java.lang.String getVersion();
 
 The Hive metastore version of the auxiliary service. It must be less than the primary Hive metastore service's version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#version DataprocMetastoreService#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#version DataprocMetastoreService#version}
 
 ---
 
@@ -2546,7 +2546,7 @@ public java.util.Map<java.lang.String, java.lang.String> getConfigOverrides();
 
 A mapping of Hive metastore configuration key-value pairs to apply to the auxiliary Hive metastore (configured in hive-site.xml) in addition to the primary version's overrides. If keys are present in both the auxiliary version's overrides and the primary version's overrides, the value from the auxiliary version's overrides takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#config_overrides DataprocMetastoreService#config_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#config_overrides DataprocMetastoreService#config_overrides}
 
 ---
 
@@ -2584,7 +2584,7 @@ public DataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeytab getKeytab
 
 keytab block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#keytab DataprocMetastoreService#keytab}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#keytab DataprocMetastoreService#keytab}
 
 ---
 
@@ -2598,7 +2598,7 @@ public java.lang.String getKrb5ConfigGcsUri();
 
 A Cloud Storage URI that specifies the path to a krb5.conf file. It is of the form gs://{bucket_name}/path/to/krb5.conf, although the file does not need to be named krb5.conf explicitly.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#krb5_config_gcs_uri DataprocMetastoreService#krb5_config_gcs_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#krb5_config_gcs_uri DataprocMetastoreService#krb5_config_gcs_uri}
 
 ---
 
@@ -2614,7 +2614,7 @@ A Kerberos principal that exists in the both the keytab the KDC to authenticate 
 
 A typical principal is of the form "primary/instance@REALM", but there is no exact format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#principal DataprocMetastoreService#principal}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#principal DataprocMetastoreService#principal}
 
 ---
 
@@ -2650,7 +2650,7 @@ The relative resource name of a Secret Manager secret version, in the following 
 
 "projects/{projectNumber}/secrets/{secret_id}/versions/{version_id}".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#cloud_secret DataprocMetastoreService#cloud_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#cloud_secret DataprocMetastoreService#cloud_secret}
 
 ---
 
@@ -2686,7 +2686,7 @@ public java.lang.String getDayOfWeek();
 
 The day of week, when the window starts. Possible values: ["MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#day_of_week DataprocMetastoreService#day_of_week}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#day_of_week DataprocMetastoreService#day_of_week}
 
 ---
 
@@ -2700,7 +2700,7 @@ public java.lang.Number getHourOfDay();
 
 The hour of day (0-23) when the window starts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#hour_of_day DataprocMetastoreService#hour_of_day}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#hour_of_day DataprocMetastoreService#hour_of_day}
 
 ---
 
@@ -2734,7 +2734,7 @@ public DataprocMetastoreServiceMetadataIntegrationDataCatalogConfig getDataCatal
 
 data_catalog_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#data_catalog_config DataprocMetastoreService#data_catalog_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#data_catalog_config DataprocMetastoreService#data_catalog_config}
 
 ---
 
@@ -2770,7 +2770,7 @@ Defines whether the metastore metadata should be synced to Data Catalog.
 
 The default value is to disable syncing metastore metadata to Data Catalog.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#enabled DataprocMetastoreService#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#enabled DataprocMetastoreService#enabled}
 
 ---
 
@@ -2804,7 +2804,7 @@ public IResolvable|java.util.List<DataprocMetastoreServiceNetworkConfigConsumers
 
 consumers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#consumers DataprocMetastoreService#consumers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#consumers DataprocMetastoreService#consumers}
 
 ---
 
@@ -2842,7 +2842,7 @@ It is accessible to hosts in the subnet and to all hosts in a subnet in the same
 There must be at least one IP address available in the subnet's primary range. The subnet is specified in the following form:
 'projects/{projectNumber}/regions/{region_id}/subnetworks/{subnetwork_id}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#subnetwork DataprocMetastoreService#subnetwork}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#subnetwork DataprocMetastoreService#subnetwork}
 
 ---
 
@@ -2880,7 +2880,7 @@ public DataprocMetastoreServiceScalingConfigAutoscalingConfig getAutoscalingConf
 
 autoscaling_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#autoscaling_config DataprocMetastoreService#autoscaling_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#autoscaling_config DataprocMetastoreService#autoscaling_config}
 
 ---
 
@@ -2894,7 +2894,7 @@ public java.lang.String getInstanceSize();
 
 Metastore instance sizes. Possible values: ["EXTRA_SMALL", "SMALL", "MEDIUM", "LARGE", "EXTRA_LARGE"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#instance_size DataprocMetastoreService#instance_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#instance_size DataprocMetastoreService#instance_size}
 
 ---
 
@@ -2908,7 +2908,7 @@ public java.lang.Number getScalingFactor();
 
 Scaling factor, in increments of 0.1 for values less than 1.0, and increments of 1.0 for values greater than 1.0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#scaling_factor DataprocMetastoreService#scaling_factor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#scaling_factor DataprocMetastoreService#scaling_factor}
 
 ---
 
@@ -2944,7 +2944,7 @@ public java.lang.Boolean|IResolvable getAutoscalingEnabled();
 
 Defines whether autoscaling is enabled. The default value is false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#autoscaling_enabled DataprocMetastoreService#autoscaling_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#autoscaling_enabled DataprocMetastoreService#autoscaling_enabled}
 
 ---
 
@@ -2958,7 +2958,7 @@ public DataprocMetastoreServiceScalingConfigAutoscalingConfigLimitConfig getLimi
 
 limit_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#limit_config DataprocMetastoreService#limit_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#limit_config DataprocMetastoreService#limit_config}
 
 ---
 
@@ -2994,7 +2994,7 @@ public java.lang.Number getMaxScalingFactor();
 
 The maximum scaling factor that the service will autoscale to. The default value is 6.0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#max_scaling_factor DataprocMetastoreService#max_scaling_factor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#max_scaling_factor DataprocMetastoreService#max_scaling_factor}
 
 ---
 
@@ -3008,7 +3008,7 @@ public java.lang.Number getMinScalingFactor();
 
 The minimum scaling factor that the service will autoscale to. The default value is 0.1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#min_scaling_factor DataprocMetastoreService#min_scaling_factor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#min_scaling_factor DataprocMetastoreService#min_scaling_factor}
 
 ---
 
@@ -3050,7 +3050,7 @@ A Cloud Storage URI of a folder, in the format gs://<bucket_name>/<path_inside_b
 
 A sub-folder <backup_folder> containing backup files will be stored below it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#backup_location DataprocMetastoreService#backup_location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#backup_location DataprocMetastoreService#backup_location}
 
 ---
 
@@ -3064,7 +3064,7 @@ public java.lang.String getCronSchedule();
 
 The scheduled interval in Cron format, see https://en.wikipedia.org/wiki/Cron The default is empty: scheduled backup is not enabled. Must be specified to enable scheduled backups.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#cron_schedule DataprocMetastoreService#cron_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#cron_schedule DataprocMetastoreService#cron_schedule}
 
 ---
 
@@ -3078,7 +3078,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 Defines whether the scheduled backup is enabled. The default value is false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#enabled DataprocMetastoreService#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#enabled DataprocMetastoreService#enabled}
 
 ---
 
@@ -3094,7 +3094,7 @@ Specifies the time zone to be used when interpreting cronSchedule.
 
 Must be a time zone name from the time zone database (https://en.wikipedia.org/wiki/List_of_tz_database_time_zones), e.g. America/Los_Angeles or Africa/Abidjan. If left unspecified, the default is UTC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#time_zone DataprocMetastoreService#time_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#time_zone DataprocMetastoreService#time_zone}
 
 ---
 
@@ -3128,7 +3128,7 @@ public java.lang.String getLogFormat();
 
 The output format of the Dataproc Metastore service's logs. Default value: "JSON" Possible values: ["LEGACY", "JSON"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#log_format DataprocMetastoreService#log_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#log_format DataprocMetastoreService#log_format}
 
 ---
 
@@ -3150,9 +3150,9 @@ DataprocMetastoreServiceTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocMetastoreService.DataprocMetastoreServiceTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#create DataprocMetastoreService#create}. |
-| <code><a href="#@cdktn/provider-google.dataprocMetastoreService.DataprocMetastoreServiceTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#delete DataprocMetastoreService#delete}. |
-| <code><a href="#@cdktn/provider-google.dataprocMetastoreService.DataprocMetastoreServiceTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#update DataprocMetastoreService#update}. |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreService.DataprocMetastoreServiceTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#create DataprocMetastoreService#create}. |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreService.DataprocMetastoreServiceTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#delete DataprocMetastoreService#delete}. |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreService.DataprocMetastoreServiceTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#update DataprocMetastoreService#update}. |
 
 ---
 
@@ -3164,7 +3164,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#create DataprocMetastoreService#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#create DataprocMetastoreService#create}.
 
 ---
 
@@ -3176,7 +3176,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#delete DataprocMetastoreService#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#delete DataprocMetastoreService#delete}.
 
 ---
 
@@ -3188,7 +3188,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataproc_metastore_service#update DataprocMetastoreService#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataproc_metastore_service#update DataprocMetastoreService#update}.
 
 ---
 

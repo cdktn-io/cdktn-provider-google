@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_data_product
+// https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_data_product
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface DataplexDataProductConfig extends cdktn.TerraformMetaArguments 
   /**
   * The ID of the data product.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_data_product#data_product_id DataplexDataProduct#data_product_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_data_product#data_product_id DataplexDataProduct#data_product_id}
   */
   readonly dataProductId: string;
   /**
@@ -27,19 +27,19 @@ export interface DataplexDataProductConfig extends cdktn.TerraformMetaArguments 
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_data_product#deletion_policy DataplexDataProduct#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_data_product#deletion_policy DataplexDataProduct#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * Description of the data product.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_data_product#description DataplexDataProduct#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_data_product#description DataplexDataProduct#description}
   */
   readonly description?: string;
   /**
   * User-friendly display name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_data_product#display_name DataplexDataProduct#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_data_product#display_name DataplexDataProduct#display_name}
   */
   readonly displayName: string;
   /**
@@ -49,11 +49,11 @@ export interface DataplexDataProductConfig extends cdktn.TerraformMetaArguments 
   * Note: For byte fields, the content of the fields are base64-encoded (which
   * increases the size of the data by 33-36%) when using JSON on the wire.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_data_product#icon DataplexDataProduct#icon}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_data_product#icon DataplexDataProduct#icon}
   */
   readonly icon?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_data_product#id DataplexDataProduct#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_data_product#id DataplexDataProduct#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -65,41 +65,41 @@ export interface DataplexDataProductConfig extends cdktn.TerraformMetaArguments 
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_data_product#labels DataplexDataProduct#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_data_product#labels DataplexDataProduct#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The location for the data product.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_data_product#location DataplexDataProduct#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_data_product#location DataplexDataProduct#location}
   */
   readonly location: string;
   /**
   * Emails of the owners.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_data_product#owner_emails DataplexDataProduct#owner_emails}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_data_product#owner_emails DataplexDataProduct#owner_emails}
   */
   readonly ownerEmails: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_data_product#project DataplexDataProduct#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_data_product#project DataplexDataProduct#project}
   */
   readonly project?: string;
   /**
   * access_approval_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_data_product#access_approval_config DataplexDataProduct#access_approval_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_data_product#access_approval_config DataplexDataProduct#access_approval_config}
   */
   readonly accessApprovalConfig?: DataplexDataProductAccessApprovalConfig;
   /**
   * access_groups block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_data_product#access_groups DataplexDataProduct#access_groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_data_product#access_groups DataplexDataProduct#access_groups}
   */
   readonly accessGroups?: DataplexDataProductAccessGroups[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_data_product#timeouts DataplexDataProduct#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_data_product#timeouts DataplexDataProduct#timeouts}
   */
   readonly timeouts?: DataplexDataProductTimeouts;
 }
@@ -107,7 +107,7 @@ export interface DataplexDataProductAccessApprovalConfig {
   /**
   * Specifies the email addresses of users who are potential approvers.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_data_product#approver_emails DataplexDataProduct#approver_emails}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_data_product#approver_emails DataplexDataProduct#approver_emails}
   */
   readonly approverEmails?: string[];
 }
@@ -193,13 +193,13 @@ export interface DataplexDataProductAccessGroupsPrincipal {
   /**
   * Email of the Google Group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_data_product#google_group DataplexDataProduct#google_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_data_product#google_group DataplexDataProduct#google_group}
   */
   readonly googleGroup?: string;
   /**
   * Specifies the email of the producer service account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_data_product#service_account DataplexDataProduct#service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_data_product#service_account DataplexDataProduct#service_account}
   */
   readonly serviceAccount?: string;
 }
@@ -314,23 +314,23 @@ export interface DataplexDataProductAccessGroups {
   /**
   * Description of the access group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_data_product#description DataplexDataProduct#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_data_product#description DataplexDataProduct#description}
   */
   readonly description?: string;
   /**
   * User friendly display name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_data_product#display_name DataplexDataProduct#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_data_product#display_name DataplexDataProduct#display_name}
   */
   readonly displayName: string;
   /**
   * Unique identifier of the access group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_data_product#group_id DataplexDataProduct#group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_data_product#group_id DataplexDataProduct#group_id}
   */
   readonly groupId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_data_product#id DataplexDataProduct#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_data_product#id DataplexDataProduct#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -339,7 +339,7 @@ export interface DataplexDataProductAccessGroups {
   /**
   * principal block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_data_product#principal DataplexDataProduct#principal}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_data_product#principal DataplexDataProduct#principal}
   */
   readonly principal: DataplexDataProductAccessGroupsPrincipal;
 }
@@ -559,15 +559,15 @@ export class DataplexDataProductAccessGroupsList extends cdktn.ComplexList {
 }
 export interface DataplexDataProductTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_data_product#create DataplexDataProduct#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_data_product#create DataplexDataProduct#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_data_product#delete DataplexDataProduct#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_data_product#delete DataplexDataProduct#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_data_product#update DataplexDataProduct#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_data_product#update DataplexDataProduct#update}
   */
   readonly update?: string;
 }
@@ -719,7 +719,7 @@ export class DataplexDataProductTimeoutsOutputReference extends cdktn.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_data_product google_dataplex_data_product}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_data_product google_dataplex_data_product}
 */
 export class DataplexDataProduct extends cdktn.TerraformResource {
 
@@ -735,7 +735,7 @@ export class DataplexDataProduct extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a DataplexDataProduct resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataplexDataProduct to import
-  * @param importFromId The id of the existing DataplexDataProduct that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_data_product#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataplexDataProduct that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_data_product#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataplexDataProduct to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -747,7 +747,7 @@ export class DataplexDataProduct extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dataplex_data_product google_dataplex_data_product} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_data_product google_dataplex_data_product} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -758,7 +758,7 @@ export class DataplexDataProduct extends cdktn.TerraformResource {
       terraformResourceType: 'google_dataplex_data_product',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.44.0',
+        providerVersion: '7.45.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

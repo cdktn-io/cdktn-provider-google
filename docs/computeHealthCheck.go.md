@@ -4,7 +4,7 @@
 
 ### ComputeHealthCheck <a name="ComputeHealthCheck" id="@cdktn/provider-google.computeHealthCheck.ComputeHealthCheck"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check google_compute_health_check}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check google_compute_health_check}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeHealthCheck.ComputeHealthCheck.Initializer"></a>
 
@@ -732,7 +732,7 @@ The construct id used in the generated config for the ComputeHealthCheck to impo
 
 The id of the existing ComputeHealthCheck that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1436,9 +1436,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computehealthche
 | <code><a href="#@cdktn/provider-google.computeHealthCheck.ComputeHealthCheckConfig.property.http2HealthCheck">Http2HealthCheck</a></code> | <code><a href="#@cdktn/provider-google.computeHealthCheck.ComputeHealthCheckHttp2HealthCheck">ComputeHealthCheckHttp2HealthCheck</a></code> | http2_health_check block. |
 | <code><a href="#@cdktn/provider-google.computeHealthCheck.ComputeHealthCheckConfig.property.httpHealthCheck">HttpHealthCheck</a></code> | <code><a href="#@cdktn/provider-google.computeHealthCheck.ComputeHealthCheckHttpHealthCheck">ComputeHealthCheckHttpHealthCheck</a></code> | http_health_check block. |
 | <code><a href="#@cdktn/provider-google.computeHealthCheck.ComputeHealthCheckConfig.property.httpsHealthCheck">HttpsHealthCheck</a></code> | <code><a href="#@cdktn/provider-google.computeHealthCheck.ComputeHealthCheckHttpsHealthCheck">ComputeHealthCheckHttpsHealthCheck</a></code> | https_health_check block. |
-| <code><a href="#@cdktn/provider-google.computeHealthCheck.ComputeHealthCheckConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check#id ComputeHealthCheck#id}. |
+| <code><a href="#@cdktn/provider-google.computeHealthCheck.ComputeHealthCheckConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check#id ComputeHealthCheck#id}. |
 | <code><a href="#@cdktn/provider-google.computeHealthCheck.ComputeHealthCheckConfig.property.logConfig">LogConfig</a></code> | <code><a href="#@cdktn/provider-google.computeHealthCheck.ComputeHealthCheckLogConfig">ComputeHealthCheckLogConfig</a></code> | log_config block. |
-| <code><a href="#@cdktn/provider-google.computeHealthCheck.ComputeHealthCheckConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check#project ComputeHealthCheck#project}. |
+| <code><a href="#@cdktn/provider-google.computeHealthCheck.ComputeHealthCheckConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check#project ComputeHealthCheck#project}. |
 | <code><a href="#@cdktn/provider-google.computeHealthCheck.ComputeHealthCheckConfig.property.sourceRegions">SourceRegions</a></code> | <code>*[]*string</code> | The list of cloud regions from which health checks are performed. |
 | <code><a href="#@cdktn/provider-google.computeHealthCheck.ComputeHealthCheckConfig.property.sslHealthCheck">SslHealthCheck</a></code> | <code><a href="#@cdktn/provider-google.computeHealthCheck.ComputeHealthCheckSslHealthCheck">ComputeHealthCheckSslHealthCheck</a></code> | ssl_health_check block. |
 | <code><a href="#@cdktn/provider-google.computeHealthCheck.ComputeHealthCheckConfig.property.tcpHealthCheck">TcpHealthCheck</a></code> | <code><a href="#@cdktn/provider-google.computeHealthCheck.ComputeHealthCheckTcpHealthCheck">ComputeHealthCheckTcpHealthCheck</a></code> | tcp_health_check block. |
@@ -1536,7 +1536,7 @@ the first character must be a lowercase letter, and all following
 characters must be a dash, lowercase letter, or digit, except the
 last character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check#name ComputeHealthCheck#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check#name ComputeHealthCheck#name}
 
 ---
 
@@ -1550,7 +1550,7 @@ CheckIntervalSec *f64
 
 How often (in seconds) to send a health check. The default value is 5 seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check#check_interval_sec ComputeHealthCheck#check_interval_sec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check#check_interval_sec ComputeHealthCheck#check_interval_sec}
 
 ---
 
@@ -1571,7 +1571,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check#deletion_policy ComputeHealthCheck#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check#deletion_policy ComputeHealthCheck#deletion_policy}
 
 ---
 
@@ -1585,7 +1585,7 @@ Description *string
 
 An optional description of this resource. Provide this property when you create the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check#description ComputeHealthCheck#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check#description ComputeHealthCheck#description}
 
 ---
 
@@ -1599,7 +1599,7 @@ GrpcHealthCheck ComputeHealthCheckGrpcHealthCheck
 
 grpc_health_check block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check#grpc_health_check ComputeHealthCheck#grpc_health_check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check#grpc_health_check ComputeHealthCheck#grpc_health_check}
 
 ---
 
@@ -1613,7 +1613,7 @@ GrpcTlsHealthCheck ComputeHealthCheckGrpcTlsHealthCheck
 
 grpc_tls_health_check block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check#grpc_tls_health_check ComputeHealthCheck#grpc_tls_health_check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check#grpc_tls_health_check ComputeHealthCheck#grpc_tls_health_check}
 
 ---
 
@@ -1627,7 +1627,7 @@ HealthyThreshold *f64
 
 A so-far unhealthy instance will be marked healthy after this many consecutive successes. The default value is 2.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check#healthy_threshold ComputeHealthCheck#healthy_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check#healthy_threshold ComputeHealthCheck#healthy_threshold}
 
 ---
 
@@ -1641,7 +1641,7 @@ Http2HealthCheck ComputeHealthCheckHttp2HealthCheck
 
 http2_health_check block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check#http2_health_check ComputeHealthCheck#http2_health_check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check#http2_health_check ComputeHealthCheck#http2_health_check}
 
 ---
 
@@ -1655,7 +1655,7 @@ HttpHealthCheck ComputeHealthCheckHttpHealthCheck
 
 http_health_check block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check#http_health_check ComputeHealthCheck#http_health_check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check#http_health_check ComputeHealthCheck#http_health_check}
 
 ---
 
@@ -1669,7 +1669,7 @@ HttpsHealthCheck ComputeHealthCheckHttpsHealthCheck
 
 https_health_check block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check#https_health_check ComputeHealthCheck#https_health_check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check#https_health_check ComputeHealthCheck#https_health_check}
 
 ---
 
@@ -1681,7 +1681,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check#id ComputeHealthCheck#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check#id ComputeHealthCheck#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1698,7 +1698,7 @@ LogConfig ComputeHealthCheckLogConfig
 
 log_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check#log_config ComputeHealthCheck#log_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check#log_config ComputeHealthCheck#log_config}
 
 ---
 
@@ -1710,7 +1710,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check#project ComputeHealthCheck#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check#project ComputeHealthCheck#project}.
 
 ---
 
@@ -1738,7 +1738,7 @@ and what other resources can use this health check:
 * The health check cannot be used with BackendService nor with managed
   instance group auto-healing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check#source_regions ComputeHealthCheck#source_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check#source_regions ComputeHealthCheck#source_regions}
 
 ---
 
@@ -1752,7 +1752,7 @@ SslHealthCheck ComputeHealthCheckSslHealthCheck
 
 ssl_health_check block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check#ssl_health_check ComputeHealthCheck#ssl_health_check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check#ssl_health_check ComputeHealthCheck#ssl_health_check}
 
 ---
 
@@ -1766,7 +1766,7 @@ TcpHealthCheck ComputeHealthCheckTcpHealthCheck
 
 tcp_health_check block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check#tcp_health_check ComputeHealthCheck#tcp_health_check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check#tcp_health_check ComputeHealthCheck#tcp_health_check}
 
 ---
 
@@ -1780,7 +1780,7 @@ Timeouts ComputeHealthCheckTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check#timeouts ComputeHealthCheck#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check#timeouts ComputeHealthCheck#timeouts}
 
 ---
 
@@ -1797,7 +1797,7 @@ How long (in seconds) to wait before claiming failure.
 The default value is 5 seconds.  It is invalid for timeoutSec to have
 greater value than checkIntervalSec.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check#timeout_sec ComputeHealthCheck#timeout_sec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check#timeout_sec ComputeHealthCheck#timeout_sec}
 
 ---
 
@@ -1811,7 +1811,7 @@ UnhealthyThreshold *f64
 
 A so-far healthy instance will be marked unhealthy after this many consecutive failures. The default value is 2.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check#unhealthy_threshold ComputeHealthCheck#unhealthy_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check#unhealthy_threshold ComputeHealthCheck#unhealthy_threshold}
 
 ---
 
@@ -1857,7 +1857,7 @@ The value of grpcServiceName has the following meanings by convention:
 * Non-empty serviceName means the health of that gRPC service, as defined by the owner of the service.
   The grpcServiceName can only be ASCII.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check#grpc_service_name ComputeHealthCheck#grpc_service_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check#grpc_service_name ComputeHealthCheck#grpc_service_name}
 
 ---
 
@@ -1874,7 +1874,7 @@ The port number for the health check request.
 Must be specified if portName and portSpecification are not set
 or if port_specification is USE_FIXED_PORT. Valid values are 1 through 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check#port ComputeHealthCheck#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check#port ComputeHealthCheck#port}
 
 ---
 
@@ -1888,7 +1888,7 @@ PortName *string
 
 Port name as defined in InstanceGroup#NamedPort#name. If both port and port_name are defined, port takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check#port_name ComputeHealthCheck#port_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check#port_name ComputeHealthCheck#port_name}
 
 ---
 
@@ -1913,7 +1913,7 @@ Specifies how port is selected for health checking, can be one of the following 
 If not specified, gRPC health check follows behavior specified in 'port' and
 'portName' fields. Possible values: ["USE_FIXED_PORT", "USE_NAMED_PORT", "USE_SERVING_PORT"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check#port_specification ComputeHealthCheck#port_specification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check#port_specification ComputeHealthCheck#port_specification}
 
 ---
 
@@ -1957,7 +1957,7 @@ The value of grpcServiceName has the following meanings by convention:
 * Non-empty serviceName means the health of that gRPC service, as defined by the owner of the service.
   The grpcServiceName can only be ASCII.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check#grpc_service_name ComputeHealthCheck#grpc_service_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check#grpc_service_name ComputeHealthCheck#grpc_service_name}
 
 ---
 
@@ -1973,7 +1973,7 @@ The port number for the health check request.
 
 Must be specified if port_specification is USE_FIXED_PORT. Valid values are 1 through 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check#port ComputeHealthCheck#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check#port ComputeHealthCheck#port}
 
 ---
 
@@ -1997,7 +1997,7 @@ Specifies how port is selected for health checking, can be one of the following 
 
 If not specified, gRPC with TLS health check follows behavior specified in the 'port' field. Possible values: ["USE_FIXED_PORT", "USE_NAMED_PORT", "USE_SERVING_PORT"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check#port_specification ComputeHealthCheck#port_specification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check#port_specification ComputeHealthCheck#port_specification}
 
 ---
 
@@ -2046,7 +2046,7 @@ The value of the host header in the HTTP2 health check request.
 If left empty (default value), the public IP on behalf of which this health
 check is performed will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check#host ComputeHealthCheck#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check#host ComputeHealthCheck#host}
 
 ---
 
@@ -2060,7 +2060,7 @@ Port *f64
 
 The TCP port number for the HTTP2 health check request. The default value is 443.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check#port ComputeHealthCheck#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check#port ComputeHealthCheck#port}
 
 ---
 
@@ -2074,7 +2074,7 @@ PortName *string
 
 Port name as defined in InstanceGroup#NamedPort#name. If both port and port_name are defined, port takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check#port_name ComputeHealthCheck#port_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check#port_name ComputeHealthCheck#port_name}
 
 ---
 
@@ -2099,7 +2099,7 @@ Specifies how port is selected for health checking, can be one of the following 
 If not specified, HTTP2 health check follows behavior specified in 'port' and
 'portName' fields. Possible values: ["USE_FIXED_PORT", "USE_NAMED_PORT", "USE_SERVING_PORT"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check#port_specification ComputeHealthCheck#port_specification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check#port_specification ComputeHealthCheck#port_specification}
 
 ---
 
@@ -2115,7 +2115,7 @@ Specifies the type of proxy header to append before sending data to the backend.
 
 Default value: "NONE" Possible values: ["NONE", "PROXY_V1"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check#proxy_header ComputeHealthCheck#proxy_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check#proxy_header ComputeHealthCheck#proxy_header}
 
 ---
 
@@ -2129,7 +2129,7 @@ RequestPath *string
 
 The request path of the HTTP2 health check request. The default value is /.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check#request_path ComputeHealthCheck#request_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check#request_path ComputeHealthCheck#request_path}
 
 ---
 
@@ -2147,7 +2147,7 @@ If left empty
 (the default value), any response will indicate health. The response data
 can only be ASCII.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check#response ComputeHealthCheck#response}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check#response ComputeHealthCheck#response}
 
 ---
 
@@ -2196,7 +2196,7 @@ The value of the host header in the HTTP health check request.
 If left empty (default value), the public IP on behalf of which this health
 check is performed will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check#host ComputeHealthCheck#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check#host ComputeHealthCheck#host}
 
 ---
 
@@ -2210,7 +2210,7 @@ Port *f64
 
 The TCP port number for the HTTP health check request. The default value is 80.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check#port ComputeHealthCheck#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check#port ComputeHealthCheck#port}
 
 ---
 
@@ -2224,7 +2224,7 @@ PortName *string
 
 Port name as defined in InstanceGroup#NamedPort#name. If both port and port_name are defined, port takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check#port_name ComputeHealthCheck#port_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check#port_name ComputeHealthCheck#port_name}
 
 ---
 
@@ -2249,7 +2249,7 @@ Specifies how port is selected for health checking, can be one of the following 
 If not specified, HTTP health check follows behavior specified in 'port' and
 'portName' fields. Possible values: ["USE_FIXED_PORT", "USE_NAMED_PORT", "USE_SERVING_PORT"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check#port_specification ComputeHealthCheck#port_specification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check#port_specification ComputeHealthCheck#port_specification}
 
 ---
 
@@ -2265,7 +2265,7 @@ Specifies the type of proxy header to append before sending data to the backend.
 
 Default value: "NONE" Possible values: ["NONE", "PROXY_V1"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check#proxy_header ComputeHealthCheck#proxy_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check#proxy_header ComputeHealthCheck#proxy_header}
 
 ---
 
@@ -2279,7 +2279,7 @@ RequestPath *string
 
 The request path of the HTTP health check request. The default value is /.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check#request_path ComputeHealthCheck#request_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check#request_path ComputeHealthCheck#request_path}
 
 ---
 
@@ -2297,7 +2297,7 @@ If left empty
 (the default value), any response will indicate health. The response data
 can only be ASCII.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check#response ComputeHealthCheck#response}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check#response ComputeHealthCheck#response}
 
 ---
 
@@ -2346,7 +2346,7 @@ The value of the host header in the HTTPS health check request.
 If left empty (default value), the public IP on behalf of which this health
 check is performed will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check#host ComputeHealthCheck#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check#host ComputeHealthCheck#host}
 
 ---
 
@@ -2360,7 +2360,7 @@ Port *f64
 
 The TCP port number for the HTTPS health check request. The default value is 443.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check#port ComputeHealthCheck#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check#port ComputeHealthCheck#port}
 
 ---
 
@@ -2374,7 +2374,7 @@ PortName *string
 
 Port name as defined in InstanceGroup#NamedPort#name. If both port and port_name are defined, port takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check#port_name ComputeHealthCheck#port_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check#port_name ComputeHealthCheck#port_name}
 
 ---
 
@@ -2399,7 +2399,7 @@ Specifies how port is selected for health checking, can be one of the following 
 If not specified, HTTPS health check follows behavior specified in 'port' and
 'portName' fields. Possible values: ["USE_FIXED_PORT", "USE_NAMED_PORT", "USE_SERVING_PORT"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check#port_specification ComputeHealthCheck#port_specification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check#port_specification ComputeHealthCheck#port_specification}
 
 ---
 
@@ -2415,7 +2415,7 @@ Specifies the type of proxy header to append before sending data to the backend.
 
 Default value: "NONE" Possible values: ["NONE", "PROXY_V1"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check#proxy_header ComputeHealthCheck#proxy_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check#proxy_header ComputeHealthCheck#proxy_header}
 
 ---
 
@@ -2429,7 +2429,7 @@ RequestPath *string
 
 The request path of the HTTPS health check request. The default value is /.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check#request_path ComputeHealthCheck#request_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check#request_path ComputeHealthCheck#request_path}
 
 ---
 
@@ -2447,7 +2447,7 @@ If left empty
 (the default value), any response will indicate health. The response data
 can only be ASCII.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check#response ComputeHealthCheck#response}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check#response ComputeHealthCheck#response}
 
 ---
 
@@ -2484,7 +2484,7 @@ Indicates whether or not to export logs.
 This is false by default,
 which means no health check logging will be done.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check#enable ComputeHealthCheck#enable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check#enable ComputeHealthCheck#enable}
 
 ---
 
@@ -2528,7 +2528,7 @@ Port *f64
 
 The TCP port number for the SSL health check request. The default value is 443.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check#port ComputeHealthCheck#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check#port ComputeHealthCheck#port}
 
 ---
 
@@ -2542,7 +2542,7 @@ PortName *string
 
 Port name as defined in InstanceGroup#NamedPort#name. If both port and port_name are defined, port takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check#port_name ComputeHealthCheck#port_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check#port_name ComputeHealthCheck#port_name}
 
 ---
 
@@ -2567,7 +2567,7 @@ Specifies how port is selected for health checking, can be one of the following 
 If not specified, SSL health check follows behavior specified in 'port' and
 'portName' fields. Possible values: ["USE_FIXED_PORT", "USE_NAMED_PORT", "USE_SERVING_PORT"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check#port_specification ComputeHealthCheck#port_specification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check#port_specification ComputeHealthCheck#port_specification}
 
 ---
 
@@ -2583,7 +2583,7 @@ Specifies the type of proxy header to append before sending data to the backend.
 
 Default value: "NONE" Possible values: ["NONE", "PROXY_V1"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check#proxy_header ComputeHealthCheck#proxy_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check#proxy_header ComputeHealthCheck#proxy_header}
 
 ---
 
@@ -2601,7 +2601,7 @@ If both request and response are
 empty, the connection establishment alone will indicate health. The request
 data can only be ASCII.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check#request ComputeHealthCheck#request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check#request ComputeHealthCheck#request}
 
 ---
 
@@ -2619,7 +2619,7 @@ If left empty
 (the default value), any response will indicate health. The response data
 can only be ASCII.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check#response ComputeHealthCheck#response}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check#response ComputeHealthCheck#response}
 
 ---
 
@@ -2663,7 +2663,7 @@ Port *f64
 
 The TCP port number for the TCP health check request. The default value is 443.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check#port ComputeHealthCheck#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check#port ComputeHealthCheck#port}
 
 ---
 
@@ -2677,7 +2677,7 @@ PortName *string
 
 Port name as defined in InstanceGroup#NamedPort#name. If both port and port_name are defined, port takes precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check#port_name ComputeHealthCheck#port_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check#port_name ComputeHealthCheck#port_name}
 
 ---
 
@@ -2702,7 +2702,7 @@ Specifies how port is selected for health checking, can be one of the following 
 If not specified, TCP health check follows behavior specified in 'port' and
 'portName' fields. Possible values: ["USE_FIXED_PORT", "USE_NAMED_PORT", "USE_SERVING_PORT"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check#port_specification ComputeHealthCheck#port_specification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check#port_specification ComputeHealthCheck#port_specification}
 
 ---
 
@@ -2718,7 +2718,7 @@ Specifies the type of proxy header to append before sending data to the backend.
 
 Default value: "NONE" Possible values: ["NONE", "PROXY_V1"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check#proxy_header ComputeHealthCheck#proxy_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check#proxy_header ComputeHealthCheck#proxy_header}
 
 ---
 
@@ -2736,7 +2736,7 @@ If both request and response are
 empty, the connection establishment alone will indicate health. The request
 data can only be ASCII.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check#request ComputeHealthCheck#request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check#request ComputeHealthCheck#request}
 
 ---
 
@@ -2754,7 +2754,7 @@ If left empty
 (the default value), any response will indicate health. The response data
 can only be ASCII.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check#response ComputeHealthCheck#response}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check#response ComputeHealthCheck#response}
 
 ---
 
@@ -2776,9 +2776,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computehealthche
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeHealthCheck.ComputeHealthCheckTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check#create ComputeHealthCheck#create}. |
-| <code><a href="#@cdktn/provider-google.computeHealthCheck.ComputeHealthCheckTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check#delete ComputeHealthCheck#delete}. |
-| <code><a href="#@cdktn/provider-google.computeHealthCheck.ComputeHealthCheckTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check#update ComputeHealthCheck#update}. |
+| <code><a href="#@cdktn/provider-google.computeHealthCheck.ComputeHealthCheckTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check#create ComputeHealthCheck#create}. |
+| <code><a href="#@cdktn/provider-google.computeHealthCheck.ComputeHealthCheckTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check#delete ComputeHealthCheck#delete}. |
+| <code><a href="#@cdktn/provider-google.computeHealthCheck.ComputeHealthCheckTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check#update ComputeHealthCheck#update}. |
 
 ---
 
@@ -2790,7 +2790,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check#create ComputeHealthCheck#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check#create ComputeHealthCheck#create}.
 
 ---
 
@@ -2802,7 +2802,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check#delete ComputeHealthCheck#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check#delete ComputeHealthCheck#delete}.
 
 ---
 
@@ -2814,7 +2814,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_health_check#update ComputeHealthCheck#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_health_check#update ComputeHealthCheck#update}.
 
 ---
 

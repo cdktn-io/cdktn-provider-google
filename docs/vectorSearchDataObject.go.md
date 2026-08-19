@@ -4,7 +4,7 @@
 
 ### VectorSearchDataObject <a name="VectorSearchDataObject" id="@cdktn/provider-google.vectorSearchDataObject.VectorSearchDataObject"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vector_search_data_object google_vector_search_data_object}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vector_search_data_object google_vector_search_data_object}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vectorSearchDataObject.VectorSearchDataObject.Initializer"></a>
 
@@ -564,7 +564,7 @@ The construct id used in the generated config for the VectorSearchDataObject to 
 
 The id of the existing VectorSearchDataObject that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vector_search_data_object#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vector_search_data_object#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1057,8 +1057,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vectorsearchdata
 | <code><a href="#@cdktn/provider-google.vectorSearchDataObject.VectorSearchDataObjectConfig.property.data">Data</a></code> | <code>*string</code> | The JSON data of the DataObject. |
 | <code><a href="#@cdktn/provider-google.vectorSearchDataObject.VectorSearchDataObjectConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.vectorSearchDataObject.VectorSearchDataObjectConfig.property.etag">Etag</a></code> | <code>*string</code> | The etag of the DataObject, used for optimistic concurrency control on updates and deletes. |
-| <code><a href="#@cdktn/provider-google.vectorSearchDataObject.VectorSearchDataObjectConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vector_search_data_object#id VectorSearchDataObject#id}. |
-| <code><a href="#@cdktn/provider-google.vectorSearchDataObject.VectorSearchDataObjectConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vector_search_data_object#project VectorSearchDataObject#project}. |
+| <code><a href="#@cdktn/provider-google.vectorSearchDataObject.VectorSearchDataObjectConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vector_search_data_object#id VectorSearchDataObject#id}. |
+| <code><a href="#@cdktn/provider-google.vectorSearchDataObject.VectorSearchDataObjectConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vector_search_data_object#project VectorSearchDataObject#project}. |
 | <code><a href="#@cdktn/provider-google.vectorSearchDataObject.VectorSearchDataObjectConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.vectorSearchDataObject.VectorSearchDataObjectTimeouts">VectorSearchDataObjectTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.vectorSearchDataObject.VectorSearchDataObjectConfig.property.vectors">Vectors</a></code> | <code>interface{}</code> | vectors block. |
 
@@ -1144,7 +1144,7 @@ CollectionId *string
 
 The ID of the parent Collection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vector_search_data_object#collection_id VectorSearchDataObject#collection_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vector_search_data_object#collection_id VectorSearchDataObject#collection_id}
 
 ---
 
@@ -1163,7 +1163,7 @@ The id must be 1-63 characters long, and comply with
 Specifically, it must be 1-63 characters long and match the regular
 expression '[a-z](?:%5B-a-z0-9%5D%7B0,61%7D%5Ba-z0-9%5D)?'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vector_search_data_object#data_object_id VectorSearchDataObject#data_object_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vector_search_data_object#data_object_id VectorSearchDataObject#data_object_id}
 
 ---
 
@@ -1177,7 +1177,7 @@ Location *string
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vector_search_data_object#location VectorSearchDataObject#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vector_search_data_object#location VectorSearchDataObject#location}
 
 ---
 
@@ -1195,7 +1195,7 @@ Must be a JSON object whose field
 names match the fields defined in the parent Collection's
 'data_schema'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vector_search_data_object#data VectorSearchDataObject#data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vector_search_data_object#data VectorSearchDataObject#data}
 
 ---
 
@@ -1216,7 +1216,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vector_search_data_object#deletion_policy VectorSearchDataObject#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vector_search_data_object#deletion_policy VectorSearchDataObject#deletion_policy}
 
 ---
 
@@ -1230,7 +1230,7 @@ Etag *string
 
 The etag of the DataObject, used for optimistic concurrency control on updates and deletes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vector_search_data_object#etag VectorSearchDataObject#etag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vector_search_data_object#etag VectorSearchDataObject#etag}
 
 ---
 
@@ -1242,7 +1242,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vector_search_data_object#id VectorSearchDataObject#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vector_search_data_object#id VectorSearchDataObject#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1257,7 +1257,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vector_search_data_object#project VectorSearchDataObject#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vector_search_data_object#project VectorSearchDataObject#project}.
 
 ---
 
@@ -1271,7 +1271,7 @@ Timeouts VectorSearchDataObjectTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vector_search_data_object#timeouts VectorSearchDataObject#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vector_search_data_object#timeouts VectorSearchDataObject#timeouts}
 
 ---
 
@@ -1285,7 +1285,7 @@ Vectors interface{}
 
 vectors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vector_search_data_object#vectors VectorSearchDataObject#vectors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vector_search_data_object#vectors VectorSearchDataObject#vectors}
 
 ---
 
@@ -1307,9 +1307,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vectorsearchdata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.vectorSearchDataObject.VectorSearchDataObjectTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vector_search_data_object#create VectorSearchDataObject#create}. |
-| <code><a href="#@cdktn/provider-google.vectorSearchDataObject.VectorSearchDataObjectTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vector_search_data_object#delete VectorSearchDataObject#delete}. |
-| <code><a href="#@cdktn/provider-google.vectorSearchDataObject.VectorSearchDataObjectTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vector_search_data_object#update VectorSearchDataObject#update}. |
+| <code><a href="#@cdktn/provider-google.vectorSearchDataObject.VectorSearchDataObjectTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vector_search_data_object#create VectorSearchDataObject#create}. |
+| <code><a href="#@cdktn/provider-google.vectorSearchDataObject.VectorSearchDataObjectTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vector_search_data_object#delete VectorSearchDataObject#delete}. |
+| <code><a href="#@cdktn/provider-google.vectorSearchDataObject.VectorSearchDataObjectTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vector_search_data_object#update VectorSearchDataObject#update}. |
 
 ---
 
@@ -1321,7 +1321,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vector_search_data_object#create VectorSearchDataObject#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vector_search_data_object#create VectorSearchDataObject#create}.
 
 ---
 
@@ -1333,7 +1333,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vector_search_data_object#delete VectorSearchDataObject#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vector_search_data_object#delete VectorSearchDataObject#delete}.
 
 ---
 
@@ -1345,7 +1345,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vector_search_data_object#update VectorSearchDataObject#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vector_search_data_object#update VectorSearchDataObject#update}.
 
 ---
 
@@ -1367,7 +1367,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vectorsearchdata
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.vectorSearchDataObject.VectorSearchDataObjectVectors.property.fieldName">FieldName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vector_search_data_object#field_name VectorSearchDataObject#field_name}. |
+| <code><a href="#@cdktn/provider-google.vectorSearchDataObject.VectorSearchDataObjectVectors.property.fieldName">FieldName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vector_search_data_object#field_name VectorSearchDataObject#field_name}. |
 | <code><a href="#@cdktn/provider-google.vectorSearchDataObject.VectorSearchDataObjectVectors.property.dense">Dense</a></code> | <code><a href="#@cdktn/provider-google.vectorSearchDataObject.VectorSearchDataObjectVectorsDense">VectorSearchDataObjectVectorsDense</a></code> | dense block. |
 | <code><a href="#@cdktn/provider-google.vectorSearchDataObject.VectorSearchDataObjectVectors.property.sparse">Sparse</a></code> | <code><a href="#@cdktn/provider-google.vectorSearchDataObject.VectorSearchDataObjectVectorsSparse">VectorSearchDataObjectVectorsSparse</a></code> | sparse block. |
 
@@ -1381,7 +1381,7 @@ FieldName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vector_search_data_object#field_name VectorSearchDataObject#field_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vector_search_data_object#field_name VectorSearchDataObject#field_name}.
 
 ---
 
@@ -1395,7 +1395,7 @@ Dense VectorSearchDataObjectVectorsDense
 
 dense block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vector_search_data_object#dense VectorSearchDataObject#dense}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vector_search_data_object#dense VectorSearchDataObject#dense}
 
 ---
 
@@ -1409,7 +1409,7 @@ Sparse VectorSearchDataObjectVectorsSparse
 
 sparse block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vector_search_data_object#sparse VectorSearchDataObject#sparse}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vector_search_data_object#sparse VectorSearchDataObject#sparse}
 
 ---
 
@@ -1443,7 +1443,7 @@ Values *[]*f64
 
 The float values of the dense vector.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vector_search_data_object#values VectorSearchDataObject#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vector_search_data_object#values VectorSearchDataObject#values}
 
 ---
 
@@ -1479,7 +1479,7 @@ Indices *[]*f64
 
 The indices corresponding to the entries in 'values'. Must have the same length as 'values'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vector_search_data_object#indices VectorSearchDataObject#indices}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vector_search_data_object#indices VectorSearchDataObject#indices}
 
 ---
 
@@ -1493,7 +1493,7 @@ Values *[]*f64
 
 The non-zero float values of the sparse vector.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/vector_search_data_object#values VectorSearchDataObject#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vector_search_data_object#values VectorSearchDataObject#values}
 
 ---
 

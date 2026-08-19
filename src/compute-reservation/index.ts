@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_reservation
+// https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_reservation
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,7 +16,7 @@ export interface ComputeReservationConfig extends cdktn.TerraformMetaArguments {
   * Absolute time in future when the reservation will be auto-deleted by Compute Engine. Timestamp is represented in RFC3339 text format.
   * Cannot be used with delete_after_duration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_reservation#delete_at_time ComputeReservation#delete_at_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_reservation#delete_at_time ComputeReservation#delete_at_time}
   */
   readonly deleteAtTime?: string;
   /**
@@ -28,13 +28,13 @@ export interface ComputeReservationConfig extends cdktn.TerraformMetaArguments {
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_reservation#deletion_policy ComputeReservation#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_reservation#deletion_policy ComputeReservation#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * An optional description of this resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_reservation#description ComputeReservation#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_reservation#description ComputeReservation#description}
   */
   readonly description?: string;
   /**
@@ -46,11 +46,11 @@ export interface ComputeReservationConfig extends cdktn.TerraformMetaArguments {
   * characters must be a dash, lowercase letter, or digit, except the last
   * character, which cannot be a dash.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_reservation#name ComputeReservation#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_reservation#name ComputeReservation#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_reservation#project ComputeReservation#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_reservation#project ComputeReservation#project}
   */
   readonly project?: string;
   /**
@@ -58,49 +58,49 @@ export interface ComputeReservationConfig extends cdktn.TerraformMetaArguments {
   * consume this reservation. Otherwise, it can be consumed by VMs with
   * affinity for any reservation. Defaults to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_reservation#specific_reservation_required ComputeReservation#specific_reservation_required}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_reservation#specific_reservation_required ComputeReservation#specific_reservation_required}
   */
   readonly specificReservationRequired?: boolean | cdktn.IResolvable;
   /**
   * The zone where the reservation is made.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_reservation#zone ComputeReservation#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_reservation#zone ComputeReservation#zone}
   */
   readonly zone: string;
   /**
   * delete_after_duration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_reservation#delete_after_duration ComputeReservation#delete_after_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_reservation#delete_after_duration ComputeReservation#delete_after_duration}
   */
   readonly deleteAfterDuration?: ComputeReservationDeleteAfterDuration;
   /**
   * params block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_reservation#params ComputeReservation#params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_reservation#params ComputeReservation#params}
   */
   readonly params?: ComputeReservationParams;
   /**
   * reservation_sharing_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_reservation#reservation_sharing_policy ComputeReservation#reservation_sharing_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_reservation#reservation_sharing_policy ComputeReservation#reservation_sharing_policy}
   */
   readonly reservationSharingPolicy?: ComputeReservationReservationSharingPolicy;
   /**
   * share_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_reservation#share_settings ComputeReservation#share_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_reservation#share_settings ComputeReservation#share_settings}
   */
   readonly shareSettings?: ComputeReservationShareSettings;
   /**
   * specific_reservation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_reservation#specific_reservation ComputeReservation#specific_reservation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_reservation#specific_reservation ComputeReservation#specific_reservation}
   */
   readonly specificReservation: ComputeReservationSpecificReservation;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_reservation#timeouts ComputeReservation#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_reservation#timeouts ComputeReservation#timeouts}
   */
   readonly timeouts?: ComputeReservationTimeouts;
 }
@@ -588,13 +588,13 @@ export interface ComputeReservationDeleteAfterDuration {
   /**
   * Number of nanoseconds for the auto-delete duration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_reservation#nanos ComputeReservation#nanos}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_reservation#nanos ComputeReservation#nanos}
   */
   readonly nanos?: number;
   /**
   * Number of seconds for the auto-delete duration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_reservation#seconds ComputeReservation#seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_reservation#seconds ComputeReservation#seconds}
   */
   readonly seconds?: string;
 }
@@ -711,7 +711,7 @@ export interface ComputeReservationParams {
   * same definition as resource manager tags. Keys must be in the format tagKeys/{tag_key_id},
   * and values are in the format tagValues/456.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_reservation#resource_manager_tags ComputeReservation#resource_manager_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_reservation#resource_manager_tags ComputeReservation#resource_manager_tags}
   */
   readonly resourceManagerTags?: { [key: string]: string };
 }
@@ -797,7 +797,7 @@ export interface ComputeReservationReservationSharingPolicy {
   /**
   * Sharing config for all Google Cloud services. Possible values: ["ALLOW_ALL", "DISALLOW_ALL"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_reservation#service_share_type ComputeReservation#service_share_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_reservation#service_share_type ComputeReservation#service_share_type}
   */
   readonly serviceShareType?: string;
 }
@@ -881,7 +881,7 @@ export class ComputeReservationReservationSharingPolicyOutputReference extends c
 }
 export interface ComputeReservationShareSettingsProjectMap {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_reservation#id ComputeReservation#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_reservation#id ComputeReservation#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -890,7 +890,7 @@ export interface ComputeReservationShareSettingsProjectMap {
   /**
   * The project id/number, should be same as the key of this project config in the project map.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_reservation#project_id ComputeReservation#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_reservation#project_id ComputeReservation#project_id}
   */
   readonly projectId?: string;
 }
@@ -1034,13 +1034,13 @@ export interface ComputeReservationShareSettings {
   /**
   * Type of sharing for this shared-reservation Possible values: ["LOCAL", "SPECIFIC_PROJECTS"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_reservation#share_type ComputeReservation#share_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_reservation#share_type ComputeReservation#share_type}
   */
   readonly shareType?: string;
   /**
   * project_map block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_reservation#project_map ComputeReservation#project_map}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_reservation#project_map ComputeReservation#project_map}
   */
   readonly projectMap?: ComputeReservationShareSettingsProjectMap[] | cdktn.IResolvable;
 }
@@ -1156,7 +1156,7 @@ export interface ComputeReservationSpecificReservationInstancePropertiesGuestAcc
   * The number of the guest accelerator cards exposed to
   * this instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_reservation#accelerator_count ComputeReservation#accelerator_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_reservation#accelerator_count ComputeReservation#accelerator_count}
   */
   readonly acceleratorCount: number;
   /**
@@ -1166,7 +1166,7 @@ export interface ComputeReservationSpecificReservationInstancePropertiesGuestAcc
   * 
   * If you are creating an instance template, specify only the accelerator name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_reservation#accelerator_type ComputeReservation#accelerator_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_reservation#accelerator_type ComputeReservation#accelerator_type}
   */
   readonly acceleratorType: string;
 }
@@ -1307,13 +1307,13 @@ export interface ComputeReservationSpecificReservationInstancePropertiesLocalSsd
   /**
   * The size of the disk in base-2 GB.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_reservation#disk_size_gb ComputeReservation#disk_size_gb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_reservation#disk_size_gb ComputeReservation#disk_size_gb}
   */
   readonly diskSizeGb: number;
   /**
   * The disk interface to use for attaching this disk. Default value: "SCSI" Possible values: ["SCSI", "NVME"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_reservation#interface ComputeReservation#interface}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_reservation#interface ComputeReservation#interface}
   */
   readonly interface?: string;
 }
@@ -1457,7 +1457,7 @@ export interface ComputeReservationSpecificReservationInstanceProperties {
   /**
   * The name of the machine type to reserve.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_reservation#machine_type ComputeReservation#machine_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_reservation#machine_type ComputeReservation#machine_type}
   */
   readonly machineType: string;
   /**
@@ -1466,19 +1466,19 @@ export interface ComputeReservationSpecificReservationInstanceProperties {
   * the CPU platform availability reference](https://cloud.google.com/compute/docs/instances/specify-min-cpu-platform#availablezones)
   * for information on available CPU platforms.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_reservation#min_cpu_platform ComputeReservation#min_cpu_platform}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_reservation#min_cpu_platform ComputeReservation#min_cpu_platform}
   */
   readonly minCpuPlatform?: string;
   /**
   * guest_accelerators block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_reservation#guest_accelerators ComputeReservation#guest_accelerators}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_reservation#guest_accelerators ComputeReservation#guest_accelerators}
   */
   readonly guestAccelerators?: ComputeReservationSpecificReservationInstancePropertiesGuestAccelerators[] | cdktn.IResolvable;
   /**
   * local_ssds block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_reservation#local_ssds ComputeReservation#local_ssds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_reservation#local_ssds ComputeReservation#local_ssds}
   */
   readonly localSsds?: ComputeReservationSpecificReservationInstancePropertiesLocalSsds[] | cdktn.IResolvable;
 }
@@ -1653,20 +1653,20 @@ export interface ComputeReservationSpecificReservation {
   /**
   * The number of resources that are allocated.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_reservation#count ComputeReservation#count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_reservation#count ComputeReservation#count}
   */
   readonly count: number;
   /**
   * Specifies the instance template to create the reservation. If you use this field, you must exclude the
   * instanceProperties field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_reservation#source_instance_template ComputeReservation#source_instance_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_reservation#source_instance_template ComputeReservation#source_instance_template}
   */
   readonly sourceInstanceTemplate?: string;
   /**
   * instance_properties block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_reservation#instance_properties ComputeReservation#instance_properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_reservation#instance_properties ComputeReservation#instance_properties}
   */
   readonly instanceProperties?: ComputeReservationSpecificReservationInstanceProperties;
 }
@@ -1815,15 +1815,15 @@ export class ComputeReservationSpecificReservationOutputReference extends cdktn.
 }
 export interface ComputeReservationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_reservation#create ComputeReservation#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_reservation#create ComputeReservation#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_reservation#delete ComputeReservation#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_reservation#delete ComputeReservation#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_reservation#update ComputeReservation#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_reservation#update ComputeReservation#update}
   */
   readonly update?: string;
 }
@@ -1975,7 +1975,7 @@ export class ComputeReservationTimeoutsOutputReference extends cdktn.ComplexObje
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_reservation google_compute_reservation}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_reservation google_compute_reservation}
 */
 export class ComputeReservation extends cdktn.TerraformResource {
 
@@ -1991,7 +1991,7 @@ export class ComputeReservation extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ComputeReservation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ComputeReservation to import
-  * @param importFromId The id of the existing ComputeReservation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_reservation#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ComputeReservation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_reservation#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ComputeReservation to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -2003,7 +2003,7 @@ export class ComputeReservation extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_reservation google_compute_reservation} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_reservation google_compute_reservation} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2014,7 +2014,7 @@ export class ComputeReservation extends cdktn.TerraformResource {
       terraformResourceType: 'google_compute_reservation',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.44.0',
+        providerVersion: '7.45.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

@@ -4,7 +4,7 @@
 
 ### ComputeStoragePoolIamMember <a name="ComputeStoragePoolIamMember" id="@cdktn/provider-google.computeStoragePoolIamMember.ComputeStoragePoolIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_storage_pool_iam_member google_compute_storage_pool_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_storage_pool_iam_member google_compute_storage_pool_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeStoragePoolIamMember.ComputeStoragePoolIamMember.Initializer"></a>
 
@@ -42,13 +42,13 @@ computeStoragePoolIamMember.ComputeStoragePoolIamMember(
 | <code><a href="#@cdktn/provider-google.computeStoragePoolIamMember.ComputeStoragePoolIamMember.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeStoragePoolIamMember.ComputeStoragePoolIamMember.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeStoragePoolIamMember.ComputeStoragePoolIamMember.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeStoragePoolIamMember.ComputeStoragePoolIamMember.Initializer.parameter.member">member</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_storage_pool_iam_member#member ComputeStoragePoolIamMember#member}. |
-| <code><a href="#@cdktn/provider-google.computeStoragePoolIamMember.ComputeStoragePoolIamMember.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_storage_pool_iam_member#name ComputeStoragePoolIamMember#name}. |
-| <code><a href="#@cdktn/provider-google.computeStoragePoolIamMember.ComputeStoragePoolIamMember.Initializer.parameter.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_storage_pool_iam_member#role ComputeStoragePoolIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.computeStoragePoolIamMember.ComputeStoragePoolIamMember.Initializer.parameter.member">member</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_storage_pool_iam_member#member ComputeStoragePoolIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.computeStoragePoolIamMember.ComputeStoragePoolIamMember.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_storage_pool_iam_member#name ComputeStoragePoolIamMember#name}. |
+| <code><a href="#@cdktn/provider-google.computeStoragePoolIamMember.ComputeStoragePoolIamMember.Initializer.parameter.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_storage_pool_iam_member#role ComputeStoragePoolIamMember#role}. |
 | <code><a href="#@cdktn/provider-google.computeStoragePoolIamMember.ComputeStoragePoolIamMember.Initializer.parameter.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.computeStoragePoolIamMember.ComputeStoragePoolIamMemberCondition">ComputeStoragePoolIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.computeStoragePoolIamMember.ComputeStoragePoolIamMember.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_storage_pool_iam_member#id ComputeStoragePoolIamMember#id}. |
-| <code><a href="#@cdktn/provider-google.computeStoragePoolIamMember.ComputeStoragePoolIamMember.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_storage_pool_iam_member#project ComputeStoragePoolIamMember#project}. |
-| <code><a href="#@cdktn/provider-google.computeStoragePoolIamMember.ComputeStoragePoolIamMember.Initializer.parameter.zone">zone</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_storage_pool_iam_member#zone ComputeStoragePoolIamMember#zone}. |
+| <code><a href="#@cdktn/provider-google.computeStoragePoolIamMember.ComputeStoragePoolIamMember.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_storage_pool_iam_member#id ComputeStoragePoolIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.computeStoragePoolIamMember.ComputeStoragePoolIamMember.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_storage_pool_iam_member#project ComputeStoragePoolIamMember#project}. |
+| <code><a href="#@cdktn/provider-google.computeStoragePoolIamMember.ComputeStoragePoolIamMember.Initializer.parameter.zone">zone</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_storage_pool_iam_member#zone ComputeStoragePoolIamMember#zone}. |
 
 ---
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_storage_pool_iam_member#member ComputeStoragePoolIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_storage_pool_iam_member#member ComputeStoragePoolIamMember#member}.
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_storage_pool_iam_member#name ComputeStoragePoolIamMember#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_storage_pool_iam_member#name ComputeStoragePoolIamMember#name}.
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_storage_pool_iam_member#role ComputeStoragePoolIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_storage_pool_iam_member#role ComputeStoragePoolIamMember#role}.
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_storage_pool_iam_member#condition ComputeStoragePoolIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_storage_pool_iam_member#condition ComputeStoragePoolIamMember#condition}
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_storage_pool_iam_member#id ComputeStoragePoolIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_storage_pool_iam_member#id ComputeStoragePoolIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -161,7 +161,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_storage_pool_iam_member#project ComputeStoragePoolIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_storage_pool_iam_member#project ComputeStoragePoolIamMember#project}.
 
 ---
 
@@ -169,7 +169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_storage_pool_iam_member#zone ComputeStoragePoolIamMember#zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_storage_pool_iam_member#zone ComputeStoragePoolIamMember#zone}.
 
 ---
 
@@ -571,7 +571,7 @@ def put_condition(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_storage_pool_iam_member#expression ComputeStoragePoolIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_storage_pool_iam_member#expression ComputeStoragePoolIamMember#expression}.
 
 ---
 
@@ -579,7 +579,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_storage_pool_iam_member#title ComputeStoragePoolIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_storage_pool_iam_member#title ComputeStoragePoolIamMember#title}.
 
 ---
 
@@ -587,7 +587,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_storage_pool_iam_member#description ComputeStoragePoolIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_storage_pool_iam_member#description ComputeStoragePoolIamMember#description}.
 
 ---
 
@@ -729,7 +729,7 @@ The construct id used in the generated config for the ComputeStoragePoolIamMembe
 
 The id of the existing ComputeStoragePoolIamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_storage_pool_iam_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_storage_pool_iam_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1107,9 +1107,9 @@ computeStoragePoolIamMember.ComputeStoragePoolIamMemberCondition(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeStoragePoolIamMember.ComputeStoragePoolIamMemberCondition.property.expression">expression</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_storage_pool_iam_member#expression ComputeStoragePoolIamMember#expression}. |
-| <code><a href="#@cdktn/provider-google.computeStoragePoolIamMember.ComputeStoragePoolIamMemberCondition.property.title">title</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_storage_pool_iam_member#title ComputeStoragePoolIamMember#title}. |
-| <code><a href="#@cdktn/provider-google.computeStoragePoolIamMember.ComputeStoragePoolIamMemberCondition.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_storage_pool_iam_member#description ComputeStoragePoolIamMember#description}. |
+| <code><a href="#@cdktn/provider-google.computeStoragePoolIamMember.ComputeStoragePoolIamMemberCondition.property.expression">expression</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_storage_pool_iam_member#expression ComputeStoragePoolIamMember#expression}. |
+| <code><a href="#@cdktn/provider-google.computeStoragePoolIamMember.ComputeStoragePoolIamMemberCondition.property.title">title</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_storage_pool_iam_member#title ComputeStoragePoolIamMember#title}. |
+| <code><a href="#@cdktn/provider-google.computeStoragePoolIamMember.ComputeStoragePoolIamMemberCondition.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_storage_pool_iam_member#description ComputeStoragePoolIamMember#description}. |
 
 ---
 
@@ -1121,7 +1121,7 @@ expression: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_storage_pool_iam_member#expression ComputeStoragePoolIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_storage_pool_iam_member#expression ComputeStoragePoolIamMember#expression}.
 
 ---
 
@@ -1133,7 +1133,7 @@ title: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_storage_pool_iam_member#title ComputeStoragePoolIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_storage_pool_iam_member#title ComputeStoragePoolIamMember#title}.
 
 ---
 
@@ -1145,7 +1145,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_storage_pool_iam_member#description ComputeStoragePoolIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_storage_pool_iam_member#description ComputeStoragePoolIamMember#description}.
 
 ---
 
@@ -1185,13 +1185,13 @@ computeStoragePoolIamMember.ComputeStoragePoolIamMemberConfig(
 | <code><a href="#@cdktn/provider-google.computeStoragePoolIamMember.ComputeStoragePoolIamMemberConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeStoragePoolIamMember.ComputeStoragePoolIamMemberConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeStoragePoolIamMember.ComputeStoragePoolIamMemberConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeStoragePoolIamMember.ComputeStoragePoolIamMemberConfig.property.member">member</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_storage_pool_iam_member#member ComputeStoragePoolIamMember#member}. |
-| <code><a href="#@cdktn/provider-google.computeStoragePoolIamMember.ComputeStoragePoolIamMemberConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_storage_pool_iam_member#name ComputeStoragePoolIamMember#name}. |
-| <code><a href="#@cdktn/provider-google.computeStoragePoolIamMember.ComputeStoragePoolIamMemberConfig.property.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_storage_pool_iam_member#role ComputeStoragePoolIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.computeStoragePoolIamMember.ComputeStoragePoolIamMemberConfig.property.member">member</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_storage_pool_iam_member#member ComputeStoragePoolIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.computeStoragePoolIamMember.ComputeStoragePoolIamMemberConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_storage_pool_iam_member#name ComputeStoragePoolIamMember#name}. |
+| <code><a href="#@cdktn/provider-google.computeStoragePoolIamMember.ComputeStoragePoolIamMemberConfig.property.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_storage_pool_iam_member#role ComputeStoragePoolIamMember#role}. |
 | <code><a href="#@cdktn/provider-google.computeStoragePoolIamMember.ComputeStoragePoolIamMemberConfig.property.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.computeStoragePoolIamMember.ComputeStoragePoolIamMemberCondition">ComputeStoragePoolIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.computeStoragePoolIamMember.ComputeStoragePoolIamMemberConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_storage_pool_iam_member#id ComputeStoragePoolIamMember#id}. |
-| <code><a href="#@cdktn/provider-google.computeStoragePoolIamMember.ComputeStoragePoolIamMemberConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_storage_pool_iam_member#project ComputeStoragePoolIamMember#project}. |
-| <code><a href="#@cdktn/provider-google.computeStoragePoolIamMember.ComputeStoragePoolIamMemberConfig.property.zone">zone</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_storage_pool_iam_member#zone ComputeStoragePoolIamMember#zone}. |
+| <code><a href="#@cdktn/provider-google.computeStoragePoolIamMember.ComputeStoragePoolIamMemberConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_storage_pool_iam_member#id ComputeStoragePoolIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.computeStoragePoolIamMember.ComputeStoragePoolIamMemberConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_storage_pool_iam_member#project ComputeStoragePoolIamMember#project}. |
+| <code><a href="#@cdktn/provider-google.computeStoragePoolIamMember.ComputeStoragePoolIamMemberConfig.property.zone">zone</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_storage_pool_iam_member#zone ComputeStoragePoolIamMember#zone}. |
 
 ---
 
@@ -1273,7 +1273,7 @@ member: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_storage_pool_iam_member#member ComputeStoragePoolIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_storage_pool_iam_member#member ComputeStoragePoolIamMember#member}.
 
 ---
 
@@ -1285,7 +1285,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_storage_pool_iam_member#name ComputeStoragePoolIamMember#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_storage_pool_iam_member#name ComputeStoragePoolIamMember#name}.
 
 ---
 
@@ -1297,7 +1297,7 @@ role: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_storage_pool_iam_member#role ComputeStoragePoolIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_storage_pool_iam_member#role ComputeStoragePoolIamMember#role}.
 
 ---
 
@@ -1311,7 +1311,7 @@ condition: ComputeStoragePoolIamMemberCondition
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_storage_pool_iam_member#condition ComputeStoragePoolIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_storage_pool_iam_member#condition ComputeStoragePoolIamMember#condition}
 
 ---
 
@@ -1323,7 +1323,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_storage_pool_iam_member#id ComputeStoragePoolIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_storage_pool_iam_member#id ComputeStoragePoolIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1338,7 +1338,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_storage_pool_iam_member#project ComputeStoragePoolIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_storage_pool_iam_member#project ComputeStoragePoolIamMember#project}.
 
 ---
 
@@ -1350,7 +1350,7 @@ zone: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/compute_storage_pool_iam_member#zone ComputeStoragePoolIamMember#zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_storage_pool_iam_member#zone ComputeStoragePoolIamMember#zone}.
 
 ---
 

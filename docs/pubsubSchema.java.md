@@ -4,7 +4,7 @@
 
 ### PubsubSchema <a name="PubsubSchema" id="@cdktn/provider-google.pubsubSchema.PubsubSchema"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/pubsub_schema google_pubsub_schema}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/pubsub_schema google_pubsub_schema}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.pubsubSchema.PubsubSchema.Initializer"></a>
 
@@ -43,8 +43,8 @@ PubsubSchema.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.pubsubSchema.PubsubSchema.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The ID to use for the schema, which will become the final component of the schema's resource name. |
 | <code><a href="#@cdktn/provider-google.pubsubSchema.PubsubSchema.Initializer.parameter.definition">definition</a></code> | <code>java.lang.String</code> | The definition of the schema. |
 | <code><a href="#@cdktn/provider-google.pubsubSchema.PubsubSchema.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.pubsubSchema.PubsubSchema.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/pubsub_schema#id PubsubSchema#id}. |
-| <code><a href="#@cdktn/provider-google.pubsubSchema.PubsubSchema.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/pubsub_schema#project PubsubSchema#project}. |
+| <code><a href="#@cdktn/provider-google.pubsubSchema.PubsubSchema.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/pubsub_schema#id PubsubSchema#id}. |
+| <code><a href="#@cdktn/provider-google.pubsubSchema.PubsubSchema.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/pubsub_schema#project PubsubSchema#project}. |
 | <code><a href="#@cdktn/provider-google.pubsubSchema.PubsubSchema.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.pubsubSchema.PubsubSchemaTimeouts">PubsubSchemaTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.pubsubSchema.PubsubSchema.Initializer.parameter.type">type</a></code> | <code>java.lang.String</code> | The type of the schema definition Default value: "TYPE_UNSPECIFIED" Possible values: ["TYPE_UNSPECIFIED", "PROTOCOL_BUFFER", "AVRO"]. |
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 The ID to use for the schema, which will become the final component of the schema's resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/pubsub_schema#name PubsubSchema#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/pubsub_schema#name PubsubSchema#name}
 
 ---
 
@@ -133,7 +133,7 @@ A schema can only have up to 20 revisions, so updates that fail with an
 error indicating that the limit has been reached require manually
 [deleting old revisions](https://cloud.google.com/pubsub/docs/delete-schema-revision).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/pubsub_schema#definition PubsubSchema#definition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/pubsub_schema#definition PubsubSchema#definition}
 
 ---
 
@@ -150,7 +150,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/pubsub_schema#deletion_policy PubsubSchema#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/pubsub_schema#deletion_policy PubsubSchema#deletion_policy}
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/pubsub_schema#id PubsubSchema#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/pubsub_schema#id PubsubSchema#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -169,7 +169,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/pubsub_schema#project PubsubSchema#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/pubsub_schema#project PubsubSchema#project}.
 
 ---
 
@@ -179,7 +179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/pubsub_schema#timeouts PubsubSchema#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/pubsub_schema#timeouts PubsubSchema#timeouts}
 
 ---
 
@@ -189,7 +189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The type of the schema definition Default value: "TYPE_UNSPECIFIED" Possible values: ["TYPE_UNSPECIFIED", "PROTOCOL_BUFFER", "AVRO"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/pubsub_schema#type PubsubSchema#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/pubsub_schema#type PubsubSchema#type}
 
 ---
 
@@ -693,7 +693,7 @@ The construct id used in the generated config for the PubsubSchema to import.
 
 The id of the existing PubsubSchema that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/pubsub_schema#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/pubsub_schema#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1092,8 +1092,8 @@ PubsubSchemaConfig.builder()
 | <code><a href="#@cdktn/provider-google.pubsubSchema.PubsubSchemaConfig.property.name">name</a></code> | <code>java.lang.String</code> | The ID to use for the schema, which will become the final component of the schema's resource name. |
 | <code><a href="#@cdktn/provider-google.pubsubSchema.PubsubSchemaConfig.property.definition">definition</a></code> | <code>java.lang.String</code> | The definition of the schema. |
 | <code><a href="#@cdktn/provider-google.pubsubSchema.PubsubSchemaConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.pubsubSchema.PubsubSchemaConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/pubsub_schema#id PubsubSchema#id}. |
-| <code><a href="#@cdktn/provider-google.pubsubSchema.PubsubSchemaConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/pubsub_schema#project PubsubSchema#project}. |
+| <code><a href="#@cdktn/provider-google.pubsubSchema.PubsubSchemaConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/pubsub_schema#id PubsubSchema#id}. |
+| <code><a href="#@cdktn/provider-google.pubsubSchema.PubsubSchemaConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/pubsub_schema#project PubsubSchema#project}. |
 | <code><a href="#@cdktn/provider-google.pubsubSchema.PubsubSchemaConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.pubsubSchema.PubsubSchemaTimeouts">PubsubSchemaTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.pubsubSchema.PubsubSchemaConfig.property.type">type</a></code> | <code>java.lang.String</code> | The type of the schema definition Default value: "TYPE_UNSPECIFIED" Possible values: ["TYPE_UNSPECIFIED", "PROTOCOL_BUFFER", "AVRO"]. |
 
@@ -1179,7 +1179,7 @@ public java.lang.String getName();
 
 The ID to use for the schema, which will become the final component of the schema's resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/pubsub_schema#name PubsubSchema#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/pubsub_schema#name PubsubSchema#name}
 
 ---
 
@@ -1200,7 +1200,7 @@ A schema can only have up to 20 revisions, so updates that fail with an
 error indicating that the limit has been reached require manually
 [deleting old revisions](https://cloud.google.com/pubsub/docs/delete-schema-revision).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/pubsub_schema#definition PubsubSchema#definition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/pubsub_schema#definition PubsubSchema#definition}
 
 ---
 
@@ -1221,7 +1221,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/pubsub_schema#deletion_policy PubsubSchema#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/pubsub_schema#deletion_policy PubsubSchema#deletion_policy}
 
 ---
 
@@ -1233,7 +1233,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/pubsub_schema#id PubsubSchema#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/pubsub_schema#id PubsubSchema#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1248,7 +1248,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/pubsub_schema#project PubsubSchema#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/pubsub_schema#project PubsubSchema#project}.
 
 ---
 
@@ -1262,7 +1262,7 @@ public PubsubSchemaTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/pubsub_schema#timeouts PubsubSchema#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/pubsub_schema#timeouts PubsubSchema#timeouts}
 
 ---
 
@@ -1276,7 +1276,7 @@ public java.lang.String getType();
 
 The type of the schema definition Default value: "TYPE_UNSPECIFIED" Possible values: ["TYPE_UNSPECIFIED", "PROTOCOL_BUFFER", "AVRO"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/pubsub_schema#type PubsubSchema#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/pubsub_schema#type PubsubSchema#type}
 
 ---
 
@@ -1298,9 +1298,9 @@ PubsubSchemaTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.pubsubSchema.PubsubSchemaTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/pubsub_schema#create PubsubSchema#create}. |
-| <code><a href="#@cdktn/provider-google.pubsubSchema.PubsubSchemaTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/pubsub_schema#delete PubsubSchema#delete}. |
-| <code><a href="#@cdktn/provider-google.pubsubSchema.PubsubSchemaTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/pubsub_schema#update PubsubSchema#update}. |
+| <code><a href="#@cdktn/provider-google.pubsubSchema.PubsubSchemaTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/pubsub_schema#create PubsubSchema#create}. |
+| <code><a href="#@cdktn/provider-google.pubsubSchema.PubsubSchemaTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/pubsub_schema#delete PubsubSchema#delete}. |
+| <code><a href="#@cdktn/provider-google.pubsubSchema.PubsubSchemaTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/pubsub_schema#update PubsubSchema#update}. |
 
 ---
 
@@ -1312,7 +1312,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/pubsub_schema#create PubsubSchema#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/pubsub_schema#create PubsubSchema#create}.
 
 ---
 
@@ -1324,7 +1324,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/pubsub_schema#delete PubsubSchema#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/pubsub_schema#delete PubsubSchema#delete}.
 
 ---
 
@@ -1336,7 +1336,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/pubsub_schema#update PubsubSchema#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/pubsub_schema#update PubsubSchema#update}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataGoogleIapClient <a name="DataGoogleIapClient" id="@cdktn/provider-google.dataGoogleIapClient.DataGoogleIapClient"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/iap_client google_iap_client}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/iap_client google_iap_client}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleIapClient.DataGoogleIapClient.Initializer"></a>
 
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataGoogleIapClient to imp
 
 The id of the existing DataGoogleIapClient that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/iap_client#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/iap_client#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -700,7 +700,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleiapcli
 | <code><a href="#@cdktn/provider-google.dataGoogleIapClient.DataGoogleIapClientConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleIapClient.DataGoogleIapClientConfig.property.brand">Brand</a></code> | <code>*string</code> | Identifier of the brand to which this client is attached to. The format is 'projects/{project_number}/brands/{brand_id}'. |
 | <code><a href="#@cdktn/provider-google.dataGoogleIapClient.DataGoogleIapClientConfig.property.clientId">ClientId</a></code> | <code>*string</code> | Output only. Unique identifier of the OAuth client. |
-| <code><a href="#@cdktn/provider-google.dataGoogleIapClient.DataGoogleIapClientConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/iap_client#id DataGoogleIapClient#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleIapClient.DataGoogleIapClientConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/iap_client#id DataGoogleIapClient#id}. |
 
 ---
 
@@ -784,7 +784,7 @@ Brand *string
 
 Identifier of the brand to which this client is attached to. The format is 'projects/{project_number}/brands/{brand_id}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/iap_client#brand DataGoogleIapClient#brand}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/iap_client#brand DataGoogleIapClient#brand}
 
 ---
 
@@ -798,7 +798,7 @@ ClientId *string
 
 Output only. Unique identifier of the OAuth client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/iap_client#client_id DataGoogleIapClient#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/iap_client#client_id DataGoogleIapClient#client_id}
 
 ---
 
@@ -810,7 +810,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/data-sources/iap_client#id DataGoogleIapClient#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/iap_client#id DataGoogleIapClient#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

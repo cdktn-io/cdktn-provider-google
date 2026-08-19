@@ -4,7 +4,7 @@
 
 ### PubsubSubscriptionIamMember <a name="PubsubSubscriptionIamMember" id="@cdktn/provider-google.pubsubSubscriptionIamMember.PubsubSubscriptionIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/pubsub_subscription_iam_member google_pubsub_subscription_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/pubsub_subscription_iam_member google_pubsub_subscription_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.pubsubSubscriptionIamMember.PubsubSubscriptionIamMember.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the PubsubSubscriptionIamMembe
 
 The id of the existing PubsubSubscriptionIamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/pubsub_subscription_iam_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/pubsub_subscription_iam_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -875,9 +875,9 @@ const pubsubSubscriptionIamMemberCondition: pubsubSubscriptionIamMember.PubsubSu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.pubsubSubscriptionIamMember.PubsubSubscriptionIamMemberCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/pubsub_subscription_iam_member#expression PubsubSubscriptionIamMember#expression}. |
-| <code><a href="#@cdktn/provider-google.pubsubSubscriptionIamMember.PubsubSubscriptionIamMemberCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/pubsub_subscription_iam_member#title PubsubSubscriptionIamMember#title}. |
-| <code><a href="#@cdktn/provider-google.pubsubSubscriptionIamMember.PubsubSubscriptionIamMemberCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/pubsub_subscription_iam_member#description PubsubSubscriptionIamMember#description}. |
+| <code><a href="#@cdktn/provider-google.pubsubSubscriptionIamMember.PubsubSubscriptionIamMemberCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/pubsub_subscription_iam_member#expression PubsubSubscriptionIamMember#expression}. |
+| <code><a href="#@cdktn/provider-google.pubsubSubscriptionIamMember.PubsubSubscriptionIamMemberCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/pubsub_subscription_iam_member#title PubsubSubscriptionIamMember#title}. |
+| <code><a href="#@cdktn/provider-google.pubsubSubscriptionIamMember.PubsubSubscriptionIamMemberCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/pubsub_subscription_iam_member#description PubsubSubscriptionIamMember#description}. |
 
 ---
 
@@ -889,7 +889,7 @@ public readonly expression: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/pubsub_subscription_iam_member#expression PubsubSubscriptionIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/pubsub_subscription_iam_member#expression PubsubSubscriptionIamMember#expression}.
 
 ---
 
@@ -901,7 +901,7 @@ public readonly title: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/pubsub_subscription_iam_member#title PubsubSubscriptionIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/pubsub_subscription_iam_member#title PubsubSubscriptionIamMember#title}.
 
 ---
 
@@ -913,7 +913,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/pubsub_subscription_iam_member#description PubsubSubscriptionIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/pubsub_subscription_iam_member#description PubsubSubscriptionIamMember#description}.
 
 ---
 
@@ -938,12 +938,12 @@ const pubsubSubscriptionIamMemberConfig: pubsubSubscriptionIamMember.PubsubSubsc
 | <code><a href="#@cdktn/provider-google.pubsubSubscriptionIamMember.PubsubSubscriptionIamMemberConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubSubscriptionIamMember.PubsubSubscriptionIamMemberConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.pubsubSubscriptionIamMember.PubsubSubscriptionIamMemberConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.pubsubSubscriptionIamMember.PubsubSubscriptionIamMemberConfig.property.member">member</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/pubsub_subscription_iam_member#member PubsubSubscriptionIamMember#member}. |
-| <code><a href="#@cdktn/provider-google.pubsubSubscriptionIamMember.PubsubSubscriptionIamMemberConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/pubsub_subscription_iam_member#role PubsubSubscriptionIamMember#role}. |
-| <code><a href="#@cdktn/provider-google.pubsubSubscriptionIamMember.PubsubSubscriptionIamMemberConfig.property.subscription">subscription</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/pubsub_subscription_iam_member#subscription PubsubSubscriptionIamMember#subscription}. |
+| <code><a href="#@cdktn/provider-google.pubsubSubscriptionIamMember.PubsubSubscriptionIamMemberConfig.property.member">member</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/pubsub_subscription_iam_member#member PubsubSubscriptionIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.pubsubSubscriptionIamMember.PubsubSubscriptionIamMemberConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/pubsub_subscription_iam_member#role PubsubSubscriptionIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.pubsubSubscriptionIamMember.PubsubSubscriptionIamMemberConfig.property.subscription">subscription</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/pubsub_subscription_iam_member#subscription PubsubSubscriptionIamMember#subscription}. |
 | <code><a href="#@cdktn/provider-google.pubsubSubscriptionIamMember.PubsubSubscriptionIamMemberConfig.property.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.pubsubSubscriptionIamMember.PubsubSubscriptionIamMemberCondition">PubsubSubscriptionIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.pubsubSubscriptionIamMember.PubsubSubscriptionIamMemberConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/pubsub_subscription_iam_member#id PubsubSubscriptionIamMember#id}. |
-| <code><a href="#@cdktn/provider-google.pubsubSubscriptionIamMember.PubsubSubscriptionIamMemberConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/pubsub_subscription_iam_member#project PubsubSubscriptionIamMember#project}. |
+| <code><a href="#@cdktn/provider-google.pubsubSubscriptionIamMember.PubsubSubscriptionIamMemberConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/pubsub_subscription_iam_member#id PubsubSubscriptionIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.pubsubSubscriptionIamMember.PubsubSubscriptionIamMemberConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/pubsub_subscription_iam_member#project PubsubSubscriptionIamMember#project}. |
 
 ---
 
@@ -1025,7 +1025,7 @@ public readonly member: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/pubsub_subscription_iam_member#member PubsubSubscriptionIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/pubsub_subscription_iam_member#member PubsubSubscriptionIamMember#member}.
 
 ---
 
@@ -1037,7 +1037,7 @@ public readonly role: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/pubsub_subscription_iam_member#role PubsubSubscriptionIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/pubsub_subscription_iam_member#role PubsubSubscriptionIamMember#role}.
 
 ---
 
@@ -1049,7 +1049,7 @@ public readonly subscription: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/pubsub_subscription_iam_member#subscription PubsubSubscriptionIamMember#subscription}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/pubsub_subscription_iam_member#subscription PubsubSubscriptionIamMember#subscription}.
 
 ---
 
@@ -1063,7 +1063,7 @@ public readonly condition: PubsubSubscriptionIamMemberCondition;
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/pubsub_subscription_iam_member#condition PubsubSubscriptionIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/pubsub_subscription_iam_member#condition PubsubSubscriptionIamMember#condition}
 
 ---
 
@@ -1075,7 +1075,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/pubsub_subscription_iam_member#id PubsubSubscriptionIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/pubsub_subscription_iam_member#id PubsubSubscriptionIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1090,7 +1090,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/pubsub_subscription_iam_member#project PubsubSubscriptionIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/pubsub_subscription_iam_member#project PubsubSubscriptionIamMember#project}.
 
 ---
 

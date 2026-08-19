@@ -1,3 +1,3 @@
 # `google_kms_ekm_connection_iam_policy`
 
-Refer to the Terraform Registry for docs: [`google_kms_ekm_connection_iam_policy`](https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/kms_ekm_connection_iam_policy).
+Refer to the Terraform Registry for docs: [`google_kms_ekm_connection_iam_policy`](https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/kms_ekm_connection_iam_policy).

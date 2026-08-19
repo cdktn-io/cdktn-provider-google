@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dialogflow_environment
+// https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dialogflow_environment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -17,7 +17,7 @@ export interface DialogflowEnvironmentConfig extends cdktn.TerraformMetaArgument
   * - projects/<Project ID>/agent/versions/<Version ID>
   * - projects/<Project ID>/locations/<Location ID>/agent/versions/<Version ID>
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dialogflow_environment#agent_version DialogflowEnvironment#agent_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dialogflow_environment#agent_version DialogflowEnvironment#agent_version}
   */
   readonly agentVersion?: string;
   /**
@@ -29,50 +29,50 @@ export interface DialogflowEnvironmentConfig extends cdktn.TerraformMetaArgument
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dialogflow_environment#deletion_policy DialogflowEnvironment#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dialogflow_environment#deletion_policy DialogflowEnvironment#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * The developer-provided description for this environment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dialogflow_environment#description DialogflowEnvironment#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dialogflow_environment#description DialogflowEnvironment#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dialogflow_environment#environmentid DialogflowEnvironment#environmentid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dialogflow_environment#environmentid DialogflowEnvironment#environmentid}
   */
   readonly environmentid: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dialogflow_environment#id DialogflowEnvironment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dialogflow_environment#id DialogflowEnvironment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dialogflow_environment#location DialogflowEnvironment#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dialogflow_environment#location DialogflowEnvironment#location}
   */
   readonly location?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dialogflow_environment#project DialogflowEnvironment#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dialogflow_environment#project DialogflowEnvironment#project}
   */
   readonly project?: string;
   /**
   * fulfillment block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dialogflow_environment#fulfillment DialogflowEnvironment#fulfillment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dialogflow_environment#fulfillment DialogflowEnvironment#fulfillment}
   */
   readonly fulfillment?: DialogflowEnvironmentFulfillment;
   /**
   * text_to_speech_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dialogflow_environment#text_to_speech_settings DialogflowEnvironment#text_to_speech_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dialogflow_environment#text_to_speech_settings DialogflowEnvironment#text_to_speech_settings}
   */
   readonly textToSpeechSettings?: DialogflowEnvironmentTextToSpeechSettings;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dialogflow_environment#timeouts DialogflowEnvironment#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dialogflow_environment#timeouts DialogflowEnvironment#timeouts}
   */
   readonly timeouts?: DialogflowEnvironmentTimeouts;
 }
@@ -80,7 +80,7 @@ export interface DialogflowEnvironmentFulfillmentFeatures {
   /**
   * The type of the feature that enabled for fulfillment. Possible values: ["TYPE_UNSPECIFIED", "SMALLTALK"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dialogflow_environment#type DialogflowEnvironment#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dialogflow_environment#type DialogflowEnvironment#type}
   */
   readonly type: string;
 }
@@ -195,25 +195,25 @@ export interface DialogflowEnvironmentFulfillmentGenericWebService {
   /**
   * The password for HTTP Basic authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dialogflow_environment#password DialogflowEnvironment#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dialogflow_environment#password DialogflowEnvironment#password}
   */
   readonly password?: string;
   /**
   * The HTTP request headers to send together with fulfillment requests
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dialogflow_environment#request_headers DialogflowEnvironment#request_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dialogflow_environment#request_headers DialogflowEnvironment#request_headers}
   */
   readonly requestHeaders?: { [key: string]: string };
   /**
   * The fulfillment URI for receiving POST requests. It must use https protocol.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dialogflow_environment#uri DialogflowEnvironment#uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dialogflow_environment#uri DialogflowEnvironment#uri}
   */
   readonly uri: string;
   /**
   * The user name for HTTP Basic authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dialogflow_environment#username DialogflowEnvironment#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dialogflow_environment#username DialogflowEnvironment#username}
   */
   readonly username?: string;
 }
@@ -383,7 +383,7 @@ export interface DialogflowEnvironmentFulfillment {
   /**
   * The human-readable name of the fulfillment, unique within the agent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dialogflow_environment#display_name DialogflowEnvironment#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dialogflow_environment#display_name DialogflowEnvironment#display_name}
   */
   readonly displayName?: string;
   /**
@@ -391,19 +391,19 @@ export interface DialogflowEnvironmentFulfillment {
   * - projects/<Project ID>/agent/fulfillment
   * - projects/<Project ID>/locations/<Location ID>/agent/fulfillment
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dialogflow_environment#name DialogflowEnvironment#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dialogflow_environment#name DialogflowEnvironment#name}
   */
   readonly name?: string;
   /**
   * features block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dialogflow_environment#features DialogflowEnvironment#features}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dialogflow_environment#features DialogflowEnvironment#features}
   */
   readonly features?: DialogflowEnvironmentFulfillmentFeatures[] | cdktn.IResolvable;
   /**
   * generic_web_service block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dialogflow_environment#generic_web_service DialogflowEnvironment#generic_web_service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dialogflow_environment#generic_web_service DialogflowEnvironment#generic_web_service}
   */
   readonly genericWebService?: DialogflowEnvironmentFulfillmentGenericWebService;
 }
@@ -576,13 +576,13 @@ export interface DialogflowEnvironmentTextToSpeechSettingsSynthesizeSpeechConfig
   /**
   * The name of the voice.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dialogflow_environment#name DialogflowEnvironment#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dialogflow_environment#name DialogflowEnvironment#name}
   */
   readonly name?: string;
   /**
   * The preferred gender of the voice. Possible values: ["SSML_VOICE_GENDER_UNSPECIFIED", "SSML_VOICE_GENDER_MALE", "SSML_VOICE_GENDER_FEMALE", "SSML_VOICE_GENDER_NEUTRAL"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dialogflow_environment#ssml_gender DialogflowEnvironment#ssml_gender}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dialogflow_environment#ssml_gender DialogflowEnvironment#ssml_gender}
   */
   readonly ssmlGender?: string;
 }
@@ -697,35 +697,35 @@ export interface DialogflowEnvironmentTextToSpeechSettingsSynthesizeSpeechConfig
   /**
   * An identifier which selects 'audio effects' profiles that are applied on (post synthesized) text to speech. Effects are applied on top of each other in the order they are given.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dialogflow_environment#effects_profile_id DialogflowEnvironment#effects_profile_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dialogflow_environment#effects_profile_id DialogflowEnvironment#effects_profile_id}
   */
   readonly effectsProfileId?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dialogflow_environment#language DialogflowEnvironment#language}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dialogflow_environment#language DialogflowEnvironment#language}
   */
   readonly language: string;
   /**
   * Speaking pitch, in the range [-20.0, 20.0]. 20 means increase 20 semitones from the original pitch. -20 means decrease 20 semitones from the original pitch.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dialogflow_environment#pitch DialogflowEnvironment#pitch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dialogflow_environment#pitch DialogflowEnvironment#pitch}
   */
   readonly pitch?: number;
   /**
   * Speaking rate/speed, in the range [0.25, 4.0].
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dialogflow_environment#speaking_rate DialogflowEnvironment#speaking_rate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dialogflow_environment#speaking_rate DialogflowEnvironment#speaking_rate}
   */
   readonly speakingRate?: number;
   /**
   * Volume gain (in dB) of the normal native volume supported by the specific voice.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dialogflow_environment#volume_gain_db DialogflowEnvironment#volume_gain_db}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dialogflow_environment#volume_gain_db DialogflowEnvironment#volume_gain_db}
   */
   readonly volumeGainDb?: number;
   /**
   * voice block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dialogflow_environment#voice DialogflowEnvironment#voice}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dialogflow_environment#voice DialogflowEnvironment#voice}
   */
   readonly voice?: DialogflowEnvironmentTextToSpeechSettingsSynthesizeSpeechConfigsVoice;
 }
@@ -985,25 +985,25 @@ export interface DialogflowEnvironmentTextToSpeechSettings {
   /**
   * Indicates whether text to speech is enabled. Even when this field is false, other settings in this proto are still retained.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dialogflow_environment#enable_text_to_speech DialogflowEnvironment#enable_text_to_speech}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dialogflow_environment#enable_text_to_speech DialogflowEnvironment#enable_text_to_speech}
   */
   readonly enableTextToSpeech?: boolean | cdktn.IResolvable;
   /**
   * Audio encoding of the synthesized audio content. Possible values: ["OUTPUT_AUDIO_ENCODING_UNSPECIFIED", "OUTPUT_AUDIO_ENCODING_LINEAR_16", "OUTPUT_AUDIO_ENCODING_MP3", "OUTPUT_AUDIO_ENCODING_MP3_64_KBPS", "OUTPUT_AUDIO_ENCODING_OGG_OPUS", "OUTPUT_AUDIO_ENCODING_MULAW", "OUTPUT_AUDIO_ENCODING_ALAW"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dialogflow_environment#output_audio_encoding DialogflowEnvironment#output_audio_encoding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dialogflow_environment#output_audio_encoding DialogflowEnvironment#output_audio_encoding}
   */
   readonly outputAudioEncoding?: string;
   /**
   * The synthesis sample rate (in hertz) for this audio.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dialogflow_environment#sample_rate_hertz DialogflowEnvironment#sample_rate_hertz}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dialogflow_environment#sample_rate_hertz DialogflowEnvironment#sample_rate_hertz}
   */
   readonly sampleRateHertz?: number;
   /**
   * synthesize_speech_configs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dialogflow_environment#synthesize_speech_configs DialogflowEnvironment#synthesize_speech_configs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dialogflow_environment#synthesize_speech_configs DialogflowEnvironment#synthesize_speech_configs}
   */
   readonly synthesizeSpeechConfigs?: DialogflowEnvironmentTextToSpeechSettingsSynthesizeSpeechConfigs[] | cdktn.IResolvable;
 }
@@ -1174,15 +1174,15 @@ export class DialogflowEnvironmentTextToSpeechSettingsOutputReference extends cd
 }
 export interface DialogflowEnvironmentTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dialogflow_environment#create DialogflowEnvironment#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dialogflow_environment#create DialogflowEnvironment#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dialogflow_environment#delete DialogflowEnvironment#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dialogflow_environment#delete DialogflowEnvironment#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dialogflow_environment#update DialogflowEnvironment#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dialogflow_environment#update DialogflowEnvironment#update}
   */
   readonly update?: string;
 }
@@ -1334,7 +1334,7 @@ export class DialogflowEnvironmentTimeoutsOutputReference extends cdktn.ComplexO
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dialogflow_environment google_dialogflow_environment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dialogflow_environment google_dialogflow_environment}
 */
 export class DialogflowEnvironment extends cdktn.TerraformResource {
 
@@ -1350,7 +1350,7 @@ export class DialogflowEnvironment extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a DialogflowEnvironment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DialogflowEnvironment to import
-  * @param importFromId The id of the existing DialogflowEnvironment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dialogflow_environment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DialogflowEnvironment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dialogflow_environment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DialogflowEnvironment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1362,7 +1362,7 @@ export class DialogflowEnvironment extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/dialogflow_environment google_dialogflow_environment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dialogflow_environment google_dialogflow_environment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1373,7 +1373,7 @@ export class DialogflowEnvironment extends cdktn.TerraformResource {
       terraformResourceType: 'google_dialogflow_environment',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.44.0',
+        providerVersion: '7.45.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

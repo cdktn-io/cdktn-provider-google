@@ -4,7 +4,7 @@
 
 ### ApphubServiceProjectAttachment <a name="ApphubServiceProjectAttachment" id="@cdktn/provider-google.apphubServiceProjectAttachment.ApphubServiceProjectAttachment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apphub_service_project_attachment google_apphub_service_project_attachment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apphub_service_project_attachment google_apphub_service_project_attachment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apphubServiceProjectAttachment.ApphubServiceProjectAttachment.Initializer"></a>
 
@@ -41,8 +41,8 @@ ApphubServiceProjectAttachment.Builder.create(Construct scope, java.lang.String 
 | <code><a href="#@cdktn/provider-google.apphubServiceProjectAttachment.ApphubServiceProjectAttachment.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apphubServiceProjectAttachment.ApphubServiceProjectAttachment.Initializer.parameter.serviceProjectAttachmentId">serviceProjectAttachmentId</a></code> | <code>java.lang.String</code> | Required. |
 | <code><a href="#@cdktn/provider-google.apphubServiceProjectAttachment.ApphubServiceProjectAttachment.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.apphubServiceProjectAttachment.ApphubServiceProjectAttachment.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apphub_service_project_attachment#id ApphubServiceProjectAttachment#id}. |
-| <code><a href="#@cdktn/provider-google.apphubServiceProjectAttachment.ApphubServiceProjectAttachment.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apphub_service_project_attachment#project ApphubServiceProjectAttachment#project}. |
+| <code><a href="#@cdktn/provider-google.apphubServiceProjectAttachment.ApphubServiceProjectAttachment.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apphub_service_project_attachment#id ApphubServiceProjectAttachment#id}. |
+| <code><a href="#@cdktn/provider-google.apphubServiceProjectAttachment.ApphubServiceProjectAttachment.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apphub_service_project_attachment#project ApphubServiceProjectAttachment#project}. |
 | <code><a href="#@cdktn/provider-google.apphubServiceProjectAttachment.ApphubServiceProjectAttachment.Initializer.parameter.serviceProject">serviceProject</a></code> | <code>java.lang.String</code> | "Immutable. |
 | <code><a href="#@cdktn/provider-google.apphubServiceProjectAttachment.ApphubServiceProjectAttachment.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.apphubServiceProjectAttachment.ApphubServiceProjectAttachmentTimeouts">ApphubServiceProjectAttachmentTimeouts</a></code> | timeouts block. |
 
@@ -116,7 +116,7 @@ Required.
 
 The service project attachment identifier must contain the project_id of the service project specified in the service_project_attachment.service_project field. Hint: "projects/{project_id}"
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apphub_service_project_attachment#service_project_attachment_id ApphubServiceProjectAttachment#service_project_attachment_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apphub_service_project_attachment#service_project_attachment_id ApphubServiceProjectAttachment#service_project_attachment_id}
 
 ---
 
@@ -133,7 +133,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apphub_service_project_attachment#deletion_policy ApphubServiceProjectAttachment#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apphub_service_project_attachment#deletion_policy ApphubServiceProjectAttachment#deletion_policy}
 
 ---
 
@@ -141,7 +141,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apphub_service_project_attachment#id ApphubServiceProjectAttachment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apphub_service_project_attachment#id ApphubServiceProjectAttachment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -152,7 +152,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apphub_service_project_attachment#project ApphubServiceProjectAttachment#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apphub_service_project_attachment#project ApphubServiceProjectAttachment#project}.
 
 ---
 
@@ -166,7 +166,7 @@ Service project name in the format: "projects/abc"
 or "projects/123". As input, project name with either project id or number
 are accepted. As output, this field will contain project number."
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apphub_service_project_attachment#service_project ApphubServiceProjectAttachment#service_project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apphub_service_project_attachment#service_project ApphubServiceProjectAttachment#service_project}
 
 ---
 
@@ -176,7 +176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apphub_service_project_attachment#timeouts ApphubServiceProjectAttachment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apphub_service_project_attachment#timeouts ApphubServiceProjectAttachment#timeouts}
 
 ---
 
@@ -673,7 +673,7 @@ The construct id used in the generated config for the ApphubServiceProjectAttach
 
 The id of the existing ApphubServiceProjectAttachment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apphub_service_project_attachment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apphub_service_project_attachment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1081,8 +1081,8 @@ ApphubServiceProjectAttachmentConfig.builder()
 | <code><a href="#@cdktn/provider-google.apphubServiceProjectAttachment.ApphubServiceProjectAttachmentConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apphubServiceProjectAttachment.ApphubServiceProjectAttachmentConfig.property.serviceProjectAttachmentId">serviceProjectAttachmentId</a></code> | <code>java.lang.String</code> | Required. |
 | <code><a href="#@cdktn/provider-google.apphubServiceProjectAttachment.ApphubServiceProjectAttachmentConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.apphubServiceProjectAttachment.ApphubServiceProjectAttachmentConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apphub_service_project_attachment#id ApphubServiceProjectAttachment#id}. |
-| <code><a href="#@cdktn/provider-google.apphubServiceProjectAttachment.ApphubServiceProjectAttachmentConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apphub_service_project_attachment#project ApphubServiceProjectAttachment#project}. |
+| <code><a href="#@cdktn/provider-google.apphubServiceProjectAttachment.ApphubServiceProjectAttachmentConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apphub_service_project_attachment#id ApphubServiceProjectAttachment#id}. |
+| <code><a href="#@cdktn/provider-google.apphubServiceProjectAttachment.ApphubServiceProjectAttachmentConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apphub_service_project_attachment#project ApphubServiceProjectAttachment#project}. |
 | <code><a href="#@cdktn/provider-google.apphubServiceProjectAttachment.ApphubServiceProjectAttachmentConfig.property.serviceProject">serviceProject</a></code> | <code>java.lang.String</code> | "Immutable. |
 | <code><a href="#@cdktn/provider-google.apphubServiceProjectAttachment.ApphubServiceProjectAttachmentConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.apphubServiceProjectAttachment.ApphubServiceProjectAttachmentTimeouts">ApphubServiceProjectAttachmentTimeouts</a></code> | timeouts block. |
 
@@ -1170,7 +1170,7 @@ Required.
 
 The service project attachment identifier must contain the project_id of the service project specified in the service_project_attachment.service_project field. Hint: "projects/{project_id}"
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apphub_service_project_attachment#service_project_attachment_id ApphubServiceProjectAttachment#service_project_attachment_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apphub_service_project_attachment#service_project_attachment_id ApphubServiceProjectAttachment#service_project_attachment_id}
 
 ---
 
@@ -1191,7 +1191,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apphub_service_project_attachment#deletion_policy ApphubServiceProjectAttachment#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apphub_service_project_attachment#deletion_policy ApphubServiceProjectAttachment#deletion_policy}
 
 ---
 
@@ -1203,7 +1203,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apphub_service_project_attachment#id ApphubServiceProjectAttachment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apphub_service_project_attachment#id ApphubServiceProjectAttachment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1218,7 +1218,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apphub_service_project_attachment#project ApphubServiceProjectAttachment#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apphub_service_project_attachment#project ApphubServiceProjectAttachment#project}.
 
 ---
 
@@ -1236,7 +1236,7 @@ Service project name in the format: "projects/abc"
 or "projects/123". As input, project name with either project id or number
 are accepted. As output, this field will contain project number."
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apphub_service_project_attachment#service_project ApphubServiceProjectAttachment#service_project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apphub_service_project_attachment#service_project ApphubServiceProjectAttachment#service_project}
 
 ---
 
@@ -1250,7 +1250,7 @@ public ApphubServiceProjectAttachmentTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apphub_service_project_attachment#timeouts ApphubServiceProjectAttachment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apphub_service_project_attachment#timeouts ApphubServiceProjectAttachment#timeouts}
 
 ---
 
@@ -1271,8 +1271,8 @@ ApphubServiceProjectAttachmentTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apphubServiceProjectAttachment.ApphubServiceProjectAttachmentTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apphub_service_project_attachment#create ApphubServiceProjectAttachment#create}. |
-| <code><a href="#@cdktn/provider-google.apphubServiceProjectAttachment.ApphubServiceProjectAttachmentTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apphub_service_project_attachment#delete ApphubServiceProjectAttachment#delete}. |
+| <code><a href="#@cdktn/provider-google.apphubServiceProjectAttachment.ApphubServiceProjectAttachmentTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apphub_service_project_attachment#create ApphubServiceProjectAttachment#create}. |
+| <code><a href="#@cdktn/provider-google.apphubServiceProjectAttachment.ApphubServiceProjectAttachmentTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apphub_service_project_attachment#delete ApphubServiceProjectAttachment#delete}. |
 
 ---
 
@@ -1284,7 +1284,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apphub_service_project_attachment#create ApphubServiceProjectAttachment#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apphub_service_project_attachment#create ApphubServiceProjectAttachment#create}.
 
 ---
 
@@ -1296,7 +1296,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.44.0/docs/resources/apphub_service_project_attachment#delete ApphubServiceProjectAttachment#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apphub_service_project_attachment#delete ApphubServiceProjectAttachment#delete}.
 
 ---
 
