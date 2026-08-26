@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_data_product_iam_binding
+// https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dataplex_data_product_iam_binding
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,50 +13,50 @@ import * as cdktn from 'cdktn';
 
 export interface DataplexDataProductIamBindingConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_data_product_iam_binding#data_product_id DataplexDataProductIamBinding#data_product_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dataplex_data_product_iam_binding#data_product_id DataplexDataProductIamBinding#data_product_id}
   */
   readonly dataProductId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_data_product_iam_binding#id DataplexDataProductIamBinding#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dataplex_data_product_iam_binding#id DataplexDataProductIamBinding#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_data_product_iam_binding#location DataplexDataProductIamBinding#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dataplex_data_product_iam_binding#location DataplexDataProductIamBinding#location}
   */
   readonly location?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_data_product_iam_binding#members DataplexDataProductIamBinding#members}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dataplex_data_product_iam_binding#members DataplexDataProductIamBinding#members}
   */
   readonly members: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_data_product_iam_binding#project DataplexDataProductIamBinding#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dataplex_data_product_iam_binding#project DataplexDataProductIamBinding#project}
   */
   readonly project?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_data_product_iam_binding#role DataplexDataProductIamBinding#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dataplex_data_product_iam_binding#role DataplexDataProductIamBinding#role}
   */
   readonly role: string;
   /**
   * condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_data_product_iam_binding#condition DataplexDataProductIamBinding#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dataplex_data_product_iam_binding#condition DataplexDataProductIamBinding#condition}
   */
   readonly condition?: DataplexDataProductIamBindingCondition;
 }
 export interface DataplexDataProductIamBindingCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_data_product_iam_binding#description DataplexDataProductIamBinding#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dataplex_data_product_iam_binding#description DataplexDataProductIamBinding#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_data_product_iam_binding#expression DataplexDataProductIamBinding#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dataplex_data_product_iam_binding#expression DataplexDataProductIamBinding#expression}
   */
   readonly expression: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_data_product_iam_binding#title DataplexDataProductIamBinding#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dataplex_data_product_iam_binding#title DataplexDataProductIamBinding#title}
   */
   readonly title: string;
 }
@@ -192,7 +192,7 @@ export class DataplexDataProductIamBindingConditionOutputReference extends cdktn
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_data_product_iam_binding google_dataplex_data_product_iam_binding}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dataplex_data_product_iam_binding google_dataplex_data_product_iam_binding}
 */
 export class DataplexDataProductIamBinding extends cdktn.TerraformResource {
 
@@ -208,7 +208,7 @@ export class DataplexDataProductIamBinding extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a DataplexDataProductIamBinding resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataplexDataProductIamBinding to import
-  * @param importFromId The id of the existing DataplexDataProductIamBinding that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_data_product_iam_binding#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataplexDataProductIamBinding that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dataplex_data_product_iam_binding#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataplexDataProductIamBinding to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -220,7 +220,7 @@ export class DataplexDataProductIamBinding extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataplex_data_product_iam_binding google_dataplex_data_product_iam_binding} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dataplex_data_product_iam_binding google_dataplex_data_product_iam_binding} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -231,7 +231,7 @@ export class DataplexDataProductIamBinding extends cdktn.TerraformResource {
       terraformResourceType: 'google_dataplex_data_product_iam_binding',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.45.0',
+        providerVersion: '7.46.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

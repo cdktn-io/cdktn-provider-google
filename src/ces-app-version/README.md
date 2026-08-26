@@ -1,3 +1,3 @@
 # `google_ces_app_version`
 
-Refer to the Terraform Registry for docs: [`google_ces_app_version`](https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_app_version).
+Refer to the Terraform Registry for docs: [`google_ces_app_version`](https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_app_version).

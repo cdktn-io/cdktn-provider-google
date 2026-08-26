@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/artifact_registry_file
+// https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/artifact_registry_file
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,46 +13,46 @@ import * as cdktn from 'cdktn';
 
 export interface DataGoogleArtifactRegistryFileConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/artifact_registry_file#file_id DataGoogleArtifactRegistryFile#file_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/artifact_registry_file#file_id DataGoogleArtifactRegistryFile#file_id}
   */
   readonly fileId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/artifact_registry_file#id DataGoogleArtifactRegistryFile#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/artifact_registry_file#id DataGoogleArtifactRegistryFile#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/artifact_registry_file#location DataGoogleArtifactRegistryFile#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/artifact_registry_file#location DataGoogleArtifactRegistryFile#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/artifact_registry_file#output_path DataGoogleArtifactRegistryFile#output_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/artifact_registry_file#output_path DataGoogleArtifactRegistryFile#output_path}
   */
   readonly outputPath: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/artifact_registry_file#overwrite DataGoogleArtifactRegistryFile#overwrite}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/artifact_registry_file#overwrite DataGoogleArtifactRegistryFile#overwrite}
   */
   readonly overwrite?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/artifact_registry_file#project DataGoogleArtifactRegistryFile#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/artifact_registry_file#project DataGoogleArtifactRegistryFile#project}
   */
   readonly project?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/artifact_registry_file#repository_id DataGoogleArtifactRegistryFile#repository_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/artifact_registry_file#repository_id DataGoogleArtifactRegistryFile#repository_id}
   */
   readonly repositoryId: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/artifact_registry_file#timeouts DataGoogleArtifactRegistryFile#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/artifact_registry_file#timeouts DataGoogleArtifactRegistryFile#timeouts}
   */
   readonly timeouts?: DataGoogleArtifactRegistryFileTimeouts;
 }
 export interface DataGoogleArtifactRegistryFileTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/artifact_registry_file#read DataGoogleArtifactRegistryFile#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/artifact_registry_file#read DataGoogleArtifactRegistryFile#read}
   */
   readonly read?: string;
 }
@@ -146,7 +146,7 @@ export class DataGoogleArtifactRegistryFileTimeoutsOutputReference extends cdktn
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/artifact_registry_file google_artifact_registry_file}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/artifact_registry_file google_artifact_registry_file}
 */
 export class DataGoogleArtifactRegistryFile extends cdktn.TerraformDataSource {
 
@@ -162,7 +162,7 @@ export class DataGoogleArtifactRegistryFile extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataGoogleArtifactRegistryFile resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleArtifactRegistryFile to import
-  * @param importFromId The id of the existing DataGoogleArtifactRegistryFile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/artifact_registry_file#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleArtifactRegistryFile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/artifact_registry_file#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleArtifactRegistryFile to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -174,7 +174,7 @@ export class DataGoogleArtifactRegistryFile extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/artifact_registry_file google_artifact_registry_file} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/artifact_registry_file google_artifact_registry_file} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -185,7 +185,7 @@ export class DataGoogleArtifactRegistryFile extends cdktn.TerraformDataSource {
       terraformResourceType: 'google_artifact_registry_file',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.45.0',
+        providerVersion: '7.46.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

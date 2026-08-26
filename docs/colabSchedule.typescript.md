@@ -4,7 +4,7 @@
 
 ### ColabSchedule <a name="ColabSchedule" id="@cdktn/provider-google.colabSchedule.ColabSchedule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule google_colab_schedule}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule google_colab_schedule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.colabSchedule.ColabSchedule.Initializer"></a>
 
@@ -612,7 +612,7 @@ The construct id used in the generated config for the ColabSchedule to import.
 
 The id of the existing ColabSchedule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1300,10 +1300,10 @@ const colabScheduleConfig: colabSchedule.ColabScheduleConfig = { ... }
 | <code><a href="#@cdktn/provider-google.colabSchedule.ColabScheduleConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.colabSchedule.ColabScheduleConfig.property.desiredState">desiredState</a></code> | <code>string</code> | Desired state of the Colab Schedule. |
 | <code><a href="#@cdktn/provider-google.colabSchedule.ColabScheduleConfig.property.endTime">endTime</a></code> | <code>string</code> | Timestamp after which no new runs can be scheduled. |
-| <code><a href="#@cdktn/provider-google.colabSchedule.ColabScheduleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#id ColabSchedule#id}. |
+| <code><a href="#@cdktn/provider-google.colabSchedule.ColabScheduleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#id ColabSchedule#id}. |
 | <code><a href="#@cdktn/provider-google.colabSchedule.ColabScheduleConfig.property.maxConcurrentActiveRunCount">maxConcurrentActiveRunCount</a></code> | <code>string</code> | Specifies the maximum number of active runs that can be executed concurrently for this Schedule. |
 | <code><a href="#@cdktn/provider-google.colabSchedule.ColabScheduleConfig.property.maxRunCount">maxRunCount</a></code> | <code>string</code> | Maximum run count of the schedule. |
-| <code><a href="#@cdktn/provider-google.colabSchedule.ColabScheduleConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#project ColabSchedule#project}. |
+| <code><a href="#@cdktn/provider-google.colabSchedule.ColabScheduleConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#project ColabSchedule#project}. |
 | <code><a href="#@cdktn/provider-google.colabSchedule.ColabScheduleConfig.property.startTime">startTime</a></code> | <code>string</code> | The timestamp after which the first run can be scheduled. |
 | <code><a href="#@cdktn/provider-google.colabSchedule.ColabScheduleConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.colabSchedule.ColabScheduleTimeouts">ColabScheduleTimeouts</a></code> | timeouts block. |
 
@@ -1389,7 +1389,7 @@ public readonly cron: string;
 
 Cron schedule (https://en.wikipedia.org/wiki/Cron) to launch scheduled runs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#cron ColabSchedule#cron}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#cron ColabSchedule#cron}
 
 ---
 
@@ -1403,7 +1403,7 @@ public readonly displayName: string;
 
 Required. The display name of the Schedule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#display_name ColabSchedule#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#display_name ColabSchedule#display_name}
 
 ---
 
@@ -1417,7 +1417,7 @@ public readonly location: string;
 
 The location for the resource: https://cloud.google.com/colab/docs/locations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#location ColabSchedule#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#location ColabSchedule#location}
 
 ---
 
@@ -1433,7 +1433,7 @@ Maximum number of runs that can be started concurrently for this Schedule.
 
 This is the limit for starting the scheduled requests and not the execution of the notebook execution jobs created by the requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#max_concurrent_run_count ColabSchedule#max_concurrent_run_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#max_concurrent_run_count ColabSchedule#max_concurrent_run_count}
 
 ---
 
@@ -1449,7 +1449,7 @@ Whether new scheduled runs can be queued when max_concurrent_runs limit is reach
 
 If set to true, new runs will be queued instead of skipped. Default to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#allow_queueing ColabSchedule#allow_queueing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#allow_queueing ColabSchedule#allow_queueing}
 
 ---
 
@@ -1463,7 +1463,7 @@ public readonly createNotebookExecutionJobRequest: ColabScheduleCreateNotebookEx
 
 create_notebook_execution_job_request block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#create_notebook_execution_job_request ColabSchedule#create_notebook_execution_job_request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#create_notebook_execution_job_request ColabSchedule#create_notebook_execution_job_request}
 
 ---
 
@@ -1477,7 +1477,7 @@ public readonly createPipelineJobRequest: ColabScheduleCreatePipelineJobRequest;
 
 create_pipeline_job_request block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#create_pipeline_job_request ColabSchedule#create_pipeline_job_request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#create_pipeline_job_request ColabSchedule#create_pipeline_job_request}
 
 ---
 
@@ -1499,7 +1499,7 @@ management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#deletion_policy ColabSchedule#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#deletion_policy ColabSchedule#deletion_policy}
 
 ---
 
@@ -1515,7 +1515,7 @@ Desired state of the Colab Schedule.
 
 Set this field to 'ACTIVE' to start/resume the schedule, and 'PAUSED' to pause the schedule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#desired_state ColabSchedule#desired_state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#desired_state ColabSchedule#desired_state}
 
 ---
 
@@ -1531,7 +1531,7 @@ Timestamp after which no new runs can be scheduled.
 
 If specified, the schedule will be completed when either end_time is reached or when scheduled_run_count >= max_run_count. Must be in the RFC 3339 (https://www.ietf.org/rfc/rfc3339.txt) format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#end_time ColabSchedule#end_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#end_time ColabSchedule#end_time}
 
 ---
 
@@ -1543,7 +1543,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#id ColabSchedule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#id ColabSchedule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1562,7 +1562,7 @@ Specifies the maximum number of active runs that can be executed concurrently fo
 
 This limits the number of runs that can be in a non-terminal state at the same time. Currently, this field is only supported for requests of type CreatePipelineJobRequest.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#max_concurrent_active_run_count ColabSchedule#max_concurrent_active_run_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#max_concurrent_active_run_count ColabSchedule#max_concurrent_active_run_count}
 
 ---
 
@@ -1578,7 +1578,7 @@ Maximum run count of the schedule.
 
 If specified, The schedule will be completed when either startedRunCount >= maxRunCount or when endTime is reached. If not specified, new runs will keep getting scheduled until this Schedule is paused or deleted. Already scheduled runs will be allowed to complete. Unset if not specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#max_run_count ColabSchedule#max_run_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#max_run_count ColabSchedule#max_run_count}
 
 ---
 
@@ -1590,7 +1590,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#project ColabSchedule#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#project ColabSchedule#project}.
 
 ---
 
@@ -1606,7 +1606,7 @@ The timestamp after which the first run can be scheduled.
 
 Defaults to the schedule creation time. Must be in the RFC 3339 (https://www.ietf.org/rfc/rfc3339.txt) format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#start_time ColabSchedule#start_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#start_time ColabSchedule#start_time}
 
 ---
 
@@ -1620,7 +1620,7 @@ public readonly timeouts: ColabScheduleTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#timeouts ColabSchedule#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#timeouts ColabSchedule#timeouts}
 
 ---
 
@@ -1653,7 +1653,7 @@ public readonly notebookExecutionJob: ColabScheduleCreateNotebookExecutionJobReq
 
 notebook_execution_job block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#notebook_execution_job ColabSchedule#notebook_execution_job}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#notebook_execution_job ColabSchedule#notebook_execution_job}
 
 ---
 
@@ -1667,7 +1667,7 @@ public readonly parent: string;
 
 The resource name of the Location to create the NotebookExecutionJob. Format: 'projects/{project}/locations/{location}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#parent ColabSchedule#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#parent ColabSchedule#parent}
 
 ---
 
@@ -1711,7 +1711,7 @@ public readonly displayName: string;
 
 Required. The display name of the Notebook Execution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#display_name ColabSchedule#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#display_name ColabSchedule#display_name}
 
 ---
 
@@ -1725,7 +1725,7 @@ public readonly gcsOutputUri: string;
 
 The Cloud Storage location to upload the result to. Format:'gs://bucket-name'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#gcs_output_uri ColabSchedule#gcs_output_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#gcs_output_uri ColabSchedule#gcs_output_uri}
 
 ---
 
@@ -1739,7 +1739,7 @@ public readonly customEnvironmentSpec: ColabScheduleCreateNotebookExecutionJobRe
 
 custom_environment_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#custom_environment_spec ColabSchedule#custom_environment_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#custom_environment_spec ColabSchedule#custom_environment_spec}
 
 ---
 
@@ -1753,7 +1753,7 @@ public readonly dataformRepositorySource: ColabScheduleCreateNotebookExecutionJo
 
 dataform_repository_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#dataform_repository_source ColabSchedule#dataform_repository_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#dataform_repository_source ColabSchedule#dataform_repository_source}
 
 ---
 
@@ -1767,7 +1767,7 @@ public readonly encryptionSpec: ColabScheduleCreateNotebookExecutionJobRequestNo
 
 encryption_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#encryption_spec ColabSchedule#encryption_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#encryption_spec ColabSchedule#encryption_spec}
 
 ---
 
@@ -1783,7 +1783,7 @@ Max running time of the execution job in seconds (default 86400s / 24 hrs).
 
 A duration in seconds with up to nine fractional digits, ending with "s". Example: "3.5s".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#execution_timeout ColabSchedule#execution_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#execution_timeout ColabSchedule#execution_timeout}
 
 ---
 
@@ -1797,7 +1797,7 @@ public readonly executionUser: string;
 
 The user email to run the execution as.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#execution_user ColabSchedule#execution_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#execution_user ColabSchedule#execution_user}
 
 ---
 
@@ -1811,7 +1811,7 @@ public readonly gcsNotebookSource: ColabScheduleCreateNotebookExecutionJobReques
 
 gcs_notebook_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#gcs_notebook_source ColabSchedule#gcs_notebook_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#gcs_notebook_source ColabSchedule#gcs_notebook_source}
 
 ---
 
@@ -1825,7 +1825,7 @@ public readonly kernelName: string;
 
 The name of the kernel to use during notebook execution. If unset, the default kernel is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#kernel_name ColabSchedule#kernel_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#kernel_name ColabSchedule#kernel_name}
 
 ---
 
@@ -1839,7 +1839,7 @@ public readonly labels: {[ key: string ]: string};
 
 The labels with user-defined metadata to organize NotebookExecutionJobs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#labels ColabSchedule#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#labels ColabSchedule#labels}
 
 ---
 
@@ -1853,7 +1853,7 @@ public readonly notebookRuntimeTemplateResourceName: string;
 
 The NotebookRuntimeTemplate to source compute configuration from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#notebook_runtime_template_resource_name ColabSchedule#notebook_runtime_template_resource_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#notebook_runtime_template_resource_name ColabSchedule#notebook_runtime_template_resource_name}
 
 ---
 
@@ -1867,7 +1867,7 @@ public readonly serviceAccount: string;
 
 The service account to run the execution as.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#service_account ColabSchedule#service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#service_account ColabSchedule#service_account}
 
 ---
 
@@ -1881,7 +1881,7 @@ public readonly workbenchRuntime: ColabScheduleCreateNotebookExecutionJobRequest
 
 workbench_runtime block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#workbench_runtime ColabSchedule#workbench_runtime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#workbench_runtime ColabSchedule#workbench_runtime}
 
 ---
 
@@ -1915,7 +1915,7 @@ public readonly machineSpec: ColabScheduleCreateNotebookExecutionJobRequestNoteb
 
 machine_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#machine_spec ColabSchedule#machine_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#machine_spec ColabSchedule#machine_spec}
 
 ---
 
@@ -1929,7 +1929,7 @@ public readonly networkSpec: ColabScheduleCreateNotebookExecutionJobRequestNoteb
 
 network_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#network_spec ColabSchedule#network_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#network_spec ColabSchedule#network_spec}
 
 ---
 
@@ -1943,7 +1943,7 @@ public readonly persistentDiskSpec: ColabScheduleCreateNotebookExecutionJobReque
 
 persistent_disk_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#persistent_disk_spec ColabSchedule#persistent_disk_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#persistent_disk_spec ColabSchedule#persistent_disk_spec}
 
 ---
 
@@ -1982,7 +1982,7 @@ The number of accelerators to attach to the machine.
 
 For accelerator optimized machine types (https://cloud.google.com/compute/docs/accelerator-optimized-machines), One may set the accelerator_count from 1 to N for machine with N GPUs. If accelerator_count is less than or equal to N / 2, Vertex will co-schedule the replicas of the model into the same VM to save cost. For example, if the machine type is a3-highgpu-8g, which has 8 H100 GPUs, one can set accelerator_count to 1 to 8. If accelerator_count is 1, 2, 3, or 4, Vertex will co-schedule 8, 4, 2, or 2 replicas of the model into the same VM to save cost. When co-scheduling, CPU, memory and storage on the VM will be distributed to replicas on the VM. For example, one can expect a co-scheduled replica requesting 2 GPUs out of a 8-GPU VM will receive 25% of the CPU, memory and storage of the VM. Note that the feature is not compatible with multihost_gpu_node_count. When multihost_gpu_node_count is set, the co-scheduling will not be enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#accelerator_count ColabSchedule#accelerator_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#accelerator_count ColabSchedule#accelerator_count}
 
 ---
 
@@ -1996,7 +1996,7 @@ public readonly acceleratorType: string;
 
 Possible values: NVIDIA_TESLA_K80 NVIDIA_TESLA_P100 NVIDIA_TESLA_V100 NVIDIA_TESLA_P4 NVIDIA_TESLA_T4 NVIDIA_TESLA_A100 NVIDIA_A100_80GB NVIDIA_L4 NVIDIA_H100_80GB NVIDIA_H100_MEGA_80GB NVIDIA_H200_141GB NVIDIA_B200 NVIDIA_GB200 NVIDIA_RTX_PRO_6000 TPU_V2 TPU_V3 TPU_V4_POD TPU_V5_LITEPOD.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#accelerator_type ColabSchedule#accelerator_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#accelerator_type ColabSchedule#accelerator_type}
 
 ---
 
@@ -2012,7 +2012,7 @@ The Nvidia GPU partition size.
 
 When specified, the requested accelerators will be partitioned into smaller GPU partitions. For example, if the request is for 8 units of NVIDIA A100 GPUs, and gpu_partition_size="1g.10gb", the service will create 8 * 7 = 56 partitioned MIG instances. The partition size must be a value supported by the requested accelerator. Refer to [Nvidia GPU Partitioning](https://cloud.google.com/kubernetes-engine/docs/how-to/gpus-multi#multi-instance_gpu_partitions) for the available partition sizes. If set, the accelerator_count should be set to 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#gpu_partition_size ColabSchedule#gpu_partition_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#gpu_partition_size ColabSchedule#gpu_partition_size}
 
 ---
 
@@ -2028,7 +2028,7 @@ The type of the machine.
 
 See the [list of machine types supported for prediction](https://cloud.google.com/vertex-ai/docs/predictions/configure-compute#machine-types) See the [list of machine types supported for custom training](https://cloud.google.com/vertex-ai/docs/training/configure-compute#machine-types). For DeployedModel this field is optional, and the default value is 'n1-standard-2'. For BatchPredictionJob or as part of WorkerPoolSpec this field is required.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#machine_type ColabSchedule#machine_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#machine_type ColabSchedule#machine_type}
 
 ---
 
@@ -2042,7 +2042,7 @@ public readonly reservationAffinity: ColabScheduleCreateNotebookExecutionJobRequ
 
 reservation_affinity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#reservation_affinity ColabSchedule#reservation_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#reservation_affinity ColabSchedule#reservation_affinity}
 
 ---
 
@@ -2056,7 +2056,7 @@ public readonly tpuTopology: string;
 
 The topology of the TPUs. Corresponds to the TPU topologies available from GKE. (Example: tpu_topology: "2x2x1").
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#tpu_topology ColabSchedule#tpu_topology}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#tpu_topology ColabSchedule#tpu_topology}
 
 ---
 
@@ -2091,7 +2091,7 @@ public readonly reservationAffinityType: string;
 
 Specifies the reservation affinity type. Possible values: NO_RESERVATION ANY_RESERVATION SPECIFIC_RESERVATION SPECIFIC_THEN_ANY_RESERVATION SPECIFIC_THEN_NO_RESERVATION.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#reservation_affinity_type ColabSchedule#reservation_affinity_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#reservation_affinity_type ColabSchedule#reservation_affinity_type}
 
 ---
 
@@ -2107,7 +2107,7 @@ Corresponds to the label key of a reservation resource.
 
 To target a SPECIFIC_RESERVATION by name, use 'compute.googleapis.com/reservation-name' as the key and specify the name of your reservation as its value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#key ColabSchedule#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#key ColabSchedule#key}
 
 ---
 
@@ -2121,7 +2121,7 @@ public readonly useReservationPool: boolean | IResolvable;
 
 When set to true, resources will be drawn from go/cloud-ai-gcp-pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#use_reservation_pool ColabSchedule#use_reservation_pool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#use_reservation_pool ColabSchedule#use_reservation_pool}
 
 ---
 
@@ -2137,7 +2137,7 @@ Corresponds to the label values of a reservation resource.
 
 This must be the full resource name of the reservation or reservation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#values ColabSchedule#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#values ColabSchedule#values}
 
 ---
 
@@ -2171,7 +2171,7 @@ public readonly enableInternetAccess: boolean | IResolvable;
 
 Whether to enable public internet access. Default false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#enable_internet_access ColabSchedule#enable_internet_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#enable_internet_access ColabSchedule#enable_internet_access}
 
 ---
 
@@ -2185,7 +2185,7 @@ public readonly network: string;
 
 The full name of the Google Compute Engine [network](https://cloud.google.com//compute/docs/networks-and-firewalls#networks).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#network ColabSchedule#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#network ColabSchedule#network}
 
 ---
 
@@ -2199,7 +2199,7 @@ public readonly subnetwork: string;
 
 The name of the subnet that this instance is in. Format: 'projects/{project_id_or_number}/regions/{region}/subnetworks/{subnetwork_id}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#subnetwork ColabSchedule#subnetwork}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#subnetwork ColabSchedule#subnetwork}
 
 ---
 
@@ -2232,7 +2232,7 @@ public readonly diskSizeGb: string;
 
 Size in GB of the disk (default is 100GB).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#disk_size_gb ColabSchedule#disk_size_gb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#disk_size_gb ColabSchedule#disk_size_gb}
 
 ---
 
@@ -2248,7 +2248,7 @@ Type of the disk (default is "pd-standard").
 
 Valid values: "pd-ssd" (Persistent Disk Solid State Drive) "pd-standard" (Persistent Disk Hard Disk Drive) "pd-balanced" (Balanced Persistent Disk) "pd-extreme" (Extreme Persistent Disk)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#disk_type ColabSchedule#disk_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#disk_type ColabSchedule#disk_type}
 
 ---
 
@@ -2281,7 +2281,7 @@ public readonly dataformRepositoryResourceName: string;
 
 The resource name of the Dataform Repository. Format: 'projects/{project_id}/locations/{location}/repositories/{repository_id}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#dataform_repository_resource_name ColabSchedule#dataform_repository_resource_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#dataform_repository_resource_name ColabSchedule#dataform_repository_resource_name}
 
 ---
 
@@ -2295,7 +2295,7 @@ public readonly commitSha: string;
 
 The commit SHA to read repository with. If unset, the file will be read at HEAD.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#commit_sha ColabSchedule#commit_sha}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#commit_sha ColabSchedule#commit_sha}
 
 ---
 
@@ -2329,7 +2329,7 @@ Resource name of the Cloud KMS key used to protect the resource.
 
 The Cloud KMS key must be in the same region as the resource. It must have the format 'projects/{project}/locations/{location}/keyRings/{key_ring}/cryptoKeys/{crypto_key}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#kms_key_name ColabSchedule#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#kms_key_name ColabSchedule#kms_key_name}
 
 ---
 
@@ -2362,7 +2362,7 @@ public readonly uri: string;
 
 The Cloud Storage uri pointing to the ipynb file. Format: gs://bucket/notebook_file.ipynb.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#uri ColabSchedule#uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#uri ColabSchedule#uri}
 
 ---
 
@@ -2378,7 +2378,7 @@ The version of the Cloud Storage object to read.
 
 If unset, the current version of the object is read. See https://cloud.google.com/storage/docs/metadata#generation-number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#generation ColabSchedule#generation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#generation ColabSchedule#generation}
 
 ---
 
@@ -2422,7 +2422,7 @@ public readonly pipelineJob: ColabScheduleCreatePipelineJobRequestPipelineJob;
 
 pipeline_job block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#pipeline_job ColabSchedule#pipeline_job}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#pipeline_job ColabSchedule#pipeline_job}
 
 ---
 
@@ -2436,7 +2436,7 @@ public readonly parent: string;
 
 The resource name of the Location to create the PipelineJob in. Format: 'projects/{project}/locations/{location}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#parent ColabSchedule#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#parent ColabSchedule#parent}
 
 ---
 
@@ -2480,7 +2480,7 @@ The display name of the Pipeline.
 
 The name can be up to 128 characters long and can consist of any UTF-8 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#display_name ColabSchedule#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#display_name ColabSchedule#display_name}
 
 ---
 
@@ -2494,7 +2494,7 @@ public readonly encryptionSpec: ColabScheduleCreatePipelineJobRequestPipelineJob
 
 encryption_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#encryption_spec ColabSchedule#encryption_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#encryption_spec ColabSchedule#encryption_spec}
 
 ---
 
@@ -2510,7 +2510,7 @@ The labels with user-defined metadata to organize PipelineJob.
 
 Label keys and values can be no longer than 64 characters (Unicode codepoints), can only contain lowercase letters, numeric characters, underscores and dashes. International characters are allowed. See https://goo.gl/xmQnxf for more information and examples of labels. Note there is some reserved label key for Vertex AI Pipelines. - 'vertex-ai-pipelines-run-billing-id', user set value will get overrided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#labels ColabSchedule#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#labels ColabSchedule#labels}
 
 ---
 
@@ -2526,7 +2526,7 @@ The full name of the Compute Engine [network](/compute/docs/networks-and-firewal
 
 For example, 'projects/12345/global/networks/myVPC'. [Format](/compute/docs/reference/rest/v1/networks/insert) is of the form 'projects/{project}/global/networks/{network}'. Where {project} is a project number, as in '12345', and {network} is a network name. Private services access must already be configured for the network. Pipeline job will apply the network configuration to the Google Cloud resources being launched, if applied, such as Vertex AI Training or Dataflow job. If left unspecified, the workload is not peered with any network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#network ColabSchedule#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#network ColabSchedule#network}
 
 ---
 
@@ -2542,7 +2542,7 @@ A compiled definition of a pipeline, represented as a 'JSON' object.
 
 Defines the structure of the pipeline, including its components, tasks, and parameters. This specification is generated by compiling a pipeline function defined in 'Python' using the 'Kubeflow Pipelines SDK'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#pipeline_spec ColabSchedule#pipeline_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#pipeline_spec ColabSchedule#pipeline_spec}
 
 ---
 
@@ -2556,7 +2556,7 @@ public readonly preflightValidations: boolean | IResolvable;
 
 Whether to do component level validations before job creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#preflight_validations ColabSchedule#preflight_validations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#preflight_validations ColabSchedule#preflight_validations}
 
 ---
 
@@ -2570,7 +2570,7 @@ public readonly pscInterfaceConfig: ColabScheduleCreatePipelineJobRequestPipelin
 
 psc_interface_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#psc_interface_config ColabSchedule#psc_interface_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#psc_interface_config ColabSchedule#psc_interface_config}
 
 ---
 
@@ -2586,7 +2586,7 @@ A list of names for the reserved ip ranges under the VPC network that can be use
 
 If set, we will deploy the Pipeline Job's workload within the provided ip ranges. Otherwise, the job will be deployed to any ip ranges under the provided VPC network. Example: ['vertex-ai-ip-range'].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#reserved_ip_ranges ColabSchedule#reserved_ip_ranges}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#reserved_ip_ranges ColabSchedule#reserved_ip_ranges}
 
 ---
 
@@ -2600,7 +2600,7 @@ public readonly runtimeConfig: ColabScheduleCreatePipelineJobRequestPipelineJobR
 
 runtime_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#runtime_config ColabSchedule#runtime_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#runtime_config ColabSchedule#runtime_config}
 
 ---
 
@@ -2616,7 +2616,7 @@ The service account that the pipeline workload runs as.
 
 If not specified, the Compute Engine default service account in the project will be used. See https://cloud.google.com/compute/docs/access/service-accounts#default_service_account Users starting the pipeline must have the 'iam.serviceAccounts.actAs' permission on this service account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#service_account ColabSchedule#service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#service_account ColabSchedule#service_account}
 
 ---
 
@@ -2630,7 +2630,7 @@ public readonly templateUri: string;
 
 A template uri from where the PipelineJob.pipeline_spec, if empty, will be downloaded. Currently, only uri from Vertex Template Registry & Gallery is supported. Reference to https://cloud.google.com/vertex-ai/docs/pipelines/create-pipeline-template.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#template_uri ColabSchedule#template_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#template_uri ColabSchedule#template_uri}
 
 ---
 
@@ -2664,7 +2664,7 @@ Resource name of the Cloud KMS key used to protect the resource.
 
 The Cloud KMS key must be in the same region as the resource. It must have the format 'projects/{project}/locations/{location}/keyRings/{key_ring}/cryptoKeys/{crypto_key}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#kms_key_name ColabSchedule#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#kms_key_name ColabSchedule#kms_key_name}
 
 ---
 
@@ -2697,7 +2697,7 @@ public readonly dnsPeeringConfigs: IResolvable | ColabScheduleCreatePipelineJobR
 
 dns_peering_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#dns_peering_configs ColabSchedule#dns_peering_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#dns_peering_configs ColabSchedule#dns_peering_configs}
 
 ---
 
@@ -2711,7 +2711,7 @@ public readonly networkAttachment: string;
 
 The name of the Compute Engine [network attachment](https://cloud.google.com/vpc/docs/about-network-attachments) to attach to the resource within the region and user project. To specify this field, you must have already [created a network attachment] (https://cloud.google.com/vpc/docs/create-manage-network-attachments#create-network-attachments). This field is only used for resources using PSC-I.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#network_attachment ColabSchedule#network_attachment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#network_attachment ColabSchedule#network_attachment}
 
 ---
 
@@ -2745,7 +2745,7 @@ public readonly domain: string;
 
 The DNS name suffix of the zone being peered to, e.g., "my-internal-domain.corp.". Must end with a dot.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#domain ColabSchedule#domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#domain ColabSchedule#domain}
 
 ---
 
@@ -2759,7 +2759,7 @@ public readonly targetNetwork: string;
 
 The VPC network name in the target_project where the DNS zone specified by 'domain' is visible.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#target_network ColabSchedule#target_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#target_network ColabSchedule#target_network}
 
 ---
 
@@ -2775,7 +2775,7 @@ The project ID hosting the Cloud DNS managed zone that contains the 'domain'.
 
 The Vertex AI Service Agent requires the dns.peer role on this project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#target_project ColabSchedule#target_project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#target_project ColabSchedule#target_project}
 
 ---
 
@@ -2811,7 +2811,7 @@ A path in a Cloud Storage bucket, which will be treated as the root output direc
 
 It is used by the system to generate the paths of output artifacts. The artifact paths are generated with a sub-path pattern '{job_id}/{task_id}/{output_key}' under the specified output directory. The service account specified in this pipeline must have the 'storage.objects.get' and 'storage.objects.create' permissions for this bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#gcs_output_directory ColabSchedule#gcs_output_directory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#gcs_output_directory ColabSchedule#gcs_output_directory}
 
 ---
 
@@ -2825,7 +2825,7 @@ public readonly failurePolicy: string;
 
 Possible values: PIPELINE_FAILURE_POLICY_FAIL_SLOW PIPELINE_FAILURE_POLICY_FAIL_FAST.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#failure_policy ColabSchedule#failure_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#failure_policy ColabSchedule#failure_policy}
 
 ---
 
@@ -2841,7 +2841,7 @@ The runtime parameters of the PipelineJob.
 
 The parameters will be passed into PipelineJob.pipeline_spec to replace the placeholders at runtime. This field is used by pipelines built using 'PipelineJob.pipeline_spec.schema_version' 2.1.0, such as pipelines built using Kubeflow Pipelines SDK 1.9 or higher and the v2 DSL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#parameter_values ColabSchedule#parameter_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#parameter_values ColabSchedule#parameter_values}
 
 ---
 
@@ -2881,9 +2881,9 @@ const colabScheduleTimeouts: colabSchedule.ColabScheduleTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.colabSchedule.ColabScheduleTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#create ColabSchedule#create}. |
-| <code><a href="#@cdktn/provider-google.colabSchedule.ColabScheduleTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#delete ColabSchedule#delete}. |
-| <code><a href="#@cdktn/provider-google.colabSchedule.ColabScheduleTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#update ColabSchedule#update}. |
+| <code><a href="#@cdktn/provider-google.colabSchedule.ColabScheduleTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#create ColabSchedule#create}. |
+| <code><a href="#@cdktn/provider-google.colabSchedule.ColabScheduleTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#delete ColabSchedule#delete}. |
+| <code><a href="#@cdktn/provider-google.colabSchedule.ColabScheduleTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#update ColabSchedule#update}. |
 
 ---
 
@@ -2895,7 +2895,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#create ColabSchedule#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#create ColabSchedule#create}.
 
 ---
 
@@ -2907,7 +2907,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#delete ColabSchedule#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#delete ColabSchedule#delete}.
 
 ---
 
@@ -2919,7 +2919,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/colab_schedule#update ColabSchedule#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/colab_schedule#update ColabSchedule#update}.
 
 ---
 

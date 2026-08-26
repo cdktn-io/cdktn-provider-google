@@ -4,7 +4,7 @@
 
 ### BigqueryRoutineIamBinding <a name="BigqueryRoutineIamBinding" id="@cdktn/provider-google.bigqueryRoutineIamBinding.BigqueryRoutineIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_routine_iam_binding google_bigquery_routine_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/bigquery_routine_iam_binding google_bigquery_routine_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.bigqueryRoutineIamBinding.BigqueryRoutineIamBinding.Initializer"></a>
 
@@ -42,13 +42,13 @@ bigqueryRoutineIamBinding.BigqueryRoutineIamBinding(
 | <code><a href="#@cdktn/provider-google.bigqueryRoutineIamBinding.BigqueryRoutineIamBinding.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryRoutineIamBinding.BigqueryRoutineIamBinding.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryRoutineIamBinding.BigqueryRoutineIamBinding.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryRoutineIamBinding.BigqueryRoutineIamBinding.Initializer.parameter.datasetId">dataset_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_routine_iam_binding#dataset_id BigqueryRoutineIamBinding#dataset_id}. |
-| <code><a href="#@cdktn/provider-google.bigqueryRoutineIamBinding.BigqueryRoutineIamBinding.Initializer.parameter.members">members</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_routine_iam_binding#members BigqueryRoutineIamBinding#members}. |
-| <code><a href="#@cdktn/provider-google.bigqueryRoutineIamBinding.BigqueryRoutineIamBinding.Initializer.parameter.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_routine_iam_binding#role BigqueryRoutineIamBinding#role}. |
-| <code><a href="#@cdktn/provider-google.bigqueryRoutineIamBinding.BigqueryRoutineIamBinding.Initializer.parameter.routineId">routine_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_routine_iam_binding#routine_id BigqueryRoutineIamBinding#routine_id}. |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutineIamBinding.BigqueryRoutineIamBinding.Initializer.parameter.datasetId">dataset_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/bigquery_routine_iam_binding#dataset_id BigqueryRoutineIamBinding#dataset_id}. |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutineIamBinding.BigqueryRoutineIamBinding.Initializer.parameter.members">members</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/bigquery_routine_iam_binding#members BigqueryRoutineIamBinding#members}. |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutineIamBinding.BigqueryRoutineIamBinding.Initializer.parameter.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/bigquery_routine_iam_binding#role BigqueryRoutineIamBinding#role}. |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutineIamBinding.BigqueryRoutineIamBinding.Initializer.parameter.routineId">routine_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/bigquery_routine_iam_binding#routine_id BigqueryRoutineIamBinding#routine_id}. |
 | <code><a href="#@cdktn/provider-google.bigqueryRoutineIamBinding.BigqueryRoutineIamBinding.Initializer.parameter.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.bigqueryRoutineIamBinding.BigqueryRoutineIamBindingCondition">BigqueryRoutineIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.bigqueryRoutineIamBinding.BigqueryRoutineIamBinding.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_routine_iam_binding#id BigqueryRoutineIamBinding#id}. |
-| <code><a href="#@cdktn/provider-google.bigqueryRoutineIamBinding.BigqueryRoutineIamBinding.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_routine_iam_binding#project BigqueryRoutineIamBinding#project}. |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutineIamBinding.BigqueryRoutineIamBinding.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/bigquery_routine_iam_binding#id BigqueryRoutineIamBinding#id}. |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutineIamBinding.BigqueryRoutineIamBinding.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/bigquery_routine_iam_binding#project BigqueryRoutineIamBinding#project}. |
 
 ---
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_routine_iam_binding#dataset_id BigqueryRoutineIamBinding#dataset_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/bigquery_routine_iam_binding#dataset_id BigqueryRoutineIamBinding#dataset_id}.
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_routine_iam_binding#members BigqueryRoutineIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/bigquery_routine_iam_binding#members BigqueryRoutineIamBinding#members}.
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_routine_iam_binding#role BigqueryRoutineIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/bigquery_routine_iam_binding#role BigqueryRoutineIamBinding#role}.
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_routine_iam_binding#routine_id BigqueryRoutineIamBinding#routine_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/bigquery_routine_iam_binding#routine_id BigqueryRoutineIamBinding#routine_id}.
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_routine_iam_binding#condition BigqueryRoutineIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/bigquery_routine_iam_binding#condition BigqueryRoutineIamBinding#condition}
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_routine_iam_binding#id BigqueryRoutineIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/bigquery_routine_iam_binding#id BigqueryRoutineIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -169,7 +169,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_routine_iam_binding#project BigqueryRoutineIamBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/bigquery_routine_iam_binding#project BigqueryRoutineIamBinding#project}.
 
 ---
 
@@ -570,7 +570,7 @@ def put_condition(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_routine_iam_binding#expression BigqueryRoutineIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/bigquery_routine_iam_binding#expression BigqueryRoutineIamBinding#expression}.
 
 ---
 
@@ -578,7 +578,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_routine_iam_binding#title BigqueryRoutineIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/bigquery_routine_iam_binding#title BigqueryRoutineIamBinding#title}.
 
 ---
 
@@ -586,7 +586,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_routine_iam_binding#description BigqueryRoutineIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/bigquery_routine_iam_binding#description BigqueryRoutineIamBinding#description}.
 
 ---
 
@@ -722,7 +722,7 @@ The construct id used in the generated config for the BigqueryRoutineIamBinding 
 
 The id of the existing BigqueryRoutineIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_routine_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/bigquery_routine_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1100,9 +1100,9 @@ bigqueryRoutineIamBinding.BigqueryRoutineIamBindingCondition(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigqueryRoutineIamBinding.BigqueryRoutineIamBindingCondition.property.expression">expression</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_routine_iam_binding#expression BigqueryRoutineIamBinding#expression}. |
-| <code><a href="#@cdktn/provider-google.bigqueryRoutineIamBinding.BigqueryRoutineIamBindingCondition.property.title">title</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_routine_iam_binding#title BigqueryRoutineIamBinding#title}. |
-| <code><a href="#@cdktn/provider-google.bigqueryRoutineIamBinding.BigqueryRoutineIamBindingCondition.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_routine_iam_binding#description BigqueryRoutineIamBinding#description}. |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutineIamBinding.BigqueryRoutineIamBindingCondition.property.expression">expression</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/bigquery_routine_iam_binding#expression BigqueryRoutineIamBinding#expression}. |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutineIamBinding.BigqueryRoutineIamBindingCondition.property.title">title</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/bigquery_routine_iam_binding#title BigqueryRoutineIamBinding#title}. |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutineIamBinding.BigqueryRoutineIamBindingCondition.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/bigquery_routine_iam_binding#description BigqueryRoutineIamBinding#description}. |
 
 ---
 
@@ -1114,7 +1114,7 @@ expression: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_routine_iam_binding#expression BigqueryRoutineIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/bigquery_routine_iam_binding#expression BigqueryRoutineIamBinding#expression}.
 
 ---
 
@@ -1126,7 +1126,7 @@ title: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_routine_iam_binding#title BigqueryRoutineIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/bigquery_routine_iam_binding#title BigqueryRoutineIamBinding#title}.
 
 ---
 
@@ -1138,7 +1138,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_routine_iam_binding#description BigqueryRoutineIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/bigquery_routine_iam_binding#description BigqueryRoutineIamBinding#description}.
 
 ---
 
@@ -1178,13 +1178,13 @@ bigqueryRoutineIamBinding.BigqueryRoutineIamBindingConfig(
 | <code><a href="#@cdktn/provider-google.bigqueryRoutineIamBinding.BigqueryRoutineIamBindingConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryRoutineIamBinding.BigqueryRoutineIamBindingConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigqueryRoutineIamBinding.BigqueryRoutineIamBindingConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigqueryRoutineIamBinding.BigqueryRoutineIamBindingConfig.property.datasetId">dataset_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_routine_iam_binding#dataset_id BigqueryRoutineIamBinding#dataset_id}. |
-| <code><a href="#@cdktn/provider-google.bigqueryRoutineIamBinding.BigqueryRoutineIamBindingConfig.property.members">members</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_routine_iam_binding#members BigqueryRoutineIamBinding#members}. |
-| <code><a href="#@cdktn/provider-google.bigqueryRoutineIamBinding.BigqueryRoutineIamBindingConfig.property.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_routine_iam_binding#role BigqueryRoutineIamBinding#role}. |
-| <code><a href="#@cdktn/provider-google.bigqueryRoutineIamBinding.BigqueryRoutineIamBindingConfig.property.routineId">routine_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_routine_iam_binding#routine_id BigqueryRoutineIamBinding#routine_id}. |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutineIamBinding.BigqueryRoutineIamBindingConfig.property.datasetId">dataset_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/bigquery_routine_iam_binding#dataset_id BigqueryRoutineIamBinding#dataset_id}. |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutineIamBinding.BigqueryRoutineIamBindingConfig.property.members">members</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/bigquery_routine_iam_binding#members BigqueryRoutineIamBinding#members}. |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutineIamBinding.BigqueryRoutineIamBindingConfig.property.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/bigquery_routine_iam_binding#role BigqueryRoutineIamBinding#role}. |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutineIamBinding.BigqueryRoutineIamBindingConfig.property.routineId">routine_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/bigquery_routine_iam_binding#routine_id BigqueryRoutineIamBinding#routine_id}. |
 | <code><a href="#@cdktn/provider-google.bigqueryRoutineIamBinding.BigqueryRoutineIamBindingConfig.property.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.bigqueryRoutineIamBinding.BigqueryRoutineIamBindingCondition">BigqueryRoutineIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.bigqueryRoutineIamBinding.BigqueryRoutineIamBindingConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_routine_iam_binding#id BigqueryRoutineIamBinding#id}. |
-| <code><a href="#@cdktn/provider-google.bigqueryRoutineIamBinding.BigqueryRoutineIamBindingConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_routine_iam_binding#project BigqueryRoutineIamBinding#project}. |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutineIamBinding.BigqueryRoutineIamBindingConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/bigquery_routine_iam_binding#id BigqueryRoutineIamBinding#id}. |
+| <code><a href="#@cdktn/provider-google.bigqueryRoutineIamBinding.BigqueryRoutineIamBindingConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/bigquery_routine_iam_binding#project BigqueryRoutineIamBinding#project}. |
 
 ---
 
@@ -1266,7 +1266,7 @@ dataset_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_routine_iam_binding#dataset_id BigqueryRoutineIamBinding#dataset_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/bigquery_routine_iam_binding#dataset_id BigqueryRoutineIamBinding#dataset_id}.
 
 ---
 
@@ -1278,7 +1278,7 @@ members: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_routine_iam_binding#members BigqueryRoutineIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/bigquery_routine_iam_binding#members BigqueryRoutineIamBinding#members}.
 
 ---
 
@@ -1290,7 +1290,7 @@ role: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_routine_iam_binding#role BigqueryRoutineIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/bigquery_routine_iam_binding#role BigqueryRoutineIamBinding#role}.
 
 ---
 
@@ -1302,7 +1302,7 @@ routine_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_routine_iam_binding#routine_id BigqueryRoutineIamBinding#routine_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/bigquery_routine_iam_binding#routine_id BigqueryRoutineIamBinding#routine_id}.
 
 ---
 
@@ -1316,7 +1316,7 @@ condition: BigqueryRoutineIamBindingCondition
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_routine_iam_binding#condition BigqueryRoutineIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/bigquery_routine_iam_binding#condition BigqueryRoutineIamBinding#condition}
 
 ---
 
@@ -1328,7 +1328,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_routine_iam_binding#id BigqueryRoutineIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/bigquery_routine_iam_binding#id BigqueryRoutineIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1343,7 +1343,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/bigquery_routine_iam_binding#project BigqueryRoutineIamBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/bigquery_routine_iam_binding#project BigqueryRoutineIamBinding#project}.
 
 ---
 

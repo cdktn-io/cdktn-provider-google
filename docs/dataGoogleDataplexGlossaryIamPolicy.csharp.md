@@ -4,7 +4,7 @@
 
 ### DataGoogleDataplexGlossaryIamPolicy <a name="DataGoogleDataplexGlossaryIamPolicy" id="@cdktn/provider-google.dataGoogleDataplexGlossaryIamPolicy.DataGoogleDataplexGlossaryIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/dataplex_glossary_iam_policy google_dataplex_glossary_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/dataplex_glossary_iam_policy google_dataplex_glossary_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleDataplexGlossaryIamPolicy.DataGoogleDataplexGlossaryIamPolicy.Initializer"></a>
 
@@ -408,7 +408,7 @@ The construct id used in the generated config for the DataGoogleDataplexGlossary
 
 The id of the existing DataGoogleDataplexGlossaryIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/dataplex_glossary_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/dataplex_glossary_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -724,10 +724,10 @@ new DataGoogleDataplexGlossaryIamPolicyConfig {
 | <code><a href="#@cdktn/provider-google.dataGoogleDataplexGlossaryIamPolicy.DataGoogleDataplexGlossaryIamPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleDataplexGlossaryIamPolicy.DataGoogleDataplexGlossaryIamPolicyConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleDataplexGlossaryIamPolicy.DataGoogleDataplexGlossaryIamPolicyConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleDataplexGlossaryIamPolicy.DataGoogleDataplexGlossaryIamPolicyConfig.property.glossaryId">GlossaryId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/dataplex_glossary_iam_policy#glossary_id DataGoogleDataplexGlossaryIamPolicy#glossary_id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleDataplexGlossaryIamPolicy.DataGoogleDataplexGlossaryIamPolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/dataplex_glossary_iam_policy#id DataGoogleDataplexGlossaryIamPolicy#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleDataplexGlossaryIamPolicy.DataGoogleDataplexGlossaryIamPolicyConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/dataplex_glossary_iam_policy#location DataGoogleDataplexGlossaryIamPolicy#location}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleDataplexGlossaryIamPolicy.DataGoogleDataplexGlossaryIamPolicyConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/dataplex_glossary_iam_policy#project DataGoogleDataplexGlossaryIamPolicy#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleDataplexGlossaryIamPolicy.DataGoogleDataplexGlossaryIamPolicyConfig.property.glossaryId">GlossaryId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/dataplex_glossary_iam_policy#glossary_id DataGoogleDataplexGlossaryIamPolicy#glossary_id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleDataplexGlossaryIamPolicy.DataGoogleDataplexGlossaryIamPolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/dataplex_glossary_iam_policy#id DataGoogleDataplexGlossaryIamPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleDataplexGlossaryIamPolicy.DataGoogleDataplexGlossaryIamPolicyConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/dataplex_glossary_iam_policy#location DataGoogleDataplexGlossaryIamPolicy#location}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleDataplexGlossaryIamPolicy.DataGoogleDataplexGlossaryIamPolicyConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/dataplex_glossary_iam_policy#project DataGoogleDataplexGlossaryIamPolicy#project}. |
 
 ---
 
@@ -809,7 +809,7 @@ public string GlossaryId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/dataplex_glossary_iam_policy#glossary_id DataGoogleDataplexGlossaryIamPolicy#glossary_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/dataplex_glossary_iam_policy#glossary_id DataGoogleDataplexGlossaryIamPolicy#glossary_id}.
 
 ---
 
@@ -821,7 +821,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/dataplex_glossary_iam_policy#id DataGoogleDataplexGlossaryIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/dataplex_glossary_iam_policy#id DataGoogleDataplexGlossaryIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -836,7 +836,7 @@ public string Location { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/dataplex_glossary_iam_policy#location DataGoogleDataplexGlossaryIamPolicy#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/dataplex_glossary_iam_policy#location DataGoogleDataplexGlossaryIamPolicy#location}.
 
 ---
 
@@ -848,7 +848,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/dataplex_glossary_iam_policy#project DataGoogleDataplexGlossaryIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/dataplex_glossary_iam_policy#project DataGoogleDataplexGlossaryIamPolicy#project}.
 
 ---
 

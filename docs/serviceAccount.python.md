@@ -4,7 +4,7 @@
 
 ### ServiceAccount <a name="ServiceAccount" id="@cdktn/provider-google.serviceAccount.ServiceAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/service_account google_service_account}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/service_account google_service_account}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.serviceAccount.ServiceAccount.Initializer"></a>
 
@@ -50,7 +50,7 @@ serviceAccount.ServiceAccount(
 | <code><a href="#@cdktn/provider-google.serviceAccount.ServiceAccount.Initializer.parameter.description">description</a></code> | <code>str</code> | A text description of the service account. Must be less than or equal to 256 UTF-8 bytes. |
 | <code><a href="#@cdktn/provider-google.serviceAccount.ServiceAccount.Initializer.parameter.disabled">disabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether the service account is disabled. Defaults to false. |
 | <code><a href="#@cdktn/provider-google.serviceAccount.ServiceAccount.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | The display name for the service account. Can be updated without creating a new resource. |
-| <code><a href="#@cdktn/provider-google.serviceAccount.ServiceAccount.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/service_account#id ServiceAccount#id}. |
+| <code><a href="#@cdktn/provider-google.serviceAccount.ServiceAccount.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/service_account#id ServiceAccount#id}. |
 | <code><a href="#@cdktn/provider-google.serviceAccount.ServiceAccount.Initializer.parameter.project">project</a></code> | <code>str</code> | The ID of the project that the service account will be created in. Defaults to the provider project configuration. |
 | <code><a href="#@cdktn/provider-google.serviceAccount.ServiceAccount.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.serviceAccount.ServiceAccountTimeouts">ServiceAccountTimeouts</a></code> | timeouts block. |
 
@@ -124,7 +124,7 @@ The account id that is used to generate the service account email address and a 
 
 It is unique within a project, must be 6-30 characters long, and match the regular expression [a-z](%5B-a-z0-9%5D*%5Ba-z0-9%5D) to comply with RFC1035. Changing this forces a new service account to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/service_account#account_id ServiceAccount#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/service_account#account_id ServiceAccount#account_id}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 If set to true, skip service account creation if a service account with the same email already exists.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/service_account#create_ignore_already_exists ServiceAccount#create_ignore_already_exists}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/service_account#create_ignore_already_exists ServiceAccount#create_ignore_already_exists}
 
 ---
 
@@ -151,7 +151,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/service_account#deletion_policy ServiceAccount#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/service_account#deletion_policy ServiceAccount#deletion_policy}
 
 ---
 
@@ -161,7 +161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A text description of the service account. Must be less than or equal to 256 UTF-8 bytes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/service_account#description ServiceAccount#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/service_account#description ServiceAccount#description}
 
 ---
 
@@ -171,7 +171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Whether the service account is disabled. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/service_account#disabled ServiceAccount#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/service_account#disabled ServiceAccount#disabled}
 
 ---
 
@@ -181,7 +181,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The display name for the service account. Can be updated without creating a new resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/service_account#display_name ServiceAccount#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/service_account#display_name ServiceAccount#display_name}
 
 ---
 
@@ -189,7 +189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/service_account#id ServiceAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/service_account#id ServiceAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -202,7 +202,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The ID of the project that the service account will be created in. Defaults to the provider project configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/service_account#project ServiceAccount#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/service_account#project ServiceAccount#project}
 
 ---
 
@@ -212,7 +212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/service_account#timeouts ServiceAccount#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/service_account#timeouts ServiceAccount#timeouts}
 
 ---
 
@@ -616,7 +616,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/service_account#create ServiceAccount#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/service_account#create ServiceAccount#create}.
 
 ---
 
@@ -782,7 +782,7 @@ The construct id used in the generated config for the ServiceAccount to import.
 
 The id of the existing ServiceAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/service_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/service_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1263,7 +1263,7 @@ serviceAccount.ServiceAccountConfig(
 | <code><a href="#@cdktn/provider-google.serviceAccount.ServiceAccountConfig.property.description">description</a></code> | <code>str</code> | A text description of the service account. Must be less than or equal to 256 UTF-8 bytes. |
 | <code><a href="#@cdktn/provider-google.serviceAccount.ServiceAccountConfig.property.disabled">disabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether the service account is disabled. Defaults to false. |
 | <code><a href="#@cdktn/provider-google.serviceAccount.ServiceAccountConfig.property.displayName">display_name</a></code> | <code>str</code> | The display name for the service account. Can be updated without creating a new resource. |
-| <code><a href="#@cdktn/provider-google.serviceAccount.ServiceAccountConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/service_account#id ServiceAccount#id}. |
+| <code><a href="#@cdktn/provider-google.serviceAccount.ServiceAccountConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/service_account#id ServiceAccount#id}. |
 | <code><a href="#@cdktn/provider-google.serviceAccount.ServiceAccountConfig.property.project">project</a></code> | <code>str</code> | The ID of the project that the service account will be created in. Defaults to the provider project configuration. |
 | <code><a href="#@cdktn/provider-google.serviceAccount.ServiceAccountConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.serviceAccount.ServiceAccountTimeouts">ServiceAccountTimeouts</a></code> | timeouts block. |
 
@@ -1351,7 +1351,7 @@ The account id that is used to generate the service account email address and a 
 
 It is unique within a project, must be 6-30 characters long, and match the regular expression [a-z](%5B-a-z0-9%5D*%5Ba-z0-9%5D) to comply with RFC1035. Changing this forces a new service account to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/service_account#account_id ServiceAccount#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/service_account#account_id ServiceAccount#account_id}
 
 ---
 
@@ -1365,7 +1365,7 @@ create_ignore_already_exists: bool | IResolvable
 
 If set to true, skip service account creation if a service account with the same email already exists.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/service_account#create_ignore_already_exists ServiceAccount#create_ignore_already_exists}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/service_account#create_ignore_already_exists ServiceAccount#create_ignore_already_exists}
 
 ---
 
@@ -1386,7 +1386,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/service_account#deletion_policy ServiceAccount#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/service_account#deletion_policy ServiceAccount#deletion_policy}
 
 ---
 
@@ -1400,7 +1400,7 @@ description: str
 
 A text description of the service account. Must be less than or equal to 256 UTF-8 bytes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/service_account#description ServiceAccount#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/service_account#description ServiceAccount#description}
 
 ---
 
@@ -1414,7 +1414,7 @@ disabled: bool | IResolvable
 
 Whether the service account is disabled. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/service_account#disabled ServiceAccount#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/service_account#disabled ServiceAccount#disabled}
 
 ---
 
@@ -1428,7 +1428,7 @@ display_name: str
 
 The display name for the service account. Can be updated without creating a new resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/service_account#display_name ServiceAccount#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/service_account#display_name ServiceAccount#display_name}
 
 ---
 
@@ -1440,7 +1440,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/service_account#id ServiceAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/service_account#id ServiceAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1457,7 +1457,7 @@ project: str
 
 The ID of the project that the service account will be created in. Defaults to the provider project configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/service_account#project ServiceAccount#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/service_account#project ServiceAccount#project}
 
 ---
 
@@ -1471,7 +1471,7 @@ timeouts: ServiceAccountTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/service_account#timeouts ServiceAccount#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/service_account#timeouts ServiceAccount#timeouts}
 
 ---
 
@@ -1491,7 +1491,7 @@ serviceAccount.ServiceAccountTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.serviceAccount.ServiceAccountTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/service_account#create ServiceAccount#create}. |
+| <code><a href="#@cdktn/provider-google.serviceAccount.ServiceAccountTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/service_account#create ServiceAccount#create}. |
 
 ---
 
@@ -1503,7 +1503,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/service_account#create ServiceAccount#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/service_account#create ServiceAccount#create}.
 
 ---
 

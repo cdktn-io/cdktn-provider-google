@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/ephemeral-resources/service_account_id_token
+// https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/ephemeral-resources/service_account_id_token
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +15,31 @@ export interface EphemeralGoogleServiceAccountIdTokenConfig extends cdktn.Terraf
   /**
   * Delegate chain of approvals needed to perform full impersonation. Specify the fully qualified service account name.  Used only when using impersonation mode.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/ephemeral-resources/service_account_id_token#delegates EphemeralGoogleServiceAccountIdToken#delegates}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/ephemeral-resources/service_account_id_token#delegates EphemeralGoogleServiceAccountIdToken#delegates}
   */
   readonly delegates?: string[];
   /**
   * Include the verified email in the claim. Used only when using impersonation mode.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/ephemeral-resources/service_account_id_token#include_email EphemeralGoogleServiceAccountIdToken#include_email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/ephemeral-resources/service_account_id_token#include_email EphemeralGoogleServiceAccountIdToken#include_email}
   */
   readonly includeEmail?: boolean | cdktn.IResolvable;
   /**
   * The audience claim for the `id_token`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/ephemeral-resources/service_account_id_token#target_audience EphemeralGoogleServiceAccountIdToken#target_audience}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/ephemeral-resources/service_account_id_token#target_audience EphemeralGoogleServiceAccountIdToken#target_audience}
   */
   readonly targetAudience: string;
   /**
   * The email of the service account being impersonated.  Used only when using impersonation mode.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/ephemeral-resources/service_account_id_token#target_service_account EphemeralGoogleServiceAccountIdToken#target_service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/ephemeral-resources/service_account_id_token#target_service_account EphemeralGoogleServiceAccountIdToken#target_service_account}
   */
   readonly targetServiceAccount?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/ephemeral-resources/service_account_id_token google_service_account_id_token}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/ephemeral-resources/service_account_id_token google_service_account_id_token}
 */
 export class EphemeralGoogleServiceAccountIdToken extends cdktn.TerraformEphemeralResource {
 
@@ -53,7 +53,7 @@ export class EphemeralGoogleServiceAccountIdToken extends cdktn.TerraformEphemer
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/ephemeral-resources/service_account_id_token google_service_account_id_token} Ephemeral Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/ephemeral-resources/service_account_id_token google_service_account_id_token} Ephemeral Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -64,7 +64,7 @@ export class EphemeralGoogleServiceAccountIdToken extends cdktn.TerraformEphemer
       terraformResourceType: 'google_service_account_id_token',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.45.0',
+        providerVersion: '7.46.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

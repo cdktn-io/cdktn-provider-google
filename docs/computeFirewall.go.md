@@ -4,7 +4,7 @@
 
 ### ComputeFirewall <a name="ComputeFirewall" id="@cdktn/provider-google.computeFirewall.ComputeFirewall"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_firewall google_compute_firewall}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_firewall google_compute_firewall}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeFirewall.ComputeFirewall.Initializer"></a>
 
@@ -687,7 +687,7 @@ The construct id used in the generated config for the ComputeFirewall to import.
 
 The id of the existing ComputeFirewall that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_firewall#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_firewall#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1403,7 +1403,7 @@ required when creating a firewall rule. This value can either be
 one of the following well known protocol strings (tcp, udp,
 icmp, esp, ah, sctp, ipip, all), or the IP protocol number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_firewall#protocol ComputeFirewall#protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_firewall#protocol ComputeFirewall#protocol}
 
 ---
 
@@ -1425,7 +1425,7 @@ applies to connections through any port.
 Example inputs include: [22], [80, 443], and
 ["12345-12349"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_firewall#ports ComputeFirewall#ports}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_firewall#ports ComputeFirewall#ports}
 
 ---
 
@@ -1489,11 +1489,11 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computefirewall"
 | <code><a href="#@cdktn/provider-google.computeFirewall.ComputeFirewallConfig.property.direction">Direction</a></code> | <code>*string</code> | Direction of traffic to which this firewall applies; |
 | <code><a href="#@cdktn/provider-google.computeFirewall.ComputeFirewallConfig.property.disabled">Disabled</a></code> | <code>interface{}</code> | Denotes whether the firewall rule is disabled, i.e not applied to the network it is associated with. When set to true, the firewall rule is not enforced and the network behaves as if it did not exist. If this is unspecified, the firewall rule will be enabled. |
 | <code><a href="#@cdktn/provider-google.computeFirewall.ComputeFirewallConfig.property.enableLogging">EnableLogging</a></code> | <code>interface{}</code> | This field denotes whether to enable logging for a particular firewall rule. |
-| <code><a href="#@cdktn/provider-google.computeFirewall.ComputeFirewallConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_firewall#id ComputeFirewall#id}. |
+| <code><a href="#@cdktn/provider-google.computeFirewall.ComputeFirewallConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_firewall#id ComputeFirewall#id}. |
 | <code><a href="#@cdktn/provider-google.computeFirewall.ComputeFirewallConfig.property.logConfig">LogConfig</a></code> | <code><a href="#@cdktn/provider-google.computeFirewall.ComputeFirewallLogConfig">ComputeFirewallLogConfig</a></code> | log_config block. |
 | <code><a href="#@cdktn/provider-google.computeFirewall.ComputeFirewallConfig.property.params">Params</a></code> | <code><a href="#@cdktn/provider-google.computeFirewall.ComputeFirewallParams">ComputeFirewallParams</a></code> | params block. |
 | <code><a href="#@cdktn/provider-google.computeFirewall.ComputeFirewallConfig.property.priority">Priority</a></code> | <code>*f64</code> | Priority for this rule. |
-| <code><a href="#@cdktn/provider-google.computeFirewall.ComputeFirewallConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_firewall#project ComputeFirewall#project}. |
+| <code><a href="#@cdktn/provider-google.computeFirewall.ComputeFirewallConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_firewall#project ComputeFirewall#project}. |
 | <code><a href="#@cdktn/provider-google.computeFirewall.ComputeFirewallConfig.property.sourceRanges">SourceRanges</a></code> | <code>*[]*string</code> | If source ranges are specified, the firewall will apply only to traffic that has source IP address in these ranges. |
 | <code><a href="#@cdktn/provider-google.computeFirewall.ComputeFirewallConfig.property.sourceServiceAccounts">SourceServiceAccounts</a></code> | <code>*[]*string</code> | If source service accounts are specified, the firewall will apply only to traffic originating from an instance with a service account in this list. |
 | <code><a href="#@cdktn/provider-google.computeFirewall.ComputeFirewallConfig.property.sourceTags">SourceTags</a></code> | <code>*[]*string</code> | If source tags are specified, the firewall will apply only to traffic with source IP that belongs to a tag listed in source tags. |
@@ -1591,7 +1591,7 @@ first character must be a lowercase letter, and all following
 characters must be a dash, lowercase letter, or digit, except the last
 character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_firewall#name ComputeFirewall#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_firewall#name ComputeFirewall#name}
 
 ---
 
@@ -1605,7 +1605,7 @@ Network *string
 
 The name or self_link of the network to attach this firewall to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_firewall#network ComputeFirewall#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_firewall#network ComputeFirewall#network}
 
 ---
 
@@ -1619,7 +1619,7 @@ Allow interface{}
 
 allow block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_firewall#allow ComputeFirewall#allow}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_firewall#allow ComputeFirewall#allow}
 
 ---
 
@@ -1640,7 +1640,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_firewall#deletion_policy ComputeFirewall#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_firewall#deletion_policy ComputeFirewall#deletion_policy}
 
 ---
 
@@ -1654,7 +1654,7 @@ Deny interface{}
 
 deny block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_firewall#deny ComputeFirewall#deny}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_firewall#deny ComputeFirewall#deny}
 
 ---
 
@@ -1668,7 +1668,7 @@ Description *string
 
 An optional description of this resource. Provide this property when you create the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_firewall#description ComputeFirewall#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_firewall#description ComputeFirewall#description}
 
 ---
 
@@ -1685,7 +1685,7 @@ If destination ranges are specified, the firewall will apply only to traffic tha
 These ranges
 must be expressed in CIDR format. IPv4 or IPv6 ranges are supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_firewall#destination_ranges ComputeFirewall#destination_ranges}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_firewall#destination_ranges ComputeFirewall#destination_ranges}
 
 ---
 
@@ -1703,7 +1703,7 @@ default is
 INGRESS. Note: For INGRESS traffic, one of 'source_ranges',
 'source_tags' or 'source_service_accounts' is required. Possible values: ["INGRESS", "EGRESS"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_firewall#direction ComputeFirewall#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_firewall#direction ComputeFirewall#direction}
 
 ---
 
@@ -1717,7 +1717,7 @@ Disabled interface{}
 
 Denotes whether the firewall rule is disabled, i.e not applied to the network it is associated with. When set to true, the firewall rule is not enforced and the network behaves as if it did not exist. If this is unspecified, the firewall rule will be enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_firewall#disabled ComputeFirewall#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_firewall#disabled ComputeFirewall#disabled}
 
 ---
 
@@ -1733,7 +1733,7 @@ This field denotes whether to enable logging for a particular firewall rule.
 
 If logging is enabled, logs will be exported to Stackdriver.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_firewall#enable_logging ComputeFirewall#enable_logging}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_firewall#enable_logging ComputeFirewall#enable_logging}
 
 ---
 
@@ -1745,7 +1745,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_firewall#id ComputeFirewall#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_firewall#id ComputeFirewall#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1762,7 +1762,7 @@ LogConfig ComputeFirewallLogConfig
 
 log_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_firewall#log_config ComputeFirewall#log_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_firewall#log_config ComputeFirewall#log_config}
 
 ---
 
@@ -1776,7 +1776,7 @@ Params ComputeFirewallParams
 
 params block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_firewall#params ComputeFirewall#params}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_firewall#params ComputeFirewall#params}
 
 ---
 
@@ -1797,7 +1797,7 @@ priority implies higher precedence (eg, a rule with priority 0 has
 higher precedence than a rule with priority 1). DENY rules take
 precedence over ALLOW rules having equal priority.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_firewall#priority ComputeFirewall#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_firewall#priority ComputeFirewall#priority}
 
 ---
 
@@ -1809,7 +1809,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_firewall#project ComputeFirewall#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_firewall#project ComputeFirewall#project}.
 
 ---
 
@@ -1832,7 +1832,7 @@ connection does not need to match both properties for the firewall to
 apply. IPv4 or IPv6 ranges are supported. For INGRESS traffic, one of
 'source_ranges', 'source_tags' or 'source_service_accounts' is required.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_firewall#source_ranges ComputeFirewall#source_ranges}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_firewall#source_ranges ComputeFirewall#source_ranges}
 
 ---
 
@@ -1857,7 +1857,7 @@ properties for the firewall to apply. sourceServiceAccounts cannot be
 used at the same time as sourceTags or targetTags. For INGRESS traffic,
 one of 'source_ranges', 'source_tags' or 'source_service_accounts' is required.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_firewall#source_service_accounts ComputeFirewall#source_service_accounts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_firewall#source_service_accounts ComputeFirewall#source_service_accounts}
 
 ---
 
@@ -1881,7 +1881,7 @@ a tag listed in the sourceTags property. The connection does not need
 to match both properties for the firewall to apply. For INGRESS traffic,
 one of 'source_ranges', 'source_tags' or 'source_service_accounts' is required.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_firewall#source_tags ComputeFirewall#source_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_firewall#source_tags ComputeFirewall#source_tags}
 
 ---
 
@@ -1900,7 +1900,7 @@ sourceTags. If neither targetServiceAccounts nor targetTags are
 specified, the firewall rule applies to all instances on the specified
 network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_firewall#target_service_accounts ComputeFirewall#target_service_accounts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_firewall#target_service_accounts ComputeFirewall#target_service_accounts}
 
 ---
 
@@ -1917,7 +1917,7 @@ A list of instance tags indicating sets of instances located in the network that
 If no targetTags are specified, the firewall rule applies to all
 instances on the specified network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_firewall#target_tags ComputeFirewall#target_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_firewall#target_tags ComputeFirewall#target_tags}
 
 ---
 
@@ -1931,7 +1931,7 @@ Timeouts ComputeFirewallTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_firewall#timeouts ComputeFirewall#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_firewall#timeouts ComputeFirewall#timeouts}
 
 ---
 
@@ -1972,7 +1972,7 @@ required when creating a firewall rule. This value can either be
 one of the following well known protocol strings (tcp, udp,
 icmp, esp, ah, sctp, ipip, all), or the IP protocol number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_firewall#protocol ComputeFirewall#protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_firewall#protocol ComputeFirewall#protocol}
 
 ---
 
@@ -1994,7 +1994,7 @@ applies to connections through any port.
 Example inputs include: [22], [80, 443], and
 ["12345-12349"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_firewall#ports ComputeFirewall#ports}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_firewall#ports ComputeFirewall#ports}
 
 ---
 
@@ -2028,7 +2028,7 @@ Metadata *string
 
 This field denotes whether to include or exclude metadata for firewall logs. Possible values: ["EXCLUDE_ALL_METADATA", "INCLUDE_ALL_METADATA"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_firewall#metadata ComputeFirewall#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_firewall#metadata ComputeFirewall#metadata}
 
 ---
 
@@ -2069,7 +2069,7 @@ The field is immutable and causes resource replacement when mutated. This field 
 set at create time and modifying this field after creation will trigger recreation.
 To apply tags to an existing resource, see the google_tags_tag_binding resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_firewall#resource_manager_tags ComputeFirewall#resource_manager_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_firewall#resource_manager_tags ComputeFirewall#resource_manager_tags}
 
 ---
 
@@ -2091,9 +2091,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computefirewall"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeFirewall.ComputeFirewallTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_firewall#create ComputeFirewall#create}. |
-| <code><a href="#@cdktn/provider-google.computeFirewall.ComputeFirewallTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_firewall#delete ComputeFirewall#delete}. |
-| <code><a href="#@cdktn/provider-google.computeFirewall.ComputeFirewallTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_firewall#update ComputeFirewall#update}. |
+| <code><a href="#@cdktn/provider-google.computeFirewall.ComputeFirewallTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_firewall#create ComputeFirewall#create}. |
+| <code><a href="#@cdktn/provider-google.computeFirewall.ComputeFirewallTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_firewall#delete ComputeFirewall#delete}. |
+| <code><a href="#@cdktn/provider-google.computeFirewall.ComputeFirewallTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_firewall#update ComputeFirewall#update}. |
 
 ---
 
@@ -2105,7 +2105,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_firewall#create ComputeFirewall#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_firewall#create ComputeFirewall#create}.
 
 ---
 
@@ -2117,7 +2117,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_firewall#delete ComputeFirewall#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_firewall#delete ComputeFirewall#delete}.
 
 ---
 
@@ -2129,7 +2129,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/compute_firewall#update ComputeFirewall#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_firewall#update ComputeFirewall#update}.
 
 ---
 

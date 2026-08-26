@@ -4,7 +4,7 @@
 
 ### DataGoogleStorageControlOrganizationIntelligenceFindingsSummary <a name="DataGoogleStorageControlOrganizationIntelligenceFindingsSummary" id="@cdktn/provider-google.dataGoogleStorageControlOrganizationIntelligenceFindingsSummary.DataGoogleStorageControlOrganizationIntelligenceFindingsSummary"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/storage_control_organization_intelligence_findings_summary google_storage_control_organization_intelligence_findings_summary}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/storage_control_organization_intelligence_findings_summary google_storage_control_organization_intelligence_findings_summary}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageControlOrganizationIntelligenceFindingsSummary.DataGoogleStorageControlOrganizationIntelligenceFindingsSummary.Initializer"></a>
 
@@ -42,7 +42,7 @@ dataGoogleStorageControlOrganizationIntelligenceFindingsSummary.DataGoogleStorag
 | <code><a href="#@cdktn/provider-google.dataGoogleStorageControlOrganizationIntelligenceFindingsSummary.DataGoogleStorageControlOrganizationIntelligenceFindingsSummary.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleStorageControlOrganizationIntelligenceFindingsSummary.DataGoogleStorageControlOrganizationIntelligenceFindingsSummary.Initializer.parameter.organization">organization</a></code> | <code>str</code> | The ID of the Google Cloud Organization. |
 | <code><a href="#@cdktn/provider-google.dataGoogleStorageControlOrganizationIntelligenceFindingsSummary.DataGoogleStorageControlOrganizationIntelligenceFindingsSummary.Initializer.parameter.filter">filter</a></code> | <code>str</code> | The filter expression. Supports filtering by FindingType. |
-| <code><a href="#@cdktn/provider-google.dataGoogleStorageControlOrganizationIntelligenceFindingsSummary.DataGoogleStorageControlOrganizationIntelligenceFindingsSummary.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/storage_control_organization_intelligence_findings_summary#id DataGoogleStorageControlOrganizationIntelligenceFindingsSummary#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleStorageControlOrganizationIntelligenceFindingsSummary.DataGoogleStorageControlOrganizationIntelligenceFindingsSummary.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/storage_control_organization_intelligence_findings_summary#id DataGoogleStorageControlOrganizationIntelligenceFindingsSummary#id}. |
 | <code><a href="#@cdktn/provider-google.dataGoogleStorageControlOrganizationIntelligenceFindingsSummary.DataGoogleStorageControlOrganizationIntelligenceFindingsSummary.Initializer.parameter.location">location</a></code> | <code>str</code> | The location of the intelligence findings summary. |
 | <code><a href="#@cdktn/provider-google.dataGoogleStorageControlOrganizationIntelligenceFindingsSummary.DataGoogleStorageControlOrganizationIntelligenceFindingsSummary.Initializer.parameter.resourceScope">resource_scope</a></code> | <code>str</code> | Determines the granularity of the findings when the parent is an organization or folder. |
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 The ID of the Google Cloud Organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/storage_control_organization_intelligence_findings_summary#organization DataGoogleStorageControlOrganizationIntelligenceFindingsSummary#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/storage_control_organization_intelligence_findings_summary#organization DataGoogleStorageControlOrganizationIntelligenceFindingsSummary#organization}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The filter expression. Supports filtering by FindingType.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/storage_control_organization_intelligence_findings_summary#filter DataGoogleStorageControlOrganizationIntelligenceFindingsSummary#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/storage_control_organization_intelligence_findings_summary#filter DataGoogleStorageControlOrganizationIntelligenceFindingsSummary#filter}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/storage_control_organization_intelligence_findings_summary#id DataGoogleStorageControlOrganizationIntelligenceFindingsSummary#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/storage_control_organization_intelligence_findings_summary#id DataGoogleStorageControlOrganizationIntelligenceFindingsSummary#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -147,7 +147,7 @@ The location of the intelligence findings summary.
 
 Currently default value is global and users cannot use for input for now.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/storage_control_organization_intelligence_findings_summary#location DataGoogleStorageControlOrganizationIntelligenceFindingsSummary#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/storage_control_organization_intelligence_findings_summary#location DataGoogleStorageControlOrganizationIntelligenceFindingsSummary#location}
 
 ---
 
@@ -159,7 +159,7 @@ Determines the granularity of the findings when the parent is an organization or
 
 Possible values are PARENT and PROJECT. Default value is PARENT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/storage_control_organization_intelligence_findings_summary#resource_scope DataGoogleStorageControlOrganizationIntelligenceFindingsSummary#resource_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/storage_control_organization_intelligence_findings_summary#resource_scope DataGoogleStorageControlOrganizationIntelligenceFindingsSummary#resource_scope}
 
 ---
 
@@ -570,7 +570,7 @@ The construct id used in the generated config for the DataGoogleStorageControlOr
 
 The id of the existing DataGoogleStorageControlOrganizationIntelligenceFindingsSummary that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/storage_control_organization_intelligence_findings_summary#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/storage_control_organization_intelligence_findings_summary#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -900,7 +900,7 @@ dataGoogleStorageControlOrganizationIntelligenceFindingsSummary.DataGoogleStorag
 | <code><a href="#@cdktn/provider-google.dataGoogleStorageControlOrganizationIntelligenceFindingsSummary.DataGoogleStorageControlOrganizationIntelligenceFindingsSummaryConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleStorageControlOrganizationIntelligenceFindingsSummary.DataGoogleStorageControlOrganizationIntelligenceFindingsSummaryConfig.property.organization">organization</a></code> | <code>str</code> | The ID of the Google Cloud Organization. |
 | <code><a href="#@cdktn/provider-google.dataGoogleStorageControlOrganizationIntelligenceFindingsSummary.DataGoogleStorageControlOrganizationIntelligenceFindingsSummaryConfig.property.filter">filter</a></code> | <code>str</code> | The filter expression. Supports filtering by FindingType. |
-| <code><a href="#@cdktn/provider-google.dataGoogleStorageControlOrganizationIntelligenceFindingsSummary.DataGoogleStorageControlOrganizationIntelligenceFindingsSummaryConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/storage_control_organization_intelligence_findings_summary#id DataGoogleStorageControlOrganizationIntelligenceFindingsSummary#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleStorageControlOrganizationIntelligenceFindingsSummary.DataGoogleStorageControlOrganizationIntelligenceFindingsSummaryConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/storage_control_organization_intelligence_findings_summary#id DataGoogleStorageControlOrganizationIntelligenceFindingsSummary#id}. |
 | <code><a href="#@cdktn/provider-google.dataGoogleStorageControlOrganizationIntelligenceFindingsSummary.DataGoogleStorageControlOrganizationIntelligenceFindingsSummaryConfig.property.location">location</a></code> | <code>str</code> | The location of the intelligence findings summary. |
 | <code><a href="#@cdktn/provider-google.dataGoogleStorageControlOrganizationIntelligenceFindingsSummary.DataGoogleStorageControlOrganizationIntelligenceFindingsSummaryConfig.property.resourceScope">resource_scope</a></code> | <code>str</code> | Determines the granularity of the findings when the parent is an organization or folder. |
 
@@ -986,7 +986,7 @@ organization: str
 
 The ID of the Google Cloud Organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/storage_control_organization_intelligence_findings_summary#organization DataGoogleStorageControlOrganizationIntelligenceFindingsSummary#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/storage_control_organization_intelligence_findings_summary#organization DataGoogleStorageControlOrganizationIntelligenceFindingsSummary#organization}
 
 ---
 
@@ -1000,7 +1000,7 @@ filter: str
 
 The filter expression. Supports filtering by FindingType.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/storage_control_organization_intelligence_findings_summary#filter DataGoogleStorageControlOrganizationIntelligenceFindingsSummary#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/storage_control_organization_intelligence_findings_summary#filter DataGoogleStorageControlOrganizationIntelligenceFindingsSummary#filter}
 
 ---
 
@@ -1012,7 +1012,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/storage_control_organization_intelligence_findings_summary#id DataGoogleStorageControlOrganizationIntelligenceFindingsSummary#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/storage_control_organization_intelligence_findings_summary#id DataGoogleStorageControlOrganizationIntelligenceFindingsSummary#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1031,7 +1031,7 @@ The location of the intelligence findings summary.
 
 Currently default value is global and users cannot use for input for now.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/storage_control_organization_intelligence_findings_summary#location DataGoogleStorageControlOrganizationIntelligenceFindingsSummary#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/storage_control_organization_intelligence_findings_summary#location DataGoogleStorageControlOrganizationIntelligenceFindingsSummary#location}
 
 ---
 
@@ -1047,7 +1047,7 @@ Determines the granularity of the findings when the parent is an organization or
 
 Possible values are PARENT and PROJECT. Default value is PARENT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/storage_control_organization_intelligence_findings_summary#resource_scope DataGoogleStorageControlOrganizationIntelligenceFindingsSummary#resource_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/storage_control_organization_intelligence_findings_summary#resource_scope DataGoogleStorageControlOrganizationIntelligenceFindingsSummary#resource_scope}
 
 ---
 

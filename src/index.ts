@@ -964,6 +964,7 @@ export * as managedKafkaConnectCluster from './managed-kafka-connect-cluster/ind
 export * as managedKafkaConnector from './managed-kafka-connector/index';
 export * as managedKafkaTopic from './managed-kafka-topic/index';
 export * as memcacheInstance from './memcache-instance/index';
+export * as memorystoreAclPolicy from './memorystore-acl-policy/index';
 export * as memorystoreInstance from './memorystore-instance/index';
 export * as memorystoreInstanceDesiredUserCreatedEndpoints from './memorystore-instance-desired-user-created-endpoints/index';
 export * as migrationCenterAssetsExportJob from './migration-center-assets-export-job/index';
@@ -1155,6 +1156,7 @@ export * as pubsubTopicIamMember from './pubsub-topic-iam-member/index';
 export * as pubsubTopicIamPolicy from './pubsub-topic-iam-policy/index';
 export * as recaptchaEnterpriseKey from './recaptcha-enterprise-key/index';
 export * as redisCluster from './redis-cluster/index';
+export * as redisClusterAclPolicy from './redis-cluster-acl-policy/index';
 export * as redisClusterUserCreatedConnections from './redis-cluster-user-created-connections/index';
 export * as redisInstance from './redis-instance/index';
 export * as resourceManagerCapability from './resource-manager-capability/index';
@@ -1661,6 +1663,7 @@ export * as dataGoogleLoggingProjectSettings from './data-google-logging-project
 export * as dataGoogleLoggingSink from './data-google-logging-sink/index';
 export * as dataGoogleLustreInstance from './data-google-lustre-instance/index';
 export * as dataGoogleMemcacheInstance from './data-google-memcache-instance/index';
+export * as dataGoogleMemorystoreAclPolicy from './data-google-memorystore-acl-policy/index';
 export * as dataGoogleMemorystoreInstance from './data-google-memorystore-instance/index';
 export * as dataGoogleMonitoringAppEngineService from './data-google-monitoring-app-engine-service/index';
 export * as dataGoogleMonitoringClusterIstioService from './data-google-monitoring-cluster-istio-service/index';
@@ -1723,6 +1726,7 @@ export * as dataGooglePubsubSubscriptionIamPolicy from './data-google-pubsub-sub
 export * as dataGooglePubsubTopic from './data-google-pubsub-topic/index';
 export * as dataGooglePubsubTopicIamPolicy from './data-google-pubsub-topic-iam-policy/index';
 export * as dataGoogleRedisCluster from './data-google-redis-cluster/index';
+export * as dataGoogleRedisClusterAclPolicy from './data-google-redis-cluster-acl-policy/index';
 export * as dataGoogleRedisInstance from './data-google-redis-instance/index';
 export * as dataGoogleSccSourceIamPolicy from './data-google-scc-source-iam-policy/index';
 export * as dataGoogleSccV2OrganizationSourceIamPolicy from './data-google-scc-v2-organization-source-iam-policy/index';

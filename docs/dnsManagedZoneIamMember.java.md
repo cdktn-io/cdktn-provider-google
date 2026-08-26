@@ -4,7 +4,7 @@
 
 ### DnsManagedZoneIamMember <a name="DnsManagedZoneIamMember" id="@cdktn/provider-google.dnsManagedZoneIamMember.DnsManagedZoneIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dns_managed_zone_iam_member google_dns_managed_zone_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dns_managed_zone_iam_member google_dns_managed_zone_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dnsManagedZoneIamMember.DnsManagedZoneIamMember.Initializer"></a>
 
@@ -39,12 +39,12 @@ DnsManagedZoneIamMember.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.dnsManagedZoneIamMember.DnsManagedZoneIamMember.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsManagedZoneIamMember.DnsManagedZoneIamMember.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsManagedZoneIamMember.DnsManagedZoneIamMember.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dnsManagedZoneIamMember.DnsManagedZoneIamMember.Initializer.parameter.managedZone">managedZone</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dns_managed_zone_iam_member#managed_zone DnsManagedZoneIamMember#managed_zone}. |
-| <code><a href="#@cdktn/provider-google.dnsManagedZoneIamMember.DnsManagedZoneIamMember.Initializer.parameter.member">member</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dns_managed_zone_iam_member#member DnsManagedZoneIamMember#member}. |
-| <code><a href="#@cdktn/provider-google.dnsManagedZoneIamMember.DnsManagedZoneIamMember.Initializer.parameter.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dns_managed_zone_iam_member#role DnsManagedZoneIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.dnsManagedZoneIamMember.DnsManagedZoneIamMember.Initializer.parameter.managedZone">managedZone</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dns_managed_zone_iam_member#managed_zone DnsManagedZoneIamMember#managed_zone}. |
+| <code><a href="#@cdktn/provider-google.dnsManagedZoneIamMember.DnsManagedZoneIamMember.Initializer.parameter.member">member</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dns_managed_zone_iam_member#member DnsManagedZoneIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.dnsManagedZoneIamMember.DnsManagedZoneIamMember.Initializer.parameter.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dns_managed_zone_iam_member#role DnsManagedZoneIamMember#role}. |
 | <code><a href="#@cdktn/provider-google.dnsManagedZoneIamMember.DnsManagedZoneIamMember.Initializer.parameter.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.dnsManagedZoneIamMember.DnsManagedZoneIamMemberCondition">DnsManagedZoneIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.dnsManagedZoneIamMember.DnsManagedZoneIamMember.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dns_managed_zone_iam_member#id DnsManagedZoneIamMember#id}. |
-| <code><a href="#@cdktn/provider-google.dnsManagedZoneIamMember.DnsManagedZoneIamMember.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dns_managed_zone_iam_member#project DnsManagedZoneIamMember#project}. |
+| <code><a href="#@cdktn/provider-google.dnsManagedZoneIamMember.DnsManagedZoneIamMember.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dns_managed_zone_iam_member#id DnsManagedZoneIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.dnsManagedZoneIamMember.DnsManagedZoneIamMember.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dns_managed_zone_iam_member#project DnsManagedZoneIamMember#project}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dns_managed_zone_iam_member#managed_zone DnsManagedZoneIamMember#managed_zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dns_managed_zone_iam_member#managed_zone DnsManagedZoneIamMember#managed_zone}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dns_managed_zone_iam_member#member DnsManagedZoneIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dns_managed_zone_iam_member#member DnsManagedZoneIamMember#member}.
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dns_managed_zone_iam_member#role DnsManagedZoneIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dns_managed_zone_iam_member#role DnsManagedZoneIamMember#role}.
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dns_managed_zone_iam_member#condition DnsManagedZoneIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dns_managed_zone_iam_member#condition DnsManagedZoneIamMember#condition}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dns_managed_zone_iam_member#id DnsManagedZoneIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dns_managed_zone_iam_member#id DnsManagedZoneIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -157,7 +157,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dns_managed_zone_iam_member#project DnsManagedZoneIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dns_managed_zone_iam_member#project DnsManagedZoneIamMember#project}.
 
 ---
 
@@ -640,7 +640,7 @@ The construct id used in the generated config for the DnsManagedZoneIamMember to
 
 The id of the existing DnsManagedZoneIamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dns_managed_zone_iam_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dns_managed_zone_iam_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -996,9 +996,9 @@ DnsManagedZoneIamMemberCondition.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dnsManagedZoneIamMember.DnsManagedZoneIamMemberCondition.property.expression">expression</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dns_managed_zone_iam_member#expression DnsManagedZoneIamMember#expression}. |
-| <code><a href="#@cdktn/provider-google.dnsManagedZoneIamMember.DnsManagedZoneIamMemberCondition.property.title">title</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dns_managed_zone_iam_member#title DnsManagedZoneIamMember#title}. |
-| <code><a href="#@cdktn/provider-google.dnsManagedZoneIamMember.DnsManagedZoneIamMemberCondition.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dns_managed_zone_iam_member#description DnsManagedZoneIamMember#description}. |
+| <code><a href="#@cdktn/provider-google.dnsManagedZoneIamMember.DnsManagedZoneIamMemberCondition.property.expression">expression</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dns_managed_zone_iam_member#expression DnsManagedZoneIamMember#expression}. |
+| <code><a href="#@cdktn/provider-google.dnsManagedZoneIamMember.DnsManagedZoneIamMemberCondition.property.title">title</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dns_managed_zone_iam_member#title DnsManagedZoneIamMember#title}. |
+| <code><a href="#@cdktn/provider-google.dnsManagedZoneIamMember.DnsManagedZoneIamMemberCondition.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dns_managed_zone_iam_member#description DnsManagedZoneIamMember#description}. |
 
 ---
 
@@ -1010,7 +1010,7 @@ public java.lang.String getExpression();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dns_managed_zone_iam_member#expression DnsManagedZoneIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dns_managed_zone_iam_member#expression DnsManagedZoneIamMember#expression}.
 
 ---
 
@@ -1022,7 +1022,7 @@ public java.lang.String getTitle();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dns_managed_zone_iam_member#title DnsManagedZoneIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dns_managed_zone_iam_member#title DnsManagedZoneIamMember#title}.
 
 ---
 
@@ -1034,7 +1034,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dns_managed_zone_iam_member#description DnsManagedZoneIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dns_managed_zone_iam_member#description DnsManagedZoneIamMember#description}.
 
 ---
 
@@ -1073,12 +1073,12 @@ DnsManagedZoneIamMemberConfig.builder()
 | <code><a href="#@cdktn/provider-google.dnsManagedZoneIamMember.DnsManagedZoneIamMemberConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsManagedZoneIamMember.DnsManagedZoneIamMemberConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dnsManagedZoneIamMember.DnsManagedZoneIamMemberConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dnsManagedZoneIamMember.DnsManagedZoneIamMemberConfig.property.managedZone">managedZone</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dns_managed_zone_iam_member#managed_zone DnsManagedZoneIamMember#managed_zone}. |
-| <code><a href="#@cdktn/provider-google.dnsManagedZoneIamMember.DnsManagedZoneIamMemberConfig.property.member">member</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dns_managed_zone_iam_member#member DnsManagedZoneIamMember#member}. |
-| <code><a href="#@cdktn/provider-google.dnsManagedZoneIamMember.DnsManagedZoneIamMemberConfig.property.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dns_managed_zone_iam_member#role DnsManagedZoneIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.dnsManagedZoneIamMember.DnsManagedZoneIamMemberConfig.property.managedZone">managedZone</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dns_managed_zone_iam_member#managed_zone DnsManagedZoneIamMember#managed_zone}. |
+| <code><a href="#@cdktn/provider-google.dnsManagedZoneIamMember.DnsManagedZoneIamMemberConfig.property.member">member</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dns_managed_zone_iam_member#member DnsManagedZoneIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.dnsManagedZoneIamMember.DnsManagedZoneIamMemberConfig.property.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dns_managed_zone_iam_member#role DnsManagedZoneIamMember#role}. |
 | <code><a href="#@cdktn/provider-google.dnsManagedZoneIamMember.DnsManagedZoneIamMemberConfig.property.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.dnsManagedZoneIamMember.DnsManagedZoneIamMemberCondition">DnsManagedZoneIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.dnsManagedZoneIamMember.DnsManagedZoneIamMemberConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dns_managed_zone_iam_member#id DnsManagedZoneIamMember#id}. |
-| <code><a href="#@cdktn/provider-google.dnsManagedZoneIamMember.DnsManagedZoneIamMemberConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dns_managed_zone_iam_member#project DnsManagedZoneIamMember#project}. |
+| <code><a href="#@cdktn/provider-google.dnsManagedZoneIamMember.DnsManagedZoneIamMemberConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dns_managed_zone_iam_member#id DnsManagedZoneIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.dnsManagedZoneIamMember.DnsManagedZoneIamMemberConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dns_managed_zone_iam_member#project DnsManagedZoneIamMember#project}. |
 
 ---
 
@@ -1160,7 +1160,7 @@ public java.lang.String getManagedZone();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dns_managed_zone_iam_member#managed_zone DnsManagedZoneIamMember#managed_zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dns_managed_zone_iam_member#managed_zone DnsManagedZoneIamMember#managed_zone}.
 
 ---
 
@@ -1172,7 +1172,7 @@ public java.lang.String getMember();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dns_managed_zone_iam_member#member DnsManagedZoneIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dns_managed_zone_iam_member#member DnsManagedZoneIamMember#member}.
 
 ---
 
@@ -1184,7 +1184,7 @@ public java.lang.String getRole();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dns_managed_zone_iam_member#role DnsManagedZoneIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dns_managed_zone_iam_member#role DnsManagedZoneIamMember#role}.
 
 ---
 
@@ -1198,7 +1198,7 @@ public DnsManagedZoneIamMemberCondition getCondition();
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dns_managed_zone_iam_member#condition DnsManagedZoneIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dns_managed_zone_iam_member#condition DnsManagedZoneIamMember#condition}
 
 ---
 
@@ -1210,7 +1210,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dns_managed_zone_iam_member#id DnsManagedZoneIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dns_managed_zone_iam_member#id DnsManagedZoneIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1225,7 +1225,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dns_managed_zone_iam_member#project DnsManagedZoneIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dns_managed_zone_iam_member#project DnsManagedZoneIamMember#project}.
 
 ---
 

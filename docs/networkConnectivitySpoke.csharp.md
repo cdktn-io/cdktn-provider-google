@@ -4,7 +4,7 @@
 
 ### NetworkConnectivitySpoke <a name="NetworkConnectivitySpoke" id="@cdktn/provider-google.networkConnectivitySpoke.NetworkConnectivitySpoke"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_spoke google_network_connectivity_spoke}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_spoke google_network_connectivity_spoke}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkConnectivitySpoke.NetworkConnectivitySpoke.Initializer"></a>
 
@@ -671,7 +671,7 @@ The construct id used in the generated config for the NetworkConnectivitySpoke t
 
 The id of the existing NetworkConnectivitySpoke that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_spoke#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_spoke#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1347,14 +1347,14 @@ new NetworkConnectivitySpokeConfig {
 | <code><a href="#@cdktn/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeConfig.property.description">Description</a></code> | <code>string</code> | An optional description of the spoke. |
 | <code><a href="#@cdktn/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeConfig.property.gateway">Gateway</a></code> | <code><a href="#@cdktn/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeGateway">NetworkConnectivitySpokeGateway</a></code> | gateway block. |
 | <code><a href="#@cdktn/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeConfig.property.group">Group</a></code> | <code>string</code> | The name of the group that this spoke is associated with. |
-| <code><a href="#@cdktn/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_spoke#id NetworkConnectivitySpoke#id}. |
+| <code><a href="#@cdktn/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_spoke#id NetworkConnectivitySpoke#id}. |
 | <code><a href="#@cdktn/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeConfig.property.labels">Labels</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Optional labels in key:value format. For more information about labels, see [Requirements for labels](https://docs.cloud.google.com/resource-manager/docs/creating-managing-labels#requirements). |
 | <code><a href="#@cdktn/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeConfig.property.linkedInterconnectAttachments">LinkedInterconnectAttachments</a></code> | <code><a href="#@cdktn/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeLinkedInterconnectAttachments">NetworkConnectivitySpokeLinkedInterconnectAttachments</a></code> | linked_interconnect_attachments block. |
 | <code><a href="#@cdktn/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeConfig.property.linkedProducerVpcNetwork">LinkedProducerVpcNetwork</a></code> | <code><a href="#@cdktn/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeLinkedProducerVpcNetwork">NetworkConnectivitySpokeLinkedProducerVpcNetwork</a></code> | linked_producer_vpc_network block. |
 | <code><a href="#@cdktn/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeConfig.property.linkedRouterApplianceInstances">LinkedRouterApplianceInstances</a></code> | <code><a href="#@cdktn/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeLinkedRouterApplianceInstances">NetworkConnectivitySpokeLinkedRouterApplianceInstances</a></code> | linked_router_appliance_instances block. |
 | <code><a href="#@cdktn/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeConfig.property.linkedVpcNetwork">LinkedVpcNetwork</a></code> | <code><a href="#@cdktn/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeLinkedVpcNetwork">NetworkConnectivitySpokeLinkedVpcNetwork</a></code> | linked_vpc_network block. |
 | <code><a href="#@cdktn/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeConfig.property.linkedVpnTunnels">LinkedVpnTunnels</a></code> | <code><a href="#@cdktn/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeLinkedVpnTunnels">NetworkConnectivitySpokeLinkedVpnTunnels</a></code> | linked_vpn_tunnels block. |
-| <code><a href="#@cdktn/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_spoke#project NetworkConnectivitySpoke#project}. |
+| <code><a href="#@cdktn/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_spoke#project NetworkConnectivitySpoke#project}. |
 | <code><a href="#@cdktn/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeTimeouts">NetworkConnectivitySpokeTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1439,7 +1439,7 @@ public string Hub { get; set; }
 
 Immutable. The URI of the hub that this spoke is attached to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_spoke#hub NetworkConnectivitySpoke#hub}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_spoke#hub NetworkConnectivitySpoke#hub}
 
 ---
 
@@ -1453,7 +1453,7 @@ public string Location { get; set; }
 
 The location for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_spoke#location NetworkConnectivitySpoke#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_spoke#location NetworkConnectivitySpoke#location}
 
 ---
 
@@ -1467,7 +1467,7 @@ public string Name { get; set; }
 
 Immutable. The name of the spoke. Spoke names must be unique.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_spoke#name NetworkConnectivitySpoke#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_spoke#name NetworkConnectivitySpoke#name}
 
 ---
 
@@ -1488,7 +1488,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_spoke#deletion_policy NetworkConnectivitySpoke#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_spoke#deletion_policy NetworkConnectivitySpoke#deletion_policy}
 
 ---
 
@@ -1502,7 +1502,7 @@ public string Description { get; set; }
 
 An optional description of the spoke.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_spoke#description NetworkConnectivitySpoke#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_spoke#description NetworkConnectivitySpoke#description}
 
 ---
 
@@ -1516,7 +1516,7 @@ public NetworkConnectivitySpokeGateway Gateway { get; set; }
 
 gateway block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_spoke#gateway NetworkConnectivitySpoke#gateway}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_spoke#gateway NetworkConnectivitySpoke#gateway}
 
 ---
 
@@ -1530,7 +1530,7 @@ public string Group { get; set; }
 
 The name of the group that this spoke is associated with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_spoke#group NetworkConnectivitySpoke#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_spoke#group NetworkConnectivitySpoke#group}
 
 ---
 
@@ -1542,7 +1542,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_spoke#id NetworkConnectivitySpoke#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_spoke#id NetworkConnectivitySpoke#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1562,7 +1562,7 @@ Optional labels in key:value format. For more information about labels, see [Req
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_spoke#labels NetworkConnectivitySpoke#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_spoke#labels NetworkConnectivitySpoke#labels}
 
 ---
 
@@ -1576,7 +1576,7 @@ public NetworkConnectivitySpokeLinkedInterconnectAttachments LinkedInterconnectA
 
 linked_interconnect_attachments block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_spoke#linked_interconnect_attachments NetworkConnectivitySpoke#linked_interconnect_attachments}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_spoke#linked_interconnect_attachments NetworkConnectivitySpoke#linked_interconnect_attachments}
 
 ---
 
@@ -1590,7 +1590,7 @@ public NetworkConnectivitySpokeLinkedProducerVpcNetwork LinkedProducerVpcNetwork
 
 linked_producer_vpc_network block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_spoke#linked_producer_vpc_network NetworkConnectivitySpoke#linked_producer_vpc_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_spoke#linked_producer_vpc_network NetworkConnectivitySpoke#linked_producer_vpc_network}
 
 ---
 
@@ -1604,7 +1604,7 @@ public NetworkConnectivitySpokeLinkedRouterApplianceInstances LinkedRouterApplia
 
 linked_router_appliance_instances block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_spoke#linked_router_appliance_instances NetworkConnectivitySpoke#linked_router_appliance_instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_spoke#linked_router_appliance_instances NetworkConnectivitySpoke#linked_router_appliance_instances}
 
 ---
 
@@ -1618,7 +1618,7 @@ public NetworkConnectivitySpokeLinkedVpcNetwork LinkedVpcNetwork { get; set; }
 
 linked_vpc_network block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_spoke#linked_vpc_network NetworkConnectivitySpoke#linked_vpc_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_spoke#linked_vpc_network NetworkConnectivitySpoke#linked_vpc_network}
 
 ---
 
@@ -1632,7 +1632,7 @@ public NetworkConnectivitySpokeLinkedVpnTunnels LinkedVpnTunnels { get; set; }
 
 linked_vpn_tunnels block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_spoke#linked_vpn_tunnels NetworkConnectivitySpoke#linked_vpn_tunnels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_spoke#linked_vpn_tunnels NetworkConnectivitySpoke#linked_vpn_tunnels}
 
 ---
 
@@ -1644,7 +1644,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_spoke#project NetworkConnectivitySpoke#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_spoke#project NetworkConnectivitySpoke#project}.
 
 ---
 
@@ -1658,7 +1658,7 @@ public NetworkConnectivitySpokeTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_spoke#timeouts NetworkConnectivitySpoke#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_spoke#timeouts NetworkConnectivitySpoke#timeouts}
 
 ---
 
@@ -1694,7 +1694,7 @@ public string Capacity { get; set; }
 
 the capacity of the gateway spoke, in Gbps. Possible values: ["CAPACITY_1_GBPS", "CAPACITY_10_GBPS", "CAPACITY_100_GBPS"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_spoke#capacity NetworkConnectivitySpoke#capacity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_spoke#capacity NetworkConnectivitySpoke#capacity}
 
 ---
 
@@ -1708,7 +1708,7 @@ public IResolvable|NetworkConnectivitySpokeGatewayIpRangeReservations[] IpRangeR
 
 ip_range_reservations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_spoke#ip_range_reservations NetworkConnectivitySpoke#ip_range_reservations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_spoke#ip_range_reservations NetworkConnectivitySpoke#ip_range_reservations}
 
 ---
 
@@ -1742,7 +1742,7 @@ public string IpRange { get; set; }
 
 A block of IP address ranges used to allocate supporting infrastructure for this gateway—for example, 10.1.2.0/23. The IP address block must be a /23 range. This IP address block must not overlap with subnets in any spoke or peer network that the gateway can communicate with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_spoke#ip_range NetworkConnectivitySpoke#ip_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_spoke#ip_range NetworkConnectivitySpoke#ip_range}
 
 ---
 
@@ -1788,7 +1788,7 @@ A value that controls whether site-to-site data transfer is enabled for these re
 
 Note that data transfer is available only in supported locations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_spoke#site_to_site_data_transfer NetworkConnectivitySpoke#site_to_site_data_transfer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_spoke#site_to_site_data_transfer NetworkConnectivitySpoke#site_to_site_data_transfer}
 
 ---
 
@@ -1802,7 +1802,7 @@ public string[] Uris { get; set; }
 
 The URIs of linked interconnect attachment resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_spoke#uris NetworkConnectivitySpoke#uris}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_spoke#uris NetworkConnectivitySpoke#uris}
 
 ---
 
@@ -1816,7 +1816,7 @@ public string[] ExcludeExportRanges { get; set; }
 
 Dynamic routes overlapped/encompassed by exclude export ranges are excluded during export to hub.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_spoke#exclude_export_ranges NetworkConnectivitySpoke#exclude_export_ranges}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_spoke#exclude_export_ranges NetworkConnectivitySpoke#exclude_export_ranges}
 
 ---
 
@@ -1830,7 +1830,7 @@ public string[] ExcludeImportRanges { get; set; }
 
 Hub routes overlapped/encompassed by exclude import ranges are excluded during import from hub.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_spoke#exclude_import_ranges NetworkConnectivitySpoke#exclude_import_ranges}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_spoke#exclude_import_ranges NetworkConnectivitySpoke#exclude_import_ranges}
 
 ---
 
@@ -1844,7 +1844,7 @@ public string[] IncludeExportRanges { get; set; }
 
 Dynamic routes fully encompassed by include export ranges are included during export to hub.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_spoke#include_export_ranges NetworkConnectivitySpoke#include_export_ranges}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_spoke#include_export_ranges NetworkConnectivitySpoke#include_export_ranges}
 
 ---
 
@@ -1860,7 +1860,7 @@ Hub routes fully encompassed by include import ranges are included during import
 
 "ALL_IPV4_RANGES" or IPv4 CIDR ranges are allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_spoke#include_import_ranges NetworkConnectivitySpoke#include_import_ranges}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_spoke#include_import_ranges NetworkConnectivitySpoke#include_import_ranges}
 
 ---
 
@@ -1900,7 +1900,7 @@ public string Network { get; set; }
 
 The URI of the Service Consumer VPC that the Producer VPC is peered with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_spoke#network NetworkConnectivitySpoke#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_spoke#network NetworkConnectivitySpoke#network}
 
 ---
 
@@ -1916,7 +1916,7 @@ The name of the VPC peering between the Service Consumer VPC and the Producer VP
 
 This peering must be in ACTIVE state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_spoke#peering NetworkConnectivitySpoke#peering}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_spoke#peering NetworkConnectivitySpoke#peering}
 
 ---
 
@@ -1930,7 +1930,7 @@ public string[] ExcludeExportRanges { get; set; }
 
 IP ranges encompassing the subnets to be excluded from peering.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_spoke#exclude_export_ranges NetworkConnectivitySpoke#exclude_export_ranges}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_spoke#exclude_export_ranges NetworkConnectivitySpoke#exclude_export_ranges}
 
 ---
 
@@ -1944,7 +1944,7 @@ public string[] IncludeExportRanges { get; set; }
 
 IP ranges allowed to be included from peering.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_spoke#include_export_ranges NetworkConnectivitySpoke#include_export_ranges}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_spoke#include_export_ranges NetworkConnectivitySpoke#include_export_ranges}
 
 ---
 
@@ -1988,7 +1988,7 @@ public IResolvable|NetworkConnectivitySpokeLinkedRouterApplianceInstancesInstanc
 
 instances block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_spoke#instances NetworkConnectivitySpoke#instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_spoke#instances NetworkConnectivitySpoke#instances}
 
 ---
 
@@ -2004,7 +2004,7 @@ A value that controls whether site-to-site data transfer is enabled for these re
 
 Note that data transfer is available only in supported locations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_spoke#site_to_site_data_transfer NetworkConnectivitySpoke#site_to_site_data_transfer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_spoke#site_to_site_data_transfer NetworkConnectivitySpoke#site_to_site_data_transfer}
 
 ---
 
@@ -2018,7 +2018,7 @@ public string[] ExcludeExportRanges { get; set; }
 
 Dynamic routes overlapped/encompassed by exclude export ranges are excluded during export to hub.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_spoke#exclude_export_ranges NetworkConnectivitySpoke#exclude_export_ranges}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_spoke#exclude_export_ranges NetworkConnectivitySpoke#exclude_export_ranges}
 
 ---
 
@@ -2032,7 +2032,7 @@ public string[] ExcludeImportRanges { get; set; }
 
 Hub routes overlapped/encompassed by exclude import ranges are excluded during import from hub.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_spoke#exclude_import_ranges NetworkConnectivitySpoke#exclude_import_ranges}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_spoke#exclude_import_ranges NetworkConnectivitySpoke#exclude_import_ranges}
 
 ---
 
@@ -2046,7 +2046,7 @@ public string[] IncludeExportRanges { get; set; }
 
 Dynamic routes fully encompassed by include export ranges are included during export to hub.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_spoke#include_export_ranges NetworkConnectivitySpoke#include_export_ranges}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_spoke#include_export_ranges NetworkConnectivitySpoke#include_export_ranges}
 
 ---
 
@@ -2062,7 +2062,7 @@ Hub routes fully encompassed by include import ranges are included during import
 
 "ALL_IPV4_RANGES" or IPv4 CIDR ranges are allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_spoke#include_import_ranges NetworkConnectivitySpoke#include_import_ranges}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_spoke#include_import_ranges NetworkConnectivitySpoke#include_import_ranges}
 
 ---
 
@@ -2098,7 +2098,7 @@ public string IpAddress { get; set; }
 
 The IP address on the VM to use for peering.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_spoke#ip_address NetworkConnectivitySpoke#ip_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_spoke#ip_address NetworkConnectivitySpoke#ip_address}
 
 ---
 
@@ -2112,7 +2112,7 @@ public string VirtualMachine { get; set; }
 
 The URI of the virtual machine resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_spoke#virtual_machine NetworkConnectivitySpoke#virtual_machine}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_spoke#virtual_machine NetworkConnectivitySpoke#virtual_machine}
 
 ---
 
@@ -2150,7 +2150,7 @@ public string Uri { get; set; }
 
 The URI of the VPC network resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_spoke#uri NetworkConnectivitySpoke#uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_spoke#uri NetworkConnectivitySpoke#uri}
 
 ---
 
@@ -2164,7 +2164,7 @@ public string[] ExcludeExportRanges { get; set; }
 
 IP ranges encompassing the subnets to be excluded from peering.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_spoke#exclude_export_ranges NetworkConnectivitySpoke#exclude_export_ranges}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_spoke#exclude_export_ranges NetworkConnectivitySpoke#exclude_export_ranges}
 
 ---
 
@@ -2178,7 +2178,7 @@ public string[] IncludeExportRanges { get; set; }
 
 IP ranges allowed to be included from peering.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_spoke#include_export_ranges NetworkConnectivitySpoke#include_export_ranges}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_spoke#include_export_ranges NetworkConnectivitySpoke#include_export_ranges}
 
 ---
 
@@ -2224,7 +2224,7 @@ A value that controls whether site-to-site data transfer is enabled for these re
 
 Note that data transfer is available only in supported locations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_spoke#site_to_site_data_transfer NetworkConnectivitySpoke#site_to_site_data_transfer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_spoke#site_to_site_data_transfer NetworkConnectivitySpoke#site_to_site_data_transfer}
 
 ---
 
@@ -2238,7 +2238,7 @@ public string[] Uris { get; set; }
 
 The URIs of linked VPN tunnel resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_spoke#uris NetworkConnectivitySpoke#uris}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_spoke#uris NetworkConnectivitySpoke#uris}
 
 ---
 
@@ -2252,7 +2252,7 @@ public string[] ExcludeExportRanges { get; set; }
 
 Dynamic routes overlapped/encompassed by exclude export ranges are excluded during export to hub.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_spoke#exclude_export_ranges NetworkConnectivitySpoke#exclude_export_ranges}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_spoke#exclude_export_ranges NetworkConnectivitySpoke#exclude_export_ranges}
 
 ---
 
@@ -2266,7 +2266,7 @@ public string[] ExcludeImportRanges { get; set; }
 
 Hub routes overlapped/encompassed by exclude import ranges are excluded during import from hub.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_spoke#exclude_import_ranges NetworkConnectivitySpoke#exclude_import_ranges}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_spoke#exclude_import_ranges NetworkConnectivitySpoke#exclude_import_ranges}
 
 ---
 
@@ -2280,7 +2280,7 @@ public string[] IncludeExportRanges { get; set; }
 
 Dynamic routes fully encompassed by include export ranges are included during export to hub.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_spoke#include_export_ranges NetworkConnectivitySpoke#include_export_ranges}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_spoke#include_export_ranges NetworkConnectivitySpoke#include_export_ranges}
 
 ---
 
@@ -2296,7 +2296,7 @@ Hub routes fully encompassed by include import ranges are included during import
 
 "ALL_IPV4_RANGES" or IPv4 CIDR ranges are allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_spoke#include_import_ranges NetworkConnectivitySpoke#include_import_ranges}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_spoke#include_import_ranges NetworkConnectivitySpoke#include_import_ranges}
 
 ---
 
@@ -2331,9 +2331,9 @@ new NetworkConnectivitySpokeTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_spoke#create NetworkConnectivitySpoke#create}. |
-| <code><a href="#@cdktn/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_spoke#delete NetworkConnectivitySpoke#delete}. |
-| <code><a href="#@cdktn/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_spoke#update NetworkConnectivitySpoke#update}. |
+| <code><a href="#@cdktn/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_spoke#create NetworkConnectivitySpoke#create}. |
+| <code><a href="#@cdktn/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_spoke#delete NetworkConnectivitySpoke#delete}. |
+| <code><a href="#@cdktn/provider-google.networkConnectivitySpoke.NetworkConnectivitySpokeTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_spoke#update NetworkConnectivitySpoke#update}. |
 
 ---
 
@@ -2345,7 +2345,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_spoke#create NetworkConnectivitySpoke#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_spoke#create NetworkConnectivitySpoke#create}.
 
 ---
 
@@ -2357,7 +2357,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_spoke#delete NetworkConnectivitySpoke#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_spoke#delete NetworkConnectivitySpoke#delete}.
 
 ---
 
@@ -2369,7 +2369,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_spoke#update NetworkConnectivitySpoke#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_spoke#update NetworkConnectivitySpoke#update}.
 
 ---
 

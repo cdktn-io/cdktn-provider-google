@@ -4,7 +4,7 @@
 
 ### SiteVerificationWebResource <a name="SiteVerificationWebResource" id="@cdktn/provider-google.siteVerificationWebResource.SiteVerificationWebResource"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/site_verification_web_resource google_site_verification_web_resource}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/site_verification_web_resource google_site_verification_web_resource}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.siteVerificationWebResource.SiteVerificationWebResource.Initializer"></a>
 
@@ -41,7 +41,7 @@ SiteVerificationWebResource.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.siteVerificationWebResource.SiteVerificationWebResource.Initializer.parameter.site">site</a></code> | <code><a href="#@cdktn/provider-google.siteVerificationWebResource.SiteVerificationWebResourceSite">SiteVerificationWebResourceSite</a></code> | site block. |
 | <code><a href="#@cdktn/provider-google.siteVerificationWebResource.SiteVerificationWebResource.Initializer.parameter.verificationMethod">verificationMethod</a></code> | <code>java.lang.String</code> | The verification method for the Site Verification system to use to verify this site or domain. |
 | <code><a href="#@cdktn/provider-google.siteVerificationWebResource.SiteVerificationWebResource.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.siteVerificationWebResource.SiteVerificationWebResource.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/site_verification_web_resource#id SiteVerificationWebResource#id}. |
+| <code><a href="#@cdktn/provider-google.siteVerificationWebResource.SiteVerificationWebResource.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/site_verification_web_resource#id SiteVerificationWebResource#id}. |
 | <code><a href="#@cdktn/provider-google.siteVerificationWebResource.SiteVerificationWebResource.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.siteVerificationWebResource.SiteVerificationWebResourceTimeouts">SiteVerificationWebResourceTimeouts</a></code> | timeouts block. |
 
 ---
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 site block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/site_verification_web_resource#site SiteVerificationWebResource#site}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/site_verification_web_resource#site SiteVerificationWebResource#site}
 
 ---
 
@@ -124,7 +124,7 @@ The verification method for the Site Verification system to use to verify this s
 
 Possible values: ["ANALYTICS", "DNS_CNAME", "DNS_TXT", "FILE", "META", "TAG_MANAGER"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/site_verification_web_resource#verification_method SiteVerificationWebResource#verification_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/site_verification_web_resource#verification_method SiteVerificationWebResource#verification_method}
 
 ---
 
@@ -141,7 +141,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/site_verification_web_resource#deletion_policy SiteVerificationWebResource#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/site_verification_web_resource#deletion_policy SiteVerificationWebResource#deletion_policy}
 
 ---
 
@@ -149,7 +149,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/site_verification_web_resource#id SiteVerificationWebResource#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/site_verification_web_resource#id SiteVerificationWebResource#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -162,7 +162,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/site_verification_web_resource#timeouts SiteVerificationWebResource#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/site_verification_web_resource#timeouts SiteVerificationWebResource#timeouts}
 
 ---
 
@@ -658,7 +658,7 @@ The construct id used in the generated config for the SiteVerificationWebResourc
 
 The id of the existing SiteVerificationWebResource that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/site_verification_web_resource#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/site_verification_web_resource#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1022,7 +1022,7 @@ SiteVerificationWebResourceConfig.builder()
 | <code><a href="#@cdktn/provider-google.siteVerificationWebResource.SiteVerificationWebResourceConfig.property.site">site</a></code> | <code><a href="#@cdktn/provider-google.siteVerificationWebResource.SiteVerificationWebResourceSite">SiteVerificationWebResourceSite</a></code> | site block. |
 | <code><a href="#@cdktn/provider-google.siteVerificationWebResource.SiteVerificationWebResourceConfig.property.verificationMethod">verificationMethod</a></code> | <code>java.lang.String</code> | The verification method for the Site Verification system to use to verify this site or domain. |
 | <code><a href="#@cdktn/provider-google.siteVerificationWebResource.SiteVerificationWebResourceConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.siteVerificationWebResource.SiteVerificationWebResourceConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/site_verification_web_resource#id SiteVerificationWebResource#id}. |
+| <code><a href="#@cdktn/provider-google.siteVerificationWebResource.SiteVerificationWebResourceConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/site_verification_web_resource#id SiteVerificationWebResource#id}. |
 | <code><a href="#@cdktn/provider-google.siteVerificationWebResource.SiteVerificationWebResourceConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.siteVerificationWebResource.SiteVerificationWebResourceTimeouts">SiteVerificationWebResourceTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1107,7 +1107,7 @@ public SiteVerificationWebResourceSite getSite();
 
 site block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/site_verification_web_resource#site SiteVerificationWebResource#site}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/site_verification_web_resource#site SiteVerificationWebResource#site}
 
 ---
 
@@ -1123,7 +1123,7 @@ The verification method for the Site Verification system to use to verify this s
 
 Possible values: ["ANALYTICS", "DNS_CNAME", "DNS_TXT", "FILE", "META", "TAG_MANAGER"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/site_verification_web_resource#verification_method SiteVerificationWebResource#verification_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/site_verification_web_resource#verification_method SiteVerificationWebResource#verification_method}
 
 ---
 
@@ -1144,7 +1144,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/site_verification_web_resource#deletion_policy SiteVerificationWebResource#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/site_verification_web_resource#deletion_policy SiteVerificationWebResource#deletion_policy}
 
 ---
 
@@ -1156,7 +1156,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/site_verification_web_resource#id SiteVerificationWebResource#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/site_verification_web_resource#id SiteVerificationWebResource#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1173,7 +1173,7 @@ public SiteVerificationWebResourceTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/site_verification_web_resource#timeouts SiteVerificationWebResource#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/site_verification_web_resource#timeouts SiteVerificationWebResource#timeouts}
 
 ---
 
@@ -1212,7 +1212,7 @@ The site identifier.
 If the type is set to SITE, the identifier is a URL. If the type is
 set to INET_DOMAIN, the identifier is a domain name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/site_verification_web_resource#identifier SiteVerificationWebResource#identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/site_verification_web_resource#identifier SiteVerificationWebResource#identifier}
 
 ---
 
@@ -1226,7 +1226,7 @@ public java.lang.String getType();
 
 The type of resource to be verified. Possible values: ["INET_DOMAIN", "SITE"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/site_verification_web_resource#type SiteVerificationWebResource#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/site_verification_web_resource#type SiteVerificationWebResource#type}
 
 ---
 
@@ -1247,8 +1247,8 @@ SiteVerificationWebResourceTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.siteVerificationWebResource.SiteVerificationWebResourceTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/site_verification_web_resource#create SiteVerificationWebResource#create}. |
-| <code><a href="#@cdktn/provider-google.siteVerificationWebResource.SiteVerificationWebResourceTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/site_verification_web_resource#delete SiteVerificationWebResource#delete}. |
+| <code><a href="#@cdktn/provider-google.siteVerificationWebResource.SiteVerificationWebResourceTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/site_verification_web_resource#create SiteVerificationWebResource#create}. |
+| <code><a href="#@cdktn/provider-google.siteVerificationWebResource.SiteVerificationWebResourceTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/site_verification_web_resource#delete SiteVerificationWebResource#delete}. |
 
 ---
 
@@ -1260,7 +1260,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/site_verification_web_resource#create SiteVerificationWebResource#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/site_verification_web_resource#create SiteVerificationWebResource#create}.
 
 ---
 
@@ -1272,7 +1272,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/site_verification_web_resource#delete SiteVerificationWebResource#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/site_verification_web_resource#delete SiteVerificationWebResource#delete}.
 
 ---
 

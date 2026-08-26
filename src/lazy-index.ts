@@ -964,6 +964,7 @@ Object.defineProperty(exports, 'managedKafkaConnectCluster', { get: function () 
 Object.defineProperty(exports, 'managedKafkaConnector', { get: function () { return require('./managed-kafka-connector'); } });
 Object.defineProperty(exports, 'managedKafkaTopic', { get: function () { return require('./managed-kafka-topic'); } });
 Object.defineProperty(exports, 'memcacheInstance', { get: function () { return require('./memcache-instance'); } });
+Object.defineProperty(exports, 'memorystoreAclPolicy', { get: function () { return require('./memorystore-acl-policy'); } });
 Object.defineProperty(exports, 'memorystoreInstance', { get: function () { return require('./memorystore-instance'); } });
 Object.defineProperty(exports, 'memorystoreInstanceDesiredUserCreatedEndpoints', { get: function () { return require('./memorystore-instance-desired-user-created-endpoints'); } });
 Object.defineProperty(exports, 'migrationCenterAssetsExportJob', { get: function () { return require('./migration-center-assets-export-job'); } });
@@ -1155,6 +1156,7 @@ Object.defineProperty(exports, 'pubsubTopicIamMember', { get: function () { retu
 Object.defineProperty(exports, 'pubsubTopicIamPolicy', { get: function () { return require('./pubsub-topic-iam-policy'); } });
 Object.defineProperty(exports, 'recaptchaEnterpriseKey', { get: function () { return require('./recaptcha-enterprise-key'); } });
 Object.defineProperty(exports, 'redisCluster', { get: function () { return require('./redis-cluster'); } });
+Object.defineProperty(exports, 'redisClusterAclPolicy', { get: function () { return require('./redis-cluster-acl-policy'); } });
 Object.defineProperty(exports, 'redisClusterUserCreatedConnections', { get: function () { return require('./redis-cluster-user-created-connections'); } });
 Object.defineProperty(exports, 'redisInstance', { get: function () { return require('./redis-instance'); } });
 Object.defineProperty(exports, 'resourceManagerCapability', { get: function () { return require('./resource-manager-capability'); } });
@@ -1661,6 +1663,7 @@ Object.defineProperty(exports, 'dataGoogleLoggingProjectSettings', { get: functi
 Object.defineProperty(exports, 'dataGoogleLoggingSink', { get: function () { return require('./data-google-logging-sink'); } });
 Object.defineProperty(exports, 'dataGoogleLustreInstance', { get: function () { return require('./data-google-lustre-instance'); } });
 Object.defineProperty(exports, 'dataGoogleMemcacheInstance', { get: function () { return require('./data-google-memcache-instance'); } });
+Object.defineProperty(exports, 'dataGoogleMemorystoreAclPolicy', { get: function () { return require('./data-google-memorystore-acl-policy'); } });
 Object.defineProperty(exports, 'dataGoogleMemorystoreInstance', { get: function () { return require('./data-google-memorystore-instance'); } });
 Object.defineProperty(exports, 'dataGoogleMonitoringAppEngineService', { get: function () { return require('./data-google-monitoring-app-engine-service'); } });
 Object.defineProperty(exports, 'dataGoogleMonitoringClusterIstioService', { get: function () { return require('./data-google-monitoring-cluster-istio-service'); } });
@@ -1723,6 +1726,7 @@ Object.defineProperty(exports, 'dataGooglePubsubSubscriptionIamPolicy', { get: f
 Object.defineProperty(exports, 'dataGooglePubsubTopic', { get: function () { return require('./data-google-pubsub-topic'); } });
 Object.defineProperty(exports, 'dataGooglePubsubTopicIamPolicy', { get: function () { return require('./data-google-pubsub-topic-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleRedisCluster', { get: function () { return require('./data-google-redis-cluster'); } });
+Object.defineProperty(exports, 'dataGoogleRedisClusterAclPolicy', { get: function () { return require('./data-google-redis-cluster-acl-policy'); } });
 Object.defineProperty(exports, 'dataGoogleRedisInstance', { get: function () { return require('./data-google-redis-instance'); } });
 Object.defineProperty(exports, 'dataGoogleSccSourceIamPolicy', { get: function () { return require('./data-google-scc-source-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleSccV2OrganizationSourceIamPolicy', { get: function () { return require('./data-google-scc-v2-organization-source-iam-policy'); } });
