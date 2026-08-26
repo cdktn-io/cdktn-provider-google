@@ -4,7 +4,7 @@
 
 ### DataGoogleComputeNetwork <a name="DataGoogleComputeNetwork" id="@cdktn/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetwork"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/compute_network google_compute_network}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/compute_network google_compute_network}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetwork.Initializer"></a>
 
@@ -422,7 +422,7 @@ The construct id used in the generated config for the DataGoogleComputeNetwork t
 
 The id of the existing DataGoogleComputeNetwork that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/compute_network#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/compute_network#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -792,11 +792,11 @@ const dataGoogleComputeNetworkConfig: dataGoogleComputeNetwork.DataGoogleCompute
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetworkConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetworkConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetworkConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetworkConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/compute_network#id DataGoogleComputeNetwork#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetworkConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/compute_network#name DataGoogleComputeNetwork#name}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetworkConfig.property.networkProfile">networkProfile</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/compute_network#network_profile DataGoogleComputeNetwork#network_profile}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetworkConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/compute_network#project DataGoogleComputeNetwork#project}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetworkConfig.property.selfLink">selfLink</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/compute_network#self_link DataGoogleComputeNetwork#self_link}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetworkConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/compute_network#id DataGoogleComputeNetwork#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetworkConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/compute_network#name DataGoogleComputeNetwork#name}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetworkConfig.property.networkProfile">networkProfile</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/compute_network#network_profile DataGoogleComputeNetwork#network_profile}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetworkConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/compute_network#project DataGoogleComputeNetwork#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeNetwork.DataGoogleComputeNetworkConfig.property.selfLink">selfLink</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/compute_network#self_link DataGoogleComputeNetwork#self_link}. |
 
 ---
 
@@ -878,7 +878,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/compute_network#id DataGoogleComputeNetwork#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/compute_network#id DataGoogleComputeNetwork#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -893,7 +893,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/compute_network#name DataGoogleComputeNetwork#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/compute_network#name DataGoogleComputeNetwork#name}.
 
 ---
 
@@ -905,7 +905,7 @@ public readonly networkProfile: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/compute_network#network_profile DataGoogleComputeNetwork#network_profile}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/compute_network#network_profile DataGoogleComputeNetwork#network_profile}.
 
 ---
 
@@ -917,7 +917,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/compute_network#project DataGoogleComputeNetwork#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/compute_network#project DataGoogleComputeNetwork#project}.
 
 ---
 
@@ -929,7 +929,7 @@ public readonly selfLink: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/compute_network#self_link DataGoogleComputeNetwork#self_link}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/compute_network#self_link DataGoogleComputeNetwork#self_link}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### BiglakeTable <a name="BiglakeTable" id="@cdktn/provider-google.biglakeTable.BiglakeTable"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_table google_biglake_table}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/biglake_table google_biglake_table}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.biglakeTable.BiglakeTable.Initializer"></a>
 
@@ -557,7 +557,7 @@ The construct id used in the generated config for the BiglakeTable to import.
 
 The id of the existing BiglakeTable that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_table#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/biglake_table#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1001,7 +1001,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglaketable"
 | <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableConfig.property.database">Database</a></code> | <code>*string</code> | The id of the parent database. |
 | <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableConfig.property.hiveOptions">HiveOptions</a></code> | <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptions">BiglakeTableHiveOptions</a></code> | hive_options block. |
-| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_table#id BiglakeTable#id}. |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/biglake_table#id BiglakeTable#id}. |
 | <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableTimeouts">BiglakeTableTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableConfig.property.type">Type</a></code> | <code>*string</code> | The database type. Possible values: ["HIVE"]. |
 
@@ -1087,7 +1087,7 @@ Name *string
 
 Output only. The name of the Table. Format: projects/{project_id_or_number}/locations/{locationId}/catalogs/{catalogId}/databases/{databaseId}/tables/{tableId}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_table#name BiglakeTable#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/biglake_table#name BiglakeTable#name}
 
 ---
 
@@ -1101,7 +1101,7 @@ Database *string
 
 The id of the parent database.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_table#database BiglakeTable#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/biglake_table#database BiglakeTable#database}
 
 ---
 
@@ -1122,7 +1122,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_table#deletion_policy BiglakeTable#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/biglake_table#deletion_policy BiglakeTable#deletion_policy}
 
 ---
 
@@ -1136,7 +1136,7 @@ HiveOptions BiglakeTableHiveOptions
 
 hive_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_table#hive_options BiglakeTable#hive_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/biglake_table#hive_options BiglakeTable#hive_options}
 
 ---
 
@@ -1148,7 +1148,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_table#id BiglakeTable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/biglake_table#id BiglakeTable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1165,7 +1165,7 @@ Timeouts BiglakeTableTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_table#timeouts BiglakeTable#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/biglake_table#timeouts BiglakeTable#timeouts}
 
 ---
 
@@ -1179,7 +1179,7 @@ Type *string
 
 The database type. Possible values: ["HIVE"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_table#type BiglakeTable#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/biglake_table#type BiglakeTable#type}
 
 ---
 
@@ -1221,7 +1221,7 @@ An object containing a
 list of "key": value pairs.
 Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_table#parameters BiglakeTable#parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/biglake_table#parameters BiglakeTable#parameters}
 
 ---
 
@@ -1235,7 +1235,7 @@ StorageDescriptor BiglakeTableHiveOptionsStorageDescriptor
 
 storage_descriptor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_table#storage_descriptor BiglakeTable#storage_descriptor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/biglake_table#storage_descriptor BiglakeTable#storage_descriptor}
 
 ---
 
@@ -1249,7 +1249,7 @@ TableType *string
 
 Hive table type. For example, MANAGED_TABLE, EXTERNAL_TABLE.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_table#table_type BiglakeTable#table_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/biglake_table#table_type BiglakeTable#table_type}
 
 ---
 
@@ -1264,6 +1264,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglaketable"
 	InputFormat: *string,
 	LocationUri: *string,
 	OutputFormat: *string,
+	SerdeInfo: github.com/cdktn-io/cdktn-provider-google-go/google/v20.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfo,
 }
 ```
 
@@ -1274,6 +1275,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglaketable"
 | <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptor.property.inputFormat">InputFormat</a></code> | <code>*string</code> | The fully qualified Java class name of the input format. |
 | <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptor.property.locationUri">LocationUri</a></code> | <code>*string</code> | Cloud Storage folder URI where the table data is stored, starting with "gs://". |
 | <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptor.property.outputFormat">OutputFormat</a></code> | <code>*string</code> | The fully qualified Java class name of the output format. |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptor.property.serdeInfo">SerdeInfo</a></code> | <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfo">BiglakeTableHiveOptionsStorageDescriptorSerdeInfo</a></code> | serde_info block. |
 
 ---
 
@@ -1287,7 +1289,7 @@ InputFormat *string
 
 The fully qualified Java class name of the input format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_table#input_format BiglakeTable#input_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/biglake_table#input_format BiglakeTable#input_format}
 
 ---
 
@@ -1301,7 +1303,7 @@ LocationUri *string
 
 Cloud Storage folder URI where the table data is stored, starting with "gs://".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_table#location_uri BiglakeTable#location_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/biglake_table#location_uri BiglakeTable#location_uri}
 
 ---
 
@@ -1315,7 +1317,55 @@ OutputFormat *string
 
 The fully qualified Java class name of the output format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_table#output_format BiglakeTable#output_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/biglake_table#output_format BiglakeTable#output_format}
+
+---
+
+##### `SerdeInfo`<sup>Optional</sup> <a name="SerdeInfo" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptor.property.serdeInfo"></a>
+
+```go
+SerdeInfo BiglakeTableHiveOptionsStorageDescriptorSerdeInfo
+```
+
+- *Type:* <a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfo">BiglakeTableHiveOptionsStorageDescriptorSerdeInfo</a>
+
+serde_info block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/biglake_table#serde_info BiglakeTable#serde_info}
+
+---
+
+### BiglakeTableHiveOptionsStorageDescriptorSerdeInfo <a name="BiglakeTableHiveOptionsStorageDescriptorSerdeInfo" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfo"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfo.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglaketable"
+
+&biglaketable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfo {
+	SerializationLib: *string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfo.property.serializationLib">SerializationLib</a></code> | <code>*string</code> | The fully qualified Java class name of the serialization library. |
+
+---
+
+##### `SerializationLib`<sup>Optional</sup> <a name="SerializationLib" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfo.property.serializationLib"></a>
+
+```go
+SerializationLib *string
+```
+
+- *Type:* *string
+
+The fully qualified Java class name of the serialization library.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/biglake_table#serialization_lib BiglakeTable#serialization_lib}
 
 ---
 
@@ -1337,9 +1387,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglaketable"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_table#create BiglakeTable#create}. |
-| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_table#delete BiglakeTable#delete}. |
-| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_table#update BiglakeTable#update}. |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/biglake_table#create BiglakeTable#create}. |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/biglake_table#delete BiglakeTable#delete}. |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/biglake_table#update BiglakeTable#update}. |
 
 ---
 
@@ -1351,7 +1401,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_table#create BiglakeTable#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/biglake_table#create BiglakeTable#create}.
 
 ---
 
@@ -1363,7 +1413,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_table#delete BiglakeTable#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/biglake_table#delete BiglakeTable#delete}.
 
 ---
 
@@ -1375,7 +1425,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_table#update BiglakeTable#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/biglake_table#update BiglakeTable#update}.
 
 ---
 
@@ -1780,9 +1830,11 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.putSerdeInfo">PutSerdeInfo</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.resetInputFormat">ResetInputFormat</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.resetLocationUri">ResetLocationUri</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.resetOutputFormat">ResetOutputFormat</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.resetSerdeInfo">ResetSerdeInfo</a></code> | *No description.* |
 
 ---
 
@@ -1936,6 +1988,18 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `PutSerdeInfo` <a name="PutSerdeInfo" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.putSerdeInfo"></a>
+
+```go
+func PutSerdeInfo(value BiglakeTableHiveOptionsStorageDescriptorSerdeInfo)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.putSerdeInfo.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfo">BiglakeTableHiveOptionsStorageDescriptorSerdeInfo</a>
+
+---
+
 ##### `ResetInputFormat` <a name="ResetInputFormat" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.resetInputFormat"></a>
 
 ```go
@@ -1954,6 +2018,12 @@ func ResetLocationUri()
 func ResetOutputFormat()
 ```
 
+##### `ResetSerdeInfo` <a name="ResetSerdeInfo" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.resetSerdeInfo"></a>
+
+```go
+func ResetSerdeInfo()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -1961,9 +2031,11 @@ func ResetOutputFormat()
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.property.serdeInfo">SerdeInfo</a></code> | <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfoOutputReference">BiglakeTableHiveOptionsStorageDescriptorSerdeInfoOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.property.inputFormatInput">InputFormatInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.property.locationUriInput">LocationUriInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.property.outputFormatInput">OutputFormatInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.property.serdeInfoInput">SerdeInfoInput</a></code> | <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfo">BiglakeTableHiveOptionsStorageDescriptorSerdeInfo</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.property.inputFormat">InputFormat</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.property.locationUri">LocationUri</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.property.outputFormat">OutputFormat</a></code> | <code>*string</code> | *No description.* |
@@ -1995,6 +2067,16 @@ func Fqn() *string
 
 ---
 
+##### `SerdeInfo`<sup>Required</sup> <a name="SerdeInfo" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.property.serdeInfo"></a>
+
+```go
+func SerdeInfo() BiglakeTableHiveOptionsStorageDescriptorSerdeInfoOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfoOutputReference">BiglakeTableHiveOptionsStorageDescriptorSerdeInfoOutputReference</a>
+
+---
+
 ##### `InputFormatInput`<sup>Optional</sup> <a name="InputFormatInput" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.property.inputFormatInput"></a>
 
 ```go
@@ -2022,6 +2104,16 @@ func OutputFormatInput() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `SerdeInfoInput`<sup>Optional</sup> <a name="SerdeInfoInput" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.property.serdeInfoInput"></a>
+
+```go
+func SerdeInfoInput() BiglakeTableHiveOptionsStorageDescriptorSerdeInfo
+```
+
+- *Type:* <a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfo">BiglakeTableHiveOptionsStorageDescriptorSerdeInfo</a>
 
 ---
 
@@ -2062,6 +2154,284 @@ func InternalValue() BiglakeTableHiveOptionsStorageDescriptor
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptor">BiglakeTableHiveOptionsStorageDescriptor</a>
+
+---
+
+
+### BiglakeTableHiveOptionsStorageDescriptorSerdeInfoOutputReference <a name="BiglakeTableHiveOptionsStorageDescriptorSerdeInfoOutputReference" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfoOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfoOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglaketable"
+
+biglaketable.NewBiglakeTableHiveOptionsStorageDescriptorSerdeInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BiglakeTableHiveOptionsStorageDescriptorSerdeInfoOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfoOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfoOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfoOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfoOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfoOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfoOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfoOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfoOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfoOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfoOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfoOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfoOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfoOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfoOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfoOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfoOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfoOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfoOutputReference.resetSerializationLib">ResetSerializationLib</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfoOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfoOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfoOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfoOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfoOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfoOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfoOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfoOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfoOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfoOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfoOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfoOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfoOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfoOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfoOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfoOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfoOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfoOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfoOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfoOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfoOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfoOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfoOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfoOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetSerializationLib` <a name="ResetSerializationLib" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfoOutputReference.resetSerializationLib"></a>
+
+```go
+func ResetSerializationLib()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfoOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfoOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfoOutputReference.property.serializationLibInput">SerializationLibInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfoOutputReference.property.serializationLib">SerializationLib</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfoOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfo">BiglakeTableHiveOptionsStorageDescriptorSerdeInfo</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfoOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfoOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `SerializationLibInput`<sup>Optional</sup> <a name="SerializationLibInput" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfoOutputReference.property.serializationLibInput"></a>
+
+```go
+func SerializationLibInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `SerializationLib`<sup>Required</sup> <a name="SerializationLib" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfoOutputReference.property.serializationLib"></a>
+
+```go
+func SerializationLib() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfoOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() BiglakeTableHiveOptionsStorageDescriptorSerdeInfo
+```
+
+- *Type:* <a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorSerdeInfo">BiglakeTableHiveOptionsStorageDescriptorSerdeInfo</a>
 
 ---
 

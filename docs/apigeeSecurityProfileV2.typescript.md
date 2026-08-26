@@ -4,7 +4,7 @@
 
 ### ApigeeSecurityProfileV2 <a name="ApigeeSecurityProfileV2" id="@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apigee_security_profile_v2 google_apigee_security_profile_v2}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/apigee_security_profile_v2 google_apigee_security_profile_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2.Initializer"></a>
 
@@ -543,7 +543,7 @@ The construct id used in the generated config for the ApigeeSecurityProfileV2 to
 
 The id of the existing ApigeeSecurityProfileV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apigee_security_profile_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/apigee_security_profile_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -951,7 +951,7 @@ const apigeeSecurityProfileV2Config: apigeeSecurityProfileV2.ApigeeSecurityProfi
 | <code><a href="#@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2Config.property.profileId">profileId</a></code> | <code>string</code> | Resource ID of the security profile. |
 | <code><a href="#@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2Config.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2Config.property.description">description</a></code> | <code>string</code> | Description of the security profile. |
-| <code><a href="#@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apigee_security_profile_v2#id ApigeeSecurityProfileV2#id}. |
+| <code><a href="#@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/apigee_security_profile_v2#id ApigeeSecurityProfileV2#id}. |
 | <code><a href="#@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2Config.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2Timeouts">ApigeeSecurityProfileV2Timeouts</a></code> | timeouts block. |
 
 ---
@@ -1036,7 +1036,7 @@ public readonly orgId: string;
 
 The Apigee Organization associated with the Apigee Security Profile V2, in the format 'organizations/{{org_name}}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apigee_security_profile_v2#org_id ApigeeSecurityProfileV2#org_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/apigee_security_profile_v2#org_id ApigeeSecurityProfileV2#org_id}
 
 ---
 
@@ -1050,7 +1050,7 @@ public readonly profileAssessmentConfigs: IResolvable | ApigeeSecurityProfileV2P
 
 profile_assessment_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apigee_security_profile_v2#profile_assessment_configs ApigeeSecurityProfileV2#profile_assessment_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/apigee_security_profile_v2#profile_assessment_configs ApigeeSecurityProfileV2#profile_assessment_configs}
 
 ---
 
@@ -1064,7 +1064,7 @@ public readonly profileId: string;
 
 Resource ID of the security profile.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apigee_security_profile_v2#profile_id ApigeeSecurityProfileV2#profile_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/apigee_security_profile_v2#profile_id ApigeeSecurityProfileV2#profile_id}
 
 ---
 
@@ -1086,7 +1086,7 @@ management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apigee_security_profile_v2#deletion_policy ApigeeSecurityProfileV2#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/apigee_security_profile_v2#deletion_policy ApigeeSecurityProfileV2#deletion_policy}
 
 ---
 
@@ -1100,7 +1100,7 @@ public readonly description: string;
 
 Description of the security profile.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apigee_security_profile_v2#description ApigeeSecurityProfileV2#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/apigee_security_profile_v2#description ApigeeSecurityProfileV2#description}
 
 ---
 
@@ -1112,7 +1112,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apigee_security_profile_v2#id ApigeeSecurityProfileV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/apigee_security_profile_v2#id ApigeeSecurityProfileV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1129,7 +1129,7 @@ public readonly timeouts: ApigeeSecurityProfileV2Timeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apigee_security_profile_v2#timeouts ApigeeSecurityProfileV2#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/apigee_security_profile_v2#timeouts ApigeeSecurityProfileV2#timeouts}
 
 ---
 
@@ -1147,7 +1147,7 @@ const apigeeSecurityProfileV2ProfileAssessmentConfigs: apigeeSecurityProfileV2.A
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2ProfileAssessmentConfigs.property.assessment">assessment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apigee_security_profile_v2#assessment ApigeeSecurityProfileV2#assessment}. |
+| <code><a href="#@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2ProfileAssessmentConfigs.property.assessment">assessment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/apigee_security_profile_v2#assessment ApigeeSecurityProfileV2#assessment}. |
 | <code><a href="#@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2ProfileAssessmentConfigs.property.weight">weight</a></code> | <code>string</code> | The weight of the assessment. Possible values: ["MINOR", "MODERATE", "MAJOR"]. |
 
 ---
@@ -1160,7 +1160,7 @@ public readonly assessment: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apigee_security_profile_v2#assessment ApigeeSecurityProfileV2#assessment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/apigee_security_profile_v2#assessment ApigeeSecurityProfileV2#assessment}.
 
 ---
 
@@ -1174,7 +1174,7 @@ public readonly weight: string;
 
 The weight of the assessment. Possible values: ["MINOR", "MODERATE", "MAJOR"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apigee_security_profile_v2#weight ApigeeSecurityProfileV2#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/apigee_security_profile_v2#weight ApigeeSecurityProfileV2#weight}
 
 ---
 
@@ -1192,9 +1192,9 @@ const apigeeSecurityProfileV2Timeouts: apigeeSecurityProfileV2.ApigeeSecurityPro
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2Timeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apigee_security_profile_v2#create ApigeeSecurityProfileV2#create}. |
-| <code><a href="#@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2Timeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apigee_security_profile_v2#delete ApigeeSecurityProfileV2#delete}. |
-| <code><a href="#@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2Timeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apigee_security_profile_v2#update ApigeeSecurityProfileV2#update}. |
+| <code><a href="#@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2Timeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/apigee_security_profile_v2#create ApigeeSecurityProfileV2#create}. |
+| <code><a href="#@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2Timeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/apigee_security_profile_v2#delete ApigeeSecurityProfileV2#delete}. |
+| <code><a href="#@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2Timeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/apigee_security_profile_v2#update ApigeeSecurityProfileV2#update}. |
 
 ---
 
@@ -1206,7 +1206,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apigee_security_profile_v2#create ApigeeSecurityProfileV2#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/apigee_security_profile_v2#create ApigeeSecurityProfileV2#create}.
 
 ---
 
@@ -1218,7 +1218,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apigee_security_profile_v2#delete ApigeeSecurityProfileV2#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/apigee_security_profile_v2#delete ApigeeSecurityProfileV2#delete}.
 
 ---
 
@@ -1230,7 +1230,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apigee_security_profile_v2#update ApigeeSecurityProfileV2#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/apigee_security_profile_v2#update ApigeeSecurityProfileV2#update}.
 
 ---
 

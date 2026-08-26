@@ -4,7 +4,7 @@
 
 ### DataGoogleBackupDrDataSourceReference <a name="DataGoogleBackupDrDataSourceReference" id="@cdktn/provider-google.dataGoogleBackupDrDataSourceReference.DataGoogleBackupDrDataSourceReference"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/backup_dr_data_source_reference google_backup_dr_data_source_reference}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/backup_dr_data_source_reference google_backup_dr_data_source_reference}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleBackupDrDataSourceReference.DataGoogleBackupDrDataSourceReference.Initializer"></a>
 
@@ -41,7 +41,7 @@ dataGoogleBackupDrDataSourceReference.DataGoogleBackupDrDataSourceReference(
 | <code><a href="#@cdktn/provider-google.dataGoogleBackupDrDataSourceReference.DataGoogleBackupDrDataSourceReference.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleBackupDrDataSourceReference.DataGoogleBackupDrDataSourceReference.Initializer.parameter.dataSourceReferenceId">data_source_reference_id</a></code> | <code>str</code> | The `id` of the data source reference. |
 | <code><a href="#@cdktn/provider-google.dataGoogleBackupDrDataSourceReference.DataGoogleBackupDrDataSourceReference.Initializer.parameter.location">location</a></code> | <code>str</code> | The location of the data source reference. |
-| <code><a href="#@cdktn/provider-google.dataGoogleBackupDrDataSourceReference.DataGoogleBackupDrDataSourceReference.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/backup_dr_data_source_reference#id DataGoogleBackupDrDataSourceReference#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleBackupDrDataSourceReference.DataGoogleBackupDrDataSourceReference.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/backup_dr_data_source_reference#id DataGoogleBackupDrDataSourceReference#id}. |
 | <code><a href="#@cdktn/provider-google.dataGoogleBackupDrDataSourceReference.DataGoogleBackupDrDataSourceReference.Initializer.parameter.project">project</a></code> | <code>str</code> | The ID of the project in which the resource belongs. |
 
 ---
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 The `id` of the data source reference.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/backup_dr_data_source_reference#data_source_reference_id DataGoogleBackupDrDataSourceReference#data_source_reference_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/backup_dr_data_source_reference#data_source_reference_id DataGoogleBackupDrDataSourceReference#data_source_reference_id}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The location of the data source reference.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/backup_dr_data_source_reference#location DataGoogleBackupDrDataSourceReference#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/backup_dr_data_source_reference#location DataGoogleBackupDrDataSourceReference#location}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/backup_dr_data_source_reference#id DataGoogleBackupDrDataSourceReference#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/backup_dr_data_source_reference#id DataGoogleBackupDrDataSourceReference#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -143,7 +143,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The ID of the project in which the resource belongs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/backup_dr_data_source_reference#project DataGoogleBackupDrDataSourceReference#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/backup_dr_data_source_reference#project DataGoogleBackupDrDataSourceReference#project}
 
 ---
 
@@ -540,7 +540,7 @@ The construct id used in the generated config for the DataGoogleBackupDrDataSour
 
 The id of the existing DataGoogleBackupDrDataSourceReference that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/backup_dr_data_source_reference#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/backup_dr_data_source_reference#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -924,7 +924,7 @@ dataGoogleBackupDrDataSourceReference.DataGoogleBackupDrDataSourceReferenceConfi
 | <code><a href="#@cdktn/provider-google.dataGoogleBackupDrDataSourceReference.DataGoogleBackupDrDataSourceReferenceConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleBackupDrDataSourceReference.DataGoogleBackupDrDataSourceReferenceConfig.property.dataSourceReferenceId">data_source_reference_id</a></code> | <code>str</code> | The `id` of the data source reference. |
 | <code><a href="#@cdktn/provider-google.dataGoogleBackupDrDataSourceReference.DataGoogleBackupDrDataSourceReferenceConfig.property.location">location</a></code> | <code>str</code> | The location of the data source reference. |
-| <code><a href="#@cdktn/provider-google.dataGoogleBackupDrDataSourceReference.DataGoogleBackupDrDataSourceReferenceConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/backup_dr_data_source_reference#id DataGoogleBackupDrDataSourceReference#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleBackupDrDataSourceReference.DataGoogleBackupDrDataSourceReferenceConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/backup_dr_data_source_reference#id DataGoogleBackupDrDataSourceReference#id}. |
 | <code><a href="#@cdktn/provider-google.dataGoogleBackupDrDataSourceReference.DataGoogleBackupDrDataSourceReferenceConfig.property.project">project</a></code> | <code>str</code> | The ID of the project in which the resource belongs. |
 
 ---
@@ -1009,7 +1009,7 @@ data_source_reference_id: str
 
 The `id` of the data source reference.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/backup_dr_data_source_reference#data_source_reference_id DataGoogleBackupDrDataSourceReference#data_source_reference_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/backup_dr_data_source_reference#data_source_reference_id DataGoogleBackupDrDataSourceReference#data_source_reference_id}
 
 ---
 
@@ -1023,7 +1023,7 @@ location: str
 
 The location of the data source reference.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/backup_dr_data_source_reference#location DataGoogleBackupDrDataSourceReference#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/backup_dr_data_source_reference#location DataGoogleBackupDrDataSourceReference#location}
 
 ---
 
@@ -1035,7 +1035,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/backup_dr_data_source_reference#id DataGoogleBackupDrDataSourceReference#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/backup_dr_data_source_reference#id DataGoogleBackupDrDataSourceReference#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1052,7 +1052,7 @@ project: str
 
 The ID of the project in which the resource belongs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/backup_dr_data_source_reference#project DataGoogleBackupDrDataSourceReference#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/backup_dr_data_source_reference#project DataGoogleBackupDrDataSourceReference#project}
 
 ---
 

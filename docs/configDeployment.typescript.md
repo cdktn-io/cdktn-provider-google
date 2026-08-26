@@ -4,7 +4,7 @@
 
 ### ConfigDeployment <a name="ConfigDeployment" id="@cdktn/provider-google.configDeployment.ConfigDeployment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/config_deployment google_config_deployment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/config_deployment google_config_deployment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.configDeployment.ConfigDeployment.Initializer"></a>
 
@@ -599,7 +599,7 @@ The construct id used in the generated config for the ConfigDeployment to import
 
 The id of the existing ConfigDeployment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/config_deployment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/config_deployment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1230,10 +1230,10 @@ const configDeploymentConfig: configDeployment.ConfigDeploymentConfig = { ... }
 | <code><a href="#@cdktn/provider-google.configDeployment.ConfigDeploymentConfig.property.artifactsGcsBucket">artifactsGcsBucket</a></code> | <code>string</code> | Location for Cloud Build logs and artifacts. |
 | <code><a href="#@cdktn/provider-google.configDeployment.ConfigDeploymentConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.configDeployment.ConfigDeploymentConfig.property.forceDestroy">forceDestroy</a></code> | <code>boolean \| cdktn.IResolvable</code> | If true, deletes the deployment and its nested resources. |
-| <code><a href="#@cdktn/provider-google.configDeployment.ConfigDeploymentConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/config_deployment#id ConfigDeployment#id}. |
+| <code><a href="#@cdktn/provider-google.configDeployment.ConfigDeploymentConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/config_deployment#id ConfigDeployment#id}. |
 | <code><a href="#@cdktn/provider-google.configDeployment.ConfigDeploymentConfig.property.importExistingResources">importExistingResources</a></code> | <code>boolean \| cdktn.IResolvable</code> | If true, attempts to automatically import resources on 409 conflict. |
 | <code><a href="#@cdktn/provider-google.configDeployment.ConfigDeploymentConfig.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | Optional. User-defined metadata for the deployment. |
-| <code><a href="#@cdktn/provider-google.configDeployment.ConfigDeploymentConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/config_deployment#project ConfigDeployment#project}. |
+| <code><a href="#@cdktn/provider-google.configDeployment.ConfigDeploymentConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/config_deployment#project ConfigDeployment#project}. |
 | <code><a href="#@cdktn/provider-google.configDeployment.ConfigDeploymentConfig.property.quotaValidation">quotaValidation</a></code> | <code>string</code> | Controls quota checks. Possible values: ["ENABLED", "ENFORCED"]. |
 | <code><a href="#@cdktn/provider-google.configDeployment.ConfigDeploymentConfig.property.tfVersionConstraint">tfVersionConstraint</a></code> | <code>string</code> | Optional constraint on the Terraform version. |
 | <code><a href="#@cdktn/provider-google.configDeployment.ConfigDeploymentConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.configDeployment.ConfigDeploymentTimeouts">ConfigDeploymentTimeouts</a></code> | timeouts block. |
@@ -1321,7 +1321,7 @@ public readonly location: string;
 
 The location for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/config_deployment#location ConfigDeployment#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/config_deployment#location ConfigDeployment#location}
 
 ---
 
@@ -1335,7 +1335,7 @@ public readonly name: string;
 
 The user-specified ID of the deployment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/config_deployment#name ConfigDeployment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/config_deployment#name ConfigDeployment#name}
 
 ---
 
@@ -1349,7 +1349,7 @@ public readonly serviceAccount: string;
 
 Required. User-specified Service Account (SA) credentials to be used when actuating resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/config_deployment#service_account ConfigDeployment#service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/config_deployment#service_account ConfigDeployment#service_account}
 
 ---
 
@@ -1363,7 +1363,7 @@ public readonly terraformBlueprint: ConfigDeploymentTerraformBlueprint;
 
 terraform_blueprint block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/config_deployment#terraform_blueprint ConfigDeployment#terraform_blueprint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/config_deployment#terraform_blueprint ConfigDeployment#terraform_blueprint}
 
 ---
 
@@ -1380,7 +1380,7 @@ Optional. Arbitrary key-value metadata storage.
 **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
 Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/config_deployment#annotations ConfigDeployment#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/config_deployment#annotations ConfigDeployment#annotations}
 
 ---
 
@@ -1394,7 +1394,7 @@ public readonly artifactsGcsBucket: string;
 
 Location for Cloud Build logs and artifacts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/config_deployment#artifacts_gcs_bucket ConfigDeployment#artifacts_gcs_bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/config_deployment#artifacts_gcs_bucket ConfigDeployment#artifacts_gcs_bucket}
 
 ---
 
@@ -1416,7 +1416,7 @@ management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/config_deployment#deletion_policy ConfigDeployment#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/config_deployment#deletion_policy ConfigDeployment#deletion_policy}
 
 ---
 
@@ -1430,7 +1430,7 @@ public readonly forceDestroy: boolean | IResolvable;
 
 If true, deletes the deployment and its nested resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/config_deployment#force_destroy ConfigDeployment#force_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/config_deployment#force_destroy ConfigDeployment#force_destroy}
 
 ---
 
@@ -1442,7 +1442,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/config_deployment#id ConfigDeployment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/config_deployment#id ConfigDeployment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1459,7 +1459,7 @@ public readonly importExistingResources: boolean | IResolvable;
 
 If true, attempts to automatically import resources on 409 conflict.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/config_deployment#import_existing_resources ConfigDeployment#import_existing_resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/config_deployment#import_existing_resources ConfigDeployment#import_existing_resources}
 
 ---
 
@@ -1476,7 +1476,7 @@ Optional. User-defined metadata for the deployment.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/config_deployment#labels ConfigDeployment#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/config_deployment#labels ConfigDeployment#labels}
 
 ---
 
@@ -1488,7 +1488,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/config_deployment#project ConfigDeployment#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/config_deployment#project ConfigDeployment#project}.
 
 ---
 
@@ -1502,7 +1502,7 @@ public readonly quotaValidation: string;
 
 Controls quota checks. Possible values: ["ENABLED", "ENFORCED"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/config_deployment#quota_validation ConfigDeployment#quota_validation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/config_deployment#quota_validation ConfigDeployment#quota_validation}
 
 ---
 
@@ -1516,7 +1516,7 @@ public readonly tfVersionConstraint: string;
 
 Optional constraint on the Terraform version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/config_deployment#tf_version_constraint ConfigDeployment#tf_version_constraint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/config_deployment#tf_version_constraint ConfigDeployment#tf_version_constraint}
 
 ---
 
@@ -1530,7 +1530,7 @@ public readonly timeouts: ConfigDeploymentTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/config_deployment#timeouts ConfigDeployment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/config_deployment#timeouts ConfigDeployment#timeouts}
 
 ---
 
@@ -1544,7 +1544,7 @@ public readonly workerPool: string;
 
 Custom Cloud Build worker pool resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/config_deployment#worker_pool ConfigDeployment#worker_pool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/config_deployment#worker_pool ConfigDeployment#worker_pool}
 
 ---
 
@@ -1578,7 +1578,7 @@ public readonly gcsSource: string;
 
 URI of a GCS object containing the zipped Terraform blueprint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/config_deployment#gcs_source ConfigDeployment#gcs_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/config_deployment#gcs_source ConfigDeployment#gcs_source}
 
 ---
 
@@ -1592,7 +1592,7 @@ public readonly gitSource: ConfigDeploymentTerraformBlueprintGitSource;
 
 git_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/config_deployment#git_source ConfigDeployment#git_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/config_deployment#git_source ConfigDeployment#git_source}
 
 ---
 
@@ -1606,7 +1606,7 @@ public readonly inputValues: IResolvable | ConfigDeploymentTerraformBlueprintInp
 
 input_values block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/config_deployment#input_values ConfigDeployment#input_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/config_deployment#input_values ConfigDeployment#input_values}
 
 ---
 
@@ -1640,7 +1640,7 @@ public readonly repo: string;
 
 Repository URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/config_deployment#repo ConfigDeployment#repo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/config_deployment#repo ConfigDeployment#repo}
 
 ---
 
@@ -1654,7 +1654,7 @@ public readonly directory: string;
 
 Subdirectory within the repo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/config_deployment#directory ConfigDeployment#directory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/config_deployment#directory ConfigDeployment#directory}
 
 ---
 
@@ -1668,7 +1668,7 @@ public readonly ref: string;
 
 Git reference (branch or tag).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/config_deployment#ref ConfigDeployment#ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/config_deployment#ref ConfigDeployment#ref}
 
 ---
 
@@ -1687,7 +1687,7 @@ const configDeploymentTerraformBlueprintInputValues: configDeployment.ConfigDepl
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.configDeployment.ConfigDeploymentTerraformBlueprintInputValues.property.inputValue">inputValue</a></code> | <code>string</code> | The value of the variable. |
-| <code><a href="#@cdktn/provider-google.configDeployment.ConfigDeploymentTerraformBlueprintInputValues.property.variableName">variableName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/config_deployment#variable_name ConfigDeployment#variable_name}. |
+| <code><a href="#@cdktn/provider-google.configDeployment.ConfigDeploymentTerraformBlueprintInputValues.property.variableName">variableName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/config_deployment#variable_name ConfigDeployment#variable_name}. |
 
 ---
 
@@ -1701,7 +1701,7 @@ public readonly inputValue: string;
 
 The value of the variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/config_deployment#input_value ConfigDeployment#input_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/config_deployment#input_value ConfigDeployment#input_value}
 
 ---
 
@@ -1713,7 +1713,7 @@ public readonly variableName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/config_deployment#variable_name ConfigDeployment#variable_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/config_deployment#variable_name ConfigDeployment#variable_name}.
 
 ---
 
@@ -1731,9 +1731,9 @@ const configDeploymentTimeouts: configDeployment.ConfigDeploymentTimeouts = { ..
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.configDeployment.ConfigDeploymentTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/config_deployment#create ConfigDeployment#create}. |
-| <code><a href="#@cdktn/provider-google.configDeployment.ConfigDeploymentTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/config_deployment#delete ConfigDeployment#delete}. |
-| <code><a href="#@cdktn/provider-google.configDeployment.ConfigDeploymentTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/config_deployment#update ConfigDeployment#update}. |
+| <code><a href="#@cdktn/provider-google.configDeployment.ConfigDeploymentTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/config_deployment#create ConfigDeployment#create}. |
+| <code><a href="#@cdktn/provider-google.configDeployment.ConfigDeploymentTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/config_deployment#delete ConfigDeployment#delete}. |
+| <code><a href="#@cdktn/provider-google.configDeployment.ConfigDeploymentTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/config_deployment#update ConfigDeployment#update}. |
 
 ---
 
@@ -1745,7 +1745,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/config_deployment#create ConfigDeployment#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/config_deployment#create ConfigDeployment#create}.
 
 ---
 
@@ -1757,7 +1757,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/config_deployment#delete ConfigDeployment#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/config_deployment#delete ConfigDeployment#delete}.
 
 ---
 
@@ -1769,7 +1769,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/config_deployment#update ConfigDeployment#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/config_deployment#update ConfigDeployment#update}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### NetworkConnectivityHubIamMember <a name="NetworkConnectivityHubIamMember" id="@cdktn/provider-google.networkConnectivityHubIamMember.NetworkConnectivityHubIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_hub_iam_member google_network_connectivity_hub_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_hub_iam_member google_network_connectivity_hub_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkConnectivityHubIamMember.NetworkConnectivityHubIamMember.Initializer"></a>
 
@@ -39,12 +39,12 @@ NetworkConnectivityHubIamMember.Builder.create(Construct scope, java.lang.String
 | <code><a href="#@cdktn/provider-google.networkConnectivityHubIamMember.NetworkConnectivityHubIamMember.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkConnectivityHubIamMember.NetworkConnectivityHubIamMember.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkConnectivityHubIamMember.NetworkConnectivityHubIamMember.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.networkConnectivityHubIamMember.NetworkConnectivityHubIamMember.Initializer.parameter.hub">hub</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_hub_iam_member#hub NetworkConnectivityHubIamMember#hub}. |
-| <code><a href="#@cdktn/provider-google.networkConnectivityHubIamMember.NetworkConnectivityHubIamMember.Initializer.parameter.member">member</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_hub_iam_member#member NetworkConnectivityHubIamMember#member}. |
-| <code><a href="#@cdktn/provider-google.networkConnectivityHubIamMember.NetworkConnectivityHubIamMember.Initializer.parameter.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_hub_iam_member#role NetworkConnectivityHubIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityHubIamMember.NetworkConnectivityHubIamMember.Initializer.parameter.hub">hub</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_hub_iam_member#hub NetworkConnectivityHubIamMember#hub}. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityHubIamMember.NetworkConnectivityHubIamMember.Initializer.parameter.member">member</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_hub_iam_member#member NetworkConnectivityHubIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityHubIamMember.NetworkConnectivityHubIamMember.Initializer.parameter.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_hub_iam_member#role NetworkConnectivityHubIamMember#role}. |
 | <code><a href="#@cdktn/provider-google.networkConnectivityHubIamMember.NetworkConnectivityHubIamMember.Initializer.parameter.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.networkConnectivityHubIamMember.NetworkConnectivityHubIamMemberCondition">NetworkConnectivityHubIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.networkConnectivityHubIamMember.NetworkConnectivityHubIamMember.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_hub_iam_member#id NetworkConnectivityHubIamMember#id}. |
-| <code><a href="#@cdktn/provider-google.networkConnectivityHubIamMember.NetworkConnectivityHubIamMember.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_hub_iam_member#project NetworkConnectivityHubIamMember#project}. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityHubIamMember.NetworkConnectivityHubIamMember.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_hub_iam_member#id NetworkConnectivityHubIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityHubIamMember.NetworkConnectivityHubIamMember.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_hub_iam_member#project NetworkConnectivityHubIamMember#project}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_hub_iam_member#hub NetworkConnectivityHubIamMember#hub}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_hub_iam_member#hub NetworkConnectivityHubIamMember#hub}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_hub_iam_member#member NetworkConnectivityHubIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_hub_iam_member#member NetworkConnectivityHubIamMember#member}.
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_hub_iam_member#role NetworkConnectivityHubIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_hub_iam_member#role NetworkConnectivityHubIamMember#role}.
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_hub_iam_member#condition NetworkConnectivityHubIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_hub_iam_member#condition NetworkConnectivityHubIamMember#condition}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_hub_iam_member#id NetworkConnectivityHubIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_hub_iam_member#id NetworkConnectivityHubIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -157,7 +157,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_hub_iam_member#project NetworkConnectivityHubIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_hub_iam_member#project NetworkConnectivityHubIamMember#project}.
 
 ---
 
@@ -640,7 +640,7 @@ The construct id used in the generated config for the NetworkConnectivityHubIamM
 
 The id of the existing NetworkConnectivityHubIamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_hub_iam_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_hub_iam_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -996,9 +996,9 @@ NetworkConnectivityHubIamMemberCondition.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.networkConnectivityHubIamMember.NetworkConnectivityHubIamMemberCondition.property.expression">expression</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_hub_iam_member#expression NetworkConnectivityHubIamMember#expression}. |
-| <code><a href="#@cdktn/provider-google.networkConnectivityHubIamMember.NetworkConnectivityHubIamMemberCondition.property.title">title</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_hub_iam_member#title NetworkConnectivityHubIamMember#title}. |
-| <code><a href="#@cdktn/provider-google.networkConnectivityHubIamMember.NetworkConnectivityHubIamMemberCondition.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_hub_iam_member#description NetworkConnectivityHubIamMember#description}. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityHubIamMember.NetworkConnectivityHubIamMemberCondition.property.expression">expression</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_hub_iam_member#expression NetworkConnectivityHubIamMember#expression}. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityHubIamMember.NetworkConnectivityHubIamMemberCondition.property.title">title</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_hub_iam_member#title NetworkConnectivityHubIamMember#title}. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityHubIamMember.NetworkConnectivityHubIamMemberCondition.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_hub_iam_member#description NetworkConnectivityHubIamMember#description}. |
 
 ---
 
@@ -1010,7 +1010,7 @@ public java.lang.String getExpression();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_hub_iam_member#expression NetworkConnectivityHubIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_hub_iam_member#expression NetworkConnectivityHubIamMember#expression}.
 
 ---
 
@@ -1022,7 +1022,7 @@ public java.lang.String getTitle();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_hub_iam_member#title NetworkConnectivityHubIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_hub_iam_member#title NetworkConnectivityHubIamMember#title}.
 
 ---
 
@@ -1034,7 +1034,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_hub_iam_member#description NetworkConnectivityHubIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_hub_iam_member#description NetworkConnectivityHubIamMember#description}.
 
 ---
 
@@ -1073,12 +1073,12 @@ NetworkConnectivityHubIamMemberConfig.builder()
 | <code><a href="#@cdktn/provider-google.networkConnectivityHubIamMember.NetworkConnectivityHubIamMemberConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkConnectivityHubIamMember.NetworkConnectivityHubIamMemberConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkConnectivityHubIamMember.NetworkConnectivityHubIamMemberConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.networkConnectivityHubIamMember.NetworkConnectivityHubIamMemberConfig.property.hub">hub</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_hub_iam_member#hub NetworkConnectivityHubIamMember#hub}. |
-| <code><a href="#@cdktn/provider-google.networkConnectivityHubIamMember.NetworkConnectivityHubIamMemberConfig.property.member">member</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_hub_iam_member#member NetworkConnectivityHubIamMember#member}. |
-| <code><a href="#@cdktn/provider-google.networkConnectivityHubIamMember.NetworkConnectivityHubIamMemberConfig.property.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_hub_iam_member#role NetworkConnectivityHubIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityHubIamMember.NetworkConnectivityHubIamMemberConfig.property.hub">hub</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_hub_iam_member#hub NetworkConnectivityHubIamMember#hub}. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityHubIamMember.NetworkConnectivityHubIamMemberConfig.property.member">member</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_hub_iam_member#member NetworkConnectivityHubIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityHubIamMember.NetworkConnectivityHubIamMemberConfig.property.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_hub_iam_member#role NetworkConnectivityHubIamMember#role}. |
 | <code><a href="#@cdktn/provider-google.networkConnectivityHubIamMember.NetworkConnectivityHubIamMemberConfig.property.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.networkConnectivityHubIamMember.NetworkConnectivityHubIamMemberCondition">NetworkConnectivityHubIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.networkConnectivityHubIamMember.NetworkConnectivityHubIamMemberConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_hub_iam_member#id NetworkConnectivityHubIamMember#id}. |
-| <code><a href="#@cdktn/provider-google.networkConnectivityHubIamMember.NetworkConnectivityHubIamMemberConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_hub_iam_member#project NetworkConnectivityHubIamMember#project}. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityHubIamMember.NetworkConnectivityHubIamMemberConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_hub_iam_member#id NetworkConnectivityHubIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityHubIamMember.NetworkConnectivityHubIamMemberConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_hub_iam_member#project NetworkConnectivityHubIamMember#project}. |
 
 ---
 
@@ -1160,7 +1160,7 @@ public java.lang.String getHub();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_hub_iam_member#hub NetworkConnectivityHubIamMember#hub}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_hub_iam_member#hub NetworkConnectivityHubIamMember#hub}.
 
 ---
 
@@ -1172,7 +1172,7 @@ public java.lang.String getMember();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_hub_iam_member#member NetworkConnectivityHubIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_hub_iam_member#member NetworkConnectivityHubIamMember#member}.
 
 ---
 
@@ -1184,7 +1184,7 @@ public java.lang.String getRole();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_hub_iam_member#role NetworkConnectivityHubIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_hub_iam_member#role NetworkConnectivityHubIamMember#role}.
 
 ---
 
@@ -1198,7 +1198,7 @@ public NetworkConnectivityHubIamMemberCondition getCondition();
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_hub_iam_member#condition NetworkConnectivityHubIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_hub_iam_member#condition NetworkConnectivityHubIamMember#condition}
 
 ---
 
@@ -1210,7 +1210,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_hub_iam_member#id NetworkConnectivityHubIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_hub_iam_member#id NetworkConnectivityHubIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1225,7 +1225,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/network_connectivity_hub_iam_member#project NetworkConnectivityHubIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_hub_iam_member#project NetworkConnectivityHubIamMember#project}.
 
 ---
 

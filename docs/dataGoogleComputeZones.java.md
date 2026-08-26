@@ -4,7 +4,7 @@
 
 ### DataGoogleComputeZones <a name="DataGoogleComputeZones" id="@cdktn/provider-google.dataGoogleComputeZones.DataGoogleComputeZones"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/compute_zones google_compute_zones}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/compute_zones google_compute_zones}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeZones.DataGoogleComputeZones.Initializer"></a>
 
@@ -37,10 +37,10 @@ DataGoogleComputeZones.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeZones.DataGoogleComputeZones.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeZones.DataGoogleComputeZones.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeZones.DataGoogleComputeZones.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleComputeZones.DataGoogleComputeZones.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/compute_zones#id DataGoogleComputeZones#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleComputeZones.DataGoogleComputeZones.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/compute_zones#project DataGoogleComputeZones#project}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleComputeZones.DataGoogleComputeZones.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/compute_zones#region DataGoogleComputeZones#region}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleComputeZones.DataGoogleComputeZones.Initializer.parameter.status">status</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/compute_zones#status DataGoogleComputeZones#status}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeZones.DataGoogleComputeZones.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/compute_zones#id DataGoogleComputeZones#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeZones.DataGoogleComputeZones.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/compute_zones#project DataGoogleComputeZones#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeZones.DataGoogleComputeZones.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/compute_zones#region DataGoogleComputeZones#region}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeZones.DataGoogleComputeZones.Initializer.parameter.status">status</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/compute_zones#status DataGoogleComputeZones#status}. |
 
 ---
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/compute_zones#id DataGoogleComputeZones#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/compute_zones#id DataGoogleComputeZones#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -119,7 +119,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/compute_zones#project DataGoogleComputeZones#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/compute_zones#project DataGoogleComputeZones#project}.
 
 ---
 
@@ -127,7 +127,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/compute_zones#region DataGoogleComputeZones#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/compute_zones#region DataGoogleComputeZones#region}.
 
 ---
 
@@ -135,7 +135,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/compute_zones#status DataGoogleComputeZones#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/compute_zones#status DataGoogleComputeZones#status}.
 
 ---
 
@@ -508,7 +508,7 @@ The construct id used in the generated config for the DataGoogleComputeZones to 
 
 The id of the existing DataGoogleComputeZones that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/compute_zones#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/compute_zones#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -813,10 +813,10 @@ DataGoogleComputeZonesConfig.builder()
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeZones.DataGoogleComputeZonesConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeZones.DataGoogleComputeZonesConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeZones.DataGoogleComputeZonesConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleComputeZones.DataGoogleComputeZonesConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/compute_zones#id DataGoogleComputeZones#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleComputeZones.DataGoogleComputeZonesConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/compute_zones#project DataGoogleComputeZones#project}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleComputeZones.DataGoogleComputeZonesConfig.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/compute_zones#region DataGoogleComputeZones#region}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleComputeZones.DataGoogleComputeZonesConfig.property.status">status</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/compute_zones#status DataGoogleComputeZones#status}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeZones.DataGoogleComputeZonesConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/compute_zones#id DataGoogleComputeZones#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeZones.DataGoogleComputeZonesConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/compute_zones#project DataGoogleComputeZones#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeZones.DataGoogleComputeZonesConfig.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/compute_zones#region DataGoogleComputeZones#region}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeZones.DataGoogleComputeZonesConfig.property.status">status</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/compute_zones#status DataGoogleComputeZones#status}. |
 
 ---
 
@@ -898,7 +898,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/compute_zones#id DataGoogleComputeZones#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/compute_zones#id DataGoogleComputeZones#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -913,7 +913,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/compute_zones#project DataGoogleComputeZones#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/compute_zones#project DataGoogleComputeZones#project}.
 
 ---
 
@@ -925,7 +925,7 @@ public java.lang.String getRegion();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/compute_zones#region DataGoogleComputeZones#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/compute_zones#region DataGoogleComputeZones#region}.
 
 ---
 
@@ -937,7 +937,7 @@ public java.lang.String getStatus();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/data-sources/compute_zones#status DataGoogleComputeZones#status}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/compute_zones#status DataGoogleComputeZones#status}.
 
 ---
 

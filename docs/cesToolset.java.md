@@ -4,7 +4,7 @@
 
 ### CesToolset <a name="CesToolset" id="@cdktn/provider-google.cesToolset.CesToolset"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset google_ces_toolset}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset google_ces_toolset}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cesToolset.CesToolset.Initializer"></a>
 
@@ -22,6 +22,7 @@ CesToolset.Builder.create(Construct scope, java.lang.String id)
     .app(java.lang.String)
     .location(java.lang.String)
     .toolsetId(java.lang.String)
+//  .connectorToolset(CesToolsetConnectorToolset)
 //  .deletionPolicy(java.lang.String)
 //  .description(java.lang.String)
 //  .displayName(java.lang.String)
@@ -30,6 +31,7 @@ CesToolset.Builder.create(Construct scope, java.lang.String id)
 //  .mcpToolset(CesToolsetMcpToolset)
 //  .openApiToolset(CesToolsetOpenApiToolset)
 //  .project(java.lang.String)
+//  .timeout(java.lang.String)
 //  .timeouts(CesToolsetTimeouts)
 //  .toolFakeConfig(CesToolsetToolFakeConfig)
     .build();
@@ -49,14 +51,16 @@ CesToolset.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.cesToolset.CesToolset.Initializer.parameter.app">app</a></code> | <code>java.lang.String</code> | Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122. |
 | <code><a href="#@cdktn/provider-google.cesToolset.CesToolset.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122. |
 | <code><a href="#@cdktn/provider-google.cesToolset.CesToolset.Initializer.parameter.toolsetId">toolsetId</a></code> | <code>java.lang.String</code> | The ID to use for the toolset, which will become the final component of the toolset's resource name. |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolset.Initializer.parameter.connectorToolset">connectorToolset</a></code> | <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolset">CesToolsetConnectorToolset</a></code> | connector_toolset block. |
 | <code><a href="#@cdktn/provider-google.cesToolset.CesToolset.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.cesToolset.CesToolset.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | The description of the toolset. |
 | <code><a href="#@cdktn/provider-google.cesToolset.CesToolset.Initializer.parameter.displayName">displayName</a></code> | <code>java.lang.String</code> | The display name of the toolset. Must be unique within the same app. |
 | <code><a href="#@cdktn/provider-google.cesToolset.CesToolset.Initializer.parameter.executionType">executionType</a></code> | <code>java.lang.String</code> | Possible values: SYNCHRONOUS ASYNCHRONOUS. |
-| <code><a href="#@cdktn/provider-google.cesToolset.CesToolset.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#id CesToolset#id}. |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolset.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#id CesToolset#id}. |
 | <code><a href="#@cdktn/provider-google.cesToolset.CesToolset.Initializer.parameter.mcpToolset">mcpToolset</a></code> | <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetMcpToolset">CesToolsetMcpToolset</a></code> | mcp_toolset block. |
 | <code><a href="#@cdktn/provider-google.cesToolset.CesToolset.Initializer.parameter.openApiToolset">openApiToolset</a></code> | <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetOpenApiToolset">CesToolsetOpenApiToolset</a></code> | open_api_toolset block. |
-| <code><a href="#@cdktn/provider-google.cesToolset.CesToolset.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#project CesToolset#project}. |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolset.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#project CesToolset#project}. |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolset.Initializer.parameter.timeout">timeout</a></code> | <code>java.lang.String</code> | The timeout for the toolset execution. |
 | <code><a href="#@cdktn/provider-google.cesToolset.CesToolset.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetTimeouts">CesToolsetTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.cesToolset.CesToolset.Initializer.parameter.toolFakeConfig">toolFakeConfig</a></code> | <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetToolFakeConfig">CesToolsetToolFakeConfig</a></code> | tool_fake_config block. |
 
@@ -128,7 +132,7 @@ Must be unique amongst siblings in the same scope
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#app CesToolset#app}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#app CesToolset#app}
 
 ---
 
@@ -138,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#location CesToolset#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#location CesToolset#location}
 
 ---
 
@@ -151,7 +155,17 @@ The ID to use for the toolset, which will become the final component of the tool
 If not provided, a unique ID will be
 automatically assigned for the toolset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#toolset_id CesToolset#toolset_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#toolset_id CesToolset#toolset_id}
+
+---
+
+##### `connectorToolset`<sup>Optional</sup> <a name="connectorToolset" id="@cdktn/provider-google.cesToolset.CesToolset.Initializer.parameter.connectorToolset"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolset">CesToolsetConnectorToolset</a>
+
+connector_toolset block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#connector_toolset CesToolset#connector_toolset}
 
 ---
 
@@ -168,7 +182,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#deletion_policy CesToolset#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#deletion_policy CesToolset#deletion_policy}
 
 ---
 
@@ -178,7 +192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The description of the toolset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#description CesToolset#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#description CesToolset#description}
 
 ---
 
@@ -188,7 +202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The display name of the toolset. Must be unique within the same app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#display_name CesToolset#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#display_name CesToolset#display_name}
 
 ---
 
@@ -198,7 +212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Possible values: SYNCHRONOUS ASYNCHRONOUS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#execution_type CesToolset#execution_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#execution_type CesToolset#execution_type}
 
 ---
 
@@ -206,7 +220,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#id CesToolset#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#id CesToolset#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -219,7 +233,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 mcp_toolset block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#mcp_toolset CesToolset#mcp_toolset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#mcp_toolset CesToolset#mcp_toolset}
 
 ---
 
@@ -229,7 +243,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 open_api_toolset block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#open_api_toolset CesToolset#open_api_toolset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#open_api_toolset CesToolset#open_api_toolset}
 
 ---
 
@@ -237,7 +251,21 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#project CesToolset#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#project CesToolset#project}.
+
+---
+
+##### `timeout`<sup>Optional</sup> <a name="timeout" id="@cdktn/provider-google.cesToolset.CesToolset.Initializer.parameter.timeout"></a>
+
+- *Type:* java.lang.String
+
+The timeout for the toolset execution.
+
+If not set, the default timeout is
+30 seconds for 'SYNCHRONOUS' toolsets and 60 seconds for 'ASYNCHRONOUS'
+toolsets.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#timeout CesToolset#timeout}
 
 ---
 
@@ -247,7 +275,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#timeouts CesToolset#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#timeouts CesToolset#timeouts}
 
 ---
 
@@ -257,7 +285,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 tool_fake_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#tool_fake_config CesToolset#tool_fake_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#tool_fake_config CesToolset#tool_fake_config}
 
 ---
 
@@ -289,10 +317,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.cesToolset.CesToolset.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-google.cesToolset.CesToolset.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.cesToolset.CesToolset.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolset.putConnectorToolset">putConnectorToolset</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesToolset.CesToolset.putMcpToolset">putMcpToolset</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesToolset.CesToolset.putOpenApiToolset">putOpenApiToolset</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesToolset.CesToolset.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesToolset.CesToolset.putToolFakeConfig">putToolFakeConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolset.resetConnectorToolset">resetConnectorToolset</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesToolset.CesToolset.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesToolset.CesToolset.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesToolset.CesToolset.resetDisplayName">resetDisplayName</a></code> | *No description.* |
@@ -301,6 +331,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.cesToolset.CesToolset.resetMcpToolset">resetMcpToolset</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesToolset.CesToolset.resetOpenApiToolset">resetOpenApiToolset</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesToolset.CesToolset.resetProject">resetProject</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolset.resetTimeout">resetTimeout</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesToolset.CesToolset.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesToolset.CesToolset.resetToolFakeConfig">resetToolFakeConfig</a></code> | *No description.* |
 
@@ -617,6 +648,18 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `putConnectorToolset` <a name="putConnectorToolset" id="@cdktn/provider-google.cesToolset.CesToolset.putConnectorToolset"></a>
+
+```java
+public void putConnectorToolset(CesToolsetConnectorToolset value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.cesToolset.CesToolset.putConnectorToolset.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolset">CesToolsetConnectorToolset</a>
+
+---
+
 ##### `putMcpToolset` <a name="putMcpToolset" id="@cdktn/provider-google.cesToolset.CesToolset.putMcpToolset"></a>
 
 ```java
@@ -665,6 +708,12 @@ public void putToolFakeConfig(CesToolsetToolFakeConfig value)
 
 ---
 
+##### `resetConnectorToolset` <a name="resetConnectorToolset" id="@cdktn/provider-google.cesToolset.CesToolset.resetConnectorToolset"></a>
+
+```java
+public void resetConnectorToolset()
+```
+
 ##### `resetDeletionPolicy` <a name="resetDeletionPolicy" id="@cdktn/provider-google.cesToolset.CesToolset.resetDeletionPolicy"></a>
 
 ```java
@@ -711,6 +760,12 @@ public void resetOpenApiToolset()
 
 ```java
 public void resetProject()
+```
+
+##### `resetTimeout` <a name="resetTimeout" id="@cdktn/provider-google.cesToolset.CesToolset.resetTimeout"></a>
+
+```java
+public void resetTimeout()
 ```
 
 ##### `resetTimeouts` <a name="resetTimeouts" id="@cdktn/provider-google.cesToolset.CesToolset.resetTimeouts"></a>
@@ -828,7 +883,7 @@ The construct id used in the generated config for the CesToolset to import.
 
 The id of the existing CesToolset that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -858,6 +913,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.cesToolset.CesToolset.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesToolset.CesToolset.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesToolset.CesToolset.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolset.property.connectorToolset">connectorToolset</a></code> | <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference">CesToolsetConnectorToolsetOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesToolset.CesToolset.property.createTime">createTime</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesToolset.CesToolset.property.etag">etag</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesToolset.CesToolset.property.mcpToolset">mcpToolset</a></code> | <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetMcpToolsetOutputReference">CesToolsetMcpToolsetOutputReference</a></code> | *No description.* |
@@ -867,6 +923,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.cesToolset.CesToolset.property.toolFakeConfig">toolFakeConfig</a></code> | <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetToolFakeConfigOutputReference">CesToolsetToolFakeConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesToolset.CesToolset.property.updateTime">updateTime</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesToolset.CesToolset.property.appInput">appInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolset.property.connectorToolsetInput">connectorToolsetInput</a></code> | <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolset">CesToolsetConnectorToolset</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesToolset.CesToolset.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesToolset.CesToolset.property.descriptionInput">descriptionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesToolset.CesToolset.property.displayNameInput">displayNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -876,6 +933,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.cesToolset.CesToolset.property.mcpToolsetInput">mcpToolsetInput</a></code> | <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetMcpToolset">CesToolsetMcpToolset</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesToolset.CesToolset.property.openApiToolsetInput">openApiToolsetInput</a></code> | <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetOpenApiToolset">CesToolsetOpenApiToolset</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesToolset.CesToolset.property.projectInput">projectInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolset.property.timeoutInput">timeoutInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesToolset.CesToolset.property.timeoutsInput">timeoutsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-google.cesToolset.CesToolsetTimeouts">CesToolsetTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesToolset.CesToolset.property.toolFakeConfigInput">toolFakeConfigInput</a></code> | <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetToolFakeConfig">CesToolsetToolFakeConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesToolset.CesToolset.property.toolsetIdInput">toolsetIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -887,6 +945,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.cesToolset.CesToolset.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesToolset.CesToolset.property.location">location</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesToolset.CesToolset.property.project">project</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolset.property.timeout">timeout</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesToolset.CesToolset.property.toolsetId">toolsetId</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
@@ -1033,6 +1092,16 @@ public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner
 
 ---
 
+##### `connectorToolset`<sup>Required</sup> <a name="connectorToolset" id="@cdktn/provider-google.cesToolset.CesToolset.property.connectorToolset"></a>
+
+```java
+public CesToolsetConnectorToolsetOutputReference getConnectorToolset();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference">CesToolsetConnectorToolsetOutputReference</a>
+
+---
+
 ##### `createTime`<sup>Required</sup> <a name="createTime" id="@cdktn/provider-google.cesToolset.CesToolset.property.createTime"></a>
 
 ```java
@@ -1123,6 +1192,16 @@ public java.lang.String getAppInput();
 
 ---
 
+##### `connectorToolsetInput`<sup>Optional</sup> <a name="connectorToolsetInput" id="@cdktn/provider-google.cesToolset.CesToolset.property.connectorToolsetInput"></a>
+
+```java
+public CesToolsetConnectorToolset getConnectorToolsetInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolset">CesToolsetConnectorToolset</a>
+
+---
+
 ##### `deletionPolicyInput`<sup>Optional</sup> <a name="deletionPolicyInput" id="@cdktn/provider-google.cesToolset.CesToolset.property.deletionPolicyInput"></a>
 
 ```java
@@ -1207,6 +1286,16 @@ public CesToolsetOpenApiToolset getOpenApiToolsetInput();
 
 ```java
 public java.lang.String getProjectInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `timeoutInput`<sup>Optional</sup> <a name="timeoutInput" id="@cdktn/provider-google.cesToolset.CesToolset.property.timeoutInput"></a>
+
+```java
+public java.lang.String getTimeoutInput();
 ```
 
 - *Type:* java.lang.String
@@ -1323,6 +1412,16 @@ public java.lang.String getProject();
 
 ---
 
+##### `timeout`<sup>Required</sup> <a name="timeout" id="@cdktn/provider-google.cesToolset.CesToolset.property.timeout"></a>
+
+```java
+public java.lang.String getTimeout();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `toolsetId`<sup>Required</sup> <a name="toolsetId" id="@cdktn/provider-google.cesToolset.CesToolset.property.toolsetId"></a>
 
 ```java
@@ -1371,6 +1470,7 @@ CesToolsetConfig.builder()
     .app(java.lang.String)
     .location(java.lang.String)
     .toolsetId(java.lang.String)
+//  .connectorToolset(CesToolsetConnectorToolset)
 //  .deletionPolicy(java.lang.String)
 //  .description(java.lang.String)
 //  .displayName(java.lang.String)
@@ -1379,6 +1479,7 @@ CesToolsetConfig.builder()
 //  .mcpToolset(CesToolsetMcpToolset)
 //  .openApiToolset(CesToolsetOpenApiToolset)
 //  .project(java.lang.String)
+//  .timeout(java.lang.String)
 //  .timeouts(CesToolsetTimeouts)
 //  .toolFakeConfig(CesToolsetToolFakeConfig)
     .build();
@@ -1398,14 +1499,16 @@ CesToolsetConfig.builder()
 | <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConfig.property.app">app</a></code> | <code>java.lang.String</code> | Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122. |
 | <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConfig.property.location">location</a></code> | <code>java.lang.String</code> | Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122. |
 | <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConfig.property.toolsetId">toolsetId</a></code> | <code>java.lang.String</code> | The ID to use for the toolset, which will become the final component of the toolset's resource name. |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConfig.property.connectorToolset">connectorToolset</a></code> | <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolset">CesToolsetConnectorToolset</a></code> | connector_toolset block. |
 | <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConfig.property.description">description</a></code> | <code>java.lang.String</code> | The description of the toolset. |
 | <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConfig.property.displayName">displayName</a></code> | <code>java.lang.String</code> | The display name of the toolset. Must be unique within the same app. |
 | <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConfig.property.executionType">executionType</a></code> | <code>java.lang.String</code> | Possible values: SYNCHRONOUS ASYNCHRONOUS. |
-| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#id CesToolset#id}. |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#id CesToolset#id}. |
 | <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConfig.property.mcpToolset">mcpToolset</a></code> | <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetMcpToolset">CesToolsetMcpToolset</a></code> | mcp_toolset block. |
 | <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConfig.property.openApiToolset">openApiToolset</a></code> | <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetOpenApiToolset">CesToolsetOpenApiToolset</a></code> | open_api_toolset block. |
-| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#project CesToolset#project}. |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#project CesToolset#project}. |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConfig.property.timeout">timeout</a></code> | <code>java.lang.String</code> | The timeout for the toolset execution. |
 | <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetTimeouts">CesToolsetTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConfig.property.toolFakeConfig">toolFakeConfig</a></code> | <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetToolFakeConfig">CesToolsetToolFakeConfig</a></code> | tool_fake_config block. |
 
@@ -1491,7 +1594,7 @@ public java.lang.String getApp();
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#app CesToolset#app}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#app CesToolset#app}
 
 ---
 
@@ -1505,7 +1608,7 @@ public java.lang.String getLocation();
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#location CesToolset#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#location CesToolset#location}
 
 ---
 
@@ -1522,7 +1625,21 @@ The ID to use for the toolset, which will become the final component of the tool
 If not provided, a unique ID will be
 automatically assigned for the toolset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#toolset_id CesToolset#toolset_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#toolset_id CesToolset#toolset_id}
+
+---
+
+##### `connectorToolset`<sup>Optional</sup> <a name="connectorToolset" id="@cdktn/provider-google.cesToolset.CesToolsetConfig.property.connectorToolset"></a>
+
+```java
+public CesToolsetConnectorToolset getConnectorToolset();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolset">CesToolsetConnectorToolset</a>
+
+connector_toolset block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#connector_toolset CesToolset#connector_toolset}
 
 ---
 
@@ -1543,7 +1660,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#deletion_policy CesToolset#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#deletion_policy CesToolset#deletion_policy}
 
 ---
 
@@ -1557,7 +1674,7 @@ public java.lang.String getDescription();
 
 The description of the toolset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#description CesToolset#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#description CesToolset#description}
 
 ---
 
@@ -1571,7 +1688,7 @@ public java.lang.String getDisplayName();
 
 The display name of the toolset. Must be unique within the same app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#display_name CesToolset#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#display_name CesToolset#display_name}
 
 ---
 
@@ -1585,7 +1702,7 @@ public java.lang.String getExecutionType();
 
 Possible values: SYNCHRONOUS ASYNCHRONOUS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#execution_type CesToolset#execution_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#execution_type CesToolset#execution_type}
 
 ---
 
@@ -1597,7 +1714,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#id CesToolset#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#id CesToolset#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1614,7 +1731,7 @@ public CesToolsetMcpToolset getMcpToolset();
 
 mcp_toolset block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#mcp_toolset CesToolset#mcp_toolset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#mcp_toolset CesToolset#mcp_toolset}
 
 ---
 
@@ -1628,7 +1745,7 @@ public CesToolsetOpenApiToolset getOpenApiToolset();
 
 open_api_toolset block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#open_api_toolset CesToolset#open_api_toolset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#open_api_toolset CesToolset#open_api_toolset}
 
 ---
 
@@ -1640,7 +1757,25 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#project CesToolset#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#project CesToolset#project}.
+
+---
+
+##### `timeout`<sup>Optional</sup> <a name="timeout" id="@cdktn/provider-google.cesToolset.CesToolsetConfig.property.timeout"></a>
+
+```java
+public java.lang.String getTimeout();
+```
+
+- *Type:* java.lang.String
+
+The timeout for the toolset execution.
+
+If not set, the default timeout is
+30 seconds for 'SYNCHRONOUS' toolsets and 60 seconds for 'ASYNCHRONOUS'
+toolsets.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#timeout CesToolset#timeout}
 
 ---
 
@@ -1654,7 +1789,7 @@ public CesToolsetTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#timeouts CesToolset#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#timeouts CesToolset#timeouts}
 
 ---
 
@@ -1668,7 +1803,355 @@ public CesToolsetToolFakeConfig getToolFakeConfig();
 
 tool_fake_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#tool_fake_config CesToolset#tool_fake_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#tool_fake_config CesToolset#tool_fake_config}
+
+---
+
+### CesToolsetConnectorToolset <a name="CesToolsetConnectorToolset" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolset"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolset.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.ces_toolset.CesToolsetConnectorToolset;
+
+CesToolsetConnectorToolset.builder()
+    .connection(java.lang.String)
+    .connectorActions(IResolvable|java.util.List<CesToolsetConnectorToolsetConnectorActions>)
+//  .authConfig(CesToolsetConnectorToolsetAuthConfig)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolset.property.connection">connection</a></code> | <code>java.lang.String</code> | The full resource name of the referenced Integration Connectors Connection. Format: 'projects/{project}/locations/{location}/connections/{connection}'. |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolset.property.connectorActions">connectorActions</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActions">CesToolsetConnectorToolsetConnectorActions</a>></code> | connector_actions block. |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolset.property.authConfig">authConfig</a></code> | <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfig">CesToolsetConnectorToolsetAuthConfig</a></code> | auth_config block. |
+
+---
+
+##### `connection`<sup>Required</sup> <a name="connection" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolset.property.connection"></a>
+
+```java
+public java.lang.String getConnection();
+```
+
+- *Type:* java.lang.String
+
+The full resource name of the referenced Integration Connectors Connection. Format: 'projects/{project}/locations/{location}/connections/{connection}'.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#connection CesToolset#connection}
+
+---
+
+##### `connectorActions`<sup>Required</sup> <a name="connectorActions" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolset.property.connectorActions"></a>
+
+```java
+public IResolvable|java.util.List<CesToolsetConnectorToolsetConnectorActions> getConnectorActions();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActions">CesToolsetConnectorToolsetConnectorActions</a>>
+
+connector_actions block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#connector_actions CesToolset#connector_actions}
+
+---
+
+##### `authConfig`<sup>Optional</sup> <a name="authConfig" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolset.property.authConfig"></a>
+
+```java
+public CesToolsetConnectorToolsetAuthConfig getAuthConfig();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfig">CesToolsetConnectorToolsetAuthConfig</a>
+
+auth_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#auth_config CesToolset#auth_config}
+
+---
+
+### CesToolsetConnectorToolsetAuthConfig <a name="CesToolsetConnectorToolsetAuthConfig" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfig.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.ces_toolset.CesToolsetConnectorToolsetAuthConfig;
+
+CesToolsetConnectorToolsetAuthConfig.builder()
+//  .oauth2AuthCodeConfig(CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfig)
+//  .oauth2JwtBearerConfig(CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfig)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfig.property.oauth2AuthCodeConfig">oauth2AuthCodeConfig</a></code> | <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfig">CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfig</a></code> | oauth2_auth_code_config block. |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfig.property.oauth2JwtBearerConfig">oauth2JwtBearerConfig</a></code> | <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfig">CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfig</a></code> | oauth2_jwt_bearer_config block. |
+
+---
+
+##### `oauth2AuthCodeConfig`<sup>Optional</sup> <a name="oauth2AuthCodeConfig" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfig.property.oauth2AuthCodeConfig"></a>
+
+```java
+public CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfig getOauth2AuthCodeConfig();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfig">CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfig</a>
+
+oauth2_auth_code_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#oauth2_auth_code_config CesToolset#oauth2_auth_code_config}
+
+---
+
+##### `oauth2JwtBearerConfig`<sup>Optional</sup> <a name="oauth2JwtBearerConfig" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfig.property.oauth2JwtBearerConfig"></a>
+
+```java
+public CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfig getOauth2JwtBearerConfig();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfig">CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfig</a>
+
+oauth2_jwt_bearer_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#oauth2_jwt_bearer_config CesToolset#oauth2_jwt_bearer_config}
+
+---
+
+### CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfig <a name="CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfig" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfig.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.ces_toolset.CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfig;
+
+CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfig.builder()
+    .oauthToken(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfig.property.oauthToken">oauthToken</a></code> | <code>java.lang.String</code> | Oauth token parameter name to pass through. Must be in the format '$context.variables.<name_of_variable>'. |
+
+---
+
+##### `oauthToken`<sup>Required</sup> <a name="oauthToken" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfig.property.oauthToken"></a>
+
+```java
+public java.lang.String getOauthToken();
+```
+
+- *Type:* java.lang.String
+
+Oauth token parameter name to pass through. Must be in the format '$context.variables.<name_of_variable>'.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#oauth_token CesToolset#oauth_token}
+
+---
+
+### CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfig <a name="CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfig" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfig.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.ces_toolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfig;
+
+CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfig.builder()
+    .clientKey(java.lang.String)
+    .issuer(java.lang.String)
+    .subject(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfig.property.clientKey">clientKey</a></code> | <code>java.lang.String</code> | Client parameter name to pass through. Must be in the format '$context.variables.<name_of_variable>'. |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfig.property.issuer">issuer</a></code> | <code>java.lang.String</code> | Issuer parameter name to pass through. Must be in the format '$context.variables.<name_of_variable>'. |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfig.property.subject">subject</a></code> | <code>java.lang.String</code> | Subject parameter name to pass through. Must be in the format '$context.variables.<name_of_variable>'. |
+
+---
+
+##### `clientKey`<sup>Required</sup> <a name="clientKey" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfig.property.clientKey"></a>
+
+```java
+public java.lang.String getClientKey();
+```
+
+- *Type:* java.lang.String
+
+Client parameter name to pass through. Must be in the format '$context.variables.<name_of_variable>'.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#client_key CesToolset#client_key}
+
+---
+
+##### `issuer`<sup>Required</sup> <a name="issuer" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfig.property.issuer"></a>
+
+```java
+public java.lang.String getIssuer();
+```
+
+- *Type:* java.lang.String
+
+Issuer parameter name to pass through. Must be in the format '$context.variables.<name_of_variable>'.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#issuer CesToolset#issuer}
+
+---
+
+##### `subject`<sup>Required</sup> <a name="subject" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfig.property.subject"></a>
+
+```java
+public java.lang.String getSubject();
+```
+
+- *Type:* java.lang.String
+
+Subject parameter name to pass through. Must be in the format '$context.variables.<name_of_variable>'.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#subject CesToolset#subject}
+
+---
+
+### CesToolsetConnectorToolsetConnectorActions <a name="CesToolsetConnectorToolsetConnectorActions" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActions"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActions.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.ces_toolset.CesToolsetConnectorToolsetConnectorActions;
+
+CesToolsetConnectorToolsetConnectorActions.builder()
+//  .connectionActionId(java.lang.String)
+//  .entityOperation(CesToolsetConnectorToolsetConnectorActionsEntityOperation)
+//  .inputFields(java.util.List<java.lang.String>)
+//  .outputFields(java.util.List<java.lang.String>)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActions.property.connectionActionId">connectionActionId</a></code> | <code>java.lang.String</code> | ID of a Connection action for the tool to use. |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActions.property.entityOperation">entityOperation</a></code> | <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperation">CesToolsetConnectorToolsetConnectorActionsEntityOperation</a></code> | entity_operation block. |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActions.property.inputFields">inputFields</a></code> | <code>java.util.List<java.lang.String></code> | Entity fields to use as inputs for the operation. |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActions.property.outputFields">outputFields</a></code> | <code>java.util.List<java.lang.String></code> | Entity fields to return from the operation. |
+
+---
+
+##### `connectionActionId`<sup>Optional</sup> <a name="connectionActionId" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActions.property.connectionActionId"></a>
+
+```java
+public java.lang.String getConnectionActionId();
+```
+
+- *Type:* java.lang.String
+
+ID of a Connection action for the tool to use.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#connection_action_id CesToolset#connection_action_id}
+
+---
+
+##### `entityOperation`<sup>Optional</sup> <a name="entityOperation" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActions.property.entityOperation"></a>
+
+```java
+public CesToolsetConnectorToolsetConnectorActionsEntityOperation getEntityOperation();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperation">CesToolsetConnectorToolsetConnectorActionsEntityOperation</a>
+
+entity_operation block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#entity_operation CesToolset#entity_operation}
+
+---
+
+##### `inputFields`<sup>Optional</sup> <a name="inputFields" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActions.property.inputFields"></a>
+
+```java
+public java.util.List<java.lang.String> getInputFields();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+Entity fields to use as inputs for the operation.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#input_fields CesToolset#input_fields}
+
+---
+
+##### `outputFields`<sup>Optional</sup> <a name="outputFields" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActions.property.outputFields"></a>
+
+```java
+public java.util.List<java.lang.String> getOutputFields();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+Entity fields to return from the operation.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#output_fields CesToolset#output_fields}
+
+---
+
+### CesToolsetConnectorToolsetConnectorActionsEntityOperation <a name="CesToolsetConnectorToolsetConnectorActionsEntityOperation" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperation"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperation.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.ces_toolset.CesToolsetConnectorToolsetConnectorActionsEntityOperation;
+
+CesToolsetConnectorToolsetConnectorActionsEntityOperation.builder()
+    .entityId(java.lang.String)
+    .operation(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperation.property.entityId">entityId</a></code> | <code>java.lang.String</code> | ID of the entity. |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperation.property.operation">operation</a></code> | <code>java.lang.String</code> | Operation to perform on the entity. Possible values: LIST GET CREATE UPDATE DELETE. |
+
+---
+
+##### `entityId`<sup>Required</sup> <a name="entityId" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperation.property.entityId"></a>
+
+```java
+public java.lang.String getEntityId();
+```
+
+- *Type:* java.lang.String
+
+ID of the entity.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#entity_id CesToolset#entity_id}
+
+---
+
+##### `operation`<sup>Required</sup> <a name="operation" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperation.property.operation"></a>
+
+```java
+public java.lang.String getOperation();
+```
+
+- *Type:* java.lang.String
+
+Operation to perform on the entity. Possible values: LIST GET CREATE UPDATE DELETE.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#operation CesToolset#operation}
 
 ---
 
@@ -1710,7 +2193,7 @@ public java.lang.String getServerAddress();
 
 The address of the MCP server, for example, "https://example.com/mcp/". If the server is built with the MCP SDK, the url should be suffixed with "/mcp/". Only Streamable HTTP transport based servers are supported. See https://modelcontextprotocol.io/specification/2025-03-26/basic/transports#streamable-http for more details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#server_address CesToolset#server_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#server_address CesToolset#server_address}
 
 ---
 
@@ -1724,7 +2207,7 @@ public CesToolsetMcpToolsetApiAuthentication getApiAuthentication();
 
 api_authentication block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#api_authentication CesToolset#api_authentication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#api_authentication CesToolset#api_authentication}
 
 ---
 
@@ -1744,7 +2227,7 @@ set in the session variables. See
 https://docs.cloud.google.com/customer-engagement-ai/conversational-agents/ps/tool/open-api#openapi-injection
 for more details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#custom_headers CesToolset#custom_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#custom_headers CesToolset#custom_headers}
 
 ---
 
@@ -1758,7 +2241,7 @@ public CesToolsetMcpToolsetServiceDirectoryConfig getServiceDirectoryConfig();
 
 service_directory_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#service_directory_config CesToolset#service_directory_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#service_directory_config CesToolset#service_directory_config}
 
 ---
 
@@ -1772,7 +2255,7 @@ public CesToolsetMcpToolsetTlsConfig getTlsConfig();
 
 tls_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#tls_config CesToolset#tls_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#tls_config CesToolset#tls_config}
 
 ---
 
@@ -1814,7 +2297,7 @@ public CesToolsetMcpToolsetApiAuthenticationApiKeyConfig getApiKeyConfig();
 
 api_key_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#api_key_config CesToolset#api_key_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#api_key_config CesToolset#api_key_config}
 
 ---
 
@@ -1828,7 +2311,7 @@ public CesToolsetMcpToolsetApiAuthenticationBearerTokenConfig getBearerTokenConf
 
 bearer_token_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#bearer_token_config CesToolset#bearer_token_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#bearer_token_config CesToolset#bearer_token_config}
 
 ---
 
@@ -1842,7 +2325,7 @@ public CesToolsetMcpToolsetApiAuthenticationOauthConfig getOauthConfig();
 
 oauth_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#oauth_config CesToolset#oauth_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#oauth_config CesToolset#oauth_config}
 
 ---
 
@@ -1856,7 +2339,7 @@ public CesToolsetMcpToolsetApiAuthenticationServiceAccountAuthConfig getServiceA
 
 service_account_auth_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#service_account_auth_config CesToolset#service_account_auth_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#service_account_auth_config CesToolset#service_account_auth_config}
 
 ---
 
@@ -1870,7 +2353,7 @@ public CesToolsetMcpToolsetApiAuthenticationServiceAgentIdTokenAuthConfig getSer
 
 service_agent_id_token_auth_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#service_agent_id_token_auth_config CesToolset#service_agent_id_token_auth_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#service_agent_id_token_auth_config CesToolset#service_agent_id_token_auth_config}
 
 ---
 
@@ -1913,7 +2396,7 @@ Note: You should grant 'roles/secretmanager.secretAccessor' role to the CES
 service agent
 'service-@gcp-sa-ces.iam.gserviceaccount.com'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#api_key_secret_version CesToolset#api_key_secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#api_key_secret_version CesToolset#api_key_secret_version}
 
 ---
 
@@ -1929,7 +2412,7 @@ The parameter name or the header name of the API key.
 
 E.g., If the API request is "https://example.com/act?X-Api-Key=", "X-Api-Key" would be the parameter name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#key_name CesToolset#key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#key_name CesToolset#key_name}
 
 ---
 
@@ -1948,7 +2431,7 @@ the API key can only be sent in the request header.
 Possible values:
 HEADER
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#request_location CesToolset#request_location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#request_location CesToolset#request_location}
 
 ---
 
@@ -1968,7 +2451,7 @@ CesToolsetMcpToolsetApiAuthenticationBearerTokenConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetMcpToolsetApiAuthenticationBearerTokenConfig.property.token">token</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#token CesToolset#token}. |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetMcpToolsetApiAuthenticationBearerTokenConfig.property.token">token</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#token CesToolset#token}. |
 
 ---
 
@@ -1980,7 +2463,7 @@ public java.lang.String getToken();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#token CesToolset#token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#token CesToolset#token}.
 
 ---
 
@@ -2022,7 +2505,7 @@ public java.lang.String getClientId();
 
 The client ID from the OAuth provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#client_id CesToolset#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#client_id CesToolset#client_id}
 
 ---
 
@@ -2040,7 +2523,7 @@ Note: You should grant 'roles/secretmanager.secretAccessor' role to the CES
 service agent
 'service-@gcp-sa-ces.iam.gserviceaccount.com'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#client_secret_version CesToolset#client_secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#client_secret_version CesToolset#client_secret_version}
 
 ---
 
@@ -2054,7 +2537,7 @@ public java.lang.String getOauthGrantType();
 
 OAuth grant types. Possible values: CLIENT_CREDENTIAL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#oauth_grant_type CesToolset#oauth_grant_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#oauth_grant_type CesToolset#oauth_grant_type}
 
 ---
 
@@ -2068,7 +2551,7 @@ public java.lang.String getTokenEndpoint();
 
 The token endpoint in the OAuth provider to exchange for an access token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#token_endpoint CesToolset#token_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#token_endpoint CesToolset#token_endpoint}
 
 ---
 
@@ -2082,7 +2565,7 @@ public java.util.List<java.lang.String> getScopes();
 
 The OAuth scopes to grant.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#scopes CesToolset#scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#scopes CesToolset#scopes}
 
 ---
 
@@ -2127,7 +2610,7 @@ The service account must have the
 CES service agent
 'service-@gcp-sa-ces.iam.gserviceaccount.com'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#service_account CesToolset#service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#service_account CesToolset#service_account}
 
 ---
 
@@ -2141,7 +2624,7 @@ public java.util.List<java.lang.String> getScopes();
 
 The OAuth scopes to grant. If not specified, the default scope 'https://www.googleapis.com/auth/cloud-platform' is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#scopes CesToolset#scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#scopes CesToolset#scopes}
 
 ---
 
@@ -2187,7 +2670,7 @@ public java.lang.String getService();
 
 The name of [Service Directory](https://cloud.google.com/service-directory) service. Format: 'projects/{project}/locations/{location}/namespaces/{namespace}/services/{service}'. Location of the service directory must be the same as the location of the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#service CesToolset#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#service CesToolset#service}
 
 ---
 
@@ -2221,7 +2704,7 @@ public IResolvable|java.util.List<CesToolsetMcpToolsetTlsConfigCaCerts> getCaCer
 
 ca_certs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#ca_certs CesToolset#ca_certs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#ca_certs CesToolset#ca_certs}
 
 ---
 
@@ -2267,7 +2750,7 @@ openssl x509 -req -days 200 -in example.com.csr \
 -out example.com.crt \
 -extfile <(printf "\nsubjectAltName='DNS:www.example.com'")
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#cert CesToolset#cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#cert CesToolset#cert}
 
 ---
 
@@ -2281,7 +2764,7 @@ public java.lang.String getDisplayName();
 
 The name of the allowed custom CA certificates. This can be used to disambiguate the custom CA certificates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#display_name CesToolset#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#display_name CesToolset#display_name}
 
 ---
 
@@ -2323,7 +2806,7 @@ public java.lang.String getOpenApiSchema();
 
 The OpenAPI schema of the toolset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#open_api_schema CesToolset#open_api_schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#open_api_schema CesToolset#open_api_schema}
 
 ---
 
@@ -2337,7 +2820,7 @@ public CesToolsetOpenApiToolsetApiAuthentication getApiAuthentication();
 
 api_authentication block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#api_authentication CesToolset#api_authentication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#api_authentication CesToolset#api_authentication}
 
 ---
 
@@ -2351,7 +2834,7 @@ public java.lang.Boolean|IResolvable getIgnoreUnknownFields();
 
 If true, the agent will ignore unknown fields in the API response for all operations defined in the OpenAPI schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#ignore_unknown_fields CesToolset#ignore_unknown_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#ignore_unknown_fields CesToolset#ignore_unknown_fields}
 
 ---
 
@@ -2365,7 +2848,7 @@ public CesToolsetOpenApiToolsetServiceDirectoryConfig getServiceDirectoryConfig(
 
 service_directory_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#service_directory_config CesToolset#service_directory_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#service_directory_config CesToolset#service_directory_config}
 
 ---
 
@@ -2379,7 +2862,7 @@ public CesToolsetOpenApiToolsetTlsConfig getTlsConfig();
 
 tls_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#tls_config CesToolset#tls_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#tls_config CesToolset#tls_config}
 
 ---
 
@@ -2421,7 +2904,7 @@ public CesToolsetOpenApiToolsetApiAuthenticationApiKeyConfig getApiKeyConfig();
 
 api_key_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#api_key_config CesToolset#api_key_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#api_key_config CesToolset#api_key_config}
 
 ---
 
@@ -2435,7 +2918,7 @@ public CesToolsetOpenApiToolsetApiAuthenticationBearerTokenConfig getBearerToken
 
 bearer_token_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#bearer_token_config CesToolset#bearer_token_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#bearer_token_config CesToolset#bearer_token_config}
 
 ---
 
@@ -2449,7 +2932,7 @@ public CesToolsetOpenApiToolsetApiAuthenticationOauthConfig getOauthConfig();
 
 oauth_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#oauth_config CesToolset#oauth_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#oauth_config CesToolset#oauth_config}
 
 ---
 
@@ -2463,7 +2946,7 @@ public CesToolsetOpenApiToolsetApiAuthenticationServiceAccountAuthConfig getServ
 
 service_account_auth_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#service_account_auth_config CesToolset#service_account_auth_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#service_account_auth_config CesToolset#service_account_auth_config}
 
 ---
 
@@ -2477,7 +2960,7 @@ public CesToolsetOpenApiToolsetApiAuthenticationServiceAgentIdTokenAuthConfig ge
 
 service_agent_id_token_auth_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#service_agent_id_token_auth_config CesToolset#service_agent_id_token_auth_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#service_agent_id_token_auth_config CesToolset#service_agent_id_token_auth_config}
 
 ---
 
@@ -2520,7 +3003,7 @@ Note: You should grant 'roles/secretmanager.secretAccessor' role to the CES
 service agent
 'service-@gcp-sa-ces.iam.gserviceaccount.com'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#api_key_secret_version CesToolset#api_key_secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#api_key_secret_version CesToolset#api_key_secret_version}
 
 ---
 
@@ -2536,7 +3019,7 @@ The parameter name or the header name of the API key.
 
 E.g., If the API request is "https://example.com/act?X-Api-Key=", "X-Api-Key" would be the parameter name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#key_name CesToolset#key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#key_name CesToolset#key_name}
 
 ---
 
@@ -2550,7 +3033,7 @@ public java.lang.String getRequestLocation();
 
 Key location in the request. Possible values: HEADER QUERY_STRING.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#request_location CesToolset#request_location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#request_location CesToolset#request_location}
 
 ---
 
@@ -2570,7 +3053,7 @@ CesToolsetOpenApiToolsetApiAuthenticationBearerTokenConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetOpenApiToolsetApiAuthenticationBearerTokenConfig.property.token">token</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#token CesToolset#token}. |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetOpenApiToolsetApiAuthenticationBearerTokenConfig.property.token">token</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#token CesToolset#token}. |
 
 ---
 
@@ -2582,7 +3065,7 @@ public java.lang.String getToken();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#token CesToolset#token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#token CesToolset#token}.
 
 ---
 
@@ -2624,7 +3107,7 @@ public java.lang.String getClientId();
 
 The client ID from the OAuth provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#client_id CesToolset#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#client_id CesToolset#client_id}
 
 ---
 
@@ -2642,7 +3125,7 @@ Note: You should grant 'roles/secretmanager.secretAccessor' role to the CES
 service agent
 'service-@gcp-sa-ces.iam.gserviceaccount.com'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#client_secret_version CesToolset#client_secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#client_secret_version CesToolset#client_secret_version}
 
 ---
 
@@ -2656,7 +3139,7 @@ public java.lang.String getOauthGrantType();
 
 OAuth grant types. Possible values: CLIENT_CREDENTIAL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#oauth_grant_type CesToolset#oauth_grant_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#oauth_grant_type CesToolset#oauth_grant_type}
 
 ---
 
@@ -2670,7 +3153,7 @@ public java.lang.String getTokenEndpoint();
 
 The token endpoint in the OAuth provider to exchange for an access token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#token_endpoint CesToolset#token_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#token_endpoint CesToolset#token_endpoint}
 
 ---
 
@@ -2684,7 +3167,7 @@ public java.util.List<java.lang.String> getScopes();
 
 The OAuth scopes to grant.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#scopes CesToolset#scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#scopes CesToolset#scopes}
 
 ---
 
@@ -2729,7 +3212,7 @@ The service account must have the
 CES service agent
 'service-@gcp-sa-ces.iam.gserviceaccount.com'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#service_account CesToolset#service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#service_account CesToolset#service_account}
 
 ---
 
@@ -2743,7 +3226,7 @@ public java.util.List<java.lang.String> getScopes();
 
 The OAuth scopes to grant. If not specified, the default scope 'https://www.googleapis.com/auth/cloud-platform' is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#scopes CesToolset#scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#scopes CesToolset#scopes}
 
 ---
 
@@ -2789,7 +3272,7 @@ public java.lang.String getService();
 
 The name of [Service Directory](https://cloud.google.com/service-directory) service. Format: 'projects/{project}/locations/{location}/namespaces/{namespace}/services/{service}'. Location of the service directory must be the same as the location of the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#service CesToolset#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#service CesToolset#service}
 
 ---
 
@@ -2823,7 +3306,7 @@ public IResolvable|java.util.List<CesToolsetOpenApiToolsetTlsConfigCaCerts> getC
 
 ca_certs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#ca_certs CesToolset#ca_certs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#ca_certs CesToolset#ca_certs}
 
 ---
 
@@ -2869,7 +3352,7 @@ openssl x509 -req -days 200 -in example.com.csr \
 -out example.com.crt \
 -extfile <(printf "\nsubjectAltName='DNS:www.example.com'")
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#cert CesToolset#cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#cert CesToolset#cert}
 
 ---
 
@@ -2883,7 +3366,7 @@ public java.lang.String getDisplayName();
 
 The name of the allowed custom CA certificates. This can be used to disambiguate the custom CA certificates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#display_name CesToolset#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#display_name CesToolset#display_name}
 
 ---
 
@@ -2905,9 +3388,9 @@ CesToolsetTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#create CesToolset#create}. |
-| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#delete CesToolset#delete}. |
-| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#update CesToolset#update}. |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#create CesToolset#create}. |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#delete CesToolset#delete}. |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#update CesToolset#update}. |
 
 ---
 
@@ -2919,7 +3402,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#create CesToolset#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#create CesToolset#create}.
 
 ---
 
@@ -2931,7 +3414,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#delete CesToolset#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#delete CesToolset#delete}.
 
 ---
 
@@ -2943,7 +3426,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#update CesToolset#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#update CesToolset#update}.
 
 ---
 
@@ -2979,7 +3462,7 @@ public CesToolsetToolFakeConfigCodeBlock getCodeBlock();
 
 code_block block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#code_block CesToolset#code_block}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#code_block CesToolset#code_block}
 
 ---
 
@@ -2993,7 +3476,7 @@ public java.lang.Boolean|IResolvable getEnableFakeMode();
 
 Whether the tool is using fake mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#enable_fake_mode CesToolset#enable_fake_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#enable_fake_mode CesToolset#enable_fake_mode}
 
 ---
 
@@ -3027,11 +3510,2127 @@ public java.lang.String getPythonCode();
 
 Python code which will be invoked in tool fake mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/ces_toolset#python_code CesToolset#python_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/ces_toolset#python_code CesToolset#python_code}
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfigOutputReference <a name="CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfigOutputReference" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfigOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.ces_toolset.CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfigOutputReference;
+
+new CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfigOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfigOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfigOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfigOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfigOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfigOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfigOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfigOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfigOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfigOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfigOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfigOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfigOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfigOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfigOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfigOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfigOutputReference.property.oauthTokenInput">oauthTokenInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfigOutputReference.property.oauthToken">oauthToken</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfig">CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfigOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfigOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `oauthTokenInput`<sup>Optional</sup> <a name="oauthTokenInput" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfigOutputReference.property.oauthTokenInput"></a>
+
+```java
+public java.lang.String getOauthTokenInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `oauthToken`<sup>Required</sup> <a name="oauthToken" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfigOutputReference.property.oauthToken"></a>
+
+```java
+public java.lang.String getOauthToken();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfigOutputReference.property.internalValue"></a>
+
+```java
+public CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfig getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfig">CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfig</a>
+
+---
+
+
+### CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference <a name="CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.ces_toolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference;
+
+new CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference.property.clientKeyInput">clientKeyInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference.property.issuerInput">issuerInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference.property.subjectInput">subjectInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference.property.clientKey">clientKey</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference.property.issuer">issuer</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference.property.subject">subject</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfig">CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `clientKeyInput`<sup>Optional</sup> <a name="clientKeyInput" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference.property.clientKeyInput"></a>
+
+```java
+public java.lang.String getClientKeyInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `issuerInput`<sup>Optional</sup> <a name="issuerInput" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference.property.issuerInput"></a>
+
+```java
+public java.lang.String getIssuerInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `subjectInput`<sup>Optional</sup> <a name="subjectInput" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference.property.subjectInput"></a>
+
+```java
+public java.lang.String getSubjectInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `clientKey`<sup>Required</sup> <a name="clientKey" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference.property.clientKey"></a>
+
+```java
+public java.lang.String getClientKey();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `issuer`<sup>Required</sup> <a name="issuer" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference.property.issuer"></a>
+
+```java
+public java.lang.String getIssuer();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `subject`<sup>Required</sup> <a name="subject" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference.property.subject"></a>
+
+```java
+public java.lang.String getSubject();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference.property.internalValue"></a>
+
+```java
+public CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfig getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfig">CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfig</a>
+
+---
+
+
+### CesToolsetConnectorToolsetAuthConfigOutputReference <a name="CesToolsetConnectorToolsetAuthConfigOutputReference" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.ces_toolset.CesToolsetConnectorToolsetAuthConfigOutputReference;
+
+new CesToolsetConnectorToolsetAuthConfigOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOutputReference.putOauth2AuthCodeConfig">putOauth2AuthCodeConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOutputReference.putOauth2JwtBearerConfig">putOauth2JwtBearerConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOutputReference.resetOauth2AuthCodeConfig">resetOauth2AuthCodeConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOutputReference.resetOauth2JwtBearerConfig">resetOauth2JwtBearerConfig</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putOauth2AuthCodeConfig` <a name="putOauth2AuthCodeConfig" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOutputReference.putOauth2AuthCodeConfig"></a>
+
+```java
+public void putOauth2AuthCodeConfig(CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfig value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOutputReference.putOauth2AuthCodeConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfig">CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfig</a>
+
+---
+
+##### `putOauth2JwtBearerConfig` <a name="putOauth2JwtBearerConfig" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOutputReference.putOauth2JwtBearerConfig"></a>
+
+```java
+public void putOauth2JwtBearerConfig(CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfig value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOutputReference.putOauth2JwtBearerConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfig">CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfig</a>
+
+---
+
+##### `resetOauth2AuthCodeConfig` <a name="resetOauth2AuthCodeConfig" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOutputReference.resetOauth2AuthCodeConfig"></a>
+
+```java
+public void resetOauth2AuthCodeConfig()
+```
+
+##### `resetOauth2JwtBearerConfig` <a name="resetOauth2JwtBearerConfig" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOutputReference.resetOauth2JwtBearerConfig"></a>
+
+```java
+public void resetOauth2JwtBearerConfig()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOutputReference.property.oauth2AuthCodeConfig">oauth2AuthCodeConfig</a></code> | <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfigOutputReference">CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOutputReference.property.oauth2JwtBearerConfig">oauth2JwtBearerConfig</a></code> | <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference">CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOutputReference.property.oauth2AuthCodeConfigInput">oauth2AuthCodeConfigInput</a></code> | <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfig">CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOutputReference.property.oauth2JwtBearerConfigInput">oauth2JwtBearerConfigInput</a></code> | <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfig">CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfig">CesToolsetConnectorToolsetAuthConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `oauth2AuthCodeConfig`<sup>Required</sup> <a name="oauth2AuthCodeConfig" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOutputReference.property.oauth2AuthCodeConfig"></a>
+
+```java
+public CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfigOutputReference getOauth2AuthCodeConfig();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfigOutputReference">CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfigOutputReference</a>
+
+---
+
+##### `oauth2JwtBearerConfig`<sup>Required</sup> <a name="oauth2JwtBearerConfig" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOutputReference.property.oauth2JwtBearerConfig"></a>
+
+```java
+public CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference getOauth2JwtBearerConfig();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference">CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfigOutputReference</a>
+
+---
+
+##### `oauth2AuthCodeConfigInput`<sup>Optional</sup> <a name="oauth2AuthCodeConfigInput" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOutputReference.property.oauth2AuthCodeConfigInput"></a>
+
+```java
+public CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfig getOauth2AuthCodeConfigInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfig">CesToolsetConnectorToolsetAuthConfigOauth2AuthCodeConfig</a>
+
+---
+
+##### `oauth2JwtBearerConfigInput`<sup>Optional</sup> <a name="oauth2JwtBearerConfigInput" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOutputReference.property.oauth2JwtBearerConfigInput"></a>
+
+```java
+public CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfig getOauth2JwtBearerConfigInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfig">CesToolsetConnectorToolsetAuthConfigOauth2JwtBearerConfig</a>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOutputReference.property.internalValue"></a>
+
+```java
+public CesToolsetConnectorToolsetAuthConfig getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfig">CesToolsetConnectorToolsetAuthConfig</a>
+
+---
+
+
+### CesToolsetConnectorToolsetConnectorActionsEntityOperationOutputReference <a name="CesToolsetConnectorToolsetConnectorActionsEntityOperationOutputReference" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperationOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperationOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.ces_toolset.CesToolsetConnectorToolsetConnectorActionsEntityOperationOutputReference;
+
+new CesToolsetConnectorToolsetConnectorActionsEntityOperationOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperationOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperationOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperationOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperationOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperationOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperationOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperationOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperationOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperationOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperationOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperationOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperationOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperationOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperationOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperationOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperationOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperationOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperationOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperationOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperationOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperationOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperationOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperationOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperationOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperationOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperationOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperationOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperationOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperationOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperationOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperationOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperationOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperationOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperationOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperationOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperationOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperationOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperationOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperationOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperationOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperationOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperationOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperationOutputReference.property.entityIdInput">entityIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperationOutputReference.property.operationInput">operationInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperationOutputReference.property.entityId">entityId</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperationOutputReference.property.operation">operation</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperationOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperation">CesToolsetConnectorToolsetConnectorActionsEntityOperation</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperationOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperationOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `entityIdInput`<sup>Optional</sup> <a name="entityIdInput" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperationOutputReference.property.entityIdInput"></a>
+
+```java
+public java.lang.String getEntityIdInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `operationInput`<sup>Optional</sup> <a name="operationInput" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperationOutputReference.property.operationInput"></a>
+
+```java
+public java.lang.String getOperationInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `entityId`<sup>Required</sup> <a name="entityId" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperationOutputReference.property.entityId"></a>
+
+```java
+public java.lang.String getEntityId();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `operation`<sup>Required</sup> <a name="operation" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperationOutputReference.property.operation"></a>
+
+```java
+public java.lang.String getOperation();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperationOutputReference.property.internalValue"></a>
+
+```java
+public CesToolsetConnectorToolsetConnectorActionsEntityOperation getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperation">CesToolsetConnectorToolsetConnectorActionsEntityOperation</a>
+
+---
+
+
+### CesToolsetConnectorToolsetConnectorActionsList <a name="CesToolsetConnectorToolsetConnectorActionsList" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsList.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.ces_toolset.CesToolsetConnectorToolsetConnectorActionsList;
+
+new CesToolsetConnectorToolsetConnectorActionsList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsList.allWithMapKey"></a>
+
+```java
+public DynamicListTerraformIterator allWithMapKey(java.lang.String mapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsList.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsList.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsList.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsList.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsList.get"></a>
+
+```java
+public CesToolsetConnectorToolsetConnectorActionsOutputReference get(java.lang.Number index)
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsList.get.parameter.index"></a>
+
+- *Type:* java.lang.Number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsList.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActions">CesToolsetConnectorToolsetConnectorActions</a>></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsList.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsList.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsList.property.internalValue"></a>
+
+```java
+public IResolvable|java.util.List<CesToolsetConnectorToolsetConnectorActions> getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActions">CesToolsetConnectorToolsetConnectorActions</a>>
+
+---
+
+
+### CesToolsetConnectorToolsetConnectorActionsOutputReference <a name="CesToolsetConnectorToolsetConnectorActionsOutputReference" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.ces_toolset.CesToolsetConnectorToolsetConnectorActionsOutputReference;
+
+new CesToolsetConnectorToolsetConnectorActionsOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* java.lang.Number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.putEntityOperation">putEntityOperation</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.resetConnectionActionId">resetConnectionActionId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.resetEntityOperation">resetEntityOperation</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.resetInputFields">resetInputFields</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.resetOutputFields">resetOutputFields</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putEntityOperation` <a name="putEntityOperation" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.putEntityOperation"></a>
+
+```java
+public void putEntityOperation(CesToolsetConnectorToolsetConnectorActionsEntityOperation value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.putEntityOperation.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperation">CesToolsetConnectorToolsetConnectorActionsEntityOperation</a>
+
+---
+
+##### `resetConnectionActionId` <a name="resetConnectionActionId" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.resetConnectionActionId"></a>
+
+```java
+public void resetConnectionActionId()
+```
+
+##### `resetEntityOperation` <a name="resetEntityOperation" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.resetEntityOperation"></a>
+
+```java
+public void resetEntityOperation()
+```
+
+##### `resetInputFields` <a name="resetInputFields" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.resetInputFields"></a>
+
+```java
+public void resetInputFields()
+```
+
+##### `resetOutputFields` <a name="resetOutputFields" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.resetOutputFields"></a>
+
+```java
+public void resetOutputFields()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.property.entityOperation">entityOperation</a></code> | <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperationOutputReference">CesToolsetConnectorToolsetConnectorActionsEntityOperationOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.property.connectionActionIdInput">connectionActionIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.property.entityOperationInput">entityOperationInput</a></code> | <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperation">CesToolsetConnectorToolsetConnectorActionsEntityOperation</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.property.inputFieldsInput">inputFieldsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.property.outputFieldsInput">outputFieldsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.property.connectionActionId">connectionActionId</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.property.inputFields">inputFields</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.property.outputFields">outputFields</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActions">CesToolsetConnectorToolsetConnectorActions</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `entityOperation`<sup>Required</sup> <a name="entityOperation" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.property.entityOperation"></a>
+
+```java
+public CesToolsetConnectorToolsetConnectorActionsEntityOperationOutputReference getEntityOperation();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperationOutputReference">CesToolsetConnectorToolsetConnectorActionsEntityOperationOutputReference</a>
+
+---
+
+##### `connectionActionIdInput`<sup>Optional</sup> <a name="connectionActionIdInput" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.property.connectionActionIdInput"></a>
+
+```java
+public java.lang.String getConnectionActionIdInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `entityOperationInput`<sup>Optional</sup> <a name="entityOperationInput" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.property.entityOperationInput"></a>
+
+```java
+public CesToolsetConnectorToolsetConnectorActionsEntityOperation getEntityOperationInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsEntityOperation">CesToolsetConnectorToolsetConnectorActionsEntityOperation</a>
+
+---
+
+##### `inputFieldsInput`<sup>Optional</sup> <a name="inputFieldsInput" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.property.inputFieldsInput"></a>
+
+```java
+public java.util.List<java.lang.String> getInputFieldsInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `outputFieldsInput`<sup>Optional</sup> <a name="outputFieldsInput" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.property.outputFieldsInput"></a>
+
+```java
+public java.util.List<java.lang.String> getOutputFieldsInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `connectionActionId`<sup>Required</sup> <a name="connectionActionId" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.property.connectionActionId"></a>
+
+```java
+public java.lang.String getConnectionActionId();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `inputFields`<sup>Required</sup> <a name="inputFields" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.property.inputFields"></a>
+
+```java
+public java.util.List<java.lang.String> getInputFields();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `outputFields`<sup>Required</sup> <a name="outputFields" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.property.outputFields"></a>
+
+```java
+public java.util.List<java.lang.String> getOutputFields();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|CesToolsetConnectorToolsetConnectorActions getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActions">CesToolsetConnectorToolsetConnectorActions</a>
+
+---
+
+
+### CesToolsetConnectorToolsetOutputReference <a name="CesToolsetConnectorToolsetOutputReference" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.ces_toolset.CesToolsetConnectorToolsetOutputReference;
+
+new CesToolsetConnectorToolsetOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference.putAuthConfig">putAuthConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference.putConnectorActions">putConnectorActions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference.resetAuthConfig">resetAuthConfig</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putAuthConfig` <a name="putAuthConfig" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference.putAuthConfig"></a>
+
+```java
+public void putAuthConfig(CesToolsetConnectorToolsetAuthConfig value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference.putAuthConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfig">CesToolsetConnectorToolsetAuthConfig</a>
+
+---
+
+##### `putConnectorActions` <a name="putConnectorActions" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference.putConnectorActions"></a>
+
+```java
+public void putConnectorActions(IResolvable|java.util.List<CesToolsetConnectorToolsetConnectorActions> value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference.putConnectorActions.parameter.value"></a>
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActions">CesToolsetConnectorToolsetConnectorActions</a>>
+
+---
+
+##### `resetAuthConfig` <a name="resetAuthConfig" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference.resetAuthConfig"></a>
+
+```java
+public void resetAuthConfig()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference.property.authConfig">authConfig</a></code> | <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOutputReference">CesToolsetConnectorToolsetAuthConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference.property.connectorActions">connectorActions</a></code> | <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsList">CesToolsetConnectorToolsetConnectorActionsList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference.property.authConfigInput">authConfigInput</a></code> | <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfig">CesToolsetConnectorToolsetAuthConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference.property.connectionInput">connectionInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference.property.connectorActionsInput">connectorActionsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActions">CesToolsetConnectorToolsetConnectorActions</a>></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference.property.connection">connection</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolset">CesToolsetConnectorToolset</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `authConfig`<sup>Required</sup> <a name="authConfig" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference.property.authConfig"></a>
+
+```java
+public CesToolsetConnectorToolsetAuthConfigOutputReference getAuthConfig();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfigOutputReference">CesToolsetConnectorToolsetAuthConfigOutputReference</a>
+
+---
+
+##### `connectorActions`<sup>Required</sup> <a name="connectorActions" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference.property.connectorActions"></a>
+
+```java
+public CesToolsetConnectorToolsetConnectorActionsList getConnectorActions();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActionsList">CesToolsetConnectorToolsetConnectorActionsList</a>
+
+---
+
+##### `authConfigInput`<sup>Optional</sup> <a name="authConfigInput" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference.property.authConfigInput"></a>
+
+```java
+public CesToolsetConnectorToolsetAuthConfig getAuthConfigInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetAuthConfig">CesToolsetConnectorToolsetAuthConfig</a>
+
+---
+
+##### `connectionInput`<sup>Optional</sup> <a name="connectionInput" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference.property.connectionInput"></a>
+
+```java
+public java.lang.String getConnectionInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `connectorActionsInput`<sup>Optional</sup> <a name="connectorActionsInput" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference.property.connectorActionsInput"></a>
+
+```java
+public IResolvable|java.util.List<CesToolsetConnectorToolsetConnectorActions> getConnectorActionsInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetConnectorActions">CesToolsetConnectorToolsetConnectorActions</a>>
+
+---
+
+##### `connection`<sup>Required</sup> <a name="connection" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference.property.connection"></a>
+
+```java
+public java.lang.String getConnection();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.cesToolset.CesToolsetConnectorToolsetOutputReference.property.internalValue"></a>
+
+```java
+public CesToolsetConnectorToolset getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesToolset.CesToolsetConnectorToolset">CesToolsetConnectorToolset</a>
+
+---
+
 
 ### CesToolsetMcpToolsetApiAuthenticationApiKeyConfigOutputReference <a name="CesToolsetMcpToolsetApiAuthenticationApiKeyConfigOutputReference" id="@cdktn/provider-google.cesToolset.CesToolsetMcpToolsetApiAuthenticationApiKeyConfigOutputReference"></a>
 

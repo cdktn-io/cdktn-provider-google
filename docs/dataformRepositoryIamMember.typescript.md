@@ -4,7 +4,7 @@
 
 ### DataformRepositoryIamMember <a name="DataformRepositoryIamMember" id="@cdktn/provider-google.dataformRepositoryIamMember.DataformRepositoryIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataform_repository_iam_member google_dataform_repository_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dataform_repository_iam_member google_dataform_repository_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataformRepositoryIamMember.DataformRepositoryIamMember.Initializer"></a>
 
@@ -530,7 +530,7 @@ The construct id used in the generated config for the DataformRepositoryIamMembe
 
 The id of the existing DataformRepositoryIamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataform_repository_iam_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dataform_repository_iam_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -904,9 +904,9 @@ const dataformRepositoryIamMemberCondition: dataformRepositoryIamMember.Dataform
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataformRepositoryIamMember.DataformRepositoryIamMemberCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataform_repository_iam_member#expression DataformRepositoryIamMember#expression}. |
-| <code><a href="#@cdktn/provider-google.dataformRepositoryIamMember.DataformRepositoryIamMemberCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataform_repository_iam_member#title DataformRepositoryIamMember#title}. |
-| <code><a href="#@cdktn/provider-google.dataformRepositoryIamMember.DataformRepositoryIamMemberCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataform_repository_iam_member#description DataformRepositoryIamMember#description}. |
+| <code><a href="#@cdktn/provider-google.dataformRepositoryIamMember.DataformRepositoryIamMemberCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dataform_repository_iam_member#expression DataformRepositoryIamMember#expression}. |
+| <code><a href="#@cdktn/provider-google.dataformRepositoryIamMember.DataformRepositoryIamMemberCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dataform_repository_iam_member#title DataformRepositoryIamMember#title}. |
+| <code><a href="#@cdktn/provider-google.dataformRepositoryIamMember.DataformRepositoryIamMemberCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dataform_repository_iam_member#description DataformRepositoryIamMember#description}. |
 
 ---
 
@@ -918,7 +918,7 @@ public readonly expression: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataform_repository_iam_member#expression DataformRepositoryIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dataform_repository_iam_member#expression DataformRepositoryIamMember#expression}.
 
 ---
 
@@ -930,7 +930,7 @@ public readonly title: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataform_repository_iam_member#title DataformRepositoryIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dataform_repository_iam_member#title DataformRepositoryIamMember#title}.
 
 ---
 
@@ -942,7 +942,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataform_repository_iam_member#description DataformRepositoryIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dataform_repository_iam_member#description DataformRepositoryIamMember#description}.
 
 ---
 
@@ -967,13 +967,13 @@ const dataformRepositoryIamMemberConfig: dataformRepositoryIamMember.DataformRep
 | <code><a href="#@cdktn/provider-google.dataformRepositoryIamMember.DataformRepositoryIamMemberConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataformRepositoryIamMember.DataformRepositoryIamMemberConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataformRepositoryIamMember.DataformRepositoryIamMemberConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataformRepositoryIamMember.DataformRepositoryIamMemberConfig.property.member">member</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataform_repository_iam_member#member DataformRepositoryIamMember#member}. |
-| <code><a href="#@cdktn/provider-google.dataformRepositoryIamMember.DataformRepositoryIamMemberConfig.property.repository">repository</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataform_repository_iam_member#repository DataformRepositoryIamMember#repository}. |
-| <code><a href="#@cdktn/provider-google.dataformRepositoryIamMember.DataformRepositoryIamMemberConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataform_repository_iam_member#role DataformRepositoryIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.dataformRepositoryIamMember.DataformRepositoryIamMemberConfig.property.member">member</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dataform_repository_iam_member#member DataformRepositoryIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.dataformRepositoryIamMember.DataformRepositoryIamMemberConfig.property.repository">repository</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dataform_repository_iam_member#repository DataformRepositoryIamMember#repository}. |
+| <code><a href="#@cdktn/provider-google.dataformRepositoryIamMember.DataformRepositoryIamMemberConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dataform_repository_iam_member#role DataformRepositoryIamMember#role}. |
 | <code><a href="#@cdktn/provider-google.dataformRepositoryIamMember.DataformRepositoryIamMemberConfig.property.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.dataformRepositoryIamMember.DataformRepositoryIamMemberCondition">DataformRepositoryIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.dataformRepositoryIamMember.DataformRepositoryIamMemberConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataform_repository_iam_member#id DataformRepositoryIamMember#id}. |
-| <code><a href="#@cdktn/provider-google.dataformRepositoryIamMember.DataformRepositoryIamMemberConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataform_repository_iam_member#project DataformRepositoryIamMember#project}. |
-| <code><a href="#@cdktn/provider-google.dataformRepositoryIamMember.DataformRepositoryIamMemberConfig.property.region">region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataform_repository_iam_member#region DataformRepositoryIamMember#region}. |
+| <code><a href="#@cdktn/provider-google.dataformRepositoryIamMember.DataformRepositoryIamMemberConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dataform_repository_iam_member#id DataformRepositoryIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.dataformRepositoryIamMember.DataformRepositoryIamMemberConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dataform_repository_iam_member#project DataformRepositoryIamMember#project}. |
+| <code><a href="#@cdktn/provider-google.dataformRepositoryIamMember.DataformRepositoryIamMemberConfig.property.region">region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dataform_repository_iam_member#region DataformRepositoryIamMember#region}. |
 
 ---
 
@@ -1055,7 +1055,7 @@ public readonly member: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataform_repository_iam_member#member DataformRepositoryIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dataform_repository_iam_member#member DataformRepositoryIamMember#member}.
 
 ---
 
@@ -1067,7 +1067,7 @@ public readonly repository: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataform_repository_iam_member#repository DataformRepositoryIamMember#repository}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dataform_repository_iam_member#repository DataformRepositoryIamMember#repository}.
 
 ---
 
@@ -1079,7 +1079,7 @@ public readonly role: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataform_repository_iam_member#role DataformRepositoryIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dataform_repository_iam_member#role DataformRepositoryIamMember#role}.
 
 ---
 
@@ -1093,7 +1093,7 @@ public readonly condition: DataformRepositoryIamMemberCondition;
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataform_repository_iam_member#condition DataformRepositoryIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dataform_repository_iam_member#condition DataformRepositoryIamMember#condition}
 
 ---
 
@@ -1105,7 +1105,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataform_repository_iam_member#id DataformRepositoryIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dataform_repository_iam_member#id DataformRepositoryIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1120,7 +1120,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataform_repository_iam_member#project DataformRepositoryIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dataform_repository_iam_member#project DataformRepositoryIamMember#project}.
 
 ---
 
@@ -1132,7 +1132,7 @@ public readonly region: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/dataform_repository_iam_member#region DataformRepositoryIamMember#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dataform_repository_iam_member#region DataformRepositoryIamMember#region}.
 
 ---
 

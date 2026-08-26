@@ -4,7 +4,7 @@
 
 ### StorageManagedFolderIamMember <a name="StorageManagedFolderIamMember" id="@cdktn/provider-google.storageManagedFolderIamMember.StorageManagedFolderIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/storage_managed_folder_iam_member google_storage_managed_folder_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/storage_managed_folder_iam_member google_storage_managed_folder_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageManagedFolderIamMember.StorageManagedFolderIamMember.Initializer"></a>
 
@@ -39,12 +39,12 @@ StorageManagedFolderIamMember.Builder.create(Construct scope, java.lang.String i
 | <code><a href="#@cdktn/provider-google.storageManagedFolderIamMember.StorageManagedFolderIamMember.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageManagedFolderIamMember.StorageManagedFolderIamMember.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageManagedFolderIamMember.StorageManagedFolderIamMember.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.storageManagedFolderIamMember.StorageManagedFolderIamMember.Initializer.parameter.bucket">bucket</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/storage_managed_folder_iam_member#bucket StorageManagedFolderIamMember#bucket}. |
-| <code><a href="#@cdktn/provider-google.storageManagedFolderIamMember.StorageManagedFolderIamMember.Initializer.parameter.managedFolder">managedFolder</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/storage_managed_folder_iam_member#managed_folder StorageManagedFolderIamMember#managed_folder}. |
-| <code><a href="#@cdktn/provider-google.storageManagedFolderIamMember.StorageManagedFolderIamMember.Initializer.parameter.member">member</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/storage_managed_folder_iam_member#member StorageManagedFolderIamMember#member}. |
-| <code><a href="#@cdktn/provider-google.storageManagedFolderIamMember.StorageManagedFolderIamMember.Initializer.parameter.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/storage_managed_folder_iam_member#role StorageManagedFolderIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolderIamMember.StorageManagedFolderIamMember.Initializer.parameter.bucket">bucket</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/storage_managed_folder_iam_member#bucket StorageManagedFolderIamMember#bucket}. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolderIamMember.StorageManagedFolderIamMember.Initializer.parameter.managedFolder">managedFolder</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/storage_managed_folder_iam_member#managed_folder StorageManagedFolderIamMember#managed_folder}. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolderIamMember.StorageManagedFolderIamMember.Initializer.parameter.member">member</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/storage_managed_folder_iam_member#member StorageManagedFolderIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolderIamMember.StorageManagedFolderIamMember.Initializer.parameter.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/storage_managed_folder_iam_member#role StorageManagedFolderIamMember#role}. |
 | <code><a href="#@cdktn/provider-google.storageManagedFolderIamMember.StorageManagedFolderIamMember.Initializer.parameter.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.storageManagedFolderIamMember.StorageManagedFolderIamMemberCondition">StorageManagedFolderIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.storageManagedFolderIamMember.StorageManagedFolderIamMember.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/storage_managed_folder_iam_member#id StorageManagedFolderIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolderIamMember.StorageManagedFolderIamMember.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/storage_managed_folder_iam_member#id StorageManagedFolderIamMember#id}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/storage_managed_folder_iam_member#bucket StorageManagedFolderIamMember#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/storage_managed_folder_iam_member#bucket StorageManagedFolderIamMember#bucket}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/storage_managed_folder_iam_member#managed_folder StorageManagedFolderIamMember#managed_folder}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/storage_managed_folder_iam_member#managed_folder StorageManagedFolderIamMember#managed_folder}.
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/storage_managed_folder_iam_member#member StorageManagedFolderIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/storage_managed_folder_iam_member#member StorageManagedFolderIamMember#member}.
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/storage_managed_folder_iam_member#role StorageManagedFolderIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/storage_managed_folder_iam_member#role StorageManagedFolderIamMember#role}.
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/storage_managed_folder_iam_member#condition StorageManagedFolderIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/storage_managed_folder_iam_member#condition StorageManagedFolderIamMember#condition}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/storage_managed_folder_iam_member#id StorageManagedFolderIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/storage_managed_folder_iam_member#id StorageManagedFolderIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -633,7 +633,7 @@ The construct id used in the generated config for the StorageManagedFolderIamMem
 
 The id of the existing StorageManagedFolderIamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/storage_managed_folder_iam_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/storage_managed_folder_iam_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -989,9 +989,9 @@ StorageManagedFolderIamMemberCondition.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.storageManagedFolderIamMember.StorageManagedFolderIamMemberCondition.property.expression">expression</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/storage_managed_folder_iam_member#expression StorageManagedFolderIamMember#expression}. |
-| <code><a href="#@cdktn/provider-google.storageManagedFolderIamMember.StorageManagedFolderIamMemberCondition.property.title">title</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/storage_managed_folder_iam_member#title StorageManagedFolderIamMember#title}. |
-| <code><a href="#@cdktn/provider-google.storageManagedFolderIamMember.StorageManagedFolderIamMemberCondition.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/storage_managed_folder_iam_member#description StorageManagedFolderIamMember#description}. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolderIamMember.StorageManagedFolderIamMemberCondition.property.expression">expression</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/storage_managed_folder_iam_member#expression StorageManagedFolderIamMember#expression}. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolderIamMember.StorageManagedFolderIamMemberCondition.property.title">title</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/storage_managed_folder_iam_member#title StorageManagedFolderIamMember#title}. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolderIamMember.StorageManagedFolderIamMemberCondition.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/storage_managed_folder_iam_member#description StorageManagedFolderIamMember#description}. |
 
 ---
 
@@ -1003,7 +1003,7 @@ public java.lang.String getExpression();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/storage_managed_folder_iam_member#expression StorageManagedFolderIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/storage_managed_folder_iam_member#expression StorageManagedFolderIamMember#expression}.
 
 ---
 
@@ -1015,7 +1015,7 @@ public java.lang.String getTitle();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/storage_managed_folder_iam_member#title StorageManagedFolderIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/storage_managed_folder_iam_member#title StorageManagedFolderIamMember#title}.
 
 ---
 
@@ -1027,7 +1027,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/storage_managed_folder_iam_member#description StorageManagedFolderIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/storage_managed_folder_iam_member#description StorageManagedFolderIamMember#description}.
 
 ---
 
@@ -1066,12 +1066,12 @@ StorageManagedFolderIamMemberConfig.builder()
 | <code><a href="#@cdktn/provider-google.storageManagedFolderIamMember.StorageManagedFolderIamMemberConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageManagedFolderIamMember.StorageManagedFolderIamMemberConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageManagedFolderIamMember.StorageManagedFolderIamMemberConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.storageManagedFolderIamMember.StorageManagedFolderIamMemberConfig.property.bucket">bucket</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/storage_managed_folder_iam_member#bucket StorageManagedFolderIamMember#bucket}. |
-| <code><a href="#@cdktn/provider-google.storageManagedFolderIamMember.StorageManagedFolderIamMemberConfig.property.managedFolder">managedFolder</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/storage_managed_folder_iam_member#managed_folder StorageManagedFolderIamMember#managed_folder}. |
-| <code><a href="#@cdktn/provider-google.storageManagedFolderIamMember.StorageManagedFolderIamMemberConfig.property.member">member</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/storage_managed_folder_iam_member#member StorageManagedFolderIamMember#member}. |
-| <code><a href="#@cdktn/provider-google.storageManagedFolderIamMember.StorageManagedFolderIamMemberConfig.property.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/storage_managed_folder_iam_member#role StorageManagedFolderIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolderIamMember.StorageManagedFolderIamMemberConfig.property.bucket">bucket</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/storage_managed_folder_iam_member#bucket StorageManagedFolderIamMember#bucket}. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolderIamMember.StorageManagedFolderIamMemberConfig.property.managedFolder">managedFolder</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/storage_managed_folder_iam_member#managed_folder StorageManagedFolderIamMember#managed_folder}. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolderIamMember.StorageManagedFolderIamMemberConfig.property.member">member</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/storage_managed_folder_iam_member#member StorageManagedFolderIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolderIamMember.StorageManagedFolderIamMemberConfig.property.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/storage_managed_folder_iam_member#role StorageManagedFolderIamMember#role}. |
 | <code><a href="#@cdktn/provider-google.storageManagedFolderIamMember.StorageManagedFolderIamMemberConfig.property.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.storageManagedFolderIamMember.StorageManagedFolderIamMemberCondition">StorageManagedFolderIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.storageManagedFolderIamMember.StorageManagedFolderIamMemberConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/storage_managed_folder_iam_member#id StorageManagedFolderIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.storageManagedFolderIamMember.StorageManagedFolderIamMemberConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/storage_managed_folder_iam_member#id StorageManagedFolderIamMember#id}. |
 
 ---
 
@@ -1153,7 +1153,7 @@ public java.lang.String getBucket();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/storage_managed_folder_iam_member#bucket StorageManagedFolderIamMember#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/storage_managed_folder_iam_member#bucket StorageManagedFolderIamMember#bucket}.
 
 ---
 
@@ -1165,7 +1165,7 @@ public java.lang.String getManagedFolder();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/storage_managed_folder_iam_member#managed_folder StorageManagedFolderIamMember#managed_folder}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/storage_managed_folder_iam_member#managed_folder StorageManagedFolderIamMember#managed_folder}.
 
 ---
 
@@ -1177,7 +1177,7 @@ public java.lang.String getMember();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/storage_managed_folder_iam_member#member StorageManagedFolderIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/storage_managed_folder_iam_member#member StorageManagedFolderIamMember#member}.
 
 ---
 
@@ -1189,7 +1189,7 @@ public java.lang.String getRole();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/storage_managed_folder_iam_member#role StorageManagedFolderIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/storage_managed_folder_iam_member#role StorageManagedFolderIamMember#role}.
 
 ---
 
@@ -1203,7 +1203,7 @@ public StorageManagedFolderIamMemberCondition getCondition();
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/storage_managed_folder_iam_member#condition StorageManagedFolderIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/storage_managed_folder_iam_member#condition StorageManagedFolderIamMember#condition}
 
 ---
 
@@ -1215,7 +1215,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/storage_managed_folder_iam_member#id StorageManagedFolderIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/storage_managed_folder_iam_member#id StorageManagedFolderIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

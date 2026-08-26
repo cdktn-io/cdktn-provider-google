@@ -4,7 +4,7 @@
 
 ### VmwareengineExternalAccessRule <a name="VmwareengineExternalAccessRule" id="@cdktn/provider-google.vmwareengineExternalAccessRule.VmwareengineExternalAccessRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vmwareengine_external_access_rule google_vmwareengine_external_access_rule}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/vmwareengine_external_access_rule google_vmwareengine_external_access_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vmwareengineExternalAccessRule.VmwareengineExternalAccessRule.Initializer"></a>
 
@@ -556,7 +556,7 @@ The construct id used in the generated config for the VmwareengineExternalAccess
 
 The id of the existing VmwareengineExternalAccessRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vmwareengine_external_access_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/vmwareengine_external_access_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1134,7 +1134,7 @@ new VmwareengineExternalAccessRuleConfig {
 | <code><a href="#@cdktn/provider-google.vmwareengineExternalAccessRule.VmwareengineExternalAccessRuleConfig.property.sourcePorts">SourcePorts</a></code> | <code>string[]</code> | A list of source ports to which the external access rule applies. |
 | <code><a href="#@cdktn/provider-google.vmwareengineExternalAccessRule.VmwareengineExternalAccessRuleConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.vmwareengineExternalAccessRule.VmwareengineExternalAccessRuleConfig.property.description">Description</a></code> | <code>string</code> | User-provided description for the external access rule. |
-| <code><a href="#@cdktn/provider-google.vmwareengineExternalAccessRule.VmwareengineExternalAccessRuleConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vmwareengine_external_access_rule#id VmwareengineExternalAccessRule#id}. |
+| <code><a href="#@cdktn/provider-google.vmwareengineExternalAccessRule.VmwareengineExternalAccessRuleConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/vmwareengine_external_access_rule#id VmwareengineExternalAccessRule#id}. |
 | <code><a href="#@cdktn/provider-google.vmwareengineExternalAccessRule.VmwareengineExternalAccessRuleConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.vmwareengineExternalAccessRule.VmwareengineExternalAccessRuleTimeouts">VmwareengineExternalAccessRuleTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1219,7 +1219,7 @@ public string Action { get; set; }
 
 The action that the external access rule performs. Possible values: ["ALLOW", "DENY"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vmwareengine_external_access_rule#action VmwareengineExternalAccessRule#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/vmwareengine_external_access_rule#action VmwareengineExternalAccessRule#action}
 
 ---
 
@@ -1233,7 +1233,7 @@ public IResolvable|VmwareengineExternalAccessRuleDestinationIpRanges[] Destinati
 
 destination_ip_ranges block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vmwareengine_external_access_rule#destination_ip_ranges VmwareengineExternalAccessRule#destination_ip_ranges}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/vmwareengine_external_access_rule#destination_ip_ranges VmwareengineExternalAccessRule#destination_ip_ranges}
 
 ---
 
@@ -1247,7 +1247,7 @@ public string[] DestinationPorts { get; set; }
 
 A list of destination ports to which the external access rule applies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vmwareengine_external_access_rule#destination_ports VmwareengineExternalAccessRule#destination_ports}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/vmwareengine_external_access_rule#destination_ports VmwareengineExternalAccessRule#destination_ports}
 
 ---
 
@@ -1261,7 +1261,7 @@ public string IpProtocol { get; set; }
 
 The IP protocol to which the external access rule applies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vmwareengine_external_access_rule#ip_protocol VmwareengineExternalAccessRule#ip_protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/vmwareengine_external_access_rule#ip_protocol VmwareengineExternalAccessRule#ip_protocol}
 
 ---
 
@@ -1275,7 +1275,7 @@ public string Name { get; set; }
 
 The ID of the external access rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vmwareengine_external_access_rule#name VmwareengineExternalAccessRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/vmwareengine_external_access_rule#name VmwareengineExternalAccessRule#name}
 
 ---
 
@@ -1289,7 +1289,7 @@ public string Parent { get; set; }
 
 The resource name of the network policy. Resource names are schemeless URIs that follow the conventions in https://cloud.google.com/apis/design/resource_names. For example: projects/my-project/locations/us-west1-a/networkPolicies/my-policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vmwareengine_external_access_rule#parent VmwareengineExternalAccessRule#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/vmwareengine_external_access_rule#parent VmwareengineExternalAccessRule#parent}
 
 ---
 
@@ -1303,7 +1303,7 @@ public double Priority { get; set; }
 
 External access rule priority, which determines the external access rule to use when multiple rules apply.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vmwareengine_external_access_rule#priority VmwareengineExternalAccessRule#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/vmwareengine_external_access_rule#priority VmwareengineExternalAccessRule#priority}
 
 ---
 
@@ -1317,7 +1317,7 @@ public IResolvable|VmwareengineExternalAccessRuleSourceIpRanges[] SourceIpRanges
 
 source_ip_ranges block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vmwareengine_external_access_rule#source_ip_ranges VmwareengineExternalAccessRule#source_ip_ranges}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/vmwareengine_external_access_rule#source_ip_ranges VmwareengineExternalAccessRule#source_ip_ranges}
 
 ---
 
@@ -1331,7 +1331,7 @@ public string[] SourcePorts { get; set; }
 
 A list of source ports to which the external access rule applies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vmwareengine_external_access_rule#source_ports VmwareengineExternalAccessRule#source_ports}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/vmwareengine_external_access_rule#source_ports VmwareengineExternalAccessRule#source_ports}
 
 ---
 
@@ -1352,7 +1352,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vmwareengine_external_access_rule#deletion_policy VmwareengineExternalAccessRule#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/vmwareengine_external_access_rule#deletion_policy VmwareengineExternalAccessRule#deletion_policy}
 
 ---
 
@@ -1366,7 +1366,7 @@ public string Description { get; set; }
 
 User-provided description for the external access rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vmwareengine_external_access_rule#description VmwareengineExternalAccessRule#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/vmwareengine_external_access_rule#description VmwareengineExternalAccessRule#description}
 
 ---
 
@@ -1378,7 +1378,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vmwareengine_external_access_rule#id VmwareengineExternalAccessRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/vmwareengine_external_access_rule#id VmwareengineExternalAccessRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1395,7 +1395,7 @@ public VmwareengineExternalAccessRuleTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vmwareengine_external_access_rule#timeouts VmwareengineExternalAccessRule#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/vmwareengine_external_access_rule#timeouts VmwareengineExternalAccessRule#timeouts}
 
 ---
 
@@ -1431,7 +1431,7 @@ public string ExternalAddress { get; set; }
 
 The name of an 'ExternalAddress' resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vmwareengine_external_access_rule#external_address VmwareengineExternalAccessRule#external_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/vmwareengine_external_access_rule#external_address VmwareengineExternalAccessRule#external_address}
 
 ---
 
@@ -1445,7 +1445,7 @@ public string IpAddressRange { get; set; }
 
 An IP address range in the CIDR format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vmwareengine_external_access_rule#ip_address_range VmwareengineExternalAccessRule#ip_address_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/vmwareengine_external_access_rule#ip_address_range VmwareengineExternalAccessRule#ip_address_range}
 
 ---
 
@@ -1481,7 +1481,7 @@ public string IpAddress { get; set; }
 
 A single IP address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vmwareengine_external_access_rule#ip_address VmwareengineExternalAccessRule#ip_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/vmwareengine_external_access_rule#ip_address VmwareengineExternalAccessRule#ip_address}
 
 ---
 
@@ -1495,7 +1495,7 @@ public string IpAddressRange { get; set; }
 
 An IP address range in the CIDR format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vmwareengine_external_access_rule#ip_address_range VmwareengineExternalAccessRule#ip_address_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/vmwareengine_external_access_rule#ip_address_range VmwareengineExternalAccessRule#ip_address_range}
 
 ---
 
@@ -1517,9 +1517,9 @@ new VmwareengineExternalAccessRuleTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.vmwareengineExternalAccessRule.VmwareengineExternalAccessRuleTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vmwareengine_external_access_rule#create VmwareengineExternalAccessRule#create}. |
-| <code><a href="#@cdktn/provider-google.vmwareengineExternalAccessRule.VmwareengineExternalAccessRuleTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vmwareengine_external_access_rule#delete VmwareengineExternalAccessRule#delete}. |
-| <code><a href="#@cdktn/provider-google.vmwareengineExternalAccessRule.VmwareengineExternalAccessRuleTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vmwareengine_external_access_rule#update VmwareengineExternalAccessRule#update}. |
+| <code><a href="#@cdktn/provider-google.vmwareengineExternalAccessRule.VmwareengineExternalAccessRuleTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/vmwareengine_external_access_rule#create VmwareengineExternalAccessRule#create}. |
+| <code><a href="#@cdktn/provider-google.vmwareengineExternalAccessRule.VmwareengineExternalAccessRuleTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/vmwareengine_external_access_rule#delete VmwareengineExternalAccessRule#delete}. |
+| <code><a href="#@cdktn/provider-google.vmwareengineExternalAccessRule.VmwareengineExternalAccessRuleTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/vmwareengine_external_access_rule#update VmwareengineExternalAccessRule#update}. |
 
 ---
 
@@ -1531,7 +1531,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vmwareengine_external_access_rule#create VmwareengineExternalAccessRule#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/vmwareengine_external_access_rule#create VmwareengineExternalAccessRule#create}.
 
 ---
 
@@ -1543,7 +1543,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vmwareengine_external_access_rule#delete VmwareengineExternalAccessRule#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/vmwareengine_external_access_rule#delete VmwareengineExternalAccessRule#delete}.
 
 ---
 
@@ -1555,7 +1555,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/vmwareengine_external_access_rule#update VmwareengineExternalAccessRule#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/vmwareengine_external_access_rule#update VmwareengineExternalAccessRule#update}.
 
 ---
 
