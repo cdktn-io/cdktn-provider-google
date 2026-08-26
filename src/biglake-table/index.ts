@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_table
+// https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/biglake_table
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface BiglakeTableConfig extends cdktn.TerraformMetaArguments {
   /**
   * The id of the parent database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_table#database BiglakeTable#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/biglake_table#database BiglakeTable#database}
   */
   readonly database?: string;
   /**
@@ -27,11 +27,11 @@ export interface BiglakeTableConfig extends cdktn.TerraformMetaArguments {
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_table#deletion_policy BiglakeTable#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/biglake_table#deletion_policy BiglakeTable#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_table#id BiglakeTable#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/biglake_table#id BiglakeTable#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -41,47 +41,139 @@ export interface BiglakeTableConfig extends cdktn.TerraformMetaArguments {
   * Output only. The name of the Table. Format:
   * projects/{project_id_or_number}/locations/{locationId}/catalogs/{catalogId}/databases/{databaseId}/tables/{tableId}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_table#name BiglakeTable#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/biglake_table#name BiglakeTable#name}
   */
   readonly name: string;
   /**
   * The database type. Possible values: ["HIVE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_table#type BiglakeTable#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/biglake_table#type BiglakeTable#type}
   */
   readonly type?: string;
   /**
   * hive_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_table#hive_options BiglakeTable#hive_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/biglake_table#hive_options BiglakeTable#hive_options}
   */
   readonly hiveOptions?: BiglakeTableHiveOptions;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_table#timeouts BiglakeTable#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/biglake_table#timeouts BiglakeTable#timeouts}
   */
   readonly timeouts?: BiglakeTableTimeouts;
+}
+export interface BiglakeTableHiveOptionsStorageDescriptorSerdeInfo {
+  /**
+  * The fully qualified Java class name of the serialization library.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/biglake_table#serialization_lib BiglakeTable#serialization_lib}
+  */
+  readonly serializationLib?: string;
+}
+
+export function biglakeTableHiveOptionsStorageDescriptorSerdeInfoToTerraform(struct?: BiglakeTableHiveOptionsStorageDescriptorSerdeInfoOutputReference | BiglakeTableHiveOptionsStorageDescriptorSerdeInfo): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    serialization_lib: cdktn.stringToTerraform(struct!.serializationLib),
+  }
+}
+
+
+export function biglakeTableHiveOptionsStorageDescriptorSerdeInfoToHclTerraform(struct?: BiglakeTableHiveOptionsStorageDescriptorSerdeInfoOutputReference | BiglakeTableHiveOptionsStorageDescriptorSerdeInfo): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    serialization_lib: {
+      value: cdktn.stringToHclTerraform(struct!.serializationLib),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class BiglakeTableHiveOptionsStorageDescriptorSerdeInfoOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): BiglakeTableHiveOptionsStorageDescriptorSerdeInfo | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._serializationLib !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.serializationLib = this._serializationLib;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BiglakeTableHiveOptionsStorageDescriptorSerdeInfo | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._serializationLib = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._serializationLib = value.serializationLib;
+    }
+  }
+
+  // serialization_lib - computed: false, optional: true, required: false
+  private _serializationLib?: string; 
+  public get serializationLib() {
+    return this.getStringAttribute('serialization_lib');
+  }
+  public set serializationLib(value: string) {
+    this._serializationLib = value;
+  }
+  public resetSerializationLib() {
+    this._serializationLib = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serializationLibInput() {
+    return this._serializationLib;
+  }
 }
 export interface BiglakeTableHiveOptionsStorageDescriptor {
   /**
   * The fully qualified Java class name of the input format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_table#input_format BiglakeTable#input_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/biglake_table#input_format BiglakeTable#input_format}
   */
   readonly inputFormat?: string;
   /**
   * Cloud Storage folder URI where the table data is stored, starting with "gs://".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_table#location_uri BiglakeTable#location_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/biglake_table#location_uri BiglakeTable#location_uri}
   */
   readonly locationUri?: string;
   /**
   * The fully qualified Java class name of the output format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_table#output_format BiglakeTable#output_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/biglake_table#output_format BiglakeTable#output_format}
   */
   readonly outputFormat?: string;
+  /**
+  * serde_info block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/biglake_table#serde_info BiglakeTable#serde_info}
+  */
+  readonly serdeInfo?: BiglakeTableHiveOptionsStorageDescriptorSerdeInfo;
 }
 
 export function biglakeTableHiveOptionsStorageDescriptorToTerraform(struct?: BiglakeTableHiveOptionsStorageDescriptorOutputReference | BiglakeTableHiveOptionsStorageDescriptor): any {
@@ -93,6 +185,7 @@ export function biglakeTableHiveOptionsStorageDescriptorToTerraform(struct?: Big
     input_format: cdktn.stringToTerraform(struct!.inputFormat),
     location_uri: cdktn.stringToTerraform(struct!.locationUri),
     output_format: cdktn.stringToTerraform(struct!.outputFormat),
+    serde_info: biglakeTableHiveOptionsStorageDescriptorSerdeInfoToTerraform(struct!.serdeInfo),
   }
 }
 
@@ -120,6 +213,12 @@ export function biglakeTableHiveOptionsStorageDescriptorToHclTerraform(struct?: 
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    serde_info: {
+      value: biglakeTableHiveOptionsStorageDescriptorSerdeInfoToHclTerraform(struct!.serdeInfo),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BiglakeTableHiveOptionsStorageDescriptorSerdeInfoList",
     },
   };
 
@@ -153,6 +252,10 @@ export class BiglakeTableHiveOptionsStorageDescriptorOutputReference extends cdk
       hasAnyValues = true;
       internalValueResult.outputFormat = this._outputFormat;
     }
+    if (this._serdeInfo?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.serdeInfo = this._serdeInfo?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -162,12 +265,14 @@ export class BiglakeTableHiveOptionsStorageDescriptorOutputReference extends cdk
       this._inputFormat = undefined;
       this._locationUri = undefined;
       this._outputFormat = undefined;
+      this._serdeInfo.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._inputFormat = value.inputFormat;
       this._locationUri = value.locationUri;
       this._outputFormat = value.outputFormat;
+      this._serdeInfo.internalValue = value.serdeInfo;
     }
   }
 
@@ -218,6 +323,22 @@ export class BiglakeTableHiveOptionsStorageDescriptorOutputReference extends cdk
   public get outputFormatInput() {
     return this._outputFormat;
   }
+
+  // serde_info - computed: false, optional: true, required: false
+  private _serdeInfo = new BiglakeTableHiveOptionsStorageDescriptorSerdeInfoOutputReference(this, "serde_info");
+  public get serdeInfo() {
+    return this._serdeInfo;
+  }
+  public putSerdeInfo(value: BiglakeTableHiveOptionsStorageDescriptorSerdeInfo) {
+    this._serdeInfo.internalValue = value;
+  }
+  public resetSerdeInfo() {
+    this._serdeInfo.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serdeInfoInput() {
+    return this._serdeInfo.internalValue;
+  }
 }
 export interface BiglakeTableHiveOptions {
   /**
@@ -225,19 +346,19 @@ export interface BiglakeTableHiveOptions {
   * list of "key": value pairs.
   * Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_table#parameters BiglakeTable#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/biglake_table#parameters BiglakeTable#parameters}
   */
   readonly parameters?: { [key: string]: string };
   /**
   * Hive table type. For example, MANAGED_TABLE, EXTERNAL_TABLE.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_table#table_type BiglakeTable#table_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/biglake_table#table_type BiglakeTable#table_type}
   */
   readonly tableType?: string;
   /**
   * storage_descriptor block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_table#storage_descriptor BiglakeTable#storage_descriptor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/biglake_table#storage_descriptor BiglakeTable#storage_descriptor}
   */
   readonly storageDescriptor?: BiglakeTableHiveOptionsStorageDescriptor;
 }
@@ -379,15 +500,15 @@ export class BiglakeTableHiveOptionsOutputReference extends cdktn.ComplexObject 
 }
 export interface BiglakeTableTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_table#create BiglakeTable#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/biglake_table#create BiglakeTable#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_table#delete BiglakeTable#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/biglake_table#delete BiglakeTable#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_table#update BiglakeTable#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/biglake_table#update BiglakeTable#update}
   */
   readonly update?: string;
 }
@@ -539,7 +660,7 @@ export class BiglakeTableTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_table google_biglake_table}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/biglake_table google_biglake_table}
 */
 export class BiglakeTable extends cdktn.TerraformResource {
 
@@ -555,7 +676,7 @@ export class BiglakeTable extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a BiglakeTable resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BiglakeTable to import
-  * @param importFromId The id of the existing BiglakeTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_table#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing BiglakeTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/biglake_table#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BiglakeTable to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -567,7 +688,7 @@ export class BiglakeTable extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/biglake_table google_biglake_table} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/biglake_table google_biglake_table} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -578,7 +699,7 @@ export class BiglakeTable extends cdktn.TerraformResource {
       terraformResourceType: 'google_biglake_table',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.45.0',
+        providerVersion: '7.46.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

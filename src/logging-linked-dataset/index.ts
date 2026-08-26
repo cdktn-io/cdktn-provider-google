@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/logging_linked_dataset
+// https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/logging_linked_dataset
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface LoggingLinkedDatasetConfig extends cdktn.TerraformMetaArguments
   /**
   * The bucket to which the linked dataset is attached.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/logging_linked_dataset#bucket LoggingLinkedDataset#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/logging_linked_dataset#bucket LoggingLinkedDataset#bucket}
   */
   readonly bucket: string;
   /**
@@ -27,17 +27,17 @@ export interface LoggingLinkedDatasetConfig extends cdktn.TerraformMetaArguments
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/logging_linked_dataset#deletion_policy LoggingLinkedDataset#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/logging_linked_dataset#deletion_policy LoggingLinkedDataset#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * Describes this link. The maximum length of the description is 8000 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/logging_linked_dataset#description LoggingLinkedDataset#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/logging_linked_dataset#description LoggingLinkedDataset#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/logging_linked_dataset#id LoggingLinkedDataset#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/logging_linked_dataset#id LoggingLinkedDataset#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,31 +46,31 @@ export interface LoggingLinkedDatasetConfig extends cdktn.TerraformMetaArguments
   /**
   * The id of the linked dataset.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/logging_linked_dataset#link_id LoggingLinkedDataset#link_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/logging_linked_dataset#link_id LoggingLinkedDataset#link_id}
   */
   readonly linkId: string;
   /**
   * The location of the linked dataset.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/logging_linked_dataset#location LoggingLinkedDataset#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/logging_linked_dataset#location LoggingLinkedDataset#location}
   */
   readonly location?: string;
   /**
   * The parent of the linked dataset.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/logging_linked_dataset#parent LoggingLinkedDataset#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/logging_linked_dataset#parent LoggingLinkedDataset#parent}
   */
   readonly parent?: string;
   /**
   * bigquery_dataset block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/logging_linked_dataset#bigquery_dataset LoggingLinkedDataset#bigquery_dataset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/logging_linked_dataset#bigquery_dataset LoggingLinkedDataset#bigquery_dataset}
   */
   readonly bigqueryDataset?: LoggingLinkedDatasetBigqueryDataset[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/logging_linked_dataset#timeouts LoggingLinkedDataset#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/logging_linked_dataset#timeouts LoggingLinkedDataset#timeouts}
   */
   readonly timeouts?: LoggingLinkedDatasetTimeouts;
 }
@@ -162,11 +162,11 @@ export class LoggingLinkedDatasetBigqueryDatasetList extends cdktn.ComplexList {
 }
 export interface LoggingLinkedDatasetTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/logging_linked_dataset#create LoggingLinkedDataset#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/logging_linked_dataset#create LoggingLinkedDataset#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/logging_linked_dataset#delete LoggingLinkedDataset#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/logging_linked_dataset#delete LoggingLinkedDataset#delete}
   */
   readonly delete?: string;
 }
@@ -289,7 +289,7 @@ export class LoggingLinkedDatasetTimeoutsOutputReference extends cdktn.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/logging_linked_dataset google_logging_linked_dataset}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/logging_linked_dataset google_logging_linked_dataset}
 */
 export class LoggingLinkedDataset extends cdktn.TerraformResource {
 
@@ -305,7 +305,7 @@ export class LoggingLinkedDataset extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a LoggingLinkedDataset resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LoggingLinkedDataset to import
-  * @param importFromId The id of the existing LoggingLinkedDataset that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/logging_linked_dataset#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LoggingLinkedDataset that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/logging_linked_dataset#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LoggingLinkedDataset to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -317,7 +317,7 @@ export class LoggingLinkedDataset extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/logging_linked_dataset google_logging_linked_dataset} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/logging_linked_dataset google_logging_linked_dataset} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -328,7 +328,7 @@ export class LoggingLinkedDataset extends cdktn.TerraformResource {
       terraformResourceType: 'google_logging_linked_dataset',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.45.0',
+        providerVersion: '7.46.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

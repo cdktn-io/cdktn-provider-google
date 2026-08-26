@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/ephemeral-resources/client_config
+// https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/ephemeral-resources/client_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface EphemeralGoogleClientConfigConfig extends cdktn.TerraformEpheme
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/ephemeral-resources/client_config google_client_config}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/ephemeral-resources/client_config google_client_config}
 */
 export class EphemeralGoogleClientConfig extends cdktn.TerraformEphemeralResource {
 
@@ -29,7 +29,7 @@ export class EphemeralGoogleClientConfig extends cdktn.TerraformEphemeralResourc
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/ephemeral-resources/client_config google_client_config} Ephemeral Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/ephemeral-resources/client_config google_client_config} Ephemeral Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -40,7 +40,7 @@ export class EphemeralGoogleClientConfig extends cdktn.TerraformEphemeralResourc
       terraformResourceType: 'google_client_config',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.45.0',
+        providerVersion: '7.46.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

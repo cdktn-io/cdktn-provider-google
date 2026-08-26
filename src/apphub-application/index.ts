@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apphub_application
+// https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/apphub_application
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface ApphubApplicationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Required. The Application identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apphub_application#application_id ApphubApplication#application_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/apphub_application#application_id ApphubApplication#application_id}
   */
   readonly applicationId: string;
   /**
@@ -27,23 +27,23 @@ export interface ApphubApplicationConfig extends cdktn.TerraformMetaArguments {
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apphub_application#deletion_policy ApphubApplication#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/apphub_application#deletion_policy ApphubApplication#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * Optional. User-defined description of an Application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apphub_application#description ApphubApplication#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/apphub_application#description ApphubApplication#description}
   */
   readonly description?: string;
   /**
   * Optional. User-defined name for the Application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apphub_application#display_name ApphubApplication#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/apphub_application#display_name ApphubApplication#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apphub_application#id ApphubApplication#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/apphub_application#id ApphubApplication#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -52,29 +52,29 @@ export interface ApphubApplicationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Part of 'parent'. See documentation of 'projectsId'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apphub_application#location ApphubApplication#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/apphub_application#location ApphubApplication#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apphub_application#project ApphubApplication#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/apphub_application#project ApphubApplication#project}
   */
   readonly project?: string;
   /**
   * attributes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apphub_application#attributes ApphubApplication#attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/apphub_application#attributes ApphubApplication#attributes}
   */
   readonly attributes?: ApphubApplicationAttributes;
   /**
   * scope block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apphub_application#scope ApphubApplication#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/apphub_application#scope ApphubApplication#scope}
   */
   readonly scope: ApphubApplicationScope;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apphub_application#timeouts ApphubApplication#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/apphub_application#timeouts ApphubApplication#timeouts}
   */
   readonly timeouts?: ApphubApplicationTimeouts;
 }
@@ -82,13 +82,13 @@ export interface ApphubApplicationAttributesBusinessOwners {
   /**
   * Optional. Contact's name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apphub_application#display_name ApphubApplication#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/apphub_application#display_name ApphubApplication#display_name}
   */
   readonly displayName?: string;
   /**
   * Required. Email address of the contacts.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apphub_application#email ApphubApplication#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/apphub_application#email ApphubApplication#email}
   */
   readonly email: string;
 }
@@ -232,7 +232,7 @@ export interface ApphubApplicationAttributesCriticality {
   /**
   * Criticality type. Possible values: ["MISSION_CRITICAL", "HIGH", "MEDIUM", "LOW"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apphub_application#type ApphubApplication#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/apphub_application#type ApphubApplication#type}
   */
   readonly type: string;
 }
@@ -315,13 +315,13 @@ export interface ApphubApplicationAttributesDeveloperOwners {
   /**
   * Optional. Contact's name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apphub_application#display_name ApphubApplication#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/apphub_application#display_name ApphubApplication#display_name}
   */
   readonly displayName?: string;
   /**
   * Required. Email address of the contacts.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apphub_application#email ApphubApplication#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/apphub_application#email ApphubApplication#email}
   */
   readonly email: string;
 }
@@ -465,7 +465,7 @@ export interface ApphubApplicationAttributesEnvironment {
   /**
   * Environment type. Possible values: ["PRODUCTION", "STAGING", "TEST", "DEVELOPMENT"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apphub_application#type ApphubApplication#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/apphub_application#type ApphubApplication#type}
   */
   readonly type: string;
 }
@@ -548,13 +548,13 @@ export interface ApphubApplicationAttributesOperatorOwners {
   /**
   * Optional. Contact's name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apphub_application#display_name ApphubApplication#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/apphub_application#display_name ApphubApplication#display_name}
   */
   readonly displayName?: string;
   /**
   * Required. Email address of the contacts.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apphub_application#email ApphubApplication#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/apphub_application#email ApphubApplication#email}
   */
   readonly email: string;
 }
@@ -698,31 +698,31 @@ export interface ApphubApplicationAttributes {
   /**
   * business_owners block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apphub_application#business_owners ApphubApplication#business_owners}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/apphub_application#business_owners ApphubApplication#business_owners}
   */
   readonly businessOwners?: ApphubApplicationAttributesBusinessOwners[] | cdktn.IResolvable;
   /**
   * criticality block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apphub_application#criticality ApphubApplication#criticality}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/apphub_application#criticality ApphubApplication#criticality}
   */
   readonly criticality?: ApphubApplicationAttributesCriticality;
   /**
   * developer_owners block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apphub_application#developer_owners ApphubApplication#developer_owners}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/apphub_application#developer_owners ApphubApplication#developer_owners}
   */
   readonly developerOwners?: ApphubApplicationAttributesDeveloperOwners[] | cdktn.IResolvable;
   /**
   * environment block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apphub_application#environment ApphubApplication#environment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/apphub_application#environment ApphubApplication#environment}
   */
   readonly environment?: ApphubApplicationAttributesEnvironment;
   /**
   * operator_owners block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apphub_application#operator_owners ApphubApplication#operator_owners}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/apphub_application#operator_owners ApphubApplication#operator_owners}
   */
   readonly operatorOwners?: ApphubApplicationAttributesOperatorOwners[] | cdktn.IResolvable;
 }
@@ -927,7 +927,7 @@ export interface ApphubApplicationScope {
   * REGIONAL
   * GLOBAL Possible values: ["REGIONAL", "GLOBAL"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apphub_application#type ApphubApplication#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/apphub_application#type ApphubApplication#type}
   */
   readonly type: string;
 }
@@ -1008,15 +1008,15 @@ export class ApphubApplicationScopeOutputReference extends cdktn.ComplexObject {
 }
 export interface ApphubApplicationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apphub_application#create ApphubApplication#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/apphub_application#create ApphubApplication#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apphub_application#delete ApphubApplication#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/apphub_application#delete ApphubApplication#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apphub_application#update ApphubApplication#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/apphub_application#update ApphubApplication#update}
   */
   readonly update?: string;
 }
@@ -1168,7 +1168,7 @@ export class ApphubApplicationTimeoutsOutputReference extends cdktn.ComplexObjec
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apphub_application google_apphub_application}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/apphub_application google_apphub_application}
 */
 export class ApphubApplication extends cdktn.TerraformResource {
 
@@ -1184,7 +1184,7 @@ export class ApphubApplication extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ApphubApplication resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApphubApplication to import
-  * @param importFromId The id of the existing ApphubApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apphub_application#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ApphubApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/apphub_application#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApphubApplication to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1196,7 +1196,7 @@ export class ApphubApplication extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/apphub_application google_apphub_application} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/apphub_application google_apphub_application} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1207,7 +1207,7 @@ export class ApphubApplication extends cdktn.TerraformResource {
       terraformResourceType: 'google_apphub_application',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.45.0',
+        providerVersion: '7.46.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

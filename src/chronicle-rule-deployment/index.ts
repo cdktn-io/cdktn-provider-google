@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/chronicle_rule_deployment
+// https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/chronicle_rule_deployment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,7 +16,7 @@ export interface ChronicleRuleDeploymentConfig extends cdktn.TerraformMetaArgume
   * Whether detections resulting from this deployment should be considered
   * alerts.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/chronicle_rule_deployment#alerting ChronicleRuleDeployment#alerting}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/chronicle_rule_deployment#alerting ChronicleRuleDeployment#alerting}
   */
   readonly alerting?: boolean | cdktn.IResolvable;
   /**
@@ -28,17 +28,17 @@ export interface ChronicleRuleDeploymentConfig extends cdktn.TerraformMetaArgume
   * If currently set to true, enabled, alerting, and run_frequency cannot be
   * updated.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/chronicle_rule_deployment#archived ChronicleRuleDeployment#archived}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/chronicle_rule_deployment#archived ChronicleRuleDeployment#archived}
   */
   readonly archived?: boolean | cdktn.IResolvable;
   /**
   * Whether the rule is currently deployed continuously against incoming data.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/chronicle_rule_deployment#enabled ChronicleRuleDeployment#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/chronicle_rule_deployment#enabled ChronicleRuleDeployment#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/chronicle_rule_deployment#id ChronicleRuleDeployment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/chronicle_rule_deployment#id ChronicleRuleDeployment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -47,23 +47,23 @@ export interface ChronicleRuleDeploymentConfig extends cdktn.TerraformMetaArgume
   /**
   * The unique identifier for the Chronicle instance, which is the same as the customer ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/chronicle_rule_deployment#instance ChronicleRuleDeployment#instance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/chronicle_rule_deployment#instance ChronicleRuleDeployment#instance}
   */
   readonly instance: string;
   /**
   * The location of the resource. This is the geographical region where the Chronicle instance resides, such as "us" or "europe-west2".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/chronicle_rule_deployment#location ChronicleRuleDeployment#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/chronicle_rule_deployment#location ChronicleRuleDeployment#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/chronicle_rule_deployment#project ChronicleRuleDeployment#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/chronicle_rule_deployment#project ChronicleRuleDeployment#project}
   */
   readonly project?: string;
   /**
   * The Rule ID of the rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/chronicle_rule_deployment#rule ChronicleRuleDeployment#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/chronicle_rule_deployment#rule ChronicleRuleDeployment#rule}
   */
   readonly rule: string;
   /**
@@ -80,19 +80,19 @@ export interface ChronicleRuleDeploymentConfig extends cdktn.TerraformMetaArgume
   * For single-event rules, HOURLY and DAILY are deprecated and mapped to LIVE. If you continue to use deprecated values in your Terraform configuration, Terraform will silently
   * suppress the diff and ignore the changes to prevent infinite update loops.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/chronicle_rule_deployment#run_frequency ChronicleRuleDeployment#run_frequency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/chronicle_rule_deployment#run_frequency ChronicleRuleDeployment#run_frequency}
   */
   readonly runFrequency?: string;
   /**
   * schedule_customizations block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/chronicle_rule_deployment#schedule_customizations ChronicleRuleDeployment#schedule_customizations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/chronicle_rule_deployment#schedule_customizations ChronicleRuleDeployment#schedule_customizations}
   */
   readonly scheduleCustomizations?: ChronicleRuleDeploymentScheduleCustomizations;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/chronicle_rule_deployment#timeouts ChronicleRuleDeployment#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/chronicle_rule_deployment#timeouts ChronicleRuleDeployment#timeouts}
   */
   readonly timeouts?: ChronicleRuleDeploymentTimeouts;
 }
@@ -101,13 +101,13 @@ export interface ChronicleRuleDeploymentScheduleCustomizations {
   * Indicates whether to add additional delays and runs to rules to ensure
   * enrichment completeness, with the trade-off of more late-arriving detections.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/chronicle_rule_deployment#ensure_enrichment_completeness ChronicleRuleDeployment#ensure_enrichment_completeness}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/chronicle_rule_deployment#ensure_enrichment_completeness ChronicleRuleDeployment#ensure_enrichment_completeness}
   */
   readonly ensureEnrichmentCompleteness?: boolean | cdktn.IResolvable;
   /**
   * Delay the first rule execution run to account for late-arriving data.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/chronicle_rule_deployment#late_arriving_data_adjustment ChronicleRuleDeployment#late_arriving_data_adjustment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/chronicle_rule_deployment#late_arriving_data_adjustment ChronicleRuleDeployment#late_arriving_data_adjustment}
   */
   readonly lateArrivingDataAdjustment?: string;
 }
@@ -220,15 +220,15 @@ export class ChronicleRuleDeploymentScheduleCustomizationsOutputReference extend
 }
 export interface ChronicleRuleDeploymentTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/chronicle_rule_deployment#create ChronicleRuleDeployment#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/chronicle_rule_deployment#create ChronicleRuleDeployment#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/chronicle_rule_deployment#delete ChronicleRuleDeployment#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/chronicle_rule_deployment#delete ChronicleRuleDeployment#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/chronicle_rule_deployment#update ChronicleRuleDeployment#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/chronicle_rule_deployment#update ChronicleRuleDeployment#update}
   */
   readonly update?: string;
 }
@@ -380,7 +380,7 @@ export class ChronicleRuleDeploymentTimeoutsOutputReference extends cdktn.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/chronicle_rule_deployment google_chronicle_rule_deployment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/chronicle_rule_deployment google_chronicle_rule_deployment}
 */
 export class ChronicleRuleDeployment extends cdktn.TerraformResource {
 
@@ -396,7 +396,7 @@ export class ChronicleRuleDeployment extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ChronicleRuleDeployment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ChronicleRuleDeployment to import
-  * @param importFromId The id of the existing ChronicleRuleDeployment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/chronicle_rule_deployment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ChronicleRuleDeployment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/chronicle_rule_deployment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ChronicleRuleDeployment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -408,7 +408,7 @@ export class ChronicleRuleDeployment extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/chronicle_rule_deployment google_chronicle_rule_deployment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/chronicle_rule_deployment google_chronicle_rule_deployment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -419,7 +419,7 @@ export class ChronicleRuleDeployment extends cdktn.TerraformResource {
       terraformResourceType: 'google_chronicle_rule_deployment',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.45.0',
+        providerVersion: '7.46.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

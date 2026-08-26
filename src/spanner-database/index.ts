@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/spanner_database
+// https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/spanner_database
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,7 +16,7 @@ export interface SpannerDatabaseConfig extends cdktn.TerraformMetaArguments {
   * The dialect of the Cloud Spanner Database.
   * If it is not provided, "GOOGLE_STANDARD_SQL" will be used. Possible values: ["GOOGLE_STANDARD_SQL", "POSTGRESQL"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/spanner_database#database_dialect SpannerDatabase#database_dialect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/spanner_database#database_dialect SpannerDatabase#database_dialect}
   */
   readonly databaseDialect?: string;
   /**
@@ -31,14 +31,14 @@ export interface SpannerDatabaseConfig extends cdktn.TerraformMetaArguments {
   * newly appended DDL statements can be executed in an update. However, modifications
   * to prior statements will create a plan that marks the resource for recreation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/spanner_database#ddl SpannerDatabase#ddl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/spanner_database#ddl SpannerDatabase#ddl}
   */
   readonly ddl?: string[];
   /**
   * The default time zone for the database. The default time zone must be a valid name
   * from the tz database. Default value is "America/Los_angeles".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/spanner_database#default_time_zone SpannerDatabase#default_time_zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/spanner_database#default_time_zone SpannerDatabase#default_time_zone}
   */
   readonly defaultTimeZone?: string;
   /**
@@ -50,7 +50,7 @@ export interface SpannerDatabaseConfig extends cdktn.TerraformMetaArguments {
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/spanner_database#deletion_policy SpannerDatabase#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/spanner_database#deletion_policy SpannerDatabase#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
@@ -61,7 +61,7 @@ export interface SpannerDatabaseConfig extends cdktn.TerraformMetaArguments {
   * or 'terraform destroy' that would delete the database will fail.
   * When the field is set to false, deleting the database is allowed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/spanner_database#deletion_protection SpannerDatabase#deletion_protection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/spanner_database#deletion_protection SpannerDatabase#deletion_protection}
   */
   readonly deletionProtection?: boolean | cdktn.IResolvable;
   /**
@@ -73,11 +73,11 @@ export interface SpannerDatabaseConfig extends cdktn.TerraformMetaArguments {
   * (2) Setting "enableDropProtection" to true also prevents the deletion of the parent instance containing the database.
   * "deletion_protection" attribute does not provide protection against the deletion of the parent instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/spanner_database#enable_drop_protection SpannerDatabase#enable_drop_protection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/spanner_database#enable_drop_protection SpannerDatabase#enable_drop_protection}
   */
   readonly enableDropProtection?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/spanner_database#id SpannerDatabase#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/spanner_database#id SpannerDatabase#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -86,18 +86,18 @@ export interface SpannerDatabaseConfig extends cdktn.TerraformMetaArguments {
   /**
   * The instance to create the database on.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/spanner_database#instance SpannerDatabase#instance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/spanner_database#instance SpannerDatabase#instance}
   */
   readonly instance: string;
   /**
   * A unique identifier for the database, which cannot be changed after the
   * instance is created. Values are of the form '[a-z][-_a-z0-9]*[a-z0-9]'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/spanner_database#name SpannerDatabase#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/spanner_database#name SpannerDatabase#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/spanner_database#project SpannerDatabase#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/spanner_database#project SpannerDatabase#project}
   */
   readonly project?: string;
   /**
@@ -107,19 +107,19 @@ export interface SpannerDatabaseConfig extends cdktn.TerraformMetaArguments {
   * If this property is used, you must avoid adding new DDL statements to 'ddl' that
   * update the database's version_retention_period.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/spanner_database#version_retention_period SpannerDatabase#version_retention_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/spanner_database#version_retention_period SpannerDatabase#version_retention_period}
   */
   readonly versionRetentionPeriod?: string;
   /**
   * encryption_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/spanner_database#encryption_config SpannerDatabase#encryption_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/spanner_database#encryption_config SpannerDatabase#encryption_config}
   */
   readonly encryptionConfig?: SpannerDatabaseEncryptionConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/spanner_database#timeouts SpannerDatabase#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/spanner_database#timeouts SpannerDatabase#timeouts}
   */
   readonly timeouts?: SpannerDatabaseTimeouts;
 }
@@ -128,14 +128,14 @@ export interface SpannerDatabaseEncryptionConfig {
   * Fully qualified name of the KMS key to use to encrypt this database. This key must exist
   * in the same location as the Spanner Database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/spanner_database#kms_key_name SpannerDatabase#kms_key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/spanner_database#kms_key_name SpannerDatabase#kms_key_name}
   */
   readonly kmsKeyName?: string;
   /**
   * Fully qualified name of the KMS keys to use to encrypt this database. The keys must exist
   * in the same locations as the Spanner Database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/spanner_database#kms_key_names SpannerDatabase#kms_key_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/spanner_database#kms_key_names SpannerDatabase#kms_key_names}
   */
   readonly kmsKeyNames?: string[];
 }
@@ -248,15 +248,15 @@ export class SpannerDatabaseEncryptionConfigOutputReference extends cdktn.Comple
 }
 export interface SpannerDatabaseTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/spanner_database#create SpannerDatabase#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/spanner_database#create SpannerDatabase#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/spanner_database#delete SpannerDatabase#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/spanner_database#delete SpannerDatabase#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/spanner_database#update SpannerDatabase#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/spanner_database#update SpannerDatabase#update}
   */
   readonly update?: string;
 }
@@ -408,7 +408,7 @@ export class SpannerDatabaseTimeoutsOutputReference extends cdktn.ComplexObject 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/spanner_database google_spanner_database}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/spanner_database google_spanner_database}
 */
 export class SpannerDatabase extends cdktn.TerraformResource {
 
@@ -424,7 +424,7 @@ export class SpannerDatabase extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a SpannerDatabase resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SpannerDatabase to import
-  * @param importFromId The id of the existing SpannerDatabase that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/spanner_database#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SpannerDatabase that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/spanner_database#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SpannerDatabase to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -436,7 +436,7 @@ export class SpannerDatabase extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.45.0/docs/resources/spanner_database google_spanner_database} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/spanner_database google_spanner_database} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -447,7 +447,7 @@ export class SpannerDatabase extends cdktn.TerraformResource {
       terraformResourceType: 'google_spanner_database',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.45.0',
+        providerVersion: '7.46.0',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,
