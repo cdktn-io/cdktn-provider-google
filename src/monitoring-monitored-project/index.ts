@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/monitoring_monitored_project
+// https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/monitoring_monitored_project
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,11 +21,11 @@ export interface MonitoringMonitoredProjectConfig extends cdktn.TerraformMetaArg
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/monitoring_monitored_project#deletion_policy MonitoringMonitoredProject#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/monitoring_monitored_project#deletion_policy MonitoringMonitoredProject#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/monitoring_monitored_project#id MonitoringMonitoredProject#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/monitoring_monitored_project#id MonitoringMonitoredProject#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,29 +34,29 @@ export interface MonitoringMonitoredProjectConfig extends cdktn.TerraformMetaArg
   /**
   * Required. The resource name of the existing Metrics Scope that will monitor this project. Example: locations/global/metricsScopes/{SCOPING_PROJECT_ID_OR_NUMBER}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/monitoring_monitored_project#metrics_scope MonitoringMonitoredProject#metrics_scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/monitoring_monitored_project#metrics_scope MonitoringMonitoredProject#metrics_scope}
   */
   readonly metricsScope: string;
   /**
   * Immutable. The resource name of the 'MonitoredProject'. On input, the resource name includes the scoping project ID and monitored project ID. On output, it contains the equivalent project numbers. Example: 'locations/global/metricsScopes/{SCOPING_PROJECT_ID_OR_NUMBER}/projects/{MONITORED_PROJECT_ID_OR_NUMBER}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/monitoring_monitored_project#name MonitoringMonitoredProject#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/monitoring_monitored_project#name MonitoringMonitoredProject#name}
   */
   readonly name: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/monitoring_monitored_project#timeouts MonitoringMonitoredProject#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/monitoring_monitored_project#timeouts MonitoringMonitoredProject#timeouts}
   */
   readonly timeouts?: MonitoringMonitoredProjectTimeouts;
 }
 export interface MonitoringMonitoredProjectTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/monitoring_monitored_project#create MonitoringMonitoredProject#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/monitoring_monitored_project#create MonitoringMonitoredProject#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/monitoring_monitored_project#delete MonitoringMonitoredProject#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/monitoring_monitored_project#delete MonitoringMonitoredProject#delete}
   */
   readonly delete?: string;
 }
@@ -179,7 +179,7 @@ export class MonitoringMonitoredProjectTimeoutsOutputReference extends cdktn.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/monitoring_monitored_project google_monitoring_monitored_project}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/monitoring_monitored_project google_monitoring_monitored_project}
 */
 export class MonitoringMonitoredProject extends cdktn.TerraformResource {
 
@@ -195,7 +195,7 @@ export class MonitoringMonitoredProject extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a MonitoringMonitoredProject resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MonitoringMonitoredProject to import
-  * @param importFromId The id of the existing MonitoringMonitoredProject that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/monitoring_monitored_project#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MonitoringMonitoredProject that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/monitoring_monitored_project#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MonitoringMonitoredProject to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -207,7 +207,7 @@ export class MonitoringMonitoredProject extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/monitoring_monitored_project google_monitoring_monitored_project} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/monitoring_monitored_project google_monitoring_monitored_project} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -218,7 +218,7 @@ export class MonitoringMonitoredProject extends cdktn.TerraformResource {
       terraformResourceType: 'google_monitoring_monitored_project',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.46.0',
+        providerVersion: '7.46.1',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

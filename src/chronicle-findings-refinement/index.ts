@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/chronicle_findings_refinement
+// https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_findings_refinement
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface ChronicleFindingsRefinementConfig extends cdktn.TerraformMetaAr
   /**
   * Display name of the findings refinement.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/chronicle_findings_refinement#display_name ChronicleFindingsRefinement#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_findings_refinement#display_name ChronicleFindingsRefinement#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/chronicle_findings_refinement#id ChronicleFindingsRefinement#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_findings_refinement#id ChronicleFindingsRefinement#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,17 +28,17 @@ export interface ChronicleFindingsRefinementConfig extends cdktn.TerraformMetaAr
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/chronicle_findings_refinement#instance ChronicleFindingsRefinement#instance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_findings_refinement#instance ChronicleFindingsRefinement#instance}
   */
   readonly instance: string;
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/chronicle_findings_refinement#location ChronicleFindingsRefinement#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_findings_refinement#location ChronicleFindingsRefinement#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/chronicle_findings_refinement#project ChronicleFindingsRefinement#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_findings_refinement#project ChronicleFindingsRefinement#project}
   */
   readonly project?: string;
   /**
@@ -48,7 +48,7 @@ export interface ChronicleFindingsRefinementConfig extends cdktn.TerraformMetaAr
   * information:
   * https://cloud.google.com/chronicle/docs/investigation/udm-search
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/chronicle_findings_refinement#query ChronicleFindingsRefinement#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_findings_refinement#query ChronicleFindingsRefinement#query}
   */
   readonly query?: string;
   /**
@@ -56,19 +56,19 @@ export interface ChronicleFindingsRefinementConfig extends cdktn.TerraformMetaAr
   * Possible values:
   * DETECTION_EXCLUSION
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/chronicle_findings_refinement#type ChronicleFindingsRefinement#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_findings_refinement#type ChronicleFindingsRefinement#type}
   */
   readonly type?: string;
   /**
   * outcome_filters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/chronicle_findings_refinement#outcome_filters ChronicleFindingsRefinement#outcome_filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_findings_refinement#outcome_filters ChronicleFindingsRefinement#outcome_filters}
   */
   readonly outcomeFilters?: ChronicleFindingsRefinementOutcomeFilters[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/chronicle_findings_refinement#timeouts ChronicleFindingsRefinement#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_findings_refinement#timeouts ChronicleFindingsRefinement#timeouts}
   */
   readonly timeouts?: ChronicleFindingsRefinementTimeouts;
 }
@@ -81,19 +81,19 @@ export interface ChronicleFindingsRefinementOutcomeFilters {
   * MATCHES_REGEX
   * MATCHES_CIDR
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/chronicle_findings_refinement#outcome_filter_operator ChronicleFindingsRefinement#outcome_filter_operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_findings_refinement#outcome_filter_operator ChronicleFindingsRefinement#outcome_filter_operator}
   */
   readonly outcomeFilterOperator: string;
   /**
   * The value of the outcome variable to match.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/chronicle_findings_refinement#outcome_value ChronicleFindingsRefinement#outcome_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_findings_refinement#outcome_value ChronicleFindingsRefinement#outcome_value}
   */
   readonly outcomeValue: string;
   /**
   * The outcome variable name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/chronicle_findings_refinement#outcome_variable ChronicleFindingsRefinement#outcome_variable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_findings_refinement#outcome_variable ChronicleFindingsRefinement#outcome_variable}
   */
   readonly outcomeVariable: string;
 }
@@ -258,15 +258,15 @@ export class ChronicleFindingsRefinementOutcomeFiltersList extends cdktn.Complex
 }
 export interface ChronicleFindingsRefinementTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/chronicle_findings_refinement#create ChronicleFindingsRefinement#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_findings_refinement#create ChronicleFindingsRefinement#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/chronicle_findings_refinement#delete ChronicleFindingsRefinement#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_findings_refinement#delete ChronicleFindingsRefinement#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/chronicle_findings_refinement#update ChronicleFindingsRefinement#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_findings_refinement#update ChronicleFindingsRefinement#update}
   */
   readonly update?: string;
 }
@@ -418,7 +418,7 @@ export class ChronicleFindingsRefinementTimeoutsOutputReference extends cdktn.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/chronicle_findings_refinement google_chronicle_findings_refinement}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_findings_refinement google_chronicle_findings_refinement}
 */
 export class ChronicleFindingsRefinement extends cdktn.TerraformResource {
 
@@ -434,7 +434,7 @@ export class ChronicleFindingsRefinement extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ChronicleFindingsRefinement resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ChronicleFindingsRefinement to import
-  * @param importFromId The id of the existing ChronicleFindingsRefinement that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/chronicle_findings_refinement#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ChronicleFindingsRefinement that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_findings_refinement#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ChronicleFindingsRefinement to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -446,7 +446,7 @@ export class ChronicleFindingsRefinement extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/chronicle_findings_refinement google_chronicle_findings_refinement} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_findings_refinement google_chronicle_findings_refinement} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -457,7 +457,7 @@ export class ChronicleFindingsRefinement extends cdktn.TerraformResource {
       terraformResourceType: 'google_chronicle_findings_refinement',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.46.0',
+        providerVersion: '7.46.1',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

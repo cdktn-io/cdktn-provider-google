@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/compute_reservation_sub_block
+// https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_reservation_sub_block
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface DataGoogleComputeReservationSubBlockConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/compute_reservation_sub_block#id DataGoogleComputeReservationSubBlock#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_reservation_sub_block#id DataGoogleComputeReservationSubBlock#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,31 +22,31 @@ export interface DataGoogleComputeReservationSubBlockConfig extends cdktn.Terraf
   /**
   * The name of the reservation sub-block.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/compute_reservation_sub_block#name DataGoogleComputeReservationSubBlock#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_reservation_sub_block#name DataGoogleComputeReservationSubBlock#name}
   */
   readonly name: string;
   /**
   * The project in which the resource belongs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/compute_reservation_sub_block#project DataGoogleComputeReservationSubBlock#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_reservation_sub_block#project DataGoogleComputeReservationSubBlock#project}
   */
   readonly project?: string;
   /**
   * The name of the parent reservation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/compute_reservation_sub_block#reservation DataGoogleComputeReservationSubBlock#reservation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_reservation_sub_block#reservation DataGoogleComputeReservationSubBlock#reservation}
   */
   readonly reservation: string;
   /**
   * The name of the parent reservation block.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/compute_reservation_sub_block#reservation_block DataGoogleComputeReservationSubBlock#reservation_block}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_reservation_sub_block#reservation_block DataGoogleComputeReservationSubBlock#reservation_block}
   */
   readonly reservationBlock: string;
   /**
   * The zone where the reservation sub-block resides.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/compute_reservation_sub_block#zone DataGoogleComputeReservationSubBlock#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_reservation_sub_block#zone DataGoogleComputeReservationSubBlock#zone}
   */
   readonly zone?: string;
 }
@@ -337,7 +337,7 @@ export class DataGoogleComputeReservationSubBlockReservationSubBlockMaintenanceL
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/compute_reservation_sub_block google_compute_reservation_sub_block}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_reservation_sub_block google_compute_reservation_sub_block}
 */
 export class DataGoogleComputeReservationSubBlock extends cdktn.TerraformDataSource {
 
@@ -353,7 +353,7 @@ export class DataGoogleComputeReservationSubBlock extends cdktn.TerraformDataSou
   * Generates CDKTN code for importing a DataGoogleComputeReservationSubBlock resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleComputeReservationSubBlock to import
-  * @param importFromId The id of the existing DataGoogleComputeReservationSubBlock that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/compute_reservation_sub_block#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleComputeReservationSubBlock that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_reservation_sub_block#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleComputeReservationSubBlock to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -365,7 +365,7 @@ export class DataGoogleComputeReservationSubBlock extends cdktn.TerraformDataSou
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/compute_reservation_sub_block google_compute_reservation_sub_block} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_reservation_sub_block google_compute_reservation_sub_block} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -376,7 +376,7 @@ export class DataGoogleComputeReservationSubBlock extends cdktn.TerraformDataSou
       terraformResourceType: 'google_compute_reservation_sub_block',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.46.0',
+        providerVersion: '7.46.1',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

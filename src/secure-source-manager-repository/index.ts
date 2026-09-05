@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/secure_source_manager_repository
+// https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_repository
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,17 +21,17 @@ export interface SecureSourceManagerRepositoryConfig extends cdktn.TerraformMeta
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/secure_source_manager_repository#deletion_policy SecureSourceManagerRepository#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_repository#deletion_policy SecureSourceManagerRepository#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * Description of the repository, which cannot exceed 500 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/secure_source_manager_repository#description SecureSourceManagerRepository#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_repository#description SecureSourceManagerRepository#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/secure_source_manager_repository#id SecureSourceManagerRepository#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_repository#id SecureSourceManagerRepository#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,47 +40,47 @@ export interface SecureSourceManagerRepositoryConfig extends cdktn.TerraformMeta
   /**
   * The name of the instance in which the repository is hosted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/secure_source_manager_repository#instance SecureSourceManagerRepository#instance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_repository#instance SecureSourceManagerRepository#instance}
   */
   readonly instance: string;
   /**
   * The location for the Repository.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/secure_source_manager_repository#location SecureSourceManagerRepository#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_repository#location SecureSourceManagerRepository#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/secure_source_manager_repository#project SecureSourceManagerRepository#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_repository#project SecureSourceManagerRepository#project}
   */
   readonly project?: string;
   /**
   * The ID for the Repository.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/secure_source_manager_repository#repository_id SecureSourceManagerRepository#repository_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_repository#repository_id SecureSourceManagerRepository#repository_id}
   */
   readonly repositoryId: string;
   /**
   * Repository level service account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/secure_source_manager_repository#service_account SecureSourceManagerRepository#service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_repository#service_account SecureSourceManagerRepository#service_account}
   */
   readonly serviceAccount?: string;
   /**
   * initial_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/secure_source_manager_repository#initial_config SecureSourceManagerRepository#initial_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_repository#initial_config SecureSourceManagerRepository#initial_config}
   */
   readonly initialConfig?: SecureSourceManagerRepositoryInitialConfig;
   /**
   * scan_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/secure_source_manager_repository#scan_config SecureSourceManagerRepository#scan_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_repository#scan_config SecureSourceManagerRepository#scan_config}
   */
   readonly scanConfig?: SecureSourceManagerRepositoryScanConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/secure_source_manager_repository#timeouts SecureSourceManagerRepository#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_repository#timeouts SecureSourceManagerRepository#timeouts}
   */
   readonly timeouts?: SecureSourceManagerRepositoryTimeouts;
 }
@@ -173,28 +173,28 @@ export interface SecureSourceManagerRepositoryInitialConfig {
   /**
   * Default branch name of the repository.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/secure_source_manager_repository#default_branch SecureSourceManagerRepository#default_branch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_repository#default_branch SecureSourceManagerRepository#default_branch}
   */
   readonly defaultBranch?: string;
   /**
   * List of gitignore template names user can choose from.
   * Valid values can be viewed at https://cloud.google.com/secure-source-manager/docs/reference/rest/v1/projects.locations.repositories#initialconfig.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/secure_source_manager_repository#gitignores SecureSourceManagerRepository#gitignores}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_repository#gitignores SecureSourceManagerRepository#gitignores}
   */
   readonly gitignores?: string[];
   /**
   * License template name user can choose from.
   * Valid values can be viewed at https://cloud.google.com/secure-source-manager/docs/reference/rest/v1/projects.locations.repositories#initialconfig.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/secure_source_manager_repository#license SecureSourceManagerRepository#license}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_repository#license SecureSourceManagerRepository#license}
   */
   readonly license?: string;
   /**
   * README template name.
   * Valid values can be viewed at https://cloud.google.com/secure-source-manager/docs/reference/rest/v1/projects.locations.repositories#initialconfig.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/secure_source_manager_repository#readme SecureSourceManagerRepository#readme}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_repository#readme SecureSourceManagerRepository#readme}
   */
   readonly readme?: string;
 }
@@ -367,13 +367,13 @@ export interface SecureSourceManagerRepositoryScanConfigSecretScanConfig {
   /**
   * Enables secret scanning for the repository.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/secure_source_manager_repository#enabled SecureSourceManagerRepository#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_repository#enabled SecureSourceManagerRepository#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * The DLP inspect template to use for secret scanning.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/secure_source_manager_repository#inspect_template SecureSourceManagerRepository#inspect_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_repository#inspect_template SecureSourceManagerRepository#inspect_template}
   */
   readonly inspectTemplate?: string;
 }
@@ -488,7 +488,7 @@ export interface SecureSourceManagerRepositoryScanConfig {
   /**
   * secret_scan_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/secure_source_manager_repository#secret_scan_config SecureSourceManagerRepository#secret_scan_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_repository#secret_scan_config SecureSourceManagerRepository#secret_scan_config}
   */
   readonly secretScanConfig?: SecureSourceManagerRepositoryScanConfigSecretScanConfig;
 }
@@ -572,15 +572,15 @@ export class SecureSourceManagerRepositoryScanConfigOutputReference extends cdkt
 }
 export interface SecureSourceManagerRepositoryTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/secure_source_manager_repository#create SecureSourceManagerRepository#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_repository#create SecureSourceManagerRepository#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/secure_source_manager_repository#delete SecureSourceManagerRepository#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_repository#delete SecureSourceManagerRepository#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/secure_source_manager_repository#update SecureSourceManagerRepository#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_repository#update SecureSourceManagerRepository#update}
   */
   readonly update?: string;
 }
@@ -732,7 +732,7 @@ export class SecureSourceManagerRepositoryTimeoutsOutputReference extends cdktn.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/secure_source_manager_repository google_secure_source_manager_repository}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_repository google_secure_source_manager_repository}
 */
 export class SecureSourceManagerRepository extends cdktn.TerraformResource {
 
@@ -748,7 +748,7 @@ export class SecureSourceManagerRepository extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a SecureSourceManagerRepository resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SecureSourceManagerRepository to import
-  * @param importFromId The id of the existing SecureSourceManagerRepository that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/secure_source_manager_repository#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SecureSourceManagerRepository that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_repository#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SecureSourceManagerRepository to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -760,7 +760,7 @@ export class SecureSourceManagerRepository extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/secure_source_manager_repository google_secure_source_manager_repository} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_repository google_secure_source_manager_repository} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -771,7 +771,7 @@ export class SecureSourceManagerRepository extends cdktn.TerraformResource {
       terraformResourceType: 'google_secure_source_manager_repository',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.46.0',
+        providerVersion: '7.46.1',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

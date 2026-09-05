@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/data_fusion_instance
+// https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface DataFusionInstanceConfig extends cdktn.TerraformMetaArguments {
   /**
   * User-managed service account to set on Dataproc when Cloud Data Fusion creates Dataproc to run data processing pipelines.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/data_fusion_instance#dataproc_service_account DataFusionInstance#dataproc_service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#dataproc_service_account DataFusionInstance#dataproc_service_account}
   */
   readonly dataprocServiceAccount?: string;
   /**
@@ -27,41 +27,41 @@ export interface DataFusionInstanceConfig extends cdktn.TerraformMetaArguments {
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/data_fusion_instance#deletion_policy DataFusionInstance#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#deletion_policy DataFusionInstance#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * An optional description of the instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/data_fusion_instance#description DataFusionInstance#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#description DataFusionInstance#description}
   */
   readonly description?: string;
   /**
   * Display name for an instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/data_fusion_instance#display_name DataFusionInstance#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#display_name DataFusionInstance#display_name}
   */
   readonly displayName?: string;
   /**
   * Option to enable granular role-based access control.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/data_fusion_instance#enable_rbac DataFusionInstance#enable_rbac}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#enable_rbac DataFusionInstance#enable_rbac}
   */
   readonly enableRbac?: boolean | cdktn.IResolvable;
   /**
   * Option to enable Stackdriver Logging.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/data_fusion_instance#enable_stackdriver_logging DataFusionInstance#enable_stackdriver_logging}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#enable_stackdriver_logging DataFusionInstance#enable_stackdriver_logging}
   */
   readonly enableStackdriverLogging?: boolean | cdktn.IResolvable;
   /**
   * Option to enable Stackdriver Monitoring.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/data_fusion_instance#enable_stackdriver_monitoring DataFusionInstance#enable_stackdriver_monitoring}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#enable_stackdriver_monitoring DataFusionInstance#enable_stackdriver_monitoring}
   */
   readonly enableStackdriverMonitoring?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/data_fusion_instance#id DataFusionInstance#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#id DataFusionInstance#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -75,25 +75,25 @@ export interface DataFusionInstanceConfig extends cdktn.TerraformMetaArguments {
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/data_fusion_instance#labels DataFusionInstance#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#labels DataFusionInstance#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The ID of the instance or a fully qualified identifier for the instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/data_fusion_instance#name DataFusionInstance#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#name DataFusionInstance#name}
   */
   readonly name: string;
   /**
   * Map of additional options used to configure the behavior of Data Fusion instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/data_fusion_instance#options DataFusionInstance#options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#options DataFusionInstance#options}
   */
   readonly options?: { [key: string]: string };
   /**
   * Current patch revision of the Data Fusion.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/data_fusion_instance#patch_revision DataFusionInstance#patch_revision}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#patch_revision DataFusionInstance#patch_revision}
   */
   readonly patchRevision?: string;
   /**
@@ -101,17 +101,17 @@ export interface DataFusionInstanceConfig extends cdktn.TerraformMetaArguments {
   * true, all Data Fusion nodes will have private IP addresses and will not be
   * able to access the public internet.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/data_fusion_instance#private_instance DataFusionInstance#private_instance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#private_instance DataFusionInstance#private_instance}
   */
   readonly privateInstance?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/data_fusion_instance#project DataFusionInstance#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#project DataFusionInstance#project}
   */
   readonly project?: string;
   /**
   * The region of the Data Fusion instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/data_fusion_instance#region DataFusionInstance#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#region DataFusionInstance#region}
   */
   readonly region?: string;
   /**
@@ -120,7 +120,7 @@ export interface DataFusionInstanceConfig extends cdktn.TerraformMetaArguments {
   * Keys must be in the format tagKeys/{tag_key_id}, and values are in the format tagValues/{tag_value_id}.
   * The field is ignored (both PUT & PATCH) when empty.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/data_fusion_instance#tags DataFusionInstance#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#tags DataFusionInstance#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
@@ -135,55 +135,55 @@ export interface DataFusionInstanceConfig extends cdktn.TerraformMetaArguments {
   * with restrictive capabilities. This is to help enterprises design and develop their data ingestion and integration
   * pipelines at low cost. Possible values: ["BASIC", "ENTERPRISE", "DEVELOPER"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/data_fusion_instance#type DataFusionInstance#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#type DataFusionInstance#type}
   */
   readonly type: string;
   /**
   * Current version of the Data Fusion.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/data_fusion_instance#version DataFusionInstance#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#version DataFusionInstance#version}
   */
   readonly version?: string;
   /**
   * Name of the zone in which the Data Fusion instance will be created. Only DEVELOPER instances use this field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/data_fusion_instance#zone DataFusionInstance#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#zone DataFusionInstance#zone}
   */
   readonly zone?: string;
   /**
   * accelerators block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/data_fusion_instance#accelerators DataFusionInstance#accelerators}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#accelerators DataFusionInstance#accelerators}
   */
   readonly accelerators?: DataFusionInstanceAccelerators[] | cdktn.IResolvable;
   /**
   * crypto_key_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/data_fusion_instance#crypto_key_config DataFusionInstance#crypto_key_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#crypto_key_config DataFusionInstance#crypto_key_config}
   */
   readonly cryptoKeyConfig?: DataFusionInstanceCryptoKeyConfig;
   /**
   * event_publish_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/data_fusion_instance#event_publish_config DataFusionInstance#event_publish_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#event_publish_config DataFusionInstance#event_publish_config}
   */
   readonly eventPublishConfig?: DataFusionInstanceEventPublishConfig;
   /**
   * maintenance_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/data_fusion_instance#maintenance_policy DataFusionInstance#maintenance_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#maintenance_policy DataFusionInstance#maintenance_policy}
   */
   readonly maintenancePolicy?: DataFusionInstanceMaintenancePolicy;
   /**
   * network_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/data_fusion_instance#network_config DataFusionInstance#network_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#network_config DataFusionInstance#network_config}
   */
   readonly networkConfig?: DataFusionInstanceNetworkConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/data_fusion_instance#timeouts DataFusionInstance#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#timeouts DataFusionInstance#timeouts}
   */
   readonly timeouts?: DataFusionInstanceTimeouts;
 }
@@ -276,13 +276,13 @@ export interface DataFusionInstanceAccelerators {
   /**
   * The type of an accelator for a CDF instance. Possible values: ["CDC", "HEALTHCARE", "CCAI_INSIGHTS"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/data_fusion_instance#accelerator_type DataFusionInstance#accelerator_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#accelerator_type DataFusionInstance#accelerator_type}
   */
   readonly acceleratorType: string;
   /**
   * The type of an accelator for a CDF instance. Possible values: ["ENABLED", "DISABLED"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/data_fusion_instance#state DataFusionInstance#state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#state DataFusionInstance#state}
   */
   readonly state: string;
 }
@@ -423,7 +423,7 @@ export interface DataFusionInstanceCryptoKeyConfig {
   /**
   * The name of the key which is used to encrypt/decrypt customer data. For key in Cloud KMS, the key should be in the format of projects/* /locations/* /keyRings/* /cryptoKeys/*.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/data_fusion_instance#key_reference DataFusionInstance#key_reference}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#key_reference DataFusionInstance#key_reference}
    *
   * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
@@ -508,13 +508,13 @@ export interface DataFusionInstanceEventPublishConfig {
   /**
   * Option to enable Event Publishing.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/data_fusion_instance#enabled DataFusionInstance#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#enabled DataFusionInstance#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
   /**
   * The resource name of the Pub/Sub topic. Format: projects/{projectId}/topics/{topic_id}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/data_fusion_instance#topic DataFusionInstance#topic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#topic DataFusionInstance#topic}
   */
   readonly topic: string;
 }
@@ -623,13 +623,13 @@ export interface DataFusionInstanceMaintenancePolicyMaintenanceWindowRecurringTi
   /**
   * The end time of the time window provided in RFC 3339 format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/data_fusion_instance#end_time DataFusionInstance#end_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#end_time DataFusionInstance#end_time}
   */
   readonly endTime: string;
   /**
   * The start time of the time window provided in RFC 3339 format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/data_fusion_instance#start_time DataFusionInstance#start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#start_time DataFusionInstance#start_time}
   */
   readonly startTime: string;
 }
@@ -738,13 +738,13 @@ export interface DataFusionInstanceMaintenancePolicyMaintenanceWindowRecurringTi
   /**
   * An RRULE with format RFC-5545 for how this window reccurs. They go on for the span of time between the start and end time. The only supported FREQ value is "WEEKLY". To have something repeat every weekday, use: "FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/data_fusion_instance#recurrence DataFusionInstance#recurrence}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#recurrence DataFusionInstance#recurrence}
   */
   readonly recurrence: string;
   /**
   * window block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/data_fusion_instance#window DataFusionInstance#window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#window DataFusionInstance#window}
   */
   readonly window: DataFusionInstanceMaintenancePolicyMaintenanceWindowRecurringTimeWindowWindow;
 }
@@ -853,7 +853,7 @@ export interface DataFusionInstanceMaintenancePolicyMaintenanceWindow {
   /**
   * recurring_time_window block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/data_fusion_instance#recurring_time_window DataFusionInstance#recurring_time_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#recurring_time_window DataFusionInstance#recurring_time_window}
   */
   readonly recurringTimeWindow: DataFusionInstanceMaintenancePolicyMaintenanceWindowRecurringTimeWindow;
 }
@@ -936,7 +936,7 @@ export interface DataFusionInstanceMaintenancePolicy {
   /**
   * maintenance_window block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/data_fusion_instance#maintenance_window DataFusionInstance#maintenance_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#maintenance_window DataFusionInstance#maintenance_window}
   */
   readonly maintenanceWindow?: DataFusionInstanceMaintenancePolicyMaintenanceWindow;
 }
@@ -1024,7 +1024,7 @@ export interface DataFusionInstanceNetworkConfigPrivateServiceConnectConfig {
   * It will be of the form projects/{project-id}/regions/{region}/networkAttachments/{network-attachment-id}.
   * This is required only when using connection type PRIVATE_SERVICE_CONNECT_INTERFACES.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/data_fusion_instance#network_attachment DataFusionInstance#network_attachment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#network_attachment DataFusionInstance#network_attachment}
   */
   readonly networkAttachment?: string;
   /**
@@ -1033,7 +1033,7 @@ export interface DataFusionInstanceNetworkConfigPrivateServiceConnectConfig {
   * This range can be used for other purposes in the consumer VPC as long as there is no requirement for CDF to reach destinations using these addresses.
   * If this value is not provided, the server chooses a non RFC 1918 address range. The format of this field is governed by RFC 4632.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/data_fusion_instance#unreachable_cidr_block DataFusionInstance#unreachable_cidr_block}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#unreachable_cidr_block DataFusionInstance#unreachable_cidr_block}
   */
   readonly unreachableCidrBlock?: string;
 }
@@ -1155,14 +1155,14 @@ export interface DataFusionInstanceNetworkConfig {
   * the corresponding tenant project from a predefined list of available connection modes.
   * If this field is unspecified for a private instance, VPC peering is used. Possible values: ["VPC_PEERING", "PRIVATE_SERVICE_CONNECT_INTERFACES"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/data_fusion_instance#connection_type DataFusionInstance#connection_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#connection_type DataFusionInstance#connection_type}
   */
   readonly connectionType?: string;
   /**
   * The IP range in CIDR notation to use for the managed Data Fusion instance
   * nodes. This range must not overlap with any other ranges used in the Data Fusion instance network.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/data_fusion_instance#ip_allocation DataFusionInstance#ip_allocation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#ip_allocation DataFusionInstance#ip_allocation}
   */
   readonly ipAllocation?: string;
   /**
@@ -1170,13 +1170,13 @@ export interface DataFusionInstanceNetworkConfig {
   * will be peered for executing pipelines. In case of shared VPC where the network resides in another host
   * project the network should specified in the form of projects/{host-project-id}/global/networks/{network}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/data_fusion_instance#network DataFusionInstance#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#network DataFusionInstance#network}
   */
   readonly network?: string;
   /**
   * private_service_connect_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/data_fusion_instance#private_service_connect_config DataFusionInstance#private_service_connect_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#private_service_connect_config DataFusionInstance#private_service_connect_config}
   */
   readonly privateServiceConnectConfig?: DataFusionInstanceNetworkConfigPrivateServiceConnectConfig;
 }
@@ -1347,15 +1347,15 @@ export class DataFusionInstanceNetworkConfigOutputReference extends cdktn.Comple
 }
 export interface DataFusionInstanceTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/data_fusion_instance#create DataFusionInstance#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#create DataFusionInstance#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/data_fusion_instance#delete DataFusionInstance#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#delete DataFusionInstance#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/data_fusion_instance#update DataFusionInstance#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#update DataFusionInstance#update}
   */
   readonly update?: string;
 }
@@ -1507,7 +1507,7 @@ export class DataFusionInstanceTimeoutsOutputReference extends cdktn.ComplexObje
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/data_fusion_instance google_data_fusion_instance}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance google_data_fusion_instance}
 */
 export class DataFusionInstance extends cdktn.TerraformResource {
 
@@ -1523,7 +1523,7 @@ export class DataFusionInstance extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a DataFusionInstance resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataFusionInstance to import
-  * @param importFromId The id of the existing DataFusionInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/data_fusion_instance#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataFusionInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataFusionInstance to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1535,7 +1535,7 @@ export class DataFusionInstance extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/data_fusion_instance google_data_fusion_instance} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance google_data_fusion_instance} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1546,7 +1546,7 @@ export class DataFusionInstance extends cdktn.TerraformResource {
       terraformResourceType: 'google_data_fusion_instance',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.46.0',
+        providerVersion: '7.46.1',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

@@ -1,3 +1,3 @@
 # `data_google_vmwareengine_announcements`
 
-Refer to the Terraform Registry for docs: [`data_google_vmwareengine_announcements`](https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/vmwareengine_announcements).
+Refer to the Terraform Registry for docs: [`data_google_vmwareengine_announcements`](https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/vmwareengine_announcements).
