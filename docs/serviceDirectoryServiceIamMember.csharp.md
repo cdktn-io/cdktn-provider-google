@@ -4,7 +4,7 @@
 
 ### ServiceDirectoryServiceIamMember <a name="ServiceDirectoryServiceIamMember" id="@cdktn/provider-google.serviceDirectoryServiceIamMember.ServiceDirectoryServiceIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/service_directory_service_iam_member google_service_directory_service_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/service_directory_service_iam_member google_service_directory_service_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.serviceDirectoryServiceIamMember.ServiceDirectoryServiceIamMember.Initializer"></a>
 
@@ -516,7 +516,7 @@ The construct id used in the generated config for the ServiceDirectoryServiceIam
 
 The id of the existing ServiceDirectoryServiceIamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/service_directory_service_iam_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/service_directory_service_iam_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -850,9 +850,9 @@ new ServiceDirectoryServiceIamMemberCondition {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.serviceDirectoryServiceIamMember.ServiceDirectoryServiceIamMemberCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/service_directory_service_iam_member#expression ServiceDirectoryServiceIamMember#expression}. |
-| <code><a href="#@cdktn/provider-google.serviceDirectoryServiceIamMember.ServiceDirectoryServiceIamMemberCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/service_directory_service_iam_member#title ServiceDirectoryServiceIamMember#title}. |
-| <code><a href="#@cdktn/provider-google.serviceDirectoryServiceIamMember.ServiceDirectoryServiceIamMemberCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/service_directory_service_iam_member#description ServiceDirectoryServiceIamMember#description}. |
+| <code><a href="#@cdktn/provider-google.serviceDirectoryServiceIamMember.ServiceDirectoryServiceIamMemberCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/service_directory_service_iam_member#expression ServiceDirectoryServiceIamMember#expression}. |
+| <code><a href="#@cdktn/provider-google.serviceDirectoryServiceIamMember.ServiceDirectoryServiceIamMemberCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/service_directory_service_iam_member#title ServiceDirectoryServiceIamMember#title}. |
+| <code><a href="#@cdktn/provider-google.serviceDirectoryServiceIamMember.ServiceDirectoryServiceIamMemberCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/service_directory_service_iam_member#description ServiceDirectoryServiceIamMember#description}. |
 
 ---
 
@@ -864,7 +864,7 @@ public string Expression { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/service_directory_service_iam_member#expression ServiceDirectoryServiceIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/service_directory_service_iam_member#expression ServiceDirectoryServiceIamMember#expression}.
 
 ---
 
@@ -876,7 +876,7 @@ public string Title { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/service_directory_service_iam_member#title ServiceDirectoryServiceIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/service_directory_service_iam_member#title ServiceDirectoryServiceIamMember#title}.
 
 ---
 
@@ -888,7 +888,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/service_directory_service_iam_member#description ServiceDirectoryServiceIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/service_directory_service_iam_member#description ServiceDirectoryServiceIamMember#description}.
 
 ---
 
@@ -926,11 +926,11 @@ new ServiceDirectoryServiceIamMemberConfig {
 | <code><a href="#@cdktn/provider-google.serviceDirectoryServiceIamMember.ServiceDirectoryServiceIamMemberConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.serviceDirectoryServiceIamMember.ServiceDirectoryServiceIamMemberConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.serviceDirectoryServiceIamMember.ServiceDirectoryServiceIamMemberConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.serviceDirectoryServiceIamMember.ServiceDirectoryServiceIamMemberConfig.property.member">Member</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/service_directory_service_iam_member#member ServiceDirectoryServiceIamMember#member}. |
-| <code><a href="#@cdktn/provider-google.serviceDirectoryServiceIamMember.ServiceDirectoryServiceIamMemberConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/service_directory_service_iam_member#name ServiceDirectoryServiceIamMember#name}. |
-| <code><a href="#@cdktn/provider-google.serviceDirectoryServiceIamMember.ServiceDirectoryServiceIamMemberConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/service_directory_service_iam_member#role ServiceDirectoryServiceIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.serviceDirectoryServiceIamMember.ServiceDirectoryServiceIamMemberConfig.property.member">Member</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/service_directory_service_iam_member#member ServiceDirectoryServiceIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.serviceDirectoryServiceIamMember.ServiceDirectoryServiceIamMemberConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/service_directory_service_iam_member#name ServiceDirectoryServiceIamMember#name}. |
+| <code><a href="#@cdktn/provider-google.serviceDirectoryServiceIamMember.ServiceDirectoryServiceIamMemberConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/service_directory_service_iam_member#role ServiceDirectoryServiceIamMember#role}. |
 | <code><a href="#@cdktn/provider-google.serviceDirectoryServiceIamMember.ServiceDirectoryServiceIamMemberConfig.property.condition">Condition</a></code> | <code><a href="#@cdktn/provider-google.serviceDirectoryServiceIamMember.ServiceDirectoryServiceIamMemberCondition">ServiceDirectoryServiceIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.serviceDirectoryServiceIamMember.ServiceDirectoryServiceIamMemberConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/service_directory_service_iam_member#id ServiceDirectoryServiceIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.serviceDirectoryServiceIamMember.ServiceDirectoryServiceIamMemberConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/service_directory_service_iam_member#id ServiceDirectoryServiceIamMember#id}. |
 
 ---
 
@@ -1012,7 +1012,7 @@ public string Member { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/service_directory_service_iam_member#member ServiceDirectoryServiceIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/service_directory_service_iam_member#member ServiceDirectoryServiceIamMember#member}.
 
 ---
 
@@ -1024,7 +1024,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/service_directory_service_iam_member#name ServiceDirectoryServiceIamMember#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/service_directory_service_iam_member#name ServiceDirectoryServiceIamMember#name}.
 
 ---
 
@@ -1036,7 +1036,7 @@ public string Role { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/service_directory_service_iam_member#role ServiceDirectoryServiceIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/service_directory_service_iam_member#role ServiceDirectoryServiceIamMember#role}.
 
 ---
 
@@ -1050,7 +1050,7 @@ public ServiceDirectoryServiceIamMemberCondition Condition { get; set; }
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/service_directory_service_iam_member#condition ServiceDirectoryServiceIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/service_directory_service_iam_member#condition ServiceDirectoryServiceIamMember#condition}
 
 ---
 
@@ -1062,7 +1062,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/service_directory_service_iam_member#id ServiceDirectoryServiceIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/service_directory_service_iam_member#id ServiceDirectoryServiceIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -4,7 +4,7 @@
 
 ### NetworkSecurityAddressGroupIamMember <a name="NetworkSecurityAddressGroupIamMember" id="@cdktn/provider-google.networkSecurityAddressGroupIamMember.NetworkSecurityAddressGroupIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_security_address_group_iam_member google_network_security_address_group_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_address_group_iam_member google_network_security_address_group_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityAddressGroupIamMember.NetworkSecurityAddressGroupIamMember.Initializer"></a>
 
@@ -40,13 +40,13 @@ NetworkSecurityAddressGroupIamMember.Builder.create(Construct scope, java.lang.S
 | <code><a href="#@cdktn/provider-google.networkSecurityAddressGroupIamMember.NetworkSecurityAddressGroupIamMember.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityAddressGroupIamMember.NetworkSecurityAddressGroupIamMember.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityAddressGroupIamMember.NetworkSecurityAddressGroupIamMember.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.networkSecurityAddressGroupIamMember.NetworkSecurityAddressGroupIamMember.Initializer.parameter.member">member</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_security_address_group_iam_member#member NetworkSecurityAddressGroupIamMember#member}. |
-| <code><a href="#@cdktn/provider-google.networkSecurityAddressGroupIamMember.NetworkSecurityAddressGroupIamMember.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_security_address_group_iam_member#name NetworkSecurityAddressGroupIamMember#name}. |
-| <code><a href="#@cdktn/provider-google.networkSecurityAddressGroupIamMember.NetworkSecurityAddressGroupIamMember.Initializer.parameter.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_security_address_group_iam_member#role NetworkSecurityAddressGroupIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAddressGroupIamMember.NetworkSecurityAddressGroupIamMember.Initializer.parameter.member">member</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_address_group_iam_member#member NetworkSecurityAddressGroupIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAddressGroupIamMember.NetworkSecurityAddressGroupIamMember.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_address_group_iam_member#name NetworkSecurityAddressGroupIamMember#name}. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAddressGroupIamMember.NetworkSecurityAddressGroupIamMember.Initializer.parameter.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_address_group_iam_member#role NetworkSecurityAddressGroupIamMember#role}. |
 | <code><a href="#@cdktn/provider-google.networkSecurityAddressGroupIamMember.NetworkSecurityAddressGroupIamMember.Initializer.parameter.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityAddressGroupIamMember.NetworkSecurityAddressGroupIamMemberCondition">NetworkSecurityAddressGroupIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.networkSecurityAddressGroupIamMember.NetworkSecurityAddressGroupIamMember.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_security_address_group_iam_member#id NetworkSecurityAddressGroupIamMember#id}. |
-| <code><a href="#@cdktn/provider-google.networkSecurityAddressGroupIamMember.NetworkSecurityAddressGroupIamMember.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_security_address_group_iam_member#location NetworkSecurityAddressGroupIamMember#location}. |
-| <code><a href="#@cdktn/provider-google.networkSecurityAddressGroupIamMember.NetworkSecurityAddressGroupIamMember.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_security_address_group_iam_member#project NetworkSecurityAddressGroupIamMember#project}. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAddressGroupIamMember.NetworkSecurityAddressGroupIamMember.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_address_group_iam_member#id NetworkSecurityAddressGroupIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAddressGroupIamMember.NetworkSecurityAddressGroupIamMember.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_address_group_iam_member#location NetworkSecurityAddressGroupIamMember#location}. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAddressGroupIamMember.NetworkSecurityAddressGroupIamMember.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_address_group_iam_member#project NetworkSecurityAddressGroupIamMember#project}. |
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_security_address_group_iam_member#member NetworkSecurityAddressGroupIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_address_group_iam_member#member NetworkSecurityAddressGroupIamMember#member}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_security_address_group_iam_member#name NetworkSecurityAddressGroupIamMember#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_address_group_iam_member#name NetworkSecurityAddressGroupIamMember#name}.
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_security_address_group_iam_member#role NetworkSecurityAddressGroupIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_address_group_iam_member#role NetworkSecurityAddressGroupIamMember#role}.
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_security_address_group_iam_member#condition NetworkSecurityAddressGroupIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_address_group_iam_member#condition NetworkSecurityAddressGroupIamMember#condition}
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_security_address_group_iam_member#id NetworkSecurityAddressGroupIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_address_group_iam_member#id NetworkSecurityAddressGroupIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -159,7 +159,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_security_address_group_iam_member#location NetworkSecurityAddressGroupIamMember#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_address_group_iam_member#location NetworkSecurityAddressGroupIamMember#location}.
 
 ---
 
@@ -167,7 +167,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_security_address_group_iam_member#project NetworkSecurityAddressGroupIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_address_group_iam_member#project NetworkSecurityAddressGroupIamMember#project}.
 
 ---
 
@@ -657,7 +657,7 @@ The construct id used in the generated config for the NetworkSecurityAddressGrou
 
 The id of the existing NetworkSecurityAddressGroupIamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_security_address_group_iam_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_address_group_iam_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1035,9 +1035,9 @@ NetworkSecurityAddressGroupIamMemberCondition.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.networkSecurityAddressGroupIamMember.NetworkSecurityAddressGroupIamMemberCondition.property.expression">expression</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_security_address_group_iam_member#expression NetworkSecurityAddressGroupIamMember#expression}. |
-| <code><a href="#@cdktn/provider-google.networkSecurityAddressGroupIamMember.NetworkSecurityAddressGroupIamMemberCondition.property.title">title</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_security_address_group_iam_member#title NetworkSecurityAddressGroupIamMember#title}. |
-| <code><a href="#@cdktn/provider-google.networkSecurityAddressGroupIamMember.NetworkSecurityAddressGroupIamMemberCondition.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_security_address_group_iam_member#description NetworkSecurityAddressGroupIamMember#description}. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAddressGroupIamMember.NetworkSecurityAddressGroupIamMemberCondition.property.expression">expression</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_address_group_iam_member#expression NetworkSecurityAddressGroupIamMember#expression}. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAddressGroupIamMember.NetworkSecurityAddressGroupIamMemberCondition.property.title">title</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_address_group_iam_member#title NetworkSecurityAddressGroupIamMember#title}. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAddressGroupIamMember.NetworkSecurityAddressGroupIamMemberCondition.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_address_group_iam_member#description NetworkSecurityAddressGroupIamMember#description}. |
 
 ---
 
@@ -1049,7 +1049,7 @@ public java.lang.String getExpression();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_security_address_group_iam_member#expression NetworkSecurityAddressGroupIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_address_group_iam_member#expression NetworkSecurityAddressGroupIamMember#expression}.
 
 ---
 
@@ -1061,7 +1061,7 @@ public java.lang.String getTitle();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_security_address_group_iam_member#title NetworkSecurityAddressGroupIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_address_group_iam_member#title NetworkSecurityAddressGroupIamMember#title}.
 
 ---
 
@@ -1073,7 +1073,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_security_address_group_iam_member#description NetworkSecurityAddressGroupIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_address_group_iam_member#description NetworkSecurityAddressGroupIamMember#description}.
 
 ---
 
@@ -1113,13 +1113,13 @@ NetworkSecurityAddressGroupIamMemberConfig.builder()
 | <code><a href="#@cdktn/provider-google.networkSecurityAddressGroupIamMember.NetworkSecurityAddressGroupIamMemberConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityAddressGroupIamMember.NetworkSecurityAddressGroupIamMemberConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkSecurityAddressGroupIamMember.NetworkSecurityAddressGroupIamMemberConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.networkSecurityAddressGroupIamMember.NetworkSecurityAddressGroupIamMemberConfig.property.member">member</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_security_address_group_iam_member#member NetworkSecurityAddressGroupIamMember#member}. |
-| <code><a href="#@cdktn/provider-google.networkSecurityAddressGroupIamMember.NetworkSecurityAddressGroupIamMemberConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_security_address_group_iam_member#name NetworkSecurityAddressGroupIamMember#name}. |
-| <code><a href="#@cdktn/provider-google.networkSecurityAddressGroupIamMember.NetworkSecurityAddressGroupIamMemberConfig.property.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_security_address_group_iam_member#role NetworkSecurityAddressGroupIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAddressGroupIamMember.NetworkSecurityAddressGroupIamMemberConfig.property.member">member</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_address_group_iam_member#member NetworkSecurityAddressGroupIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAddressGroupIamMember.NetworkSecurityAddressGroupIamMemberConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_address_group_iam_member#name NetworkSecurityAddressGroupIamMember#name}. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAddressGroupIamMember.NetworkSecurityAddressGroupIamMemberConfig.property.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_address_group_iam_member#role NetworkSecurityAddressGroupIamMember#role}. |
 | <code><a href="#@cdktn/provider-google.networkSecurityAddressGroupIamMember.NetworkSecurityAddressGroupIamMemberConfig.property.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityAddressGroupIamMember.NetworkSecurityAddressGroupIamMemberCondition">NetworkSecurityAddressGroupIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.networkSecurityAddressGroupIamMember.NetworkSecurityAddressGroupIamMemberConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_security_address_group_iam_member#id NetworkSecurityAddressGroupIamMember#id}. |
-| <code><a href="#@cdktn/provider-google.networkSecurityAddressGroupIamMember.NetworkSecurityAddressGroupIamMemberConfig.property.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_security_address_group_iam_member#location NetworkSecurityAddressGroupIamMember#location}. |
-| <code><a href="#@cdktn/provider-google.networkSecurityAddressGroupIamMember.NetworkSecurityAddressGroupIamMemberConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_security_address_group_iam_member#project NetworkSecurityAddressGroupIamMember#project}. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAddressGroupIamMember.NetworkSecurityAddressGroupIamMemberConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_address_group_iam_member#id NetworkSecurityAddressGroupIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAddressGroupIamMember.NetworkSecurityAddressGroupIamMemberConfig.property.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_address_group_iam_member#location NetworkSecurityAddressGroupIamMember#location}. |
+| <code><a href="#@cdktn/provider-google.networkSecurityAddressGroupIamMember.NetworkSecurityAddressGroupIamMemberConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_address_group_iam_member#project NetworkSecurityAddressGroupIamMember#project}. |
 
 ---
 
@@ -1201,7 +1201,7 @@ public java.lang.String getMember();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_security_address_group_iam_member#member NetworkSecurityAddressGroupIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_address_group_iam_member#member NetworkSecurityAddressGroupIamMember#member}.
 
 ---
 
@@ -1213,7 +1213,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_security_address_group_iam_member#name NetworkSecurityAddressGroupIamMember#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_address_group_iam_member#name NetworkSecurityAddressGroupIamMember#name}.
 
 ---
 
@@ -1225,7 +1225,7 @@ public java.lang.String getRole();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_security_address_group_iam_member#role NetworkSecurityAddressGroupIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_address_group_iam_member#role NetworkSecurityAddressGroupIamMember#role}.
 
 ---
 
@@ -1239,7 +1239,7 @@ public NetworkSecurityAddressGroupIamMemberCondition getCondition();
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_security_address_group_iam_member#condition NetworkSecurityAddressGroupIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_address_group_iam_member#condition NetworkSecurityAddressGroupIamMember#condition}
 
 ---
 
@@ -1251,7 +1251,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_security_address_group_iam_member#id NetworkSecurityAddressGroupIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_address_group_iam_member#id NetworkSecurityAddressGroupIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1266,7 +1266,7 @@ public java.lang.String getLocation();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_security_address_group_iam_member#location NetworkSecurityAddressGroupIamMember#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_address_group_iam_member#location NetworkSecurityAddressGroupIamMember#location}.
 
 ---
 
@@ -1278,7 +1278,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_security_address_group_iam_member#project NetworkSecurityAddressGroupIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_address_group_iam_member#project NetworkSecurityAddressGroupIamMember#project}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### ComputeNetworkFirewallPolicyIamMember <a name="ComputeNetworkFirewallPolicyIamMember" id="@cdktn/provider-google.computeNetworkFirewallPolicyIamMember.ComputeNetworkFirewallPolicyIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_network_firewall_policy_iam_member google_compute_network_firewall_policy_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_network_firewall_policy_iam_member google_compute_network_firewall_policy_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeNetworkFirewallPolicyIamMember.ComputeNetworkFirewallPolicyIamMember.Initializer"></a>
 
@@ -39,12 +39,12 @@ ComputeNetworkFirewallPolicyIamMember.Builder.create(Construct scope, java.lang.
 | <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicyIamMember.ComputeNetworkFirewallPolicyIamMember.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicyIamMember.ComputeNetworkFirewallPolicyIamMember.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicyIamMember.ComputeNetworkFirewallPolicyIamMember.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicyIamMember.ComputeNetworkFirewallPolicyIamMember.Initializer.parameter.member">member</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_network_firewall_policy_iam_member#member ComputeNetworkFirewallPolicyIamMember#member}. |
-| <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicyIamMember.ComputeNetworkFirewallPolicyIamMember.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_network_firewall_policy_iam_member#name ComputeNetworkFirewallPolicyIamMember#name}. |
-| <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicyIamMember.ComputeNetworkFirewallPolicyIamMember.Initializer.parameter.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_network_firewall_policy_iam_member#role ComputeNetworkFirewallPolicyIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicyIamMember.ComputeNetworkFirewallPolicyIamMember.Initializer.parameter.member">member</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_network_firewall_policy_iam_member#member ComputeNetworkFirewallPolicyIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicyIamMember.ComputeNetworkFirewallPolicyIamMember.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_network_firewall_policy_iam_member#name ComputeNetworkFirewallPolicyIamMember#name}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicyIamMember.ComputeNetworkFirewallPolicyIamMember.Initializer.parameter.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_network_firewall_policy_iam_member#role ComputeNetworkFirewallPolicyIamMember#role}. |
 | <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicyIamMember.ComputeNetworkFirewallPolicyIamMember.Initializer.parameter.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicyIamMember.ComputeNetworkFirewallPolicyIamMemberCondition">ComputeNetworkFirewallPolicyIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicyIamMember.ComputeNetworkFirewallPolicyIamMember.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_network_firewall_policy_iam_member#id ComputeNetworkFirewallPolicyIamMember#id}. |
-| <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicyIamMember.ComputeNetworkFirewallPolicyIamMember.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_network_firewall_policy_iam_member#project ComputeNetworkFirewallPolicyIamMember#project}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicyIamMember.ComputeNetworkFirewallPolicyIamMember.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_network_firewall_policy_iam_member#id ComputeNetworkFirewallPolicyIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicyIamMember.ComputeNetworkFirewallPolicyIamMember.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_network_firewall_policy_iam_member#project ComputeNetworkFirewallPolicyIamMember#project}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_network_firewall_policy_iam_member#member ComputeNetworkFirewallPolicyIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_network_firewall_policy_iam_member#member ComputeNetworkFirewallPolicyIamMember#member}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_network_firewall_policy_iam_member#name ComputeNetworkFirewallPolicyIamMember#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_network_firewall_policy_iam_member#name ComputeNetworkFirewallPolicyIamMember#name}.
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_network_firewall_policy_iam_member#role ComputeNetworkFirewallPolicyIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_network_firewall_policy_iam_member#role ComputeNetworkFirewallPolicyIamMember#role}.
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_network_firewall_policy_iam_member#condition ComputeNetworkFirewallPolicyIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_network_firewall_policy_iam_member#condition ComputeNetworkFirewallPolicyIamMember#condition}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_network_firewall_policy_iam_member#id ComputeNetworkFirewallPolicyIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_network_firewall_policy_iam_member#id ComputeNetworkFirewallPolicyIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -157,7 +157,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_network_firewall_policy_iam_member#project ComputeNetworkFirewallPolicyIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_network_firewall_policy_iam_member#project ComputeNetworkFirewallPolicyIamMember#project}.
 
 ---
 
@@ -640,7 +640,7 @@ The construct id used in the generated config for the ComputeNetworkFirewallPoli
 
 The id of the existing ComputeNetworkFirewallPolicyIamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_network_firewall_policy_iam_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_network_firewall_policy_iam_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -996,9 +996,9 @@ ComputeNetworkFirewallPolicyIamMemberCondition.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicyIamMember.ComputeNetworkFirewallPolicyIamMemberCondition.property.expression">expression</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_network_firewall_policy_iam_member#expression ComputeNetworkFirewallPolicyIamMember#expression}. |
-| <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicyIamMember.ComputeNetworkFirewallPolicyIamMemberCondition.property.title">title</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_network_firewall_policy_iam_member#title ComputeNetworkFirewallPolicyIamMember#title}. |
-| <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicyIamMember.ComputeNetworkFirewallPolicyIamMemberCondition.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_network_firewall_policy_iam_member#description ComputeNetworkFirewallPolicyIamMember#description}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicyIamMember.ComputeNetworkFirewallPolicyIamMemberCondition.property.expression">expression</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_network_firewall_policy_iam_member#expression ComputeNetworkFirewallPolicyIamMember#expression}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicyIamMember.ComputeNetworkFirewallPolicyIamMemberCondition.property.title">title</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_network_firewall_policy_iam_member#title ComputeNetworkFirewallPolicyIamMember#title}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicyIamMember.ComputeNetworkFirewallPolicyIamMemberCondition.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_network_firewall_policy_iam_member#description ComputeNetworkFirewallPolicyIamMember#description}. |
 
 ---
 
@@ -1010,7 +1010,7 @@ public java.lang.String getExpression();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_network_firewall_policy_iam_member#expression ComputeNetworkFirewallPolicyIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_network_firewall_policy_iam_member#expression ComputeNetworkFirewallPolicyIamMember#expression}.
 
 ---
 
@@ -1022,7 +1022,7 @@ public java.lang.String getTitle();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_network_firewall_policy_iam_member#title ComputeNetworkFirewallPolicyIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_network_firewall_policy_iam_member#title ComputeNetworkFirewallPolicyIamMember#title}.
 
 ---
 
@@ -1034,7 +1034,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_network_firewall_policy_iam_member#description ComputeNetworkFirewallPolicyIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_network_firewall_policy_iam_member#description ComputeNetworkFirewallPolicyIamMember#description}.
 
 ---
 
@@ -1073,12 +1073,12 @@ ComputeNetworkFirewallPolicyIamMemberConfig.builder()
 | <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicyIamMember.ComputeNetworkFirewallPolicyIamMemberConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicyIamMember.ComputeNetworkFirewallPolicyIamMemberConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicyIamMember.ComputeNetworkFirewallPolicyIamMemberConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicyIamMember.ComputeNetworkFirewallPolicyIamMemberConfig.property.member">member</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_network_firewall_policy_iam_member#member ComputeNetworkFirewallPolicyIamMember#member}. |
-| <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicyIamMember.ComputeNetworkFirewallPolicyIamMemberConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_network_firewall_policy_iam_member#name ComputeNetworkFirewallPolicyIamMember#name}. |
-| <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicyIamMember.ComputeNetworkFirewallPolicyIamMemberConfig.property.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_network_firewall_policy_iam_member#role ComputeNetworkFirewallPolicyIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicyIamMember.ComputeNetworkFirewallPolicyIamMemberConfig.property.member">member</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_network_firewall_policy_iam_member#member ComputeNetworkFirewallPolicyIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicyIamMember.ComputeNetworkFirewallPolicyIamMemberConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_network_firewall_policy_iam_member#name ComputeNetworkFirewallPolicyIamMember#name}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicyIamMember.ComputeNetworkFirewallPolicyIamMemberConfig.property.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_network_firewall_policy_iam_member#role ComputeNetworkFirewallPolicyIamMember#role}. |
 | <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicyIamMember.ComputeNetworkFirewallPolicyIamMemberConfig.property.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicyIamMember.ComputeNetworkFirewallPolicyIamMemberCondition">ComputeNetworkFirewallPolicyIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicyIamMember.ComputeNetworkFirewallPolicyIamMemberConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_network_firewall_policy_iam_member#id ComputeNetworkFirewallPolicyIamMember#id}. |
-| <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicyIamMember.ComputeNetworkFirewallPolicyIamMemberConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_network_firewall_policy_iam_member#project ComputeNetworkFirewallPolicyIamMember#project}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicyIamMember.ComputeNetworkFirewallPolicyIamMemberConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_network_firewall_policy_iam_member#id ComputeNetworkFirewallPolicyIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicyIamMember.ComputeNetworkFirewallPolicyIamMemberConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_network_firewall_policy_iam_member#project ComputeNetworkFirewallPolicyIamMember#project}. |
 
 ---
 
@@ -1160,7 +1160,7 @@ public java.lang.String getMember();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_network_firewall_policy_iam_member#member ComputeNetworkFirewallPolicyIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_network_firewall_policy_iam_member#member ComputeNetworkFirewallPolicyIamMember#member}.
 
 ---
 
@@ -1172,7 +1172,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_network_firewall_policy_iam_member#name ComputeNetworkFirewallPolicyIamMember#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_network_firewall_policy_iam_member#name ComputeNetworkFirewallPolicyIamMember#name}.
 
 ---
 
@@ -1184,7 +1184,7 @@ public java.lang.String getRole();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_network_firewall_policy_iam_member#role ComputeNetworkFirewallPolicyIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_network_firewall_policy_iam_member#role ComputeNetworkFirewallPolicyIamMember#role}.
 
 ---
 
@@ -1198,7 +1198,7 @@ public ComputeNetworkFirewallPolicyIamMemberCondition getCondition();
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_network_firewall_policy_iam_member#condition ComputeNetworkFirewallPolicyIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_network_firewall_policy_iam_member#condition ComputeNetworkFirewallPolicyIamMember#condition}
 
 ---
 
@@ -1210,7 +1210,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_network_firewall_policy_iam_member#id ComputeNetworkFirewallPolicyIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_network_firewall_policy_iam_member#id ComputeNetworkFirewallPolicyIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1225,7 +1225,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_network_firewall_policy_iam_member#project ComputeNetworkFirewallPolicyIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_network_firewall_policy_iam_member#project ComputeNetworkFirewallPolicyIamMember#project}.
 
 ---
 

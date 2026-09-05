@@ -4,7 +4,7 @@
 
 ### CloudTasksQueueIamBinding <a name="CloudTasksQueueIamBinding" id="@cdktn/provider-google.cloudTasksQueueIamBinding.CloudTasksQueueIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/cloud_tasks_queue_iam_binding google_cloud_tasks_queue_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_tasks_queue_iam_binding google_cloud_tasks_queue_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudTasksQueueIamBinding.CloudTasksQueueIamBinding.Initializer"></a>
 
@@ -530,7 +530,7 @@ The construct id used in the generated config for the CloudTasksQueueIamBinding 
 
 The id of the existing CloudTasksQueueIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/cloud_tasks_queue_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_tasks_queue_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -908,9 +908,9 @@ new CloudTasksQueueIamBindingCondition {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudTasksQueueIamBinding.CloudTasksQueueIamBindingCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/cloud_tasks_queue_iam_binding#expression CloudTasksQueueIamBinding#expression}. |
-| <code><a href="#@cdktn/provider-google.cloudTasksQueueIamBinding.CloudTasksQueueIamBindingCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/cloud_tasks_queue_iam_binding#title CloudTasksQueueIamBinding#title}. |
-| <code><a href="#@cdktn/provider-google.cloudTasksQueueIamBinding.CloudTasksQueueIamBindingCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/cloud_tasks_queue_iam_binding#description CloudTasksQueueIamBinding#description}. |
+| <code><a href="#@cdktn/provider-google.cloudTasksQueueIamBinding.CloudTasksQueueIamBindingCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_tasks_queue_iam_binding#expression CloudTasksQueueIamBinding#expression}. |
+| <code><a href="#@cdktn/provider-google.cloudTasksQueueIamBinding.CloudTasksQueueIamBindingCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_tasks_queue_iam_binding#title CloudTasksQueueIamBinding#title}. |
+| <code><a href="#@cdktn/provider-google.cloudTasksQueueIamBinding.CloudTasksQueueIamBindingCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_tasks_queue_iam_binding#description CloudTasksQueueIamBinding#description}. |
 
 ---
 
@@ -922,7 +922,7 @@ public string Expression { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/cloud_tasks_queue_iam_binding#expression CloudTasksQueueIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_tasks_queue_iam_binding#expression CloudTasksQueueIamBinding#expression}.
 
 ---
 
@@ -934,7 +934,7 @@ public string Title { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/cloud_tasks_queue_iam_binding#title CloudTasksQueueIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_tasks_queue_iam_binding#title CloudTasksQueueIamBinding#title}.
 
 ---
 
@@ -946,7 +946,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/cloud_tasks_queue_iam_binding#description CloudTasksQueueIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_tasks_queue_iam_binding#description CloudTasksQueueIamBinding#description}.
 
 ---
 
@@ -986,13 +986,13 @@ new CloudTasksQueueIamBindingConfig {
 | <code><a href="#@cdktn/provider-google.cloudTasksQueueIamBinding.CloudTasksQueueIamBindingConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudTasksQueueIamBinding.CloudTasksQueueIamBindingConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudTasksQueueIamBinding.CloudTasksQueueIamBindingConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudTasksQueueIamBinding.CloudTasksQueueIamBindingConfig.property.members">Members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/cloud_tasks_queue_iam_binding#members CloudTasksQueueIamBinding#members}. |
-| <code><a href="#@cdktn/provider-google.cloudTasksQueueIamBinding.CloudTasksQueueIamBindingConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/cloud_tasks_queue_iam_binding#name CloudTasksQueueIamBinding#name}. |
-| <code><a href="#@cdktn/provider-google.cloudTasksQueueIamBinding.CloudTasksQueueIamBindingConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/cloud_tasks_queue_iam_binding#role CloudTasksQueueIamBinding#role}. |
+| <code><a href="#@cdktn/provider-google.cloudTasksQueueIamBinding.CloudTasksQueueIamBindingConfig.property.members">Members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_tasks_queue_iam_binding#members CloudTasksQueueIamBinding#members}. |
+| <code><a href="#@cdktn/provider-google.cloudTasksQueueIamBinding.CloudTasksQueueIamBindingConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_tasks_queue_iam_binding#name CloudTasksQueueIamBinding#name}. |
+| <code><a href="#@cdktn/provider-google.cloudTasksQueueIamBinding.CloudTasksQueueIamBindingConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_tasks_queue_iam_binding#role CloudTasksQueueIamBinding#role}. |
 | <code><a href="#@cdktn/provider-google.cloudTasksQueueIamBinding.CloudTasksQueueIamBindingConfig.property.condition">Condition</a></code> | <code><a href="#@cdktn/provider-google.cloudTasksQueueIamBinding.CloudTasksQueueIamBindingCondition">CloudTasksQueueIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.cloudTasksQueueIamBinding.CloudTasksQueueIamBindingConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/cloud_tasks_queue_iam_binding#id CloudTasksQueueIamBinding#id}. |
-| <code><a href="#@cdktn/provider-google.cloudTasksQueueIamBinding.CloudTasksQueueIamBindingConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/cloud_tasks_queue_iam_binding#location CloudTasksQueueIamBinding#location}. |
-| <code><a href="#@cdktn/provider-google.cloudTasksQueueIamBinding.CloudTasksQueueIamBindingConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/cloud_tasks_queue_iam_binding#project CloudTasksQueueIamBinding#project}. |
+| <code><a href="#@cdktn/provider-google.cloudTasksQueueIamBinding.CloudTasksQueueIamBindingConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_tasks_queue_iam_binding#id CloudTasksQueueIamBinding#id}. |
+| <code><a href="#@cdktn/provider-google.cloudTasksQueueIamBinding.CloudTasksQueueIamBindingConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_tasks_queue_iam_binding#location CloudTasksQueueIamBinding#location}. |
+| <code><a href="#@cdktn/provider-google.cloudTasksQueueIamBinding.CloudTasksQueueIamBindingConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_tasks_queue_iam_binding#project CloudTasksQueueIamBinding#project}. |
 
 ---
 
@@ -1074,7 +1074,7 @@ public string[] Members { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/cloud_tasks_queue_iam_binding#members CloudTasksQueueIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_tasks_queue_iam_binding#members CloudTasksQueueIamBinding#members}.
 
 ---
 
@@ -1086,7 +1086,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/cloud_tasks_queue_iam_binding#name CloudTasksQueueIamBinding#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_tasks_queue_iam_binding#name CloudTasksQueueIamBinding#name}.
 
 ---
 
@@ -1098,7 +1098,7 @@ public string Role { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/cloud_tasks_queue_iam_binding#role CloudTasksQueueIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_tasks_queue_iam_binding#role CloudTasksQueueIamBinding#role}.
 
 ---
 
@@ -1112,7 +1112,7 @@ public CloudTasksQueueIamBindingCondition Condition { get; set; }
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/cloud_tasks_queue_iam_binding#condition CloudTasksQueueIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_tasks_queue_iam_binding#condition CloudTasksQueueIamBinding#condition}
 
 ---
 
@@ -1124,7 +1124,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/cloud_tasks_queue_iam_binding#id CloudTasksQueueIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_tasks_queue_iam_binding#id CloudTasksQueueIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1139,7 +1139,7 @@ public string Location { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/cloud_tasks_queue_iam_binding#location CloudTasksQueueIamBinding#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_tasks_queue_iam_binding#location CloudTasksQueueIamBinding#location}.
 
 ---
 
@@ -1151,7 +1151,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/cloud_tasks_queue_iam_binding#project CloudTasksQueueIamBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_tasks_queue_iam_binding#project CloudTasksQueueIamBinding#project}.
 
 ---
 

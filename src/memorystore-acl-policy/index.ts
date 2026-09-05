@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/memorystore_acl_policy
+// https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/memorystore_acl_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -22,7 +22,7 @@ export interface MemorystoreAclPolicyConfig extends cdktn.TerraformMetaArguments
   * * Must end with a number or a letter.
   * * Must be unique within the customer project / location
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/memorystore_acl_policy#acl_policy_id MemorystoreAclPolicy#acl_policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/memorystore_acl_policy#acl_policy_id MemorystoreAclPolicy#acl_policy_id}
   */
   readonly aclPolicyId: string;
   /**
@@ -34,11 +34,11 @@ export interface MemorystoreAclPolicyConfig extends cdktn.TerraformMetaArguments
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/memorystore_acl_policy#deletion_policy MemorystoreAclPolicy#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/memorystore_acl_policy#deletion_policy MemorystoreAclPolicy#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/memorystore_acl_policy#id MemorystoreAclPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/memorystore_acl_policy#id MemorystoreAclPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -47,23 +47,23 @@ export interface MemorystoreAclPolicyConfig extends cdktn.TerraformMetaArguments
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/memorystore_acl_policy#location MemorystoreAclPolicy#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/memorystore_acl_policy#location MemorystoreAclPolicy#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/memorystore_acl_policy#project MemorystoreAclPolicy#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/memorystore_acl_policy#project MemorystoreAclPolicy#project}
   */
   readonly project?: string;
   /**
   * rules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/memorystore_acl_policy#rules MemorystoreAclPolicy#rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/memorystore_acl_policy#rules MemorystoreAclPolicy#rules}
   */
   readonly rules: MemorystoreAclPolicyRules[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/memorystore_acl_policy#timeouts MemorystoreAclPolicy#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/memorystore_acl_policy#timeouts MemorystoreAclPolicy#timeouts}
   */
   readonly timeouts?: MemorystoreAclPolicyTimeouts;
 }
@@ -73,14 +73,14 @@ export interface MemorystoreAclPolicyRules {
   * The format of the rule is defined by Valkey OSS:
   * https://valkey.io/topics/acl/
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/memorystore_acl_policy#rule MemorystoreAclPolicy#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/memorystore_acl_policy#rule MemorystoreAclPolicy#rule}
   */
   readonly rule: string;
   /**
   * Specifies the IAM user or service account to be added to the ACL policy.
   * This username will be directly set on the Valkey OSS.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/memorystore_acl_policy#username MemorystoreAclPolicy#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/memorystore_acl_policy#username MemorystoreAclPolicy#username}
   */
   readonly username: string;
 }
@@ -219,15 +219,15 @@ export class MemorystoreAclPolicyRulesList extends cdktn.ComplexList {
 }
 export interface MemorystoreAclPolicyTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/memorystore_acl_policy#create MemorystoreAclPolicy#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/memorystore_acl_policy#create MemorystoreAclPolicy#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/memorystore_acl_policy#delete MemorystoreAclPolicy#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/memorystore_acl_policy#delete MemorystoreAclPolicy#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/memorystore_acl_policy#update MemorystoreAclPolicy#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/memorystore_acl_policy#update MemorystoreAclPolicy#update}
   */
   readonly update?: string;
 }
@@ -379,7 +379,7 @@ export class MemorystoreAclPolicyTimeoutsOutputReference extends cdktn.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/memorystore_acl_policy google_memorystore_acl_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/memorystore_acl_policy google_memorystore_acl_policy}
 */
 export class MemorystoreAclPolicy extends cdktn.TerraformResource {
 
@@ -395,7 +395,7 @@ export class MemorystoreAclPolicy extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a MemorystoreAclPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MemorystoreAclPolicy to import
-  * @param importFromId The id of the existing MemorystoreAclPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/memorystore_acl_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MemorystoreAclPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/memorystore_acl_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MemorystoreAclPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -407,7 +407,7 @@ export class MemorystoreAclPolicy extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/memorystore_acl_policy google_memorystore_acl_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/memorystore_acl_policy google_memorystore_acl_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -418,7 +418,7 @@ export class MemorystoreAclPolicy extends cdktn.TerraformResource {
       terraformResourceType: 'google_memorystore_acl_policy',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.46.0',
+        providerVersion: '7.46.1',
         providerVersionConstraint: '~> 7.0'
       },
       provider: config.provider,

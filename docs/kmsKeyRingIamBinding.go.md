@@ -4,7 +4,7 @@
 
 ### KmsKeyRingIamBinding <a name="KmsKeyRingIamBinding" id="@cdktn/provider-google.kmsKeyRingIamBinding.KmsKeyRingIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/kms_key_ring_iam_binding google_kms_key_ring_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/kms_key_ring_iam_binding google_kms_key_ring_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.kmsKeyRingIamBinding.KmsKeyRingIamBinding.Initializer"></a>
 
@@ -516,7 +516,7 @@ The construct id used in the generated config for the KmsKeyRingIamBinding to im
 
 The id of the existing KmsKeyRingIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/kms_key_ring_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/kms_key_ring_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -850,9 +850,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/kmskeyringiambin
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.kmsKeyRingIamBinding.KmsKeyRingIamBindingCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/kms_key_ring_iam_binding#expression KmsKeyRingIamBinding#expression}. |
-| <code><a href="#@cdktn/provider-google.kmsKeyRingIamBinding.KmsKeyRingIamBindingCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/kms_key_ring_iam_binding#title KmsKeyRingIamBinding#title}. |
-| <code><a href="#@cdktn/provider-google.kmsKeyRingIamBinding.KmsKeyRingIamBindingCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/kms_key_ring_iam_binding#description KmsKeyRingIamBinding#description}. |
+| <code><a href="#@cdktn/provider-google.kmsKeyRingIamBinding.KmsKeyRingIamBindingCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/kms_key_ring_iam_binding#expression KmsKeyRingIamBinding#expression}. |
+| <code><a href="#@cdktn/provider-google.kmsKeyRingIamBinding.KmsKeyRingIamBindingCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/kms_key_ring_iam_binding#title KmsKeyRingIamBinding#title}. |
+| <code><a href="#@cdktn/provider-google.kmsKeyRingIamBinding.KmsKeyRingIamBindingCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/kms_key_ring_iam_binding#description KmsKeyRingIamBinding#description}. |
 
 ---
 
@@ -864,7 +864,7 @@ Expression *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/kms_key_ring_iam_binding#expression KmsKeyRingIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/kms_key_ring_iam_binding#expression KmsKeyRingIamBinding#expression}.
 
 ---
 
@@ -876,7 +876,7 @@ Title *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/kms_key_ring_iam_binding#title KmsKeyRingIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/kms_key_ring_iam_binding#title KmsKeyRingIamBinding#title}.
 
 ---
 
@@ -888,7 +888,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/kms_key_ring_iam_binding#description KmsKeyRingIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/kms_key_ring_iam_binding#description KmsKeyRingIamBinding#description}.
 
 ---
 
@@ -926,11 +926,11 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/kmskeyringiambin
 | <code><a href="#@cdktn/provider-google.kmsKeyRingIamBinding.KmsKeyRingIamBindingConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsKeyRingIamBinding.KmsKeyRingIamBindingConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsKeyRingIamBinding.KmsKeyRingIamBindingConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsKeyRingIamBinding.KmsKeyRingIamBindingConfig.property.keyRingId">KeyRingId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/kms_key_ring_iam_binding#key_ring_id KmsKeyRingIamBinding#key_ring_id}. |
-| <code><a href="#@cdktn/provider-google.kmsKeyRingIamBinding.KmsKeyRingIamBindingConfig.property.members">Members</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/kms_key_ring_iam_binding#members KmsKeyRingIamBinding#members}. |
-| <code><a href="#@cdktn/provider-google.kmsKeyRingIamBinding.KmsKeyRingIamBindingConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/kms_key_ring_iam_binding#role KmsKeyRingIamBinding#role}. |
+| <code><a href="#@cdktn/provider-google.kmsKeyRingIamBinding.KmsKeyRingIamBindingConfig.property.keyRingId">KeyRingId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/kms_key_ring_iam_binding#key_ring_id KmsKeyRingIamBinding#key_ring_id}. |
+| <code><a href="#@cdktn/provider-google.kmsKeyRingIamBinding.KmsKeyRingIamBindingConfig.property.members">Members</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/kms_key_ring_iam_binding#members KmsKeyRingIamBinding#members}. |
+| <code><a href="#@cdktn/provider-google.kmsKeyRingIamBinding.KmsKeyRingIamBindingConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/kms_key_ring_iam_binding#role KmsKeyRingIamBinding#role}. |
 | <code><a href="#@cdktn/provider-google.kmsKeyRingIamBinding.KmsKeyRingIamBindingConfig.property.condition">Condition</a></code> | <code><a href="#@cdktn/provider-google.kmsKeyRingIamBinding.KmsKeyRingIamBindingCondition">KmsKeyRingIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.kmsKeyRingIamBinding.KmsKeyRingIamBindingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/kms_key_ring_iam_binding#id KmsKeyRingIamBinding#id}. |
+| <code><a href="#@cdktn/provider-google.kmsKeyRingIamBinding.KmsKeyRingIamBindingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/kms_key_ring_iam_binding#id KmsKeyRingIamBinding#id}. |
 
 ---
 
@@ -1012,7 +1012,7 @@ KeyRingId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/kms_key_ring_iam_binding#key_ring_id KmsKeyRingIamBinding#key_ring_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/kms_key_ring_iam_binding#key_ring_id KmsKeyRingIamBinding#key_ring_id}.
 
 ---
 
@@ -1024,7 +1024,7 @@ Members *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/kms_key_ring_iam_binding#members KmsKeyRingIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/kms_key_ring_iam_binding#members KmsKeyRingIamBinding#members}.
 
 ---
 
@@ -1036,7 +1036,7 @@ Role *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/kms_key_ring_iam_binding#role KmsKeyRingIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/kms_key_ring_iam_binding#role KmsKeyRingIamBinding#role}.
 
 ---
 
@@ -1050,7 +1050,7 @@ Condition KmsKeyRingIamBindingCondition
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/kms_key_ring_iam_binding#condition KmsKeyRingIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/kms_key_ring_iam_binding#condition KmsKeyRingIamBinding#condition}
 
 ---
 
@@ -1062,7 +1062,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/kms_key_ring_iam_binding#id KmsKeyRingIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/kms_key_ring_iam_binding#id KmsKeyRingIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
