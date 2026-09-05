@@ -4,7 +4,7 @@
 
 ### DataGoogleStorageControlProjectIntelligenceFindings <a name="DataGoogleStorageControlProjectIntelligenceFindings" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindings.DataGoogleStorageControlProjectIntelligenceFindings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/storage_control_project_intelligence_findings google_storage_control_project_intelligence_findings}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/storage_control_project_intelligence_findings google_storage_control_project_intelligence_findings}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindings.DataGoogleStorageControlProjectIntelligenceFindings.Initializer"></a>
 
@@ -41,7 +41,7 @@ dataGoogleStorageControlProjectIntelligenceFindings.DataGoogleStorageControlProj
 | <code><a href="#@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindings.DataGoogleStorageControlProjectIntelligenceFindings.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindings.DataGoogleStorageControlProjectIntelligenceFindings.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindings.DataGoogleStorageControlProjectIntelligenceFindings.Initializer.parameter.filter">filter</a></code> | <code>str</code> | The filter expression to apply. Supports filtering by type and associated_resources. |
-| <code><a href="#@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindings.DataGoogleStorageControlProjectIntelligenceFindings.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/storage_control_project_intelligence_findings#id DataGoogleStorageControlProjectIntelligenceFindings#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindings.DataGoogleStorageControlProjectIntelligenceFindings.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/storage_control_project_intelligence_findings#id DataGoogleStorageControlProjectIntelligenceFindings#id}. |
 | <code><a href="#@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindings.DataGoogleStorageControlProjectIntelligenceFindings.Initializer.parameter.location">location</a></code> | <code>str</code> | The location of the intelligence findings. Currently default value is global and users cannot use for input for now. |
 | <code><a href="#@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindings.DataGoogleStorageControlProjectIntelligenceFindings.Initializer.parameter.pageSize">page_size</a></code> | <code>typing.Union[int, float]</code> | The maximum number of IntelligenceFinding resources to return. |
 | <code><a href="#@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindings.DataGoogleStorageControlProjectIntelligenceFindings.Initializer.parameter.project">project</a></code> | <code>str</code> | The ID of the project in which the resource belongs. |
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 The filter expression to apply. Supports filtering by type and associated_resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/storage_control_project_intelligence_findings#filter DataGoogleStorageControlProjectIntelligenceFindings#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/storage_control_project_intelligence_findings#filter DataGoogleStorageControlProjectIntelligenceFindings#filter}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/storage_control_project_intelligence_findings#id DataGoogleStorageControlProjectIntelligenceFindings#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/storage_control_project_intelligence_findings#id DataGoogleStorageControlProjectIntelligenceFindings#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -135,7 +135,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The location of the intelligence findings. Currently default value is global and users cannot use for input for now.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/storage_control_project_intelligence_findings#location DataGoogleStorageControlProjectIntelligenceFindings#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/storage_control_project_intelligence_findings#location DataGoogleStorageControlProjectIntelligenceFindings#location}
 
 ---
 
@@ -147,7 +147,7 @@ The maximum number of IntelligenceFinding resources to return.
 
 The maximum value is 100; values greater than 100 become 100. The default value is 100.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/storage_control_project_intelligence_findings#page_size DataGoogleStorageControlProjectIntelligenceFindings#page_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/storage_control_project_intelligence_findings#page_size DataGoogleStorageControlProjectIntelligenceFindings#page_size}
 
 ---
 
@@ -159,7 +159,7 @@ The ID of the project in which the resource belongs.
 
 If it is not provided, the provider project is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/storage_control_project_intelligence_findings#project DataGoogleStorageControlProjectIntelligenceFindings#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/storage_control_project_intelligence_findings#project DataGoogleStorageControlProjectIntelligenceFindings#project}
 
 ---
 
@@ -577,7 +577,7 @@ The construct id used in the generated config for the DataGoogleStorageControlPr
 
 The id of the existing DataGoogleStorageControlProjectIntelligenceFindings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/storage_control_project_intelligence_findings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/storage_control_project_intelligence_findings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -906,7 +906,7 @@ dataGoogleStorageControlProjectIntelligenceFindings.DataGoogleStorageControlProj
 | <code><a href="#@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindings.DataGoogleStorageControlProjectIntelligenceFindingsConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindings.DataGoogleStorageControlProjectIntelligenceFindingsConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindings.DataGoogleStorageControlProjectIntelligenceFindingsConfig.property.filter">filter</a></code> | <code>str</code> | The filter expression to apply. Supports filtering by type and associated_resources. |
-| <code><a href="#@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindings.DataGoogleStorageControlProjectIntelligenceFindingsConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/storage_control_project_intelligence_findings#id DataGoogleStorageControlProjectIntelligenceFindings#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindings.DataGoogleStorageControlProjectIntelligenceFindingsConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/storage_control_project_intelligence_findings#id DataGoogleStorageControlProjectIntelligenceFindings#id}. |
 | <code><a href="#@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindings.DataGoogleStorageControlProjectIntelligenceFindingsConfig.property.location">location</a></code> | <code>str</code> | The location of the intelligence findings. Currently default value is global and users cannot use for input for now. |
 | <code><a href="#@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindings.DataGoogleStorageControlProjectIntelligenceFindingsConfig.property.pageSize">page_size</a></code> | <code>typing.Union[int, float]</code> | The maximum number of IntelligenceFinding resources to return. |
 | <code><a href="#@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindings.DataGoogleStorageControlProjectIntelligenceFindingsConfig.property.project">project</a></code> | <code>str</code> | The ID of the project in which the resource belongs. |
@@ -993,7 +993,7 @@ filter: str
 
 The filter expression to apply. Supports filtering by type and associated_resources.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/storage_control_project_intelligence_findings#filter DataGoogleStorageControlProjectIntelligenceFindings#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/storage_control_project_intelligence_findings#filter DataGoogleStorageControlProjectIntelligenceFindings#filter}
 
 ---
 
@@ -1005,7 +1005,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/storage_control_project_intelligence_findings#id DataGoogleStorageControlProjectIntelligenceFindings#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/storage_control_project_intelligence_findings#id DataGoogleStorageControlProjectIntelligenceFindings#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1022,7 +1022,7 @@ location: str
 
 The location of the intelligence findings. Currently default value is global and users cannot use for input for now.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/storage_control_project_intelligence_findings#location DataGoogleStorageControlProjectIntelligenceFindings#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/storage_control_project_intelligence_findings#location DataGoogleStorageControlProjectIntelligenceFindings#location}
 
 ---
 
@@ -1038,7 +1038,7 @@ The maximum number of IntelligenceFinding resources to return.
 
 The maximum value is 100; values greater than 100 become 100. The default value is 100.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/storage_control_project_intelligence_findings#page_size DataGoogleStorageControlProjectIntelligenceFindings#page_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/storage_control_project_intelligence_findings#page_size DataGoogleStorageControlProjectIntelligenceFindings#page_size}
 
 ---
 
@@ -1054,7 +1054,7 @@ The ID of the project in which the resource belongs.
 
 If it is not provided, the provider project is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/storage_control_project_intelligence_findings#project DataGoogleStorageControlProjectIntelligenceFindings#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/storage_control_project_intelligence_findings#project DataGoogleStorageControlProjectIntelligenceFindings#project}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### NetworkConnectivityHubIamBinding <a name="NetworkConnectivityHubIamBinding" id="@cdktn/provider-google.networkConnectivityHubIamBinding.NetworkConnectivityHubIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_hub_iam_binding google_network_connectivity_hub_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_connectivity_hub_iam_binding google_network_connectivity_hub_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkConnectivityHubIamBinding.NetworkConnectivityHubIamBinding.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the NetworkConnectivityHubIamB
 
 The id of the existing NetworkConnectivityHubIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_hub_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_connectivity_hub_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -875,9 +875,9 @@ const networkConnectivityHubIamBindingCondition: networkConnectivityHubIamBindin
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.networkConnectivityHubIamBinding.NetworkConnectivityHubIamBindingCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_hub_iam_binding#expression NetworkConnectivityHubIamBinding#expression}. |
-| <code><a href="#@cdktn/provider-google.networkConnectivityHubIamBinding.NetworkConnectivityHubIamBindingCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_hub_iam_binding#title NetworkConnectivityHubIamBinding#title}. |
-| <code><a href="#@cdktn/provider-google.networkConnectivityHubIamBinding.NetworkConnectivityHubIamBindingCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_hub_iam_binding#description NetworkConnectivityHubIamBinding#description}. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityHubIamBinding.NetworkConnectivityHubIamBindingCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_connectivity_hub_iam_binding#expression NetworkConnectivityHubIamBinding#expression}. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityHubIamBinding.NetworkConnectivityHubIamBindingCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_connectivity_hub_iam_binding#title NetworkConnectivityHubIamBinding#title}. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityHubIamBinding.NetworkConnectivityHubIamBindingCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_connectivity_hub_iam_binding#description NetworkConnectivityHubIamBinding#description}. |
 
 ---
 
@@ -889,7 +889,7 @@ public readonly expression: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_hub_iam_binding#expression NetworkConnectivityHubIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_connectivity_hub_iam_binding#expression NetworkConnectivityHubIamBinding#expression}.
 
 ---
 
@@ -901,7 +901,7 @@ public readonly title: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_hub_iam_binding#title NetworkConnectivityHubIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_connectivity_hub_iam_binding#title NetworkConnectivityHubIamBinding#title}.
 
 ---
 
@@ -913,7 +913,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_hub_iam_binding#description NetworkConnectivityHubIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_connectivity_hub_iam_binding#description NetworkConnectivityHubIamBinding#description}.
 
 ---
 
@@ -938,12 +938,12 @@ const networkConnectivityHubIamBindingConfig: networkConnectivityHubIamBinding.N
 | <code><a href="#@cdktn/provider-google.networkConnectivityHubIamBinding.NetworkConnectivityHubIamBindingConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkConnectivityHubIamBinding.NetworkConnectivityHubIamBindingConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkConnectivityHubIamBinding.NetworkConnectivityHubIamBindingConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.networkConnectivityHubIamBinding.NetworkConnectivityHubIamBindingConfig.property.hub">hub</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_hub_iam_binding#hub NetworkConnectivityHubIamBinding#hub}. |
-| <code><a href="#@cdktn/provider-google.networkConnectivityHubIamBinding.NetworkConnectivityHubIamBindingConfig.property.members">members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_hub_iam_binding#members NetworkConnectivityHubIamBinding#members}. |
-| <code><a href="#@cdktn/provider-google.networkConnectivityHubIamBinding.NetworkConnectivityHubIamBindingConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_hub_iam_binding#role NetworkConnectivityHubIamBinding#role}. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityHubIamBinding.NetworkConnectivityHubIamBindingConfig.property.hub">hub</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_connectivity_hub_iam_binding#hub NetworkConnectivityHubIamBinding#hub}. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityHubIamBinding.NetworkConnectivityHubIamBindingConfig.property.members">members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_connectivity_hub_iam_binding#members NetworkConnectivityHubIamBinding#members}. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityHubIamBinding.NetworkConnectivityHubIamBindingConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_connectivity_hub_iam_binding#role NetworkConnectivityHubIamBinding#role}. |
 | <code><a href="#@cdktn/provider-google.networkConnectivityHubIamBinding.NetworkConnectivityHubIamBindingConfig.property.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.networkConnectivityHubIamBinding.NetworkConnectivityHubIamBindingCondition">NetworkConnectivityHubIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.networkConnectivityHubIamBinding.NetworkConnectivityHubIamBindingConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_hub_iam_binding#id NetworkConnectivityHubIamBinding#id}. |
-| <code><a href="#@cdktn/provider-google.networkConnectivityHubIamBinding.NetworkConnectivityHubIamBindingConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_hub_iam_binding#project NetworkConnectivityHubIamBinding#project}. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityHubIamBinding.NetworkConnectivityHubIamBindingConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_connectivity_hub_iam_binding#id NetworkConnectivityHubIamBinding#id}. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityHubIamBinding.NetworkConnectivityHubIamBindingConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_connectivity_hub_iam_binding#project NetworkConnectivityHubIamBinding#project}. |
 
 ---
 
@@ -1025,7 +1025,7 @@ public readonly hub: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_hub_iam_binding#hub NetworkConnectivityHubIamBinding#hub}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_connectivity_hub_iam_binding#hub NetworkConnectivityHubIamBinding#hub}.
 
 ---
 
@@ -1037,7 +1037,7 @@ public readonly members: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_hub_iam_binding#members NetworkConnectivityHubIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_connectivity_hub_iam_binding#members NetworkConnectivityHubIamBinding#members}.
 
 ---
 
@@ -1049,7 +1049,7 @@ public readonly role: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_hub_iam_binding#role NetworkConnectivityHubIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_connectivity_hub_iam_binding#role NetworkConnectivityHubIamBinding#role}.
 
 ---
 
@@ -1063,7 +1063,7 @@ public readonly condition: NetworkConnectivityHubIamBindingCondition;
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_hub_iam_binding#condition NetworkConnectivityHubIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_connectivity_hub_iam_binding#condition NetworkConnectivityHubIamBinding#condition}
 
 ---
 
@@ -1075,7 +1075,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_hub_iam_binding#id NetworkConnectivityHubIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_connectivity_hub_iam_binding#id NetworkConnectivityHubIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1090,7 +1090,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/network_connectivity_hub_iam_binding#project NetworkConnectivityHubIamBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_connectivity_hub_iam_binding#project NetworkConnectivityHubIamBinding#project}.
 
 ---
 

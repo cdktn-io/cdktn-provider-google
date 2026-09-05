@@ -4,7 +4,7 @@
 
 ### DataplexDataProductIamPolicy <a name="DataplexDataProductIamPolicy" id="@cdktn/provider-google.dataplexDataProductIamPolicy.DataplexDataProductIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dataplex_data_product_iam_policy google_dataplex_data_product_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataplex_data_product_iam_policy google_dataplex_data_product_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataplexDataProductIamPolicy.DataplexDataProductIamPolicy.Initializer"></a>
 
@@ -40,11 +40,11 @@ dataplexDataProductIamPolicy.DataplexDataProductIamPolicy(
 | <code><a href="#@cdktn/provider-google.dataplexDataProductIamPolicy.DataplexDataProductIamPolicy.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexDataProductIamPolicy.DataplexDataProductIamPolicy.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexDataProductIamPolicy.DataplexDataProductIamPolicy.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataplexDataProductIamPolicy.DataplexDataProductIamPolicy.Initializer.parameter.dataProductId">data_product_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dataplex_data_product_iam_policy#data_product_id DataplexDataProductIamPolicy#data_product_id}. |
-| <code><a href="#@cdktn/provider-google.dataplexDataProductIamPolicy.DataplexDataProductIamPolicy.Initializer.parameter.policyData">policy_data</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dataplex_data_product_iam_policy#policy_data DataplexDataProductIamPolicy#policy_data}. |
-| <code><a href="#@cdktn/provider-google.dataplexDataProductIamPolicy.DataplexDataProductIamPolicy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dataplex_data_product_iam_policy#id DataplexDataProductIamPolicy#id}. |
-| <code><a href="#@cdktn/provider-google.dataplexDataProductIamPolicy.DataplexDataProductIamPolicy.Initializer.parameter.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dataplex_data_product_iam_policy#location DataplexDataProductIamPolicy#location}. |
-| <code><a href="#@cdktn/provider-google.dataplexDataProductIamPolicy.DataplexDataProductIamPolicy.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dataplex_data_product_iam_policy#project DataplexDataProductIamPolicy#project}. |
+| <code><a href="#@cdktn/provider-google.dataplexDataProductIamPolicy.DataplexDataProductIamPolicy.Initializer.parameter.dataProductId">data_product_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataplex_data_product_iam_policy#data_product_id DataplexDataProductIamPolicy#data_product_id}. |
+| <code><a href="#@cdktn/provider-google.dataplexDataProductIamPolicy.DataplexDataProductIamPolicy.Initializer.parameter.policyData">policy_data</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataplex_data_product_iam_policy#policy_data DataplexDataProductIamPolicy#policy_data}. |
+| <code><a href="#@cdktn/provider-google.dataplexDataProductIamPolicy.DataplexDataProductIamPolicy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataplex_data_product_iam_policy#id DataplexDataProductIamPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.dataplexDataProductIamPolicy.DataplexDataProductIamPolicy.Initializer.parameter.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataplex_data_product_iam_policy#location DataplexDataProductIamPolicy#location}. |
+| <code><a href="#@cdktn/provider-google.dataplexDataProductIamPolicy.DataplexDataProductIamPolicy.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataplex_data_product_iam_policy#project DataplexDataProductIamPolicy#project}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dataplex_data_product_iam_policy#data_product_id DataplexDataProductIamPolicy#data_product_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataplex_data_product_iam_policy#data_product_id DataplexDataProductIamPolicy#data_product_id}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dataplex_data_product_iam_policy#policy_data DataplexDataProductIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataplex_data_product_iam_policy#policy_data DataplexDataProductIamPolicy#policy_data}.
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dataplex_data_product_iam_policy#id DataplexDataProductIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataplex_data_product_iam_policy#id DataplexDataProductIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -139,7 +139,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dataplex_data_product_iam_policy#location DataplexDataProductIamPolicy#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataplex_data_product_iam_policy#location DataplexDataProductIamPolicy#location}.
 
 ---
 
@@ -147,7 +147,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dataplex_data_product_iam_policy#project DataplexDataProductIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataplex_data_product_iam_policy#project DataplexDataProductIamPolicy#project}.
 
 ---
 
@@ -665,7 +665,7 @@ The construct id used in the generated config for the DataplexDataProductIamPoli
 
 The id of the existing DataplexDataProductIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dataplex_data_product_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataplex_data_product_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1015,11 +1015,11 @@ dataplexDataProductIamPolicy.DataplexDataProductIamPolicyConfig(
 | <code><a href="#@cdktn/provider-google.dataplexDataProductIamPolicy.DataplexDataProductIamPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexDataProductIamPolicy.DataplexDataProductIamPolicyConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataplexDataProductIamPolicy.DataplexDataProductIamPolicyConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataplexDataProductIamPolicy.DataplexDataProductIamPolicyConfig.property.dataProductId">data_product_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dataplex_data_product_iam_policy#data_product_id DataplexDataProductIamPolicy#data_product_id}. |
-| <code><a href="#@cdktn/provider-google.dataplexDataProductIamPolicy.DataplexDataProductIamPolicyConfig.property.policyData">policy_data</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dataplex_data_product_iam_policy#policy_data DataplexDataProductIamPolicy#policy_data}. |
-| <code><a href="#@cdktn/provider-google.dataplexDataProductIamPolicy.DataplexDataProductIamPolicyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dataplex_data_product_iam_policy#id DataplexDataProductIamPolicy#id}. |
-| <code><a href="#@cdktn/provider-google.dataplexDataProductIamPolicy.DataplexDataProductIamPolicyConfig.property.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dataplex_data_product_iam_policy#location DataplexDataProductIamPolicy#location}. |
-| <code><a href="#@cdktn/provider-google.dataplexDataProductIamPolicy.DataplexDataProductIamPolicyConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dataplex_data_product_iam_policy#project DataplexDataProductIamPolicy#project}. |
+| <code><a href="#@cdktn/provider-google.dataplexDataProductIamPolicy.DataplexDataProductIamPolicyConfig.property.dataProductId">data_product_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataplex_data_product_iam_policy#data_product_id DataplexDataProductIamPolicy#data_product_id}. |
+| <code><a href="#@cdktn/provider-google.dataplexDataProductIamPolicy.DataplexDataProductIamPolicyConfig.property.policyData">policy_data</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataplex_data_product_iam_policy#policy_data DataplexDataProductIamPolicy#policy_data}. |
+| <code><a href="#@cdktn/provider-google.dataplexDataProductIamPolicy.DataplexDataProductIamPolicyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataplex_data_product_iam_policy#id DataplexDataProductIamPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.dataplexDataProductIamPolicy.DataplexDataProductIamPolicyConfig.property.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataplex_data_product_iam_policy#location DataplexDataProductIamPolicy#location}. |
+| <code><a href="#@cdktn/provider-google.dataplexDataProductIamPolicy.DataplexDataProductIamPolicyConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataplex_data_product_iam_policy#project DataplexDataProductIamPolicy#project}. |
 
 ---
 
@@ -1101,7 +1101,7 @@ data_product_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dataplex_data_product_iam_policy#data_product_id DataplexDataProductIamPolicy#data_product_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataplex_data_product_iam_policy#data_product_id DataplexDataProductIamPolicy#data_product_id}.
 
 ---
 
@@ -1113,7 +1113,7 @@ policy_data: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dataplex_data_product_iam_policy#policy_data DataplexDataProductIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataplex_data_product_iam_policy#policy_data DataplexDataProductIamPolicy#policy_data}.
 
 ---
 
@@ -1125,7 +1125,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dataplex_data_product_iam_policy#id DataplexDataProductIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataplex_data_product_iam_policy#id DataplexDataProductIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1140,7 +1140,7 @@ location: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dataplex_data_product_iam_policy#location DataplexDataProductIamPolicy#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataplex_data_product_iam_policy#location DataplexDataProductIamPolicy#location}.
 
 ---
 
@@ -1152,7 +1152,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/dataplex_data_product_iam_policy#project DataplexDataProductIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataplex_data_product_iam_policy#project DataplexDataProductIamPolicy#project}.
 
 ---
 

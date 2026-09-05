@@ -4,7 +4,7 @@
 
 ### IamFolderAccessPolicy <a name="IamFolderAccessPolicy" id="@cdktn/provider-google.iamFolderAccessPolicy.IamFolderAccessPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/iam_folder_access_policy google_iam_folder_access_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_folder_access_policy google_iam_folder_access_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iamFolderAccessPolicy.IamFolderAccessPolicy.Initializer"></a>
 
@@ -51,7 +51,7 @@ iamFolderAccessPolicy.IamFolderAccessPolicy(
 | <code><a href="#@cdktn/provider-google.iamFolderAccessPolicy.IamFolderAccessPolicy.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.iamFolderAccessPolicy.IamFolderAccessPolicy.Initializer.parameter.details">details</a></code> | <code><a href="#@cdktn/provider-google.iamFolderAccessPolicy.IamFolderAccessPolicyDetails">IamFolderAccessPolicyDetails</a></code> | details block. |
 | <code><a href="#@cdktn/provider-google.iamFolderAccessPolicy.IamFolderAccessPolicy.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | The description of the access policy. Must be less than or equal to 63 characters. |
-| <code><a href="#@cdktn/provider-google.iamFolderAccessPolicy.IamFolderAccessPolicy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/iam_folder_access_policy#id IamFolderAccessPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.iamFolderAccessPolicy.IamFolderAccessPolicy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_folder_access_policy#id IamFolderAccessPolicy#id}. |
 | <code><a href="#@cdktn/provider-google.iamFolderAccessPolicy.IamFolderAccessPolicy.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.iamFolderAccessPolicy.IamFolderAccessPolicyTimeouts">IamFolderAccessPolicyTimeouts</a></code> | timeouts block. |
 
 ---
@@ -127,7 +127,7 @@ lowercase letters, numbers, hyphens, or dots. Pattern,
 /a-z{2,62}/.
 This value must be unique among all access policies with the same parent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/iam_folder_access_policy#access_policy_id IamFolderAccessPolicy#access_policy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_folder_access_policy#access_policy_id IamFolderAccessPolicy#access_policy_id}
 
 ---
 
@@ -137,7 +137,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/iam_folder_access_policy#folder IamFolderAccessPolicy#folder}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_folder_access_policy#folder IamFolderAccessPolicy#folder}
 
 ---
 
@@ -147,7 +147,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/iam_folder_access_policy#location IamFolderAccessPolicy#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_folder_access_policy#location IamFolderAccessPolicy#location}
 
 ---
 
@@ -160,7 +160,7 @@ User defined annotations. See https://google.aip.dev/148#annotations for more de
 **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
 Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/iam_folder_access_policy#annotations IamFolderAccessPolicy#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_folder_access_policy#annotations IamFolderAccessPolicy#annotations}
 
 ---
 
@@ -177,7 +177,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/iam_folder_access_policy#deletion_policy IamFolderAccessPolicy#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_folder_access_policy#deletion_policy IamFolderAccessPolicy#deletion_policy}
 
 ---
 
@@ -187,7 +187,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 details block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/iam_folder_access_policy#details IamFolderAccessPolicy#details}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_folder_access_policy#details IamFolderAccessPolicy#details}
 
 ---
 
@@ -197,7 +197,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The description of the access policy. Must be less than or equal to 63 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/iam_folder_access_policy#display_name IamFolderAccessPolicy#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_folder_access_policy#display_name IamFolderAccessPolicy#display_name}
 
 ---
 
@@ -205,7 +205,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/iam_folder_access_policy#id IamFolderAccessPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_folder_access_policy#id IamFolderAccessPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -218,7 +218,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/iam_folder_access_policy#timeouts IamFolderAccessPolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_folder_access_policy#timeouts IamFolderAccessPolicy#timeouts}
 
 ---
 
@@ -623,7 +623,7 @@ def put_details(
 
 rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/iam_folder_access_policy#rules IamFolderAccessPolicy#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_folder_access_policy#rules IamFolderAccessPolicy#rules}
 
 ---
 
@@ -641,7 +641,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/iam_folder_access_policy#create IamFolderAccessPolicy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_folder_access_policy#create IamFolderAccessPolicy#create}.
 
 ---
 
@@ -649,7 +649,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/iam_folder_access_policy#delete IamFolderAccessPolicy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_folder_access_policy#delete IamFolderAccessPolicy#delete}.
 
 ---
 
@@ -657,7 +657,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/iam_folder_access_policy#update IamFolderAccessPolicy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_folder_access_policy#update IamFolderAccessPolicy#update}.
 
 ---
 
@@ -811,7 +811,7 @@ The construct id used in the generated config for the IamFolderAccessPolicy to i
 
 The id of the existing IamFolderAccessPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/iam_folder_access_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_folder_access_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1315,7 +1315,7 @@ iamFolderAccessPolicy.IamFolderAccessPolicyConfig(
 | <code><a href="#@cdktn/provider-google.iamFolderAccessPolicy.IamFolderAccessPolicyConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.iamFolderAccessPolicy.IamFolderAccessPolicyConfig.property.details">details</a></code> | <code><a href="#@cdktn/provider-google.iamFolderAccessPolicy.IamFolderAccessPolicyDetails">IamFolderAccessPolicyDetails</a></code> | details block. |
 | <code><a href="#@cdktn/provider-google.iamFolderAccessPolicy.IamFolderAccessPolicyConfig.property.displayName">display_name</a></code> | <code>str</code> | The description of the access policy. Must be less than or equal to 63 characters. |
-| <code><a href="#@cdktn/provider-google.iamFolderAccessPolicy.IamFolderAccessPolicyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/iam_folder_access_policy#id IamFolderAccessPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.iamFolderAccessPolicy.IamFolderAccessPolicyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_folder_access_policy#id IamFolderAccessPolicy#id}. |
 | <code><a href="#@cdktn/provider-google.iamFolderAccessPolicy.IamFolderAccessPolicyConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.iamFolderAccessPolicy.IamFolderAccessPolicyTimeouts">IamFolderAccessPolicyTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1405,7 +1405,7 @@ lowercase letters, numbers, hyphens, or dots. Pattern,
 /a-z{2,62}/.
 This value must be unique among all access policies with the same parent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/iam_folder_access_policy#access_policy_id IamFolderAccessPolicy#access_policy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_folder_access_policy#access_policy_id IamFolderAccessPolicy#access_policy_id}
 
 ---
 
@@ -1419,7 +1419,7 @@ folder: str
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/iam_folder_access_policy#folder IamFolderAccessPolicy#folder}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_folder_access_policy#folder IamFolderAccessPolicy#folder}
 
 ---
 
@@ -1433,7 +1433,7 @@ location: str
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/iam_folder_access_policy#location IamFolderAccessPolicy#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_folder_access_policy#location IamFolderAccessPolicy#location}
 
 ---
 
@@ -1450,7 +1450,7 @@ User defined annotations. See https://google.aip.dev/148#annotations for more de
 **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
 Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/iam_folder_access_policy#annotations IamFolderAccessPolicy#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_folder_access_policy#annotations IamFolderAccessPolicy#annotations}
 
 ---
 
@@ -1471,7 +1471,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/iam_folder_access_policy#deletion_policy IamFolderAccessPolicy#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_folder_access_policy#deletion_policy IamFolderAccessPolicy#deletion_policy}
 
 ---
 
@@ -1485,7 +1485,7 @@ details: IamFolderAccessPolicyDetails
 
 details block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/iam_folder_access_policy#details IamFolderAccessPolicy#details}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_folder_access_policy#details IamFolderAccessPolicy#details}
 
 ---
 
@@ -1499,7 +1499,7 @@ display_name: str
 
 The description of the access policy. Must be less than or equal to 63 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/iam_folder_access_policy#display_name IamFolderAccessPolicy#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_folder_access_policy#display_name IamFolderAccessPolicy#display_name}
 
 ---
 
@@ -1511,7 +1511,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/iam_folder_access_policy#id IamFolderAccessPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_folder_access_policy#id IamFolderAccessPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1528,7 +1528,7 @@ timeouts: IamFolderAccessPolicyTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/iam_folder_access_policy#timeouts IamFolderAccessPolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_folder_access_policy#timeouts IamFolderAccessPolicy#timeouts}
 
 ---
 
@@ -1562,7 +1562,7 @@ rules: IResolvable | typing.List[IamFolderAccessPolicyDetailsRules]
 
 rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/iam_folder_access_policy#rules IamFolderAccessPolicy#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_folder_access_policy#rules IamFolderAccessPolicy#rules}
 
 ---
 
@@ -1606,7 +1606,7 @@ effect: str
 
 The effect of the rule. Possible values: DENY ALLOW Possible values: ["DENY", "ALLOW"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/iam_folder_access_policy#effect IamFolderAccessPolicy#effect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_folder_access_policy#effect IamFolderAccessPolicy#effect}
 
 ---
 
@@ -1620,7 +1620,7 @@ operation: IamFolderAccessPolicyDetailsRulesOperation
 
 operation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/iam_folder_access_policy#operation IamFolderAccessPolicy#operation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_folder_access_policy#operation IamFolderAccessPolicy#operation}
 
 ---
 
@@ -1668,7 +1668,7 @@ following values:
   If the service account is undeleted, this identifier reverts to the
   standard identifier for a service account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/iam_folder_access_policy#principals IamFolderAccessPolicy#principals}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_folder_access_policy#principals IamFolderAccessPolicy#principals}
 
 ---
 
@@ -1682,7 +1682,7 @@ conditions: IResolvable | typing.List[IamFolderAccessPolicyDetailsRulesCondition
 
 conditions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/iam_folder_access_policy#conditions IamFolderAccessPolicy#conditions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_folder_access_policy#conditions IamFolderAccessPolicy#conditions}
 
 ---
 
@@ -1696,7 +1696,7 @@ description: str
 
 Customer specified description of the rule. Must be less than or equal to 256 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/iam_folder_access_policy#description IamFolderAccessPolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_folder_access_policy#description IamFolderAccessPolicy#description}
 
 ---
 
@@ -1714,7 +1714,7 @@ For example, you could add a Google
 group to the 'principals', then exclude specific users who belong to
 that group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/iam_folder_access_policy#excluded_principals IamFolderAccessPolicy#excluded_principals}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_folder_access_policy#excluded_principals IamFolderAccessPolicy#excluded_principals}
 
 ---
 
@@ -1735,7 +1735,7 @@ iamFolderAccessPolicy.IamFolderAccessPolicyDetailsRulesConditions(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.iamFolderAccessPolicy.IamFolderAccessPolicyDetailsRulesConditions.property.service">service</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/iam_folder_access_policy#service IamFolderAccessPolicy#service}. |
+| <code><a href="#@cdktn/provider-google.iamFolderAccessPolicy.IamFolderAccessPolicyDetailsRulesConditions.property.service">service</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_folder_access_policy#service IamFolderAccessPolicy#service}. |
 | <code><a href="#@cdktn/provider-google.iamFolderAccessPolicy.IamFolderAccessPolicyDetailsRulesConditions.property.expression">expression</a></code> | <code>str</code> | Textual representation of an expression in Common Expression Language syntax. |
 
 ---
@@ -1748,7 +1748,7 @@ service: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/iam_folder_access_policy#service IamFolderAccessPolicy#service}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_folder_access_policy#service IamFolderAccessPolicy#service}.
 
 ---
 
@@ -1762,7 +1762,7 @@ expression: str
 
 Textual representation of an expression in Common Expression Language syntax.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/iam_folder_access_policy#expression IamFolderAccessPolicy#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_folder_access_policy#expression IamFolderAccessPolicy#expression}
 
 ---
 
@@ -1805,7 +1805,7 @@ Currently supported permissions are as follows:
 
 * 'eventarc.googleapis.com/messageBuses.publish'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/iam_folder_access_policy#permissions IamFolderAccessPolicy#permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_folder_access_policy#permissions IamFolderAccessPolicy#permissions}
 
 ---
 
@@ -1825,7 +1825,7 @@ subject to the policy effect.
 The excluded permissions can be specified using the same syntax as
 'permissions'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/iam_folder_access_policy#excluded_permissions IamFolderAccessPolicy#excluded_permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_folder_access_policy#excluded_permissions IamFolderAccessPolicy#excluded_permissions}
 
 ---
 
@@ -1847,9 +1847,9 @@ iamFolderAccessPolicy.IamFolderAccessPolicyTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.iamFolderAccessPolicy.IamFolderAccessPolicyTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/iam_folder_access_policy#create IamFolderAccessPolicy#create}. |
-| <code><a href="#@cdktn/provider-google.iamFolderAccessPolicy.IamFolderAccessPolicyTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/iam_folder_access_policy#delete IamFolderAccessPolicy#delete}. |
-| <code><a href="#@cdktn/provider-google.iamFolderAccessPolicy.IamFolderAccessPolicyTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/iam_folder_access_policy#update IamFolderAccessPolicy#update}. |
+| <code><a href="#@cdktn/provider-google.iamFolderAccessPolicy.IamFolderAccessPolicyTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_folder_access_policy#create IamFolderAccessPolicy#create}. |
+| <code><a href="#@cdktn/provider-google.iamFolderAccessPolicy.IamFolderAccessPolicyTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_folder_access_policy#delete IamFolderAccessPolicy#delete}. |
+| <code><a href="#@cdktn/provider-google.iamFolderAccessPolicy.IamFolderAccessPolicyTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_folder_access_policy#update IamFolderAccessPolicy#update}. |
 
 ---
 
@@ -1861,7 +1861,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/iam_folder_access_policy#create IamFolderAccessPolicy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_folder_access_policy#create IamFolderAccessPolicy#create}.
 
 ---
 
@@ -1873,7 +1873,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/iam_folder_access_policy#delete IamFolderAccessPolicy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_folder_access_policy#delete IamFolderAccessPolicy#delete}.
 
 ---
 
@@ -1885,7 +1885,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/iam_folder_access_policy#update IamFolderAccessPolicy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_folder_access_policy#update IamFolderAccessPolicy#update}.
 
 ---
 
@@ -3501,7 +3501,7 @@ Currently supported permissions are as follows:
 
 * 'eventarc.googleapis.com/messageBuses.publish'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/iam_folder_access_policy#permissions IamFolderAccessPolicy#permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_folder_access_policy#permissions IamFolderAccessPolicy#permissions}
 
 ---
 
@@ -3517,7 +3517,7 @@ subject to the policy effect.
 The excluded permissions can be specified using the same syntax as
 'permissions'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/iam_folder_access_policy#excluded_permissions IamFolderAccessPolicy#excluded_permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_folder_access_policy#excluded_permissions IamFolderAccessPolicy#excluded_permissions}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### ComputeZoneVmExtensionPolicy <a name="ComputeZoneVmExtensionPolicy" id="@cdktn/provider-google.computeZoneVmExtensionPolicy.ComputeZoneVmExtensionPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_zone_vm_extension_policy google_compute_zone_vm_extension_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_zone_vm_extension_policy google_compute_zone_vm_extension_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeZoneVmExtensionPolicy.ComputeZoneVmExtensionPolicy.Initializer"></a>
 
@@ -570,7 +570,7 @@ The construct id used in the generated config for the ComputeZoneVmExtensionPoli
 
 The id of the existing ComputeZoneVmExtensionPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_zone_vm_extension_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_zone_vm_extension_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1046,7 +1046,7 @@ const computeZoneVmExtensionPolicyConfig: computeZoneVmExtensionPolicy.ComputeZo
 | <code><a href="#@cdktn/provider-google.computeZoneVmExtensionPolicy.ComputeZoneVmExtensionPolicyConfig.property.description">description</a></code> | <code>string</code> | An optional description of this resource. |
 | <code><a href="#@cdktn/provider-google.computeZoneVmExtensionPolicy.ComputeZoneVmExtensionPolicyConfig.property.instanceSelectors">instanceSelectors</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeZoneVmExtensionPolicy.ComputeZoneVmExtensionPolicyInstanceSelectors">ComputeZoneVmExtensionPolicyInstanceSelectors</a>[]</code> | instance_selectors block. |
 | <code><a href="#@cdktn/provider-google.computeZoneVmExtensionPolicy.ComputeZoneVmExtensionPolicyConfig.property.priority">priority</a></code> | <code>number</code> | Priority of this policy. |
-| <code><a href="#@cdktn/provider-google.computeZoneVmExtensionPolicy.ComputeZoneVmExtensionPolicyConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_zone_vm_extension_policy#project ComputeZoneVmExtensionPolicy#project}. |
+| <code><a href="#@cdktn/provider-google.computeZoneVmExtensionPolicy.ComputeZoneVmExtensionPolicyConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_zone_vm_extension_policy#project ComputeZoneVmExtensionPolicy#project}. |
 | <code><a href="#@cdktn/provider-google.computeZoneVmExtensionPolicy.ComputeZoneVmExtensionPolicyConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeZoneVmExtensionPolicy.ComputeZoneVmExtensionPolicyTimeouts">ComputeZoneVmExtensionPolicyTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1131,7 +1131,7 @@ public readonly extensionPolicies: IResolvable | ComputeZoneVmExtensionPolicyExt
 
 extension_policies block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_zone_vm_extension_policy#extension_policies ComputeZoneVmExtensionPolicy#extension_policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_zone_vm_extension_policy#extension_policies ComputeZoneVmExtensionPolicy#extension_policies}
 
 ---
 
@@ -1145,7 +1145,7 @@ public readonly name: string;
 
 Name of the resource. Provided by the client when the resource is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_zone_vm_extension_policy#name ComputeZoneVmExtensionPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_zone_vm_extension_policy#name ComputeZoneVmExtensionPolicy#name}
 
 ---
 
@@ -1159,7 +1159,7 @@ public readonly zone: string;
 
 Name of the zone for this request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_zone_vm_extension_policy#zone ComputeZoneVmExtensionPolicy#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_zone_vm_extension_policy#zone ComputeZoneVmExtensionPolicy#zone}
 
 ---
 
@@ -1181,7 +1181,7 @@ management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_zone_vm_extension_policy#deletion_policy ComputeZoneVmExtensionPolicy#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_zone_vm_extension_policy#deletion_policy ComputeZoneVmExtensionPolicy#deletion_policy}
 
 ---
 
@@ -1195,7 +1195,7 @@ public readonly description: string;
 
 An optional description of this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_zone_vm_extension_policy#description ComputeZoneVmExtensionPolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_zone_vm_extension_policy#description ComputeZoneVmExtensionPolicy#description}
 
 ---
 
@@ -1209,7 +1209,7 @@ public readonly instanceSelectors: IResolvable | ComputeZoneVmExtensionPolicyIns
 
 instance_selectors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_zone_vm_extension_policy#instance_selectors ComputeZoneVmExtensionPolicy#instance_selectors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_zone_vm_extension_policy#instance_selectors ComputeZoneVmExtensionPolicy#instance_selectors}
 
 ---
 
@@ -1223,7 +1223,7 @@ public readonly priority: number;
 
 Priority of this policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_zone_vm_extension_policy#priority ComputeZoneVmExtensionPolicy#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_zone_vm_extension_policy#priority ComputeZoneVmExtensionPolicy#priority}
 
 ---
 
@@ -1235,7 +1235,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_zone_vm_extension_policy#project ComputeZoneVmExtensionPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_zone_vm_extension_policy#project ComputeZoneVmExtensionPolicy#project}.
 
 ---
 
@@ -1249,7 +1249,7 @@ public readonly timeouts: ComputeZoneVmExtensionPolicyTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_zone_vm_extension_policy#timeouts ComputeZoneVmExtensionPolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_zone_vm_extension_policy#timeouts ComputeZoneVmExtensionPolicy#timeouts}
 
 ---
 
@@ -1267,7 +1267,7 @@ const computeZoneVmExtensionPolicyExtensionPolicies: computeZoneVmExtensionPolic
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeZoneVmExtensionPolicy.ComputeZoneVmExtensionPolicyExtensionPolicies.property.extensionName">extensionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_zone_vm_extension_policy#extension_name ComputeZoneVmExtensionPolicy#extension_name}. |
+| <code><a href="#@cdktn/provider-google.computeZoneVmExtensionPolicy.ComputeZoneVmExtensionPolicyExtensionPolicies.property.extensionName">extensionName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_zone_vm_extension_policy#extension_name ComputeZoneVmExtensionPolicy#extension_name}. |
 | <code><a href="#@cdktn/provider-google.computeZoneVmExtensionPolicy.ComputeZoneVmExtensionPolicyExtensionPolicies.property.pinnedVersion">pinnedVersion</a></code> | <code>string</code> | The specific version of the extension to install. |
 | <code><a href="#@cdktn/provider-google.computeZoneVmExtensionPolicy.ComputeZoneVmExtensionPolicyExtensionPolicies.property.stringConfig">stringConfig</a></code> | <code>string</code> | String-based configuration data for the extension. |
 
@@ -1281,7 +1281,7 @@ public readonly extensionName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_zone_vm_extension_policy#extension_name ComputeZoneVmExtensionPolicy#extension_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_zone_vm_extension_policy#extension_name ComputeZoneVmExtensionPolicy#extension_name}.
 
 ---
 
@@ -1295,7 +1295,7 @@ public readonly pinnedVersion: string;
 
 The specific version of the extension to install.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_zone_vm_extension_policy#pinned_version ComputeZoneVmExtensionPolicy#pinned_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_zone_vm_extension_policy#pinned_version ComputeZoneVmExtensionPolicy#pinned_version}
 
 ---
 
@@ -1309,7 +1309,7 @@ public readonly stringConfig: string;
 
 String-based configuration data for the extension.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_zone_vm_extension_policy#string_config ComputeZoneVmExtensionPolicy#string_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_zone_vm_extension_policy#string_config ComputeZoneVmExtensionPolicy#string_config}
 
 ---
 
@@ -1341,7 +1341,7 @@ public readonly labelSelector: ComputeZoneVmExtensionPolicyInstanceSelectorsLabe
 
 label_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_zone_vm_extension_policy#label_selector ComputeZoneVmExtensionPolicy#label_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_zone_vm_extension_policy#label_selector ComputeZoneVmExtensionPolicy#label_selector}
 
 ---
 
@@ -1373,7 +1373,7 @@ public readonly inclusionLabels: {[ key: string ]: string};
 
 A map of key-value pairs representing VM labels.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_zone_vm_extension_policy#inclusion_labels ComputeZoneVmExtensionPolicy#inclusion_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_zone_vm_extension_policy#inclusion_labels ComputeZoneVmExtensionPolicy#inclusion_labels}
 
 ---
 
@@ -1391,9 +1391,9 @@ const computeZoneVmExtensionPolicyTimeouts: computeZoneVmExtensionPolicy.Compute
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeZoneVmExtensionPolicy.ComputeZoneVmExtensionPolicyTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_zone_vm_extension_policy#create ComputeZoneVmExtensionPolicy#create}. |
-| <code><a href="#@cdktn/provider-google.computeZoneVmExtensionPolicy.ComputeZoneVmExtensionPolicyTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_zone_vm_extension_policy#delete ComputeZoneVmExtensionPolicy#delete}. |
-| <code><a href="#@cdktn/provider-google.computeZoneVmExtensionPolicy.ComputeZoneVmExtensionPolicyTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_zone_vm_extension_policy#update ComputeZoneVmExtensionPolicy#update}. |
+| <code><a href="#@cdktn/provider-google.computeZoneVmExtensionPolicy.ComputeZoneVmExtensionPolicyTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_zone_vm_extension_policy#create ComputeZoneVmExtensionPolicy#create}. |
+| <code><a href="#@cdktn/provider-google.computeZoneVmExtensionPolicy.ComputeZoneVmExtensionPolicyTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_zone_vm_extension_policy#delete ComputeZoneVmExtensionPolicy#delete}. |
+| <code><a href="#@cdktn/provider-google.computeZoneVmExtensionPolicy.ComputeZoneVmExtensionPolicyTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_zone_vm_extension_policy#update ComputeZoneVmExtensionPolicy#update}. |
 
 ---
 
@@ -1405,7 +1405,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_zone_vm_extension_policy#create ComputeZoneVmExtensionPolicy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_zone_vm_extension_policy#create ComputeZoneVmExtensionPolicy#create}.
 
 ---
 
@@ -1417,7 +1417,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_zone_vm_extension_policy#delete ComputeZoneVmExtensionPolicy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_zone_vm_extension_policy#delete ComputeZoneVmExtensionPolicy#delete}.
 
 ---
 
@@ -1429,7 +1429,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_zone_vm_extension_policy#update ComputeZoneVmExtensionPolicy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_zone_vm_extension_policy#update ComputeZoneVmExtensionPolicy#update}.
 
 ---
 

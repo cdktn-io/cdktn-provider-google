@@ -4,7 +4,7 @@
 
 ### IapAgentRegistryIamBinding <a name="IapAgentRegistryIamBinding" id="@cdktn/provider-google.iapAgentRegistryIamBinding.IapAgentRegistryIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/iap_agent_registry_iam_binding google_iap_agent_registry_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iap_agent_registry_iam_binding google_iap_agent_registry_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iapAgentRegistryIamBinding.IapAgentRegistryIamBinding.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the IapAgentRegistryIamBinding
 
 The id of the existing IapAgentRegistryIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/iap_agent_registry_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iap_agent_registry_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -875,9 +875,9 @@ const iapAgentRegistryIamBindingCondition: iapAgentRegistryIamBinding.IapAgentRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.iapAgentRegistryIamBinding.IapAgentRegistryIamBindingCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/iap_agent_registry_iam_binding#expression IapAgentRegistryIamBinding#expression}. |
-| <code><a href="#@cdktn/provider-google.iapAgentRegistryIamBinding.IapAgentRegistryIamBindingCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/iap_agent_registry_iam_binding#title IapAgentRegistryIamBinding#title}. |
-| <code><a href="#@cdktn/provider-google.iapAgentRegistryIamBinding.IapAgentRegistryIamBindingCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/iap_agent_registry_iam_binding#description IapAgentRegistryIamBinding#description}. |
+| <code><a href="#@cdktn/provider-google.iapAgentRegistryIamBinding.IapAgentRegistryIamBindingCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iap_agent_registry_iam_binding#expression IapAgentRegistryIamBinding#expression}. |
+| <code><a href="#@cdktn/provider-google.iapAgentRegistryIamBinding.IapAgentRegistryIamBindingCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iap_agent_registry_iam_binding#title IapAgentRegistryIamBinding#title}. |
+| <code><a href="#@cdktn/provider-google.iapAgentRegistryIamBinding.IapAgentRegistryIamBindingCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iap_agent_registry_iam_binding#description IapAgentRegistryIamBinding#description}. |
 
 ---
 
@@ -889,7 +889,7 @@ public readonly expression: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/iap_agent_registry_iam_binding#expression IapAgentRegistryIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iap_agent_registry_iam_binding#expression IapAgentRegistryIamBinding#expression}.
 
 ---
 
@@ -901,7 +901,7 @@ public readonly title: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/iap_agent_registry_iam_binding#title IapAgentRegistryIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iap_agent_registry_iam_binding#title IapAgentRegistryIamBinding#title}.
 
 ---
 
@@ -913,7 +913,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/iap_agent_registry_iam_binding#description IapAgentRegistryIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iap_agent_registry_iam_binding#description IapAgentRegistryIamBinding#description}.
 
 ---
 
@@ -938,12 +938,12 @@ const iapAgentRegistryIamBindingConfig: iapAgentRegistryIamBinding.IapAgentRegis
 | <code><a href="#@cdktn/provider-google.iapAgentRegistryIamBinding.IapAgentRegistryIamBindingConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iapAgentRegistryIamBinding.IapAgentRegistryIamBindingConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iapAgentRegistryIamBinding.IapAgentRegistryIamBindingConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.iapAgentRegistryIamBinding.IapAgentRegistryIamBindingConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/iap_agent_registry_iam_binding#location IapAgentRegistryIamBinding#location}. |
-| <code><a href="#@cdktn/provider-google.iapAgentRegistryIamBinding.IapAgentRegistryIamBindingConfig.property.members">members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/iap_agent_registry_iam_binding#members IapAgentRegistryIamBinding#members}. |
-| <code><a href="#@cdktn/provider-google.iapAgentRegistryIamBinding.IapAgentRegistryIamBindingConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/iap_agent_registry_iam_binding#role IapAgentRegistryIamBinding#role}. |
+| <code><a href="#@cdktn/provider-google.iapAgentRegistryIamBinding.IapAgentRegistryIamBindingConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iap_agent_registry_iam_binding#location IapAgentRegistryIamBinding#location}. |
+| <code><a href="#@cdktn/provider-google.iapAgentRegistryIamBinding.IapAgentRegistryIamBindingConfig.property.members">members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iap_agent_registry_iam_binding#members IapAgentRegistryIamBinding#members}. |
+| <code><a href="#@cdktn/provider-google.iapAgentRegistryIamBinding.IapAgentRegistryIamBindingConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iap_agent_registry_iam_binding#role IapAgentRegistryIamBinding#role}. |
 | <code><a href="#@cdktn/provider-google.iapAgentRegistryIamBinding.IapAgentRegistryIamBindingConfig.property.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.iapAgentRegistryIamBinding.IapAgentRegistryIamBindingCondition">IapAgentRegistryIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.iapAgentRegistryIamBinding.IapAgentRegistryIamBindingConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/iap_agent_registry_iam_binding#id IapAgentRegistryIamBinding#id}. |
-| <code><a href="#@cdktn/provider-google.iapAgentRegistryIamBinding.IapAgentRegistryIamBindingConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/iap_agent_registry_iam_binding#project IapAgentRegistryIamBinding#project}. |
+| <code><a href="#@cdktn/provider-google.iapAgentRegistryIamBinding.IapAgentRegistryIamBindingConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iap_agent_registry_iam_binding#id IapAgentRegistryIamBinding#id}. |
+| <code><a href="#@cdktn/provider-google.iapAgentRegistryIamBinding.IapAgentRegistryIamBindingConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iap_agent_registry_iam_binding#project IapAgentRegistryIamBinding#project}. |
 
 ---
 
@@ -1025,7 +1025,7 @@ public readonly location: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/iap_agent_registry_iam_binding#location IapAgentRegistryIamBinding#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iap_agent_registry_iam_binding#location IapAgentRegistryIamBinding#location}.
 
 ---
 
@@ -1037,7 +1037,7 @@ public readonly members: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/iap_agent_registry_iam_binding#members IapAgentRegistryIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iap_agent_registry_iam_binding#members IapAgentRegistryIamBinding#members}.
 
 ---
 
@@ -1049,7 +1049,7 @@ public readonly role: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/iap_agent_registry_iam_binding#role IapAgentRegistryIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iap_agent_registry_iam_binding#role IapAgentRegistryIamBinding#role}.
 
 ---
 
@@ -1063,7 +1063,7 @@ public readonly condition: IapAgentRegistryIamBindingCondition;
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/iap_agent_registry_iam_binding#condition IapAgentRegistryIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iap_agent_registry_iam_binding#condition IapAgentRegistryIamBinding#condition}
 
 ---
 
@@ -1075,7 +1075,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/iap_agent_registry_iam_binding#id IapAgentRegistryIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iap_agent_registry_iam_binding#id IapAgentRegistryIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1090,7 +1090,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/iap_agent_registry_iam_binding#project IapAgentRegistryIamBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iap_agent_registry_iam_binding#project IapAgentRegistryIamBinding#project}.
 
 ---
 

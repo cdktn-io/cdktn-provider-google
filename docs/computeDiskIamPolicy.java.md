@@ -4,7 +4,7 @@
 
 ### ComputeDiskIamPolicy <a name="ComputeDiskIamPolicy" id="@cdktn/provider-google.computeDiskIamPolicy.ComputeDiskIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_disk_iam_policy google_compute_disk_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk_iam_policy google_compute_disk_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeDiskIamPolicy.ComputeDiskIamPolicy.Initializer"></a>
 
@@ -38,11 +38,11 @@ ComputeDiskIamPolicy.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.computeDiskIamPolicy.ComputeDiskIamPolicy.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeDiskIamPolicy.ComputeDiskIamPolicy.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeDiskIamPolicy.ComputeDiskIamPolicy.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeDiskIamPolicy.ComputeDiskIamPolicy.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_disk_iam_policy#name ComputeDiskIamPolicy#name}. |
-| <code><a href="#@cdktn/provider-google.computeDiskIamPolicy.ComputeDiskIamPolicy.Initializer.parameter.policyData">policyData</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_disk_iam_policy#policy_data ComputeDiskIamPolicy#policy_data}. |
-| <code><a href="#@cdktn/provider-google.computeDiskIamPolicy.ComputeDiskIamPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_disk_iam_policy#id ComputeDiskIamPolicy#id}. |
-| <code><a href="#@cdktn/provider-google.computeDiskIamPolicy.ComputeDiskIamPolicy.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_disk_iam_policy#project ComputeDiskIamPolicy#project}. |
-| <code><a href="#@cdktn/provider-google.computeDiskIamPolicy.ComputeDiskIamPolicy.Initializer.parameter.zone">zone</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_disk_iam_policy#zone ComputeDiskIamPolicy#zone}. |
+| <code><a href="#@cdktn/provider-google.computeDiskIamPolicy.ComputeDiskIamPolicy.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk_iam_policy#name ComputeDiskIamPolicy#name}. |
+| <code><a href="#@cdktn/provider-google.computeDiskIamPolicy.ComputeDiskIamPolicy.Initializer.parameter.policyData">policyData</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk_iam_policy#policy_data ComputeDiskIamPolicy#policy_data}. |
+| <code><a href="#@cdktn/provider-google.computeDiskIamPolicy.ComputeDiskIamPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk_iam_policy#id ComputeDiskIamPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.computeDiskIamPolicy.ComputeDiskIamPolicy.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk_iam_policy#project ComputeDiskIamPolicy#project}. |
+| <code><a href="#@cdktn/provider-google.computeDiskIamPolicy.ComputeDiskIamPolicy.Initializer.parameter.zone">zone</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk_iam_policy#zone ComputeDiskIamPolicy#zone}. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_disk_iam_policy#name ComputeDiskIamPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk_iam_policy#name ComputeDiskIamPolicy#name}.
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_disk_iam_policy#policy_data ComputeDiskIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk_iam_policy#policy_data ComputeDiskIamPolicy#policy_data}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_disk_iam_policy#id ComputeDiskIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk_iam_policy#id ComputeDiskIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -137,7 +137,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_disk_iam_policy#project ComputeDiskIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk_iam_policy#project ComputeDiskIamPolicy#project}.
 
 ---
 
@@ -145,7 +145,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_disk_iam_policy#zone ComputeDiskIamPolicy#zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk_iam_policy#zone ComputeDiskIamPolicy#zone}.
 
 ---
 
@@ -615,7 +615,7 @@ The construct id used in the generated config for the ComputeDiskIamPolicy to im
 
 The id of the existing ComputeDiskIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_disk_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -965,11 +965,11 @@ ComputeDiskIamPolicyConfig.builder()
 | <code><a href="#@cdktn/provider-google.computeDiskIamPolicy.ComputeDiskIamPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeDiskIamPolicy.ComputeDiskIamPolicyConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeDiskIamPolicy.ComputeDiskIamPolicyConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeDiskIamPolicy.ComputeDiskIamPolicyConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_disk_iam_policy#name ComputeDiskIamPolicy#name}. |
-| <code><a href="#@cdktn/provider-google.computeDiskIamPolicy.ComputeDiskIamPolicyConfig.property.policyData">policyData</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_disk_iam_policy#policy_data ComputeDiskIamPolicy#policy_data}. |
-| <code><a href="#@cdktn/provider-google.computeDiskIamPolicy.ComputeDiskIamPolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_disk_iam_policy#id ComputeDiskIamPolicy#id}. |
-| <code><a href="#@cdktn/provider-google.computeDiskIamPolicy.ComputeDiskIamPolicyConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_disk_iam_policy#project ComputeDiskIamPolicy#project}. |
-| <code><a href="#@cdktn/provider-google.computeDiskIamPolicy.ComputeDiskIamPolicyConfig.property.zone">zone</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_disk_iam_policy#zone ComputeDiskIamPolicy#zone}. |
+| <code><a href="#@cdktn/provider-google.computeDiskIamPolicy.ComputeDiskIamPolicyConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk_iam_policy#name ComputeDiskIamPolicy#name}. |
+| <code><a href="#@cdktn/provider-google.computeDiskIamPolicy.ComputeDiskIamPolicyConfig.property.policyData">policyData</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk_iam_policy#policy_data ComputeDiskIamPolicy#policy_data}. |
+| <code><a href="#@cdktn/provider-google.computeDiskIamPolicy.ComputeDiskIamPolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk_iam_policy#id ComputeDiskIamPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.computeDiskIamPolicy.ComputeDiskIamPolicyConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk_iam_policy#project ComputeDiskIamPolicy#project}. |
+| <code><a href="#@cdktn/provider-google.computeDiskIamPolicy.ComputeDiskIamPolicyConfig.property.zone">zone</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk_iam_policy#zone ComputeDiskIamPolicy#zone}. |
 
 ---
 
@@ -1051,7 +1051,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_disk_iam_policy#name ComputeDiskIamPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk_iam_policy#name ComputeDiskIamPolicy#name}.
 
 ---
 
@@ -1063,7 +1063,7 @@ public java.lang.String getPolicyData();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_disk_iam_policy#policy_data ComputeDiskIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk_iam_policy#policy_data ComputeDiskIamPolicy#policy_data}.
 
 ---
 
@@ -1075,7 +1075,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_disk_iam_policy#id ComputeDiskIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk_iam_policy#id ComputeDiskIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1090,7 +1090,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_disk_iam_policy#project ComputeDiskIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk_iam_policy#project ComputeDiskIamPolicy#project}.
 
 ---
 
@@ -1102,7 +1102,7 @@ public java.lang.String getZone();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_disk_iam_policy#zone ComputeDiskIamPolicy#zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk_iam_policy#zone ComputeDiskIamPolicy#zone}.
 
 ---
 

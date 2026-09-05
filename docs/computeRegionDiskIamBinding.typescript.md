@@ -4,7 +4,7 @@
 
 ### ComputeRegionDiskIamBinding <a name="ComputeRegionDiskIamBinding" id="@cdktn/provider-google.computeRegionDiskIamBinding.ComputeRegionDiskIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_region_disk_iam_binding google_compute_region_disk_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_disk_iam_binding google_compute_region_disk_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionDiskIamBinding.ComputeRegionDiskIamBinding.Initializer"></a>
 
@@ -530,7 +530,7 @@ The construct id used in the generated config for the ComputeRegionDiskIamBindin
 
 The id of the existing ComputeRegionDiskIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_region_disk_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_disk_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -904,9 +904,9 @@ const computeRegionDiskIamBindingCondition: computeRegionDiskIamBinding.ComputeR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionDiskIamBinding.ComputeRegionDiskIamBindingCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_region_disk_iam_binding#expression ComputeRegionDiskIamBinding#expression}. |
-| <code><a href="#@cdktn/provider-google.computeRegionDiskIamBinding.ComputeRegionDiskIamBindingCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_region_disk_iam_binding#title ComputeRegionDiskIamBinding#title}. |
-| <code><a href="#@cdktn/provider-google.computeRegionDiskIamBinding.ComputeRegionDiskIamBindingCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_region_disk_iam_binding#description ComputeRegionDiskIamBinding#description}. |
+| <code><a href="#@cdktn/provider-google.computeRegionDiskIamBinding.ComputeRegionDiskIamBindingCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_disk_iam_binding#expression ComputeRegionDiskIamBinding#expression}. |
+| <code><a href="#@cdktn/provider-google.computeRegionDiskIamBinding.ComputeRegionDiskIamBindingCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_disk_iam_binding#title ComputeRegionDiskIamBinding#title}. |
+| <code><a href="#@cdktn/provider-google.computeRegionDiskIamBinding.ComputeRegionDiskIamBindingCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_disk_iam_binding#description ComputeRegionDiskIamBinding#description}. |
 
 ---
 
@@ -918,7 +918,7 @@ public readonly expression: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_region_disk_iam_binding#expression ComputeRegionDiskIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_disk_iam_binding#expression ComputeRegionDiskIamBinding#expression}.
 
 ---
 
@@ -930,7 +930,7 @@ public readonly title: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_region_disk_iam_binding#title ComputeRegionDiskIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_disk_iam_binding#title ComputeRegionDiskIamBinding#title}.
 
 ---
 
@@ -942,7 +942,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_region_disk_iam_binding#description ComputeRegionDiskIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_disk_iam_binding#description ComputeRegionDiskIamBinding#description}.
 
 ---
 
@@ -967,13 +967,13 @@ const computeRegionDiskIamBindingConfig: computeRegionDiskIamBinding.ComputeRegi
 | <code><a href="#@cdktn/provider-google.computeRegionDiskIamBinding.ComputeRegionDiskIamBindingConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionDiskIamBinding.ComputeRegionDiskIamBindingConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionDiskIamBinding.ComputeRegionDiskIamBindingConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeRegionDiskIamBinding.ComputeRegionDiskIamBindingConfig.property.members">members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_region_disk_iam_binding#members ComputeRegionDiskIamBinding#members}. |
-| <code><a href="#@cdktn/provider-google.computeRegionDiskIamBinding.ComputeRegionDiskIamBindingConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_region_disk_iam_binding#name ComputeRegionDiskIamBinding#name}. |
-| <code><a href="#@cdktn/provider-google.computeRegionDiskIamBinding.ComputeRegionDiskIamBindingConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_region_disk_iam_binding#role ComputeRegionDiskIamBinding#role}. |
+| <code><a href="#@cdktn/provider-google.computeRegionDiskIamBinding.ComputeRegionDiskIamBindingConfig.property.members">members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_disk_iam_binding#members ComputeRegionDiskIamBinding#members}. |
+| <code><a href="#@cdktn/provider-google.computeRegionDiskIamBinding.ComputeRegionDiskIamBindingConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_disk_iam_binding#name ComputeRegionDiskIamBinding#name}. |
+| <code><a href="#@cdktn/provider-google.computeRegionDiskIamBinding.ComputeRegionDiskIamBindingConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_disk_iam_binding#role ComputeRegionDiskIamBinding#role}. |
 | <code><a href="#@cdktn/provider-google.computeRegionDiskIamBinding.ComputeRegionDiskIamBindingConfig.property.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.computeRegionDiskIamBinding.ComputeRegionDiskIamBindingCondition">ComputeRegionDiskIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.computeRegionDiskIamBinding.ComputeRegionDiskIamBindingConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_region_disk_iam_binding#id ComputeRegionDiskIamBinding#id}. |
-| <code><a href="#@cdktn/provider-google.computeRegionDiskIamBinding.ComputeRegionDiskIamBindingConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_region_disk_iam_binding#project ComputeRegionDiskIamBinding#project}. |
-| <code><a href="#@cdktn/provider-google.computeRegionDiskIamBinding.ComputeRegionDiskIamBindingConfig.property.region">region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_region_disk_iam_binding#region ComputeRegionDiskIamBinding#region}. |
+| <code><a href="#@cdktn/provider-google.computeRegionDiskIamBinding.ComputeRegionDiskIamBindingConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_disk_iam_binding#id ComputeRegionDiskIamBinding#id}. |
+| <code><a href="#@cdktn/provider-google.computeRegionDiskIamBinding.ComputeRegionDiskIamBindingConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_disk_iam_binding#project ComputeRegionDiskIamBinding#project}. |
+| <code><a href="#@cdktn/provider-google.computeRegionDiskIamBinding.ComputeRegionDiskIamBindingConfig.property.region">region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_disk_iam_binding#region ComputeRegionDiskIamBinding#region}. |
 
 ---
 
@@ -1055,7 +1055,7 @@ public readonly members: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_region_disk_iam_binding#members ComputeRegionDiskIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_disk_iam_binding#members ComputeRegionDiskIamBinding#members}.
 
 ---
 
@@ -1067,7 +1067,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_region_disk_iam_binding#name ComputeRegionDiskIamBinding#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_disk_iam_binding#name ComputeRegionDiskIamBinding#name}.
 
 ---
 
@@ -1079,7 +1079,7 @@ public readonly role: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_region_disk_iam_binding#role ComputeRegionDiskIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_disk_iam_binding#role ComputeRegionDiskIamBinding#role}.
 
 ---
 
@@ -1093,7 +1093,7 @@ public readonly condition: ComputeRegionDiskIamBindingCondition;
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_region_disk_iam_binding#condition ComputeRegionDiskIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_disk_iam_binding#condition ComputeRegionDiskIamBinding#condition}
 
 ---
 
@@ -1105,7 +1105,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_region_disk_iam_binding#id ComputeRegionDiskIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_disk_iam_binding#id ComputeRegionDiskIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1120,7 +1120,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_region_disk_iam_binding#project ComputeRegionDiskIamBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_disk_iam_binding#project ComputeRegionDiskIamBinding#project}.
 
 ---
 
@@ -1132,7 +1132,7 @@ public readonly region: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_region_disk_iam_binding#region ComputeRegionDiskIamBinding#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_disk_iam_binding#region ComputeRegionDiskIamBinding#region}.
 
 ---
 

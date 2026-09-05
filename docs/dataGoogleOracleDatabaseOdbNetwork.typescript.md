@@ -4,7 +4,7 @@
 
 ### DataGoogleOracleDatabaseOdbNetwork <a name="DataGoogleOracleDatabaseOdbNetwork" id="@cdktn/provider-google.dataGoogleOracleDatabaseOdbNetwork.DataGoogleOracleDatabaseOdbNetwork"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/oracle_database_odb_network google_oracle_database_odb_network}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/oracle_database_odb_network google_oracle_database_odb_network}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleOracleDatabaseOdbNetwork.DataGoogleOracleDatabaseOdbNetwork.Initializer"></a>
 
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataGoogleOracleDatabaseOd
 
 The id of the existing DataGoogleOracleDatabaseOdbNetwork that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/oracle_database_odb_network#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/oracle_database_odb_network#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -806,8 +806,8 @@ const dataGoogleOracleDatabaseOdbNetworkConfig: dataGoogleOracleDatabaseOdbNetwo
 | <code><a href="#@cdktn/provider-google.dataGoogleOracleDatabaseOdbNetwork.DataGoogleOracleDatabaseOdbNetworkConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleOracleDatabaseOdbNetwork.DataGoogleOracleDatabaseOdbNetworkConfig.property.location">location</a></code> | <code>string</code> | Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122. |
 | <code><a href="#@cdktn/provider-google.dataGoogleOracleDatabaseOdbNetwork.DataGoogleOracleDatabaseOdbNetworkConfig.property.odbNetworkId">odbNetworkId</a></code> | <code>string</code> | The ID of the OdbNetwork to create. |
-| <code><a href="#@cdktn/provider-google.dataGoogleOracleDatabaseOdbNetwork.DataGoogleOracleDatabaseOdbNetworkConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/oracle_database_odb_network#id DataGoogleOracleDatabaseOdbNetwork#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleOracleDatabaseOdbNetwork.DataGoogleOracleDatabaseOdbNetworkConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/oracle_database_odb_network#project DataGoogleOracleDatabaseOdbNetwork#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleOracleDatabaseOdbNetwork.DataGoogleOracleDatabaseOdbNetworkConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/oracle_database_odb_network#id DataGoogleOracleDatabaseOdbNetwork#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleOracleDatabaseOdbNetwork.DataGoogleOracleDatabaseOdbNetworkConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/oracle_database_odb_network#project DataGoogleOracleDatabaseOdbNetwork#project}. |
 
 ---
 
@@ -891,7 +891,7 @@ public readonly location: string;
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/oracle_database_odb_network#location DataGoogleOracleDatabaseOdbNetwork#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/oracle_database_odb_network#location DataGoogleOracleDatabaseOdbNetwork#location}
 
 ---
 
@@ -910,7 +910,7 @@ to (^[a-z]([a-z0-9-]{0,61}[a-z0-9])?$) and must be a maximum of 63
 characters in length. The value must start with a letter and end with
 a letter or a number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/oracle_database_odb_network#odb_network_id DataGoogleOracleDatabaseOdbNetwork#odb_network_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/oracle_database_odb_network#odb_network_id DataGoogleOracleDatabaseOdbNetwork#odb_network_id}
 
 ---
 
@@ -922,7 +922,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/oracle_database_odb_network#id DataGoogleOracleDatabaseOdbNetwork#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/oracle_database_odb_network#id DataGoogleOracleDatabaseOdbNetwork#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -937,7 +937,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/oracle_database_odb_network#project DataGoogleOracleDatabaseOdbNetwork#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/oracle_database_odb_network#project DataGoogleOracleDatabaseOdbNetwork#project}.
 
 ---
 

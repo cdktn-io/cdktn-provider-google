@@ -4,7 +4,7 @@
 
 ### KmsCryptoKeyVersion <a name="KmsCryptoKeyVersion" id="@cdktn/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersion"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/kms_crypto_key_version google_kms_crypto_key_version}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/kms_crypto_key_version google_kms_crypto_key_version}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersion.Initializer"></a>
 
@@ -550,7 +550,7 @@ The construct id used in the generated config for the KmsCryptoKeyVersion to imp
 
 The id of the existing KmsCryptoKeyVersion that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/kms_crypto_key_version#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/kms_crypto_key_version#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1009,7 +1009,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/kmscryptokeyvers
 | <code><a href="#@cdktn/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersionConfig.property.cryptoKey">CryptoKey</a></code> | <code>*string</code> | The name of the cryptoKey associated with the CryptoKeyVersions. Format: ''projects/{{project}}/locations/{{location}}/keyRings/{{keyring}}/cryptoKeys/{{cryptoKey}}''. |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersionConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersionConfig.property.externalProtectionLevelOptions">ExternalProtectionLevelOptions</a></code> | <code><a href="#@cdktn/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersionExternalProtectionLevelOptions">KmsCryptoKeyVersionExternalProtectionLevelOptions</a></code> | external_protection_level_options block. |
-| <code><a href="#@cdktn/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/kms_crypto_key_version#id KmsCryptoKeyVersion#id}. |
+| <code><a href="#@cdktn/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/kms_crypto_key_version#id KmsCryptoKeyVersion#id}. |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersionConfig.property.state">State</a></code> | <code>*string</code> | The current state of the CryptoKeyVersion. |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersionConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersionTimeouts">KmsCryptoKeyVersionTimeouts</a></code> | timeouts block. |
 
@@ -1095,7 +1095,7 @@ CryptoKey *string
 
 The name of the cryptoKey associated with the CryptoKeyVersions. Format: ''projects/{{project}}/locations/{{location}}/keyRings/{{keyring}}/cryptoKeys/{{cryptoKey}}''.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/kms_crypto_key_version#crypto_key KmsCryptoKeyVersion#crypto_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/kms_crypto_key_version#crypto_key KmsCryptoKeyVersion#crypto_key}
 
 ---
 
@@ -1116,7 +1116,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/kms_crypto_key_version#deletion_policy KmsCryptoKeyVersion#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/kms_crypto_key_version#deletion_policy KmsCryptoKeyVersion#deletion_policy}
 
 ---
 
@@ -1130,7 +1130,7 @@ ExternalProtectionLevelOptions KmsCryptoKeyVersionExternalProtectionLevelOptions
 
 external_protection_level_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/kms_crypto_key_version#external_protection_level_options KmsCryptoKeyVersion#external_protection_level_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/kms_crypto_key_version#external_protection_level_options KmsCryptoKeyVersion#external_protection_level_options}
 
 ---
 
@@ -1142,7 +1142,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/kms_crypto_key_version#id KmsCryptoKeyVersion#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/kms_crypto_key_version#id KmsCryptoKeyVersion#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1162,7 +1162,7 @@ The current state of the CryptoKeyVersion.
 Note: you can only specify this field to manually 'ENABLE' or 'DISABLE' the CryptoKeyVersion,
 otherwise the value of this field is always retrieved automatically. Possible values: ["PENDING_GENERATION", "ENABLED", "DISABLED", "DESTROYED", "DESTROY_SCHEDULED", "PENDING_IMPORT", "IMPORT_FAILED"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/kms_crypto_key_version#state KmsCryptoKeyVersion#state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/kms_crypto_key_version#state KmsCryptoKeyVersion#state}
 
 ---
 
@@ -1176,7 +1176,7 @@ Timeouts KmsCryptoKeyVersionTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/kms_crypto_key_version#timeouts KmsCryptoKeyVersion#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/kms_crypto_key_version#timeouts KmsCryptoKeyVersion#timeouts}
 
 ---
 
@@ -1212,7 +1212,7 @@ EkmConnectionKeyPath *string
 
 The path to the external key material on the EKM when using EkmConnection e.g., "v0/my/key". Set this field instead of externalKeyUri when using an EkmConnection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/kms_crypto_key_version#ekm_connection_key_path KmsCryptoKeyVersion#ekm_connection_key_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/kms_crypto_key_version#ekm_connection_key_path KmsCryptoKeyVersion#ekm_connection_key_path}
 
 ---
 
@@ -1226,7 +1226,7 @@ ExternalKeyUri *string
 
 The URI for an external resource that this CryptoKeyVersion represents.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/kms_crypto_key_version#external_key_uri KmsCryptoKeyVersion#external_key_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/kms_crypto_key_version#external_key_uri KmsCryptoKeyVersion#external_key_uri}
 
 ---
 
@@ -1248,9 +1248,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/kmscryptokeyvers
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersionTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/kms_crypto_key_version#create KmsCryptoKeyVersion#create}. |
-| <code><a href="#@cdktn/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersionTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/kms_crypto_key_version#delete KmsCryptoKeyVersion#delete}. |
-| <code><a href="#@cdktn/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersionTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/kms_crypto_key_version#update KmsCryptoKeyVersion#update}. |
+| <code><a href="#@cdktn/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersionTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/kms_crypto_key_version#create KmsCryptoKeyVersion#create}. |
+| <code><a href="#@cdktn/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersionTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/kms_crypto_key_version#delete KmsCryptoKeyVersion#delete}. |
+| <code><a href="#@cdktn/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersionTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/kms_crypto_key_version#update KmsCryptoKeyVersion#update}. |
 
 ---
 
@@ -1262,7 +1262,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/kms_crypto_key_version#create KmsCryptoKeyVersion#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/kms_crypto_key_version#create KmsCryptoKeyVersion#create}.
 
 ---
 
@@ -1274,7 +1274,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/kms_crypto_key_version#delete KmsCryptoKeyVersion#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/kms_crypto_key_version#delete KmsCryptoKeyVersion#delete}.
 
 ---
 
@@ -1286,7 +1286,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/kms_crypto_key_version#update KmsCryptoKeyVersion#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/kms_crypto_key_version#update KmsCryptoKeyVersion#update}.
 
 ---
 

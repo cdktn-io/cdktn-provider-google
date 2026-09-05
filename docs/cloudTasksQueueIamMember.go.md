@@ -4,7 +4,7 @@
 
 ### CloudTasksQueueIamMember <a name="CloudTasksQueueIamMember" id="@cdktn/provider-google.cloudTasksQueueIamMember.CloudTasksQueueIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/cloud_tasks_queue_iam_member google_cloud_tasks_queue_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_tasks_queue_iam_member google_cloud_tasks_queue_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudTasksQueueIamMember.CloudTasksQueueIamMember.Initializer"></a>
 
@@ -530,7 +530,7 @@ The construct id used in the generated config for the CloudTasksQueueIamMember t
 
 The id of the existing CloudTasksQueueIamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/cloud_tasks_queue_iam_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_tasks_queue_iam_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -908,9 +908,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudtasksqueuei
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudTasksQueueIamMember.CloudTasksQueueIamMemberCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/cloud_tasks_queue_iam_member#expression CloudTasksQueueIamMember#expression}. |
-| <code><a href="#@cdktn/provider-google.cloudTasksQueueIamMember.CloudTasksQueueIamMemberCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/cloud_tasks_queue_iam_member#title CloudTasksQueueIamMember#title}. |
-| <code><a href="#@cdktn/provider-google.cloudTasksQueueIamMember.CloudTasksQueueIamMemberCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/cloud_tasks_queue_iam_member#description CloudTasksQueueIamMember#description}. |
+| <code><a href="#@cdktn/provider-google.cloudTasksQueueIamMember.CloudTasksQueueIamMemberCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_tasks_queue_iam_member#expression CloudTasksQueueIamMember#expression}. |
+| <code><a href="#@cdktn/provider-google.cloudTasksQueueIamMember.CloudTasksQueueIamMemberCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_tasks_queue_iam_member#title CloudTasksQueueIamMember#title}. |
+| <code><a href="#@cdktn/provider-google.cloudTasksQueueIamMember.CloudTasksQueueIamMemberCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_tasks_queue_iam_member#description CloudTasksQueueIamMember#description}. |
 
 ---
 
@@ -922,7 +922,7 @@ Expression *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/cloud_tasks_queue_iam_member#expression CloudTasksQueueIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_tasks_queue_iam_member#expression CloudTasksQueueIamMember#expression}.
 
 ---
 
@@ -934,7 +934,7 @@ Title *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/cloud_tasks_queue_iam_member#title CloudTasksQueueIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_tasks_queue_iam_member#title CloudTasksQueueIamMember#title}.
 
 ---
 
@@ -946,7 +946,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/cloud_tasks_queue_iam_member#description CloudTasksQueueIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_tasks_queue_iam_member#description CloudTasksQueueIamMember#description}.
 
 ---
 
@@ -986,13 +986,13 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/cloudtasksqueuei
 | <code><a href="#@cdktn/provider-google.cloudTasksQueueIamMember.CloudTasksQueueIamMemberConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudTasksQueueIamMember.CloudTasksQueueIamMemberConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudTasksQueueIamMember.CloudTasksQueueIamMemberConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudTasksQueueIamMember.CloudTasksQueueIamMemberConfig.property.member">Member</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/cloud_tasks_queue_iam_member#member CloudTasksQueueIamMember#member}. |
-| <code><a href="#@cdktn/provider-google.cloudTasksQueueIamMember.CloudTasksQueueIamMemberConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/cloud_tasks_queue_iam_member#name CloudTasksQueueIamMember#name}. |
-| <code><a href="#@cdktn/provider-google.cloudTasksQueueIamMember.CloudTasksQueueIamMemberConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/cloud_tasks_queue_iam_member#role CloudTasksQueueIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.cloudTasksQueueIamMember.CloudTasksQueueIamMemberConfig.property.member">Member</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_tasks_queue_iam_member#member CloudTasksQueueIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.cloudTasksQueueIamMember.CloudTasksQueueIamMemberConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_tasks_queue_iam_member#name CloudTasksQueueIamMember#name}. |
+| <code><a href="#@cdktn/provider-google.cloudTasksQueueIamMember.CloudTasksQueueIamMemberConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_tasks_queue_iam_member#role CloudTasksQueueIamMember#role}. |
 | <code><a href="#@cdktn/provider-google.cloudTasksQueueIamMember.CloudTasksQueueIamMemberConfig.property.condition">Condition</a></code> | <code><a href="#@cdktn/provider-google.cloudTasksQueueIamMember.CloudTasksQueueIamMemberCondition">CloudTasksQueueIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.cloudTasksQueueIamMember.CloudTasksQueueIamMemberConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/cloud_tasks_queue_iam_member#id CloudTasksQueueIamMember#id}. |
-| <code><a href="#@cdktn/provider-google.cloudTasksQueueIamMember.CloudTasksQueueIamMemberConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/cloud_tasks_queue_iam_member#location CloudTasksQueueIamMember#location}. |
-| <code><a href="#@cdktn/provider-google.cloudTasksQueueIamMember.CloudTasksQueueIamMemberConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/cloud_tasks_queue_iam_member#project CloudTasksQueueIamMember#project}. |
+| <code><a href="#@cdktn/provider-google.cloudTasksQueueIamMember.CloudTasksQueueIamMemberConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_tasks_queue_iam_member#id CloudTasksQueueIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.cloudTasksQueueIamMember.CloudTasksQueueIamMemberConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_tasks_queue_iam_member#location CloudTasksQueueIamMember#location}. |
+| <code><a href="#@cdktn/provider-google.cloudTasksQueueIamMember.CloudTasksQueueIamMemberConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_tasks_queue_iam_member#project CloudTasksQueueIamMember#project}. |
 
 ---
 
@@ -1074,7 +1074,7 @@ Member *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/cloud_tasks_queue_iam_member#member CloudTasksQueueIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_tasks_queue_iam_member#member CloudTasksQueueIamMember#member}.
 
 ---
 
@@ -1086,7 +1086,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/cloud_tasks_queue_iam_member#name CloudTasksQueueIamMember#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_tasks_queue_iam_member#name CloudTasksQueueIamMember#name}.
 
 ---
 
@@ -1098,7 +1098,7 @@ Role *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/cloud_tasks_queue_iam_member#role CloudTasksQueueIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_tasks_queue_iam_member#role CloudTasksQueueIamMember#role}.
 
 ---
 
@@ -1112,7 +1112,7 @@ Condition CloudTasksQueueIamMemberCondition
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/cloud_tasks_queue_iam_member#condition CloudTasksQueueIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_tasks_queue_iam_member#condition CloudTasksQueueIamMember#condition}
 
 ---
 
@@ -1124,7 +1124,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/cloud_tasks_queue_iam_member#id CloudTasksQueueIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_tasks_queue_iam_member#id CloudTasksQueueIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1139,7 +1139,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/cloud_tasks_queue_iam_member#location CloudTasksQueueIamMember#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_tasks_queue_iam_member#location CloudTasksQueueIamMember#location}.
 
 ---
 
@@ -1151,7 +1151,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/cloud_tasks_queue_iam_member#project CloudTasksQueueIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_tasks_queue_iam_member#project CloudTasksQueueIamMember#project}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### ComputeRolloutPlan <a name="ComputeRolloutPlan" id="@cdktn/provider-google.computeRolloutPlan.ComputeRolloutPlan"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_rollout_plan google_compute_rollout_plan}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_rollout_plan google_compute_rollout_plan}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRolloutPlan.ComputeRolloutPlan.Initializer"></a>
 
@@ -557,7 +557,7 @@ The construct id used in the generated config for the ComputeRolloutPlan to impo
 
 The id of the existing ComputeRolloutPlan that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_rollout_plan#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_rollout_plan#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -980,9 +980,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerolloutpl
 | <code><a href="#@cdktn/provider-google.computeRolloutPlan.ComputeRolloutPlanConfig.property.waves">Waves</a></code> | <code>interface{}</code> | waves block. |
 | <code><a href="#@cdktn/provider-google.computeRolloutPlan.ComputeRolloutPlanConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.computeRolloutPlan.ComputeRolloutPlanConfig.property.description">Description</a></code> | <code>*string</code> | An optional description of this resource. |
-| <code><a href="#@cdktn/provider-google.computeRolloutPlan.ComputeRolloutPlanConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_rollout_plan#id ComputeRolloutPlan#id}. |
+| <code><a href="#@cdktn/provider-google.computeRolloutPlan.ComputeRolloutPlanConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_rollout_plan#id ComputeRolloutPlan#id}. |
 | <code><a href="#@cdktn/provider-google.computeRolloutPlan.ComputeRolloutPlanConfig.property.locationScope">LocationScope</a></code> | <code>*string</code> | The location scope of the rollout plan. Possible values: ["LOCATION_SCOPE_UNSPECIFIED", "ZONAL", "REGIONAL"]. |
-| <code><a href="#@cdktn/provider-google.computeRolloutPlan.ComputeRolloutPlanConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_rollout_plan#project ComputeRolloutPlan#project}. |
+| <code><a href="#@cdktn/provider-google.computeRolloutPlan.ComputeRolloutPlanConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_rollout_plan#project ComputeRolloutPlan#project}. |
 | <code><a href="#@cdktn/provider-google.computeRolloutPlan.ComputeRolloutPlanConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeRolloutPlan.ComputeRolloutPlanTimeouts">ComputeRolloutPlanTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1070,7 +1070,7 @@ Name of the resource.
 Provided by the client when the resource is created.
 The name must be 1-63 characters long, and comply with RFC1035.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_rollout_plan#name ComputeRolloutPlan#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_rollout_plan#name ComputeRolloutPlan#name}
 
 ---
 
@@ -1084,7 +1084,7 @@ Waves interface{}
 
 waves block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_rollout_plan#waves ComputeRolloutPlan#waves}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_rollout_plan#waves ComputeRolloutPlan#waves}
 
 ---
 
@@ -1105,7 +1105,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_rollout_plan#deletion_policy ComputeRolloutPlan#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_rollout_plan#deletion_policy ComputeRolloutPlan#deletion_policy}
 
 ---
 
@@ -1119,7 +1119,7 @@ Description *string
 
 An optional description of this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_rollout_plan#description ComputeRolloutPlan#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_rollout_plan#description ComputeRolloutPlan#description}
 
 ---
 
@@ -1131,7 +1131,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_rollout_plan#id ComputeRolloutPlan#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_rollout_plan#id ComputeRolloutPlan#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1148,7 +1148,7 @@ LocationScope *string
 
 The location scope of the rollout plan. Possible values: ["LOCATION_SCOPE_UNSPECIFIED", "ZONAL", "REGIONAL"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_rollout_plan#location_scope ComputeRolloutPlan#location_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_rollout_plan#location_scope ComputeRolloutPlan#location_scope}
 
 ---
 
@@ -1160,7 +1160,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_rollout_plan#project ComputeRolloutPlan#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_rollout_plan#project ComputeRolloutPlan#project}.
 
 ---
 
@@ -1174,7 +1174,7 @@ Timeouts ComputeRolloutPlanTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_rollout_plan#timeouts ComputeRolloutPlan#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_rollout_plan#timeouts ComputeRolloutPlan#timeouts}
 
 ---
 
@@ -1195,8 +1195,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerolloutpl
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRolloutPlan.ComputeRolloutPlanTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_rollout_plan#create ComputeRolloutPlan#create}. |
-| <code><a href="#@cdktn/provider-google.computeRolloutPlan.ComputeRolloutPlanTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_rollout_plan#delete ComputeRolloutPlan#delete}. |
+| <code><a href="#@cdktn/provider-google.computeRolloutPlan.ComputeRolloutPlanTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_rollout_plan#create ComputeRolloutPlan#create}. |
+| <code><a href="#@cdktn/provider-google.computeRolloutPlan.ComputeRolloutPlanTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_rollout_plan#delete ComputeRolloutPlan#delete}. |
 
 ---
 
@@ -1208,7 +1208,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_rollout_plan#create ComputeRolloutPlan#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_rollout_plan#create ComputeRolloutPlan#create}.
 
 ---
 
@@ -1220,7 +1220,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_rollout_plan#delete ComputeRolloutPlan#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_rollout_plan#delete ComputeRolloutPlan#delete}.
 
 ---
 
@@ -1260,7 +1260,7 @@ Selectors interface{}
 
 selectors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_rollout_plan#selectors ComputeRolloutPlan#selectors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_rollout_plan#selectors ComputeRolloutPlan#selectors}
 
 ---
 
@@ -1274,7 +1274,7 @@ Validation ComputeRolloutPlanWavesValidation
 
 validation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_rollout_plan#validation ComputeRolloutPlan#validation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_rollout_plan#validation ComputeRolloutPlan#validation}
 
 ---
 
@@ -1288,7 +1288,7 @@ DisplayName *string
 
 The display name of this wave of the rollout plan.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_rollout_plan#display_name ComputeRolloutPlan#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_rollout_plan#display_name ComputeRolloutPlan#display_name}
 
 ---
 
@@ -1302,7 +1302,7 @@ OrchestrationOptions ComputeRolloutPlanWavesOrchestrationOptions
 
 orchestration_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_rollout_plan#orchestration_options ComputeRolloutPlan#orchestration_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_rollout_plan#orchestration_options ComputeRolloutPlan#orchestration_options}
 
 ---
 
@@ -1340,7 +1340,7 @@ Delays interface{}
 
 delays block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_rollout_plan#delays ComputeRolloutPlan#delays}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_rollout_plan#delays ComputeRolloutPlan#delays}
 
 ---
 
@@ -1354,7 +1354,7 @@ MaxConcurrentLocations *f64
 
 Maximum number of locations to be orchestrated in parallel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_rollout_plan#max_concurrent_locations ComputeRolloutPlan#max_concurrent_locations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_rollout_plan#max_concurrent_locations ComputeRolloutPlan#max_concurrent_locations}
 
 ---
 
@@ -1368,7 +1368,7 @@ MaxConcurrentResourcesPerLocation *f64
 
 Maximum number of resources to be orchestrated per location in parallel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_rollout_plan#max_concurrent_resources_per_location ComputeRolloutPlan#max_concurrent_resources_per_location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_rollout_plan#max_concurrent_resources_per_location ComputeRolloutPlan#max_concurrent_resources_per_location}
 
 ---
 
@@ -1408,7 +1408,7 @@ Controls whether the delay should only be added between batches of projects corr
 
 Possible values: ["DELIMITER_UNSPECIFIED", "DELIMITER_LOCATION", "DELIMITER_BATCH"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_rollout_plan#delimiter ComputeRolloutPlan#delimiter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_rollout_plan#delimiter ComputeRolloutPlan#delimiter}
 
 ---
 
@@ -1422,7 +1422,7 @@ Duration *string
 
 The duration of the delay, if any, to be added between batches of projects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_rollout_plan#duration ComputeRolloutPlan#duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_rollout_plan#duration ComputeRolloutPlan#duration}
 
 ---
 
@@ -1438,7 +1438,7 @@ Controls whether the specified duration is to be added at the end of each batch,
 
 Possible values: ["TYPE_UNSPECIFIED", "TYPE_OFFSET", "TYPE_MINIMUM"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_rollout_plan#type ComputeRolloutPlan#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_rollout_plan#type ComputeRolloutPlan#type}
 
 ---
 
@@ -1474,7 +1474,7 @@ LocationSelector ComputeRolloutPlanWavesSelectorsLocationSelector
 
 location_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_rollout_plan#location_selector ComputeRolloutPlan#location_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_rollout_plan#location_selector ComputeRolloutPlan#location_selector}
 
 ---
 
@@ -1488,7 +1488,7 @@ ResourceHierarchySelector ComputeRolloutPlanWavesSelectorsResourceHierarchySelec
 
 resource_hierarchy_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_rollout_plan#resource_hierarchy_selector ComputeRolloutPlan#resource_hierarchy_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_rollout_plan#resource_hierarchy_selector ComputeRolloutPlan#resource_hierarchy_selector}
 
 ---
 
@@ -1522,7 +1522,7 @@ IncludedLocations *[]*string
 
 Example: "us-central1-a".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_rollout_plan#included_locations ComputeRolloutPlan#included_locations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_rollout_plan#included_locations ComputeRolloutPlan#included_locations}
 
 ---
 
@@ -1560,7 +1560,7 @@ IncludedFolders *[]*string
 
 Format: "folders/{folder_id}".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_rollout_plan#included_folders ComputeRolloutPlan#included_folders}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_rollout_plan#included_folders ComputeRolloutPlan#included_folders}
 
 ---
 
@@ -1574,7 +1574,7 @@ IncludedOrganizations *[]*string
 
 Format: "organizations/{organization_id}".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_rollout_plan#included_organizations ComputeRolloutPlan#included_organizations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_rollout_plan#included_organizations ComputeRolloutPlan#included_organizations}
 
 ---
 
@@ -1588,7 +1588,7 @@ IncludedProjects *[]*string
 
 Format: "projects/{project_id}".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_rollout_plan#included_projects ComputeRolloutPlan#included_projects}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_rollout_plan#included_projects ComputeRolloutPlan#included_projects}
 
 ---
 
@@ -1628,7 +1628,7 @@ Possible values:
 "manual": The system waits for an end-user approval API before progressing to the next wave.
 "time": The system waits for a user specified duration before progressing to the next wave.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_rollout_plan#type ComputeRolloutPlan#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_rollout_plan#type ComputeRolloutPlan#type}
 
 ---
 
@@ -1642,7 +1642,7 @@ TimeBasedValidationMetadata ComputeRolloutPlanWavesValidationTimeBasedValidation
 
 time_based_validation_metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_rollout_plan#time_based_validation_metadata ComputeRolloutPlan#time_based_validation_metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_rollout_plan#time_based_validation_metadata ComputeRolloutPlan#time_based_validation_metadata}
 
 ---
 
@@ -1679,7 +1679,7 @@ The duration that the system waits in between waves.
 This wait starts
 after all changes in the wave are rolled out.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_rollout_plan#wait_duration ComputeRolloutPlan#wait_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_rollout_plan#wait_duration ComputeRolloutPlan#wait_duration}
 
 ---
 

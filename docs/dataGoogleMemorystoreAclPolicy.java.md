@@ -4,7 +4,7 @@
 
 ### DataGoogleMemorystoreAclPolicy <a name="DataGoogleMemorystoreAclPolicy" id="@cdktn/provider-google.dataGoogleMemorystoreAclPolicy.DataGoogleMemorystoreAclPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/memorystore_acl_policy google_memorystore_acl_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/memorystore_acl_policy google_memorystore_acl_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleMemorystoreAclPolicy.DataGoogleMemorystoreAclPolicy.Initializer"></a>
 
@@ -38,9 +38,9 @@ DataGoogleMemorystoreAclPolicy.Builder.create(Construct scope, java.lang.String 
 | <code><a href="#@cdktn/provider-google.dataGoogleMemorystoreAclPolicy.DataGoogleMemorystoreAclPolicy.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleMemorystoreAclPolicy.DataGoogleMemorystoreAclPolicy.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleMemorystoreAclPolicy.DataGoogleMemorystoreAclPolicy.Initializer.parameter.aclPolicyId">aclPolicyId</a></code> | <code>java.lang.String</code> | The logical name of the ACL policy in the customer project with the following restrictions:. |
-| <code><a href="#@cdktn/provider-google.dataGoogleMemorystoreAclPolicy.DataGoogleMemorystoreAclPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/memorystore_acl_policy#id DataGoogleMemorystoreAclPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleMemorystoreAclPolicy.DataGoogleMemorystoreAclPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/memorystore_acl_policy#id DataGoogleMemorystoreAclPolicy#id}. |
 | <code><a href="#@cdktn/provider-google.dataGoogleMemorystoreAclPolicy.DataGoogleMemorystoreAclPolicy.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122. |
-| <code><a href="#@cdktn/provider-google.dataGoogleMemorystoreAclPolicy.DataGoogleMemorystoreAclPolicy.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/memorystore_acl_policy#project DataGoogleMemorystoreAclPolicy#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleMemorystoreAclPolicy.DataGoogleMemorystoreAclPolicy.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/memorystore_acl_policy#project DataGoogleMemorystoreAclPolicy#project}. |
 
 ---
 
@@ -116,7 +116,7 @@ The logical name of the ACL policy in the customer project with the following re
 * Must end with a number or a letter.
 * Must be unique within the customer project / location
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/memorystore_acl_policy#acl_policy_id DataGoogleMemorystoreAclPolicy#acl_policy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/memorystore_acl_policy#acl_policy_id DataGoogleMemorystoreAclPolicy#acl_policy_id}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/memorystore_acl_policy#id DataGoogleMemorystoreAclPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/memorystore_acl_policy#id DataGoogleMemorystoreAclPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -137,7 +137,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/memorystore_acl_policy#location DataGoogleMemorystoreAclPolicy#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/memorystore_acl_policy#location DataGoogleMemorystoreAclPolicy#location}
 
 ---
 
@@ -145,7 +145,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/memorystore_acl_policy#project DataGoogleMemorystoreAclPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/memorystore_acl_policy#project DataGoogleMemorystoreAclPolicy#project}.
 
 ---
 
@@ -511,7 +511,7 @@ The construct id used in the generated config for the DataGoogleMemorystoreAclPo
 
 The id of the existing DataGoogleMemorystoreAclPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/memorystore_acl_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/memorystore_acl_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -861,9 +861,9 @@ DataGoogleMemorystoreAclPolicyConfig.builder()
 | <code><a href="#@cdktn/provider-google.dataGoogleMemorystoreAclPolicy.DataGoogleMemorystoreAclPolicyConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleMemorystoreAclPolicy.DataGoogleMemorystoreAclPolicyConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleMemorystoreAclPolicy.DataGoogleMemorystoreAclPolicyConfig.property.aclPolicyId">aclPolicyId</a></code> | <code>java.lang.String</code> | The logical name of the ACL policy in the customer project with the following restrictions:. |
-| <code><a href="#@cdktn/provider-google.dataGoogleMemorystoreAclPolicy.DataGoogleMemorystoreAclPolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/memorystore_acl_policy#id DataGoogleMemorystoreAclPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleMemorystoreAclPolicy.DataGoogleMemorystoreAclPolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/memorystore_acl_policy#id DataGoogleMemorystoreAclPolicy#id}. |
 | <code><a href="#@cdktn/provider-google.dataGoogleMemorystoreAclPolicy.DataGoogleMemorystoreAclPolicyConfig.property.location">location</a></code> | <code>java.lang.String</code> | Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122. |
-| <code><a href="#@cdktn/provider-google.dataGoogleMemorystoreAclPolicy.DataGoogleMemorystoreAclPolicyConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/memorystore_acl_policy#project DataGoogleMemorystoreAclPolicy#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleMemorystoreAclPolicy.DataGoogleMemorystoreAclPolicyConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/memorystore_acl_policy#project DataGoogleMemorystoreAclPolicy#project}. |
 
 ---
 
@@ -953,7 +953,7 @@ The logical name of the ACL policy in the customer project with the following re
 * Must end with a number or a letter.
 * Must be unique within the customer project / location
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/memorystore_acl_policy#acl_policy_id DataGoogleMemorystoreAclPolicy#acl_policy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/memorystore_acl_policy#acl_policy_id DataGoogleMemorystoreAclPolicy#acl_policy_id}
 
 ---
 
@@ -965,7 +965,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/memorystore_acl_policy#id DataGoogleMemorystoreAclPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/memorystore_acl_policy#id DataGoogleMemorystoreAclPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -982,7 +982,7 @@ public java.lang.String getLocation();
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/memorystore_acl_policy#location DataGoogleMemorystoreAclPolicy#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/memorystore_acl_policy#location DataGoogleMemorystoreAclPolicy#location}
 
 ---
 
@@ -994,7 +994,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/data-sources/memorystore_acl_policy#project DataGoogleMemorystoreAclPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/memorystore_acl_policy#project DataGoogleMemorystoreAclPolicy#project}.
 
 ---
 

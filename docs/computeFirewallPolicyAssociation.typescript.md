@@ -4,7 +4,7 @@
 
 ### ComputeFirewallPolicyAssociation <a name="ComputeFirewallPolicyAssociation" id="@cdktn/provider-google.computeFirewallPolicyAssociation.ComputeFirewallPolicyAssociation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_firewall_policy_association google_compute_firewall_policy_association}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_firewall_policy_association google_compute_firewall_policy_association}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeFirewallPolicyAssociation.ComputeFirewallPolicyAssociation.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the ComputeFirewallPolicyAssoc
 
 The id of the existing ComputeFirewallPolicyAssociation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_firewall_policy_association#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_firewall_policy_association#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -886,7 +886,7 @@ const computeFirewallPolicyAssociationConfig: computeFirewallPolicyAssociation.C
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyAssociation.ComputeFirewallPolicyAssociationConfig.property.firewallPolicy">firewallPolicy</a></code> | <code>string</code> | The firewall policy of the resource. |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyAssociation.ComputeFirewallPolicyAssociationConfig.property.name">name</a></code> | <code>string</code> | The name for an association. |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyAssociation.ComputeFirewallPolicyAssociationConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.computeFirewallPolicyAssociation.ComputeFirewallPolicyAssociationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_firewall_policy_association#id ComputeFirewallPolicyAssociation#id}. |
+| <code><a href="#@cdktn/provider-google.computeFirewallPolicyAssociation.ComputeFirewallPolicyAssociationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_firewall_policy_association#id ComputeFirewallPolicyAssociation#id}. |
 | <code><a href="#@cdktn/provider-google.computeFirewallPolicyAssociation.ComputeFirewallPolicyAssociationConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeFirewallPolicyAssociation.ComputeFirewallPolicyAssociationTimeouts">ComputeFirewallPolicyAssociationTimeouts</a></code> | timeouts block. |
 
 ---
@@ -971,7 +971,7 @@ public readonly attachmentTarget: string;
 
 The target that the firewall policy is attached to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_firewall_policy_association#attachment_target ComputeFirewallPolicyAssociation#attachment_target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_firewall_policy_association#attachment_target ComputeFirewallPolicyAssociation#attachment_target}
 
 ---
 
@@ -991,7 +991,7 @@ firewall policy with the flag to override the existing attachmentTarget's policy
 **Note** Due to potential risks with this operation it is *highly* recommended to use the 'create_before_destroy' life cycle option
 on your exisiting firewall policy so as to prevent a situation where your attachment target has no associated policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_firewall_policy_association#firewall_policy ComputeFirewallPolicyAssociation#firewall_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_firewall_policy_association#firewall_policy ComputeFirewallPolicyAssociation#firewall_policy}
 
 ---
 
@@ -1005,7 +1005,7 @@ public readonly name: string;
 
 The name for an association.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_firewall_policy_association#name ComputeFirewallPolicyAssociation#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_firewall_policy_association#name ComputeFirewallPolicyAssociation#name}
 
 ---
 
@@ -1027,7 +1027,7 @@ management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_firewall_policy_association#deletion_policy ComputeFirewallPolicyAssociation#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_firewall_policy_association#deletion_policy ComputeFirewallPolicyAssociation#deletion_policy}
 
 ---
 
@@ -1039,7 +1039,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_firewall_policy_association#id ComputeFirewallPolicyAssociation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_firewall_policy_association#id ComputeFirewallPolicyAssociation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1056,7 +1056,7 @@ public readonly timeouts: ComputeFirewallPolicyAssociationTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_firewall_policy_association#timeouts ComputeFirewallPolicyAssociation#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_firewall_policy_association#timeouts ComputeFirewallPolicyAssociation#timeouts}
 
 ---
 
@@ -1074,9 +1074,9 @@ const computeFirewallPolicyAssociationTimeouts: computeFirewallPolicyAssociation
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeFirewallPolicyAssociation.ComputeFirewallPolicyAssociationTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_firewall_policy_association#create ComputeFirewallPolicyAssociation#create}. |
-| <code><a href="#@cdktn/provider-google.computeFirewallPolicyAssociation.ComputeFirewallPolicyAssociationTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_firewall_policy_association#delete ComputeFirewallPolicyAssociation#delete}. |
-| <code><a href="#@cdktn/provider-google.computeFirewallPolicyAssociation.ComputeFirewallPolicyAssociationTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_firewall_policy_association#update ComputeFirewallPolicyAssociation#update}. |
+| <code><a href="#@cdktn/provider-google.computeFirewallPolicyAssociation.ComputeFirewallPolicyAssociationTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_firewall_policy_association#create ComputeFirewallPolicyAssociation#create}. |
+| <code><a href="#@cdktn/provider-google.computeFirewallPolicyAssociation.ComputeFirewallPolicyAssociationTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_firewall_policy_association#delete ComputeFirewallPolicyAssociation#delete}. |
+| <code><a href="#@cdktn/provider-google.computeFirewallPolicyAssociation.ComputeFirewallPolicyAssociationTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_firewall_policy_association#update ComputeFirewallPolicyAssociation#update}. |
 
 ---
 
@@ -1088,7 +1088,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_firewall_policy_association#create ComputeFirewallPolicyAssociation#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_firewall_policy_association#create ComputeFirewallPolicyAssociation#create}.
 
 ---
 
@@ -1100,7 +1100,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_firewall_policy_association#delete ComputeFirewallPolicyAssociation#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_firewall_policy_association#delete ComputeFirewallPolicyAssociation#delete}.
 
 ---
 
@@ -1112,7 +1112,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/compute_firewall_policy_association#update ComputeFirewallPolicyAssociation#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_firewall_policy_association#update ComputeFirewallPolicyAssociation#update}.
 
 ---
 

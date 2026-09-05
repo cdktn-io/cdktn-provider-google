@@ -4,7 +4,7 @@
 
 ### BiglakeIcebergNamespaceIamPolicy <a name="BiglakeIcebergNamespaceIamPolicy" id="@cdktn/provider-google.biglakeIcebergNamespaceIamPolicy.BiglakeIcebergNamespaceIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/biglake_iceberg_namespace_iam_policy google_biglake_iceberg_namespace_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/biglake_iceberg_namespace_iam_policy google_biglake_iceberg_namespace_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.biglakeIcebergNamespaceIamPolicy.BiglakeIcebergNamespaceIamPolicy.Initializer"></a>
 
@@ -503,7 +503,7 @@ The construct id used in the generated config for the BiglakeIcebergNamespaceIam
 
 The id of the existing BiglakeIcebergNamespaceIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/biglake_iceberg_namespace_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/biglake_iceberg_namespace_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -853,11 +853,11 @@ new BiglakeIcebergNamespaceIamPolicyConfig {
 | <code><a href="#@cdktn/provider-google.biglakeIcebergNamespaceIamPolicy.BiglakeIcebergNamespaceIamPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.biglakeIcebergNamespaceIamPolicy.BiglakeIcebergNamespaceIamPolicyConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.biglakeIcebergNamespaceIamPolicy.BiglakeIcebergNamespaceIamPolicyConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.biglakeIcebergNamespaceIamPolicy.BiglakeIcebergNamespaceIamPolicyConfig.property.catalog">Catalog</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/biglake_iceberg_namespace_iam_policy#catalog BiglakeIcebergNamespaceIamPolicy#catalog}. |
-| <code><a href="#@cdktn/provider-google.biglakeIcebergNamespaceIamPolicy.BiglakeIcebergNamespaceIamPolicyConfig.property.namespaceId">NamespaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/biglake_iceberg_namespace_iam_policy#namespace_id BiglakeIcebergNamespaceIamPolicy#namespace_id}. |
-| <code><a href="#@cdktn/provider-google.biglakeIcebergNamespaceIamPolicy.BiglakeIcebergNamespaceIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/biglake_iceberg_namespace_iam_policy#policy_data BiglakeIcebergNamespaceIamPolicy#policy_data}. |
-| <code><a href="#@cdktn/provider-google.biglakeIcebergNamespaceIamPolicy.BiglakeIcebergNamespaceIamPolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/biglake_iceberg_namespace_iam_policy#id BiglakeIcebergNamespaceIamPolicy#id}. |
-| <code><a href="#@cdktn/provider-google.biglakeIcebergNamespaceIamPolicy.BiglakeIcebergNamespaceIamPolicyConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/biglake_iceberg_namespace_iam_policy#project BiglakeIcebergNamespaceIamPolicy#project}. |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergNamespaceIamPolicy.BiglakeIcebergNamespaceIamPolicyConfig.property.catalog">Catalog</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/biglake_iceberg_namespace_iam_policy#catalog BiglakeIcebergNamespaceIamPolicy#catalog}. |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergNamespaceIamPolicy.BiglakeIcebergNamespaceIamPolicyConfig.property.namespaceId">NamespaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/biglake_iceberg_namespace_iam_policy#namespace_id BiglakeIcebergNamespaceIamPolicy#namespace_id}. |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergNamespaceIamPolicy.BiglakeIcebergNamespaceIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/biglake_iceberg_namespace_iam_policy#policy_data BiglakeIcebergNamespaceIamPolicy#policy_data}. |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergNamespaceIamPolicy.BiglakeIcebergNamespaceIamPolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/biglake_iceberg_namespace_iam_policy#id BiglakeIcebergNamespaceIamPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.biglakeIcebergNamespaceIamPolicy.BiglakeIcebergNamespaceIamPolicyConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/biglake_iceberg_namespace_iam_policy#project BiglakeIcebergNamespaceIamPolicy#project}. |
 
 ---
 
@@ -939,7 +939,7 @@ public string Catalog { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/biglake_iceberg_namespace_iam_policy#catalog BiglakeIcebergNamespaceIamPolicy#catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/biglake_iceberg_namespace_iam_policy#catalog BiglakeIcebergNamespaceIamPolicy#catalog}.
 
 ---
 
@@ -951,7 +951,7 @@ public string NamespaceId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/biglake_iceberg_namespace_iam_policy#namespace_id BiglakeIcebergNamespaceIamPolicy#namespace_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/biglake_iceberg_namespace_iam_policy#namespace_id BiglakeIcebergNamespaceIamPolicy#namespace_id}.
 
 ---
 
@@ -963,7 +963,7 @@ public string PolicyData { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/biglake_iceberg_namespace_iam_policy#policy_data BiglakeIcebergNamespaceIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/biglake_iceberg_namespace_iam_policy#policy_data BiglakeIcebergNamespaceIamPolicy#policy_data}.
 
 ---
 
@@ -975,7 +975,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/biglake_iceberg_namespace_iam_policy#id BiglakeIcebergNamespaceIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/biglake_iceberg_namespace_iam_policy#id BiglakeIcebergNamespaceIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -990,7 +990,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/biglake_iceberg_namespace_iam_policy#project BiglakeIcebergNamespaceIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/biglake_iceberg_namespace_iam_policy#project BiglakeIcebergNamespaceIamPolicy#project}.
 
 ---
 

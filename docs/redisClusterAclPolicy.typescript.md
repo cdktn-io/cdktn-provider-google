@@ -4,7 +4,7 @@
 
 ### RedisClusterAclPolicy <a name="RedisClusterAclPolicy" id="@cdktn/provider-google.redisClusterAclPolicy.RedisClusterAclPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/redis_cluster_acl_policy google_redis_cluster_acl_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/redis_cluster_acl_policy google_redis_cluster_acl_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.redisClusterAclPolicy.RedisClusterAclPolicy.Initializer"></a>
 
@@ -543,7 +543,7 @@ The construct id used in the generated config for the RedisClusterAclPolicy to i
 
 The id of the existing RedisClusterAclPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/redis_cluster_acl_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/redis_cluster_acl_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -950,8 +950,8 @@ const redisClusterAclPolicyConfig: redisClusterAclPolicy.RedisClusterAclPolicyCo
 | <code><a href="#@cdktn/provider-google.redisClusterAclPolicy.RedisClusterAclPolicyConfig.property.location">location</a></code> | <code>string</code> | Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122. |
 | <code><a href="#@cdktn/provider-google.redisClusterAclPolicy.RedisClusterAclPolicyConfig.property.rules">rules</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.redisClusterAclPolicy.RedisClusterAclPolicyRules">RedisClusterAclPolicyRules</a>[]</code> | rules block. |
 | <code><a href="#@cdktn/provider-google.redisClusterAclPolicy.RedisClusterAclPolicyConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.redisClusterAclPolicy.RedisClusterAclPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/redis_cluster_acl_policy#id RedisClusterAclPolicy#id}. |
-| <code><a href="#@cdktn/provider-google.redisClusterAclPolicy.RedisClusterAclPolicyConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/redis_cluster_acl_policy#project RedisClusterAclPolicy#project}. |
+| <code><a href="#@cdktn/provider-google.redisClusterAclPolicy.RedisClusterAclPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/redis_cluster_acl_policy#id RedisClusterAclPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.redisClusterAclPolicy.RedisClusterAclPolicyConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/redis_cluster_acl_policy#project RedisClusterAclPolicy#project}. |
 | <code><a href="#@cdktn/provider-google.redisClusterAclPolicy.RedisClusterAclPolicyConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.redisClusterAclPolicy.RedisClusterAclPolicyTimeouts">RedisClusterAclPolicyTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1042,7 +1042,7 @@ The logical name of the ACL policy in the customer project with the following re
 * Must end with a number or a letter.
 * Must be unique within the customer project / location
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/redis_cluster_acl_policy#acl_policy_id RedisClusterAclPolicy#acl_policy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/redis_cluster_acl_policy#acl_policy_id RedisClusterAclPolicy#acl_policy_id}
 
 ---
 
@@ -1056,7 +1056,7 @@ public readonly location: string;
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/redis_cluster_acl_policy#location RedisClusterAclPolicy#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/redis_cluster_acl_policy#location RedisClusterAclPolicy#location}
 
 ---
 
@@ -1070,7 +1070,7 @@ public readonly rules: IResolvable | RedisClusterAclPolicyRules[];
 
 rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/redis_cluster_acl_policy#rules RedisClusterAclPolicy#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/redis_cluster_acl_policy#rules RedisClusterAclPolicy#rules}
 
 ---
 
@@ -1092,7 +1092,7 @@ management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/redis_cluster_acl_policy#deletion_policy RedisClusterAclPolicy#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/redis_cluster_acl_policy#deletion_policy RedisClusterAclPolicy#deletion_policy}
 
 ---
 
@@ -1104,7 +1104,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/redis_cluster_acl_policy#id RedisClusterAclPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/redis_cluster_acl_policy#id RedisClusterAclPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1119,7 +1119,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/redis_cluster_acl_policy#project RedisClusterAclPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/redis_cluster_acl_policy#project RedisClusterAclPolicy#project}.
 
 ---
 
@@ -1133,7 +1133,7 @@ public readonly timeouts: RedisClusterAclPolicyTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/redis_cluster_acl_policy#timeouts RedisClusterAclPolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/redis_cluster_acl_policy#timeouts RedisClusterAclPolicy#timeouts}
 
 ---
 
@@ -1170,7 +1170,7 @@ Ex: "on >password123 ~* +@all"
 The format of the rule is defined by Redis OSS:
 https://redis.io/docs/latest/operate/oss_and_stack/management/security/acl/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/redis_cluster_acl_policy#rule RedisClusterAclPolicy#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/redis_cluster_acl_policy#rule RedisClusterAclPolicy#rule}
 
 ---
 
@@ -1186,7 +1186,7 @@ Specifies the IAM user or service account to be added to the ACL policy.
 
 This username will be directly set on the Redis OSS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/redis_cluster_acl_policy#username RedisClusterAclPolicy#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/redis_cluster_acl_policy#username RedisClusterAclPolicy#username}
 
 ---
 
@@ -1204,9 +1204,9 @@ const redisClusterAclPolicyTimeouts: redisClusterAclPolicy.RedisClusterAclPolicy
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.redisClusterAclPolicy.RedisClusterAclPolicyTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/redis_cluster_acl_policy#create RedisClusterAclPolicy#create}. |
-| <code><a href="#@cdktn/provider-google.redisClusterAclPolicy.RedisClusterAclPolicyTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/redis_cluster_acl_policy#delete RedisClusterAclPolicy#delete}. |
-| <code><a href="#@cdktn/provider-google.redisClusterAclPolicy.RedisClusterAclPolicyTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/redis_cluster_acl_policy#update RedisClusterAclPolicy#update}. |
+| <code><a href="#@cdktn/provider-google.redisClusterAclPolicy.RedisClusterAclPolicyTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/redis_cluster_acl_policy#create RedisClusterAclPolicy#create}. |
+| <code><a href="#@cdktn/provider-google.redisClusterAclPolicy.RedisClusterAclPolicyTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/redis_cluster_acl_policy#delete RedisClusterAclPolicy#delete}. |
+| <code><a href="#@cdktn/provider-google.redisClusterAclPolicy.RedisClusterAclPolicyTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/redis_cluster_acl_policy#update RedisClusterAclPolicy#update}. |
 
 ---
 
@@ -1218,7 +1218,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/redis_cluster_acl_policy#create RedisClusterAclPolicy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/redis_cluster_acl_policy#create RedisClusterAclPolicy#create}.
 
 ---
 
@@ -1230,7 +1230,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/redis_cluster_acl_policy#delete RedisClusterAclPolicy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/redis_cluster_acl_policy#delete RedisClusterAclPolicy#delete}.
 
 ---
 
@@ -1242,7 +1242,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.0/docs/resources/redis_cluster_acl_policy#update RedisClusterAclPolicy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/redis_cluster_acl_policy#update RedisClusterAclPolicy#update}.
 
 ---
 
