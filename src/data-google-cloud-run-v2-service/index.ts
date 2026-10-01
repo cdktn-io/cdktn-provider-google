@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/cloud_run_v2_service
+// https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/data-sources/cloud_run_v2_service
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface DataGoogleCloudRunV2ServiceConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/cloud_run_v2_service#id DataGoogleCloudRunV2Service#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/data-sources/cloud_run_v2_service#id DataGoogleCloudRunV2Service#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,17 +22,17 @@ export interface DataGoogleCloudRunV2ServiceConfig extends cdktn.TerraformMetaAr
   /**
   * The location of the cloud run service
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/cloud_run_v2_service#location DataGoogleCloudRunV2Service#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/data-sources/cloud_run_v2_service#location DataGoogleCloudRunV2Service#location}
   */
   readonly location?: string;
   /**
   * Name of the Service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/cloud_run_v2_service#name DataGoogleCloudRunV2Service#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/data-sources/cloud_run_v2_service#name DataGoogleCloudRunV2Service#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/cloud_run_v2_service#project DataGoogleCloudRunV2Service#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/data-sources/cloud_run_v2_service#project DataGoogleCloudRunV2Service#project}
   */
   readonly project?: string;
 }
@@ -2842,6 +2842,16 @@ export class DataGoogleCloudRunV2ServiceTemplateScalingOutputReference extends c
     }
   }
 
+  // concurrency_utilization - computed: true, optional: false, required: false
+  public get concurrencyUtilization() {
+    return this.getNumberAttribute('concurrency_utilization');
+  }
+
+  // cpu_utilization - computed: true, optional: false, required: false
+  public get cpuUtilization() {
+    return this.getNumberAttribute('cpu_utilization');
+  }
+
   // max_instance_count - computed: true, optional: false, required: false
   public get maxInstanceCount() {
     return this.getNumberAttribute('max_instance_count');
@@ -3643,6 +3653,91 @@ export class DataGoogleCloudRunV2ServiceTemplateVpcAccessList extends cdktn.Comp
     return new DataGoogleCloudRunV2ServiceTemplateVpcAccessOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataGoogleCloudRunV2ServiceTemplateWorkloadIdentityConfig {
+}
+
+export function dataGoogleCloudRunV2ServiceTemplateWorkloadIdentityConfigToTerraform(struct?: DataGoogleCloudRunV2ServiceTemplateWorkloadIdentityConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataGoogleCloudRunV2ServiceTemplateWorkloadIdentityConfigToHclTerraform(struct?: DataGoogleCloudRunV2ServiceTemplateWorkloadIdentityConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataGoogleCloudRunV2ServiceTemplateWorkloadIdentityConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataGoogleCloudRunV2ServiceTemplateWorkloadIdentityConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataGoogleCloudRunV2ServiceTemplateWorkloadIdentityConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // identity - computed: true, optional: false, required: false
+  public get identity() {
+    return this.getStringAttribute('identity');
+  }
+
+  // identity_certificate_enabled - computed: true, optional: false, required: false
+  public get identityCertificateEnabled() {
+    return this.getBooleanAttribute('identity_certificate_enabled');
+  }
+
+  // identity_type - computed: true, optional: false, required: false
+  public get identityType() {
+    return this.getStringAttribute('identity_type');
+  }
+}
+
+export class DataGoogleCloudRunV2ServiceTemplateWorkloadIdentityConfigList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataGoogleCloudRunV2ServiceTemplateWorkloadIdentityConfigOutputReference {
+    return new DataGoogleCloudRunV2ServiceTemplateWorkloadIdentityConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataGoogleCloudRunV2ServiceTemplate {
 }
 
@@ -3785,6 +3880,12 @@ export class DataGoogleCloudRunV2ServiceTemplateOutputReference extends cdktn.Co
   private _vpcAccess = new DataGoogleCloudRunV2ServiceTemplateVpcAccessList(this, "vpc_access", false);
   public get vpcAccess() {
     return this._vpcAccess;
+  }
+
+  // workload_identity_config - computed: true, optional: false, required: false
+  private _workloadIdentityConfig = new DataGoogleCloudRunV2ServiceTemplateWorkloadIdentityConfigList(this, "workload_identity_config", false);
+  public get workloadIdentityConfig() {
+    return this._workloadIdentityConfig;
   }
 }
 
@@ -4103,7 +4204,7 @@ export class DataGoogleCloudRunV2ServiceTrafficStatusesList extends cdktn.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/cloud_run_v2_service google_cloud_run_v2_service}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/data-sources/cloud_run_v2_service google_cloud_run_v2_service}
 */
 export class DataGoogleCloudRunV2Service extends cdktn.TerraformDataSource {
 
@@ -4119,7 +4220,7 @@ export class DataGoogleCloudRunV2Service extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataGoogleCloudRunV2Service resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleCloudRunV2Service to import
-  * @param importFromId The id of the existing DataGoogleCloudRunV2Service that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/cloud_run_v2_service#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleCloudRunV2Service that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/data-sources/cloud_run_v2_service#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleCloudRunV2Service to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -4131,7 +4232,7 @@ export class DataGoogleCloudRunV2Service extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/cloud_run_v2_service google_cloud_run_v2_service} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/data-sources/cloud_run_v2_service google_cloud_run_v2_service} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -4142,8 +4243,8 @@ export class DataGoogleCloudRunV2Service extends cdktn.TerraformDataSource {
       terraformResourceType: 'google_cloud_run_v2_service',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.46.1',
-        providerVersionConstraint: '~> 7.0'
+        providerVersion: '8.5.0',
+        providerVersionConstraint: '~> 8.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -4386,6 +4487,11 @@ export class DataGoogleCloudRunV2Service extends cdktn.TerraformDataSource {
   private _scaling = new DataGoogleCloudRunV2ServiceScalingList(this, "scaling", false);
   public get scaling() {
     return this._scaling;
+  }
+
+  // ssh_enabled - computed: true, optional: false, required: false
+  public get sshEnabled() {
+    return this.getBooleanAttribute('ssh_enabled');
   }
 
   // tags - computed: true, optional: false, required: false

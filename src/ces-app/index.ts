@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app
+// https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -17,7 +17,7 @@ export interface CesAppConfig extends cdktn.TerraformMetaArguments {
   * the app's resource name. If not provided, a unique ID will be
   * automatically assigned for the app.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#app_id CesApp#app_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#app_id CesApp#app_id}
   */
   readonly appId: string;
   /**
@@ -29,19 +29,19 @@ export interface CesAppConfig extends cdktn.TerraformMetaArguments {
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#deletion_policy CesApp#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#deletion_policy CesApp#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * Human-readable description of the app.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#description CesApp#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#description CesApp#description}
   */
   readonly description?: string;
   /**
   * Display name of the app.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#display_name CesApp#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#display_name CesApp#display_name}
   */
   readonly displayName: string;
   /**
@@ -49,7 +49,7 @@ export interface CesAppConfig extends cdktn.TerraformMetaArguments {
   * You can use this instruction to set up a stable identity or personality
   * across all the agents.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#global_instruction CesApp#global_instruction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#global_instruction CesApp#global_instruction}
   */
   readonly globalInstruction?: string;
   /**
@@ -57,11 +57,11 @@ export interface CesAppConfig extends cdktn.TerraformMetaArguments {
   * Format:
   * 'projects/{project}/locations/{location}/apps/{app}/guardrails/{guardrail}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#guardrails CesApp#guardrails}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#guardrails CesApp#guardrails}
   */
   readonly guardrails?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#id CesApp#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#id CesApp#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -70,106 +70,125 @@ export interface CesAppConfig extends cdktn.TerraformMetaArguments {
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#location CesApp#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#location CesApp#location}
   */
   readonly location: string;
+  /**
+  * Indicates whether the app is locked for changes. If the app is locked,
+  * modifications to the app resources will be rejected.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#locked CesApp#locked}
+  */
+  readonly locked?: boolean | cdktn.IResolvable;
   /**
   * Metadata about the app. This field can be used to store additional
   * information relevant to the app's details or intended usages.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#metadata CesApp#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#metadata CesApp#metadata}
   */
   readonly metadata?: { [key: string]: string };
   /**
   * Whether the app is pinned in the app list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#pinned CesApp#pinned}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#pinned CesApp#pinned}
   */
   readonly pinned?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#project CesApp#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#project CesApp#project}
   */
   readonly project?: string;
   /**
   * The root agent is the entry point of the app.
   * Format: 'projects/{project}/locations/{location}/apps/{app}/agents/{agent}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#root_agent CesApp#root_agent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#root_agent CesApp#root_agent}
   */
   readonly rootAgent?: string;
   /**
   * The tool execution mode for the app.
   * See the [API reference](https://docs.cloud.google.com/customer-engagement-ai/conversational-agents/ps/reference/rpc/google.cloud.ces.v1#google.cloud.ces.v1.App.ToolExecutionMode) for more details.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#tool_execution_mode CesApp#tool_execution_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#tool_execution_mode CesApp#tool_execution_mode}
   */
   readonly toolExecutionMode?: string;
   /**
   * audio_processing_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#audio_processing_config CesApp#audio_processing_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#audio_processing_config CesApp#audio_processing_config}
   */
   readonly audioProcessingConfig?: CesAppAudioProcessingConfig;
   /**
   * client_certificate_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#client_certificate_settings CesApp#client_certificate_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#client_certificate_settings CesApp#client_certificate_settings}
   */
   readonly clientCertificateSettings?: CesAppClientCertificateSettings;
   /**
   * data_store_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#data_store_settings CesApp#data_store_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#data_store_settings CesApp#data_store_settings}
   */
   readonly dataStoreSettings?: CesAppDataStoreSettings;
   /**
   * default_channel_profile block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#default_channel_profile CesApp#default_channel_profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#default_channel_profile CesApp#default_channel_profile}
   */
   readonly defaultChannelProfile?: CesAppDefaultChannelProfile;
   /**
+  * error_handling_settings block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#error_handling_settings CesApp#error_handling_settings}
+  */
+  readonly errorHandlingSettings?: CesAppErrorHandlingSettings;
+  /**
   * evaluation_metrics_thresholds block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#evaluation_metrics_thresholds CesApp#evaluation_metrics_thresholds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#evaluation_metrics_thresholds CesApp#evaluation_metrics_thresholds}
   */
   readonly evaluationMetricsThresholds?: CesAppEvaluationMetricsThresholds;
   /**
   * language_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#language_settings CesApp#language_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#language_settings CesApp#language_settings}
   */
   readonly languageSettings?: CesAppLanguageSettings;
   /**
   * logging_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#logging_settings CesApp#logging_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#logging_settings CesApp#logging_settings}
   */
   readonly loggingSettings?: CesAppLoggingSettings;
   /**
   * model_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#model_settings CesApp#model_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#model_settings CesApp#model_settings}
   */
   readonly modelSettings?: CesAppModelSettings;
   /**
   * time_zone_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#time_zone_settings CesApp#time_zone_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#time_zone_settings CesApp#time_zone_settings}
   */
   readonly timeZoneSettings?: CesAppTimeZoneSettings;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#timeouts CesApp#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#timeouts CesApp#timeouts}
   */
   readonly timeouts?: CesAppTimeouts;
   /**
   * variable_declarations block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#variable_declarations CesApp#variable_declarations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#variable_declarations CesApp#variable_declarations}
   */
   readonly variableDeclarations?: CesAppVariableDeclarations[] | cdktn.IResolvable;
+  /**
+  * vpc_sc_settings block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#vpc_sc_settings CesApp#vpc_sc_settings}
+  */
+  readonly vpcScSettings?: CesAppVpcScSettings;
 }
 export interface CesAppAudioProcessingConfigAmbientSoundConfig {
   /**
@@ -179,7 +198,7 @@ export interface CesAppAudioProcessingConfigAmbientSoundConfig {
   * 'service-@gcp-sa-ces.iam.gserviceaccount.com' has
   * 'storage.objects.get' permission to the Cloud Storage object.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#gcs_uri CesApp#gcs_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#gcs_uri CesApp#gcs_uri}
   */
   readonly gcsUri?: string;
   /**
@@ -189,7 +208,7 @@ export interface CesAppAudioProcessingConfigAmbientSoundConfig {
   * -"room_1" - "room_2" - "room_3"
   * -"room_4" - "room_5" - "air_conditioner"
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#prebuilt_ambient_sound CesApp#prebuilt_ambient_sound}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#prebuilt_ambient_sound CesApp#prebuilt_ambient_sound}
   */
   readonly prebuiltAmbientSound?: string;
   /**
@@ -202,7 +221,7 @@ export interface CesAppAudioProcessingConfigAmbientSoundConfig {
   * to exceed +10 (dB) as there's usually no effective increase in loudness for
   * any value greater than that.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#volume_gain_db CesApp#volume_gain_db}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#volume_gain_db CesApp#volume_gain_db}
   */
   readonly volumeGainDb?: number;
 }
@@ -349,7 +368,7 @@ export interface CesAppAudioProcessingConfigBargeInConfig {
   * This should not be used in scenarios where agent responses are displayed
   * visually.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#barge_in_awareness CesApp#barge_in_awareness}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#barge_in_awareness CesApp#barge_in_awareness}
   */
   readonly bargeInAwareness?: boolean | cdktn.IResolvable;
 }
@@ -433,7 +452,7 @@ export class CesAppAudioProcessingConfigBargeInConfigOutputReference extends cdk
 }
 export interface CesAppAudioProcessingConfigSynthesizeSpeechConfigs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#language_code CesApp#language_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#language_code CesApp#language_code}
   */
   readonly languageCode: string;
   /**
@@ -441,7 +460,7 @@ export interface CesAppAudioProcessingConfigSynthesizeSpeechConfigs {
   * speed supported by the specific voice. 2.0 is twice as fast, and 0.5 is
   * half as fast. Values outside of the range [0.25, 2.0] will return an error.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#speaking_rate CesApp#speaking_rate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#speaking_rate CesApp#speaking_rate}
   */
   readonly speakingRate?: number;
   /**
@@ -450,7 +469,7 @@ export interface CesAppAudioProcessingConfigSynthesizeSpeechConfigs {
   * For the list of available voices, please refer to Supported voices and
   * languages from Cloud Text-to-Speech.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#voice CesApp#voice}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#voice CesApp#voice}
   */
   readonly voice?: string;
 }
@@ -625,25 +644,25 @@ export interface CesAppAudioProcessingConfig {
   * prompts the user for reengagement. If not set, the agent will not prompt
   * the user for reengagement.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#inactivity_timeout CesApp#inactivity_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#inactivity_timeout CesApp#inactivity_timeout}
   */
   readonly inactivityTimeout?: string;
   /**
   * ambient_sound_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#ambient_sound_config CesApp#ambient_sound_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#ambient_sound_config CesApp#ambient_sound_config}
   */
   readonly ambientSoundConfig?: CesAppAudioProcessingConfigAmbientSoundConfig;
   /**
   * barge_in_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#barge_in_config CesApp#barge_in_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#barge_in_config CesApp#barge_in_config}
   */
   readonly bargeInConfig?: CesAppAudioProcessingConfigBargeInConfig;
   /**
   * synthesize_speech_configs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#synthesize_speech_configs CesApp#synthesize_speech_configs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#synthesize_speech_configs CesApp#synthesize_speech_configs}
   */
   readonly synthesizeSpeechConfigs?: CesAppAudioProcessingConfigSynthesizeSpeechConfigs[] | cdktn.IResolvable;
 }
@@ -817,7 +836,7 @@ export interface CesAppClientCertificateSettings {
   * The passphrase to decrypt the private key.
   * Should be left unset if the private key is not encrypted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#passphrase CesApp#passphrase}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#passphrase CesApp#passphrase}
   */
   readonly passphrase?: string;
   /**
@@ -825,14 +844,14 @@ export interface CesAppClientCertificateSettings {
   * storing the private key encoded in PEM format.
   * Format: projects/{project}/secrets/{secret}/versions/{version}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#private_key CesApp#private_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#private_key CesApp#private_key}
   */
   readonly privateKey: string;
   /**
   * The TLS certificate encoded in PEM format.
   * This string must include the begin header and end footer lines.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#tls_certificate CesApp#tls_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#tls_certificate CesApp#tls_certificate}
   */
   readonly tlsCertificate: string;
 }
@@ -1109,7 +1128,7 @@ export interface CesAppDefaultChannelProfilePersonaProperty {
   * CONCISE
   * CHATTY
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#persona CesApp#persona}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#persona CesApp#persona}
   */
   readonly persona?: string;
 }
@@ -1191,6 +1210,207 @@ export class CesAppDefaultChannelProfilePersonaPropertyOutputReference extends c
     return this._persona;
   }
 }
+export interface CesAppDefaultChannelProfileWebWidgetConfigSecuritySettings {
+  /**
+  * The origins that are allowed to host the web widget. An origin is
+  * defined by RFC 6454. If empty, all origins are allowed.
+  * A maximum of 100 origins is allowed.
+  * Example: "https://example.com"
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#allowed_origins CesApp#allowed_origins}
+  */
+  readonly allowedOrigins?: string[];
+  /**
+  * Indicates whether origin check for the web widget is enabled.
+  * If 'true', the web widget will check the origin of the website that
+  * loads the web widget and only allow it to be loaded in the same origin
+  * or any of the allowed origins.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#enable_origin_check CesApp#enable_origin_check}
+  */
+  readonly enableOriginCheck?: boolean | cdktn.IResolvable;
+  /**
+  * Indicates whether public access to the web widget is enabled.
+  * If 'true', the web widget will be publicly accessible.
+  * If 'false', the web widget must be integrated with your own
+  * authentication and authorization system to return valid credentials for
+  * accessing the CES agent.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#enable_public_access CesApp#enable_public_access}
+  */
+  readonly enablePublicAccess?: boolean | cdktn.IResolvable;
+  /**
+  * Indicates whether reCAPTCHA verification for the web widget is enabled.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#enable_recaptcha CesApp#enable_recaptcha}
+  */
+  readonly enableRecaptcha?: boolean | cdktn.IResolvable;
+}
+
+export function cesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsToTerraform(struct?: CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference | CesAppDefaultChannelProfileWebWidgetConfigSecuritySettings): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    allowed_origins: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedOrigins),
+    enable_origin_check: cdktn.booleanToTerraform(struct!.enableOriginCheck),
+    enable_public_access: cdktn.booleanToTerraform(struct!.enablePublicAccess),
+    enable_recaptcha: cdktn.booleanToTerraform(struct!.enableRecaptcha),
+  }
+}
+
+
+export function cesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsToHclTerraform(struct?: CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference | CesAppDefaultChannelProfileWebWidgetConfigSecuritySettings): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    allowed_origins: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedOrigins),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    enable_origin_check: {
+      value: cdktn.booleanToHclTerraform(struct!.enableOriginCheck),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    enable_public_access: {
+      value: cdktn.booleanToHclTerraform(struct!.enablePublicAccess),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    enable_recaptcha: {
+      value: cdktn.booleanToHclTerraform(struct!.enableRecaptcha),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): CesAppDefaultChannelProfileWebWidgetConfigSecuritySettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._allowedOrigins !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.allowedOrigins = this._allowedOrigins;
+    }
+    if (this._enableOriginCheck !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enableOriginCheck = this._enableOriginCheck;
+    }
+    if (this._enablePublicAccess !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enablePublicAccess = this._enablePublicAccess;
+    }
+    if (this._enableRecaptcha !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enableRecaptcha = this._enableRecaptcha;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CesAppDefaultChannelProfileWebWidgetConfigSecuritySettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._allowedOrigins = undefined;
+      this._enableOriginCheck = undefined;
+      this._enablePublicAccess = undefined;
+      this._enableRecaptcha = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._allowedOrigins = value.allowedOrigins;
+      this._enableOriginCheck = value.enableOriginCheck;
+      this._enablePublicAccess = value.enablePublicAccess;
+      this._enableRecaptcha = value.enableRecaptcha;
+    }
+  }
+
+  // allowed_origins - computed: false, optional: true, required: false
+  private _allowedOrigins?: string[]; 
+  public get allowedOrigins() {
+    return this.getListAttribute('allowed_origins');
+  }
+  public set allowedOrigins(value: string[]) {
+    this._allowedOrigins = value;
+  }
+  public resetAllowedOrigins() {
+    this._allowedOrigins = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowedOriginsInput() {
+    return this._allowedOrigins;
+  }
+
+  // enable_origin_check - computed: false, optional: true, required: false
+  private _enableOriginCheck?: boolean | cdktn.IResolvable; 
+  public get enableOriginCheck() {
+    return this.getBooleanAttribute('enable_origin_check');
+  }
+  public set enableOriginCheck(value: boolean | cdktn.IResolvable) {
+    this._enableOriginCheck = value;
+  }
+  public resetEnableOriginCheck() {
+    this._enableOriginCheck = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableOriginCheckInput() {
+    return this._enableOriginCheck;
+  }
+
+  // enable_public_access - computed: false, optional: true, required: false
+  private _enablePublicAccess?: boolean | cdktn.IResolvable; 
+  public get enablePublicAccess() {
+    return this.getBooleanAttribute('enable_public_access');
+  }
+  public set enablePublicAccess(value: boolean | cdktn.IResolvable) {
+    this._enablePublicAccess = value;
+  }
+  public resetEnablePublicAccess() {
+    this._enablePublicAccess = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enablePublicAccessInput() {
+    return this._enablePublicAccess;
+  }
+
+  // enable_recaptcha - computed: false, optional: true, required: false
+  private _enableRecaptcha?: boolean | cdktn.IResolvable; 
+  public get enableRecaptcha() {
+    return this.getBooleanAttribute('enable_recaptcha');
+  }
+  public set enableRecaptcha(value: boolean | cdktn.IResolvable) {
+    this._enableRecaptcha = value;
+  }
+  public resetEnableRecaptcha() {
+    this._enableRecaptcha = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableRecaptchaInput() {
+    return this._enableRecaptcha;
+  }
+}
 export interface CesAppDefaultChannelProfileWebWidgetConfig {
   /**
   * The modality of the web widget.
@@ -1200,7 +1420,7 @@ export interface CesAppDefaultChannelProfileWebWidgetConfig {
   * VOICE_ONLY
   * CHAT_ONLY
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#modality CesApp#modality}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#modality CesApp#modality}
   */
   readonly modality?: string;
   /**
@@ -1210,15 +1430,21 @@ export interface CesAppDefaultChannelProfileWebWidgetConfig {
   * LIGHT
   * DARK
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#theme CesApp#theme}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#theme CesApp#theme}
   */
   readonly theme?: string;
   /**
   * The title of the web widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#web_widget_title CesApp#web_widget_title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#web_widget_title CesApp#web_widget_title}
   */
   readonly webWidgetTitle?: string;
+  /**
+  * security_settings block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#security_settings CesApp#security_settings}
+  */
+  readonly securitySettings?: CesAppDefaultChannelProfileWebWidgetConfigSecuritySettings;
 }
 
 export function cesAppDefaultChannelProfileWebWidgetConfigToTerraform(struct?: CesAppDefaultChannelProfileWebWidgetConfigOutputReference | CesAppDefaultChannelProfileWebWidgetConfig): any {
@@ -1230,6 +1456,7 @@ export function cesAppDefaultChannelProfileWebWidgetConfigToTerraform(struct?: C
     modality: cdktn.stringToTerraform(struct!.modality),
     theme: cdktn.stringToTerraform(struct!.theme),
     web_widget_title: cdktn.stringToTerraform(struct!.webWidgetTitle),
+    security_settings: cesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsToTerraform(struct!.securitySettings),
   }
 }
 
@@ -1257,6 +1484,12 @@ export function cesAppDefaultChannelProfileWebWidgetConfigToHclTerraform(struct?
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    security_settings: {
+      value: cesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsToHclTerraform(struct!.securitySettings),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsList",
     },
   };
 
@@ -1290,6 +1523,10 @@ export class CesAppDefaultChannelProfileWebWidgetConfigOutputReference extends c
       hasAnyValues = true;
       internalValueResult.webWidgetTitle = this._webWidgetTitle;
     }
+    if (this._securitySettings?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.securitySettings = this._securitySettings?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -1299,12 +1536,14 @@ export class CesAppDefaultChannelProfileWebWidgetConfigOutputReference extends c
       this._modality = undefined;
       this._theme = undefined;
       this._webWidgetTitle = undefined;
+      this._securitySettings.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._modality = value.modality;
       this._theme = value.theme;
       this._webWidgetTitle = value.webWidgetTitle;
+      this._securitySettings.internalValue = value.securitySettings;
     }
   }
 
@@ -1355,6 +1594,187 @@ export class CesAppDefaultChannelProfileWebWidgetConfigOutputReference extends c
   public get webWidgetTitleInput() {
     return this._webWidgetTitle;
   }
+
+  // security_settings - computed: false, optional: true, required: false
+  private _securitySettings = new CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference(this, "security_settings");
+  public get securitySettings() {
+    return this._securitySettings;
+  }
+  public putSecuritySettings(value: CesAppDefaultChannelProfileWebWidgetConfigSecuritySettings) {
+    this._securitySettings.internalValue = value;
+  }
+  public resetSecuritySettings() {
+    this._securitySettings.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get securitySettingsInput() {
+    return this._securitySettings.internalValue;
+  }
+}
+export interface CesAppDefaultChannelProfileWhatsappConfig {
+  /**
+  * The phone number in E.164 format.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#phone_number CesApp#phone_number}
+  */
+  readonly phoneNumber?: string;
+  /**
+  * The Meta phone number ID.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#phone_number_id CesApp#phone_number_id}
+  */
+  readonly phoneNumberId: string;
+  /**
+  * The WhatsApp Business Account ID.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#waba_id CesApp#waba_id}
+  */
+  readonly wabaId: string;
+}
+
+export function cesAppDefaultChannelProfileWhatsappConfigToTerraform(struct?: CesAppDefaultChannelProfileWhatsappConfigOutputReference | CesAppDefaultChannelProfileWhatsappConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    phone_number: cdktn.stringToTerraform(struct!.phoneNumber),
+    phone_number_id: cdktn.stringToTerraform(struct!.phoneNumberId),
+    waba_id: cdktn.stringToTerraform(struct!.wabaId),
+  }
+}
+
+
+export function cesAppDefaultChannelProfileWhatsappConfigToHclTerraform(struct?: CesAppDefaultChannelProfileWhatsappConfigOutputReference | CesAppDefaultChannelProfileWhatsappConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    phone_number: {
+      value: cdktn.stringToHclTerraform(struct!.phoneNumber),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    phone_number_id: {
+      value: cdktn.stringToHclTerraform(struct!.phoneNumberId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    waba_id: {
+      value: cdktn.stringToHclTerraform(struct!.wabaId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class CesAppDefaultChannelProfileWhatsappConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): CesAppDefaultChannelProfileWhatsappConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._phoneNumber !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.phoneNumber = this._phoneNumber;
+    }
+    if (this._phoneNumberId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.phoneNumberId = this._phoneNumberId;
+    }
+    if (this._wabaId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.wabaId = this._wabaId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CesAppDefaultChannelProfileWhatsappConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._phoneNumber = undefined;
+      this._phoneNumberId = undefined;
+      this._wabaId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._phoneNumber = value.phoneNumber;
+      this._phoneNumberId = value.phoneNumberId;
+      this._wabaId = value.wabaId;
+    }
+  }
+
+  // description - computed: true, optional: false, required: false
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+
+  // display_name - computed: true, optional: false, required: false
+  public get displayName() {
+    return this.getStringAttribute('display_name');
+  }
+
+  // phone_number - computed: false, optional: true, required: false
+  private _phoneNumber?: string; 
+  public get phoneNumber() {
+    return this.getStringAttribute('phone_number');
+  }
+  public set phoneNumber(value: string) {
+    this._phoneNumber = value;
+  }
+  public resetPhoneNumber() {
+    this._phoneNumber = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get phoneNumberInput() {
+    return this._phoneNumber;
+  }
+
+  // phone_number_id - computed: false, optional: false, required: true
+  private _phoneNumberId?: string; 
+  public get phoneNumberId() {
+    return this.getStringAttribute('phone_number_id');
+  }
+  public set phoneNumberId(value: string) {
+    this._phoneNumberId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get phoneNumberIdInput() {
+    return this._phoneNumberId;
+  }
+
+  // thumbnail_url - computed: true, optional: false, required: false
+  public get thumbnailUrl() {
+    return this.getStringAttribute('thumbnail_url');
+  }
+
+  // waba_id - computed: false, optional: false, required: true
+  private _wabaId?: string; 
+  public get wabaId() {
+    return this.getStringAttribute('waba_id');
+  }
+  public set wabaId(value: string) {
+    this._wabaId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get wabaIdInput() {
+    return this._wabaId;
+  }
 }
 export interface CesAppDefaultChannelProfile {
   /**
@@ -1367,7 +1787,7 @@ export interface CesAppDefaultChannelProfile {
   * GOOGLE_TELEPHONY_PLATFORM
   * CONTACT_CENTER_AS_A_SERVICE
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#channel_type CesApp#channel_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#channel_type CesApp#channel_type}
   */
   readonly channelType?: string;
   /**
@@ -1375,33 +1795,39 @@ export interface CesAppDefaultChannelProfile {
   * - true: User interruptions are disabled while the agent is speaking.
   * - false: The agent retains automatic control over when the user can interrupt.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#disable_barge_in_control CesApp#disable_barge_in_control}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#disable_barge_in_control CesApp#disable_barge_in_control}
   */
   readonly disableBargeInControl?: boolean | cdktn.IResolvable;
   /**
   * Whether to disable DTMF (dual-tone multi-frequency).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#disable_dtmf CesApp#disable_dtmf}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#disable_dtmf CesApp#disable_dtmf}
   */
   readonly disableDtmf?: boolean | cdktn.IResolvable;
   /**
   * The unique identifier of the channel profile.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#profile_id CesApp#profile_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#profile_id CesApp#profile_id}
   */
   readonly profileId?: string;
   /**
   * persona_property block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#persona_property CesApp#persona_property}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#persona_property CesApp#persona_property}
   */
   readonly personaProperty?: CesAppDefaultChannelProfilePersonaProperty;
   /**
   * web_widget_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#web_widget_config CesApp#web_widget_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#web_widget_config CesApp#web_widget_config}
   */
   readonly webWidgetConfig?: CesAppDefaultChannelProfileWebWidgetConfig;
+  /**
+  * whatsapp_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#whatsapp_config CesApp#whatsapp_config}
+  */
+  readonly whatsappConfig?: CesAppDefaultChannelProfileWhatsappConfig;
 }
 
 export function cesAppDefaultChannelProfileToTerraform(struct?: CesAppDefaultChannelProfileOutputReference | CesAppDefaultChannelProfile): any {
@@ -1416,6 +1842,7 @@ export function cesAppDefaultChannelProfileToTerraform(struct?: CesAppDefaultCha
     profile_id: cdktn.stringToTerraform(struct!.profileId),
     persona_property: cesAppDefaultChannelProfilePersonaPropertyToTerraform(struct!.personaProperty),
     web_widget_config: cesAppDefaultChannelProfileWebWidgetConfigToTerraform(struct!.webWidgetConfig),
+    whatsapp_config: cesAppDefaultChannelProfileWhatsappConfigToTerraform(struct!.whatsappConfig),
   }
 }
 
@@ -1462,6 +1889,12 @@ export function cesAppDefaultChannelProfileToHclTerraform(struct?: CesAppDefault
       type: "list",
       storageClassType: "CesAppDefaultChannelProfileWebWidgetConfigList",
     },
+    whatsapp_config: {
+      value: cesAppDefaultChannelProfileWhatsappConfigToHclTerraform(struct!.whatsappConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CesAppDefaultChannelProfileWhatsappConfigList",
+    },
   };
 
   // remove undefined attributes
@@ -1506,6 +1939,10 @@ export class CesAppDefaultChannelProfileOutputReference extends cdktn.ComplexObj
       hasAnyValues = true;
       internalValueResult.webWidgetConfig = this._webWidgetConfig?.internalValue;
     }
+    if (this._whatsappConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.whatsappConfig = this._whatsappConfig?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -1518,6 +1955,7 @@ export class CesAppDefaultChannelProfileOutputReference extends cdktn.ComplexObj
       this._profileId = undefined;
       this._personaProperty.internalValue = undefined;
       this._webWidgetConfig.internalValue = undefined;
+      this._whatsappConfig.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
@@ -1527,6 +1965,7 @@ export class CesAppDefaultChannelProfileOutputReference extends cdktn.ComplexObj
       this._profileId = value.profileId;
       this._personaProperty.internalValue = value.personaProperty;
       this._webWidgetConfig.internalValue = value.webWidgetConfig;
+      this._whatsappConfig.internalValue = value.whatsappConfig;
     }
   }
 
@@ -1625,13 +2064,400 @@ export class CesAppDefaultChannelProfileOutputReference extends cdktn.ComplexObj
   public get webWidgetConfigInput() {
     return this._webWidgetConfig.internalValue;
   }
+
+  // whatsapp_config - computed: false, optional: true, required: false
+  private _whatsappConfig = new CesAppDefaultChannelProfileWhatsappConfigOutputReference(this, "whatsapp_config");
+  public get whatsappConfig() {
+    return this._whatsappConfig;
+  }
+  public putWhatsappConfig(value: CesAppDefaultChannelProfileWhatsappConfig) {
+    this._whatsappConfig.internalValue = value;
+  }
+  public resetWhatsappConfig() {
+    this._whatsappConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get whatsappConfigInput() {
+    return this._whatsappConfig.internalValue;
+  }
+}
+export interface CesAppErrorHandlingSettingsEndSessionConfig {
+  /**
+  * Whether to escalate the session in EndSession. If session is escalated,
+  * metadata in EndSession will contain session_escalated = true.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#escalate_session CesApp#escalate_session}
+  */
+  readonly escalateSession?: boolean | cdktn.IResolvable;
+}
+
+export function cesAppErrorHandlingSettingsEndSessionConfigToTerraform(struct?: CesAppErrorHandlingSettingsEndSessionConfigOutputReference | CesAppErrorHandlingSettingsEndSessionConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    escalate_session: cdktn.booleanToTerraform(struct!.escalateSession),
+  }
+}
+
+
+export function cesAppErrorHandlingSettingsEndSessionConfigToHclTerraform(struct?: CesAppErrorHandlingSettingsEndSessionConfigOutputReference | CesAppErrorHandlingSettingsEndSessionConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    escalate_session: {
+      value: cdktn.booleanToHclTerraform(struct!.escalateSession),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class CesAppErrorHandlingSettingsEndSessionConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): CesAppErrorHandlingSettingsEndSessionConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._escalateSession !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.escalateSession = this._escalateSession;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CesAppErrorHandlingSettingsEndSessionConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._escalateSession = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._escalateSession = value.escalateSession;
+    }
+  }
+
+  // escalate_session - computed: false, optional: true, required: false
+  private _escalateSession?: boolean | cdktn.IResolvable; 
+  public get escalateSession() {
+    return this.getBooleanAttribute('escalate_session');
+  }
+  public set escalateSession(value: boolean | cdktn.IResolvable) {
+    this._escalateSession = value;
+  }
+  public resetEscalateSession() {
+    this._escalateSession = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get escalateSessionInput() {
+    return this._escalateSession;
+  }
+}
+export interface CesAppErrorHandlingSettingsFallbackResponseConfig {
+  /**
+  * The fallback messages in case of system errors (e.g. LLM errors),
+  * mapped by supported language code
+  * (https://docs.cloud.google.com/customer-engagement-ai/conversational-agents/ps/reference/language).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#custom_fallback_messages CesApp#custom_fallback_messages}
+  */
+  readonly customFallbackMessages?: { [key: string]: string };
+  /**
+  * The maximum number of fallback attempts to make before the agent
+  * emitting EndSession Signal.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#max_fallback_attempts CesApp#max_fallback_attempts}
+  */
+  readonly maxFallbackAttempts?: number;
+}
+
+export function cesAppErrorHandlingSettingsFallbackResponseConfigToTerraform(struct?: CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference | CesAppErrorHandlingSettingsFallbackResponseConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    custom_fallback_messages: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.customFallbackMessages),
+    max_fallback_attempts: cdktn.numberToTerraform(struct!.maxFallbackAttempts),
+  }
+}
+
+
+export function cesAppErrorHandlingSettingsFallbackResponseConfigToHclTerraform(struct?: CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference | CesAppErrorHandlingSettingsFallbackResponseConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    custom_fallback_messages: {
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.customFallbackMessages),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    max_fallback_attempts: {
+      value: cdktn.numberToHclTerraform(struct!.maxFallbackAttempts),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): CesAppErrorHandlingSettingsFallbackResponseConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._customFallbackMessages !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.customFallbackMessages = this._customFallbackMessages;
+    }
+    if (this._maxFallbackAttempts !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maxFallbackAttempts = this._maxFallbackAttempts;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CesAppErrorHandlingSettingsFallbackResponseConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._customFallbackMessages = undefined;
+      this._maxFallbackAttempts = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._customFallbackMessages = value.customFallbackMessages;
+      this._maxFallbackAttempts = value.maxFallbackAttempts;
+    }
+  }
+
+  // custom_fallback_messages - computed: false, optional: true, required: false
+  private _customFallbackMessages?: { [key: string]: string }; 
+  public get customFallbackMessages() {
+    return this.getStringMapAttribute('custom_fallback_messages');
+  }
+  public set customFallbackMessages(value: { [key: string]: string }) {
+    this._customFallbackMessages = value;
+  }
+  public resetCustomFallbackMessages() {
+    this._customFallbackMessages = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customFallbackMessagesInput() {
+    return this._customFallbackMessages;
+  }
+
+  // max_fallback_attempts - computed: false, optional: true, required: false
+  private _maxFallbackAttempts?: number; 
+  public get maxFallbackAttempts() {
+    return this.getNumberAttribute('max_fallback_attempts');
+  }
+  public set maxFallbackAttempts(value: number) {
+    this._maxFallbackAttempts = value;
+  }
+  public resetMaxFallbackAttempts() {
+    this._maxFallbackAttempts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxFallbackAttemptsInput() {
+    return this._maxFallbackAttempts;
+  }
+}
+export interface CesAppErrorHandlingSettings {
+  /**
+  * The strategy to use for error handling.
+  * Possible values:
+  * NONE
+  * FALLBACK_RESPONSE
+  * END_SESSION
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#error_handling_strategy CesApp#error_handling_strategy}
+  */
+  readonly errorHandlingStrategy?: string;
+  /**
+  * end_session_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#end_session_config CesApp#end_session_config}
+  */
+  readonly endSessionConfig?: CesAppErrorHandlingSettingsEndSessionConfig;
+  /**
+  * fallback_response_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#fallback_response_config CesApp#fallback_response_config}
+  */
+  readonly fallbackResponseConfig?: CesAppErrorHandlingSettingsFallbackResponseConfig;
+}
+
+export function cesAppErrorHandlingSettingsToTerraform(struct?: CesAppErrorHandlingSettingsOutputReference | CesAppErrorHandlingSettings): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    error_handling_strategy: cdktn.stringToTerraform(struct!.errorHandlingStrategy),
+    end_session_config: cesAppErrorHandlingSettingsEndSessionConfigToTerraform(struct!.endSessionConfig),
+    fallback_response_config: cesAppErrorHandlingSettingsFallbackResponseConfigToTerraform(struct!.fallbackResponseConfig),
+  }
+}
+
+
+export function cesAppErrorHandlingSettingsToHclTerraform(struct?: CesAppErrorHandlingSettingsOutputReference | CesAppErrorHandlingSettings): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    error_handling_strategy: {
+      value: cdktn.stringToHclTerraform(struct!.errorHandlingStrategy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    end_session_config: {
+      value: cesAppErrorHandlingSettingsEndSessionConfigToHclTerraform(struct!.endSessionConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CesAppErrorHandlingSettingsEndSessionConfigList",
+    },
+    fallback_response_config: {
+      value: cesAppErrorHandlingSettingsFallbackResponseConfigToHclTerraform(struct!.fallbackResponseConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CesAppErrorHandlingSettingsFallbackResponseConfigList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class CesAppErrorHandlingSettingsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): CesAppErrorHandlingSettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._errorHandlingStrategy !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.errorHandlingStrategy = this._errorHandlingStrategy;
+    }
+    if (this._endSessionConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.endSessionConfig = this._endSessionConfig?.internalValue;
+    }
+    if (this._fallbackResponseConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fallbackResponseConfig = this._fallbackResponseConfig?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CesAppErrorHandlingSettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._errorHandlingStrategy = undefined;
+      this._endSessionConfig.internalValue = undefined;
+      this._fallbackResponseConfig.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._errorHandlingStrategy = value.errorHandlingStrategy;
+      this._endSessionConfig.internalValue = value.endSessionConfig;
+      this._fallbackResponseConfig.internalValue = value.fallbackResponseConfig;
+    }
+  }
+
+  // error_handling_strategy - computed: false, optional: true, required: false
+  private _errorHandlingStrategy?: string; 
+  public get errorHandlingStrategy() {
+    return this.getStringAttribute('error_handling_strategy');
+  }
+  public set errorHandlingStrategy(value: string) {
+    this._errorHandlingStrategy = value;
+  }
+  public resetErrorHandlingStrategy() {
+    this._errorHandlingStrategy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get errorHandlingStrategyInput() {
+    return this._errorHandlingStrategy;
+  }
+
+  // end_session_config - computed: false, optional: true, required: false
+  private _endSessionConfig = new CesAppErrorHandlingSettingsEndSessionConfigOutputReference(this, "end_session_config");
+  public get endSessionConfig() {
+    return this._endSessionConfig;
+  }
+  public putEndSessionConfig(value: CesAppErrorHandlingSettingsEndSessionConfig) {
+    this._endSessionConfig.internalValue = value;
+  }
+  public resetEndSessionConfig() {
+    this._endSessionConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get endSessionConfigInput() {
+    return this._endSessionConfig.internalValue;
+  }
+
+  // fallback_response_config - computed: false, optional: true, required: false
+  private _fallbackResponseConfig = new CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference(this, "fallback_response_config");
+  public get fallbackResponseConfig() {
+    return this._fallbackResponseConfig;
+  }
+  public putFallbackResponseConfig(value: CesAppErrorHandlingSettingsFallbackResponseConfig) {
+    this._fallbackResponseConfig.internalValue = value;
+  }
+  public resetFallbackResponseConfig() {
+    this._fallbackResponseConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fallbackResponseConfigInput() {
+    return this._fallbackResponseConfig.internalValue;
+  }
 }
 export interface CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsExpectationLevelMetricsThresholds {
   /**
   * The success threshold for individual tool invocation parameter
   * correctness. Must be a float between 0 and 1. Default is 1.0.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#tool_invocation_parameter_correctness_threshold CesApp#tool_invocation_parameter_correctness_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#tool_invocation_parameter_correctness_threshold CesApp#tool_invocation_parameter_correctness_threshold}
   */
   readonly toolInvocationParameterCorrectnessThreshold?: number;
 }
@@ -1713,19 +2539,117 @@ export class CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsE
     return this._toolInvocationParameterCorrectnessThreshold;
   }
 }
+export interface CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettings {
+  /**
+  * Defines the behavior when an extra tool call is encountered. An extra
+  * tool call is a tool call that is present in the execution but does
+  * not match any tool call in the golden expectation. Possible values: ["FAIL", "ALLOW"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#extra_tool_call_behavior CesApp#extra_tool_call_behavior}
+  */
+  readonly extraToolCallBehavior?: string;
+}
+
+export function cesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsToTerraform(struct?: CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference | CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettings): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    extra_tool_call_behavior: cdktn.stringToTerraform(struct!.extraToolCallBehavior),
+  }
+}
+
+
+export function cesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsToHclTerraform(struct?: CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference | CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettings): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    extra_tool_call_behavior: {
+      value: cdktn.stringToHclTerraform(struct!.extraToolCallBehavior),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._extraToolCallBehavior !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.extraToolCallBehavior = this._extraToolCallBehavior;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._extraToolCallBehavior = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._extraToolCallBehavior = value.extraToolCallBehavior;
+    }
+  }
+
+  // extra_tool_call_behavior - computed: false, optional: true, required: false
+  private _extraToolCallBehavior?: string; 
+  public get extraToolCallBehavior() {
+    return this.getStringAttribute('extra_tool_call_behavior');
+  }
+  public set extraToolCallBehavior(value: string) {
+    this._extraToolCallBehavior = value;
+  }
+  public resetExtraToolCallBehavior() {
+    this._extraToolCallBehavior = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get extraToolCallBehaviorInput() {
+    return this._extraToolCallBehavior;
+  }
+}
 export interface CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholds {
   /**
   * The success threshold for overall tool invocation correctness. Must be
   * a float between 0 and 1. Default is 1.0.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#overall_tool_invocation_correctness_threshold CesApp#overall_tool_invocation_correctness_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#overall_tool_invocation_correctness_threshold CesApp#overall_tool_invocation_correctness_threshold}
   */
   readonly overallToolInvocationCorrectnessThreshold?: number;
+  /**
+  * The semantic similarity channel to use for evaluation.
+  * Possible values:
+  * SEMANTIC_SIMILARITY_CHANNEL_UNSPECIFIED
+  * TEXT
+  * AUDIO
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#semantic_similarity_channel CesApp#semantic_similarity_channel}
+  */
+  readonly semanticSimilarityChannel?: string;
   /**
   * The success threshold for semantic similarity. Must be an integer
   * between 0 and 4. Default is >= 3.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#semantic_similarity_success_threshold CesApp#semantic_similarity_success_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#semantic_similarity_success_threshold CesApp#semantic_similarity_success_threshold}
   */
   readonly semanticSimilaritySuccessThreshold?: number;
 }
@@ -1737,6 +2661,7 @@ export function cesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThreshol
   }
   return {
     overall_tool_invocation_correctness_threshold: cdktn.numberToTerraform(struct!.overallToolInvocationCorrectnessThreshold),
+    semantic_similarity_channel: cdktn.stringToTerraform(struct!.semanticSimilarityChannel),
     semantic_similarity_success_threshold: cdktn.numberToTerraform(struct!.semanticSimilaritySuccessThreshold),
   }
 }
@@ -1753,6 +2678,12 @@ export function cesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThreshol
       isBlock: false,
       type: "simple",
       storageClassType: "number",
+    },
+    semantic_similarity_channel: {
+      value: cdktn.stringToHclTerraform(struct!.semanticSimilarityChannel),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
     },
     semantic_similarity_success_threshold: {
       value: cdktn.numberToHclTerraform(struct!.semanticSimilaritySuccessThreshold),
@@ -1784,6 +2715,10 @@ export class CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsT
       hasAnyValues = true;
       internalValueResult.overallToolInvocationCorrectnessThreshold = this._overallToolInvocationCorrectnessThreshold;
     }
+    if (this._semanticSimilarityChannel !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.semanticSimilarityChannel = this._semanticSimilarityChannel;
+    }
     if (this._semanticSimilaritySuccessThreshold !== undefined) {
       hasAnyValues = true;
       internalValueResult.semanticSimilaritySuccessThreshold = this._semanticSimilaritySuccessThreshold;
@@ -1795,11 +2730,13 @@ export class CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsT
     if (value === undefined) {
       this.isEmptyObject = false;
       this._overallToolInvocationCorrectnessThreshold = undefined;
+      this._semanticSimilarityChannel = undefined;
       this._semanticSimilaritySuccessThreshold = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._overallToolInvocationCorrectnessThreshold = value.overallToolInvocationCorrectnessThreshold;
+      this._semanticSimilarityChannel = value.semanticSimilarityChannel;
       this._semanticSimilaritySuccessThreshold = value.semanticSimilaritySuccessThreshold;
     }
   }
@@ -1818,6 +2755,22 @@ export class CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsT
   // Temporarily expose input value. Use with caution.
   public get overallToolInvocationCorrectnessThresholdInput() {
     return this._overallToolInvocationCorrectnessThreshold;
+  }
+
+  // semantic_similarity_channel - computed: false, optional: true, required: false
+  private _semanticSimilarityChannel?: string; 
+  public get semanticSimilarityChannel() {
+    return this.getStringAttribute('semantic_similarity_channel');
+  }
+  public set semanticSimilarityChannel(value: string) {
+    this._semanticSimilarityChannel = value;
+  }
+  public resetSemanticSimilarityChannel() {
+    this._semanticSimilarityChannel = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get semanticSimilarityChannelInput() {
+    return this._semanticSimilarityChannel;
   }
 
   // semantic_similarity_success_threshold - computed: false, optional: true, required: false
@@ -1840,13 +2793,19 @@ export interface CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresho
   /**
   * expectation_level_metrics_thresholds block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#expectation_level_metrics_thresholds CesApp#expectation_level_metrics_thresholds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#expectation_level_metrics_thresholds CesApp#expectation_level_metrics_thresholds}
   */
   readonly expectationLevelMetricsThresholds?: CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsExpectationLevelMetricsThresholds;
   /**
+  * tool_matching_settings block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#tool_matching_settings CesApp#tool_matching_settings}
+  */
+  readonly toolMatchingSettings?: CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettings;
+  /**
   * turn_level_metrics_thresholds block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#turn_level_metrics_thresholds CesApp#turn_level_metrics_thresholds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#turn_level_metrics_thresholds CesApp#turn_level_metrics_thresholds}
   */
   readonly turnLevelMetricsThresholds?: CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholds;
 }
@@ -1858,6 +2817,7 @@ export function cesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThreshol
   }
   return {
     expectation_level_metrics_thresholds: cesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsExpectationLevelMetricsThresholdsToTerraform(struct!.expectationLevelMetricsThresholds),
+    tool_matching_settings: cesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsToTerraform(struct!.toolMatchingSettings),
     turn_level_metrics_thresholds: cesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholdsToTerraform(struct!.turnLevelMetricsThresholds),
   }
 }
@@ -1874,6 +2834,12 @@ export function cesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThreshol
       isBlock: true,
       type: "list",
       storageClassType: "CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsExpectationLevelMetricsThresholdsList",
+    },
+    tool_matching_settings: {
+      value: cesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsToHclTerraform(struct!.toolMatchingSettings),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsList",
     },
     turn_level_metrics_thresholds: {
       value: cesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholdsToHclTerraform(struct!.turnLevelMetricsThresholds),
@@ -1905,6 +2871,10 @@ export class CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsO
       hasAnyValues = true;
       internalValueResult.expectationLevelMetricsThresholds = this._expectationLevelMetricsThresholds?.internalValue;
     }
+    if (this._toolMatchingSettings?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.toolMatchingSettings = this._toolMatchingSettings?.internalValue;
+    }
     if (this._turnLevelMetricsThresholds?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.turnLevelMetricsThresholds = this._turnLevelMetricsThresholds?.internalValue;
@@ -1916,11 +2886,13 @@ export class CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsO
     if (value === undefined) {
       this.isEmptyObject = false;
       this._expectationLevelMetricsThresholds.internalValue = undefined;
+      this._toolMatchingSettings.internalValue = undefined;
       this._turnLevelMetricsThresholds.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._expectationLevelMetricsThresholds.internalValue = value.expectationLevelMetricsThresholds;
+      this._toolMatchingSettings.internalValue = value.toolMatchingSettings;
       this._turnLevelMetricsThresholds.internalValue = value.turnLevelMetricsThresholds;
     }
   }
@@ -1941,6 +2913,22 @@ export class CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsO
     return this._expectationLevelMetricsThresholds.internalValue;
   }
 
+  // tool_matching_settings - computed: false, optional: true, required: false
+  private _toolMatchingSettings = new CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference(this, "tool_matching_settings");
+  public get toolMatchingSettings() {
+    return this._toolMatchingSettings;
+  }
+  public putToolMatchingSettings(value: CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettings) {
+    this._toolMatchingSettings.internalValue = value;
+  }
+  public resetToolMatchingSettings() {
+    this._toolMatchingSettings.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get toolMatchingSettingsInput() {
+    return this._toolMatchingSettings.internalValue;
+  }
+
   // turn_level_metrics_thresholds - computed: false, optional: true, required: false
   private _turnLevelMetricsThresholds = new CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholdsOutputReference(this, "turn_level_metrics_thresholds");
   public get turnLevelMetricsThresholds() {
@@ -1959,9 +2947,21 @@ export class CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsO
 }
 export interface CesAppEvaluationMetricsThresholds {
   /**
+  * The hallucination metric behavior for golden evaluations. Possible values: ["DISABLED", "ENABLED"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#golden_hallucination_metric_behavior CesApp#golden_hallucination_metric_behavior}
+  */
+  readonly goldenHallucinationMetricBehavior?: string;
+  /**
+  * The hallucination metric behavior for scenario evaluations. Possible values: ["DISABLED", "ENABLED"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#scenario_hallucination_metric_behavior CesApp#scenario_hallucination_metric_behavior}
+  */
+  readonly scenarioHallucinationMetricBehavior?: string;
+  /**
   * golden_evaluation_metrics_thresholds block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#golden_evaluation_metrics_thresholds CesApp#golden_evaluation_metrics_thresholds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#golden_evaluation_metrics_thresholds CesApp#golden_evaluation_metrics_thresholds}
   */
   readonly goldenEvaluationMetricsThresholds?: CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholds;
 }
@@ -1972,6 +2972,8 @@ export function cesAppEvaluationMetricsThresholdsToTerraform(struct?: CesAppEval
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
+    golden_hallucination_metric_behavior: cdktn.stringToTerraform(struct!.goldenHallucinationMetricBehavior),
+    scenario_hallucination_metric_behavior: cdktn.stringToTerraform(struct!.scenarioHallucinationMetricBehavior),
     golden_evaluation_metrics_thresholds: cesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToTerraform(struct!.goldenEvaluationMetricsThresholds),
   }
 }
@@ -1983,6 +2985,18 @@ export function cesAppEvaluationMetricsThresholdsToHclTerraform(struct?: CesAppE
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
+    golden_hallucination_metric_behavior: {
+      value: cdktn.stringToHclTerraform(struct!.goldenHallucinationMetricBehavior),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    scenario_hallucination_metric_behavior: {
+      value: cdktn.stringToHclTerraform(struct!.scenarioHallucinationMetricBehavior),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
     golden_evaluation_metrics_thresholds: {
       value: cesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToHclTerraform(struct!.goldenEvaluationMetricsThresholds),
       isBlock: true,
@@ -2009,6 +3023,14 @@ export class CesAppEvaluationMetricsThresholdsOutputReference extends cdktn.Comp
   public get internalValue(): CesAppEvaluationMetricsThresholds | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._goldenHallucinationMetricBehavior !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.goldenHallucinationMetricBehavior = this._goldenHallucinationMetricBehavior;
+    }
+    if (this._scenarioHallucinationMetricBehavior !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.scenarioHallucinationMetricBehavior = this._scenarioHallucinationMetricBehavior;
+    }
     if (this._goldenEvaluationMetricsThresholds?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.goldenEvaluationMetricsThresholds = this._goldenEvaluationMetricsThresholds?.internalValue;
@@ -2019,12 +3041,48 @@ export class CesAppEvaluationMetricsThresholdsOutputReference extends cdktn.Comp
   public set internalValue(value: CesAppEvaluationMetricsThresholds | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._goldenHallucinationMetricBehavior = undefined;
+      this._scenarioHallucinationMetricBehavior = undefined;
       this._goldenEvaluationMetricsThresholds.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._goldenHallucinationMetricBehavior = value.goldenHallucinationMetricBehavior;
+      this._scenarioHallucinationMetricBehavior = value.scenarioHallucinationMetricBehavior;
       this._goldenEvaluationMetricsThresholds.internalValue = value.goldenEvaluationMetricsThresholds;
     }
+  }
+
+  // golden_hallucination_metric_behavior - computed: false, optional: true, required: false
+  private _goldenHallucinationMetricBehavior?: string; 
+  public get goldenHallucinationMetricBehavior() {
+    return this.getStringAttribute('golden_hallucination_metric_behavior');
+  }
+  public set goldenHallucinationMetricBehavior(value: string) {
+    this._goldenHallucinationMetricBehavior = value;
+  }
+  public resetGoldenHallucinationMetricBehavior() {
+    this._goldenHallucinationMetricBehavior = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get goldenHallucinationMetricBehaviorInput() {
+    return this._goldenHallucinationMetricBehavior;
+  }
+
+  // scenario_hallucination_metric_behavior - computed: false, optional: true, required: false
+  private _scenarioHallucinationMetricBehavior?: string; 
+  public get scenarioHallucinationMetricBehavior() {
+    return this.getStringAttribute('scenario_hallucination_metric_behavior');
+  }
+  public set scenarioHallucinationMetricBehavior(value: string) {
+    this._scenarioHallucinationMetricBehavior = value;
+  }
+  public resetScenarioHallucinationMetricBehavior() {
+    this._scenarioHallucinationMetricBehavior = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scenarioHallucinationMetricBehaviorInput() {
+    return this._scenarioHallucinationMetricBehavior;
   }
 
   // golden_evaluation_metrics_thresholds - computed: false, optional: true, required: false
@@ -2047,14 +3105,14 @@ export interface CesAppLanguageSettings {
   /**
   * The default language code of the app.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#default_language_code CesApp#default_language_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#default_language_code CesApp#default_language_code}
   */
   readonly defaultLanguageCode?: string;
   /**
   * Enables multilingual support. If true, agents in the app will use pre-built
   * instructions to improve handling of multilingual input.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#enable_multilingual_support CesApp#enable_multilingual_support}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#enable_multilingual_support CesApp#enable_multilingual_support}
   */
   readonly enableMultilingualSupport?: boolean | cdktn.IResolvable;
   /**
@@ -2067,14 +3125,14 @@ export interface CesAppLanguageSettings {
   * an EndSession signal with corresponding metadata
   * to terminate the conversation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#fallback_action CesApp#fallback_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#fallback_action CesApp#fallback_action}
   */
   readonly fallbackAction?: string;
   /**
   * List of languages codes supported by the app, in addition to the
   * 'default_language_code'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#supported_language_codes CesApp#supported_language_codes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#supported_language_codes CesApp#supported_language_codes}
   */
   readonly supportedLanguageCodes?: string[];
 }
@@ -2251,7 +3309,7 @@ export interface CesAppLoggingSettingsAudioRecordingConfig {
   * you should grant 'storage.objects.create' permission to the CES service
   * agent 'service-@gcp-sa-ces.iam.gserviceaccount.com'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#gcs_bucket CesApp#gcs_bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#gcs_bucket CesApp#gcs_bucket}
   */
   readonly gcsBucket?: string;
   /**
@@ -2266,7 +3324,7 @@ export interface CesAppLoggingSettingsAudioRecordingConfig {
   * If the path prefix is not specified, the default prefix
   * '$project/$location/$app/$date/$session/' will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#gcs_path_prefix CesApp#gcs_path_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#gcs_path_prefix CesApp#gcs_path_prefix}
   */
   readonly gcsPathPrefix?: string;
 }
@@ -2381,13 +3439,13 @@ export interface CesAppLoggingSettingsBigqueryExportSettings {
   /**
   * The BigQuery dataset to export the data to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#dataset CesApp#dataset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#dataset CesApp#dataset}
   */
   readonly dataset?: string;
   /**
   * Indicates whether the BigQuery export is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#enabled CesApp#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#enabled CesApp#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
@@ -2396,7 +3454,7 @@ export interface CesAppLoggingSettingsBigqueryExportSettings {
   * roles/bigquery.admin role to the CES service agent service-<PROJECT-
   * NUMBER>@gcp-sa-ces.iam.gserviceaccount.com.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#project CesApp#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#project CesApp#project}
   */
   readonly project?: string;
 }
@@ -2540,7 +3598,7 @@ export interface CesAppLoggingSettingsCloudLoggingSettings {
   /**
   * Whether to enable Cloud Logging for the sessions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#enable_cloud_logging CesApp#enable_cloud_logging}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#enable_cloud_logging CesApp#enable_cloud_logging}
   */
   readonly enableCloudLogging?: boolean | cdktn.IResolvable;
 }
@@ -2626,9 +3684,16 @@ export interface CesAppLoggingSettingsConversationLoggingSettings {
   /**
   * Whether to disable conversation logging for the sessions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#disable_conversation_logging CesApp#disable_conversation_logging}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#disable_conversation_logging CesApp#disable_conversation_logging}
   */
   readonly disableConversationLogging?: boolean | cdktn.IResolvable;
+  /**
+  * Controls the retention window for the conversation.
+  * If not set, the conversation will be retained for 365 days.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#retention_window CesApp#retention_window}
+  */
+  readonly retentionWindow?: string;
 }
 
 export function cesAppLoggingSettingsConversationLoggingSettingsToTerraform(struct?: CesAppLoggingSettingsConversationLoggingSettingsOutputReference | CesAppLoggingSettingsConversationLoggingSettings): any {
@@ -2638,6 +3703,7 @@ export function cesAppLoggingSettingsConversationLoggingSettingsToTerraform(stru
   }
   return {
     disable_conversation_logging: cdktn.booleanToTerraform(struct!.disableConversationLogging),
+    retention_window: cdktn.stringToTerraform(struct!.retentionWindow),
   }
 }
 
@@ -2653,6 +3719,12 @@ export function cesAppLoggingSettingsConversationLoggingSettingsToHclTerraform(s
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
+    },
+    retention_window: {
+      value: cdktn.stringToHclTerraform(struct!.retentionWindow),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
     },
   };
 
@@ -2678,6 +3750,10 @@ export class CesAppLoggingSettingsConversationLoggingSettingsOutputReference ext
       hasAnyValues = true;
       internalValueResult.disableConversationLogging = this._disableConversationLogging;
     }
+    if (this._retentionWindow !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.retentionWindow = this._retentionWindow;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -2685,10 +3761,12 @@ export class CesAppLoggingSettingsConversationLoggingSettingsOutputReference ext
     if (value === undefined) {
       this.isEmptyObject = false;
       this._disableConversationLogging = undefined;
+      this._retentionWindow = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._disableConversationLogging = value.disableConversationLogging;
+      this._retentionWindow = value.retentionWindow;
     }
   }
 
@@ -2707,6 +3785,110 @@ export class CesAppLoggingSettingsConversationLoggingSettingsOutputReference ext
   public get disableConversationLoggingInput() {
     return this._disableConversationLogging;
   }
+
+  // retention_window - computed: true, optional: true, required: false
+  private _retentionWindow?: string; 
+  public get retentionWindow() {
+    return this.getStringAttribute('retention_window');
+  }
+  public set retentionWindow(value: string) {
+    this._retentionWindow = value;
+  }
+  public resetRetentionWindow() {
+    this._retentionWindow = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get retentionWindowInput() {
+    return this._retentionWindow;
+  }
+}
+export interface CesAppLoggingSettingsMetricAnalysisSettings {
+  /**
+  * Whether to collect conversation data for llm analysis metrics. If true,
+  * conversation data will not be collected for llm analysis metrics;
+  * otherwise, conversation data will be collected.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#llm_metrics_opted_out CesApp#llm_metrics_opted_out}
+  */
+  readonly llmMetricsOptedOut?: boolean | cdktn.IResolvable;
+}
+
+export function cesAppLoggingSettingsMetricAnalysisSettingsToTerraform(struct?: CesAppLoggingSettingsMetricAnalysisSettingsOutputReference | CesAppLoggingSettingsMetricAnalysisSettings): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    llm_metrics_opted_out: cdktn.booleanToTerraform(struct!.llmMetricsOptedOut),
+  }
+}
+
+
+export function cesAppLoggingSettingsMetricAnalysisSettingsToHclTerraform(struct?: CesAppLoggingSettingsMetricAnalysisSettingsOutputReference | CesAppLoggingSettingsMetricAnalysisSettings): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    llm_metrics_opted_out: {
+      value: cdktn.booleanToHclTerraform(struct!.llmMetricsOptedOut),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class CesAppLoggingSettingsMetricAnalysisSettingsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): CesAppLoggingSettingsMetricAnalysisSettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._llmMetricsOptedOut !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.llmMetricsOptedOut = this._llmMetricsOptedOut;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CesAppLoggingSettingsMetricAnalysisSettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._llmMetricsOptedOut = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._llmMetricsOptedOut = value.llmMetricsOptedOut;
+    }
+  }
+
+  // llm_metrics_opted_out - computed: false, optional: true, required: false
+  private _llmMetricsOptedOut?: boolean | cdktn.IResolvable; 
+  public get llmMetricsOptedOut() {
+    return this.getBooleanAttribute('llm_metrics_opted_out');
+  }
+  public set llmMetricsOptedOut(value: boolean | cdktn.IResolvable) {
+    this._llmMetricsOptedOut = value;
+  }
+  public resetLlmMetricsOptedOut() {
+    this._llmMetricsOptedOut = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get llmMetricsOptedOutInput() {
+    return this._llmMetricsOptedOut;
+  }
 }
 export interface CesAppLoggingSettingsRedactionConfig {
   /**
@@ -2715,14 +3897,14 @@ export interface CesAppLoggingSettingsRedactionConfig {
   * Format:
   * 'projects/{project}/locations/{location}/deidentifyTemplates/{deidentify_template}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#deidentify_template CesApp#deidentify_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#deidentify_template CesApp#deidentify_template}
   */
   readonly deidentifyTemplate?: string;
   /**
   * If true, redaction will be applied in various logging scenarios, including
   * conversation history, Cloud Logging and audio recording.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#enable_redaction CesApp#enable_redaction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#enable_redaction CesApp#enable_redaction}
   */
   readonly enableRedaction?: boolean | cdktn.IResolvable;
   /**
@@ -2731,7 +3913,7 @@ export interface CesAppLoggingSettingsRedactionConfig {
   * Format:
   * 'projects/{project}/locations/{location}/inspectTemplates/{inspect_template}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#inspect_template CesApp#inspect_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#inspect_template CesApp#inspect_template}
   */
   readonly inspectTemplate?: string;
 }
@@ -2875,31 +4057,37 @@ export interface CesAppLoggingSettings {
   /**
   * audio_recording_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#audio_recording_config CesApp#audio_recording_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#audio_recording_config CesApp#audio_recording_config}
   */
   readonly audioRecordingConfig?: CesAppLoggingSettingsAudioRecordingConfig;
   /**
   * bigquery_export_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#bigquery_export_settings CesApp#bigquery_export_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#bigquery_export_settings CesApp#bigquery_export_settings}
   */
   readonly bigqueryExportSettings?: CesAppLoggingSettingsBigqueryExportSettings;
   /**
   * cloud_logging_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#cloud_logging_settings CesApp#cloud_logging_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#cloud_logging_settings CesApp#cloud_logging_settings}
   */
   readonly cloudLoggingSettings?: CesAppLoggingSettingsCloudLoggingSettings;
   /**
   * conversation_logging_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#conversation_logging_settings CesApp#conversation_logging_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#conversation_logging_settings CesApp#conversation_logging_settings}
   */
   readonly conversationLoggingSettings?: CesAppLoggingSettingsConversationLoggingSettings;
   /**
+  * metric_analysis_settings block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#metric_analysis_settings CesApp#metric_analysis_settings}
+  */
+  readonly metricAnalysisSettings?: CesAppLoggingSettingsMetricAnalysisSettings;
+  /**
   * redaction_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#redaction_config CesApp#redaction_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#redaction_config CesApp#redaction_config}
   */
   readonly redactionConfig?: CesAppLoggingSettingsRedactionConfig;
 }
@@ -2914,6 +4102,7 @@ export function cesAppLoggingSettingsToTerraform(struct?: CesAppLoggingSettingsO
     bigquery_export_settings: cesAppLoggingSettingsBigqueryExportSettingsToTerraform(struct!.bigqueryExportSettings),
     cloud_logging_settings: cesAppLoggingSettingsCloudLoggingSettingsToTerraform(struct!.cloudLoggingSettings),
     conversation_logging_settings: cesAppLoggingSettingsConversationLoggingSettingsToTerraform(struct!.conversationLoggingSettings),
+    metric_analysis_settings: cesAppLoggingSettingsMetricAnalysisSettingsToTerraform(struct!.metricAnalysisSettings),
     redaction_config: cesAppLoggingSettingsRedactionConfigToTerraform(struct!.redactionConfig),
   }
 }
@@ -2948,6 +4137,12 @@ export function cesAppLoggingSettingsToHclTerraform(struct?: CesAppLoggingSettin
       isBlock: true,
       type: "list",
       storageClassType: "CesAppLoggingSettingsConversationLoggingSettingsList",
+    },
+    metric_analysis_settings: {
+      value: cesAppLoggingSettingsMetricAnalysisSettingsToHclTerraform(struct!.metricAnalysisSettings),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CesAppLoggingSettingsMetricAnalysisSettingsList",
     },
     redaction_config: {
       value: cesAppLoggingSettingsRedactionConfigToHclTerraform(struct!.redactionConfig),
@@ -2991,6 +4186,10 @@ export class CesAppLoggingSettingsOutputReference extends cdktn.ComplexObject {
       hasAnyValues = true;
       internalValueResult.conversationLoggingSettings = this._conversationLoggingSettings?.internalValue;
     }
+    if (this._metricAnalysisSettings?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.metricAnalysisSettings = this._metricAnalysisSettings?.internalValue;
+    }
     if (this._redactionConfig?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.redactionConfig = this._redactionConfig?.internalValue;
@@ -3005,6 +4204,7 @@ export class CesAppLoggingSettingsOutputReference extends cdktn.ComplexObject {
       this._bigqueryExportSettings.internalValue = undefined;
       this._cloudLoggingSettings.internalValue = undefined;
       this._conversationLoggingSettings.internalValue = undefined;
+      this._metricAnalysisSettings.internalValue = undefined;
       this._redactionConfig.internalValue = undefined;
     }
     else {
@@ -3013,6 +4213,7 @@ export class CesAppLoggingSettingsOutputReference extends cdktn.ComplexObject {
       this._bigqueryExportSettings.internalValue = value.bigqueryExportSettings;
       this._cloudLoggingSettings.internalValue = value.cloudLoggingSettings;
       this._conversationLoggingSettings.internalValue = value.conversationLoggingSettings;
+      this._metricAnalysisSettings.internalValue = value.metricAnalysisSettings;
       this._redactionConfig.internalValue = value.redactionConfig;
     }
   }
@@ -3081,6 +4282,22 @@ export class CesAppLoggingSettingsOutputReference extends cdktn.ComplexObject {
     return this._conversationLoggingSettings.internalValue;
   }
 
+  // metric_analysis_settings - computed: false, optional: true, required: false
+  private _metricAnalysisSettings = new CesAppLoggingSettingsMetricAnalysisSettingsOutputReference(this, "metric_analysis_settings");
+  public get metricAnalysisSettings() {
+    return this._metricAnalysisSettings;
+  }
+  public putMetricAnalysisSettings(value: CesAppLoggingSettingsMetricAnalysisSettings) {
+    this._metricAnalysisSettings.internalValue = value;
+  }
+  public resetMetricAnalysisSettings() {
+    this._metricAnalysisSettings.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get metricAnalysisSettingsInput() {
+    return this._metricAnalysisSettings.internalValue;
+  }
+
   // redaction_config - computed: false, optional: true, required: false
   private _redactionConfig = new CesAppLoggingSettingsRedactionConfigOutputReference(this, "redaction_config");
   public get redactionConfig() {
@@ -3102,7 +4319,7 @@ export interface CesAppModelSettings {
   * The LLM model that the agent should use.
   * If not set, the agent will inherit the model from its parent agent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#model CesApp#model}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#model CesApp#model}
   */
   readonly model?: string;
   /**
@@ -3111,7 +4328,7 @@ export interface CesAppModelSettings {
   * produce responses that are more predictable. Higher temperatures produce
   * responses that are more creative.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#temperature CesApp#temperature}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#temperature CesApp#temperature}
   */
   readonly temperature?: number;
 }
@@ -3226,7 +4443,7 @@ export interface CesAppTimeZoneSettings {
   /**
   * The time zone of the app from the time zone database, e.g., America/Los_Angeles, Europe/Paris.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#time_zone CesApp#time_zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#time_zone CesApp#time_zone}
   */
   readonly timeZone?: string;
 }
@@ -3310,15 +4527,15 @@ export class CesAppTimeZoneSettingsOutputReference extends cdktn.ComplexObject {
 }
 export interface CesAppTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#create CesApp#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#create CesApp#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#delete CesApp#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#delete CesApp#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#update CesApp#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#update CesApp#update}
   */
   readonly update?: string;
 }
@@ -3474,13 +4691,13 @@ export interface CesAppVariableDeclarationsSchema {
   * The value must be a valid JSON string representing the Schema object.
   * (Note: OpenAPI also allows a boolean, this definition expects a Schema JSON).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#additional_properties CesApp#additional_properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#additional_properties CesApp#additional_properties}
   */
   readonly additionalProperties?: string;
   /**
   * Optional. The instance value should be valid against at least one of the schemas in this list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#any_of CesApp#any_of}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#any_of CesApp#any_of}
   */
   readonly anyOf?: string;
   /**
@@ -3489,19 +4706,19 @@ export interface CesAppVariableDeclarationsSchema {
   * or a list of values. The provided default value must be encoded as a JSON string.
   * Use 'jsonencode' in Terraform HCL to encode the default value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#default CesApp#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#default CesApp#default}
   */
   readonly default?: string;
   /**
   * A map of definitions for use by ref. Only allowed at the root of the schema.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#defs CesApp#defs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#defs CesApp#defs}
   */
   readonly defs?: string;
   /**
   * The description of the data.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#description CesApp#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#description CesApp#description}
   */
   readonly description?: string;
   /**
@@ -3512,31 +4729,31 @@ export interface CesAppVariableDeclarationsSchema {
   * 2. We can define apartment number as :
   * {type:INTEGER, format:enum, enum:["101", "201", "301"]}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#enum CesApp#enum}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#enum CesApp#enum}
   */
   readonly enum?: string[];
   /**
   * Schema of the elements of Type.ARRAY.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#items CesApp#items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#items CesApp#items}
   */
   readonly items?: string;
   /**
   * Indicates if the value may be null.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#nullable CesApp#nullable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#nullable CesApp#nullable}
   */
   readonly nullable?: boolean | cdktn.IResolvable;
   /**
   * Optional. Schemas of initial elements of Type.ARRAY.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#prefix_items CesApp#prefix_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#prefix_items CesApp#prefix_items}
   */
   readonly prefixItems?: string;
   /**
   * Properties of Type.OBJECT.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#properties CesApp#properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#properties CesApp#properties}
   */
   readonly properties?: string;
   /**
@@ -3559,19 +4776,19 @@ export interface CesAppVariableDeclarationsSchema {
   * See details in
   * https://json-schema.org/understanding-json-schema/structuring.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#ref CesApp#ref}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#ref CesApp#ref}
   */
   readonly ref?: string;
   /**
   * Required properties of Type.OBJECT.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#required CesApp#required}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#required CesApp#required}
   */
   readonly required?: string[];
   /**
   * The title of the schema.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#title CesApp#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#title CesApp#title}
   */
   readonly title?: string;
   /**
@@ -3584,13 +4801,13 @@ export interface CesAppVariableDeclarationsSchema {
   * OBJECT
   * ARRAY
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#type CesApp#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#type CesApp#type}
   */
   readonly type: string;
   /**
   * Indicate the items in the array must be unique. Only applies to TYPE.ARRAY.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#unique_items CesApp#unique_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#unique_items CesApp#unique_items}
   */
   readonly uniqueItems?: boolean | cdktn.IResolvable;
 }
@@ -4079,20 +5296,20 @@ export interface CesAppVariableDeclarations {
   /**
   * The description of the variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#description CesApp#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#description CesApp#description}
   */
   readonly description: string;
   /**
   * The name of the variable. The name must start with a letter or underscore
   * and contain only letters, numbers, or underscores.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#name CesApp#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#name CesApp#name}
   */
   readonly name: string;
   /**
   * schema block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#schema CesApp#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#schema CesApp#schema}
   */
   readonly schema: CesAppVariableDeclarationsSchema;
 }
@@ -4255,9 +5472,99 @@ export class CesAppVariableDeclarationsList extends cdktn.ComplexList {
     return new CesAppVariableDeclarationsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface CesAppVpcScSettings {
+  /**
+  * The allowed HTTP(s) origins that OpenAPI tools in the App are
+  * able to directly call when VPC Service Controls are enabled. These strings
+  * must match the origin exactly, including the port if specified. For
+  * example, "https://example.com" or "https://example.com:443". This list does
+  * not yet apply to Python tools that may make direct HTTP calls.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#allowed_origins CesApp#allowed_origins}
+  */
+  readonly allowedOrigins?: string[];
+}
+
+export function cesAppVpcScSettingsToTerraform(struct?: CesAppVpcScSettingsOutputReference | CesAppVpcScSettings): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    allowed_origins: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedOrigins),
+  }
+}
+
+
+export function cesAppVpcScSettingsToHclTerraform(struct?: CesAppVpcScSettingsOutputReference | CesAppVpcScSettings): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    allowed_origins: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedOrigins),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class CesAppVpcScSettingsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): CesAppVpcScSettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._allowedOrigins !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.allowedOrigins = this._allowedOrigins;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CesAppVpcScSettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._allowedOrigins = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._allowedOrigins = value.allowedOrigins;
+    }
+  }
+
+  // allowed_origins - computed: false, optional: true, required: false
+  private _allowedOrigins?: string[]; 
+  public get allowedOrigins() {
+    return this.getListAttribute('allowed_origins');
+  }
+  public set allowedOrigins(value: string[]) {
+    this._allowedOrigins = value;
+  }
+  public resetAllowedOrigins() {
+    this._allowedOrigins = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowedOriginsInput() {
+    return this._allowedOrigins;
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app google_ces_app}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app google_ces_app}
 */
 export class CesApp extends cdktn.TerraformResource {
 
@@ -4273,7 +5580,7 @@ export class CesApp extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a CesApp resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CesApp to import
-  * @param importFromId The id of the existing CesApp that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CesApp that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CesApp to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -4285,7 +5592,7 @@ export class CesApp extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app google_ces_app} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_app google_ces_app} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -4296,8 +5603,8 @@ export class CesApp extends cdktn.TerraformResource {
       terraformResourceType: 'google_ces_app',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.46.1',
-        providerVersionConstraint: '~> 7.0'
+        providerVersion: '8.5.0',
+        providerVersionConstraint: '~> 8.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -4315,6 +5622,7 @@ export class CesApp extends cdktn.TerraformResource {
     this._guardrails = config.guardrails;
     this._id = config.id;
     this._location = config.location;
+    this._locked = config.locked;
     this._metadata = config.metadata;
     this._pinned = config.pinned;
     this._project = config.project;
@@ -4324,6 +5632,7 @@ export class CesApp extends cdktn.TerraformResource {
     this._clientCertificateSettings.internalValue = config.clientCertificateSettings;
     this._dataStoreSettings.internalValue = config.dataStoreSettings;
     this._defaultChannelProfile.internalValue = config.defaultChannelProfile;
+    this._errorHandlingSettings.internalValue = config.errorHandlingSettings;
     this._evaluationMetricsThresholds.internalValue = config.evaluationMetricsThresholds;
     this._languageSettings.internalValue = config.languageSettings;
     this._loggingSettings.internalValue = config.loggingSettings;
@@ -4331,6 +5640,7 @@ export class CesApp extends cdktn.TerraformResource {
     this._timeZoneSettings.internalValue = config.timeZoneSettings;
     this._timeouts.internalValue = config.timeouts;
     this._variableDeclarations.internalValue = config.variableDeclarations;
+    this._vpcScSettings.internalValue = config.vpcScSettings;
   }
 
   // ==========
@@ -4469,6 +5779,22 @@ export class CesApp extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get locationInput() {
     return this._location;
+  }
+
+  // locked - computed: false, optional: true, required: false
+  private _locked?: boolean | cdktn.IResolvable; 
+  public get locked() {
+    return this.getBooleanAttribute('locked');
+  }
+  public set locked(value: boolean | cdktn.IResolvable) {
+    this._locked = value;
+  }
+  public resetLocked() {
+    this._locked = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get lockedInput() {
+    return this._locked;
   }
 
   // metadata - computed: false, optional: true, required: false
@@ -4625,6 +5951,22 @@ export class CesApp extends cdktn.TerraformResource {
     return this._defaultChannelProfile.internalValue;
   }
 
+  // error_handling_settings - computed: false, optional: true, required: false
+  private _errorHandlingSettings = new CesAppErrorHandlingSettingsOutputReference(this, "error_handling_settings");
+  public get errorHandlingSettings() {
+    return this._errorHandlingSettings;
+  }
+  public putErrorHandlingSettings(value: CesAppErrorHandlingSettings) {
+    this._errorHandlingSettings.internalValue = value;
+  }
+  public resetErrorHandlingSettings() {
+    this._errorHandlingSettings.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get errorHandlingSettingsInput() {
+    return this._errorHandlingSettings.internalValue;
+  }
+
   // evaluation_metrics_thresholds - computed: false, optional: true, required: false
   private _evaluationMetricsThresholds = new CesAppEvaluationMetricsThresholdsOutputReference(this, "evaluation_metrics_thresholds");
   public get evaluationMetricsThresholds() {
@@ -4737,6 +6079,22 @@ export class CesApp extends cdktn.TerraformResource {
     return this._variableDeclarations.internalValue;
   }
 
+  // vpc_sc_settings - computed: false, optional: true, required: false
+  private _vpcScSettings = new CesAppVpcScSettingsOutputReference(this, "vpc_sc_settings");
+  public get vpcScSettings() {
+    return this._vpcScSettings;
+  }
+  public putVpcScSettings(value: CesAppVpcScSettings) {
+    this._vpcScSettings.internalValue = value;
+  }
+  public resetVpcScSettings() {
+    this._vpcScSettings.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vpcScSettingsInput() {
+    return this._vpcScSettings.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -4751,6 +6109,7 @@ export class CesApp extends cdktn.TerraformResource {
       guardrails: cdktn.listMapper(cdktn.stringToTerraform, false)(this._guardrails),
       id: cdktn.stringToTerraform(this._id),
       location: cdktn.stringToTerraform(this._location),
+      locked: cdktn.booleanToTerraform(this._locked),
       metadata: cdktn.hashMapper(cdktn.stringToTerraform)(this._metadata),
       pinned: cdktn.booleanToTerraform(this._pinned),
       project: cdktn.stringToTerraform(this._project),
@@ -4760,6 +6119,7 @@ export class CesApp extends cdktn.TerraformResource {
       client_certificate_settings: cesAppClientCertificateSettingsToTerraform(this._clientCertificateSettings.internalValue),
       data_store_settings: cesAppDataStoreSettingsToTerraform(this._dataStoreSettings.internalValue),
       default_channel_profile: cesAppDefaultChannelProfileToTerraform(this._defaultChannelProfile.internalValue),
+      error_handling_settings: cesAppErrorHandlingSettingsToTerraform(this._errorHandlingSettings.internalValue),
       evaluation_metrics_thresholds: cesAppEvaluationMetricsThresholdsToTerraform(this._evaluationMetricsThresholds.internalValue),
       language_settings: cesAppLanguageSettingsToTerraform(this._languageSettings.internalValue),
       logging_settings: cesAppLoggingSettingsToTerraform(this._loggingSettings.internalValue),
@@ -4767,6 +6127,7 @@ export class CesApp extends cdktn.TerraformResource {
       time_zone_settings: cesAppTimeZoneSettingsToTerraform(this._timeZoneSettings.internalValue),
       timeouts: cesAppTimeoutsToTerraform(this._timeouts.internalValue),
       variable_declarations: cdktn.listMapper(cesAppVariableDeclarationsToTerraform, true)(this._variableDeclarations.internalValue),
+      vpc_sc_settings: cesAppVpcScSettingsToTerraform(this._vpcScSettings.internalValue),
     };
   }
 
@@ -4819,6 +6180,12 @@ export class CesApp extends cdktn.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      locked: {
+        value: cdktn.booleanToHclTerraform(this._locked),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
       },
       metadata: {
         value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._metadata),
@@ -4874,6 +6241,12 @@ export class CesApp extends cdktn.TerraformResource {
         type: "list",
         storageClassType: "CesAppDefaultChannelProfileList",
       },
+      error_handling_settings: {
+        value: cesAppErrorHandlingSettingsToHclTerraform(this._errorHandlingSettings.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CesAppErrorHandlingSettingsList",
+      },
       evaluation_metrics_thresholds: {
         value: cesAppEvaluationMetricsThresholdsToHclTerraform(this._evaluationMetricsThresholds.internalValue),
         isBlock: true,
@@ -4915,6 +6288,12 @@ export class CesApp extends cdktn.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "CesAppVariableDeclarationsList",
+      },
+      vpc_sc_settings: {
+        value: cesAppVpcScSettingsToHclTerraform(this._vpcScSettings.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CesAppVpcScSettingsList",
       },
     };
 

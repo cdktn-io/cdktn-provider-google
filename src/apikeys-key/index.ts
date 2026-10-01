@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apikeys_key
+// https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/apikeys_key
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,25 +13,31 @@ import * as cdktn from 'cdktn';
 
 export interface ApikeysKeyConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Whether Terraform will be prevented from destroying the instance. Defaults to "DELETE".
-  * When a 'terraform destroy' or 'terraform apply' would delete the instance,
+  * Defines the behavior for checking existing usage when updating a key. Possible values: 'SKIP', 'CHECK'.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/apikeys_key#check_existing_usage ApikeysKey#check_existing_usage}
+  */
+  readonly checkExistingUsage?: string;
+  /**
+  * Whether Terraform will be prevented from destroying the resource. Defaults to "DELETE".
+  * When a 'terraform destroy' or 'terraform apply' would delete the resource,
   * the command will fail if this field is set to "PREVENT" in Terraform state.
   * When set to "ABANDON", the command will remove the resource from Terraform
   * management without updating or deleting the resource in the API.
-  * When set to "DELETE", deleting the resource is allowed.
-  * 
+  * When set to "DELETE", deleting the resource is allowed, and existing traffic usage will be checked. If active usage was detected in the last 7 days, the request fails.
+  * When set to "FORCE", deleting the resource will bypass the active traffic usage check.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apikeys_key#deletion_policy ApikeysKey#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/apikeys_key#deletion_policy ApikeysKey#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * Human-readable display name of this API key. Modifiable by user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apikeys_key#display_name ApikeysKey#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/apikeys_key#display_name ApikeysKey#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apikeys_key#id ApikeysKey#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/apikeys_key#id ApikeysKey#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,31 +46,31 @@ export interface ApikeysKeyConfig extends cdktn.TerraformMetaArguments {
   /**
   * The resource name of the key. The name must be unique within the project, must conform with RFC-1034, is restricted to lower-cased letters, and has a maximum length of 63 characters. In another word, the name must match the regular expression: `[a-z]([a-z0-9-]{0,61}[a-z0-9])?`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apikeys_key#name ApikeysKey#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/apikeys_key#name ApikeysKey#name}
   */
   readonly name: string;
   /**
   * The project for the resource
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apikeys_key#project ApikeysKey#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/apikeys_key#project ApikeysKey#project}
   */
   readonly project?: string;
   /**
   * The email of the service account the key is bound to. If this field is specified, the key is a service account bound key and auth enabled. See [Documentation](https://cloud.google.com/docs/authentication/api-keys?#api-keys-bound-sa) for more details.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apikeys_key#service_account_email ApikeysKey#service_account_email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/apikeys_key#service_account_email ApikeysKey#service_account_email}
   */
   readonly serviceAccountEmail?: string;
   /**
   * restrictions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apikeys_key#restrictions ApikeysKey#restrictions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/apikeys_key#restrictions ApikeysKey#restrictions}
   */
   readonly restrictions?: ApikeysKeyRestrictions;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apikeys_key#timeouts ApikeysKey#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/apikeys_key#timeouts ApikeysKey#timeouts}
   */
   readonly timeouts?: ApikeysKeyTimeouts;
 }
@@ -72,13 +78,13 @@ export interface ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplications
   /**
   * The package name of the application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apikeys_key#package_name ApikeysKey#package_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/apikeys_key#package_name ApikeysKey#package_name}
   */
   readonly packageName: string;
   /**
   * The SHA1 fingerprint of the application. For example, both sha1 formats are acceptable : DA:39:A3:EE:5E:6B:4B:0D:32:55:BF:EF:95:60:18:90:AF:D8:07:09 or DA39A3EE5E6B4B0D3255BFEF95601890AFD80709. Output format is the latter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apikeys_key#sha1_fingerprint ApikeysKey#sha1_fingerprint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/apikeys_key#sha1_fingerprint ApikeysKey#sha1_fingerprint}
   */
   readonly sha1Fingerprint: string;
 }
@@ -219,7 +225,7 @@ export interface ApikeysKeyRestrictionsAndroidKeyRestrictions {
   /**
   * allowed_applications block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apikeys_key#allowed_applications ApikeysKey#allowed_applications}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/apikeys_key#allowed_applications ApikeysKey#allowed_applications}
   */
   readonly allowedApplications: ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplications[] | cdktn.IResolvable;
 }
@@ -302,13 +308,13 @@ export interface ApikeysKeyRestrictionsApiTargets {
   /**
   * Optional. List of one or more methods that can be called. If empty, all methods for the service are allowed. A wildcard (*) can be used as the last symbol. Valid examples: `google.cloud.translate.v2.TranslateService.GetSupportedLanguage` `TranslateText` `Get*` `translate.googleapis.com.Get*`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apikeys_key#methods ApikeysKey#methods}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/apikeys_key#methods ApikeysKey#methods}
   */
   readonly methods?: string[];
   /**
   * The service for this restriction. It should be the canonical service name, for example: `translate.googleapis.com`. You can use `gcloud services list` to get a list of services that are enabled in the project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apikeys_key#service ApikeysKey#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/apikeys_key#service ApikeysKey#service}
   */
   readonly service: string;
 }
@@ -452,7 +458,7 @@ export interface ApikeysKeyRestrictionsBrowserKeyRestrictions {
   /**
   * A list of regular expressions for the referrer URLs that are allowed to make API calls with this key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apikeys_key#allowed_referrers ApikeysKey#allowed_referrers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/apikeys_key#allowed_referrers ApikeysKey#allowed_referrers}
   */
   readonly allowedReferrers: string[];
 }
@@ -535,7 +541,7 @@ export interface ApikeysKeyRestrictionsIosKeyRestrictions {
   /**
   * A list of bundle IDs that are allowed when making API calls with this key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apikeys_key#allowed_bundle_ids ApikeysKey#allowed_bundle_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/apikeys_key#allowed_bundle_ids ApikeysKey#allowed_bundle_ids}
   */
   readonly allowedBundleIds: string[];
 }
@@ -618,7 +624,7 @@ export interface ApikeysKeyRestrictionsServerKeyRestrictions {
   /**
   * A list of the caller IP addresses that are allowed to make API calls with this key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apikeys_key#allowed_ips ApikeysKey#allowed_ips}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/apikeys_key#allowed_ips ApikeysKey#allowed_ips}
   */
   readonly allowedIps: string[];
 }
@@ -701,31 +707,31 @@ export interface ApikeysKeyRestrictions {
   /**
   * android_key_restrictions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apikeys_key#android_key_restrictions ApikeysKey#android_key_restrictions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/apikeys_key#android_key_restrictions ApikeysKey#android_key_restrictions}
   */
   readonly androidKeyRestrictions?: ApikeysKeyRestrictionsAndroidKeyRestrictions;
   /**
   * api_targets block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apikeys_key#api_targets ApikeysKey#api_targets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/apikeys_key#api_targets ApikeysKey#api_targets}
   */
   readonly apiTargets?: ApikeysKeyRestrictionsApiTargets[] | cdktn.IResolvable;
   /**
   * browser_key_restrictions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apikeys_key#browser_key_restrictions ApikeysKey#browser_key_restrictions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/apikeys_key#browser_key_restrictions ApikeysKey#browser_key_restrictions}
   */
   readonly browserKeyRestrictions?: ApikeysKeyRestrictionsBrowserKeyRestrictions;
   /**
   * ios_key_restrictions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apikeys_key#ios_key_restrictions ApikeysKey#ios_key_restrictions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/apikeys_key#ios_key_restrictions ApikeysKey#ios_key_restrictions}
   */
   readonly iosKeyRestrictions?: ApikeysKeyRestrictionsIosKeyRestrictions;
   /**
   * server_key_restrictions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apikeys_key#server_key_restrictions ApikeysKey#server_key_restrictions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/apikeys_key#server_key_restrictions ApikeysKey#server_key_restrictions}
   */
   readonly serverKeyRestrictions?: ApikeysKeyRestrictionsServerKeyRestrictions;
 }
@@ -925,15 +931,15 @@ export class ApikeysKeyRestrictionsOutputReference extends cdktn.ComplexObject {
 }
 export interface ApikeysKeyTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apikeys_key#create ApikeysKey#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/apikeys_key#create ApikeysKey#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apikeys_key#delete ApikeysKey#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/apikeys_key#delete ApikeysKey#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apikeys_key#update ApikeysKey#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/apikeys_key#update ApikeysKey#update}
   */
   readonly update?: string;
 }
@@ -1085,7 +1091,7 @@ export class ApikeysKeyTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apikeys_key google_apikeys_key}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/apikeys_key google_apikeys_key}
 */
 export class ApikeysKey extends cdktn.TerraformResource {
 
@@ -1101,7 +1107,7 @@ export class ApikeysKey extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ApikeysKey resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApikeysKey to import
-  * @param importFromId The id of the existing ApikeysKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apikeys_key#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ApikeysKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/apikeys_key#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApikeysKey to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1113,7 +1119,7 @@ export class ApikeysKey extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apikeys_key google_apikeys_key} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/apikeys_key google_apikeys_key} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1124,8 +1130,8 @@ export class ApikeysKey extends cdktn.TerraformResource {
       terraformResourceType: 'google_apikeys_key',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.46.1',
-        providerVersionConstraint: '~> 7.0'
+        providerVersion: '8.5.0',
+        providerVersionConstraint: '~> 8.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -1135,6 +1141,7 @@ export class ApikeysKey extends cdktn.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._checkExistingUsage = config.checkExistingUsage;
     this._deletionPolicy = config.deletionPolicy;
     this._displayName = config.displayName;
     this._id = config.id;
@@ -1148,6 +1155,22 @@ export class ApikeysKey extends cdktn.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // check_existing_usage - computed: false, optional: true, required: false
+  private _checkExistingUsage?: string; 
+  public get checkExistingUsage() {
+    return this.getStringAttribute('check_existing_usage');
+  }
+  public set checkExistingUsage(value: string) {
+    this._checkExistingUsage = value;
+  }
+  public resetCheckExistingUsage() {
+    this._checkExistingUsage = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get checkExistingUsageInput() {
+    return this._checkExistingUsage;
+  }
 
   // deletion_policy - computed: true, optional: true, required: false
   private _deletionPolicy?: string; 
@@ -1290,6 +1313,7 @@ export class ApikeysKey extends cdktn.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      check_existing_usage: cdktn.stringToTerraform(this._checkExistingUsage),
       deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
       display_name: cdktn.stringToTerraform(this._displayName),
       id: cdktn.stringToTerraform(this._id),
@@ -1303,6 +1327,12 @@ export class ApikeysKey extends cdktn.TerraformResource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      check_existing_usage: {
+        value: cdktn.stringToHclTerraform(this._checkExistingUsage),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       deletion_policy: {
         value: cdktn.stringToHclTerraform(this._deletionPolicy),
         isBlock: false,

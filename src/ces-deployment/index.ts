@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_deployment
+// https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_deployment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface CesDeploymentConfig extends cdktn.TerraformMetaArguments {
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_deployment#app CesDeployment#app}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_deployment#app CesDeployment#app}
   */
   readonly app: string;
   /**
@@ -23,7 +23,7 @@ export interface CesDeploymentConfig extends cdktn.TerraformMetaArguments {
   * Format:
   * projects/{project}/locations/{location}/apps/{app}/versions/{version}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_deployment#app_version CesDeployment#app_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_deployment#app_version CesDeployment#app_version}
   */
   readonly appVersion: string;
   /**
@@ -35,17 +35,17 @@ export interface CesDeploymentConfig extends cdktn.TerraformMetaArguments {
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_deployment#deletion_policy CesDeployment#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_deployment#deletion_policy CesDeployment#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * Display name of the deployment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_deployment#display_name CesDeployment#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_deployment#display_name CesDeployment#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_deployment#id CesDeployment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_deployment#id CesDeployment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -54,25 +54,37 @@ export interface CesDeploymentConfig extends cdktn.TerraformMetaArguments {
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_deployment#location CesDeployment#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_deployment#location CesDeployment#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_deployment#project CesDeployment#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_deployment#project CesDeployment#project}
   */
   readonly project?: string;
   /**
   * channel_profile block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_deployment#channel_profile CesDeployment#channel_profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_deployment#channel_profile CesDeployment#channel_profile}
   */
   readonly channelProfile: CesDeploymentChannelProfile;
   /**
+  * instagram_credentials block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_deployment#instagram_credentials CesDeployment#instagram_credentials}
+  */
+  readonly instagramCredentials?: CesDeploymentInstagramCredentials;
+  /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_deployment#timeouts CesDeployment#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_deployment#timeouts CesDeployment#timeouts}
   */
   readonly timeouts?: CesDeploymentTimeouts;
+  /**
+  * whatsapp_credentials block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_deployment#whatsapp_credentials CesDeployment#whatsapp_credentials}
+  */
+  readonly whatsappCredentials?: CesDeploymentWhatsappCredentials;
 }
 export interface CesDeploymentChannelProfilePersonaProperty {
   /**
@@ -82,7 +94,7 @@ export interface CesDeploymentChannelProfilePersonaProperty {
   * CONCISE
   * CHATTY
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_deployment#persona CesDeployment#persona}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_deployment#persona CesDeployment#persona}
   */
   readonly persona?: string;
 }
@@ -168,25 +180,25 @@ export interface CesDeploymentChannelProfileWebWidgetConfigSecuritySettings {
   /**
   * The origins that are allowed to host the web widget. An origin is defined by RFC 6454. If empty, all origins are allowed. A maximum of 100 origins is allowed. Example: "https://example.com"
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_deployment#allowed_origins CesDeployment#allowed_origins}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_deployment#allowed_origins CesDeployment#allowed_origins}
   */
   readonly allowedOrigins?: string[];
   /**
   * Indicates whether origin check for the web widget is enabled. If true, the web widget will check the origin of the website that loads the web widget and only allow it to be loaded in the same origin or any of the allowed origins.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_deployment#enable_origin_check CesDeployment#enable_origin_check}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_deployment#enable_origin_check CesDeployment#enable_origin_check}
   */
   readonly enableOriginCheck?: boolean | cdktn.IResolvable;
   /**
   * Indicates whether public access to the web widget is enabled. If true, the web widget will be publicly accessible. If false, the web widget must be integrated with your own authentication and authorization system to return valid credentials for accessing the CES agent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_deployment#enable_public_access CesDeployment#enable_public_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_deployment#enable_public_access CesDeployment#enable_public_access}
   */
   readonly enablePublicAccess?: boolean | cdktn.IResolvable;
   /**
   * Indicates whether reCAPTCHA verification for the web widget is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_deployment#enable_recaptcha CesDeployment#enable_recaptcha}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_deployment#enable_recaptcha CesDeployment#enable_recaptcha}
   */
   readonly enableRecaptcha?: boolean | cdktn.IResolvable;
 }
@@ -365,7 +377,7 @@ export interface CesDeploymentChannelProfileWebWidgetConfig {
   * CHAT_ONLY
   * CHAT_VOICE_AND_VIDEO
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_deployment#modality CesDeployment#modality}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_deployment#modality CesDeployment#modality}
   */
   readonly modality?: string;
   /**
@@ -375,19 +387,19 @@ export interface CesDeploymentChannelProfileWebWidgetConfig {
   * LIGHT
   * DARK
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_deployment#theme CesDeployment#theme}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_deployment#theme CesDeployment#theme}
   */
   readonly theme?: string;
   /**
   * The title of the web widget.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_deployment#web_widget_title CesDeployment#web_widget_title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_deployment#web_widget_title CesDeployment#web_widget_title}
   */
   readonly webWidgetTitle?: string;
   /**
   * security_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_deployment#security_settings CesDeployment#security_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_deployment#security_settings CesDeployment#security_settings}
   */
   readonly securitySettings?: CesDeploymentChannelProfileWebWidgetConfigSecuritySettings;
 }
@@ -556,6 +568,171 @@ export class CesDeploymentChannelProfileWebWidgetConfigOutputReference extends c
     return this._securitySettings.internalValue;
   }
 }
+export interface CesDeploymentChannelProfileWhatsappConfig {
+  /**
+  * Optional. The phone number in E.164 format.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_deployment#phone_number CesDeployment#phone_number}
+  */
+  readonly phoneNumber?: string;
+  /**
+  * Required. The Meta phone number ID.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_deployment#phone_number_id CesDeployment#phone_number_id}
+  */
+  readonly phoneNumberId: string;
+  /**
+  * Required. The WhatsApp Business Account ID.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_deployment#waba_id CesDeployment#waba_id}
+  */
+  readonly wabaId: string;
+}
+
+export function cesDeploymentChannelProfileWhatsappConfigToTerraform(struct?: CesDeploymentChannelProfileWhatsappConfigOutputReference | CesDeploymentChannelProfileWhatsappConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    phone_number: cdktn.stringToTerraform(struct!.phoneNumber),
+    phone_number_id: cdktn.stringToTerraform(struct!.phoneNumberId),
+    waba_id: cdktn.stringToTerraform(struct!.wabaId),
+  }
+}
+
+
+export function cesDeploymentChannelProfileWhatsappConfigToHclTerraform(struct?: CesDeploymentChannelProfileWhatsappConfigOutputReference | CesDeploymentChannelProfileWhatsappConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    phone_number: {
+      value: cdktn.stringToHclTerraform(struct!.phoneNumber),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    phone_number_id: {
+      value: cdktn.stringToHclTerraform(struct!.phoneNumberId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    waba_id: {
+      value: cdktn.stringToHclTerraform(struct!.wabaId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class CesDeploymentChannelProfileWhatsappConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): CesDeploymentChannelProfileWhatsappConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._phoneNumber !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.phoneNumber = this._phoneNumber;
+    }
+    if (this._phoneNumberId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.phoneNumberId = this._phoneNumberId;
+    }
+    if (this._wabaId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.wabaId = this._wabaId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CesDeploymentChannelProfileWhatsappConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._phoneNumber = undefined;
+      this._phoneNumberId = undefined;
+      this._wabaId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._phoneNumber = value.phoneNumber;
+      this._phoneNumberId = value.phoneNumberId;
+      this._wabaId = value.wabaId;
+    }
+  }
+
+  // description - computed: true, optional: false, required: false
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+
+  // display_name - computed: true, optional: false, required: false
+  public get displayName() {
+    return this.getStringAttribute('display_name');
+  }
+
+  // phone_number - computed: false, optional: true, required: false
+  private _phoneNumber?: string; 
+  public get phoneNumber() {
+    return this.getStringAttribute('phone_number');
+  }
+  public set phoneNumber(value: string) {
+    this._phoneNumber = value;
+  }
+  public resetPhoneNumber() {
+    this._phoneNumber = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get phoneNumberInput() {
+    return this._phoneNumber;
+  }
+
+  // phone_number_id - computed: false, optional: false, required: true
+  private _phoneNumberId?: string; 
+  public get phoneNumberId() {
+    return this.getStringAttribute('phone_number_id');
+  }
+  public set phoneNumberId(value: string) {
+    this._phoneNumberId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get phoneNumberIdInput() {
+    return this._phoneNumberId;
+  }
+
+  // thumbnail_url - computed: true, optional: false, required: false
+  public get thumbnailUrl() {
+    return this.getStringAttribute('thumbnail_url');
+  }
+
+  // waba_id - computed: false, optional: false, required: true
+  private _wabaId?: string; 
+  public get wabaId() {
+    return this.getStringAttribute('waba_id');
+  }
+  public set wabaId(value: string) {
+    this._wabaId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get wabaIdInput() {
+    return this._wabaId;
+  }
+}
 export interface CesDeploymentChannelProfile {
   /**
   * The type of the channel profile.
@@ -568,8 +745,10 @@ export interface CesDeploymentChannelProfile {
   * CONTACT_CENTER_AS_A_SERVICE
   * FIVE9
   * CONTACT_CENTER_INTEGRATION
+  * WHATSAPP
+  * INSTAGRAM
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_deployment#channel_type CesDeployment#channel_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_deployment#channel_type CesDeployment#channel_type}
   */
   readonly channelType?: string;
   /**
@@ -578,33 +757,39 @@ export interface CesDeploymentChannelProfile {
   * - **false**: The agent retains automatic control over when the user can
   * interrupt.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_deployment#disable_barge_in_control CesDeployment#disable_barge_in_control}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_deployment#disable_barge_in_control CesDeployment#disable_barge_in_control}
   */
   readonly disableBargeInControl?: boolean | cdktn.IResolvable;
   /**
   * Whether to disable DTMF (dual-tone multi-frequency).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_deployment#disable_dtmf CesDeployment#disable_dtmf}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_deployment#disable_dtmf CesDeployment#disable_dtmf}
   */
   readonly disableDtmf?: boolean | cdktn.IResolvable;
   /**
   * The unique identifier of the channel profile.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_deployment#profile_id CesDeployment#profile_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_deployment#profile_id CesDeployment#profile_id}
   */
   readonly profileId?: string;
   /**
   * persona_property block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_deployment#persona_property CesDeployment#persona_property}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_deployment#persona_property CesDeployment#persona_property}
   */
   readonly personaProperty?: CesDeploymentChannelProfilePersonaProperty;
   /**
   * web_widget_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_deployment#web_widget_config CesDeployment#web_widget_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_deployment#web_widget_config CesDeployment#web_widget_config}
   */
   readonly webWidgetConfig?: CesDeploymentChannelProfileWebWidgetConfig;
+  /**
+  * whatsapp_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_deployment#whatsapp_config CesDeployment#whatsapp_config}
+  */
+  readonly whatsappConfig?: CesDeploymentChannelProfileWhatsappConfig;
 }
 
 export function cesDeploymentChannelProfileToTerraform(struct?: CesDeploymentChannelProfileOutputReference | CesDeploymentChannelProfile): any {
@@ -619,6 +804,7 @@ export function cesDeploymentChannelProfileToTerraform(struct?: CesDeploymentCha
     profile_id: cdktn.stringToTerraform(struct!.profileId),
     persona_property: cesDeploymentChannelProfilePersonaPropertyToTerraform(struct!.personaProperty),
     web_widget_config: cesDeploymentChannelProfileWebWidgetConfigToTerraform(struct!.webWidgetConfig),
+    whatsapp_config: cesDeploymentChannelProfileWhatsappConfigToTerraform(struct!.whatsappConfig),
   }
 }
 
@@ -665,6 +851,12 @@ export function cesDeploymentChannelProfileToHclTerraform(struct?: CesDeployment
       type: "list",
       storageClassType: "CesDeploymentChannelProfileWebWidgetConfigList",
     },
+    whatsapp_config: {
+      value: cesDeploymentChannelProfileWhatsappConfigToHclTerraform(struct!.whatsappConfig),
+      isBlock: true,
+      type: "list",
+      storageClassType: "CesDeploymentChannelProfileWhatsappConfigList",
+    },
   };
 
   // remove undefined attributes
@@ -709,6 +901,10 @@ export class CesDeploymentChannelProfileOutputReference extends cdktn.ComplexObj
       hasAnyValues = true;
       internalValueResult.webWidgetConfig = this._webWidgetConfig?.internalValue;
     }
+    if (this._whatsappConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.whatsappConfig = this._whatsappConfig?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -721,6 +917,7 @@ export class CesDeploymentChannelProfileOutputReference extends cdktn.ComplexObj
       this._profileId = undefined;
       this._personaProperty.internalValue = undefined;
       this._webWidgetConfig.internalValue = undefined;
+      this._whatsappConfig.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
@@ -730,6 +927,7 @@ export class CesDeploymentChannelProfileOutputReference extends cdktn.ComplexObj
       this._profileId = value.profileId;
       this._personaProperty.internalValue = value.personaProperty;
       this._webWidgetConfig.internalValue = value.webWidgetConfig;
+      this._whatsappConfig.internalValue = value.whatsappConfig;
     }
   }
 
@@ -828,18 +1026,228 @@ export class CesDeploymentChannelProfileOutputReference extends cdktn.ComplexObj
   public get webWidgetConfigInput() {
     return this._webWidgetConfig.internalValue;
   }
+
+  // whatsapp_config - computed: false, optional: true, required: false
+  private _whatsappConfig = new CesDeploymentChannelProfileWhatsappConfigOutputReference(this, "whatsapp_config");
+  public get whatsappConfig() {
+    return this._whatsappConfig;
+  }
+  public putWhatsappConfig(value: CesDeploymentChannelProfileWhatsappConfig) {
+    this._whatsappConfig.internalValue = value;
+  }
+  public resetWhatsappConfig() {
+    this._whatsappConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get whatsappConfigInput() {
+    return this._whatsappConfig.internalValue;
+  }
+}
+export interface CesDeploymentInstagramCredentials {
+  /**
+  * The Meta auth code provided by the embedded signup flow.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_deployment#auth_code CesDeployment#auth_code}
+  */
+  readonly authCode?: string;
+  /**
+  * The Meta auth code provided by the embedded signup flow.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_deployment#auth_code_wo CesDeployment#auth_code_wo}
+  */
+  readonly authCodeWo?: string;
+  /**
+  * Triggers update of 'auth_code_wo' write-only. Increment this value when an update to 'auth_code_wo' is needed. For more info see [updating write-only arguments](/docs/providers/google/guides/using_write_only_arguments.html#updating-write-only-arguments)
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_deployment#auth_code_wo_version CesDeployment#auth_code_wo_version}
+  */
+  readonly authCodeWoVersion?: string;
+  /**
+  * The Conversation Profile ID to use for the deployment.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_deployment#conversation_profile_id CesDeployment#conversation_profile_id}
+  */
+  readonly conversationProfileId?: string;
+}
+
+export function cesDeploymentInstagramCredentialsToTerraform(struct?: CesDeploymentInstagramCredentialsOutputReference | CesDeploymentInstagramCredentials): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    auth_code: cdktn.stringToTerraform(struct!.authCode),
+    auth_code_wo: cdktn.stringToTerraform(struct!.authCodeWo),
+    auth_code_wo_version: cdktn.stringToTerraform(struct!.authCodeWoVersion),
+    conversation_profile_id: cdktn.stringToTerraform(struct!.conversationProfileId),
+  }
+}
+
+
+export function cesDeploymentInstagramCredentialsToHclTerraform(struct?: CesDeploymentInstagramCredentialsOutputReference | CesDeploymentInstagramCredentials): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    auth_code: {
+      value: cdktn.stringToHclTerraform(struct!.authCode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    auth_code_wo: {
+      value: cdktn.stringToHclTerraform(struct!.authCodeWo),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    auth_code_wo_version: {
+      value: cdktn.stringToHclTerraform(struct!.authCodeWoVersion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    conversation_profile_id: {
+      value: cdktn.stringToHclTerraform(struct!.conversationProfileId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class CesDeploymentInstagramCredentialsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): CesDeploymentInstagramCredentials | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._authCode !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.authCode = this._authCode;
+    }
+    if (this._authCodeWo !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.authCodeWo = this._authCodeWo;
+    }
+    if (this._authCodeWoVersion !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.authCodeWoVersion = this._authCodeWoVersion;
+    }
+    if (this._conversationProfileId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.conversationProfileId = this._conversationProfileId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CesDeploymentInstagramCredentials | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._authCode = undefined;
+      this._authCodeWo = undefined;
+      this._authCodeWoVersion = undefined;
+      this._conversationProfileId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._authCode = value.authCode;
+      this._authCodeWo = value.authCodeWo;
+      this._authCodeWoVersion = value.authCodeWoVersion;
+      this._conversationProfileId = value.conversationProfileId;
+    }
+  }
+
+  // auth_code - computed: false, optional: true, required: false
+  private _authCode?: string; 
+  public get authCode() {
+    return this.getStringAttribute('auth_code');
+  }
+  public set authCode(value: string) {
+    this._authCode = value;
+  }
+  public resetAuthCode() {
+    this._authCode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authCodeInput() {
+    return this._authCode;
+  }
+
+  // auth_code_wo - computed: false, optional: true, required: false
+  private _authCodeWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
+  public get authCodeWo() {
+    return this.getStringAttribute('auth_code_wo');
+  }
+  public set authCodeWo(value: string) {
+    this._authCodeWo = value;
+  }
+  public resetAuthCodeWo() {
+    this._authCodeWo = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authCodeWoInput() {
+    return this._authCodeWo;
+  }
+
+  // auth_code_wo_version - computed: false, optional: true, required: false
+  private _authCodeWoVersion?: string; 
+  public get authCodeWoVersion() {
+    return this.getStringAttribute('auth_code_wo_version');
+  }
+  public set authCodeWoVersion(value: string) {
+    this._authCodeWoVersion = value;
+  }
+  public resetAuthCodeWoVersion() {
+    this._authCodeWoVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authCodeWoVersionInput() {
+    return this._authCodeWoVersion;
+  }
+
+  // conversation_profile_id - computed: false, optional: true, required: false
+  private _conversationProfileId?: string; 
+  public get conversationProfileId() {
+    return this.getStringAttribute('conversation_profile_id');
+  }
+  public set conversationProfileId(value: string) {
+    this._conversationProfileId = value;
+  }
+  public resetConversationProfileId() {
+    this._conversationProfileId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get conversationProfileIdInput() {
+    return this._conversationProfileId;
+  }
 }
 export interface CesDeploymentTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_deployment#create CesDeployment#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_deployment#create CesDeployment#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_deployment#delete CesDeployment#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_deployment#delete CesDeployment#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_deployment#update CesDeployment#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_deployment#update CesDeployment#update}
   */
   readonly update?: string;
 }
@@ -989,9 +1397,407 @@ export class CesDeploymentTimeoutsOutputReference extends cdktn.ComplexObject {
     return this._update;
   }
 }
+export interface CesDeploymentWhatsappCredentials {
+  /**
+  * The Meta auth code provided by the embedded signup flow.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_deployment#auth_code CesDeployment#auth_code}
+  */
+  readonly authCode?: string;
+  /**
+  * The Meta auth code provided by the embedded signup flow.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_deployment#auth_code_wo CesDeployment#auth_code_wo}
+  */
+  readonly authCodeWo?: string;
+  /**
+  * Triggers update of 'auth_code_wo' write-only. Increment this value when an update to 'auth_code_wo' is needed. For more info see [updating write-only arguments](/docs/providers/google/guides/using_write_only_arguments.html#updating-write-only-arguments)
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_deployment#auth_code_wo_version CesDeployment#auth_code_wo_version}
+  */
+  readonly authCodeWoVersion?: string;
+  /**
+  * The Business Account ID to use for the phone number.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_deployment#business_account_id CesDeployment#business_account_id}
+  */
+  readonly businessAccountId: string;
+  /**
+  * The Conversation Profile ID to use for the deployment.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_deployment#conversation_profile_id CesDeployment#conversation_profile_id}
+  */
+  readonly conversationProfileId?: string;
+  /**
+  * The phone number to register with WhatsApp.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_deployment#phone_number CesDeployment#phone_number}
+  */
+  readonly phoneNumber: string;
+  /**
+  * The 6-digit PIN created by the user for two-step verification.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_deployment#pin CesDeployment#pin}
+  */
+  readonly pin?: string;
+  /**
+  * The 6-digit PIN created by the user for two-step verification.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_deployment#pin_wo CesDeployment#pin_wo}
+  */
+  readonly pinWo?: string;
+  /**
+  * Triggers update of 'pin_wo' write-only. Increment this value when an update to 'pin_wo' is needed. For more info see [updating write-only arguments](/docs/providers/google/guides/using_write_only_arguments.html#updating-write-only-arguments)
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_deployment#pin_wo_version CesDeployment#pin_wo_version}
+  */
+  readonly pinWoVersion?: string;
+  /**
+  * The WhatsApp Business Account ID.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_deployment#waba_id CesDeployment#waba_id}
+  */
+  readonly wabaId: string;
+}
+
+export function cesDeploymentWhatsappCredentialsToTerraform(struct?: CesDeploymentWhatsappCredentialsOutputReference | CesDeploymentWhatsappCredentials): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    auth_code: cdktn.stringToTerraform(struct!.authCode),
+    auth_code_wo: cdktn.stringToTerraform(struct!.authCodeWo),
+    auth_code_wo_version: cdktn.stringToTerraform(struct!.authCodeWoVersion),
+    business_account_id: cdktn.stringToTerraform(struct!.businessAccountId),
+    conversation_profile_id: cdktn.stringToTerraform(struct!.conversationProfileId),
+    phone_number: cdktn.stringToTerraform(struct!.phoneNumber),
+    pin: cdktn.stringToTerraform(struct!.pin),
+    pin_wo: cdktn.stringToTerraform(struct!.pinWo),
+    pin_wo_version: cdktn.stringToTerraform(struct!.pinWoVersion),
+    waba_id: cdktn.stringToTerraform(struct!.wabaId),
+  }
+}
+
+
+export function cesDeploymentWhatsappCredentialsToHclTerraform(struct?: CesDeploymentWhatsappCredentialsOutputReference | CesDeploymentWhatsappCredentials): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    auth_code: {
+      value: cdktn.stringToHclTerraform(struct!.authCode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    auth_code_wo: {
+      value: cdktn.stringToHclTerraform(struct!.authCodeWo),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    auth_code_wo_version: {
+      value: cdktn.stringToHclTerraform(struct!.authCodeWoVersion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    business_account_id: {
+      value: cdktn.stringToHclTerraform(struct!.businessAccountId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    conversation_profile_id: {
+      value: cdktn.stringToHclTerraform(struct!.conversationProfileId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    phone_number: {
+      value: cdktn.stringToHclTerraform(struct!.phoneNumber),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    pin: {
+      value: cdktn.stringToHclTerraform(struct!.pin),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    pin_wo: {
+      value: cdktn.stringToHclTerraform(struct!.pinWo),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    pin_wo_version: {
+      value: cdktn.stringToHclTerraform(struct!.pinWoVersion),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    waba_id: {
+      value: cdktn.stringToHclTerraform(struct!.wabaId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class CesDeploymentWhatsappCredentialsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): CesDeploymentWhatsappCredentials | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._authCode !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.authCode = this._authCode;
+    }
+    if (this._authCodeWo !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.authCodeWo = this._authCodeWo;
+    }
+    if (this._authCodeWoVersion !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.authCodeWoVersion = this._authCodeWoVersion;
+    }
+    if (this._businessAccountId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.businessAccountId = this._businessAccountId;
+    }
+    if (this._conversationProfileId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.conversationProfileId = this._conversationProfileId;
+    }
+    if (this._phoneNumber !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.phoneNumber = this._phoneNumber;
+    }
+    if (this._pin !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pin = this._pin;
+    }
+    if (this._pinWo !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pinWo = this._pinWo;
+    }
+    if (this._pinWoVersion !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pinWoVersion = this._pinWoVersion;
+    }
+    if (this._wabaId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.wabaId = this._wabaId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CesDeploymentWhatsappCredentials | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._authCode = undefined;
+      this._authCodeWo = undefined;
+      this._authCodeWoVersion = undefined;
+      this._businessAccountId = undefined;
+      this._conversationProfileId = undefined;
+      this._phoneNumber = undefined;
+      this._pin = undefined;
+      this._pinWo = undefined;
+      this._pinWoVersion = undefined;
+      this._wabaId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._authCode = value.authCode;
+      this._authCodeWo = value.authCodeWo;
+      this._authCodeWoVersion = value.authCodeWoVersion;
+      this._businessAccountId = value.businessAccountId;
+      this._conversationProfileId = value.conversationProfileId;
+      this._phoneNumber = value.phoneNumber;
+      this._pin = value.pin;
+      this._pinWo = value.pinWo;
+      this._pinWoVersion = value.pinWoVersion;
+      this._wabaId = value.wabaId;
+    }
+  }
+
+  // auth_code - computed: false, optional: true, required: false
+  private _authCode?: string; 
+  public get authCode() {
+    return this.getStringAttribute('auth_code');
+  }
+  public set authCode(value: string) {
+    this._authCode = value;
+  }
+  public resetAuthCode() {
+    this._authCode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authCodeInput() {
+    return this._authCode;
+  }
+
+  // auth_code_wo - computed: false, optional: true, required: false
+  private _authCodeWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
+  public get authCodeWo() {
+    return this.getStringAttribute('auth_code_wo');
+  }
+  public set authCodeWo(value: string) {
+    this._authCodeWo = value;
+  }
+  public resetAuthCodeWo() {
+    this._authCodeWo = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authCodeWoInput() {
+    return this._authCodeWo;
+  }
+
+  // auth_code_wo_version - computed: false, optional: true, required: false
+  private _authCodeWoVersion?: string; 
+  public get authCodeWoVersion() {
+    return this.getStringAttribute('auth_code_wo_version');
+  }
+  public set authCodeWoVersion(value: string) {
+    this._authCodeWoVersion = value;
+  }
+  public resetAuthCodeWoVersion() {
+    this._authCodeWoVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authCodeWoVersionInput() {
+    return this._authCodeWoVersion;
+  }
+
+  // business_account_id - computed: false, optional: false, required: true
+  private _businessAccountId?: string; 
+  public get businessAccountId() {
+    return this.getStringAttribute('business_account_id');
+  }
+  public set businessAccountId(value: string) {
+    this._businessAccountId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get businessAccountIdInput() {
+    return this._businessAccountId;
+  }
+
+  // conversation_profile_id - computed: false, optional: true, required: false
+  private _conversationProfileId?: string; 
+  public get conversationProfileId() {
+    return this.getStringAttribute('conversation_profile_id');
+  }
+  public set conversationProfileId(value: string) {
+    this._conversationProfileId = value;
+  }
+  public resetConversationProfileId() {
+    this._conversationProfileId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get conversationProfileIdInput() {
+    return this._conversationProfileId;
+  }
+
+  // phone_number - computed: false, optional: false, required: true
+  private _phoneNumber?: string; 
+  public get phoneNumber() {
+    return this.getStringAttribute('phone_number');
+  }
+  public set phoneNumber(value: string) {
+    this._phoneNumber = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get phoneNumberInput() {
+    return this._phoneNumber;
+  }
+
+  // pin - computed: false, optional: true, required: false
+  private _pin?: string; 
+  public get pin() {
+    return this.getStringAttribute('pin');
+  }
+  public set pin(value: string) {
+    this._pin = value;
+  }
+  public resetPin() {
+    this._pin = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pinInput() {
+    return this._pin;
+  }
+
+  // pin_wo - computed: false, optional: true, required: false
+  private _pinWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
+  public get pinWo() {
+    return this.getStringAttribute('pin_wo');
+  }
+  public set pinWo(value: string) {
+    this._pinWo = value;
+  }
+  public resetPinWo() {
+    this._pinWo = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pinWoInput() {
+    return this._pinWo;
+  }
+
+  // pin_wo_version - computed: false, optional: true, required: false
+  private _pinWoVersion?: string; 
+  public get pinWoVersion() {
+    return this.getStringAttribute('pin_wo_version');
+  }
+  public set pinWoVersion(value: string) {
+    this._pinWoVersion = value;
+  }
+  public resetPinWoVersion() {
+    this._pinWoVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pinWoVersionInput() {
+    return this._pinWoVersion;
+  }
+
+  // waba_id - computed: false, optional: false, required: true
+  private _wabaId?: string; 
+  public get wabaId() {
+    return this.getStringAttribute('waba_id');
+  }
+  public set wabaId(value: string) {
+    this._wabaId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get wabaIdInput() {
+    return this._wabaId;
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_deployment google_ces_deployment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_deployment google_ces_deployment}
 */
 export class CesDeployment extends cdktn.TerraformResource {
 
@@ -1007,7 +1813,7 @@ export class CesDeployment extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a CesDeployment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CesDeployment to import
-  * @param importFromId The id of the existing CesDeployment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_deployment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CesDeployment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_deployment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CesDeployment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1019,7 +1825,7 @@ export class CesDeployment extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_deployment google_ces_deployment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.5.0/docs/resources/ces_deployment google_ces_deployment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1030,8 +1836,8 @@ export class CesDeployment extends cdktn.TerraformResource {
       terraformResourceType: 'google_ces_deployment',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.46.1',
-        providerVersionConstraint: '~> 7.0'
+        providerVersion: '8.5.0',
+        providerVersionConstraint: '~> 8.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -1049,7 +1855,9 @@ export class CesDeployment extends cdktn.TerraformResource {
     this._location = config.location;
     this._project = config.project;
     this._channelProfile.internalValue = config.channelProfile;
+    this._instagramCredentials.internalValue = config.instagramCredentials;
     this._timeouts.internalValue = config.timeouts;
+    this._whatsappCredentials.internalValue = config.whatsappCredentials;
   }
 
   // ==========
@@ -1189,6 +1997,22 @@ export class CesDeployment extends cdktn.TerraformResource {
     return this._channelProfile.internalValue;
   }
 
+  // instagram_credentials - computed: false, optional: true, required: false
+  private _instagramCredentials = new CesDeploymentInstagramCredentialsOutputReference(this, "instagram_credentials");
+  public get instagramCredentials() {
+    return this._instagramCredentials;
+  }
+  public putInstagramCredentials(value: CesDeploymentInstagramCredentials) {
+    this._instagramCredentials.internalValue = value;
+  }
+  public resetInstagramCredentials() {
+    this._instagramCredentials.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instagramCredentialsInput() {
+    return this._instagramCredentials.internalValue;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new CesDeploymentTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -1205,6 +2029,22 @@ export class CesDeployment extends cdktn.TerraformResource {
     return this._timeouts.internalValue;
   }
 
+  // whatsapp_credentials - computed: false, optional: true, required: false
+  private _whatsappCredentials = new CesDeploymentWhatsappCredentialsOutputReference(this, "whatsapp_credentials");
+  public get whatsappCredentials() {
+    return this._whatsappCredentials;
+  }
+  public putWhatsappCredentials(value: CesDeploymentWhatsappCredentials) {
+    this._whatsappCredentials.internalValue = value;
+  }
+  public resetWhatsappCredentials() {
+    this._whatsappCredentials.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get whatsappCredentialsInput() {
+    return this._whatsappCredentials.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -1219,7 +2059,9 @@ export class CesDeployment extends cdktn.TerraformResource {
       location: cdktn.stringToTerraform(this._location),
       project: cdktn.stringToTerraform(this._project),
       channel_profile: cesDeploymentChannelProfileToTerraform(this._channelProfile.internalValue),
+      instagram_credentials: cesDeploymentInstagramCredentialsToTerraform(this._instagramCredentials.internalValue),
       timeouts: cesDeploymentTimeoutsToTerraform(this._timeouts.internalValue),
+      whatsapp_credentials: cesDeploymentWhatsappCredentialsToTerraform(this._whatsappCredentials.internalValue),
     };
   }
 
@@ -1273,11 +2115,23 @@ export class CesDeployment extends cdktn.TerraformResource {
         type: "list",
         storageClassType: "CesDeploymentChannelProfileList",
       },
+      instagram_credentials: {
+        value: cesDeploymentInstagramCredentialsToHclTerraform(this._instagramCredentials.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CesDeploymentInstagramCredentialsList",
+      },
       timeouts: {
         value: cesDeploymentTimeoutsToHclTerraform(this._timeouts.internalValue),
         isBlock: true,
         type: "struct",
         storageClassType: "CesDeploymentTimeouts",
+      },
+      whatsapp_credentials: {
+        value: cesDeploymentWhatsappCredentialsToHclTerraform(this._whatsappCredentials.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "CesDeploymentWhatsappCredentialsList",
       },
     };
 
