@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret_version
+// https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret_version
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface SecretManagerSecretVersionConfig extends cdktn.TerraformMetaArg
   /**
   * This field uses a custom implementation please refer to documentation under /hashicorp/terraform-provider-google-beta/website/docs/r/secret_manager_secret_version.html.markdown for specifics
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret_version#deletion_policy SecretManagerSecretVersion#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret_version#deletion_policy SecretManagerSecretVersion#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * The current state of the SecretVersion.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret_version#enabled SecretManagerSecretVersion#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret_version#enabled SecretManagerSecretVersion#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret_version#id SecretManagerSecretVersion#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret_version#id SecretManagerSecretVersion#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,58 +34,58 @@ export interface SecretManagerSecretVersionConfig extends cdktn.TerraformMetaArg
   /**
   * If set to 'true', the secret data is expected to be base64-encoded string and would be sent as is.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret_version#is_secret_data_base64 SecretManagerSecretVersion#is_secret_data_base64}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret_version#is_secret_data_base64 SecretManagerSecretVersion#is_secret_data_base64}
   */
   readonly isSecretDataBase64?: boolean | cdktn.IResolvable;
   /**
   * The ID of the project in which the resource belongs. If it is not provided,
   * the provider project is used
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret_version#project SecretManagerSecretVersion#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret_version#project SecretManagerSecretVersion#project}
   */
   readonly project?: string;
   /**
   * Secret Manager secret resource
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret_version#secret SecretManagerSecretVersion#secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret_version#secret SecretManagerSecretVersion#secret}
   */
   readonly secret: string;
   /**
   * The secret data. Must be no larger than 64KiB.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret_version#secret_data SecretManagerSecretVersion#secret_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret_version#secret_data SecretManagerSecretVersion#secret_data}
   */
   readonly secretData?: string;
   /**
-  * The secret data. Must be no larger than 64KiB. For more info see [updating write-only arguments](/docs/providers/google/guides/using_write_only_arguments.html#updating-write-only-arguments)
+  * The secret data. Must be no larger than 64KiB.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret_version#secret_data_wo SecretManagerSecretVersion#secret_data_wo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret_version#secret_data_wo SecretManagerSecretVersion#secret_data_wo}
   */
   readonly secretDataWo?: string;
   /**
-  * Triggers update of secret data write-only. For more info see [updating write-only arguments](/docs/providers/google/guides/using_write_only_arguments.html#updating-write-only-arguments)
+  * Triggers update of 'secret_data_wo' write-only. Increment this value when an update to 'secret_data_wo' is needed. For more info see [updating write-only arguments](/docs/providers/google/guides/using_write_only_arguments.html#updating-write-only-arguments)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret_version#secret_data_wo_version SecretManagerSecretVersion#secret_data_wo_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret_version#secret_data_wo_version SecretManagerSecretVersion#secret_data_wo_version}
   */
-  readonly secretDataWoVersion?: number;
+  readonly secretDataWoVersion?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret_version#timeouts SecretManagerSecretVersion#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret_version#timeouts SecretManagerSecretVersion#timeouts}
   */
   readonly timeouts?: SecretManagerSecretVersionTimeouts;
 }
 export interface SecretManagerSecretVersionTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret_version#create SecretManagerSecretVersion#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret_version#create SecretManagerSecretVersion#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret_version#delete SecretManagerSecretVersion#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret_version#delete SecretManagerSecretVersion#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret_version#update SecretManagerSecretVersion#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret_version#update SecretManagerSecretVersion#update}
   */
   readonly update?: string;
 }
@@ -237,7 +237,7 @@ export class SecretManagerSecretVersionTimeoutsOutputReference extends cdktn.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret_version google_secret_manager_secret_version}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret_version google_secret_manager_secret_version}
 */
 export class SecretManagerSecretVersion extends cdktn.TerraformResource {
 
@@ -253,7 +253,7 @@ export class SecretManagerSecretVersion extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a SecretManagerSecretVersion resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SecretManagerSecretVersion to import
-  * @param importFromId The id of the existing SecretManagerSecretVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret_version#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SecretManagerSecretVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret_version#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SecretManagerSecretVersion to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -265,7 +265,7 @@ export class SecretManagerSecretVersion extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret_version google_secret_manager_secret_version} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret_version google_secret_manager_secret_version} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -276,8 +276,8 @@ export class SecretManagerSecretVersion extends cdktn.TerraformResource {
       terraformResourceType: 'google_secret_manager_secret_version',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.46.1',
-        providerVersionConstraint: '~> 7.0'
+        providerVersion: '8.6.0',
+        providerVersionConstraint: '~> 8.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -447,11 +447,11 @@ export class SecretManagerSecretVersion extends cdktn.TerraformResource {
   }
 
   // secret_data_wo_version - computed: false, optional: true, required: false
-  private _secretDataWoVersion?: number; 
+  private _secretDataWoVersion?: string; 
   public get secretDataWoVersion() {
-    return this.getNumberAttribute('secret_data_wo_version');
+    return this.getStringAttribute('secret_data_wo_version');
   }
-  public set secretDataWoVersion(value: number) {
+  public set secretDataWoVersion(value: string) {
     this._secretDataWoVersion = value;
   }
   public resetSecretDataWoVersion() {
@@ -497,7 +497,7 @@ export class SecretManagerSecretVersion extends cdktn.TerraformResource {
       secret: cdktn.stringToTerraform(this._secret),
       secret_data: cdktn.stringToTerraform(this._secretData),
       secret_data_wo: this.markWriteOnlyAttribute(cdktn.stringToTerraform(this._secretDataWo)),
-      secret_data_wo_version: cdktn.numberToTerraform(this._secretDataWoVersion),
+      secret_data_wo_version: cdktn.stringToTerraform(this._secretDataWoVersion),
       timeouts: secretManagerSecretVersionTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -553,10 +553,10 @@ export class SecretManagerSecretVersion extends cdktn.TerraformResource {
         storageClassType: "string",
       },
       secret_data_wo_version: {
-        value: cdktn.numberToHclTerraform(this._secretDataWoVersion),
+        value: cdktn.stringToHclTerraform(this._secretDataWoVersion),
         isBlock: false,
         type: "simple",
-        storageClassType: "number",
+        storageClassType: "string",
       },
       timeouts: {
         value: secretManagerSecretVersionTimeoutsToHclTerraform(this._timeouts.internalValue),

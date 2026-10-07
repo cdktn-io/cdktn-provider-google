@@ -1,3 +1,0 @@
-# `google_iap_brand`
-
-Refer to the Terraform Registry for docs: [`google_iap_brand`](https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iap_brand).

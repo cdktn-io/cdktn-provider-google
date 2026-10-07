@@ -4,10 +4,14 @@
  */
 
 import * as cdktn from 'cdktn';
-import { ComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderAction,
-computeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionToTerraform,
-computeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionToHclTerraform,
-ComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionOutputReference,
+import { ComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd,
+computeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddToTerraform,
+computeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddToHclTerraform,
+ComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList,
+ComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd,
+computeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddToTerraform,
+computeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddToHclTerraform,
+ComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList,
 ComputeUrlMapPathMatcherRouteRulesRouteActionCachePolicy,
 computeUrlMapPathMatcherRouteRulesRouteActionCachePolicyToTerraform,
 computeUrlMapPathMatcherRouteRulesRouteActionCachePolicyToHclTerraform,
@@ -72,13 +76,206 @@ ComputeUrlMapPathMatcherPathRule,
 computeUrlMapPathMatcherPathRuleToTerraform,
 computeUrlMapPathMatcherPathRuleToHclTerraform,
 ComputeUrlMapPathMatcherPathRuleList } from './structs0';
+export interface ComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderAction {
+  /**
+  * A list of header names for headers that need to be removed from the request
+  * prior to forwarding the request to the backendService.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_url_map#request_headers_to_remove ComputeUrlMap#request_headers_to_remove}
+  */
+  readonly requestHeadersToRemove?: string[];
+  /**
+  * A list of header names for headers that need to be removed from the response
+  * prior to sending the response back to the client.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_url_map#response_headers_to_remove ComputeUrlMap#response_headers_to_remove}
+  */
+  readonly responseHeadersToRemove?: string[];
+  /**
+  * request_headers_to_add block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_url_map#request_headers_to_add ComputeUrlMap#request_headers_to_add}
+  */
+  readonly requestHeadersToAdd?: ComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[] | cdktn.IResolvable;
+  /**
+  * response_headers_to_add block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_url_map#response_headers_to_add ComputeUrlMap#response_headers_to_add}
+  */
+  readonly responseHeadersToAdd?: ComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[] | cdktn.IResolvable;
+}
+
+export function computeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionToTerraform(struct?: ComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionOutputReference | ComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderAction): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    request_headers_to_remove: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.requestHeadersToRemove),
+    response_headers_to_remove: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.responseHeadersToRemove),
+    request_headers_to_add: cdktn.listMapper(computeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddToTerraform, true)(struct!.requestHeadersToAdd),
+    response_headers_to_add: cdktn.listMapper(computeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddToTerraform, true)(struct!.responseHeadersToAdd),
+  }
+}
+
+
+export function computeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionToHclTerraform(struct?: ComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionOutputReference | ComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderAction): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    request_headers_to_remove: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.requestHeadersToRemove),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    response_headers_to_remove: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.responseHeadersToRemove),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    request_headers_to_add: {
+      value: cdktn.listMapperHcl(computeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddToHclTerraform, true)(struct!.requestHeadersToAdd),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList",
+    },
+    response_headers_to_add: {
+      value: cdktn.listMapperHcl(computeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddToHclTerraform, true)(struct!.responseHeadersToAdd),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderAction | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._requestHeadersToRemove !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.requestHeadersToRemove = this._requestHeadersToRemove;
+    }
+    if (this._responseHeadersToRemove !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.responseHeadersToRemove = this._responseHeadersToRemove;
+    }
+    if (this._requestHeadersToAdd?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.requestHeadersToAdd = this._requestHeadersToAdd?.internalValue;
+    }
+    if (this._responseHeadersToAdd?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.responseHeadersToAdd = this._responseHeadersToAdd?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderAction | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._requestHeadersToRemove = undefined;
+      this._responseHeadersToRemove = undefined;
+      this._requestHeadersToAdd.internalValue = undefined;
+      this._responseHeadersToAdd.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._requestHeadersToRemove = value.requestHeadersToRemove;
+      this._responseHeadersToRemove = value.responseHeadersToRemove;
+      this._requestHeadersToAdd.internalValue = value.requestHeadersToAdd;
+      this._responseHeadersToAdd.internalValue = value.responseHeadersToAdd;
+    }
+  }
+
+  // request_headers_to_remove - computed: false, optional: true, required: false
+  private _requestHeadersToRemove?: string[]; 
+  public get requestHeadersToRemove() {
+    return this.getListAttribute('request_headers_to_remove');
+  }
+  public set requestHeadersToRemove(value: string[]) {
+    this._requestHeadersToRemove = value;
+  }
+  public resetRequestHeadersToRemove() {
+    this._requestHeadersToRemove = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get requestHeadersToRemoveInput() {
+    return this._requestHeadersToRemove;
+  }
+
+  // response_headers_to_remove - computed: false, optional: true, required: false
+  private _responseHeadersToRemove?: string[]; 
+  public get responseHeadersToRemove() {
+    return this.getListAttribute('response_headers_to_remove');
+  }
+  public set responseHeadersToRemove(value: string[]) {
+    this._responseHeadersToRemove = value;
+  }
+  public resetResponseHeadersToRemove() {
+    this._responseHeadersToRemove = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get responseHeadersToRemoveInput() {
+    return this._responseHeadersToRemove;
+  }
+
+  // request_headers_to_add - computed: false, optional: true, required: false
+  private _requestHeadersToAdd = new ComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList(this, "request_headers_to_add", false);
+  public get requestHeadersToAdd() {
+    return this._requestHeadersToAdd;
+  }
+  public putRequestHeadersToAdd(value: ComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[] | cdktn.IResolvable) {
+    this._requestHeadersToAdd.internalValue = value;
+  }
+  public resetRequestHeadersToAdd() {
+    this._requestHeadersToAdd.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get requestHeadersToAddInput() {
+    return this._requestHeadersToAdd.internalValue;
+  }
+
+  // response_headers_to_add - computed: false, optional: true, required: false
+  private _responseHeadersToAdd = new ComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList(this, "response_headers_to_add", false);
+  public get responseHeadersToAdd() {
+    return this._responseHeadersToAdd;
+  }
+  public putResponseHeadersToAdd(value: ComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[] | cdktn.IResolvable) {
+    this._responseHeadersToAdd.internalValue = value;
+  }
+  public resetResponseHeadersToAdd() {
+    this._responseHeadersToAdd.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get responseHeadersToAddInput() {
+    return this._responseHeadersToAdd.internalValue;
+  }
+}
 export interface ComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices {
   /**
   * The default BackendService resource. Before
   * forwarding the request to backendService, the loadbalancer applies any relevant
   * headerActions specified as part of this backendServiceWeight.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_url_map#backend_service ComputeUrlMap#backend_service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_url_map#backend_service ComputeUrlMap#backend_service}
   */
   readonly backendService: string;
   /**
@@ -89,13 +286,13 @@ export interface ComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendSer
   * backendService as determined by the BackendService's session affinity policy.
   * The value must be between 0 and 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_url_map#weight ComputeUrlMap#weight}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_url_map#weight ComputeUrlMap#weight}
   */
   readonly weight: number;
   /**
   * header_action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_url_map#header_action ComputeUrlMap#header_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_url_map#header_action ComputeUrlMap#header_action}
   */
   readonly headerAction?: ComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderAction;
 }
@@ -265,55 +462,55 @@ export interface ComputeUrlMapPathMatcherRouteRulesRouteAction {
   /**
   * cache_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_url_map#cache_policy ComputeUrlMap#cache_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_url_map#cache_policy ComputeUrlMap#cache_policy}
   */
   readonly cachePolicy?: ComputeUrlMapPathMatcherRouteRulesRouteActionCachePolicy;
   /**
   * cors_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_url_map#cors_policy ComputeUrlMap#cors_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_url_map#cors_policy ComputeUrlMap#cors_policy}
   */
   readonly corsPolicy?: ComputeUrlMapPathMatcherRouteRulesRouteActionCorsPolicy;
   /**
   * fault_injection_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_url_map#fault_injection_policy ComputeUrlMap#fault_injection_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_url_map#fault_injection_policy ComputeUrlMap#fault_injection_policy}
   */
   readonly faultInjectionPolicy?: ComputeUrlMapPathMatcherRouteRulesRouteActionFaultInjectionPolicy;
   /**
   * max_stream_duration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_url_map#max_stream_duration ComputeUrlMap#max_stream_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_url_map#max_stream_duration ComputeUrlMap#max_stream_duration}
   */
   readonly maxStreamDuration?: ComputeUrlMapPathMatcherRouteRulesRouteActionMaxStreamDuration;
   /**
   * request_mirror_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_url_map#request_mirror_policy ComputeUrlMap#request_mirror_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_url_map#request_mirror_policy ComputeUrlMap#request_mirror_policy}
   */
   readonly requestMirrorPolicy?: ComputeUrlMapPathMatcherRouteRulesRouteActionRequestMirrorPolicy;
   /**
   * retry_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_url_map#retry_policy ComputeUrlMap#retry_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_url_map#retry_policy ComputeUrlMap#retry_policy}
   */
   readonly retryPolicy?: ComputeUrlMapPathMatcherRouteRulesRouteActionRetryPolicy;
   /**
   * timeout block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_url_map#timeout ComputeUrlMap#timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_url_map#timeout ComputeUrlMap#timeout}
   */
   readonly timeout?: ComputeUrlMapPathMatcherRouteRulesRouteActionTimeout;
   /**
   * url_rewrite block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_url_map#url_rewrite ComputeUrlMap#url_rewrite}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_url_map#url_rewrite ComputeUrlMap#url_rewrite}
   */
   readonly urlRewrite?: ComputeUrlMapPathMatcherRouteRulesRouteActionUrlRewrite;
   /**
   * weighted_backend_services block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_url_map#weighted_backend_services ComputeUrlMap#weighted_backend_services}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_url_map#weighted_backend_services ComputeUrlMap#weighted_backend_services}
   */
   readonly weightedBackendServices?: ComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices[] | cdktn.IResolvable;
 }
@@ -632,7 +829,7 @@ export interface ComputeUrlMapPathMatcherRouteRulesUrlRedirect {
   * The host that will be used in the redirect response instead of the one that was
   * supplied in the request. The value must be between 1 and 255 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_url_map#host_redirect ComputeUrlMap#host_redirect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_url_map#host_redirect ComputeUrlMap#host_redirect}
   */
   readonly hostRedirect?: string;
   /**
@@ -641,7 +838,7 @@ export interface ComputeUrlMapPathMatcherRouteRulesUrlRedirect {
   * of the request. This must only be set for UrlMaps used in TargetHttpProxys.
   * Setting this true for TargetHttpsProxy is not permitted. Defaults to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_url_map#https_redirect ComputeUrlMap#https_redirect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_url_map#https_redirect ComputeUrlMap#https_redirect}
   */
   readonly httpsRedirect?: boolean | cdktn.IResolvable;
   /**
@@ -649,14 +846,14 @@ export interface ComputeUrlMapPathMatcherRouteRulesUrlRedirect {
   * supplied in the request. Only one of pathRedirect or prefixRedirect must be
   * specified. The value must be between 1 and 1024 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_url_map#path_redirect ComputeUrlMap#path_redirect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_url_map#path_redirect ComputeUrlMap#path_redirect}
   */
   readonly pathRedirect?: string;
   /**
   * The prefix that replaces the prefixMatch specified in the HttpRouteRuleMatch,
   * retaining the remaining portion of the URL before redirecting the request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_url_map#prefix_redirect ComputeUrlMap#prefix_redirect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_url_map#prefix_redirect ComputeUrlMap#prefix_redirect}
   */
   readonly prefixRedirect?: string;
   /**
@@ -672,7 +869,7 @@ export interface ComputeUrlMapPathMatcherRouteRulesUrlRedirect {
   * 
   * * PERMANENT_REDIRECT, which corresponds to 308. In this case, the request method will be retained. Possible values: ["FOUND", "MOVED_PERMANENTLY_DEFAULT", "PERMANENT_REDIRECT", "SEE_OTHER", "TEMPORARY_REDIRECT"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_url_map#redirect_response_code ComputeUrlMap#redirect_response_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_url_map#redirect_response_code ComputeUrlMap#redirect_response_code}
   */
   readonly redirectResponseCode?: string;
   /**
@@ -680,7 +877,7 @@ export interface ComputeUrlMapPathMatcherRouteRulesUrlRedirect {
   * prior to redirecting the request. If set to false, the query portion of the
   * original URL is retained. Defaults to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_url_map#strip_query ComputeUrlMap#strip_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_url_map#strip_query ComputeUrlMap#strip_query}
   */
   readonly stripQuery?: boolean | cdktn.IResolvable;
 }
@@ -925,7 +1122,7 @@ export interface ComputeUrlMapPathMatcherRouteRules {
   * you could add rules numbered from 6 to 8, 10 to 11, and 13 to 15 in the
   * future without any impact on existing rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_url_map#priority ComputeUrlMap#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_url_map#priority ComputeUrlMap#priority}
   */
   readonly priority: number;
   /**
@@ -937,37 +1134,37 @@ export interface ComputeUrlMapPathMatcherRouteRules {
   * weightedBackendServices, service must not be specified. Only one of urlRedirect,
   * service or routeAction.weightedBackendService must be set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_url_map#service ComputeUrlMap#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_url_map#service ComputeUrlMap#service}
   */
   readonly service?: string;
   /**
   * custom_error_response_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_url_map#custom_error_response_policy ComputeUrlMap#custom_error_response_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_url_map#custom_error_response_policy ComputeUrlMap#custom_error_response_policy}
   */
   readonly customErrorResponsePolicy?: ComputeUrlMapPathMatcherRouteRulesCustomErrorResponsePolicy;
   /**
   * header_action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_url_map#header_action ComputeUrlMap#header_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_url_map#header_action ComputeUrlMap#header_action}
   */
   readonly headerAction?: ComputeUrlMapPathMatcherRouteRulesHeaderAction;
   /**
   * match_rules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_url_map#match_rules ComputeUrlMap#match_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_url_map#match_rules ComputeUrlMap#match_rules}
   */
   readonly matchRules?: ComputeUrlMapPathMatcherRouteRulesMatchRules[] | cdktn.IResolvable;
   /**
   * route_action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_url_map#route_action ComputeUrlMap#route_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_url_map#route_action ComputeUrlMap#route_action}
   */
   readonly routeAction?: ComputeUrlMapPathMatcherRouteRulesRouteAction;
   /**
   * url_redirect block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_url_map#url_redirect ComputeUrlMap#url_redirect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_url_map#url_redirect ComputeUrlMap#url_redirect}
   */
   readonly urlRedirect?: ComputeUrlMapPathMatcherRouteRulesUrlRedirect;
 }
@@ -1256,56 +1453,56 @@ export interface ComputeUrlMapPathMatcher {
   /**
   * The backend service or backend bucket to use when none of the given paths match.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_url_map#default_service ComputeUrlMap#default_service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_url_map#default_service ComputeUrlMap#default_service}
   */
   readonly defaultService?: string;
   /**
   * An optional description of this resource. Provide this property when you create
   * the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_url_map#description ComputeUrlMap#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_url_map#description ComputeUrlMap#description}
   */
   readonly description?: string;
   /**
   * The name to which this PathMatcher is referred by the HostRule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_url_map#name ComputeUrlMap#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_url_map#name ComputeUrlMap#name}
   */
   readonly name: string;
   /**
   * default_custom_error_response_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_url_map#default_custom_error_response_policy ComputeUrlMap#default_custom_error_response_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_url_map#default_custom_error_response_policy ComputeUrlMap#default_custom_error_response_policy}
   */
   readonly defaultCustomErrorResponsePolicy?: ComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicy;
   /**
   * default_route_action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_url_map#default_route_action ComputeUrlMap#default_route_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_url_map#default_route_action ComputeUrlMap#default_route_action}
   */
   readonly defaultRouteAction?: ComputeUrlMapPathMatcherDefaultRouteAction;
   /**
   * default_url_redirect block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_url_map#default_url_redirect ComputeUrlMap#default_url_redirect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_url_map#default_url_redirect ComputeUrlMap#default_url_redirect}
   */
   readonly defaultUrlRedirect?: ComputeUrlMapPathMatcherDefaultUrlRedirect;
   /**
   * header_action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_url_map#header_action ComputeUrlMap#header_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_url_map#header_action ComputeUrlMap#header_action}
   */
   readonly headerAction?: ComputeUrlMapPathMatcherHeaderAction;
   /**
   * path_rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_url_map#path_rule ComputeUrlMap#path_rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_url_map#path_rule ComputeUrlMap#path_rule}
   */
   readonly pathRule?: ComputeUrlMapPathMatcherPathRule[] | cdktn.IResolvable;
   /**
   * route_rules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_url_map#route_rules ComputeUrlMap#route_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_url_map#route_rules ComputeUrlMap#route_rules}
   */
   readonly routeRules?: ComputeUrlMapPathMatcherRouteRules[] | cdktn.IResolvable;
 }
@@ -1652,13 +1849,13 @@ export interface ComputeUrlMapTestHeaders {
   /**
   * Header name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_url_map#name ComputeUrlMap#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_url_map#name ComputeUrlMap#name}
   */
   readonly name: string;
   /**
   * Header value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_url_map#value ComputeUrlMap#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_url_map#value ComputeUrlMap#value}
   */
   readonly value: string;
 }
@@ -1799,7 +1996,7 @@ export interface ComputeUrlMapTest {
   /**
   * Description of this test case.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_url_map#description ComputeUrlMap#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_url_map#description ComputeUrlMap#description}
   */
   readonly description?: string;
   /**
@@ -1811,7 +2008,7 @@ export interface ComputeUrlMapTest {
   * 
   * expectedOutputUrl is optional when service is specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_url_map#expected_output_url ComputeUrlMap#expected_output_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_url_map#expected_output_url ComputeUrlMap#expected_output_url}
   */
   readonly expectedOutputUrl?: string;
   /**
@@ -1819,31 +2016,31 @@ export interface ComputeUrlMapTest {
   * 
   * expectedRedirectResponseCode cannot be set when service is set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_url_map#expected_redirect_response_code ComputeUrlMap#expected_redirect_response_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_url_map#expected_redirect_response_code ComputeUrlMap#expected_redirect_response_code}
   */
   readonly expectedRedirectResponseCode?: number;
   /**
   * Host portion of the URL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_url_map#host ComputeUrlMap#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_url_map#host ComputeUrlMap#host}
   */
   readonly host: string;
   /**
   * Path portion of the URL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_url_map#path ComputeUrlMap#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_url_map#path ComputeUrlMap#path}
   */
   readonly path: string;
   /**
   * The backend service or backend bucket link that should be matched by this test.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_url_map#service ComputeUrlMap#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_url_map#service ComputeUrlMap#service}
   */
   readonly service?: string;
   /**
   * headers block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_url_map#headers ComputeUrlMap#headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_url_map#headers ComputeUrlMap#headers}
   */
   readonly headers?: ComputeUrlMapTestHeaders[] | cdktn.IResolvable;
 }
@@ -2127,15 +2324,15 @@ export class ComputeUrlMapTestList extends cdktn.ComplexList {
 }
 export interface ComputeUrlMapTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_url_map#create ComputeUrlMap#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_url_map#create ComputeUrlMap#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_url_map#delete ComputeUrlMap#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_url_map#delete ComputeUrlMap#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_url_map#update ComputeUrlMap#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_url_map#update ComputeUrlMap#update}
   */
   readonly update?: string;
 }

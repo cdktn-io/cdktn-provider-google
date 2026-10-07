@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/parameter_manager_regional_parameter_version
+// https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/parameter_manager_regional_parameter_version
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,6 +13,12 @@ import * as cdktn from 'cdktn';
 
 export interface ParameterManagerRegionalParameterVersionConfig extends cdktn.TerraformMetaArguments {
   /**
+  * The integrity checksum of the payload. If provided, the server will verify that the checksum matches the payload. If not provided, the server will generate the checksum.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/parameter_manager_regional_parameter_version#data_crc32c ParameterManagerRegionalParameterVersion#data_crc32c}
+  */
+  readonly dataCrc32C?: string;
+  /**
   * Whether Terraform will be prevented from destroying the instance. Defaults to "DELETE".
   * When a 'terraform destroy' or 'terraform apply' would delete the instance,
   * the command will fail if this field is set to "PREVENT" in Terraform state.
@@ -21,17 +27,17 @@ export interface ParameterManagerRegionalParameterVersionConfig extends cdktn.Te
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/parameter_manager_regional_parameter_version#deletion_policy ParameterManagerRegionalParameterVersion#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/parameter_manager_regional_parameter_version#deletion_policy ParameterManagerRegionalParameterVersion#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * The current state of Regional Parameter Version. This field is only applicable for updating Regional Parameter Version.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/parameter_manager_regional_parameter_version#disabled ParameterManagerRegionalParameterVersion#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/parameter_manager_regional_parameter_version#disabled ParameterManagerRegionalParameterVersion#disabled}
   */
   readonly disabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/parameter_manager_regional_parameter_version#id ParameterManagerRegionalParameterVersion#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/parameter_manager_regional_parameter_version#id ParameterManagerRegionalParameterVersion#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,39 +46,39 @@ export interface ParameterManagerRegionalParameterVersionConfig extends cdktn.Te
   /**
   * Parameter Manager Regional Parameter resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/parameter_manager_regional_parameter_version#parameter ParameterManagerRegionalParameterVersion#parameter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/parameter_manager_regional_parameter_version#parameter ParameterManagerRegionalParameterVersion#parameter}
   */
   readonly parameter: string;
   /**
   * The Regional Parameter data.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/parameter_manager_regional_parameter_version#parameter_data ParameterManagerRegionalParameterVersion#parameter_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/parameter_manager_regional_parameter_version#parameter_data ParameterManagerRegionalParameterVersion#parameter_data}
   */
   readonly parameterData: string;
   /**
   * Version ID of the Regional Parameter Version Resource. This must be unique within the Regional Parameter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/parameter_manager_regional_parameter_version#parameter_version_id ParameterManagerRegionalParameterVersion#parameter_version_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/parameter_manager_regional_parameter_version#parameter_version_id ParameterManagerRegionalParameterVersion#parameter_version_id}
   */
   readonly parameterVersionId: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/parameter_manager_regional_parameter_version#timeouts ParameterManagerRegionalParameterVersion#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/parameter_manager_regional_parameter_version#timeouts ParameterManagerRegionalParameterVersion#timeouts}
   */
   readonly timeouts?: ParameterManagerRegionalParameterVersionTimeouts;
 }
 export interface ParameterManagerRegionalParameterVersionTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/parameter_manager_regional_parameter_version#create ParameterManagerRegionalParameterVersion#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/parameter_manager_regional_parameter_version#create ParameterManagerRegionalParameterVersion#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/parameter_manager_regional_parameter_version#delete ParameterManagerRegionalParameterVersion#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/parameter_manager_regional_parameter_version#delete ParameterManagerRegionalParameterVersion#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/parameter_manager_regional_parameter_version#update ParameterManagerRegionalParameterVersion#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/parameter_manager_regional_parameter_version#update ParameterManagerRegionalParameterVersion#update}
   */
   readonly update?: string;
 }
@@ -224,7 +230,7 @@ export class ParameterManagerRegionalParameterVersionTimeoutsOutputReference ext
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/parameter_manager_regional_parameter_version google_parameter_manager_regional_parameter_version}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/parameter_manager_regional_parameter_version google_parameter_manager_regional_parameter_version}
 */
 export class ParameterManagerRegionalParameterVersion extends cdktn.TerraformResource {
 
@@ -240,7 +246,7 @@ export class ParameterManagerRegionalParameterVersion extends cdktn.TerraformRes
   * Generates CDKTN code for importing a ParameterManagerRegionalParameterVersion resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ParameterManagerRegionalParameterVersion to import
-  * @param importFromId The id of the existing ParameterManagerRegionalParameterVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/parameter_manager_regional_parameter_version#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ParameterManagerRegionalParameterVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/parameter_manager_regional_parameter_version#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ParameterManagerRegionalParameterVersion to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -252,7 +258,7 @@ export class ParameterManagerRegionalParameterVersion extends cdktn.TerraformRes
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/parameter_manager_regional_parameter_version google_parameter_manager_regional_parameter_version} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/parameter_manager_regional_parameter_version google_parameter_manager_regional_parameter_version} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -263,8 +269,8 @@ export class ParameterManagerRegionalParameterVersion extends cdktn.TerraformRes
       terraformResourceType: 'google_parameter_manager_regional_parameter_version',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.46.1',
-        providerVersionConstraint: '~> 7.0'
+        providerVersion: '8.6.0',
+        providerVersionConstraint: '~> 8.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -274,6 +280,7 @@ export class ParameterManagerRegionalParameterVersion extends cdktn.TerraformRes
       connection: config.connection,
       forEach: config.forEach
     });
+    this._dataCrc32C = config.dataCrc32C;
     this._deletionPolicy = config.deletionPolicy;
     this._disabled = config.disabled;
     this._id = config.id;
@@ -290,6 +297,22 @@ export class ParameterManagerRegionalParameterVersion extends cdktn.TerraformRes
   // create_time - computed: true, optional: false, required: false
   public get createTime() {
     return this.getStringAttribute('create_time');
+  }
+
+  // data_crc32c - computed: true, optional: true, required: false
+  private _dataCrc32C?: string; 
+  public get dataCrc32C() {
+    return this.getStringAttribute('data_crc32c');
+  }
+  public set dataCrc32C(value: string) {
+    this._dataCrc32C = value;
+  }
+  public resetDataCrc32C() {
+    this._dataCrc32C = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dataCrc32CInput() {
+    return this._dataCrc32C;
   }
 
   // deletion_policy - computed: true, optional: true, required: false
@@ -421,6 +444,7 @@ export class ParameterManagerRegionalParameterVersion extends cdktn.TerraformRes
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      data_crc32c: cdktn.stringToTerraform(this._dataCrc32C),
       deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
       disabled: cdktn.booleanToTerraform(this._disabled),
       id: cdktn.stringToTerraform(this._id),
@@ -433,6 +457,12 @@ export class ParameterManagerRegionalParameterVersion extends cdktn.TerraformRes
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      data_crc32c: {
+        value: cdktn.stringToHclTerraform(this._dataCrc32C),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       deletion_policy: {
         value: cdktn.stringToHclTerraform(this._deletionPolicy),
         isBlock: false,

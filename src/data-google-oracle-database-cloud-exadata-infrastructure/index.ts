@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/oracle_database_cloud_exadata_infrastructure
+// https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/oracle_database_cloud_exadata_infrastructure
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -18,11 +18,11 @@ export interface DataGoogleOracleDatabaseCloudExadataInfrastructureConfig extend
   * characters in length. The value must start with a letter and end with
   * a letter or a number.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/oracle_database_cloud_exadata_infrastructure#cloud_exadata_infrastructure_id DataGoogleOracleDatabaseCloudExadataInfrastructure#cloud_exadata_infrastructure_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/oracle_database_cloud_exadata_infrastructure#cloud_exadata_infrastructure_id DataGoogleOracleDatabaseCloudExadataInfrastructure#cloud_exadata_infrastructure_id}
   */
   readonly cloudExadataInfrastructureId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/oracle_database_cloud_exadata_infrastructure#id DataGoogleOracleDatabaseCloudExadataInfrastructure#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/oracle_database_cloud_exadata_infrastructure#id DataGoogleOracleDatabaseCloudExadataInfrastructure#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -31,11 +31,11 @@ export interface DataGoogleOracleDatabaseCloudExadataInfrastructureConfig extend
   /**
   * Resource ID segment making up resource 'name'. See documentation for resource type 'oracledatabase.googleapis.com/DbServer'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/oracle_database_cloud_exadata_infrastructure#location DataGoogleOracleDatabaseCloudExadataInfrastructure#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/oracle_database_cloud_exadata_infrastructure#location DataGoogleOracleDatabaseCloudExadataInfrastructure#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/oracle_database_cloud_exadata_infrastructure#project DataGoogleOracleDatabaseCloudExadataInfrastructure#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/oracle_database_cloud_exadata_infrastructure#project DataGoogleOracleDatabaseCloudExadataInfrastructure#project}
   */
   readonly project?: string;
 }
@@ -112,6 +112,96 @@ export class DataGoogleOracleDatabaseCloudExadataInfrastructurePropertiesCustome
   */
   public get(index: number): DataGoogleOracleDatabaseCloudExadataInfrastructurePropertiesCustomerContactsOutputReference {
     return new DataGoogleOracleDatabaseCloudExadataInfrastructurePropertiesCustomerContactsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataGoogleOracleDatabaseCloudExadataInfrastructurePropertiesExascaleConfig {
+}
+
+export function dataGoogleOracleDatabaseCloudExadataInfrastructurePropertiesExascaleConfigToTerraform(struct?: DataGoogleOracleDatabaseCloudExadataInfrastructurePropertiesExascaleConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataGoogleOracleDatabaseCloudExadataInfrastructurePropertiesExascaleConfigToHclTerraform(struct?: DataGoogleOracleDatabaseCloudExadataInfrastructurePropertiesExascaleConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataGoogleOracleDatabaseCloudExadataInfrastructurePropertiesExascaleConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataGoogleOracleDatabaseCloudExadataInfrastructurePropertiesExascaleConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataGoogleOracleDatabaseCloudExadataInfrastructurePropertiesExascaleConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // available_storage_size_gb - computed: true, optional: false, required: false
+  public get availableStorageSizeGb() {
+    return this.getNumberAttribute('available_storage_size_gb');
+  }
+
+  // available_vm_storage_size_gb - computed: true, optional: false, required: false
+  public get availableVmStorageSizeGb() {
+    return this.getNumberAttribute('available_vm_storage_size_gb');
+  }
+
+  // total_storage_size_gb - computed: true, optional: false, required: false
+  public get totalStorageSizeGb() {
+    return this.getNumberAttribute('total_storage_size_gb');
+  }
+
+  // total_vm_storage_size_gb - computed: true, optional: false, required: false
+  public get totalVmStorageSizeGb() {
+    return this.getNumberAttribute('total_vm_storage_size_gb');
+  }
+}
+
+export class DataGoogleOracleDatabaseCloudExadataInfrastructurePropertiesExascaleConfigList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataGoogleOracleDatabaseCloudExadataInfrastructurePropertiesExascaleConfigOutputReference {
+    return new DataGoogleOracleDatabaseCloudExadataInfrastructurePropertiesExascaleConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface DataGoogleOracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindow {
@@ -326,6 +416,12 @@ export class DataGoogleOracleDatabaseCloudExadataInfrastructurePropertiesOutputR
     return this.getStringAttribute('db_server_version');
   }
 
+  // exascale_config - computed: true, optional: false, required: false
+  private _exascaleConfig = new DataGoogleOracleDatabaseCloudExadataInfrastructurePropertiesExascaleConfigList(this, "exascale_config", false);
+  public get exascaleConfig() {
+    return this._exascaleConfig;
+  }
+
   // maintenance_window - computed: true, optional: false, required: false
   private _maintenanceWindow = new DataGoogleOracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindowList(this, "maintenance_window", false);
   public get maintenanceWindow() {
@@ -438,7 +534,7 @@ export class DataGoogleOracleDatabaseCloudExadataInfrastructurePropertiesList ex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/oracle_database_cloud_exadata_infrastructure google_oracle_database_cloud_exadata_infrastructure}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/oracle_database_cloud_exadata_infrastructure google_oracle_database_cloud_exadata_infrastructure}
 */
 export class DataGoogleOracleDatabaseCloudExadataInfrastructure extends cdktn.TerraformDataSource {
 
@@ -454,7 +550,7 @@ export class DataGoogleOracleDatabaseCloudExadataInfrastructure extends cdktn.Te
   * Generates CDKTN code for importing a DataGoogleOracleDatabaseCloudExadataInfrastructure resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleOracleDatabaseCloudExadataInfrastructure to import
-  * @param importFromId The id of the existing DataGoogleOracleDatabaseCloudExadataInfrastructure that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/oracle_database_cloud_exadata_infrastructure#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleOracleDatabaseCloudExadataInfrastructure that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/oracle_database_cloud_exadata_infrastructure#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleOracleDatabaseCloudExadataInfrastructure to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -466,7 +562,7 @@ export class DataGoogleOracleDatabaseCloudExadataInfrastructure extends cdktn.Te
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/oracle_database_cloud_exadata_infrastructure google_oracle_database_cloud_exadata_infrastructure} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/oracle_database_cloud_exadata_infrastructure google_oracle_database_cloud_exadata_infrastructure} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -477,8 +573,8 @@ export class DataGoogleOracleDatabaseCloudExadataInfrastructure extends cdktn.Te
       terraformResourceType: 'google_oracle_database_cloud_exadata_infrastructure',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.46.1',
-        providerVersionConstraint: '~> 7.0'
+        providerVersion: '8.6.0',
+        providerVersionConstraint: '~> 8.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

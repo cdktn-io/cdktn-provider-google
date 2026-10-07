@@ -65,6 +65,11 @@ export class CesAppVersionSnapshotAgentsAfterAgentCallbacksOutputReference exten
     return this.getBooleanAttribute('disabled');
   }
 
+  // proactive_execution_enabled - computed: true, optional: false, required: false
+  public get proactiveExecutionEnabled() {
+    return this.getBooleanAttribute('proactive_execution_enabled');
+  }
+
   // python_code - computed: true, optional: false, required: false
   public get pythonCode() {
     return this.getStringAttribute('python_code');
@@ -148,6 +153,11 @@ export class CesAppVersionSnapshotAgentsAfterModelCallbacksOutputReference exten
   // disabled - computed: true, optional: false, required: false
   public get disabled() {
     return this.getBooleanAttribute('disabled');
+  }
+
+  // proactive_execution_enabled - computed: true, optional: false, required: false
+  public get proactiveExecutionEnabled() {
+    return this.getBooleanAttribute('proactive_execution_enabled');
   }
 
   // python_code - computed: true, optional: false, required: false
@@ -235,6 +245,11 @@ export class CesAppVersionSnapshotAgentsAfterToolCallbacksOutputReference extend
     return this.getBooleanAttribute('disabled');
   }
 
+  // proactive_execution_enabled - computed: true, optional: false, required: false
+  public get proactiveExecutionEnabled() {
+    return this.getBooleanAttribute('proactive_execution_enabled');
+  }
+
   // python_code - computed: true, optional: false, required: false
   public get pythonCode() {
     return this.getStringAttribute('python_code');
@@ -318,6 +333,11 @@ export class CesAppVersionSnapshotAgentsBeforeAgentCallbacksOutputReference exte
   // disabled - computed: true, optional: false, required: false
   public get disabled() {
     return this.getBooleanAttribute('disabled');
+  }
+
+  // proactive_execution_enabled - computed: true, optional: false, required: false
+  public get proactiveExecutionEnabled() {
+    return this.getBooleanAttribute('proactive_execution_enabled');
   }
 
   // python_code - computed: true, optional: false, required: false
@@ -405,6 +425,11 @@ export class CesAppVersionSnapshotAgentsBeforeModelCallbacksOutputReference exte
     return this.getBooleanAttribute('disabled');
   }
 
+  // proactive_execution_enabled - computed: true, optional: false, required: false
+  public get proactiveExecutionEnabled() {
+    return this.getBooleanAttribute('proactive_execution_enabled');
+  }
+
   // python_code - computed: true, optional: false, required: false
   public get pythonCode() {
     return this.getStringAttribute('python_code');
@@ -488,6 +513,11 @@ export class CesAppVersionSnapshotAgentsBeforeToolCallbacksOutputReference exten
   // disabled - computed: true, optional: false, required: false
   public get disabled() {
     return this.getBooleanAttribute('disabled');
+  }
+
+  // proactive_execution_enabled - computed: true, optional: false, required: false
+  public get proactiveExecutionEnabled() {
+    return this.getBooleanAttribute('proactive_execution_enabled');
   }
 
   // python_code - computed: true, optional: false, required: false
@@ -736,6 +766,11 @@ export class CesAppVersionSnapshotAgentsRemoteDialogflowAgentOutputReference ext
     return this._inputVariableMapping;
   }
 
+  // language_code_variable - computed: true, optional: false, required: false
+  public get languageCodeVariable() {
+    return this.getStringAttribute('language_code_variable');
+  }
+
   // output_variable_mapping - computed: true, optional: false, required: false
   private _outputVariableMapping = new cdktn.StringMap(this, "output_variable_mapping");
   public get outputVariableMapping() {
@@ -839,6 +874,481 @@ export class CesAppVersionSnapshotAgentsToolsetsList extends cdktn.ComplexList {
   */
   public get(index: number): CesAppVersionSnapshotAgentsToolsetsOutputReference {
     return new CesAppVersionSnapshotAgentsToolsetsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionCondition {
+}
+
+export function cesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionToTerraform(struct?: CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionCondition): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function cesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionToHclTerraform(struct?: CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionCondition): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionCondition | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionCondition | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // expression - computed: true, optional: false, required: false
+  public get expression() {
+    return this.getStringAttribute('expression');
+  }
+}
+
+export class CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionOutputReference {
+    return new CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeCondition {
+}
+
+export function cesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionToTerraform(struct?: CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeCondition): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function cesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionToHclTerraform(struct?: CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeCondition): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeCondition | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeCondition | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // python_code - computed: true, optional: false, required: false
+  public get pythonCode() {
+    return this.getStringAttribute('python_code');
+  }
+}
+
+export class CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionOutputReference {
+    return new CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface CesAppVersionSnapshotAgentsTransferRulesDeterministicTransfer {
+}
+
+export function cesAppVersionSnapshotAgentsTransferRulesDeterministicTransferToTerraform(struct?: CesAppVersionSnapshotAgentsTransferRulesDeterministicTransfer): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function cesAppVersionSnapshotAgentsTransferRulesDeterministicTransferToHclTerraform(struct?: CesAppVersionSnapshotAgentsTransferRulesDeterministicTransfer): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CesAppVersionSnapshotAgentsTransferRulesDeterministicTransfer | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CesAppVersionSnapshotAgentsTransferRulesDeterministicTransfer | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // expression_condition - computed: true, optional: false, required: false
+  private _expressionCondition = new CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionList(this, "expression_condition", false);
+  public get expressionCondition() {
+    return this._expressionCondition;
+  }
+
+  // python_code_condition - computed: true, optional: false, required: false
+  private _pythonCodeCondition = new CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionList(this, "python_code_condition", false);
+  public get pythonCodeCondition() {
+    return this._pythonCodeCondition;
+  }
+}
+
+export class CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferOutputReference {
+    return new CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionCondition {
+}
+
+export function cesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionToTerraform(struct?: CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionCondition): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function cesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionToHclTerraform(struct?: CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionCondition): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionCondition | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionCondition | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // expression - computed: true, optional: false, required: false
+  public get expression() {
+    return this.getStringAttribute('expression');
+  }
+}
+
+export class CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionOutputReference {
+    return new CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransfer {
+}
+
+export function cesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferToTerraform(struct?: CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransfer): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function cesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferToHclTerraform(struct?: CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransfer): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransfer | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransfer | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // expression_condition - computed: true, optional: false, required: false
+  private _expressionCondition = new CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionList(this, "expression_condition", false);
+  public get expressionCondition() {
+    return this._expressionCondition;
+  }
+}
+
+export class CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferOutputReference {
+    return new CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface CesAppVersionSnapshotAgentsTransferRules {
+}
+
+export function cesAppVersionSnapshotAgentsTransferRulesToTerraform(struct?: CesAppVersionSnapshotAgentsTransferRules): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function cesAppVersionSnapshotAgentsTransferRulesToHclTerraform(struct?: CesAppVersionSnapshotAgentsTransferRules): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class CesAppVersionSnapshotAgentsTransferRulesOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CesAppVersionSnapshotAgentsTransferRules | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CesAppVersionSnapshotAgentsTransferRules | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // child_agent - computed: true, optional: false, required: false
+  public get childAgent() {
+    return this.getStringAttribute('child_agent');
+  }
+
+  // deterministic_transfer - computed: true, optional: false, required: false
+  private _deterministicTransfer = new CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferList(this, "deterministic_transfer", false);
+  public get deterministicTransfer() {
+    return this._deterministicTransfer;
+  }
+
+  // direction - computed: true, optional: false, required: false
+  public get direction() {
+    return this.getStringAttribute('direction');
+  }
+
+  // disable_planner_transfer - computed: true, optional: false, required: false
+  private _disablePlannerTransfer = new CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferList(this, "disable_planner_transfer", false);
+  public get disablePlannerTransfer() {
+    return this._disablePlannerTransfer;
+  }
+}
+
+export class CesAppVersionSnapshotAgentsTransferRulesList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CesAppVersionSnapshotAgentsTransferRulesOutputReference {
+    return new CesAppVersionSnapshotAgentsTransferRulesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface CesAppVersionSnapshotAgents {
@@ -1000,6 +1510,12 @@ export class CesAppVersionSnapshotAgentsOutputReference extends cdktn.ComplexObj
   private _toolsets = new CesAppVersionSnapshotAgentsToolsetsList(this, "toolsets", false);
   public get toolsets() {
     return this._toolsets;
+  }
+
+  // transfer_rules - computed: true, optional: false, required: false
+  private _transferRules = new CesAppVersionSnapshotAgentsTransferRulesList(this, "transfer_rules", false);
+  public get transferRules() {
+    return this._transferRules;
   }
 
   // update_time - computed: true, optional: false, required: false
@@ -1765,6 +2281,106 @@ export class CesAppVersionSnapshotAppDefaultChannelProfileWebWidgetConfigList ex
     return new CesAppVersionSnapshotAppDefaultChannelProfileWebWidgetConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfig {
+}
+
+export function cesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigToTerraform(struct?: CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function cesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigToHclTerraform(struct?: CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // description - computed: true, optional: false, required: false
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+
+  // display_name - computed: true, optional: false, required: false
+  public get displayName() {
+    return this.getStringAttribute('display_name');
+  }
+
+  // phone_number - computed: true, optional: false, required: false
+  public get phoneNumber() {
+    return this.getStringAttribute('phone_number');
+  }
+
+  // phone_number_id - computed: true, optional: false, required: false
+  public get phoneNumberId() {
+    return this.getStringAttribute('phone_number_id');
+  }
+
+  // thumbnail_url - computed: true, optional: false, required: false
+  public get thumbnailUrl() {
+    return this.getStringAttribute('thumbnail_url');
+  }
+
+  // waba_id - computed: true, optional: false, required: false
+  public get wabaId() {
+    return this.getStringAttribute('waba_id');
+  }
+}
+
+export class CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference {
+    return new CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface CesAppVersionSnapshotAppDefaultChannelProfile {
 }
 
@@ -1847,6 +2463,12 @@ export class CesAppVersionSnapshotAppDefaultChannelProfileOutputReference extend
   public get webWidgetConfig() {
     return this._webWidgetConfig;
   }
+
+  // whatsapp_config - computed: true, optional: false, required: false
+  private _whatsappConfig = new CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigList(this, "whatsapp_config", false);
+  public get whatsappConfig() {
+    return this._whatsappConfig;
+  }
 }
 
 export class CesAppVersionSnapshotAppDefaultChannelProfileList extends cdktn.ComplexList {
@@ -1865,6 +2487,249 @@ export class CesAppVersionSnapshotAppDefaultChannelProfileList extends cdktn.Com
   */
   public get(index: number): CesAppVersionSnapshotAppDefaultChannelProfileOutputReference {
     return new CesAppVersionSnapshotAppDefaultChannelProfileOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfig {
+}
+
+export function cesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigToTerraform(struct?: CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function cesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigToHclTerraform(struct?: CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // escalate_session - computed: true, optional: false, required: false
+  public get escalateSession() {
+    return this.getBooleanAttribute('escalate_session');
+  }
+}
+
+export class CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigOutputReference {
+    return new CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfig {
+}
+
+export function cesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigToTerraform(struct?: CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function cesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigToHclTerraform(struct?: CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // custom_fallback_messages - computed: true, optional: false, required: false
+  private _customFallbackMessages = new cdktn.StringMap(this, "custom_fallback_messages");
+  public get customFallbackMessages() {
+    return this._customFallbackMessages;
+  }
+
+  // max_fallback_attempts - computed: true, optional: false, required: false
+  public get maxFallbackAttempts() {
+    return this.getNumberAttribute('max_fallback_attempts');
+  }
+}
+
+export class CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigOutputReference {
+    return new CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface CesAppVersionSnapshotAppErrorHandlingSettings {
+}
+
+export function cesAppVersionSnapshotAppErrorHandlingSettingsToTerraform(struct?: CesAppVersionSnapshotAppErrorHandlingSettings): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function cesAppVersionSnapshotAppErrorHandlingSettingsToHclTerraform(struct?: CesAppVersionSnapshotAppErrorHandlingSettings): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class CesAppVersionSnapshotAppErrorHandlingSettingsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CesAppVersionSnapshotAppErrorHandlingSettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CesAppVersionSnapshotAppErrorHandlingSettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // end_session_config - computed: true, optional: false, required: false
+  private _endSessionConfig = new CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigList(this, "end_session_config", false);
+  public get endSessionConfig() {
+    return this._endSessionConfig;
+  }
+
+  // error_handling_strategy - computed: true, optional: false, required: false
+  public get errorHandlingStrategy() {
+    return this.getStringAttribute('error_handling_strategy');
+  }
+
+  // fallback_response_config - computed: true, optional: false, required: false
+  private _fallbackResponseConfig = new CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigList(this, "fallback_response_config", false);
+  public get fallbackResponseConfig() {
+    return this._fallbackResponseConfig;
+  }
+}
+
+export class CesAppVersionSnapshotAppErrorHandlingSettingsList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CesAppVersionSnapshotAppErrorHandlingSettingsOutputReference {
+    return new CesAppVersionSnapshotAppErrorHandlingSettingsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsExpectationLevelMetricsThresholds {
@@ -1942,6 +2807,81 @@ export class CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluation
     return new CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsExpectationLevelMetricsThresholdsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettings {
+}
+
+export function cesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsToTerraform(struct?: CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettings): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function cesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsToHclTerraform(struct?: CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettings): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // extra_tool_call_behavior - computed: true, optional: false, required: false
+  public get extraToolCallBehavior() {
+    return this.getStringAttribute('extra_tool_call_behavior');
+  }
+}
+
+export class CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference {
+    return new CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholds {
 }
 
@@ -1996,6 +2936,11 @@ export class CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluation
   // overall_tool_invocation_correctness_threshold - computed: true, optional: false, required: false
   public get overallToolInvocationCorrectnessThreshold() {
     return this.getNumberAttribute('overall_tool_invocation_correctness_threshold');
+  }
+
+  // semantic_similarity_channel - computed: true, optional: false, required: false
+  public get semanticSimilarityChannel() {
+    return this.getStringAttribute('semantic_similarity_channel');
   }
 
   // semantic_similarity_success_threshold - computed: true, optional: false, required: false
@@ -2079,6 +3024,12 @@ export class CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluation
     return this._expectationLevelMetricsThresholds;
   }
 
+  // tool_matching_settings - computed: true, optional: false, required: false
+  private _toolMatchingSettings = new CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsList(this, "tool_matching_settings", false);
+  public get toolMatchingSettings() {
+    return this._toolMatchingSettings;
+  }
+
   // turn_level_metrics_thresholds - computed: true, optional: false, required: false
   private _turnLevelMetricsThresholds = new CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholdsList(this, "turn_level_metrics_thresholds", false);
   public get turnLevelMetricsThresholds() {
@@ -2159,6 +3110,16 @@ export class CesAppVersionSnapshotAppEvaluationMetricsThresholdsOutputReference 
   private _goldenEvaluationMetricsThresholds = new CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsList(this, "golden_evaluation_metrics_thresholds", false);
   public get goldenEvaluationMetricsThresholds() {
     return this._goldenEvaluationMetricsThresholds;
+  }
+
+  // golden_hallucination_metric_behavior - computed: true, optional: false, required: false
+  public get goldenHallucinationMetricBehavior() {
+    return this.getStringAttribute('golden_hallucination_metric_behavior');
+  }
+
+  // scenario_hallucination_metric_behavior - computed: true, optional: false, required: false
+  public get scenarioHallucinationMetricBehavior() {
+    return this.getStringAttribute('scenario_hallucination_metric_behavior');
   }
 }
 
@@ -2565,6 +3526,11 @@ export class CesAppVersionSnapshotAppLoggingSettingsConversationLoggingSettingsO
   public get disableConversationLogging() {
     return this.getBooleanAttribute('disable_conversation_logging');
   }
+
+  // retention_window - computed: true, optional: false, required: false
+  public get retentionWindow() {
+    return this.getStringAttribute('retention_window');
+  }
 }
 
 export class CesAppVersionSnapshotAppLoggingSettingsConversationLoggingSettingsList extends cdktn.ComplexList {
@@ -2583,6 +3549,81 @@ export class CesAppVersionSnapshotAppLoggingSettingsConversationLoggingSettingsL
   */
   public get(index: number): CesAppVersionSnapshotAppLoggingSettingsConversationLoggingSettingsOutputReference {
     return new CesAppVersionSnapshotAppLoggingSettingsConversationLoggingSettingsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettings {
+}
+
+export function cesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsToTerraform(struct?: CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettings): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function cesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsToHclTerraform(struct?: CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettings): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // llm_metrics_opted_out - computed: true, optional: false, required: false
+  public get llmMetricsOptedOut() {
+    return this.getBooleanAttribute('llm_metrics_opted_out');
+  }
+}
+
+export class CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsOutputReference {
+    return new CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface CesAppVersionSnapshotAppLoggingSettingsRedactionConfig {
@@ -2743,6 +3784,12 @@ export class CesAppVersionSnapshotAppLoggingSettingsOutputReference extends cdkt
   private _conversationLoggingSettings = new CesAppVersionSnapshotAppLoggingSettingsConversationLoggingSettingsList(this, "conversation_logging_settings", false);
   public get conversationLoggingSettings() {
     return this._conversationLoggingSettings;
+  }
+
+  // metric_analysis_settings - computed: true, optional: false, required: false
+  private _metricAnalysisSettings = new CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsList(this, "metric_analysis_settings", false);
+  public get metricAnalysisSettings() {
+    return this._metricAnalysisSettings;
   }
 
   // redaction_config - computed: true, optional: false, required: false
@@ -3151,6 +4198,81 @@ export class CesAppVersionSnapshotAppVariableDeclarationsList extends cdktn.Comp
     return new CesAppVersionSnapshotAppVariableDeclarationsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface CesAppVersionSnapshotAppVpcScSettings {
+}
+
+export function cesAppVersionSnapshotAppVpcScSettingsToTerraform(struct?: CesAppVersionSnapshotAppVpcScSettings): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function cesAppVersionSnapshotAppVpcScSettingsToHclTerraform(struct?: CesAppVersionSnapshotAppVpcScSettings): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class CesAppVersionSnapshotAppVpcScSettingsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CesAppVersionSnapshotAppVpcScSettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CesAppVersionSnapshotAppVpcScSettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // allowed_origins - computed: true, optional: false, required: false
+  public get allowedOrigins() {
+    return this.getListAttribute('allowed_origins');
+  }
+}
+
+export class CesAppVersionSnapshotAppVpcScSettingsList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CesAppVersionSnapshotAppVpcScSettingsOutputReference {
+    return new CesAppVersionSnapshotAppVpcScSettingsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface CesAppVersionSnapshotApp {
 }
 
@@ -3246,6 +4368,12 @@ export class CesAppVersionSnapshotAppOutputReference extends cdktn.ComplexObject
     return this.getStringAttribute('display_name');
   }
 
+  // error_handling_settings - computed: true, optional: false, required: false
+  private _errorHandlingSettings = new CesAppVersionSnapshotAppErrorHandlingSettingsList(this, "error_handling_settings", false);
+  public get errorHandlingSettings() {
+    return this._errorHandlingSettings;
+  }
+
   // etag - computed: true, optional: false, required: false
   public get etag() {
     return this.getStringAttribute('etag');
@@ -3316,6 +4444,12 @@ export class CesAppVersionSnapshotAppOutputReference extends cdktn.ComplexObject
   private _variableDeclarations = new CesAppVersionSnapshotAppVariableDeclarationsList(this, "variable_declarations", false);
   public get variableDeclarations() {
     return this._variableDeclarations;
+  }
+
+  // vpc_sc_settings - computed: true, optional: false, required: false
+  private _vpcScSettings = new CesAppVersionSnapshotAppVpcScSettingsList(this, "vpc_sc_settings", false);
+  public get vpcScSettings() {
+    return this._vpcScSettings;
   }
 }
 
@@ -4605,6 +5739,11 @@ export class CesAppVersionSnapshotGuardrailsCodeCallbackAfterAgentCallbackOutput
     return this.getBooleanAttribute('disabled');
   }
 
+  // proactive_execution_enabled - computed: true, optional: false, required: false
+  public get proactiveExecutionEnabled() {
+    return this.getBooleanAttribute('proactive_execution_enabled');
+  }
+
   // python_code - computed: true, optional: false, required: false
   public get pythonCode() {
     return this.getStringAttribute('python_code');
@@ -4688,6 +5827,11 @@ export class CesAppVersionSnapshotGuardrailsCodeCallbackAfterModelCallbackOutput
   // disabled - computed: true, optional: false, required: false
   public get disabled() {
     return this.getBooleanAttribute('disabled');
+  }
+
+  // proactive_execution_enabled - computed: true, optional: false, required: false
+  public get proactiveExecutionEnabled() {
+    return this.getBooleanAttribute('proactive_execution_enabled');
   }
 
   // python_code - computed: true, optional: false, required: false
@@ -4775,6 +5919,11 @@ export class CesAppVersionSnapshotGuardrailsCodeCallbackBeforeAgentCallbackOutpu
     return this.getBooleanAttribute('disabled');
   }
 
+  // proactive_execution_enabled - computed: true, optional: false, required: false
+  public get proactiveExecutionEnabled() {
+    return this.getBooleanAttribute('proactive_execution_enabled');
+  }
+
   // python_code - computed: true, optional: false, required: false
   public get pythonCode() {
     return this.getStringAttribute('python_code');
@@ -4858,6 +6007,11 @@ export class CesAppVersionSnapshotGuardrailsCodeCallbackBeforeModelCallbackOutpu
   // disabled - computed: true, optional: false, required: false
   public get disabled() {
     return this.getBooleanAttribute('disabled');
+  }
+
+  // proactive_execution_enabled - computed: true, optional: false, required: false
+  public get proactiveExecutionEnabled() {
+    return this.getBooleanAttribute('proactive_execution_enabled');
   }
 
   // python_code - computed: true, optional: false, required: false
@@ -7799,1149 +8953,5 @@ export class CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationApiKeyConfigL
   */
   public get(index: number): CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationApiKeyConfigOutputReference {
     return new CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationApiKeyConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOauthConfig {
-}
-
-export function cesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOauthConfigToTerraform(struct?: CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOauthConfig): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-  }
-}
-
-
-export function cesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOauthConfigToHclTerraform(struct?: CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOauthConfig): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-  };
-  return attrs;
-}
-
-export class CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOauthConfigOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOauthConfig | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOauthConfig | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-    }
-  }
-
-  // client_id - computed: true, optional: false, required: false
-  public get clientId() {
-    return this.getStringAttribute('client_id');
-  }
-
-  // client_secret_version - computed: true, optional: false, required: false
-  public get clientSecretVersion() {
-    return this.getStringAttribute('client_secret_version');
-  }
-
-  // oauth_grant_type - computed: true, optional: false, required: false
-  public get oauthGrantType() {
-    return this.getStringAttribute('oauth_grant_type');
-  }
-
-  // scopes - computed: true, optional: false, required: false
-  public get scopes() {
-    return this.getListAttribute('scopes');
-  }
-
-  // token_endpoint - computed: true, optional: false, required: false
-  public get tokenEndpoint() {
-    return this.getStringAttribute('token_endpoint');
-  }
-}
-
-export class CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOauthConfigList extends cdktn.ComplexList {
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOauthConfigOutputReference {
-    return new CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOauthConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAccountAuthConfig {
-}
-
-export function cesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAccountAuthConfigToTerraform(struct?: CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAccountAuthConfig): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-  }
-}
-
-
-export function cesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAccountAuthConfigToHclTerraform(struct?: CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAccountAuthConfig): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-  };
-  return attrs;
-}
-
-export class CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAccountAuthConfigOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAccountAuthConfig | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAccountAuthConfig | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-    }
-  }
-
-  // service_account - computed: true, optional: false, required: false
-  public get serviceAccount() {
-    return this.getStringAttribute('service_account');
-  }
-}
-
-export class CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAccountAuthConfigList extends cdktn.ComplexList {
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAccountAuthConfigOutputReference {
-    return new CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAccountAuthConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAgentIdTokenAuthConfig {
-}
-
-export function cesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAgentIdTokenAuthConfigToTerraform(struct?: CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAgentIdTokenAuthConfig): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-  }
-}
-
-
-export function cesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAgentIdTokenAuthConfigToHclTerraform(struct?: CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAgentIdTokenAuthConfig): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-  };
-  return attrs;
-}
-
-export class CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAgentIdTokenAuthConfig | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAgentIdTokenAuthConfig | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-    }
-  }
-}
-
-export class CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAgentIdTokenAuthConfigList extends cdktn.ComplexList {
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference {
-    return new CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface CesAppVersionSnapshotToolsOpenApiToolApiAuthentication {
-}
-
-export function cesAppVersionSnapshotToolsOpenApiToolApiAuthenticationToTerraform(struct?: CesAppVersionSnapshotToolsOpenApiToolApiAuthentication): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-  }
-}
-
-
-export function cesAppVersionSnapshotToolsOpenApiToolApiAuthenticationToHclTerraform(struct?: CesAppVersionSnapshotToolsOpenApiToolApiAuthentication): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-  };
-  return attrs;
-}
-
-export class CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): CesAppVersionSnapshotToolsOpenApiToolApiAuthentication | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: CesAppVersionSnapshotToolsOpenApiToolApiAuthentication | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-    }
-  }
-
-  // api_key_config - computed: true, optional: false, required: false
-  private _apiKeyConfig = new CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationApiKeyConfigList(this, "api_key_config", false);
-  public get apiKeyConfig() {
-    return this._apiKeyConfig;
-  }
-
-  // oauth_config - computed: true, optional: false, required: false
-  private _oauthConfig = new CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOauthConfigList(this, "oauth_config", false);
-  public get oauthConfig() {
-    return this._oauthConfig;
-  }
-
-  // service_account_auth_config - computed: true, optional: false, required: false
-  private _serviceAccountAuthConfig = new CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAccountAuthConfigList(this, "service_account_auth_config", false);
-  public get serviceAccountAuthConfig() {
-    return this._serviceAccountAuthConfig;
-  }
-
-  // service_agent_id_token_auth_config - computed: true, optional: false, required: false
-  private _serviceAgentIdTokenAuthConfig = new CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationServiceAgentIdTokenAuthConfigList(this, "service_agent_id_token_auth_config", false);
-  public get serviceAgentIdTokenAuthConfig() {
-    return this._serviceAgentIdTokenAuthConfig;
-  }
-}
-
-export class CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationList extends cdktn.ComplexList {
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOutputReference {
-    return new CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface CesAppVersionSnapshotToolsOpenApiToolServiceDirectoryConfig {
-}
-
-export function cesAppVersionSnapshotToolsOpenApiToolServiceDirectoryConfigToTerraform(struct?: CesAppVersionSnapshotToolsOpenApiToolServiceDirectoryConfig): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-  }
-}
-
-
-export function cesAppVersionSnapshotToolsOpenApiToolServiceDirectoryConfigToHclTerraform(struct?: CesAppVersionSnapshotToolsOpenApiToolServiceDirectoryConfig): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-  };
-  return attrs;
-}
-
-export class CesAppVersionSnapshotToolsOpenApiToolServiceDirectoryConfigOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): CesAppVersionSnapshotToolsOpenApiToolServiceDirectoryConfig | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: CesAppVersionSnapshotToolsOpenApiToolServiceDirectoryConfig | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-    }
-  }
-
-  // service - computed: true, optional: false, required: false
-  public get service() {
-    return this.getStringAttribute('service');
-  }
-}
-
-export class CesAppVersionSnapshotToolsOpenApiToolServiceDirectoryConfigList extends cdktn.ComplexList {
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): CesAppVersionSnapshotToolsOpenApiToolServiceDirectoryConfigOutputReference {
-    return new CesAppVersionSnapshotToolsOpenApiToolServiceDirectoryConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface CesAppVersionSnapshotToolsOpenApiToolTlsConfigCaCerts {
-}
-
-export function cesAppVersionSnapshotToolsOpenApiToolTlsConfigCaCertsToTerraform(struct?: CesAppVersionSnapshotToolsOpenApiToolTlsConfigCaCerts): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-  }
-}
-
-
-export function cesAppVersionSnapshotToolsOpenApiToolTlsConfigCaCertsToHclTerraform(struct?: CesAppVersionSnapshotToolsOpenApiToolTlsConfigCaCerts): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-  };
-  return attrs;
-}
-
-export class CesAppVersionSnapshotToolsOpenApiToolTlsConfigCaCertsOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): CesAppVersionSnapshotToolsOpenApiToolTlsConfigCaCerts | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: CesAppVersionSnapshotToolsOpenApiToolTlsConfigCaCerts | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-    }
-  }
-
-  // cert - computed: true, optional: false, required: false
-  public get cert() {
-    return this.getStringAttribute('cert');
-  }
-
-  // display_name - computed: true, optional: false, required: false
-  public get displayName() {
-    return this.getStringAttribute('display_name');
-  }
-}
-
-export class CesAppVersionSnapshotToolsOpenApiToolTlsConfigCaCertsList extends cdktn.ComplexList {
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): CesAppVersionSnapshotToolsOpenApiToolTlsConfigCaCertsOutputReference {
-    return new CesAppVersionSnapshotToolsOpenApiToolTlsConfigCaCertsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface CesAppVersionSnapshotToolsOpenApiToolTlsConfig {
-}
-
-export function cesAppVersionSnapshotToolsOpenApiToolTlsConfigToTerraform(struct?: CesAppVersionSnapshotToolsOpenApiToolTlsConfig): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-  }
-}
-
-
-export function cesAppVersionSnapshotToolsOpenApiToolTlsConfigToHclTerraform(struct?: CesAppVersionSnapshotToolsOpenApiToolTlsConfig): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-  };
-  return attrs;
-}
-
-export class CesAppVersionSnapshotToolsOpenApiToolTlsConfigOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): CesAppVersionSnapshotToolsOpenApiToolTlsConfig | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: CesAppVersionSnapshotToolsOpenApiToolTlsConfig | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-    }
-  }
-
-  // ca_certs - computed: true, optional: false, required: false
-  private _caCerts = new CesAppVersionSnapshotToolsOpenApiToolTlsConfigCaCertsList(this, "ca_certs", false);
-  public get caCerts() {
-    return this._caCerts;
-  }
-}
-
-export class CesAppVersionSnapshotToolsOpenApiToolTlsConfigList extends cdktn.ComplexList {
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): CesAppVersionSnapshotToolsOpenApiToolTlsConfigOutputReference {
-    return new CesAppVersionSnapshotToolsOpenApiToolTlsConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface CesAppVersionSnapshotToolsOpenApiTool {
-}
-
-export function cesAppVersionSnapshotToolsOpenApiToolToTerraform(struct?: CesAppVersionSnapshotToolsOpenApiTool): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-  }
-}
-
-
-export function cesAppVersionSnapshotToolsOpenApiToolToHclTerraform(struct?: CesAppVersionSnapshotToolsOpenApiTool): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-  };
-  return attrs;
-}
-
-export class CesAppVersionSnapshotToolsOpenApiToolOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): CesAppVersionSnapshotToolsOpenApiTool | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: CesAppVersionSnapshotToolsOpenApiTool | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-    }
-  }
-
-  // api_authentication - computed: true, optional: false, required: false
-  private _apiAuthentication = new CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationList(this, "api_authentication", false);
-  public get apiAuthentication() {
-    return this._apiAuthentication;
-  }
-
-  // description - computed: true, optional: false, required: false
-  public get description() {
-    return this.getStringAttribute('description');
-  }
-
-  // ignore_unknown_fields - computed: true, optional: false, required: false
-  public get ignoreUnknownFields() {
-    return this.getBooleanAttribute('ignore_unknown_fields');
-  }
-
-  // name - computed: true, optional: false, required: false
-  public get name() {
-    return this.getStringAttribute('name');
-  }
-
-  // open_api_schema - computed: true, optional: false, required: false
-  public get openApiSchema() {
-    return this.getStringAttribute('open_api_schema');
-  }
-
-  // service_directory_config - computed: true, optional: false, required: false
-  private _serviceDirectoryConfig = new CesAppVersionSnapshotToolsOpenApiToolServiceDirectoryConfigList(this, "service_directory_config", false);
-  public get serviceDirectoryConfig() {
-    return this._serviceDirectoryConfig;
-  }
-
-  // tls_config - computed: true, optional: false, required: false
-  private _tlsConfig = new CesAppVersionSnapshotToolsOpenApiToolTlsConfigList(this, "tls_config", false);
-  public get tlsConfig() {
-    return this._tlsConfig;
-  }
-
-  // url - computed: true, optional: false, required: false
-  public get url() {
-    return this.getStringAttribute('url');
-  }
-}
-
-export class CesAppVersionSnapshotToolsOpenApiToolList extends cdktn.ComplexList {
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): CesAppVersionSnapshotToolsOpenApiToolOutputReference {
-    return new CesAppVersionSnapshotToolsOpenApiToolOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface CesAppVersionSnapshotToolsPythonFunction {
-}
-
-export function cesAppVersionSnapshotToolsPythonFunctionToTerraform(struct?: CesAppVersionSnapshotToolsPythonFunction): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-  }
-}
-
-
-export function cesAppVersionSnapshotToolsPythonFunctionToHclTerraform(struct?: CesAppVersionSnapshotToolsPythonFunction): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-  };
-  return attrs;
-}
-
-export class CesAppVersionSnapshotToolsPythonFunctionOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): CesAppVersionSnapshotToolsPythonFunction | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: CesAppVersionSnapshotToolsPythonFunction | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-    }
-  }
-
-  // description - computed: true, optional: false, required: false
-  public get description() {
-    return this.getStringAttribute('description');
-  }
-
-  // name - computed: true, optional: false, required: false
-  public get name() {
-    return this.getStringAttribute('name');
-  }
-
-  // python_code - computed: true, optional: false, required: false
-  public get pythonCode() {
-    return this.getStringAttribute('python_code');
-  }
-}
-
-export class CesAppVersionSnapshotToolsPythonFunctionList extends cdktn.ComplexList {
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): CesAppVersionSnapshotToolsPythonFunctionOutputReference {
-    return new CesAppVersionSnapshotToolsPythonFunctionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface CesAppVersionSnapshotToolsSystemTool {
-}
-
-export function cesAppVersionSnapshotToolsSystemToolToTerraform(struct?: CesAppVersionSnapshotToolsSystemTool): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-  }
-}
-
-
-export function cesAppVersionSnapshotToolsSystemToolToHclTerraform(struct?: CesAppVersionSnapshotToolsSystemTool): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-  };
-  return attrs;
-}
-
-export class CesAppVersionSnapshotToolsSystemToolOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): CesAppVersionSnapshotToolsSystemTool | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: CesAppVersionSnapshotToolsSystemTool | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-    }
-  }
-
-  // description - computed: true, optional: false, required: false
-  public get description() {
-    return this.getStringAttribute('description');
-  }
-
-  // name - computed: true, optional: false, required: false
-  public get name() {
-    return this.getStringAttribute('name');
-  }
-}
-
-export class CesAppVersionSnapshotToolsSystemToolList extends cdktn.ComplexList {
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): CesAppVersionSnapshotToolsSystemToolOutputReference {
-    return new CesAppVersionSnapshotToolsSystemToolOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface CesAppVersionSnapshotTools {
-}
-
-export function cesAppVersionSnapshotToolsToTerraform(struct?: CesAppVersionSnapshotTools): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-  }
-}
-
-
-export function cesAppVersionSnapshotToolsToHclTerraform(struct?: CesAppVersionSnapshotTools): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-  };
-  return attrs;
-}
-
-export class CesAppVersionSnapshotToolsOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): CesAppVersionSnapshotTools | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: CesAppVersionSnapshotTools | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-    }
-  }
-
-  // client_function - computed: true, optional: false, required: false
-  private _clientFunction = new CesAppVersionSnapshotToolsClientFunctionList(this, "client_function", false);
-  public get clientFunction() {
-    return this._clientFunction;
-  }
-
-  // create_time - computed: true, optional: false, required: false
-  public get createTime() {
-    return this.getStringAttribute('create_time');
-  }
-
-  // data_store_tool - computed: true, optional: false, required: false
-  private _dataStoreTool = new CesAppVersionSnapshotToolsDataStoreToolList(this, "data_store_tool", false);
-  public get dataStoreTool() {
-    return this._dataStoreTool;
-  }
-
-  // display_name - computed: true, optional: false, required: false
-  public get displayName() {
-    return this.getStringAttribute('display_name');
-  }
-
-  // etag - computed: true, optional: false, required: false
-  public get etag() {
-    return this.getStringAttribute('etag');
-  }
-
-  // execution_type - computed: true, optional: false, required: false
-  public get executionType() {
-    return this.getStringAttribute('execution_type');
-  }
-
-  // generated_summary - computed: true, optional: false, required: false
-  public get generatedSummary() {
-    return this.getStringAttribute('generated_summary');
-  }
-
-  // google_search_tool - computed: true, optional: false, required: false
-  private _googleSearchTool = new CesAppVersionSnapshotToolsGoogleSearchToolList(this, "google_search_tool", false);
-  public get googleSearchTool() {
-    return this._googleSearchTool;
-  }
-
-  // name - computed: true, optional: false, required: false
-  public get name() {
-    return this.getStringAttribute('name');
-  }
-
-  // open_api_tool - computed: true, optional: false, required: false
-  private _openApiTool = new CesAppVersionSnapshotToolsOpenApiToolList(this, "open_api_tool", false);
-  public get openApiTool() {
-    return this._openApiTool;
-  }
-
-  // python_function - computed: true, optional: false, required: false
-  private _pythonFunction = new CesAppVersionSnapshotToolsPythonFunctionList(this, "python_function", false);
-  public get pythonFunction() {
-    return this._pythonFunction;
-  }
-
-  // system_tool - computed: true, optional: false, required: false
-  private _systemTool = new CesAppVersionSnapshotToolsSystemToolList(this, "system_tool", false);
-  public get systemTool() {
-    return this._systemTool;
-  }
-
-  // update_time - computed: true, optional: false, required: false
-  public get updateTime() {
-    return this.getStringAttribute('update_time');
-  }
-}
-
-export class CesAppVersionSnapshotToolsList extends cdktn.ComplexList {
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): CesAppVersionSnapshotToolsOutputReference {
-    return new CesAppVersionSnapshotToolsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationApiKeyConfig {
-}
-
-export function cesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationApiKeyConfigToTerraform(struct?: CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationApiKeyConfig): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-  }
-}
-
-
-export function cesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationApiKeyConfigToHclTerraform(struct?: CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationApiKeyConfig): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-  };
-  return attrs;
-}
-
-export class CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationApiKeyConfigOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationApiKeyConfig | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationApiKeyConfig | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-    }
-  }
-
-  // api_key_secret_version - computed: true, optional: false, required: false
-  public get apiKeySecretVersion() {
-    return this.getStringAttribute('api_key_secret_version');
-  }
-
-  // key_name - computed: true, optional: false, required: false
-  public get keyName() {
-    return this.getStringAttribute('key_name');
-  }
-
-  // request_location - computed: true, optional: false, required: false
-  public get requestLocation() {
-    return this.getStringAttribute('request_location');
-  }
-}
-
-export class CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationApiKeyConfigList extends cdktn.ComplexList {
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationApiKeyConfigOutputReference {
-    return new CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationApiKeyConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationBearerTokenConfig {
-}
-
-export function cesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationBearerTokenConfigToTerraform(struct?: CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationBearerTokenConfig): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-  }
-}
-
-
-export function cesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationBearerTokenConfigToHclTerraform(struct?: CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationBearerTokenConfig): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-  };
-  return attrs;
-}
-
-export class CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationBearerTokenConfigOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationBearerTokenConfig | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationBearerTokenConfig | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-    }
-  }
-
-  // token - computed: true, optional: false, required: false
-  public get token() {
-    return this.getStringAttribute('token');
-  }
-}
-
-export class CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationBearerTokenConfigList extends cdktn.ComplexList {
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet);
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationBearerTokenConfigOutputReference {
-    return new CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationBearerTokenConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }

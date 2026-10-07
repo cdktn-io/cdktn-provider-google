@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_cloud_exadata_infrastructure_exascale_config
+// https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_cloud_exadata_infrastructure_exascale_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface OracleDatabaseCloudExadataInfrastructureExascaleConfigConfig ex
   /**
   * A reference to CloudExadataInfrastructure resource
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_cloud_exadata_infrastructure_exascale_config#cloud_exadata_infrastructure OracleDatabaseCloudExadataInfrastructureExascaleConfig#cloud_exadata_infrastructure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_cloud_exadata_infrastructure_exascale_config#cloud_exadata_infrastructure OracleDatabaseCloudExadataInfrastructureExascaleConfig#cloud_exadata_infrastructure}
   */
   readonly cloudExadataInfrastructure: string;
   /**
@@ -27,44 +27,50 @@ export interface OracleDatabaseCloudExadataInfrastructureExascaleConfigConfig ex
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_cloud_exadata_infrastructure_exascale_config#deletion_policy OracleDatabaseCloudExadataInfrastructureExascaleConfig#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_cloud_exadata_infrastructure_exascale_config#deletion_policy OracleDatabaseCloudExadataInfrastructureExascaleConfig#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_cloud_exadata_infrastructure_exascale_config#id OracleDatabaseCloudExadataInfrastructureExascaleConfig#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_cloud_exadata_infrastructure_exascale_config#id OracleDatabaseCloudExadataInfrastructureExascaleConfig#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_cloud_exadata_infrastructure_exascale_config#location OracleDatabaseCloudExadataInfrastructureExascaleConfig#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_cloud_exadata_infrastructure_exascale_config#location OracleDatabaseCloudExadataInfrastructureExascaleConfig#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_cloud_exadata_infrastructure_exascale_config#project OracleDatabaseCloudExadataInfrastructureExascaleConfig#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_cloud_exadata_infrastructure_exascale_config#project OracleDatabaseCloudExadataInfrastructureExascaleConfig#project}
   */
   readonly project?: string;
   /**
   * The total storage to be allocated to Exascale in GBs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_cloud_exadata_infrastructure_exascale_config#total_storage_size_gb OracleDatabaseCloudExadataInfrastructureExascaleConfig#total_storage_size_gb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_cloud_exadata_infrastructure_exascale_config#total_storage_size_gb OracleDatabaseCloudExadataInfrastructureExascaleConfig#total_storage_size_gb}
   */
   readonly totalStorageSizeGb: number;
   /**
+  * Storage size needed for VM storage on Exascale in GBs.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_cloud_exadata_infrastructure_exascale_config#total_vm_storage_size_gb OracleDatabaseCloudExadataInfrastructureExascaleConfig#total_vm_storage_size_gb}
+  */
+  readonly totalVmStorageSizeGb?: number;
+  /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_cloud_exadata_infrastructure_exascale_config#timeouts OracleDatabaseCloudExadataInfrastructureExascaleConfig#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_cloud_exadata_infrastructure_exascale_config#timeouts OracleDatabaseCloudExadataInfrastructureExascaleConfig#timeouts}
   */
   readonly timeouts?: OracleDatabaseCloudExadataInfrastructureExascaleConfigTimeouts;
 }
 export interface OracleDatabaseCloudExadataInfrastructureExascaleConfigTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_cloud_exadata_infrastructure_exascale_config#create OracleDatabaseCloudExadataInfrastructureExascaleConfig#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_cloud_exadata_infrastructure_exascale_config#create OracleDatabaseCloudExadataInfrastructureExascaleConfig#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_cloud_exadata_infrastructure_exascale_config#delete OracleDatabaseCloudExadataInfrastructureExascaleConfig#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_cloud_exadata_infrastructure_exascale_config#delete OracleDatabaseCloudExadataInfrastructureExascaleConfig#delete}
   */
   readonly delete?: string;
 }
@@ -187,7 +193,7 @@ export class OracleDatabaseCloudExadataInfrastructureExascaleConfigTimeoutsOutpu
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_cloud_exadata_infrastructure_exascale_config google_oracle_database_cloud_exadata_infrastructure_exascale_config}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_cloud_exadata_infrastructure_exascale_config google_oracle_database_cloud_exadata_infrastructure_exascale_config}
 */
 export class OracleDatabaseCloudExadataInfrastructureExascaleConfig extends cdktn.TerraformResource {
 
@@ -203,7 +209,7 @@ export class OracleDatabaseCloudExadataInfrastructureExascaleConfig extends cdkt
   * Generates CDKTN code for importing a OracleDatabaseCloudExadataInfrastructureExascaleConfig resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OracleDatabaseCloudExadataInfrastructureExascaleConfig to import
-  * @param importFromId The id of the existing OracleDatabaseCloudExadataInfrastructureExascaleConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_cloud_exadata_infrastructure_exascale_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OracleDatabaseCloudExadataInfrastructureExascaleConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_cloud_exadata_infrastructure_exascale_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OracleDatabaseCloudExadataInfrastructureExascaleConfig to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -215,7 +221,7 @@ export class OracleDatabaseCloudExadataInfrastructureExascaleConfig extends cdkt
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_cloud_exadata_infrastructure_exascale_config google_oracle_database_cloud_exadata_infrastructure_exascale_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_cloud_exadata_infrastructure_exascale_config google_oracle_database_cloud_exadata_infrastructure_exascale_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -226,8 +232,8 @@ export class OracleDatabaseCloudExadataInfrastructureExascaleConfig extends cdkt
       terraformResourceType: 'google_oracle_database_cloud_exadata_infrastructure_exascale_config',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.46.1',
-        providerVersionConstraint: '~> 7.0'
+        providerVersion: '8.6.0',
+        providerVersionConstraint: '~> 8.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -243,6 +249,7 @@ export class OracleDatabaseCloudExadataInfrastructureExascaleConfig extends cdkt
     this._location = config.location;
     this._project = config.project;
     this._totalStorageSizeGb = config.totalStorageSizeGb;
+    this._totalVmStorageSizeGb = config.totalVmStorageSizeGb;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -337,6 +344,22 @@ export class OracleDatabaseCloudExadataInfrastructureExascaleConfig extends cdkt
     return this._totalStorageSizeGb;
   }
 
+  // total_vm_storage_size_gb - computed: false, optional: true, required: false
+  private _totalVmStorageSizeGb?: number; 
+  public get totalVmStorageSizeGb() {
+    return this.getNumberAttribute('total_vm_storage_size_gb');
+  }
+  public set totalVmStorageSizeGb(value: number) {
+    this._totalVmStorageSizeGb = value;
+  }
+  public resetTotalVmStorageSizeGb() {
+    this._totalVmStorageSizeGb = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get totalVmStorageSizeGbInput() {
+    return this._totalVmStorageSizeGb;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new OracleDatabaseCloudExadataInfrastructureExascaleConfigTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -365,6 +388,7 @@ export class OracleDatabaseCloudExadataInfrastructureExascaleConfig extends cdkt
       location: cdktn.stringToTerraform(this._location),
       project: cdktn.stringToTerraform(this._project),
       total_storage_size_gb: cdktn.numberToTerraform(this._totalStorageSizeGb),
+      total_vm_storage_size_gb: cdktn.numberToTerraform(this._totalVmStorageSizeGb),
       timeouts: oracleDatabaseCloudExadataInfrastructureExascaleConfigTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -403,6 +427,12 @@ export class OracleDatabaseCloudExadataInfrastructureExascaleConfig extends cdkt
       },
       total_storage_size_gb: {
         value: cdktn.numberToHclTerraform(this._totalStorageSizeGb),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      total_vm_storage_size_gb: {
+        value: cdktn.numberToHclTerraform(this._totalVmStorageSizeGb),
         isBlock: false,
         type: "simple",
         storageClassType: "number",

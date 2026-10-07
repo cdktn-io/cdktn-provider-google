@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/database_migration_service_private_connection
+// https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/database_migration_service_private_connection
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface DatabaseMigrationServicePrivateConnectionConfig extends cdktn.T
   /**
   * If set to true, will skip validations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/database_migration_service_private_connection#create_without_validation DatabaseMigrationServicePrivateConnection#create_without_validation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/database_migration_service_private_connection#create_without_validation DatabaseMigrationServicePrivateConnection#create_without_validation}
   */
   readonly createWithoutValidation?: boolean | cdktn.IResolvable;
   /**
@@ -27,17 +27,17 @@ export interface DatabaseMigrationServicePrivateConnectionConfig extends cdktn.T
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/database_migration_service_private_connection#deletion_policy DatabaseMigrationServicePrivateConnection#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/database_migration_service_private_connection#deletion_policy DatabaseMigrationServicePrivateConnection#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * Display name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/database_migration_service_private_connection#display_name DatabaseMigrationServicePrivateConnection#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/database_migration_service_private_connection#display_name DatabaseMigrationServicePrivateConnection#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/database_migration_service_private_connection#id DatabaseMigrationServicePrivateConnection#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/database_migration_service_private_connection#id DatabaseMigrationServicePrivateConnection#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -49,41 +49,47 @@ export interface DatabaseMigrationServicePrivateConnectionConfig extends cdktn.T
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/database_migration_service_private_connection#labels DatabaseMigrationServicePrivateConnection#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/database_migration_service_private_connection#labels DatabaseMigrationServicePrivateConnection#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The name of the location this private connection is located in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/database_migration_service_private_connection#location DatabaseMigrationServicePrivateConnection#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/database_migration_service_private_connection#location DatabaseMigrationServicePrivateConnection#location}
   */
   readonly location: string;
   /**
   * The private connectivity identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/database_migration_service_private_connection#private_connection_id DatabaseMigrationServicePrivateConnection#private_connection_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/database_migration_service_private_connection#private_connection_id DatabaseMigrationServicePrivateConnection#private_connection_id}
   */
   readonly privateConnectionId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/database_migration_service_private_connection#project DatabaseMigrationServicePrivateConnection#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/database_migration_service_private_connection#project DatabaseMigrationServicePrivateConnection#project}
   */
   readonly project?: string;
   /**
   * psc_interface_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/database_migration_service_private_connection#psc_interface_config DatabaseMigrationServicePrivateConnection#psc_interface_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/database_migration_service_private_connection#psc_interface_config DatabaseMigrationServicePrivateConnection#psc_interface_config}
   */
   readonly pscInterfaceConfig?: DatabaseMigrationServicePrivateConnectionPscInterfaceConfig;
   /**
+  * reserved_public_ip_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/database_migration_service_private_connection#reserved_public_ip_config DatabaseMigrationServicePrivateConnection#reserved_public_ip_config}
+  */
+  readonly reservedPublicIpConfig?: DatabaseMigrationServicePrivateConnectionReservedPublicIpConfig;
+  /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/database_migration_service_private_connection#timeouts DatabaseMigrationServicePrivateConnection#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/database_migration_service_private_connection#timeouts DatabaseMigrationServicePrivateConnection#timeouts}
   */
   readonly timeouts?: DatabaseMigrationServicePrivateConnectionTimeouts;
   /**
   * vpc_peering_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/database_migration_service_private_connection#vpc_peering_config DatabaseMigrationServicePrivateConnection#vpc_peering_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/database_migration_service_private_connection#vpc_peering_config DatabaseMigrationServicePrivateConnection#vpc_peering_config}
   */
   readonly vpcPeeringConfig?: DatabaseMigrationServicePrivateConnectionVpcPeeringConfig;
 }
@@ -173,7 +179,7 @@ export interface DatabaseMigrationServicePrivateConnectionPscInterfaceConfig {
   * Fully qualified name of the Network Attachment that DMS will connect to.
   * Format: projects/{project}/regions/{region}/networkAttachments/{name}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/database_migration_service_private_connection#network_attachment DatabaseMigrationServicePrivateConnection#network_attachment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/database_migration_service_private_connection#network_attachment DatabaseMigrationServicePrivateConnection#network_attachment}
   */
   readonly networkAttachment: string;
 }
@@ -252,17 +258,108 @@ export class DatabaseMigrationServicePrivateConnectionPscInterfaceConfigOutputRe
     return this._networkAttachment;
   }
 }
+export interface DatabaseMigrationServicePrivateConnectionReservedPublicIpConfig {
+  /**
+  * Optional. Number of static public IP addresses to reserve.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/database_migration_service_private_connection#nat_ips_count DatabaseMigrationServicePrivateConnection#nat_ips_count}
+  */
+  readonly natIpsCount?: number;
+}
+
+export function databaseMigrationServicePrivateConnectionReservedPublicIpConfigToTerraform(struct?: DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference | DatabaseMigrationServicePrivateConnectionReservedPublicIpConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    nat_ips_count: cdktn.numberToTerraform(struct!.natIpsCount),
+  }
+}
+
+
+export function databaseMigrationServicePrivateConnectionReservedPublicIpConfigToHclTerraform(struct?: DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference | DatabaseMigrationServicePrivateConnectionReservedPublicIpConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    nat_ips_count: {
+      value: cdktn.numberToHclTerraform(struct!.natIpsCount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): DatabaseMigrationServicePrivateConnectionReservedPublicIpConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._natIpsCount !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.natIpsCount = this._natIpsCount;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DatabaseMigrationServicePrivateConnectionReservedPublicIpConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._natIpsCount = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._natIpsCount = value.natIpsCount;
+    }
+  }
+
+  // egress_public_ips - computed: true, optional: false, required: false
+  public get egressPublicIps() {
+    return this.getListAttribute('egress_public_ips');
+  }
+
+  // nat_ips_count - computed: false, optional: true, required: false
+  private _natIpsCount?: number; 
+  public get natIpsCount() {
+    return this.getNumberAttribute('nat_ips_count');
+  }
+  public set natIpsCount(value: number) {
+    this._natIpsCount = value;
+  }
+  public resetNatIpsCount() {
+    this._natIpsCount = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get natIpsCountInput() {
+    return this._natIpsCount;
+  }
+}
 export interface DatabaseMigrationServicePrivateConnectionTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/database_migration_service_private_connection#create DatabaseMigrationServicePrivateConnection#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/database_migration_service_private_connection#create DatabaseMigrationServicePrivateConnection#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/database_migration_service_private_connection#delete DatabaseMigrationServicePrivateConnection#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/database_migration_service_private_connection#delete DatabaseMigrationServicePrivateConnection#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/database_migration_service_private_connection#update DatabaseMigrationServicePrivateConnection#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/database_migration_service_private_connection#update DatabaseMigrationServicePrivateConnection#update}
   */
   readonly update?: string;
 }
@@ -416,14 +513,14 @@ export interface DatabaseMigrationServicePrivateConnectionVpcPeeringConfig {
   /**
   * A free subnet for peering. (CIDR of /29)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/database_migration_service_private_connection#subnet DatabaseMigrationServicePrivateConnection#subnet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/database_migration_service_private_connection#subnet DatabaseMigrationServicePrivateConnection#subnet}
   */
   readonly subnet: string;
   /**
   * Fully qualified name of the VPC that Database Migration Service will peer to.
   * Format: projects/{project}/global/{networks}/{name}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/database_migration_service_private_connection#vpc_name DatabaseMigrationServicePrivateConnection#vpc_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/database_migration_service_private_connection#vpc_name DatabaseMigrationServicePrivateConnection#vpc_name}
   */
   readonly vpcName: string;
 }
@@ -530,7 +627,7 @@ export class DatabaseMigrationServicePrivateConnectionVpcPeeringConfigOutputRefe
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/database_migration_service_private_connection google_database_migration_service_private_connection}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/database_migration_service_private_connection google_database_migration_service_private_connection}
 */
 export class DatabaseMigrationServicePrivateConnection extends cdktn.TerraformResource {
 
@@ -546,7 +643,7 @@ export class DatabaseMigrationServicePrivateConnection extends cdktn.TerraformRe
   * Generates CDKTN code for importing a DatabaseMigrationServicePrivateConnection resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DatabaseMigrationServicePrivateConnection to import
-  * @param importFromId The id of the existing DatabaseMigrationServicePrivateConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/database_migration_service_private_connection#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DatabaseMigrationServicePrivateConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/database_migration_service_private_connection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DatabaseMigrationServicePrivateConnection to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -558,7 +655,7 @@ export class DatabaseMigrationServicePrivateConnection extends cdktn.TerraformRe
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/database_migration_service_private_connection google_database_migration_service_private_connection} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/database_migration_service_private_connection google_database_migration_service_private_connection} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -569,8 +666,8 @@ export class DatabaseMigrationServicePrivateConnection extends cdktn.TerraformRe
       terraformResourceType: 'google_database_migration_service_private_connection',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.46.1',
-        providerVersionConstraint: '~> 7.0'
+        providerVersion: '8.6.0',
+        providerVersionConstraint: '~> 8.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -589,6 +686,7 @@ export class DatabaseMigrationServicePrivateConnection extends cdktn.TerraformRe
     this._privateConnectionId = config.privateConnectionId;
     this._project = config.project;
     this._pscInterfaceConfig.internalValue = config.pscInterfaceConfig;
+    this._reservedPublicIpConfig.internalValue = config.reservedPublicIpConfig;
     this._timeouts.internalValue = config.timeouts;
     this._vpcPeeringConfig.internalValue = config.vpcPeeringConfig;
   }
@@ -763,6 +861,22 @@ export class DatabaseMigrationServicePrivateConnection extends cdktn.TerraformRe
     return this._pscInterfaceConfig.internalValue;
   }
 
+  // reserved_public_ip_config - computed: false, optional: true, required: false
+  private _reservedPublicIpConfig = new DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference(this, "reserved_public_ip_config");
+  public get reservedPublicIpConfig() {
+    return this._reservedPublicIpConfig;
+  }
+  public putReservedPublicIpConfig(value: DatabaseMigrationServicePrivateConnectionReservedPublicIpConfig) {
+    this._reservedPublicIpConfig.internalValue = value;
+  }
+  public resetReservedPublicIpConfig() {
+    this._reservedPublicIpConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get reservedPublicIpConfigInput() {
+    return this._reservedPublicIpConfig.internalValue;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new DatabaseMigrationServicePrivateConnectionTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -810,6 +924,7 @@ export class DatabaseMigrationServicePrivateConnection extends cdktn.TerraformRe
       private_connection_id: cdktn.stringToTerraform(this._privateConnectionId),
       project: cdktn.stringToTerraform(this._project),
       psc_interface_config: databaseMigrationServicePrivateConnectionPscInterfaceConfigToTerraform(this._pscInterfaceConfig.internalValue),
+      reserved_public_ip_config: databaseMigrationServicePrivateConnectionReservedPublicIpConfigToTerraform(this._reservedPublicIpConfig.internalValue),
       timeouts: databaseMigrationServicePrivateConnectionTimeoutsToTerraform(this._timeouts.internalValue),
       vpc_peering_config: databaseMigrationServicePrivateConnectionVpcPeeringConfigToTerraform(this._vpcPeeringConfig.internalValue),
     };
@@ -870,6 +985,12 @@ export class DatabaseMigrationServicePrivateConnection extends cdktn.TerraformRe
         isBlock: true,
         type: "list",
         storageClassType: "DatabaseMigrationServicePrivateConnectionPscInterfaceConfigList",
+      },
+      reserved_public_ip_config: {
+        value: databaseMigrationServicePrivateConnectionReservedPublicIpConfigToHclTerraform(this._reservedPublicIpConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigList",
       },
       timeouts: {
         value: databaseMigrationServicePrivateConnectionTimeoutsToHclTerraform(this._timeouts.internalValue),
