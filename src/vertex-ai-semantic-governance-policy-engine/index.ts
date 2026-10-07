@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/vertex_ai_semantic_governance_policy_engine
+// https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_semantic_governance_policy_engine
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,44 +21,340 @@ export interface VertexAiSemanticGovernancePolicyEngineConfig extends cdktn.Terr
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/vertex_ai_semantic_governance_policy_engine#deletion_policy VertexAiSemanticGovernancePolicyEngine#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_semantic_governance_policy_engine#deletion_policy VertexAiSemanticGovernancePolicyEngine#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/vertex_ai_semantic_governance_policy_engine#id VertexAiSemanticGovernancePolicyEngine#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_semantic_governance_policy_engine#id VertexAiSemanticGovernancePolicyEngine#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/vertex_ai_semantic_governance_policy_engine#project VertexAiSemanticGovernancePolicyEngine#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_semantic_governance_policy_engine#project VertexAiSemanticGovernancePolicyEngine#project}
   */
   readonly project?: string;
   /**
   * The region of the SemanticGovernancePolicyEngine, e.g. 'us-central1'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/vertex_ai_semantic_governance_policy_engine#region VertexAiSemanticGovernancePolicyEngine#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_semantic_governance_policy_engine#region VertexAiSemanticGovernancePolicyEngine#region}
   */
   readonly region?: string;
   /**
+  * gateway_configs block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_semantic_governance_policy_engine#gateway_configs VertexAiSemanticGovernancePolicyEngine#gateway_configs}
+  */
+  readonly gatewayConfigs?: VertexAiSemanticGovernancePolicyEngineGatewayConfigs[] | cdktn.IResolvable;
+  /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/vertex_ai_semantic_governance_policy_engine#timeouts VertexAiSemanticGovernancePolicyEngine#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_semantic_governance_policy_engine#timeouts VertexAiSemanticGovernancePolicyEngine#timeouts}
   */
   readonly timeouts?: VertexAiSemanticGovernancePolicyEngineTimeouts;
 }
+export interface VertexAiSemanticGovernancePolicyEngineGatewayConfigs {
+  /**
+  * Additional consumer projects permitted to attach their own PSC endpoint
+  * to this gateway's ServiceAttachment. This is the "decoupled" mode, where
+  * the customer creates the PSC endpoint in a project other than this
+  * gateway's network project. Each listed project is VPC-SC enforced: it
+  * must be within the caller's service perimeter. The owning
+  * SemanticGovernancePolicyEngine's own project is always permitted
+  * implicitly and need not be listed. Format: projects/{project} (ID or number).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_semantic_governance_policy_engine#allowed_projects VertexAiSemanticGovernancePolicyEngine#allowed_projects}
+  */
+  readonly allowedProjects?: string[];
+  /**
+  * The name of the private Cloud DNS managed zone in which the backend
+  * creates the DNS record set for this gateway's PSC endpoint. This is the
+  * managed-zone resource name, not a fully-qualified domain name. The zone
+  * must already exist and be attached to the gateway's VPC at provision
+  * time. The name must match '^[a-z0-9.-]{1,63}$'. Must be set together
+  * with 'network' and 'subnetwork' (all three or none).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_semantic_governance_policy_engine#dns_zone_name VertexAiSemanticGovernancePolicyEngine#dns_zone_name}
+  */
+  readonly dnsZoneName?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_semantic_governance_policy_engine#name VertexAiSemanticGovernancePolicyEngine#name}
+  */
+  readonly name: string;
+  /**
+  * The URI of the network resource where the gateway's PSC endpoint is
+  * provisioned. Format: projects/{project}/global/networks/{network}.
+  * 'network', 'subnetwork', and 'dns_zone_name' must all be set together
+  * or all omitted; setting only some is rejected by the API.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_semantic_governance_policy_engine#network VertexAiSemanticGovernancePolicyEngine#network}
+  */
+  readonly network?: string;
+  /**
+  * The URI of the subnetwork resource where the gateway's PSC endpoint is
+  * provisioned. Format:
+  * projects/{project}/regions/{region}/subnetworks/{subnetwork}. Must be
+  * set together with 'network' and 'dns_zone_name' (all three or none).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_semantic_governance_policy_engine#subnetwork VertexAiSemanticGovernancePolicyEngine#subnetwork}
+  */
+  readonly subnetwork?: string;
+}
+
+export function vertexAiSemanticGovernancePolicyEngineGatewayConfigsToTerraform(struct?: VertexAiSemanticGovernancePolicyEngineGatewayConfigs | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    allowed_projects: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedProjects),
+    dns_zone_name: cdktn.stringToTerraform(struct!.dnsZoneName),
+    name: cdktn.stringToTerraform(struct!.name),
+    network: cdktn.stringToTerraform(struct!.network),
+    subnetwork: cdktn.stringToTerraform(struct!.subnetwork),
+  }
+}
+
+
+export function vertexAiSemanticGovernancePolicyEngineGatewayConfigsToHclTerraform(struct?: VertexAiSemanticGovernancePolicyEngineGatewayConfigs | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    allowed_projects: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedProjects),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    dns_zone_name: {
+      value: cdktn.stringToHclTerraform(struct!.dnsZoneName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktn.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    network: {
+      value: cdktn.stringToHclTerraform(struct!.network),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    subnetwork: {
+      value: cdktn.stringToHclTerraform(struct!.subnetwork),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): VertexAiSemanticGovernancePolicyEngineGatewayConfigs | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._allowedProjects !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.allowedProjects = this._allowedProjects;
+    }
+    if (this._dnsZoneName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dnsZoneName = this._dnsZoneName;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._network !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.network = this._network;
+    }
+    if (this._subnetwork !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.subnetwork = this._subnetwork;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: VertexAiSemanticGovernancePolicyEngineGatewayConfigs | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._allowedProjects = undefined;
+      this._dnsZoneName = undefined;
+      this._name = undefined;
+      this._network = undefined;
+      this._subnetwork = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._allowedProjects = value.allowedProjects;
+      this._dnsZoneName = value.dnsZoneName;
+      this._name = value.name;
+      this._network = value.network;
+      this._subnetwork = value.subnetwork;
+    }
+  }
+
+  // allowed_projects - computed: false, optional: true, required: false
+  private _allowedProjects?: string[]; 
+  public get allowedProjects() {
+    return this.getListAttribute('allowed_projects');
+  }
+  public set allowedProjects(value: string[]) {
+    this._allowedProjects = value;
+  }
+  public resetAllowedProjects() {
+    this._allowedProjects = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowedProjectsInput() {
+    return this._allowedProjects;
+  }
+
+  // dns_record - computed: true, optional: false, required: false
+  public get dnsRecord() {
+    return this.getStringAttribute('dns_record');
+  }
+
+  // dns_zone_name - computed: false, optional: true, required: false
+  private _dnsZoneName?: string; 
+  public get dnsZoneName() {
+    return this.getStringAttribute('dns_zone_name');
+  }
+  public set dnsZoneName(value: string) {
+    this._dnsZoneName = value;
+  }
+  public resetDnsZoneName() {
+    this._dnsZoneName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dnsZoneNameInput() {
+    return this._dnsZoneName;
+  }
+
+  // ip_address - computed: true, optional: false, required: false
+  public get ipAddress() {
+    return this.getStringAttribute('ip_address');
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // network - computed: false, optional: true, required: false
+  private _network?: string; 
+  public get network() {
+    return this.getStringAttribute('network');
+  }
+  public set network(value: string) {
+    this._network = value;
+  }
+  public resetNetwork() {
+    this._network = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkInput() {
+    return this._network;
+  }
+
+  // psc_endpoint - computed: true, optional: false, required: false
+  public get pscEndpoint() {
+    return this.getStringAttribute('psc_endpoint');
+  }
+
+  // state - computed: true, optional: false, required: false
+  public get state() {
+    return this.getStringAttribute('state');
+  }
+
+  // subnetwork - computed: false, optional: true, required: false
+  private _subnetwork?: string; 
+  public get subnetwork() {
+    return this.getStringAttribute('subnetwork');
+  }
+  public set subnetwork(value: string) {
+    this._subnetwork = value;
+  }
+  public resetSubnetwork() {
+    this._subnetwork = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subnetworkInput() {
+    return this._subnetwork;
+  }
+}
+
+export class VertexAiSemanticGovernancePolicyEngineGatewayConfigsList extends cdktn.ComplexList {
+  public internalValue? : VertexAiSemanticGovernancePolicyEngineGatewayConfigs[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference {
+    return new VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface VertexAiSemanticGovernancePolicyEngineTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/vertex_ai_semantic_governance_policy_engine#create VertexAiSemanticGovernancePolicyEngine#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_semantic_governance_policy_engine#create VertexAiSemanticGovernancePolicyEngine#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/vertex_ai_semantic_governance_policy_engine#delete VertexAiSemanticGovernancePolicyEngine#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_semantic_governance_policy_engine#delete VertexAiSemanticGovernancePolicyEngine#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/vertex_ai_semantic_governance_policy_engine#update VertexAiSemanticGovernancePolicyEngine#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_semantic_governance_policy_engine#update VertexAiSemanticGovernancePolicyEngine#update}
   */
   readonly update?: string;
 }
@@ -210,7 +506,7 @@ export class VertexAiSemanticGovernancePolicyEngineTimeoutsOutputReference exten
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/vertex_ai_semantic_governance_policy_engine google_vertex_ai_semantic_governance_policy_engine}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_semantic_governance_policy_engine google_vertex_ai_semantic_governance_policy_engine}
 */
 export class VertexAiSemanticGovernancePolicyEngine extends cdktn.TerraformResource {
 
@@ -226,7 +522,7 @@ export class VertexAiSemanticGovernancePolicyEngine extends cdktn.TerraformResou
   * Generates CDKTN code for importing a VertexAiSemanticGovernancePolicyEngine resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VertexAiSemanticGovernancePolicyEngine to import
-  * @param importFromId The id of the existing VertexAiSemanticGovernancePolicyEngine that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/vertex_ai_semantic_governance_policy_engine#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VertexAiSemanticGovernancePolicyEngine that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_semantic_governance_policy_engine#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VertexAiSemanticGovernancePolicyEngine to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -238,7 +534,7 @@ export class VertexAiSemanticGovernancePolicyEngine extends cdktn.TerraformResou
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/vertex_ai_semantic_governance_policy_engine google_vertex_ai_semantic_governance_policy_engine} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_semantic_governance_policy_engine google_vertex_ai_semantic_governance_policy_engine} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -249,8 +545,8 @@ export class VertexAiSemanticGovernancePolicyEngine extends cdktn.TerraformResou
       terraformResourceType: 'google_vertex_ai_semantic_governance_policy_engine',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.46.1',
-        providerVersionConstraint: '~> 7.0'
+        providerVersion: '8.6.0',
+        providerVersionConstraint: '~> 8.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -264,6 +560,7 @@ export class VertexAiSemanticGovernancePolicyEngine extends cdktn.TerraformResou
     this._id = config.id;
     this._project = config.project;
     this._region = config.region;
+    this._gatewayConfigs.internalValue = config.gatewayConfigs;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -370,6 +667,22 @@ export class VertexAiSemanticGovernancePolicyEngine extends cdktn.TerraformResou
     return this.getStringAttribute('update_time');
   }
 
+  // gateway_configs - computed: false, optional: true, required: false
+  private _gatewayConfigs = new VertexAiSemanticGovernancePolicyEngineGatewayConfigsList(this, "gateway_configs", true);
+  public get gatewayConfigs() {
+    return this._gatewayConfigs;
+  }
+  public putGatewayConfigs(value: VertexAiSemanticGovernancePolicyEngineGatewayConfigs[] | cdktn.IResolvable) {
+    this._gatewayConfigs.internalValue = value;
+  }
+  public resetGatewayConfigs() {
+    this._gatewayConfigs.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get gatewayConfigsInput() {
+    return this._gatewayConfigs.internalValue;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new VertexAiSemanticGovernancePolicyEngineTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -396,6 +709,7 @@ export class VertexAiSemanticGovernancePolicyEngine extends cdktn.TerraformResou
       id: cdktn.stringToTerraform(this._id),
       project: cdktn.stringToTerraform(this._project),
       region: cdktn.stringToTerraform(this._region),
+      gateway_configs: cdktn.listMapper(vertexAiSemanticGovernancePolicyEngineGatewayConfigsToTerraform, true)(this._gatewayConfigs.internalValue),
       timeouts: vertexAiSemanticGovernancePolicyEngineTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -425,6 +739,12 @@ export class VertexAiSemanticGovernancePolicyEngine extends cdktn.TerraformResou
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      gateway_configs: {
+        value: cdktn.listMapperHcl(vertexAiSemanticGovernancePolicyEngineGatewayConfigsToHclTerraform, true)(this._gatewayConfigs.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "VertexAiSemanticGovernancePolicyEngineGatewayConfigsList",
       },
       timeouts: {
         value: vertexAiSemanticGovernancePolicyEngineTimeoutsToHclTerraform(this._timeouts.internalValue),

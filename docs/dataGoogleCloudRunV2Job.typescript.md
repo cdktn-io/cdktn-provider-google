@@ -4,7 +4,7 @@
 
 ### DataGoogleCloudRunV2Job <a name="DataGoogleCloudRunV2Job" id="@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2Job"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/cloud_run_v2_job google_cloud_run_v2_job}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/cloud_run_v2_job google_cloud_run_v2_job}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2Job.Initializer"></a>
 
@@ -408,7 +408,7 @@ The construct id used in the generated config for the DataGoogleCloudRunV2Job to
 
 The id of the existing DataGoogleCloudRunV2Job that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/cloud_run_v2_job#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/cloud_run_v2_job#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1043,9 +1043,9 @@ const dataGoogleCloudRunV2JobConfig: dataGoogleCloudRunV2Job.DataGoogleCloudRunV
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobConfig.property.name">name</a></code> | <code>string</code> | Name of the Job. |
-| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/cloud_run_v2_job#id DataGoogleCloudRunV2Job#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/cloud_run_v2_job#id DataGoogleCloudRunV2Job#id}. |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobConfig.property.location">location</a></code> | <code>string</code> | The location of the cloud run job. |
-| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/cloud_run_v2_job#project DataGoogleCloudRunV2Job#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/cloud_run_v2_job#project DataGoogleCloudRunV2Job#project}. |
 
 ---
 
@@ -1129,7 +1129,7 @@ public readonly name: string;
 
 Name of the Job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/cloud_run_v2_job#name DataGoogleCloudRunV2Job#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/cloud_run_v2_job#name DataGoogleCloudRunV2Job#name}
 
 ---
 
@@ -1141,7 +1141,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/cloud_run_v2_job#id DataGoogleCloudRunV2Job#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/cloud_run_v2_job#id DataGoogleCloudRunV2Job#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1158,7 +1158,7 @@ public readonly location: string;
 
 The location of the cloud run job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/cloud_run_v2_job#location DataGoogleCloudRunV2Job#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/cloud_run_v2_job#location DataGoogleCloudRunV2Job#location}
 
 ---
 
@@ -1170,7 +1170,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/cloud_run_v2_job#project DataGoogleCloudRunV2Job#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/cloud_run_v2_job#project DataGoogleCloudRunV2Job#project}.
 
 ---
 
@@ -3242,6 +3242,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateOutputReference.property.annotations">annotations</a></code> | <code>cdktn.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateOutputReference.property.delayExecution">delayExecution</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateOutputReference.property.labels">labels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateOutputReference.property.parallelism">parallelism</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateOutputReference.property.taskCount">taskCount</a></code> | <code>number</code> | *No description.* |
@@ -3281,6 +3282,16 @@ public readonly annotations: StringMap;
 ```
 
 - *Type:* cdktn.StringMap
+
+---
+
+##### `delayExecution`<sup>Required</sup> <a name="delayExecution" id="@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateOutputReference.property.delayExecution"></a>
+
+```typescript
+public readonly delayExecution: IResolvable;
+```
+
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -5034,6 +5045,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateContainersOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateContainersOutputReference.property.ports">ports</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateContainersPortsList">DataGoogleCloudRunV2JobTemplateTemplateContainersPortsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateContainersOutputReference.property.resources">resources</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateContainersResourcesList">DataGoogleCloudRunV2JobTemplateTemplateContainersResourcesList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateContainersOutputReference.property.sandboxLauncher">sandboxLauncher</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateContainersOutputReference.property.startupProbe">startupProbe</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateContainersStartupProbeList">DataGoogleCloudRunV2JobTemplateTemplateContainersStartupProbeList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateContainersOutputReference.property.volumeMounts">volumeMounts</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateContainersVolumeMountsList">DataGoogleCloudRunV2JobTemplateTemplateContainersVolumeMountsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateContainersOutputReference.property.workingDir">workingDir</a></code> | <code>string</code> | *No description.* |
@@ -5142,6 +5154,16 @@ public readonly resources: DataGoogleCloudRunV2JobTemplateTemplateContainersReso
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateContainersResourcesList">DataGoogleCloudRunV2JobTemplateTemplateContainersResourcesList</a>
+
+---
+
+##### `sandboxLauncher`<sup>Required</sup> <a name="sandboxLauncher" id="@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateContainersOutputReference.property.sandboxLauncher"></a>
+
+```typescript
+public readonly sandboxLauncher: IResolvable;
+```
+
+- *Type:* cdktn.IResolvable
 
 ---
 

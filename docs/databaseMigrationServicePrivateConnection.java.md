@@ -4,7 +4,7 @@
 
 ### DatabaseMigrationServicePrivateConnection <a name="DatabaseMigrationServicePrivateConnection" id="@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/database_migration_service_private_connection google_database_migration_service_private_connection}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/database_migration_service_private_connection google_database_migration_service_private_connection}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnection.Initializer"></a>
 
@@ -28,6 +28,7 @@ DatabaseMigrationServicePrivateConnection.Builder.create(Construct scope, java.l
 //  .labels(java.util.Map<java.lang.String, java.lang.String>)
 //  .project(java.lang.String)
 //  .pscInterfaceConfig(DatabaseMigrationServicePrivateConnectionPscInterfaceConfig)
+//  .reservedPublicIpConfig(DatabaseMigrationServicePrivateConnectionReservedPublicIpConfig)
 //  .timeouts(DatabaseMigrationServicePrivateConnectionTimeouts)
 //  .vpcPeeringConfig(DatabaseMigrationServicePrivateConnectionVpcPeeringConfig)
     .build();
@@ -49,10 +50,11 @@ DatabaseMigrationServicePrivateConnection.Builder.create(Construct scope, java.l
 | <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnection.Initializer.parameter.createWithoutValidation">createWithoutValidation</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | If set to true, will skip validations. |
 | <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnection.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnection.Initializer.parameter.displayName">displayName</a></code> | <code>java.lang.String</code> | Display name. |
-| <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnection.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/database_migration_service_private_connection#id DatabaseMigrationServicePrivateConnection#id}. |
+| <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnection.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/database_migration_service_private_connection#id DatabaseMigrationServicePrivateConnection#id}. |
 | <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnection.Initializer.parameter.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Labels. |
-| <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnection.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/database_migration_service_private_connection#project DatabaseMigrationServicePrivateConnection#project}. |
+| <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnection.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/database_migration_service_private_connection#project DatabaseMigrationServicePrivateConnection#project}. |
 | <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnection.Initializer.parameter.pscInterfaceConfig">pscInterfaceConfig</a></code> | <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionPscInterfaceConfig">DatabaseMigrationServicePrivateConnectionPscInterfaceConfig</a></code> | psc_interface_config block. |
+| <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnection.Initializer.parameter.reservedPublicIpConfig">reservedPublicIpConfig</a></code> | <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfig">DatabaseMigrationServicePrivateConnectionReservedPublicIpConfig</a></code> | reserved_public_ip_config block. |
 | <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnection.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionTimeouts">DatabaseMigrationServicePrivateConnectionTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnection.Initializer.parameter.vpcPeeringConfig">vpcPeeringConfig</a></code> | <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionVpcPeeringConfig">DatabaseMigrationServicePrivateConnectionVpcPeeringConfig</a></code> | vpc_peering_config block. |
 
@@ -124,7 +126,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the location this private connection is located in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/database_migration_service_private_connection#location DatabaseMigrationServicePrivateConnection#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/database_migration_service_private_connection#location DatabaseMigrationServicePrivateConnection#location}
 
 ---
 
@@ -134,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The private connectivity identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/database_migration_service_private_connection#private_connection_id DatabaseMigrationServicePrivateConnection#private_connection_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/database_migration_service_private_connection#private_connection_id DatabaseMigrationServicePrivateConnection#private_connection_id}
 
 ---
 
@@ -144,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 If set to true, will skip validations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/database_migration_service_private_connection#create_without_validation DatabaseMigrationServicePrivateConnection#create_without_validation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/database_migration_service_private_connection#create_without_validation DatabaseMigrationServicePrivateConnection#create_without_validation}
 
 ---
 
@@ -161,7 +163,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/database_migration_service_private_connection#deletion_policy DatabaseMigrationServicePrivateConnection#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/database_migration_service_private_connection#deletion_policy DatabaseMigrationServicePrivateConnection#deletion_policy}
 
 ---
 
@@ -171,7 +173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Display name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/database_migration_service_private_connection#display_name DatabaseMigrationServicePrivateConnection#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/database_migration_service_private_connection#display_name DatabaseMigrationServicePrivateConnection#display_name}
 
 ---
 
@@ -179,7 +181,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/database_migration_service_private_connection#id DatabaseMigrationServicePrivateConnection#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/database_migration_service_private_connection#id DatabaseMigrationServicePrivateConnection#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -195,7 +197,7 @@ Labels.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/database_migration_service_private_connection#labels DatabaseMigrationServicePrivateConnection#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/database_migration_service_private_connection#labels DatabaseMigrationServicePrivateConnection#labels}
 
 ---
 
@@ -203,7 +205,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/database_migration_service_private_connection#project DatabaseMigrationServicePrivateConnection#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/database_migration_service_private_connection#project DatabaseMigrationServicePrivateConnection#project}.
 
 ---
 
@@ -213,7 +215,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 psc_interface_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/database_migration_service_private_connection#psc_interface_config DatabaseMigrationServicePrivateConnection#psc_interface_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/database_migration_service_private_connection#psc_interface_config DatabaseMigrationServicePrivateConnection#psc_interface_config}
+
+---
+
+##### `reservedPublicIpConfig`<sup>Optional</sup> <a name="reservedPublicIpConfig" id="@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnection.Initializer.parameter.reservedPublicIpConfig"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfig">DatabaseMigrationServicePrivateConnectionReservedPublicIpConfig</a>
+
+reserved_public_ip_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/database_migration_service_private_connection#reserved_public_ip_config DatabaseMigrationServicePrivateConnection#reserved_public_ip_config}
 
 ---
 
@@ -223,7 +235,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/database_migration_service_private_connection#timeouts DatabaseMigrationServicePrivateConnection#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/database_migration_service_private_connection#timeouts DatabaseMigrationServicePrivateConnection#timeouts}
 
 ---
 
@@ -233,7 +245,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 vpc_peering_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/database_migration_service_private_connection#vpc_peering_config DatabaseMigrationServicePrivateConnection#vpc_peering_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/database_migration_service_private_connection#vpc_peering_config DatabaseMigrationServicePrivateConnection#vpc_peering_config}
 
 ---
 
@@ -266,6 +278,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnection.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnection.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnection.putPscInterfaceConfig">putPscInterfaceConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnection.putReservedPublicIpConfig">putReservedPublicIpConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnection.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnection.putVpcPeeringConfig">putVpcPeeringConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnection.resetCreateWithoutValidation">resetCreateWithoutValidation</a></code> | *No description.* |
@@ -275,6 +288,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnection.resetLabels">resetLabels</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnection.resetProject">resetProject</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnection.resetPscInterfaceConfig">resetPscInterfaceConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnection.resetReservedPublicIpConfig">resetReservedPublicIpConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnection.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnection.resetVpcPeeringConfig">resetVpcPeeringConfig</a></code> | *No description.* |
 
@@ -603,6 +617,18 @@ public void putPscInterfaceConfig(DatabaseMigrationServicePrivateConnectionPscIn
 
 ---
 
+##### `putReservedPublicIpConfig` <a name="putReservedPublicIpConfig" id="@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnection.putReservedPublicIpConfig"></a>
+
+```java
+public void putReservedPublicIpConfig(DatabaseMigrationServicePrivateConnectionReservedPublicIpConfig value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnection.putReservedPublicIpConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfig">DatabaseMigrationServicePrivateConnectionReservedPublicIpConfig</a>
+
+---
+
 ##### `putTimeouts` <a name="putTimeouts" id="@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnection.putTimeouts"></a>
 
 ```java
@@ -667,6 +693,12 @@ public void resetProject()
 
 ```java
 public void resetPscInterfaceConfig()
+```
+
+##### `resetReservedPublicIpConfig` <a name="resetReservedPublicIpConfig" id="@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnection.resetReservedPublicIpConfig"></a>
+
+```java
+public void resetReservedPublicIpConfig()
 ```
 
 ##### `resetTimeouts` <a name="resetTimeouts" id="@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnection.resetTimeouts"></a>
@@ -784,7 +816,7 @@ The construct id used in the generated config for the DatabaseMigrationServicePr
 
 The id of the existing DatabaseMigrationServicePrivateConnection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/database_migration_service_private_connection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/database_migration_service_private_connection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -818,6 +850,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnection.property.error">error</a></code> | <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionErrorList">DatabaseMigrationServicePrivateConnectionErrorList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnection.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnection.property.pscInterfaceConfig">pscInterfaceConfig</a></code> | <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionPscInterfaceConfigOutputReference">DatabaseMigrationServicePrivateConnectionPscInterfaceConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnection.property.reservedPublicIpConfig">reservedPublicIpConfig</a></code> | <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference">DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnection.property.state">state</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnection.property.terraformLabels">terraformLabels</a></code> | <code>io.cdktn.cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnection.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionTimeoutsOutputReference">DatabaseMigrationServicePrivateConnectionTimeoutsOutputReference</a></code> | *No description.* |
@@ -831,6 +864,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnection.property.privateConnectionIdInput">privateConnectionIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnection.property.projectInput">projectInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnection.property.pscInterfaceConfigInput">pscInterfaceConfigInput</a></code> | <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionPscInterfaceConfig">DatabaseMigrationServicePrivateConnectionPscInterfaceConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnection.property.reservedPublicIpConfigInput">reservedPublicIpConfigInput</a></code> | <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfig">DatabaseMigrationServicePrivateConnectionReservedPublicIpConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnection.property.timeoutsInput">timeoutsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionTimeouts">DatabaseMigrationServicePrivateConnectionTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnection.property.vpcPeeringConfigInput">vpcPeeringConfigInput</a></code> | <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionVpcPeeringConfig">DatabaseMigrationServicePrivateConnectionVpcPeeringConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnection.property.createWithoutValidation">createWithoutValidation</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
@@ -1026,6 +1060,16 @@ public DatabaseMigrationServicePrivateConnectionPscInterfaceConfigOutputReferenc
 
 ---
 
+##### `reservedPublicIpConfig`<sup>Required</sup> <a name="reservedPublicIpConfig" id="@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnection.property.reservedPublicIpConfig"></a>
+
+```java
+public DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference getReservedPublicIpConfig();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference">DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference</a>
+
+---
+
 ##### `state`<sup>Required</sup> <a name="state" id="@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnection.property.state"></a>
 
 ```java
@@ -1153,6 +1197,16 @@ public DatabaseMigrationServicePrivateConnectionPscInterfaceConfig getPscInterfa
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionPscInterfaceConfig">DatabaseMigrationServicePrivateConnectionPscInterfaceConfig</a>
+
+---
+
+##### `reservedPublicIpConfigInput`<sup>Optional</sup> <a name="reservedPublicIpConfigInput" id="@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnection.property.reservedPublicIpConfigInput"></a>
+
+```java
+public DatabaseMigrationServicePrivateConnectionReservedPublicIpConfig getReservedPublicIpConfigInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfig">DatabaseMigrationServicePrivateConnectionReservedPublicIpConfig</a>
 
 ---
 
@@ -1300,6 +1354,7 @@ DatabaseMigrationServicePrivateConnectionConfig.builder()
 //  .labels(java.util.Map<java.lang.String, java.lang.String>)
 //  .project(java.lang.String)
 //  .pscInterfaceConfig(DatabaseMigrationServicePrivateConnectionPscInterfaceConfig)
+//  .reservedPublicIpConfig(DatabaseMigrationServicePrivateConnectionReservedPublicIpConfig)
 //  .timeouts(DatabaseMigrationServicePrivateConnectionTimeouts)
 //  .vpcPeeringConfig(DatabaseMigrationServicePrivateConnectionVpcPeeringConfig)
     .build();
@@ -1321,10 +1376,11 @@ DatabaseMigrationServicePrivateConnectionConfig.builder()
 | <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionConfig.property.createWithoutValidation">createWithoutValidation</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | If set to true, will skip validations. |
 | <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionConfig.property.displayName">displayName</a></code> | <code>java.lang.String</code> | Display name. |
-| <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/database_migration_service_private_connection#id DatabaseMigrationServicePrivateConnection#id}. |
+| <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/database_migration_service_private_connection#id DatabaseMigrationServicePrivateConnection#id}. |
 | <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionConfig.property.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Labels. |
-| <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/database_migration_service_private_connection#project DatabaseMigrationServicePrivateConnection#project}. |
+| <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/database_migration_service_private_connection#project DatabaseMigrationServicePrivateConnection#project}. |
 | <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionConfig.property.pscInterfaceConfig">pscInterfaceConfig</a></code> | <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionPscInterfaceConfig">DatabaseMigrationServicePrivateConnectionPscInterfaceConfig</a></code> | psc_interface_config block. |
+| <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionConfig.property.reservedPublicIpConfig">reservedPublicIpConfig</a></code> | <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfig">DatabaseMigrationServicePrivateConnectionReservedPublicIpConfig</a></code> | reserved_public_ip_config block. |
 | <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionTimeouts">DatabaseMigrationServicePrivateConnectionTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionConfig.property.vpcPeeringConfig">vpcPeeringConfig</a></code> | <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionVpcPeeringConfig">DatabaseMigrationServicePrivateConnectionVpcPeeringConfig</a></code> | vpc_peering_config block. |
 
@@ -1410,7 +1466,7 @@ public java.lang.String getLocation();
 
 The name of the location this private connection is located in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/database_migration_service_private_connection#location DatabaseMigrationServicePrivateConnection#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/database_migration_service_private_connection#location DatabaseMigrationServicePrivateConnection#location}
 
 ---
 
@@ -1424,7 +1480,7 @@ public java.lang.String getPrivateConnectionId();
 
 The private connectivity identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/database_migration_service_private_connection#private_connection_id DatabaseMigrationServicePrivateConnection#private_connection_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/database_migration_service_private_connection#private_connection_id DatabaseMigrationServicePrivateConnection#private_connection_id}
 
 ---
 
@@ -1438,7 +1494,7 @@ public java.lang.Boolean|IResolvable getCreateWithoutValidation();
 
 If set to true, will skip validations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/database_migration_service_private_connection#create_without_validation DatabaseMigrationServicePrivateConnection#create_without_validation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/database_migration_service_private_connection#create_without_validation DatabaseMigrationServicePrivateConnection#create_without_validation}
 
 ---
 
@@ -1459,7 +1515,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/database_migration_service_private_connection#deletion_policy DatabaseMigrationServicePrivateConnection#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/database_migration_service_private_connection#deletion_policy DatabaseMigrationServicePrivateConnection#deletion_policy}
 
 ---
 
@@ -1473,7 +1529,7 @@ public java.lang.String getDisplayName();
 
 Display name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/database_migration_service_private_connection#display_name DatabaseMigrationServicePrivateConnection#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/database_migration_service_private_connection#display_name DatabaseMigrationServicePrivateConnection#display_name}
 
 ---
 
@@ -1485,7 +1541,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/database_migration_service_private_connection#id DatabaseMigrationServicePrivateConnection#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/database_migration_service_private_connection#id DatabaseMigrationServicePrivateConnection#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1505,7 +1561,7 @@ Labels.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/database_migration_service_private_connection#labels DatabaseMigrationServicePrivateConnection#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/database_migration_service_private_connection#labels DatabaseMigrationServicePrivateConnection#labels}
 
 ---
 
@@ -1517,7 +1573,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/database_migration_service_private_connection#project DatabaseMigrationServicePrivateConnection#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/database_migration_service_private_connection#project DatabaseMigrationServicePrivateConnection#project}.
 
 ---
 
@@ -1531,7 +1587,21 @@ public DatabaseMigrationServicePrivateConnectionPscInterfaceConfig getPscInterfa
 
 psc_interface_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/database_migration_service_private_connection#psc_interface_config DatabaseMigrationServicePrivateConnection#psc_interface_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/database_migration_service_private_connection#psc_interface_config DatabaseMigrationServicePrivateConnection#psc_interface_config}
+
+---
+
+##### `reservedPublicIpConfig`<sup>Optional</sup> <a name="reservedPublicIpConfig" id="@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionConfig.property.reservedPublicIpConfig"></a>
+
+```java
+public DatabaseMigrationServicePrivateConnectionReservedPublicIpConfig getReservedPublicIpConfig();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfig">DatabaseMigrationServicePrivateConnectionReservedPublicIpConfig</a>
+
+reserved_public_ip_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/database_migration_service_private_connection#reserved_public_ip_config DatabaseMigrationServicePrivateConnection#reserved_public_ip_config}
 
 ---
 
@@ -1545,7 +1615,7 @@ public DatabaseMigrationServicePrivateConnectionTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/database_migration_service_private_connection#timeouts DatabaseMigrationServicePrivateConnection#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/database_migration_service_private_connection#timeouts DatabaseMigrationServicePrivateConnection#timeouts}
 
 ---
 
@@ -1559,7 +1629,7 @@ public DatabaseMigrationServicePrivateConnectionVpcPeeringConfig getVpcPeeringCo
 
 vpc_peering_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/database_migration_service_private_connection#vpc_peering_config DatabaseMigrationServicePrivateConnection#vpc_peering_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/database_migration_service_private_connection#vpc_peering_config DatabaseMigrationServicePrivateConnection#vpc_peering_config}
 
 ---
 
@@ -1605,7 +1675,41 @@ public java.lang.String getNetworkAttachment();
 
 Fully qualified name of the Network Attachment that DMS will connect to. Format: projects/{project}/regions/{region}/networkAttachments/{name}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/database_migration_service_private_connection#network_attachment DatabaseMigrationServicePrivateConnection#network_attachment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/database_migration_service_private_connection#network_attachment DatabaseMigrationServicePrivateConnection#network_attachment}
+
+---
+
+### DatabaseMigrationServicePrivateConnectionReservedPublicIpConfig <a name="DatabaseMigrationServicePrivateConnectionReservedPublicIpConfig" id="@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfig.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.database_migration_service_private_connection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfig;
+
+DatabaseMigrationServicePrivateConnectionReservedPublicIpConfig.builder()
+//  .natIpsCount(java.lang.Number)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfig.property.natIpsCount">natIpsCount</a></code> | <code>java.lang.Number</code> | Optional. Number of static public IP addresses to reserve. |
+
+---
+
+##### `natIpsCount`<sup>Optional</sup> <a name="natIpsCount" id="@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfig.property.natIpsCount"></a>
+
+```java
+public java.lang.Number getNatIpsCount();
+```
+
+- *Type:* java.lang.Number
+
+Optional. Number of static public IP addresses to reserve.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/database_migration_service_private_connection#nat_ips_count DatabaseMigrationServicePrivateConnection#nat_ips_count}
 
 ---
 
@@ -1627,9 +1731,9 @@ DatabaseMigrationServicePrivateConnectionTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/database_migration_service_private_connection#create DatabaseMigrationServicePrivateConnection#create}. |
-| <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/database_migration_service_private_connection#delete DatabaseMigrationServicePrivateConnection#delete}. |
-| <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/database_migration_service_private_connection#update DatabaseMigrationServicePrivateConnection#update}. |
+| <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/database_migration_service_private_connection#create DatabaseMigrationServicePrivateConnection#create}. |
+| <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/database_migration_service_private_connection#delete DatabaseMigrationServicePrivateConnection#delete}. |
+| <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/database_migration_service_private_connection#update DatabaseMigrationServicePrivateConnection#update}. |
 
 ---
 
@@ -1641,7 +1745,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/database_migration_service_private_connection#create DatabaseMigrationServicePrivateConnection#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/database_migration_service_private_connection#create DatabaseMigrationServicePrivateConnection#create}.
 
 ---
 
@@ -1653,7 +1757,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/database_migration_service_private_connection#delete DatabaseMigrationServicePrivateConnection#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/database_migration_service_private_connection#delete DatabaseMigrationServicePrivateConnection#delete}.
 
 ---
 
@@ -1665,7 +1769,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/database_migration_service_private_connection#update DatabaseMigrationServicePrivateConnection#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/database_migration_service_private_connection#update DatabaseMigrationServicePrivateConnection#update}.
 
 ---
 
@@ -1701,7 +1805,7 @@ public java.lang.String getSubnet();
 
 A free subnet for peering. (CIDR of /29).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/database_migration_service_private_connection#subnet DatabaseMigrationServicePrivateConnection#subnet}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/database_migration_service_private_connection#subnet DatabaseMigrationServicePrivateConnection#subnet}
 
 ---
 
@@ -1715,7 +1819,7 @@ public java.lang.String getVpcName();
 
 Fully qualified name of the VPC that Database Migration Service will peer to. Format: projects/{project}/global/{networks}/{name}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/database_migration_service_private_connection#vpc_name DatabaseMigrationServicePrivateConnection#vpc_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/database_migration_service_private_connection#vpc_name DatabaseMigrationServicePrivateConnection#vpc_name}
 
 ---
 
@@ -2426,6 +2530,295 @@ public DatabaseMigrationServicePrivateConnectionPscInterfaceConfig getInternalVa
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionPscInterfaceConfig">DatabaseMigrationServicePrivateConnectionPscInterfaceConfig</a>
+
+---
+
+
+### DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference <a name="DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference" id="@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.database_migration_service_private_connection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference;
+
+new DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference.resetNatIpsCount">resetNatIpsCount</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetNatIpsCount` <a name="resetNatIpsCount" id="@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference.resetNatIpsCount"></a>
+
+```java
+public void resetNatIpsCount()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference.property.egressPublicIps">egressPublicIps</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference.property.natIpsCountInput">natIpsCountInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference.property.natIpsCount">natIpsCount</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfig">DatabaseMigrationServicePrivateConnectionReservedPublicIpConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `egressPublicIps`<sup>Required</sup> <a name="egressPublicIps" id="@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference.property.egressPublicIps"></a>
+
+```java
+public java.util.List<java.lang.String> getEgressPublicIps();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `natIpsCountInput`<sup>Optional</sup> <a name="natIpsCountInput" id="@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference.property.natIpsCountInput"></a>
+
+```java
+public java.lang.Number getNatIpsCountInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `natIpsCount`<sup>Required</sup> <a name="natIpsCount" id="@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference.property.natIpsCount"></a>
+
+```java
+public java.lang.Number getNatIpsCount();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfigOutputReference.property.internalValue"></a>
+
+```java
+public DatabaseMigrationServicePrivateConnectionReservedPublicIpConfig getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.databaseMigrationServicePrivateConnection.DatabaseMigrationServicePrivateConnectionReservedPublicIpConfig">DatabaseMigrationServicePrivateConnectionReservedPublicIpConfig</a>
 
 ---
 

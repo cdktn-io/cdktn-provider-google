@@ -4,7 +4,7 @@
 
 ### DiscoveryEngineDataConnector <a name="DiscoveryEngineDataConnector" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector google_discovery_engine_data_connector}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector google_discovery_engine_data_connector}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.Initializer"></a>
 
@@ -39,10 +39,12 @@ discoveryEngineDataConnector.DiscoveryEngineDataConnector(
   incremental_sync_disabled: bool | IResolvable = None,
   json_params: str = None,
   kms_key_name: str = None,
+  metadata: DiscoveryEngineDataConnectorMetadata = None,
   params: typing.Mapping[str] = None,
   project: str = None,
   static_ip_enabled: bool | IResolvable = None,
   sync_mode: str = None,
+  tag: str = None,
   timeouts: DiscoveryEngineDataConnectorTimeouts = None
 )
 ```
@@ -71,15 +73,17 @@ discoveryEngineDataConnector.DiscoveryEngineDataConnector(
 | <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.Initializer.parameter.destinationConfigs">destination_configs</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorDestinationConfigs">DiscoveryEngineDataConnectorDestinationConfigs</a>]</code> | destination_configs block. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.Initializer.parameter.entities">entities</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorEntities">DiscoveryEngineDataConnectorEntities</a>]</code> | entities block. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#id DiscoveryEngineDataConnector#id}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#id DiscoveryEngineDataConnector#id}. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.Initializer.parameter.incrementalRefreshInterval">incremental_refresh_interval</a></code> | <code>str</code> | The refresh interval specifically for incremental data syncs. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.Initializer.parameter.incrementalSyncDisabled">incremental_sync_disabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Indicates whether incremental syncs are paused for this connector. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.Initializer.parameter.jsonParams">json_params</a></code> | <code>str</code> | Params needed to access the source in the format of json string. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.Initializer.parameter.kmsKeyName">kms_key_name</a></code> | <code>str</code> | The KMS key to be used to protect the DataStores managed by this connector. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.Initializer.parameter.metadata">metadata</a></code> | <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadata">DiscoveryEngineDataConnectorMetadata</a></code> | metadata block. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.Initializer.parameter.params">params</a></code> | <code>typing.Mapping[str]</code> | Params needed to access the source in the format of String-to-String (Key, Value) pairs. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#project DiscoveryEngineDataConnector#project}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#project DiscoveryEngineDataConnector#project}. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.Initializer.parameter.staticIpEnabled">static_ip_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether customer has enabled static IP addresses for this connector. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.Initializer.parameter.syncMode">sync_mode</a></code> | <code>str</code> | The data synchronization mode supported by the data connector. The possible value can be: 'PERIODIC', 'STREAMING'. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.Initializer.parameter.tag">tag</a></code> | <code>str</code> | User-facing, version-independent label for this connector. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorTimeouts">DiscoveryEngineDataConnectorTimeouts</a></code> | timeouts block. |
 
 ---
@@ -153,7 +157,7 @@ The display name of the Collection.
 Should be human readable, used to display collections in the Console
 Dashboard. UTF-8 encoded string with limit of 1024 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#collection_display_name DiscoveryEngineDataConnector#collection_display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#collection_display_name DiscoveryEngineDataConnector#collection_display_name}
 
 ---
 
@@ -170,7 +174,7 @@ This field must conform to [RFC-1034](https://tools.ietf.org/html/rfc1034)
 standard with a length limit of 63 characters. Otherwise, an
 INVALID_ARGUMENT error is returned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#collection_id DiscoveryEngineDataConnector#collection_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#collection_id DiscoveryEngineDataConnector#collection_id}
 
 ---
 
@@ -233,7 +237,7 @@ Preview connectors:
 * 'workday'
 * 'zendesk'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#data_source DiscoveryEngineDataConnector#data_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#data_source DiscoveryEngineDataConnector#data_source}
 
 ---
 
@@ -243,7 +247,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The geographic location where the data store should reside. The value can only be one of "global", "us" and "eu".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#location DiscoveryEngineDataConnector#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#location DiscoveryEngineDataConnector#location}
 
 ---
 
@@ -259,7 +263,7 @@ minimum is 30 minutes and maximum is 7 days. When the refresh interval is
 set to the same value as the incremental refresh interval, incremental
 sync will be disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#refresh_interval DiscoveryEngineDataConnector#refresh_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#refresh_interval DiscoveryEngineDataConnector#refresh_interval}
 
 ---
 
@@ -269,7 +273,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 action_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#action_config DiscoveryEngineDataConnector#action_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#action_config DiscoveryEngineDataConnector#action_config}
 
 ---
 
@@ -279,7 +283,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Indicates whether full syncs are paused for this connector.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#auto_run_disabled DiscoveryEngineDataConnector#auto_run_disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#auto_run_disabled DiscoveryEngineDataConnector#auto_run_disabled}
 
 ---
 
@@ -289,7 +293,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 bap_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#bap_config DiscoveryEngineDataConnector#bap_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#bap_config DiscoveryEngineDataConnector#bap_config}
 
 ---
 
@@ -299,7 +303,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The modes enabled for this connector. The possible value can be: 'DATA_INGESTION', 'ACTIONS', 'FEDERATED' 'EUA', 'FEDERATED_AND_EUA'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#connector_modes DiscoveryEngineDataConnector#connector_modes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#connector_modes DiscoveryEngineDataConnector#connector_modes}
 
 ---
 
@@ -309,7 +313,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The version of the data source. For example, '3' for Jira v3.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#data_source_version DiscoveryEngineDataConnector#data_source_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#data_source_version DiscoveryEngineDataConnector#data_source_version}
 
 ---
 
@@ -326,7 +330,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#deletion_policy DiscoveryEngineDataConnector#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#deletion_policy DiscoveryEngineDataConnector#deletion_policy}
 
 ---
 
@@ -336,7 +340,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 destination_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#destination_configs DiscoveryEngineDataConnector#destination_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#destination_configs DiscoveryEngineDataConnector#destination_configs}
 
 ---
 
@@ -346,7 +350,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 entities block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#entities DiscoveryEngineDataConnector#entities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#entities DiscoveryEngineDataConnector#entities}
 
 ---
 
@@ -354,7 +358,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#id DiscoveryEngineDataConnector#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#id DiscoveryEngineDataConnector#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -374,7 +378,7 @@ connectors. When the refresh interval is
 set to the same value as the incremental refresh interval, incremental
 sync will be disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#incremental_refresh_interval DiscoveryEngineDataConnector#incremental_refresh_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#incremental_refresh_interval DiscoveryEngineDataConnector#incremental_refresh_interval}
 
 ---
 
@@ -384,7 +388,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Indicates whether incremental syncs are paused for this connector.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#incremental_sync_disabled DiscoveryEngineDataConnector#incremental_sync_disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#incremental_sync_disabled DiscoveryEngineDataConnector#incremental_sync_disabled}
 
 ---
 
@@ -394,7 +398,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Params needed to access the source in the format of json string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#json_params DiscoveryEngineDataConnector#json_params}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#json_params DiscoveryEngineDataConnector#json_params}
 
 ---
 
@@ -409,7 +413,17 @@ protections.
 If this field is set and processed successfully, the DataStores created by
 this connector will be protected by the KMS key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#kms_key_name DiscoveryEngineDataConnector#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#kms_key_name DiscoveryEngineDataConnector#kms_key_name}
+
+---
+
+##### `metadata`<sup>Optional</sup> <a name="metadata" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.Initializer.parameter.metadata"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadata">DiscoveryEngineDataConnectorMetadata</a>
+
+metadata block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#metadata DiscoveryEngineDataConnector#metadata}
 
 ---
 
@@ -419,7 +433,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Params needed to access the source in the format of String-to-String (Key, Value) pairs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#params DiscoveryEngineDataConnector#params}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#params DiscoveryEngineDataConnector#params}
 
 ---
 
@@ -427,7 +441,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#project DiscoveryEngineDataConnector#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#project DiscoveryEngineDataConnector#project}.
 
 ---
 
@@ -437,7 +451,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Whether customer has enabled static IP addresses for this connector.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#static_ip_enabled DiscoveryEngineDataConnector#static_ip_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#static_ip_enabled DiscoveryEngineDataConnector#static_ip_enabled}
 
 ---
 
@@ -447,7 +461,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The data synchronization mode supported by the data connector. The possible value can be: 'PERIODIC', 'STREAMING'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#sync_mode DiscoveryEngineDataConnector#sync_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#sync_mode DiscoveryEngineDataConnector#sync_mode}
+
+---
+
+##### `tag`<sup>Optional</sup> <a name="tag" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.Initializer.parameter.tag"></a>
+
+- *Type:* str
+
+User-facing, version-independent label for this connector.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#tag DiscoveryEngineDataConnector#tag}
 
 ---
 
@@ -457,7 +481,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#timeouts DiscoveryEngineDataConnector#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#timeouts DiscoveryEngineDataConnector#timeouts}
 
 ---
 
@@ -493,6 +517,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.putBapConfig">put_bap_config</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.putDestinationConfigs">put_destination_configs</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.putEntities">put_entities</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.putMetadata">put_metadata</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.putTimeouts">put_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.resetActionConfig">reset_action_config</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.resetAutoRunDisabled">reset_auto_run_disabled</a></code> | *No description.* |
@@ -507,10 +532,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.resetIncrementalSyncDisabled">reset_incremental_sync_disabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.resetJsonParams">reset_json_params</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.resetKmsKeyName">reset_kms_key_name</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.resetMetadata">reset_metadata</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.resetParams">reset_params</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.resetProject">reset_project</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.resetStaticIpEnabled">reset_static_ip_enabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.resetSyncMode">reset_sync_mode</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.resetTag">reset_tag</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.resetTimeouts">reset_timeouts</a></code> | *No description.* |
 
 ---
@@ -881,7 +908,7 @@ Params needed to configure the actions in the format of String-to-String (Key, V
 Contains connection
 credentials and configuration for the action connector.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#action_params DiscoveryEngineDataConnector#action_params}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#action_params DiscoveryEngineDataConnector#action_params}
 
 ---
 
@@ -891,7 +918,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Whether to create a BAP (Business Application Platform) connection for this action connector.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#create_bap_connection DiscoveryEngineDataConnector#create_bap_connection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#create_bap_connection DiscoveryEngineDataConnector#create_bap_connection}
 
 ---
 
@@ -910,7 +937,7 @@ def put_bap_config(
 
 The list of enabled actions for this connector. Supported values include: 'create_issue', 'update_issue', 'change_issue_status', 'create_comment', 'update_comment', 'upload_attachment'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#enabled_actions DiscoveryEngineDataConnector#enabled_actions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#enabled_actions DiscoveryEngineDataConnector#enabled_actions}
 
 ---
 
@@ -920,7 +947,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The connector modes supported by the BAP configuration. The possible values include: 'ACTIONS'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#supported_connector_modes DiscoveryEngineDataConnector#supported_connector_modes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#supported_connector_modes DiscoveryEngineDataConnector#supported_connector_modes}
 
 ---
 
@@ -952,6 +979,68 @@ def put_entities(
 
 ---
 
+##### `put_metadata` <a name="put_metadata" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.putMetadata"></a>
+
+```python
+def put_metadata(
+  author: str = None,
+  description: str = None,
+  note: str = None,
+  short_description: str = None,
+  title: str = None
+) -> None
+```
+
+###### `author`<sup>Optional</sup> <a name="author" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.putMetadata.parameter.author"></a>
+
+- *Type:* str
+
+The party that authored the connector, e.g. "Google" or a third-party provider name.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#author DiscoveryEngineDataConnector#author}
+
+---
+
+###### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.putMetadata.parameter.description"></a>
+
+- *Type:* str
+
+Human-readable description of the connector.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#description DiscoveryEngineDataConnector#description}
+
+---
+
+###### `note`<sup>Optional</sup> <a name="note" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.putMetadata.parameter.note"></a>
+
+- *Type:* str
+
+Free-form, multi-line note about the connector's capabilities.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#note DiscoveryEngineDataConnector#note}
+
+---
+
+###### `short_description`<sup>Optional</sup> <a name="short_description" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.putMetadata.parameter.shortDescription"></a>
+
+- *Type:* str
+
+Short, subtitle-length description of the connector.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#short_description DiscoveryEngineDataConnector#short_description}
+
+---
+
+###### `title`<sup>Optional</sup> <a name="title" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.putMetadata.parameter.title"></a>
+
+- *Type:* str
+
+Display title of the connector.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#title DiscoveryEngineDataConnector#title}
+
+---
+
 ##### `put_timeouts` <a name="put_timeouts" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.putTimeouts"></a>
 
 ```python
@@ -966,7 +1055,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#create DiscoveryEngineDataConnector#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#create DiscoveryEngineDataConnector#create}.
 
 ---
 
@@ -974,7 +1063,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#delete DiscoveryEngineDataConnector#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#delete DiscoveryEngineDataConnector#delete}.
 
 ---
 
@@ -982,7 +1071,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#update DiscoveryEngineDataConnector#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#update DiscoveryEngineDataConnector#update}.
 
 ---
 
@@ -1064,6 +1153,12 @@ def reset_json_params() -> None
 def reset_kms_key_name() -> None
 ```
 
+##### `reset_metadata` <a name="reset_metadata" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.resetMetadata"></a>
+
+```python
+def reset_metadata() -> None
+```
+
 ##### `reset_params` <a name="reset_params" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.resetParams"></a>
 
 ```python
@@ -1086,6 +1181,12 @@ def reset_static_ip_enabled() -> None
 
 ```python
 def reset_sync_mode() -> None
+```
+
+##### `reset_tag` <a name="reset_tag" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.resetTag"></a>
+
+```python
+def reset_tag() -> None
 ```
 
 ##### `reset_timeouts` <a name="reset_timeouts" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.resetTimeouts"></a>
@@ -1208,7 +1309,7 @@ The construct id used in the generated config for the DiscoveryEngineDataConnect
 
 The id of the existing DiscoveryEngineDataConnector that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1249,6 +1350,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.property.errors">errors</a></code> | <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorErrorsList">DiscoveryEngineDataConnectorErrorsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.property.lastSyncTime">last_sync_time</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.property.latestPauseTime">latest_pause_time</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.property.metadata">metadata</a></code> | <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference">DiscoveryEngineDataConnectorMetadataOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.property.privateConnectivityProjectId">private_connectivity_project_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.property.realtimeState">realtime_state</a></code> | <code>str</code> | *No description.* |
@@ -1273,11 +1375,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.property.jsonParamsInput">json_params_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.property.kmsKeyNameInput">kms_key_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.property.locationInput">location_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.property.metadataInput">metadata_input</a></code> | <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadata">DiscoveryEngineDataConnectorMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.property.paramsInput">params_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.property.refreshIntervalInput">refresh_interval_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.property.staticIpEnabledInput">static_ip_enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.property.syncModeInput">sync_mode_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.property.tagInput">tag_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorTimeouts">DiscoveryEngineDataConnectorTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.property.autoRunDisabled">auto_run_disabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.property.collectionDisplayName">collection_display_name</a></code> | <code>str</code> | *No description.* |
@@ -1297,6 +1401,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.property.refreshInterval">refresh_interval</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.property.staticIpEnabled">static_ip_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.property.syncMode">sync_mode</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.property.tag">tag</a></code> | <code>str</code> | *No description.* |
 
 ---
 
@@ -1552,6 +1657,16 @@ latest_pause_time: str
 
 ---
 
+##### `metadata`<sup>Required</sup> <a name="metadata" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.property.metadata"></a>
+
+```python
+metadata: DiscoveryEngineDataConnectorMetadataOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference">DiscoveryEngineDataConnectorMetadataOutputReference</a>
+
+---
+
 ##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.property.name"></a>
 
 ```python
@@ -1792,6 +1907,16 @@ location_input: str
 
 ---
 
+##### `metadata_input`<sup>Optional</sup> <a name="metadata_input" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.property.metadataInput"></a>
+
+```python
+metadata_input: DiscoveryEngineDataConnectorMetadata
+```
+
+- *Type:* <a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadata">DiscoveryEngineDataConnectorMetadata</a>
+
+---
+
 ##### `params_input`<sup>Optional</sup> <a name="params_input" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.property.paramsInput"></a>
 
 ```python
@@ -1836,6 +1961,16 @@ static_ip_enabled_input: bool | IResolvable
 
 ```python
 sync_mode_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `tag_input`<sup>Optional</sup> <a name="tag_input" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.property.tagInput"></a>
+
+```python
+tag_input: str
 ```
 
 - *Type:* str
@@ -2032,6 +2167,16 @@ sync_mode: str
 
 ---
 
+##### `tag`<sup>Required</sup> <a name="tag" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector.property.tag"></a>
+
+```python
+tag: str
+```
+
+- *Type:* str
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -2087,7 +2232,7 @@ Params needed to configure the actions in the format of String-to-String (Key, V
 Contains connection
 credentials and configuration for the action connector.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#action_params DiscoveryEngineDataConnector#action_params}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#action_params DiscoveryEngineDataConnector#action_params}
 
 ---
 
@@ -2101,7 +2246,7 @@ create_bap_connection: bool | IResolvable
 
 Whether to create a BAP (Business Application Platform) connection for this action connector.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#create_bap_connection DiscoveryEngineDataConnector#create_bap_connection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#create_bap_connection DiscoveryEngineDataConnector#create_bap_connection}
 
 ---
 
@@ -2137,7 +2282,7 @@ enabled_actions: typing.List[str]
 
 The list of enabled actions for this connector. Supported values include: 'create_issue', 'update_issue', 'change_issue_status', 'create_comment', 'update_comment', 'upload_attachment'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#enabled_actions DiscoveryEngineDataConnector#enabled_actions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#enabled_actions DiscoveryEngineDataConnector#enabled_actions}
 
 ---
 
@@ -2151,7 +2296,7 @@ supported_connector_modes: typing.List[str]
 
 The connector modes supported by the BAP configuration. The possible values include: 'ACTIONS'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#supported_connector_modes DiscoveryEngineDataConnector#supported_connector_modes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#supported_connector_modes DiscoveryEngineDataConnector#supported_connector_modes}
 
 ---
 
@@ -2188,10 +2333,12 @@ discoveryEngineDataConnector.DiscoveryEngineDataConnectorConfig(
   incremental_sync_disabled: bool | IResolvable = None,
   json_params: str = None,
   kms_key_name: str = None,
+  metadata: DiscoveryEngineDataConnectorMetadata = None,
   params: typing.Mapping[str] = None,
   project: str = None,
   static_ip_enabled: bool | IResolvable = None,
   sync_mode: str = None,
+  tag: str = None,
   timeouts: DiscoveryEngineDataConnectorTimeouts = None
 )
 ```
@@ -2220,15 +2367,17 @@ discoveryEngineDataConnector.DiscoveryEngineDataConnectorConfig(
 | <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorConfig.property.destinationConfigs">destination_configs</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorDestinationConfigs">DiscoveryEngineDataConnectorDestinationConfigs</a>]</code> | destination_configs block. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorConfig.property.entities">entities</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorEntities">DiscoveryEngineDataConnectorEntities</a>]</code> | entities block. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#id DiscoveryEngineDataConnector#id}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#id DiscoveryEngineDataConnector#id}. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorConfig.property.incrementalRefreshInterval">incremental_refresh_interval</a></code> | <code>str</code> | The refresh interval specifically for incremental data syncs. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorConfig.property.incrementalSyncDisabled">incremental_sync_disabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Indicates whether incremental syncs are paused for this connector. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorConfig.property.jsonParams">json_params</a></code> | <code>str</code> | Params needed to access the source in the format of json string. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorConfig.property.kmsKeyName">kms_key_name</a></code> | <code>str</code> | The KMS key to be used to protect the DataStores managed by this connector. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorConfig.property.metadata">metadata</a></code> | <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadata">DiscoveryEngineDataConnectorMetadata</a></code> | metadata block. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorConfig.property.params">params</a></code> | <code>typing.Mapping[str]</code> | Params needed to access the source in the format of String-to-String (Key, Value) pairs. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#project DiscoveryEngineDataConnector#project}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#project DiscoveryEngineDataConnector#project}. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorConfig.property.staticIpEnabled">static_ip_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether customer has enabled static IP addresses for this connector. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorConfig.property.syncMode">sync_mode</a></code> | <code>str</code> | The data synchronization mode supported by the data connector. The possible value can be: 'PERIODIC', 'STREAMING'. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorConfig.property.tag">tag</a></code> | <code>str</code> | User-facing, version-independent label for this connector. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorTimeouts">DiscoveryEngineDataConnectorTimeouts</a></code> | timeouts block. |
 
 ---
@@ -2316,7 +2465,7 @@ The display name of the Collection.
 Should be human readable, used to display collections in the Console
 Dashboard. UTF-8 encoded string with limit of 1024 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#collection_display_name DiscoveryEngineDataConnector#collection_display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#collection_display_name DiscoveryEngineDataConnector#collection_display_name}
 
 ---
 
@@ -2337,7 +2486,7 @@ This field must conform to [RFC-1034](https://tools.ietf.org/html/rfc1034)
 standard with a length limit of 63 characters. Otherwise, an
 INVALID_ARGUMENT error is returned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#collection_id DiscoveryEngineDataConnector#collection_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#collection_id DiscoveryEngineDataConnector#collection_id}
 
 ---
 
@@ -2404,7 +2553,7 @@ Preview connectors:
 * 'workday'
 * 'zendesk'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#data_source DiscoveryEngineDataConnector#data_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#data_source DiscoveryEngineDataConnector#data_source}
 
 ---
 
@@ -2418,7 +2567,7 @@ location: str
 
 The geographic location where the data store should reside. The value can only be one of "global", "us" and "eu".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#location DiscoveryEngineDataConnector#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#location DiscoveryEngineDataConnector#location}
 
 ---
 
@@ -2438,7 +2587,7 @@ minimum is 30 minutes and maximum is 7 days. When the refresh interval is
 set to the same value as the incremental refresh interval, incremental
 sync will be disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#refresh_interval DiscoveryEngineDataConnector#refresh_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#refresh_interval DiscoveryEngineDataConnector#refresh_interval}
 
 ---
 
@@ -2452,7 +2601,7 @@ action_config: DiscoveryEngineDataConnectorActionConfig
 
 action_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#action_config DiscoveryEngineDataConnector#action_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#action_config DiscoveryEngineDataConnector#action_config}
 
 ---
 
@@ -2466,7 +2615,7 @@ auto_run_disabled: bool | IResolvable
 
 Indicates whether full syncs are paused for this connector.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#auto_run_disabled DiscoveryEngineDataConnector#auto_run_disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#auto_run_disabled DiscoveryEngineDataConnector#auto_run_disabled}
 
 ---
 
@@ -2480,7 +2629,7 @@ bap_config: DiscoveryEngineDataConnectorBapConfig
 
 bap_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#bap_config DiscoveryEngineDataConnector#bap_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#bap_config DiscoveryEngineDataConnector#bap_config}
 
 ---
 
@@ -2494,7 +2643,7 @@ connector_modes: typing.List[str]
 
 The modes enabled for this connector. The possible value can be: 'DATA_INGESTION', 'ACTIONS', 'FEDERATED' 'EUA', 'FEDERATED_AND_EUA'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#connector_modes DiscoveryEngineDataConnector#connector_modes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#connector_modes DiscoveryEngineDataConnector#connector_modes}
 
 ---
 
@@ -2508,7 +2657,7 @@ data_source_version: typing.Union[int, float]
 
 The version of the data source. For example, '3' for Jira v3.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#data_source_version DiscoveryEngineDataConnector#data_source_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#data_source_version DiscoveryEngineDataConnector#data_source_version}
 
 ---
 
@@ -2529,7 +2678,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#deletion_policy DiscoveryEngineDataConnector#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#deletion_policy DiscoveryEngineDataConnector#deletion_policy}
 
 ---
 
@@ -2543,7 +2692,7 @@ destination_configs: IResolvable | typing.List[DiscoveryEngineDataConnectorDesti
 
 destination_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#destination_configs DiscoveryEngineDataConnector#destination_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#destination_configs DiscoveryEngineDataConnector#destination_configs}
 
 ---
 
@@ -2557,7 +2706,7 @@ entities: IResolvable | typing.List[DiscoveryEngineDataConnectorEntities]
 
 entities block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#entities DiscoveryEngineDataConnector#entities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#entities DiscoveryEngineDataConnector#entities}
 
 ---
 
@@ -2569,7 +2718,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#id DiscoveryEngineDataConnector#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#id DiscoveryEngineDataConnector#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2593,7 +2742,7 @@ connectors. When the refresh interval is
 set to the same value as the incremental refresh interval, incremental
 sync will be disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#incremental_refresh_interval DiscoveryEngineDataConnector#incremental_refresh_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#incremental_refresh_interval DiscoveryEngineDataConnector#incremental_refresh_interval}
 
 ---
 
@@ -2607,7 +2756,7 @@ incremental_sync_disabled: bool | IResolvable
 
 Indicates whether incremental syncs are paused for this connector.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#incremental_sync_disabled DiscoveryEngineDataConnector#incremental_sync_disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#incremental_sync_disabled DiscoveryEngineDataConnector#incremental_sync_disabled}
 
 ---
 
@@ -2621,7 +2770,7 @@ json_params: str
 
 Params needed to access the source in the format of json string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#json_params DiscoveryEngineDataConnector#json_params}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#json_params DiscoveryEngineDataConnector#json_params}
 
 ---
 
@@ -2640,7 +2789,21 @@ protections.
 If this field is set and processed successfully, the DataStores created by
 this connector will be protected by the KMS key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#kms_key_name DiscoveryEngineDataConnector#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#kms_key_name DiscoveryEngineDataConnector#kms_key_name}
+
+---
+
+##### `metadata`<sup>Optional</sup> <a name="metadata" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorConfig.property.metadata"></a>
+
+```python
+metadata: DiscoveryEngineDataConnectorMetadata
+```
+
+- *Type:* <a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadata">DiscoveryEngineDataConnectorMetadata</a>
+
+metadata block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#metadata DiscoveryEngineDataConnector#metadata}
 
 ---
 
@@ -2654,7 +2817,7 @@ params: typing.Mapping[str]
 
 Params needed to access the source in the format of String-to-String (Key, Value) pairs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#params DiscoveryEngineDataConnector#params}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#params DiscoveryEngineDataConnector#params}
 
 ---
 
@@ -2666,7 +2829,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#project DiscoveryEngineDataConnector#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#project DiscoveryEngineDataConnector#project}.
 
 ---
 
@@ -2680,7 +2843,7 @@ static_ip_enabled: bool | IResolvable
 
 Whether customer has enabled static IP addresses for this connector.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#static_ip_enabled DiscoveryEngineDataConnector#static_ip_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#static_ip_enabled DiscoveryEngineDataConnector#static_ip_enabled}
 
 ---
 
@@ -2694,7 +2857,21 @@ sync_mode: str
 
 The data synchronization mode supported by the data connector. The possible value can be: 'PERIODIC', 'STREAMING'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#sync_mode DiscoveryEngineDataConnector#sync_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#sync_mode DiscoveryEngineDataConnector#sync_mode}
+
+---
+
+##### `tag`<sup>Optional</sup> <a name="tag" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorConfig.property.tag"></a>
+
+```python
+tag: str
+```
+
+- *Type:* str
+
+User-facing, version-independent label for this connector.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#tag DiscoveryEngineDataConnector#tag}
 
 ---
 
@@ -2708,7 +2885,7 @@ timeouts: DiscoveryEngineDataConnectorTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#timeouts DiscoveryEngineDataConnector#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#timeouts DiscoveryEngineDataConnector#timeouts}
 
 ---
 
@@ -2746,7 +2923,7 @@ destinations: IResolvable | typing.List[DiscoveryEngineDataConnectorDestinationC
 
 destinations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#destinations DiscoveryEngineDataConnector#destinations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#destinations DiscoveryEngineDataConnector#destinations}
 
 ---
 
@@ -2760,7 +2937,7 @@ key: str
 
 The key of the destination configuration, for example 'url'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#key DiscoveryEngineDataConnector#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#key DiscoveryEngineDataConnector#key}
 
 ---
 
@@ -2774,7 +2951,7 @@ params: str
 
 Additional parameters for this destination config in structured json format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#params DiscoveryEngineDataConnector#params}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#params DiscoveryEngineDataConnector#params}
 
 ---
 
@@ -2810,7 +2987,7 @@ host: str
 
 The host of the destination, for example 'https://example.atlassian.net'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#host DiscoveryEngineDataConnector#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#host DiscoveryEngineDataConnector#host}
 
 ---
 
@@ -2824,7 +3001,7 @@ port: typing.Union[int, float]
 
 Target port number accepted by the destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#port DiscoveryEngineDataConnector#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#port DiscoveryEngineDataConnector#port}
 
 ---
 
@@ -2868,7 +3045,7 @@ Supported values by data source:
 * Jira: project, issue, attachment, comment, worklog
 * Confluence: 'Content', 'Space'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#entity_name DiscoveryEngineDataConnector#entity_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#entity_name DiscoveryEngineDataConnector#entity_name}
 
 ---
 
@@ -2891,7 +3068,7 @@ Value: The key property to map a field to, such as 'title', and
 * 'description': The description for data record. This would be displayed
   on search results.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#key_property_mappings DiscoveryEngineDataConnector#key_property_mappings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#key_property_mappings DiscoveryEngineDataConnector#key_property_mappings}
 
 ---
 
@@ -2905,7 +3082,7 @@ params: str
 
 The parameters for the entity to facilitate data ingestion.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#params DiscoveryEngineDataConnector#params}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#params DiscoveryEngineDataConnector#params}
 
 ---
 
@@ -2919,6 +3096,104 @@ from cdktn_provider_google import discovery_engine_data_connector
 discoveryEngineDataConnector.DiscoveryEngineDataConnectorErrors()
 ```
 
+
+### DiscoveryEngineDataConnectorMetadata <a name="DiscoveryEngineDataConnectorMetadata" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadata"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadata.Initializer"></a>
+
+```python
+from cdktn_provider_google import discovery_engine_data_connector
+
+discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadata(
+  author: str = None,
+  description: str = None,
+  note: str = None,
+  short_description: str = None,
+  title: str = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadata.property.author">author</a></code> | <code>str</code> | The party that authored the connector, e.g. "Google" or a third-party provider name. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadata.property.description">description</a></code> | <code>str</code> | Human-readable description of the connector. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadata.property.note">note</a></code> | <code>str</code> | Free-form, multi-line note about the connector's capabilities. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadata.property.shortDescription">short_description</a></code> | <code>str</code> | Short, subtitle-length description of the connector. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadata.property.title">title</a></code> | <code>str</code> | Display title of the connector. |
+
+---
+
+##### `author`<sup>Optional</sup> <a name="author" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadata.property.author"></a>
+
+```python
+author: str
+```
+
+- *Type:* str
+
+The party that authored the connector, e.g. "Google" or a third-party provider name.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#author DiscoveryEngineDataConnector#author}
+
+---
+
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadata.property.description"></a>
+
+```python
+description: str
+```
+
+- *Type:* str
+
+Human-readable description of the connector.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#description DiscoveryEngineDataConnector#description}
+
+---
+
+##### `note`<sup>Optional</sup> <a name="note" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadata.property.note"></a>
+
+```python
+note: str
+```
+
+- *Type:* str
+
+Free-form, multi-line note about the connector's capabilities.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#note DiscoveryEngineDataConnector#note}
+
+---
+
+##### `short_description`<sup>Optional</sup> <a name="short_description" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadata.property.shortDescription"></a>
+
+```python
+short_description: str
+```
+
+- *Type:* str
+
+Short, subtitle-length description of the connector.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#short_description DiscoveryEngineDataConnector#short_description}
+
+---
+
+##### `title`<sup>Optional</sup> <a name="title" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadata.property.title"></a>
+
+```python
+title: str
+```
+
+- *Type:* str
+
+Display title of the connector.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#title DiscoveryEngineDataConnector#title}
+
+---
 
 ### DiscoveryEngineDataConnectorTimeouts <a name="DiscoveryEngineDataConnectorTimeouts" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorTimeouts"></a>
 
@@ -2938,9 +3213,9 @@ discoveryEngineDataConnector.DiscoveryEngineDataConnectorTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#create DiscoveryEngineDataConnector#create}. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#delete DiscoveryEngineDataConnector#delete}. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#update DiscoveryEngineDataConnector#update}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#create DiscoveryEngineDataConnector#create}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#delete DiscoveryEngineDataConnector#delete}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#update DiscoveryEngineDataConnector#update}. |
 
 ---
 
@@ -2952,7 +3227,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#create DiscoveryEngineDataConnector#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#create DiscoveryEngineDataConnector#create}.
 
 ---
 
@@ -2964,7 +3239,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#delete DiscoveryEngineDataConnector#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#delete DiscoveryEngineDataConnector#delete}.
 
 ---
 
@@ -2976,7 +3251,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_data_connector#update DiscoveryEngineDataConnector#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_data_connector#update DiscoveryEngineDataConnector#update}.
 
 ---
 
@@ -5778,6 +6053,425 @@ internal_value: DiscoveryEngineDataConnectorErrors
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorErrors">DiscoveryEngineDataConnectorErrors</a>
+
+---
+
+
+### DiscoveryEngineDataConnectorMetadataOutputReference <a name="DiscoveryEngineDataConnectorMetadataOutputReference" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_google import discovery_engine_data_connector
+
+discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.resetAuthor">reset_author</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.resetDescription">reset_description</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.resetNote">reset_note</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.resetShortDescription">reset_short_description</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.resetTitle">reset_title</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_author` <a name="reset_author" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.resetAuthor"></a>
+
+```python
+def reset_author() -> None
+```
+
+##### `reset_description` <a name="reset_description" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.resetDescription"></a>
+
+```python
+def reset_description() -> None
+```
+
+##### `reset_note` <a name="reset_note" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.resetNote"></a>
+
+```python
+def reset_note() -> None
+```
+
+##### `reset_short_description` <a name="reset_short_description" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.resetShortDescription"></a>
+
+```python
+def reset_short_description() -> None
+```
+
+##### `reset_title` <a name="reset_title" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.resetTitle"></a>
+
+```python
+def reset_title() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.property.authorInput">author_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.property.noteInput">note_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.property.shortDescriptionInput">short_description_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.property.titleInput">title_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.property.author">author</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.property.description">description</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.property.note">note</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.property.shortDescription">short_description</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.property.title">title</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadata">DiscoveryEngineDataConnectorMetadata</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `author_input`<sup>Optional</sup> <a name="author_input" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.property.authorInput"></a>
+
+```python
+author_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.property.descriptionInput"></a>
+
+```python
+description_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `note_input`<sup>Optional</sup> <a name="note_input" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.property.noteInput"></a>
+
+```python
+note_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `short_description_input`<sup>Optional</sup> <a name="short_description_input" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.property.shortDescriptionInput"></a>
+
+```python
+short_description_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `title_input`<sup>Optional</sup> <a name="title_input" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.property.titleInput"></a>
+
+```python
+title_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `author`<sup>Required</sup> <a name="author" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.property.author"></a>
+
+```python
+author: str
+```
+
+- *Type:* str
+
+---
+
+##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.property.description"></a>
+
+```python
+description: str
+```
+
+- *Type:* str
+
+---
+
+##### `note`<sup>Required</sup> <a name="note" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.property.note"></a>
+
+```python
+note: str
+```
+
+- *Type:* str
+
+---
+
+##### `short_description`<sup>Required</sup> <a name="short_description" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.property.shortDescription"></a>
+
+```python
+short_description: str
+```
+
+- *Type:* str
+
+---
+
+##### `title`<sup>Required</sup> <a name="title" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.property.title"></a>
+
+```python
+title: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadataOutputReference.property.internalValue"></a>
+
+```python
+internal_value: DiscoveryEngineDataConnectorMetadata
+```
+
+- *Type:* <a href="#@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorMetadata">DiscoveryEngineDataConnectorMetadata</a>
 
 ---
 

@@ -4,12 +4,12 @@
 
 ### OracleDatabaseGoldengateDeployment <a name="OracleDatabaseGoldengateDeployment" id="@cdktn/provider-google.oracleDatabaseGoldengateDeployment.OracleDatabaseGoldengateDeployment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_goldengate_deployment google_oracle_database_goldengate_deployment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_goldengate_deployment google_oracle_database_goldengate_deployment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseGoldengateDeployment.OracleDatabaseGoldengateDeployment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengatedeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/oracledatabasegoldengatedeployment"
 
 oracledatabasegoldengatedeployment.NewOracleDatabaseGoldengateDeployment(scope Construct, id *string, config OracleDatabaseGoldengateDeploymentConfig) OracleDatabaseGoldengateDeployment
 ```
@@ -475,7 +475,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.oracleDatabaseGoldengateDeployment.OracleDatabaseGoldengateDeployment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengatedeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/oracledatabasegoldengatedeployment"
 
 oracledatabasegoldengatedeployment.OracleDatabaseGoldengateDeployment_IsConstruct(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.oracleDatabaseGoldengateDeployment.OracleDatabaseGoldengateDeployment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengatedeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/oracledatabasegoldengatedeployment"
 
 oracledatabasegoldengatedeployment.OracleDatabaseGoldengateDeployment_IsTerraformElement(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ oracledatabasegoldengatedeployment.OracleDatabaseGoldengateDeployment_IsTerrafor
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.oracleDatabaseGoldengateDeployment.OracleDatabaseGoldengateDeployment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengatedeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/oracledatabasegoldengatedeployment"
 
 oracledatabasegoldengatedeployment.OracleDatabaseGoldengateDeployment_IsTerraformResource(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ oracledatabasegoldengatedeployment.OracleDatabaseGoldengateDeployment_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.oracleDatabaseGoldengateDeployment.OracleDatabaseGoldengateDeployment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengatedeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/oracledatabasegoldengatedeployment"
 
 oracledatabasegoldengatedeployment.OracleDatabaseGoldengateDeployment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -564,7 +564,7 @@ The construct id used in the generated config for the OracleDatabaseGoldengateDe
 
 The id of the existing OracleDatabaseGoldengateDeployment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_goldengate_deployment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_goldengate_deployment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1094,7 +1094,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseGoldengateDeployment.OracleDatabaseGoldengateDeploymentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengatedeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/oracledatabasegoldengatedeployment"
 
 &oracledatabasegoldengatedeployment.OracleDatabaseGoldengateDeploymentConfig {
 	Connection: interface{},
@@ -1108,14 +1108,14 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasego
 	GoldengateDeploymentId: *string,
 	Location: *string,
 	OdbSubnet: *string,
-	Properties: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseGoldengateDeployment.OracleDatabaseGoldengateDeploymentProperties,
+	Properties: github.com/cdktn-io/cdktn-provider-google-go/google/v21.oracleDatabaseGoldengateDeployment.OracleDatabaseGoldengateDeploymentProperties,
 	DeletionPolicy: *string,
 	GcpOracleZone: *string,
 	Id: *string,
 	Labels: *map[string]*string,
 	OdbNetwork: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseGoldengateDeployment.OracleDatabaseGoldengateDeploymentTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.oracleDatabaseGoldengateDeployment.OracleDatabaseGoldengateDeploymentTimeouts,
 }
 ```
 
@@ -1137,10 +1137,10 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasego
 | <code><a href="#@cdktn/provider-google.oracleDatabaseGoldengateDeployment.OracleDatabaseGoldengateDeploymentConfig.property.properties">Properties</a></code> | <code><a href="#@cdktn/provider-google.oracleDatabaseGoldengateDeployment.OracleDatabaseGoldengateDeploymentProperties">OracleDatabaseGoldengateDeploymentProperties</a></code> | properties block. |
 | <code><a href="#@cdktn/provider-google.oracleDatabaseGoldengateDeployment.OracleDatabaseGoldengateDeploymentConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.oracleDatabaseGoldengateDeployment.OracleDatabaseGoldengateDeploymentConfig.property.gcpOracleZone">GcpOracleZone</a></code> | <code>*string</code> | The GCP Oracle zone where Oracle GoldengateDeployment is hosted. |
-| <code><a href="#@cdktn/provider-google.oracleDatabaseGoldengateDeployment.OracleDatabaseGoldengateDeploymentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_goldengate_deployment#id OracleDatabaseGoldengateDeployment#id}. |
+| <code><a href="#@cdktn/provider-google.oracleDatabaseGoldengateDeployment.OracleDatabaseGoldengateDeploymentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_goldengate_deployment#id OracleDatabaseGoldengateDeployment#id}. |
 | <code><a href="#@cdktn/provider-google.oracleDatabaseGoldengateDeployment.OracleDatabaseGoldengateDeploymentConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | The labels or tags associated with the GoldengateDeployment. |
 | <code><a href="#@cdktn/provider-google.oracleDatabaseGoldengateDeployment.OracleDatabaseGoldengateDeploymentConfig.property.odbNetwork">OdbNetwork</a></code> | <code>*string</code> | The name of the OdbNetwork associated with the GoldengateDeployment. |
-| <code><a href="#@cdktn/provider-google.oracleDatabaseGoldengateDeployment.OracleDatabaseGoldengateDeploymentConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_goldengate_deployment#project OracleDatabaseGoldengateDeployment#project}. |
+| <code><a href="#@cdktn/provider-google.oracleDatabaseGoldengateDeployment.OracleDatabaseGoldengateDeploymentConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_goldengate_deployment#project OracleDatabaseGoldengateDeployment#project}. |
 | <code><a href="#@cdktn/provider-google.oracleDatabaseGoldengateDeployment.OracleDatabaseGoldengateDeploymentConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.oracleDatabaseGoldengateDeployment.OracleDatabaseGoldengateDeploymentTimeouts">OracleDatabaseGoldengateDeploymentTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1225,7 +1225,7 @@ DisplayName *string
 
 The display name for the GoldengateDeployment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_goldengate_deployment#display_name OracleDatabaseGoldengateDeployment#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_goldengate_deployment#display_name OracleDatabaseGoldengateDeployment#display_name}
 
 ---
 
@@ -1244,7 +1244,7 @@ restricted to (^[a-z](%5Ba-z0-9-%5D%7B0,61%7D%5Ba-z0-9%5D)?$) and must be a maxi
 63 characters in length. The value must start with a letter and end with a
 letter or a number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_goldengate_deployment#goldengate_deployment_id OracleDatabaseGoldengateDeployment#goldengate_deployment_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_goldengate_deployment#goldengate_deployment_id OracleDatabaseGoldengateDeployment#goldengate_deployment_id}
 
 ---
 
@@ -1258,7 +1258,7 @@ Location *string
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_goldengate_deployment#location OracleDatabaseGoldengateDeployment#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_goldengate_deployment#location OracleDatabaseGoldengateDeployment#location}
 
 ---
 
@@ -1272,7 +1272,7 @@ OdbSubnet *string
 
 The name of the OdbSubnet associated with the GoldengateDeployment for IP allocation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_goldengate_deployment#odb_subnet OracleDatabaseGoldengateDeployment#odb_subnet}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_goldengate_deployment#odb_subnet OracleDatabaseGoldengateDeployment#odb_subnet}
 
 ---
 
@@ -1286,7 +1286,7 @@ Properties OracleDatabaseGoldengateDeploymentProperties
 
 properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_goldengate_deployment#properties OracleDatabaseGoldengateDeployment#properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_goldengate_deployment#properties OracleDatabaseGoldengateDeployment#properties}
 
 ---
 
@@ -1307,7 +1307,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_goldengate_deployment#deletion_policy OracleDatabaseGoldengateDeployment#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_goldengate_deployment#deletion_policy OracleDatabaseGoldengateDeployment#deletion_policy}
 
 ---
 
@@ -1324,7 +1324,7 @@ The GCP Oracle zone where Oracle GoldengateDeployment is hosted.
 Example: us-east4-b-r2.
 If not specified, the system will pick a zone based on availability.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_goldengate_deployment#gcp_oracle_zone OracleDatabaseGoldengateDeployment#gcp_oracle_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_goldengate_deployment#gcp_oracle_zone OracleDatabaseGoldengateDeployment#gcp_oracle_zone}
 
 ---
 
@@ -1336,7 +1336,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_goldengate_deployment#id OracleDatabaseGoldengateDeployment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_goldengate_deployment#id OracleDatabaseGoldengateDeployment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1356,7 +1356,7 @@ The labels or tags associated with the GoldengateDeployment.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_goldengate_deployment#labels OracleDatabaseGoldengateDeployment#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_goldengate_deployment#labels OracleDatabaseGoldengateDeployment#labels}
 
 ---
 
@@ -1370,7 +1370,7 @@ OdbNetwork *string
 
 The name of the OdbNetwork associated with the GoldengateDeployment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_goldengate_deployment#odb_network OracleDatabaseGoldengateDeployment#odb_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_goldengate_deployment#odb_network OracleDatabaseGoldengateDeployment#odb_network}
 
 ---
 
@@ -1382,7 +1382,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_goldengate_deployment#project OracleDatabaseGoldengateDeployment#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_goldengate_deployment#project OracleDatabaseGoldengateDeployment#project}.
 
 ---
 
@@ -1396,7 +1396,7 @@ Timeouts OracleDatabaseGoldengateDeploymentTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_goldengate_deployment#timeouts OracleDatabaseGoldengateDeployment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_goldengate_deployment#timeouts OracleDatabaseGoldengateDeployment#timeouts}
 
 ---
 
@@ -1405,20 +1405,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseGoldengateDeployment.OracleDatabaseGoldengateDeploymentProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengatedeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/oracledatabasegoldengatedeployment"
 
 &oracledatabasegoldengatedeployment.OracleDatabaseGoldengateDeploymentProperties {
 	DeploymentType: *string,
-	OggData: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseGoldengateDeployment.OracleDatabaseGoldengateDeploymentPropertiesOggData,
-	BackupSchedule: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseGoldengateDeployment.OracleDatabaseGoldengateDeploymentPropertiesBackupSchedule,
+	OggData: github.com/cdktn-io/cdktn-provider-google-go/google/v21.oracleDatabaseGoldengateDeployment.OracleDatabaseGoldengateDeploymentPropertiesOggData,
+	BackupSchedule: github.com/cdktn-io/cdktn-provider-google-go/google/v21.oracleDatabaseGoldengateDeployment.OracleDatabaseGoldengateDeploymentPropertiesBackupSchedule,
 	CpuCoreCount: *f64,
-	DeploymentDiagnosticData: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseGoldengateDeployment.OracleDatabaseGoldengateDeploymentPropertiesDeploymentDiagnosticData,
+	DeploymentDiagnosticData: github.com/cdktn-io/cdktn-provider-google-go/google/v21.oracleDatabaseGoldengateDeployment.OracleDatabaseGoldengateDeploymentPropertiesDeploymentDiagnosticData,
 	Description: *string,
 	EnvironmentType: *string,
 	IsAutoScalingEnabled: interface{},
 	LicenseModel: *string,
-	MaintenanceConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseGoldengateDeployment.OracleDatabaseGoldengateDeploymentPropertiesMaintenanceConfig,
-	MaintenanceWindow: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseGoldengateDeployment.OracleDatabaseGoldengateDeploymentPropertiesMaintenanceWindow,
+	MaintenanceConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.oracleDatabaseGoldengateDeployment.OracleDatabaseGoldengateDeploymentPropertiesMaintenanceConfig,
+	MaintenanceWindow: github.com/cdktn-io/cdktn-provider-google-go/google/v21.oracleDatabaseGoldengateDeployment.OracleDatabaseGoldengateDeploymentPropertiesMaintenanceWindow,
 }
 ```
 
@@ -1450,7 +1450,7 @@ DeploymentType *string
 
 A valid Goldengate Deployment type. For a list of supported types, use the 'ListGoldengateDeploymentTypes' operation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_goldengate_deployment#deployment_type OracleDatabaseGoldengateDeployment#deployment_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_goldengate_deployment#deployment_type OracleDatabaseGoldengateDeployment#deployment_type}
 
 ---
 
@@ -1464,7 +1464,7 @@ OggData OracleDatabaseGoldengateDeploymentPropertiesOggData
 
 ogg_data block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_goldengate_deployment#ogg_data OracleDatabaseGoldengateDeployment#ogg_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_goldengate_deployment#ogg_data OracleDatabaseGoldengateDeployment#ogg_data}
 
 ---
 
@@ -1478,7 +1478,7 @@ BackupSchedule OracleDatabaseGoldengateDeploymentPropertiesBackupSchedule
 
 backup_schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_goldengate_deployment#backup_schedule OracleDatabaseGoldengateDeployment#backup_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_goldengate_deployment#backup_schedule OracleDatabaseGoldengateDeployment#backup_schedule}
 
 ---
 
@@ -1492,7 +1492,7 @@ CpuCoreCount *f64
 
 The Minimum number of OCPUs to be made available for this Deployment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_goldengate_deployment#cpu_core_count OracleDatabaseGoldengateDeployment#cpu_core_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_goldengate_deployment#cpu_core_count OracleDatabaseGoldengateDeployment#cpu_core_count}
 
 ---
 
@@ -1506,7 +1506,7 @@ DeploymentDiagnosticData OracleDatabaseGoldengateDeploymentPropertiesDeploymentD
 
 deployment_diagnostic_data block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_goldengate_deployment#deployment_diagnostic_data OracleDatabaseGoldengateDeployment#deployment_diagnostic_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_goldengate_deployment#deployment_diagnostic_data OracleDatabaseGoldengateDeployment#deployment_diagnostic_data}
 
 ---
 
@@ -1520,7 +1520,7 @@ Description *string
 
 The description of the GoldengateDeployment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_goldengate_deployment#description OracleDatabaseGoldengateDeployment#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_goldengate_deployment#description OracleDatabaseGoldengateDeployment#description}
 
 ---
 
@@ -1534,7 +1534,7 @@ EnvironmentType *string
 
 The environment type of the GoldengateDeployment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_goldengate_deployment#environment_type OracleDatabaseGoldengateDeployment#environment_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_goldengate_deployment#environment_type OracleDatabaseGoldengateDeployment#environment_type}
 
 ---
 
@@ -1548,7 +1548,7 @@ IsAutoScalingEnabled interface{}
 
 Indicates if auto scaling is enabled for the Deployment's CPU core count.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_goldengate_deployment#is_auto_scaling_enabled OracleDatabaseGoldengateDeployment#is_auto_scaling_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_goldengate_deployment#is_auto_scaling_enabled OracleDatabaseGoldengateDeployment#is_auto_scaling_enabled}
 
 ---
 
@@ -1562,7 +1562,7 @@ LicenseModel *string
 
 The Oracle license model that applies to a Deployment. Possible values: LICENSE_INCLUDED BRING_YOUR_OWN_LICENSE.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_goldengate_deployment#license_model OracleDatabaseGoldengateDeployment#license_model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_goldengate_deployment#license_model OracleDatabaseGoldengateDeployment#license_model}
 
 ---
 
@@ -1576,7 +1576,7 @@ MaintenanceConfig OracleDatabaseGoldengateDeploymentPropertiesMaintenanceConfig
 
 maintenance_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_goldengate_deployment#maintenance_config OracleDatabaseGoldengateDeployment#maintenance_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_goldengate_deployment#maintenance_config OracleDatabaseGoldengateDeployment#maintenance_config}
 
 ---
 
@@ -1590,7 +1590,7 @@ MaintenanceWindow OracleDatabaseGoldengateDeploymentPropertiesMaintenanceWindow
 
 maintenance_window block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_goldengate_deployment#maintenance_window OracleDatabaseGoldengateDeployment#maintenance_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_goldengate_deployment#maintenance_window OracleDatabaseGoldengateDeployment#maintenance_window}
 
 ---
 
@@ -1599,7 +1599,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseGoldengateDeployment.OracleDatabaseGoldengateDeploymentPropertiesBackupSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengatedeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/oracledatabasegoldengatedeployment"
 
 &oracledatabasegoldengatedeployment.OracleDatabaseGoldengateDeploymentPropertiesBackupSchedule {
 
@@ -1612,7 +1612,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasego
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseGoldengateDeployment.OracleDatabaseGoldengateDeploymentPropertiesDeploymentDiagnosticData.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengatedeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/oracledatabasegoldengatedeployment"
 
 &oracledatabasegoldengatedeployment.OracleDatabaseGoldengateDeploymentPropertiesDeploymentDiagnosticData {
 
@@ -1625,7 +1625,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasego
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseGoldengateDeployment.OracleDatabaseGoldengateDeploymentPropertiesIngressIps.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengatedeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/oracledatabasegoldengatedeployment"
 
 &oracledatabasegoldengatedeployment.OracleDatabaseGoldengateDeploymentPropertiesIngressIps {
 
@@ -1638,7 +1638,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasego
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseGoldengateDeployment.OracleDatabaseGoldengateDeploymentPropertiesLocks.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengatedeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/oracledatabasegoldengatedeployment"
 
 &oracledatabasegoldengatedeployment.OracleDatabaseGoldengateDeploymentPropertiesLocks {
 
@@ -1651,7 +1651,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasego
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseGoldengateDeployment.OracleDatabaseGoldengateDeploymentPropertiesMaintenanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengatedeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/oracledatabasegoldengatedeployment"
 
 &oracledatabasegoldengatedeployment.OracleDatabaseGoldengateDeploymentPropertiesMaintenanceConfig {
 	BundleReleaseUpgradePeriodDays: *f64,
@@ -1689,7 +1689,7 @@ cannot be longer than service defined period for bundle releases. This
 period must be shorter or equal to major release upgrade period. Not
 passing this field during create will equate to using the service default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_goldengate_deployment#bundle_release_upgrade_period_days OracleDatabaseGoldengateDeployment#bundle_release_upgrade_period_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_goldengate_deployment#bundle_release_upgrade_period_days OracleDatabaseGoldengateDeployment#bundle_release_upgrade_period_days}
 
 ---
 
@@ -1703,7 +1703,7 @@ InterimReleaseUpgradePeriodDays *f64
 
 Defines auto upgrade period for interim releases. This period must be shorter or equal to bundle release upgrade period.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_goldengate_deployment#interim_release_upgrade_period_days OracleDatabaseGoldengateDeployment#interim_release_upgrade_period_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_goldengate_deployment#interim_release_upgrade_period_days OracleDatabaseGoldengateDeployment#interim_release_upgrade_period_days}
 
 ---
 
@@ -1721,7 +1721,7 @@ If
 auto-upgrade is enabled for interim release,  you have to specify
 interim_release_upgrade_period_days too.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_goldengate_deployment#is_interim_release_auto_upgrade_enabled OracleDatabaseGoldengateDeployment#is_interim_release_auto_upgrade_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_goldengate_deployment#is_interim_release_auto_upgrade_enabled OracleDatabaseGoldengateDeployment#is_interim_release_auto_upgrade_enabled}
 
 ---
 
@@ -1739,7 +1739,7 @@ Manually configured period
 cannot be longer than service defined period for major releases. Not
 passing this field during create will equate to using the service default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_goldengate_deployment#major_release_upgrade_period_days OracleDatabaseGoldengateDeployment#major_release_upgrade_period_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_goldengate_deployment#major_release_upgrade_period_days OracleDatabaseGoldengateDeployment#major_release_upgrade_period_days}
 
 ---
 
@@ -1758,7 +1758,7 @@ configured period cannot be longer than service defined period for security
 releases. Not passing this field during create will equate to using the
 service default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_goldengate_deployment#security_patch_upgrade_period_days OracleDatabaseGoldengateDeployment#security_patch_upgrade_period_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_goldengate_deployment#security_patch_upgrade_period_days OracleDatabaseGoldengateDeployment#security_patch_upgrade_period_days}
 
 ---
 
@@ -1767,7 +1767,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseGoldengateDeployment.OracleDatabaseGoldengateDeploymentPropertiesMaintenanceWindow.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengatedeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/oracledatabasegoldengatedeployment"
 
 &oracledatabasegoldengatedeployment.OracleDatabaseGoldengateDeploymentPropertiesMaintenanceWindow {
 	Day: *string,
@@ -1794,7 +1794,7 @@ Day *string
 
 Possible values: MONDAY TUESDAY WEDNESDAY THURSDAY FRIDAY SATURDAY SUNDAY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_goldengate_deployment#day OracleDatabaseGoldengateDeployment#day}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_goldengate_deployment#day OracleDatabaseGoldengateDeployment#day}
 
 ---
 
@@ -1808,7 +1808,7 @@ StartHour *f64
 
 Start hour for maintenance period. Hour is in UTC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_goldengate_deployment#start_hour OracleDatabaseGoldengateDeployment#start_hour}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_goldengate_deployment#start_hour OracleDatabaseGoldengateDeployment#start_hour}
 
 ---
 
@@ -1817,14 +1817,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseGoldengateDeployment.OracleDatabaseGoldengateDeploymentPropertiesOggData.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengatedeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/oracledatabasegoldengatedeployment"
 
 &oracledatabasegoldengatedeployment.OracleDatabaseGoldengateDeploymentPropertiesOggData {
 	AdminUsername: *string,
 	Deployment: *string,
 	AdminPassword: *string,
 	AdminPasswordSecretVersion: *string,
-	GroupRolesMapping: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseGoldengateDeployment.OracleDatabaseGoldengateDeploymentPropertiesOggDataGroupRolesMapping,
+	GroupRolesMapping: github.com/cdktn-io/cdktn-provider-google-go/google/v21.oracleDatabaseGoldengateDeployment.OracleDatabaseGoldengateDeploymentPropertiesOggDataGroupRolesMapping,
 	OggVersion: *string,
 }
 ```
@@ -1852,7 +1852,7 @@ AdminUsername *string
 
 The Goldengate deployment console username.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_goldengate_deployment#admin_username OracleDatabaseGoldengateDeployment#admin_username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_goldengate_deployment#admin_username OracleDatabaseGoldengateDeployment#admin_username}
 
 ---
 
@@ -1870,7 +1870,7 @@ The name must be 1 to
 32 characters long, must contain only alphanumeric characters and must
 start with a letter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_goldengate_deployment#deployment OracleDatabaseGoldengateDeployment#deployment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_goldengate_deployment#deployment OracleDatabaseGoldengateDeployment#deployment}
 
 ---
 
@@ -1884,7 +1884,7 @@ AdminPassword *string
 
 The Goldengate deployment console password in plain text.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_goldengate_deployment#admin_password OracleDatabaseGoldengateDeployment#admin_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_goldengate_deployment#admin_password OracleDatabaseGoldengateDeployment#admin_password}
 
 ---
 
@@ -1898,7 +1898,7 @@ AdminPasswordSecretVersion *string
 
 Input only. The Goldengate deployment console password secret version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_goldengate_deployment#admin_password_secret_version OracleDatabaseGoldengateDeployment#admin_password_secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_goldengate_deployment#admin_password_secret_version OracleDatabaseGoldengateDeployment#admin_password_secret_version}
 
 ---
 
@@ -1912,7 +1912,7 @@ GroupRolesMapping OracleDatabaseGoldengateDeploymentPropertiesOggDataGroupRolesM
 
 group_roles_mapping block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_goldengate_deployment#group_roles_mapping OracleDatabaseGoldengateDeployment#group_roles_mapping}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_goldengate_deployment#group_roles_mapping OracleDatabaseGoldengateDeployment#group_roles_mapping}
 
 ---
 
@@ -1926,7 +1926,7 @@ OggVersion *string
 
 Version of OGG.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_goldengate_deployment#ogg_version OracleDatabaseGoldengateDeployment#ogg_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_goldengate_deployment#ogg_version OracleDatabaseGoldengateDeployment#ogg_version}
 
 ---
 
@@ -1935,7 +1935,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseGoldengateDeployment.OracleDatabaseGoldengateDeploymentPropertiesOggDataGroupRolesMapping.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengatedeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/oracledatabasegoldengatedeployment"
 
 &oracledatabasegoldengatedeployment.OracleDatabaseGoldengateDeploymentPropertiesOggDataGroupRolesMapping {
 
@@ -1948,7 +1948,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasego
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseGoldengateDeployment.OracleDatabaseGoldengateDeploymentPropertiesPlacements.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengatedeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/oracledatabasegoldengatedeployment"
 
 &oracledatabasegoldengatedeployment.OracleDatabaseGoldengateDeploymentPropertiesPlacements {
 
@@ -1961,7 +1961,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasego
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseGoldengateDeployment.OracleDatabaseGoldengateDeploymentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengatedeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/oracledatabasegoldengatedeployment"
 
 &oracledatabasegoldengatedeployment.OracleDatabaseGoldengateDeploymentTimeouts {
 	Create: *string,
@@ -1974,9 +1974,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasego
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.oracleDatabaseGoldengateDeployment.OracleDatabaseGoldengateDeploymentTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_goldengate_deployment#create OracleDatabaseGoldengateDeployment#create}. |
-| <code><a href="#@cdktn/provider-google.oracleDatabaseGoldengateDeployment.OracleDatabaseGoldengateDeploymentTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_goldengate_deployment#delete OracleDatabaseGoldengateDeployment#delete}. |
-| <code><a href="#@cdktn/provider-google.oracleDatabaseGoldengateDeployment.OracleDatabaseGoldengateDeploymentTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_goldengate_deployment#update OracleDatabaseGoldengateDeployment#update}. |
+| <code><a href="#@cdktn/provider-google.oracleDatabaseGoldengateDeployment.OracleDatabaseGoldengateDeploymentTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_goldengate_deployment#create OracleDatabaseGoldengateDeployment#create}. |
+| <code><a href="#@cdktn/provider-google.oracleDatabaseGoldengateDeployment.OracleDatabaseGoldengateDeploymentTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_goldengate_deployment#delete OracleDatabaseGoldengateDeployment#delete}. |
+| <code><a href="#@cdktn/provider-google.oracleDatabaseGoldengateDeployment.OracleDatabaseGoldengateDeploymentTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_goldengate_deployment#update OracleDatabaseGoldengateDeployment#update}. |
 
 ---
 
@@ -1988,7 +1988,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_goldengate_deployment#create OracleDatabaseGoldengateDeployment#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_goldengate_deployment#create OracleDatabaseGoldengateDeployment#create}.
 
 ---
 
@@ -2000,7 +2000,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_goldengate_deployment#delete OracleDatabaseGoldengateDeployment#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_goldengate_deployment#delete OracleDatabaseGoldengateDeployment#delete}.
 
 ---
 
@@ -2012,7 +2012,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_goldengate_deployment#update OracleDatabaseGoldengateDeployment#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_goldengate_deployment#update OracleDatabaseGoldengateDeployment#update}.
 
 ---
 
@@ -2023,7 +2023,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseGoldengateDeployment.OracleDatabaseGoldengateDeploymentPropertiesBackupScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengatedeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/oracledatabasegoldengatedeployment"
 
 oracledatabasegoldengatedeployment.NewOracleDatabaseGoldengateDeploymentPropertiesBackupScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseGoldengateDeploymentPropertiesBackupScheduleOutputReference
 ```
@@ -2338,7 +2338,7 @@ func InternalValue() OracleDatabaseGoldengateDeploymentPropertiesBackupSchedule
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseGoldengateDeployment.OracleDatabaseGoldengateDeploymentPropertiesDeploymentDiagnosticDataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengatedeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/oracledatabasegoldengatedeployment"
 
 oracledatabasegoldengatedeployment.NewOracleDatabaseGoldengateDeploymentPropertiesDeploymentDiagnosticDataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseGoldengateDeploymentPropertiesDeploymentDiagnosticDataOutputReference
 ```
@@ -2653,7 +2653,7 @@ func InternalValue() OracleDatabaseGoldengateDeploymentPropertiesDeploymentDiagn
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseGoldengateDeployment.OracleDatabaseGoldengateDeploymentPropertiesIngressIpsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengatedeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/oracledatabasegoldengatedeployment"
 
 oracledatabasegoldengatedeployment.NewOracleDatabaseGoldengateDeploymentPropertiesIngressIpsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OracleDatabaseGoldengateDeploymentPropertiesIngressIpsList
 ```
@@ -2802,7 +2802,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseGoldengateDeployment.OracleDatabaseGoldengateDeploymentPropertiesIngressIpsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengatedeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/oracledatabasegoldengatedeployment"
 
 oracledatabasegoldengatedeployment.NewOracleDatabaseGoldengateDeploymentPropertiesIngressIpsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OracleDatabaseGoldengateDeploymentPropertiesIngressIpsOutputReference
 ```
@@ -3080,7 +3080,7 @@ func InternalValue() OracleDatabaseGoldengateDeploymentPropertiesIngressIps
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseGoldengateDeployment.OracleDatabaseGoldengateDeploymentPropertiesLocksList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengatedeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/oracledatabasegoldengatedeployment"
 
 oracledatabasegoldengatedeployment.NewOracleDatabaseGoldengateDeploymentPropertiesLocksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OracleDatabaseGoldengateDeploymentPropertiesLocksList
 ```
@@ -3229,7 +3229,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseGoldengateDeployment.OracleDatabaseGoldengateDeploymentPropertiesLocksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengatedeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/oracledatabasegoldengatedeployment"
 
 oracledatabasegoldengatedeployment.NewOracleDatabaseGoldengateDeploymentPropertiesLocksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OracleDatabaseGoldengateDeploymentPropertiesLocksOutputReference
 ```
@@ -3551,7 +3551,7 @@ func InternalValue() OracleDatabaseGoldengateDeploymentPropertiesLocks
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseGoldengateDeployment.OracleDatabaseGoldengateDeploymentPropertiesMaintenanceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengatedeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/oracledatabasegoldengatedeployment"
 
 oracledatabasegoldengatedeployment.NewOracleDatabaseGoldengateDeploymentPropertiesMaintenanceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseGoldengateDeploymentPropertiesMaintenanceConfigOutputReference
 ```
@@ -3945,7 +3945,7 @@ func InternalValue() OracleDatabaseGoldengateDeploymentPropertiesMaintenanceConf
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseGoldengateDeployment.OracleDatabaseGoldengateDeploymentPropertiesMaintenanceWindowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengatedeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/oracledatabasegoldengatedeployment"
 
 oracledatabasegoldengatedeployment.NewOracleDatabaseGoldengateDeploymentPropertiesMaintenanceWindowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseGoldengateDeploymentPropertiesMaintenanceWindowOutputReference
 ```
@@ -4238,7 +4238,7 @@ func InternalValue() OracleDatabaseGoldengateDeploymentPropertiesMaintenanceWind
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseGoldengateDeployment.OracleDatabaseGoldengateDeploymentPropertiesOggDataGroupRolesMappingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengatedeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/oracledatabasegoldengatedeployment"
 
 oracledatabasegoldengatedeployment.NewOracleDatabaseGoldengateDeploymentPropertiesOggDataGroupRolesMappingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseGoldengateDeploymentPropertiesOggDataGroupRolesMappingOutputReference
 ```
@@ -4531,7 +4531,7 @@ func InternalValue() OracleDatabaseGoldengateDeploymentPropertiesOggDataGroupRol
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseGoldengateDeployment.OracleDatabaseGoldengateDeploymentPropertiesOggDataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengatedeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/oracledatabasegoldengatedeployment"
 
 oracledatabasegoldengatedeployment.NewOracleDatabaseGoldengateDeploymentPropertiesOggDataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseGoldengateDeploymentPropertiesOggDataOutputReference
 ```
@@ -4997,7 +4997,7 @@ func InternalValue() OracleDatabaseGoldengateDeploymentPropertiesOggData
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseGoldengateDeployment.OracleDatabaseGoldengateDeploymentPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengatedeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/oracledatabasegoldengatedeployment"
 
 oracledatabasegoldengatedeployment.NewOracleDatabaseGoldengateDeploymentPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseGoldengateDeploymentPropertiesOutputReference
 ```
@@ -5957,7 +5957,7 @@ func InternalValue() OracleDatabaseGoldengateDeploymentProperties
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseGoldengateDeployment.OracleDatabaseGoldengateDeploymentPropertiesPlacementsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengatedeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/oracledatabasegoldengatedeployment"
 
 oracledatabasegoldengatedeployment.NewOracleDatabaseGoldengateDeploymentPropertiesPlacementsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OracleDatabaseGoldengateDeploymentPropertiesPlacementsList
 ```
@@ -6106,7 +6106,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseGoldengateDeployment.OracleDatabaseGoldengateDeploymentPropertiesPlacementsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengatedeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/oracledatabasegoldengatedeployment"
 
 oracledatabasegoldengatedeployment.NewOracleDatabaseGoldengateDeploymentPropertiesPlacementsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OracleDatabaseGoldengateDeploymentPropertiesPlacementsOutputReference
 ```
@@ -6395,7 +6395,7 @@ func InternalValue() OracleDatabaseGoldengateDeploymentPropertiesPlacements
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseGoldengateDeployment.OracleDatabaseGoldengateDeploymentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasegoldengatedeployment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/oracledatabasegoldengatedeployment"
 
 oracledatabasegoldengatedeployment.NewOracleDatabaseGoldengateDeploymentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseGoldengateDeploymentTimeoutsOutputReference
 ```

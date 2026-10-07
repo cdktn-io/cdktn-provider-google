@@ -4,12 +4,12 @@
 
 ### ApphubWorkload <a name="ApphubWorkload" id="@cdktn/provider-google.apphubWorkload.ApphubWorkload"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apphub_workload google_apphub_workload}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apphub_workload google_apphub_workload}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apphubWorkload.ApphubWorkload.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubworkload"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apphubworkload"
 
 apphubworkload.NewApphubWorkload(scope Construct, id *string, config ApphubWorkloadConfig) ApphubWorkload
 ```
@@ -475,7 +475,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.apphubWorkload.ApphubWorkload.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubworkload"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apphubworkload"
 
 apphubworkload.ApphubWorkload_IsConstruct(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.apphubWorkload.ApphubWorkload.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubworkload"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apphubworkload"
 
 apphubworkload.ApphubWorkload_IsTerraformElement(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ apphubworkload.ApphubWorkload_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.apphubWorkload.ApphubWorkload.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubworkload"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apphubworkload"
 
 apphubworkload.ApphubWorkload_IsTerraformResource(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ apphubworkload.ApphubWorkload_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.apphubWorkload.ApphubWorkload.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubworkload"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apphubworkload"
 
 apphubworkload.ApphubWorkload_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -564,7 +564,7 @@ The construct id used in the generated config for the ApphubWorkload to import.
 
 The id of the existing ApphubWorkload that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apphub_workload#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apphub_workload#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1083,13 +1083,13 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apphubWorkload.ApphubWorkloadAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubworkload"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apphubworkload"
 
 &apphubworkload.ApphubWorkloadAttributes {
 	BusinessOwners: interface{},
-	Criticality: github.com/cdktn-io/cdktn-provider-google-go/google/v20.apphubWorkload.ApphubWorkloadAttributesCriticality,
+	Criticality: github.com/cdktn-io/cdktn-provider-google-go/google/v21.apphubWorkload.ApphubWorkloadAttributesCriticality,
 	DeveloperOwners: interface{},
-	Environment: github.com/cdktn-io/cdktn-provider-google-go/google/v20.apphubWorkload.ApphubWorkloadAttributesEnvironment,
+	Environment: github.com/cdktn-io/cdktn-provider-google-go/google/v21.apphubWorkload.ApphubWorkloadAttributesEnvironment,
 	OperatorOwners: interface{},
 }
 ```
@@ -1116,7 +1116,7 @@ BusinessOwners interface{}
 
 business_owners block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apphub_workload#business_owners ApphubWorkload#business_owners}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apphub_workload#business_owners ApphubWorkload#business_owners}
 
 ---
 
@@ -1130,7 +1130,7 @@ Criticality ApphubWorkloadAttributesCriticality
 
 criticality block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apphub_workload#criticality ApphubWorkload#criticality}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apphub_workload#criticality ApphubWorkload#criticality}
 
 ---
 
@@ -1144,7 +1144,7 @@ DeveloperOwners interface{}
 
 developer_owners block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apphub_workload#developer_owners ApphubWorkload#developer_owners}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apphub_workload#developer_owners ApphubWorkload#developer_owners}
 
 ---
 
@@ -1158,7 +1158,7 @@ Environment ApphubWorkloadAttributesEnvironment
 
 environment block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apphub_workload#environment ApphubWorkload#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apphub_workload#environment ApphubWorkload#environment}
 
 ---
 
@@ -1172,7 +1172,7 @@ OperatorOwners interface{}
 
 operator_owners block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apphub_workload#operator_owners ApphubWorkload#operator_owners}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apphub_workload#operator_owners ApphubWorkload#operator_owners}
 
 ---
 
@@ -1181,7 +1181,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apphubWorkload.ApphubWorkloadAttributesBusinessOwners.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubworkload"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apphubworkload"
 
 &apphubworkload.ApphubWorkloadAttributesBusinessOwners {
 	Email: *string,
@@ -1208,7 +1208,7 @@ Email *string
 
 Email address of the contacts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apphub_workload#email ApphubWorkload#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apphub_workload#email ApphubWorkload#email}
 
 ---
 
@@ -1222,7 +1222,7 @@ DisplayName *string
 
 Contact's name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apphub_workload#display_name ApphubWorkload#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apphub_workload#display_name ApphubWorkload#display_name}
 
 ---
 
@@ -1231,7 +1231,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apphubWorkload.ApphubWorkloadAttributesCriticality.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubworkload"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apphubworkload"
 
 &apphubworkload.ApphubWorkloadAttributesCriticality {
 	Type: *string,
@@ -1256,7 +1256,7 @@ Type *string
 
 Criticality type. Possible values: ["MISSION_CRITICAL", "HIGH", "MEDIUM", "LOW"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apphub_workload#type ApphubWorkload#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apphub_workload#type ApphubWorkload#type}
 
 ---
 
@@ -1265,7 +1265,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apphubWorkload.ApphubWorkloadAttributesDeveloperOwners.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubworkload"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apphubworkload"
 
 &apphubworkload.ApphubWorkloadAttributesDeveloperOwners {
 	Email: *string,
@@ -1292,7 +1292,7 @@ Email *string
 
 Email address of the contacts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apphub_workload#email ApphubWorkload#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apphub_workload#email ApphubWorkload#email}
 
 ---
 
@@ -1306,7 +1306,7 @@ DisplayName *string
 
 Contact's name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apphub_workload#display_name ApphubWorkload#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apphub_workload#display_name ApphubWorkload#display_name}
 
 ---
 
@@ -1315,7 +1315,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apphubWorkload.ApphubWorkloadAttributesEnvironment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubworkload"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apphubworkload"
 
 &apphubworkload.ApphubWorkloadAttributesEnvironment {
 	Type: *string,
@@ -1340,7 +1340,7 @@ Type *string
 
 Environment type. Possible values: ["PRODUCTION", "STAGING", "TEST", "DEVELOPMENT"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apphub_workload#type ApphubWorkload#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apphub_workload#type ApphubWorkload#type}
 
 ---
 
@@ -1349,7 +1349,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apphubWorkload.ApphubWorkloadAttributesOperatorOwners.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubworkload"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apphubworkload"
 
 &apphubworkload.ApphubWorkloadAttributesOperatorOwners {
 	Email: *string,
@@ -1376,7 +1376,7 @@ Email *string
 
 Email address of the contacts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apphub_workload#email ApphubWorkload#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apphub_workload#email ApphubWorkload#email}
 
 ---
 
@@ -1390,7 +1390,7 @@ DisplayName *string
 
 Contact's name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apphub_workload#display_name ApphubWorkload#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apphub_workload#display_name ApphubWorkload#display_name}
 
 ---
 
@@ -1399,7 +1399,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apphubWorkload.ApphubWorkloadConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubworkload"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apphubworkload"
 
 &apphubworkload.ApphubWorkloadConfig {
 	Connection: interface{},
@@ -1413,13 +1413,13 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubworkload"
 	DiscoveredWorkload: *string,
 	Location: *string,
 	WorkloadId: *string,
-	Attributes: github.com/cdktn-io/cdktn-provider-google-go/google/v20.apphubWorkload.ApphubWorkloadAttributes,
+	Attributes: github.com/cdktn-io/cdktn-provider-google-go/google/v21.apphubWorkload.ApphubWorkloadAttributes,
 	DeletionPolicy: *string,
 	Description: *string,
 	DisplayName: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.apphubWorkload.ApphubWorkloadTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.apphubWorkload.ApphubWorkloadTimeouts,
 }
 ```
 
@@ -1442,8 +1442,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubworkload"
 | <code><a href="#@cdktn/provider-google.apphubWorkload.ApphubWorkloadConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.apphubWorkload.ApphubWorkloadConfig.property.description">Description</a></code> | <code>*string</code> | User-defined description of a Workload. |
 | <code><a href="#@cdktn/provider-google.apphubWorkload.ApphubWorkloadConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | User-defined name for the Workload. |
-| <code><a href="#@cdktn/provider-google.apphubWorkload.ApphubWorkloadConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apphub_workload#id ApphubWorkload#id}. |
-| <code><a href="#@cdktn/provider-google.apphubWorkload.ApphubWorkloadConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apphub_workload#project ApphubWorkload#project}. |
+| <code><a href="#@cdktn/provider-google.apphubWorkload.ApphubWorkloadConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apphub_workload#id ApphubWorkload#id}. |
+| <code><a href="#@cdktn/provider-google.apphubWorkload.ApphubWorkloadConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apphub_workload#project ApphubWorkload#project}. |
 | <code><a href="#@cdktn/provider-google.apphubWorkload.ApphubWorkloadConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.apphubWorkload.ApphubWorkloadTimeouts">ApphubWorkloadTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1528,7 +1528,7 @@ ApplicationId *string
 
 Part of 'parent'.  Full resource name of a parent Application. Example: projects/{HOST_PROJECT_ID}/locations/{LOCATION}/applications/{APPLICATION_ID}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apphub_workload#application_id ApphubWorkload#application_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apphub_workload#application_id ApphubWorkload#application_id}
 
 ---
 
@@ -1542,7 +1542,7 @@ DiscoveredWorkload *string
 
 Immutable. The resource name of the original discovered workload.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apphub_workload#discovered_workload ApphubWorkload#discovered_workload}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apphub_workload#discovered_workload ApphubWorkload#discovered_workload}
 
 ---
 
@@ -1556,7 +1556,7 @@ Location *string
 
 Part of 'parent'.  Full resource name of a parent Application. Example: projects/{HOST_PROJECT_ID}/locations/{LOCATION}/applications/{APPLICATION_ID}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apphub_workload#location ApphubWorkload#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apphub_workload#location ApphubWorkload#location}
 
 ---
 
@@ -1570,7 +1570,7 @@ WorkloadId *string
 
 The Workload identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apphub_workload#workload_id ApphubWorkload#workload_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apphub_workload#workload_id ApphubWorkload#workload_id}
 
 ---
 
@@ -1584,7 +1584,7 @@ Attributes ApphubWorkloadAttributes
 
 attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apphub_workload#attributes ApphubWorkload#attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apphub_workload#attributes ApphubWorkload#attributes}
 
 ---
 
@@ -1605,7 +1605,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apphub_workload#deletion_policy ApphubWorkload#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apphub_workload#deletion_policy ApphubWorkload#deletion_policy}
 
 ---
 
@@ -1619,7 +1619,7 @@ Description *string
 
 User-defined description of a Workload.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apphub_workload#description ApphubWorkload#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apphub_workload#description ApphubWorkload#description}
 
 ---
 
@@ -1633,7 +1633,7 @@ DisplayName *string
 
 User-defined name for the Workload.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apphub_workload#display_name ApphubWorkload#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apphub_workload#display_name ApphubWorkload#display_name}
 
 ---
 
@@ -1645,7 +1645,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apphub_workload#id ApphubWorkload#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apphub_workload#id ApphubWorkload#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1660,7 +1660,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apphub_workload#project ApphubWorkload#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apphub_workload#project ApphubWorkload#project}.
 
 ---
 
@@ -1674,7 +1674,7 @@ Timeouts ApphubWorkloadTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apphub_workload#timeouts ApphubWorkload#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apphub_workload#timeouts ApphubWorkload#timeouts}
 
 ---
 
@@ -1683,7 +1683,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apphubWorkload.ApphubWorkloadTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubworkload"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apphubworkload"
 
 &apphubworkload.ApphubWorkloadTimeouts {
 	Create: *string,
@@ -1696,9 +1696,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubworkload"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apphubWorkload.ApphubWorkloadTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apphub_workload#create ApphubWorkload#create}. |
-| <code><a href="#@cdktn/provider-google.apphubWorkload.ApphubWorkloadTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apphub_workload#delete ApphubWorkload#delete}. |
-| <code><a href="#@cdktn/provider-google.apphubWorkload.ApphubWorkloadTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apphub_workload#update ApphubWorkload#update}. |
+| <code><a href="#@cdktn/provider-google.apphubWorkload.ApphubWorkloadTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apphub_workload#create ApphubWorkload#create}. |
+| <code><a href="#@cdktn/provider-google.apphubWorkload.ApphubWorkloadTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apphub_workload#delete ApphubWorkload#delete}. |
+| <code><a href="#@cdktn/provider-google.apphubWorkload.ApphubWorkloadTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apphub_workload#update ApphubWorkload#update}. |
 
 ---
 
@@ -1710,7 +1710,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apphub_workload#create ApphubWorkload#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apphub_workload#create ApphubWorkload#create}.
 
 ---
 
@@ -1722,7 +1722,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apphub_workload#delete ApphubWorkload#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apphub_workload#delete ApphubWorkload#delete}.
 
 ---
 
@@ -1734,7 +1734,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apphub_workload#update ApphubWorkload#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apphub_workload#update ApphubWorkload#update}.
 
 ---
 
@@ -1743,7 +1743,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apphubWorkload.ApphubWorkloadWorkloadProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubworkload"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apphubworkload"
 
 &apphubworkload.ApphubWorkloadWorkloadProperties {
 
@@ -1756,7 +1756,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubworkload"
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apphubWorkload.ApphubWorkloadWorkloadPropertiesExtendedMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubworkload"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apphubworkload"
 
 &apphubworkload.ApphubWorkloadWorkloadPropertiesExtendedMetadata {
 
@@ -1769,7 +1769,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubworkload"
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apphubWorkload.ApphubWorkloadWorkloadPropertiesExtendedMetadataValue.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubworkload"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apphubworkload"
 
 &apphubworkload.ApphubWorkloadWorkloadPropertiesExtendedMetadataValue {
 
@@ -1782,7 +1782,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubworkload"
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apphubWorkload.ApphubWorkloadWorkloadPropertiesFunctionalType.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubworkload"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apphubworkload"
 
 &apphubworkload.ApphubWorkloadWorkloadPropertiesFunctionalType {
 
@@ -1795,7 +1795,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubworkload"
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apphubWorkload.ApphubWorkloadWorkloadPropertiesIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubworkload"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apphubworkload"
 
 &apphubworkload.ApphubWorkloadWorkloadPropertiesIdentity {
 
@@ -1808,7 +1808,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubworkload"
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apphubWorkload.ApphubWorkloadWorkloadReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubworkload"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apphubworkload"
 
 &apphubworkload.ApphubWorkloadWorkloadReference {
 
@@ -1823,7 +1823,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubworkload"
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apphubWorkload.ApphubWorkloadAttributesBusinessOwnersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubworkload"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apphubworkload"
 
 apphubworkload.NewApphubWorkloadAttributesBusinessOwnersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApphubWorkloadAttributesBusinessOwnersList
 ```
@@ -1983,7 +1983,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apphubWorkload.ApphubWorkloadAttributesBusinessOwnersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubworkload"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apphubworkload"
 
 apphubworkload.NewApphubWorkloadAttributesBusinessOwnersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApphubWorkloadAttributesBusinessOwnersOutputReference
 ```
@@ -2301,7 +2301,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apphubWorkload.ApphubWorkloadAttributesCriticalityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubworkload"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apphubworkload"
 
 apphubworkload.NewApphubWorkloadAttributesCriticalityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApphubWorkloadAttributesCriticalityOutputReference
 ```
@@ -2572,7 +2572,7 @@ func InternalValue() ApphubWorkloadAttributesCriticality
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apphubWorkload.ApphubWorkloadAttributesDeveloperOwnersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubworkload"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apphubworkload"
 
 apphubworkload.NewApphubWorkloadAttributesDeveloperOwnersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApphubWorkloadAttributesDeveloperOwnersList
 ```
@@ -2732,7 +2732,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apphubWorkload.ApphubWorkloadAttributesDeveloperOwnersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubworkload"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apphubworkload"
 
 apphubworkload.NewApphubWorkloadAttributesDeveloperOwnersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApphubWorkloadAttributesDeveloperOwnersOutputReference
 ```
@@ -3050,7 +3050,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apphubWorkload.ApphubWorkloadAttributesEnvironmentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubworkload"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apphubworkload"
 
 apphubworkload.NewApphubWorkloadAttributesEnvironmentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApphubWorkloadAttributesEnvironmentOutputReference
 ```
@@ -3321,7 +3321,7 @@ func InternalValue() ApphubWorkloadAttributesEnvironment
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apphubWorkload.ApphubWorkloadAttributesOperatorOwnersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubworkload"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apphubworkload"
 
 apphubworkload.NewApphubWorkloadAttributesOperatorOwnersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApphubWorkloadAttributesOperatorOwnersList
 ```
@@ -3481,7 +3481,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apphubWorkload.ApphubWorkloadAttributesOperatorOwnersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubworkload"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apphubworkload"
 
 apphubworkload.NewApphubWorkloadAttributesOperatorOwnersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApphubWorkloadAttributesOperatorOwnersOutputReference
 ```
@@ -3799,7 +3799,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apphubWorkload.ApphubWorkloadAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubworkload"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apphubworkload"
 
 apphubworkload.NewApphubWorkloadAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApphubWorkloadAttributesOutputReference
 ```
@@ -4258,7 +4258,7 @@ func InternalValue() ApphubWorkloadAttributes
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apphubWorkload.ApphubWorkloadTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubworkload"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apphubworkload"
 
 apphubworkload.NewApphubWorkloadTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApphubWorkloadTimeoutsOutputReference
 ```
@@ -4594,7 +4594,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apphubWorkload.ApphubWorkloadWorkloadPropertiesExtendedMetadataList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubworkload"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apphubworkload"
 
 apphubworkload.NewApphubWorkloadWorkloadPropertiesExtendedMetadataList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApphubWorkloadWorkloadPropertiesExtendedMetadataList
 ```
@@ -4743,7 +4743,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apphubWorkload.ApphubWorkloadWorkloadPropertiesExtendedMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubworkload"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apphubworkload"
 
 apphubworkload.NewApphubWorkloadWorkloadPropertiesExtendedMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApphubWorkloadWorkloadPropertiesExtendedMetadataOutputReference
 ```
@@ -5032,7 +5032,7 @@ func InternalValue() ApphubWorkloadWorkloadPropertiesExtendedMetadata
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apphubWorkload.ApphubWorkloadWorkloadPropertiesExtendedMetadataValueList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubworkload"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apphubworkload"
 
 apphubworkload.NewApphubWorkloadWorkloadPropertiesExtendedMetadataValueList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApphubWorkloadWorkloadPropertiesExtendedMetadataValueList
 ```
@@ -5181,7 +5181,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apphubWorkload.ApphubWorkloadWorkloadPropertiesExtendedMetadataValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubworkload"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apphubworkload"
 
 apphubworkload.NewApphubWorkloadWorkloadPropertiesExtendedMetadataValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApphubWorkloadWorkloadPropertiesExtendedMetadataValueOutputReference
 ```
@@ -5470,7 +5470,7 @@ func InternalValue() ApphubWorkloadWorkloadPropertiesExtendedMetadataValue
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apphubWorkload.ApphubWorkloadWorkloadPropertiesFunctionalTypeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubworkload"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apphubworkload"
 
 apphubworkload.NewApphubWorkloadWorkloadPropertiesFunctionalTypeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApphubWorkloadWorkloadPropertiesFunctionalTypeList
 ```
@@ -5619,7 +5619,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apphubWorkload.ApphubWorkloadWorkloadPropertiesFunctionalTypeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubworkload"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apphubworkload"
 
 apphubworkload.NewApphubWorkloadWorkloadPropertiesFunctionalTypeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApphubWorkloadWorkloadPropertiesFunctionalTypeOutputReference
 ```
@@ -5897,7 +5897,7 @@ func InternalValue() ApphubWorkloadWorkloadPropertiesFunctionalType
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apphubWorkload.ApphubWorkloadWorkloadPropertiesIdentityList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubworkload"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apphubworkload"
 
 apphubworkload.NewApphubWorkloadWorkloadPropertiesIdentityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApphubWorkloadWorkloadPropertiesIdentityList
 ```
@@ -6046,7 +6046,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apphubWorkload.ApphubWorkloadWorkloadPropertiesIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubworkload"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apphubworkload"
 
 apphubworkload.NewApphubWorkloadWorkloadPropertiesIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApphubWorkloadWorkloadPropertiesIdentityOutputReference
 ```
@@ -6324,7 +6324,7 @@ func InternalValue() ApphubWorkloadWorkloadPropertiesIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apphubWorkload.ApphubWorkloadWorkloadPropertiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubworkload"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apphubworkload"
 
 apphubworkload.NewApphubWorkloadWorkloadPropertiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApphubWorkloadWorkloadPropertiesList
 ```
@@ -6473,7 +6473,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apphubWorkload.ApphubWorkloadWorkloadPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubworkload"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apphubworkload"
 
 apphubworkload.NewApphubWorkloadWorkloadPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApphubWorkloadWorkloadPropertiesOutputReference
 ```
@@ -6806,7 +6806,7 @@ func InternalValue() ApphubWorkloadWorkloadProperties
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apphubWorkload.ApphubWorkloadWorkloadReferenceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubworkload"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apphubworkload"
 
 apphubworkload.NewApphubWorkloadWorkloadReferenceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApphubWorkloadWorkloadReferenceList
 ```
@@ -6955,7 +6955,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apphubWorkload.ApphubWorkloadWorkloadReferenceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubworkload"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apphubworkload"
 
 apphubworkload.NewApphubWorkloadWorkloadReferenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApphubWorkloadWorkloadReferenceOutputReference
 ```

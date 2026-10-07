@@ -4,12 +4,12 @@
 
 ### DeveloperConnectInsightsConfig <a name="DeveloperConnectInsightsConfig" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/developer_connect_insights_config google_developer_connect_insights_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/developer_connect_insights_config google_developer_connect_insights_config}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectinsightsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/developerconnectinsightsconfig"
 
 developerconnectinsightsconfig.NewDeveloperConnectInsightsConfig(scope Construct, id *string, config DeveloperConnectInsightsConfigConfig) DeveloperConnectInsightsConfig
 ```
@@ -502,7 +502,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectinsightsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/developerconnectinsightsconfig"
 
 developerconnectinsightsconfig.DeveloperConnectInsightsConfig_IsConstruct(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectinsightsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/developerconnectinsightsconfig"
 
 developerconnectinsightsconfig.DeveloperConnectInsightsConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -548,7 +548,7 @@ developerconnectinsightsconfig.DeveloperConnectInsightsConfig_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectinsightsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/developerconnectinsightsconfig"
 
 developerconnectinsightsconfig.DeveloperConnectInsightsConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -562,7 +562,7 @@ developerconnectinsightsconfig.DeveloperConnectInsightsConfig_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectinsightsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/developerconnectinsightsconfig"
 
 developerconnectinsightsconfig.DeveloperConnectInsightsConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -591,7 +591,7 @@ The construct id used in the generated config for the DeveloperConnectInsightsCo
 
 The id of the existing DeveloperConnectInsightsConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/developer_connect_insights_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/developer_connect_insights_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1143,11 +1143,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigArtifactConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectinsightsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/developerconnectinsightsconfig"
 
 &developerconnectinsightsconfig.DeveloperConnectInsightsConfigArtifactConfigs {
-	GoogleArtifactAnalysis: github.com/cdktn-io/cdktn-provider-google-go/google/v20.developerConnectInsightsConfig.DeveloperConnectInsightsConfigArtifactConfigsGoogleArtifactAnalysis,
-	GoogleArtifactRegistry: github.com/cdktn-io/cdktn-provider-google-go/google/v20.developerConnectInsightsConfig.DeveloperConnectInsightsConfigArtifactConfigsGoogleArtifactRegistry,
+	GoogleArtifactAnalysis: github.com/cdktn-io/cdktn-provider-google-go/google/v21.developerConnectInsightsConfig.DeveloperConnectInsightsConfigArtifactConfigsGoogleArtifactAnalysis,
+	GoogleArtifactRegistry: github.com/cdktn-io/cdktn-provider-google-go/google/v21.developerConnectInsightsConfig.DeveloperConnectInsightsConfigArtifactConfigsGoogleArtifactRegistry,
 	Uri: *string,
 }
 ```
@@ -1172,7 +1172,7 @@ GoogleArtifactAnalysis DeveloperConnectInsightsConfigArtifactConfigsGoogleArtifa
 
 google_artifact_analysis block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/developer_connect_insights_config#google_artifact_analysis DeveloperConnectInsightsConfig#google_artifact_analysis}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/developer_connect_insights_config#google_artifact_analysis DeveloperConnectInsightsConfig#google_artifact_analysis}
 
 ---
 
@@ -1186,7 +1186,7 @@ GoogleArtifactRegistry DeveloperConnectInsightsConfigArtifactConfigsGoogleArtifa
 
 google_artifact_registry block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/developer_connect_insights_config#google_artifact_registry DeveloperConnectInsightsConfig#google_artifact_registry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/developer_connect_insights_config#google_artifact_registry DeveloperConnectInsightsConfig#google_artifact_registry}
 
 ---
 
@@ -1204,7 +1204,7 @@ e.g. 'us-docker.pkg.dev/my-project/my-repo/image'.
 The URI does not include the tag / digest because it captures a lineage of
 artifacts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/developer_connect_insights_config#uri DeveloperConnectInsightsConfig#uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/developer_connect_insights_config#uri DeveloperConnectInsightsConfig#uri}
 
 ---
 
@@ -1213,7 +1213,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigArtifactConfigsGoogleArtifactAnalysis.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectinsightsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/developerconnectinsightsconfig"
 
 &developerconnectinsightsconfig.DeveloperConnectInsightsConfigArtifactConfigsGoogleArtifactAnalysis {
 	ProjectId: *string,
@@ -1238,7 +1238,7 @@ ProjectId *string
 
 The project id of the project where the provenance is stored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/developer_connect_insights_config#project_id DeveloperConnectInsightsConfig#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/developer_connect_insights_config#project_id DeveloperConnectInsightsConfig#project_id}
 
 ---
 
@@ -1247,7 +1247,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigArtifactConfigsGoogleArtifactRegistry.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectinsightsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/developerconnectinsightsconfig"
 
 &developerconnectinsightsconfig.DeveloperConnectInsightsConfigArtifactConfigsGoogleArtifactRegistry {
 	ArtifactRegistryPackage: *string,
@@ -1274,7 +1274,7 @@ ArtifactRegistryPackage *string
 
 The name of the artifact registry package.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/developer_connect_insights_config#artifact_registry_package DeveloperConnectInsightsConfig#artifact_registry_package}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/developer_connect_insights_config#artifact_registry_package DeveloperConnectInsightsConfig#artifact_registry_package}
 
 ---
 
@@ -1288,7 +1288,7 @@ ProjectId *string
 
 The host project of Artifact Registry.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/developer_connect_insights_config#project_id DeveloperConnectInsightsConfig#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/developer_connect_insights_config#project_id DeveloperConnectInsightsConfig#project_id}
 
 ---
 
@@ -1297,7 +1297,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectinsightsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/developerconnectinsightsconfig"
 
 &developerconnectinsightsconfig.DeveloperConnectInsightsConfigConfig {
 	Connection: interface{},
@@ -1316,8 +1316,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnect
 	Id: *string,
 	Labels: *map[string]*string,
 	Project: *string,
-	TargetProjects: github.com/cdktn-io/cdktn-provider-google-go/google/v20.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjects,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTimeouts,
+	TargetProjects: github.com/cdktn-io/cdktn-provider-google-go/google/v21.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjects,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTimeouts,
 }
 ```
 
@@ -1338,9 +1338,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnect
 | <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigConfig.property.appHubApplication">AppHubApplication</a></code> | <code>*string</code> | The name of the App Hub Application. Format: projects/{project}/locations/{location}/applications/{application}. |
 | <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigConfig.property.artifactConfigs">ArtifactConfigs</a></code> | <code>interface{}</code> | artifact_configs block. |
 | <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/developer_connect_insights_config#id DeveloperConnectInsightsConfig#id}. |
+| <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/developer_connect_insights_config#id DeveloperConnectInsightsConfig#id}. |
 | <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | Set of labels associated with an InsightsConfig. |
-| <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/developer_connect_insights_config#project DeveloperConnectInsightsConfig#project}. |
+| <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/developer_connect_insights_config#project DeveloperConnectInsightsConfig#project}. |
 | <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigConfig.property.targetProjects">TargetProjects</a></code> | <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjects">DeveloperConnectInsightsConfigTargetProjects</a></code> | target_projects block. |
 | <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTimeouts">DeveloperConnectInsightsConfigTimeouts</a></code> | timeouts block. |
 
@@ -1426,7 +1426,7 @@ InsightsConfigId *string
 
 ID of the requesting InsightsConfig.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/developer_connect_insights_config#insights_config_id DeveloperConnectInsightsConfig#insights_config_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/developer_connect_insights_config#insights_config_id DeveloperConnectInsightsConfig#insights_config_id}
 
 ---
 
@@ -1440,7 +1440,7 @@ Location *string
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/developer_connect_insights_config#location DeveloperConnectInsightsConfig#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/developer_connect_insights_config#location DeveloperConnectInsightsConfig#location}
 
 ---
 
@@ -1457,7 +1457,7 @@ User specified annotations. See https://google.aip.dev/148#annotations for more 
 **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
 Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/developer_connect_insights_config#annotations DeveloperConnectInsightsConfig#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/developer_connect_insights_config#annotations DeveloperConnectInsightsConfig#annotations}
 
 ---
 
@@ -1471,7 +1471,7 @@ AppHubApplication *string
 
 The name of the App Hub Application. Format: projects/{project}/locations/{location}/applications/{application}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/developer_connect_insights_config#app_hub_application DeveloperConnectInsightsConfig#app_hub_application}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/developer_connect_insights_config#app_hub_application DeveloperConnectInsightsConfig#app_hub_application}
 
 ---
 
@@ -1485,7 +1485,7 @@ ArtifactConfigs interface{}
 
 artifact_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/developer_connect_insights_config#artifact_configs DeveloperConnectInsightsConfig#artifact_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/developer_connect_insights_config#artifact_configs DeveloperConnectInsightsConfig#artifact_configs}
 
 ---
 
@@ -1506,7 +1506,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/developer_connect_insights_config#deletion_policy DeveloperConnectInsightsConfig#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/developer_connect_insights_config#deletion_policy DeveloperConnectInsightsConfig#deletion_policy}
 
 ---
 
@@ -1518,7 +1518,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/developer_connect_insights_config#id DeveloperConnectInsightsConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/developer_connect_insights_config#id DeveloperConnectInsightsConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1538,7 +1538,7 @@ Set of labels associated with an InsightsConfig.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/developer_connect_insights_config#labels DeveloperConnectInsightsConfig#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/developer_connect_insights_config#labels DeveloperConnectInsightsConfig#labels}
 
 ---
 
@@ -1550,7 +1550,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/developer_connect_insights_config#project DeveloperConnectInsightsConfig#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/developer_connect_insights_config#project DeveloperConnectInsightsConfig#project}.
 
 ---
 
@@ -1564,7 +1564,7 @@ TargetProjects DeveloperConnectInsightsConfigTargetProjects
 
 target_projects block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/developer_connect_insights_config#target_projects DeveloperConnectInsightsConfig#target_projects}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/developer_connect_insights_config#target_projects DeveloperConnectInsightsConfig#target_projects}
 
 ---
 
@@ -1578,7 +1578,7 @@ Timeouts DeveloperConnectInsightsConfigTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/developer_connect_insights_config#timeouts DeveloperConnectInsightsConfig#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/developer_connect_insights_config#timeouts DeveloperConnectInsightsConfig#timeouts}
 
 ---
 
@@ -1587,7 +1587,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigErrors.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectinsightsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/developerconnectinsightsconfig"
 
 &developerconnectinsightsconfig.DeveloperConnectInsightsConfigErrors {
 
@@ -1600,7 +1600,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnect
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigErrorsDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectinsightsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/developerconnectinsightsconfig"
 
 &developerconnectinsightsconfig.DeveloperConnectInsightsConfigErrorsDetails {
 
@@ -1613,7 +1613,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnect
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigRuntimeConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectinsightsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/developerconnectinsightsconfig"
 
 &developerconnectinsightsconfig.DeveloperConnectInsightsConfigRuntimeConfigs {
 
@@ -1626,7 +1626,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnect
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigRuntimeConfigsAppHubWorkload.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectinsightsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/developerconnectinsightsconfig"
 
 &developerconnectinsightsconfig.DeveloperConnectInsightsConfigRuntimeConfigsAppHubWorkload {
 
@@ -1639,7 +1639,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnect
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigRuntimeConfigsGkeWorkload.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectinsightsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/developerconnectinsightsconfig"
 
 &developerconnectinsightsconfig.DeveloperConnectInsightsConfigRuntimeConfigsGkeWorkload {
 
@@ -1652,7 +1652,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnect
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjects.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectinsightsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/developerconnectinsightsconfig"
 
 &developerconnectinsightsconfig.DeveloperConnectInsightsConfigTargetProjects {
 	ProjectIds: *[]*string,
@@ -1677,7 +1677,7 @@ ProjectIds *[]*string
 
 The project IDs. Format {project}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/developer_connect_insights_config#project_ids DeveloperConnectInsightsConfig#project_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/developer_connect_insights_config#project_ids DeveloperConnectInsightsConfig#project_ids}
 
 ---
 
@@ -1686,7 +1686,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectinsightsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/developerconnectinsightsconfig"
 
 &developerconnectinsightsconfig.DeveloperConnectInsightsConfigTimeouts {
 	Create: *string,
@@ -1699,9 +1699,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnect
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/developer_connect_insights_config#create DeveloperConnectInsightsConfig#create}. |
-| <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/developer_connect_insights_config#delete DeveloperConnectInsightsConfig#delete}. |
-| <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/developer_connect_insights_config#update DeveloperConnectInsightsConfig#update}. |
+| <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/developer_connect_insights_config#create DeveloperConnectInsightsConfig#create}. |
+| <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/developer_connect_insights_config#delete DeveloperConnectInsightsConfig#delete}. |
+| <code><a href="#@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/developer_connect_insights_config#update DeveloperConnectInsightsConfig#update}. |
 
 ---
 
@@ -1713,7 +1713,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/developer_connect_insights_config#create DeveloperConnectInsightsConfig#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/developer_connect_insights_config#create DeveloperConnectInsightsConfig#create}.
 
 ---
 
@@ -1725,7 +1725,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/developer_connect_insights_config#delete DeveloperConnectInsightsConfig#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/developer_connect_insights_config#delete DeveloperConnectInsightsConfig#delete}.
 
 ---
 
@@ -1737,7 +1737,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/developer_connect_insights_config#update DeveloperConnectInsightsConfig#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/developer_connect_insights_config#update DeveloperConnectInsightsConfig#update}.
 
 ---
 
@@ -1748,7 +1748,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigArtifactConfigsGoogleArtifactAnalysisOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectinsightsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/developerconnectinsightsconfig"
 
 developerconnectinsightsconfig.NewDeveloperConnectInsightsConfigArtifactConfigsGoogleArtifactAnalysisOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeveloperConnectInsightsConfigArtifactConfigsGoogleArtifactAnalysisOutputReference
 ```
@@ -2019,7 +2019,7 @@ func InternalValue() DeveloperConnectInsightsConfigArtifactConfigsGoogleArtifact
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigArtifactConfigsGoogleArtifactRegistryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectinsightsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/developerconnectinsightsconfig"
 
 developerconnectinsightsconfig.NewDeveloperConnectInsightsConfigArtifactConfigsGoogleArtifactRegistryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeveloperConnectInsightsConfigArtifactConfigsGoogleArtifactRegistryOutputReference
 ```
@@ -2312,7 +2312,7 @@ func InternalValue() DeveloperConnectInsightsConfigArtifactConfigsGoogleArtifact
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigArtifactConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectinsightsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/developerconnectinsightsconfig"
 
 developerconnectinsightsconfig.NewDeveloperConnectInsightsConfigArtifactConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeveloperConnectInsightsConfigArtifactConfigsList
 ```
@@ -2472,7 +2472,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigArtifactConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectinsightsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/developerconnectinsightsconfig"
 
 developerconnectinsightsconfig.NewDeveloperConnectInsightsConfigArtifactConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeveloperConnectInsightsConfigArtifactConfigsOutputReference
 ```
@@ -2852,7 +2852,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigErrorsDetailsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectinsightsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/developerconnectinsightsconfig"
 
 developerconnectinsightsconfig.NewDeveloperConnectInsightsConfigErrorsDetailsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeveloperConnectInsightsConfigErrorsDetailsList
 ```
@@ -3001,7 +3001,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigErrorsDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectinsightsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/developerconnectinsightsconfig"
 
 developerconnectinsightsconfig.NewDeveloperConnectInsightsConfigErrorsDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeveloperConnectInsightsConfigErrorsDetailsOutputReference
 ```
@@ -3279,7 +3279,7 @@ func InternalValue() DeveloperConnectInsightsConfigErrorsDetails
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigErrorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectinsightsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/developerconnectinsightsconfig"
 
 developerconnectinsightsconfig.NewDeveloperConnectInsightsConfigErrorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeveloperConnectInsightsConfigErrorsList
 ```
@@ -3428,7 +3428,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigErrorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectinsightsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/developerconnectinsightsconfig"
 
 developerconnectinsightsconfig.NewDeveloperConnectInsightsConfigErrorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeveloperConnectInsightsConfigErrorsOutputReference
 ```
@@ -3728,7 +3728,7 @@ func InternalValue() DeveloperConnectInsightsConfigErrors
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigRuntimeConfigsAppHubWorkloadList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectinsightsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/developerconnectinsightsconfig"
 
 developerconnectinsightsconfig.NewDeveloperConnectInsightsConfigRuntimeConfigsAppHubWorkloadList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeveloperConnectInsightsConfigRuntimeConfigsAppHubWorkloadList
 ```
@@ -3877,7 +3877,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigRuntimeConfigsAppHubWorkloadOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectinsightsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/developerconnectinsightsconfig"
 
 developerconnectinsightsconfig.NewDeveloperConnectInsightsConfigRuntimeConfigsAppHubWorkloadOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeveloperConnectInsightsConfigRuntimeConfigsAppHubWorkloadOutputReference
 ```
@@ -4177,7 +4177,7 @@ func InternalValue() DeveloperConnectInsightsConfigRuntimeConfigsAppHubWorkload
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigRuntimeConfigsGkeWorkloadList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectinsightsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/developerconnectinsightsconfig"
 
 developerconnectinsightsconfig.NewDeveloperConnectInsightsConfigRuntimeConfigsGkeWorkloadList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeveloperConnectInsightsConfigRuntimeConfigsGkeWorkloadList
 ```
@@ -4326,7 +4326,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigRuntimeConfigsGkeWorkloadOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectinsightsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/developerconnectinsightsconfig"
 
 developerconnectinsightsconfig.NewDeveloperConnectInsightsConfigRuntimeConfigsGkeWorkloadOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeveloperConnectInsightsConfigRuntimeConfigsGkeWorkloadOutputReference
 ```
@@ -4615,7 +4615,7 @@ func InternalValue() DeveloperConnectInsightsConfigRuntimeConfigsGkeWorkload
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigRuntimeConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectinsightsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/developerconnectinsightsconfig"
 
 developerconnectinsightsconfig.NewDeveloperConnectInsightsConfigRuntimeConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeveloperConnectInsightsConfigRuntimeConfigsList
 ```
@@ -4764,7 +4764,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigRuntimeConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectinsightsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/developerconnectinsightsconfig"
 
 developerconnectinsightsconfig.NewDeveloperConnectInsightsConfigRuntimeConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeveloperConnectInsightsConfigRuntimeConfigsOutputReference
 ```
@@ -5075,7 +5075,7 @@ func InternalValue() DeveloperConnectInsightsConfigRuntimeConfigs
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTargetProjectsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectinsightsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/developerconnectinsightsconfig"
 
 developerconnectinsightsconfig.NewDeveloperConnectInsightsConfigTargetProjectsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeveloperConnectInsightsConfigTargetProjectsOutputReference
 ```
@@ -5353,7 +5353,7 @@ func InternalValue() DeveloperConnectInsightsConfigTargetProjects
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/developerconnectinsightsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/developerconnectinsightsconfig"
 
 developerconnectinsightsconfig.NewDeveloperConnectInsightsConfigTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeveloperConnectInsightsConfigTimeoutsOutputReference
 ```

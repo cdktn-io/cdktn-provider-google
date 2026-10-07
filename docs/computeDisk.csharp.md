@@ -4,7 +4,7 @@
 
 ### ComputeDisk <a name="ComputeDisk" id="@cdktn/provider-google.computeDisk.ComputeDisk"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk google_compute_disk}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk google_compute_disk}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeDisk.ComputeDisk.Initializer"></a>
 
@@ -790,7 +790,7 @@ The construct id used in the generated config for the ComputeDisk to import.
 
 The id of the existing ComputeDisk that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1840,7 +1840,7 @@ public string Disk { get; set; }
 
 Primary disk for asynchronous disk replication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk#disk ComputeDisk#disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk#disk ComputeDisk#disk}
 
 ---
 
@@ -1915,13 +1915,13 @@ new ComputeDiskConfig {
 | <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskConfig.property.diskEncryptionKey">DiskEncryptionKey</a></code> | <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskDiskEncryptionKey">ComputeDiskDiskEncryptionKey</a></code> | disk_encryption_key block. |
 | <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskConfig.property.enableConfidentialCompute">EnableConfidentialCompute</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Whether this disk is using confidential compute mode. |
 | <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskConfig.property.guestOsFeatures">GuestOsFeatures</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.computeDisk.ComputeDiskGuestOsFeatures">ComputeDiskGuestOsFeatures</a>[]</code> | guest_os_features block. |
-| <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk#id ComputeDisk#id}. |
+| <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk#id ComputeDisk#id}. |
 | <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskConfig.property.image">Image</a></code> | <code>string</code> | The image from which to initialize this disk. |
 | <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskConfig.property.labels">Labels</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Labels to apply to this disk.  A list of key->value pairs. |
 | <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskConfig.property.licenses">Licenses</a></code> | <code>string[]</code> | Any applicable license URI. |
 | <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskConfig.property.params">Params</a></code> | <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskParams">ComputeDiskParams</a></code> | params block. |
 | <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskConfig.property.physicalBlockSizeBytes">PhysicalBlockSizeBytes</a></code> | <code>double</code> | Physical block size of the persistent disk, in bytes. |
-| <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk#project ComputeDisk#project}. |
+| <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk#project ComputeDisk#project}. |
 | <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskConfig.property.provisionedIops">ProvisionedIops</a></code> | <code>double</code> | Indicates how many IOPS must be provisioned for the disk. |
 | <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskConfig.property.provisionedThroughput">ProvisionedThroughput</a></code> | <code>double</code> | Indicates how much Throughput must be provisioned for the disk. |
 | <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskConfig.property.size">Size</a></code> | <code>double</code> | Size of the persistent disk, specified in GB. |
@@ -2026,7 +2026,7 @@ first character must be a lowercase letter, and all following
 characters must be a dash, lowercase letter, or digit, except the last
 character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk#name ComputeDisk#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk#name ComputeDisk#name}
 
 ---
 
@@ -2047,7 +2047,7 @@ For example:
 * READ_ONLY_SINGLE: The AccessMode means the disk can be attached to multiple instances in RO mode.
   The AccessMode is only valid for Hyperdisk disk types.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk#access_mode ComputeDisk#access_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk#access_mode ComputeDisk#access_mode}
 
 ---
 
@@ -2061,7 +2061,7 @@ public string Architecture { get; set; }
 
 The architecture of the disk. Values include 'X86_64', 'ARM64'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk#architecture ComputeDisk#architecture}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk#architecture ComputeDisk#architecture}
 
 ---
 
@@ -2075,7 +2075,7 @@ public ComputeDiskAsyncPrimaryDisk AsyncPrimaryDisk { get; set; }
 
 async_primary_disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk#async_primary_disk ComputeDisk#async_primary_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk#async_primary_disk ComputeDisk#async_primary_disk}
 
 ---
 
@@ -2092,7 +2092,7 @@ If set to true, a snapshot of the disk will be created before it is destroyed.
 If your disk is encrypted with customer managed encryption keys these will be reused for the snapshot creation.
 The name of the snapshot by default will be '{{disk-name}}-YYYYMMDD-HHmm'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk#create_snapshot_before_destroy ComputeDisk#create_snapshot_before_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk#create_snapshot_before_destroy ComputeDisk#create_snapshot_before_destroy}
 
 ---
 
@@ -2106,7 +2106,7 @@ public string CreateSnapshotBeforeDestroyPrefix { get; set; }
 
 This will set a custom name prefix for the snapshot that's created when the disk is deleted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk#create_snapshot_before_destroy_prefix ComputeDisk#create_snapshot_before_destroy_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk#create_snapshot_before_destroy_prefix ComputeDisk#create_snapshot_before_destroy_prefix}
 
 ---
 
@@ -2127,7 +2127,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk#deletion_policy ComputeDisk#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk#deletion_policy ComputeDisk#deletion_policy}
 
 ---
 
@@ -2141,7 +2141,7 @@ public string Description { get; set; }
 
 An optional description of this resource. Provide this property when you create the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk#description ComputeDisk#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk#description ComputeDisk#description}
 
 ---
 
@@ -2155,7 +2155,7 @@ public ComputeDiskDiskEncryptionKey DiskEncryptionKey { get; set; }
 
 disk_encryption_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk#disk_encryption_key ComputeDisk#disk_encryption_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk#disk_encryption_key ComputeDisk#disk_encryption_key}
 
 ---
 
@@ -2171,7 +2171,7 @@ Whether this disk is using confidential compute mode.
 
 Note: Only supported on hyperdisk skus, disk_encryption_key is required when setting to true
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk#enable_confidential_compute ComputeDisk#enable_confidential_compute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk#enable_confidential_compute ComputeDisk#enable_confidential_compute}
 
 ---
 
@@ -2185,7 +2185,7 @@ public IResolvable|ComputeDiskGuestOsFeatures[] GuestOsFeatures { get; set; }
 
 guest_os_features block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk#guest_os_features ComputeDisk#guest_os_features}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk#guest_os_features ComputeDisk#guest_os_features}
 
 ---
 
@@ -2197,7 +2197,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk#id ComputeDisk#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk#id ComputeDisk#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2224,7 +2224,7 @@ images names must include the family name. If they don't, use the
 For instance, the image 'centos-6-v20180104' includes its family name 'centos-6'.
 These images can be referred by family name here.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk#image ComputeDisk#image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk#image ComputeDisk#image}
 
 ---
 
@@ -2241,7 +2241,7 @@ Labels to apply to this disk.  A list of key->value pairs.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk#labels ComputeDisk#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk#labels ComputeDisk#labels}
 
 ---
 
@@ -2255,7 +2255,7 @@ public string[] Licenses { get; set; }
 
 Any applicable license URI.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk#licenses ComputeDisk#licenses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk#licenses ComputeDisk#licenses}
 
 ---
 
@@ -2269,7 +2269,7 @@ public ComputeDiskParams Params { get; set; }
 
 params block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk#params ComputeDisk#params}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk#params ComputeDisk#params}
 
 ---
 
@@ -2289,7 +2289,7 @@ are 4096 and 16384, other sizes may be added in the future.
 If an unsupported value is requested, the error message will list
 the supported values for the caller's project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk#physical_block_size_bytes ComputeDisk#physical_block_size_bytes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk#physical_block_size_bytes ComputeDisk#physical_block_size_bytes}
 
 ---
 
@@ -2301,7 +2301,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk#project ComputeDisk#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk#project ComputeDisk#project}.
 
 ---
 
@@ -2318,7 +2318,7 @@ Indicates how many IOPS must be provisioned for the disk.
 Note: Updating currently is only supported by hyperdisk skus without the need to delete and recreate the disk, hyperdisk
 allows for an update of IOPS every 4 hours. To update your hyperdisk more frequently, you'll need to manually delete and recreate it
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk#provisioned_iops ComputeDisk#provisioned_iops}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk#provisioned_iops ComputeDisk#provisioned_iops}
 
 ---
 
@@ -2335,7 +2335,7 @@ Indicates how much Throughput must be provisioned for the disk.
 Note: Updating currently is only supported by hyperdisk skus without the need to delete and recreate the disk, hyperdisk
 allows for an update of Throughput every 4 hours. To update your hyperdisk more frequently, you'll need to manually delete and recreate it
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk#provisioned_throughput ComputeDisk#provisioned_throughput}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk#provisioned_throughput ComputeDisk#provisioned_throughput}
 
 ---
 
@@ -2363,7 +2363,7 @@ if upsizing is detected but recreates the disk if downsizing is requested.
 You can add 'lifecycle.prevent_destroy' in the config to prevent destroying
 and recreating.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk#size ComputeDisk#size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk#size ComputeDisk#size}
 
 ---
 
@@ -2387,7 +2387,7 @@ following are valid values:
 * 'global/snapshots/snapshot'
 * 'snapshot'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk#snapshot ComputeDisk#snapshot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk#snapshot ComputeDisk#snapshot}
 
 ---
 
@@ -2411,7 +2411,7 @@ For example, the following are valid values:
 * zones/{zone}/disks/{disk}
 * regions/{region}/disks/{disk}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk#source_disk ComputeDisk#source_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk#source_disk ComputeDisk#source_disk}
 
 ---
 
@@ -2425,7 +2425,7 @@ public ComputeDiskSourceImageEncryptionKey SourceImageEncryptionKey { get; set; 
 
 source_image_encryption_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk#source_image_encryption_key ComputeDisk#source_image_encryption_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk#source_image_encryption_key ComputeDisk#source_image_encryption_key}
 
 ---
 
@@ -2446,7 +2446,7 @@ For example, the following are valid values:
 * 'projects/project/zones/zone/instantSnapshots/instantSnapshot'
 * 'zones/zone/instantSnapshots/instantSnapshot'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk#source_instant_snapshot ComputeDisk#source_instant_snapshot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk#source_instant_snapshot ComputeDisk#source_instant_snapshot}
 
 ---
 
@@ -2460,7 +2460,7 @@ public ComputeDiskSourceSnapshotEncryptionKey SourceSnapshotEncryptionKey { get;
 
 source_snapshot_encryption_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk#source_snapshot_encryption_key ComputeDisk#source_snapshot_encryption_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk#source_snapshot_encryption_key ComputeDisk#source_snapshot_encryption_key}
 
 ---
 
@@ -2479,7 +2479,7 @@ Valid URIs may start with gs:// or https://storage.googleapis.com/.
 This flag is not optimized for creating multiple disks from a source storage object.
 To create many disks from a source storage object, use gcloud compute images import instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk#source_storage_object ComputeDisk#source_storage_object}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk#source_storage_object ComputeDisk#source_storage_object}
 
 ---
 
@@ -2500,7 +2500,7 @@ For example:
 * /zones/{zone}/storagePools/{storagePool}
 * /{storagePool}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk#storage_pool ComputeDisk#storage_pool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk#storage_pool ComputeDisk#storage_pool}
 
 ---
 
@@ -2514,7 +2514,7 @@ public ComputeDiskTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk#timeouts ComputeDisk#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk#timeouts ComputeDisk#timeouts}
 
 ---
 
@@ -2530,7 +2530,7 @@ URL of the disk type resource describing which disk type to use to create the di
 
 Provide this when creating the disk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk#type ComputeDisk#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk#type ComputeDisk#type}
 
 ---
 
@@ -2544,7 +2544,7 @@ public string Zone { get; set; }
 
 A reference to the zone where the disk resides.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk#zone ComputeDisk#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk#zone ComputeDisk#zone}
 
 ---
 
@@ -2559,7 +2559,11 @@ new ComputeDiskDiskEncryptionKey {
     string KmsKeySelfLink = null,
     string KmsKeyServiceAccount = null,
     string RawKey = null,
-    string RsaEncryptedKey = null
+    string RawKeyWo = null,
+    string RawKeyWoVersion = null,
+    string RsaEncryptedKey = null,
+    string RsaEncryptedKeyWo = null,
+    string RsaEncryptedKeyWoVersion = null
 };
 ```
 
@@ -2570,7 +2574,11 @@ new ComputeDiskDiskEncryptionKey {
 | <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskDiskEncryptionKey.property.kmsKeySelfLink">KmsKeySelfLink</a></code> | <code>string</code> | The self link of the encryption key used to encrypt the disk. |
 | <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskDiskEncryptionKey.property.kmsKeyServiceAccount">KmsKeyServiceAccount</a></code> | <code>string</code> | The service account used for the encryption request for the given KMS key. |
 | <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskDiskEncryptionKey.property.rawKey">RawKey</a></code> | <code>string</code> | Specifies a 256-bit customer-supplied encryption key, encoded in RFC 4648 base64 to either encrypt or decrypt this resource. |
+| <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskDiskEncryptionKey.property.rawKeyWo">RawKeyWo</a></code> | <code>string</code> | Specifies a 256-bit customer-supplied encryption key, encoded in RFC 4648 base64 to either encrypt or decrypt this resource. |
+| <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskDiskEncryptionKey.property.rawKeyWoVersion">RawKeyWoVersion</a></code> | <code>string</code> | Triggers update of 'raw_key_wo' write-only. |
 | <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskDiskEncryptionKey.property.rsaEncryptedKey">RsaEncryptedKey</a></code> | <code>string</code> | Specifies an RFC 4648 base64 encoded, RSA-wrapped 2048-bit customer-supplied encryption key to either encrypt or decrypt this resource. |
+| <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskDiskEncryptionKey.property.rsaEncryptedKeyWo">RsaEncryptedKeyWo</a></code> | <code>string</code> | Specifies an RFC 4648 base64 encoded, RSA-wrapped 2048-bit customer-supplied encryption key to either encrypt or decrypt this resource. |
+| <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskDiskEncryptionKey.property.rsaEncryptedKeyWoVersion">RsaEncryptedKeyWoVersion</a></code> | <code>string</code> | Triggers update of 'rsa_encrypted_key_wo' write-only. |
 
 ---
 
@@ -2590,7 +2598,7 @@ in the cloud console. Your project's Compute Engine System service account
 'roles/cloudkms.cryptoKeyEncrypterDecrypter' to use this feature.
 See https://cloud.google.com/compute/docs/disks/customer-managed-encryption#encrypt_a_new_persistent_disk_with_your_own_keys
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk#kms_key_self_link ComputeDisk#kms_key_self_link}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk#kms_key_self_link ComputeDisk#kms_key_self_link}
 
 ---
 
@@ -2606,7 +2614,7 @@ The service account used for the encryption request for the given KMS key.
 
 If absent, the Compute Engine Service Agent service account is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk#kms_key_service_account ComputeDisk#kms_key_service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk#kms_key_service_account ComputeDisk#kms_key_service_account}
 
 ---
 
@@ -2620,7 +2628,37 @@ public string RawKey { get; set; }
 
 Specifies a 256-bit customer-supplied encryption key, encoded in RFC 4648 base64 to either encrypt or decrypt this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk#raw_key ComputeDisk#raw_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk#raw_key ComputeDisk#raw_key}
+
+---
+
+##### `RawKeyWo`<sup>Optional</sup> <a name="RawKeyWo" id="@cdktn/provider-google.computeDisk.ComputeDiskDiskEncryptionKey.property.rawKeyWo"></a>
+
+```csharp
+public string RawKeyWo { get; set; }
+```
+
+- *Type:* string
+
+Specifies a 256-bit customer-supplied encryption key, encoded in RFC 4648 base64 to either encrypt or decrypt this resource.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk#raw_key_wo ComputeDisk#raw_key_wo}
+
+---
+
+##### `RawKeyWoVersion`<sup>Optional</sup> <a name="RawKeyWoVersion" id="@cdktn/provider-google.computeDisk.ComputeDiskDiskEncryptionKey.property.rawKeyWoVersion"></a>
+
+```csharp
+public string RawKeyWoVersion { get; set; }
+```
+
+- *Type:* string
+
+Triggers update of 'raw_key_wo' write-only.
+
+Increment this value when an update to 'raw_key_wo' is needed. For more info see [updating write-only arguments](/docs/providers/google/guides/using_write_only_arguments.html#updating-write-only-arguments)
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk#raw_key_wo_version ComputeDisk#raw_key_wo_version}
 
 ---
 
@@ -2636,7 +2674,39 @@ Specifies an RFC 4648 base64 encoded, RSA-wrapped 2048-bit customer-supplied enc
 
 You can provide either the rawKey or the rsaEncryptedKey.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk#rsa_encrypted_key ComputeDisk#rsa_encrypted_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk#rsa_encrypted_key ComputeDisk#rsa_encrypted_key}
+
+---
+
+##### `RsaEncryptedKeyWo`<sup>Optional</sup> <a name="RsaEncryptedKeyWo" id="@cdktn/provider-google.computeDisk.ComputeDiskDiskEncryptionKey.property.rsaEncryptedKeyWo"></a>
+
+```csharp
+public string RsaEncryptedKeyWo { get; set; }
+```
+
+- *Type:* string
+
+Specifies an RFC 4648 base64 encoded, RSA-wrapped 2048-bit customer-supplied encryption key to either encrypt or decrypt this resource.
+
+You can provide either the rawKey or the rsaEncryptedKey.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk#rsa_encrypted_key_wo ComputeDisk#rsa_encrypted_key_wo}
+
+---
+
+##### `RsaEncryptedKeyWoVersion`<sup>Optional</sup> <a name="RsaEncryptedKeyWoVersion" id="@cdktn/provider-google.computeDisk.ComputeDiskDiskEncryptionKey.property.rsaEncryptedKeyWoVersion"></a>
+
+```csharp
+public string RsaEncryptedKeyWoVersion { get; set; }
+```
+
+- *Type:* string
+
+Triggers update of 'rsa_encrypted_key_wo' write-only.
+
+Increment this value when an update to 'rsa_encrypted_key_wo' is needed. For more info see [updating write-only arguments](/docs/providers/google/guides/using_write_only_arguments.html#updating-write-only-arguments)
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk#rsa_encrypted_key_wo_version ComputeDisk#rsa_encrypted_key_wo_version}
 
 ---
 
@@ -2670,7 +2740,7 @@ public string Type { get; set; }
 
 The type of supported feature. Read [Enabling guest operating system features](https://cloud.google.com/compute/docs/images/create-delete-deprecate-private-images#guest-os-features) to see a list of available options.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk#type ComputeDisk#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk#type ComputeDisk#type}
 
 ---
 
@@ -2708,7 +2778,7 @@ Tag keys and values have the
 same definition as resource manager tags. Keys must be in the format tagKeys/{tag_key_id},
 and values are in the format tagValues/456.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk#resource_manager_tags ComputeDisk#resource_manager_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk#resource_manager_tags ComputeDisk#resource_manager_tags}
 
 ---
 
@@ -2752,7 +2822,7 @@ in the cloud console. Your project's Compute Engine System service account
 'roles/cloudkms.cryptoKeyEncrypterDecrypter' to use this feature.
 See https://cloud.google.com/compute/docs/disks/customer-managed-encryption#encrypt_a_new_persistent_disk_with_your_own_keys
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk#kms_key_self_link ComputeDisk#kms_key_self_link}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk#kms_key_self_link ComputeDisk#kms_key_self_link}
 
 ---
 
@@ -2768,7 +2838,7 @@ The service account used for the encryption request for the given KMS key.
 
 If absent, the Compute Engine Service Agent service account is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk#kms_key_service_account ComputeDisk#kms_key_service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk#kms_key_service_account ComputeDisk#kms_key_service_account}
 
 ---
 
@@ -2782,7 +2852,7 @@ public string RawKey { get; set; }
 
 Specifies a 256-bit customer-supplied encryption key, encoded in RFC 4648 base64 to either encrypt or decrypt this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk#raw_key ComputeDisk#raw_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk#raw_key ComputeDisk#raw_key}
 
 ---
 
@@ -2826,7 +2896,7 @@ in the cloud console. Your project's Compute Engine System service account
 'roles/cloudkms.cryptoKeyEncrypterDecrypter' to use this feature.
 See https://cloud.google.com/compute/docs/disks/customer-managed-encryption#encrypt_a_new_persistent_disk_with_your_own_keys
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk#kms_key_self_link ComputeDisk#kms_key_self_link}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk#kms_key_self_link ComputeDisk#kms_key_self_link}
 
 ---
 
@@ -2842,7 +2912,7 @@ The service account used for the encryption request for the given KMS key.
 
 If absent, the Compute Engine Service Agent service account is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk#kms_key_service_account ComputeDisk#kms_key_service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk#kms_key_service_account ComputeDisk#kms_key_service_account}
 
 ---
 
@@ -2856,7 +2926,7 @@ public string RawKey { get; set; }
 
 Specifies a 256-bit customer-supplied encryption key, encoded in RFC 4648 base64 to either encrypt or decrypt this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk#raw_key ComputeDisk#raw_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk#raw_key ComputeDisk#raw_key}
 
 ---
 
@@ -2878,9 +2948,9 @@ new ComputeDiskTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk#create ComputeDisk#create}. |
-| <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk#delete ComputeDisk#delete}. |
-| <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk#update ComputeDisk#update}. |
+| <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk#create ComputeDisk#create}. |
+| <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk#delete ComputeDisk#delete}. |
+| <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk#update ComputeDisk#update}. |
 
 ---
 
@@ -2892,7 +2962,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk#create ComputeDisk#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk#create ComputeDisk#create}.
 
 ---
 
@@ -2904,7 +2974,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk#delete ComputeDisk#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk#delete ComputeDisk#delete}.
 
 ---
 
@@ -2916,7 +2986,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk#update ComputeDisk#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk#update ComputeDisk#update}.
 
 ---
 
@@ -3246,7 +3316,11 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskDiskEncryptionKeyOutputReference.resetKmsKeySelfLink">ResetKmsKeySelfLink</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskDiskEncryptionKeyOutputReference.resetKmsKeyServiceAccount">ResetKmsKeyServiceAccount</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskDiskEncryptionKeyOutputReference.resetRawKey">ResetRawKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskDiskEncryptionKeyOutputReference.resetRawKeyWo">ResetRawKeyWo</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskDiskEncryptionKeyOutputReference.resetRawKeyWoVersion">ResetRawKeyWoVersion</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskDiskEncryptionKeyOutputReference.resetRsaEncryptedKey">ResetRsaEncryptedKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskDiskEncryptionKeyOutputReference.resetRsaEncryptedKeyWo">ResetRsaEncryptedKeyWo</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskDiskEncryptionKeyOutputReference.resetRsaEncryptedKeyWoVersion">ResetRsaEncryptedKeyWoVersion</a></code> | *No description.* |
 
 ---
 
@@ -3418,10 +3492,34 @@ private void ResetKmsKeyServiceAccount()
 private void ResetRawKey()
 ```
 
+##### `ResetRawKeyWo` <a name="ResetRawKeyWo" id="@cdktn/provider-google.computeDisk.ComputeDiskDiskEncryptionKeyOutputReference.resetRawKeyWo"></a>
+
+```csharp
+private void ResetRawKeyWo()
+```
+
+##### `ResetRawKeyWoVersion` <a name="ResetRawKeyWoVersion" id="@cdktn/provider-google.computeDisk.ComputeDiskDiskEncryptionKeyOutputReference.resetRawKeyWoVersion"></a>
+
+```csharp
+private void ResetRawKeyWoVersion()
+```
+
 ##### `ResetRsaEncryptedKey` <a name="ResetRsaEncryptedKey" id="@cdktn/provider-google.computeDisk.ComputeDiskDiskEncryptionKeyOutputReference.resetRsaEncryptedKey"></a>
 
 ```csharp
 private void ResetRsaEncryptedKey()
+```
+
+##### `ResetRsaEncryptedKeyWo` <a name="ResetRsaEncryptedKeyWo" id="@cdktn/provider-google.computeDisk.ComputeDiskDiskEncryptionKeyOutputReference.resetRsaEncryptedKeyWo"></a>
+
+```csharp
+private void ResetRsaEncryptedKeyWo()
+```
+
+##### `ResetRsaEncryptedKeyWoVersion` <a name="ResetRsaEncryptedKeyWoVersion" id="@cdktn/provider-google.computeDisk.ComputeDiskDiskEncryptionKeyOutputReference.resetRsaEncryptedKeyWoVersion"></a>
+
+```csharp
+private void ResetRsaEncryptedKeyWoVersion()
 ```
 
 
@@ -3435,11 +3533,19 @@ private void ResetRsaEncryptedKey()
 | <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskDiskEncryptionKeyOutputReference.property.kmsKeySelfLinkInput">KmsKeySelfLinkInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskDiskEncryptionKeyOutputReference.property.kmsKeyServiceAccountInput">KmsKeyServiceAccountInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskDiskEncryptionKeyOutputReference.property.rawKeyInput">RawKeyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskDiskEncryptionKeyOutputReference.property.rawKeyWoInput">RawKeyWoInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskDiskEncryptionKeyOutputReference.property.rawKeyWoVersionInput">RawKeyWoVersionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskDiskEncryptionKeyOutputReference.property.rsaEncryptedKeyInput">RsaEncryptedKeyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskDiskEncryptionKeyOutputReference.property.rsaEncryptedKeyWoInput">RsaEncryptedKeyWoInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskDiskEncryptionKeyOutputReference.property.rsaEncryptedKeyWoVersionInput">RsaEncryptedKeyWoVersionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskDiskEncryptionKeyOutputReference.property.kmsKeySelfLink">KmsKeySelfLink</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskDiskEncryptionKeyOutputReference.property.kmsKeyServiceAccount">KmsKeyServiceAccount</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskDiskEncryptionKeyOutputReference.property.rawKey">RawKey</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskDiskEncryptionKeyOutputReference.property.rawKeyWo">RawKeyWo</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskDiskEncryptionKeyOutputReference.property.rawKeyWoVersion">RawKeyWoVersion</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskDiskEncryptionKeyOutputReference.property.rsaEncryptedKey">RsaEncryptedKey</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskDiskEncryptionKeyOutputReference.property.rsaEncryptedKeyWo">RsaEncryptedKeyWo</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskDiskEncryptionKeyOutputReference.property.rsaEncryptedKeyWoVersion">RsaEncryptedKeyWoVersion</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskDiskEncryptionKeyOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-google.computeDisk.ComputeDiskDiskEncryptionKey">ComputeDiskDiskEncryptionKey</a></code> | *No description.* |
 
 ---
@@ -3508,10 +3614,50 @@ public string RawKeyInput { get; }
 
 ---
 
+##### `RawKeyWoInput`<sup>Optional</sup> <a name="RawKeyWoInput" id="@cdktn/provider-google.computeDisk.ComputeDiskDiskEncryptionKeyOutputReference.property.rawKeyWoInput"></a>
+
+```csharp
+public string RawKeyWoInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `RawKeyWoVersionInput`<sup>Optional</sup> <a name="RawKeyWoVersionInput" id="@cdktn/provider-google.computeDisk.ComputeDiskDiskEncryptionKeyOutputReference.property.rawKeyWoVersionInput"></a>
+
+```csharp
+public string RawKeyWoVersionInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `RsaEncryptedKeyInput`<sup>Optional</sup> <a name="RsaEncryptedKeyInput" id="@cdktn/provider-google.computeDisk.ComputeDiskDiskEncryptionKeyOutputReference.property.rsaEncryptedKeyInput"></a>
 
 ```csharp
 public string RsaEncryptedKeyInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `RsaEncryptedKeyWoInput`<sup>Optional</sup> <a name="RsaEncryptedKeyWoInput" id="@cdktn/provider-google.computeDisk.ComputeDiskDiskEncryptionKeyOutputReference.property.rsaEncryptedKeyWoInput"></a>
+
+```csharp
+public string RsaEncryptedKeyWoInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `RsaEncryptedKeyWoVersionInput`<sup>Optional</sup> <a name="RsaEncryptedKeyWoVersionInput" id="@cdktn/provider-google.computeDisk.ComputeDiskDiskEncryptionKeyOutputReference.property.rsaEncryptedKeyWoVersionInput"></a>
+
+```csharp
+public string RsaEncryptedKeyWoVersionInput { get; }
 ```
 
 - *Type:* string
@@ -3548,10 +3694,54 @@ public string RawKey { get; }
 
 ---
 
+##### ~~`RawKeyWo`~~<sup>Required</sup> <a name="RawKeyWo" id="@cdktn/provider-google.computeDisk.ComputeDiskDiskEncryptionKeyOutputReference.property.rawKeyWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+
+```csharp
+public string RawKeyWo { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `RawKeyWoVersion`<sup>Required</sup> <a name="RawKeyWoVersion" id="@cdktn/provider-google.computeDisk.ComputeDiskDiskEncryptionKeyOutputReference.property.rawKeyWoVersion"></a>
+
+```csharp
+public string RawKeyWoVersion { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `RsaEncryptedKey`<sup>Required</sup> <a name="RsaEncryptedKey" id="@cdktn/provider-google.computeDisk.ComputeDiskDiskEncryptionKeyOutputReference.property.rsaEncryptedKey"></a>
 
 ```csharp
 public string RsaEncryptedKey { get; }
+```
+
+- *Type:* string
+
+---
+
+##### ~~`RsaEncryptedKeyWo`~~<sup>Required</sup> <a name="RsaEncryptedKeyWo" id="@cdktn/provider-google.computeDisk.ComputeDiskDiskEncryptionKeyOutputReference.property.rsaEncryptedKeyWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+
+```csharp
+public string RsaEncryptedKeyWo { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `RsaEncryptedKeyWoVersion`<sup>Required</sup> <a name="RsaEncryptedKeyWoVersion" id="@cdktn/provider-google.computeDisk.ComputeDiskDiskEncryptionKeyOutputReference.property.rsaEncryptedKeyWoVersion"></a>
+
+```csharp
+public string RsaEncryptedKeyWoVersion { get; }
 ```
 
 - *Type:* string

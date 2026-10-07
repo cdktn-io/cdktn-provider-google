@@ -4,12 +4,12 @@
 
 ### AgentRegistryBinding <a name="AgentRegistryBinding" id="@cdktn/provider-google.agentRegistryBinding.AgentRegistryBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/agent_registry_binding google_agent_registry_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/agent_registry_binding google_agent_registry_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.agentRegistryBinding.AgentRegistryBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentregistrybinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/agentregistrybinding"
 
 agentregistrybinding.NewAgentRegistryBinding(scope Construct, id *string, config AgentRegistryBindingConfig) AgentRegistryBinding
 ```
@@ -83,6 +83,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.agentRegistryBinding.AgentRegistryBinding.resetDisplayName">ResetDisplayName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.agentRegistryBinding.AgentRegistryBinding.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.agentRegistryBinding.AgentRegistryBinding.resetProject">ResetProject</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.agentRegistryBinding.AgentRegistryBinding.resetSource">ResetSource</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.agentRegistryBinding.AgentRegistryBinding.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 
 ---
@@ -474,6 +475,12 @@ func ResetId()
 func ResetProject()
 ```
 
+##### `ResetSource` <a name="ResetSource" id="@cdktn/provider-google.agentRegistryBinding.AgentRegistryBinding.resetSource"></a>
+
+```go
+func ResetSource()
+```
+
 ##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktn/provider-google.agentRegistryBinding.AgentRegistryBinding.resetTimeouts"></a>
 
 ```go
@@ -494,7 +501,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.agentRegistryBinding.AgentRegistryBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentregistrybinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/agentregistrybinding"
 
 agentregistrybinding.AgentRegistryBinding_IsConstruct(x interface{}) *bool
 ```
@@ -526,7 +533,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.agentRegistryBinding.AgentRegistryBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentregistrybinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/agentregistrybinding"
 
 agentregistrybinding.AgentRegistryBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -540,7 +547,7 @@ agentregistrybinding.AgentRegistryBinding_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.agentRegistryBinding.AgentRegistryBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentregistrybinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/agentregistrybinding"
 
 agentregistrybinding.AgentRegistryBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -554,7 +561,7 @@ agentregistrybinding.AgentRegistryBinding_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.agentRegistryBinding.AgentRegistryBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentregistrybinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/agentregistrybinding"
 
 agentregistrybinding.AgentRegistryBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -583,7 +590,7 @@ The construct id used in the generated config for the AgentRegistryBinding to im
 
 The id of the existing AgentRegistryBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/agent_registry_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/agent_registry_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1058,7 +1065,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.agentRegistryBinding.AgentRegistryBindingAuthProviderBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentregistrybinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/agentregistrybinding"
 
 &agentregistrybinding.AgentRegistryBindingAuthProviderBinding {
 	AuthProvider: *string,
@@ -1087,7 +1094,7 @@ AuthProvider *string
 
 The resource name of the target auth provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/agent_registry_binding#auth_provider AgentRegistryBinding#auth_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/agent_registry_binding#auth_provider AgentRegistryBinding#auth_provider}
 
 ---
 
@@ -1101,7 +1108,7 @@ ContinueUri *string
 
 The continue URI of the auth provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/agent_registry_binding#continue_uri AgentRegistryBinding#continue_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/agent_registry_binding#continue_uri AgentRegistryBinding#continue_uri}
 
 ---
 
@@ -1115,7 +1122,7 @@ Scopes *[]*string
 
 The list of OAuth2 scopes of the auth provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/agent_registry_binding#scopes AgentRegistryBinding#scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/agent_registry_binding#scopes AgentRegistryBinding#scopes}
 
 ---
 
@@ -1124,7 +1131,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.agentRegistryBinding.AgentRegistryBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentregistrybinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/agentregistrybinding"
 
 &agentregistrybinding.AgentRegistryBindingConfig {
 	Connection: interface{},
@@ -1134,17 +1141,17 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentregistrybin
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	AuthProviderBinding: github.com/cdktn-io/cdktn-provider-google-go/google/v20.agentRegistryBinding.AgentRegistryBindingAuthProviderBinding,
+	AuthProviderBinding: github.com/cdktn-io/cdktn-provider-google-go/google/v21.agentRegistryBinding.AgentRegistryBindingAuthProviderBinding,
 	BindingId: *string,
 	Location: *string,
-	Source: github.com/cdktn-io/cdktn-provider-google-go/google/v20.agentRegistryBinding.AgentRegistryBindingSource,
-	Target: github.com/cdktn-io/cdktn-provider-google-go/google/v20.agentRegistryBinding.AgentRegistryBindingTarget,
+	Target: github.com/cdktn-io/cdktn-provider-google-go/google/v21.agentRegistryBinding.AgentRegistryBindingTarget,
 	DeletionPolicy: *string,
 	Description: *string,
 	DisplayName: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.agentRegistryBinding.AgentRegistryBindingTimeouts,
+	Source: github.com/cdktn-io/cdktn-provider-google-go/google/v21.agentRegistryBinding.AgentRegistryBindingSource,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.agentRegistryBinding.AgentRegistryBindingTimeouts,
 }
 ```
 
@@ -1162,13 +1169,13 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentregistrybin
 | <code><a href="#@cdktn/provider-google.agentRegistryBinding.AgentRegistryBindingConfig.property.authProviderBinding">AuthProviderBinding</a></code> | <code><a href="#@cdktn/provider-google.agentRegistryBinding.AgentRegistryBindingAuthProviderBinding">AgentRegistryBindingAuthProviderBinding</a></code> | auth_provider_binding block. |
 | <code><a href="#@cdktn/provider-google.agentRegistryBinding.AgentRegistryBindingConfig.property.bindingId">BindingId</a></code> | <code>*string</code> | The name of the Binding. |
 | <code><a href="#@cdktn/provider-google.agentRegistryBinding.AgentRegistryBindingConfig.property.location">Location</a></code> | <code>*string</code> | The location of the resource. |
-| <code><a href="#@cdktn/provider-google.agentRegistryBinding.AgentRegistryBindingConfig.property.source">Source</a></code> | <code><a href="#@cdktn/provider-google.agentRegistryBinding.AgentRegistryBindingSource">AgentRegistryBindingSource</a></code> | source block. |
 | <code><a href="#@cdktn/provider-google.agentRegistryBinding.AgentRegistryBindingConfig.property.target">Target</a></code> | <code><a href="#@cdktn/provider-google.agentRegistryBinding.AgentRegistryBindingTarget">AgentRegistryBindingTarget</a></code> | target block. |
 | <code><a href="#@cdktn/provider-google.agentRegistryBinding.AgentRegistryBindingConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.agentRegistryBinding.AgentRegistryBindingConfig.property.description">Description</a></code> | <code>*string</code> | The description of the Binding. |
 | <code><a href="#@cdktn/provider-google.agentRegistryBinding.AgentRegistryBindingConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | User-defined display name for the Binding. |
-| <code><a href="#@cdktn/provider-google.agentRegistryBinding.AgentRegistryBindingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/agent_registry_binding#id AgentRegistryBinding#id}. |
-| <code><a href="#@cdktn/provider-google.agentRegistryBinding.AgentRegistryBindingConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/agent_registry_binding#project AgentRegistryBinding#project}. |
+| <code><a href="#@cdktn/provider-google.agentRegistryBinding.AgentRegistryBindingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/agent_registry_binding#id AgentRegistryBinding#id}. |
+| <code><a href="#@cdktn/provider-google.agentRegistryBinding.AgentRegistryBindingConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/agent_registry_binding#project AgentRegistryBinding#project}. |
+| <code><a href="#@cdktn/provider-google.agentRegistryBinding.AgentRegistryBindingConfig.property.source">Source</a></code> | <code><a href="#@cdktn/provider-google.agentRegistryBinding.AgentRegistryBindingSource">AgentRegistryBindingSource</a></code> | source block. |
 | <code><a href="#@cdktn/provider-google.agentRegistryBinding.AgentRegistryBindingConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.agentRegistryBinding.AgentRegistryBindingTimeouts">AgentRegistryBindingTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1253,7 +1260,7 @@ AuthProviderBinding AgentRegistryBindingAuthProviderBinding
 
 auth_provider_binding block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/agent_registry_binding#auth_provider_binding AgentRegistryBinding#auth_provider_binding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/agent_registry_binding#auth_provider_binding AgentRegistryBinding#auth_provider_binding}
 
 ---
 
@@ -1267,7 +1274,7 @@ BindingId *string
 
 The name of the Binding.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/agent_registry_binding#binding_id AgentRegistryBinding#binding_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/agent_registry_binding#binding_id AgentRegistryBinding#binding_id}
 
 ---
 
@@ -1281,21 +1288,7 @@ Location *string
 
 The location of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/agent_registry_binding#location AgentRegistryBinding#location}
-
----
-
-##### `Source`<sup>Required</sup> <a name="Source" id="@cdktn/provider-google.agentRegistryBinding.AgentRegistryBindingConfig.property.source"></a>
-
-```go
-Source AgentRegistryBindingSource
-```
-
-- *Type:* <a href="#@cdktn/provider-google.agentRegistryBinding.AgentRegistryBindingSource">AgentRegistryBindingSource</a>
-
-source block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/agent_registry_binding#source AgentRegistryBinding#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/agent_registry_binding#location AgentRegistryBinding#location}
 
 ---
 
@@ -1309,7 +1302,7 @@ Target AgentRegistryBindingTarget
 
 target block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/agent_registry_binding#target AgentRegistryBinding#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/agent_registry_binding#target AgentRegistryBinding#target}
 
 ---
 
@@ -1330,7 +1323,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/agent_registry_binding#deletion_policy AgentRegistryBinding#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/agent_registry_binding#deletion_policy AgentRegistryBinding#deletion_policy}
 
 ---
 
@@ -1344,7 +1337,7 @@ Description *string
 
 The description of the Binding.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/agent_registry_binding#description AgentRegistryBinding#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/agent_registry_binding#description AgentRegistryBinding#description}
 
 ---
 
@@ -1358,7 +1351,7 @@ DisplayName *string
 
 User-defined display name for the Binding.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/agent_registry_binding#display_name AgentRegistryBinding#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/agent_registry_binding#display_name AgentRegistryBinding#display_name}
 
 ---
 
@@ -1370,7 +1363,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/agent_registry_binding#id AgentRegistryBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/agent_registry_binding#id AgentRegistryBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1385,7 +1378,21 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/agent_registry_binding#project AgentRegistryBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/agent_registry_binding#project AgentRegistryBinding#project}.
+
+---
+
+##### `Source`<sup>Optional</sup> <a name="Source" id="@cdktn/provider-google.agentRegistryBinding.AgentRegistryBindingConfig.property.source"></a>
+
+```go
+Source AgentRegistryBindingSource
+```
+
+- *Type:* <a href="#@cdktn/provider-google.agentRegistryBinding.AgentRegistryBindingSource">AgentRegistryBindingSource</a>
+
+source block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/agent_registry_binding#source AgentRegistryBinding#source}
 
 ---
 
@@ -1399,7 +1406,7 @@ Timeouts AgentRegistryBindingTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/agent_registry_binding#timeouts AgentRegistryBinding#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/agent_registry_binding#timeouts AgentRegistryBinding#timeouts}
 
 ---
 
@@ -1408,7 +1415,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.agentRegistryBinding.AgentRegistryBindingSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentregistrybinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/agentregistrybinding"
 
 &agentregistrybinding.AgentRegistryBindingSource {
 	Identifier: *string,
@@ -1433,7 +1440,7 @@ Identifier *string
 
 The identifier of the source Agent. Format: 'urn:agent:{publisher}:{namespace}:{name}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/agent_registry_binding#identifier AgentRegistryBinding#identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/agent_registry_binding#identifier AgentRegistryBinding#identifier}
 
 ---
 
@@ -1442,7 +1449,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.agentRegistryBinding.AgentRegistryBindingTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentregistrybinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/agentregistrybinding"
 
 &agentregistrybinding.AgentRegistryBindingTarget {
 	Identifier: *string,
@@ -1467,7 +1474,7 @@ Identifier *string
 
 The identifier of the target Agent, MCP Server, or Endpoint. Format: * 'urn:agent:{publisher}:{namespace}:{name}' * 'urn:mcp:{publisher}:{namespace}:{name}' * 'urn:endpoint:{publisher}:{namespace}:{name}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/agent_registry_binding#identifier AgentRegistryBinding#identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/agent_registry_binding#identifier AgentRegistryBinding#identifier}
 
 ---
 
@@ -1476,7 +1483,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.agentRegistryBinding.AgentRegistryBindingTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentregistrybinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/agentregistrybinding"
 
 &agentregistrybinding.AgentRegistryBindingTimeouts {
 	Create: *string,
@@ -1489,9 +1496,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentregistrybin
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.agentRegistryBinding.AgentRegistryBindingTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/agent_registry_binding#create AgentRegistryBinding#create}. |
-| <code><a href="#@cdktn/provider-google.agentRegistryBinding.AgentRegistryBindingTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/agent_registry_binding#delete AgentRegistryBinding#delete}. |
-| <code><a href="#@cdktn/provider-google.agentRegistryBinding.AgentRegistryBindingTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/agent_registry_binding#update AgentRegistryBinding#update}. |
+| <code><a href="#@cdktn/provider-google.agentRegistryBinding.AgentRegistryBindingTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/agent_registry_binding#create AgentRegistryBinding#create}. |
+| <code><a href="#@cdktn/provider-google.agentRegistryBinding.AgentRegistryBindingTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/agent_registry_binding#delete AgentRegistryBinding#delete}. |
+| <code><a href="#@cdktn/provider-google.agentRegistryBinding.AgentRegistryBindingTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/agent_registry_binding#update AgentRegistryBinding#update}. |
 
 ---
 
@@ -1503,7 +1510,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/agent_registry_binding#create AgentRegistryBinding#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/agent_registry_binding#create AgentRegistryBinding#create}.
 
 ---
 
@@ -1515,7 +1522,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/agent_registry_binding#delete AgentRegistryBinding#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/agent_registry_binding#delete AgentRegistryBinding#delete}.
 
 ---
 
@@ -1527,7 +1534,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/agent_registry_binding#update AgentRegistryBinding#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/agent_registry_binding#update AgentRegistryBinding#update}.
 
 ---
 
@@ -1538,7 +1545,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.agentRegistryBinding.AgentRegistryBindingAuthProviderBindingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentregistrybinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/agentregistrybinding"
 
 agentregistrybinding.NewAgentRegistryBindingAuthProviderBindingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AgentRegistryBindingAuthProviderBindingOutputReference
 ```
@@ -1867,7 +1874,7 @@ func InternalValue() AgentRegistryBindingAuthProviderBinding
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.agentRegistryBinding.AgentRegistryBindingSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentregistrybinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/agentregistrybinding"
 
 agentregistrybinding.NewAgentRegistryBindingSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AgentRegistryBindingSourceOutputReference
 ```
@@ -2138,7 +2145,7 @@ func InternalValue() AgentRegistryBindingSource
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.agentRegistryBinding.AgentRegistryBindingTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentregistrybinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/agentregistrybinding"
 
 agentregistrybinding.NewAgentRegistryBindingTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AgentRegistryBindingTargetOutputReference
 ```
@@ -2409,7 +2416,7 @@ func InternalValue() AgentRegistryBindingTarget
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.agentRegistryBinding.AgentRegistryBindingTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentregistrybinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/agentregistrybinding"
 
 agentregistrybinding.NewAgentRegistryBindingTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AgentRegistryBindingTimeoutsOutputReference
 ```

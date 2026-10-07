@@ -11,7 +11,7 @@ const project = new CdktnProviderProject({
   // `undefined` means "take the default for the runner class" -- which is what
   // every provider should use unless it has demonstrably OOMed on the default.
   nodeHeapSizeMb: undefined,
-  terraformProvider: "hashicorp/google@~> 7.0",
+  terraformProvider: "hashicorp/google@~> 8.0",
   cdktnVersion: "^0.24.0",
   // cdktn 0.24's constructs peer range verbatim -- NOT caret-style. cdk-terrain
   // disallows constructs 10.8 until support lands (open-constructs/cdk-terrain#363),

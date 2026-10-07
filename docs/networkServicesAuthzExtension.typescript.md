@@ -4,7 +4,7 @@
 
 ### NetworkServicesAuthzExtension <a name="NetworkServicesAuthzExtension" id="@cdktn/provider-google.networkServicesAuthzExtension.NetworkServicesAuthzExtension"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_authz_extension google_network_services_authz_extension}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_authz_extension google_network_services_authz_extension}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesAuthzExtension.NetworkServicesAuthzExtension.Initializer"></a>
 
@@ -79,6 +79,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.networkServicesAuthzExtension.NetworkServicesAuthzExtension.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesAuthzExtension.NetworkServicesAuthzExtension.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesAuthzExtension.NetworkServicesAuthzExtension.resetFailOpen">resetFailOpen</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkServicesAuthzExtension.NetworkServicesAuthzExtension.resetForwardAttributes">resetForwardAttributes</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesAuthzExtension.NetworkServicesAuthzExtension.resetForwardHeaders">resetForwardHeaders</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesAuthzExtension.NetworkServicesAuthzExtension.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesAuthzExtension.NetworkServicesAuthzExtension.resetLabels">resetLabels</a></code> | *No description.* |
@@ -435,6 +436,12 @@ public resetDescription(): void
 public resetFailOpen(): void
 ```
 
+##### `resetForwardAttributes` <a name="resetForwardAttributes" id="@cdktn/provider-google.networkServicesAuthzExtension.NetworkServicesAuthzExtension.resetForwardAttributes"></a>
+
+```typescript
+public resetForwardAttributes(): void
+```
+
 ##### `resetForwardHeaders` <a name="resetForwardHeaders" id="@cdktn/provider-google.networkServicesAuthzExtension.NetworkServicesAuthzExtension.resetForwardHeaders"></a>
 
 ```typescript
@@ -586,7 +593,7 @@ The construct id used in the generated config for the NetworkServicesAuthzExtens
 
 The id of the existing NetworkServicesAuthzExtension that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_authz_extension#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_authz_extension#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -625,6 +632,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.networkServicesAuthzExtension.NetworkServicesAuthzExtension.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesAuthzExtension.NetworkServicesAuthzExtension.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesAuthzExtension.NetworkServicesAuthzExtension.property.failOpenInput">failOpenInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkServicesAuthzExtension.NetworkServicesAuthzExtension.property.forwardAttributesInput">forwardAttributesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesAuthzExtension.NetworkServicesAuthzExtension.property.forwardHeadersInput">forwardHeadersInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesAuthzExtension.NetworkServicesAuthzExtension.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesAuthzExtension.NetworkServicesAuthzExtension.property.labelsInput">labelsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
@@ -641,6 +649,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.networkServicesAuthzExtension.NetworkServicesAuthzExtension.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesAuthzExtension.NetworkServicesAuthzExtension.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesAuthzExtension.NetworkServicesAuthzExtension.property.failOpen">failOpen</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkServicesAuthzExtension.NetworkServicesAuthzExtension.property.forwardAttributes">forwardAttributes</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesAuthzExtension.NetworkServicesAuthzExtension.property.forwardHeaders">forwardHeaders</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesAuthzExtension.NetworkServicesAuthzExtension.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesAuthzExtension.NetworkServicesAuthzExtension.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
@@ -887,6 +896,16 @@ public readonly failOpenInput: boolean | IResolvable;
 
 ---
 
+##### `forwardAttributesInput`<sup>Optional</sup> <a name="forwardAttributesInput" id="@cdktn/provider-google.networkServicesAuthzExtension.NetworkServicesAuthzExtension.property.forwardAttributesInput"></a>
+
+```typescript
+public readonly forwardAttributesInput: string[];
+```
+
+- *Type:* string[]
+
+---
+
 ##### `forwardHeadersInput`<sup>Optional</sup> <a name="forwardHeadersInput" id="@cdktn/provider-google.networkServicesAuthzExtension.NetworkServicesAuthzExtension.property.forwardHeadersInput"></a>
 
 ```typescript
@@ -1044,6 +1063,16 @@ public readonly failOpen: boolean | IResolvable;
 ```
 
 - *Type:* boolean | cdktn.IResolvable
+
+---
+
+##### `forwardAttributes`<sup>Required</sup> <a name="forwardAttributes" id="@cdktn/provider-google.networkServicesAuthzExtension.NetworkServicesAuthzExtension.property.forwardAttributes"></a>
+
+```typescript
+public readonly forwardAttributes: string[];
+```
+
+- *Type:* string[]
 
 ---
 
@@ -1206,12 +1235,13 @@ const networkServicesAuthzExtensionConfig: networkServicesAuthzExtension.Network
 | <code><a href="#@cdktn/provider-google.networkServicesAuthzExtension.NetworkServicesAuthzExtensionConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.networkServicesAuthzExtension.NetworkServicesAuthzExtensionConfig.property.description">description</a></code> | <code>string</code> | A human-readable description of the resource. |
 | <code><a href="#@cdktn/provider-google.networkServicesAuthzExtension.NetworkServicesAuthzExtensionConfig.property.failOpen">failOpen</a></code> | <code>boolean \| cdktn.IResolvable</code> | Determines how the proxy behaves if the call to the extension fails or times out. |
+| <code><a href="#@cdktn/provider-google.networkServicesAuthzExtension.NetworkServicesAuthzExtensionConfig.property.forwardAttributes">forwardAttributes</a></code> | <code>string[]</code> | List of the Envoy attributes to forward to the extension server. |
 | <code><a href="#@cdktn/provider-google.networkServicesAuthzExtension.NetworkServicesAuthzExtensionConfig.property.forwardHeaders">forwardHeaders</a></code> | <code>string[]</code> | List of the HTTP headers to forward to the extension (from the client). |
-| <code><a href="#@cdktn/provider-google.networkServicesAuthzExtension.NetworkServicesAuthzExtensionConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_authz_extension#id NetworkServicesAuthzExtension#id}. |
+| <code><a href="#@cdktn/provider-google.networkServicesAuthzExtension.NetworkServicesAuthzExtensionConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_authz_extension#id NetworkServicesAuthzExtension#id}. |
 | <code><a href="#@cdktn/provider-google.networkServicesAuthzExtension.NetworkServicesAuthzExtensionConfig.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | Set of labels associated with the AuthzExtension resource. |
 | <code><a href="#@cdktn/provider-google.networkServicesAuthzExtension.NetworkServicesAuthzExtensionConfig.property.loadBalancingScheme">loadBalancingScheme</a></code> | <code>string</code> | Required when the service points to a backend service. |
 | <code><a href="#@cdktn/provider-google.networkServicesAuthzExtension.NetworkServicesAuthzExtensionConfig.property.metadata">metadata</a></code> | <code>{[ key: string ]: string}</code> | The metadata provided here is included as part of the metadata_context (of type google.protobuf.Struct) in the ProcessingRequest message sent to the extension server. The metadata is available under the namespace com.google.authz_extension.<resourceName>. The following variables are supported in the metadata Struct:. |
-| <code><a href="#@cdktn/provider-google.networkServicesAuthzExtension.NetworkServicesAuthzExtensionConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_authz_extension#project NetworkServicesAuthzExtension#project}. |
+| <code><a href="#@cdktn/provider-google.networkServicesAuthzExtension.NetworkServicesAuthzExtensionConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_authz_extension#project NetworkServicesAuthzExtension#project}. |
 | <code><a href="#@cdktn/provider-google.networkServicesAuthzExtension.NetworkServicesAuthzExtensionConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.networkServicesAuthzExtension.NetworkServicesAuthzExtensionTimeouts">NetworkServicesAuthzExtensionTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.networkServicesAuthzExtension.NetworkServicesAuthzExtensionConfig.property.wireFormat">wireFormat</a></code> | <code>string</code> | The format of communication supported by the callout extension. |
 
@@ -1297,7 +1327,7 @@ public readonly location: string;
 
 The location of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_authz_extension#location NetworkServicesAuthzExtension#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_authz_extension#location NetworkServicesAuthzExtension#location}
 
 ---
 
@@ -1311,7 +1341,7 @@ public readonly name: string;
 
 Identifier. Name of the AuthzExtension resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_authz_extension#name NetworkServicesAuthzExtension#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_authz_extension#name NetworkServicesAuthzExtension#name}
 
 ---
 
@@ -1331,7 +1361,7 @@ The following values and formats are accepted:
 * A fully qualified domain name that can be resolved by the dataplane
 * Backend service resource URI of the form 'https://www.googleapis.com/compute/v1/projects/{{project}}/regions/{{region}}/backendServices/{{name}}' or 'https://www.googleapis.com/compute/v1/projects/{{project}}/global/backendServices/{{name}}}}'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_authz_extension#service NetworkServicesAuthzExtension#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_authz_extension#service NetworkServicesAuthzExtension#service}
 
 ---
 
@@ -1345,7 +1375,7 @@ public readonly timeout: string;
 
 Specifies the timeout for each individual message on the stream. The timeout must be between 10-10000 milliseconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_authz_extension#timeout NetworkServicesAuthzExtension#timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_authz_extension#timeout NetworkServicesAuthzExtension#timeout}
 
 ---
 
@@ -1359,7 +1389,7 @@ public readonly authority: string;
 
 The :authority header in the gRPC request sent from Envoy to the extension service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_authz_extension#authority NetworkServicesAuthzExtension#authority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_authz_extension#authority NetworkServicesAuthzExtension#authority}
 
 ---
 
@@ -1381,7 +1411,7 @@ management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_authz_extension#deletion_policy NetworkServicesAuthzExtension#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_authz_extension#deletion_policy NetworkServicesAuthzExtension#deletion_policy}
 
 ---
 
@@ -1395,7 +1425,7 @@ public readonly description: string;
 
 A human-readable description of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_authz_extension#description NetworkServicesAuthzExtension#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_authz_extension#description NetworkServicesAuthzExtension#description}
 
 ---
 
@@ -1413,7 +1443,28 @@ When set to TRUE, request or response processing continues without error. Any su
 * If response headers have not been delivered to the downstream client, a generic 500 error is returned to the client. The error response can be tailored by configuring a custom error response in the load balancer.
 * If response headers have been delivered, then the HTTP stream to the downstream client is reset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_authz_extension#fail_open NetworkServicesAuthzExtension#fail_open}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_authz_extension#fail_open NetworkServicesAuthzExtension#fail_open}
+
+---
+
+##### `forwardAttributes`<sup>Optional</sup> <a name="forwardAttributes" id="@cdktn/provider-google.networkServicesAuthzExtension.NetworkServicesAuthzExtensionConfig.property.forwardAttributes"></a>
+
+```typescript
+public readonly forwardAttributes: string[];
+```
+
+- *Type:* string[]
+
+List of the Envoy attributes to forward to the extension server.
+
+The attributes
+provided here are included as part of the 'ProcessingRequest.attributes' field
+(of type 'map'), where the keys are the attribute names. Refer to the
+[documentation](https://cloud.google.com/service-extensions/docs/attributes)
+for the names of attributes that can be forwarded. If omitted, no attributes
+are sent. Each element is a string indicating the attribute name.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_authz_extension#forward_attributes NetworkServicesAuthzExtension#forward_attributes}
 
 ---
 
@@ -1429,7 +1480,7 @@ List of the HTTP headers to forward to the extension (from the client).
 
 If omitted, all headers are sent. Each element is a string indicating the header name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_authz_extension#forward_headers NetworkServicesAuthzExtension#forward_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_authz_extension#forward_headers NetworkServicesAuthzExtension#forward_headers}
 
 ---
 
@@ -1441,7 +1492,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_authz_extension#id NetworkServicesAuthzExtension#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_authz_extension#id NetworkServicesAuthzExtension#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1461,7 +1512,7 @@ Set of labels associated with the AuthzExtension resource.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_authz_extension#labels NetworkServicesAuthzExtension#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_authz_extension#labels NetworkServicesAuthzExtension#labels}
 
 ---
 
@@ -1479,7 +1530,7 @@ All backend services and forwarding rules referenced by
 this extension must share the same load balancing scheme. For more information, refer to
 [Backend services overview](https://cloud.google.com/load-balancing/docs/backend-service). Possible values: ["INTERNAL_MANAGED", "EXTERNAL_MANAGED"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_authz_extension#load_balancing_scheme NetworkServicesAuthzExtension#load_balancing_scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_authz_extension#load_balancing_scheme NetworkServicesAuthzExtension#load_balancing_scheme}
 
 ---
 
@@ -1495,7 +1546,7 @@ The metadata provided here is included as part of the metadata_context (of type 
 
 {forwarding_rule_id} - substituted with the forwarding rule's fully qualified resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_authz_extension#metadata NetworkServicesAuthzExtension#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_authz_extension#metadata NetworkServicesAuthzExtension#metadata}
 
 ---
 
@@ -1507,7 +1558,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_authz_extension#project NetworkServicesAuthzExtension#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_authz_extension#project NetworkServicesAuthzExtension#project}.
 
 ---
 
@@ -1521,7 +1572,7 @@ public readonly timeouts: NetworkServicesAuthzExtensionTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_authz_extension#timeouts NetworkServicesAuthzExtension#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_authz_extension#timeouts NetworkServicesAuthzExtension#timeouts}
 
 ---
 
@@ -1553,7 +1604,7 @@ Supported values:
     The backend service must support HTTP/2 or H2C.
     This option is only supported for regional AuthzExtension resources. Possible values: ["WIRE_FORMAT_UNSPECIFIED", "EXT_PROC_GRPC", "EXT_AUTHZ_GRPC"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_authz_extension#wire_format NetworkServicesAuthzExtension#wire_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_authz_extension#wire_format NetworkServicesAuthzExtension#wire_format}
 
 ---
 
@@ -1571,9 +1622,9 @@ const networkServicesAuthzExtensionTimeouts: networkServicesAuthzExtension.Netwo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.networkServicesAuthzExtension.NetworkServicesAuthzExtensionTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_authz_extension#create NetworkServicesAuthzExtension#create}. |
-| <code><a href="#@cdktn/provider-google.networkServicesAuthzExtension.NetworkServicesAuthzExtensionTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_authz_extension#delete NetworkServicesAuthzExtension#delete}. |
-| <code><a href="#@cdktn/provider-google.networkServicesAuthzExtension.NetworkServicesAuthzExtensionTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_authz_extension#update NetworkServicesAuthzExtension#update}. |
+| <code><a href="#@cdktn/provider-google.networkServicesAuthzExtension.NetworkServicesAuthzExtensionTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_authz_extension#create NetworkServicesAuthzExtension#create}. |
+| <code><a href="#@cdktn/provider-google.networkServicesAuthzExtension.NetworkServicesAuthzExtensionTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_authz_extension#delete NetworkServicesAuthzExtension#delete}. |
+| <code><a href="#@cdktn/provider-google.networkServicesAuthzExtension.NetworkServicesAuthzExtensionTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_authz_extension#update NetworkServicesAuthzExtension#update}. |
 
 ---
 
@@ -1585,7 +1636,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_authz_extension#create NetworkServicesAuthzExtension#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_authz_extension#create NetworkServicesAuthzExtension#create}.
 
 ---
 
@@ -1597,7 +1648,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_authz_extension#delete NetworkServicesAuthzExtension#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_authz_extension#delete NetworkServicesAuthzExtension#delete}.
 
 ---
 
@@ -1609,7 +1660,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_authz_extension#update NetworkServicesAuthzExtension#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_authz_extension#update NetworkServicesAuthzExtension#update}.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataGoogleParameterManagerRegionalParameter <a name="DataGoogleParameterManagerRegionalParameter" id="@cdktn/provider-google.dataGoogleParameterManagerRegionalParameter.DataGoogleParameterManagerRegionalParameter"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/parameter_manager_regional_parameter google_parameter_manager_regional_parameter}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/parameter_manager_regional_parameter google_parameter_manager_regional_parameter}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleParameterManagerRegionalParameter.DataGoogleParameterManagerRegionalParameter.Initializer"></a>
 
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataGoogleParameterManager
 
 The id of the existing DataGoogleParameterManagerRegionalParameter that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/parameter_manager_regional_parameter#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/parameter_manager_regional_parameter#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -437,6 +437,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.dataGoogleParameterManagerRegionalParameter.DataGoogleParameterManagerRegionalParameter.property.labels">Labels</a></code> | <code>Io.Cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleParameterManagerRegionalParameter.DataGoogleParameterManagerRegionalParameter.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleParameterManagerRegionalParameter.DataGoogleParameterManagerRegionalParameter.property.policyMember">PolicyMember</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleParameterManagerRegionalParameter.DataGoogleParameterManagerRegionalParameterPolicyMemberList">DataGoogleParameterManagerRegionalParameterPolicyMemberList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleParameterManagerRegionalParameter.DataGoogleParameterManagerRegionalParameter.property.tags">Tags</a></code> | <code>Io.Cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleParameterManagerRegionalParameter.DataGoogleParameterManagerRegionalParameter.property.terraformLabels">TerraformLabels</a></code> | <code>Io.Cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleParameterManagerRegionalParameter.DataGoogleParameterManagerRegionalParameter.property.updateTime">UpdateTime</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleParameterManagerRegionalParameter.DataGoogleParameterManagerRegionalParameter.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
@@ -652,6 +653,16 @@ public DataGoogleParameterManagerRegionalParameterPolicyMemberList PolicyMember 
 
 ---
 
+##### `Tags`<sup>Required</sup> <a name="Tags" id="@cdktn/provider-google.dataGoogleParameterManagerRegionalParameter.DataGoogleParameterManagerRegionalParameter.property.tags"></a>
+
+```csharp
+public StringMap Tags { get; }
+```
+
+- *Type:* Io.Cdktn.StringMap
+
+---
+
 ##### `TerraformLabels`<sup>Required</sup> <a name="TerraformLabels" id="@cdktn/provider-google.dataGoogleParameterManagerRegionalParameter.DataGoogleParameterManagerRegionalParameter.property.terraformLabels"></a>
 
 ```csharp
@@ -807,8 +818,8 @@ new DataGoogleParameterManagerRegionalParameterConfig {
 | <code><a href="#@cdktn/provider-google.dataGoogleParameterManagerRegionalParameter.DataGoogleParameterManagerRegionalParameterConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleParameterManagerRegionalParameter.DataGoogleParameterManagerRegionalParameterConfig.property.location">Location</a></code> | <code>string</code> | The location of the regional parameter. eg us-central1. |
 | <code><a href="#@cdktn/provider-google.dataGoogleParameterManagerRegionalParameter.DataGoogleParameterManagerRegionalParameterConfig.property.parameterId">ParameterId</a></code> | <code>string</code> | This must be unique within the project. |
-| <code><a href="#@cdktn/provider-google.dataGoogleParameterManagerRegionalParameter.DataGoogleParameterManagerRegionalParameterConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/parameter_manager_regional_parameter#id DataGoogleParameterManagerRegionalParameter#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleParameterManagerRegionalParameter.DataGoogleParameterManagerRegionalParameterConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/parameter_manager_regional_parameter#project DataGoogleParameterManagerRegionalParameter#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleParameterManagerRegionalParameter.DataGoogleParameterManagerRegionalParameterConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/parameter_manager_regional_parameter#id DataGoogleParameterManagerRegionalParameter#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleParameterManagerRegionalParameter.DataGoogleParameterManagerRegionalParameterConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/parameter_manager_regional_parameter#project DataGoogleParameterManagerRegionalParameter#project}. |
 
 ---
 
@@ -892,7 +903,7 @@ public string Location { get; set; }
 
 The location of the regional parameter. eg us-central1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/parameter_manager_regional_parameter#location DataGoogleParameterManagerRegionalParameter#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/parameter_manager_regional_parameter#location DataGoogleParameterManagerRegionalParameter#location}
 
 ---
 
@@ -906,7 +917,7 @@ public string ParameterId { get; set; }
 
 This must be unique within the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/parameter_manager_regional_parameter#parameter_id DataGoogleParameterManagerRegionalParameter#parameter_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/parameter_manager_regional_parameter#parameter_id DataGoogleParameterManagerRegionalParameter#parameter_id}
 
 ---
 
@@ -918,7 +929,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/parameter_manager_regional_parameter#id DataGoogleParameterManagerRegionalParameter#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/parameter_manager_regional_parameter#id DataGoogleParameterManagerRegionalParameter#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -933,7 +944,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/parameter_manager_regional_parameter#project DataGoogleParameterManagerRegionalParameter#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/parameter_manager_regional_parameter#project DataGoogleParameterManagerRegionalParameter#project}.
 
 ---
 

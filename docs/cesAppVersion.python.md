@@ -4,7 +4,7 @@
 
 ### CesAppVersion <a name="CesAppVersion" id="@cdktn/provider-google.cesAppVersion.CesAppVersion"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app_version google_ces_app_version}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app_version google_ces_app_version}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cesAppVersion.CesAppVersion.Initializer"></a>
 
@@ -50,8 +50,8 @@ cesAppVersion.CesAppVersion(
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersion.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersion.Initializer.parameter.description">description</a></code> | <code>str</code> | The description of the app version. |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersion.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | The display name of the app version. |
-| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersion.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app_version#id CesAppVersion#id}. |
-| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersion.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app_version#project CesAppVersion#project}. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersion.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app_version#id CesAppVersion#id}. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersion.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app_version#project CesAppVersion#project}. |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersion.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionTimeouts">CesAppVersionTimeouts</a></code> | timeouts block. |
 
 ---
@@ -122,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app_version#app CesAppVersion#app}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app_version#app CesAppVersion#app}
 
 ---
 
@@ -135,7 +135,7 @@ The ID to use for the app version, which will become the final component of the 
 If not provided, a unique ID will be
 automatically assigned for the app version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app_version#app_version_id CesAppVersion#app_version_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app_version#app_version_id CesAppVersion#app_version_id}
 
 ---
 
@@ -145,7 +145,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app_version#location CesAppVersion#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app_version#location CesAppVersion#location}
 
 ---
 
@@ -162,7 +162,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app_version#deletion_policy CesAppVersion#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app_version#deletion_policy CesAppVersion#deletion_policy}
 
 ---
 
@@ -172,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The description of the app version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app_version#description CesAppVersion#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app_version#description CesAppVersion#description}
 
 ---
 
@@ -182,7 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The display name of the app version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app_version#display_name CesAppVersion#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app_version#display_name CesAppVersion#display_name}
 
 ---
 
@@ -190,7 +190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app_version#id CesAppVersion#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app_version#id CesAppVersion#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -201,7 +201,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app_version#project CesAppVersion#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app_version#project CesAppVersion#project}.
 
 ---
 
@@ -211,7 +211,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app_version#timeouts CesAppVersion#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app_version#timeouts CesAppVersion#timeouts}
 
 ---
 
@@ -614,7 +614,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app_version#create CesAppVersion#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app_version#create CesAppVersion#create}.
 
 ---
 
@@ -622,7 +622,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app_version#delete CesAppVersion#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app_version#delete CesAppVersion#delete}.
 
 ---
 
@@ -776,7 +776,7 @@ The construct id used in the generated config for the CesAppVersion to import.
 
 The id of the existing CesAppVersion that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app_version#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app_version#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1268,8 +1268,8 @@ cesAppVersion.CesAppVersionConfig(
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionConfig.property.description">description</a></code> | <code>str</code> | The description of the app version. |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionConfig.property.displayName">display_name</a></code> | <code>str</code> | The display name of the app version. |
-| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app_version#id CesAppVersion#id}. |
-| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app_version#project CesAppVersion#project}. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app_version#id CesAppVersion#id}. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app_version#project CesAppVersion#project}. |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionTimeouts">CesAppVersionTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1354,7 +1354,7 @@ app: str
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app_version#app CesAppVersion#app}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app_version#app CesAppVersion#app}
 
 ---
 
@@ -1371,7 +1371,7 @@ The ID to use for the app version, which will become the final component of the 
 If not provided, a unique ID will be
 automatically assigned for the app version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app_version#app_version_id CesAppVersion#app_version_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app_version#app_version_id CesAppVersion#app_version_id}
 
 ---
 
@@ -1385,7 +1385,7 @@ location: str
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app_version#location CesAppVersion#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app_version#location CesAppVersion#location}
 
 ---
 
@@ -1406,7 +1406,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app_version#deletion_policy CesAppVersion#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app_version#deletion_policy CesAppVersion#deletion_policy}
 
 ---
 
@@ -1420,7 +1420,7 @@ description: str
 
 The description of the app version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app_version#description CesAppVersion#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app_version#description CesAppVersion#description}
 
 ---
 
@@ -1434,7 +1434,7 @@ display_name: str
 
 The display name of the app version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app_version#display_name CesAppVersion#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app_version#display_name CesAppVersion#display_name}
 
 ---
 
@@ -1446,7 +1446,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app_version#id CesAppVersion#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app_version#id CesAppVersion#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1461,7 +1461,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app_version#project CesAppVersion#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app_version#project CesAppVersion#project}.
 
 ---
 
@@ -1475,7 +1475,7 @@ timeouts: CesAppVersionTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app_version#timeouts CesAppVersion#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app_version#timeouts CesAppVersion#timeouts}
 
 ---
 
@@ -1611,6 +1611,72 @@ cesAppVersion.CesAppVersionSnapshotAgentsToolsets()
 ```
 
 
+### CesAppVersionSnapshotAgentsTransferRules <a name="CesAppVersionSnapshotAgentsTransferRules" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRules"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRules.Initializer"></a>
+
+```python
+from cdktn_provider_google import ces_app_version
+
+cesAppVersion.CesAppVersionSnapshotAgentsTransferRules()
+```
+
+
+### CesAppVersionSnapshotAgentsTransferRulesDeterministicTransfer <a name="CesAppVersionSnapshotAgentsTransferRulesDeterministicTransfer" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransfer"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransfer.Initializer"></a>
+
+```python
+from cdktn_provider_google import ces_app_version
+
+cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransfer()
+```
+
+
+### CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionCondition <a name="CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionCondition" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionCondition"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionCondition.Initializer"></a>
+
+```python
+from cdktn_provider_google import ces_app_version
+
+cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionCondition()
+```
+
+
+### CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeCondition <a name="CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeCondition" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeCondition"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeCondition.Initializer"></a>
+
+```python
+from cdktn_provider_google import ces_app_version
+
+cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeCondition()
+```
+
+
+### CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransfer <a name="CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransfer" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransfer"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransfer.Initializer"></a>
+
+```python
+from cdktn_provider_google import ces_app_version
+
+cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransfer()
+```
+
+
+### CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionCondition <a name="CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionCondition" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionCondition"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionCondition.Initializer"></a>
+
+```python
+from cdktn_provider_google import ces_app_version
+
+cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionCondition()
+```
+
+
 ### CesAppVersionSnapshotApp <a name="CesAppVersionSnapshotApp" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotApp"></a>
 
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotApp.Initializer"></a>
@@ -1732,6 +1798,50 @@ cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWebWidgetConfig()
 ```
 
 
+### CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfig <a name="CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfig" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfig.Initializer"></a>
+
+```python
+from cdktn_provider_google import ces_app_version
+
+cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfig()
+```
+
+
+### CesAppVersionSnapshotAppErrorHandlingSettings <a name="CesAppVersionSnapshotAppErrorHandlingSettings" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettings"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettings.Initializer"></a>
+
+```python
+from cdktn_provider_google import ces_app_version
+
+cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettings()
+```
+
+
+### CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfig <a name="CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfig" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfig.Initializer"></a>
+
+```python
+from cdktn_provider_google import ces_app_version
+
+cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfig()
+```
+
+
+### CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfig <a name="CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfig" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfig.Initializer"></a>
+
+```python
+from cdktn_provider_google import ces_app_version
+
+cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfig()
+```
+
+
 ### CesAppVersionSnapshotAppEvaluationMetricsThresholds <a name="CesAppVersionSnapshotAppEvaluationMetricsThresholds" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholds"></a>
 
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholds.Initializer"></a>
@@ -1762,6 +1872,17 @@ cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluatio
 from cdktn_provider_google import ces_app_version
 
 cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsExpectationLevelMetricsThresholds()
+```
+
+
+### CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettings <a name="CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettings" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettings"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettings.Initializer"></a>
+
+```python
+from cdktn_provider_google import ces_app_version
+
+cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettings()
 ```
 
 
@@ -1842,6 +1963,17 @@ cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsConversationLoggingSettings
 ```
 
 
+### CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettings <a name="CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettings" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettings"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettings.Initializer"></a>
+
+```python
+from cdktn_provider_google import ces_app_version
+
+cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettings()
+```
+
+
 ### CesAppVersionSnapshotAppLoggingSettingsRedactionConfig <a name="CesAppVersionSnapshotAppLoggingSettingsRedactionConfig" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsRedactionConfig"></a>
 
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsRedactionConfig.Initializer"></a>
@@ -1894,6 +2026,17 @@ cesAppVersion.CesAppVersionSnapshotAppVariableDeclarations()
 from cdktn_provider_google import ces_app_version
 
 cesAppVersion.CesAppVersionSnapshotAppVariableDeclarationsSchema()
+```
+
+
+### CesAppVersionSnapshotAppVpcScSettings <a name="CesAppVersionSnapshotAppVpcScSettings" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettings"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettings.Initializer"></a>
+
+```python
+from cdktn_provider_google import ces_app_version
+
+cesAppVersion.CesAppVersionSnapshotAppVpcScSettings()
 ```
 
 
@@ -2706,8 +2849,8 @@ cesAppVersion.CesAppVersionTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app_version#create CesAppVersion#create}. |
-| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app_version#delete CesAppVersion#delete}. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app_version#create CesAppVersion#create}. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app_version#delete CesAppVersion#delete}. |
 
 ---
 
@@ -2719,7 +2862,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app_version#create CesAppVersion#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app_version#create CesAppVersion#create}.
 
 ---
 
@@ -2731,7 +2874,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app_version#delete CesAppVersion#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app_version#delete CesAppVersion#delete}.
 
 ---
 
@@ -3153,6 +3296,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsAfterAgentCallbacksOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsAfterAgentCallbacksOutputReference.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsAfterAgentCallbacksOutputReference.property.disabled">disabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsAfterAgentCallbacksOutputReference.property.proactiveExecutionEnabled">proactive_execution_enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsAfterAgentCallbacksOutputReference.property.pythonCode">python_code</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsAfterAgentCallbacksOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsAfterAgentCallbacks">CesAppVersionSnapshotAgentsAfterAgentCallbacks</a></code> | *No description.* |
 
@@ -3196,6 +3340,16 @@ description: str
 
 ```python
 disabled: IResolvable
+```
+
+- *Type:* cdktn.IResolvable
+
+---
+
+##### `proactive_execution_enabled`<sup>Required</sup> <a name="proactive_execution_enabled" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsAfterAgentCallbacksOutputReference.property.proactiveExecutionEnabled"></a>
+
+```python
+proactive_execution_enabled: IResolvable
 ```
 
 - *Type:* cdktn.IResolvable
@@ -3639,6 +3793,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsAfterModelCallbacksOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsAfterModelCallbacksOutputReference.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsAfterModelCallbacksOutputReference.property.disabled">disabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsAfterModelCallbacksOutputReference.property.proactiveExecutionEnabled">proactive_execution_enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsAfterModelCallbacksOutputReference.property.pythonCode">python_code</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsAfterModelCallbacksOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsAfterModelCallbacks">CesAppVersionSnapshotAgentsAfterModelCallbacks</a></code> | *No description.* |
 
@@ -3682,6 +3837,16 @@ description: str
 
 ```python
 disabled: IResolvable
+```
+
+- *Type:* cdktn.IResolvable
+
+---
+
+##### `proactive_execution_enabled`<sup>Required</sup> <a name="proactive_execution_enabled" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsAfterModelCallbacksOutputReference.property.proactiveExecutionEnabled"></a>
+
+```python
+proactive_execution_enabled: IResolvable
 ```
 
 - *Type:* cdktn.IResolvable
@@ -4125,6 +4290,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsAfterToolCallbacksOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsAfterToolCallbacksOutputReference.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsAfterToolCallbacksOutputReference.property.disabled">disabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsAfterToolCallbacksOutputReference.property.proactiveExecutionEnabled">proactive_execution_enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsAfterToolCallbacksOutputReference.property.pythonCode">python_code</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsAfterToolCallbacksOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsAfterToolCallbacks">CesAppVersionSnapshotAgentsAfterToolCallbacks</a></code> | *No description.* |
 
@@ -4168,6 +4334,16 @@ description: str
 
 ```python
 disabled: IResolvable
+```
+
+- *Type:* cdktn.IResolvable
+
+---
+
+##### `proactive_execution_enabled`<sup>Required</sup> <a name="proactive_execution_enabled" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsAfterToolCallbacksOutputReference.property.proactiveExecutionEnabled"></a>
+
+```python
+proactive_execution_enabled: IResolvable
 ```
 
 - *Type:* cdktn.IResolvable
@@ -4611,6 +4787,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsBeforeAgentCallbacksOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsBeforeAgentCallbacksOutputReference.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsBeforeAgentCallbacksOutputReference.property.disabled">disabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsBeforeAgentCallbacksOutputReference.property.proactiveExecutionEnabled">proactive_execution_enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsBeforeAgentCallbacksOutputReference.property.pythonCode">python_code</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsBeforeAgentCallbacksOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsBeforeAgentCallbacks">CesAppVersionSnapshotAgentsBeforeAgentCallbacks</a></code> | *No description.* |
 
@@ -4654,6 +4831,16 @@ description: str
 
 ```python
 disabled: IResolvable
+```
+
+- *Type:* cdktn.IResolvable
+
+---
+
+##### `proactive_execution_enabled`<sup>Required</sup> <a name="proactive_execution_enabled" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsBeforeAgentCallbacksOutputReference.property.proactiveExecutionEnabled"></a>
+
+```python
+proactive_execution_enabled: IResolvable
 ```
 
 - *Type:* cdktn.IResolvable
@@ -5097,6 +5284,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsBeforeModelCallbacksOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsBeforeModelCallbacksOutputReference.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsBeforeModelCallbacksOutputReference.property.disabled">disabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsBeforeModelCallbacksOutputReference.property.proactiveExecutionEnabled">proactive_execution_enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsBeforeModelCallbacksOutputReference.property.pythonCode">python_code</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsBeforeModelCallbacksOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsBeforeModelCallbacks">CesAppVersionSnapshotAgentsBeforeModelCallbacks</a></code> | *No description.* |
 
@@ -5140,6 +5328,16 @@ description: str
 
 ```python
 disabled: IResolvable
+```
+
+- *Type:* cdktn.IResolvable
+
+---
+
+##### `proactive_execution_enabled`<sup>Required</sup> <a name="proactive_execution_enabled" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsBeforeModelCallbacksOutputReference.property.proactiveExecutionEnabled"></a>
+
+```python
+proactive_execution_enabled: IResolvable
 ```
 
 - *Type:* cdktn.IResolvable
@@ -5583,6 +5781,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsBeforeToolCallbacksOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsBeforeToolCallbacksOutputReference.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsBeforeToolCallbacksOutputReference.property.disabled">disabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsBeforeToolCallbacksOutputReference.property.proactiveExecutionEnabled">proactive_execution_enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsBeforeToolCallbacksOutputReference.property.pythonCode">python_code</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsBeforeToolCallbacksOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsBeforeToolCallbacks">CesAppVersionSnapshotAgentsBeforeToolCallbacks</a></code> | *No description.* |
 
@@ -5626,6 +5825,16 @@ description: str
 
 ```python
 disabled: IResolvable
+```
+
+- *Type:* cdktn.IResolvable
+
+---
+
+##### `proactive_execution_enabled`<sup>Required</sup> <a name="proactive_execution_enabled" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsBeforeToolCallbacksOutputReference.property.proactiveExecutionEnabled"></a>
+
+```python
+proactive_execution_enabled: IResolvable
 ```
 
 - *Type:* cdktn.IResolvable
@@ -7015,6 +7224,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsOutputReference.property.remoteDialogflowAgent">remote_dialogflow_agent</a></code> | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsRemoteDialogflowAgentList">CesAppVersionSnapshotAgentsRemoteDialogflowAgentList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsOutputReference.property.tools">tools</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsOutputReference.property.toolsets">toolsets</a></code> | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsToolsetsList">CesAppVersionSnapshotAgentsToolsetsList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsOutputReference.property.transferRules">transfer_rules</a></code> | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesList">CesAppVersionSnapshotAgentsTransferRulesList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsOutputReference.property.updateTime">update_time</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgents">CesAppVersionSnapshotAgents</a></code> | *No description.* |
 
@@ -7241,6 +7451,16 @@ toolsets: CesAppVersionSnapshotAgentsToolsetsList
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsToolsetsList">CesAppVersionSnapshotAgentsToolsetsList</a>
+
+---
+
+##### `transfer_rules`<sup>Required</sup> <a name="transfer_rules" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsOutputReference.property.transferRules"></a>
+
+```python
+transfer_rules: CesAppVersionSnapshotAgentsTransferRulesList
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesList">CesAppVersionSnapshotAgentsTransferRulesList</a>
 
 ---
 
@@ -7683,6 +7903,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsRemoteDialogflowAgentOutputReference.property.environmentId">environment_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsRemoteDialogflowAgentOutputReference.property.flowId">flow_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsRemoteDialogflowAgentOutputReference.property.inputVariableMapping">input_variable_mapping</a></code> | <code>cdktn.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsRemoteDialogflowAgentOutputReference.property.languageCodeVariable">language_code_variable</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsRemoteDialogflowAgentOutputReference.property.outputVariableMapping">output_variable_mapping</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsRemoteDialogflowAgentOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsRemoteDialogflowAgent">CesAppVersionSnapshotAgentsRemoteDialogflowAgent</a></code> | *No description.* |
 
@@ -7749,6 +7970,16 @@ input_variable_mapping: StringMap
 ```
 
 - *Type:* cdktn.StringMap
+
+---
+
+##### `language_code_variable`<sup>Required</sup> <a name="language_code_variable" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsRemoteDialogflowAgentOutputReference.property.languageCodeVariable"></a>
+
+```python
+language_code_variable: str
+```
+
+- *Type:* str
 
 ---
 
@@ -8244,6 +8475,2834 @@ internal_value: CesAppVersionSnapshotAgentsToolsets
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsToolsets">CesAppVersionSnapshotAgentsToolsets</a>
+
+---
+
+
+### CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionList <a name="CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionList" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionList.Initializer"></a>
+
+```python
+from cdktn_provider_google import ces_app_version
+
+cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+
+### CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionOutputReference <a name="CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionOutputReference" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_google import ces_app_version
+
+cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionOutputReference.property.expression">expression</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionCondition">CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionCondition</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `expression`<sup>Required</sup> <a name="expression" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionOutputReference.property.expression"></a>
+
+```python
+expression: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionOutputReference.property.internalValue"></a>
+
+```python
+internal_value: CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionCondition
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionCondition">CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionCondition</a>
+
+---
+
+
+### CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferList <a name="CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferList" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferList.Initializer"></a>
+
+```python
+from cdktn_provider_google import ces_app_version
+
+cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+
+### CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferOutputReference <a name="CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferOutputReference" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_google import ces_app_version
+
+cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferOutputReference.property.expressionCondition">expression_condition</a></code> | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionList">CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferOutputReference.property.pythonCodeCondition">python_code_condition</a></code> | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionList">CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransfer">CesAppVersionSnapshotAgentsTransferRulesDeterministicTransfer</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `expression_condition`<sup>Required</sup> <a name="expression_condition" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferOutputReference.property.expressionCondition"></a>
+
+```python
+expression_condition: CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionList
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionList">CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferExpressionConditionList</a>
+
+---
+
+##### `python_code_condition`<sup>Required</sup> <a name="python_code_condition" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferOutputReference.property.pythonCodeCondition"></a>
+
+```python
+python_code_condition: CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionList
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionList">CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionList</a>
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferOutputReference.property.internalValue"></a>
+
+```python
+internal_value: CesAppVersionSnapshotAgentsTransferRulesDeterministicTransfer
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransfer">CesAppVersionSnapshotAgentsTransferRulesDeterministicTransfer</a>
+
+---
+
+
+### CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionList <a name="CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionList" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionList.Initializer"></a>
+
+```python
+from cdktn_provider_google import ces_app_version
+
+cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+
+### CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionOutputReference <a name="CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionOutputReference" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_google import ces_app_version
+
+cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionOutputReference.property.pythonCode">python_code</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeCondition">CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeCondition</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `python_code`<sup>Required</sup> <a name="python_code" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionOutputReference.property.pythonCode"></a>
+
+```python
+python_code: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeConditionOutputReference.property.internalValue"></a>
+
+```python
+internal_value: CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeCondition
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeCondition">CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferPythonCodeCondition</a>
+
+---
+
+
+### CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionList <a name="CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionList" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionList.Initializer"></a>
+
+```python
+from cdktn_provider_google import ces_app_version
+
+cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+
+### CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionOutputReference <a name="CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionOutputReference" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_google import ces_app_version
+
+cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionOutputReference.property.expression">expression</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionCondition">CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionCondition</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `expression`<sup>Required</sup> <a name="expression" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionOutputReference.property.expression"></a>
+
+```python
+expression: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionOutputReference.property.internalValue"></a>
+
+```python
+internal_value: CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionCondition
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionCondition">CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionCondition</a>
+
+---
+
+
+### CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferList <a name="CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferList" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferList.Initializer"></a>
+
+```python
+from cdktn_provider_google import ces_app_version
+
+cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+
+### CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferOutputReference <a name="CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferOutputReference" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_google import ces_app_version
+
+cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferOutputReference.property.expressionCondition">expression_condition</a></code> | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionList">CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransfer">CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransfer</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `expression_condition`<sup>Required</sup> <a name="expression_condition" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferOutputReference.property.expressionCondition"></a>
+
+```python
+expression_condition: CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionList
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionList">CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferExpressionConditionList</a>
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferOutputReference.property.internalValue"></a>
+
+```python
+internal_value: CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransfer
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransfer">CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransfer</a>
+
+---
+
+
+### CesAppVersionSnapshotAgentsTransferRulesList <a name="CesAppVersionSnapshotAgentsTransferRulesList" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesList.Initializer"></a>
+
+```python
+from cdktn_provider_google import ces_app_version
+
+cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> CesAppVersionSnapshotAgentsTransferRulesOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+
+### CesAppVersionSnapshotAgentsTransferRulesOutputReference <a name="CesAppVersionSnapshotAgentsTransferRulesOutputReference" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_google import ces_app_version
+
+cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesOutputReference.property.childAgent">child_agent</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesOutputReference.property.deterministicTransfer">deterministic_transfer</a></code> | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferList">CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesOutputReference.property.direction">direction</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesOutputReference.property.disablePlannerTransfer">disable_planner_transfer</a></code> | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferList">CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRules">CesAppVersionSnapshotAgentsTransferRules</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `child_agent`<sup>Required</sup> <a name="child_agent" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesOutputReference.property.childAgent"></a>
+
+```python
+child_agent: str
+```
+
+- *Type:* str
+
+---
+
+##### `deterministic_transfer`<sup>Required</sup> <a name="deterministic_transfer" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesOutputReference.property.deterministicTransfer"></a>
+
+```python
+deterministic_transfer: CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferList
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferList">CesAppVersionSnapshotAgentsTransferRulesDeterministicTransferList</a>
+
+---
+
+##### `direction`<sup>Required</sup> <a name="direction" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesOutputReference.property.direction"></a>
+
+```python
+direction: str
+```
+
+- *Type:* str
+
+---
+
+##### `disable_planner_transfer`<sup>Required</sup> <a name="disable_planner_transfer" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesOutputReference.property.disablePlannerTransfer"></a>
+
+```python
+disable_planner_transfer: CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferList
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferList">CesAppVersionSnapshotAgentsTransferRulesDisablePlannerTransferList</a>
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRulesOutputReference.property.internalValue"></a>
+
+```python
+internal_value: CesAppVersionSnapshotAgentsTransferRules
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAgentsTransferRules">CesAppVersionSnapshotAgentsTransferRules</a>
 
 ---
 
@@ -12026,6 +15085,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileOutputReference.property.personaProperty">persona_property</a></code> | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfilePersonaPropertyList">CesAppVersionSnapshotAppDefaultChannelProfilePersonaPropertyList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileOutputReference.property.profileId">profile_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileOutputReference.property.webWidgetConfig">web_widget_config</a></code> | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWebWidgetConfigList">CesAppVersionSnapshotAppDefaultChannelProfileWebWidgetConfigList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileOutputReference.property.whatsappConfig">whatsapp_config</a></code> | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigList">CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfile">CesAppVersionSnapshotAppDefaultChannelProfile</a></code> | *No description.* |
 
 ---
@@ -12111,6 +15171,16 @@ web_widget_config: CesAppVersionSnapshotAppDefaultChannelProfileWebWidgetConfigL
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWebWidgetConfigList">CesAppVersionSnapshotAppDefaultChannelProfileWebWidgetConfigList</a>
+
+---
+
+##### `whatsapp_config`<sup>Required</sup> <a name="whatsapp_config" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileOutputReference.property.whatsappConfig"></a>
+
+```python
+whatsapp_config: CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigList
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigList">CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigList</a>
 
 ---
 
@@ -13075,6 +16145,1950 @@ internal_value: CesAppVersionSnapshotAppDefaultChannelProfileWebWidgetConfig
 ---
 
 
+### CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigList <a name="CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigList" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigList.Initializer"></a>
+
+```python
+from cdktn_provider_google import ces_app_version
+
+cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+
+### CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference <a name="CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_google import ces_app_version
+
+cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference.property.description">description</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference.property.displayName">display_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference.property.phoneNumber">phone_number</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference.property.phoneNumberId">phone_number_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference.property.thumbnailUrl">thumbnail_url</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference.property.wabaId">waba_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfig">CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfig</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference.property.description"></a>
+
+```python
+description: str
+```
+
+- *Type:* str
+
+---
+
+##### `display_name`<sup>Required</sup> <a name="display_name" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference.property.displayName"></a>
+
+```python
+display_name: str
+```
+
+- *Type:* str
+
+---
+
+##### `phone_number`<sup>Required</sup> <a name="phone_number" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference.property.phoneNumber"></a>
+
+```python
+phone_number: str
+```
+
+- *Type:* str
+
+---
+
+##### `phone_number_id`<sup>Required</sup> <a name="phone_number_id" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference.property.phoneNumberId"></a>
+
+```python
+phone_number_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `thumbnail_url`<sup>Required</sup> <a name="thumbnail_url" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference.property.thumbnailUrl"></a>
+
+```python
+thumbnail_url: str
+```
+
+- *Type:* str
+
+---
+
+##### `waba_id`<sup>Required</sup> <a name="waba_id" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference.property.wabaId"></a>
+
+```python
+waba_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfigOutputReference.property.internalValue"></a>
+
+```python
+internal_value: CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfig">CesAppVersionSnapshotAppDefaultChannelProfileWhatsappConfig</a>
+
+---
+
+
+### CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigList <a name="CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigList" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigList.Initializer"></a>
+
+```python
+from cdktn_provider_google import ces_app_version
+
+cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+
+### CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigOutputReference <a name="CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigOutputReference" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_google import ces_app_version
+
+cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigOutputReference.property.escalateSession">escalate_session</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfig">CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfig</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `escalate_session`<sup>Required</sup> <a name="escalate_session" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigOutputReference.property.escalateSession"></a>
+
+```python
+escalate_session: IResolvable
+```
+
+- *Type:* cdktn.IResolvable
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigOutputReference.property.internalValue"></a>
+
+```python
+internal_value: CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfig">CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfig</a>
+
+---
+
+
+### CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigList <a name="CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigList" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigList.Initializer"></a>
+
+```python
+from cdktn_provider_google import ces_app_version
+
+cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+
+### CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigOutputReference <a name="CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigOutputReference" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_google import ces_app_version
+
+cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigOutputReference.property.customFallbackMessages">custom_fallback_messages</a></code> | <code>cdktn.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigOutputReference.property.maxFallbackAttempts">max_fallback_attempts</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfig">CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfig</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `custom_fallback_messages`<sup>Required</sup> <a name="custom_fallback_messages" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigOutputReference.property.customFallbackMessages"></a>
+
+```python
+custom_fallback_messages: StringMap
+```
+
+- *Type:* cdktn.StringMap
+
+---
+
+##### `max_fallback_attempts`<sup>Required</sup> <a name="max_fallback_attempts" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigOutputReference.property.maxFallbackAttempts"></a>
+
+```python
+max_fallback_attempts: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigOutputReference.property.internalValue"></a>
+
+```python
+internal_value: CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfig">CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfig</a>
+
+---
+
+
+### CesAppVersionSnapshotAppErrorHandlingSettingsList <a name="CesAppVersionSnapshotAppErrorHandlingSettingsList" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsList.Initializer"></a>
+
+```python
+from cdktn_provider_google import ces_app_version
+
+cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> CesAppVersionSnapshotAppErrorHandlingSettingsOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+
+### CesAppVersionSnapshotAppErrorHandlingSettingsOutputReference <a name="CesAppVersionSnapshotAppErrorHandlingSettingsOutputReference" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_google import ces_app_version
+
+cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsOutputReference.property.endSessionConfig">end_session_config</a></code> | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigList">CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsOutputReference.property.errorHandlingStrategy">error_handling_strategy</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsOutputReference.property.fallbackResponseConfig">fallback_response_config</a></code> | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigList">CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettings">CesAppVersionSnapshotAppErrorHandlingSettings</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `end_session_config`<sup>Required</sup> <a name="end_session_config" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsOutputReference.property.endSessionConfig"></a>
+
+```python
+end_session_config: CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigList
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigList">CesAppVersionSnapshotAppErrorHandlingSettingsEndSessionConfigList</a>
+
+---
+
+##### `error_handling_strategy`<sup>Required</sup> <a name="error_handling_strategy" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsOutputReference.property.errorHandlingStrategy"></a>
+
+```python
+error_handling_strategy: str
+```
+
+- *Type:* str
+
+---
+
+##### `fallback_response_config`<sup>Required</sup> <a name="fallback_response_config" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsOutputReference.property.fallbackResponseConfig"></a>
+
+```python
+fallback_response_config: CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigList
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigList">CesAppVersionSnapshotAppErrorHandlingSettingsFallbackResponseConfigList</a>
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsOutputReference.property.internalValue"></a>
+
+```python
+internal_value: CesAppVersionSnapshotAppErrorHandlingSettings
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettings">CesAppVersionSnapshotAppErrorHandlingSettings</a>
+
+---
+
+
 ### CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsExpectationLevelMetricsThresholdsList <a name="CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsExpectationLevelMetricsThresholdsList" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsExpectationLevelMetricsThresholdsList"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsExpectationLevelMetricsThresholdsList.Initializer"></a>
@@ -13954,6 +18968,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsOutputReference.property.expectationLevelMetricsThresholds">expectation_level_metrics_thresholds</a></code> | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsExpectationLevelMetricsThresholdsList">CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsExpectationLevelMetricsThresholdsList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsOutputReference.property.toolMatchingSettings">tool_matching_settings</a></code> | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsList">CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsOutputReference.property.turnLevelMetricsThresholds">turn_level_metrics_thresholds</a></code> | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholdsList">CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholdsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholds">CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholds</a></code> | *No description.* |
 
@@ -13993,6 +19008,16 @@ expectation_level_metrics_thresholds: CesAppVersionSnapshotAppEvaluationMetricsT
 
 ---
 
+##### `tool_matching_settings`<sup>Required</sup> <a name="tool_matching_settings" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsOutputReference.property.toolMatchingSettings"></a>
+
+```python
+tool_matching_settings: CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsList
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsList">CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsList</a>
+
+---
+
 ##### `turn_level_metrics_thresholds`<sup>Required</sup> <a name="turn_level_metrics_thresholds" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsOutputReference.property.turnLevelMetricsThresholds"></a>
 
 ```python
@@ -14010,6 +19035,470 @@ internal_value: CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluat
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholds">CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholds</a>
+
+---
+
+
+### CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsList <a name="CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsList" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsList.Initializer"></a>
+
+```python
+from cdktn_provider_google import ces_app_version
+
+cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+
+### CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference <a name="CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_google import ces_app_version
+
+cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.property.extraToolCallBehavior">extra_tool_call_behavior</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettings">CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettings</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `extra_tool_call_behavior`<sup>Required</sup> <a name="extra_tool_call_behavior" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.property.extraToolCallBehavior"></a>
+
+```python
+extra_tool_call_behavior: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.property.internalValue"></a>
+
+```python
+internal_value: CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettings
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettings">CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettings</a>
 
 ---
 
@@ -14429,6 +19918,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholdsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholdsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholdsOutputReference.property.overallToolInvocationCorrectnessThreshold">overall_tool_invocation_correctness_threshold</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholdsOutputReference.property.semanticSimilarityChannel">semantic_similarity_channel</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholdsOutputReference.property.semanticSimilaritySuccessThreshold">semantic_similarity_success_threshold</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholdsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholds">CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholds</a></code> | *No description.* |
 
@@ -14465,6 +19955,16 @@ overall_tool_invocation_correctness_threshold: typing.Union[int, float]
 ```
 
 - *Type:* typing.Union[int, float]
+
+---
+
+##### `semantic_similarity_channel`<sup>Required</sup> <a name="semantic_similarity_channel" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholdsOutputReference.property.semanticSimilarityChannel"></a>
+
+```python
+semantic_similarity_channel: str
+```
+
+- *Type:* str
 
 ---
 
@@ -14904,6 +20404,8 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsOutputReference.property.goldenEvaluationMetricsThresholds">golden_evaluation_metrics_thresholds</a></code> | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsList">CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsOutputReference.property.goldenHallucinationMetricBehavior">golden_hallucination_metric_behavior</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsOutputReference.property.scenarioHallucinationMetricBehavior">scenario_hallucination_metric_behavior</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholds">CesAppVersionSnapshotAppEvaluationMetricsThresholds</a></code> | *No description.* |
 
 ---
@@ -14939,6 +20441,26 @@ golden_evaluation_metrics_thresholds: CesAppVersionSnapshotAppEvaluationMetricsT
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsList">CesAppVersionSnapshotAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsList</a>
+
+---
+
+##### `golden_hallucination_metric_behavior`<sup>Required</sup> <a name="golden_hallucination_metric_behavior" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsOutputReference.property.goldenHallucinationMetricBehavior"></a>
+
+```python
+golden_hallucination_metric_behavior: str
+```
+
+- *Type:* str
+
+---
+
+##### `scenario_hallucination_metric_behavior`<sup>Required</sup> <a name="scenario_hallucination_metric_behavior" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsOutputReference.property.scenarioHallucinationMetricBehavior"></a>
+
+```python
+scenario_hallucination_metric_behavior: str
+```
+
+- *Type:* str
 
 ---
 
@@ -17449,6 +22971,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsConversationLoggingSettingsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsConversationLoggingSettingsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsConversationLoggingSettingsOutputReference.property.disableConversationLogging">disable_conversation_logging</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsConversationLoggingSettingsOutputReference.property.retentionWindow">retention_window</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsConversationLoggingSettingsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsConversationLoggingSettings">CesAppVersionSnapshotAppLoggingSettingsConversationLoggingSettings</a></code> | *No description.* |
 
 ---
@@ -17484,6 +23007,16 @@ disable_conversation_logging: IResolvable
 ```
 
 - *Type:* cdktn.IResolvable
+
+---
+
+##### `retention_window`<sup>Required</sup> <a name="retention_window" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsConversationLoggingSettingsOutputReference.property.retentionWindow"></a>
+
+```python
+retention_window: str
+```
+
+- *Type:* str
 
 ---
 
@@ -17653,6 +23186,470 @@ fqn: str
 ```
 
 - *Type:* str
+
+---
+
+
+### CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsList <a name="CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsList" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsList.Initializer"></a>
+
+```python
+from cdktn_provider_google import ces_app_version
+
+cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+
+### CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsOutputReference <a name="CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsOutputReference" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_google import ces_app_version
+
+cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsOutputReference.property.llmMetricsOptedOut">llm_metrics_opted_out</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettings">CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettings</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `llm_metrics_opted_out`<sup>Required</sup> <a name="llm_metrics_opted_out" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsOutputReference.property.llmMetricsOptedOut"></a>
+
+```python
+llm_metrics_opted_out: IResolvable
+```
+
+- *Type:* cdktn.IResolvable
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsOutputReference.property.internalValue"></a>
+
+```python
+internal_value: CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettings
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettings">CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettings</a>
 
 ---
 
@@ -17916,6 +23913,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsOutputReference.property.bigqueryExportSettings">bigquery_export_settings</a></code> | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsBigqueryExportSettingsList">CesAppVersionSnapshotAppLoggingSettingsBigqueryExportSettingsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsOutputReference.property.cloudLoggingSettings">cloud_logging_settings</a></code> | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsCloudLoggingSettingsList">CesAppVersionSnapshotAppLoggingSettingsCloudLoggingSettingsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsOutputReference.property.conversationLoggingSettings">conversation_logging_settings</a></code> | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsConversationLoggingSettingsList">CesAppVersionSnapshotAppLoggingSettingsConversationLoggingSettingsList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsOutputReference.property.metricAnalysisSettings">metric_analysis_settings</a></code> | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsList">CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsOutputReference.property.redactionConfig">redaction_config</a></code> | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsRedactionConfigList">CesAppVersionSnapshotAppLoggingSettingsRedactionConfigList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettings">CesAppVersionSnapshotAppLoggingSettings</a></code> | *No description.* |
 
@@ -17982,6 +23980,16 @@ conversation_logging_settings: CesAppVersionSnapshotAppLoggingSettingsConversati
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsConversationLoggingSettingsList">CesAppVersionSnapshotAppLoggingSettingsConversationLoggingSettingsList</a>
+
+---
+
+##### `metric_analysis_settings`<sup>Required</sup> <a name="metric_analysis_settings" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsOutputReference.property.metricAnalysisSettings"></a>
+
+```python
+metric_analysis_settings: CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsList
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsList">CesAppVersionSnapshotAppLoggingSettingsMetricAnalysisSettingsList</a>
 
 ---
 
@@ -19230,6 +25238,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppOutputReference.property.deploymentCount">deployment_count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppOutputReference.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppOutputReference.property.displayName">display_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppOutputReference.property.errorHandlingSettings">error_handling_settings</a></code> | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsList">CesAppVersionSnapshotAppErrorHandlingSettingsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppOutputReference.property.etag">etag</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppOutputReference.property.evaluationMetricsThresholds">evaluation_metrics_thresholds</a></code> | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppEvaluationMetricsThresholdsList">CesAppVersionSnapshotAppEvaluationMetricsThresholdsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppOutputReference.property.globalInstruction">global_instruction</a></code> | <code>str</code> | *No description.* |
@@ -19243,6 +25252,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppOutputReference.property.timeZoneSettings">time_zone_settings</a></code> | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppTimeZoneSettingsList">CesAppVersionSnapshotAppTimeZoneSettingsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppOutputReference.property.updateTime">update_time</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppOutputReference.property.variableDeclarations">variable_declarations</a></code> | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVariableDeclarationsList">CesAppVersionSnapshotAppVariableDeclarationsList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppOutputReference.property.vpcScSettings">vpc_sc_settings</a></code> | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsList">CesAppVersionSnapshotAppVpcScSettingsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotApp">CesAppVersionSnapshotApp</a></code> | *No description.* |
 
 ---
@@ -19348,6 +25358,16 @@ display_name: str
 ```
 
 - *Type:* str
+
+---
+
+##### `error_handling_settings`<sup>Required</sup> <a name="error_handling_settings" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppOutputReference.property.errorHandlingSettings"></a>
+
+```python
+error_handling_settings: CesAppVersionSnapshotAppErrorHandlingSettingsList
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppErrorHandlingSettingsList">CesAppVersionSnapshotAppErrorHandlingSettingsList</a>
 
 ---
 
@@ -19478,6 +25498,16 @@ variable_declarations: CesAppVersionSnapshotAppVariableDeclarationsList
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVariableDeclarationsList">CesAppVersionSnapshotAppVariableDeclarationsList</a>
+
+---
+
+##### `vpc_sc_settings`<sup>Required</sup> <a name="vpc_sc_settings" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppOutputReference.property.vpcScSettings"></a>
+
+```python
+vpc_sc_settings: CesAppVersionSnapshotAppVpcScSettingsList
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsList">CesAppVersionSnapshotAppVpcScSettingsList</a>
 
 ---
 
@@ -21045,6 +27075,470 @@ internal_value: CesAppVersionSnapshotAppVariableDeclarationsSchema
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVariableDeclarationsSchema">CesAppVersionSnapshotAppVariableDeclarationsSchema</a>
+
+---
+
+
+### CesAppVersionSnapshotAppVpcScSettingsList <a name="CesAppVersionSnapshotAppVpcScSettingsList" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsList.Initializer"></a>
+
+```python
+from cdktn_provider_google import ces_app_version
+
+cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> CesAppVersionSnapshotAppVpcScSettingsOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+
+### CesAppVersionSnapshotAppVpcScSettingsOutputReference <a name="CesAppVersionSnapshotAppVpcScSettingsOutputReference" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_google import ces_app_version
+
+cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsOutputReference.property.allowedOrigins">allowed_origins</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettings">CesAppVersionSnapshotAppVpcScSettings</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `allowed_origins`<sup>Required</sup> <a name="allowed_origins" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsOutputReference.property.allowedOrigins"></a>
+
+```python
+allowed_origins: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettingsOutputReference.property.internalValue"></a>
+
+```python
+internal_value: CesAppVersionSnapshotAppVpcScSettings
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotAppVpcScSettings">CesAppVersionSnapshotAppVpcScSettings</a>
 
 ---
 
@@ -28280,6 +34774,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsCodeCallbackAfterAgentCallbackOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsCodeCallbackAfterAgentCallbackOutputReference.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsCodeCallbackAfterAgentCallbackOutputReference.property.disabled">disabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsCodeCallbackAfterAgentCallbackOutputReference.property.proactiveExecutionEnabled">proactive_execution_enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsCodeCallbackAfterAgentCallbackOutputReference.property.pythonCode">python_code</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsCodeCallbackAfterAgentCallbackOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsCodeCallbackAfterAgentCallback">CesAppVersionSnapshotGuardrailsCodeCallbackAfterAgentCallback</a></code> | *No description.* |
 
@@ -28323,6 +34818,16 @@ description: str
 
 ```python
 disabled: IResolvable
+```
+
+- *Type:* cdktn.IResolvable
+
+---
+
+##### `proactive_execution_enabled`<sup>Required</sup> <a name="proactive_execution_enabled" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsCodeCallbackAfterAgentCallbackOutputReference.property.proactiveExecutionEnabled"></a>
+
+```python
+proactive_execution_enabled: IResolvable
 ```
 
 - *Type:* cdktn.IResolvable
@@ -28766,6 +35271,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsCodeCallbackAfterModelCallbackOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsCodeCallbackAfterModelCallbackOutputReference.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsCodeCallbackAfterModelCallbackOutputReference.property.disabled">disabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsCodeCallbackAfterModelCallbackOutputReference.property.proactiveExecutionEnabled">proactive_execution_enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsCodeCallbackAfterModelCallbackOutputReference.property.pythonCode">python_code</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsCodeCallbackAfterModelCallbackOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsCodeCallbackAfterModelCallback">CesAppVersionSnapshotGuardrailsCodeCallbackAfterModelCallback</a></code> | *No description.* |
 
@@ -28809,6 +35315,16 @@ description: str
 
 ```python
 disabled: IResolvable
+```
+
+- *Type:* cdktn.IResolvable
+
+---
+
+##### `proactive_execution_enabled`<sup>Required</sup> <a name="proactive_execution_enabled" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsCodeCallbackAfterModelCallbackOutputReference.property.proactiveExecutionEnabled"></a>
+
+```python
+proactive_execution_enabled: IResolvable
 ```
 
 - *Type:* cdktn.IResolvable
@@ -29252,6 +35768,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsCodeCallbackBeforeAgentCallbackOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsCodeCallbackBeforeAgentCallbackOutputReference.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsCodeCallbackBeforeAgentCallbackOutputReference.property.disabled">disabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsCodeCallbackBeforeAgentCallbackOutputReference.property.proactiveExecutionEnabled">proactive_execution_enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsCodeCallbackBeforeAgentCallbackOutputReference.property.pythonCode">python_code</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsCodeCallbackBeforeAgentCallbackOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsCodeCallbackBeforeAgentCallback">CesAppVersionSnapshotGuardrailsCodeCallbackBeforeAgentCallback</a></code> | *No description.* |
 
@@ -29295,6 +35812,16 @@ description: str
 
 ```python
 disabled: IResolvable
+```
+
+- *Type:* cdktn.IResolvable
+
+---
+
+##### `proactive_execution_enabled`<sup>Required</sup> <a name="proactive_execution_enabled" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsCodeCallbackBeforeAgentCallbackOutputReference.property.proactiveExecutionEnabled"></a>
+
+```python
+proactive_execution_enabled: IResolvable
 ```
 
 - *Type:* cdktn.IResolvable
@@ -29738,6 +36265,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsCodeCallbackBeforeModelCallbackOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsCodeCallbackBeforeModelCallbackOutputReference.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsCodeCallbackBeforeModelCallbackOutputReference.property.disabled">disabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsCodeCallbackBeforeModelCallbackOutputReference.property.proactiveExecutionEnabled">proactive_execution_enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsCodeCallbackBeforeModelCallbackOutputReference.property.pythonCode">python_code</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsCodeCallbackBeforeModelCallbackOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsCodeCallbackBeforeModelCallback">CesAppVersionSnapshotGuardrailsCodeCallbackBeforeModelCallback</a></code> | *No description.* |
 
@@ -29781,6 +36309,16 @@ description: str
 
 ```python
 disabled: IResolvable
+```
+
+- *Type:* cdktn.IResolvable
+
+---
+
+##### `proactive_execution_enabled`<sup>Required</sup> <a name="proactive_execution_enabled" id="@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotGuardrailsCodeCallbackBeforeModelCallbackOutputReference.property.proactiveExecutionEnabled"></a>
+
+```python
+proactive_execution_enabled: IResolvable
 ```
 
 - *Type:* cdktn.IResolvable

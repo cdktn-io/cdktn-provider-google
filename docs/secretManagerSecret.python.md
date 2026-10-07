@@ -4,7 +4,7 @@
 
 ### SecretManagerSecret <a name="SecretManagerSecret" id="@cdktn/provider-google.secretManagerSecret.SecretManagerSecret"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret google_secret_manager_secret}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret google_secret_manager_secret}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.Initializer"></a>
 
@@ -31,6 +31,7 @@ secretManagerSecret.SecretManagerSecret(
   labels: typing.Mapping[str] = None,
   project: str = None,
   rotation: SecretManagerSecretRotation = None,
+  secret_type: str = None,
   tags: typing.Mapping[str] = None,
   timeouts: SecretManagerSecretTimeouts = None,
   topics: IResolvable | typing.List[SecretManagerSecretTopics] = None,
@@ -57,10 +58,11 @@ secretManagerSecret.SecretManagerSecret(
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.Initializer.parameter.deletionProtection">deletion_protection</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether Terraform will be prevented from destroying the secret. |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.Initializer.parameter.expireTime">expire_time</a></code> | <code>str</code> | Timestamp in UTC when the Secret is scheduled to expire. |
-| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret#id SecretManagerSecret#id}. |
+| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret#id SecretManagerSecret#id}. |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.Initializer.parameter.labels">labels</a></code> | <code>typing.Mapping[str]</code> | The labels assigned to this Secret. |
-| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret#project SecretManagerSecret#project}. |
+| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret#project SecretManagerSecret#project}. |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.Initializer.parameter.rotation">rotation</a></code> | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretRotation">SecretManagerSecretRotation</a></code> | rotation block. |
+| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.Initializer.parameter.secretType">secret_type</a></code> | <code>str</code> | This defines the type of the secret. |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | A map of resource manager tags. |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTimeouts">SecretManagerSecretTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.Initializer.parameter.topics">topics</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTopics">SecretManagerSecretTopics</a>]</code> | topics block. |
@@ -136,7 +138,7 @@ Must be unique amongst siblings in the same scope
 
 replication block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret#replication SecretManagerSecret#replication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret#replication SecretManagerSecret#replication}
 
 ---
 
@@ -146,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 This must be unique within the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret#secret_id SecretManagerSecret#secret_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret#secret_id SecretManagerSecret#secret_id}
 
 ---
 
@@ -172,7 +174,7 @@ An object containing a list of "key": value pairs. Example:
 **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
 Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret#annotations SecretManagerSecret#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret#annotations SecretManagerSecret#annotations}
 
 ---
 
@@ -189,7 +191,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret#deletion_policy SecretManagerSecret#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret#deletion_policy SecretManagerSecret#deletion_policy}
 
 ---
 
@@ -203,7 +205,7 @@ Defaults to false.
 When the field is set to true in Terraform state, a 'terraform apply'
 or 'terraform destroy' that would delete the secret will fail.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret#deletion_protection SecretManagerSecret#deletion_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret#deletion_protection SecretManagerSecret#deletion_protection}
 
 ---
 
@@ -217,7 +219,7 @@ This is always provided on output, regardless of what was sent on input.
 A timestamp in RFC3339 UTC "Zulu" format, with nanosecond resolution and up to nine fractional digits. Examples: "2014-10-02T15:01:23Z" and "2014-10-02T15:01:23.045123456Z".
 Only one of 'expire_time' or 'ttl' can be provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret#expire_time SecretManagerSecret#expire_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret#expire_time SecretManagerSecret#expire_time}
 
 ---
 
@@ -225,7 +227,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret#id SecretManagerSecret#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret#id SecretManagerSecret#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -252,7 +254,7 @@ An object containing a list of "key": value pairs. Example:
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret#labels SecretManagerSecret#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret#labels SecretManagerSecret#labels}
 
 ---
 
@@ -260,7 +262,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret#project SecretManagerSecret#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret#project SecretManagerSecret#project}.
 
 ---
 
@@ -270,7 +272,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 rotation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret#rotation SecretManagerSecret#rotation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret#rotation SecretManagerSecret#rotation}
+
+---
+
+##### `secret_type`<sup>Optional</sup> <a name="secret_type" id="@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.Initializer.parameter.secretType"></a>
+
+- *Type:* str
+
+This defines the type of the secret.
+
+Enforces certain structural requirements on the SecretVersions.
+For secret of type UNSPECIFIED, the SecretVersions can be of any type.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret#secret_type SecretManagerSecret#secret_type}
 
 ---
 
@@ -283,7 +298,7 @@ A map of resource manager tags.
 Resource manager tag keys and values have the same definition as resource manager tags.
 Keys must be in the format tagKeys/{tag_key_id}, and values are in the format tagValues/{tag_value_id}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret#tags SecretManagerSecret#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret#tags SecretManagerSecret#tags}
 
 ---
 
@@ -293,7 +308,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret#timeouts SecretManagerSecret#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret#timeouts SecretManagerSecret#timeouts}
 
 ---
 
@@ -303,7 +318,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 topics block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret#topics SecretManagerSecret#topics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret#topics SecretManagerSecret#topics}
 
 ---
 
@@ -316,7 +331,7 @@ The TTL for the Secret.
 A duration in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s".
 Only one of 'ttl' or 'expire_time' can be provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret#ttl SecretManagerSecret#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret#ttl SecretManagerSecret#ttl}
 
 ---
 
@@ -334,7 +349,7 @@ characters. An alias string must start with a letter and cannot be the string
 An object containing a list of "key": value pairs. Example:
 { "name": "wrench", "mass": "1.3kg", "count": "3" }.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret#version_aliases SecretManagerSecret#version_aliases}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret#version_aliases SecretManagerSecret#version_aliases}
 
 ---
 
@@ -349,7 +364,7 @@ For secret with versionDestroyTtl>0, version destruction doesn't happen immediat
 on calling destroy instead the version goes to a disabled state and
 the actual destruction happens after this TTL expires.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret#version_destroy_ttl SecretManagerSecret#version_destroy_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret#version_destroy_ttl SecretManagerSecret#version_destroy_ttl}
 
 ---
 
@@ -393,6 +408,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.resetLabels">reset_labels</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.resetProject">reset_project</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.resetRotation">reset_rotation</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.resetSecretType">reset_secret_type</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.resetTags">reset_tags</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.resetTimeouts">reset_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.resetTopics">reset_topics</a></code> | *No description.* |
@@ -765,7 +781,7 @@ def put_replication(
 
 auto block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret#auto SecretManagerSecret#auto}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret#auto SecretManagerSecret#auto}
 
 ---
 
@@ -775,7 +791,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 user_managed block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret#user_managed SecretManagerSecret#user_managed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret#user_managed SecretManagerSecret#user_managed}
 
 ---
 
@@ -796,7 +812,7 @@ Timestamp in UTC at which the Secret is scheduled to rotate.
 
 A timestamp in RFC3339 UTC "Zulu" format, with nanosecond resolution and up to nine fractional digits. Examples: "2014-10-02T15:01:23Z" and "2014-10-02T15:01:23.045123456Z".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret#next_rotation_time SecretManagerSecret#next_rotation_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret#next_rotation_time SecretManagerSecret#next_rotation_time}
 
 ---
 
@@ -809,7 +825,7 @@ The Duration between rotation notifications.
 Must be in seconds and at least 3600s (1h) and at most 3153600000s (100 years).
 If rotationPeriod is set, 'next_rotation_time' must be set. 'next_rotation_time' will be advanced by this period when the service automatically sends rotation notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret#rotation_period SecretManagerSecret#rotation_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret#rotation_period SecretManagerSecret#rotation_period}
 
 ---
 
@@ -827,7 +843,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret#create SecretManagerSecret#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret#create SecretManagerSecret#create}.
 
 ---
 
@@ -835,7 +851,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret#delete SecretManagerSecret#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret#delete SecretManagerSecret#delete}.
 
 ---
 
@@ -843,7 +859,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret#update SecretManagerSecret#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret#update SecretManagerSecret#update}.
 
 ---
 
@@ -907,6 +923,12 @@ def reset_project() -> None
 
 ```python
 def reset_rotation() -> None
+```
+
+##### `reset_secret_type` <a name="reset_secret_type" id="@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.resetSecretType"></a>
+
+```python
+def reset_secret_type() -> None
 ```
 
 ##### `reset_tags` <a name="reset_tags" id="@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.resetTags"></a>
@@ -1059,7 +1081,7 @@ The construct id used in the generated config for the SecretManagerSecret to imp
 
 The id of the existing SecretManagerSecret that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1108,6 +1130,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.replicationInput">replication_input</a></code> | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplication">SecretManagerSecretReplication</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.rotationInput">rotation_input</a></code> | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretRotation">SecretManagerSecretRotation</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.secretIdInput">secret_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.secretTypeInput">secret_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTimeouts">SecretManagerSecretTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.topicsInput">topics_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTopics">SecretManagerSecretTopics</a>]</code> | *No description.* |
@@ -1122,6 +1145,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.project">project</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.secretId">secret_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.secretType">secret_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.ttl">ttl</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.versionAliases">version_aliases</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
@@ -1461,6 +1485,16 @@ secret_id_input: str
 
 ---
 
+##### `secret_type_input`<sup>Optional</sup> <a name="secret_type_input" id="@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.secretTypeInput"></a>
+
+```python
+secret_type_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `tags_input`<sup>Optional</sup> <a name="tags_input" id="@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.tagsInput"></a>
 
 ```python
@@ -1601,6 +1635,16 @@ secret_id: str
 
 ---
 
+##### `secret_type`<sup>Required</sup> <a name="secret_type" id="@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.secretType"></a>
+
+```python
+secret_type: str
+```
+
+- *Type:* str
+
+---
+
 ##### `tags`<sup>Required</sup> <a name="tags" id="@cdktn/provider-google.secretManagerSecret.SecretManagerSecret.property.tags"></a>
 
 ```python
@@ -1686,6 +1730,7 @@ secretManagerSecret.SecretManagerSecretConfig(
   labels: typing.Mapping[str] = None,
   project: str = None,
   rotation: SecretManagerSecretRotation = None,
+  secret_type: str = None,
   tags: typing.Mapping[str] = None,
   timeouts: SecretManagerSecretTimeouts = None,
   topics: IResolvable | typing.List[SecretManagerSecretTopics] = None,
@@ -1712,10 +1757,11 @@ secretManagerSecret.SecretManagerSecretConfig(
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretConfig.property.deletionProtection">deletion_protection</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether Terraform will be prevented from destroying the secret. |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretConfig.property.expireTime">expire_time</a></code> | <code>str</code> | Timestamp in UTC when the Secret is scheduled to expire. |
-| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret#id SecretManagerSecret#id}. |
+| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret#id SecretManagerSecret#id}. |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretConfig.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | The labels assigned to this Secret. |
-| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret#project SecretManagerSecret#project}. |
+| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret#project SecretManagerSecret#project}. |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretConfig.property.rotation">rotation</a></code> | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretRotation">SecretManagerSecretRotation</a></code> | rotation block. |
+| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretConfig.property.secretType">secret_type</a></code> | <code>str</code> | This defines the type of the secret. |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | A map of resource manager tags. |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTimeouts">SecretManagerSecretTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretConfig.property.topics">topics</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTopics">SecretManagerSecretTopics</a>]</code> | topics block. |
@@ -1805,7 +1851,7 @@ replication: SecretManagerSecretReplication
 
 replication block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret#replication SecretManagerSecret#replication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret#replication SecretManagerSecret#replication}
 
 ---
 
@@ -1819,7 +1865,7 @@ secret_id: str
 
 This must be unique within the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret#secret_id SecretManagerSecret#secret_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret#secret_id SecretManagerSecret#secret_id}
 
 ---
 
@@ -1849,7 +1895,7 @@ An object containing a list of "key": value pairs. Example:
 **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
 Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret#annotations SecretManagerSecret#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret#annotations SecretManagerSecret#annotations}
 
 ---
 
@@ -1870,7 +1916,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret#deletion_policy SecretManagerSecret#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret#deletion_policy SecretManagerSecret#deletion_policy}
 
 ---
 
@@ -1888,7 +1934,7 @@ Defaults to false.
 When the field is set to true in Terraform state, a 'terraform apply'
 or 'terraform destroy' that would delete the secret will fail.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret#deletion_protection SecretManagerSecret#deletion_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret#deletion_protection SecretManagerSecret#deletion_protection}
 
 ---
 
@@ -1906,7 +1952,7 @@ This is always provided on output, regardless of what was sent on input.
 A timestamp in RFC3339 UTC "Zulu" format, with nanosecond resolution and up to nine fractional digits. Examples: "2014-10-02T15:01:23Z" and "2014-10-02T15:01:23.045123456Z".
 Only one of 'expire_time' or 'ttl' can be provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret#expire_time SecretManagerSecret#expire_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret#expire_time SecretManagerSecret#expire_time}
 
 ---
 
@@ -1918,7 +1964,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret#id SecretManagerSecret#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret#id SecretManagerSecret#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1949,7 +1995,7 @@ An object containing a list of "key": value pairs. Example:
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret#labels SecretManagerSecret#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret#labels SecretManagerSecret#labels}
 
 ---
 
@@ -1961,7 +2007,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret#project SecretManagerSecret#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret#project SecretManagerSecret#project}.
 
 ---
 
@@ -1975,7 +2021,24 @@ rotation: SecretManagerSecretRotation
 
 rotation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret#rotation SecretManagerSecret#rotation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret#rotation SecretManagerSecret#rotation}
+
+---
+
+##### `secret_type`<sup>Optional</sup> <a name="secret_type" id="@cdktn/provider-google.secretManagerSecret.SecretManagerSecretConfig.property.secretType"></a>
+
+```python
+secret_type: str
+```
+
+- *Type:* str
+
+This defines the type of the secret.
+
+Enforces certain structural requirements on the SecretVersions.
+For secret of type UNSPECIFIED, the SecretVersions can be of any type.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret#secret_type SecretManagerSecret#secret_type}
 
 ---
 
@@ -1992,7 +2055,7 @@ A map of resource manager tags.
 Resource manager tag keys and values have the same definition as resource manager tags.
 Keys must be in the format tagKeys/{tag_key_id}, and values are in the format tagValues/{tag_value_id}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret#tags SecretManagerSecret#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret#tags SecretManagerSecret#tags}
 
 ---
 
@@ -2006,7 +2069,7 @@ timeouts: SecretManagerSecretTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret#timeouts SecretManagerSecret#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret#timeouts SecretManagerSecret#timeouts}
 
 ---
 
@@ -2020,7 +2083,7 @@ topics: IResolvable | typing.List[SecretManagerSecretTopics]
 
 topics block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret#topics SecretManagerSecret#topics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret#topics SecretManagerSecret#topics}
 
 ---
 
@@ -2037,7 +2100,7 @@ The TTL for the Secret.
 A duration in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s".
 Only one of 'ttl' or 'expire_time' can be provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret#ttl SecretManagerSecret#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret#ttl SecretManagerSecret#ttl}
 
 ---
 
@@ -2059,7 +2122,7 @@ characters. An alias string must start with a letter and cannot be the string
 An object containing a list of "key": value pairs. Example:
 { "name": "wrench", "mass": "1.3kg", "count": "3" }.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret#version_aliases SecretManagerSecret#version_aliases}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret#version_aliases SecretManagerSecret#version_aliases}
 
 ---
 
@@ -2078,7 +2141,7 @@ For secret with versionDestroyTtl>0, version destruction doesn't happen immediat
 on calling destroy instead the version goes to a disabled state and
 the actual destruction happens after this TTL expires.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret#version_destroy_ttl SecretManagerSecret#version_destroy_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret#version_destroy_ttl SecretManagerSecret#version_destroy_ttl}
 
 ---
 
@@ -2114,7 +2177,7 @@ auto: SecretManagerSecretReplicationAuto
 
 auto block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret#auto SecretManagerSecret#auto}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret#auto SecretManagerSecret#auto}
 
 ---
 
@@ -2128,7 +2191,7 @@ user_managed: SecretManagerSecretReplicationUserManaged
 
 user_managed block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret#user_managed SecretManagerSecret#user_managed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret#user_managed SecretManagerSecret#user_managed}
 
 ---
 
@@ -2162,7 +2225,7 @@ customer_managed_encryption: SecretManagerSecretReplicationAutoCustomerManagedEn
 
 customer_managed_encryption block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret#customer_managed_encryption SecretManagerSecret#customer_managed_encryption}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret#customer_managed_encryption SecretManagerSecret#customer_managed_encryption}
 
 ---
 
@@ -2196,7 +2259,7 @@ kms_key_name: str
 
 The resource name of the Cloud KMS CryptoKey used to encrypt secret payloads.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret#kms_key_name SecretManagerSecret#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret#kms_key_name SecretManagerSecret#kms_key_name}
 
 ---
 
@@ -2230,7 +2293,7 @@ replicas: IResolvable | typing.List[SecretManagerSecretReplicationUserManagedRep
 
 replicas block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret#replicas SecretManagerSecret#replicas}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret#replicas SecretManagerSecret#replicas}
 
 ---
 
@@ -2266,7 +2329,7 @@ location: str
 
 The canonical IDs of the location to replicate data. For example: "us-east1".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret#location SecretManagerSecret#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret#location SecretManagerSecret#location}
 
 ---
 
@@ -2280,7 +2343,7 @@ customer_managed_encryption: SecretManagerSecretReplicationUserManagedReplicasCu
 
 customer_managed_encryption block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret#customer_managed_encryption SecretManagerSecret#customer_managed_encryption}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret#customer_managed_encryption SecretManagerSecret#customer_managed_encryption}
 
 ---
 
@@ -2314,7 +2377,7 @@ kms_key_name: str
 
 Describes the Cloud KMS encryption key that will be used to protect destination secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret#kms_key_name SecretManagerSecret#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret#kms_key_name SecretManagerSecret#kms_key_name}
 
 ---
 
@@ -2352,7 +2415,7 @@ Timestamp in UTC at which the Secret is scheduled to rotate.
 
 A timestamp in RFC3339 UTC "Zulu" format, with nanosecond resolution and up to nine fractional digits. Examples: "2014-10-02T15:01:23Z" and "2014-10-02T15:01:23.045123456Z".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret#next_rotation_time SecretManagerSecret#next_rotation_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret#next_rotation_time SecretManagerSecret#next_rotation_time}
 
 ---
 
@@ -2369,7 +2432,7 @@ The Duration between rotation notifications.
 Must be in seconds and at least 3600s (1h) and at most 3153600000s (100 years).
 If rotationPeriod is set, 'next_rotation_time' must be set. 'next_rotation_time' will be advanced by this period when the service automatically sends rotation notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret#rotation_period SecretManagerSecret#rotation_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret#rotation_period SecretManagerSecret#rotation_period}
 
 ---
 
@@ -2391,9 +2454,9 @@ secretManagerSecret.SecretManagerSecretTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret#create SecretManagerSecret#create}. |
-| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret#delete SecretManagerSecret#delete}. |
-| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret#update SecretManagerSecret#update}. |
+| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret#create SecretManagerSecret#create}. |
+| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret#delete SecretManagerSecret#delete}. |
+| <code><a href="#@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret#update SecretManagerSecret#update}. |
 
 ---
 
@@ -2405,7 +2468,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret#create SecretManagerSecret#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret#create SecretManagerSecret#create}.
 
 ---
 
@@ -2417,7 +2480,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret#delete SecretManagerSecret#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret#delete SecretManagerSecret#delete}.
 
 ---
 
@@ -2429,7 +2492,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret#update SecretManagerSecret#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret#update SecretManagerSecret#update}.
 
 ---
 
@@ -2465,7 +2528,7 @@ The resource name of the Pub/Sub topic that will be published to, in the followi
 
 For publication to succeed, the Secret Manager Service Agent service account must have pubsub.publisher permissions on the topic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret#name SecretManagerSecret#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret#name SecretManagerSecret#name}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -3013,7 +3076,7 @@ def put_customer_managed_encryption(
 
 The resource name of the Cloud KMS CryptoKey used to encrypt secret payloads.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret#kms_key_name SecretManagerSecret#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret#kms_key_name SecretManagerSecret#kms_key_name}
 
 ---
 
@@ -3337,7 +3400,7 @@ def put_auto(
 
 customer_managed_encryption block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret#customer_managed_encryption SecretManagerSecret#customer_managed_encryption}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret#customer_managed_encryption SecretManagerSecret#customer_managed_encryption}
 
 ---
 
@@ -3355,7 +3418,7 @@ def put_user_managed(
 
 replicas block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret#replicas SecretManagerSecret#replicas}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret#replicas SecretManagerSecret#replicas}
 
 ---
 
@@ -4502,7 +4565,7 @@ def put_customer_managed_encryption(
 
 Describes the Cloud KMS encryption key that will be used to protect destination secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_secret#kms_key_name SecretManagerSecret#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_secret#kms_key_name SecretManagerSecret#kms_key_name}
 
 ---
 

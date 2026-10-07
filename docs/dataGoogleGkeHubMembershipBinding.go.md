@@ -4,12 +4,12 @@
 
 ### DataGoogleGkeHubMembershipBinding <a name="DataGoogleGkeHubMembershipBinding" id="@cdktn/provider-google.dataGoogleGkeHubMembershipBinding.DataGoogleGkeHubMembershipBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/gke_hub_membership_binding google_gke_hub_membership_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/gke_hub_membership_binding google_gke_hub_membership_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubMembershipBinding.DataGoogleGkeHubMembershipBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubmembershipbinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglegkehubmembershipbinding"
 
 datagooglegkehubmembershipbinding.NewDataGoogleGkeHubMembershipBinding(scope Construct, id *string, config DataGoogleGkeHubMembershipBindingConfig) DataGoogleGkeHubMembershipBinding
 ```
@@ -312,7 +312,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleGkeHubMembershipBinding.DataGoogleGkeHubMembershipBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubmembershipbinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglegkehubmembershipbinding"
 
 datagooglegkehubmembershipbinding.DataGoogleGkeHubMembershipBinding_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleGkeHubMembershipBinding.DataGoogleGkeHubMembershipBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubmembershipbinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglegkehubmembershipbinding"
 
 datagooglegkehubmembershipbinding.DataGoogleGkeHubMembershipBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datagooglegkehubmembershipbinding.DataGoogleGkeHubMembershipBinding_IsTerraformE
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleGkeHubMembershipBinding.DataGoogleGkeHubMembershipBinding.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubmembershipbinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglegkehubmembershipbinding"
 
 datagooglegkehubmembershipbinding.DataGoogleGkeHubMembershipBinding_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datagooglegkehubmembershipbinding.DataGoogleGkeHubMembershipBinding_IsTerraformD
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleGkeHubMembershipBinding.DataGoogleGkeHubMembershipBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubmembershipbinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglegkehubmembershipbinding"
 
 datagooglegkehubmembershipbinding.DataGoogleGkeHubMembershipBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataGoogleGkeHubMembership
 
 The id of the existing DataGoogleGkeHubMembershipBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/gke_hub_membership_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/gke_hub_membership_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -810,7 +810,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleGkeHubMembershipBinding.DataGoogleGkeHubMembershipBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubmembershipbinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglegkehubmembershipbinding"
 
 &datagooglegkehubmembershipbinding.DataGoogleGkeHubMembershipBindingConfig {
 	Connection: interface{},
@@ -842,8 +842,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehub
 | <code><a href="#@cdktn/provider-google.dataGoogleGkeHubMembershipBinding.DataGoogleGkeHubMembershipBindingConfig.property.location">Location</a></code> | <code>*string</code> | Location of the membership. |
 | <code><a href="#@cdktn/provider-google.dataGoogleGkeHubMembershipBinding.DataGoogleGkeHubMembershipBindingConfig.property.membershipBindingId">MembershipBindingId</a></code> | <code>*string</code> | The client-provided identifier of the membership binding. |
 | <code><a href="#@cdktn/provider-google.dataGoogleGkeHubMembershipBinding.DataGoogleGkeHubMembershipBindingConfig.property.membershipId">MembershipId</a></code> | <code>*string</code> | Id of the membership. |
-| <code><a href="#@cdktn/provider-google.dataGoogleGkeHubMembershipBinding.DataGoogleGkeHubMembershipBindingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/gke_hub_membership_binding#id DataGoogleGkeHubMembershipBinding#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleGkeHubMembershipBinding.DataGoogleGkeHubMembershipBindingConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/gke_hub_membership_binding#project DataGoogleGkeHubMembershipBinding#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleGkeHubMembershipBinding.DataGoogleGkeHubMembershipBindingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/gke_hub_membership_binding#id DataGoogleGkeHubMembershipBinding#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleGkeHubMembershipBinding.DataGoogleGkeHubMembershipBindingConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/gke_hub_membership_binding#project DataGoogleGkeHubMembershipBinding#project}. |
 
 ---
 
@@ -927,7 +927,7 @@ Location *string
 
 Location of the membership.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/gke_hub_membership_binding#location DataGoogleGkeHubMembershipBinding#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/gke_hub_membership_binding#location DataGoogleGkeHubMembershipBinding#location}
 
 ---
 
@@ -941,7 +941,7 @@ MembershipBindingId *string
 
 The client-provided identifier of the membership binding.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/gke_hub_membership_binding#membership_binding_id DataGoogleGkeHubMembershipBinding#membership_binding_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/gke_hub_membership_binding#membership_binding_id DataGoogleGkeHubMembershipBinding#membership_binding_id}
 
 ---
 
@@ -955,7 +955,7 @@ MembershipId *string
 
 Id of the membership.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/gke_hub_membership_binding#membership_id DataGoogleGkeHubMembershipBinding#membership_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/gke_hub_membership_binding#membership_id DataGoogleGkeHubMembershipBinding#membership_id}
 
 ---
 
@@ -967,7 +967,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/gke_hub_membership_binding#id DataGoogleGkeHubMembershipBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/gke_hub_membership_binding#id DataGoogleGkeHubMembershipBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -982,7 +982,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/gke_hub_membership_binding#project DataGoogleGkeHubMembershipBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/gke_hub_membership_binding#project DataGoogleGkeHubMembershipBinding#project}.
 
 ---
 
@@ -991,7 +991,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleGkeHubMembershipBinding.DataGoogleGkeHubMembershipBindingState.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubmembershipbinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglegkehubmembershipbinding"
 
 &datagooglegkehubmembershipbinding.DataGoogleGkeHubMembershipBindingState {
 
@@ -1006,7 +1006,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehub
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubMembershipBinding.DataGoogleGkeHubMembershipBindingStateList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubmembershipbinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglegkehubmembershipbinding"
 
 datagooglegkehubmembershipbinding.NewDataGoogleGkeHubMembershipBindingStateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleGkeHubMembershipBindingStateList
 ```
@@ -1155,7 +1155,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubMembershipBinding.DataGoogleGkeHubMembershipBindingStateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglegkehubmembershipbinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglegkehubmembershipbinding"
 
 datagooglegkehubmembershipbinding.NewDataGoogleGkeHubMembershipBindingStateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleGkeHubMembershipBindingStateOutputReference
 ```

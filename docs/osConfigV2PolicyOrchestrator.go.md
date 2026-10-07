@@ -4,12 +4,12 @@
 
 ### OsConfigV2PolicyOrchestrator <a name="OsConfigV2PolicyOrchestrator" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestrator"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator google_os_config_v2_policy_orchestrator}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator google_os_config_v2_policy_orchestrator}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestrator.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestrator(scope Construct, id *string, config OsConfigV2PolicyOrchestratorConfig) OsConfigV2PolicyOrchestrator
 ```
@@ -495,7 +495,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestrator.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.OsConfigV2PolicyOrchestrator_IsConstruct(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestrator.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.OsConfigV2PolicyOrchestrator_IsTerraformElement(x interface{}) *bool
 ```
@@ -541,7 +541,7 @@ osconfigv2policyorchestrator.OsConfigV2PolicyOrchestrator_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestrator.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.OsConfigV2PolicyOrchestrator_IsTerraformResource(x interface{}) *bool
 ```
@@ -555,7 +555,7 @@ osconfigv2policyorchestrator.OsConfigV2PolicyOrchestrator_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestrator.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.OsConfigV2PolicyOrchestrator_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -584,7 +584,7 @@ The construct id used in the generated config for the OsConfigV2PolicyOrchestrat
 
 The id of the existing OsConfigV2PolicyOrchestrator that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1103,7 +1103,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 &osconfigv2policyorchestrator.OsConfigV2PolicyOrchestratorConfig {
 	Connection: interface{},
@@ -1114,16 +1114,16 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policy
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Action: *string,
-	OrchestratedResource: github.com/cdktn-io/cdktn-provider-google-go/google/v20.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResource,
+	OrchestratedResource: github.com/cdktn-io/cdktn-provider-google-go/google/v21.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResource,
 	PolicyOrchestratorId: *string,
 	DeletionPolicy: *string,
 	Description: *string,
 	Id: *string,
 	Labels: *map[string]*string,
-	OrchestrationScope: github.com/cdktn-io/cdktn-provider-google-go/google/v20.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestrationScope,
+	OrchestrationScope: github.com/cdktn-io/cdktn-provider-google-go/google/v21.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestrationScope,
 	Project: *string,
 	State: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorTimeouts,
 }
 ```
 
@@ -1143,10 +1143,10 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policy
 | <code><a href="#@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorConfig.property.policyOrchestratorId">PolicyOrchestratorId</a></code> | <code>*string</code> | Required. The logical identifier of the policy orchestrator, with the following restrictions:. |
 | <code><a href="#@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorConfig.property.description">Description</a></code> | <code>*string</code> | Optional. Freeform text describing the purpose of the resource. |
-| <code><a href="#@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#id OsConfigV2PolicyOrchestrator#id}. |
+| <code><a href="#@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#id OsConfigV2PolicyOrchestrator#id}. |
 | <code><a href="#@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | Optional. Labels as key value pairs. |
 | <code><a href="#@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorConfig.property.orchestrationScope">OrchestrationScope</a></code> | <code><a href="#@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestrationScope">OsConfigV2PolicyOrchestratorOrchestrationScope</a></code> | orchestration_scope block. |
-| <code><a href="#@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#project OsConfigV2PolicyOrchestrator#project}. |
+| <code><a href="#@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#project OsConfigV2PolicyOrchestrator#project}. |
 | <code><a href="#@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorConfig.property.state">State</a></code> | <code>*string</code> | Optional. |
 | <code><a href="#@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorTimeouts">OsConfigV2PolicyOrchestratorTimeouts</a></code> | timeouts block. |
 
@@ -1239,7 +1239,7 @@ Action to be done by the orchestrator in
 * 'UPSERT' - Orchestrator will create or update target resources.
 * 'DELETE' - Orchestrator will delete target resources, if they exist
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#action OsConfigV2PolicyOrchestrator#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#action OsConfigV2PolicyOrchestrator#action}
 
 ---
 
@@ -1253,7 +1253,7 @@ OrchestratedResource OsConfigV2PolicyOrchestratorOrchestratedResource
 
 orchestrated_resource block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#orchestrated_resource OsConfigV2PolicyOrchestrator#orchestrated_resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#orchestrated_resource OsConfigV2PolicyOrchestrator#orchestrated_resource}
 
 ---
 
@@ -1273,7 +1273,7 @@ Required. The logical identifier of the policy orchestrator, with the following 
 * Must end with a number or a letter.
 * Must be unique within the parent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#policy_orchestrator_id OsConfigV2PolicyOrchestrator#policy_orchestrator_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#policy_orchestrator_id OsConfigV2PolicyOrchestrator#policy_orchestrator_id}
 
 ---
 
@@ -1294,7 +1294,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#deletion_policy OsConfigV2PolicyOrchestrator#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#deletion_policy OsConfigV2PolicyOrchestrator#deletion_policy}
 
 ---
 
@@ -1308,7 +1308,7 @@ Description *string
 
 Optional. Freeform text describing the purpose of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#description OsConfigV2PolicyOrchestrator#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#description OsConfigV2PolicyOrchestrator#description}
 
 ---
 
@@ -1320,7 +1320,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#id OsConfigV2PolicyOrchestrator#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#id OsConfigV2PolicyOrchestrator#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1340,7 +1340,7 @@ Optional. Labels as key value pairs.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#labels OsConfigV2PolicyOrchestrator#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#labels OsConfigV2PolicyOrchestrator#labels}
 
 ---
 
@@ -1354,7 +1354,7 @@ OrchestrationScope OsConfigV2PolicyOrchestratorOrchestrationScope
 
 orchestration_scope block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#orchestration_scope OsConfigV2PolicyOrchestrator#orchestration_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#orchestration_scope OsConfigV2PolicyOrchestrator#orchestration_scope}
 
 ---
 
@@ -1366,7 +1366,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#project OsConfigV2PolicyOrchestrator#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#project OsConfigV2PolicyOrchestrator#project}.
 
 ---
 
@@ -1390,7 +1390,7 @@ Note: There might be more states added in the future. We use string here
 instead of an enum, to avoid the need of propagating new states to all the
 client code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#state OsConfigV2PolicyOrchestrator#state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#state OsConfigV2PolicyOrchestrator#state}
 
 ---
 
@@ -1404,7 +1404,7 @@ Timeouts OsConfigV2PolicyOrchestratorTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#timeouts OsConfigV2PolicyOrchestrator#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#timeouts OsConfigV2PolicyOrchestrator#timeouts}
 
 ---
 
@@ -1413,11 +1413,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 &osconfigv2policyorchestrator.OsConfigV2PolicyOrchestratorOrchestratedResource {
 	Id: *string,
-	OsPolicyAssignmentV1Payload: github.com/cdktn-io/cdktn-provider-google-go/google/v20.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1Payload,
+	OsPolicyAssignmentV1Payload: github.com/cdktn-io/cdktn-provider-google-go/google/v21.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1Payload,
 }
 ```
 
@@ -1453,7 +1453,7 @@ restrictions:
 For DELETE action, ID must be specified explicitly during
 PolicyOrchestrator creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#id OsConfigV2PolicyOrchestrator#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#id OsConfigV2PolicyOrchestrator#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1470,7 +1470,7 @@ OsPolicyAssignmentV1Payload OsConfigV2PolicyOrchestratorOrchestratedResourceOsPo
 
 os_policy_assignment_v1_payload block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#os_policy_assignment_v1_payload OsConfigV2PolicyOrchestrator#os_policy_assignment_v1_payload}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#os_policy_assignment_v1_payload OsConfigV2PolicyOrchestrator#os_policy_assignment_v1_payload}
 
 ---
 
@@ -1479,12 +1479,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1Payload.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 &osconfigv2policyorchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1Payload {
-	InstanceFilter: github.com/cdktn-io/cdktn-provider-google-go/google/v20.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadInstanceFilter,
+	InstanceFilter: github.com/cdktn-io/cdktn-provider-google-go/google/v21.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadInstanceFilter,
 	OsPolicies: interface{},
-	Rollout: github.com/cdktn-io/cdktn-provider-google-go/google/v20.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadRollout,
+	Rollout: github.com/cdktn-io/cdktn-provider-google-go/google/v21.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadRollout,
 	Description: *string,
 	Name: *string,
 }
@@ -1512,7 +1512,7 @@ InstanceFilter OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmen
 
 instance_filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#instance_filter OsConfigV2PolicyOrchestrator#instance_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#instance_filter OsConfigV2PolicyOrchestrator#instance_filter}
 
 ---
 
@@ -1526,7 +1526,7 @@ OsPolicies interface{}
 
 os_policies block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#os_policies OsConfigV2PolicyOrchestrator#os_policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#os_policies OsConfigV2PolicyOrchestrator#os_policies}
 
 ---
 
@@ -1540,7 +1540,7 @@ Rollout OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1Payl
 
 rollout block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#rollout OsConfigV2PolicyOrchestrator#rollout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#rollout OsConfigV2PolicyOrchestrator#rollout}
 
 ---
 
@@ -1554,7 +1554,7 @@ Description *string
 
 OS policy assignment description. Length of the description is limited to 1024 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#description OsConfigV2PolicyOrchestrator#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#description OsConfigV2PolicyOrchestrator#description}
 
 ---
 
@@ -1573,7 +1573,7 @@ Format:
 
 This field is ignored when you create an OS policy assignment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#name OsConfigV2PolicyOrchestrator#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#name OsConfigV2PolicyOrchestrator#name}
 
 ---
 
@@ -1582,7 +1582,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadInstanceFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 &osconfigv2policyorchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadInstanceFilter {
 	All: interface{},
@@ -1613,7 +1613,7 @@ All interface{}
 
 Target all VMs in the project. If true, no other criteria is permitted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#all OsConfigV2PolicyOrchestrator#all}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#all OsConfigV2PolicyOrchestrator#all}
 
 ---
 
@@ -1627,7 +1627,7 @@ ExclusionLabels interface{}
 
 exclusion_labels block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#exclusion_labels OsConfigV2PolicyOrchestrator#exclusion_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#exclusion_labels OsConfigV2PolicyOrchestrator#exclusion_labels}
 
 ---
 
@@ -1641,7 +1641,7 @@ InclusionLabels interface{}
 
 inclusion_labels block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#inclusion_labels OsConfigV2PolicyOrchestrator#inclusion_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#inclusion_labels OsConfigV2PolicyOrchestrator#inclusion_labels}
 
 ---
 
@@ -1655,7 +1655,7 @@ Inventories interface{}
 
 inventories block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#inventories OsConfigV2PolicyOrchestrator#inventories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#inventories OsConfigV2PolicyOrchestrator#inventories}
 
 ---
 
@@ -1664,7 +1664,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadInstanceFilterExclusionLabels.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 &osconfigv2policyorchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadInstanceFilterExclusionLabels {
 	Labels: *map[string]*string,
@@ -1692,7 +1692,7 @@ Labels are identified by key/value pairs in this map.
 A VM should contain all the key/value pairs specified in this
 map to be selected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#labels OsConfigV2PolicyOrchestrator#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#labels OsConfigV2PolicyOrchestrator#labels}
 
 ---
 
@@ -1701,7 +1701,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadInstanceFilterInclusionLabels.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 &osconfigv2policyorchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadInstanceFilterInclusionLabels {
 	Labels: *map[string]*string,
@@ -1729,7 +1729,7 @@ Labels are identified by key/value pairs in this map.
 A VM should contain all the key/value pairs specified in this
 map to be selected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#labels OsConfigV2PolicyOrchestrator#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#labels OsConfigV2PolicyOrchestrator#labels}
 
 ---
 
@@ -1738,7 +1738,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadInstanceFilterInventories.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 &osconfigv2policyorchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadInstanceFilterInventories {
 	OsShortName: *string,
@@ -1765,7 +1765,7 @@ OsShortName *string
 
 Required. The OS short name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#os_short_name OsConfigV2PolicyOrchestrator#os_short_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#os_short_name OsConfigV2PolicyOrchestrator#os_short_name}
 
 ---
 
@@ -1785,7 +1785,7 @@ version of '7', specify the following value for this field '7.*'
 
 An empty string matches all OS versions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#os_version OsConfigV2PolicyOrchestrator#os_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#os_version OsConfigV2PolicyOrchestrator#os_version}
 
 ---
 
@@ -1794,7 +1794,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 &osconfigv2policyorchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPolicies {
 	Id: *string,
@@ -1833,7 +1833,7 @@ Required. The id of the OS policy with the following restrictions:.
 * Must end with a number or a letter.
 * Must be unique within the assignment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#id OsConfigV2PolicyOrchestrator#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#id OsConfigV2PolicyOrchestrator#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1850,7 +1850,7 @@ Mode *string
 
 Required. Policy mode Possible values: MODE_UNSPECIFIED VALIDATION ENFORCEMENT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#mode OsConfigV2PolicyOrchestrator#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#mode OsConfigV2PolicyOrchestrator#mode}
 
 ---
 
@@ -1864,7 +1864,7 @@ ResourceGroups interface{}
 
 resource_groups block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#resource_groups OsConfigV2PolicyOrchestrator#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#resource_groups OsConfigV2PolicyOrchestrator#resource_groups}
 
 ---
 
@@ -1882,7 +1882,7 @@ Set this value
 to 'true' if the policy needs to be reported as compliant even if the
 policy has nothing to validate or enforce.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#allow_no_resource_group_match OsConfigV2PolicyOrchestrator#allow_no_resource_group_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#allow_no_resource_group_match OsConfigV2PolicyOrchestrator#allow_no_resource_group_match}
 
 ---
 
@@ -1896,7 +1896,7 @@ Description *string
 
 Policy description. Length of the description is limited to 1024 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#description OsConfigV2PolicyOrchestrator#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#description OsConfigV2PolicyOrchestrator#description}
 
 ---
 
@@ -1905,7 +1905,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 &osconfigv2policyorchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroups {
 	Resources: interface{},
@@ -1932,7 +1932,7 @@ Resources interface{}
 
 resources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#resources OsConfigV2PolicyOrchestrator#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#resources OsConfigV2PolicyOrchestrator#resources}
 
 ---
 
@@ -1946,7 +1946,7 @@ InventoryFilters interface{}
 
 inventory_filters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#inventory_filters OsConfigV2PolicyOrchestrator#inventory_filters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#inventory_filters OsConfigV2PolicyOrchestrator#inventory_filters}
 
 ---
 
@@ -1955,7 +1955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsInventoryFilters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 &osconfigv2policyorchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsInventoryFilters {
 	OsShortName: *string,
@@ -1982,7 +1982,7 @@ OsShortName *string
 
 Required. The OS short name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#os_short_name OsConfigV2PolicyOrchestrator#os_short_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#os_short_name OsConfigV2PolicyOrchestrator#os_short_name}
 
 ---
 
@@ -2002,7 +2002,7 @@ version of '7', specify the following value for this field '7.*'
 
 An empty string matches all OS versions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#os_version OsConfigV2PolicyOrchestrator#os_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#os_version OsConfigV2PolicyOrchestrator#os_version}
 
 ---
 
@@ -2011,14 +2011,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResources.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 &osconfigv2policyorchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResources {
 	Id: *string,
-	Exec: github.com/cdktn-io/cdktn-provider-google-go/google/v20.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesExec,
-	File: github.com/cdktn-io/cdktn-provider-google-go/google/v20.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesFile,
-	Pkg: github.com/cdktn-io/cdktn-provider-google-go/google/v20.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkg,
-	Repository: github.com/cdktn-io/cdktn-provider-google-go/google/v20.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesRepository,
+	Exec: github.com/cdktn-io/cdktn-provider-google-go/google/v21.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesExec,
+	File: github.com/cdktn-io/cdktn-provider-google-go/google/v21.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesFile,
+	Pkg: github.com/cdktn-io/cdktn-provider-google-go/google/v21.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkg,
+	Repository: github.com/cdktn-io/cdktn-provider-google-go/google/v21.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesRepository,
 }
 ```
 
@@ -2050,7 +2050,7 @@ Required. The id of the resource with the following restrictions:.
 * Must end with a number or a letter.
 * Must be unique within the OS policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#id OsConfigV2PolicyOrchestrator#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#id OsConfigV2PolicyOrchestrator#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2067,7 +2067,7 @@ Exec OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1Payload
 
 exec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#exec OsConfigV2PolicyOrchestrator#exec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#exec OsConfigV2PolicyOrchestrator#exec}
 
 ---
 
@@ -2081,7 +2081,7 @@ File OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1Payload
 
 file block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#file OsConfigV2PolicyOrchestrator#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#file OsConfigV2PolicyOrchestrator#file}
 
 ---
 
@@ -2095,7 +2095,7 @@ Pkg OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadO
 
 pkg block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#pkg OsConfigV2PolicyOrchestrator#pkg}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#pkg OsConfigV2PolicyOrchestrator#pkg}
 
 ---
 
@@ -2109,7 +2109,7 @@ Repository OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1P
 
 repository block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#repository OsConfigV2PolicyOrchestrator#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#repository OsConfigV2PolicyOrchestrator#repository}
 
 ---
 
@@ -2118,11 +2118,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesExec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 &osconfigv2policyorchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesExec {
-	Validate: github.com/cdktn-io/cdktn-provider-google-go/google/v20.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesExecValidate,
-	Enforce: github.com/cdktn-io/cdktn-provider-google-go/google/v20.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesExecEnforce,
+	Validate: github.com/cdktn-io/cdktn-provider-google-go/google/v21.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesExecValidate,
+	Enforce: github.com/cdktn-io/cdktn-provider-google-go/google/v21.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesExecEnforce,
 }
 ```
 
@@ -2145,7 +2145,7 @@ Validate OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1Pay
 
 validate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#validate OsConfigV2PolicyOrchestrator#validate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#validate OsConfigV2PolicyOrchestrator#validate}
 
 ---
 
@@ -2159,7 +2159,7 @@ Enforce OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1Payl
 
 enforce block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#enforce OsConfigV2PolicyOrchestrator#enforce}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#enforce OsConfigV2PolicyOrchestrator#enforce}
 
 ---
 
@@ -2168,12 +2168,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesExecEnforce.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 &osconfigv2policyorchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesExecEnforce {
 	Interpreter: *string,
 	Args: *[]*string,
-	File: github.com/cdktn-io/cdktn-provider-google-go/google/v20.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesExecEnforceFile,
+	File: github.com/cdktn-io/cdktn-provider-google-go/google/v21.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesExecEnforceFile,
 	OutputFilePath: *string,
 	Script: *string,
 }
@@ -2201,7 +2201,7 @@ Interpreter *string
 
 Required. The script interpreter to use. Possible values: INTERPRETER_UNSPECIFIED NONE SHELL POWERSHELL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#interpreter OsConfigV2PolicyOrchestrator#interpreter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#interpreter OsConfigV2PolicyOrchestrator#interpreter}
 
 ---
 
@@ -2215,7 +2215,7 @@ Args *[]*string
 
 Optional arguments to pass to the source during execution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#args OsConfigV2PolicyOrchestrator#args}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#args OsConfigV2PolicyOrchestrator#args}
 
 ---
 
@@ -2229,7 +2229,7 @@ File OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1Payload
 
 file block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#file OsConfigV2PolicyOrchestrator#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#file OsConfigV2PolicyOrchestrator#file}
 
 ---
 
@@ -2249,7 +2249,7 @@ successful run. Absence or failure to read this file will result in
 this ExecResource being non-compliant. Output file size is limited to
 500K bytes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#output_file_path OsConfigV2PolicyOrchestrator#output_file_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#output_file_path OsConfigV2PolicyOrchestrator#output_file_path}
 
 ---
 
@@ -2263,7 +2263,7 @@ Script *string
 
 An inline script. The size of the script is limited to 32KiB.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#script OsConfigV2PolicyOrchestrator#script}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#script OsConfigV2PolicyOrchestrator#script}
 
 ---
 
@@ -2272,13 +2272,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesExecEnforceFile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 &osconfigv2policyorchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesExecEnforceFile {
 	AllowInsecure: interface{},
-	Gcs: github.com/cdktn-io/cdktn-provider-google-go/google/v20.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesExecEnforceFileGcs,
+	Gcs: github.com/cdktn-io/cdktn-provider-google-go/google/v21.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesExecEnforceFileGcs,
 	LocalPath: *string,
-	Remote: github.com/cdktn-io/cdktn-provider-google-go/google/v20.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesExecEnforceFileRemote,
+	Remote: github.com/cdktn-io/cdktn-provider-google-go/google/v21.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesExecEnforceFileRemote,
 }
 ```
 
@@ -2306,7 +2306,7 @@ Defaults to false. When false, files are subject to validations based on the fil
 Remote: A checksum must be specified.
 Cloud Storage: An object generation number must be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#allow_insecure OsConfigV2PolicyOrchestrator#allow_insecure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#allow_insecure OsConfigV2PolicyOrchestrator#allow_insecure}
 
 ---
 
@@ -2320,7 +2320,7 @@ Gcs OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadO
 
 gcs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#gcs OsConfigV2PolicyOrchestrator#gcs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#gcs OsConfigV2PolicyOrchestrator#gcs}
 
 ---
 
@@ -2334,7 +2334,7 @@ LocalPath *string
 
 A local path within the VM to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#local_path OsConfigV2PolicyOrchestrator#local_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#local_path OsConfigV2PolicyOrchestrator#local_path}
 
 ---
 
@@ -2348,7 +2348,7 @@ Remote OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1Paylo
 
 remote block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#remote OsConfigV2PolicyOrchestrator#remote}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#remote OsConfigV2PolicyOrchestrator#remote}
 
 ---
 
@@ -2357,7 +2357,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesExecEnforceFileGcs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 &osconfigv2policyorchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesExecEnforceFileGcs {
 	Bucket: *string,
@@ -2386,7 +2386,7 @@ Bucket *string
 
 Required. Bucket of the Cloud Storage object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#bucket OsConfigV2PolicyOrchestrator#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#bucket OsConfigV2PolicyOrchestrator#bucket}
 
 ---
 
@@ -2400,7 +2400,7 @@ Object *string
 
 Required. Name of the Cloud Storage object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#object OsConfigV2PolicyOrchestrator#object}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#object OsConfigV2PolicyOrchestrator#object}
 
 ---
 
@@ -2414,7 +2414,7 @@ Generation *string
 
 Generation number of the Cloud Storage object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#generation OsConfigV2PolicyOrchestrator#generation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#generation OsConfigV2PolicyOrchestrator#generation}
 
 ---
 
@@ -2423,7 +2423,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesExecEnforceFileRemote.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 &osconfigv2policyorchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesExecEnforceFileRemote {
 	Uri: *string,
@@ -2450,7 +2450,7 @@ Uri *string
 
 Required. URI from which to fetch the object. It should contain both the protocol and path following the format '{protocol}://{location}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#uri OsConfigV2PolicyOrchestrator#uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#uri OsConfigV2PolicyOrchestrator#uri}
 
 ---
 
@@ -2464,7 +2464,7 @@ Sha256Checksum *string
 
 SHA256 checksum of the remote file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#sha256_checksum OsConfigV2PolicyOrchestrator#sha256_checksum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#sha256_checksum OsConfigV2PolicyOrchestrator#sha256_checksum}
 
 ---
 
@@ -2473,12 +2473,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesExecValidate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 &osconfigv2policyorchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesExecValidate {
 	Interpreter: *string,
 	Args: *[]*string,
-	File: github.com/cdktn-io/cdktn-provider-google-go/google/v20.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesExecValidateFile,
+	File: github.com/cdktn-io/cdktn-provider-google-go/google/v21.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesExecValidateFile,
 	OutputFilePath: *string,
 	Script: *string,
 }
@@ -2506,7 +2506,7 @@ Interpreter *string
 
 Required. The script interpreter to use. Possible values: INTERPRETER_UNSPECIFIED NONE SHELL POWERSHELL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#interpreter OsConfigV2PolicyOrchestrator#interpreter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#interpreter OsConfigV2PolicyOrchestrator#interpreter}
 
 ---
 
@@ -2520,7 +2520,7 @@ Args *[]*string
 
 Optional arguments to pass to the source during execution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#args OsConfigV2PolicyOrchestrator#args}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#args OsConfigV2PolicyOrchestrator#args}
 
 ---
 
@@ -2534,7 +2534,7 @@ File OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1Payload
 
 file block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#file OsConfigV2PolicyOrchestrator#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#file OsConfigV2PolicyOrchestrator#file}
 
 ---
 
@@ -2554,7 +2554,7 @@ successful run. Absence or failure to read this file will result in
 this ExecResource being non-compliant. Output file size is limited to
 500K bytes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#output_file_path OsConfigV2PolicyOrchestrator#output_file_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#output_file_path OsConfigV2PolicyOrchestrator#output_file_path}
 
 ---
 
@@ -2568,7 +2568,7 @@ Script *string
 
 An inline script. The size of the script is limited to 32KiB.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#script OsConfigV2PolicyOrchestrator#script}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#script OsConfigV2PolicyOrchestrator#script}
 
 ---
 
@@ -2577,13 +2577,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesExecValidateFile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 &osconfigv2policyorchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesExecValidateFile {
 	AllowInsecure: interface{},
-	Gcs: github.com/cdktn-io/cdktn-provider-google-go/google/v20.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesExecValidateFileGcs,
+	Gcs: github.com/cdktn-io/cdktn-provider-google-go/google/v21.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesExecValidateFileGcs,
 	LocalPath: *string,
-	Remote: github.com/cdktn-io/cdktn-provider-google-go/google/v20.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesExecValidateFileRemote,
+	Remote: github.com/cdktn-io/cdktn-provider-google-go/google/v21.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesExecValidateFileRemote,
 }
 ```
 
@@ -2611,7 +2611,7 @@ Defaults to false. When false, files are subject to validations based on the fil
 Remote: A checksum must be specified.
 Cloud Storage: An object generation number must be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#allow_insecure OsConfigV2PolicyOrchestrator#allow_insecure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#allow_insecure OsConfigV2PolicyOrchestrator#allow_insecure}
 
 ---
 
@@ -2625,7 +2625,7 @@ Gcs OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadO
 
 gcs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#gcs OsConfigV2PolicyOrchestrator#gcs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#gcs OsConfigV2PolicyOrchestrator#gcs}
 
 ---
 
@@ -2639,7 +2639,7 @@ LocalPath *string
 
 A local path within the VM to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#local_path OsConfigV2PolicyOrchestrator#local_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#local_path OsConfigV2PolicyOrchestrator#local_path}
 
 ---
 
@@ -2653,7 +2653,7 @@ Remote OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1Paylo
 
 remote block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#remote OsConfigV2PolicyOrchestrator#remote}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#remote OsConfigV2PolicyOrchestrator#remote}
 
 ---
 
@@ -2662,7 +2662,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesExecValidateFileGcs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 &osconfigv2policyorchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesExecValidateFileGcs {
 	Bucket: *string,
@@ -2691,7 +2691,7 @@ Bucket *string
 
 Required. Bucket of the Cloud Storage object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#bucket OsConfigV2PolicyOrchestrator#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#bucket OsConfigV2PolicyOrchestrator#bucket}
 
 ---
 
@@ -2705,7 +2705,7 @@ Object *string
 
 Required. Name of the Cloud Storage object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#object OsConfigV2PolicyOrchestrator#object}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#object OsConfigV2PolicyOrchestrator#object}
 
 ---
 
@@ -2719,7 +2719,7 @@ Generation *string
 
 Generation number of the Cloud Storage object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#generation OsConfigV2PolicyOrchestrator#generation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#generation OsConfigV2PolicyOrchestrator#generation}
 
 ---
 
@@ -2728,7 +2728,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesExecValidateFileRemote.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 &osconfigv2policyorchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesExecValidateFileRemote {
 	Uri: *string,
@@ -2755,7 +2755,7 @@ Uri *string
 
 Required. URI from which to fetch the object. It should contain both the protocol and path following the format '{protocol}://{location}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#uri OsConfigV2PolicyOrchestrator#uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#uri OsConfigV2PolicyOrchestrator#uri}
 
 ---
 
@@ -2769,7 +2769,7 @@ Sha256Checksum *string
 
 SHA256 checksum of the remote file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#sha256_checksum OsConfigV2PolicyOrchestrator#sha256_checksum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#sha256_checksum OsConfigV2PolicyOrchestrator#sha256_checksum}
 
 ---
 
@@ -2778,13 +2778,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesFile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 &osconfigv2policyorchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesFile {
 	Path: *string,
 	State: *string,
 	Content: *string,
-	File: github.com/cdktn-io/cdktn-provider-google-go/google/v20.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesFileFile,
+	File: github.com/cdktn-io/cdktn-provider-google-go/google/v21.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesFileFile,
 	Permissions: *string,
 }
 ```
@@ -2811,7 +2811,7 @@ Path *string
 
 Required. The absolute path of the file within the VM.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#path OsConfigV2PolicyOrchestrator#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#path OsConfigV2PolicyOrchestrator#path}
 
 ---
 
@@ -2825,7 +2825,7 @@ State *string
 
 Required. Desired state of the file. Possible values: DESIRED_STATE_UNSPECIFIED PRESENT ABSENT CONTENTS_MATCH.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#state OsConfigV2PolicyOrchestrator#state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#state OsConfigV2PolicyOrchestrator#state}
 
 ---
 
@@ -2839,7 +2839,7 @@ Content *string
 
 A a file with this content. The size of the content is limited to 32KiB.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#content OsConfigV2PolicyOrchestrator#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#content OsConfigV2PolicyOrchestrator#content}
 
 ---
 
@@ -2853,7 +2853,7 @@ File OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1Payload
 
 file block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#file OsConfigV2PolicyOrchestrator#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#file OsConfigV2PolicyOrchestrator#file}
 
 ---
 
@@ -2878,7 +2878,7 @@ read and execute: 5
 read and write: 6
 read only: 4
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#permissions OsConfigV2PolicyOrchestrator#permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#permissions OsConfigV2PolicyOrchestrator#permissions}
 
 ---
 
@@ -2887,13 +2887,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesFileFile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 &osconfigv2policyorchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesFileFile {
 	AllowInsecure: interface{},
-	Gcs: github.com/cdktn-io/cdktn-provider-google-go/google/v20.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesFileFileGcs,
+	Gcs: github.com/cdktn-io/cdktn-provider-google-go/google/v21.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesFileFileGcs,
 	LocalPath: *string,
-	Remote: github.com/cdktn-io/cdktn-provider-google-go/google/v20.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesFileFileRemote,
+	Remote: github.com/cdktn-io/cdktn-provider-google-go/google/v21.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesFileFileRemote,
 }
 ```
 
@@ -2921,7 +2921,7 @@ Defaults to false. When false, files are subject to validations based on the fil
 Remote: A checksum must be specified.
 Cloud Storage: An object generation number must be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#allow_insecure OsConfigV2PolicyOrchestrator#allow_insecure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#allow_insecure OsConfigV2PolicyOrchestrator#allow_insecure}
 
 ---
 
@@ -2935,7 +2935,7 @@ Gcs OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadO
 
 gcs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#gcs OsConfigV2PolicyOrchestrator#gcs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#gcs OsConfigV2PolicyOrchestrator#gcs}
 
 ---
 
@@ -2949,7 +2949,7 @@ LocalPath *string
 
 A local path within the VM to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#local_path OsConfigV2PolicyOrchestrator#local_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#local_path OsConfigV2PolicyOrchestrator#local_path}
 
 ---
 
@@ -2963,7 +2963,7 @@ Remote OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1Paylo
 
 remote block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#remote OsConfigV2PolicyOrchestrator#remote}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#remote OsConfigV2PolicyOrchestrator#remote}
 
 ---
 
@@ -2972,7 +2972,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesFileFileGcs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 &osconfigv2policyorchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesFileFileGcs {
 	Bucket: *string,
@@ -3001,7 +3001,7 @@ Bucket *string
 
 Required. Bucket of the Cloud Storage object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#bucket OsConfigV2PolicyOrchestrator#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#bucket OsConfigV2PolicyOrchestrator#bucket}
 
 ---
 
@@ -3015,7 +3015,7 @@ Object *string
 
 Required. Name of the Cloud Storage object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#object OsConfigV2PolicyOrchestrator#object}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#object OsConfigV2PolicyOrchestrator#object}
 
 ---
 
@@ -3029,7 +3029,7 @@ Generation *string
 
 Generation number of the Cloud Storage object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#generation OsConfigV2PolicyOrchestrator#generation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#generation OsConfigV2PolicyOrchestrator#generation}
 
 ---
 
@@ -3038,7 +3038,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesFileFileRemote.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 &osconfigv2policyorchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesFileFileRemote {
 	Uri: *string,
@@ -3065,7 +3065,7 @@ Uri *string
 
 Required. URI from which to fetch the object. It should contain both the protocol and path following the format '{protocol}://{location}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#uri OsConfigV2PolicyOrchestrator#uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#uri OsConfigV2PolicyOrchestrator#uri}
 
 ---
 
@@ -3079,7 +3079,7 @@ Sha256Checksum *string
 
 SHA256 checksum of the remote file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#sha256_checksum OsConfigV2PolicyOrchestrator#sha256_checksum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#sha256_checksum OsConfigV2PolicyOrchestrator#sha256_checksum}
 
 ---
 
@@ -3088,17 +3088,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkg.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 &osconfigv2policyorchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkg {
 	DesiredState: *string,
-	Apt: github.com/cdktn-io/cdktn-provider-google-go/google/v20.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgApt,
-	Deb: github.com/cdktn-io/cdktn-provider-google-go/google/v20.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgDeb,
-	Googet: github.com/cdktn-io/cdktn-provider-google-go/google/v20.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgGooget,
-	Msi: github.com/cdktn-io/cdktn-provider-google-go/google/v20.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgMsi,
-	Rpm: github.com/cdktn-io/cdktn-provider-google-go/google/v20.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgRpm,
-	Yum: github.com/cdktn-io/cdktn-provider-google-go/google/v20.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgYum,
-	Zypper: github.com/cdktn-io/cdktn-provider-google-go/google/v20.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgZypper,
+	Apt: github.com/cdktn-io/cdktn-provider-google-go/google/v21.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgApt,
+	Deb: github.com/cdktn-io/cdktn-provider-google-go/google/v21.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgDeb,
+	Googet: github.com/cdktn-io/cdktn-provider-google-go/google/v21.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgGooget,
+	Msi: github.com/cdktn-io/cdktn-provider-google-go/google/v21.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgMsi,
+	Rpm: github.com/cdktn-io/cdktn-provider-google-go/google/v21.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgRpm,
+	Yum: github.com/cdktn-io/cdktn-provider-google-go/google/v21.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgYum,
+	Zypper: github.com/cdktn-io/cdktn-provider-google-go/google/v21.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgZypper,
 }
 ```
 
@@ -3127,7 +3127,7 @@ DesiredState *string
 
 Required. The desired state the agent should maintain for this package. Possible values: DESIRED_STATE_UNSPECIFIED INSTALLED REMOVED.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#desired_state OsConfigV2PolicyOrchestrator#desired_state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#desired_state OsConfigV2PolicyOrchestrator#desired_state}
 
 ---
 
@@ -3141,7 +3141,7 @@ Apt OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadO
 
 apt block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#apt OsConfigV2PolicyOrchestrator#apt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#apt OsConfigV2PolicyOrchestrator#apt}
 
 ---
 
@@ -3155,7 +3155,7 @@ Deb OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadO
 
 deb block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#deb OsConfigV2PolicyOrchestrator#deb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#deb OsConfigV2PolicyOrchestrator#deb}
 
 ---
 
@@ -3169,7 +3169,7 @@ Googet OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1Paylo
 
 googet block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#googet OsConfigV2PolicyOrchestrator#googet}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#googet OsConfigV2PolicyOrchestrator#googet}
 
 ---
 
@@ -3183,7 +3183,7 @@ Msi OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadO
 
 msi block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#msi OsConfigV2PolicyOrchestrator#msi}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#msi OsConfigV2PolicyOrchestrator#msi}
 
 ---
 
@@ -3197,7 +3197,7 @@ Rpm OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadO
 
 rpm block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#rpm OsConfigV2PolicyOrchestrator#rpm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#rpm OsConfigV2PolicyOrchestrator#rpm}
 
 ---
 
@@ -3211,7 +3211,7 @@ Yum OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadO
 
 yum block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#yum OsConfigV2PolicyOrchestrator#yum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#yum OsConfigV2PolicyOrchestrator#yum}
 
 ---
 
@@ -3225,7 +3225,7 @@ Zypper OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1Paylo
 
 zypper block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#zypper OsConfigV2PolicyOrchestrator#zypper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#zypper OsConfigV2PolicyOrchestrator#zypper}
 
 ---
 
@@ -3234,7 +3234,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgApt.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 &osconfigv2policyorchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgApt {
 	Name: *string,
@@ -3259,7 +3259,7 @@ Name *string
 
 Required. Package name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#name OsConfigV2PolicyOrchestrator#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#name OsConfigV2PolicyOrchestrator#name}
 
 ---
 
@@ -3268,10 +3268,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgDeb.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 &osconfigv2policyorchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgDeb {
-	Source: github.com/cdktn-io/cdktn-provider-google-go/google/v20.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgDebSource,
+	Source: github.com/cdktn-io/cdktn-provider-google-go/google/v21.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgDebSource,
 	PullDeps: interface{},
 }
 ```
@@ -3295,7 +3295,7 @@ Source OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1Paylo
 
 source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#source OsConfigV2PolicyOrchestrator#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#source OsConfigV2PolicyOrchestrator#source}
 
 ---
 
@@ -3313,7 +3313,7 @@ Whether dependencies should also be installed.
 * install when true: 'apt-get update && apt-get -y install
   package.deb'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#pull_deps OsConfigV2PolicyOrchestrator#pull_deps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#pull_deps OsConfigV2PolicyOrchestrator#pull_deps}
 
 ---
 
@@ -3322,13 +3322,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgDebSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 &osconfigv2policyorchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgDebSource {
 	AllowInsecure: interface{},
-	Gcs: github.com/cdktn-io/cdktn-provider-google-go/google/v20.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgDebSourceGcs,
+	Gcs: github.com/cdktn-io/cdktn-provider-google-go/google/v21.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgDebSourceGcs,
 	LocalPath: *string,
-	Remote: github.com/cdktn-io/cdktn-provider-google-go/google/v20.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgDebSourceRemote,
+	Remote: github.com/cdktn-io/cdktn-provider-google-go/google/v21.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgDebSourceRemote,
 }
 ```
 
@@ -3356,7 +3356,7 @@ Defaults to false. When false, files are subject to validations based on the fil
 Remote: A checksum must be specified.
 Cloud Storage: An object generation number must be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#allow_insecure OsConfigV2PolicyOrchestrator#allow_insecure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#allow_insecure OsConfigV2PolicyOrchestrator#allow_insecure}
 
 ---
 
@@ -3370,7 +3370,7 @@ Gcs OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadO
 
 gcs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#gcs OsConfigV2PolicyOrchestrator#gcs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#gcs OsConfigV2PolicyOrchestrator#gcs}
 
 ---
 
@@ -3384,7 +3384,7 @@ LocalPath *string
 
 A local path within the VM to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#local_path OsConfigV2PolicyOrchestrator#local_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#local_path OsConfigV2PolicyOrchestrator#local_path}
 
 ---
 
@@ -3398,7 +3398,7 @@ Remote OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1Paylo
 
 remote block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#remote OsConfigV2PolicyOrchestrator#remote}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#remote OsConfigV2PolicyOrchestrator#remote}
 
 ---
 
@@ -3407,7 +3407,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgDebSourceGcs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 &osconfigv2policyorchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgDebSourceGcs {
 	Bucket: *string,
@@ -3436,7 +3436,7 @@ Bucket *string
 
 Required. Bucket of the Cloud Storage object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#bucket OsConfigV2PolicyOrchestrator#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#bucket OsConfigV2PolicyOrchestrator#bucket}
 
 ---
 
@@ -3450,7 +3450,7 @@ Object *string
 
 Required. Name of the Cloud Storage object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#object OsConfigV2PolicyOrchestrator#object}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#object OsConfigV2PolicyOrchestrator#object}
 
 ---
 
@@ -3464,7 +3464,7 @@ Generation *string
 
 Generation number of the Cloud Storage object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#generation OsConfigV2PolicyOrchestrator#generation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#generation OsConfigV2PolicyOrchestrator#generation}
 
 ---
 
@@ -3473,7 +3473,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgDebSourceRemote.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 &osconfigv2policyorchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgDebSourceRemote {
 	Uri: *string,
@@ -3500,7 +3500,7 @@ Uri *string
 
 Required. URI from which to fetch the object. It should contain both the protocol and path following the format '{protocol}://{location}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#uri OsConfigV2PolicyOrchestrator#uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#uri OsConfigV2PolicyOrchestrator#uri}
 
 ---
 
@@ -3514,7 +3514,7 @@ Sha256Checksum *string
 
 SHA256 checksum of the remote file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#sha256_checksum OsConfigV2PolicyOrchestrator#sha256_checksum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#sha256_checksum OsConfigV2PolicyOrchestrator#sha256_checksum}
 
 ---
 
@@ -3523,7 +3523,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgGooget.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 &osconfigv2policyorchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgGooget {
 	Name: *string,
@@ -3548,7 +3548,7 @@ Name *string
 
 Required. Package name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#name OsConfigV2PolicyOrchestrator#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#name OsConfigV2PolicyOrchestrator#name}
 
 ---
 
@@ -3557,10 +3557,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgMsi.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 &osconfigv2policyorchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgMsi {
-	Source: github.com/cdktn-io/cdktn-provider-google-go/google/v20.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgMsiSource,
+	Source: github.com/cdktn-io/cdktn-provider-google-go/google/v21.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgMsiSource,
 	Properties: *[]*string,
 }
 ```
@@ -3584,7 +3584,7 @@ Source OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1Paylo
 
 source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#source OsConfigV2PolicyOrchestrator#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#source OsConfigV2PolicyOrchestrator#source}
 
 ---
 
@@ -3598,7 +3598,7 @@ Properties *[]*string
 
 Additional properties to use during installation. This should be in the format of Property=Setting. Appended to the defaults of 'ACTION=INSTALL REBOOT=ReallySuppress'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#properties OsConfigV2PolicyOrchestrator#properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#properties OsConfigV2PolicyOrchestrator#properties}
 
 ---
 
@@ -3607,13 +3607,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgMsiSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 &osconfigv2policyorchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgMsiSource {
 	AllowInsecure: interface{},
-	Gcs: github.com/cdktn-io/cdktn-provider-google-go/google/v20.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgMsiSourceGcs,
+	Gcs: github.com/cdktn-io/cdktn-provider-google-go/google/v21.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgMsiSourceGcs,
 	LocalPath: *string,
-	Remote: github.com/cdktn-io/cdktn-provider-google-go/google/v20.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgMsiSourceRemote,
+	Remote: github.com/cdktn-io/cdktn-provider-google-go/google/v21.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgMsiSourceRemote,
 }
 ```
 
@@ -3641,7 +3641,7 @@ Defaults to false. When false, files are subject to validations based on the fil
 Remote: A checksum must be specified.
 Cloud Storage: An object generation number must be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#allow_insecure OsConfigV2PolicyOrchestrator#allow_insecure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#allow_insecure OsConfigV2PolicyOrchestrator#allow_insecure}
 
 ---
 
@@ -3655,7 +3655,7 @@ Gcs OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadO
 
 gcs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#gcs OsConfigV2PolicyOrchestrator#gcs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#gcs OsConfigV2PolicyOrchestrator#gcs}
 
 ---
 
@@ -3669,7 +3669,7 @@ LocalPath *string
 
 A local path within the VM to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#local_path OsConfigV2PolicyOrchestrator#local_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#local_path OsConfigV2PolicyOrchestrator#local_path}
 
 ---
 
@@ -3683,7 +3683,7 @@ Remote OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1Paylo
 
 remote block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#remote OsConfigV2PolicyOrchestrator#remote}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#remote OsConfigV2PolicyOrchestrator#remote}
 
 ---
 
@@ -3692,7 +3692,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgMsiSourceGcs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 &osconfigv2policyorchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgMsiSourceGcs {
 	Bucket: *string,
@@ -3721,7 +3721,7 @@ Bucket *string
 
 Required. Bucket of the Cloud Storage object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#bucket OsConfigV2PolicyOrchestrator#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#bucket OsConfigV2PolicyOrchestrator#bucket}
 
 ---
 
@@ -3735,7 +3735,7 @@ Object *string
 
 Required. Name of the Cloud Storage object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#object OsConfigV2PolicyOrchestrator#object}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#object OsConfigV2PolicyOrchestrator#object}
 
 ---
 
@@ -3749,7 +3749,7 @@ Generation *string
 
 Generation number of the Cloud Storage object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#generation OsConfigV2PolicyOrchestrator#generation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#generation OsConfigV2PolicyOrchestrator#generation}
 
 ---
 
@@ -3758,7 +3758,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgMsiSourceRemote.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 &osconfigv2policyorchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgMsiSourceRemote {
 	Uri: *string,
@@ -3785,7 +3785,7 @@ Uri *string
 
 Required. URI from which to fetch the object. It should contain both the protocol and path following the format '{protocol}://{location}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#uri OsConfigV2PolicyOrchestrator#uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#uri OsConfigV2PolicyOrchestrator#uri}
 
 ---
 
@@ -3799,7 +3799,7 @@ Sha256Checksum *string
 
 SHA256 checksum of the remote file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#sha256_checksum OsConfigV2PolicyOrchestrator#sha256_checksum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#sha256_checksum OsConfigV2PolicyOrchestrator#sha256_checksum}
 
 ---
 
@@ -3808,10 +3808,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgRpm.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 &osconfigv2policyorchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgRpm {
-	Source: github.com/cdktn-io/cdktn-provider-google-go/google/v20.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgRpmSource,
+	Source: github.com/cdktn-io/cdktn-provider-google-go/google/v21.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgRpmSource,
 	PullDeps: interface{},
 }
 ```
@@ -3835,7 +3835,7 @@ Source OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1Paylo
 
 source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#source OsConfigV2PolicyOrchestrator#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#source OsConfigV2PolicyOrchestrator#source}
 
 ---
 
@@ -3853,7 +3853,7 @@ Whether dependencies should also be installed.
 * install when true: 'yum -y install package.rpm' or
   'zypper -y install package.rpm'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#pull_deps OsConfigV2PolicyOrchestrator#pull_deps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#pull_deps OsConfigV2PolicyOrchestrator#pull_deps}
 
 ---
 
@@ -3862,13 +3862,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgRpmSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 &osconfigv2policyorchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgRpmSource {
 	AllowInsecure: interface{},
-	Gcs: github.com/cdktn-io/cdktn-provider-google-go/google/v20.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgRpmSourceGcs,
+	Gcs: github.com/cdktn-io/cdktn-provider-google-go/google/v21.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgRpmSourceGcs,
 	LocalPath: *string,
-	Remote: github.com/cdktn-io/cdktn-provider-google-go/google/v20.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgRpmSourceRemote,
+	Remote: github.com/cdktn-io/cdktn-provider-google-go/google/v21.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgRpmSourceRemote,
 }
 ```
 
@@ -3896,7 +3896,7 @@ Defaults to false. When false, files are subject to validations based on the fil
 Remote: A checksum must be specified.
 Cloud Storage: An object generation number must be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#allow_insecure OsConfigV2PolicyOrchestrator#allow_insecure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#allow_insecure OsConfigV2PolicyOrchestrator#allow_insecure}
 
 ---
 
@@ -3910,7 +3910,7 @@ Gcs OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadO
 
 gcs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#gcs OsConfigV2PolicyOrchestrator#gcs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#gcs OsConfigV2PolicyOrchestrator#gcs}
 
 ---
 
@@ -3924,7 +3924,7 @@ LocalPath *string
 
 A local path within the VM to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#local_path OsConfigV2PolicyOrchestrator#local_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#local_path OsConfigV2PolicyOrchestrator#local_path}
 
 ---
 
@@ -3938,7 +3938,7 @@ Remote OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1Paylo
 
 remote block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#remote OsConfigV2PolicyOrchestrator#remote}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#remote OsConfigV2PolicyOrchestrator#remote}
 
 ---
 
@@ -3947,7 +3947,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgRpmSourceGcs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 &osconfigv2policyorchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgRpmSourceGcs {
 	Bucket: *string,
@@ -3976,7 +3976,7 @@ Bucket *string
 
 Required. Bucket of the Cloud Storage object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#bucket OsConfigV2PolicyOrchestrator#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#bucket OsConfigV2PolicyOrchestrator#bucket}
 
 ---
 
@@ -3990,7 +3990,7 @@ Object *string
 
 Required. Name of the Cloud Storage object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#object OsConfigV2PolicyOrchestrator#object}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#object OsConfigV2PolicyOrchestrator#object}
 
 ---
 
@@ -4004,7 +4004,7 @@ Generation *string
 
 Generation number of the Cloud Storage object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#generation OsConfigV2PolicyOrchestrator#generation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#generation OsConfigV2PolicyOrchestrator#generation}
 
 ---
 
@@ -4013,7 +4013,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgRpmSourceRemote.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 &osconfigv2policyorchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgRpmSourceRemote {
 	Uri: *string,
@@ -4040,7 +4040,7 @@ Uri *string
 
 Required. URI from which to fetch the object. It should contain both the protocol and path following the format '{protocol}://{location}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#uri OsConfigV2PolicyOrchestrator#uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#uri OsConfigV2PolicyOrchestrator#uri}
 
 ---
 
@@ -4054,7 +4054,7 @@ Sha256Checksum *string
 
 SHA256 checksum of the remote file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#sha256_checksum OsConfigV2PolicyOrchestrator#sha256_checksum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#sha256_checksum OsConfigV2PolicyOrchestrator#sha256_checksum}
 
 ---
 
@@ -4063,7 +4063,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgYum.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 &osconfigv2policyorchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgYum {
 	Name: *string,
@@ -4088,7 +4088,7 @@ Name *string
 
 Required. Package name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#name OsConfigV2PolicyOrchestrator#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#name OsConfigV2PolicyOrchestrator#name}
 
 ---
 
@@ -4097,7 +4097,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgZypper.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 &osconfigv2policyorchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgZypper {
 	Name: *string,
@@ -4122,7 +4122,7 @@ Name *string
 
 Required. Package name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#name OsConfigV2PolicyOrchestrator#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#name OsConfigV2PolicyOrchestrator#name}
 
 ---
 
@@ -4131,13 +4131,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesRepository.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 &osconfigv2policyorchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesRepository {
-	Apt: github.com/cdktn-io/cdktn-provider-google-go/google/v20.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesRepositoryApt,
-	Goo: github.com/cdktn-io/cdktn-provider-google-go/google/v20.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesRepositoryGoo,
-	Yum: github.com/cdktn-io/cdktn-provider-google-go/google/v20.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesRepositoryYum,
-	Zypper: github.com/cdktn-io/cdktn-provider-google-go/google/v20.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesRepositoryZypper,
+	Apt: github.com/cdktn-io/cdktn-provider-google-go/google/v21.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesRepositoryApt,
+	Goo: github.com/cdktn-io/cdktn-provider-google-go/google/v21.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesRepositoryGoo,
+	Yum: github.com/cdktn-io/cdktn-provider-google-go/google/v21.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesRepositoryYum,
+	Zypper: github.com/cdktn-io/cdktn-provider-google-go/google/v21.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesRepositoryZypper,
 }
 ```
 
@@ -4162,7 +4162,7 @@ Apt OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadO
 
 apt block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#apt OsConfigV2PolicyOrchestrator#apt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#apt OsConfigV2PolicyOrchestrator#apt}
 
 ---
 
@@ -4176,7 +4176,7 @@ Goo OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadO
 
 goo block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#goo OsConfigV2PolicyOrchestrator#goo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#goo OsConfigV2PolicyOrchestrator#goo}
 
 ---
 
@@ -4190,7 +4190,7 @@ Yum OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadO
 
 yum block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#yum OsConfigV2PolicyOrchestrator#yum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#yum OsConfigV2PolicyOrchestrator#yum}
 
 ---
 
@@ -4204,7 +4204,7 @@ Zypper OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1Paylo
 
 zypper block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#zypper OsConfigV2PolicyOrchestrator#zypper}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#zypper OsConfigV2PolicyOrchestrator#zypper}
 
 ---
 
@@ -4213,7 +4213,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesRepositoryApt.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 &osconfigv2policyorchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesRepositoryApt {
 	ArchiveType: *string,
@@ -4246,7 +4246,7 @@ ArchiveType *string
 
 Required. Type of archive files in this repository. Possible values: ARCHIVE_TYPE_UNSPECIFIED DEB DEB_SRC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#archive_type OsConfigV2PolicyOrchestrator#archive_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#archive_type OsConfigV2PolicyOrchestrator#archive_type}
 
 ---
 
@@ -4260,7 +4260,7 @@ Components *[]*string
 
 Required. List of components for this repository. Must contain at least one item.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#components OsConfigV2PolicyOrchestrator#components}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#components OsConfigV2PolicyOrchestrator#components}
 
 ---
 
@@ -4274,7 +4274,7 @@ Distribution *string
 
 Required. Distribution of this repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#distribution OsConfigV2PolicyOrchestrator#distribution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#distribution OsConfigV2PolicyOrchestrator#distribution}
 
 ---
 
@@ -4288,7 +4288,7 @@ Uri *string
 
 Required. URI for this repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#uri OsConfigV2PolicyOrchestrator#uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#uri OsConfigV2PolicyOrchestrator#uri}
 
 ---
 
@@ -4302,7 +4302,7 @@ GpgKey *string
 
 URI of the key file for this repository. The agent maintains a keyring at '/etc/apt/trusted.gpg.d/osconfig_agent_managed.gpg'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#gpg_key OsConfigV2PolicyOrchestrator#gpg_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#gpg_key OsConfigV2PolicyOrchestrator#gpg_key}
 
 ---
 
@@ -4311,7 +4311,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesRepositoryGoo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 &osconfigv2policyorchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesRepositoryGoo {
 	Name: *string,
@@ -4338,7 +4338,7 @@ Name *string
 
 Required. The name of the repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#name OsConfigV2PolicyOrchestrator#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#name OsConfigV2PolicyOrchestrator#name}
 
 ---
 
@@ -4352,7 +4352,7 @@ Url *string
 
 Required. The url of the repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#url OsConfigV2PolicyOrchestrator#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#url OsConfigV2PolicyOrchestrator#url}
 
 ---
 
@@ -4361,7 +4361,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesRepositoryYum.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 &osconfigv2policyorchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesRepositoryYum {
 	BaseUrl: *string,
@@ -4392,7 +4392,7 @@ BaseUrl *string
 
 Required. The location of the repository directory.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#base_url OsConfigV2PolicyOrchestrator#base_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#base_url OsConfigV2PolicyOrchestrator#base_url}
 
 ---
 
@@ -4411,7 +4411,7 @@ id' in the yum config file and also the 'display_name' if
 'display_name' is omitted. This id is also used as the unique
 identifier when checking for resource conflicts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#id OsConfigV2PolicyOrchestrator#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#id OsConfigV2PolicyOrchestrator#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -4428,7 +4428,7 @@ DisplayName *string
 
 The display name of the repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#display_name OsConfigV2PolicyOrchestrator#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#display_name OsConfigV2PolicyOrchestrator#display_name}
 
 ---
 
@@ -4442,7 +4442,7 @@ GpgKeys *[]*string
 
 URIs of GPG keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#gpg_keys OsConfigV2PolicyOrchestrator#gpg_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#gpg_keys OsConfigV2PolicyOrchestrator#gpg_keys}
 
 ---
 
@@ -4451,7 +4451,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesRepositoryZypper.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 &osconfigv2policyorchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesRepositoryZypper {
 	BaseUrl: *string,
@@ -4482,7 +4482,7 @@ BaseUrl *string
 
 Required. The location of the repository directory.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#base_url OsConfigV2PolicyOrchestrator#base_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#base_url OsConfigV2PolicyOrchestrator#base_url}
 
 ---
 
@@ -4501,7 +4501,7 @@ id' in the zypper config file and also the 'display_name' if
 'display_name' is omitted. This id is also used as the unique
 identifier when checking for GuestPolicy conflicts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#id OsConfigV2PolicyOrchestrator#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#id OsConfigV2PolicyOrchestrator#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -4518,7 +4518,7 @@ DisplayName *string
 
 The display name of the repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#display_name OsConfigV2PolicyOrchestrator#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#display_name OsConfigV2PolicyOrchestrator#display_name}
 
 ---
 
@@ -4532,7 +4532,7 @@ GpgKeys *[]*string
 
 URIs of GPG keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#gpg_keys OsConfigV2PolicyOrchestrator#gpg_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#gpg_keys OsConfigV2PolicyOrchestrator#gpg_keys}
 
 ---
 
@@ -4541,10 +4541,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadRollout.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 &osconfigv2policyorchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadRollout {
-	DisruptionBudget: github.com/cdktn-io/cdktn-provider-google-go/google/v20.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadRolloutDisruptionBudget,
+	DisruptionBudget: github.com/cdktn-io/cdktn-provider-google-go/google/v21.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadRolloutDisruptionBudget,
 	MinWaitDuration: *string,
 }
 ```
@@ -4568,7 +4568,7 @@ DisruptionBudget OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignm
 
 disruption_budget block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#disruption_budget OsConfigV2PolicyOrchestrator#disruption_budget}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#disruption_budget OsConfigV2PolicyOrchestrator#disruption_budget}
 
 ---
 
@@ -4588,7 +4588,7 @@ VM continues to count towards the 'disruption_budget' at least
 until this duration of time has passed after configuration changes are
 applied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#min_wait_duration OsConfigV2PolicyOrchestrator#min_wait_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#min_wait_duration OsConfigV2PolicyOrchestrator#min_wait_duration}
 
 ---
 
@@ -4597,7 +4597,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadRolloutDisruptionBudget.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 &osconfigv2policyorchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadRolloutDisruptionBudget {
 	Fixed: *f64,
@@ -4624,7 +4624,7 @@ Fixed *f64
 
 Specifies a fixed value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#fixed OsConfigV2PolicyOrchestrator#fixed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#fixed OsConfigV2PolicyOrchestrator#fixed}
 
 ---
 
@@ -4638,7 +4638,7 @@ Percent *f64
 
 Specifies the relative value defined as a percentage, which will be multiplied by a reference value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#percent OsConfigV2PolicyOrchestrator#percent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#percent OsConfigV2PolicyOrchestrator#percent}
 
 ---
 
@@ -4647,7 +4647,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestrationScope.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 &osconfigv2policyorchestrator.OsConfigV2PolicyOrchestratorOrchestrationScope {
 	Selectors: interface{},
@@ -4672,7 +4672,7 @@ Selectors interface{}
 
 selectors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#selectors OsConfigV2PolicyOrchestrator#selectors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#selectors OsConfigV2PolicyOrchestrator#selectors}
 
 ---
 
@@ -4681,11 +4681,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestrationScopeSelectors.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 &osconfigv2policyorchestrator.OsConfigV2PolicyOrchestratorOrchestrationScopeSelectors {
-	LocationSelector: github.com/cdktn-io/cdktn-provider-google-go/google/v20.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestrationScopeSelectorsLocationSelector,
-	ResourceHierarchySelector: github.com/cdktn-io/cdktn-provider-google-go/google/v20.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestrationScopeSelectorsResourceHierarchySelector,
+	LocationSelector: github.com/cdktn-io/cdktn-provider-google-go/google/v21.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestrationScopeSelectorsLocationSelector,
+	ResourceHierarchySelector: github.com/cdktn-io/cdktn-provider-google-go/google/v21.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestrationScopeSelectorsResourceHierarchySelector,
 }
 ```
 
@@ -4708,7 +4708,7 @@ LocationSelector OsConfigV2PolicyOrchestratorOrchestrationScopeSelectorsLocation
 
 location_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#location_selector OsConfigV2PolicyOrchestrator#location_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#location_selector OsConfigV2PolicyOrchestrator#location_selector}
 
 ---
 
@@ -4722,7 +4722,7 @@ ResourceHierarchySelector OsConfigV2PolicyOrchestratorOrchestrationScopeSelector
 
 resource_hierarchy_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#resource_hierarchy_selector OsConfigV2PolicyOrchestrator#resource_hierarchy_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#resource_hierarchy_selector OsConfigV2PolicyOrchestrator#resource_hierarchy_selector}
 
 ---
 
@@ -4731,7 +4731,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestrationScopeSelectorsLocationSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 &osconfigv2policyorchestrator.OsConfigV2PolicyOrchestratorOrchestrationScopeSelectorsLocationSelector {
 	IncludedLocations: *[]*string,
@@ -4756,7 +4756,7 @@ IncludedLocations *[]*string
 
 Optional. Names of the locations in scope. Format: 'us-central1-a'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#included_locations OsConfigV2PolicyOrchestrator#included_locations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#included_locations OsConfigV2PolicyOrchestrator#included_locations}
 
 ---
 
@@ -4765,7 +4765,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestrationScopeSelectorsResourceHierarchySelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 &osconfigv2policyorchestrator.OsConfigV2PolicyOrchestratorOrchestrationScopeSelectorsResourceHierarchySelector {
 	IncludedFolders: *[]*string,
@@ -4792,7 +4792,7 @@ IncludedFolders *[]*string
 
 Optional. Names of the folders in scope. Format: 'folders/{folder_id}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#included_folders OsConfigV2PolicyOrchestrator#included_folders}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#included_folders OsConfigV2PolicyOrchestrator#included_folders}
 
 ---
 
@@ -4806,7 +4806,7 @@ IncludedProjects *[]*string
 
 Optional. Names of the projects in scope. Format: 'projects/{project_number}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#included_projects OsConfigV2PolicyOrchestrator#included_projects}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#included_projects OsConfigV2PolicyOrchestrator#included_projects}
 
 ---
 
@@ -4815,7 +4815,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestrationState.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 &osconfigv2policyorchestrator.OsConfigV2PolicyOrchestratorOrchestrationState {
 
@@ -4828,7 +4828,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policy
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestrationStateCurrentIterationState.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 &osconfigv2policyorchestrator.OsConfigV2PolicyOrchestratorOrchestrationStateCurrentIterationState {
 
@@ -4841,7 +4841,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policy
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestrationStateCurrentIterationStateError.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 &osconfigv2policyorchestrator.OsConfigV2PolicyOrchestratorOrchestrationStateCurrentIterationStateError {
 
@@ -4854,7 +4854,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policy
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestrationStateCurrentIterationStateErrorDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 &osconfigv2policyorchestrator.OsConfigV2PolicyOrchestratorOrchestrationStateCurrentIterationStateErrorDetails {
 
@@ -4867,7 +4867,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policy
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestrationStatePreviousIterationState.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 &osconfigv2policyorchestrator.OsConfigV2PolicyOrchestratorOrchestrationStatePreviousIterationState {
 
@@ -4880,7 +4880,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policy
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestrationStatePreviousIterationStateError.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 &osconfigv2policyorchestrator.OsConfigV2PolicyOrchestratorOrchestrationStatePreviousIterationStateError {
 
@@ -4893,7 +4893,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policy
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestrationStatePreviousIterationStateErrorDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 &osconfigv2policyorchestrator.OsConfigV2PolicyOrchestratorOrchestrationStatePreviousIterationStateErrorDetails {
 
@@ -4906,7 +4906,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policy
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 &osconfigv2policyorchestrator.OsConfigV2PolicyOrchestratorTimeouts {
 	Create: *string,
@@ -4919,9 +4919,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policy
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#create OsConfigV2PolicyOrchestrator#create}. |
-| <code><a href="#@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#delete OsConfigV2PolicyOrchestrator#delete}. |
-| <code><a href="#@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#update OsConfigV2PolicyOrchestrator#update}. |
+| <code><a href="#@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#create OsConfigV2PolicyOrchestrator#create}. |
+| <code><a href="#@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#delete OsConfigV2PolicyOrchestrator#delete}. |
+| <code><a href="#@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#update OsConfigV2PolicyOrchestrator#update}. |
 
 ---
 
@@ -4933,7 +4933,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#create OsConfigV2PolicyOrchestrator#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#create OsConfigV2PolicyOrchestrator#create}.
 
 ---
 
@@ -4945,7 +4945,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#delete OsConfigV2PolicyOrchestrator#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#delete OsConfigV2PolicyOrchestrator#delete}.
 
 ---
 
@@ -4957,7 +4957,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/os_config_v2_policy_orchestrator#update OsConfigV2PolicyOrchestrator#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/os_config_v2_policy_orchestrator#update OsConfigV2PolicyOrchestrator#update}.
 
 ---
 
@@ -4968,7 +4968,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadInstanceFilterExclusionLabelsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadInstanceFilterExclusionLabelsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadInstanceFilterExclusionLabelsList
 ```
@@ -5128,7 +5128,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadInstanceFilterExclusionLabelsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadInstanceFilterExclusionLabelsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadInstanceFilterExclusionLabelsOutputReference
 ```
@@ -5424,7 +5424,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadInstanceFilterInclusionLabelsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadInstanceFilterInclusionLabelsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadInstanceFilterInclusionLabelsList
 ```
@@ -5584,7 +5584,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadInstanceFilterInclusionLabelsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadInstanceFilterInclusionLabelsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadInstanceFilterInclusionLabelsOutputReference
 ```
@@ -5880,7 +5880,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadInstanceFilterInventoriesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadInstanceFilterInventoriesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadInstanceFilterInventoriesList
 ```
@@ -6040,7 +6040,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadInstanceFilterInventoriesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadInstanceFilterInventoriesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadInstanceFilterInventoriesOutputReference
 ```
@@ -6358,7 +6358,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadInstanceFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadInstanceFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadInstanceFilterOutputReference
 ```
@@ -6762,7 +6762,7 @@ func InternalValue() OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAss
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesList
 ```
@@ -6922,7 +6922,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesOutputReference
 ```
@@ -7326,7 +7326,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsInventoryFiltersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsInventoryFiltersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsInventoryFiltersList
 ```
@@ -7486,7 +7486,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsInventoryFiltersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsInventoryFiltersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsInventoryFiltersOutputReference
 ```
@@ -7804,7 +7804,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsList
 ```
@@ -7964,7 +7964,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsOutputReference
 ```
@@ -8308,7 +8308,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesExecEnforceFileGcsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesExecEnforceFileGcsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesExecEnforceFileGcsOutputReference
 ```
@@ -8630,7 +8630,7 @@ func InternalValue() OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAss
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesExecEnforceFileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesExecEnforceFileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesExecEnforceFileOutputReference
 ```
@@ -9021,7 +9021,7 @@ func InternalValue() OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAss
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesExecEnforceFileRemoteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesExecEnforceFileRemoteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesExecEnforceFileRemoteOutputReference
 ```
@@ -9321,7 +9321,7 @@ func InternalValue() OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAss
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesExecEnforceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesExecEnforceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesExecEnforceOutputReference
 ```
@@ -9721,7 +9721,7 @@ func InternalValue() OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAss
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesExecOutputReference
 ```
@@ -10047,7 +10047,7 @@ func InternalValue() OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAss
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesExecValidateFileGcsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesExecValidateFileGcsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesExecValidateFileGcsOutputReference
 ```
@@ -10369,7 +10369,7 @@ func InternalValue() OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAss
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesExecValidateFileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesExecValidateFileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesExecValidateFileOutputReference
 ```
@@ -10760,7 +10760,7 @@ func InternalValue() OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAss
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesExecValidateFileRemoteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesExecValidateFileRemoteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesExecValidateFileRemoteOutputReference
 ```
@@ -11060,7 +11060,7 @@ func InternalValue() OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAss
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesExecValidateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesExecValidateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesExecValidateOutputReference
 ```
@@ -11460,7 +11460,7 @@ func InternalValue() OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAss
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesFileFileGcsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesFileFileGcsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesFileFileGcsOutputReference
 ```
@@ -11782,7 +11782,7 @@ func InternalValue() OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAss
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesFileFileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesFileFileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesFileFileOutputReference
 ```
@@ -12173,7 +12173,7 @@ func InternalValue() OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAss
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesFileFileRemoteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesFileFileRemoteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesFileFileRemoteOutputReference
 ```
@@ -12473,7 +12473,7 @@ func InternalValue() OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAss
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesFileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesFileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesFileOutputReference
 ```
@@ -12866,7 +12866,7 @@ func InternalValue() OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAss
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesList
 ```
@@ -13026,7 +13026,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesOutputReference
 ```
@@ -13483,7 +13483,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgAptOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgAptOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgAptOutputReference
 ```
@@ -13754,7 +13754,7 @@ func InternalValue() OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAss
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgDebOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgDebOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgDebOutputReference
 ```
@@ -14067,7 +14067,7 @@ func InternalValue() OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAss
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgDebSourceGcsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgDebSourceGcsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgDebSourceGcsOutputReference
 ```
@@ -14389,7 +14389,7 @@ func InternalValue() OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAss
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgDebSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgDebSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgDebSourceOutputReference
 ```
@@ -14780,7 +14780,7 @@ func InternalValue() OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAss
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgDebSourceRemoteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgDebSourceRemoteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgDebSourceRemoteOutputReference
 ```
@@ -15080,7 +15080,7 @@ func InternalValue() OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAss
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgGoogetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgGoogetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgGoogetOutputReference
 ```
@@ -15351,7 +15351,7 @@ func InternalValue() OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAss
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgMsiOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgMsiOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgMsiOutputReference
 ```
@@ -15664,7 +15664,7 @@ func InternalValue() OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAss
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgMsiSourceGcsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgMsiSourceGcsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgMsiSourceGcsOutputReference
 ```
@@ -15986,7 +15986,7 @@ func InternalValue() OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAss
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgMsiSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgMsiSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgMsiSourceOutputReference
 ```
@@ -16377,7 +16377,7 @@ func InternalValue() OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAss
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgMsiSourceRemoteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgMsiSourceRemoteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgMsiSourceRemoteOutputReference
 ```
@@ -16677,7 +16677,7 @@ func InternalValue() OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAss
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgOutputReference
 ```
@@ -17242,7 +17242,7 @@ func InternalValue() OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAss
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgRpmOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgRpmOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgRpmOutputReference
 ```
@@ -17555,7 +17555,7 @@ func InternalValue() OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAss
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgRpmSourceGcsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgRpmSourceGcsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgRpmSourceGcsOutputReference
 ```
@@ -17877,7 +17877,7 @@ func InternalValue() OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAss
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgRpmSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgRpmSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgRpmSourceOutputReference
 ```
@@ -18268,7 +18268,7 @@ func InternalValue() OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAss
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgRpmSourceRemoteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgRpmSourceRemoteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgRpmSourceRemoteOutputReference
 ```
@@ -18568,7 +18568,7 @@ func InternalValue() OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAss
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgYumOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgYumOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgYumOutputReference
 ```
@@ -18839,7 +18839,7 @@ func InternalValue() OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAss
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgZypperOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgZypperOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesPkgZypperOutputReference
 ```
@@ -19110,7 +19110,7 @@ func InternalValue() OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAss
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesRepositoryAptOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesRepositoryAptOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesRepositoryAptOutputReference
 ```
@@ -19476,7 +19476,7 @@ func InternalValue() OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAss
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesRepositoryGooOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesRepositoryGooOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesRepositoryGooOutputReference
 ```
@@ -19769,7 +19769,7 @@ func InternalValue() OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAss
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesRepositoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesRepositoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesRepositoryOutputReference
 ```
@@ -20186,7 +20186,7 @@ func InternalValue() OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAss
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesRepositoryYumOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesRepositoryYumOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesRepositoryYumOutputReference
 ```
@@ -20537,7 +20537,7 @@ func InternalValue() OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAss
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesRepositoryZypperOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesRepositoryZypperOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOsPoliciesResourceGroupsResourcesRepositoryZypperOutputReference
 ```
@@ -20888,7 +20888,7 @@ func InternalValue() OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAss
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadOutputReference
 ```
@@ -21377,7 +21377,7 @@ func InternalValue() OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAss
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadRolloutDisruptionBudgetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadRolloutDisruptionBudgetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadRolloutDisruptionBudgetOutputReference
 ```
@@ -21684,7 +21684,7 @@ func InternalValue() OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAss
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadRolloutOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadRolloutOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAssignmentV1PayloadRolloutOutputReference
 ```
@@ -21990,7 +21990,7 @@ func InternalValue() OsConfigV2PolicyOrchestratorOrchestratedResourceOsPolicyAss
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestratedResourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestratedResourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigV2PolicyOrchestratorOrchestratedResourceOutputReference
 ```
@@ -22310,7 +22310,7 @@ func InternalValue() OsConfigV2PolicyOrchestratorOrchestratedResource
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestrationScopeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestrationScopeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigV2PolicyOrchestratorOrchestrationScopeOutputReference
 ```
@@ -22601,7 +22601,7 @@ func InternalValue() OsConfigV2PolicyOrchestratorOrchestrationScope
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestrationScopeSelectorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestrationScopeSelectorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OsConfigV2PolicyOrchestratorOrchestrationScopeSelectorsList
 ```
@@ -22761,7 +22761,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestrationScopeSelectorsLocationSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestrationScopeSelectorsLocationSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigV2PolicyOrchestratorOrchestrationScopeSelectorsLocationSelectorOutputReference
 ```
@@ -23039,7 +23039,7 @@ func InternalValue() OsConfigV2PolicyOrchestratorOrchestrationScopeSelectorsLoca
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestrationScopeSelectorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestrationScopeSelectorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OsConfigV2PolicyOrchestratorOrchestrationScopeSelectorsOutputReference
 ```
@@ -23390,7 +23390,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestrationScopeSelectorsResourceHierarchySelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestrationScopeSelectorsResourceHierarchySelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigV2PolicyOrchestratorOrchestrationScopeSelectorsResourceHierarchySelectorOutputReference
 ```
@@ -23697,7 +23697,7 @@ func InternalValue() OsConfigV2PolicyOrchestratorOrchestrationScopeSelectorsReso
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestrationStateCurrentIterationStateErrorDetailsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestrationStateCurrentIterationStateErrorDetailsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OsConfigV2PolicyOrchestratorOrchestrationStateCurrentIterationStateErrorDetailsList
 ```
@@ -23846,7 +23846,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestrationStateCurrentIterationStateErrorDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestrationStateCurrentIterationStateErrorDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OsConfigV2PolicyOrchestratorOrchestrationStateCurrentIterationStateErrorDetailsOutputReference
 ```
@@ -24135,7 +24135,7 @@ func InternalValue() OsConfigV2PolicyOrchestratorOrchestrationStateCurrentIterat
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestrationStateCurrentIterationStateErrorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestrationStateCurrentIterationStateErrorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OsConfigV2PolicyOrchestratorOrchestrationStateCurrentIterationStateErrorList
 ```
@@ -24284,7 +24284,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestrationStateCurrentIterationStateErrorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestrationStateCurrentIterationStateErrorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OsConfigV2PolicyOrchestratorOrchestrationStateCurrentIterationStateErrorOutputReference
 ```
@@ -24584,7 +24584,7 @@ func InternalValue() OsConfigV2PolicyOrchestratorOrchestrationStateCurrentIterat
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestrationStateCurrentIterationStateList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestrationStateCurrentIterationStateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OsConfigV2PolicyOrchestratorOrchestrationStateCurrentIterationStateList
 ```
@@ -24733,7 +24733,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestrationStateCurrentIterationStateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestrationStateCurrentIterationStateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OsConfigV2PolicyOrchestratorOrchestrationStateCurrentIterationStateOutputReference
 ```
@@ -25088,7 +25088,7 @@ func InternalValue() OsConfigV2PolicyOrchestratorOrchestrationStateCurrentIterat
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestrationStateList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestrationStateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OsConfigV2PolicyOrchestratorOrchestrationStateList
 ```
@@ -25237,7 +25237,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestrationStateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestrationStateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OsConfigV2PolicyOrchestratorOrchestrationStateOutputReference
 ```
@@ -25526,7 +25526,7 @@ func InternalValue() OsConfigV2PolicyOrchestratorOrchestrationState
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestrationStatePreviousIterationStateErrorDetailsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestrationStatePreviousIterationStateErrorDetailsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OsConfigV2PolicyOrchestratorOrchestrationStatePreviousIterationStateErrorDetailsList
 ```
@@ -25675,7 +25675,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestrationStatePreviousIterationStateErrorDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestrationStatePreviousIterationStateErrorDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OsConfigV2PolicyOrchestratorOrchestrationStatePreviousIterationStateErrorDetailsOutputReference
 ```
@@ -25964,7 +25964,7 @@ func InternalValue() OsConfigV2PolicyOrchestratorOrchestrationStatePreviousItera
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestrationStatePreviousIterationStateErrorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestrationStatePreviousIterationStateErrorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OsConfigV2PolicyOrchestratorOrchestrationStatePreviousIterationStateErrorList
 ```
@@ -26113,7 +26113,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestrationStatePreviousIterationStateErrorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestrationStatePreviousIterationStateErrorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OsConfigV2PolicyOrchestratorOrchestrationStatePreviousIterationStateErrorOutputReference
 ```
@@ -26413,7 +26413,7 @@ func InternalValue() OsConfigV2PolicyOrchestratorOrchestrationStatePreviousItera
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestrationStatePreviousIterationStateList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestrationStatePreviousIterationStateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OsConfigV2PolicyOrchestratorOrchestrationStatePreviousIterationStateList
 ```
@@ -26562,7 +26562,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorOrchestrationStatePreviousIterationStateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorOrchestrationStatePreviousIterationStateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OsConfigV2PolicyOrchestratorOrchestrationStatePreviousIterationStateOutputReference
 ```
@@ -26917,7 +26917,7 @@ func InternalValue() OsConfigV2PolicyOrchestratorOrchestrationStatePreviousItera
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/osconfigv2policyorchestrator"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/osconfigv2policyorchestrator"
 
 osconfigv2policyorchestrator.NewOsConfigV2PolicyOrchestratorTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OsConfigV2PolicyOrchestratorTimeoutsOutputReference
 ```

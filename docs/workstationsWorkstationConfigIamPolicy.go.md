@@ -4,12 +4,12 @@
 
 ### WorkstationsWorkstationConfigIamPolicy <a name="WorkstationsWorkstationConfigIamPolicy" id="@cdktn/provider-google.workstationsWorkstationConfigIamPolicy.WorkstationsWorkstationConfigIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/workstations_workstation_config_iam_policy google_workstations_workstation_config_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/workstations_workstation_config_iam_policy google_workstations_workstation_config_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.workstationsWorkstationConfigIamPolicy.WorkstationsWorkstationConfigIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfigiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/workstationsworkstationconfigiampolicy"
 
 workstationsworkstationconfigiampolicy.NewWorkstationsWorkstationConfigIamPolicy(scope Construct, id *string, config WorkstationsWorkstationConfigIamPolicyConfig) WorkstationsWorkstationConfigIamPolicy
 ```
@@ -421,7 +421,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.workstationsWorkstationConfigIamPolicy.WorkstationsWorkstationConfigIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfigiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/workstationsworkstationconfigiampolicy"
 
 workstationsworkstationconfigiampolicy.WorkstationsWorkstationConfigIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.workstationsWorkstationConfigIamPolicy.WorkstationsWorkstationConfigIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfigiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/workstationsworkstationconfigiampolicy"
 
 workstationsworkstationconfigiampolicy.WorkstationsWorkstationConfigIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ workstationsworkstationconfigiampolicy.WorkstationsWorkstationConfigIamPolicy_Is
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.workstationsWorkstationConfigIamPolicy.WorkstationsWorkstationConfigIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfigiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/workstationsworkstationconfigiampolicy"
 
 workstationsworkstationconfigiampolicy.WorkstationsWorkstationConfigIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ workstationsworkstationconfigiampolicy.WorkstationsWorkstationConfigIamPolicy_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.workstationsWorkstationConfigIamPolicy.WorkstationsWorkstationConfigIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfigiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/workstationsworkstationconfigiampolicy"
 
 workstationsworkstationconfigiampolicy.WorkstationsWorkstationConfigIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -510,7 +510,7 @@ The construct id used in the generated config for the WorkstationsWorkstationCon
 
 The id of the existing WorkstationsWorkstationConfigIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/workstations_workstation_config_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/workstations_workstation_config_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -853,7 +853,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.workstationsWorkstationConfigIamPolicy.WorkstationsWorkstationConfigIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationsworkstationconfigiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/workstationsworkstationconfigiampolicy"
 
 &workstationsworkstationconfigiampolicy.WorkstationsWorkstationConfigIamPolicyConfig {
 	Connection: interface{},
@@ -883,12 +883,12 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workstationswork
 | <code><a href="#@cdktn/provider-google.workstationsWorkstationConfigIamPolicy.WorkstationsWorkstationConfigIamPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.workstationsWorkstationConfigIamPolicy.WorkstationsWorkstationConfigIamPolicyConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.workstationsWorkstationConfigIamPolicy.WorkstationsWorkstationConfigIamPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.workstationsWorkstationConfigIamPolicy.WorkstationsWorkstationConfigIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/workstations_workstation_config_iam_policy#policy_data WorkstationsWorkstationConfigIamPolicy#policy_data}. |
-| <code><a href="#@cdktn/provider-google.workstationsWorkstationConfigIamPolicy.WorkstationsWorkstationConfigIamPolicyConfig.property.workstationClusterId">WorkstationClusterId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/workstations_workstation_config_iam_policy#workstation_cluster_id WorkstationsWorkstationConfigIamPolicy#workstation_cluster_id}. |
-| <code><a href="#@cdktn/provider-google.workstationsWorkstationConfigIamPolicy.WorkstationsWorkstationConfigIamPolicyConfig.property.workstationConfigId">WorkstationConfigId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/workstations_workstation_config_iam_policy#workstation_config_id WorkstationsWorkstationConfigIamPolicy#workstation_config_id}. |
-| <code><a href="#@cdktn/provider-google.workstationsWorkstationConfigIamPolicy.WorkstationsWorkstationConfigIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/workstations_workstation_config_iam_policy#id WorkstationsWorkstationConfigIamPolicy#id}. |
-| <code><a href="#@cdktn/provider-google.workstationsWorkstationConfigIamPolicy.WorkstationsWorkstationConfigIamPolicyConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/workstations_workstation_config_iam_policy#location WorkstationsWorkstationConfigIamPolicy#location}. |
-| <code><a href="#@cdktn/provider-google.workstationsWorkstationConfigIamPolicy.WorkstationsWorkstationConfigIamPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/workstations_workstation_config_iam_policy#project WorkstationsWorkstationConfigIamPolicy#project}. |
+| <code><a href="#@cdktn/provider-google.workstationsWorkstationConfigIamPolicy.WorkstationsWorkstationConfigIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/workstations_workstation_config_iam_policy#policy_data WorkstationsWorkstationConfigIamPolicy#policy_data}. |
+| <code><a href="#@cdktn/provider-google.workstationsWorkstationConfigIamPolicy.WorkstationsWorkstationConfigIamPolicyConfig.property.workstationClusterId">WorkstationClusterId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/workstations_workstation_config_iam_policy#workstation_cluster_id WorkstationsWorkstationConfigIamPolicy#workstation_cluster_id}. |
+| <code><a href="#@cdktn/provider-google.workstationsWorkstationConfigIamPolicy.WorkstationsWorkstationConfigIamPolicyConfig.property.workstationConfigId">WorkstationConfigId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/workstations_workstation_config_iam_policy#workstation_config_id WorkstationsWorkstationConfigIamPolicy#workstation_config_id}. |
+| <code><a href="#@cdktn/provider-google.workstationsWorkstationConfigIamPolicy.WorkstationsWorkstationConfigIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/workstations_workstation_config_iam_policy#id WorkstationsWorkstationConfigIamPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.workstationsWorkstationConfigIamPolicy.WorkstationsWorkstationConfigIamPolicyConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/workstations_workstation_config_iam_policy#location WorkstationsWorkstationConfigIamPolicy#location}. |
+| <code><a href="#@cdktn/provider-google.workstationsWorkstationConfigIamPolicy.WorkstationsWorkstationConfigIamPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/workstations_workstation_config_iam_policy#project WorkstationsWorkstationConfigIamPolicy#project}. |
 
 ---
 
@@ -970,7 +970,7 @@ PolicyData *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/workstations_workstation_config_iam_policy#policy_data WorkstationsWorkstationConfigIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/workstations_workstation_config_iam_policy#policy_data WorkstationsWorkstationConfigIamPolicy#policy_data}.
 
 ---
 
@@ -982,7 +982,7 @@ WorkstationClusterId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/workstations_workstation_config_iam_policy#workstation_cluster_id WorkstationsWorkstationConfigIamPolicy#workstation_cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/workstations_workstation_config_iam_policy#workstation_cluster_id WorkstationsWorkstationConfigIamPolicy#workstation_cluster_id}.
 
 ---
 
@@ -994,7 +994,7 @@ WorkstationConfigId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/workstations_workstation_config_iam_policy#workstation_config_id WorkstationsWorkstationConfigIamPolicy#workstation_config_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/workstations_workstation_config_iam_policy#workstation_config_id WorkstationsWorkstationConfigIamPolicy#workstation_config_id}.
 
 ---
 
@@ -1006,7 +1006,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/workstations_workstation_config_iam_policy#id WorkstationsWorkstationConfigIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/workstations_workstation_config_iam_policy#id WorkstationsWorkstationConfigIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1021,7 +1021,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/workstations_workstation_config_iam_policy#location WorkstationsWorkstationConfigIamPolicy#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/workstations_workstation_config_iam_policy#location WorkstationsWorkstationConfigIamPolicy#location}.
 
 ---
 
@@ -1033,7 +1033,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/workstations_workstation_config_iam_policy#project WorkstationsWorkstationConfigIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/workstations_workstation_config_iam_policy#project WorkstationsWorkstationConfigIamPolicy#project}.
 
 ---
 

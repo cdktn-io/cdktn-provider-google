@@ -4,12 +4,12 @@
 
 ### DataGoogleLoggingSink <a name="DataGoogleLoggingSink" id="@cdktn/provider-google.dataGoogleLoggingSink.DataGoogleLoggingSink"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/logging_sink google_logging_sink}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/logging_sink google_logging_sink}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleLoggingSink.DataGoogleLoggingSink.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleloggingsink"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleloggingsink"
 
 datagoogleloggingsink.NewDataGoogleLoggingSink(scope Construct, id *string, config DataGoogleLoggingSinkConfig) DataGoogleLoggingSink
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleLoggingSink.DataGoogleLoggingSink.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleloggingsink"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleloggingsink"
 
 datagoogleloggingsink.DataGoogleLoggingSink_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleLoggingSink.DataGoogleLoggingSink.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleloggingsink"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleloggingsink"
 
 datagoogleloggingsink.DataGoogleLoggingSink_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ datagoogleloggingsink.DataGoogleLoggingSink_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleLoggingSink.DataGoogleLoggingSink.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleloggingsink"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleloggingsink"
 
 datagoogleloggingsink.DataGoogleLoggingSink_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datagoogleloggingsink.DataGoogleLoggingSink_IsTerraformDataSource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleLoggingSink.DataGoogleLoggingSink.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleloggingsink"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleloggingsink"
 
 datagoogleloggingsink.DataGoogleLoggingSink_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataGoogleLoggingSink to i
 
 The id of the existing DataGoogleLoggingSink that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/logging_sink#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/logging_sink#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -686,7 +686,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleLoggingSink.DataGoogleLoggingSinkBigqueryOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleloggingsink"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleloggingsink"
 
 &datagoogleloggingsink.DataGoogleLoggingSinkBigqueryOptions {
 
@@ -699,7 +699,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleloggin
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleLoggingSink.DataGoogleLoggingSinkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleloggingsink"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleloggingsink"
 
 &datagoogleloggingsink.DataGoogleLoggingSinkConfig {
 	Connection: interface{},
@@ -808,7 +808,7 @@ Id *string
 
 Required. An identifier for the resource in format: "projects/[PROJECT_ID]/sinks/[SINK_NAME]", "organizations/[ORGANIZATION_ID]/sinks/[SINK_NAME]", "billingAccounts/[BILLING_ACCOUNT_ID]/sinks/[SINK_NAME]", "folders/[FOLDER_ID]/sinks/[SINK_NAME]".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/logging_sink#id DataGoogleLoggingSink#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/logging_sink#id DataGoogleLoggingSink#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -820,7 +820,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleLoggingSink.DataGoogleLoggingSinkExclusions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleloggingsink"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleloggingsink"
 
 &datagoogleloggingsink.DataGoogleLoggingSinkExclusions {
 
@@ -835,7 +835,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleloggin
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleLoggingSink.DataGoogleLoggingSinkBigqueryOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleloggingsink"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleloggingsink"
 
 datagoogleloggingsink.NewDataGoogleLoggingSinkBigqueryOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleLoggingSinkBigqueryOptionsList
 ```
@@ -984,7 +984,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleLoggingSink.DataGoogleLoggingSinkBigqueryOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleloggingsink"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleloggingsink"
 
 datagoogleloggingsink.NewDataGoogleLoggingSinkBigqueryOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleLoggingSinkBigqueryOptionsOutputReference
 ```
@@ -1262,7 +1262,7 @@ func InternalValue() DataGoogleLoggingSinkBigqueryOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleLoggingSink.DataGoogleLoggingSinkExclusionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleloggingsink"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleloggingsink"
 
 datagoogleloggingsink.NewDataGoogleLoggingSinkExclusionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleLoggingSinkExclusionsList
 ```
@@ -1411,7 +1411,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleLoggingSink.DataGoogleLoggingSinkExclusionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleloggingsink"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleloggingsink"
 
 datagoogleloggingsink.NewDataGoogleLoggingSinkExclusionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleLoggingSinkExclusionsOutputReference
 ```

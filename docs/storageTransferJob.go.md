@@ -4,12 +4,12 @@
 
 ### StorageTransferJob <a name="StorageTransferJob" id="@cdktn/provider-google.storageTransferJob.StorageTransferJob"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job google_storage_transfer_job}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job google_storage_transfer_job}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageTransferJob.StorageTransferJob.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagetransferjob"
 
 storagetransferjob.NewStorageTransferJob(scope Construct, id *string, config StorageTransferJobConfig) StorageTransferJob
 ```
@@ -562,7 +562,7 @@ func ResetTransferSpec()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.storageTransferJob.StorageTransferJob.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagetransferjob"
 
 storagetransferjob.StorageTransferJob_IsConstruct(x interface{}) *bool
 ```
@@ -594,7 +594,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.storageTransferJob.StorageTransferJob.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagetransferjob"
 
 storagetransferjob.StorageTransferJob_IsTerraformElement(x interface{}) *bool
 ```
@@ -608,7 +608,7 @@ storagetransferjob.StorageTransferJob_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.storageTransferJob.StorageTransferJob.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagetransferjob"
 
 storagetransferjob.StorageTransferJob_IsTerraformResource(x interface{}) *bool
 ```
@@ -622,7 +622,7 @@ storagetransferjob.StorageTransferJob_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.storageTransferJob.StorageTransferJob.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagetransferjob"
 
 storagetransferjob.StorageTransferJob_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -651,7 +651,7 @@ The construct id used in the generated config for the StorageTransferJob to impo
 
 The id of the existing StorageTransferJob that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1170,7 +1170,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagetransferjob"
 
 &storagetransferjob.StorageTransferJobConfig {
 	Connection: interface{},
@@ -1182,17 +1182,17 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferj
 	Provisioners: *[]interface{},
 	Description: *string,
 	DeletionPolicy: *string,
-	EventStream: github.com/cdktn-io/cdktn-provider-google-go/google/v20.storageTransferJob.StorageTransferJobEventStream,
+	EventStream: github.com/cdktn-io/cdktn-provider-google-go/google/v21.storageTransferJob.StorageTransferJobEventStream,
 	Id: *string,
-	LoggingConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.storageTransferJob.StorageTransferJobLoggingConfig,
+	LoggingConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.storageTransferJob.StorageTransferJobLoggingConfig,
 	Name: *string,
-	NotificationConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.storageTransferJob.StorageTransferJobNotificationConfig,
+	NotificationConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.storageTransferJob.StorageTransferJobNotificationConfig,
 	Project: *string,
-	ReplicationSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v20.storageTransferJob.StorageTransferJobReplicationSpec,
-	Schedule: github.com/cdktn-io/cdktn-provider-google-go/google/v20.storageTransferJob.StorageTransferJobSchedule,
+	ReplicationSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v21.storageTransferJob.StorageTransferJobReplicationSpec,
+	Schedule: github.com/cdktn-io/cdktn-provider-google-go/google/v21.storageTransferJob.StorageTransferJobSchedule,
 	ServiceAccount: *string,
 	Status: *string,
-	TransferSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v20.storageTransferJob.StorageTransferJobTransferSpec,
+	TransferSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v21.storageTransferJob.StorageTransferJobTransferSpec,
 }
 ```
 
@@ -1210,7 +1210,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferj
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobConfig.property.description">Description</a></code> | <code>*string</code> | Unique description to identify the Transfer Job. |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobConfig.property.eventStream">EventStream</a></code> | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobEventStream">StorageTransferJobEventStream</a></code> | event_stream block. |
-| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#id StorageTransferJob#id}. |
+| <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#id StorageTransferJob#id}. |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobConfig.property.loggingConfig">LoggingConfig</a></code> | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobLoggingConfig">StorageTransferJobLoggingConfig</a></code> | logging_config block. |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobConfig.property.name">Name</a></code> | <code>*string</code> | The name of the Transfer Job. |
 | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobConfig.property.notificationConfig">NotificationConfig</a></code> | <code><a href="#@cdktn/provider-google.storageTransferJob.StorageTransferJobNotificationConfig">StorageTransferJobNotificationConfig</a></code> | notification_config block. |
@@ -1303,7 +1303,7 @@ Description *string
 
 Unique description to identify the Transfer Job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#description StorageTransferJob#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#description StorageTransferJob#description}
 
 ---
 
@@ -1324,7 +1324,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#deletion_policy StorageTransferJob#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#deletion_policy StorageTransferJob#deletion_policy}
 
 ---
 
@@ -1338,7 +1338,7 @@ EventStream StorageTransferJobEventStream
 
 event_stream block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#event_stream StorageTransferJob#event_stream}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#event_stream StorageTransferJob#event_stream}
 
 ---
 
@@ -1350,7 +1350,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#id StorageTransferJob#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#id StorageTransferJob#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1367,7 +1367,7 @@ LoggingConfig StorageTransferJobLoggingConfig
 
 logging_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#logging_config StorageTransferJob#logging_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#logging_config StorageTransferJob#logging_config}
 
 ---
 
@@ -1381,7 +1381,7 @@ Name *string
 
 The name of the Transfer Job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#name StorageTransferJob#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#name StorageTransferJob#name}
 
 ---
 
@@ -1395,7 +1395,7 @@ NotificationConfig StorageTransferJobNotificationConfig
 
 notification_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#notification_config StorageTransferJob#notification_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#notification_config StorageTransferJob#notification_config}
 
 ---
 
@@ -1409,7 +1409,7 @@ Project *string
 
 The project in which the resource belongs. If it is not provided, the provider project is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#project StorageTransferJob#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#project StorageTransferJob#project}
 
 ---
 
@@ -1423,7 +1423,7 @@ ReplicationSpec StorageTransferJobReplicationSpec
 
 replication_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#replication_spec StorageTransferJob#replication_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#replication_spec StorageTransferJob#replication_spec}
 
 ---
 
@@ -1437,7 +1437,7 @@ Schedule StorageTransferJobSchedule
 
 schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#schedule StorageTransferJob#schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#schedule StorageTransferJob#schedule}
 
 ---
 
@@ -1453,7 +1453,7 @@ The user-managed service account to run the job.
 
 If this field is specified, the given service account is granted the necessary permissions to all applicable resources (e.g. GCS buckets) required by the job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#service_account StorageTransferJob#service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#service_account StorageTransferJob#service_account}
 
 ---
 
@@ -1469,7 +1469,7 @@ Status of the job.
 
 Default: ENABLED. NOTE: The effect of the new job status takes place during a subsequent job run. For example, if you change the job status from ENABLED to DISABLED, and an operation spawned by the transfer is running, the status change would not affect the current operation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#status StorageTransferJob#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#status StorageTransferJob#status}
 
 ---
 
@@ -1483,7 +1483,7 @@ TransferSpec StorageTransferJobTransferSpec
 
 transfer_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#transfer_spec StorageTransferJob#transfer_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#transfer_spec StorageTransferJob#transfer_spec}
 
 ---
 
@@ -1492,7 +1492,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobEventStream.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagetransferjob"
 
 &storagetransferjob.StorageTransferJobEventStream {
 	Name: *string,
@@ -1521,7 +1521,7 @@ Name *string
 
 Specifies a unique name of the resource such as AWS SQS ARN in the form 'arn:aws:sqs:region:account_id:queue_name', or Pub/Sub subscription resource name in the form 'projects/{project}/subscriptions/{sub}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#name StorageTransferJob#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#name StorageTransferJob#name}
 
 ---
 
@@ -1537,7 +1537,7 @@ Specifies the data and time at which Storage Transfer Service stops listening fo
 
 After this time, any transfers in progress will complete, but no new transfers are initiated
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#event_stream_expiration_time StorageTransferJob#event_stream_expiration_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#event_stream_expiration_time StorageTransferJob#event_stream_expiration_time}
 
 ---
 
@@ -1553,7 +1553,7 @@ Specifies the date and time that Storage Transfer Service starts listening for e
 
 If no start time is specified or start time is in the past, Storage Transfer Service starts listening immediately
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#event_stream_start_time StorageTransferJob#event_stream_start_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#event_stream_start_time StorageTransferJob#event_stream_start_time}
 
 ---
 
@@ -1562,7 +1562,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobLoggingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagetransferjob"
 
 &storagetransferjob.StorageTransferJobLoggingConfig {
 	EnableOnPremGcsTransferLogs: interface{},
@@ -1591,7 +1591,7 @@ EnableOnPremGcsTransferLogs interface{}
 
 For transfers with a PosixFilesystem source, this option enables the Cloud Storage transfer logs for this transfer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#enable_on_prem_gcs_transfer_logs StorageTransferJob#enable_on_prem_gcs_transfer_logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#enable_on_prem_gcs_transfer_logs StorageTransferJob#enable_on_prem_gcs_transfer_logs}
 
 ---
 
@@ -1605,7 +1605,7 @@ LogActions *[]*string
 
 Specifies the actions to be logged. Not supported for transfers with PosifxFilesystem data sources; use enable_on_prem_gcs_transfer_logs instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#log_actions StorageTransferJob#log_actions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#log_actions StorageTransferJob#log_actions}
 
 ---
 
@@ -1619,7 +1619,7 @@ LogActionStates *[]*string
 
 States in which logActions are logged. Not supported for transfers with PosifxFilesystem data sources; use enable_on_prem_gcs_transfer_logs instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#log_action_states StorageTransferJob#log_action_states}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#log_action_states StorageTransferJob#log_action_states}
 
 ---
 
@@ -1628,7 +1628,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobNotificationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagetransferjob"
 
 &storagetransferjob.StorageTransferJobNotificationConfig {
 	PayloadFormat: *string,
@@ -1657,7 +1657,7 @@ PayloadFormat *string
 
 The desired format of the notification message payloads. One of "NONE" or "JSON".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#payload_format StorageTransferJob#payload_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#payload_format StorageTransferJob#payload_format}
 
 ---
 
@@ -1671,7 +1671,7 @@ PubsubTopic *string
 
 The Topic.name of the Pub/Sub topic to which to publish notifications.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#pubsub_topic StorageTransferJob#pubsub_topic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#pubsub_topic StorageTransferJob#pubsub_topic}
 
 ---
 
@@ -1687,7 +1687,7 @@ Event types for which a notification is desired.
 
 If empty, send notifications for all event types. The valid types are "TRANSFER_OPERATION_SUCCESS", "TRANSFER_OPERATION_FAILED", "TRANSFER_OPERATION_ABORTED".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#event_types StorageTransferJob#event_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#event_types StorageTransferJob#event_types}
 
 ---
 
@@ -1696,13 +1696,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobReplicationSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagetransferjob"
 
 &storagetransferjob.StorageTransferJobReplicationSpec {
-	GcsDataSink: github.com/cdktn-io/cdktn-provider-google-go/google/v20.storageTransferJob.StorageTransferJobReplicationSpecGcsDataSink,
-	GcsDataSource: github.com/cdktn-io/cdktn-provider-google-go/google/v20.storageTransferJob.StorageTransferJobReplicationSpecGcsDataSource,
-	ObjectConditions: github.com/cdktn-io/cdktn-provider-google-go/google/v20.storageTransferJob.StorageTransferJobReplicationSpecObjectConditions,
-	TransferOptions: github.com/cdktn-io/cdktn-provider-google-go/google/v20.storageTransferJob.StorageTransferJobReplicationSpecTransferOptions,
+	GcsDataSink: github.com/cdktn-io/cdktn-provider-google-go/google/v21.storageTransferJob.StorageTransferJobReplicationSpecGcsDataSink,
+	GcsDataSource: github.com/cdktn-io/cdktn-provider-google-go/google/v21.storageTransferJob.StorageTransferJobReplicationSpecGcsDataSource,
+	ObjectConditions: github.com/cdktn-io/cdktn-provider-google-go/google/v21.storageTransferJob.StorageTransferJobReplicationSpecObjectConditions,
+	TransferOptions: github.com/cdktn-io/cdktn-provider-google-go/google/v21.storageTransferJob.StorageTransferJobReplicationSpecTransferOptions,
 }
 ```
 
@@ -1727,7 +1727,7 @@ GcsDataSink StorageTransferJobReplicationSpecGcsDataSink
 
 gcs_data_sink block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#gcs_data_sink StorageTransferJob#gcs_data_sink}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#gcs_data_sink StorageTransferJob#gcs_data_sink}
 
 ---
 
@@ -1741,7 +1741,7 @@ GcsDataSource StorageTransferJobReplicationSpecGcsDataSource
 
 gcs_data_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#gcs_data_source StorageTransferJob#gcs_data_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#gcs_data_source StorageTransferJob#gcs_data_source}
 
 ---
 
@@ -1755,7 +1755,7 @@ ObjectConditions StorageTransferJobReplicationSpecObjectConditions
 
 object_conditions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#object_conditions StorageTransferJob#object_conditions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#object_conditions StorageTransferJob#object_conditions}
 
 ---
 
@@ -1769,7 +1769,7 @@ TransferOptions StorageTransferJobReplicationSpecTransferOptions
 
 transfer_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#transfer_options StorageTransferJob#transfer_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#transfer_options StorageTransferJob#transfer_options}
 
 ---
 
@@ -1778,7 +1778,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobReplicationSpecGcsDataSink.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagetransferjob"
 
 &storagetransferjob.StorageTransferJobReplicationSpecGcsDataSink {
 	BucketName: *string,
@@ -1805,7 +1805,7 @@ BucketName *string
 
 Google Cloud Storage bucket name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#bucket_name StorageTransferJob#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#bucket_name StorageTransferJob#bucket_name}
 
 ---
 
@@ -1821,7 +1821,7 @@ Google Cloud Storage path in bucket to transfer.
 
 Must be an empty string or full path name that ends with a '/'. This field is treated as an object prefix. As such, it should not begin with a '/'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#path StorageTransferJob#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#path StorageTransferJob#path}
 
 ---
 
@@ -1830,7 +1830,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobReplicationSpecGcsDataSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagetransferjob"
 
 &storagetransferjob.StorageTransferJobReplicationSpecGcsDataSource {
 	BucketName: *string,
@@ -1857,7 +1857,7 @@ BucketName *string
 
 Google Cloud Storage bucket name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#bucket_name StorageTransferJob#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#bucket_name StorageTransferJob#bucket_name}
 
 ---
 
@@ -1873,7 +1873,7 @@ Google Cloud Storage path in bucket to transfer.
 
 Must be an empty string or full path name that ends with a '/'. This field is treated as an object prefix. As such, it should not begin with a '/'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#path StorageTransferJob#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#path StorageTransferJob#path}
 
 ---
 
@@ -1882,7 +1882,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobReplicationSpecObjectConditions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagetransferjob"
 
 &storagetransferjob.StorageTransferJobReplicationSpecObjectConditions {
 	ExcludePrefixes: *[]*string,
@@ -1917,7 +1917,7 @@ ExcludePrefixes *[]*string
 
 exclude_prefixes must follow the requirements described for include_prefixes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#exclude_prefixes StorageTransferJob#exclude_prefixes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#exclude_prefixes StorageTransferJob#exclude_prefixes}
 
 ---
 
@@ -1933,7 +1933,7 @@ If include_refixes is specified, objects that satisfy the object conditions must
 
 If include_prefixes is not specified, all objects except those that have names starting with one of the exclude_prefixes must satisfy the object conditions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#include_prefixes StorageTransferJob#include_prefixes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#include_prefixes StorageTransferJob#include_prefixes}
 
 ---
 
@@ -1949,7 +1949,7 @@ If specified, only objects with a "last modification time" before this timestamp
 
 A timestamp in RFC3339 UTC "Zulu" format, with nanosecond resolution and up to nine fractional digits. Examples: "2014-10-02T15:01:23Z" and "2014-10-02T15:01:23.045123456Z".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#last_modified_before StorageTransferJob#last_modified_before}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#last_modified_before StorageTransferJob#last_modified_before}
 
 ---
 
@@ -1965,7 +1965,7 @@ If specified, only objects with a "last modification time" on or after this time
 
 A timestamp in RFC3339 UTC "Zulu" format, with nanosecond resolution and up to nine fractional digits. Examples: "2014-10-02T15:01:23Z" and "2014-10-02T15:01:23.045123456Z".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#last_modified_since StorageTransferJob#last_modified_since}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#last_modified_since StorageTransferJob#last_modified_since}
 
 ---
 
@@ -1979,7 +1979,7 @@ MaxTimeElapsedSinceLastModification *string
 
 A duration in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#max_time_elapsed_since_last_modification StorageTransferJob#max_time_elapsed_since_last_modification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#max_time_elapsed_since_last_modification StorageTransferJob#max_time_elapsed_since_last_modification}
 
 ---
 
@@ -1993,7 +1993,7 @@ MinTimeElapsedSinceLastModification *string
 
 A duration in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#min_time_elapsed_since_last_modification StorageTransferJob#min_time_elapsed_since_last_modification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#min_time_elapsed_since_last_modification StorageTransferJob#min_time_elapsed_since_last_modification}
 
 ---
 
@@ -2002,12 +2002,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobReplicationSpecTransferOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagetransferjob"
 
 &storagetransferjob.StorageTransferJobReplicationSpecTransferOptions {
 	DeleteObjectsFromSourceAfterTransfer: interface{},
 	DeleteObjectsUniqueInSink: interface{},
-	MetadataOptions: github.com/cdktn-io/cdktn-provider-google-go/google/v20.storageTransferJob.StorageTransferJobReplicationSpecTransferOptionsMetadataOptions,
+	MetadataOptions: github.com/cdktn-io/cdktn-provider-google-go/google/v21.storageTransferJob.StorageTransferJobReplicationSpecTransferOptionsMetadataOptions,
 	OverwriteObjectsAlreadyExistingInSink: interface{},
 	OverwriteWhen: *string,
 }
@@ -2037,7 +2037,7 @@ Whether objects should be deleted from the source after they are transferred to 
 
 Note that this option and delete_objects_unique_in_sink are mutually exclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#delete_objects_from_source_after_transfer StorageTransferJob#delete_objects_from_source_after_transfer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#delete_objects_from_source_after_transfer StorageTransferJob#delete_objects_from_source_after_transfer}
 
 ---
 
@@ -2053,7 +2053,7 @@ Whether objects that exist only in the sink should be deleted.
 
 Note that this option and delete_objects_from_source_after_transfer are mutually exclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#delete_objects_unique_in_sink StorageTransferJob#delete_objects_unique_in_sink}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#delete_objects_unique_in_sink StorageTransferJob#delete_objects_unique_in_sink}
 
 ---
 
@@ -2067,7 +2067,7 @@ MetadataOptions StorageTransferJobReplicationSpecTransferOptionsMetadataOptions
 
 metadata_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#metadata_options StorageTransferJob#metadata_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#metadata_options StorageTransferJob#metadata_options}
 
 ---
 
@@ -2081,7 +2081,7 @@ OverwriteObjectsAlreadyExistingInSink interface{}
 
 Whether overwriting objects that already exist in the sink is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#overwrite_objects_already_existing_in_sink StorageTransferJob#overwrite_objects_already_existing_in_sink}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#overwrite_objects_already_existing_in_sink StorageTransferJob#overwrite_objects_already_existing_in_sink}
 
 ---
 
@@ -2095,7 +2095,7 @@ OverwriteWhen *string
 
 When to overwrite objects that already exist in the sink. If not set, overwrite behavior is determined by overwriteObjectsAlreadyExistingInSink.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#overwrite_when StorageTransferJob#overwrite_when}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#overwrite_when StorageTransferJob#overwrite_when}
 
 ---
 
@@ -2104,7 +2104,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobReplicationSpecTransferOptionsMetadataOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagetransferjob"
 
 &storagetransferjob.StorageTransferJobReplicationSpecTransferOptionsMetadataOptions {
 	Acl: *string,
@@ -2145,7 +2145,7 @@ Acl *string
 
 Specifies how each object's ACLs should be preserved for transfers between Google Cloud Storage buckets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#acl StorageTransferJob#acl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#acl StorageTransferJob#acl}
 
 ---
 
@@ -2159,7 +2159,7 @@ Gid *string
 
 Specifies how each file's POSIX group ID (GID) attribute should be handled by the transfer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#gid StorageTransferJob#gid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#gid StorageTransferJob#gid}
 
 ---
 
@@ -2173,7 +2173,7 @@ KmsKey *string
 
 Specifies how each object's Cloud KMS customer-managed encryption key (CMEK) is preserved for transfers between Google Cloud Storage buckets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#kms_key StorageTransferJob#kms_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#kms_key StorageTransferJob#kms_key}
 
 ---
 
@@ -2187,7 +2187,7 @@ Mode *string
 
 Specifies how each file's mode attribute should be handled by the transfer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#mode StorageTransferJob#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#mode StorageTransferJob#mode}
 
 ---
 
@@ -2201,7 +2201,7 @@ StorageClass *string
 
 Specifies the storage class to set on objects being transferred to Google Cloud Storage buckets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#storage_class StorageTransferJob#storage_class}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#storage_class StorageTransferJob#storage_class}
 
 ---
 
@@ -2215,7 +2215,7 @@ Symlink *string
 
 Specifies how symlinks should be handled by the transfer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#symlink StorageTransferJob#symlink}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#symlink StorageTransferJob#symlink}
 
 ---
 
@@ -2229,7 +2229,7 @@ TemporaryHold *string
 
 SSpecifies how each object's temporary hold status should be preserved for transfers between Google Cloud Storage buckets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#temporary_hold StorageTransferJob#temporary_hold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#temporary_hold StorageTransferJob#temporary_hold}
 
 ---
 
@@ -2243,7 +2243,7 @@ TimeCreated *string
 
 Specifies how each object's timeCreated metadata is preserved for transfers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#time_created StorageTransferJob#time_created}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#time_created StorageTransferJob#time_created}
 
 ---
 
@@ -2257,7 +2257,7 @@ Uid *string
 
 Specifies how each file's POSIX user ID (UID) attribute should be handled by the transfer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#uid StorageTransferJob#uid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#uid StorageTransferJob#uid}
 
 ---
 
@@ -2266,13 +2266,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagetransferjob"
 
 &storagetransferjob.StorageTransferJobSchedule {
-	ScheduleStartDate: github.com/cdktn-io/cdktn-provider-google-go/google/v20.storageTransferJob.StorageTransferJobScheduleScheduleStartDate,
+	ScheduleStartDate: github.com/cdktn-io/cdktn-provider-google-go/google/v21.storageTransferJob.StorageTransferJobScheduleScheduleStartDate,
 	RepeatInterval: *string,
-	ScheduleEndDate: github.com/cdktn-io/cdktn-provider-google-go/google/v20.storageTransferJob.StorageTransferJobScheduleScheduleEndDate,
-	StartTimeOfDay: github.com/cdktn-io/cdktn-provider-google-go/google/v20.storageTransferJob.StorageTransferJobScheduleStartTimeOfDay,
+	ScheduleEndDate: github.com/cdktn-io/cdktn-provider-google-go/google/v21.storageTransferJob.StorageTransferJobScheduleScheduleEndDate,
+	StartTimeOfDay: github.com/cdktn-io/cdktn-provider-google-go/google/v21.storageTransferJob.StorageTransferJobScheduleStartTimeOfDay,
 }
 ```
 
@@ -2297,7 +2297,7 @@ ScheduleStartDate StorageTransferJobScheduleScheduleStartDate
 
 schedule_start_date block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#schedule_start_date StorageTransferJob#schedule_start_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#schedule_start_date StorageTransferJob#schedule_start_date}
 
 ---
 
@@ -2313,7 +2313,7 @@ Interval between the start of each scheduled transfer.
 
 If unspecified, the default value is 24 hours. This value may not be less than 1 hour. A duration in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#repeat_interval StorageTransferJob#repeat_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#repeat_interval StorageTransferJob#repeat_interval}
 
 ---
 
@@ -2327,7 +2327,7 @@ ScheduleEndDate StorageTransferJobScheduleScheduleEndDate
 
 schedule_end_date block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#schedule_end_date StorageTransferJob#schedule_end_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#schedule_end_date StorageTransferJob#schedule_end_date}
 
 ---
 
@@ -2341,7 +2341,7 @@ StartTimeOfDay StorageTransferJobScheduleStartTimeOfDay
 
 start_time_of_day block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#start_time_of_day StorageTransferJob#start_time_of_day}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#start_time_of_day StorageTransferJob#start_time_of_day}
 
 ---
 
@@ -2350,7 +2350,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobScheduleScheduleEndDate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagetransferjob"
 
 &storagetransferjob.StorageTransferJobScheduleScheduleEndDate {
 	Day: *f64,
@@ -2379,7 +2379,7 @@ Day *f64
 
 Day of month. Must be from 1 to 31 and valid for the year and month.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#day StorageTransferJob#day}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#day StorageTransferJob#day}
 
 ---
 
@@ -2393,7 +2393,7 @@ Month *f64
 
 Month of year. Must be from 1 to 12.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#month StorageTransferJob#month}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#month StorageTransferJob#month}
 
 ---
 
@@ -2407,7 +2407,7 @@ Year *f64
 
 Year of date. Must be from 1 to 9999.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#year StorageTransferJob#year}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#year StorageTransferJob#year}
 
 ---
 
@@ -2416,7 +2416,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobScheduleScheduleStartDate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagetransferjob"
 
 &storagetransferjob.StorageTransferJobScheduleScheduleStartDate {
 	Day: *f64,
@@ -2445,7 +2445,7 @@ Day *f64
 
 Day of month. Must be from 1 to 31 and valid for the year and month.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#day StorageTransferJob#day}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#day StorageTransferJob#day}
 
 ---
 
@@ -2459,7 +2459,7 @@ Month *f64
 
 Month of year. Must be from 1 to 12.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#month StorageTransferJob#month}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#month StorageTransferJob#month}
 
 ---
 
@@ -2473,7 +2473,7 @@ Year *f64
 
 Year of date. Must be from 1 to 9999.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#year StorageTransferJob#year}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#year StorageTransferJob#year}
 
 ---
 
@@ -2482,7 +2482,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobScheduleStartTimeOfDay.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagetransferjob"
 
 &storagetransferjob.StorageTransferJobScheduleStartTimeOfDay {
 	Hours: *f64,
@@ -2513,7 +2513,7 @@ Hours *f64
 
 Hours of day in 24 hour format. Should be from 0 to 23.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#hours StorageTransferJob#hours}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#hours StorageTransferJob#hours}
 
 ---
 
@@ -2527,7 +2527,7 @@ Minutes *f64
 
 Minutes of hour of day. Must be from 0 to 59.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#minutes StorageTransferJob#minutes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#minutes StorageTransferJob#minutes}
 
 ---
 
@@ -2541,7 +2541,7 @@ Nanos *f64
 
 Fractions of seconds in nanoseconds. Must be from 0 to 999,999,999.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#nanos StorageTransferJob#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#nanos StorageTransferJob#nanos}
 
 ---
 
@@ -2555,7 +2555,7 @@ Seconds *f64
 
 Seconds of minutes of the time. Must normally be from 0 to 59.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#seconds StorageTransferJob#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#seconds StorageTransferJob#seconds}
 
 ---
 
@@ -2564,23 +2564,23 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagetransferjob"
 
 &storagetransferjob.StorageTransferJobTransferSpec {
-	AwsS3CompatibleDataSource: github.com/cdktn-io/cdktn-provider-google-go/google/v20.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSource,
-	AwsS3DataSource: github.com/cdktn-io/cdktn-provider-google-go/google/v20.storageTransferJob.StorageTransferJobTransferSpecAwsS3DataSource,
-	AzureBlobStorageDataSource: github.com/cdktn-io/cdktn-provider-google-go/google/v20.storageTransferJob.StorageTransferJobTransferSpecAzureBlobStorageDataSource,
-	GcsDataSink: github.com/cdktn-io/cdktn-provider-google-go/google/v20.storageTransferJob.StorageTransferJobTransferSpecGcsDataSink,
-	GcsDataSource: github.com/cdktn-io/cdktn-provider-google-go/google/v20.storageTransferJob.StorageTransferJobTransferSpecGcsDataSource,
-	HdfsDataSource: github.com/cdktn-io/cdktn-provider-google-go/google/v20.storageTransferJob.StorageTransferJobTransferSpecHdfsDataSource,
-	HttpDataSource: github.com/cdktn-io/cdktn-provider-google-go/google/v20.storageTransferJob.StorageTransferJobTransferSpecHttpDataSource,
-	ObjectConditions: github.com/cdktn-io/cdktn-provider-google-go/google/v20.storageTransferJob.StorageTransferJobTransferSpecObjectConditions,
-	PosixDataSink: github.com/cdktn-io/cdktn-provider-google-go/google/v20.storageTransferJob.StorageTransferJobTransferSpecPosixDataSink,
-	PosixDataSource: github.com/cdktn-io/cdktn-provider-google-go/google/v20.storageTransferJob.StorageTransferJobTransferSpecPosixDataSource,
+	AwsS3CompatibleDataSource: github.com/cdktn-io/cdktn-provider-google-go/google/v21.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSource,
+	AwsS3DataSource: github.com/cdktn-io/cdktn-provider-google-go/google/v21.storageTransferJob.StorageTransferJobTransferSpecAwsS3DataSource,
+	AzureBlobStorageDataSource: github.com/cdktn-io/cdktn-provider-google-go/google/v21.storageTransferJob.StorageTransferJobTransferSpecAzureBlobStorageDataSource,
+	GcsDataSink: github.com/cdktn-io/cdktn-provider-google-go/google/v21.storageTransferJob.StorageTransferJobTransferSpecGcsDataSink,
+	GcsDataSource: github.com/cdktn-io/cdktn-provider-google-go/google/v21.storageTransferJob.StorageTransferJobTransferSpecGcsDataSource,
+	HdfsDataSource: github.com/cdktn-io/cdktn-provider-google-go/google/v21.storageTransferJob.StorageTransferJobTransferSpecHdfsDataSource,
+	HttpDataSource: github.com/cdktn-io/cdktn-provider-google-go/google/v21.storageTransferJob.StorageTransferJobTransferSpecHttpDataSource,
+	ObjectConditions: github.com/cdktn-io/cdktn-provider-google-go/google/v21.storageTransferJob.StorageTransferJobTransferSpecObjectConditions,
+	PosixDataSink: github.com/cdktn-io/cdktn-provider-google-go/google/v21.storageTransferJob.StorageTransferJobTransferSpecPosixDataSink,
+	PosixDataSource: github.com/cdktn-io/cdktn-provider-google-go/google/v21.storageTransferJob.StorageTransferJobTransferSpecPosixDataSource,
 	SinkAgentPoolName: *string,
 	SourceAgentPoolName: *string,
-	TransferManifest: github.com/cdktn-io/cdktn-provider-google-go/google/v20.storageTransferJob.StorageTransferJobTransferSpecTransferManifest,
-	TransferOptions: github.com/cdktn-io/cdktn-provider-google-go/google/v20.storageTransferJob.StorageTransferJobTransferSpecTransferOptions,
+	TransferManifest: github.com/cdktn-io/cdktn-provider-google-go/google/v21.storageTransferJob.StorageTransferJobTransferSpecTransferManifest,
+	TransferOptions: github.com/cdktn-io/cdktn-provider-google-go/google/v21.storageTransferJob.StorageTransferJobTransferSpecTransferOptions,
 }
 ```
 
@@ -2615,7 +2615,7 @@ AwsS3CompatibleDataSource StorageTransferJobTransferSpecAwsS3CompatibleDataSourc
 
 aws_s3_compatible_data_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#aws_s3_compatible_data_source StorageTransferJob#aws_s3_compatible_data_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#aws_s3_compatible_data_source StorageTransferJob#aws_s3_compatible_data_source}
 
 ---
 
@@ -2629,7 +2629,7 @@ AwsS3DataSource StorageTransferJobTransferSpecAwsS3DataSource
 
 aws_s3_data_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#aws_s3_data_source StorageTransferJob#aws_s3_data_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#aws_s3_data_source StorageTransferJob#aws_s3_data_source}
 
 ---
 
@@ -2643,7 +2643,7 @@ AzureBlobStorageDataSource StorageTransferJobTransferSpecAzureBlobStorageDataSou
 
 azure_blob_storage_data_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#azure_blob_storage_data_source StorageTransferJob#azure_blob_storage_data_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#azure_blob_storage_data_source StorageTransferJob#azure_blob_storage_data_source}
 
 ---
 
@@ -2657,7 +2657,7 @@ GcsDataSink StorageTransferJobTransferSpecGcsDataSink
 
 gcs_data_sink block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#gcs_data_sink StorageTransferJob#gcs_data_sink}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#gcs_data_sink StorageTransferJob#gcs_data_sink}
 
 ---
 
@@ -2671,7 +2671,7 @@ GcsDataSource StorageTransferJobTransferSpecGcsDataSource
 
 gcs_data_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#gcs_data_source StorageTransferJob#gcs_data_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#gcs_data_source StorageTransferJob#gcs_data_source}
 
 ---
 
@@ -2685,7 +2685,7 @@ HdfsDataSource StorageTransferJobTransferSpecHdfsDataSource
 
 hdfs_data_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#hdfs_data_source StorageTransferJob#hdfs_data_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#hdfs_data_source StorageTransferJob#hdfs_data_source}
 
 ---
 
@@ -2699,7 +2699,7 @@ HttpDataSource StorageTransferJobTransferSpecHttpDataSource
 
 http_data_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#http_data_source StorageTransferJob#http_data_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#http_data_source StorageTransferJob#http_data_source}
 
 ---
 
@@ -2713,7 +2713,7 @@ ObjectConditions StorageTransferJobTransferSpecObjectConditions
 
 object_conditions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#object_conditions StorageTransferJob#object_conditions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#object_conditions StorageTransferJob#object_conditions}
 
 ---
 
@@ -2727,7 +2727,7 @@ PosixDataSink StorageTransferJobTransferSpecPosixDataSink
 
 posix_data_sink block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#posix_data_sink StorageTransferJob#posix_data_sink}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#posix_data_sink StorageTransferJob#posix_data_sink}
 
 ---
 
@@ -2741,7 +2741,7 @@ PosixDataSource StorageTransferJobTransferSpecPosixDataSource
 
 posix_data_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#posix_data_source StorageTransferJob#posix_data_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#posix_data_source StorageTransferJob#posix_data_source}
 
 ---
 
@@ -2755,7 +2755,7 @@ SinkAgentPoolName *string
 
 Specifies the agent pool name associated with the posix data source. When unspecified, the default name is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#sink_agent_pool_name StorageTransferJob#sink_agent_pool_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#sink_agent_pool_name StorageTransferJob#sink_agent_pool_name}
 
 ---
 
@@ -2769,7 +2769,7 @@ SourceAgentPoolName *string
 
 Specifies the agent pool name associated with the posix data source. When unspecified, the default name is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#source_agent_pool_name StorageTransferJob#source_agent_pool_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#source_agent_pool_name StorageTransferJob#source_agent_pool_name}
 
 ---
 
@@ -2783,7 +2783,7 @@ TransferManifest StorageTransferJobTransferSpecTransferManifest
 
 transfer_manifest block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#transfer_manifest StorageTransferJob#transfer_manifest}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#transfer_manifest StorageTransferJob#transfer_manifest}
 
 ---
 
@@ -2797,7 +2797,7 @@ TransferOptions StorageTransferJobTransferSpecTransferOptions
 
 transfer_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#transfer_options StorageTransferJob#transfer_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#transfer_options StorageTransferJob#transfer_options}
 
 ---
 
@@ -2806,14 +2806,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagetransferjob"
 
 &storagetransferjob.StorageTransferJobTransferSpecAwsS3CompatibleDataSource {
 	BucketName: *string,
 	Endpoint: *string,
 	Path: *string,
 	Region: *string,
-	S3Metadata: github.com/cdktn-io/cdktn-provider-google-go/google/v20.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3Metadata,
+	S3Metadata: github.com/cdktn-io/cdktn-provider-google-go/google/v21.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3Metadata,
 }
 ```
 
@@ -2839,7 +2839,7 @@ BucketName *string
 
 Name of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#bucket_name StorageTransferJob#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#bucket_name StorageTransferJob#bucket_name}
 
 ---
 
@@ -2853,7 +2853,7 @@ Endpoint *string
 
 Endpoint of the storage service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#endpoint StorageTransferJob#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#endpoint StorageTransferJob#endpoint}
 
 ---
 
@@ -2867,7 +2867,7 @@ Path *string
 
 Specifies the path to transfer objects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#path StorageTransferJob#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#path StorageTransferJob#path}
 
 ---
 
@@ -2883,7 +2883,7 @@ Specifies the region to sign requests with.
 
 This can be left blank if requests should be signed with an empty region.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#region StorageTransferJob#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#region StorageTransferJob#region}
 
 ---
 
@@ -2897,7 +2897,7 @@ S3Metadata StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3Metadata
 
 s3_metadata block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#s3_metadata StorageTransferJob#s3_metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#s3_metadata StorageTransferJob#s3_metadata}
 
 ---
 
@@ -2906,7 +2906,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3Metadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagetransferjob"
 
 &storagetransferjob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3Metadata {
 	AuthMethod: *string,
@@ -2939,7 +2939,7 @@ Authentication and authorization method used by the storage service.
 
 When not specified, Transfer Service will attempt to determine right auth method to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#auth_method StorageTransferJob#auth_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#auth_method StorageTransferJob#auth_method}
 
 ---
 
@@ -2955,7 +2955,7 @@ The Listing API to use for discovering objects.
 
 When not specified, Transfer Service will attempt to determine the right API to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#list_api StorageTransferJob#list_api}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#list_api StorageTransferJob#list_api}
 
 ---
 
@@ -2969,7 +2969,7 @@ Protocol *string
 
 The network protocol of the agent. When not specified, the default value of NetworkProtocol NETWORK_PROTOCOL_HTTPS is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#protocol StorageTransferJob#protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#protocol StorageTransferJob#protocol}
 
 ---
 
@@ -2985,7 +2985,7 @@ API request model used to call the storage service.
 
 When not specified, the default value of RequestModel REQUEST_MODEL_VIRTUAL_HOSTED_STYLE is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#request_model StorageTransferJob#request_model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#request_model StorageTransferJob#request_model}
 
 ---
 
@@ -2994,11 +2994,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3DataSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagetransferjob"
 
 &storagetransferjob.StorageTransferJobTransferSpecAwsS3DataSource {
 	BucketName: *string,
-	AwsAccessKey: github.com/cdktn-io/cdktn-provider-google-go/google/v20.storageTransferJob.StorageTransferJobTransferSpecAwsS3DataSourceAwsAccessKey,
+	AwsAccessKey: github.com/cdktn-io/cdktn-provider-google-go/google/v21.storageTransferJob.StorageTransferJobTransferSpecAwsS3DataSourceAwsAccessKey,
 	CloudfrontDomain: *string,
 	CredentialsSecret: *string,
 	ManagedPrivateNetwork: interface{},
@@ -3031,7 +3031,7 @@ BucketName *string
 
 S3 Bucket name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#bucket_name StorageTransferJob#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#bucket_name StorageTransferJob#bucket_name}
 
 ---
 
@@ -3045,7 +3045,7 @@ AwsAccessKey StorageTransferJobTransferSpecAwsS3DataSourceAwsAccessKey
 
 aws_access_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#aws_access_key StorageTransferJob#aws_access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#aws_access_key StorageTransferJob#aws_access_key}
 
 ---
 
@@ -3061,7 +3061,7 @@ The CloudFront distribution domain name pointing to this bucket, to use when fet
 
 See [Transfer from S3 via CloudFront](https://cloud.google.com/storage-transfer/docs/s3-cloudfront) for more information. Format: https://{id}.cloudfront.net or any valid custom domain. Must begin with https://.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#cloudfront_domain StorageTransferJob#cloudfront_domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#cloudfront_domain StorageTransferJob#cloudfront_domain}
 
 ---
 
@@ -3077,7 +3077,7 @@ The Resource name of a secret in Secret Manager.
 
 AWS credentials must be stored in Secret Manager in JSON format. If credentials_secret is specified, do not specify role_arn or aws_access_key. Format: projects/{projectNumber}/secrets/{secret_name}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#credentials_secret StorageTransferJob#credentials_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#credentials_secret StorageTransferJob#credentials_secret}
 
 ---
 
@@ -3091,7 +3091,7 @@ ManagedPrivateNetwork interface{}
 
 Egress bytes over a Google-managed private network. This network is shared between other users of Storage Transfer Service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#managed_private_network StorageTransferJob#managed_private_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#managed_private_network StorageTransferJob#managed_private_network}
 
 ---
 
@@ -3105,7 +3105,7 @@ Path *string
 
 S3 Bucket path in bucket to transfer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#path StorageTransferJob#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#path StorageTransferJob#path}
 
 ---
 
@@ -3121,7 +3121,7 @@ The Amazon Resource Name (ARN) of the role to support temporary credentials via 
 
 For more information about ARNs, see [IAM ARNs](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_identifiers.html#identifiers-arns). When a role ARN is provided, Transfer Service fetches temporary credentials for the session using a 'AssumeRoleWithWebIdentity' call for the provided role using the [GoogleServiceAccount][] for this project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#role_arn StorageTransferJob#role_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#role_arn StorageTransferJob#role_arn}
 
 ---
 
@@ -3130,7 +3130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3DataSourceAwsAccessKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagetransferjob"
 
 &storagetransferjob.StorageTransferJobTransferSpecAwsS3DataSourceAwsAccessKey {
 	AccessKeyId: *string,
@@ -3157,7 +3157,7 @@ AccessKeyId *string
 
 AWS Key ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#access_key_id StorageTransferJob#access_key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#access_key_id StorageTransferJob#access_key_id}
 
 ---
 
@@ -3171,7 +3171,7 @@ SecretAccessKey *string
 
 AWS Secret Access Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#secret_access_key StorageTransferJob#secret_access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#secret_access_key StorageTransferJob#secret_access_key}
 
 ---
 
@@ -3180,14 +3180,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAzureBlobStorageDataSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagetransferjob"
 
 &storagetransferjob.StorageTransferJobTransferSpecAzureBlobStorageDataSource {
 	Container: *string,
 	StorageAccount: *string,
-	AzureCredentials: github.com/cdktn-io/cdktn-provider-google-go/google/v20.storageTransferJob.StorageTransferJobTransferSpecAzureBlobStorageDataSourceAzureCredentials,
+	AzureCredentials: github.com/cdktn-io/cdktn-provider-google-go/google/v21.storageTransferJob.StorageTransferJobTransferSpecAzureBlobStorageDataSourceAzureCredentials,
 	CredentialsSecret: *string,
-	FederatedIdentityConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.storageTransferJob.StorageTransferJobTransferSpecAzureBlobStorageDataSourceFederatedIdentityConfig,
+	FederatedIdentityConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.storageTransferJob.StorageTransferJobTransferSpecAzureBlobStorageDataSourceFederatedIdentityConfig,
 	Path: *string,
 	PrivateNetworkService: *string,
 }
@@ -3217,7 +3217,7 @@ Container *string
 
 The container to transfer from the Azure Storage account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#container StorageTransferJob#container}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#container StorageTransferJob#container}
 
 ---
 
@@ -3231,7 +3231,7 @@ StorageAccount *string
 
 The name of the Azure Storage account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#storage_account StorageTransferJob#storage_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#storage_account StorageTransferJob#storage_account}
 
 ---
 
@@ -3245,7 +3245,7 @@ AzureCredentials StorageTransferJobTransferSpecAzureBlobStorageDataSourceAzureCr
 
 azure_credentials block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#azure_credentials StorageTransferJob#azure_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#azure_credentials StorageTransferJob#azure_credentials}
 
 ---
 
@@ -3261,7 +3261,7 @@ The Resource name of a secret in Secret Manager containing SAS Credentials in JS
 
 Service Agent must have permissions to access secret. If credentials_secret is specified, do not specify azure_credentials.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#credentials_secret StorageTransferJob#credentials_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#credentials_secret StorageTransferJob#credentials_secret}
 
 ---
 
@@ -3275,7 +3275,7 @@ FederatedIdentityConfig StorageTransferJobTransferSpecAzureBlobStorageDataSource
 
 federated_identity_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#federated_identity_config StorageTransferJob#federated_identity_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#federated_identity_config StorageTransferJob#federated_identity_config}
 
 ---
 
@@ -3291,7 +3291,7 @@ Root path to transfer objects.
 
 Must be an empty string or full path name that ends with a '/'. This field is treated as an object prefix. As such, it should generally not begin with a '/'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#path StorageTransferJob#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#path StorageTransferJob#path}
 
 ---
 
@@ -3305,7 +3305,7 @@ PrivateNetworkService *string
 
 Service Directory Service used as the endpoint for transfers from a customer-managed VPC. Format: projects/{projectId}/locations/{location}/namespaces/{namespace}/services/{service}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#private_network_service StorageTransferJob#private_network_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#private_network_service StorageTransferJob#private_network_service}
 
 ---
 
@@ -3314,7 +3314,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAzureBlobStorageDataSourceAzureCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagetransferjob"
 
 &storagetransferjob.StorageTransferJobTransferSpecAzureBlobStorageDataSourceAzureCredentials {
 	SasToken: *string,
@@ -3339,7 +3339,7 @@ SasToken *string
 
 Azure shared access signature.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#sas_token StorageTransferJob#sas_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#sas_token StorageTransferJob#sas_token}
 
 ---
 
@@ -3348,7 +3348,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAzureBlobStorageDataSourceFederatedIdentityConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagetransferjob"
 
 &storagetransferjob.StorageTransferJobTransferSpecAzureBlobStorageDataSourceFederatedIdentityConfig {
 	ClientId: *string,
@@ -3375,7 +3375,7 @@ ClientId *string
 
 The client (application) ID of the application with federated credentials.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#client_id StorageTransferJob#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#client_id StorageTransferJob#client_id}
 
 ---
 
@@ -3389,7 +3389,7 @@ TenantId *string
 
 The tenant (directory) ID of the application with federated credentials.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#tenant_id StorageTransferJob#tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#tenant_id StorageTransferJob#tenant_id}
 
 ---
 
@@ -3398,7 +3398,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecGcsDataSink.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagetransferjob"
 
 &storagetransferjob.StorageTransferJobTransferSpecGcsDataSink {
 	BucketName: *string,
@@ -3425,7 +3425,7 @@ BucketName *string
 
 Google Cloud Storage bucket name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#bucket_name StorageTransferJob#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#bucket_name StorageTransferJob#bucket_name}
 
 ---
 
@@ -3441,7 +3441,7 @@ Google Cloud Storage path in bucket to transfer.
 
 Must be an empty string or full path name that ends with a '/'. This field is treated as an object prefix. As such, it should not begin with a '/'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#path StorageTransferJob#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#path StorageTransferJob#path}
 
 ---
 
@@ -3450,7 +3450,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecGcsDataSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagetransferjob"
 
 &storagetransferjob.StorageTransferJobTransferSpecGcsDataSource {
 	BucketName: *string,
@@ -3477,7 +3477,7 @@ BucketName *string
 
 Google Cloud Storage bucket name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#bucket_name StorageTransferJob#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#bucket_name StorageTransferJob#bucket_name}
 
 ---
 
@@ -3493,7 +3493,7 @@ Google Cloud Storage path in bucket to transfer.
 
 Must be an empty string or full path name that ends with a '/'. This field is treated as an object prefix. As such, it should not begin with a '/'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#path StorageTransferJob#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#path StorageTransferJob#path}
 
 ---
 
@@ -3502,7 +3502,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecHdfsDataSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagetransferjob"
 
 &storagetransferjob.StorageTransferJobTransferSpecHdfsDataSource {
 	Path: *string,
@@ -3527,7 +3527,7 @@ Path *string
 
 Directory path to the filesystem.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#path StorageTransferJob#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#path StorageTransferJob#path}
 
 ---
 
@@ -3536,7 +3536,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecHttpDataSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagetransferjob"
 
 &storagetransferjob.StorageTransferJobTransferSpecHttpDataSource {
 	ListUrl: *string,
@@ -3563,7 +3563,7 @@ The URL that points to the file that stores the object list entries.
 
 This file must allow public access. Currently, only URLs with HTTP and HTTPS schemes are supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#list_url StorageTransferJob#list_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#list_url StorageTransferJob#list_url}
 
 ---
 
@@ -3572,7 +3572,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecObjectConditions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagetransferjob"
 
 &storagetransferjob.StorageTransferJobTransferSpecObjectConditions {
 	ExcludePrefixes: *[]*string,
@@ -3607,7 +3607,7 @@ ExcludePrefixes *[]*string
 
 exclude_prefixes must follow the requirements described for include_prefixes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#exclude_prefixes StorageTransferJob#exclude_prefixes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#exclude_prefixes StorageTransferJob#exclude_prefixes}
 
 ---
 
@@ -3623,7 +3623,7 @@ If include_refixes is specified, objects that satisfy the object conditions must
 
 If include_prefixes is not specified, all objects except those that have names starting with one of the exclude_prefixes must satisfy the object conditions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#include_prefixes StorageTransferJob#include_prefixes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#include_prefixes StorageTransferJob#include_prefixes}
 
 ---
 
@@ -3639,7 +3639,7 @@ If specified, only objects with a "last modification time" before this timestamp
 
 A timestamp in RFC3339 UTC "Zulu" format, with nanosecond resolution and up to nine fractional digits. Examples: "2014-10-02T15:01:23Z" and "2014-10-02T15:01:23.045123456Z".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#last_modified_before StorageTransferJob#last_modified_before}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#last_modified_before StorageTransferJob#last_modified_before}
 
 ---
 
@@ -3655,7 +3655,7 @@ If specified, only objects with a "last modification time" on or after this time
 
 A timestamp in RFC3339 UTC "Zulu" format, with nanosecond resolution and up to nine fractional digits. Examples: "2014-10-02T15:01:23Z" and "2014-10-02T15:01:23.045123456Z".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#last_modified_since StorageTransferJob#last_modified_since}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#last_modified_since StorageTransferJob#last_modified_since}
 
 ---
 
@@ -3669,7 +3669,7 @@ MaxTimeElapsedSinceLastModification *string
 
 A duration in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#max_time_elapsed_since_last_modification StorageTransferJob#max_time_elapsed_since_last_modification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#max_time_elapsed_since_last_modification StorageTransferJob#max_time_elapsed_since_last_modification}
 
 ---
 
@@ -3683,7 +3683,7 @@ MinTimeElapsedSinceLastModification *string
 
 A duration in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#min_time_elapsed_since_last_modification StorageTransferJob#min_time_elapsed_since_last_modification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#min_time_elapsed_since_last_modification StorageTransferJob#min_time_elapsed_since_last_modification}
 
 ---
 
@@ -3692,7 +3692,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecPosixDataSink.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagetransferjob"
 
 &storagetransferjob.StorageTransferJobTransferSpecPosixDataSink {
 	RootDirectory: *string,
@@ -3717,7 +3717,7 @@ RootDirectory *string
 
 Root directory path to the filesystem.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#root_directory StorageTransferJob#root_directory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#root_directory StorageTransferJob#root_directory}
 
 ---
 
@@ -3726,7 +3726,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecPosixDataSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagetransferjob"
 
 &storagetransferjob.StorageTransferJobTransferSpecPosixDataSource {
 	RootDirectory: *string,
@@ -3751,7 +3751,7 @@ RootDirectory *string
 
 Root directory path to the filesystem.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#root_directory StorageTransferJob#root_directory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#root_directory StorageTransferJob#root_directory}
 
 ---
 
@@ -3760,7 +3760,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferManifest.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagetransferjob"
 
 &storagetransferjob.StorageTransferJobTransferSpecTransferManifest {
 	Location: *string,
@@ -3785,7 +3785,7 @@ Location *string
 
 Cloud Storage path to the manifest CSV.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#location StorageTransferJob#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#location StorageTransferJob#location}
 
 ---
 
@@ -3794,12 +3794,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagetransferjob"
 
 &storagetransferjob.StorageTransferJobTransferSpecTransferOptions {
 	DeleteObjectsFromSourceAfterTransfer: interface{},
 	DeleteObjectsUniqueInSink: interface{},
-	MetadataOptions: github.com/cdktn-io/cdktn-provider-google-go/google/v20.storageTransferJob.StorageTransferJobTransferSpecTransferOptionsMetadataOptions,
+	MetadataOptions: github.com/cdktn-io/cdktn-provider-google-go/google/v21.storageTransferJob.StorageTransferJobTransferSpecTransferOptionsMetadataOptions,
 	OverwriteObjectsAlreadyExistingInSink: interface{},
 	OverwriteWhen: *string,
 }
@@ -3829,7 +3829,7 @@ Whether objects should be deleted from the source after they are transferred to 
 
 Note that this option and delete_objects_unique_in_sink are mutually exclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#delete_objects_from_source_after_transfer StorageTransferJob#delete_objects_from_source_after_transfer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#delete_objects_from_source_after_transfer StorageTransferJob#delete_objects_from_source_after_transfer}
 
 ---
 
@@ -3845,7 +3845,7 @@ Whether objects that exist only in the sink should be deleted.
 
 Note that this option and delete_objects_from_source_after_transfer are mutually exclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#delete_objects_unique_in_sink StorageTransferJob#delete_objects_unique_in_sink}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#delete_objects_unique_in_sink StorageTransferJob#delete_objects_unique_in_sink}
 
 ---
 
@@ -3859,7 +3859,7 @@ MetadataOptions StorageTransferJobTransferSpecTransferOptionsMetadataOptions
 
 metadata_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#metadata_options StorageTransferJob#metadata_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#metadata_options StorageTransferJob#metadata_options}
 
 ---
 
@@ -3873,7 +3873,7 @@ OverwriteObjectsAlreadyExistingInSink interface{}
 
 Whether overwriting objects that already exist in the sink is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#overwrite_objects_already_existing_in_sink StorageTransferJob#overwrite_objects_already_existing_in_sink}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#overwrite_objects_already_existing_in_sink StorageTransferJob#overwrite_objects_already_existing_in_sink}
 
 ---
 
@@ -3887,7 +3887,7 @@ OverwriteWhen *string
 
 When to overwrite objects that already exist in the sink. If not set, overwrite behavior is determined by overwriteObjectsAlreadyExistingInSink.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#overwrite_when StorageTransferJob#overwrite_when}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#overwrite_when StorageTransferJob#overwrite_when}
 
 ---
 
@@ -3896,7 +3896,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferOptionsMetadataOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagetransferjob"
 
 &storagetransferjob.StorageTransferJobTransferSpecTransferOptionsMetadataOptions {
 	Acl: *string,
@@ -3937,7 +3937,7 @@ Acl *string
 
 Specifies how each object's ACLs should be preserved for transfers between Google Cloud Storage buckets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#acl StorageTransferJob#acl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#acl StorageTransferJob#acl}
 
 ---
 
@@ -3951,7 +3951,7 @@ Gid *string
 
 Specifies how each file's POSIX group ID (GID) attribute should be handled by the transfer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#gid StorageTransferJob#gid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#gid StorageTransferJob#gid}
 
 ---
 
@@ -3965,7 +3965,7 @@ KmsKey *string
 
 Specifies how each object's Cloud KMS customer-managed encryption key (CMEK) is preserved for transfers between Google Cloud Storage buckets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#kms_key StorageTransferJob#kms_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#kms_key StorageTransferJob#kms_key}
 
 ---
 
@@ -3979,7 +3979,7 @@ Mode *string
 
 Specifies how each file's mode attribute should be handled by the transfer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#mode StorageTransferJob#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#mode StorageTransferJob#mode}
 
 ---
 
@@ -3993,7 +3993,7 @@ StorageClass *string
 
 Specifies the storage class to set on objects being transferred to Google Cloud Storage buckets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#storage_class StorageTransferJob#storage_class}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#storage_class StorageTransferJob#storage_class}
 
 ---
 
@@ -4007,7 +4007,7 @@ Symlink *string
 
 Specifies how symlinks should be handled by the transfer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#symlink StorageTransferJob#symlink}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#symlink StorageTransferJob#symlink}
 
 ---
 
@@ -4021,7 +4021,7 @@ TemporaryHold *string
 
 SSpecifies how each object's temporary hold status should be preserved for transfers between Google Cloud Storage buckets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#temporary_hold StorageTransferJob#temporary_hold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#temporary_hold StorageTransferJob#temporary_hold}
 
 ---
 
@@ -4035,7 +4035,7 @@ TimeCreated *string
 
 Specifies how each object's timeCreated metadata is preserved for transfers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#time_created StorageTransferJob#time_created}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#time_created StorageTransferJob#time_created}
 
 ---
 
@@ -4049,7 +4049,7 @@ Uid *string
 
 Specifies how each file's POSIX user ID (UID) attribute should be handled by the transfer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_transfer_job#uid StorageTransferJob#uid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_transfer_job#uid StorageTransferJob#uid}
 
 ---
 
@@ -4060,7 +4060,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobEventStreamOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagetransferjob"
 
 storagetransferjob.NewStorageTransferJobEventStreamOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageTransferJobEventStreamOutputReference
 ```
@@ -4389,7 +4389,7 @@ func InternalValue() StorageTransferJobEventStream
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobLoggingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagetransferjob"
 
 storagetransferjob.NewStorageTransferJobLoggingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageTransferJobLoggingConfigOutputReference
 ```
@@ -4725,7 +4725,7 @@ func InternalValue() StorageTransferJobLoggingConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobNotificationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagetransferjob"
 
 storagetransferjob.NewStorageTransferJobNotificationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageTransferJobNotificationConfigOutputReference
 ```
@@ -5047,7 +5047,7 @@ func InternalValue() StorageTransferJobNotificationConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobReplicationSpecGcsDataSinkOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagetransferjob"
 
 storagetransferjob.NewStorageTransferJobReplicationSpecGcsDataSinkOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageTransferJobReplicationSpecGcsDataSinkOutputReference
 ```
@@ -5347,7 +5347,7 @@ func InternalValue() StorageTransferJobReplicationSpecGcsDataSink
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobReplicationSpecGcsDataSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagetransferjob"
 
 storagetransferjob.NewStorageTransferJobReplicationSpecGcsDataSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageTransferJobReplicationSpecGcsDataSourceOutputReference
 ```
@@ -5647,7 +5647,7 @@ func InternalValue() StorageTransferJobReplicationSpecGcsDataSource
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobReplicationSpecObjectConditionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagetransferjob"
 
 storagetransferjob.NewStorageTransferJobReplicationSpecObjectConditionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageTransferJobReplicationSpecObjectConditionsOutputReference
 ```
@@ -6070,7 +6070,7 @@ func InternalValue() StorageTransferJobReplicationSpecObjectConditions
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobReplicationSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagetransferjob"
 
 storagetransferjob.NewStorageTransferJobReplicationSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageTransferJobReplicationSpecOutputReference
 ```
@@ -6487,7 +6487,7 @@ func InternalValue() StorageTransferJobReplicationSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobReplicationSpecTransferOptionsMetadataOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagetransferjob"
 
 storagetransferjob.NewStorageTransferJobReplicationSpecTransferOptionsMetadataOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageTransferJobReplicationSpecTransferOptionsMetadataOptionsOutputReference
 ```
@@ -6997,7 +6997,7 @@ func InternalValue() StorageTransferJobReplicationSpecTransferOptionsMetadataOpt
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobReplicationSpecTransferOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagetransferjob"
 
 storagetransferjob.NewStorageTransferJobReplicationSpecTransferOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageTransferJobReplicationSpecTransferOptionsOutputReference
 ```
@@ -7404,7 +7404,7 @@ func InternalValue() StorageTransferJobReplicationSpecTransferOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagetransferjob"
 
 storagetransferjob.NewStorageTransferJobScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageTransferJobScheduleOutputReference
 ```
@@ -7801,7 +7801,7 @@ func InternalValue() StorageTransferJobSchedule
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobScheduleScheduleEndDateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagetransferjob"
 
 storagetransferjob.NewStorageTransferJobScheduleScheduleEndDateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageTransferJobScheduleScheduleEndDateOutputReference
 ```
@@ -8116,7 +8116,7 @@ func InternalValue() StorageTransferJobScheduleScheduleEndDate
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobScheduleScheduleStartDateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagetransferjob"
 
 storagetransferjob.NewStorageTransferJobScheduleScheduleStartDateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageTransferJobScheduleScheduleStartDateOutputReference
 ```
@@ -8431,7 +8431,7 @@ func InternalValue() StorageTransferJobScheduleScheduleStartDate
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobScheduleStartTimeOfDayOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagetransferjob"
 
 storagetransferjob.NewStorageTransferJobScheduleStartTimeOfDayOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageTransferJobScheduleStartTimeOfDayOutputReference
 ```
@@ -8768,7 +8768,7 @@ func InternalValue() StorageTransferJobScheduleStartTimeOfDay
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagetransferjob"
 
 storagetransferjob.NewStorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageTransferJobTransferSpecAwsS3CompatibleDataSourceOutputReference
 ```
@@ -9161,7 +9161,7 @@ func InternalValue() StorageTransferJobTransferSpecAwsS3CompatibleDataSource
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagetransferjob"
 
 storagetransferjob.NewStorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3MetadataOutputReference
 ```
@@ -9526,7 +9526,7 @@ func InternalValue() StorageTransferJobTransferSpecAwsS3CompatibleDataSourceS3Me
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3DataSourceAwsAccessKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagetransferjob"
 
 storagetransferjob.NewStorageTransferJobTransferSpecAwsS3DataSourceAwsAccessKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageTransferJobTransferSpecAwsS3DataSourceAwsAccessKeyOutputReference
 ```
@@ -9819,7 +9819,7 @@ func InternalValue() StorageTransferJobTransferSpecAwsS3DataSourceAwsAccessKey
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAwsS3DataSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagetransferjob"
 
 storagetransferjob.NewStorageTransferJobTransferSpecAwsS3DataSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageTransferJobTransferSpecAwsS3DataSourceOutputReference
 ```
@@ -10277,7 +10277,7 @@ func InternalValue() StorageTransferJobTransferSpecAwsS3DataSource
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAzureBlobStorageDataSourceAzureCredentialsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagetransferjob"
 
 storagetransferjob.NewStorageTransferJobTransferSpecAzureBlobStorageDataSourceAzureCredentialsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageTransferJobTransferSpecAzureBlobStorageDataSourceAzureCredentialsOutputReference
 ```
@@ -10548,7 +10548,7 @@ func InternalValue() StorageTransferJobTransferSpecAzureBlobStorageDataSourceAzu
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAzureBlobStorageDataSourceFederatedIdentityConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagetransferjob"
 
 storagetransferjob.NewStorageTransferJobTransferSpecAzureBlobStorageDataSourceFederatedIdentityConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageTransferJobTransferSpecAzureBlobStorageDataSourceFederatedIdentityConfigOutputReference
 ```
@@ -10841,7 +10841,7 @@ func InternalValue() StorageTransferJobTransferSpecAzureBlobStorageDataSourceFed
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecAzureBlobStorageDataSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagetransferjob"
 
 storagetransferjob.NewStorageTransferJobTransferSpecAzureBlobStorageDataSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageTransferJobTransferSpecAzureBlobStorageDataSourceOutputReference
 ```
@@ -11305,7 +11305,7 @@ func InternalValue() StorageTransferJobTransferSpecAzureBlobStorageDataSource
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecGcsDataSinkOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagetransferjob"
 
 storagetransferjob.NewStorageTransferJobTransferSpecGcsDataSinkOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageTransferJobTransferSpecGcsDataSinkOutputReference
 ```
@@ -11605,7 +11605,7 @@ func InternalValue() StorageTransferJobTransferSpecGcsDataSink
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecGcsDataSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagetransferjob"
 
 storagetransferjob.NewStorageTransferJobTransferSpecGcsDataSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageTransferJobTransferSpecGcsDataSourceOutputReference
 ```
@@ -11905,7 +11905,7 @@ func InternalValue() StorageTransferJobTransferSpecGcsDataSource
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecHdfsDataSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagetransferjob"
 
 storagetransferjob.NewStorageTransferJobTransferSpecHdfsDataSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageTransferJobTransferSpecHdfsDataSourceOutputReference
 ```
@@ -12176,7 +12176,7 @@ func InternalValue() StorageTransferJobTransferSpecHdfsDataSource
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecHttpDataSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagetransferjob"
 
 storagetransferjob.NewStorageTransferJobTransferSpecHttpDataSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageTransferJobTransferSpecHttpDataSourceOutputReference
 ```
@@ -12447,7 +12447,7 @@ func InternalValue() StorageTransferJobTransferSpecHttpDataSource
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecObjectConditionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagetransferjob"
 
 storagetransferjob.NewStorageTransferJobTransferSpecObjectConditionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageTransferJobTransferSpecObjectConditionsOutputReference
 ```
@@ -12870,7 +12870,7 @@ func InternalValue() StorageTransferJobTransferSpecObjectConditions
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagetransferjob"
 
 storagetransferjob.NewStorageTransferJobTransferSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageTransferJobTransferSpecOutputReference
 ```
@@ -13681,7 +13681,7 @@ func InternalValue() StorageTransferJobTransferSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecPosixDataSinkOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagetransferjob"
 
 storagetransferjob.NewStorageTransferJobTransferSpecPosixDataSinkOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageTransferJobTransferSpecPosixDataSinkOutputReference
 ```
@@ -13952,7 +13952,7 @@ func InternalValue() StorageTransferJobTransferSpecPosixDataSink
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecPosixDataSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagetransferjob"
 
 storagetransferjob.NewStorageTransferJobTransferSpecPosixDataSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageTransferJobTransferSpecPosixDataSourceOutputReference
 ```
@@ -14223,7 +14223,7 @@ func InternalValue() StorageTransferJobTransferSpecPosixDataSource
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferManifestOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagetransferjob"
 
 storagetransferjob.NewStorageTransferJobTransferSpecTransferManifestOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageTransferJobTransferSpecTransferManifestOutputReference
 ```
@@ -14494,7 +14494,7 @@ func InternalValue() StorageTransferJobTransferSpecTransferManifest
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferOptionsMetadataOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagetransferjob"
 
 storagetransferjob.NewStorageTransferJobTransferSpecTransferOptionsMetadataOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageTransferJobTransferSpecTransferOptionsMetadataOptionsOutputReference
 ```
@@ -15004,7 +15004,7 @@ func InternalValue() StorageTransferJobTransferSpecTransferOptionsMetadataOption
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageTransferJob.StorageTransferJobTransferSpecTransferOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagetransferjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagetransferjob"
 
 storagetransferjob.NewStorageTransferJobTransferSpecTransferOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageTransferJobTransferSpecTransferOptionsOutputReference
 ```

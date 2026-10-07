@@ -4,12 +4,12 @@
 
 ### ChronicleEnvironment <a name="ChronicleEnvironment" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment google_chronicle_environment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment google_chronicle_environment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleenvironment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chronicleenvironment"
 
 chronicleenvironment.NewChronicleEnvironment(scope Construct, id *string, config ChronicleEnvironmentConfig) ChronicleEnvironment
 ```
@@ -74,14 +74,20 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.putDynamicParameters">PutDynamicParameters</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.resetAliasesJson">ResetAliasesJson</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.resetBase64Image">ResetBase64Image</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.resetDataAccessScopesJson">ResetDataAccessScopesJson</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.resetDeletionProtection">ResetDeletionProtection</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.resetDynamicParameters">ResetDynamicParameters</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.resetInstanceUri">ResetInstanceUri</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.resetParallelInstance">ResetParallelInstance</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.resetProject">ResetProject</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.resetWeight">ResetWeight</a></code> | *No description.* |
 
 ---
 
@@ -394,6 +400,18 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `PutDynamicParameters` <a name="PutDynamicParameters" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.putDynamicParameters"></a>
+
+```go
+func PutDynamicParameters(value interface{})
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.putDynamicParameters.parameter.value"></a>
+
+- *Type:* interface{}
+
+---
+
 ##### `PutTimeouts` <a name="PutTimeouts" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.putTimeouts"></a>
 
 ```go
@@ -410,6 +428,12 @@ func PutTimeouts(value ChronicleEnvironmentTimeouts)
 
 ```go
 func ResetAliasesJson()
+```
+
+##### `ResetBase64Image` <a name="ResetBase64Image" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.resetBase64Image"></a>
+
+```go
+func ResetBase64Image()
 ```
 
 ##### `ResetDataAccessScopesJson` <a name="ResetDataAccessScopesJson" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.resetDataAccessScopesJson"></a>
@@ -430,10 +454,28 @@ func ResetDeletionPolicy()
 func ResetDeletionProtection()
 ```
 
+##### `ResetDynamicParameters` <a name="ResetDynamicParameters" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.resetDynamicParameters"></a>
+
+```go
+func ResetDynamicParameters()
+```
+
 ##### `ResetId` <a name="ResetId" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.resetId"></a>
 
 ```go
 func ResetId()
+```
+
+##### `ResetInstanceUri` <a name="ResetInstanceUri" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.resetInstanceUri"></a>
+
+```go
+func ResetInstanceUri()
+```
+
+##### `ResetParallelInstance` <a name="ResetParallelInstance" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.resetParallelInstance"></a>
+
+```go
+func ResetParallelInstance()
 ```
 
 ##### `ResetProject` <a name="ResetProject" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.resetProject"></a>
@@ -446,6 +488,12 @@ func ResetProject()
 
 ```go
 func ResetTimeouts()
+```
+
+##### `ResetWeight` <a name="ResetWeight" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.resetWeight"></a>
+
+```go
+func ResetWeight()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -462,7 +510,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleenvironment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chronicleenvironment"
 
 chronicleenvironment.ChronicleEnvironment_IsConstruct(x interface{}) *bool
 ```
@@ -494,7 +542,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleenvironment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chronicleenvironment"
 
 chronicleenvironment.ChronicleEnvironment_IsTerraformElement(x interface{}) *bool
 ```
@@ -508,7 +556,7 @@ chronicleenvironment.ChronicleEnvironment_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleenvironment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chronicleenvironment"
 
 chronicleenvironment.ChronicleEnvironment_IsTerraformResource(x interface{}) *bool
 ```
@@ -522,7 +570,7 @@ chronicleenvironment.ChronicleEnvironment_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleenvironment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chronicleenvironment"
 
 chronicleenvironment.ChronicleEnvironment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -551,7 +599,7 @@ The construct id used in the generated config for the ChronicleEnvironment to im
 
 The id of the existing ChronicleEnvironment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -581,10 +629,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.dynamicParameters">DynamicParameters</a></code> | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList">ChronicleEnvironmentDynamicParametersList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.environmentId">EnvironmentId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentTimeoutsOutputReference">ChronicleEnvironmentTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.aliasesJsonInput">AliasesJsonInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.base64ImageInput">Base64ImageInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.contactEmailsInput">ContactEmailsInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.contactInput">ContactInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.contactPhoneInput">ContactPhoneInput</a></code> | <code>*string</code> | *No description.* |
@@ -593,13 +643,18 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.deletionProtectionInput">DeletionProtectionInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.displayNameInput">DisplayNameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.dynamicParametersInput">DynamicParametersInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.instanceInput">InstanceInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.instanceUriInput">InstanceUriInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.locationInput">LocationInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.parallelInstanceInput">ParallelInstanceInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.projectInput">ProjectInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.retentionDurationInput">RetentionDurationInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.weightInput">WeightInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.aliasesJson">AliasesJson</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.base64Image">Base64Image</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.contact">Contact</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.contactEmails">ContactEmails</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.contactPhone">ContactPhone</a></code> | <code>*string</code> | *No description.* |
@@ -610,9 +665,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.displayName">DisplayName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.instance">Instance</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.instanceUri">InstanceUri</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.location">Location</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.parallelInstance">ParallelInstance</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.project">Project</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.retentionDuration">RetentionDuration</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.weight">Weight</a></code> | <code>*f64</code> | *No description.* |
 
 ---
 
@@ -758,6 +816,16 @@ func Provisioners() *[]interface{}
 
 ---
 
+##### `DynamicParameters`<sup>Required</sup> <a name="DynamicParameters" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.dynamicParameters"></a>
+
+```go
+func DynamicParameters() ChronicleEnvironmentDynamicParametersList
+```
+
+- *Type:* <a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList">ChronicleEnvironmentDynamicParametersList</a>
+
+---
+
 ##### `EnvironmentId`<sup>Required</sup> <a name="EnvironmentId" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.environmentId"></a>
 
 ```go
@@ -792,6 +860,16 @@ func Timeouts() ChronicleEnvironmentTimeoutsOutputReference
 
 ```go
 func AliasesJsonInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Base64ImageInput`<sup>Optional</sup> <a name="Base64ImageInput" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.base64ImageInput"></a>
+
+```go
+func Base64ImageInput() *string
 ```
 
 - *Type:* *string
@@ -878,6 +956,16 @@ func DisplayNameInput() *string
 
 ---
 
+##### `DynamicParametersInput`<sup>Optional</sup> <a name="DynamicParametersInput" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.dynamicParametersInput"></a>
+
+```go
+func DynamicParametersInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.idInput"></a>
 
 ```go
@@ -898,10 +986,30 @@ func InstanceInput() *string
 
 ---
 
+##### `InstanceUriInput`<sup>Optional</sup> <a name="InstanceUriInput" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.instanceUriInput"></a>
+
+```go
+func InstanceUriInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `LocationInput`<sup>Optional</sup> <a name="LocationInput" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.locationInput"></a>
 
 ```go
 func LocationInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ParallelInstanceInput`<sup>Optional</sup> <a name="ParallelInstanceInput" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.parallelInstanceInput"></a>
+
+```go
+func ParallelInstanceInput() *string
 ```
 
 - *Type:* *string
@@ -938,10 +1046,30 @@ func TimeoutsInput() interface{}
 
 ---
 
+##### `WeightInput`<sup>Optional</sup> <a name="WeightInput" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.weightInput"></a>
+
+```go
+func WeightInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
 ##### `AliasesJson`<sup>Required</sup> <a name="AliasesJson" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.aliasesJson"></a>
 
 ```go
 func AliasesJson() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Base64Image`<sup>Required</sup> <a name="Base64Image" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.base64Image"></a>
+
+```go
+func Base64Image() *string
 ```
 
 - *Type:* *string
@@ -1048,10 +1176,30 @@ func Instance() *string
 
 ---
 
+##### `InstanceUri`<sup>Required</sup> <a name="InstanceUri" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.instanceUri"></a>
+
+```go
+func InstanceUri() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Location`<sup>Required</sup> <a name="Location" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.location"></a>
 
 ```go
 func Location() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ParallelInstance`<sup>Required</sup> <a name="ParallelInstance" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.parallelInstance"></a>
+
+```go
+func ParallelInstance() *string
 ```
 
 - *Type:* *string
@@ -1072,6 +1220,16 @@ func Project() *string
 
 ```go
 func RetentionDuration() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `Weight`<sup>Required</sup> <a name="Weight" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.weight"></a>
+
+```go
+func Weight() *f64
 ```
 
 - *Type:* *f64
@@ -1103,7 +1261,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleenvironment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chronicleenvironment"
 
 &chronicleenvironment.ChronicleEnvironmentConfig {
 	Connection: interface{},
@@ -1122,12 +1280,17 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleenviron
 	Location: *string,
 	RetentionDuration: *f64,
 	AliasesJson: *string,
+	Base64Image: *string,
 	DataAccessScopesJson: *string,
 	DeletionPolicy: *string,
 	DeletionProtection: interface{},
+	DynamicParameters: interface{},
 	Id: *string,
+	InstanceUri: *string,
+	ParallelInstance: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleEnvironment.ChronicleEnvironmentTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.chronicleEnvironment.ChronicleEnvironmentTimeouts,
+	Weight: *f64,
 }
 ```
 
@@ -1151,12 +1314,17 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleenviron
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentConfig.property.location">Location</a></code> | <code>*string</code> | Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122. |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentConfig.property.retentionDuration">RetentionDuration</a></code> | <code>*f64</code> | Environment data retention in months. |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentConfig.property.aliasesJson">AliasesJson</a></code> | <code>*string</code> | Environment nicknames. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentConfig.property.base64Image">Base64Image</a></code> | <code>*string</code> | Environment icon. |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentConfig.property.dataAccessScopesJson">DataAccessScopesJson</a></code> | <code>*string</code> | data access scopes. |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentConfig.property.deletionProtection">DeletionProtection</a></code> | <code>interface{}</code> | Whether Terraform will be prevented from destroying the environment. |
-| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#id ChronicleEnvironment#id}. |
-| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#project ChronicleEnvironment#project}. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentConfig.property.dynamicParameters">DynamicParameters</a></code> | <code>interface{}</code> | dynamic_parameters block. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#id ChronicleEnvironment#id}. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentConfig.property.instanceUri">InstanceUri</a></code> | <code>*string</code> | URL of the environment. Used to route UI links to the correct SIEM instance when making cross-SecOps requests from SOAR. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentConfig.property.parallelInstance">ParallelInstance</a></code> | <code>*string</code> | The optional parallel SIEM instance used as a data source. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#project ChronicleEnvironment#project}. |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentTimeouts">ChronicleEnvironmentTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentConfig.property.weight">Weight</a></code> | <code>*f64</code> | The weight of the environment, enabling customers to control distribution of resources between the separate environments in a single instance of Chronicle SOAR. |
 
 ---
 
@@ -1240,7 +1408,7 @@ Contact *string
 
 MAX_NAME_LENGTH = 256 Name of the contact for the environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#contact ChronicleEnvironment#contact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#contact ChronicleEnvironment#contact}
 
 ---
 
@@ -1254,7 +1422,7 @@ ContactEmails *string
 
 MAX_NAME_LENGTH = 256 Email of the contact for the environment. Multiple emails can be sepereated with the ';' character.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#contact_emails ChronicleEnvironment#contact_emails}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#contact_emails ChronicleEnvironment#contact_emails}
 
 ---
 
@@ -1268,7 +1436,7 @@ ContactPhone *string
 
 MAX_NAME_LENGTH = 256 Phone number of the contact for the environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#contact_phone ChronicleEnvironment#contact_phone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#contact_phone ChronicleEnvironment#contact_phone}
 
 ---
 
@@ -1282,7 +1450,7 @@ Description *string
 
 MAX_NAME_LENGTH = 256 Description of the environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#description ChronicleEnvironment#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#description ChronicleEnvironment#description}
 
 ---
 
@@ -1296,7 +1464,7 @@ DisplayName *string
 
 Name of the environment MAX_NAME_LENGTH = 256.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#display_name ChronicleEnvironment#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#display_name ChronicleEnvironment#display_name}
 
 ---
 
@@ -1310,7 +1478,7 @@ Instance *string
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#instance ChronicleEnvironment#instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#instance ChronicleEnvironment#instance}
 
 ---
 
@@ -1324,7 +1492,7 @@ Location *string
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#location ChronicleEnvironment#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#location ChronicleEnvironment#location}
 
 ---
 
@@ -1338,7 +1506,7 @@ RetentionDuration *f64
 
 Environment data retention in months.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#retention_duration ChronicleEnvironment#retention_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#retention_duration ChronicleEnvironment#retention_duration}
 
 ---
 
@@ -1352,7 +1520,21 @@ AliasesJson *string
 
 Environment nicknames.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#aliases_json ChronicleEnvironment#aliases_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#aliases_json ChronicleEnvironment#aliases_json}
+
+---
+
+##### `Base64Image`<sup>Optional</sup> <a name="Base64Image" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentConfig.property.base64Image"></a>
+
+```go
+Base64Image *string
+```
+
+- *Type:* *string
+
+Environment icon.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#base64_image ChronicleEnvironment#base64_image}
 
 ---
 
@@ -1366,7 +1548,7 @@ DataAccessScopesJson *string
 
 data access scopes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#data_access_scopes_json ChronicleEnvironment#data_access_scopes_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#data_access_scopes_json ChronicleEnvironment#data_access_scopes_json}
 
 ---
 
@@ -1387,7 +1569,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#deletion_policy ChronicleEnvironment#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#deletion_policy ChronicleEnvironment#deletion_policy}
 
 ---
 
@@ -1403,7 +1585,21 @@ Whether Terraform will be prevented from destroying the environment.
 
 Deleting an environment will remove all its data and all playbooks, environments, integrations instances, reports and agents related to the environment. Once you delete an environment, it cannot be reversed. Deleting environments via terraform destroy or terraform apply will only succeed if this field is false in the Terraform state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#deletion_protection ChronicleEnvironment#deletion_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#deletion_protection ChronicleEnvironment#deletion_protection}
+
+---
+
+##### `DynamicParameters`<sup>Optional</sup> <a name="DynamicParameters" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentConfig.property.dynamicParameters"></a>
+
+```go
+DynamicParameters interface{}
+```
+
+- *Type:* interface{}
+
+dynamic_parameters block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#dynamic_parameters ChronicleEnvironment#dynamic_parameters}
 
 ---
 
@@ -1415,10 +1611,45 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#id ChronicleEnvironment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#id ChronicleEnvironment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `InstanceUri`<sup>Optional</sup> <a name="InstanceUri" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentConfig.property.instanceUri"></a>
+
+```go
+InstanceUri *string
+```
+
+- *Type:* *string
+
+URL of the environment. Used to route UI links to the correct SIEM instance when making cross-SecOps requests from SOAR.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#instance_uri ChronicleEnvironment#instance_uri}
+
+---
+
+##### `ParallelInstance`<sup>Optional</sup> <a name="ParallelInstance" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentConfig.property.parallelInstance"></a>
+
+```go
+ParallelInstance *string
+```
+
+- *Type:* *string
+
+The optional parallel SIEM instance used as a data source.
+
+Used to route
+API requests to the correct SIEM instance when making cross-SecOps requests
+from SOAR. For most customers, this is not required, since the parent
+instance is used as the data source by default.
+Format:
+projects/{project}/locations/{location}/instances/{instance}
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#parallel_instance ChronicleEnvironment#parallel_instance}
 
 ---
 
@@ -1430,7 +1661,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#project ChronicleEnvironment#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#project ChronicleEnvironment#project}.
 
 ---
 
@@ -1444,7 +1675,71 @@ Timeouts ChronicleEnvironmentTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#timeouts ChronicleEnvironment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#timeouts ChronicleEnvironment#timeouts}
+
+---
+
+##### `Weight`<sup>Optional</sup> <a name="Weight" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentConfig.property.weight"></a>
+
+```go
+Weight *f64
+```
+
+- *Type:* *f64
+
+The weight of the environment, enabling customers to control distribution of resources between the separate environments in a single instance of Chronicle SOAR.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#weight ChronicleEnvironment#weight}
+
+---
+
+### ChronicleEnvironmentDynamicParameters <a name="ChronicleEnvironmentDynamicParameters" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParameters"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParameters.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chronicleenvironment"
+
+&chronicleenvironment.ChronicleEnvironmentDynamicParameters {
+	DynamicParameterId: *f64,
+	Value: *string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParameters.property.dynamicParameterId">DynamicParameterId</a></code> | <code>*f64</code> | The ID of the dynamic parameter. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParameters.property.value">Value</a></code> | <code>*string</code> | The value of the dynamic parameter. |
+
+---
+
+##### `DynamicParameterId`<sup>Required</sup> <a name="DynamicParameterId" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParameters.property.dynamicParameterId"></a>
+
+```go
+DynamicParameterId *f64
+```
+
+- *Type:* *f64
+
+The ID of the dynamic parameter.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#dynamic_parameter_id ChronicleEnvironment#dynamic_parameter_id}
+
+---
+
+##### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParameters.property.value"></a>
+
+```go
+Value *string
+```
+
+- *Type:* *string
+
+The value of the dynamic parameter.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#value ChronicleEnvironment#value}
 
 ---
 
@@ -1453,7 +1748,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleenvironment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chronicleenvironment"
 
 &chronicleenvironment.ChronicleEnvironmentTimeouts {
 	Create: *string,
@@ -1466,9 +1761,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleenviron
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#create ChronicleEnvironment#create}. |
-| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#delete ChronicleEnvironment#delete}. |
-| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#update ChronicleEnvironment#update}. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#create ChronicleEnvironment#create}. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#delete ChronicleEnvironment#delete}. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#update ChronicleEnvironment#update}. |
 
 ---
 
@@ -1480,7 +1775,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#create ChronicleEnvironment#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#create ChronicleEnvironment#create}.
 
 ---
 
@@ -1492,7 +1787,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#delete ChronicleEnvironment#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#delete ChronicleEnvironment#delete}.
 
 ---
 
@@ -1504,18 +1799,500 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#update ChronicleEnvironment#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#update ChronicleEnvironment#update}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### ChronicleEnvironmentDynamicParametersList <a name="ChronicleEnvironmentDynamicParametersList" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chronicleenvironment"
+
+chronicleenvironment.NewChronicleEnvironmentDynamicParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ChronicleEnvironmentDynamicParametersList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.get"></a>
+
+```go
+func Get(index *f64) ChronicleEnvironmentDynamicParametersOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### ChronicleEnvironmentDynamicParametersOutputReference <a name="ChronicleEnvironmentDynamicParametersOutputReference" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chronicleenvironment"
+
+chronicleenvironment.NewChronicleEnvironmentDynamicParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ChronicleEnvironmentDynamicParametersOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.property.environmentId">EnvironmentId</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.property.dynamicParameterIdInput">DynamicParameterIdInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.property.valueInput">ValueInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.property.dynamicParameterId">DynamicParameterId</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.property.value">Value</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `EnvironmentId`<sup>Required</sup> <a name="EnvironmentId" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.property.environmentId"></a>
+
+```go
+func EnvironmentId() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `DynamicParameterIdInput`<sup>Optional</sup> <a name="DynamicParameterIdInput" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.property.dynamicParameterIdInput"></a>
+
+```go
+func DynamicParameterIdInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `ValueInput`<sup>Optional</sup> <a name="ValueInput" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.property.valueInput"></a>
+
+```go
+func ValueInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `DynamicParameterId`<sup>Required</sup> <a name="DynamicParameterId" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.property.dynamicParameterId"></a>
+
+```go
+func DynamicParameterId() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.property.value"></a>
+
+```go
+func Value() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 
 ### ChronicleEnvironmentTimeoutsOutputReference <a name="ChronicleEnvironmentTimeoutsOutputReference" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentTimeoutsOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleenvironment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chronicleenvironment"
 
 chronicleenvironment.NewChronicleEnvironmentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleEnvironmentTimeoutsOutputReference
 ```

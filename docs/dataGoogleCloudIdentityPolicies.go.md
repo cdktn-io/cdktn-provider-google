@@ -4,12 +4,12 @@
 
 ### DataGoogleCloudIdentityPolicies <a name="DataGoogleCloudIdentityPolicies" id="@cdktn/provider-google.dataGoogleCloudIdentityPolicies.DataGoogleCloudIdentityPolicies"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/cloud_identity_policies google_cloud_identity_policies}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/cloud_identity_policies google_cloud_identity_policies}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudIdentityPolicies.DataGoogleCloudIdentityPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecloudidentitypolicies"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecloudidentitypolicies"
 
 datagooglecloudidentitypolicies.NewDataGoogleCloudIdentityPolicies(scope Construct, id *string, config DataGoogleCloudIdentityPoliciesConfig) DataGoogleCloudIdentityPolicies
 ```
@@ -312,7 +312,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleCloudIdentityPolicies.DataGoogleCloudIdentityPolicies.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecloudidentitypolicies"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecloudidentitypolicies"
 
 datagooglecloudidentitypolicies.DataGoogleCloudIdentityPolicies_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleCloudIdentityPolicies.DataGoogleCloudIdentityPolicies.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecloudidentitypolicies"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecloudidentitypolicies"
 
 datagooglecloudidentitypolicies.DataGoogleCloudIdentityPolicies_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datagooglecloudidentitypolicies.DataGoogleCloudIdentityPolicies_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleCloudIdentityPolicies.DataGoogleCloudIdentityPolicies.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecloudidentitypolicies"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecloudidentitypolicies"
 
 datagooglecloudidentitypolicies.DataGoogleCloudIdentityPolicies_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datagooglecloudidentitypolicies.DataGoogleCloudIdentityPolicies_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleCloudIdentityPolicies.DataGoogleCloudIdentityPolicies.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecloudidentitypolicies"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecloudidentitypolicies"
 
 datagooglecloudidentitypolicies.DataGoogleCloudIdentityPolicies_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataGoogleCloudIdentityPol
 
 The id of the existing DataGoogleCloudIdentityPolicies that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/cloud_identity_policies#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/cloud_identity_policies#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -634,7 +634,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleCloudIdentityPolicies.DataGoogleCloudIdentityPoliciesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecloudidentitypolicies"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecloudidentitypolicies"
 
 &datagooglecloudidentitypolicies.DataGoogleCloudIdentityPoliciesConfig {
 	Connection: interface{},
@@ -661,7 +661,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecloudi
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudIdentityPolicies.DataGoogleCloudIdentityPoliciesConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudIdentityPolicies.DataGoogleCloudIdentityPoliciesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudIdentityPolicies.DataGoogleCloudIdentityPoliciesConfig.property.filter">Filter</a></code> | <code>*string</code> | Filter expression for listing policies, as documented in the Cloud Identity Policy API policies.list method. |
-| <code><a href="#@cdktn/provider-google.dataGoogleCloudIdentityPolicies.DataGoogleCloudIdentityPoliciesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/cloud_identity_policies#id DataGoogleCloudIdentityPolicies#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudIdentityPolicies.DataGoogleCloudIdentityPoliciesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/cloud_identity_policies#id DataGoogleCloudIdentityPolicies#id}. |
 
 ---
 
@@ -745,7 +745,7 @@ Filter *string
 
 Filter expression for listing policies, as documented in the Cloud Identity Policy API policies.list method.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/cloud_identity_policies#filter DataGoogleCloudIdentityPolicies#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/cloud_identity_policies#filter DataGoogleCloudIdentityPolicies#filter}
 
 ---
 
@@ -757,7 +757,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/cloud_identity_policies#id DataGoogleCloudIdentityPolicies#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/cloud_identity_policies#id DataGoogleCloudIdentityPolicies#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -769,7 +769,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleCloudIdentityPolicies.DataGoogleCloudIdentityPoliciesPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecloudidentitypolicies"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecloudidentitypolicies"
 
 &datagooglecloudidentitypolicies.DataGoogleCloudIdentityPoliciesPolicies {
 
@@ -782,7 +782,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecloudi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleCloudIdentityPolicies.DataGoogleCloudIdentityPoliciesPoliciesPolicyQuery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecloudidentitypolicies"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecloudidentitypolicies"
 
 &datagooglecloudidentitypolicies.DataGoogleCloudIdentityPoliciesPoliciesPolicyQuery {
 
@@ -797,7 +797,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecloudi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudIdentityPolicies.DataGoogleCloudIdentityPoliciesPoliciesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecloudidentitypolicies"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecloudidentitypolicies"
 
 datagooglecloudidentitypolicies.NewDataGoogleCloudIdentityPoliciesPoliciesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleCloudIdentityPoliciesPoliciesList
 ```
@@ -946,7 +946,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudIdentityPolicies.DataGoogleCloudIdentityPoliciesPoliciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecloudidentitypolicies"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecloudidentitypolicies"
 
 datagooglecloudidentitypolicies.NewDataGoogleCloudIdentityPoliciesPoliciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleCloudIdentityPoliciesPoliciesOutputReference
 ```
@@ -1268,7 +1268,7 @@ func InternalValue() DataGoogleCloudIdentityPoliciesPolicies
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudIdentityPolicies.DataGoogleCloudIdentityPoliciesPoliciesPolicyQueryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecloudidentitypolicies"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecloudidentitypolicies"
 
 datagooglecloudidentitypolicies.NewDataGoogleCloudIdentityPoliciesPoliciesPolicyQueryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleCloudIdentityPoliciesPoliciesPolicyQueryList
 ```
@@ -1417,7 +1417,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudIdentityPolicies.DataGoogleCloudIdentityPoliciesPoliciesPolicyQueryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecloudidentitypolicies"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecloudidentitypolicies"
 
 datagooglecloudidentitypolicies.NewDataGoogleCloudIdentityPoliciesPoliciesPolicyQueryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleCloudIdentityPoliciesPoliciesPolicyQueryOutputReference
 ```

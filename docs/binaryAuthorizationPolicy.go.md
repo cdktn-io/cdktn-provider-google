@@ -4,12 +4,12 @@
 
 ### BinaryAuthorizationPolicy <a name="BinaryAuthorizationPolicy" id="@cdktn/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/binary_authorization_policy google_binary_authorization_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/binary_authorization_policy google_binary_authorization_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/binaryauthorizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/binaryauthorizationpolicy"
 
 binaryauthorizationpolicy.NewBinaryAuthorizationPolicy(scope Construct, id *string, config BinaryAuthorizationPolicyConfig) BinaryAuthorizationPolicy
 ```
@@ -508,7 +508,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/binaryauthorizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/binaryauthorizationpolicy"
 
 binaryauthorizationpolicy.BinaryAuthorizationPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -540,7 +540,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/binaryauthorizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/binaryauthorizationpolicy"
 
 binaryauthorizationpolicy.BinaryAuthorizationPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -554,7 +554,7 @@ binaryauthorizationpolicy.BinaryAuthorizationPolicy_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/binaryauthorizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/binaryauthorizationpolicy"
 
 binaryauthorizationpolicy.BinaryAuthorizationPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -568,7 +568,7 @@ binaryauthorizationpolicy.BinaryAuthorizationPolicy_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/binaryauthorizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/binaryauthorizationpolicy"
 
 binaryauthorizationpolicy.BinaryAuthorizationPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -597,7 +597,7 @@ The construct id used in the generated config for the BinaryAuthorizationPolicy 
 
 The id of the existing BinaryAuthorizationPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/binary_authorization_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/binary_authorization_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -995,7 +995,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyAdmissionWhitelistPatterns.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/binaryauthorizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/binaryauthorizationpolicy"
 
 &binaryauthorizationpolicy.BinaryAuthorizationPolicyAdmissionWhitelistPatterns {
 	NamePattern: *string,
@@ -1024,7 +1024,7 @@ This supports a trailing * as a
 wildcard, but this is allowed only in text after the registry/
 part.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/binary_authorization_policy#name_pattern BinaryAuthorizationPolicy#name_pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/binary_authorization_policy#name_pattern BinaryAuthorizationPolicy#name_pattern}
 
 ---
 
@@ -1033,7 +1033,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyClusterAdmissionRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/binaryauthorizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/binaryauthorizationpolicy"
 
 &binaryauthorizationpolicy.BinaryAuthorizationPolicyClusterAdmissionRules {
 	Cluster: *string,
@@ -1047,7 +1047,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/binaryauthorizat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyClusterAdmissionRules.property.cluster">Cluster</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/binary_authorization_policy#cluster BinaryAuthorizationPolicy#cluster}. |
+| <code><a href="#@cdktn/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyClusterAdmissionRules.property.cluster">Cluster</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/binary_authorization_policy#cluster BinaryAuthorizationPolicy#cluster}. |
 | <code><a href="#@cdktn/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyClusterAdmissionRules.property.enforcementMode">EnforcementMode</a></code> | <code>*string</code> | The action when a pod creation is denied by the admission rule. Possible values: ["ENFORCED_BLOCK_AND_AUDIT_LOG", "DRYRUN_AUDIT_LOG_ONLY"]. |
 | <code><a href="#@cdktn/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyClusterAdmissionRules.property.evaluationMode">EvaluationMode</a></code> | <code>*string</code> | How this admission rule will be evaluated. Possible values: ["ALWAYS_ALLOW", "REQUIRE_ATTESTATION", "ALWAYS_DENY"]. |
 | <code><a href="#@cdktn/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyClusterAdmissionRules.property.requireAttestationsBy">RequireAttestationsBy</a></code> | <code>*[]*string</code> | The resource names of the attestors that must attest to a container image. |
@@ -1062,7 +1062,7 @@ Cluster *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/binary_authorization_policy#cluster BinaryAuthorizationPolicy#cluster}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/binary_authorization_policy#cluster BinaryAuthorizationPolicy#cluster}.
 
 ---
 
@@ -1076,7 +1076,7 @@ EnforcementMode *string
 
 The action when a pod creation is denied by the admission rule. Possible values: ["ENFORCED_BLOCK_AND_AUDIT_LOG", "DRYRUN_AUDIT_LOG_ONLY"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/binary_authorization_policy#enforcement_mode BinaryAuthorizationPolicy#enforcement_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/binary_authorization_policy#enforcement_mode BinaryAuthorizationPolicy#enforcement_mode}
 
 ---
 
@@ -1090,7 +1090,7 @@ EvaluationMode *string
 
 How this admission rule will be evaluated. Possible values: ["ALWAYS_ALLOW", "REQUIRE_ATTESTATION", "ALWAYS_DENY"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/binary_authorization_policy#evaluation_mode BinaryAuthorizationPolicy#evaluation_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/binary_authorization_policy#evaluation_mode BinaryAuthorizationPolicy#evaluation_mode}
 
 ---
 
@@ -1113,7 +1113,7 @@ request must be able to read the attestor resource.
 Note: this field must be non-empty when the evaluation_mode field
 specifies REQUIRE_ATTESTATION, otherwise it must be empty.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/binary_authorization_policy#require_attestations_by BinaryAuthorizationPolicy#require_attestations_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/binary_authorization_policy#require_attestations_by BinaryAuthorizationPolicy#require_attestations_by}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -1124,7 +1124,7 @@ Note: The above comment contained a comment block ending sequence (* followed by
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/binaryauthorizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/binaryauthorizationpolicy"
 
 &binaryauthorizationpolicy.BinaryAuthorizationPolicyConfig {
 	Connection: interface{},
@@ -1134,7 +1134,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/binaryauthorizat
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	DefaultAdmissionRule: github.com/cdktn-io/cdktn-provider-google-go/google/v20.binaryAuthorizationPolicy.BinaryAuthorizationPolicyDefaultAdmissionRule,
+	DefaultAdmissionRule: github.com/cdktn-io/cdktn-provider-google-go/google/v21.binaryAuthorizationPolicy.BinaryAuthorizationPolicyDefaultAdmissionRule,
 	AdmissionWhitelistPatterns: interface{},
 	ClusterAdmissionRules: interface{},
 	DeletionPolicy: *string,
@@ -1142,7 +1142,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/binaryauthorizat
 	GlobalPolicyEvaluationMode: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.binaryAuthorizationPolicy.BinaryAuthorizationPolicyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.binaryAuthorizationPolicy.BinaryAuthorizationPolicyTimeouts,
 }
 ```
 
@@ -1163,8 +1163,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/binaryauthorizat
 | <code><a href="#@cdktn/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyConfig.property.description">Description</a></code> | <code>*string</code> | A descriptive comment. |
 | <code><a href="#@cdktn/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyConfig.property.globalPolicyEvaluationMode">GlobalPolicyEvaluationMode</a></code> | <code>*string</code> | Controls the evaluation of a Google-maintained global admission policy for common system-level images. |
-| <code><a href="#@cdktn/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/binary_authorization_policy#id BinaryAuthorizationPolicy#id}. |
-| <code><a href="#@cdktn/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/binary_authorization_policy#project BinaryAuthorizationPolicy#project}. |
+| <code><a href="#@cdktn/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/binary_authorization_policy#id BinaryAuthorizationPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/binary_authorization_policy#project BinaryAuthorizationPolicy#project}. |
 | <code><a href="#@cdktn/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyTimeouts">BinaryAuthorizationPolicyTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1249,7 +1249,7 @@ DefaultAdmissionRule BinaryAuthorizationPolicyDefaultAdmissionRule
 
 default_admission_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/binary_authorization_policy#default_admission_rule BinaryAuthorizationPolicy#default_admission_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/binary_authorization_policy#default_admission_rule BinaryAuthorizationPolicy#default_admission_rule}
 
 ---
 
@@ -1263,7 +1263,7 @@ AdmissionWhitelistPatterns interface{}
 
 admission_whitelist_patterns block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/binary_authorization_policy#admission_whitelist_patterns BinaryAuthorizationPolicy#admission_whitelist_patterns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/binary_authorization_policy#admission_whitelist_patterns BinaryAuthorizationPolicy#admission_whitelist_patterns}
 
 ---
 
@@ -1277,7 +1277,7 @@ ClusterAdmissionRules interface{}
 
 cluster_admission_rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/binary_authorization_policy#cluster_admission_rules BinaryAuthorizationPolicy#cluster_admission_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/binary_authorization_policy#cluster_admission_rules BinaryAuthorizationPolicy#cluster_admission_rules}
 
 ---
 
@@ -1298,7 +1298,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/binary_authorization_policy#deletion_policy BinaryAuthorizationPolicy#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/binary_authorization_policy#deletion_policy BinaryAuthorizationPolicy#deletion_policy}
 
 ---
 
@@ -1312,7 +1312,7 @@ Description *string
 
 A descriptive comment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/binary_authorization_policy#description BinaryAuthorizationPolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/binary_authorization_policy#description BinaryAuthorizationPolicy#description}
 
 ---
 
@@ -1329,7 +1329,7 @@ Controls the evaluation of a Google-maintained global admission policy for commo
 Images not covered by the global
 policy will be subject to the project admission policy. Possible values: ["ENABLE", "DISABLE"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/binary_authorization_policy#global_policy_evaluation_mode BinaryAuthorizationPolicy#global_policy_evaluation_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/binary_authorization_policy#global_policy_evaluation_mode BinaryAuthorizationPolicy#global_policy_evaluation_mode}
 
 ---
 
@@ -1341,7 +1341,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/binary_authorization_policy#id BinaryAuthorizationPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/binary_authorization_policy#id BinaryAuthorizationPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1356,7 +1356,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/binary_authorization_policy#project BinaryAuthorizationPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/binary_authorization_policy#project BinaryAuthorizationPolicy#project}.
 
 ---
 
@@ -1370,7 +1370,7 @@ Timeouts BinaryAuthorizationPolicyTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/binary_authorization_policy#timeouts BinaryAuthorizationPolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/binary_authorization_policy#timeouts BinaryAuthorizationPolicy#timeouts}
 
 ---
 
@@ -1379,7 +1379,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyDefaultAdmissionRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/binaryauthorizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/binaryauthorizationpolicy"
 
 &binaryauthorizationpolicy.BinaryAuthorizationPolicyDefaultAdmissionRule {
 	EnforcementMode: *string,
@@ -1408,7 +1408,7 @@ EnforcementMode *string
 
 The action when a pod creation is denied by the admission rule. Possible values: ["ENFORCED_BLOCK_AND_AUDIT_LOG", "DRYRUN_AUDIT_LOG_ONLY"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/binary_authorization_policy#enforcement_mode BinaryAuthorizationPolicy#enforcement_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/binary_authorization_policy#enforcement_mode BinaryAuthorizationPolicy#enforcement_mode}
 
 ---
 
@@ -1422,7 +1422,7 @@ EvaluationMode *string
 
 How this admission rule will be evaluated. Possible values: ["ALWAYS_ALLOW", "REQUIRE_ATTESTATION", "ALWAYS_DENY"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/binary_authorization_policy#evaluation_mode BinaryAuthorizationPolicy#evaluation_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/binary_authorization_policy#evaluation_mode BinaryAuthorizationPolicy#evaluation_mode}
 
 ---
 
@@ -1445,7 +1445,7 @@ request must be able to read the attestor resource.
 Note: this field must be non-empty when the evaluation_mode field
 specifies REQUIRE_ATTESTATION, otherwise it must be empty.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/binary_authorization_policy#require_attestations_by BinaryAuthorizationPolicy#require_attestations_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/binary_authorization_policy#require_attestations_by BinaryAuthorizationPolicy#require_attestations_by}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -1456,7 +1456,7 @@ Note: The above comment contained a comment block ending sequence (* followed by
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/binaryauthorizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/binaryauthorizationpolicy"
 
 &binaryauthorizationpolicy.BinaryAuthorizationPolicyTimeouts {
 	Create: *string,
@@ -1469,9 +1469,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/binaryauthorizat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/binary_authorization_policy#create BinaryAuthorizationPolicy#create}. |
-| <code><a href="#@cdktn/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/binary_authorization_policy#delete BinaryAuthorizationPolicy#delete}. |
-| <code><a href="#@cdktn/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/binary_authorization_policy#update BinaryAuthorizationPolicy#update}. |
+| <code><a href="#@cdktn/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/binary_authorization_policy#create BinaryAuthorizationPolicy#create}. |
+| <code><a href="#@cdktn/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/binary_authorization_policy#delete BinaryAuthorizationPolicy#delete}. |
+| <code><a href="#@cdktn/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/binary_authorization_policy#update BinaryAuthorizationPolicy#update}. |
 
 ---
 
@@ -1483,7 +1483,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/binary_authorization_policy#create BinaryAuthorizationPolicy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/binary_authorization_policy#create BinaryAuthorizationPolicy#create}.
 
 ---
 
@@ -1495,7 +1495,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/binary_authorization_policy#delete BinaryAuthorizationPolicy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/binary_authorization_policy#delete BinaryAuthorizationPolicy#delete}.
 
 ---
 
@@ -1507,7 +1507,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/binary_authorization_policy#update BinaryAuthorizationPolicy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/binary_authorization_policy#update BinaryAuthorizationPolicy#update}.
 
 ---
 
@@ -1518,7 +1518,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyAdmissionWhitelistPatternsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/binaryauthorizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/binaryauthorizationpolicy"
 
 binaryauthorizationpolicy.NewBinaryAuthorizationPolicyAdmissionWhitelistPatternsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BinaryAuthorizationPolicyAdmissionWhitelistPatternsList
 ```
@@ -1678,7 +1678,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyAdmissionWhitelistPatternsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/binaryauthorizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/binaryauthorizationpolicy"
 
 binaryauthorizationpolicy.NewBinaryAuthorizationPolicyAdmissionWhitelistPatternsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BinaryAuthorizationPolicyAdmissionWhitelistPatternsOutputReference
 ```
@@ -1967,7 +1967,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyClusterAdmissionRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/binaryauthorizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/binaryauthorizationpolicy"
 
 binaryauthorizationpolicy.NewBinaryAuthorizationPolicyClusterAdmissionRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BinaryAuthorizationPolicyClusterAdmissionRulesList
 ```
@@ -2127,7 +2127,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/binaryauthorizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/binaryauthorizationpolicy"
 
 binaryauthorizationpolicy.NewBinaryAuthorizationPolicyClusterAdmissionRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BinaryAuthorizationPolicyClusterAdmissionRulesOutputReference
 ```
@@ -2489,7 +2489,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyDefaultAdmissionRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/binaryauthorizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/binaryauthorizationpolicy"
 
 binaryauthorizationpolicy.NewBinaryAuthorizationPolicyDefaultAdmissionRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BinaryAuthorizationPolicyDefaultAdmissionRuleOutputReference
 ```
@@ -2811,7 +2811,7 @@ func InternalValue() BinaryAuthorizationPolicyDefaultAdmissionRule
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.binaryAuthorizationPolicy.BinaryAuthorizationPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/binaryauthorizationpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/binaryauthorizationpolicy"
 
 binaryauthorizationpolicy.NewBinaryAuthorizationPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BinaryAuthorizationPolicyTimeoutsOutputReference
 ```

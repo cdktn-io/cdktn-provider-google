@@ -4,12 +4,12 @@
 
 ### KmsCryptoKeyVersion <a name="KmsCryptoKeyVersion" id="@cdktn/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersion"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/kms_crypto_key_version google_kms_crypto_key_version}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/kms_crypto_key_version google_kms_crypto_key_version}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersion.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/kmscryptokeyversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/kmscryptokeyversion"
 
 kmscryptokeyversion.NewKmsCryptoKeyVersion(scope Construct, id *string, config KmsCryptoKeyVersionConfig) KmsCryptoKeyVersion
 ```
@@ -461,7 +461,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersion.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/kmscryptokeyversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/kmscryptokeyversion"
 
 kmscryptokeyversion.KmsCryptoKeyVersion_IsConstruct(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersion.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/kmscryptokeyversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/kmscryptokeyversion"
 
 kmscryptokeyversion.KmsCryptoKeyVersion_IsTerraformElement(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ kmscryptokeyversion.KmsCryptoKeyVersion_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersion.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/kmscryptokeyversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/kmscryptokeyversion"
 
 kmscryptokeyversion.KmsCryptoKeyVersion_IsTerraformResource(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ kmscryptokeyversion.KmsCryptoKeyVersion_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersion.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/kmscryptokeyversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/kmscryptokeyversion"
 
 kmscryptokeyversion.KmsCryptoKeyVersion_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -550,7 +550,7 @@ The construct id used in the generated config for the KmsCryptoKeyVersion to imp
 
 The id of the existing KmsCryptoKeyVersion that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/kms_crypto_key_version#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/kms_crypto_key_version#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -937,7 +937,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersionAttestation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/kmscryptokeyversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/kmscryptokeyversion"
 
 &kmscryptokeyversion.KmsCryptoKeyVersionAttestation {
 
@@ -950,7 +950,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/kmscryptokeyvers
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersionAttestationCertChains.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/kmscryptokeyversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/kmscryptokeyversion"
 
 &kmscryptokeyversion.KmsCryptoKeyVersionAttestationCertChains {
 
@@ -963,7 +963,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/kmscryptokeyvers
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersionAttestationExternalProtectionLevelOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/kmscryptokeyversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/kmscryptokeyversion"
 
 &kmscryptokeyversion.KmsCryptoKeyVersionAttestationExternalProtectionLevelOptions {
 
@@ -976,7 +976,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/kmscryptokeyvers
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/kmscryptokeyversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/kmscryptokeyversion"
 
 &kmscryptokeyversion.KmsCryptoKeyVersionConfig {
 	Connection: interface{},
@@ -988,10 +988,10 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/kmscryptokeyvers
 	Provisioners: *[]interface{},
 	CryptoKey: *string,
 	DeletionPolicy: *string,
-	ExternalProtectionLevelOptions: github.com/cdktn-io/cdktn-provider-google-go/google/v20.kmsCryptoKeyVersion.KmsCryptoKeyVersionExternalProtectionLevelOptions,
+	ExternalProtectionLevelOptions: github.com/cdktn-io/cdktn-provider-google-go/google/v21.kmsCryptoKeyVersion.KmsCryptoKeyVersionExternalProtectionLevelOptions,
 	Id: *string,
 	State: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.kmsCryptoKeyVersion.KmsCryptoKeyVersionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.kmsCryptoKeyVersion.KmsCryptoKeyVersionTimeouts,
 }
 ```
 
@@ -1009,7 +1009,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/kmscryptokeyvers
 | <code><a href="#@cdktn/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersionConfig.property.cryptoKey">CryptoKey</a></code> | <code>*string</code> | The name of the cryptoKey associated with the CryptoKeyVersions. Format: ''projects/{{project}}/locations/{{location}}/keyRings/{{keyring}}/cryptoKeys/{{cryptoKey}}''. |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersionConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersionConfig.property.externalProtectionLevelOptions">ExternalProtectionLevelOptions</a></code> | <code><a href="#@cdktn/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersionExternalProtectionLevelOptions">KmsCryptoKeyVersionExternalProtectionLevelOptions</a></code> | external_protection_level_options block. |
-| <code><a href="#@cdktn/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/kms_crypto_key_version#id KmsCryptoKeyVersion#id}. |
+| <code><a href="#@cdktn/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/kms_crypto_key_version#id KmsCryptoKeyVersion#id}. |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersionConfig.property.state">State</a></code> | <code>*string</code> | The current state of the CryptoKeyVersion. |
 | <code><a href="#@cdktn/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersionConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersionTimeouts">KmsCryptoKeyVersionTimeouts</a></code> | timeouts block. |
 
@@ -1095,7 +1095,7 @@ CryptoKey *string
 
 The name of the cryptoKey associated with the CryptoKeyVersions. Format: ''projects/{{project}}/locations/{{location}}/keyRings/{{keyring}}/cryptoKeys/{{cryptoKey}}''.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/kms_crypto_key_version#crypto_key KmsCryptoKeyVersion#crypto_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/kms_crypto_key_version#crypto_key KmsCryptoKeyVersion#crypto_key}
 
 ---
 
@@ -1116,7 +1116,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/kms_crypto_key_version#deletion_policy KmsCryptoKeyVersion#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/kms_crypto_key_version#deletion_policy KmsCryptoKeyVersion#deletion_policy}
 
 ---
 
@@ -1130,7 +1130,7 @@ ExternalProtectionLevelOptions KmsCryptoKeyVersionExternalProtectionLevelOptions
 
 external_protection_level_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/kms_crypto_key_version#external_protection_level_options KmsCryptoKeyVersion#external_protection_level_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/kms_crypto_key_version#external_protection_level_options KmsCryptoKeyVersion#external_protection_level_options}
 
 ---
 
@@ -1142,7 +1142,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/kms_crypto_key_version#id KmsCryptoKeyVersion#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/kms_crypto_key_version#id KmsCryptoKeyVersion#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1162,7 +1162,7 @@ The current state of the CryptoKeyVersion.
 Note: you can only specify this field to manually 'ENABLE' or 'DISABLE' the CryptoKeyVersion,
 otherwise the value of this field is always retrieved automatically. Possible values: ["PENDING_GENERATION", "ENABLED", "DISABLED", "DESTROYED", "DESTROY_SCHEDULED", "PENDING_IMPORT", "IMPORT_FAILED"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/kms_crypto_key_version#state KmsCryptoKeyVersion#state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/kms_crypto_key_version#state KmsCryptoKeyVersion#state}
 
 ---
 
@@ -1176,7 +1176,7 @@ Timeouts KmsCryptoKeyVersionTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/kms_crypto_key_version#timeouts KmsCryptoKeyVersion#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/kms_crypto_key_version#timeouts KmsCryptoKeyVersion#timeouts}
 
 ---
 
@@ -1185,7 +1185,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersionExternalProtectionLevelOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/kmscryptokeyversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/kmscryptokeyversion"
 
 &kmscryptokeyversion.KmsCryptoKeyVersionExternalProtectionLevelOptions {
 	EkmConnectionKeyPath: *string,
@@ -1212,7 +1212,7 @@ EkmConnectionKeyPath *string
 
 The path to the external key material on the EKM when using EkmConnection e.g., "v0/my/key". Set this field instead of externalKeyUri when using an EkmConnection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/kms_crypto_key_version#ekm_connection_key_path KmsCryptoKeyVersion#ekm_connection_key_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/kms_crypto_key_version#ekm_connection_key_path KmsCryptoKeyVersion#ekm_connection_key_path}
 
 ---
 
@@ -1226,7 +1226,7 @@ ExternalKeyUri *string
 
 The URI for an external resource that this CryptoKeyVersion represents.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/kms_crypto_key_version#external_key_uri KmsCryptoKeyVersion#external_key_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/kms_crypto_key_version#external_key_uri KmsCryptoKeyVersion#external_key_uri}
 
 ---
 
@@ -1235,7 +1235,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/kmscryptokeyversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/kmscryptokeyversion"
 
 &kmscryptokeyversion.KmsCryptoKeyVersionTimeouts {
 	Create: *string,
@@ -1248,9 +1248,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/kmscryptokeyvers
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersionTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/kms_crypto_key_version#create KmsCryptoKeyVersion#create}. |
-| <code><a href="#@cdktn/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersionTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/kms_crypto_key_version#delete KmsCryptoKeyVersion#delete}. |
-| <code><a href="#@cdktn/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersionTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/kms_crypto_key_version#update KmsCryptoKeyVersion#update}. |
+| <code><a href="#@cdktn/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersionTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/kms_crypto_key_version#create KmsCryptoKeyVersion#create}. |
+| <code><a href="#@cdktn/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersionTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/kms_crypto_key_version#delete KmsCryptoKeyVersion#delete}. |
+| <code><a href="#@cdktn/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersionTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/kms_crypto_key_version#update KmsCryptoKeyVersion#update}. |
 
 ---
 
@@ -1262,7 +1262,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/kms_crypto_key_version#create KmsCryptoKeyVersion#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/kms_crypto_key_version#create KmsCryptoKeyVersion#create}.
 
 ---
 
@@ -1274,7 +1274,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/kms_crypto_key_version#delete KmsCryptoKeyVersion#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/kms_crypto_key_version#delete KmsCryptoKeyVersion#delete}.
 
 ---
 
@@ -1286,7 +1286,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/kms_crypto_key_version#update KmsCryptoKeyVersion#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/kms_crypto_key_version#update KmsCryptoKeyVersion#update}.
 
 ---
 
@@ -1297,7 +1297,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersionAttestationCertChainsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/kmscryptokeyversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/kmscryptokeyversion"
 
 kmscryptokeyversion.NewKmsCryptoKeyVersionAttestationCertChainsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KmsCryptoKeyVersionAttestationCertChainsList
 ```
@@ -1446,7 +1446,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersionAttestationCertChainsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/kmscryptokeyversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/kmscryptokeyversion"
 
 kmscryptokeyversion.NewKmsCryptoKeyVersionAttestationCertChainsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) KmsCryptoKeyVersionAttestationCertChainsOutputReference
 ```
@@ -1746,7 +1746,7 @@ func InternalValue() KmsCryptoKeyVersionAttestationCertChains
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersionAttestationExternalProtectionLevelOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/kmscryptokeyversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/kmscryptokeyversion"
 
 kmscryptokeyversion.NewKmsCryptoKeyVersionAttestationExternalProtectionLevelOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KmsCryptoKeyVersionAttestationExternalProtectionLevelOptionsList
 ```
@@ -1895,7 +1895,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersionAttestationExternalProtectionLevelOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/kmscryptokeyversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/kmscryptokeyversion"
 
 kmscryptokeyversion.NewKmsCryptoKeyVersionAttestationExternalProtectionLevelOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) KmsCryptoKeyVersionAttestationExternalProtectionLevelOptionsOutputReference
 ```
@@ -2184,7 +2184,7 @@ func InternalValue() KmsCryptoKeyVersionAttestationExternalProtectionLevelOption
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersionAttestationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/kmscryptokeyversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/kmscryptokeyversion"
 
 kmscryptokeyversion.NewKmsCryptoKeyVersionAttestationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) KmsCryptoKeyVersionAttestationList
 ```
@@ -2333,7 +2333,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersionAttestationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/kmscryptokeyversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/kmscryptokeyversion"
 
 kmscryptokeyversion.NewKmsCryptoKeyVersionAttestationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) KmsCryptoKeyVersionAttestationOutputReference
 ```
@@ -2644,7 +2644,7 @@ func InternalValue() KmsCryptoKeyVersionAttestation
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersionExternalProtectionLevelOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/kmscryptokeyversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/kmscryptokeyversion"
 
 kmscryptokeyversion.NewKmsCryptoKeyVersionExternalProtectionLevelOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KmsCryptoKeyVersionExternalProtectionLevelOptionsOutputReference
 ```
@@ -2951,7 +2951,7 @@ func InternalValue() KmsCryptoKeyVersionExternalProtectionLevelOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.kmsCryptoKeyVersion.KmsCryptoKeyVersionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/kmscryptokeyversion"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/kmscryptokeyversion"
 
 kmscryptokeyversion.NewKmsCryptoKeyVersionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KmsCryptoKeyVersionTimeoutsOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### ComputeProjectMetadataItem <a name="ComputeProjectMetadataItem" id="@cdktn/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItem"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_project_metadata_item google_compute_project_metadata_item}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_project_metadata_item google_compute_project_metadata_item}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItem.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeprojectmetadataitem"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeprojectmetadataitem"
 
 computeprojectmetadataitem.NewComputeProjectMetadataItem(scope Construct, id *string, config ComputeProjectMetadataItemConfig) ComputeProjectMetadataItem
 ```
@@ -441,7 +441,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItem.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeprojectmetadataitem"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeprojectmetadataitem"
 
 computeprojectmetadataitem.ComputeProjectMetadataItem_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItem.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeprojectmetadataitem"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeprojectmetadataitem"
 
 computeprojectmetadataitem.ComputeProjectMetadataItem_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ computeprojectmetadataitem.ComputeProjectMetadataItem_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItem.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeprojectmetadataitem"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeprojectmetadataitem"
 
 computeprojectmetadataitem.ComputeProjectMetadataItem_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ computeprojectmetadataitem.ComputeProjectMetadataItem_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItem.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeprojectmetadataitem"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeprojectmetadataitem"
 
 computeprojectmetadataitem.ComputeProjectMetadataItem_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -530,7 +530,7 @@ The construct id used in the generated config for the ComputeProjectMetadataItem
 
 The id of the existing ComputeProjectMetadataItem that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_project_metadata_item#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_project_metadata_item#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -862,7 +862,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItemConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeprojectmetadataitem"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeprojectmetadataitem"
 
 &computeprojectmetadataitem.ComputeProjectMetadataItemConfig {
 	Connection: interface{},
@@ -877,7 +877,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeprojectme
 	DeletionPolicy: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeProjectMetadataItem.ComputeProjectMetadataItemTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.computeProjectMetadataItem.ComputeProjectMetadataItemTimeouts,
 }
 ```
 
@@ -895,7 +895,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeprojectme
 | <code><a href="#@cdktn/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItemConfig.property.key">Key</a></code> | <code>*string</code> | The metadata key to set. |
 | <code><a href="#@cdktn/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItemConfig.property.value">Value</a></code> | <code>*string</code> | The value to set for the given metadata key. |
 | <code><a href="#@cdktn/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItemConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItemConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_project_metadata_item#id ComputeProjectMetadataItem#id}. |
+| <code><a href="#@cdktn/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItemConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_project_metadata_item#id ComputeProjectMetadataItem#id}. |
 | <code><a href="#@cdktn/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItemConfig.property.project">Project</a></code> | <code>*string</code> | The ID of the project in which the resource belongs. |
 | <code><a href="#@cdktn/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItemConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItemTimeouts">ComputeProjectMetadataItemTimeouts</a></code> | timeouts block. |
 
@@ -981,7 +981,7 @@ Key *string
 
 The metadata key to set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_project_metadata_item#key ComputeProjectMetadataItem#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_project_metadata_item#key ComputeProjectMetadataItem#key}
 
 ---
 
@@ -995,7 +995,7 @@ Value *string
 
 The value to set for the given metadata key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_project_metadata_item#value ComputeProjectMetadataItem#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_project_metadata_item#value ComputeProjectMetadataItem#value}
 
 ---
 
@@ -1016,7 +1016,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_project_metadata_item#deletion_policy ComputeProjectMetadataItem#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_project_metadata_item#deletion_policy ComputeProjectMetadataItem#deletion_policy}
 
 ---
 
@@ -1028,7 +1028,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_project_metadata_item#id ComputeProjectMetadataItem#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_project_metadata_item#id ComputeProjectMetadataItem#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1047,7 +1047,7 @@ The ID of the project in which the resource belongs.
 
 If it is not provided, the provider project is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_project_metadata_item#project ComputeProjectMetadataItem#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_project_metadata_item#project ComputeProjectMetadataItem#project}
 
 ---
 
@@ -1061,7 +1061,7 @@ Timeouts ComputeProjectMetadataItemTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_project_metadata_item#timeouts ComputeProjectMetadataItem#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_project_metadata_item#timeouts ComputeProjectMetadataItem#timeouts}
 
 ---
 
@@ -1070,7 +1070,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItemTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeprojectmetadataitem"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeprojectmetadataitem"
 
 &computeprojectmetadataitem.ComputeProjectMetadataItemTimeouts {
 	Create: *string,
@@ -1083,9 +1083,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeprojectme
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItemTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_project_metadata_item#create ComputeProjectMetadataItem#create}. |
-| <code><a href="#@cdktn/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItemTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_project_metadata_item#delete ComputeProjectMetadataItem#delete}. |
-| <code><a href="#@cdktn/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItemTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_project_metadata_item#update ComputeProjectMetadataItem#update}. |
+| <code><a href="#@cdktn/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItemTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_project_metadata_item#create ComputeProjectMetadataItem#create}. |
+| <code><a href="#@cdktn/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItemTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_project_metadata_item#delete ComputeProjectMetadataItem#delete}. |
+| <code><a href="#@cdktn/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItemTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_project_metadata_item#update ComputeProjectMetadataItem#update}. |
 
 ---
 
@@ -1097,7 +1097,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_project_metadata_item#create ComputeProjectMetadataItem#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_project_metadata_item#create ComputeProjectMetadataItem#create}.
 
 ---
 
@@ -1109,7 +1109,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_project_metadata_item#delete ComputeProjectMetadataItem#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_project_metadata_item#delete ComputeProjectMetadataItem#delete}.
 
 ---
 
@@ -1121,7 +1121,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_project_metadata_item#update ComputeProjectMetadataItem#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_project_metadata_item#update ComputeProjectMetadataItem#update}.
 
 ---
 
@@ -1132,7 +1132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeProjectMetadataItem.ComputeProjectMetadataItemTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeprojectmetadataitem"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeprojectmetadataitem"
 
 computeprojectmetadataitem.NewComputeProjectMetadataItemTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeProjectMetadataItemTimeoutsOutputReference
 ```

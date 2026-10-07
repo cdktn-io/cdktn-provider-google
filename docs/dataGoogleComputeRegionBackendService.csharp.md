@@ -4,7 +4,7 @@
 
 ### DataGoogleComputeRegionBackendService <a name="DataGoogleComputeRegionBackendService" id="@cdktn/provider-google.dataGoogleComputeRegionBackendService.DataGoogleComputeRegionBackendService"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_region_backend_service google_compute_region_backend_service}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/compute_region_backend_service google_compute_region_backend_service}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionBackendService.DataGoogleComputeRegionBackendService.Initializer"></a>
 
@@ -408,7 +408,7 @@ The construct id used in the generated config for the DataGoogleComputeRegionBac
 
 The id of the existing DataGoogleComputeRegionBackendService that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_region_backend_service#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/compute_region_backend_service#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -466,6 +466,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeRegionBackendService.DataGoogleComputeRegionBackendService.property.protocol">Protocol</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeRegionBackendService.DataGoogleComputeRegionBackendService.property.securityPolicy">SecurityPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeRegionBackendService.DataGoogleComputeRegionBackendService.property.selfLink">SelfLink</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeRegionBackendService.DataGoogleComputeRegionBackendService.property.serviceLbPolicy">ServiceLbPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeRegionBackendService.DataGoogleComputeRegionBackendService.property.sessionAffinity">SessionAffinity</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeRegionBackendService.DataGoogleComputeRegionBackendService.property.strongSessionAffinityCookie">StrongSessionAffinityCookie</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleComputeRegionBackendService.DataGoogleComputeRegionBackendServiceStrongSessionAffinityCookieList">DataGoogleComputeRegionBackendServiceStrongSessionAffinityCookieList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeRegionBackendService.DataGoogleComputeRegionBackendService.property.timeoutSec">TimeoutSec</a></code> | <code>double</code> | *No description.* |
@@ -903,6 +904,16 @@ public string SelfLink { get; }
 
 ---
 
+##### `ServiceLbPolicy`<sup>Required</sup> <a name="ServiceLbPolicy" id="@cdktn/provider-google.dataGoogleComputeRegionBackendService.DataGoogleComputeRegionBackendService.property.serviceLbPolicy"></a>
+
+```csharp
+public string ServiceLbPolicy { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `SessionAffinity`<sup>Required</sup> <a name="SessionAffinity" id="@cdktn/provider-google.dataGoogleComputeRegionBackendService.DataGoogleComputeRegionBackendService.property.sessionAffinity"></a>
 
 ```csharp
@@ -1155,8 +1166,8 @@ new DataGoogleComputeRegionBackendServiceConfig {
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeRegionBackendService.DataGoogleComputeRegionBackendServiceConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeRegionBackendService.DataGoogleComputeRegionBackendServiceConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeRegionBackendService.DataGoogleComputeRegionBackendServiceConfig.property.name">Name</a></code> | <code>string</code> | Name of the resource. |
-| <code><a href="#@cdktn/provider-google.dataGoogleComputeRegionBackendService.DataGoogleComputeRegionBackendServiceConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_region_backend_service#id DataGoogleComputeRegionBackendService#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleComputeRegionBackendService.DataGoogleComputeRegionBackendServiceConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_region_backend_service#project DataGoogleComputeRegionBackendService#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeRegionBackendService.DataGoogleComputeRegionBackendServiceConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/compute_region_backend_service#id DataGoogleComputeRegionBackendService#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeRegionBackendService.DataGoogleComputeRegionBackendServiceConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/compute_region_backend_service#project DataGoogleComputeRegionBackendService#project}. |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeRegionBackendService.DataGoogleComputeRegionBackendServiceConfig.property.region">Region</a></code> | <code>string</code> | The Region in which the created backend service should reside. If it is not provided, the provider region is used. |
 
 ---
@@ -1249,7 +1260,7 @@ first character must be a lowercase letter, and all following
 characters must be a dash, lowercase letter, or digit, except the last
 character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_region_backend_service#name DataGoogleComputeRegionBackendService#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/compute_region_backend_service#name DataGoogleComputeRegionBackendService#name}
 
 ---
 
@@ -1261,7 +1272,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_region_backend_service#id DataGoogleComputeRegionBackendService#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/compute_region_backend_service#id DataGoogleComputeRegionBackendService#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1276,7 +1287,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_region_backend_service#project DataGoogleComputeRegionBackendService#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/compute_region_backend_service#project DataGoogleComputeRegionBackendService#project}.
 
 ---
 
@@ -1290,7 +1301,7 @@ public string Region { get; set; }
 
 The Region in which the created backend service should reside. If it is not provided, the provider region is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_region_backend_service#region DataGoogleComputeRegionBackendService#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/compute_region_backend_service#region DataGoogleComputeRegionBackendService#region}
 
 ---
 
@@ -14250,6 +14261,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeRegionBackendService.DataGoogleComputeRegionBackendServiceTlsSettingsOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeRegionBackendService.DataGoogleComputeRegionBackendServiceTlsSettingsOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeRegionBackendService.DataGoogleComputeRegionBackendServiceTlsSettingsOutputReference.property.authenticationConfig">AuthenticationConfig</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeRegionBackendService.DataGoogleComputeRegionBackendServiceTlsSettingsOutputReference.property.identity">Identity</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeRegionBackendService.DataGoogleComputeRegionBackendServiceTlsSettingsOutputReference.property.sni">Sni</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeRegionBackendService.DataGoogleComputeRegionBackendServiceTlsSettingsOutputReference.property.subjectAltNames">SubjectAltNames</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleComputeRegionBackendService.DataGoogleComputeRegionBackendServiceTlsSettingsSubjectAltNamesList">DataGoogleComputeRegionBackendServiceTlsSettingsSubjectAltNamesList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeRegionBackendService.DataGoogleComputeRegionBackendServiceTlsSettingsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleComputeRegionBackendService.DataGoogleComputeRegionBackendServiceTlsSettings">DataGoogleComputeRegionBackendServiceTlsSettings</a></code> | *No description.* |
@@ -14284,6 +14296,16 @@ public string Fqn { get; }
 
 ```csharp
 public string AuthenticationConfig { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Identity`<sup>Required</sup> <a name="Identity" id="@cdktn/provider-google.dataGoogleComputeRegionBackendService.DataGoogleComputeRegionBackendServiceTlsSettingsOutputReference.property.identity"></a>
+
+```csharp
+public string Identity { get; }
 ```
 
 - *Type:* string

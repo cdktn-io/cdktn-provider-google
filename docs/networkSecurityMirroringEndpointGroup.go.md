@@ -4,12 +4,12 @@
 
 ### NetworkSecurityMirroringEndpointGroup <a name="NetworkSecurityMirroringEndpointGroup" id="@cdktn/provider-google.networkSecurityMirroringEndpointGroup.NetworkSecurityMirroringEndpointGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_mirroring_endpoint_group google_network_security_mirroring_endpoint_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_security_mirroring_endpoint_group google_network_security_mirroring_endpoint_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityMirroringEndpointGroup.NetworkSecurityMirroringEndpointGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecuritymirroringendpointgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networksecuritymirroringendpointgroup"
 
 networksecuritymirroringendpointgroup.NewNetworkSecurityMirroringEndpointGroup(scope Construct, id *string, config NetworkSecurityMirroringEndpointGroupConfig) NetworkSecurityMirroringEndpointGroup
 ```
@@ -476,7 +476,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.networkSecurityMirroringEndpointGroup.NetworkSecurityMirroringEndpointGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecuritymirroringendpointgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networksecuritymirroringendpointgroup"
 
 networksecuritymirroringendpointgroup.NetworkSecurityMirroringEndpointGroup_IsConstruct(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.networkSecurityMirroringEndpointGroup.NetworkSecurityMirroringEndpointGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecuritymirroringendpointgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networksecuritymirroringendpointgroup"
 
 networksecuritymirroringendpointgroup.NetworkSecurityMirroringEndpointGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ networksecuritymirroringendpointgroup.NetworkSecurityMirroringEndpointGroup_IsTe
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.networkSecurityMirroringEndpointGroup.NetworkSecurityMirroringEndpointGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecuritymirroringendpointgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networksecuritymirroringendpointgroup"
 
 networksecuritymirroringendpointgroup.NetworkSecurityMirroringEndpointGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -536,7 +536,7 @@ networksecuritymirroringendpointgroup.NetworkSecurityMirroringEndpointGroup_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.networkSecurityMirroringEndpointGroup.NetworkSecurityMirroringEndpointGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecuritymirroringendpointgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networksecuritymirroringendpointgroup"
 
 networksecuritymirroringendpointgroup.NetworkSecurityMirroringEndpointGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -565,7 +565,7 @@ The construct id used in the generated config for the NetworkSecurityMirroringEn
 
 The id of the existing NetworkSecurityMirroringEndpointGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_mirroring_endpoint_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_security_mirroring_endpoint_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1106,7 +1106,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkSecurityMirroringEndpointGroup.NetworkSecurityMirroringEndpointGroupAssociations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecuritymirroringendpointgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networksecuritymirroringendpointgroup"
 
 &networksecuritymirroringendpointgroup.NetworkSecurityMirroringEndpointGroupAssociations {
 
@@ -1119,7 +1119,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecuritym
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkSecurityMirroringEndpointGroup.NetworkSecurityMirroringEndpointGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecuritymirroringendpointgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networksecuritymirroringendpointgroup"
 
 &networksecuritymirroringendpointgroup.NetworkSecurityMirroringEndpointGroupConfig {
 	Connection: interface{},
@@ -1138,7 +1138,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecuritym
 	MirroringDeploymentGroup: *string,
 	MirroringDeploymentGroups: *[]*string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.networkSecurityMirroringEndpointGroup.NetworkSecurityMirroringEndpointGroupTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.networkSecurityMirroringEndpointGroup.NetworkSecurityMirroringEndpointGroupTimeouts,
 	Type: *string,
 }
 ```
@@ -1158,11 +1158,11 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecuritym
 | <code><a href="#@cdktn/provider-google.networkSecurityMirroringEndpointGroup.NetworkSecurityMirroringEndpointGroupConfig.property.mirroringEndpointGroupId">MirroringEndpointGroupId</a></code> | <code>*string</code> | The ID to use for the endpoint group, which will become the final component of the endpoint group's resource name. |
 | <code><a href="#@cdktn/provider-google.networkSecurityMirroringEndpointGroup.NetworkSecurityMirroringEndpointGroupConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.networkSecurityMirroringEndpointGroup.NetworkSecurityMirroringEndpointGroupConfig.property.description">Description</a></code> | <code>*string</code> | User-provided description of the endpoint group. Used as additional context for the endpoint group. |
-| <code><a href="#@cdktn/provider-google.networkSecurityMirroringEndpointGroup.NetworkSecurityMirroringEndpointGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_mirroring_endpoint_group#id NetworkSecurityMirroringEndpointGroup#id}. |
+| <code><a href="#@cdktn/provider-google.networkSecurityMirroringEndpointGroup.NetworkSecurityMirroringEndpointGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_security_mirroring_endpoint_group#id NetworkSecurityMirroringEndpointGroup#id}. |
 | <code><a href="#@cdktn/provider-google.networkSecurityMirroringEndpointGroup.NetworkSecurityMirroringEndpointGroupConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | Labels are key/value pairs that help to organize and filter resources. |
 | <code><a href="#@cdktn/provider-google.networkSecurityMirroringEndpointGroup.NetworkSecurityMirroringEndpointGroupConfig.property.mirroringDeploymentGroup">MirroringDeploymentGroup</a></code> | <code>*string</code> | The deployment group that this DIRECT endpoint group is connected to, for example: 'projects/123456789/locations/global/mirroringDeploymentGroups/my-dg'. See https://google.aip.dev/124. |
 | <code><a href="#@cdktn/provider-google.networkSecurityMirroringEndpointGroup.NetworkSecurityMirroringEndpointGroupConfig.property.mirroringDeploymentGroups">MirroringDeploymentGroups</a></code> | <code>*[]*string</code> | A list of the deployment groups that this BROKER endpoint group is connected to, for example: 'projects/123456789/locations/global/mirroringDeploymentGroups/my-dg'. See https://google.aip.dev/124. |
-| <code><a href="#@cdktn/provider-google.networkSecurityMirroringEndpointGroup.NetworkSecurityMirroringEndpointGroupConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_mirroring_endpoint_group#project NetworkSecurityMirroringEndpointGroup#project}. |
+| <code><a href="#@cdktn/provider-google.networkSecurityMirroringEndpointGroup.NetworkSecurityMirroringEndpointGroupConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_security_mirroring_endpoint_group#project NetworkSecurityMirroringEndpointGroup#project}. |
 | <code><a href="#@cdktn/provider-google.networkSecurityMirroringEndpointGroup.NetworkSecurityMirroringEndpointGroupConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.networkSecurityMirroringEndpointGroup.NetworkSecurityMirroringEndpointGroupTimeouts">NetworkSecurityMirroringEndpointGroupTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.networkSecurityMirroringEndpointGroup.NetworkSecurityMirroringEndpointGroupConfig.property.type">Type</a></code> | <code>*string</code> | The type of the endpoint group. If left unspecified, defaults to DIRECT. Possible values: DIRECT BROKER. |
 
@@ -1248,7 +1248,7 @@ Location *string
 
 The cloud location of the endpoint group, currently restricted to 'global'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_mirroring_endpoint_group#location NetworkSecurityMirroringEndpointGroup#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_security_mirroring_endpoint_group#location NetworkSecurityMirroringEndpointGroup#location}
 
 ---
 
@@ -1262,7 +1262,7 @@ MirroringEndpointGroupId *string
 
 The ID to use for the endpoint group, which will become the final component of the endpoint group's resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_mirroring_endpoint_group#mirroring_endpoint_group_id NetworkSecurityMirroringEndpointGroup#mirroring_endpoint_group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_security_mirroring_endpoint_group#mirroring_endpoint_group_id NetworkSecurityMirroringEndpointGroup#mirroring_endpoint_group_id}
 
 ---
 
@@ -1283,7 +1283,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_mirroring_endpoint_group#deletion_policy NetworkSecurityMirroringEndpointGroup#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_security_mirroring_endpoint_group#deletion_policy NetworkSecurityMirroringEndpointGroup#deletion_policy}
 
 ---
 
@@ -1297,7 +1297,7 @@ Description *string
 
 User-provided description of the endpoint group. Used as additional context for the endpoint group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_mirroring_endpoint_group#description NetworkSecurityMirroringEndpointGroup#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_security_mirroring_endpoint_group#description NetworkSecurityMirroringEndpointGroup#description}
 
 ---
 
@@ -1309,7 +1309,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_mirroring_endpoint_group#id NetworkSecurityMirroringEndpointGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_security_mirroring_endpoint_group#id NetworkSecurityMirroringEndpointGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1329,7 +1329,7 @@ Labels are key/value pairs that help to organize and filter resources.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_mirroring_endpoint_group#labels NetworkSecurityMirroringEndpointGroup#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_security_mirroring_endpoint_group#labels NetworkSecurityMirroringEndpointGroup#labels}
 
 ---
 
@@ -1343,7 +1343,7 @@ MirroringDeploymentGroup *string
 
 The deployment group that this DIRECT endpoint group is connected to, for example: 'projects/123456789/locations/global/mirroringDeploymentGroups/my-dg'. See https://google.aip.dev/124.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_mirroring_endpoint_group#mirroring_deployment_group NetworkSecurityMirroringEndpointGroup#mirroring_deployment_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_security_mirroring_endpoint_group#mirroring_deployment_group NetworkSecurityMirroringEndpointGroup#mirroring_deployment_group}
 
 ---
 
@@ -1357,7 +1357,7 @@ MirroringDeploymentGroups *[]*string
 
 A list of the deployment groups that this BROKER endpoint group is connected to, for example: 'projects/123456789/locations/global/mirroringDeploymentGroups/my-dg'. See https://google.aip.dev/124.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_mirroring_endpoint_group#mirroring_deployment_groups NetworkSecurityMirroringEndpointGroup#mirroring_deployment_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_security_mirroring_endpoint_group#mirroring_deployment_groups NetworkSecurityMirroringEndpointGroup#mirroring_deployment_groups}
 
 ---
 
@@ -1369,7 +1369,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_mirroring_endpoint_group#project NetworkSecurityMirroringEndpointGroup#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_security_mirroring_endpoint_group#project NetworkSecurityMirroringEndpointGroup#project}.
 
 ---
 
@@ -1383,7 +1383,7 @@ Timeouts NetworkSecurityMirroringEndpointGroupTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_mirroring_endpoint_group#timeouts NetworkSecurityMirroringEndpointGroup#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_security_mirroring_endpoint_group#timeouts NetworkSecurityMirroringEndpointGroup#timeouts}
 
 ---
 
@@ -1397,7 +1397,7 @@ Type *string
 
 The type of the endpoint group. If left unspecified, defaults to DIRECT. Possible values: DIRECT BROKER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_mirroring_endpoint_group#type NetworkSecurityMirroringEndpointGroup#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_security_mirroring_endpoint_group#type NetworkSecurityMirroringEndpointGroup#type}
 
 ---
 
@@ -1406,7 +1406,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkSecurityMirroringEndpointGroup.NetworkSecurityMirroringEndpointGroupConnectedDeploymentGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecuritymirroringendpointgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networksecuritymirroringendpointgroup"
 
 &networksecuritymirroringendpointgroup.NetworkSecurityMirroringEndpointGroupConnectedDeploymentGroups {
 
@@ -1419,7 +1419,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecuritym
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkSecurityMirroringEndpointGroup.NetworkSecurityMirroringEndpointGroupConnectedDeploymentGroupsLocations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecuritymirroringendpointgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networksecuritymirroringendpointgroup"
 
 &networksecuritymirroringendpointgroup.NetworkSecurityMirroringEndpointGroupConnectedDeploymentGroupsLocations {
 
@@ -1432,7 +1432,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecuritym
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkSecurityMirroringEndpointGroup.NetworkSecurityMirroringEndpointGroupTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecuritymirroringendpointgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networksecuritymirroringendpointgroup"
 
 &networksecuritymirroringendpointgroup.NetworkSecurityMirroringEndpointGroupTimeouts {
 	Create: *string,
@@ -1445,9 +1445,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecuritym
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.networkSecurityMirroringEndpointGroup.NetworkSecurityMirroringEndpointGroupTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_mirroring_endpoint_group#create NetworkSecurityMirroringEndpointGroup#create}. |
-| <code><a href="#@cdktn/provider-google.networkSecurityMirroringEndpointGroup.NetworkSecurityMirroringEndpointGroupTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_mirroring_endpoint_group#delete NetworkSecurityMirroringEndpointGroup#delete}. |
-| <code><a href="#@cdktn/provider-google.networkSecurityMirroringEndpointGroup.NetworkSecurityMirroringEndpointGroupTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_mirroring_endpoint_group#update NetworkSecurityMirroringEndpointGroup#update}. |
+| <code><a href="#@cdktn/provider-google.networkSecurityMirroringEndpointGroup.NetworkSecurityMirroringEndpointGroupTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_security_mirroring_endpoint_group#create NetworkSecurityMirroringEndpointGroup#create}. |
+| <code><a href="#@cdktn/provider-google.networkSecurityMirroringEndpointGroup.NetworkSecurityMirroringEndpointGroupTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_security_mirroring_endpoint_group#delete NetworkSecurityMirroringEndpointGroup#delete}. |
+| <code><a href="#@cdktn/provider-google.networkSecurityMirroringEndpointGroup.NetworkSecurityMirroringEndpointGroupTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_security_mirroring_endpoint_group#update NetworkSecurityMirroringEndpointGroup#update}. |
 
 ---
 
@@ -1459,7 +1459,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_mirroring_endpoint_group#create NetworkSecurityMirroringEndpointGroup#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_security_mirroring_endpoint_group#create NetworkSecurityMirroringEndpointGroup#create}.
 
 ---
 
@@ -1471,7 +1471,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_mirroring_endpoint_group#delete NetworkSecurityMirroringEndpointGroup#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_security_mirroring_endpoint_group#delete NetworkSecurityMirroringEndpointGroup#delete}.
 
 ---
 
@@ -1483,7 +1483,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_security_mirroring_endpoint_group#update NetworkSecurityMirroringEndpointGroup#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_security_mirroring_endpoint_group#update NetworkSecurityMirroringEndpointGroup#update}.
 
 ---
 
@@ -1494,7 +1494,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityMirroringEndpointGroup.NetworkSecurityMirroringEndpointGroupAssociationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecuritymirroringendpointgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networksecuritymirroringendpointgroup"
 
 networksecuritymirroringendpointgroup.NewNetworkSecurityMirroringEndpointGroupAssociationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkSecurityMirroringEndpointGroupAssociationsList
 ```
@@ -1643,7 +1643,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityMirroringEndpointGroup.NetworkSecurityMirroringEndpointGroupAssociationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecuritymirroringendpointgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networksecuritymirroringendpointgroup"
 
 networksecuritymirroringendpointgroup.NewNetworkSecurityMirroringEndpointGroupAssociationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkSecurityMirroringEndpointGroupAssociationsOutputReference
 ```
@@ -1943,7 +1943,7 @@ func InternalValue() NetworkSecurityMirroringEndpointGroupAssociations
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityMirroringEndpointGroup.NetworkSecurityMirroringEndpointGroupConnectedDeploymentGroupsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecuritymirroringendpointgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networksecuritymirroringendpointgroup"
 
 networksecuritymirroringendpointgroup.NewNetworkSecurityMirroringEndpointGroupConnectedDeploymentGroupsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkSecurityMirroringEndpointGroupConnectedDeploymentGroupsList
 ```
@@ -2092,7 +2092,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityMirroringEndpointGroup.NetworkSecurityMirroringEndpointGroupConnectedDeploymentGroupsLocationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecuritymirroringendpointgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networksecuritymirroringendpointgroup"
 
 networksecuritymirroringendpointgroup.NewNetworkSecurityMirroringEndpointGroupConnectedDeploymentGroupsLocationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkSecurityMirroringEndpointGroupConnectedDeploymentGroupsLocationsList
 ```
@@ -2241,7 +2241,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityMirroringEndpointGroup.NetworkSecurityMirroringEndpointGroupConnectedDeploymentGroupsLocationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecuritymirroringendpointgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networksecuritymirroringendpointgroup"
 
 networksecuritymirroringendpointgroup.NewNetworkSecurityMirroringEndpointGroupConnectedDeploymentGroupsLocationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkSecurityMirroringEndpointGroupConnectedDeploymentGroupsLocationsOutputReference
 ```
@@ -2530,7 +2530,7 @@ func InternalValue() NetworkSecurityMirroringEndpointGroupConnectedDeploymentGro
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityMirroringEndpointGroup.NetworkSecurityMirroringEndpointGroupConnectedDeploymentGroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecuritymirroringendpointgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networksecuritymirroringendpointgroup"
 
 networksecuritymirroringendpointgroup.NewNetworkSecurityMirroringEndpointGroupConnectedDeploymentGroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkSecurityMirroringEndpointGroupConnectedDeploymentGroupsOutputReference
 ```
@@ -2819,7 +2819,7 @@ func InternalValue() NetworkSecurityMirroringEndpointGroupConnectedDeploymentGro
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityMirroringEndpointGroup.NetworkSecurityMirroringEndpointGroupTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networksecuritymirroringendpointgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networksecuritymirroringendpointgroup"
 
 networksecuritymirroringendpointgroup.NewNetworkSecurityMirroringEndpointGroupTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkSecurityMirroringEndpointGroupTimeoutsOutputReference
 ```

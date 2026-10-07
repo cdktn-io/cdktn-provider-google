@@ -4,7 +4,7 @@
 
 ### ManagedKafkaCluster <a name="ManagedKafkaCluster" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/managed_kafka_cluster google_managed_kafka_cluster}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/managed_kafka_cluster google_managed_kafka_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaCluster.Initializer"></a>
 
@@ -26,6 +26,7 @@ ManagedKafkaCluster.Builder.create(Construct scope, java.lang.String id)
 //  .brokerCapacityConfig(ManagedKafkaClusterBrokerCapacityConfig)
 //  .deletionPolicy(java.lang.String)
 //  .id(java.lang.String)
+//  .kafkaVersion(java.lang.String)
 //  .labels(java.util.Map<java.lang.String, java.lang.String>)
 //  .project(java.lang.String)
 //  .rebalanceConfig(ManagedKafkaClusterRebalanceConfig)
@@ -51,9 +52,10 @@ ManagedKafkaCluster.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaCluster.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | ID of the location of the Kafka resource. See https://cloud.google.com/managed-kafka/docs/locations for a list of supported locations. |
 | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaCluster.Initializer.parameter.brokerCapacityConfig">brokerCapacityConfig</a></code> | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterBrokerCapacityConfig">ManagedKafkaClusterBrokerCapacityConfig</a></code> | broker_capacity_config block. |
 | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaCluster.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaCluster.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/managed_kafka_cluster#id ManagedKafkaCluster#id}. |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaCluster.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/managed_kafka_cluster#id ManagedKafkaCluster#id}. |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaCluster.Initializer.parameter.kafkaVersion">kafkaVersion</a></code> | <code>java.lang.String</code> | The Apache Kafka version of the cluster (for example, '3.7.x', '4.3.x'). If not specified during cluster creation, defaults to '3.7.x'. |
 | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaCluster.Initializer.parameter.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | List of label KEY=VALUE pairs to add. |
-| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaCluster.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/managed_kafka_cluster#project ManagedKafkaCluster#project}. |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaCluster.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/managed_kafka_cluster#project ManagedKafkaCluster#project}. |
 | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaCluster.Initializer.parameter.rebalanceConfig">rebalanceConfig</a></code> | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterRebalanceConfig">ManagedKafkaClusterRebalanceConfig</a></code> | rebalance_config block. |
 | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaCluster.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterTimeouts">ManagedKafkaClusterTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaCluster.Initializer.parameter.tlsConfig">tlsConfig</a></code> | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterTlsConfig">ManagedKafkaClusterTlsConfig</a></code> | tls_config block. |
@@ -126,7 +128,7 @@ Must be unique amongst siblings in the same scope
 
 capacity_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/managed_kafka_cluster#capacity_config ManagedKafkaCluster#capacity_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/managed_kafka_cluster#capacity_config ManagedKafkaCluster#capacity_config}
 
 ---
 
@@ -138,7 +140,7 @@ The ID to use for the cluster, which will become the final component of the clus
 
 The ID must be 1-63 characters long, and match the regular expression '[a-z](%5B-a-z0-9%5D*%5Ba-z0-9%5D)?' to comply with RFC 1035. This value is structured like: 'my-cluster-id'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/managed_kafka_cluster#cluster_id ManagedKafkaCluster#cluster_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/managed_kafka_cluster#cluster_id ManagedKafkaCluster#cluster_id}
 
 ---
 
@@ -148,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 gcp_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/managed_kafka_cluster#gcp_config ManagedKafkaCluster#gcp_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/managed_kafka_cluster#gcp_config ManagedKafkaCluster#gcp_config}
 
 ---
 
@@ -158,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ID of the location of the Kafka resource. See https://cloud.google.com/managed-kafka/docs/locations for a list of supported locations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/managed_kafka_cluster#location ManagedKafkaCluster#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/managed_kafka_cluster#location ManagedKafkaCluster#location}
 
 ---
 
@@ -168,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 broker_capacity_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/managed_kafka_cluster#broker_capacity_config ManagedKafkaCluster#broker_capacity_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/managed_kafka_cluster#broker_capacity_config ManagedKafkaCluster#broker_capacity_config}
 
 ---
 
@@ -185,7 +187,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/managed_kafka_cluster#deletion_policy ManagedKafkaCluster#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/managed_kafka_cluster#deletion_policy ManagedKafkaCluster#deletion_policy}
 
 ---
 
@@ -193,10 +195,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/managed_kafka_cluster#id ManagedKafkaCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/managed_kafka_cluster#id ManagedKafkaCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `kafkaVersion`<sup>Optional</sup> <a name="kafkaVersion" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaCluster.Initializer.parameter.kafkaVersion"></a>
+
+- *Type:* java.lang.String
+
+The Apache Kafka version of the cluster (for example, '3.7.x', '4.3.x'). If not specified during cluster creation, defaults to '3.7.x'.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/managed_kafka_cluster#kafka_version ManagedKafkaCluster#kafka_version}
 
 ---
 
@@ -211,7 +223,7 @@ Keys must start with a lowercase character and contain only hyphens (-), undersc
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/managed_kafka_cluster#labels ManagedKafkaCluster#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/managed_kafka_cluster#labels ManagedKafkaCluster#labels}
 
 ---
 
@@ -219,7 +231,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/managed_kafka_cluster#project ManagedKafkaCluster#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/managed_kafka_cluster#project ManagedKafkaCluster#project}.
 
 ---
 
@@ -229,7 +241,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 rebalance_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/managed_kafka_cluster#rebalance_config ManagedKafkaCluster#rebalance_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/managed_kafka_cluster#rebalance_config ManagedKafkaCluster#rebalance_config}
 
 ---
 
@@ -239,7 +251,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/managed_kafka_cluster#timeouts ManagedKafkaCluster#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/managed_kafka_cluster#timeouts ManagedKafkaCluster#timeouts}
 
 ---
 
@@ -249,7 +261,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 tls_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/managed_kafka_cluster#tls_config ManagedKafkaCluster#tls_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/managed_kafka_cluster#tls_config ManagedKafkaCluster#tls_config}
 
 ---
 
@@ -290,6 +302,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaCluster.resetBrokerCapacityConfig">resetBrokerCapacityConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaCluster.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaCluster.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaCluster.resetKafkaVersion">resetKafkaVersion</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaCluster.resetLabels">resetLabels</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaCluster.resetProject">resetProject</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaCluster.resetRebalanceConfig">resetRebalanceConfig</a></code> | *No description.* |
@@ -699,6 +712,12 @@ public void resetDeletionPolicy()
 public void resetId()
 ```
 
+##### `resetKafkaVersion` <a name="resetKafkaVersion" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaCluster.resetKafkaVersion"></a>
+
+```java
+public void resetKafkaVersion()
+```
+
 ##### `resetLabels` <a name="resetLabels" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaCluster.resetLabels"></a>
 
 ```java
@@ -832,7 +851,7 @@ The construct id used in the generated config for the ManagedKafkaCluster to imp
 
 The id of the existing ManagedKafkaCluster that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/managed_kafka_cluster#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/managed_kafka_cluster#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -862,12 +881,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaCluster.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaCluster.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaCluster.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaCluster.property.bootstrapAddress">bootstrapAddress</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaCluster.property.brokerCapacityConfig">brokerCapacityConfig</a></code> | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterBrokerCapacityConfigOutputReference">ManagedKafkaClusterBrokerCapacityConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaCluster.property.capacityConfig">capacityConfig</a></code> | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterCapacityConfigOutputReference">ManagedKafkaClusterCapacityConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaCluster.property.createTime">createTime</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaCluster.property.effectiveLabels">effectiveLabels</a></code> | <code>io.cdktn.cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaCluster.property.gcpConfig">gcpConfig</a></code> | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigOutputReference">ManagedKafkaClusterGcpConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaCluster.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaCluster.property.publicClusterDetails">publicClusterDetails</a></code> | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsList">ManagedKafkaClusterPublicClusterDetailsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaCluster.property.rebalanceConfig">rebalanceConfig</a></code> | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterRebalanceConfigOutputReference">ManagedKafkaClusterRebalanceConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaCluster.property.state">state</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaCluster.property.terraformLabels">terraformLabels</a></code> | <code>io.cdktn.cdktn.StringMap</code> | *No description.* |
@@ -880,6 +901,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaCluster.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaCluster.property.gcpConfigInput">gcpConfigInput</a></code> | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfig">ManagedKafkaClusterGcpConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaCluster.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaCluster.property.kafkaVersionInput">kafkaVersionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaCluster.property.labelsInput">labelsInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaCluster.property.locationInput">locationInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaCluster.property.projectInput">projectInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -889,6 +911,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaCluster.property.clusterId">clusterId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaCluster.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaCluster.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaCluster.property.kafkaVersion">kafkaVersion</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaCluster.property.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaCluster.property.location">location</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaCluster.property.project">project</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -1037,6 +1060,16 @@ public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner
 
 ---
 
+##### `bootstrapAddress`<sup>Required</sup> <a name="bootstrapAddress" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaCluster.property.bootstrapAddress"></a>
+
+```java
+public java.lang.String getBootstrapAddress();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `brokerCapacityConfig`<sup>Required</sup> <a name="brokerCapacityConfig" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaCluster.property.brokerCapacityConfig"></a>
 
 ```java
@@ -1094,6 +1127,16 @@ public java.lang.String getName();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `publicClusterDetails`<sup>Required</sup> <a name="publicClusterDetails" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaCluster.property.publicClusterDetails"></a>
+
+```java
+public ManagedKafkaClusterPublicClusterDetailsList getPublicClusterDetails();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsList">ManagedKafkaClusterPublicClusterDetailsList</a>
 
 ---
 
@@ -1217,6 +1260,16 @@ public java.lang.String getIdInput();
 
 ---
 
+##### `kafkaVersionInput`<sup>Optional</sup> <a name="kafkaVersionInput" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaCluster.property.kafkaVersionInput"></a>
+
+```java
+public java.lang.String getKafkaVersionInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `labelsInput`<sup>Optional</sup> <a name="labelsInput" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaCluster.property.labelsInput"></a>
 
 ```java
@@ -1307,6 +1360,16 @@ public java.lang.String getId();
 
 ---
 
+##### `kafkaVersion`<sup>Required</sup> <a name="kafkaVersion" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaCluster.property.kafkaVersion"></a>
+
+```java
+public java.lang.String getKafkaVersion();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `labels`<sup>Required</sup> <a name="labels" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaCluster.property.labels"></a>
 
 ```java
@@ -1387,7 +1450,7 @@ public java.lang.String getDiskSizeGib();
 
 The disk to provision for each broker in Gibibytes. Minimum: 100 GiB.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/managed_kafka_cluster#disk_size_gib ManagedKafkaCluster#disk_size_gib}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/managed_kafka_cluster#disk_size_gib ManagedKafkaCluster#disk_size_gib}
 
 ---
 
@@ -1425,7 +1488,7 @@ The memory to provision for the cluster in bytes.
 
 The value must be between 1 GiB and 8 GiB per vCPU. Ex. 1024Mi, 4Gi.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/managed_kafka_cluster#memory_bytes ManagedKafkaCluster#memory_bytes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/managed_kafka_cluster#memory_bytes ManagedKafkaCluster#memory_bytes}
 
 ---
 
@@ -1439,7 +1502,7 @@ public java.lang.String getVcpuCount();
 
 The number of vCPUs to provision for the cluster. The minimum is 3.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/managed_kafka_cluster#vcpu_count ManagedKafkaCluster#vcpu_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/managed_kafka_cluster#vcpu_count ManagedKafkaCluster#vcpu_count}
 
 ---
 
@@ -1465,6 +1528,7 @@ ManagedKafkaClusterConfig.builder()
 //  .brokerCapacityConfig(ManagedKafkaClusterBrokerCapacityConfig)
 //  .deletionPolicy(java.lang.String)
 //  .id(java.lang.String)
+//  .kafkaVersion(java.lang.String)
 //  .labels(java.util.Map<java.lang.String, java.lang.String>)
 //  .project(java.lang.String)
 //  .rebalanceConfig(ManagedKafkaClusterRebalanceConfig)
@@ -1490,9 +1554,10 @@ ManagedKafkaClusterConfig.builder()
 | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterConfig.property.location">location</a></code> | <code>java.lang.String</code> | ID of the location of the Kafka resource. See https://cloud.google.com/managed-kafka/docs/locations for a list of supported locations. |
 | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterConfig.property.brokerCapacityConfig">brokerCapacityConfig</a></code> | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterBrokerCapacityConfig">ManagedKafkaClusterBrokerCapacityConfig</a></code> | broker_capacity_config block. |
 | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/managed_kafka_cluster#id ManagedKafkaCluster#id}. |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/managed_kafka_cluster#id ManagedKafkaCluster#id}. |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterConfig.property.kafkaVersion">kafkaVersion</a></code> | <code>java.lang.String</code> | The Apache Kafka version of the cluster (for example, '3.7.x', '4.3.x'). If not specified during cluster creation, defaults to '3.7.x'. |
 | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterConfig.property.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | List of label KEY=VALUE pairs to add. |
-| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/managed_kafka_cluster#project ManagedKafkaCluster#project}. |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/managed_kafka_cluster#project ManagedKafkaCluster#project}. |
 | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterConfig.property.rebalanceConfig">rebalanceConfig</a></code> | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterRebalanceConfig">ManagedKafkaClusterRebalanceConfig</a></code> | rebalance_config block. |
 | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterTimeouts">ManagedKafkaClusterTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterConfig.property.tlsConfig">tlsConfig</a></code> | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterTlsConfig">ManagedKafkaClusterTlsConfig</a></code> | tls_config block. |
@@ -1579,7 +1644,7 @@ public ManagedKafkaClusterCapacityConfig getCapacityConfig();
 
 capacity_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/managed_kafka_cluster#capacity_config ManagedKafkaCluster#capacity_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/managed_kafka_cluster#capacity_config ManagedKafkaCluster#capacity_config}
 
 ---
 
@@ -1595,7 +1660,7 @@ The ID to use for the cluster, which will become the final component of the clus
 
 The ID must be 1-63 characters long, and match the regular expression '[a-z](%5B-a-z0-9%5D*%5Ba-z0-9%5D)?' to comply with RFC 1035. This value is structured like: 'my-cluster-id'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/managed_kafka_cluster#cluster_id ManagedKafkaCluster#cluster_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/managed_kafka_cluster#cluster_id ManagedKafkaCluster#cluster_id}
 
 ---
 
@@ -1609,7 +1674,7 @@ public ManagedKafkaClusterGcpConfig getGcpConfig();
 
 gcp_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/managed_kafka_cluster#gcp_config ManagedKafkaCluster#gcp_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/managed_kafka_cluster#gcp_config ManagedKafkaCluster#gcp_config}
 
 ---
 
@@ -1623,7 +1688,7 @@ public java.lang.String getLocation();
 
 ID of the location of the Kafka resource. See https://cloud.google.com/managed-kafka/docs/locations for a list of supported locations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/managed_kafka_cluster#location ManagedKafkaCluster#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/managed_kafka_cluster#location ManagedKafkaCluster#location}
 
 ---
 
@@ -1637,7 +1702,7 @@ public ManagedKafkaClusterBrokerCapacityConfig getBrokerCapacityConfig();
 
 broker_capacity_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/managed_kafka_cluster#broker_capacity_config ManagedKafkaCluster#broker_capacity_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/managed_kafka_cluster#broker_capacity_config ManagedKafkaCluster#broker_capacity_config}
 
 ---
 
@@ -1658,7 +1723,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/managed_kafka_cluster#deletion_policy ManagedKafkaCluster#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/managed_kafka_cluster#deletion_policy ManagedKafkaCluster#deletion_policy}
 
 ---
 
@@ -1670,10 +1735,24 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/managed_kafka_cluster#id ManagedKafkaCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/managed_kafka_cluster#id ManagedKafkaCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `kafkaVersion`<sup>Optional</sup> <a name="kafkaVersion" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterConfig.property.kafkaVersion"></a>
+
+```java
+public java.lang.String getKafkaVersion();
+```
+
+- *Type:* java.lang.String
+
+The Apache Kafka version of the cluster (for example, '3.7.x', '4.3.x'). If not specified during cluster creation, defaults to '3.7.x'.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/managed_kafka_cluster#kafka_version ManagedKafkaCluster#kafka_version}
 
 ---
 
@@ -1692,7 +1771,7 @@ Keys must start with a lowercase character and contain only hyphens (-), undersc
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/managed_kafka_cluster#labels ManagedKafkaCluster#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/managed_kafka_cluster#labels ManagedKafkaCluster#labels}
 
 ---
 
@@ -1704,7 +1783,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/managed_kafka_cluster#project ManagedKafkaCluster#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/managed_kafka_cluster#project ManagedKafkaCluster#project}.
 
 ---
 
@@ -1718,7 +1797,7 @@ public ManagedKafkaClusterRebalanceConfig getRebalanceConfig();
 
 rebalance_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/managed_kafka_cluster#rebalance_config ManagedKafkaCluster#rebalance_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/managed_kafka_cluster#rebalance_config ManagedKafkaCluster#rebalance_config}
 
 ---
 
@@ -1732,7 +1811,7 @@ public ManagedKafkaClusterTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/managed_kafka_cluster#timeouts ManagedKafkaCluster#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/managed_kafka_cluster#timeouts ManagedKafkaCluster#timeouts}
 
 ---
 
@@ -1746,7 +1825,7 @@ public ManagedKafkaClusterTlsConfig getTlsConfig();
 
 tls_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/managed_kafka_cluster#tls_config ManagedKafkaCluster#tls_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/managed_kafka_cluster#tls_config ManagedKafkaCluster#tls_config}
 
 ---
 
@@ -1782,7 +1861,7 @@ public ManagedKafkaClusterGcpConfigAccessConfig getAccessConfig();
 
 access_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/managed_kafka_cluster#access_config ManagedKafkaCluster#access_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/managed_kafka_cluster#access_config ManagedKafkaCluster#access_config}
 
 ---
 
@@ -1798,7 +1877,7 @@ The Cloud KMS Key name to use for encryption.
 
 The key must be located in the same region as the cluster and cannot be changed. Must be in the format 'projects/PROJECT_ID/locations/LOCATION/keyRings/KEY_RING/cryptoKeys/KEY'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/managed_kafka_cluster#kms_key ManagedKafkaCluster#kms_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/managed_kafka_cluster#kms_key ManagedKafkaCluster#kms_key}
 
 ---
 
@@ -1811,6 +1890,7 @@ import io.cdktn.providers.google.managed_kafka_cluster.ManagedKafkaClusterGcpCon
 
 ManagedKafkaClusterGcpConfigAccessConfig.builder()
     .networkConfigs(IResolvable|java.util.List<ManagedKafkaClusterGcpConfigAccessConfigNetworkConfigs>)
+//  .publicClusterConfig(ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfig)
     .build();
 ```
 
@@ -1819,6 +1899,7 @@ ManagedKafkaClusterGcpConfigAccessConfig.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfig.property.networkConfigs">networkConfigs</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigNetworkConfigs">ManagedKafkaClusterGcpConfigAccessConfigNetworkConfigs</a>></code> | network_configs block. |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfig.property.publicClusterConfig">publicClusterConfig</a></code> | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfig">ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfig</a></code> | public_cluster_config block. |
 
 ---
 
@@ -1832,7 +1913,21 @@ public IResolvable|java.util.List<ManagedKafkaClusterGcpConfigAccessConfigNetwor
 
 network_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/managed_kafka_cluster#network_configs ManagedKafkaCluster#network_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/managed_kafka_cluster#network_configs ManagedKafkaCluster#network_configs}
+
+---
+
+##### `publicClusterConfig`<sup>Optional</sup> <a name="publicClusterConfig" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfig.property.publicClusterConfig"></a>
+
+```java
+public ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfig getPublicClusterConfig();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfig">ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfig</a>
+
+public_cluster_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/managed_kafka_cluster#public_cluster_config ManagedKafkaCluster#public_cluster_config}
 
 ---
 
@@ -1868,9 +1963,57 @@ Name of the VPC subnet from which the cluster is accessible.
 
 Both broker and bootstrap server IP addresses and DNS entries are automatically created in the subnet. There can only be one subnet per network, and the subnet must be located in the same region as the cluster. The project may differ. The name of the subnet must be in the format 'projects/PROJECT_ID/regions/REGION/subnetworks/SUBNET'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/managed_kafka_cluster#subnet ManagedKafkaCluster#subnet}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/managed_kafka_cluster#subnet ManagedKafkaCluster#subnet}
 
 ---
+
+### ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfig <a name="ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfig" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfig.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.managed_kafka_cluster.ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfig;
+
+ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfig.builder()
+    .allowedSourceIpRanges(java.util.List<java.lang.String>)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfig.property.allowedSourceIpRanges">allowedSourceIpRanges</a></code> | <code>java.util.List<java.lang.String></code> | A list of IPv4 addresses or CIDR ranges that are allowed to connect to the cluster. |
+
+---
+
+##### `allowedSourceIpRanges`<sup>Required</sup> <a name="allowedSourceIpRanges" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfig.property.allowedSourceIpRanges"></a>
+
+```java
+public java.util.List<java.lang.String> getAllowedSourceIpRanges();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+A list of IPv4 addresses or CIDR ranges that are allowed to connect to the cluster.
+
+To protect your cluster, allow access from only trusted external IP ranges. Don't expose your cluster to untrusted ranges.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/managed_kafka_cluster#allowed_source_ip_ranges ManagedKafkaCluster#allowed_source_ip_ranges}
+
+---
+
+### ManagedKafkaClusterPublicClusterDetails <a name="ManagedKafkaClusterPublicClusterDetails" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetails"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetails.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.managed_kafka_cluster.ManagedKafkaClusterPublicClusterDetails;
+
+ManagedKafkaClusterPublicClusterDetails.builder()
+    .build();
+```
+
 
 ### ManagedKafkaClusterRebalanceConfig <a name="ManagedKafkaClusterRebalanceConfig" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterRebalanceConfig"></a>
 
@@ -1902,7 +2045,7 @@ public java.lang.String getMode();
 
 The rebalance behavior for the cluster. When not specified, defaults to 'NO_REBALANCE'. Possible values: 'MODE_UNSPECIFIED', 'NO_REBALANCE', 'AUTO_REBALANCE_ON_SCALE_UP'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/managed_kafka_cluster#mode ManagedKafkaCluster#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/managed_kafka_cluster#mode ManagedKafkaCluster#mode}
 
 ---
 
@@ -1924,9 +2067,9 @@ ManagedKafkaClusterTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/managed_kafka_cluster#create ManagedKafkaCluster#create}. |
-| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/managed_kafka_cluster#delete ManagedKafkaCluster#delete}. |
-| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/managed_kafka_cluster#update ManagedKafkaCluster#update}. |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/managed_kafka_cluster#create ManagedKafkaCluster#create}. |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/managed_kafka_cluster#delete ManagedKafkaCluster#delete}. |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/managed_kafka_cluster#update ManagedKafkaCluster#update}. |
 
 ---
 
@@ -1938,7 +2081,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/managed_kafka_cluster#create ManagedKafkaCluster#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/managed_kafka_cluster#create ManagedKafkaCluster#create}.
 
 ---
 
@@ -1950,7 +2093,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/managed_kafka_cluster#delete ManagedKafkaCluster#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/managed_kafka_cluster#delete ManagedKafkaCluster#delete}.
 
 ---
 
@@ -1962,7 +2105,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/managed_kafka_cluster#update ManagedKafkaCluster#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/managed_kafka_cluster#update ManagedKafkaCluster#update}.
 
 ---
 
@@ -2000,7 +2143,7 @@ The rules for mapping mTLS certificate Distinguished Names (DNs) to shortened pr
 
 This field corresponds exactly to the ssl.principal.mapping.rules broker config and matches the format and syntax defined in the Apache Kafka documentation. Setting or modifying this field will trigger a rolling restart of the Kafka brokers to apply the change. An empty string means that the default Kafka behavior is used. Example: 'RULE:^CN=(.?),OU=ServiceUsers.$/$1@example.com/,DEFAULT'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/managed_kafka_cluster#ssl_principal_mapping_rules ManagedKafkaCluster#ssl_principal_mapping_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/managed_kafka_cluster#ssl_principal_mapping_rules ManagedKafkaCluster#ssl_principal_mapping_rules}
 
 ---
 
@@ -2014,7 +2157,7 @@ public ManagedKafkaClusterTlsConfigTrustConfig getTrustConfig();
 
 trust_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/managed_kafka_cluster#trust_config ManagedKafkaCluster#trust_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/managed_kafka_cluster#trust_config ManagedKafkaCluster#trust_config}
 
 ---
 
@@ -2048,7 +2191,7 @@ public IResolvable|java.util.List<ManagedKafkaClusterTlsConfigTrustConfigCasConf
 
 cas_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/managed_kafka_cluster#cas_configs ManagedKafkaCluster#cas_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/managed_kafka_cluster#cas_configs ManagedKafkaCluster#cas_configs}
 
 ---
 
@@ -2084,7 +2227,7 @@ The name of the CA pool to pull CA certificates from.
 
 The CA pool does not need to be in the same project or location as the Kafka cluster. Must be in the format 'projects/PROJECT_ID/locations/LOCATION/caPools/CA_POOL_ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/managed_kafka_cluster#ca_pool ManagedKafkaCluster#ca_pool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/managed_kafka_cluster#ca_pool ManagedKafkaCluster#ca_pool}
 
 ---
 
@@ -3161,6 +3304,8 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigOutputReference.putNetworkConfigs">putNetworkConfigs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigOutputReference.putPublicClusterConfig">putPublicClusterConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigOutputReference.resetPublicClusterConfig">resetPublicClusterConfig</a></code> | *No description.* |
 
 ---
 
@@ -3326,6 +3471,24 @@ public void putNetworkConfigs(IResolvable|java.util.List<ManagedKafkaClusterGcpC
 
 ---
 
+##### `putPublicClusterConfig` <a name="putPublicClusterConfig" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigOutputReference.putPublicClusterConfig"></a>
+
+```java
+public void putPublicClusterConfig(ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfig value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigOutputReference.putPublicClusterConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfig">ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfig</a>
+
+---
+
+##### `resetPublicClusterConfig` <a name="resetPublicClusterConfig" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigOutputReference.resetPublicClusterConfig"></a>
+
+```java
+public void resetPublicClusterConfig()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -3334,7 +3497,9 @@ public void putNetworkConfigs(IResolvable|java.util.List<ManagedKafkaClusterGcpC
 | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigOutputReference.property.networkConfigs">networkConfigs</a></code> | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigNetworkConfigsList">ManagedKafkaClusterGcpConfigAccessConfigNetworkConfigsList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigOutputReference.property.publicClusterConfig">publicClusterConfig</a></code> | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigOutputReference">ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigOutputReference.property.networkConfigsInput">networkConfigsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigNetworkConfigs">ManagedKafkaClusterGcpConfigAccessConfigNetworkConfigs</a>></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigOutputReference.property.publicClusterConfigInput">publicClusterConfigInput</a></code> | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfig">ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfig">ManagedKafkaClusterGcpConfigAccessConfig</a></code> | *No description.* |
 
 ---
@@ -3373,6 +3538,16 @@ public ManagedKafkaClusterGcpConfigAccessConfigNetworkConfigsList getNetworkConf
 
 ---
 
+##### `publicClusterConfig`<sup>Required</sup> <a name="publicClusterConfig" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigOutputReference.property.publicClusterConfig"></a>
+
+```java
+public ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigOutputReference getPublicClusterConfig();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigOutputReference">ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigOutputReference</a>
+
+---
+
 ##### `networkConfigsInput`<sup>Optional</sup> <a name="networkConfigsInput" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigOutputReference.property.networkConfigsInput"></a>
 
 ```java
@@ -3383,6 +3558,16 @@ public IResolvable|java.util.List<ManagedKafkaClusterGcpConfigAccessConfigNetwor
 
 ---
 
+##### `publicClusterConfigInput`<sup>Optional</sup> <a name="publicClusterConfigInput" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigOutputReference.property.publicClusterConfigInput"></a>
+
+```java
+public ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfig getPublicClusterConfigInput();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfig">ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfig</a>
+
+---
+
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigOutputReference.property.internalValue"></a>
 
 ```java
@@ -3390,6 +3575,277 @@ public ManagedKafkaClusterGcpConfigAccessConfig getInternalValue();
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfig">ManagedKafkaClusterGcpConfigAccessConfig</a>
+
+---
+
+
+### ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigOutputReference <a name="ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigOutputReference" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.managed_kafka_cluster.ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigOutputReference;
+
+new ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigOutputReference.property.allowedSourceIpRangesInput">allowedSourceIpRangesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigOutputReference.property.allowedSourceIpRanges">allowedSourceIpRanges</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfig">ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `allowedSourceIpRangesInput`<sup>Optional</sup> <a name="allowedSourceIpRangesInput" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigOutputReference.property.allowedSourceIpRangesInput"></a>
+
+```java
+public java.util.List<java.lang.String> getAllowedSourceIpRangesInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `allowedSourceIpRanges`<sup>Required</sup> <a name="allowedSourceIpRanges" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigOutputReference.property.allowedSourceIpRanges"></a>
+
+```java
+public java.util.List<java.lang.String> getAllowedSourceIpRanges();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfigOutputReference.property.internalValue"></a>
+
+```java
+public ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfig getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfig">ManagedKafkaClusterGcpConfigAccessConfigPublicClusterConfig</a>
 
 ---
 
@@ -3703,6 +4159,444 @@ public ManagedKafkaClusterGcpConfig getInternalValue();
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterGcpConfig">ManagedKafkaClusterGcpConfig</a>
+
+---
+
+
+### ManagedKafkaClusterPublicClusterDetailsList <a name="ManagedKafkaClusterPublicClusterDetailsList" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsList.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.managed_kafka_cluster.ManagedKafkaClusterPublicClusterDetailsList;
+
+new ManagedKafkaClusterPublicClusterDetailsList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsList.allWithMapKey"></a>
+
+```java
+public DynamicListTerraformIterator allWithMapKey(java.lang.String mapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsList.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsList.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsList.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsList.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsList.get"></a>
+
+```java
+public ManagedKafkaClusterPublicClusterDetailsOutputReference get(java.lang.Number index)
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsList.get.parameter.index"></a>
+
+- *Type:* java.lang.Number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsList.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsList.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+
+### ManagedKafkaClusterPublicClusterDetailsOutputReference <a name="ManagedKafkaClusterPublicClusterDetailsOutputReference" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.managed_kafka_cluster.ManagedKafkaClusterPublicClusterDetailsOutputReference;
+
+new ManagedKafkaClusterPublicClusterDetailsOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* java.lang.Number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsOutputReference.property.discoveryDnsRecords">discoveryDnsRecords</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsOutputReference.property.externalIpAddresses">externalIpAddresses</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetails">ManagedKafkaClusterPublicClusterDetails</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `discoveryDnsRecords`<sup>Required</sup> <a name="discoveryDnsRecords" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsOutputReference.property.discoveryDnsRecords"></a>
+
+```java
+public java.util.List<java.lang.String> getDiscoveryDnsRecords();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `externalIpAddresses`<sup>Required</sup> <a name="externalIpAddresses" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsOutputReference.property.externalIpAddresses"></a>
+
+```java
+public java.util.List<java.lang.String> getExternalIpAddresses();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetailsOutputReference.property.internalValue"></a>
+
+```java
+public ManagedKafkaClusterPublicClusterDetails getInternalValue();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.managedKafkaCluster.ManagedKafkaClusterPublicClusterDetails">ManagedKafkaClusterPublicClusterDetails</a>
 
 ---
 

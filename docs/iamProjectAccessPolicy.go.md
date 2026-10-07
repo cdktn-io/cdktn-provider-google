@@ -4,12 +4,12 @@
 
 ### IamProjectAccessPolicy <a name="IamProjectAccessPolicy" id="@cdktn/provider-google.iamProjectAccessPolicy.IamProjectAccessPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_project_access_policy google_iam_project_access_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_project_access_policy google_iam_project_access_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iamProjectAccessPolicy.IamProjectAccessPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iamprojectaccesspolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/iamprojectaccesspolicy"
 
 iamprojectaccesspolicy.NewIamProjectAccessPolicy(scope Construct, id *string, config IamProjectAccessPolicyConfig) IamProjectAccessPolicy
 ```
@@ -475,7 +475,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.iamProjectAccessPolicy.IamProjectAccessPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iamprojectaccesspolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/iamprojectaccesspolicy"
 
 iamprojectaccesspolicy.IamProjectAccessPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.iamProjectAccessPolicy.IamProjectAccessPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iamprojectaccesspolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/iamprojectaccesspolicy"
 
 iamprojectaccesspolicy.IamProjectAccessPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ iamprojectaccesspolicy.IamProjectAccessPolicy_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.iamProjectAccessPolicy.IamProjectAccessPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iamprojectaccesspolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/iamprojectaccesspolicy"
 
 iamprojectaccesspolicy.IamProjectAccessPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ iamprojectaccesspolicy.IamProjectAccessPolicy_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.iamProjectAccessPolicy.IamProjectAccessPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iamprojectaccesspolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/iamprojectaccesspolicy"
 
 iamprojectaccesspolicy.IamProjectAccessPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -564,7 +564,7 @@ The construct id used in the generated config for the IamProjectAccessPolicy to 
 
 The id of the existing IamProjectAccessPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_project_access_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_project_access_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1028,7 +1028,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.iamProjectAccessPolicy.IamProjectAccessPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iamprojectaccesspolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/iamprojectaccesspolicy"
 
 &iamprojectaccesspolicy.IamProjectAccessPolicyConfig {
 	Connection: interface{},
@@ -1042,11 +1042,11 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iamprojectaccess
 	Location: *string,
 	Annotations: *map[string]*string,
 	DeletionPolicy: *string,
-	Details: github.com/cdktn-io/cdktn-provider-google-go/google/v20.iamProjectAccessPolicy.IamProjectAccessPolicyDetails,
+	Details: github.com/cdktn-io/cdktn-provider-google-go/google/v21.iamProjectAccessPolicy.IamProjectAccessPolicyDetails,
 	DisplayName: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.iamProjectAccessPolicy.IamProjectAccessPolicyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.iamProjectAccessPolicy.IamProjectAccessPolicyTimeouts,
 }
 ```
 
@@ -1067,8 +1067,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iamprojectaccess
 | <code><a href="#@cdktn/provider-google.iamProjectAccessPolicy.IamProjectAccessPolicyConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.iamProjectAccessPolicy.IamProjectAccessPolicyConfig.property.details">Details</a></code> | <code><a href="#@cdktn/provider-google.iamProjectAccessPolicy.IamProjectAccessPolicyDetails">IamProjectAccessPolicyDetails</a></code> | details block. |
 | <code><a href="#@cdktn/provider-google.iamProjectAccessPolicy.IamProjectAccessPolicyConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | The description of the access policy. Must be less than or equal to 63 characters. |
-| <code><a href="#@cdktn/provider-google.iamProjectAccessPolicy.IamProjectAccessPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_project_access_policy#id IamProjectAccessPolicy#id}. |
-| <code><a href="#@cdktn/provider-google.iamProjectAccessPolicy.IamProjectAccessPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_project_access_policy#project IamProjectAccessPolicy#project}. |
+| <code><a href="#@cdktn/provider-google.iamProjectAccessPolicy.IamProjectAccessPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_project_access_policy#id IamProjectAccessPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.iamProjectAccessPolicy.IamProjectAccessPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_project_access_policy#project IamProjectAccessPolicy#project}. |
 | <code><a href="#@cdktn/provider-google.iamProjectAccessPolicy.IamProjectAccessPolicyConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.iamProjectAccessPolicy.IamProjectAccessPolicyTimeouts">IamProjectAccessPolicyTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1158,7 +1158,7 @@ lowercase letters, numbers, hyphens, or dots. Pattern,
 /a-z{2,62}/.
 This value must be unique among all access policies with the same parent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_project_access_policy#access_policy_id IamProjectAccessPolicy#access_policy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_project_access_policy#access_policy_id IamProjectAccessPolicy#access_policy_id}
 
 ---
 
@@ -1172,7 +1172,7 @@ Location *string
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_project_access_policy#location IamProjectAccessPolicy#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_project_access_policy#location IamProjectAccessPolicy#location}
 
 ---
 
@@ -1189,7 +1189,7 @@ User defined annotations. See https://google.aip.dev/148#annotations for more de
 **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
 Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_project_access_policy#annotations IamProjectAccessPolicy#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_project_access_policy#annotations IamProjectAccessPolicy#annotations}
 
 ---
 
@@ -1210,7 +1210,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_project_access_policy#deletion_policy IamProjectAccessPolicy#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_project_access_policy#deletion_policy IamProjectAccessPolicy#deletion_policy}
 
 ---
 
@@ -1224,7 +1224,7 @@ Details IamProjectAccessPolicyDetails
 
 details block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_project_access_policy#details IamProjectAccessPolicy#details}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_project_access_policy#details IamProjectAccessPolicy#details}
 
 ---
 
@@ -1238,7 +1238,7 @@ DisplayName *string
 
 The description of the access policy. Must be less than or equal to 63 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_project_access_policy#display_name IamProjectAccessPolicy#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_project_access_policy#display_name IamProjectAccessPolicy#display_name}
 
 ---
 
@@ -1250,7 +1250,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_project_access_policy#id IamProjectAccessPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_project_access_policy#id IamProjectAccessPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1265,7 +1265,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_project_access_policy#project IamProjectAccessPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_project_access_policy#project IamProjectAccessPolicy#project}.
 
 ---
 
@@ -1279,7 +1279,7 @@ Timeouts IamProjectAccessPolicyTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_project_access_policy#timeouts IamProjectAccessPolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_project_access_policy#timeouts IamProjectAccessPolicy#timeouts}
 
 ---
 
@@ -1288,7 +1288,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.iamProjectAccessPolicy.IamProjectAccessPolicyDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iamprojectaccesspolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/iamprojectaccesspolicy"
 
 &iamprojectaccesspolicy.IamProjectAccessPolicyDetails {
 	Rules: interface{},
@@ -1313,7 +1313,7 @@ Rules interface{}
 
 rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_project_access_policy#rules IamProjectAccessPolicy#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_project_access_policy#rules IamProjectAccessPolicy#rules}
 
 ---
 
@@ -1322,11 +1322,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.iamProjectAccessPolicy.IamProjectAccessPolicyDetailsRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iamprojectaccesspolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/iamprojectaccesspolicy"
 
 &iamprojectaccesspolicy.IamProjectAccessPolicyDetailsRules {
 	Effect: *string,
-	Operation: github.com/cdktn-io/cdktn-provider-google-go/google/v20.iamProjectAccessPolicy.IamProjectAccessPolicyDetailsRulesOperation,
+	Operation: github.com/cdktn-io/cdktn-provider-google-go/google/v21.iamProjectAccessPolicy.IamProjectAccessPolicyDetailsRulesOperation,
 	Principals: *[]*string,
 	Conditions: interface{},
 	Description: *string,
@@ -1357,7 +1357,7 @@ Effect *string
 
 The effect of the rule. Possible values: DENY ALLOW Possible values: ["DENY", "ALLOW"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_project_access_policy#effect IamProjectAccessPolicy#effect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_project_access_policy#effect IamProjectAccessPolicy#effect}
 
 ---
 
@@ -1371,7 +1371,7 @@ Operation IamProjectAccessPolicyDetailsRulesOperation
 
 operation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_project_access_policy#operation IamProjectAccessPolicy#operation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_project_access_policy#operation IamProjectAccessPolicy#operation}
 
 ---
 
@@ -1419,7 +1419,7 @@ following values:
   If the service account is undeleted, this identifier reverts to the
   standard identifier for a service account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_project_access_policy#principals IamProjectAccessPolicy#principals}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_project_access_policy#principals IamProjectAccessPolicy#principals}
 
 ---
 
@@ -1433,7 +1433,7 @@ Conditions interface{}
 
 conditions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_project_access_policy#conditions IamProjectAccessPolicy#conditions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_project_access_policy#conditions IamProjectAccessPolicy#conditions}
 
 ---
 
@@ -1447,7 +1447,7 @@ Description *string
 
 Customer specified description of the rule. Must be less than or equal to 256 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_project_access_policy#description IamProjectAccessPolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_project_access_policy#description IamProjectAccessPolicy#description}
 
 ---
 
@@ -1465,7 +1465,7 @@ For example, you could add a Google
 group to the 'principals', then exclude specific users who belong to
 that group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_project_access_policy#excluded_principals IamProjectAccessPolicy#excluded_principals}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_project_access_policy#excluded_principals IamProjectAccessPolicy#excluded_principals}
 
 ---
 
@@ -1474,7 +1474,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.iamProjectAccessPolicy.IamProjectAccessPolicyDetailsRulesConditions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iamprojectaccesspolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/iamprojectaccesspolicy"
 
 &iamprojectaccesspolicy.IamProjectAccessPolicyDetailsRulesConditions {
 	Service: *string,
@@ -1486,7 +1486,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iamprojectaccess
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.iamProjectAccessPolicy.IamProjectAccessPolicyDetailsRulesConditions.property.service">Service</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_project_access_policy#service IamProjectAccessPolicy#service}. |
+| <code><a href="#@cdktn/provider-google.iamProjectAccessPolicy.IamProjectAccessPolicyDetailsRulesConditions.property.service">Service</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_project_access_policy#service IamProjectAccessPolicy#service}. |
 | <code><a href="#@cdktn/provider-google.iamProjectAccessPolicy.IamProjectAccessPolicyDetailsRulesConditions.property.expression">Expression</a></code> | <code>*string</code> | Textual representation of an expression in Common Expression Language syntax. |
 
 ---
@@ -1499,7 +1499,7 @@ Service *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_project_access_policy#service IamProjectAccessPolicy#service}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_project_access_policy#service IamProjectAccessPolicy#service}.
 
 ---
 
@@ -1513,7 +1513,7 @@ Expression *string
 
 Textual representation of an expression in Common Expression Language syntax.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_project_access_policy#expression IamProjectAccessPolicy#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_project_access_policy#expression IamProjectAccessPolicy#expression}
 
 ---
 
@@ -1522,7 +1522,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.iamProjectAccessPolicy.IamProjectAccessPolicyDetailsRulesOperation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iamprojectaccesspolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/iamprojectaccesspolicy"
 
 &iamprojectaccesspolicy.IamProjectAccessPolicyDetailsRulesOperation {
 	Permissions: *[]*string,
@@ -1556,7 +1556,7 @@ Currently supported permissions are as follows:
 
 * 'eventarc.googleapis.com/messageBuses.publish'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_project_access_policy#permissions IamProjectAccessPolicy#permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_project_access_policy#permissions IamProjectAccessPolicy#permissions}
 
 ---
 
@@ -1576,7 +1576,7 @@ subject to the policy effect.
 The excluded permissions can be specified using the same syntax as
 'permissions'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_project_access_policy#excluded_permissions IamProjectAccessPolicy#excluded_permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_project_access_policy#excluded_permissions IamProjectAccessPolicy#excluded_permissions}
 
 ---
 
@@ -1585,7 +1585,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.iamProjectAccessPolicy.IamProjectAccessPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iamprojectaccesspolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/iamprojectaccesspolicy"
 
 &iamprojectaccesspolicy.IamProjectAccessPolicyTimeouts {
 	Create: *string,
@@ -1598,9 +1598,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iamprojectaccess
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.iamProjectAccessPolicy.IamProjectAccessPolicyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_project_access_policy#create IamProjectAccessPolicy#create}. |
-| <code><a href="#@cdktn/provider-google.iamProjectAccessPolicy.IamProjectAccessPolicyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_project_access_policy#delete IamProjectAccessPolicy#delete}. |
-| <code><a href="#@cdktn/provider-google.iamProjectAccessPolicy.IamProjectAccessPolicyTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_project_access_policy#update IamProjectAccessPolicy#update}. |
+| <code><a href="#@cdktn/provider-google.iamProjectAccessPolicy.IamProjectAccessPolicyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_project_access_policy#create IamProjectAccessPolicy#create}. |
+| <code><a href="#@cdktn/provider-google.iamProjectAccessPolicy.IamProjectAccessPolicyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_project_access_policy#delete IamProjectAccessPolicy#delete}. |
+| <code><a href="#@cdktn/provider-google.iamProjectAccessPolicy.IamProjectAccessPolicyTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_project_access_policy#update IamProjectAccessPolicy#update}. |
 
 ---
 
@@ -1612,7 +1612,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_project_access_policy#create IamProjectAccessPolicy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_project_access_policy#create IamProjectAccessPolicy#create}.
 
 ---
 
@@ -1624,7 +1624,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_project_access_policy#delete IamProjectAccessPolicy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_project_access_policy#delete IamProjectAccessPolicy#delete}.
 
 ---
 
@@ -1636,7 +1636,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_project_access_policy#update IamProjectAccessPolicy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_project_access_policy#update IamProjectAccessPolicy#update}.
 
 ---
 
@@ -1647,7 +1647,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iamProjectAccessPolicy.IamProjectAccessPolicyDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iamprojectaccesspolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/iamprojectaccesspolicy"
 
 iamprojectaccesspolicy.NewIamProjectAccessPolicyDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IamProjectAccessPolicyDetailsOutputReference
 ```
@@ -1931,7 +1931,7 @@ func InternalValue() IamProjectAccessPolicyDetails
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iamProjectAccessPolicy.IamProjectAccessPolicyDetailsRulesConditionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iamprojectaccesspolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/iamprojectaccesspolicy"
 
 iamprojectaccesspolicy.NewIamProjectAccessPolicyDetailsRulesConditionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IamProjectAccessPolicyDetailsRulesConditionsList
 ```
@@ -2091,7 +2091,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iamProjectAccessPolicy.IamProjectAccessPolicyDetailsRulesConditionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iamprojectaccesspolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/iamprojectaccesspolicy"
 
 iamprojectaccesspolicy.NewIamProjectAccessPolicyDetailsRulesConditionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IamProjectAccessPolicyDetailsRulesConditionsOutputReference
 ```
@@ -2409,7 +2409,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iamProjectAccessPolicy.IamProjectAccessPolicyDetailsRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iamprojectaccesspolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/iamprojectaccesspolicy"
 
 iamprojectaccesspolicy.NewIamProjectAccessPolicyDetailsRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IamProjectAccessPolicyDetailsRulesList
 ```
@@ -2569,7 +2569,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iamProjectAccessPolicy.IamProjectAccessPolicyDetailsRulesOperationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iamprojectaccesspolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/iamprojectaccesspolicy"
 
 iamprojectaccesspolicy.NewIamProjectAccessPolicyDetailsRulesOperationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IamProjectAccessPolicyDetailsRulesOperationOutputReference
 ```
@@ -2869,7 +2869,7 @@ func InternalValue() IamProjectAccessPolicyDetailsRulesOperation
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iamProjectAccessPolicy.IamProjectAccessPolicyDetailsRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iamprojectaccesspolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/iamprojectaccesspolicy"
 
 iamprojectaccesspolicy.NewIamProjectAccessPolicyDetailsRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IamProjectAccessPolicyDetailsRulesOutputReference
 ```
@@ -3315,7 +3315,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iamProjectAccessPolicy.IamProjectAccessPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/iamprojectaccesspolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/iamprojectaccesspolicy"
 
 iamprojectaccesspolicy.NewIamProjectAccessPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IamProjectAccessPolicyTimeoutsOutputReference
 ```

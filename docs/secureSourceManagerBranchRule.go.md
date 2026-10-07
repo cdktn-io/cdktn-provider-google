@@ -4,12 +4,12 @@
 
 ### SecureSourceManagerBranchRule <a name="SecureSourceManagerBranchRule" id="@cdktn/provider-google.secureSourceManagerBranchRule.SecureSourceManagerBranchRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_branch_rule google_secure_source_manager_branch_rule}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secure_source_manager_branch_rule google_secure_source_manager_branch_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.secureSourceManagerBranchRule.SecureSourceManagerBranchRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securesourcemanagerbranchrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/securesourcemanagerbranchrule"
 
 securesourcemanagerbranchrule.NewSecureSourceManagerBranchRule(scope Construct, id *string, config SecureSourceManagerBranchRuleConfig) SecureSourceManagerBranchRule
 ```
@@ -490,7 +490,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.secureSourceManagerBranchRule.SecureSourceManagerBranchRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securesourcemanagerbranchrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/securesourcemanagerbranchrule"
 
 securesourcemanagerbranchrule.SecureSourceManagerBranchRule_IsConstruct(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.secureSourceManagerBranchRule.SecureSourceManagerBranchRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securesourcemanagerbranchrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/securesourcemanagerbranchrule"
 
 securesourcemanagerbranchrule.SecureSourceManagerBranchRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -536,7 +536,7 @@ securesourcemanagerbranchrule.SecureSourceManagerBranchRule_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.secureSourceManagerBranchRule.SecureSourceManagerBranchRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securesourcemanagerbranchrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/securesourcemanagerbranchrule"
 
 securesourcemanagerbranchrule.SecureSourceManagerBranchRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -550,7 +550,7 @@ securesourcemanagerbranchrule.SecureSourceManagerBranchRule_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.secureSourceManagerBranchRule.SecureSourceManagerBranchRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securesourcemanagerbranchrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/securesourcemanagerbranchrule"
 
 securesourcemanagerbranchrule.SecureSourceManagerBranchRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -579,7 +579,7 @@ The construct id used in the generated config for the SecureSourceManagerBranchR
 
 The id of the existing SecureSourceManagerBranchRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_branch_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secure_source_manager_branch_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1153,7 +1153,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.secureSourceManagerBranchRule.SecureSourceManagerBranchRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securesourcemanagerbranchrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/securesourcemanagerbranchrule"
 
 &securesourcemanagerbranchrule.SecureSourceManagerBranchRuleConfig {
 	Connection: interface{},
@@ -1177,7 +1177,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securesourcemana
 	RequireCommentsResolved: interface{},
 	RequireLinearHistory: interface{},
 	RequirePullRequest: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.secureSourceManagerBranchRule.SecureSourceManagerBranchRuleTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.secureSourceManagerBranchRule.SecureSourceManagerBranchRuleTimeouts,
 }
 ```
 
@@ -1199,10 +1199,10 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securesourcemana
 | <code><a href="#@cdktn/provider-google.secureSourceManagerBranchRule.SecureSourceManagerBranchRuleConfig.property.allowStaleReviews">AllowStaleReviews</a></code> | <code>interface{}</code> | Determines if allow stale reviews or approvals before merging to the branch. |
 | <code><a href="#@cdktn/provider-google.secureSourceManagerBranchRule.SecureSourceManagerBranchRuleConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.secureSourceManagerBranchRule.SecureSourceManagerBranchRuleConfig.property.disabled">Disabled</a></code> | <code>interface{}</code> | Determines if the branch rule is disabled or not. |
-| <code><a href="#@cdktn/provider-google.secureSourceManagerBranchRule.SecureSourceManagerBranchRuleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_branch_rule#id SecureSourceManagerBranchRule#id}. |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerBranchRule.SecureSourceManagerBranchRuleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secure_source_manager_branch_rule#id SecureSourceManagerBranchRule#id}. |
 | <code><a href="#@cdktn/provider-google.secureSourceManagerBranchRule.SecureSourceManagerBranchRuleConfig.property.minimumApprovalsCount">MinimumApprovalsCount</a></code> | <code>*f64</code> | The minimum number of approvals required for the branch rule to be matched. |
 | <code><a href="#@cdktn/provider-google.secureSourceManagerBranchRule.SecureSourceManagerBranchRuleConfig.property.minimumReviewsCount">MinimumReviewsCount</a></code> | <code>*f64</code> | The minimum number of reviews required for the branch rule to be matched. |
-| <code><a href="#@cdktn/provider-google.secureSourceManagerBranchRule.SecureSourceManagerBranchRuleConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_branch_rule#project SecureSourceManagerBranchRule#project}. |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerBranchRule.SecureSourceManagerBranchRuleConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secure_source_manager_branch_rule#project SecureSourceManagerBranchRule#project}. |
 | <code><a href="#@cdktn/provider-google.secureSourceManagerBranchRule.SecureSourceManagerBranchRuleConfig.property.requireCommentsResolved">RequireCommentsResolved</a></code> | <code>interface{}</code> | Determines if require comments resolved before merging to the branch. |
 | <code><a href="#@cdktn/provider-google.secureSourceManagerBranchRule.SecureSourceManagerBranchRuleConfig.property.requireLinearHistory">RequireLinearHistory</a></code> | <code>interface{}</code> | Determines if require linear history before merging to the branch. |
 | <code><a href="#@cdktn/provider-google.secureSourceManagerBranchRule.SecureSourceManagerBranchRuleConfig.property.requirePullRequest">RequirePullRequest</a></code> | <code>interface{}</code> | Determines if the branch rule requires a pull request or not. |
@@ -1290,7 +1290,7 @@ BranchRuleId *string
 
 The ID for the BranchRule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_branch_rule#branch_rule_id SecureSourceManagerBranchRule#branch_rule_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secure_source_manager_branch_rule#branch_rule_id SecureSourceManagerBranchRule#branch_rule_id}
 
 ---
 
@@ -1304,7 +1304,7 @@ IncludePattern *string
 
 The BranchRule matches branches based on the specified regular expression. Use .* to match all branches.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_branch_rule#include_pattern SecureSourceManagerBranchRule#include_pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secure_source_manager_branch_rule#include_pattern SecureSourceManagerBranchRule#include_pattern}
 
 ---
 
@@ -1318,7 +1318,7 @@ Location *string
 
 The location for the Repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_branch_rule#location SecureSourceManagerBranchRule#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secure_source_manager_branch_rule#location SecureSourceManagerBranchRule#location}
 
 ---
 
@@ -1332,7 +1332,7 @@ RepositoryId *string
 
 The ID for the Repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_branch_rule#repository_id SecureSourceManagerBranchRule#repository_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secure_source_manager_branch_rule#repository_id SecureSourceManagerBranchRule#repository_id}
 
 ---
 
@@ -1346,7 +1346,7 @@ AllowStaleReviews interface{}
 
 Determines if allow stale reviews or approvals before merging to the branch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_branch_rule#allow_stale_reviews SecureSourceManagerBranchRule#allow_stale_reviews}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secure_source_manager_branch_rule#allow_stale_reviews SecureSourceManagerBranchRule#allow_stale_reviews}
 
 ---
 
@@ -1367,7 +1367,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_branch_rule#deletion_policy SecureSourceManagerBranchRule#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secure_source_manager_branch_rule#deletion_policy SecureSourceManagerBranchRule#deletion_policy}
 
 ---
 
@@ -1381,7 +1381,7 @@ Disabled interface{}
 
 Determines if the branch rule is disabled or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_branch_rule#disabled SecureSourceManagerBranchRule#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secure_source_manager_branch_rule#disabled SecureSourceManagerBranchRule#disabled}
 
 ---
 
@@ -1393,7 +1393,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_branch_rule#id SecureSourceManagerBranchRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secure_source_manager_branch_rule#id SecureSourceManagerBranchRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1410,7 +1410,7 @@ MinimumApprovalsCount *f64
 
 The minimum number of approvals required for the branch rule to be matched.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_branch_rule#minimum_approvals_count SecureSourceManagerBranchRule#minimum_approvals_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secure_source_manager_branch_rule#minimum_approvals_count SecureSourceManagerBranchRule#minimum_approvals_count}
 
 ---
 
@@ -1424,7 +1424,7 @@ MinimumReviewsCount *f64
 
 The minimum number of reviews required for the branch rule to be matched.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_branch_rule#minimum_reviews_count SecureSourceManagerBranchRule#minimum_reviews_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secure_source_manager_branch_rule#minimum_reviews_count SecureSourceManagerBranchRule#minimum_reviews_count}
 
 ---
 
@@ -1436,7 +1436,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_branch_rule#project SecureSourceManagerBranchRule#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secure_source_manager_branch_rule#project SecureSourceManagerBranchRule#project}.
 
 ---
 
@@ -1450,7 +1450,7 @@ RequireCommentsResolved interface{}
 
 Determines if require comments resolved before merging to the branch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_branch_rule#require_comments_resolved SecureSourceManagerBranchRule#require_comments_resolved}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secure_source_manager_branch_rule#require_comments_resolved SecureSourceManagerBranchRule#require_comments_resolved}
 
 ---
 
@@ -1464,7 +1464,7 @@ RequireLinearHistory interface{}
 
 Determines if require linear history before merging to the branch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_branch_rule#require_linear_history SecureSourceManagerBranchRule#require_linear_history}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secure_source_manager_branch_rule#require_linear_history SecureSourceManagerBranchRule#require_linear_history}
 
 ---
 
@@ -1478,7 +1478,7 @@ RequirePullRequest interface{}
 
 Determines if the branch rule requires a pull request or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_branch_rule#require_pull_request SecureSourceManagerBranchRule#require_pull_request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secure_source_manager_branch_rule#require_pull_request SecureSourceManagerBranchRule#require_pull_request}
 
 ---
 
@@ -1492,7 +1492,7 @@ Timeouts SecureSourceManagerBranchRuleTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_branch_rule#timeouts SecureSourceManagerBranchRule#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secure_source_manager_branch_rule#timeouts SecureSourceManagerBranchRule#timeouts}
 
 ---
 
@@ -1501,7 +1501,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.secureSourceManagerBranchRule.SecureSourceManagerBranchRuleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securesourcemanagerbranchrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/securesourcemanagerbranchrule"
 
 &securesourcemanagerbranchrule.SecureSourceManagerBranchRuleTimeouts {
 	Create: *string,
@@ -1514,9 +1514,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securesourcemana
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.secureSourceManagerBranchRule.SecureSourceManagerBranchRuleTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_branch_rule#create SecureSourceManagerBranchRule#create}. |
-| <code><a href="#@cdktn/provider-google.secureSourceManagerBranchRule.SecureSourceManagerBranchRuleTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_branch_rule#delete SecureSourceManagerBranchRule#delete}. |
-| <code><a href="#@cdktn/provider-google.secureSourceManagerBranchRule.SecureSourceManagerBranchRuleTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_branch_rule#update SecureSourceManagerBranchRule#update}. |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerBranchRule.SecureSourceManagerBranchRuleTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secure_source_manager_branch_rule#create SecureSourceManagerBranchRule#create}. |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerBranchRule.SecureSourceManagerBranchRuleTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secure_source_manager_branch_rule#delete SecureSourceManagerBranchRule#delete}. |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerBranchRule.SecureSourceManagerBranchRuleTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secure_source_manager_branch_rule#update SecureSourceManagerBranchRule#update}. |
 
 ---
 
@@ -1528,7 +1528,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_branch_rule#create SecureSourceManagerBranchRule#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secure_source_manager_branch_rule#create SecureSourceManagerBranchRule#create}.
 
 ---
 
@@ -1540,7 +1540,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_branch_rule#delete SecureSourceManagerBranchRule#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secure_source_manager_branch_rule#delete SecureSourceManagerBranchRule#delete}.
 
 ---
 
@@ -1552,7 +1552,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_branch_rule#update SecureSourceManagerBranchRule#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secure_source_manager_branch_rule#update SecureSourceManagerBranchRule#update}.
 
 ---
 
@@ -1563,7 +1563,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.secureSourceManagerBranchRule.SecureSourceManagerBranchRuleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securesourcemanagerbranchrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/securesourcemanagerbranchrule"
 
 securesourcemanagerbranchrule.NewSecureSourceManagerBranchRuleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecureSourceManagerBranchRuleTimeoutsOutputReference
 ```

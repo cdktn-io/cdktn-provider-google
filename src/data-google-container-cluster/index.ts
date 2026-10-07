@@ -56,7 +56,7 @@ import { Construct } from 'constructs';
 import * as cdktn from 'cdktn';
 export interface DataGoogleContainerClusterConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/container_cluster#id DataGoogleContainerCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/container_cluster#id DataGoogleContainerCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -65,25 +65,31 @@ export interface DataGoogleContainerClusterConfig extends cdktn.TerraformMetaArg
   /**
   * The location (region or zone) in which the cluster master will be created, as well as the default node location. If you specify a zone (such as us-central1-a), the cluster will be a zonal cluster with a single cluster master. If you specify a region (such as us-west1), the cluster will be a regional cluster with multiple masters spread across zones in the region, and with default node locations in those zones as well.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/container_cluster#location DataGoogleContainerCluster#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/container_cluster#location DataGoogleContainerCluster#location}
   */
   readonly location?: string;
   /**
   * The name of the cluster, unique within the project and location.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/container_cluster#name DataGoogleContainerCluster#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/container_cluster#name DataGoogleContainerCluster#name}
   */
   readonly name: string;
   /**
   * The ID of the project in which the resource belongs. If it is not provided, the provider project is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/container_cluster#project DataGoogleContainerCluster#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/container_cluster#project DataGoogleContainerCluster#project}
   */
   readonly project?: string;
+  /**
+  * If true, the provider will not refresh the inline node_pool state from the API during cluster reads. Set this to true only when all node pools are managed via separate google_container_node_pool resources; it substantially improves plan/apply performance on clusters with a high node pool count. Must not be set to true when inline node_pool blocks are defined on this resource.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/container_cluster#skip_node_pool_refresh DataGoogleContainerCluster#skip_node_pool_refresh}
+  */
+  readonly skipNodePoolRefresh?: boolean | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/container_cluster google_container_cluster}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/container_cluster google_container_cluster}
 */
 export class DataGoogleContainerCluster extends cdktn.TerraformDataSource {
 
@@ -99,7 +105,7 @@ export class DataGoogleContainerCluster extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataGoogleContainerCluster resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleContainerCluster to import
-  * @param importFromId The id of the existing DataGoogleContainerCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/container_cluster#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleContainerCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/container_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleContainerCluster to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -111,7 +117,7 @@ export class DataGoogleContainerCluster extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/container_cluster google_container_cluster} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/container_cluster google_container_cluster} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -122,8 +128,8 @@ export class DataGoogleContainerCluster extends cdktn.TerraformDataSource {
       terraformResourceType: 'google_container_cluster',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '7.46.1',
-        providerVersionConstraint: '~> 7.0'
+        providerVersion: '8.6.0',
+        providerVersionConstraint: '~> 8.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -137,6 +143,7 @@ export class DataGoogleContainerCluster extends cdktn.TerraformDataSource {
     this._location = config.location;
     this._name = config.name;
     this._project = config.project;
+    this._skipNodePoolRefresh = config.skipNodePoolRefresh;
   }
 
   // ==========
@@ -674,9 +681,20 @@ export class DataGoogleContainerCluster extends cdktn.TerraformDataSource {
     return this.getStringAttribute('services_ipv4_cidr');
   }
 
-  // skip_node_pool_refresh - computed: true, optional: false, required: false
+  // skip_node_pool_refresh - computed: false, optional: true, required: false
+  private _skipNodePoolRefresh?: boolean | cdktn.IResolvable; 
   public get skipNodePoolRefresh() {
     return this.getBooleanAttribute('skip_node_pool_refresh');
+  }
+  public set skipNodePoolRefresh(value: boolean | cdktn.IResolvable) {
+    this._skipNodePoolRefresh = value;
+  }
+  public resetSkipNodePoolRefresh() {
+    this._skipNodePoolRefresh = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get skipNodePoolRefreshInput() {
+    return this._skipNodePoolRefresh;
   }
 
   // subnetwork - computed: true, optional: false, required: false
@@ -723,6 +741,7 @@ export class DataGoogleContainerCluster extends cdktn.TerraformDataSource {
       location: cdktn.stringToTerraform(this._location),
       name: cdktn.stringToTerraform(this._name),
       project: cdktn.stringToTerraform(this._project),
+      skip_node_pool_refresh: cdktn.booleanToTerraform(this._skipNodePoolRefresh),
     };
   }
 
@@ -751,6 +770,12 @@ export class DataGoogleContainerCluster extends cdktn.TerraformDataSource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      skip_node_pool_refresh: {
+        value: cdktn.booleanToHclTerraform(this._skipNodePoolRefresh),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
       },
     };
 

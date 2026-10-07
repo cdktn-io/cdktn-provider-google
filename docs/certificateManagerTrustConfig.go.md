@@ -4,12 +4,12 @@
 
 ### CertificateManagerTrustConfig <a name="CertificateManagerTrustConfig" id="@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/certificate_manager_trust_config google_certificate_manager_trust_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/certificate_manager_trust_config google_certificate_manager_trust_config}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/certificatemanagertrustconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/certificatemanagertrustconfig"
 
 certificatemanagertrustconfig.NewCertificateManagerTrustConfig(scope Construct, id *string, config CertificateManagerTrustConfigConfig) CertificateManagerTrustConfig
 ```
@@ -495,7 +495,7 @@ func ResetTrustStores()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/certificatemanagertrustconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/certificatemanagertrustconfig"
 
 certificatemanagertrustconfig.CertificateManagerTrustConfig_IsConstruct(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/certificatemanagertrustconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/certificatemanagertrustconfig"
 
 certificatemanagertrustconfig.CertificateManagerTrustConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -541,7 +541,7 @@ certificatemanagertrustconfig.CertificateManagerTrustConfig_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/certificatemanagertrustconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/certificatemanagertrustconfig"
 
 certificatemanagertrustconfig.CertificateManagerTrustConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -555,7 +555,7 @@ certificatemanagertrustconfig.CertificateManagerTrustConfig_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/certificatemanagertrustconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/certificatemanagertrustconfig"
 
 certificatemanagertrustconfig.CertificateManagerTrustConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -584,7 +584,7 @@ The construct id used in the generated config for the CertificateManagerTrustCon
 
 The id of the existing CertificateManagerTrustConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/certificate_manager_trust_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/certificate_manager_trust_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1048,7 +1048,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigAllowlistedCertificates.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/certificatemanagertrustconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/certificatemanagertrustconfig"
 
 &certificatemanagertrustconfig.CertificateManagerTrustConfigAllowlistedCertificates {
 	PemCertificate: *string,
@@ -1075,7 +1075,7 @@ PEM certificate that is allowlisted.
 
 The certificate can be up to 5k bytes, and must be a parseable X.509 certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/certificate_manager_trust_config#pem_certificate CertificateManagerTrustConfig#pem_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/certificate_manager_trust_config#pem_certificate CertificateManagerTrustConfig#pem_certificate}
 
 ---
 
@@ -1084,7 +1084,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/certificatemanagertrustconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/certificatemanagertrustconfig"
 
 &certificatemanagertrustconfig.CertificateManagerTrustConfigConfig {
 	Connection: interface{},
@@ -1102,7 +1102,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/certificatemanag
 	Id: *string,
 	Labels: *map[string]*string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.certificateManagerTrustConfig.CertificateManagerTrustConfigTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.certificateManagerTrustConfig.CertificateManagerTrustConfigTimeouts,
 	TrustStores: interface{},
 }
 ```
@@ -1123,9 +1123,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/certificatemanag
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigConfig.property.allowlistedCertificates">AllowlistedCertificates</a></code> | <code>interface{}</code> | allowlisted_certificates block. |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigConfig.property.description">Description</a></code> | <code>*string</code> | One or more paragraphs of text description of a trust config. |
-| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/certificate_manager_trust_config#id CertificateManagerTrustConfig#id}. |
+| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/certificate_manager_trust_config#id CertificateManagerTrustConfig#id}. |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | Set of label tags associated with the trust config. |
-| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/certificate_manager_trust_config#project CertificateManagerTrustConfig#project}. |
+| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/certificate_manager_trust_config#project CertificateManagerTrustConfig#project}. |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTimeouts">CertificateManagerTrustConfigTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigConfig.property.trustStores">TrustStores</a></code> | <code>interface{}</code> | trust_stores block. |
 
@@ -1211,7 +1211,7 @@ Location *string
 
 The trust config location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/certificate_manager_trust_config#location CertificateManagerTrustConfig#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/certificate_manager_trust_config#location CertificateManagerTrustConfig#location}
 
 ---
 
@@ -1225,7 +1225,7 @@ Name *string
 
 A user-defined name of the trust config. Trust config names must be unique globally.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/certificate_manager_trust_config#name CertificateManagerTrustConfig#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/certificate_manager_trust_config#name CertificateManagerTrustConfig#name}
 
 ---
 
@@ -1239,7 +1239,7 @@ AllowlistedCertificates interface{}
 
 allowlisted_certificates block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/certificate_manager_trust_config#allowlisted_certificates CertificateManagerTrustConfig#allowlisted_certificates}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/certificate_manager_trust_config#allowlisted_certificates CertificateManagerTrustConfig#allowlisted_certificates}
 
 ---
 
@@ -1260,7 +1260,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/certificate_manager_trust_config#deletion_policy CertificateManagerTrustConfig#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/certificate_manager_trust_config#deletion_policy CertificateManagerTrustConfig#deletion_policy}
 
 ---
 
@@ -1274,7 +1274,7 @@ Description *string
 
 One or more paragraphs of text description of a trust config.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/certificate_manager_trust_config#description CertificateManagerTrustConfig#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/certificate_manager_trust_config#description CertificateManagerTrustConfig#description}
 
 ---
 
@@ -1286,7 +1286,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/certificate_manager_trust_config#id CertificateManagerTrustConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/certificate_manager_trust_config#id CertificateManagerTrustConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1306,7 +1306,7 @@ Set of label tags associated with the trust config.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/certificate_manager_trust_config#labels CertificateManagerTrustConfig#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/certificate_manager_trust_config#labels CertificateManagerTrustConfig#labels}
 
 ---
 
@@ -1318,7 +1318,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/certificate_manager_trust_config#project CertificateManagerTrustConfig#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/certificate_manager_trust_config#project CertificateManagerTrustConfig#project}.
 
 ---
 
@@ -1332,7 +1332,7 @@ Timeouts CertificateManagerTrustConfigTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/certificate_manager_trust_config#timeouts CertificateManagerTrustConfig#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/certificate_manager_trust_config#timeouts CertificateManagerTrustConfig#timeouts}
 
 ---
 
@@ -1346,7 +1346,7 @@ TrustStores interface{}
 
 trust_stores block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/certificate_manager_trust_config#trust_stores CertificateManagerTrustConfig#trust_stores}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/certificate_manager_trust_config#trust_stores CertificateManagerTrustConfig#trust_stores}
 
 ---
 
@@ -1355,7 +1355,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/certificatemanagertrustconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/certificatemanagertrustconfig"
 
 &certificatemanagertrustconfig.CertificateManagerTrustConfigTimeouts {
 	Create: *string,
@@ -1368,9 +1368,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/certificatemanag
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/certificate_manager_trust_config#create CertificateManagerTrustConfig#create}. |
-| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/certificate_manager_trust_config#delete CertificateManagerTrustConfig#delete}. |
-| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/certificate_manager_trust_config#update CertificateManagerTrustConfig#update}. |
+| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/certificate_manager_trust_config#create CertificateManagerTrustConfig#create}. |
+| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/certificate_manager_trust_config#delete CertificateManagerTrustConfig#delete}. |
+| <code><a href="#@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/certificate_manager_trust_config#update CertificateManagerTrustConfig#update}. |
 
 ---
 
@@ -1382,7 +1382,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/certificate_manager_trust_config#create CertificateManagerTrustConfig#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/certificate_manager_trust_config#create CertificateManagerTrustConfig#create}.
 
 ---
 
@@ -1394,7 +1394,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/certificate_manager_trust_config#delete CertificateManagerTrustConfig#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/certificate_manager_trust_config#delete CertificateManagerTrustConfig#delete}.
 
 ---
 
@@ -1406,7 +1406,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/certificate_manager_trust_config#update CertificateManagerTrustConfig#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/certificate_manager_trust_config#update CertificateManagerTrustConfig#update}.
 
 ---
 
@@ -1415,7 +1415,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStores.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/certificatemanagertrustconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/certificatemanagertrustconfig"
 
 &certificatemanagertrustconfig.CertificateManagerTrustConfigTrustStores {
 	IntermediateCas: interface{},
@@ -1442,7 +1442,7 @@ IntermediateCas interface{}
 
 intermediate_cas block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/certificate_manager_trust_config#intermediate_cas CertificateManagerTrustConfig#intermediate_cas}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/certificate_manager_trust_config#intermediate_cas CertificateManagerTrustConfig#intermediate_cas}
 
 ---
 
@@ -1456,7 +1456,7 @@ TrustAnchors interface{}
 
 trust_anchors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/certificate_manager_trust_config#trust_anchors CertificateManagerTrustConfig#trust_anchors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/certificate_manager_trust_config#trust_anchors CertificateManagerTrustConfig#trust_anchors}
 
 ---
 
@@ -1465,7 +1465,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresIntermediateCas.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/certificatemanagertrustconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/certificatemanagertrustconfig"
 
 &certificatemanagertrustconfig.CertificateManagerTrustConfigTrustStoresIntermediateCas {
 	PemCertificate: *string,
@@ -1492,7 +1492,7 @@ PEM intermediate certificate used for building up paths for validation.
 
 Each certificate provided in PEM format may occupy up to 5kB.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/certificate_manager_trust_config#pem_certificate CertificateManagerTrustConfig#pem_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/certificate_manager_trust_config#pem_certificate CertificateManagerTrustConfig#pem_certificate}
 
 ---
 
@@ -1501,7 +1501,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresTrustAnchors.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/certificatemanagertrustconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/certificatemanagertrustconfig"
 
 &certificatemanagertrustconfig.CertificateManagerTrustConfigTrustStoresTrustAnchors {
 	PemCertificate: *string,
@@ -1526,7 +1526,7 @@ PemCertificate *string
 
 PEM root certificate of the PKI used for validation. Each certificate provided in PEM format may occupy up to 5kB.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/certificate_manager_trust_config#pem_certificate CertificateManagerTrustConfig#pem_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/certificate_manager_trust_config#pem_certificate CertificateManagerTrustConfig#pem_certificate}
 
 ---
 
@@ -1537,7 +1537,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigAllowlistedCertificatesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/certificatemanagertrustconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/certificatemanagertrustconfig"
 
 certificatemanagertrustconfig.NewCertificateManagerTrustConfigAllowlistedCertificatesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CertificateManagerTrustConfigAllowlistedCertificatesList
 ```
@@ -1697,7 +1697,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigAllowlistedCertificatesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/certificatemanagertrustconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/certificatemanagertrustconfig"
 
 certificatemanagertrustconfig.NewCertificateManagerTrustConfigAllowlistedCertificatesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CertificateManagerTrustConfigAllowlistedCertificatesOutputReference
 ```
@@ -1986,7 +1986,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/certificatemanagertrustconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/certificatemanagertrustconfig"
 
 certificatemanagertrustconfig.NewCertificateManagerTrustConfigTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CertificateManagerTrustConfigTimeoutsOutputReference
 ```
@@ -2322,7 +2322,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresIntermediateCasList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/certificatemanagertrustconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/certificatemanagertrustconfig"
 
 certificatemanagertrustconfig.NewCertificateManagerTrustConfigTrustStoresIntermediateCasList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CertificateManagerTrustConfigTrustStoresIntermediateCasList
 ```
@@ -2482,7 +2482,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresIntermediateCasOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/certificatemanagertrustconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/certificatemanagertrustconfig"
 
 certificatemanagertrustconfig.NewCertificateManagerTrustConfigTrustStoresIntermediateCasOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CertificateManagerTrustConfigTrustStoresIntermediateCasOutputReference
 ```
@@ -2778,7 +2778,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/certificatemanagertrustconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/certificatemanagertrustconfig"
 
 certificatemanagertrustconfig.NewCertificateManagerTrustConfigTrustStoresList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CertificateManagerTrustConfigTrustStoresList
 ```
@@ -2938,7 +2938,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/certificatemanagertrustconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/certificatemanagertrustconfig"
 
 certificatemanagertrustconfig.NewCertificateManagerTrustConfigTrustStoresOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CertificateManagerTrustConfigTrustStoresOutputReference
 ```
@@ -3289,7 +3289,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresTrustAnchorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/certificatemanagertrustconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/certificatemanagertrustconfig"
 
 certificatemanagertrustconfig.NewCertificateManagerTrustConfigTrustStoresTrustAnchorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CertificateManagerTrustConfigTrustStoresTrustAnchorsList
 ```
@@ -3449,7 +3449,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresTrustAnchorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/certificatemanagertrustconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/certificatemanagertrustconfig"
 
 certificatemanagertrustconfig.NewCertificateManagerTrustConfigTrustStoresTrustAnchorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CertificateManagerTrustConfigTrustStoresTrustAnchorsOutputReference
 ```

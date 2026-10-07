@@ -4,7 +4,7 @@
 
 ### ChronicleEnvironment <a name="ChronicleEnvironment" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment google_chronicle_environment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment google_chronicle_environment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.Initializer"></a>
 
@@ -28,12 +28,17 @@ ChronicleEnvironment.Builder.create(Construct scope, java.lang.String id)
     .location(java.lang.String)
     .retentionDuration(java.lang.Number)
 //  .aliasesJson(java.lang.String)
+//  .base64Image(java.lang.String)
 //  .dataAccessScopesJson(java.lang.String)
 //  .deletionPolicy(java.lang.String)
 //  .deletionProtection(java.lang.Boolean|IResolvable)
+//  .dynamicParameters(IResolvable|java.util.List<ChronicleEnvironmentDynamicParameters>)
 //  .id(java.lang.String)
+//  .instanceUri(java.lang.String)
+//  .parallelInstance(java.lang.String)
 //  .project(java.lang.String)
 //  .timeouts(ChronicleEnvironmentTimeouts)
+//  .weight(java.lang.Number)
     .build();
 ```
 
@@ -57,12 +62,17 @@ ChronicleEnvironment.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122. |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.Initializer.parameter.retentionDuration">retentionDuration</a></code> | <code>java.lang.Number</code> | Environment data retention in months. |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.Initializer.parameter.aliasesJson">aliasesJson</a></code> | <code>java.lang.String</code> | Environment nicknames. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.Initializer.parameter.base64Image">base64Image</a></code> | <code>java.lang.String</code> | Environment icon. |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.Initializer.parameter.dataAccessScopesJson">dataAccessScopesJson</a></code> | <code>java.lang.String</code> | data access scopes. |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.Initializer.parameter.deletionProtection">deletionProtection</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether Terraform will be prevented from destroying the environment. |
-| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#id ChronicleEnvironment#id}. |
-| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#project ChronicleEnvironment#project}. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.Initializer.parameter.dynamicParameters">dynamicParameters</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParameters">ChronicleEnvironmentDynamicParameters</a>></code> | dynamic_parameters block. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#id ChronicleEnvironment#id}. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.Initializer.parameter.instanceUri">instanceUri</a></code> | <code>java.lang.String</code> | URL of the environment. Used to route UI links to the correct SIEM instance when making cross-SecOps requests from SOAR. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.Initializer.parameter.parallelInstance">parallelInstance</a></code> | <code>java.lang.String</code> | The optional parallel SIEM instance used as a data source. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#project ChronicleEnvironment#project}. |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentTimeouts">ChronicleEnvironmentTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.Initializer.parameter.weight">weight</a></code> | <code>java.lang.Number</code> | The weight of the environment, enabling customers to control distribution of resources between the separate environments in a single instance of Chronicle SOAR. |
 
 ---
 
@@ -132,7 +142,7 @@ Must be unique amongst siblings in the same scope
 
 MAX_NAME_LENGTH = 256 Name of the contact for the environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#contact ChronicleEnvironment#contact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#contact ChronicleEnvironment#contact}
 
 ---
 
@@ -142,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 MAX_NAME_LENGTH = 256 Email of the contact for the environment. Multiple emails can be sepereated with the ';' character.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#contact_emails ChronicleEnvironment#contact_emails}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#contact_emails ChronicleEnvironment#contact_emails}
 
 ---
 
@@ -152,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 MAX_NAME_LENGTH = 256 Phone number of the contact for the environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#contact_phone ChronicleEnvironment#contact_phone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#contact_phone ChronicleEnvironment#contact_phone}
 
 ---
 
@@ -162,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 MAX_NAME_LENGTH = 256 Description of the environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#description ChronicleEnvironment#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#description ChronicleEnvironment#description}
 
 ---
 
@@ -172,7 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Name of the environment MAX_NAME_LENGTH = 256.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#display_name ChronicleEnvironment#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#display_name ChronicleEnvironment#display_name}
 
 ---
 
@@ -182,7 +192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#instance ChronicleEnvironment#instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#instance ChronicleEnvironment#instance}
 
 ---
 
@@ -192,7 +202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#location ChronicleEnvironment#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#location ChronicleEnvironment#location}
 
 ---
 
@@ -202,7 +212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Environment data retention in months.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#retention_duration ChronicleEnvironment#retention_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#retention_duration ChronicleEnvironment#retention_duration}
 
 ---
 
@@ -212,7 +222,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Environment nicknames.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#aliases_json ChronicleEnvironment#aliases_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#aliases_json ChronicleEnvironment#aliases_json}
+
+---
+
+##### `base64Image`<sup>Optional</sup> <a name="base64Image" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.Initializer.parameter.base64Image"></a>
+
+- *Type:* java.lang.String
+
+Environment icon.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#base64_image ChronicleEnvironment#base64_image}
 
 ---
 
@@ -222,7 +242,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 data access scopes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#data_access_scopes_json ChronicleEnvironment#data_access_scopes_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#data_access_scopes_json ChronicleEnvironment#data_access_scopes_json}
 
 ---
 
@@ -239,7 +259,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#deletion_policy ChronicleEnvironment#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#deletion_policy ChronicleEnvironment#deletion_policy}
 
 ---
 
@@ -251,7 +271,17 @@ Whether Terraform will be prevented from destroying the environment.
 
 Deleting an environment will remove all its data and all playbooks, environments, integrations instances, reports and agents related to the environment. Once you delete an environment, it cannot be reversed. Deleting environments via terraform destroy or terraform apply will only succeed if this field is false in the Terraform state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#deletion_protection ChronicleEnvironment#deletion_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#deletion_protection ChronicleEnvironment#deletion_protection}
+
+---
+
+##### `dynamicParameters`<sup>Optional</sup> <a name="dynamicParameters" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.Initializer.parameter.dynamicParameters"></a>
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParameters">ChronicleEnvironmentDynamicParameters</a>>
+
+dynamic_parameters block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#dynamic_parameters ChronicleEnvironment#dynamic_parameters}
 
 ---
 
@@ -259,10 +289,37 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#id ChronicleEnvironment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#id ChronicleEnvironment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `instanceUri`<sup>Optional</sup> <a name="instanceUri" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.Initializer.parameter.instanceUri"></a>
+
+- *Type:* java.lang.String
+
+URL of the environment. Used to route UI links to the correct SIEM instance when making cross-SecOps requests from SOAR.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#instance_uri ChronicleEnvironment#instance_uri}
+
+---
+
+##### `parallelInstance`<sup>Optional</sup> <a name="parallelInstance" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.Initializer.parameter.parallelInstance"></a>
+
+- *Type:* java.lang.String
+
+The optional parallel SIEM instance used as a data source.
+
+Used to route
+API requests to the correct SIEM instance when making cross-SecOps requests
+from SOAR. For most customers, this is not required, since the parent
+instance is used as the data source by default.
+Format:
+projects/{project}/locations/{location}/instances/{instance}
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#parallel_instance ChronicleEnvironment#parallel_instance}
 
 ---
 
@@ -270,7 +327,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#project ChronicleEnvironment#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#project ChronicleEnvironment#project}.
 
 ---
 
@@ -280,7 +337,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#timeouts ChronicleEnvironment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#timeouts ChronicleEnvironment#timeouts}
+
+---
+
+##### `weight`<sup>Optional</sup> <a name="weight" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.Initializer.parameter.weight"></a>
+
+- *Type:* java.lang.Number
+
+The weight of the environment, enabling customers to control distribution of resources between the separate environments in a single instance of Chronicle SOAR.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#weight ChronicleEnvironment#weight}
 
 ---
 
@@ -312,14 +379,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.putDynamicParameters">putDynamicParameters</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.resetAliasesJson">resetAliasesJson</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.resetBase64Image">resetBase64Image</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.resetDataAccessScopesJson">resetDataAccessScopesJson</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.resetDeletionProtection">resetDeletionProtection</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.resetDynamicParameters">resetDynamicParameters</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.resetInstanceUri">resetInstanceUri</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.resetParallelInstance">resetParallelInstance</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.resetProject">resetProject</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.resetTimeouts">resetTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.resetWeight">resetWeight</a></code> | *No description.* |
 
 ---
 
@@ -634,6 +707,18 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `putDynamicParameters` <a name="putDynamicParameters" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.putDynamicParameters"></a>
+
+```java
+public void putDynamicParameters(IResolvable|java.util.List<ChronicleEnvironmentDynamicParameters> value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.putDynamicParameters.parameter.value"></a>
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParameters">ChronicleEnvironmentDynamicParameters</a>>
+
+---
+
 ##### `putTimeouts` <a name="putTimeouts" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.putTimeouts"></a>
 
 ```java
@@ -650,6 +735,12 @@ public void putTimeouts(ChronicleEnvironmentTimeouts value)
 
 ```java
 public void resetAliasesJson()
+```
+
+##### `resetBase64Image` <a name="resetBase64Image" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.resetBase64Image"></a>
+
+```java
+public void resetBase64Image()
 ```
 
 ##### `resetDataAccessScopesJson` <a name="resetDataAccessScopesJson" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.resetDataAccessScopesJson"></a>
@@ -670,10 +761,28 @@ public void resetDeletionPolicy()
 public void resetDeletionProtection()
 ```
 
+##### `resetDynamicParameters` <a name="resetDynamicParameters" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.resetDynamicParameters"></a>
+
+```java
+public void resetDynamicParameters()
+```
+
 ##### `resetId` <a name="resetId" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.resetId"></a>
 
 ```java
 public void resetId()
+```
+
+##### `resetInstanceUri` <a name="resetInstanceUri" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.resetInstanceUri"></a>
+
+```java
+public void resetInstanceUri()
+```
+
+##### `resetParallelInstance` <a name="resetParallelInstance" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.resetParallelInstance"></a>
+
+```java
+public void resetParallelInstance()
 ```
 
 ##### `resetProject` <a name="resetProject" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.resetProject"></a>
@@ -686,6 +795,12 @@ public void resetProject()
 
 ```java
 public void resetTimeouts()
+```
+
+##### `resetWeight` <a name="resetWeight" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.resetWeight"></a>
+
+```java
+public void resetWeight()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -791,7 +906,7 @@ The construct id used in the generated config for the ChronicleEnvironment to im
 
 The id of the existing ChronicleEnvironment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -821,10 +936,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.dynamicParameters">dynamicParameters</a></code> | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList">ChronicleEnvironmentDynamicParametersList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.environmentId">environmentId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentTimeoutsOutputReference">ChronicleEnvironmentTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.aliasesJsonInput">aliasesJsonInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.base64ImageInput">base64ImageInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.contactEmailsInput">contactEmailsInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.contactInput">contactInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.contactPhoneInput">contactPhoneInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -833,13 +950,18 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.deletionProtectionInput">deletionProtectionInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.descriptionInput">descriptionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.displayNameInput">displayNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.dynamicParametersInput">dynamicParametersInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParameters">ChronicleEnvironmentDynamicParameters</a>></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.instanceInput">instanceInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.instanceUriInput">instanceUriInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.locationInput">locationInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.parallelInstanceInput">parallelInstanceInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.projectInput">projectInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.retentionDurationInput">retentionDurationInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.timeoutsInput">timeoutsInput</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentTimeouts">ChronicleEnvironmentTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.weightInput">weightInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.aliasesJson">aliasesJson</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.base64Image">base64Image</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.contact">contact</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.contactEmails">contactEmails</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.contactPhone">contactPhone</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -850,9 +972,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.displayName">displayName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.instance">instance</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.instanceUri">instanceUri</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.location">location</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.parallelInstance">parallelInstance</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.project">project</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.retentionDuration">retentionDuration</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.weight">weight</a></code> | <code>java.lang.Number</code> | *No description.* |
 
 ---
 
@@ -998,6 +1123,16 @@ public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner
 
 ---
 
+##### `dynamicParameters`<sup>Required</sup> <a name="dynamicParameters" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.dynamicParameters"></a>
+
+```java
+public ChronicleEnvironmentDynamicParametersList getDynamicParameters();
+```
+
+- *Type:* <a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList">ChronicleEnvironmentDynamicParametersList</a>
+
+---
+
 ##### `environmentId`<sup>Required</sup> <a name="environmentId" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.environmentId"></a>
 
 ```java
@@ -1032,6 +1167,16 @@ public ChronicleEnvironmentTimeoutsOutputReference getTimeouts();
 
 ```java
 public java.lang.String getAliasesJsonInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `base64ImageInput`<sup>Optional</sup> <a name="base64ImageInput" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.base64ImageInput"></a>
+
+```java
+public java.lang.String getBase64ImageInput();
 ```
 
 - *Type:* java.lang.String
@@ -1118,6 +1263,16 @@ public java.lang.String getDisplayNameInput();
 
 ---
 
+##### `dynamicParametersInput`<sup>Optional</sup> <a name="dynamicParametersInput" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.dynamicParametersInput"></a>
+
+```java
+public IResolvable|java.util.List<ChronicleEnvironmentDynamicParameters> getDynamicParametersInput();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParameters">ChronicleEnvironmentDynamicParameters</a>>
+
+---
+
 ##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.idInput"></a>
 
 ```java
@@ -1138,10 +1293,30 @@ public java.lang.String getInstanceInput();
 
 ---
 
+##### `instanceUriInput`<sup>Optional</sup> <a name="instanceUriInput" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.instanceUriInput"></a>
+
+```java
+public java.lang.String getInstanceUriInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `locationInput`<sup>Optional</sup> <a name="locationInput" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.locationInput"></a>
 
 ```java
 public java.lang.String getLocationInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `parallelInstanceInput`<sup>Optional</sup> <a name="parallelInstanceInput" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.parallelInstanceInput"></a>
+
+```java
+public java.lang.String getParallelInstanceInput();
 ```
 
 - *Type:* java.lang.String
@@ -1178,10 +1353,30 @@ public IResolvable|ChronicleEnvironmentTimeouts getTimeoutsInput();
 
 ---
 
+##### `weightInput`<sup>Optional</sup> <a name="weightInput" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.weightInput"></a>
+
+```java
+public java.lang.Number getWeightInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
 ##### `aliasesJson`<sup>Required</sup> <a name="aliasesJson" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.aliasesJson"></a>
 
 ```java
 public java.lang.String getAliasesJson();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `base64Image`<sup>Required</sup> <a name="base64Image" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.base64Image"></a>
+
+```java
+public java.lang.String getBase64Image();
 ```
 
 - *Type:* java.lang.String
@@ -1288,10 +1483,30 @@ public java.lang.String getInstance();
 
 ---
 
+##### `instanceUri`<sup>Required</sup> <a name="instanceUri" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.instanceUri"></a>
+
+```java
+public java.lang.String getInstanceUri();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `location`<sup>Required</sup> <a name="location" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.location"></a>
 
 ```java
 public java.lang.String getLocation();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `parallelInstance`<sup>Required</sup> <a name="parallelInstance" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.parallelInstance"></a>
+
+```java
+public java.lang.String getParallelInstance();
 ```
 
 - *Type:* java.lang.String
@@ -1312,6 +1527,16 @@ public java.lang.String getProject();
 
 ```java
 public java.lang.Number getRetentionDuration();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `weight`<sup>Required</sup> <a name="weight" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.weight"></a>
+
+```java
+public java.lang.Number getWeight();
 ```
 
 - *Type:* java.lang.Number
@@ -1362,12 +1587,17 @@ ChronicleEnvironmentConfig.builder()
     .location(java.lang.String)
     .retentionDuration(java.lang.Number)
 //  .aliasesJson(java.lang.String)
+//  .base64Image(java.lang.String)
 //  .dataAccessScopesJson(java.lang.String)
 //  .deletionPolicy(java.lang.String)
 //  .deletionProtection(java.lang.Boolean|IResolvable)
+//  .dynamicParameters(IResolvable|java.util.List<ChronicleEnvironmentDynamicParameters>)
 //  .id(java.lang.String)
+//  .instanceUri(java.lang.String)
+//  .parallelInstance(java.lang.String)
 //  .project(java.lang.String)
 //  .timeouts(ChronicleEnvironmentTimeouts)
+//  .weight(java.lang.Number)
     .build();
 ```
 
@@ -1391,12 +1621,17 @@ ChronicleEnvironmentConfig.builder()
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentConfig.property.location">location</a></code> | <code>java.lang.String</code> | Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122. |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentConfig.property.retentionDuration">retentionDuration</a></code> | <code>java.lang.Number</code> | Environment data retention in months. |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentConfig.property.aliasesJson">aliasesJson</a></code> | <code>java.lang.String</code> | Environment nicknames. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentConfig.property.base64Image">base64Image</a></code> | <code>java.lang.String</code> | Environment icon. |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentConfig.property.dataAccessScopesJson">dataAccessScopesJson</a></code> | <code>java.lang.String</code> | data access scopes. |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentConfig.property.deletionProtection">deletionProtection</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether Terraform will be prevented from destroying the environment. |
-| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#id ChronicleEnvironment#id}. |
-| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#project ChronicleEnvironment#project}. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentConfig.property.dynamicParameters">dynamicParameters</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParameters">ChronicleEnvironmentDynamicParameters</a>></code> | dynamic_parameters block. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#id ChronicleEnvironment#id}. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentConfig.property.instanceUri">instanceUri</a></code> | <code>java.lang.String</code> | URL of the environment. Used to route UI links to the correct SIEM instance when making cross-SecOps requests from SOAR. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentConfig.property.parallelInstance">parallelInstance</a></code> | <code>java.lang.String</code> | The optional parallel SIEM instance used as a data source. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#project ChronicleEnvironment#project}. |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentTimeouts">ChronicleEnvironmentTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentConfig.property.weight">weight</a></code> | <code>java.lang.Number</code> | The weight of the environment, enabling customers to control distribution of resources between the separate environments in a single instance of Chronicle SOAR. |
 
 ---
 
@@ -1480,7 +1715,7 @@ public java.lang.String getContact();
 
 MAX_NAME_LENGTH = 256 Name of the contact for the environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#contact ChronicleEnvironment#contact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#contact ChronicleEnvironment#contact}
 
 ---
 
@@ -1494,7 +1729,7 @@ public java.lang.String getContactEmails();
 
 MAX_NAME_LENGTH = 256 Email of the contact for the environment. Multiple emails can be sepereated with the ';' character.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#contact_emails ChronicleEnvironment#contact_emails}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#contact_emails ChronicleEnvironment#contact_emails}
 
 ---
 
@@ -1508,7 +1743,7 @@ public java.lang.String getContactPhone();
 
 MAX_NAME_LENGTH = 256 Phone number of the contact for the environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#contact_phone ChronicleEnvironment#contact_phone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#contact_phone ChronicleEnvironment#contact_phone}
 
 ---
 
@@ -1522,7 +1757,7 @@ public java.lang.String getDescription();
 
 MAX_NAME_LENGTH = 256 Description of the environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#description ChronicleEnvironment#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#description ChronicleEnvironment#description}
 
 ---
 
@@ -1536,7 +1771,7 @@ public java.lang.String getDisplayName();
 
 Name of the environment MAX_NAME_LENGTH = 256.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#display_name ChronicleEnvironment#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#display_name ChronicleEnvironment#display_name}
 
 ---
 
@@ -1550,7 +1785,7 @@ public java.lang.String getInstance();
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#instance ChronicleEnvironment#instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#instance ChronicleEnvironment#instance}
 
 ---
 
@@ -1564,7 +1799,7 @@ public java.lang.String getLocation();
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#location ChronicleEnvironment#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#location ChronicleEnvironment#location}
 
 ---
 
@@ -1578,7 +1813,7 @@ public java.lang.Number getRetentionDuration();
 
 Environment data retention in months.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#retention_duration ChronicleEnvironment#retention_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#retention_duration ChronicleEnvironment#retention_duration}
 
 ---
 
@@ -1592,7 +1827,21 @@ public java.lang.String getAliasesJson();
 
 Environment nicknames.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#aliases_json ChronicleEnvironment#aliases_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#aliases_json ChronicleEnvironment#aliases_json}
+
+---
+
+##### `base64Image`<sup>Optional</sup> <a name="base64Image" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentConfig.property.base64Image"></a>
+
+```java
+public java.lang.String getBase64Image();
+```
+
+- *Type:* java.lang.String
+
+Environment icon.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#base64_image ChronicleEnvironment#base64_image}
 
 ---
 
@@ -1606,7 +1855,7 @@ public java.lang.String getDataAccessScopesJson();
 
 data access scopes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#data_access_scopes_json ChronicleEnvironment#data_access_scopes_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#data_access_scopes_json ChronicleEnvironment#data_access_scopes_json}
 
 ---
 
@@ -1627,7 +1876,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#deletion_policy ChronicleEnvironment#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#deletion_policy ChronicleEnvironment#deletion_policy}
 
 ---
 
@@ -1643,7 +1892,21 @@ Whether Terraform will be prevented from destroying the environment.
 
 Deleting an environment will remove all its data and all playbooks, environments, integrations instances, reports and agents related to the environment. Once you delete an environment, it cannot be reversed. Deleting environments via terraform destroy or terraform apply will only succeed if this field is false in the Terraform state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#deletion_protection ChronicleEnvironment#deletion_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#deletion_protection ChronicleEnvironment#deletion_protection}
+
+---
+
+##### `dynamicParameters`<sup>Optional</sup> <a name="dynamicParameters" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentConfig.property.dynamicParameters"></a>
+
+```java
+public IResolvable|java.util.List<ChronicleEnvironmentDynamicParameters> getDynamicParameters();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParameters">ChronicleEnvironmentDynamicParameters</a>>
+
+dynamic_parameters block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#dynamic_parameters ChronicleEnvironment#dynamic_parameters}
 
 ---
 
@@ -1655,10 +1918,45 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#id ChronicleEnvironment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#id ChronicleEnvironment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `instanceUri`<sup>Optional</sup> <a name="instanceUri" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentConfig.property.instanceUri"></a>
+
+```java
+public java.lang.String getInstanceUri();
+```
+
+- *Type:* java.lang.String
+
+URL of the environment. Used to route UI links to the correct SIEM instance when making cross-SecOps requests from SOAR.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#instance_uri ChronicleEnvironment#instance_uri}
+
+---
+
+##### `parallelInstance`<sup>Optional</sup> <a name="parallelInstance" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentConfig.property.parallelInstance"></a>
+
+```java
+public java.lang.String getParallelInstance();
+```
+
+- *Type:* java.lang.String
+
+The optional parallel SIEM instance used as a data source.
+
+Used to route
+API requests to the correct SIEM instance when making cross-SecOps requests
+from SOAR. For most customers, this is not required, since the parent
+instance is used as the data source by default.
+Format:
+projects/{project}/locations/{location}/instances/{instance}
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#parallel_instance ChronicleEnvironment#parallel_instance}
 
 ---
 
@@ -1670,7 +1968,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#project ChronicleEnvironment#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#project ChronicleEnvironment#project}.
 
 ---
 
@@ -1684,7 +1982,71 @@ public ChronicleEnvironmentTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#timeouts ChronicleEnvironment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#timeouts ChronicleEnvironment#timeouts}
+
+---
+
+##### `weight`<sup>Optional</sup> <a name="weight" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentConfig.property.weight"></a>
+
+```java
+public java.lang.Number getWeight();
+```
+
+- *Type:* java.lang.Number
+
+The weight of the environment, enabling customers to control distribution of resources between the separate environments in a single instance of Chronicle SOAR.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#weight ChronicleEnvironment#weight}
+
+---
+
+### ChronicleEnvironmentDynamicParameters <a name="ChronicleEnvironmentDynamicParameters" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParameters"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParameters.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.chronicle_environment.ChronicleEnvironmentDynamicParameters;
+
+ChronicleEnvironmentDynamicParameters.builder()
+    .dynamicParameterId(java.lang.Number)
+    .value(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParameters.property.dynamicParameterId">dynamicParameterId</a></code> | <code>java.lang.Number</code> | The ID of the dynamic parameter. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParameters.property.value">value</a></code> | <code>java.lang.String</code> | The value of the dynamic parameter. |
+
+---
+
+##### `dynamicParameterId`<sup>Required</sup> <a name="dynamicParameterId" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParameters.property.dynamicParameterId"></a>
+
+```java
+public java.lang.Number getDynamicParameterId();
+```
+
+- *Type:* java.lang.Number
+
+The ID of the dynamic parameter.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#dynamic_parameter_id ChronicleEnvironment#dynamic_parameter_id}
+
+---
+
+##### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParameters.property.value"></a>
+
+```java
+public java.lang.String getValue();
+```
+
+- *Type:* java.lang.String
+
+The value of the dynamic parameter.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#value ChronicleEnvironment#value}
 
 ---
 
@@ -1706,9 +2068,9 @@ ChronicleEnvironmentTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#create ChronicleEnvironment#create}. |
-| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#delete ChronicleEnvironment#delete}. |
-| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#update ChronicleEnvironment#update}. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#create ChronicleEnvironment#create}. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#delete ChronicleEnvironment#delete}. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#update ChronicleEnvironment#update}. |
 
 ---
 
@@ -1720,7 +2082,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#create ChronicleEnvironment#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#create ChronicleEnvironment#create}.
 
 ---
 
@@ -1732,7 +2094,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#delete ChronicleEnvironment#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#delete ChronicleEnvironment#delete}.
 
 ---
 
@@ -1744,11 +2106,493 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#update ChronicleEnvironment#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#update ChronicleEnvironment#update}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### ChronicleEnvironmentDynamicParametersList <a name="ChronicleEnvironmentDynamicParametersList" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.chronicle_environment.ChronicleEnvironmentDynamicParametersList;
+
+new ChronicleEnvironmentDynamicParametersList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.allWithMapKey"></a>
+
+```java
+public DynamicListTerraformIterator allWithMapKey(java.lang.String mapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.get"></a>
+
+```java
+public ChronicleEnvironmentDynamicParametersOutputReference get(java.lang.Number index)
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.get.parameter.index"></a>
+
+- *Type:* java.lang.Number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParameters">ChronicleEnvironmentDynamicParameters</a>></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.property.internalValue"></a>
+
+```java
+public IResolvable|java.util.List<ChronicleEnvironmentDynamicParameters> getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParameters">ChronicleEnvironmentDynamicParameters</a>>
+
+---
+
+
+### ChronicleEnvironmentDynamicParametersOutputReference <a name="ChronicleEnvironmentDynamicParametersOutputReference" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.Initializer"></a>
+
+```java
+import io.cdktn.providers.google.chronicle_environment.ChronicleEnvironmentDynamicParametersOutputReference;
+
+new ChronicleEnvironmentDynamicParametersOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>io.cdktn.cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* io.cdktn.cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* java.lang.Number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.resolve.parameter._context"></a>
+
+- *Type:* io.cdktn.cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.property.environmentId">environmentId</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.property.dynamicParameterIdInput">dynamicParameterIdInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.property.valueInput">valueInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.property.dynamicParameterId">dynamicParameterId</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.property.value">value</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.property.internalValue">internalValue</a></code> | <code>io.cdktn.cdktn.IResolvable\|<a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParameters">ChronicleEnvironmentDynamicParameters</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `environmentId`<sup>Required</sup> <a name="environmentId" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.property.environmentId"></a>
+
+```java
+public java.lang.Number getEnvironmentId();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `dynamicParameterIdInput`<sup>Optional</sup> <a name="dynamicParameterIdInput" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.property.dynamicParameterIdInput"></a>
+
+```java
+public java.lang.Number getDynamicParameterIdInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `valueInput`<sup>Optional</sup> <a name="valueInput" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.property.valueInput"></a>
+
+```java
+public java.lang.String getValueInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `dynamicParameterId`<sup>Required</sup> <a name="dynamicParameterId" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.property.dynamicParameterId"></a>
+
+```java
+public java.lang.Number getDynamicParameterId();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.property.value"></a>
+
+```java
+public java.lang.String getValue();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.property.internalValue"></a>
+
+```java
+public IResolvable|ChronicleEnvironmentDynamicParameters getInternalValue();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable|<a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParameters">ChronicleEnvironmentDynamicParameters</a>
+
+---
+
 
 ### ChronicleEnvironmentTimeoutsOutputReference <a name="ChronicleEnvironmentTimeoutsOutputReference" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentTimeoutsOutputReference"></a>
 

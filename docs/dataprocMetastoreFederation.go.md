@@ -4,12 +4,12 @@
 
 ### DataprocMetastoreFederation <a name="DataprocMetastoreFederation" id="@cdktn/provider-google.dataprocMetastoreFederation.DataprocMetastoreFederation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataproc_metastore_federation google_dataproc_metastore_federation}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dataproc_metastore_federation google_dataproc_metastore_federation}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataprocMetastoreFederation.DataprocMetastoreFederation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataprocmetastorefederation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/dataprocmetastorefederation"
 
 dataprocmetastorefederation.NewDataprocMetastoreFederation(scope Construct, id *string, config DataprocMetastoreFederationConfig) DataprocMetastoreFederation
 ```
@@ -482,7 +482,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataprocMetastoreFederation.DataprocMetastoreFederation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataprocmetastorefederation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/dataprocmetastorefederation"
 
 dataprocmetastorefederation.DataprocMetastoreFederation_IsConstruct(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataprocMetastoreFederation.DataprocMetastoreFederation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataprocmetastorefederation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/dataprocmetastorefederation"
 
 dataprocmetastorefederation.DataprocMetastoreFederation_IsTerraformElement(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ dataprocmetastorefederation.DataprocMetastoreFederation_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.dataprocMetastoreFederation.DataprocMetastoreFederation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataprocmetastorefederation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/dataprocmetastorefederation"
 
 dataprocmetastorefederation.DataprocMetastoreFederation_IsTerraformResource(x interface{}) *bool
 ```
@@ -542,7 +542,7 @@ dataprocmetastorefederation.DataprocMetastoreFederation_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataprocMetastoreFederation.DataprocMetastoreFederation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataprocmetastorefederation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/dataprocmetastorefederation"
 
 dataprocmetastorefederation.DataprocMetastoreFederation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -571,7 +571,7 @@ The construct id used in the generated config for the DataprocMetastoreFederatio
 
 The id of the existing DataprocMetastoreFederation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataproc_metastore_federation#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dataproc_metastore_federation#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1112,7 +1112,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataprocMetastoreFederation.DataprocMetastoreFederationBackendMetastores.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataprocmetastorefederation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/dataprocmetastorefederation"
 
 &dataprocmetastorefederation.DataprocMetastoreFederationBackendMetastores {
 	MetastoreType: *string,
@@ -1127,7 +1127,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataprocmetastor
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.dataprocMetastoreFederation.DataprocMetastoreFederationBackendMetastores.property.metastoreType">MetastoreType</a></code> | <code>*string</code> | The type of the backend metastore. Possible values: ["METASTORE_TYPE_UNSPECIFIED", "DATAPROC_METASTORE", "BIGQUERY"]. |
 | <code><a href="#@cdktn/provider-google.dataprocMetastoreFederation.DataprocMetastoreFederationBackendMetastores.property.name">Name</a></code> | <code>*string</code> | The relative resource name of the metastore that is being federated. |
-| <code><a href="#@cdktn/provider-google.dataprocMetastoreFederation.DataprocMetastoreFederationBackendMetastores.property.rank">Rank</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataproc_metastore_federation#rank DataprocMetastoreFederation#rank}. |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreFederation.DataprocMetastoreFederationBackendMetastores.property.rank">Rank</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dataproc_metastore_federation#rank DataprocMetastoreFederation#rank}. |
 
 ---
 
@@ -1141,7 +1141,7 @@ MetastoreType *string
 
 The type of the backend metastore. Possible values: ["METASTORE_TYPE_UNSPECIFIED", "DATAPROC_METASTORE", "BIGQUERY"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataproc_metastore_federation#metastore_type DataprocMetastoreFederation#metastore_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dataproc_metastore_federation#metastore_type DataprocMetastoreFederation#metastore_type}
 
 ---
 
@@ -1157,7 +1157,7 @@ The relative resource name of the metastore that is being federated.
 
 The formats of the relative resource names for the currently supported metastores are listed below: Dataplex: projects/{projectId}/locations/{location}/lakes/{lake_id} BigQuery: projects/{projectId} Dataproc Metastore: projects/{projectId}/locations/{location}/services/{serviceId}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataproc_metastore_federation#name DataprocMetastoreFederation#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dataproc_metastore_federation#name DataprocMetastoreFederation#name}
 
 ---
 
@@ -1169,7 +1169,7 @@ Rank *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataproc_metastore_federation#rank DataprocMetastoreFederation#rank}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dataproc_metastore_federation#rank DataprocMetastoreFederation#rank}.
 
 ---
 
@@ -1178,7 +1178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataprocMetastoreFederation.DataprocMetastoreFederationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataprocmetastorefederation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/dataprocmetastorefederation"
 
 &dataprocmetastorefederation.DataprocMetastoreFederationConfig {
 	Connection: interface{},
@@ -1198,7 +1198,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataprocmetastor
 	Location: *string,
 	Project: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dataprocMetastoreFederation.DataprocMetastoreFederationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataprocMetastoreFederation.DataprocMetastoreFederationTimeouts,
 }
 ```
 
@@ -1218,10 +1218,10 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataprocmetastor
 | <code><a href="#@cdktn/provider-google.dataprocMetastoreFederation.DataprocMetastoreFederationConfig.property.version">Version</a></code> | <code>*string</code> | The Apache Hive metastore version of the federation. All backend metastore versions must be compatible with the federation version. |
 | <code><a href="#@cdktn/provider-google.dataprocMetastoreFederation.DataprocMetastoreFederationConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.dataprocMetastoreFederation.DataprocMetastoreFederationConfig.property.deletionProtection">DeletionProtection</a></code> | <code>interface{}</code> | Whether Terraform will be prevented from destroying the federation. |
-| <code><a href="#@cdktn/provider-google.dataprocMetastoreFederation.DataprocMetastoreFederationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataproc_metastore_federation#id DataprocMetastoreFederation#id}. |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreFederation.DataprocMetastoreFederationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dataproc_metastore_federation#id DataprocMetastoreFederation#id}. |
 | <code><a href="#@cdktn/provider-google.dataprocMetastoreFederation.DataprocMetastoreFederationConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | User-defined labels for the metastore federation. |
 | <code><a href="#@cdktn/provider-google.dataprocMetastoreFederation.DataprocMetastoreFederationConfig.property.location">Location</a></code> | <code>*string</code> | The location where the metastore federation should reside. |
-| <code><a href="#@cdktn/provider-google.dataprocMetastoreFederation.DataprocMetastoreFederationConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataproc_metastore_federation#project DataprocMetastoreFederation#project}. |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreFederation.DataprocMetastoreFederationConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dataproc_metastore_federation#project DataprocMetastoreFederation#project}. |
 | <code><a href="#@cdktn/provider-google.dataprocMetastoreFederation.DataprocMetastoreFederationConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | A map of resource manager tags. |
 | <code><a href="#@cdktn/provider-google.dataprocMetastoreFederation.DataprocMetastoreFederationConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.dataprocMetastoreFederation.DataprocMetastoreFederationTimeouts">DataprocMetastoreFederationTimeouts</a></code> | timeouts block. |
 
@@ -1307,7 +1307,7 @@ BackendMetastores interface{}
 
 backend_metastores block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataproc_metastore_federation#backend_metastores DataprocMetastoreFederation#backend_metastores}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dataproc_metastore_federation#backend_metastores DataprocMetastoreFederation#backend_metastores}
 
 ---
 
@@ -1325,7 +1325,7 @@ The id must contain only letters (a-z, A-Z), numbers (0-9), underscores (_),
 and hyphens (-). Cannot begin or end with underscore or hyphen. Must consist of between
 3 and 63 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataproc_metastore_federation#federation_id DataprocMetastoreFederation#federation_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dataproc_metastore_federation#federation_id DataprocMetastoreFederation#federation_id}
 
 ---
 
@@ -1339,7 +1339,7 @@ Version *string
 
 The Apache Hive metastore version of the federation. All backend metastore versions must be compatible with the federation version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataproc_metastore_federation#version DataprocMetastoreFederation#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dataproc_metastore_federation#version DataprocMetastoreFederation#version}
 
 ---
 
@@ -1360,7 +1360,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataproc_metastore_federation#deletion_policy DataprocMetastoreFederation#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dataproc_metastore_federation#deletion_policy DataprocMetastoreFederation#deletion_policy}
 
 ---
 
@@ -1378,7 +1378,7 @@ Defaults to false.
 When the field is set to true in Terraform state, a 'terraform apply'
 or 'terraform destroy' that would delete the federation will fail.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataproc_metastore_federation#deletion_protection DataprocMetastoreFederation#deletion_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dataproc_metastore_federation#deletion_protection DataprocMetastoreFederation#deletion_protection}
 
 ---
 
@@ -1390,7 +1390,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataproc_metastore_federation#id DataprocMetastoreFederation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dataproc_metastore_federation#id DataprocMetastoreFederation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1410,7 +1410,7 @@ User-defined labels for the metastore federation.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataproc_metastore_federation#labels DataprocMetastoreFederation#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dataproc_metastore_federation#labels DataprocMetastoreFederation#labels}
 
 ---
 
@@ -1424,7 +1424,7 @@ Location *string
 
 The location where the metastore federation should reside.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataproc_metastore_federation#location DataprocMetastoreFederation#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dataproc_metastore_federation#location DataprocMetastoreFederation#location}
 
 ---
 
@@ -1436,7 +1436,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataproc_metastore_federation#project DataprocMetastoreFederation#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dataproc_metastore_federation#project DataprocMetastoreFederation#project}.
 
 ---
 
@@ -1453,7 +1453,7 @@ A map of resource manager tags.
 Resource manager tag keys and values have the same definition as resource manager tags.
 Keys must be in the format tagKeys/{tag_key_id}, and values are in the format tagValues/{tag_value_id}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataproc_metastore_federation#tags DataprocMetastoreFederation#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dataproc_metastore_federation#tags DataprocMetastoreFederation#tags}
 
 ---
 
@@ -1467,7 +1467,7 @@ Timeouts DataprocMetastoreFederationTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataproc_metastore_federation#timeouts DataprocMetastoreFederation#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dataproc_metastore_federation#timeouts DataprocMetastoreFederation#timeouts}
 
 ---
 
@@ -1476,7 +1476,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataprocMetastoreFederation.DataprocMetastoreFederationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataprocmetastorefederation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/dataprocmetastorefederation"
 
 &dataprocmetastorefederation.DataprocMetastoreFederationTimeouts {
 	Create: *string,
@@ -1489,9 +1489,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataprocmetastor
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataprocMetastoreFederation.DataprocMetastoreFederationTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataproc_metastore_federation#create DataprocMetastoreFederation#create}. |
-| <code><a href="#@cdktn/provider-google.dataprocMetastoreFederation.DataprocMetastoreFederationTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataproc_metastore_federation#delete DataprocMetastoreFederation#delete}. |
-| <code><a href="#@cdktn/provider-google.dataprocMetastoreFederation.DataprocMetastoreFederationTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataproc_metastore_federation#update DataprocMetastoreFederation#update}. |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreFederation.DataprocMetastoreFederationTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dataproc_metastore_federation#create DataprocMetastoreFederation#create}. |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreFederation.DataprocMetastoreFederationTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dataproc_metastore_federation#delete DataprocMetastoreFederation#delete}. |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreFederation.DataprocMetastoreFederationTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dataproc_metastore_federation#update DataprocMetastoreFederation#update}. |
 
 ---
 
@@ -1503,7 +1503,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataproc_metastore_federation#create DataprocMetastoreFederation#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dataproc_metastore_federation#create DataprocMetastoreFederation#create}.
 
 ---
 
@@ -1515,7 +1515,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataproc_metastore_federation#delete DataprocMetastoreFederation#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dataproc_metastore_federation#delete DataprocMetastoreFederation#delete}.
 
 ---
 
@@ -1527,7 +1527,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/dataproc_metastore_federation#update DataprocMetastoreFederation#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dataproc_metastore_federation#update DataprocMetastoreFederation#update}.
 
 ---
 
@@ -1538,7 +1538,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataprocMetastoreFederation.DataprocMetastoreFederationBackendMetastoresList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataprocmetastorefederation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/dataprocmetastorefederation"
 
 dataprocmetastorefederation.NewDataprocMetastoreFederationBackendMetastoresList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataprocMetastoreFederationBackendMetastoresList
 ```
@@ -1698,7 +1698,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataprocMetastoreFederation.DataprocMetastoreFederationBackendMetastoresOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataprocmetastorefederation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/dataprocmetastorefederation"
 
 dataprocmetastorefederation.NewDataprocMetastoreFederationBackendMetastoresOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataprocMetastoreFederationBackendMetastoresOutputReference
 ```
@@ -2031,7 +2031,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataprocMetastoreFederation.DataprocMetastoreFederationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/dataprocmetastorefederation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/dataprocmetastorefederation"
 
 dataprocmetastorefederation.NewDataprocMetastoreFederationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataprocMetastoreFederationTimeoutsOutputReference
 ```

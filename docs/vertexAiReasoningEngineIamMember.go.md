@@ -4,12 +4,12 @@
 
 ### VertexAiReasoningEngineIamMember <a name="VertexAiReasoningEngineIamMember" id="@cdktn/provider-google.vertexAiReasoningEngineIamMember.VertexAiReasoningEngineIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/vertex_ai_reasoning_engine_iam_member google_vertex_ai_reasoning_engine_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_reasoning_engine_iam_member google_vertex_ai_reasoning_engine_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngineIamMember.VertexAiReasoningEngineIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaireasoningengineiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengineiammember"
 
 vertexaireasoningengineiammember.NewVertexAiReasoningEngineIamMember(scope Construct, id *string, config VertexAiReasoningEngineIamMemberConfig) VertexAiReasoningEngineIamMember
 ```
@@ -441,7 +441,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.vertexAiReasoningEngineIamMember.VertexAiReasoningEngineIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaireasoningengineiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengineiammember"
 
 vertexaireasoningengineiammember.VertexAiReasoningEngineIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.vertexAiReasoningEngineIamMember.VertexAiReasoningEngineIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaireasoningengineiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengineiammember"
 
 vertexaireasoningengineiammember.VertexAiReasoningEngineIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ vertexaireasoningengineiammember.VertexAiReasoningEngineIamMember_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.vertexAiReasoningEngineIamMember.VertexAiReasoningEngineIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaireasoningengineiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengineiammember"
 
 vertexaireasoningengineiammember.VertexAiReasoningEngineIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ vertexaireasoningengineiammember.VertexAiReasoningEngineIamMember_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.vertexAiReasoningEngineIamMember.VertexAiReasoningEngineIamMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaireasoningengineiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengineiammember"
 
 vertexaireasoningengineiammember.VertexAiReasoningEngineIamMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -530,7 +530,7 @@ The construct id used in the generated config for the VertexAiReasoningEngineIam
 
 The id of the existing VertexAiReasoningEngineIamMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/vertex_ai_reasoning_engine_iam_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_reasoning_engine_iam_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -895,7 +895,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngineIamMember.VertexAiReasoningEngineIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaireasoningengineiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengineiammember"
 
 &vertexaireasoningengineiammember.VertexAiReasoningEngineIamMemberCondition {
 	Expression: *string,
@@ -908,9 +908,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaireasonin
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.vertexAiReasoningEngineIamMember.VertexAiReasoningEngineIamMemberCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/vertex_ai_reasoning_engine_iam_member#expression VertexAiReasoningEngineIamMember#expression}. |
-| <code><a href="#@cdktn/provider-google.vertexAiReasoningEngineIamMember.VertexAiReasoningEngineIamMemberCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/vertex_ai_reasoning_engine_iam_member#title VertexAiReasoningEngineIamMember#title}. |
-| <code><a href="#@cdktn/provider-google.vertexAiReasoningEngineIamMember.VertexAiReasoningEngineIamMemberCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/vertex_ai_reasoning_engine_iam_member#description VertexAiReasoningEngineIamMember#description}. |
+| <code><a href="#@cdktn/provider-google.vertexAiReasoningEngineIamMember.VertexAiReasoningEngineIamMemberCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_reasoning_engine_iam_member#expression VertexAiReasoningEngineIamMember#expression}. |
+| <code><a href="#@cdktn/provider-google.vertexAiReasoningEngineIamMember.VertexAiReasoningEngineIamMemberCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_reasoning_engine_iam_member#title VertexAiReasoningEngineIamMember#title}. |
+| <code><a href="#@cdktn/provider-google.vertexAiReasoningEngineIamMember.VertexAiReasoningEngineIamMemberCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_reasoning_engine_iam_member#description VertexAiReasoningEngineIamMember#description}. |
 
 ---
 
@@ -922,7 +922,7 @@ Expression *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/vertex_ai_reasoning_engine_iam_member#expression VertexAiReasoningEngineIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_reasoning_engine_iam_member#expression VertexAiReasoningEngineIamMember#expression}.
 
 ---
 
@@ -934,7 +934,7 @@ Title *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/vertex_ai_reasoning_engine_iam_member#title VertexAiReasoningEngineIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_reasoning_engine_iam_member#title VertexAiReasoningEngineIamMember#title}.
 
 ---
 
@@ -946,7 +946,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/vertex_ai_reasoning_engine_iam_member#description VertexAiReasoningEngineIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_reasoning_engine_iam_member#description VertexAiReasoningEngineIamMember#description}.
 
 ---
 
@@ -955,7 +955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiReasoningEngineIamMember.VertexAiReasoningEngineIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaireasoningengineiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengineiammember"
 
 &vertexaireasoningengineiammember.VertexAiReasoningEngineIamMemberConfig {
 	Connection: interface{},
@@ -968,7 +968,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaireasonin
 	Member: *string,
 	ReasoningEngine: *string,
 	Role: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v20.vertexAiReasoningEngineIamMember.VertexAiReasoningEngineIamMemberCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v21.vertexAiReasoningEngineIamMember.VertexAiReasoningEngineIamMemberCondition,
 	Id: *string,
 	Project: *string,
 	Region: *string,
@@ -986,13 +986,13 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaireasonin
 | <code><a href="#@cdktn/provider-google.vertexAiReasoningEngineIamMember.VertexAiReasoningEngineIamMemberConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiReasoningEngineIamMember.VertexAiReasoningEngineIamMemberConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiReasoningEngineIamMember.VertexAiReasoningEngineIamMemberConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.vertexAiReasoningEngineIamMember.VertexAiReasoningEngineIamMemberConfig.property.member">Member</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/vertex_ai_reasoning_engine_iam_member#member VertexAiReasoningEngineIamMember#member}. |
-| <code><a href="#@cdktn/provider-google.vertexAiReasoningEngineIamMember.VertexAiReasoningEngineIamMemberConfig.property.reasoningEngine">ReasoningEngine</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/vertex_ai_reasoning_engine_iam_member#reasoning_engine VertexAiReasoningEngineIamMember#reasoning_engine}. |
-| <code><a href="#@cdktn/provider-google.vertexAiReasoningEngineIamMember.VertexAiReasoningEngineIamMemberConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/vertex_ai_reasoning_engine_iam_member#role VertexAiReasoningEngineIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.vertexAiReasoningEngineIamMember.VertexAiReasoningEngineIamMemberConfig.property.member">Member</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_reasoning_engine_iam_member#member VertexAiReasoningEngineIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.vertexAiReasoningEngineIamMember.VertexAiReasoningEngineIamMemberConfig.property.reasoningEngine">ReasoningEngine</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_reasoning_engine_iam_member#reasoning_engine VertexAiReasoningEngineIamMember#reasoning_engine}. |
+| <code><a href="#@cdktn/provider-google.vertexAiReasoningEngineIamMember.VertexAiReasoningEngineIamMemberConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_reasoning_engine_iam_member#role VertexAiReasoningEngineIamMember#role}. |
 | <code><a href="#@cdktn/provider-google.vertexAiReasoningEngineIamMember.VertexAiReasoningEngineIamMemberConfig.property.condition">Condition</a></code> | <code><a href="#@cdktn/provider-google.vertexAiReasoningEngineIamMember.VertexAiReasoningEngineIamMemberCondition">VertexAiReasoningEngineIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.vertexAiReasoningEngineIamMember.VertexAiReasoningEngineIamMemberConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/vertex_ai_reasoning_engine_iam_member#id VertexAiReasoningEngineIamMember#id}. |
-| <code><a href="#@cdktn/provider-google.vertexAiReasoningEngineIamMember.VertexAiReasoningEngineIamMemberConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/vertex_ai_reasoning_engine_iam_member#project VertexAiReasoningEngineIamMember#project}. |
-| <code><a href="#@cdktn/provider-google.vertexAiReasoningEngineIamMember.VertexAiReasoningEngineIamMemberConfig.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/vertex_ai_reasoning_engine_iam_member#region VertexAiReasoningEngineIamMember#region}. |
+| <code><a href="#@cdktn/provider-google.vertexAiReasoningEngineIamMember.VertexAiReasoningEngineIamMemberConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_reasoning_engine_iam_member#id VertexAiReasoningEngineIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.vertexAiReasoningEngineIamMember.VertexAiReasoningEngineIamMemberConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_reasoning_engine_iam_member#project VertexAiReasoningEngineIamMember#project}. |
+| <code><a href="#@cdktn/provider-google.vertexAiReasoningEngineIamMember.VertexAiReasoningEngineIamMemberConfig.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_reasoning_engine_iam_member#region VertexAiReasoningEngineIamMember#region}. |
 
 ---
 
@@ -1074,7 +1074,7 @@ Member *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/vertex_ai_reasoning_engine_iam_member#member VertexAiReasoningEngineIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_reasoning_engine_iam_member#member VertexAiReasoningEngineIamMember#member}.
 
 ---
 
@@ -1086,7 +1086,7 @@ ReasoningEngine *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/vertex_ai_reasoning_engine_iam_member#reasoning_engine VertexAiReasoningEngineIamMember#reasoning_engine}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_reasoning_engine_iam_member#reasoning_engine VertexAiReasoningEngineIamMember#reasoning_engine}.
 
 ---
 
@@ -1098,7 +1098,7 @@ Role *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/vertex_ai_reasoning_engine_iam_member#role VertexAiReasoningEngineIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_reasoning_engine_iam_member#role VertexAiReasoningEngineIamMember#role}.
 
 ---
 
@@ -1112,7 +1112,7 @@ Condition VertexAiReasoningEngineIamMemberCondition
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/vertex_ai_reasoning_engine_iam_member#condition VertexAiReasoningEngineIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_reasoning_engine_iam_member#condition VertexAiReasoningEngineIamMember#condition}
 
 ---
 
@@ -1124,7 +1124,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/vertex_ai_reasoning_engine_iam_member#id VertexAiReasoningEngineIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_reasoning_engine_iam_member#id VertexAiReasoningEngineIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1139,7 +1139,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/vertex_ai_reasoning_engine_iam_member#project VertexAiReasoningEngineIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_reasoning_engine_iam_member#project VertexAiReasoningEngineIamMember#project}.
 
 ---
 
@@ -1151,7 +1151,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/vertex_ai_reasoning_engine_iam_member#region VertexAiReasoningEngineIamMember#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_reasoning_engine_iam_member#region VertexAiReasoningEngineIamMember#region}.
 
 ---
 
@@ -1162,7 +1162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiReasoningEngineIamMember.VertexAiReasoningEngineIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/vertexaireasoningengineiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/vertexaireasoningengineiammember"
 
 vertexaireasoningengineiammember.NewVertexAiReasoningEngineIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiReasoningEngineIamMemberConditionOutputReference
 ```

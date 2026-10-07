@@ -4,12 +4,12 @@
 
 ### EphemeralGoogleServiceAccountAccessToken <a name="EphemeralGoogleServiceAccountAccessToken" id="@cdktn/provider-google.ephemeralGoogleServiceAccountAccessToken.EphemeralGoogleServiceAccountAccessToken"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/ephemeral-resources/service_account_access_token google_service_account_access_token}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/ephemeral-resources/service_account_access_token google_service_account_access_token}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.ephemeralGoogleServiceAccountAccessToken.EphemeralGoogleServiceAccountAccessToken.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/ephemeralgoogleserviceaccountaccesstoken"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/ephemeralgoogleserviceaccountaccesstoken"
 
 ephemeralgoogleserviceaccountaccesstoken.NewEphemeralGoogleServiceAccountAccessToken(scope Construct, id *string, config EphemeralGoogleServiceAccountAccessTokenConfig) EphemeralGoogleServiceAccountAccessToken
 ```
@@ -309,7 +309,7 @@ func ResetLifetime()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.ephemeralGoogleServiceAccountAccessToken.EphemeralGoogleServiceAccountAccessToken.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/ephemeralgoogleserviceaccountaccesstoken"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/ephemeralgoogleserviceaccountaccesstoken"
 
 ephemeralgoogleserviceaccountaccesstoken.EphemeralGoogleServiceAccountAccessToken_IsConstruct(x interface{}) *bool
 ```
@@ -341,7 +341,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.ephemeralGoogleServiceAccountAccessToken.EphemeralGoogleServiceAccountAccessToken.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/ephemeralgoogleserviceaccountaccesstoken"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/ephemeralgoogleserviceaccountaccesstoken"
 
 ephemeralgoogleserviceaccountaccesstoken.EphemeralGoogleServiceAccountAccessToken_IsTerraformElement(x interface{}) *bool
 ```
@@ -355,7 +355,7 @@ ephemeralgoogleserviceaccountaccesstoken.EphemeralGoogleServiceAccountAccessToke
 ##### `IsTerraformEphemeralResource` <a name="IsTerraformEphemeralResource" id="@cdktn/provider-google.ephemeralGoogleServiceAccountAccessToken.EphemeralGoogleServiceAccountAccessToken.isTerraformEphemeralResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/ephemeralgoogleserviceaccountaccesstoken"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/ephemeralgoogleserviceaccountaccesstoken"
 
 ephemeralgoogleserviceaccountaccesstoken.EphemeralGoogleServiceAccountAccessToken_IsTerraformEphemeralResource(x interface{}) *bool
 ```
@@ -631,7 +631,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.ephemeralGoogleServiceAccountAccessToken.EphemeralGoogleServiceAccountAccessTokenConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/ephemeralgoogleserviceaccountaccesstoken"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/ephemeralgoogleserviceaccountaccesstoken"
 
 &ephemeralgoogleserviceaccountaccesstoken.EphemeralGoogleServiceAccountAccessTokenConfig {
 	Count: interface{},
@@ -722,7 +722,7 @@ Scopes *[]*string
 
 The scopes the new credential should have (e.g. `['cloud-platform']`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/ephemeral-resources/service_account_access_token#scopes EphemeralGoogleServiceAccountAccessToken#scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/ephemeral-resources/service_account_access_token#scopes EphemeralGoogleServiceAccountAccessToken#scopes}
 
 ---
 
@@ -736,7 +736,7 @@ TargetServiceAccount *string
 
 The service account to impersonate (e.g. `service_B@your-project-id.iam.gserviceaccount.com`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/ephemeral-resources/service_account_access_token#target_service_account EphemeralGoogleServiceAccountAccessToken#target_service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/ephemeral-resources/service_account_access_token#target_service_account EphemeralGoogleServiceAccountAccessToken#target_service_account}
 
 ---
 
@@ -750,7 +750,7 @@ Delegates *[]*string
 
 Delegate chain of approvals needed to perform full impersonation. Specify the fully qualified service account name.  (e.g. `['projects/-/serviceAccounts/delegate-svc-account@project-id.iam.gserviceaccount.com']`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/ephemeral-resources/service_account_access_token#delegates EphemeralGoogleServiceAccountAccessToken#delegates}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/ephemeral-resources/service_account_access_token#delegates EphemeralGoogleServiceAccountAccessToken#delegates}
 
 ---
 
@@ -764,7 +764,7 @@ Lifetime *string
 
 Lifetime of the impersonated token (defaults to its max: `3600s`).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/ephemeral-resources/service_account_access_token#lifetime EphemeralGoogleServiceAccountAccessToken#lifetime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/ephemeral-resources/service_account_access_token#lifetime EphemeralGoogleServiceAccountAccessToken#lifetime}
 
 ---
 

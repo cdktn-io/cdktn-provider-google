@@ -4,12 +4,12 @@
 
 ### DocumentAiProcessor <a name="DocumentAiProcessor" id="@cdktn/provider-google.documentAiProcessor.DocumentAiProcessor"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/document_ai_processor google_document_ai_processor}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/document_ai_processor google_document_ai_processor}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.documentAiProcessor.DocumentAiProcessor.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/documentaiprocessor"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/documentaiprocessor"
 
 documentaiprocessor.NewDocumentAiProcessor(scope Construct, id *string, config DocumentAiProcessorConfig) DocumentAiProcessor
 ```
@@ -448,7 +448,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.documentAiProcessor.DocumentAiProcessor.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/documentaiprocessor"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/documentaiprocessor"
 
 documentaiprocessor.DocumentAiProcessor_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.documentAiProcessor.DocumentAiProcessor.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/documentaiprocessor"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/documentaiprocessor"
 
 documentaiprocessor.DocumentAiProcessor_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ documentaiprocessor.DocumentAiProcessor_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.documentAiProcessor.DocumentAiProcessor.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/documentaiprocessor"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/documentaiprocessor"
 
 documentaiprocessor.DocumentAiProcessor_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ documentaiprocessor.DocumentAiProcessor_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.documentAiProcessor.DocumentAiProcessor.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/documentaiprocessor"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/documentaiprocessor"
 
 documentaiprocessor.DocumentAiProcessor_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -537,7 +537,7 @@ The construct id used in the generated config for the DocumentAiProcessor to imp
 
 The id of the existing DocumentAiProcessor that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/document_ai_processor#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/document_ai_processor#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -924,7 +924,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.documentAiProcessor.DocumentAiProcessorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/documentaiprocessor"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/documentaiprocessor"
 
 &documentaiprocessor.DocumentAiProcessorConfig {
 	Connection: interface{},
@@ -941,7 +941,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/documentaiproces
 	Id: *string,
 	KmsKeyName: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.documentAiProcessor.DocumentAiProcessorTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.documentAiProcessor.DocumentAiProcessorTimeouts,
 }
 ```
 
@@ -960,9 +960,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/documentaiproces
 | <code><a href="#@cdktn/provider-google.documentAiProcessor.DocumentAiProcessorConfig.property.location">Location</a></code> | <code>*string</code> | The location of the resource. |
 | <code><a href="#@cdktn/provider-google.documentAiProcessor.DocumentAiProcessorConfig.property.type">Type</a></code> | <code>*string</code> | The type of processor. For possible types see the [official list](https://cloud.google.com/document-ai/docs/reference/rest/v1/projects.locations/fetchProcessorTypes#google.cloud.documentai.v1.DocumentProcessorService.FetchProcessorTypes). |
 | <code><a href="#@cdktn/provider-google.documentAiProcessor.DocumentAiProcessorConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.documentAiProcessor.DocumentAiProcessorConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/document_ai_processor#id DocumentAiProcessor#id}. |
+| <code><a href="#@cdktn/provider-google.documentAiProcessor.DocumentAiProcessorConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/document_ai_processor#id DocumentAiProcessor#id}. |
 | <code><a href="#@cdktn/provider-google.documentAiProcessor.DocumentAiProcessorConfig.property.kmsKeyName">KmsKeyName</a></code> | <code>*string</code> | The KMS key used for encryption/decryption in CMEK scenarios. See https://cloud.google.com/security-key-management. |
-| <code><a href="#@cdktn/provider-google.documentAiProcessor.DocumentAiProcessorConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/document_ai_processor#project DocumentAiProcessor#project}. |
+| <code><a href="#@cdktn/provider-google.documentAiProcessor.DocumentAiProcessorConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/document_ai_processor#project DocumentAiProcessor#project}. |
 | <code><a href="#@cdktn/provider-google.documentAiProcessor.DocumentAiProcessorConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.documentAiProcessor.DocumentAiProcessorTimeouts">DocumentAiProcessorTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1047,7 +1047,7 @@ DisplayName *string
 
 The display name. Must be unique.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/document_ai_processor#display_name DocumentAiProcessor#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/document_ai_processor#display_name DocumentAiProcessor#display_name}
 
 ---
 
@@ -1061,7 +1061,7 @@ Location *string
 
 The location of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/document_ai_processor#location DocumentAiProcessor#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/document_ai_processor#location DocumentAiProcessor#location}
 
 ---
 
@@ -1075,7 +1075,7 @@ Type *string
 
 The type of processor. For possible types see the [official list](https://cloud.google.com/document-ai/docs/reference/rest/v1/projects.locations/fetchProcessorTypes#google.cloud.documentai.v1.DocumentProcessorService.FetchProcessorTypes).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/document_ai_processor#type DocumentAiProcessor#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/document_ai_processor#type DocumentAiProcessor#type}
 
 ---
 
@@ -1096,7 +1096,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/document_ai_processor#deletion_policy DocumentAiProcessor#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/document_ai_processor#deletion_policy DocumentAiProcessor#deletion_policy}
 
 ---
 
@@ -1108,7 +1108,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/document_ai_processor#id DocumentAiProcessor#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/document_ai_processor#id DocumentAiProcessor#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1125,7 +1125,7 @@ KmsKeyName *string
 
 The KMS key used for encryption/decryption in CMEK scenarios. See https://cloud.google.com/security-key-management.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/document_ai_processor#kms_key_name DocumentAiProcessor#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/document_ai_processor#kms_key_name DocumentAiProcessor#kms_key_name}
 
 ---
 
@@ -1137,7 +1137,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/document_ai_processor#project DocumentAiProcessor#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/document_ai_processor#project DocumentAiProcessor#project}.
 
 ---
 
@@ -1151,7 +1151,7 @@ Timeouts DocumentAiProcessorTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/document_ai_processor#timeouts DocumentAiProcessor#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/document_ai_processor#timeouts DocumentAiProcessor#timeouts}
 
 ---
 
@@ -1160,7 +1160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.documentAiProcessor.DocumentAiProcessorTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/documentaiprocessor"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/documentaiprocessor"
 
 &documentaiprocessor.DocumentAiProcessorTimeouts {
 	Create: *string,
@@ -1172,8 +1172,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/documentaiproces
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.documentAiProcessor.DocumentAiProcessorTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/document_ai_processor#create DocumentAiProcessor#create}. |
-| <code><a href="#@cdktn/provider-google.documentAiProcessor.DocumentAiProcessorTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/document_ai_processor#delete DocumentAiProcessor#delete}. |
+| <code><a href="#@cdktn/provider-google.documentAiProcessor.DocumentAiProcessorTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/document_ai_processor#create DocumentAiProcessor#create}. |
+| <code><a href="#@cdktn/provider-google.documentAiProcessor.DocumentAiProcessorTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/document_ai_processor#delete DocumentAiProcessor#delete}. |
 
 ---
 
@@ -1185,7 +1185,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/document_ai_processor#create DocumentAiProcessor#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/document_ai_processor#create DocumentAiProcessor#create}.
 
 ---
 
@@ -1197,7 +1197,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/document_ai_processor#delete DocumentAiProcessor#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/document_ai_processor#delete DocumentAiProcessor#delete}.
 
 ---
 
@@ -1208,7 +1208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.documentAiProcessor.DocumentAiProcessorTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/documentaiprocessor"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/documentaiprocessor"
 
 documentaiprocessor.NewDocumentAiProcessorTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DocumentAiProcessorTimeoutsOutputReference
 ```

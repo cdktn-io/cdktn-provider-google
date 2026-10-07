@@ -4,12 +4,12 @@
 
 ### DataGoogleAccessContextManagerSupportedService <a name="DataGoogleAccessContextManagerSupportedService" id="@cdktn/provider-google.dataGoogleAccessContextManagerSupportedService.DataGoogleAccessContextManagerSupportedService"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/access_context_manager_supported_service google_access_context_manager_supported_service}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/access_context_manager_supported_service google_access_context_manager_supported_service}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleAccessContextManagerSupportedService.DataGoogleAccessContextManagerSupportedService.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleaccesscontextmanagersupportedservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleaccesscontextmanagersupportedservice"
 
 datagoogleaccesscontextmanagersupportedservice.NewDataGoogleAccessContextManagerSupportedService(scope Construct, id *string, config DataGoogleAccessContextManagerSupportedServiceConfig) DataGoogleAccessContextManagerSupportedService
 ```
@@ -305,7 +305,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleAccessContextManagerSupportedService.DataGoogleAccessContextManagerSupportedService.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleaccesscontextmanagersupportedservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleaccesscontextmanagersupportedservice"
 
 datagoogleaccesscontextmanagersupportedservice.DataGoogleAccessContextManagerSupportedService_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleAccessContextManagerSupportedService.DataGoogleAccessContextManagerSupportedService.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleaccesscontextmanagersupportedservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleaccesscontextmanagersupportedservice"
 
 datagoogleaccesscontextmanagersupportedservice.DataGoogleAccessContextManagerSupportedService_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ datagoogleaccesscontextmanagersupportedservice.DataGoogleAccessContextManagerSup
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleAccessContextManagerSupportedService.DataGoogleAccessContextManagerSupportedService.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleaccesscontextmanagersupportedservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleaccesscontextmanagersupportedservice"
 
 datagoogleaccesscontextmanagersupportedservice.DataGoogleAccessContextManagerSupportedService_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagoogleaccesscontextmanagersupportedservice.DataGoogleAccessContextManagerSup
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleAccessContextManagerSupportedService.DataGoogleAccessContextManagerSupportedService.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleaccesscontextmanagersupportedservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleaccesscontextmanagersupportedservice"
 
 datagoogleaccesscontextmanagersupportedservice.DataGoogleAccessContextManagerSupportedService_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataGoogleAccessContextMan
 
 The id of the existing DataGoogleAccessContextManagerSupportedService that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/access_context_manager_supported_service#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/access_context_manager_supported_service#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -682,7 +682,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleAccessContextManagerSupportedService.DataGoogleAccessContextManagerSupportedServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleaccesscontextmanagersupportedservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleaccesscontextmanagersupportedservice"
 
 &datagoogleaccesscontextmanagersupportedservice.DataGoogleAccessContextManagerSupportedServiceConfig {
 	Connection: interface{},
@@ -709,7 +709,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleaccess
 | <code><a href="#@cdktn/provider-google.dataGoogleAccessContextManagerSupportedService.DataGoogleAccessContextManagerSupportedServiceConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleAccessContextManagerSupportedService.DataGoogleAccessContextManagerSupportedServiceConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleAccessContextManagerSupportedService.DataGoogleAccessContextManagerSupportedServiceConfig.property.serviceName">ServiceName</a></code> | <code>*string</code> | The name of the service to get information about. |
-| <code><a href="#@cdktn/provider-google.dataGoogleAccessContextManagerSupportedService.DataGoogleAccessContextManagerSupportedServiceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/access_context_manager_supported_service#id DataGoogleAccessContextManagerSupportedService#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleAccessContextManagerSupportedService.DataGoogleAccessContextManagerSupportedServiceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/access_context_manager_supported_service#id DataGoogleAccessContextManagerSupportedService#id}. |
 
 ---
 
@@ -795,7 +795,7 @@ The name of the service to get information about.
 
 The names must be in the same format as used in defining a service perimeter, for example, `storage.googleapis.com`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/access_context_manager_supported_service#service_name DataGoogleAccessContextManagerSupportedService#service_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/access_context_manager_supported_service#service_name DataGoogleAccessContextManagerSupportedService#service_name}
 
 ---
 
@@ -807,7 +807,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/access_context_manager_supported_service#id DataGoogleAccessContextManagerSupportedService#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/access_context_manager_supported_service#id DataGoogleAccessContextManagerSupportedService#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -819,7 +819,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleAccessContextManagerSupportedService.DataGoogleAccessContextManagerSupportedServiceSupportedMethods.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleaccesscontextmanagersupportedservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleaccesscontextmanagersupportedservice"
 
 &datagoogleaccesscontextmanagersupportedservice.DataGoogleAccessContextManagerSupportedServiceSupportedMethods {
 
@@ -834,7 +834,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleaccess
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleAccessContextManagerSupportedService.DataGoogleAccessContextManagerSupportedServiceSupportedMethodsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleaccesscontextmanagersupportedservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleaccesscontextmanagersupportedservice"
 
 datagoogleaccesscontextmanagersupportedservice.NewDataGoogleAccessContextManagerSupportedServiceSupportedMethodsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleAccessContextManagerSupportedServiceSupportedMethodsList
 ```
@@ -983,7 +983,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleAccessContextManagerSupportedService.DataGoogleAccessContextManagerSupportedServiceSupportedMethodsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleaccesscontextmanagersupportedservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleaccesscontextmanagersupportedservice"
 
 datagoogleaccesscontextmanagersupportedservice.NewDataGoogleAccessContextManagerSupportedServiceSupportedMethodsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleAccessContextManagerSupportedServiceSupportedMethodsOutputReference
 ```

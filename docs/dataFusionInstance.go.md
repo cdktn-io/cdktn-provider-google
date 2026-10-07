@@ -4,12 +4,12 @@
 
 ### DataFusionInstance <a name="DataFusionInstance" id="@cdktn/provider-google.dataFusionInstance.DataFusionInstance"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance google_data_fusion_instance}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_fusion_instance google_data_fusion_instance}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataFusionInstance.DataFusionInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datafusioninstance"
 
 datafusioninstance.NewDataFusionInstance(scope Construct, id *string, config DataFusionInstanceConfig) DataFusionInstance
 ```
@@ -639,7 +639,7 @@ func ResetZone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataFusionInstance.DataFusionInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datafusioninstance"
 
 datafusioninstance.DataFusionInstance_IsConstruct(x interface{}) *bool
 ```
@@ -671,7 +671,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataFusionInstance.DataFusionInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datafusioninstance"
 
 datafusioninstance.DataFusionInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -685,7 +685,7 @@ datafusioninstance.DataFusionInstance_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.dataFusionInstance.DataFusionInstance.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datafusioninstance"
 
 datafusioninstance.DataFusionInstance_IsTerraformResource(x interface{}) *bool
 ```
@@ -699,7 +699,7 @@ datafusioninstance.DataFusionInstance_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataFusionInstance.DataFusionInstance.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datafusioninstance"
 
 datafusioninstance.DataFusionInstance_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -728,7 +728,7 @@ The construct id used in the generated config for the DataFusionInstance to impo
 
 The id of the existing DataFusionInstance that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_fusion_instance#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1610,7 +1610,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataFusionInstance.DataFusionInstanceAccelerators.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datafusioninstance"
 
 &datafusioninstance.DataFusionInstanceAccelerators {
 	AcceleratorType: *string,
@@ -1637,7 +1637,7 @@ AcceleratorType *string
 
 The type of an accelator for a CDF instance. Possible values: ["CDC", "HEALTHCARE", "CCAI_INSIGHTS"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#accelerator_type DataFusionInstance#accelerator_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_fusion_instance#accelerator_type DataFusionInstance#accelerator_type}
 
 ---
 
@@ -1651,7 +1651,7 @@ State *string
 
 The type of an accelator for a CDF instance. Possible values: ["ENABLED", "DISABLED"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#state DataFusionInstance#state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_fusion_instance#state DataFusionInstance#state}
 
 ---
 
@@ -1660,7 +1660,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataFusionInstance.DataFusionInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datafusioninstance"
 
 &datafusioninstance.DataFusionInstanceConfig {
 	Connection: interface{},
@@ -1673,7 +1673,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstan
 	Name: *string,
 	Type: *string,
 	Accelerators: interface{},
-	CryptoKeyConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dataFusionInstance.DataFusionInstanceCryptoKeyConfig,
+	CryptoKeyConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataFusionInstance.DataFusionInstanceCryptoKeyConfig,
 	DataprocServiceAccount: *string,
 	DeletionPolicy: *string,
 	Description: *string,
@@ -1681,18 +1681,18 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstan
 	EnableRbac: interface{},
 	EnableStackdriverLogging: interface{},
 	EnableStackdriverMonitoring: interface{},
-	EventPublishConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dataFusionInstance.DataFusionInstanceEventPublishConfig,
+	EventPublishConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataFusionInstance.DataFusionInstanceEventPublishConfig,
 	Id: *string,
 	Labels: *map[string]*string,
-	MaintenancePolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dataFusionInstance.DataFusionInstanceMaintenancePolicy,
-	NetworkConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dataFusionInstance.DataFusionInstanceNetworkConfig,
+	MaintenancePolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataFusionInstance.DataFusionInstanceMaintenancePolicy,
+	NetworkConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataFusionInstance.DataFusionInstanceNetworkConfig,
 	Options: *map[string]*string,
 	PatchRevision: *string,
 	PrivateInstance: interface{},
 	Project: *string,
 	Region: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dataFusionInstance.DataFusionInstanceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataFusionInstance.DataFusionInstanceTimeouts,
 	Version: *string,
 	Zone: *string,
 }
@@ -1721,14 +1721,14 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstan
 | <code><a href="#@cdktn/provider-google.dataFusionInstance.DataFusionInstanceConfig.property.enableStackdriverLogging">EnableStackdriverLogging</a></code> | <code>interface{}</code> | Option to enable Stackdriver Logging. |
 | <code><a href="#@cdktn/provider-google.dataFusionInstance.DataFusionInstanceConfig.property.enableStackdriverMonitoring">EnableStackdriverMonitoring</a></code> | <code>interface{}</code> | Option to enable Stackdriver Monitoring. |
 | <code><a href="#@cdktn/provider-google.dataFusionInstance.DataFusionInstanceConfig.property.eventPublishConfig">EventPublishConfig</a></code> | <code><a href="#@cdktn/provider-google.dataFusionInstance.DataFusionInstanceEventPublishConfig">DataFusionInstanceEventPublishConfig</a></code> | event_publish_config block. |
-| <code><a href="#@cdktn/provider-google.dataFusionInstance.DataFusionInstanceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#id DataFusionInstance#id}. |
+| <code><a href="#@cdktn/provider-google.dataFusionInstance.DataFusionInstanceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_fusion_instance#id DataFusionInstance#id}. |
 | <code><a href="#@cdktn/provider-google.dataFusionInstance.DataFusionInstanceConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | The resource labels for instance to use to annotate any related underlying resources, such as Compute Engine VMs. |
 | <code><a href="#@cdktn/provider-google.dataFusionInstance.DataFusionInstanceConfig.property.maintenancePolicy">MaintenancePolicy</a></code> | <code><a href="#@cdktn/provider-google.dataFusionInstance.DataFusionInstanceMaintenancePolicy">DataFusionInstanceMaintenancePolicy</a></code> | maintenance_policy block. |
 | <code><a href="#@cdktn/provider-google.dataFusionInstance.DataFusionInstanceConfig.property.networkConfig">NetworkConfig</a></code> | <code><a href="#@cdktn/provider-google.dataFusionInstance.DataFusionInstanceNetworkConfig">DataFusionInstanceNetworkConfig</a></code> | network_config block. |
 | <code><a href="#@cdktn/provider-google.dataFusionInstance.DataFusionInstanceConfig.property.options">Options</a></code> | <code>*map[string]*string</code> | Map of additional options used to configure the behavior of Data Fusion instance. |
 | <code><a href="#@cdktn/provider-google.dataFusionInstance.DataFusionInstanceConfig.property.patchRevision">PatchRevision</a></code> | <code>*string</code> | Current patch revision of the Data Fusion. |
 | <code><a href="#@cdktn/provider-google.dataFusionInstance.DataFusionInstanceConfig.property.privateInstance">PrivateInstance</a></code> | <code>interface{}</code> | Specifies whether the Data Fusion instance should be private. |
-| <code><a href="#@cdktn/provider-google.dataFusionInstance.DataFusionInstanceConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#project DataFusionInstance#project}. |
+| <code><a href="#@cdktn/provider-google.dataFusionInstance.DataFusionInstanceConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_fusion_instance#project DataFusionInstance#project}. |
 | <code><a href="#@cdktn/provider-google.dataFusionInstance.DataFusionInstanceConfig.property.region">Region</a></code> | <code>*string</code> | The region of the Data Fusion instance. |
 | <code><a href="#@cdktn/provider-google.dataFusionInstance.DataFusionInstanceConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | A map of resource manager tags. |
 | <code><a href="#@cdktn/provider-google.dataFusionInstance.DataFusionInstanceConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.dataFusionInstance.DataFusionInstanceTimeouts">DataFusionInstanceTimeouts</a></code> | timeouts block. |
@@ -1817,7 +1817,7 @@ Name *string
 
 The ID of the instance or a fully qualified identifier for the instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#name DataFusionInstance#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_fusion_instance#name DataFusionInstance#name}
 
 ---
 
@@ -1843,7 +1843,7 @@ the default settings for processing and memory.
   with restrictive capabilities. This is to help enterprises design and develop their data ingestion and integration
   pipelines at low cost. Possible values: ["BASIC", "ENTERPRISE", "DEVELOPER"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#type DataFusionInstance#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_fusion_instance#type DataFusionInstance#type}
 
 ---
 
@@ -1857,7 +1857,7 @@ Accelerators interface{}
 
 accelerators block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#accelerators DataFusionInstance#accelerators}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_fusion_instance#accelerators DataFusionInstance#accelerators}
 
 ---
 
@@ -1871,7 +1871,7 @@ CryptoKeyConfig DataFusionInstanceCryptoKeyConfig
 
 crypto_key_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#crypto_key_config DataFusionInstance#crypto_key_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_fusion_instance#crypto_key_config DataFusionInstance#crypto_key_config}
 
 ---
 
@@ -1885,7 +1885,7 @@ DataprocServiceAccount *string
 
 User-managed service account to set on Dataproc when Cloud Data Fusion creates Dataproc to run data processing pipelines.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#dataproc_service_account DataFusionInstance#dataproc_service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_fusion_instance#dataproc_service_account DataFusionInstance#dataproc_service_account}
 
 ---
 
@@ -1906,7 +1906,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#deletion_policy DataFusionInstance#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_fusion_instance#deletion_policy DataFusionInstance#deletion_policy}
 
 ---
 
@@ -1920,7 +1920,7 @@ Description *string
 
 An optional description of the instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#description DataFusionInstance#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_fusion_instance#description DataFusionInstance#description}
 
 ---
 
@@ -1934,7 +1934,7 @@ DisplayName *string
 
 Display name for an instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#display_name DataFusionInstance#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_fusion_instance#display_name DataFusionInstance#display_name}
 
 ---
 
@@ -1948,7 +1948,7 @@ EnableRbac interface{}
 
 Option to enable granular role-based access control.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#enable_rbac DataFusionInstance#enable_rbac}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_fusion_instance#enable_rbac DataFusionInstance#enable_rbac}
 
 ---
 
@@ -1962,7 +1962,7 @@ EnableStackdriverLogging interface{}
 
 Option to enable Stackdriver Logging.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#enable_stackdriver_logging DataFusionInstance#enable_stackdriver_logging}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_fusion_instance#enable_stackdriver_logging DataFusionInstance#enable_stackdriver_logging}
 
 ---
 
@@ -1976,7 +1976,7 @@ EnableStackdriverMonitoring interface{}
 
 Option to enable Stackdriver Monitoring.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#enable_stackdriver_monitoring DataFusionInstance#enable_stackdriver_monitoring}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_fusion_instance#enable_stackdriver_monitoring DataFusionInstance#enable_stackdriver_monitoring}
 
 ---
 
@@ -1990,7 +1990,7 @@ EventPublishConfig DataFusionInstanceEventPublishConfig
 
 event_publish_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#event_publish_config DataFusionInstance#event_publish_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_fusion_instance#event_publish_config DataFusionInstance#event_publish_config}
 
 ---
 
@@ -2002,7 +2002,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#id DataFusionInstance#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_fusion_instance#id DataFusionInstance#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2022,7 +2022,7 @@ The resource labels for instance to use to annotate any related underlying resou
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#labels DataFusionInstance#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_fusion_instance#labels DataFusionInstance#labels}
 
 ---
 
@@ -2036,7 +2036,7 @@ MaintenancePolicy DataFusionInstanceMaintenancePolicy
 
 maintenance_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#maintenance_policy DataFusionInstance#maintenance_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_fusion_instance#maintenance_policy DataFusionInstance#maintenance_policy}
 
 ---
 
@@ -2050,7 +2050,7 @@ NetworkConfig DataFusionInstanceNetworkConfig
 
 network_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#network_config DataFusionInstance#network_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_fusion_instance#network_config DataFusionInstance#network_config}
 
 ---
 
@@ -2064,7 +2064,7 @@ Options *map[string]*string
 
 Map of additional options used to configure the behavior of Data Fusion instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#options DataFusionInstance#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_fusion_instance#options DataFusionInstance#options}
 
 ---
 
@@ -2078,7 +2078,7 @@ PatchRevision *string
 
 Current patch revision of the Data Fusion.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#patch_revision DataFusionInstance#patch_revision}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_fusion_instance#patch_revision DataFusionInstance#patch_revision}
 
 ---
 
@@ -2096,7 +2096,7 @@ If set to
 true, all Data Fusion nodes will have private IP addresses and will not be
 able to access the public internet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#private_instance DataFusionInstance#private_instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_fusion_instance#private_instance DataFusionInstance#private_instance}
 
 ---
 
@@ -2108,7 +2108,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#project DataFusionInstance#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_fusion_instance#project DataFusionInstance#project}.
 
 ---
 
@@ -2122,7 +2122,7 @@ Region *string
 
 The region of the Data Fusion instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#region DataFusionInstance#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_fusion_instance#region DataFusionInstance#region}
 
 ---
 
@@ -2140,7 +2140,7 @@ Resource manager tag keys and values have the same definition as resource manage
 Keys must be in the format tagKeys/{tag_key_id}, and values are in the format tagValues/{tag_value_id}.
 The field is ignored (both PUT & PATCH) when empty.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#tags DataFusionInstance#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_fusion_instance#tags DataFusionInstance#tags}
 
 ---
 
@@ -2154,7 +2154,7 @@ Timeouts DataFusionInstanceTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#timeouts DataFusionInstance#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_fusion_instance#timeouts DataFusionInstance#timeouts}
 
 ---
 
@@ -2168,7 +2168,7 @@ Version *string
 
 Current version of the Data Fusion.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#version DataFusionInstance#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_fusion_instance#version DataFusionInstance#version}
 
 ---
 
@@ -2182,7 +2182,7 @@ Zone *string
 
 Name of the zone in which the Data Fusion instance will be created. Only DEVELOPER instances use this field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#zone DataFusionInstance#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_fusion_instance#zone DataFusionInstance#zone}
 
 ---
 
@@ -2191,7 +2191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataFusionInstance.DataFusionInstanceCryptoKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datafusioninstance"
 
 &datafusioninstance.DataFusionInstanceCryptoKeyConfig {
 	KeyReference: *string,
@@ -2218,7 +2218,7 @@ The name of the key which is used to encrypt/decrypt customer data.
 
 For key in Cloud KMS, the key should be in the format of projects/* /locations/* /keyRings/* /cryptoKeys/*.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#key_reference DataFusionInstance#key_reference}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_fusion_instance#key_reference DataFusionInstance#key_reference}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -2229,7 +2229,7 @@ Note: The above comment contained a comment block ending sequence (* followed by
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataFusionInstance.DataFusionInstanceEventPublishConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datafusioninstance"
 
 &datafusioninstance.DataFusionInstanceEventPublishConfig {
 	Enabled: interface{},
@@ -2256,7 +2256,7 @@ Enabled interface{}
 
 Option to enable Event Publishing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#enabled DataFusionInstance#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_fusion_instance#enabled DataFusionInstance#enabled}
 
 ---
 
@@ -2270,7 +2270,7 @@ Topic *string
 
 The resource name of the Pub/Sub topic. Format: projects/{projectId}/topics/{topic_id}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#topic DataFusionInstance#topic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_fusion_instance#topic DataFusionInstance#topic}
 
 ---
 
@@ -2279,7 +2279,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataFusionInstance.DataFusionInstanceMaintenanceEvents.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datafusioninstance"
 
 &datafusioninstance.DataFusionInstanceMaintenanceEvents {
 
@@ -2292,10 +2292,10 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstan
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataFusionInstance.DataFusionInstanceMaintenancePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datafusioninstance"
 
 &datafusioninstance.DataFusionInstanceMaintenancePolicy {
-	MaintenanceWindow: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dataFusionInstance.DataFusionInstanceMaintenancePolicyMaintenanceWindow,
+	MaintenanceWindow: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataFusionInstance.DataFusionInstanceMaintenancePolicyMaintenanceWindow,
 }
 ```
 
@@ -2317,7 +2317,7 @@ MaintenanceWindow DataFusionInstanceMaintenancePolicyMaintenanceWindow
 
 maintenance_window block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#maintenance_window DataFusionInstance#maintenance_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_fusion_instance#maintenance_window DataFusionInstance#maintenance_window}
 
 ---
 
@@ -2326,10 +2326,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataFusionInstance.DataFusionInstanceMaintenancePolicyMaintenanceWindow.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datafusioninstance"
 
 &datafusioninstance.DataFusionInstanceMaintenancePolicyMaintenanceWindow {
-	RecurringTimeWindow: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dataFusionInstance.DataFusionInstanceMaintenancePolicyMaintenanceWindowRecurringTimeWindow,
+	RecurringTimeWindow: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataFusionInstance.DataFusionInstanceMaintenancePolicyMaintenanceWindowRecurringTimeWindow,
 }
 ```
 
@@ -2351,7 +2351,7 @@ RecurringTimeWindow DataFusionInstanceMaintenancePolicyMaintenanceWindowRecurrin
 
 recurring_time_window block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#recurring_time_window DataFusionInstance#recurring_time_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_fusion_instance#recurring_time_window DataFusionInstance#recurring_time_window}
 
 ---
 
@@ -2360,11 +2360,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataFusionInstance.DataFusionInstanceMaintenancePolicyMaintenanceWindowRecurringTimeWindow.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datafusioninstance"
 
 &datafusioninstance.DataFusionInstanceMaintenancePolicyMaintenanceWindowRecurringTimeWindow {
 	Recurrence: *string,
-	Window: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dataFusionInstance.DataFusionInstanceMaintenancePolicyMaintenanceWindowRecurringTimeWindowWindow,
+	Window: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataFusionInstance.DataFusionInstanceMaintenancePolicyMaintenanceWindowRecurringTimeWindowWindow,
 }
 ```
 
@@ -2389,7 +2389,7 @@ An RRULE with format RFC-5545 for how this window reccurs.
 
 They go on for the span of time between the start and end time. The only supported FREQ value is "WEEKLY". To have something repeat every weekday, use: "FREQ=WEEKLY;BYDAY=MO,TU,WE,TH,FR".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#recurrence DataFusionInstance#recurrence}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_fusion_instance#recurrence DataFusionInstance#recurrence}
 
 ---
 
@@ -2403,7 +2403,7 @@ Window DataFusionInstanceMaintenancePolicyMaintenanceWindowRecurringTimeWindowWi
 
 window block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#window DataFusionInstance#window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_fusion_instance#window DataFusionInstance#window}
 
 ---
 
@@ -2412,7 +2412,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataFusionInstance.DataFusionInstanceMaintenancePolicyMaintenanceWindowRecurringTimeWindowWindow.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datafusioninstance"
 
 &datafusioninstance.DataFusionInstanceMaintenancePolicyMaintenanceWindowRecurringTimeWindowWindow {
 	EndTime: *string,
@@ -2439,7 +2439,7 @@ EndTime *string
 
 The end time of the time window provided in RFC 3339 format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#end_time DataFusionInstance#end_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_fusion_instance#end_time DataFusionInstance#end_time}
 
 ---
 
@@ -2453,7 +2453,7 @@ StartTime *string
 
 The start time of the time window provided in RFC 3339 format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#start_time DataFusionInstance#start_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_fusion_instance#start_time DataFusionInstance#start_time}
 
 ---
 
@@ -2462,13 +2462,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataFusionInstance.DataFusionInstanceNetworkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datafusioninstance"
 
 &datafusioninstance.DataFusionInstanceNetworkConfig {
 	ConnectionType: *string,
 	IpAllocation: *string,
 	Network: *string,
-	PrivateServiceConnectConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dataFusionInstance.DataFusionInstanceNetworkConfigPrivateServiceConnectConfig,
+	PrivateServiceConnectConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataFusionInstance.DataFusionInstanceNetworkConfigPrivateServiceConnectConfig,
 }
 ```
 
@@ -2497,7 +2497,7 @@ Type of connection for establishing private IP connectivity between the Data Fus
 the corresponding tenant project from a predefined list of available connection modes.
 If this field is unspecified for a private instance, VPC peering is used. Possible values: ["VPC_PEERING", "PRIVATE_SERVICE_CONNECT_INTERFACES"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#connection_type DataFusionInstance#connection_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_fusion_instance#connection_type DataFusionInstance#connection_type}
 
 ---
 
@@ -2513,7 +2513,7 @@ The IP range in CIDR notation to use for the managed Data Fusion instance nodes.
 
 This range must not overlap with any other ranges used in the Data Fusion instance network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#ip_allocation DataFusionInstance#ip_allocation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_fusion_instance#ip_allocation DataFusionInstance#ip_allocation}
 
 ---
 
@@ -2530,7 +2530,7 @@ Name of the network in the project with which the tenant project will be peered 
 In case of shared VPC where the network resides in another host
 project the network should specified in the form of projects/{host-project-id}/global/networks/{network}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#network DataFusionInstance#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_fusion_instance#network DataFusionInstance#network}
 
 ---
 
@@ -2544,7 +2544,7 @@ PrivateServiceConnectConfig DataFusionInstanceNetworkConfigPrivateServiceConnect
 
 private_service_connect_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#private_service_connect_config DataFusionInstance#private_service_connect_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_fusion_instance#private_service_connect_config DataFusionInstance#private_service_connect_config}
 
 ---
 
@@ -2553,7 +2553,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataFusionInstance.DataFusionInstanceNetworkConfigPrivateServiceConnectConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datafusioninstance"
 
 &datafusioninstance.DataFusionInstanceNetworkConfigPrivateServiceConnectConfig {
 	NetworkAttachment: *string,
@@ -2584,7 +2584,7 @@ The reference to the network attachment used to establish private connectivity.
 It will be of the form projects/{project-id}/regions/{region}/networkAttachments/{network-attachment-id}.
 This is required only when using connection type PRIVATE_SERVICE_CONNECT_INTERFACES.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#network_attachment DataFusionInstance#network_attachment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_fusion_instance#network_attachment DataFusionInstance#network_attachment}
 
 ---
 
@@ -2603,7 +2603,7 @@ The size of this block should be at least /25. This range should not overlap wit
 This range can be used for other purposes in the consumer VPC as long as there is no requirement for CDF to reach destinations using these addresses.
 If this value is not provided, the server chooses a non RFC 1918 address range. The format of this field is governed by RFC 4632.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#unreachable_cidr_block DataFusionInstance#unreachable_cidr_block}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_fusion_instance#unreachable_cidr_block DataFusionInstance#unreachable_cidr_block}
 
 ---
 
@@ -2612,7 +2612,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataFusionInstance.DataFusionInstanceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datafusioninstance"
 
 &datafusioninstance.DataFusionInstanceTimeouts {
 	Create: *string,
@@ -2625,9 +2625,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstan
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataFusionInstance.DataFusionInstanceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#create DataFusionInstance#create}. |
-| <code><a href="#@cdktn/provider-google.dataFusionInstance.DataFusionInstanceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#delete DataFusionInstance#delete}. |
-| <code><a href="#@cdktn/provider-google.dataFusionInstance.DataFusionInstanceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#update DataFusionInstance#update}. |
+| <code><a href="#@cdktn/provider-google.dataFusionInstance.DataFusionInstanceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_fusion_instance#create DataFusionInstance#create}. |
+| <code><a href="#@cdktn/provider-google.dataFusionInstance.DataFusionInstanceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_fusion_instance#delete DataFusionInstance#delete}. |
+| <code><a href="#@cdktn/provider-google.dataFusionInstance.DataFusionInstanceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_fusion_instance#update DataFusionInstance#update}. |
 
 ---
 
@@ -2639,7 +2639,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#create DataFusionInstance#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_fusion_instance#create DataFusionInstance#create}.
 
 ---
 
@@ -2651,7 +2651,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#delete DataFusionInstance#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_fusion_instance#delete DataFusionInstance#delete}.
 
 ---
 
@@ -2663,7 +2663,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_fusion_instance#update DataFusionInstance#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_fusion_instance#update DataFusionInstance#update}.
 
 ---
 
@@ -2674,7 +2674,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataFusionInstance.DataFusionInstanceAcceleratorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datafusioninstance"
 
 datafusioninstance.NewDataFusionInstanceAcceleratorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataFusionInstanceAcceleratorsList
 ```
@@ -2834,7 +2834,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataFusionInstance.DataFusionInstanceAcceleratorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datafusioninstance"
 
 datafusioninstance.NewDataFusionInstanceAcceleratorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataFusionInstanceAcceleratorsOutputReference
 ```
@@ -3145,7 +3145,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataFusionInstance.DataFusionInstanceCryptoKeyConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datafusioninstance"
 
 datafusioninstance.NewDataFusionInstanceCryptoKeyConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataFusionInstanceCryptoKeyConfigOutputReference
 ```
@@ -3416,7 +3416,7 @@ func InternalValue() DataFusionInstanceCryptoKeyConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataFusionInstance.DataFusionInstanceEventPublishConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datafusioninstance"
 
 datafusioninstance.NewDataFusionInstanceEventPublishConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataFusionInstanceEventPublishConfigOutputReference
 ```
@@ -3709,7 +3709,7 @@ func InternalValue() DataFusionInstanceEventPublishConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataFusionInstance.DataFusionInstanceMaintenanceEventsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datafusioninstance"
 
 datafusioninstance.NewDataFusionInstanceMaintenanceEventsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataFusionInstanceMaintenanceEventsList
 ```
@@ -3858,7 +3858,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataFusionInstance.DataFusionInstanceMaintenanceEventsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datafusioninstance"
 
 datafusioninstance.NewDataFusionInstanceMaintenanceEventsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataFusionInstanceMaintenanceEventsOutputReference
 ```
@@ -4158,7 +4158,7 @@ func InternalValue() DataFusionInstanceMaintenanceEvents
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataFusionInstance.DataFusionInstanceMaintenancePolicyMaintenanceWindowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datafusioninstance"
 
 datafusioninstance.NewDataFusionInstanceMaintenancePolicyMaintenanceWindowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataFusionInstanceMaintenancePolicyMaintenanceWindowOutputReference
 ```
@@ -4442,7 +4442,7 @@ func InternalValue() DataFusionInstanceMaintenancePolicyMaintenanceWindow
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataFusionInstance.DataFusionInstanceMaintenancePolicyMaintenanceWindowRecurringTimeWindowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datafusioninstance"
 
 datafusioninstance.NewDataFusionInstanceMaintenancePolicyMaintenanceWindowRecurringTimeWindowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataFusionInstanceMaintenancePolicyMaintenanceWindowRecurringTimeWindowOutputReference
 ```
@@ -4748,7 +4748,7 @@ func InternalValue() DataFusionInstanceMaintenancePolicyMaintenanceWindowRecurri
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataFusionInstance.DataFusionInstanceMaintenancePolicyMaintenanceWindowRecurringTimeWindowWindowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datafusioninstance"
 
 datafusioninstance.NewDataFusionInstanceMaintenancePolicyMaintenanceWindowRecurringTimeWindowWindowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataFusionInstanceMaintenancePolicyMaintenanceWindowRecurringTimeWindowWindowOutputReference
 ```
@@ -5041,7 +5041,7 @@ func InternalValue() DataFusionInstanceMaintenancePolicyMaintenanceWindowRecurri
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataFusionInstance.DataFusionInstanceMaintenancePolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datafusioninstance"
 
 datafusioninstance.NewDataFusionInstanceMaintenancePolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataFusionInstanceMaintenancePolicyOutputReference
 ```
@@ -5332,7 +5332,7 @@ func InternalValue() DataFusionInstanceMaintenancePolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataFusionInstance.DataFusionInstanceNetworkConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datafusioninstance"
 
 datafusioninstance.NewDataFusionInstanceNetworkConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataFusionInstanceNetworkConfigOutputReference
 ```
@@ -5710,7 +5710,7 @@ func InternalValue() DataFusionInstanceNetworkConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataFusionInstance.DataFusionInstanceNetworkConfigPrivateServiceConnectConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datafusioninstance"
 
 datafusioninstance.NewDataFusionInstanceNetworkConfigPrivateServiceConnectConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataFusionInstanceNetworkConfigPrivateServiceConnectConfigOutputReference
 ```
@@ -6028,7 +6028,7 @@ func InternalValue() DataFusionInstanceNetworkConfigPrivateServiceConnectConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataFusionInstance.DataFusionInstanceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datafusioninstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datafusioninstance"
 
 datafusioninstance.NewDataFusionInstanceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataFusionInstanceTimeoutsOutputReference
 ```

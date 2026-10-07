@@ -4,12 +4,12 @@
 
 ### MonitoringService <a name="MonitoringService" id="@cdktn/provider-google.monitoringService.MonitoringService"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/monitoring_service google_monitoring_service}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/monitoring_service google_monitoring_service}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.monitoringService.MonitoringService.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/monitoringservice"
 
 monitoringservice.NewMonitoringService(scope Construct, id *string, config MonitoringServiceConfig) MonitoringService
 ```
@@ -475,7 +475,7 @@ func ResetUserLabels()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.monitoringService.MonitoringService.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/monitoringservice"
 
 monitoringservice.MonitoringService_IsConstruct(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.monitoringService.MonitoringService.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/monitoringservice"
 
 monitoringservice.MonitoringService_IsTerraformElement(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ monitoringservice.MonitoringService_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.monitoringService.MonitoringService.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/monitoringservice"
 
 monitoringservice.MonitoringService_IsTerraformResource(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ monitoringservice.MonitoringService_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.monitoringService.MonitoringService.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/monitoringservice"
 
 monitoringservice.MonitoringService_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -564,7 +564,7 @@ The construct id used in the generated config for the MonitoringService to impor
 
 The id of the existing MonitoringService that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/monitoring_service#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/monitoring_service#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -962,7 +962,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.monitoringService.MonitoringServiceBasicService.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/monitoringservice"
 
 &monitoringservice.MonitoringServiceBasicService {
 	ServiceLabels: *map[string]*string,
@@ -989,7 +989,7 @@ ServiceLabels *map[string]*string
 
 Labels that specify the resource that emits the monitoring data which is used for SLO reporting of this 'Service'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/monitoring_service#service_labels MonitoringService#service_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/monitoring_service#service_labels MonitoringService#service_labels}
 
 ---
 
@@ -1003,7 +1003,7 @@ ServiceType *string
 
 The type of service that this basic service defines, e.g. APP_ENGINE service type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/monitoring_service#service_type MonitoringService#service_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/monitoring_service#service_type MonitoringService#service_type}
 
 ---
 
@@ -1012,7 +1012,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.monitoringService.MonitoringServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/monitoringservice"
 
 &monitoringservice.MonitoringServiceConfig {
 	Connection: interface{},
@@ -1023,12 +1023,12 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringservic
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	ServiceId: *string,
-	BasicService: github.com/cdktn-io/cdktn-provider-google-go/google/v20.monitoringService.MonitoringServiceBasicService,
+	BasicService: github.com/cdktn-io/cdktn-provider-google-go/google/v21.monitoringService.MonitoringServiceBasicService,
 	DeletionPolicy: *string,
 	DisplayName: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.monitoringService.MonitoringServiceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.monitoringService.MonitoringServiceTimeouts,
 	UserLabels: *map[string]*string,
 }
 ```
@@ -1048,8 +1048,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringservic
 | <code><a href="#@cdktn/provider-google.monitoringService.MonitoringServiceConfig.property.basicService">BasicService</a></code> | <code><a href="#@cdktn/provider-google.monitoringService.MonitoringServiceBasicService">MonitoringServiceBasicService</a></code> | basic_service block. |
 | <code><a href="#@cdktn/provider-google.monitoringService.MonitoringServiceConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.monitoringService.MonitoringServiceConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | Name used for UI elements listing this Service. |
-| <code><a href="#@cdktn/provider-google.monitoringService.MonitoringServiceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/monitoring_service#id MonitoringService#id}. |
-| <code><a href="#@cdktn/provider-google.monitoringService.MonitoringServiceConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/monitoring_service#project MonitoringService#project}. |
+| <code><a href="#@cdktn/provider-google.monitoringService.MonitoringServiceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/monitoring_service#id MonitoringService#id}. |
+| <code><a href="#@cdktn/provider-google.monitoringService.MonitoringServiceConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/monitoring_service#project MonitoringService#project}. |
 | <code><a href="#@cdktn/provider-google.monitoringService.MonitoringServiceConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.monitoringService.MonitoringServiceTimeouts">MonitoringServiceTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.monitoringService.MonitoringServiceConfig.property.userLabels">UserLabels</a></code> | <code>*map[string]*string</code> | Labels which have been used to annotate the service. |
 
@@ -1135,7 +1135,7 @@ ServiceId *string
 
 An optional service ID to use. If not given, the server will generate a service ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/monitoring_service#service_id MonitoringService#service_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/monitoring_service#service_id MonitoringService#service_id}
 
 ---
 
@@ -1149,7 +1149,7 @@ BasicService MonitoringServiceBasicService
 
 basic_service block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/monitoring_service#basic_service MonitoringService#basic_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/monitoring_service#basic_service MonitoringService#basic_service}
 
 ---
 
@@ -1170,7 +1170,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/monitoring_service#deletion_policy MonitoringService#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/monitoring_service#deletion_policy MonitoringService#deletion_policy}
 
 ---
 
@@ -1184,7 +1184,7 @@ DisplayName *string
 
 Name used for UI elements listing this Service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/monitoring_service#display_name MonitoringService#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/monitoring_service#display_name MonitoringService#display_name}
 
 ---
 
@@ -1196,7 +1196,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/monitoring_service#id MonitoringService#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/monitoring_service#id MonitoringService#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1211,7 +1211,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/monitoring_service#project MonitoringService#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/monitoring_service#project MonitoringService#project}.
 
 ---
 
@@ -1225,7 +1225,7 @@ Timeouts MonitoringServiceTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/monitoring_service#timeouts MonitoringService#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/monitoring_service#timeouts MonitoringService#timeouts}
 
 ---
 
@@ -1246,7 +1246,7 @@ length of 63 characters, and must be less than 128 bytes in size. Up to 64
 label entries may be stored. For labels which do not have a semantic value,
 the empty string may be supplied for the label value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/monitoring_service#user_labels MonitoringService#user_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/monitoring_service#user_labels MonitoringService#user_labels}
 
 ---
 
@@ -1255,7 +1255,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.monitoringService.MonitoringServiceTelemetry.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/monitoringservice"
 
 &monitoringservice.MonitoringServiceTelemetry {
 
@@ -1268,7 +1268,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringservic
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.monitoringService.MonitoringServiceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/monitoringservice"
 
 &monitoringservice.MonitoringServiceTimeouts {
 	Create: *string,
@@ -1281,9 +1281,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringservic
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.monitoringService.MonitoringServiceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/monitoring_service#create MonitoringService#create}. |
-| <code><a href="#@cdktn/provider-google.monitoringService.MonitoringServiceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/monitoring_service#delete MonitoringService#delete}. |
-| <code><a href="#@cdktn/provider-google.monitoringService.MonitoringServiceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/monitoring_service#update MonitoringService#update}. |
+| <code><a href="#@cdktn/provider-google.monitoringService.MonitoringServiceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/monitoring_service#create MonitoringService#create}. |
+| <code><a href="#@cdktn/provider-google.monitoringService.MonitoringServiceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/monitoring_service#delete MonitoringService#delete}. |
+| <code><a href="#@cdktn/provider-google.monitoringService.MonitoringServiceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/monitoring_service#update MonitoringService#update}. |
 
 ---
 
@@ -1295,7 +1295,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/monitoring_service#create MonitoringService#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/monitoring_service#create MonitoringService#create}.
 
 ---
 
@@ -1307,7 +1307,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/monitoring_service#delete MonitoringService#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/monitoring_service#delete MonitoringService#delete}.
 
 ---
 
@@ -1319,7 +1319,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/monitoring_service#update MonitoringService#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/monitoring_service#update MonitoringService#update}.
 
 ---
 
@@ -1330,7 +1330,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.monitoringService.MonitoringServiceBasicServiceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/monitoringservice"
 
 monitoringservice.NewMonitoringServiceBasicServiceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitoringServiceBasicServiceOutputReference
 ```
@@ -1637,7 +1637,7 @@ func InternalValue() MonitoringServiceBasicService
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.monitoringService.MonitoringServiceTelemetryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/monitoringservice"
 
 monitoringservice.NewMonitoringServiceTelemetryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitoringServiceTelemetryList
 ```
@@ -1786,7 +1786,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.monitoringService.MonitoringServiceTelemetryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/monitoringservice"
 
 monitoringservice.NewMonitoringServiceTelemetryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MonitoringServiceTelemetryOutputReference
 ```
@@ -2064,7 +2064,7 @@ func InternalValue() MonitoringServiceTelemetry
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.monitoringService.MonitoringServiceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/monitoringservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/monitoringservice"
 
 monitoringservice.NewMonitoringServiceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitoringServiceTimeoutsOutputReference
 ```

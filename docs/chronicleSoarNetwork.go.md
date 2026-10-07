@@ -4,12 +4,12 @@
 
 ### ChronicleSoarNetwork <a name="ChronicleSoarNetwork" id="@cdktn/provider-google.chronicleSoarNetwork.ChronicleSoarNetwork"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_soar_network google_chronicle_soar_network}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_soar_network google_chronicle_soar_network}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleSoarNetwork.ChronicleSoarNetwork.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclesoarnetwork"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chroniclesoarnetwork"
 
 chroniclesoarnetwork.NewChronicleSoarNetwork(scope Construct, id *string, config ChronicleSoarNetworkConfig) ChronicleSoarNetwork
 ```
@@ -448,7 +448,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.chronicleSoarNetwork.ChronicleSoarNetwork.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclesoarnetwork"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chroniclesoarnetwork"
 
 chroniclesoarnetwork.ChronicleSoarNetwork_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.chronicleSoarNetwork.ChronicleSoarNetwork.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclesoarnetwork"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chroniclesoarnetwork"
 
 chroniclesoarnetwork.ChronicleSoarNetwork_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ chroniclesoarnetwork.ChronicleSoarNetwork_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.chronicleSoarNetwork.ChronicleSoarNetwork.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclesoarnetwork"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chroniclesoarnetwork"
 
 chroniclesoarnetwork.ChronicleSoarNetwork_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ chroniclesoarnetwork.ChronicleSoarNetwork_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.chronicleSoarNetwork.ChronicleSoarNetwork.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclesoarnetwork"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chroniclesoarnetwork"
 
 chroniclesoarnetwork.ChronicleSoarNetwork_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -537,7 +537,7 @@ The construct id used in the generated config for the ChronicleSoarNetwork to im
 
 The id of the existing ChronicleSoarNetwork that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_soar_network#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_soar_network#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -979,7 +979,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleSoarNetwork.ChronicleSoarNetworkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclesoarnetwork"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chroniclesoarnetwork"
 
 &chroniclesoarnetwork.ChronicleSoarNetworkConfig {
 	Connection: interface{},
@@ -998,7 +998,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclesoarnet
 	Id: *string,
 	Priority: *f64,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleSoarNetwork.ChronicleSoarNetworkTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.chronicleSoarNetwork.ChronicleSoarNetworkTimeouts,
 }
 ```
 
@@ -1019,9 +1019,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclesoarnet
 | <code><a href="#@cdktn/provider-google.chronicleSoarNetwork.ChronicleSoarNetworkConfig.property.instance">Instance</a></code> | <code>*string</code> | Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122. |
 | <code><a href="#@cdktn/provider-google.chronicleSoarNetwork.ChronicleSoarNetworkConfig.property.location">Location</a></code> | <code>*string</code> | Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122. |
 | <code><a href="#@cdktn/provider-google.chronicleSoarNetwork.ChronicleSoarNetworkConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.chronicleSoarNetwork.ChronicleSoarNetworkConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_soar_network#id ChronicleSoarNetwork#id}. |
+| <code><a href="#@cdktn/provider-google.chronicleSoarNetwork.ChronicleSoarNetworkConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_soar_network#id ChronicleSoarNetwork#id}. |
 | <code><a href="#@cdktn/provider-google.chronicleSoarNetwork.ChronicleSoarNetworkConfig.property.priority">Priority</a></code> | <code>*f64</code> | SoarNetwork priority. |
-| <code><a href="#@cdktn/provider-google.chronicleSoarNetwork.ChronicleSoarNetworkConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_soar_network#project ChronicleSoarNetwork#project}. |
+| <code><a href="#@cdktn/provider-google.chronicleSoarNetwork.ChronicleSoarNetworkConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_soar_network#project ChronicleSoarNetwork#project}. |
 | <code><a href="#@cdktn/provider-google.chronicleSoarNetwork.ChronicleSoarNetworkConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.chronicleSoarNetwork.ChronicleSoarNetworkTimeouts">ChronicleSoarNetworkTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1106,7 +1106,7 @@ Address *string
 
 Subnet in CIDR format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_soar_network#address ChronicleSoarNetwork#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_soar_network#address ChronicleSoarNetwork#address}
 
 ---
 
@@ -1120,7 +1120,7 @@ DisplayName *string
 
 SoarNetwork name, limited to 4096 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_soar_network#display_name ChronicleSoarNetwork#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_soar_network#display_name ChronicleSoarNetwork#display_name}
 
 ---
 
@@ -1134,7 +1134,7 @@ EnvironmentsJson *string
 
 SoarNetwork associated logical environments.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_soar_network#environments_json ChronicleSoarNetwork#environments_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_soar_network#environments_json ChronicleSoarNetwork#environments_json}
 
 ---
 
@@ -1148,7 +1148,7 @@ Instance *string
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_soar_network#instance ChronicleSoarNetwork#instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_soar_network#instance ChronicleSoarNetwork#instance}
 
 ---
 
@@ -1162,7 +1162,7 @@ Location *string
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_soar_network#location ChronicleSoarNetwork#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_soar_network#location ChronicleSoarNetwork#location}
 
 ---
 
@@ -1183,7 +1183,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_soar_network#deletion_policy ChronicleSoarNetwork#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_soar_network#deletion_policy ChronicleSoarNetwork#deletion_policy}
 
 ---
 
@@ -1195,7 +1195,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_soar_network#id ChronicleSoarNetwork#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_soar_network#id ChronicleSoarNetwork#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1212,7 +1212,7 @@ Priority *f64
 
 SoarNetwork priority.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_soar_network#priority ChronicleSoarNetwork#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_soar_network#priority ChronicleSoarNetwork#priority}
 
 ---
 
@@ -1224,7 +1224,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_soar_network#project ChronicleSoarNetwork#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_soar_network#project ChronicleSoarNetwork#project}.
 
 ---
 
@@ -1238,7 +1238,7 @@ Timeouts ChronicleSoarNetworkTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_soar_network#timeouts ChronicleSoarNetwork#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_soar_network#timeouts ChronicleSoarNetwork#timeouts}
 
 ---
 
@@ -1247,7 +1247,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleSoarNetwork.ChronicleSoarNetworkTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclesoarnetwork"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chroniclesoarnetwork"
 
 &chroniclesoarnetwork.ChronicleSoarNetworkTimeouts {
 	Create: *string,
@@ -1260,9 +1260,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclesoarnet
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.chronicleSoarNetwork.ChronicleSoarNetworkTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_soar_network#create ChronicleSoarNetwork#create}. |
-| <code><a href="#@cdktn/provider-google.chronicleSoarNetwork.ChronicleSoarNetworkTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_soar_network#delete ChronicleSoarNetwork#delete}. |
-| <code><a href="#@cdktn/provider-google.chronicleSoarNetwork.ChronicleSoarNetworkTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_soar_network#update ChronicleSoarNetwork#update}. |
+| <code><a href="#@cdktn/provider-google.chronicleSoarNetwork.ChronicleSoarNetworkTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_soar_network#create ChronicleSoarNetwork#create}. |
+| <code><a href="#@cdktn/provider-google.chronicleSoarNetwork.ChronicleSoarNetworkTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_soar_network#delete ChronicleSoarNetwork#delete}. |
+| <code><a href="#@cdktn/provider-google.chronicleSoarNetwork.ChronicleSoarNetworkTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_soar_network#update ChronicleSoarNetwork#update}. |
 
 ---
 
@@ -1274,7 +1274,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_soar_network#create ChronicleSoarNetwork#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_soar_network#create ChronicleSoarNetwork#create}.
 
 ---
 
@@ -1286,7 +1286,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_soar_network#delete ChronicleSoarNetwork#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_soar_network#delete ChronicleSoarNetwork#delete}.
 
 ---
 
@@ -1298,7 +1298,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_soar_network#update ChronicleSoarNetwork#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_soar_network#update ChronicleSoarNetwork#update}.
 
 ---
 
@@ -1309,7 +1309,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleSoarNetwork.ChronicleSoarNetworkTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclesoarnetwork"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chroniclesoarnetwork"
 
 chroniclesoarnetwork.NewChronicleSoarNetworkTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleSoarNetworkTimeoutsOutputReference
 ```

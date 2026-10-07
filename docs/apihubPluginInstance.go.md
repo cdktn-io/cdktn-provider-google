@@ -4,12 +4,12 @@
 
 ### ApihubPluginInstance <a name="ApihubPluginInstance" id="@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstance"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apihub_plugin_instance google_apihub_plugin_instance}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apihub_plugin_instance google_apihub_plugin_instance}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apihubplugininstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apihubplugininstance"
 
 apihubplugininstance.NewApihubPluginInstance(scope Construct, id *string, config ApihubPluginInstanceConfig) ApihubPluginInstance
 ```
@@ -495,7 +495,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apihubplugininstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apihubplugininstance"
 
 apihubplugininstance.ApihubPluginInstance_IsConstruct(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apihubplugininstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apihubplugininstance"
 
 apihubplugininstance.ApihubPluginInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -541,7 +541,7 @@ apihubplugininstance.ApihubPluginInstance_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstance.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apihubplugininstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apihubplugininstance"
 
 apihubplugininstance.ApihubPluginInstance_IsTerraformResource(x interface{}) *bool
 ```
@@ -555,7 +555,7 @@ apihubplugininstance.ApihubPluginInstance_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstance.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apihubplugininstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apihubplugininstance"
 
 apihubplugininstance.ApihubPluginInstance_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -584,7 +584,7 @@ The construct id used in the generated config for the ApihubPluginInstance to im
 
 The id of the existing ApihubPluginInstance that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apihub_plugin_instance#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apihub_plugin_instance#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1103,11 +1103,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstanceActions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apihubplugininstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apihubplugininstance"
 
 &apihubplugininstance.ApihubPluginInstanceActions {
 	ActionId: *string,
-	CurationConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.apihubPluginInstance.ApihubPluginInstanceActionsCurationConfig,
+	CurationConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.apihubPluginInstance.ApihubPluginInstanceActionsCurationConfig,
 	ScheduleCronExpression: *string,
 	ScheduleTimeZone: *string,
 }
@@ -1134,7 +1134,7 @@ ActionId *string
 
 This should map to one of the action id specified in actions_config in the plugin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apihub_plugin_instance#action_id ApihubPluginInstance#action_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apihub_plugin_instance#action_id ApihubPluginInstance#action_id}
 
 ---
 
@@ -1148,7 +1148,7 @@ CurationConfig ApihubPluginInstanceActionsCurationConfig
 
 curation_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apihub_plugin_instance#curation_config ApihubPluginInstance#curation_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apihub_plugin_instance#curation_config ApihubPluginInstance#curation_config}
 
 ---
 
@@ -1165,7 +1165,7 @@ The schedule for this plugin instance action.
 This can only be set if the
 plugin supports API_HUB_SCHEDULE_TRIGGER mode for this action.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apihub_plugin_instance#schedule_cron_expression ApihubPluginInstance#schedule_cron_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apihub_plugin_instance#schedule_cron_expression ApihubPluginInstance#schedule_cron_expression}
 
 ---
 
@@ -1179,7 +1179,7 @@ ScheduleTimeZone *string
 
 The time zone for the schedule cron expression. If not provided, UTC will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apihub_plugin_instance#schedule_time_zone ApihubPluginInstance#schedule_time_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apihub_plugin_instance#schedule_time_zone ApihubPluginInstance#schedule_time_zone}
 
 ---
 
@@ -1188,11 +1188,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstanceActionsCurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apihubplugininstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apihubplugininstance"
 
 &apihubplugininstance.ApihubPluginInstanceActionsCurationConfig {
 	CurationType: *string,
-	CustomCuration: github.com/cdktn-io/cdktn-provider-google-go/google/v20.apihubPluginInstance.ApihubPluginInstanceActionsCurationConfigCustomCuration,
+	CustomCuration: github.com/cdktn-io/cdktn-provider-google-go/google/v21.apihubPluginInstance.ApihubPluginInstanceActionsCurationConfigCustomCuration,
 }
 ```
 
@@ -1215,7 +1215,7 @@ CurationType *string
 
 Possible values: CURATION_TYPE_UNSPECIFIED DEFAULT_CURATION_FOR_API_METADATA CUSTOM_CURATION_FOR_API_METADATA.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apihub_plugin_instance#curation_type ApihubPluginInstance#curation_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apihub_plugin_instance#curation_type ApihubPluginInstance#curation_type}
 
 ---
 
@@ -1229,7 +1229,7 @@ CustomCuration ApihubPluginInstanceActionsCurationConfigCustomCuration
 
 custom_curation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apihub_plugin_instance#custom_curation ApihubPluginInstance#custom_curation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apihub_plugin_instance#custom_curation ApihubPluginInstance#custom_curation}
 
 ---
 
@@ -1238,7 +1238,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstanceActionsCurationConfigCustomCuration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apihubplugininstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apihubplugininstance"
 
 &apihubplugininstance.ApihubPluginInstanceActionsCurationConfigCustomCuration {
 	Curation: *string,
@@ -1263,7 +1263,7 @@ Curation *string
 
 The unique name of the curation resource. This will be the name of the curation resource in the format: 'projects/{project}/locations/{location}/curations/{curation}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apihub_plugin_instance#curation ApihubPluginInstance#curation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apihub_plugin_instance#curation ApihubPluginInstance#curation}
 
 ---
 
@@ -1272,7 +1272,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstanceActionsHubInstanceAction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apihubplugininstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apihubplugininstance"
 
 &apihubplugininstance.ApihubPluginInstanceActionsHubInstanceAction {
 
@@ -1285,7 +1285,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apihubplugininst
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstanceActionsHubInstanceActionLastExecution.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apihubplugininstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apihubplugininstance"
 
 &apihubplugininstance.ApihubPluginInstanceActionsHubInstanceActionLastExecution {
 
@@ -1298,14 +1298,14 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apihubplugininst
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstanceAuthConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apihubplugininstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apihubplugininstance"
 
 &apihubplugininstance.ApihubPluginInstanceAuthConfig {
 	AuthType: *string,
-	ApiKeyConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.apihubPluginInstance.ApihubPluginInstanceAuthConfigApiKeyConfig,
-	GoogleServiceAccountConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.apihubPluginInstance.ApihubPluginInstanceAuthConfigGoogleServiceAccountConfig,
-	Oauth2ClientCredentialsConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.apihubPluginInstance.ApihubPluginInstanceAuthConfigOauth2ClientCredentialsConfig,
-	UserPasswordConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.apihubPluginInstance.ApihubPluginInstanceAuthConfigUserPasswordConfig,
+	ApiKeyConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.apihubPluginInstance.ApihubPluginInstanceAuthConfigApiKeyConfig,
+	GoogleServiceAccountConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.apihubPluginInstance.ApihubPluginInstanceAuthConfigGoogleServiceAccountConfig,
+	Oauth2ClientCredentialsConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.apihubPluginInstance.ApihubPluginInstanceAuthConfigOauth2ClientCredentialsConfig,
+	UserPasswordConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.apihubPluginInstance.ApihubPluginInstanceAuthConfigUserPasswordConfig,
 }
 ```
 
@@ -1331,7 +1331,7 @@ AuthType *string
 
 Possible values: AUTH_TYPE_UNSPECIFIED NO_AUTH GOOGLE_SERVICE_ACCOUNT USER_PASSWORD API_KEY OAUTH2_CLIENT_CREDENTIALS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apihub_plugin_instance#auth_type ApihubPluginInstance#auth_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apihub_plugin_instance#auth_type ApihubPluginInstance#auth_type}
 
 ---
 
@@ -1345,7 +1345,7 @@ ApiKeyConfig ApihubPluginInstanceAuthConfigApiKeyConfig
 
 api_key_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apihub_plugin_instance#api_key_config ApihubPluginInstance#api_key_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apihub_plugin_instance#api_key_config ApihubPluginInstance#api_key_config}
 
 ---
 
@@ -1359,7 +1359,7 @@ GoogleServiceAccountConfig ApihubPluginInstanceAuthConfigGoogleServiceAccountCon
 
 google_service_account_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apihub_plugin_instance#google_service_account_config ApihubPluginInstance#google_service_account_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apihub_plugin_instance#google_service_account_config ApihubPluginInstance#google_service_account_config}
 
 ---
 
@@ -1373,7 +1373,7 @@ Oauth2ClientCredentialsConfig ApihubPluginInstanceAuthConfigOauth2ClientCredenti
 
 oauth2_client_credentials_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apihub_plugin_instance#oauth2_client_credentials_config ApihubPluginInstance#oauth2_client_credentials_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apihub_plugin_instance#oauth2_client_credentials_config ApihubPluginInstance#oauth2_client_credentials_config}
 
 ---
 
@@ -1387,7 +1387,7 @@ UserPasswordConfig ApihubPluginInstanceAuthConfigUserPasswordConfig
 
 user_password_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apihub_plugin_instance#user_password_config ApihubPluginInstance#user_password_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apihub_plugin_instance#user_password_config ApihubPluginInstance#user_password_config}
 
 ---
 
@@ -1396,10 +1396,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstanceAuthConfigApiKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apihubplugininstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apihubplugininstance"
 
 &apihubplugininstance.ApihubPluginInstanceAuthConfigApiKeyConfig {
-	ApiKey: github.com/cdktn-io/cdktn-provider-google-go/google/v20.apihubPluginInstance.ApihubPluginInstanceAuthConfigApiKeyConfigApiKey,
+	ApiKey: github.com/cdktn-io/cdktn-provider-google-go/google/v21.apihubPluginInstance.ApihubPluginInstanceAuthConfigApiKeyConfigApiKey,
 	HttpElementLocation: *string,
 	Name: *string,
 }
@@ -1425,7 +1425,7 @@ ApiKey ApihubPluginInstanceAuthConfigApiKeyConfigApiKey
 
 api_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apihub_plugin_instance#api_key ApihubPluginInstance#api_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apihub_plugin_instance#api_key ApihubPluginInstance#api_key}
 
 ---
 
@@ -1439,7 +1439,7 @@ HttpElementLocation *string
 
 The location of the API key. The default value is QUERY. Possible values: HTTP_ELEMENT_LOCATION_UNSPECIFIED QUERY HEADER PATH BODY COOKIE.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apihub_plugin_instance#http_element_location ApihubPluginInstance#http_element_location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apihub_plugin_instance#http_element_location ApihubPluginInstance#http_element_location}
 
 ---
 
@@ -1453,7 +1453,7 @@ Name *string
 
 The parameter name of the API key. E.g. If the API request is "https://example.com/act?api_key=", "api_key" would be the parameter name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apihub_plugin_instance#name ApihubPluginInstance#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apihub_plugin_instance#name ApihubPluginInstance#name}
 
 ---
 
@@ -1462,7 +1462,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstanceAuthConfigApiKeyConfigApiKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apihubplugininstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apihubplugininstance"
 
 &apihubplugininstance.ApihubPluginInstanceAuthConfigApiKeyConfigApiKey {
 	SecretVersion: *string,
@@ -1487,7 +1487,7 @@ SecretVersion *string
 
 The resource name of the secret version in the format, format as: 'projects/* /secrets/* /versions/*'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apihub_plugin_instance#secret_version ApihubPluginInstance#secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apihub_plugin_instance#secret_version ApihubPluginInstance#secret_version}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -1498,7 +1498,7 @@ Note: The above comment contained a comment block ending sequence (* followed by
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstanceAuthConfigGoogleServiceAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apihubplugininstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apihubplugininstance"
 
 &apihubplugininstance.ApihubPluginInstanceAuthConfigGoogleServiceAccountConfig {
 	ServiceAccount: *string,
@@ -1526,7 +1526,7 @@ The service account to be used for authenticating request.
 The 'iam.serviceAccounts.getAccessToken' permission should be granted on
 this service account to the impersonator service account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apihub_plugin_instance#service_account ApihubPluginInstance#service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apihub_plugin_instance#service_account ApihubPluginInstance#service_account}
 
 ---
 
@@ -1535,11 +1535,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstanceAuthConfigOauth2ClientCredentialsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apihubplugininstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apihubplugininstance"
 
 &apihubplugininstance.ApihubPluginInstanceAuthConfigOauth2ClientCredentialsConfig {
 	ClientId: *string,
-	ClientSecret: github.com/cdktn-io/cdktn-provider-google-go/google/v20.apihubPluginInstance.ApihubPluginInstanceAuthConfigOauth2ClientCredentialsConfigClientSecret,
+	ClientSecret: github.com/cdktn-io/cdktn-provider-google-go/google/v21.apihubPluginInstance.ApihubPluginInstanceAuthConfigOauth2ClientCredentialsConfigClientSecret,
 }
 ```
 
@@ -1562,7 +1562,7 @@ ClientId *string
 
 The client identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apihub_plugin_instance#client_id ApihubPluginInstance#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apihub_plugin_instance#client_id ApihubPluginInstance#client_id}
 
 ---
 
@@ -1576,7 +1576,7 @@ ClientSecret ApihubPluginInstanceAuthConfigOauth2ClientCredentialsConfigClientSe
 
 client_secret block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apihub_plugin_instance#client_secret ApihubPluginInstance#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apihub_plugin_instance#client_secret ApihubPluginInstance#client_secret}
 
 ---
 
@@ -1585,7 +1585,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstanceAuthConfigOauth2ClientCredentialsConfigClientSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apihubplugininstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apihubplugininstance"
 
 &apihubplugininstance.ApihubPluginInstanceAuthConfigOauth2ClientCredentialsConfigClientSecret {
 	SecretVersion: *string,
@@ -1610,7 +1610,7 @@ SecretVersion *string
 
 The resource name of the secret version in the format, format as: 'projects/* /secrets/* /versions/*'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apihub_plugin_instance#secret_version ApihubPluginInstance#secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apihub_plugin_instance#secret_version ApihubPluginInstance#secret_version}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -1621,10 +1621,10 @@ Note: The above comment contained a comment block ending sequence (* followed by
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstanceAuthConfigUserPasswordConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apihubplugininstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apihubplugininstance"
 
 &apihubplugininstance.ApihubPluginInstanceAuthConfigUserPasswordConfig {
-	Password: github.com/cdktn-io/cdktn-provider-google-go/google/v20.apihubPluginInstance.ApihubPluginInstanceAuthConfigUserPasswordConfigPassword,
+	Password: github.com/cdktn-io/cdktn-provider-google-go/google/v21.apihubPluginInstance.ApihubPluginInstanceAuthConfigUserPasswordConfigPassword,
 	Username: *string,
 }
 ```
@@ -1648,7 +1648,7 @@ Password ApihubPluginInstanceAuthConfigUserPasswordConfigPassword
 
 password block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apihub_plugin_instance#password ApihubPluginInstance#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apihub_plugin_instance#password ApihubPluginInstance#password}
 
 ---
 
@@ -1662,7 +1662,7 @@ Username *string
 
 Username.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apihub_plugin_instance#username ApihubPluginInstance#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apihub_plugin_instance#username ApihubPluginInstance#username}
 
 ---
 
@@ -1671,7 +1671,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstanceAuthConfigUserPasswordConfigPassword.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apihubplugininstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apihubplugininstance"
 
 &apihubplugininstance.ApihubPluginInstanceAuthConfigUserPasswordConfigPassword {
 	SecretVersion: *string,
@@ -1696,7 +1696,7 @@ SecretVersion *string
 
 The resource name of the secret version in the format, format as: 'projects/* /secrets/* /versions/*'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apihub_plugin_instance#secret_version ApihubPluginInstance#secret_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apihub_plugin_instance#secret_version ApihubPluginInstance#secret_version}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -1707,7 +1707,7 @@ Note: The above comment contained a comment block ending sequence (* followed by
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apihubplugininstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apihubplugininstance"
 
 &apihubplugininstance.ApihubPluginInstanceConfig {
 	Connection: interface{},
@@ -1722,13 +1722,13 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apihubplugininst
 	Plugin: *string,
 	PluginInstanceId: *string,
 	Actions: interface{},
-	AuthConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.apihubPluginInstance.ApihubPluginInstanceAuthConfig,
+	AuthConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.apihubPluginInstance.ApihubPluginInstanceAuthConfig,
 	DeletionPolicy: *string,
 	Disable: interface{},
 	Id: *string,
 	Project: *string,
 	SourceProjectId: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.apihubPluginInstance.ApihubPluginInstanceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.apihubPluginInstance.ApihubPluginInstanceTimeouts,
 }
 ```
 
@@ -1751,8 +1751,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apihubplugininst
 | <code><a href="#@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstanceConfig.property.authConfig">AuthConfig</a></code> | <code><a href="#@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstanceAuthConfig">ApihubPluginInstanceAuthConfig</a></code> | auth_config block. |
 | <code><a href="#@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstanceConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstanceConfig.property.disable">Disable</a></code> | <code>interface{}</code> | The display name for this plugin instance. Max length is 255 characters. |
-| <code><a href="#@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstanceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apihub_plugin_instance#id ApihubPluginInstance#id}. |
-| <code><a href="#@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstanceConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apihub_plugin_instance#project ApihubPluginInstance#project}. |
+| <code><a href="#@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstanceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apihub_plugin_instance#id ApihubPluginInstance#id}. |
+| <code><a href="#@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstanceConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apihub_plugin_instance#project ApihubPluginInstance#project}. |
 | <code><a href="#@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstanceConfig.property.sourceProjectId">SourceProjectId</a></code> | <code>*string</code> | Optional. |
 | <code><a href="#@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstanceConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstanceTimeouts">ApihubPluginInstanceTimeouts</a></code> | timeouts block. |
 
@@ -1838,7 +1838,7 @@ DisplayName *string
 
 The display name for this plugin instance. Max length is 255 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apihub_plugin_instance#display_name ApihubPluginInstance#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apihub_plugin_instance#display_name ApihubPluginInstance#display_name}
 
 ---
 
@@ -1852,7 +1852,7 @@ Location *string
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apihub_plugin_instance#location ApihubPluginInstance#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apihub_plugin_instance#location ApihubPluginInstance#location}
 
 ---
 
@@ -1866,7 +1866,7 @@ Plugin *string
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apihub_plugin_instance#plugin ApihubPluginInstance#plugin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apihub_plugin_instance#plugin ApihubPluginInstance#plugin}
 
 ---
 
@@ -1890,7 +1890,7 @@ This field is optional.
 This value should be 4-63 characters, and valid characters
 are /a-z[0-9]-_/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apihub_plugin_instance#plugin_instance_id ApihubPluginInstance#plugin_instance_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apihub_plugin_instance#plugin_instance_id ApihubPluginInstance#plugin_instance_id}
 
 ---
 
@@ -1904,7 +1904,7 @@ Actions interface{}
 
 actions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apihub_plugin_instance#actions ApihubPluginInstance#actions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apihub_plugin_instance#actions ApihubPluginInstance#actions}
 
 ---
 
@@ -1918,7 +1918,7 @@ AuthConfig ApihubPluginInstanceAuthConfig
 
 auth_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apihub_plugin_instance#auth_config ApihubPluginInstance#auth_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apihub_plugin_instance#auth_config ApihubPluginInstance#auth_config}
 
 ---
 
@@ -1939,7 +1939,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apihub_plugin_instance#deletion_policy ApihubPluginInstance#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apihub_plugin_instance#deletion_policy ApihubPluginInstance#deletion_policy}
 
 ---
 
@@ -1953,7 +1953,7 @@ Disable interface{}
 
 The display name for this plugin instance. Max length is 255 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apihub_plugin_instance#disable ApihubPluginInstance#disable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apihub_plugin_instance#disable ApihubPluginInstance#disable}
 
 ---
 
@@ -1965,7 +1965,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apihub_plugin_instance#id ApihubPluginInstance#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apihub_plugin_instance#id ApihubPluginInstance#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1980,7 +1980,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apihub_plugin_instance#project ApihubPluginInstance#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apihub_plugin_instance#project ApihubPluginInstance#project}.
 
 ---
 
@@ -1996,7 +1996,7 @@ Optional.
 
 The source project id of the plugin instance. This will be the id of runtime project in case of gcp based plugins and org id in case of non gcp based plugins. This field will be a required field for Google provided on-ramp plugins.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apihub_plugin_instance#source_project_id ApihubPluginInstance#source_project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apihub_plugin_instance#source_project_id ApihubPluginInstance#source_project_id}
 
 ---
 
@@ -2010,7 +2010,7 @@ Timeouts ApihubPluginInstanceTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apihub_plugin_instance#timeouts ApihubPluginInstance#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apihub_plugin_instance#timeouts ApihubPluginInstance#timeouts}
 
 ---
 
@@ -2019,7 +2019,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstanceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apihubplugininstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apihubplugininstance"
 
 &apihubplugininstance.ApihubPluginInstanceTimeouts {
 	Create: *string,
@@ -2032,9 +2032,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apihubplugininst
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstanceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apihub_plugin_instance#create ApihubPluginInstance#create}. |
-| <code><a href="#@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstanceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apihub_plugin_instance#delete ApihubPluginInstance#delete}. |
-| <code><a href="#@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstanceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apihub_plugin_instance#update ApihubPluginInstance#update}. |
+| <code><a href="#@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstanceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apihub_plugin_instance#create ApihubPluginInstance#create}. |
+| <code><a href="#@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstanceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apihub_plugin_instance#delete ApihubPluginInstance#delete}. |
+| <code><a href="#@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstanceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apihub_plugin_instance#update ApihubPluginInstance#update}. |
 
 ---
 
@@ -2046,7 +2046,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apihub_plugin_instance#create ApihubPluginInstance#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apihub_plugin_instance#create ApihubPluginInstance#create}.
 
 ---
 
@@ -2058,7 +2058,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apihub_plugin_instance#delete ApihubPluginInstance#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apihub_plugin_instance#delete ApihubPluginInstance#delete}.
 
 ---
 
@@ -2070,7 +2070,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apihub_plugin_instance#update ApihubPluginInstance#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apihub_plugin_instance#update ApihubPluginInstance#update}.
 
 ---
 
@@ -2081,7 +2081,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstanceActionsCurationConfigCustomCurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apihubplugininstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apihubplugininstance"
 
 apihubplugininstance.NewApihubPluginInstanceActionsCurationConfigCustomCurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApihubPluginInstanceActionsCurationConfigCustomCurationOutputReference
 ```
@@ -2352,7 +2352,7 @@ func InternalValue() ApihubPluginInstanceActionsCurationConfigCustomCuration
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstanceActionsCurationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apihubplugininstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apihubplugininstance"
 
 apihubplugininstance.NewApihubPluginInstanceActionsCurationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApihubPluginInstanceActionsCurationConfigOutputReference
 ```
@@ -2672,7 +2672,7 @@ func InternalValue() ApihubPluginInstanceActionsCurationConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstanceActionsHubInstanceActionLastExecutionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apihubplugininstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apihubplugininstance"
 
 apihubplugininstance.NewApihubPluginInstanceActionsHubInstanceActionLastExecutionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApihubPluginInstanceActionsHubInstanceActionLastExecutionList
 ```
@@ -2821,7 +2821,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstanceActionsHubInstanceActionLastExecutionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apihubplugininstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apihubplugininstance"
 
 apihubplugininstance.NewApihubPluginInstanceActionsHubInstanceActionLastExecutionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApihubPluginInstanceActionsHubInstanceActionLastExecutionOutputReference
 ```
@@ -3132,7 +3132,7 @@ func InternalValue() ApihubPluginInstanceActionsHubInstanceActionLastExecution
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstanceActionsHubInstanceActionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apihubplugininstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apihubplugininstance"
 
 apihubplugininstance.NewApihubPluginInstanceActionsHubInstanceActionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApihubPluginInstanceActionsHubInstanceActionList
 ```
@@ -3281,7 +3281,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstanceActionsHubInstanceActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apihubplugininstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apihubplugininstance"
 
 apihubplugininstance.NewApihubPluginInstanceActionsHubInstanceActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApihubPluginInstanceActionsHubInstanceActionOutputReference
 ```
@@ -3570,7 +3570,7 @@ func InternalValue() ApihubPluginInstanceActionsHubInstanceAction
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstanceActionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apihubplugininstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apihubplugininstance"
 
 apihubplugininstance.NewApihubPluginInstanceActionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApihubPluginInstanceActionsList
 ```
@@ -3730,7 +3730,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstanceActionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apihubplugininstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apihubplugininstance"
 
 apihubplugininstance.NewApihubPluginInstanceActionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApihubPluginInstanceActionsOutputReference
 ```
@@ -4141,7 +4141,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstanceAuthConfigApiKeyConfigApiKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apihubplugininstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apihubplugininstance"
 
 apihubplugininstance.NewApihubPluginInstanceAuthConfigApiKeyConfigApiKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApihubPluginInstanceAuthConfigApiKeyConfigApiKeyOutputReference
 ```
@@ -4412,7 +4412,7 @@ func InternalValue() ApihubPluginInstanceAuthConfigApiKeyConfigApiKey
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstanceAuthConfigApiKeyConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apihubplugininstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apihubplugininstance"
 
 apihubplugininstance.NewApihubPluginInstanceAuthConfigApiKeyConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApihubPluginInstanceAuthConfigApiKeyConfigOutputReference
 ```
@@ -4740,7 +4740,7 @@ func InternalValue() ApihubPluginInstanceAuthConfigApiKeyConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstanceAuthConfigGoogleServiceAccountConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apihubplugininstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apihubplugininstance"
 
 apihubplugininstance.NewApihubPluginInstanceAuthConfigGoogleServiceAccountConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApihubPluginInstanceAuthConfigGoogleServiceAccountConfigOutputReference
 ```
@@ -5011,7 +5011,7 @@ func InternalValue() ApihubPluginInstanceAuthConfigGoogleServiceAccountConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstanceAuthConfigOauth2ClientCredentialsConfigClientSecretOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apihubplugininstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apihubplugininstance"
 
 apihubplugininstance.NewApihubPluginInstanceAuthConfigOauth2ClientCredentialsConfigClientSecretOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApihubPluginInstanceAuthConfigOauth2ClientCredentialsConfigClientSecretOutputReference
 ```
@@ -5282,7 +5282,7 @@ func InternalValue() ApihubPluginInstanceAuthConfigOauth2ClientCredentialsConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstanceAuthConfigOauth2ClientCredentialsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apihubplugininstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apihubplugininstance"
 
 apihubplugininstance.NewApihubPluginInstanceAuthConfigOauth2ClientCredentialsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApihubPluginInstanceAuthConfigOauth2ClientCredentialsConfigOutputReference
 ```
@@ -5588,7 +5588,7 @@ func InternalValue() ApihubPluginInstanceAuthConfigOauth2ClientCredentialsConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstanceAuthConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apihubplugininstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apihubplugininstance"
 
 apihubplugininstance.NewApihubPluginInstanceAuthConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApihubPluginInstanceAuthConfigOutputReference
 ```
@@ -6027,7 +6027,7 @@ func InternalValue() ApihubPluginInstanceAuthConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstanceAuthConfigUserPasswordConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apihubplugininstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apihubplugininstance"
 
 apihubplugininstance.NewApihubPluginInstanceAuthConfigUserPasswordConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApihubPluginInstanceAuthConfigUserPasswordConfigOutputReference
 ```
@@ -6333,7 +6333,7 @@ func InternalValue() ApihubPluginInstanceAuthConfigUserPasswordConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstanceAuthConfigUserPasswordConfigPasswordOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apihubplugininstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apihubplugininstance"
 
 apihubplugininstance.NewApihubPluginInstanceAuthConfigUserPasswordConfigPasswordOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApihubPluginInstanceAuthConfigUserPasswordConfigPasswordOutputReference
 ```
@@ -6604,7 +6604,7 @@ func InternalValue() ApihubPluginInstanceAuthConfigUserPasswordConfigPassword
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstanceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apihubplugininstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apihubplugininstance"
 
 apihubplugininstance.NewApihubPluginInstanceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApihubPluginInstanceTimeoutsOutputReference
 ```

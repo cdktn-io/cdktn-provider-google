@@ -4,12 +4,12 @@
 
 ### DataGoogleComputeNetworkFirewallPolicyIamPolicy <a name="DataGoogleComputeNetworkFirewallPolicyIamPolicy" id="@cdktn/provider-google.dataGoogleComputeNetworkFirewallPolicyIamPolicy.DataGoogleComputeNetworkFirewallPolicyIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_network_firewall_policy_iam_policy google_compute_network_firewall_policy_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/compute_network_firewall_policy_iam_policy google_compute_network_firewall_policy_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeNetworkFirewallPolicyIamPolicy.DataGoogleComputeNetworkFirewallPolicyIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputenetworkfirewallpolicyiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputenetworkfirewallpolicyiampolicy"
 
 datagooglecomputenetworkfirewallpolicyiampolicy.NewDataGoogleComputeNetworkFirewallPolicyIamPolicy(scope Construct, id *string, config DataGoogleComputeNetworkFirewallPolicyIamPolicyConfig) DataGoogleComputeNetworkFirewallPolicyIamPolicy
 ```
@@ -312,7 +312,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleComputeNetworkFirewallPolicyIamPolicy.DataGoogleComputeNetworkFirewallPolicyIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputenetworkfirewallpolicyiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputenetworkfirewallpolicyiampolicy"
 
 datagooglecomputenetworkfirewallpolicyiampolicy.DataGoogleComputeNetworkFirewallPolicyIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleComputeNetworkFirewallPolicyIamPolicy.DataGoogleComputeNetworkFirewallPolicyIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputenetworkfirewallpolicyiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputenetworkfirewallpolicyiampolicy"
 
 datagooglecomputenetworkfirewallpolicyiampolicy.DataGoogleComputeNetworkFirewallPolicyIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datagooglecomputenetworkfirewallpolicyiampolicy.DataGoogleComputeNetworkFirewall
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleComputeNetworkFirewallPolicyIamPolicy.DataGoogleComputeNetworkFirewallPolicyIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputenetworkfirewallpolicyiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputenetworkfirewallpolicyiampolicy"
 
 datagooglecomputenetworkfirewallpolicyiampolicy.DataGoogleComputeNetworkFirewallPolicyIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datagooglecomputenetworkfirewallpolicyiampolicy.DataGoogleComputeNetworkFirewall
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleComputeNetworkFirewallPolicyIamPolicy.DataGoogleComputeNetworkFirewallPolicyIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputenetworkfirewallpolicyiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputenetworkfirewallpolicyiampolicy"
 
 datagooglecomputenetworkfirewallpolicyiampolicy.DataGoogleComputeNetworkFirewallPolicyIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataGoogleComputeNetworkFi
 
 The id of the existing DataGoogleComputeNetworkFirewallPolicyIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_network_firewall_policy_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/compute_network_firewall_policy_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -667,7 +667,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeNetworkFirewallPolicyIamPolicy.DataGoogleComputeNetworkFirewallPolicyIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputenetworkfirewallpolicyiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputenetworkfirewallpolicyiampolicy"
 
 &datagooglecomputenetworkfirewallpolicyiampolicy.DataGoogleComputeNetworkFirewallPolicyIamPolicyConfig {
 	Connection: interface{},
@@ -694,9 +694,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomput
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeNetworkFirewallPolicyIamPolicy.DataGoogleComputeNetworkFirewallPolicyIamPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeNetworkFirewallPolicyIamPolicy.DataGoogleComputeNetworkFirewallPolicyIamPolicyConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeNetworkFirewallPolicyIamPolicy.DataGoogleComputeNetworkFirewallPolicyIamPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleComputeNetworkFirewallPolicyIamPolicy.DataGoogleComputeNetworkFirewallPolicyIamPolicyConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_network_firewall_policy_iam_policy#name DataGoogleComputeNetworkFirewallPolicyIamPolicy#name}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleComputeNetworkFirewallPolicyIamPolicy.DataGoogleComputeNetworkFirewallPolicyIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_network_firewall_policy_iam_policy#id DataGoogleComputeNetworkFirewallPolicyIamPolicy#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleComputeNetworkFirewallPolicyIamPolicy.DataGoogleComputeNetworkFirewallPolicyIamPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_network_firewall_policy_iam_policy#project DataGoogleComputeNetworkFirewallPolicyIamPolicy#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeNetworkFirewallPolicyIamPolicy.DataGoogleComputeNetworkFirewallPolicyIamPolicyConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/compute_network_firewall_policy_iam_policy#name DataGoogleComputeNetworkFirewallPolicyIamPolicy#name}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeNetworkFirewallPolicyIamPolicy.DataGoogleComputeNetworkFirewallPolicyIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/compute_network_firewall_policy_iam_policy#id DataGoogleComputeNetworkFirewallPolicyIamPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeNetworkFirewallPolicyIamPolicy.DataGoogleComputeNetworkFirewallPolicyIamPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/compute_network_firewall_policy_iam_policy#project DataGoogleComputeNetworkFirewallPolicyIamPolicy#project}. |
 
 ---
 
@@ -778,7 +778,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_network_firewall_policy_iam_policy#name DataGoogleComputeNetworkFirewallPolicyIamPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/compute_network_firewall_policy_iam_policy#name DataGoogleComputeNetworkFirewallPolicyIamPolicy#name}.
 
 ---
 
@@ -790,7 +790,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_network_firewall_policy_iam_policy#id DataGoogleComputeNetworkFirewallPolicyIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/compute_network_firewall_policy_iam_policy#id DataGoogleComputeNetworkFirewallPolicyIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -805,7 +805,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_network_firewall_policy_iam_policy#project DataGoogleComputeNetworkFirewallPolicyIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/compute_network_firewall_policy_iam_policy#project DataGoogleComputeNetworkFirewallPolicyIamPolicy#project}.
 
 ---
 

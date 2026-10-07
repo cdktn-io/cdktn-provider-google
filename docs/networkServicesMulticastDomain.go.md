@@ -4,12 +4,12 @@
 
 ### NetworkServicesMulticastDomain <a name="NetworkServicesMulticastDomain" id="@cdktn/provider-google.networkServicesMulticastDomain.NetworkServicesMulticastDomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_multicast_domain google_network_services_multicast_domain}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_multicast_domain google_network_services_multicast_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesMulticastDomain.NetworkServicesMulticastDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastdomain"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networkservicesmulticastdomain"
 
 networkservicesmulticastdomain.NewNetworkServicesMulticastDomain(scope Construct, id *string, config NetworkServicesMulticastDomainConfig) NetworkServicesMulticastDomain
 ```
@@ -495,7 +495,7 @@ func ResetUllMulticastDomain()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.networkServicesMulticastDomain.NetworkServicesMulticastDomain.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastdomain"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networkservicesmulticastdomain"
 
 networkservicesmulticastdomain.NetworkServicesMulticastDomain_IsConstruct(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.networkServicesMulticastDomain.NetworkServicesMulticastDomain.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastdomain"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networkservicesmulticastdomain"
 
 networkservicesmulticastdomain.NetworkServicesMulticastDomain_IsTerraformElement(x interface{}) *bool
 ```
@@ -541,7 +541,7 @@ networkservicesmulticastdomain.NetworkServicesMulticastDomain_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.networkServicesMulticastDomain.NetworkServicesMulticastDomain.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastdomain"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networkservicesmulticastdomain"
 
 networkservicesmulticastdomain.NetworkServicesMulticastDomain_IsTerraformResource(x interface{}) *bool
 ```
@@ -555,7 +555,7 @@ networkservicesmulticastdomain.NetworkServicesMulticastDomain_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.networkServicesMulticastDomain.NetworkServicesMulticastDomain.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastdomain"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networkservicesmulticastdomain"
 
 networkservicesmulticastdomain.NetworkServicesMulticastDomain_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -584,7 +584,7 @@ The construct id used in the generated config for the NetworkServicesMulticastDo
 
 The id of the existing NetworkServicesMulticastDomain that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_multicast_domain#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_multicast_domain#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1125,7 +1125,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkServicesMulticastDomain.NetworkServicesMulticastDomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastdomain"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networkservicesmulticastdomain"
 
 &networkservicesmulticastdomain.NetworkServicesMulticastDomainConfig {
 	Connection: interface{},
@@ -1136,7 +1136,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesm
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	AdminNetwork: *string,
-	ConnectionConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.networkServicesMulticastDomain.NetworkServicesMulticastDomainConnectionConfig,
+	ConnectionConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.networkServicesMulticastDomain.NetworkServicesMulticastDomainConnectionConfig,
 	Location: *string,
 	MulticastDomainId: *string,
 	DeletionPolicy: *string,
@@ -1145,8 +1145,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesm
 	Labels: *map[string]*string,
 	MulticastDomainGroup: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.networkServicesMulticastDomain.NetworkServicesMulticastDomainTimeouts,
-	UllMulticastDomain: github.com/cdktn-io/cdktn-provider-google-go/google/v20.networkServicesMulticastDomain.NetworkServicesMulticastDomainUllMulticastDomain,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.networkServicesMulticastDomain.NetworkServicesMulticastDomainTimeouts,
+	UllMulticastDomain: github.com/cdktn-io/cdktn-provider-google-go/google/v21.networkServicesMulticastDomain.NetworkServicesMulticastDomainUllMulticastDomain,
 }
 ```
 
@@ -1167,10 +1167,10 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesm
 | <code><a href="#@cdktn/provider-google.networkServicesMulticastDomain.NetworkServicesMulticastDomainConfig.property.multicastDomainId">MulticastDomainId</a></code> | <code>*string</code> | A unique name for the multicast domain. |
 | <code><a href="#@cdktn/provider-google.networkServicesMulticastDomain.NetworkServicesMulticastDomainConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.networkServicesMulticastDomain.NetworkServicesMulticastDomainConfig.property.description">Description</a></code> | <code>*string</code> | An optional text description of the multicast domain. |
-| <code><a href="#@cdktn/provider-google.networkServicesMulticastDomain.NetworkServicesMulticastDomainConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_multicast_domain#id NetworkServicesMulticastDomain#id}. |
+| <code><a href="#@cdktn/provider-google.networkServicesMulticastDomain.NetworkServicesMulticastDomainConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_multicast_domain#id NetworkServicesMulticastDomain#id}. |
 | <code><a href="#@cdktn/provider-google.networkServicesMulticastDomain.NetworkServicesMulticastDomainConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | Labels as key-value pairs. |
 | <code><a href="#@cdktn/provider-google.networkServicesMulticastDomain.NetworkServicesMulticastDomainConfig.property.multicastDomainGroup">MulticastDomainGroup</a></code> | <code>*string</code> | The multicast domain group this domain should be associated with. Use the following format: 'projects/{project}/locations/global/multicastDomainGroups/{multicast_domain_group}'. |
-| <code><a href="#@cdktn/provider-google.networkServicesMulticastDomain.NetworkServicesMulticastDomainConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_multicast_domain#project NetworkServicesMulticastDomain#project}. |
+| <code><a href="#@cdktn/provider-google.networkServicesMulticastDomain.NetworkServicesMulticastDomainConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_multicast_domain#project NetworkServicesMulticastDomain#project}. |
 | <code><a href="#@cdktn/provider-google.networkServicesMulticastDomain.NetworkServicesMulticastDomainConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.networkServicesMulticastDomain.NetworkServicesMulticastDomainTimeouts">NetworkServicesMulticastDomainTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.networkServicesMulticastDomain.NetworkServicesMulticastDomainConfig.property.ullMulticastDomain">UllMulticastDomain</a></code> | <code><a href="#@cdktn/provider-google.networkServicesMulticastDomain.NetworkServicesMulticastDomainUllMulticastDomain">NetworkServicesMulticastDomainUllMulticastDomain</a></code> | ull_multicast_domain block. |
 
@@ -1256,7 +1256,7 @@ AdminNetwork *string
 
 The resource name of the multicast admin VPC network. Use the following format: 'projects/{project}/locations/global/networks/{network}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_multicast_domain#admin_network NetworkServicesMulticastDomain#admin_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_multicast_domain#admin_network NetworkServicesMulticastDomain#admin_network}
 
 ---
 
@@ -1270,7 +1270,7 @@ ConnectionConfig NetworkServicesMulticastDomainConnectionConfig
 
 connection_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_multicast_domain#connection_config NetworkServicesMulticastDomain#connection_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_multicast_domain#connection_config NetworkServicesMulticastDomain#connection_config}
 
 ---
 
@@ -1284,7 +1284,7 @@ Location *string
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_multicast_domain#location NetworkServicesMulticastDomain#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_multicast_domain#location NetworkServicesMulticastDomain#location}
 
 ---
 
@@ -1302,7 +1302,7 @@ The name is restricted to letters, numbers, and hyphen, with the first
 character a letter, and the last a letter or a number. The name must not
 exceed 48 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_multicast_domain#multicast_domain_id NetworkServicesMulticastDomain#multicast_domain_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_multicast_domain#multicast_domain_id NetworkServicesMulticastDomain#multicast_domain_id}
 
 ---
 
@@ -1323,7 +1323,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_multicast_domain#deletion_policy NetworkServicesMulticastDomain#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_multicast_domain#deletion_policy NetworkServicesMulticastDomain#deletion_policy}
 
 ---
 
@@ -1337,7 +1337,7 @@ Description *string
 
 An optional text description of the multicast domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_multicast_domain#description NetworkServicesMulticastDomain#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_multicast_domain#description NetworkServicesMulticastDomain#description}
 
 ---
 
@@ -1349,7 +1349,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_multicast_domain#id NetworkServicesMulticastDomain#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_multicast_domain#id NetworkServicesMulticastDomain#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1369,7 +1369,7 @@ Labels as key-value pairs.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_multicast_domain#labels NetworkServicesMulticastDomain#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_multicast_domain#labels NetworkServicesMulticastDomain#labels}
 
 ---
 
@@ -1383,7 +1383,7 @@ MulticastDomainGroup *string
 
 The multicast domain group this domain should be associated with. Use the following format: 'projects/{project}/locations/global/multicastDomainGroups/{multicast_domain_group}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_multicast_domain#multicast_domain_group NetworkServicesMulticastDomain#multicast_domain_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_multicast_domain#multicast_domain_group NetworkServicesMulticastDomain#multicast_domain_group}
 
 ---
 
@@ -1395,7 +1395,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_multicast_domain#project NetworkServicesMulticastDomain#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_multicast_domain#project NetworkServicesMulticastDomain#project}.
 
 ---
 
@@ -1409,7 +1409,7 @@ Timeouts NetworkServicesMulticastDomainTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_multicast_domain#timeouts NetworkServicesMulticastDomain#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_multicast_domain#timeouts NetworkServicesMulticastDomain#timeouts}
 
 ---
 
@@ -1423,7 +1423,7 @@ UllMulticastDomain NetworkServicesMulticastDomainUllMulticastDomain
 
 ull_multicast_domain block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_multicast_domain#ull_multicast_domain NetworkServicesMulticastDomain#ull_multicast_domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_multicast_domain#ull_multicast_domain NetworkServicesMulticastDomain#ull_multicast_domain}
 
 ---
 
@@ -1432,7 +1432,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkServicesMulticastDomain.NetworkServicesMulticastDomainConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastdomain"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networkservicesmulticastdomain"
 
 &networkservicesmulticastdomain.NetworkServicesMulticastDomainConnectionConfig {
 	ConnectionType: *string,
@@ -1459,7 +1459,7 @@ ConnectionType *string
 
 The VPC connection type. Possible values: NCC SAME_VPC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_multicast_domain#connection_type NetworkServicesMulticastDomain#connection_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_multicast_domain#connection_type NetworkServicesMulticastDomain#connection_type}
 
 ---
 
@@ -1473,7 +1473,7 @@ NccHub *string
 
 The resource name of the [NCC](https://cloud.google.com/network-connectivity-center) hub. Use the following format: 'projects/{project}/locations/global/hubs/{hub}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_multicast_domain#ncc_hub NetworkServicesMulticastDomain#ncc_hub}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_multicast_domain#ncc_hub NetworkServicesMulticastDomain#ncc_hub}
 
 ---
 
@@ -1482,7 +1482,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkServicesMulticastDomain.NetworkServicesMulticastDomainState.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastdomain"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networkservicesmulticastdomain"
 
 &networkservicesmulticastdomain.NetworkServicesMulticastDomainState {
 
@@ -1495,7 +1495,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesm
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkServicesMulticastDomain.NetworkServicesMulticastDomainTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastdomain"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networkservicesmulticastdomain"
 
 &networkservicesmulticastdomain.NetworkServicesMulticastDomainTimeouts {
 	Create: *string,
@@ -1508,9 +1508,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesm
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.networkServicesMulticastDomain.NetworkServicesMulticastDomainTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_multicast_domain#create NetworkServicesMulticastDomain#create}. |
-| <code><a href="#@cdktn/provider-google.networkServicesMulticastDomain.NetworkServicesMulticastDomainTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_multicast_domain#delete NetworkServicesMulticastDomain#delete}. |
-| <code><a href="#@cdktn/provider-google.networkServicesMulticastDomain.NetworkServicesMulticastDomainTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_multicast_domain#update NetworkServicesMulticastDomain#update}. |
+| <code><a href="#@cdktn/provider-google.networkServicesMulticastDomain.NetworkServicesMulticastDomainTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_multicast_domain#create NetworkServicesMulticastDomain#create}. |
+| <code><a href="#@cdktn/provider-google.networkServicesMulticastDomain.NetworkServicesMulticastDomainTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_multicast_domain#delete NetworkServicesMulticastDomain#delete}. |
+| <code><a href="#@cdktn/provider-google.networkServicesMulticastDomain.NetworkServicesMulticastDomainTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_multicast_domain#update NetworkServicesMulticastDomain#update}. |
 
 ---
 
@@ -1522,7 +1522,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_multicast_domain#create NetworkServicesMulticastDomain#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_multicast_domain#create NetworkServicesMulticastDomain#create}.
 
 ---
 
@@ -1534,7 +1534,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_multicast_domain#delete NetworkServicesMulticastDomain#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_multicast_domain#delete NetworkServicesMulticastDomain#delete}.
 
 ---
 
@@ -1546,7 +1546,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_multicast_domain#update NetworkServicesMulticastDomain#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_multicast_domain#update NetworkServicesMulticastDomain#update}.
 
 ---
 
@@ -1555,7 +1555,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkServicesMulticastDomain.NetworkServicesMulticastDomainUllMulticastDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastdomain"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networkservicesmulticastdomain"
 
 &networkservicesmulticastdomain.NetworkServicesMulticastDomainUllMulticastDomain {
 	PreconfiguredUllDomain: *string,
@@ -1580,7 +1580,7 @@ PreconfiguredUllDomain *string
 
 The preconfigured Ultra-Low-Latency domain name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_multicast_domain#preconfigured_ull_domain NetworkServicesMulticastDomain#preconfigured_ull_domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_multicast_domain#preconfigured_ull_domain NetworkServicesMulticastDomain#preconfigured_ull_domain}
 
 ---
 
@@ -1591,7 +1591,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesMulticastDomain.NetworkServicesMulticastDomainConnectionConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastdomain"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networkservicesmulticastdomain"
 
 networkservicesmulticastdomain.NewNetworkServicesMulticastDomainConnectionConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkServicesMulticastDomainConnectionConfigOutputReference
 ```
@@ -1891,7 +1891,7 @@ func InternalValue() NetworkServicesMulticastDomainConnectionConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesMulticastDomain.NetworkServicesMulticastDomainStateList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastdomain"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networkservicesmulticastdomain"
 
 networkservicesmulticastdomain.NewNetworkServicesMulticastDomainStateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkServicesMulticastDomainStateList
 ```
@@ -2040,7 +2040,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesMulticastDomain.NetworkServicesMulticastDomainStateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastdomain"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networkservicesmulticastdomain"
 
 networkservicesmulticastdomain.NewNetworkServicesMulticastDomainStateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkServicesMulticastDomainStateOutputReference
 ```
@@ -2318,7 +2318,7 @@ func InternalValue() NetworkServicesMulticastDomainState
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesMulticastDomain.NetworkServicesMulticastDomainTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastdomain"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networkservicesmulticastdomain"
 
 networkservicesmulticastdomain.NewNetworkServicesMulticastDomainTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkServicesMulticastDomainTimeoutsOutputReference
 ```
@@ -2654,7 +2654,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesMulticastDomain.NetworkServicesMulticastDomainUllMulticastDomainOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastdomain"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networkservicesmulticastdomain"
 
 networkservicesmulticastdomain.NewNetworkServicesMulticastDomainUllMulticastDomainOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkServicesMulticastDomainUllMulticastDomainOutputReference
 ```

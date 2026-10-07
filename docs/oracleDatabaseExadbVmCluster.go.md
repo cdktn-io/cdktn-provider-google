@@ -4,12 +4,12 @@
 
 ### OracleDatabaseExadbVmCluster <a name="OracleDatabaseExadbVmCluster" id="@cdktn/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_exadb_vm_cluster google_oracle_database_exadb_vm_cluster}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_exadb_vm_cluster google_oracle_database_exadb_vm_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabaseexadbvmcluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/oracledatabaseexadbvmcluster"
 
 oracledatabaseexadbvmcluster.NewOracleDatabaseExadbVmCluster(scope Construct, id *string, config OracleDatabaseExadbVmClusterConfig) OracleDatabaseExadbVmCluster
 ```
@@ -475,7 +475,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabaseexadbvmcluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/oracledatabaseexadbvmcluster"
 
 oracledatabaseexadbvmcluster.OracleDatabaseExadbVmCluster_IsConstruct(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabaseexadbvmcluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/oracledatabaseexadbvmcluster"
 
 oracledatabaseexadbvmcluster.OracleDatabaseExadbVmCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ oracledatabaseexadbvmcluster.OracleDatabaseExadbVmCluster_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabaseexadbvmcluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/oracledatabaseexadbvmcluster"
 
 oracledatabaseexadbvmcluster.OracleDatabaseExadbVmCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ oracledatabaseexadbvmcluster.OracleDatabaseExadbVmCluster_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabaseexadbvmcluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/oracledatabaseexadbvmcluster"
 
 oracledatabaseexadbvmcluster.OracleDatabaseExadbVmCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -564,7 +564,7 @@ The construct id used in the generated config for the OracleDatabaseExadbVmClust
 
 The id of the existing OracleDatabaseExadbVmCluster that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_exadb_vm_cluster#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_exadb_vm_cluster#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1127,7 +1127,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabaseexadbvmcluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/oracledatabaseexadbvmcluster"
 
 &oracledatabaseexadbvmcluster.OracleDatabaseExadbVmClusterConfig {
 	Connection: interface{},
@@ -1142,14 +1142,14 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabaseex
 	ExadbVmClusterId: *string,
 	Location: *string,
 	OdbSubnet: *string,
-	Properties: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterProperties,
+	Properties: github.com/cdktn-io/cdktn-provider-google-go/google/v21.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterProperties,
 	DeletionPolicy: *string,
 	DeletionProtection: interface{},
 	Id: *string,
 	Labels: *map[string]*string,
 	OdbNetwork: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterTimeouts,
 }
 ```
 
@@ -1172,10 +1172,10 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabaseex
 | <code><a href="#@cdktn/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterConfig.property.properties">Properties</a></code> | <code><a href="#@cdktn/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterProperties">OracleDatabaseExadbVmClusterProperties</a></code> | properties block. |
 | <code><a href="#@cdktn/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterConfig.property.deletionProtection">DeletionProtection</a></code> | <code>interface{}</code> | Whether or not to allow Terraform to destroy the instance. |
-| <code><a href="#@cdktn/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_exadb_vm_cluster#id OracleDatabaseExadbVmCluster#id}. |
+| <code><a href="#@cdktn/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_exadb_vm_cluster#id OracleDatabaseExadbVmCluster#id}. |
 | <code><a href="#@cdktn/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | The labels or tags associated with the ExadbVmCluster. |
 | <code><a href="#@cdktn/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterConfig.property.odbNetwork">OdbNetwork</a></code> | <code>*string</code> | The name of the OdbNetwork associated with the ExadbVmCluster. |
-| <code><a href="#@cdktn/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_exadb_vm_cluster#project OracleDatabaseExadbVmCluster#project}. |
+| <code><a href="#@cdktn/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_exadb_vm_cluster#project OracleDatabaseExadbVmCluster#project}. |
 | <code><a href="#@cdktn/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterTimeouts">OracleDatabaseExadbVmClusterTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1260,7 +1260,7 @@ BackupOdbSubnet *string
 
 The name of the backup OdbSubnet associated with the ExadbVmCluster. Format: projects/{project}/locations/{location}/odbNetworks/{odb_network}/odbSubnets/{odb_subnet}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_exadb_vm_cluster#backup_odb_subnet OracleDatabaseExadbVmCluster#backup_odb_subnet}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_exadb_vm_cluster#backup_odb_subnet OracleDatabaseExadbVmCluster#backup_odb_subnet}
 
 ---
 
@@ -1278,7 +1278,7 @@ The name does not have to
 be unique within your project. The name must be 1-255 characters long and
 can only contain alphanumeric characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_exadb_vm_cluster#display_name OracleDatabaseExadbVmCluster#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_exadb_vm_cluster#display_name OracleDatabaseExadbVmCluster#display_name}
 
 ---
 
@@ -1297,7 +1297,7 @@ restricted to (^[a-z](%5Ba-z0-9-%5D%7B0,61%7D%5Ba-z0-9%5D)?$) and must be a maxi
 63 characters in length. The value must start with a letter and end with a
 letter or a number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_exadb_vm_cluster#exadb_vm_cluster_id OracleDatabaseExadbVmCluster#exadb_vm_cluster_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_exadb_vm_cluster#exadb_vm_cluster_id OracleDatabaseExadbVmCluster#exadb_vm_cluster_id}
 
 ---
 
@@ -1311,7 +1311,7 @@ Location *string
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_exadb_vm_cluster#location OracleDatabaseExadbVmCluster#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_exadb_vm_cluster#location OracleDatabaseExadbVmCluster#location}
 
 ---
 
@@ -1325,7 +1325,7 @@ OdbSubnet *string
 
 The name of the OdbSubnet associated with the ExadbVmCluster for IP allocation. Format: projects/{project}/locations/{location}/odbNetworks/{odb_network}/odbSubnets/{odb_subnet}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_exadb_vm_cluster#odb_subnet OracleDatabaseExadbVmCluster#odb_subnet}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_exadb_vm_cluster#odb_subnet OracleDatabaseExadbVmCluster#odb_subnet}
 
 ---
 
@@ -1339,7 +1339,7 @@ Properties OracleDatabaseExadbVmClusterProperties
 
 properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_exadb_vm_cluster#properties OracleDatabaseExadbVmCluster#properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_exadb_vm_cluster#properties OracleDatabaseExadbVmCluster#properties}
 
 ---
 
@@ -1360,7 +1360,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_exadb_vm_cluster#deletion_policy OracleDatabaseExadbVmCluster#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_exadb_vm_cluster#deletion_policy OracleDatabaseExadbVmCluster#deletion_policy}
 
 ---
 
@@ -1376,7 +1376,7 @@ Whether or not to allow Terraform to destroy the instance.
 
 Unless this field is set to false in Terraform state, a terraform destroy or terraform apply that would delete the instance will fail.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_exadb_vm_cluster#deletion_protection OracleDatabaseExadbVmCluster#deletion_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_exadb_vm_cluster#deletion_protection OracleDatabaseExadbVmCluster#deletion_protection}
 
 ---
 
@@ -1388,7 +1388,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_exadb_vm_cluster#id OracleDatabaseExadbVmCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_exadb_vm_cluster#id OracleDatabaseExadbVmCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1408,7 +1408,7 @@ The labels or tags associated with the ExadbVmCluster.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_exadb_vm_cluster#labels OracleDatabaseExadbVmCluster#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_exadb_vm_cluster#labels OracleDatabaseExadbVmCluster#labels}
 
 ---
 
@@ -1426,7 +1426,7 @@ Format: projects/{project}/locations/{location}/odbNetworks/{odb_network}
 It is optional but if specified, this should match the parent ODBNetwork of
 the OdbSubnet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_exadb_vm_cluster#odb_network OracleDatabaseExadbVmCluster#odb_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_exadb_vm_cluster#odb_network OracleDatabaseExadbVmCluster#odb_network}
 
 ---
 
@@ -1438,7 +1438,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_exadb_vm_cluster#project OracleDatabaseExadbVmCluster#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_exadb_vm_cluster#project OracleDatabaseExadbVmCluster#project}.
 
 ---
 
@@ -1452,7 +1452,7 @@ Timeouts OracleDatabaseExadbVmClusterTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_exadb_vm_cluster#timeouts OracleDatabaseExadbVmCluster#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_exadb_vm_cluster#timeouts OracleDatabaseExadbVmCluster#timeouts}
 
 ---
 
@@ -1461,7 +1461,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterIdentityConnector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabaseexadbvmcluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/oracledatabaseexadbvmcluster"
 
 &oracledatabaseexadbvmcluster.OracleDatabaseExadbVmClusterIdentityConnector {
 
@@ -1474,7 +1474,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabaseex
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabaseexadbvmcluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/oracledatabaseexadbvmcluster"
 
 &oracledatabaseexadbvmcluster.OracleDatabaseExadbVmClusterProperties {
 	EnabledEcpuCountPerNode: *f64,
@@ -1484,13 +1484,13 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabaseex
 	NodeCount: *f64,
 	ShapeAttribute: *string,
 	SshPublicKeys: *[]*string,
-	VmFileSystemStorage: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterPropertiesVmFileSystemStorage,
+	VmFileSystemStorage: github.com/cdktn-io/cdktn-provider-google-go/google/v21.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterPropertiesVmFileSystemStorage,
 	AdditionalEcpuCountPerNode: *f64,
 	ClusterName: *string,
-	DataCollectionOptions: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterPropertiesDataCollectionOptions,
+	DataCollectionOptions: github.com/cdktn-io/cdktn-provider-google-go/google/v21.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterPropertiesDataCollectionOptions,
 	LicenseModel: *string,
 	ScanListenerPortTcp: *f64,
-	TimeZone: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterPropertiesTimeZone,
+	TimeZone: github.com/cdktn-io/cdktn-provider-google-go/google/v21.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterPropertiesTimeZone,
 }
 ```
 
@@ -1525,7 +1525,7 @@ EnabledEcpuCountPerNode *f64
 
 The number of ECPUs enabled per node for an exadata vm cluster on exascale infrastructure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_exadb_vm_cluster#enabled_ecpu_count_per_node OracleDatabaseExadbVmCluster#enabled_ecpu_count_per_node}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_exadb_vm_cluster#enabled_ecpu_count_per_node OracleDatabaseExadbVmCluster#enabled_ecpu_count_per_node}
 
 ---
 
@@ -1545,7 +1545,7 @@ storage_vault_properties to be set).
 Format:
 projects/{project}/locations/{location}/exascaleDbStorageVaults/{exascale_db_storage_vault}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_exadb_vm_cluster#exascale_db_storage_vault OracleDatabaseExadbVmCluster#exascale_db_storage_vault}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_exadb_vm_cluster#exascale_db_storage_vault OracleDatabaseExadbVmCluster#exascale_db_storage_vault}
 
 ---
 
@@ -1559,7 +1559,7 @@ GridImageId *string
 
 Grid Infrastructure Version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_exadb_vm_cluster#grid_image_id OracleDatabaseExadbVmCluster#grid_image_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_exadb_vm_cluster#grid_image_id OracleDatabaseExadbVmCluster#grid_image_id}
 
 ---
 
@@ -1573,7 +1573,7 @@ HostnamePrefix *string
 
 Prefix for VM cluster host names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_exadb_vm_cluster#hostname_prefix OracleDatabaseExadbVmCluster#hostname_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_exadb_vm_cluster#hostname_prefix OracleDatabaseExadbVmCluster#hostname_prefix}
 
 ---
 
@@ -1587,7 +1587,7 @@ NodeCount *f64
 
 The number of nodes/VMs in the ExadbVmCluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_exadb_vm_cluster#node_count OracleDatabaseExadbVmCluster#node_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_exadb_vm_cluster#node_count OracleDatabaseExadbVmCluster#node_count}
 
 ---
 
@@ -1608,7 +1608,7 @@ Possible values:
 SMART_STORAGE
 BLOCK_STORAGE
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_exadb_vm_cluster#shape_attribute OracleDatabaseExadbVmCluster#shape_attribute}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_exadb_vm_cluster#shape_attribute OracleDatabaseExadbVmCluster#shape_attribute}
 
 ---
 
@@ -1622,7 +1622,7 @@ SshPublicKeys *[]*string
 
 The SSH public keys for the ExadbVmCluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_exadb_vm_cluster#ssh_public_keys OracleDatabaseExadbVmCluster#ssh_public_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_exadb_vm_cluster#ssh_public_keys OracleDatabaseExadbVmCluster#ssh_public_keys}
 
 ---
 
@@ -1636,7 +1636,7 @@ VmFileSystemStorage OracleDatabaseExadbVmClusterPropertiesVmFileSystemStorage
 
 vm_file_system_storage block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_exadb_vm_cluster#vm_file_system_storage OracleDatabaseExadbVmCluster#vm_file_system_storage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_exadb_vm_cluster#vm_file_system_storage OracleDatabaseExadbVmCluster#vm_file_system_storage}
 
 ---
 
@@ -1650,7 +1650,7 @@ AdditionalEcpuCountPerNode *f64
 
 The number of additional ECPUs per node for an Exadata VM cluster on exascale infrastructure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_exadb_vm_cluster#additional_ecpu_count_per_node OracleDatabaseExadbVmCluster#additional_ecpu_count_per_node}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_exadb_vm_cluster#additional_ecpu_count_per_node OracleDatabaseExadbVmCluster#additional_ecpu_count_per_node}
 
 ---
 
@@ -1670,7 +1670,7 @@ underscores(_). It should be not more than 11 characters and is not case
 sensitive.
 OCI Cluster name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_exadb_vm_cluster#cluster_name OracleDatabaseExadbVmCluster#cluster_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_exadb_vm_cluster#cluster_name OracleDatabaseExadbVmCluster#cluster_name}
 
 ---
 
@@ -1684,7 +1684,7 @@ DataCollectionOptions OracleDatabaseExadbVmClusterPropertiesDataCollectionOption
 
 data_collection_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_exadb_vm_cluster#data_collection_options OracleDatabaseExadbVmCluster#data_collection_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_exadb_vm_cluster#data_collection_options OracleDatabaseExadbVmCluster#data_collection_options}
 
 ---
 
@@ -1698,7 +1698,7 @@ LicenseModel *string
 
 The license type of the ExadbVmCluster. Possible values: LICENSE_INCLUDED BRING_YOUR_OWN_LICENSE.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_exadb_vm_cluster#license_model OracleDatabaseExadbVmCluster#license_model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_exadb_vm_cluster#license_model OracleDatabaseExadbVmCluster#license_model}
 
 ---
 
@@ -1712,7 +1712,7 @@ ScanListenerPortTcp *f64
 
 SCAN listener port - TCP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_exadb_vm_cluster#scan_listener_port_tcp OracleDatabaseExadbVmCluster#scan_listener_port_tcp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_exadb_vm_cluster#scan_listener_port_tcp OracleDatabaseExadbVmCluster#scan_listener_port_tcp}
 
 ---
 
@@ -1726,7 +1726,7 @@ TimeZone OracleDatabaseExadbVmClusterPropertiesTimeZone
 
 time_zone block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_exadb_vm_cluster#time_zone OracleDatabaseExadbVmCluster#time_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_exadb_vm_cluster#time_zone OracleDatabaseExadbVmCluster#time_zone}
 
 ---
 
@@ -1735,7 +1735,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterPropertiesDataCollectionOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabaseexadbvmcluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/oracledatabaseexadbvmcluster"
 
 &oracledatabaseexadbvmcluster.OracleDatabaseExadbVmClusterPropertiesDataCollectionOptions {
 	IsDiagnosticsEventsEnabled: interface{},
@@ -1764,7 +1764,7 @@ IsDiagnosticsEventsEnabled interface{}
 
 Indicates whether to enable data collection for diagnostics.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_exadb_vm_cluster#is_diagnostics_events_enabled OracleDatabaseExadbVmCluster#is_diagnostics_events_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_exadb_vm_cluster#is_diagnostics_events_enabled OracleDatabaseExadbVmCluster#is_diagnostics_events_enabled}
 
 ---
 
@@ -1778,7 +1778,7 @@ IsHealthMonitoringEnabled interface{}
 
 Indicates whether to enable health monitoring.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_exadb_vm_cluster#is_health_monitoring_enabled OracleDatabaseExadbVmCluster#is_health_monitoring_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_exadb_vm_cluster#is_health_monitoring_enabled OracleDatabaseExadbVmCluster#is_health_monitoring_enabled}
 
 ---
 
@@ -1792,7 +1792,7 @@ IsIncidentLogsEnabled interface{}
 
 Indicates whether to enable incident logs and trace collection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_exadb_vm_cluster#is_incident_logs_enabled OracleDatabaseExadbVmCluster#is_incident_logs_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_exadb_vm_cluster#is_incident_logs_enabled OracleDatabaseExadbVmCluster#is_incident_logs_enabled}
 
 ---
 
@@ -1801,7 +1801,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterPropertiesTimeZone.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabaseexadbvmcluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/oracledatabaseexadbvmcluster"
 
 &oracledatabaseexadbvmcluster.OracleDatabaseExadbVmClusterPropertiesTimeZone {
 	Id: *string,
@@ -1828,7 +1828,7 @@ Id *string
 
 IANA Time Zone Database time zone. For example "America/New_York".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_exadb_vm_cluster#id OracleDatabaseExadbVmCluster#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_exadb_vm_cluster#id OracleDatabaseExadbVmCluster#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1845,7 +1845,7 @@ Version *string
 
 IANA Time Zone Database version number. For example "2019a".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_exadb_vm_cluster#version OracleDatabaseExadbVmCluster#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_exadb_vm_cluster#version OracleDatabaseExadbVmCluster#version}
 
 ---
 
@@ -1854,7 +1854,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterPropertiesVmFileSystemStorage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabaseexadbvmcluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/oracledatabaseexadbvmcluster"
 
 &oracledatabaseexadbvmcluster.OracleDatabaseExadbVmClusterPropertiesVmFileSystemStorage {
 	SizeInGbsPerNode: *f64,
@@ -1882,7 +1882,7 @@ The storage allocation for the exadbvmcluster per node, in gigabytes (GB).
 This field is used to calculate the total storage allocation for the
 exadbvmcluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_exadb_vm_cluster#size_in_gbs_per_node OracleDatabaseExadbVmCluster#size_in_gbs_per_node}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_exadb_vm_cluster#size_in_gbs_per_node OracleDatabaseExadbVmCluster#size_in_gbs_per_node}
 
 ---
 
@@ -1891,7 +1891,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabaseexadbvmcluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/oracledatabaseexadbvmcluster"
 
 &oracledatabaseexadbvmcluster.OracleDatabaseExadbVmClusterTimeouts {
 	Create: *string,
@@ -1904,9 +1904,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabaseex
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_exadb_vm_cluster#create OracleDatabaseExadbVmCluster#create}. |
-| <code><a href="#@cdktn/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_exadb_vm_cluster#delete OracleDatabaseExadbVmCluster#delete}. |
-| <code><a href="#@cdktn/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_exadb_vm_cluster#update OracleDatabaseExadbVmCluster#update}. |
+| <code><a href="#@cdktn/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_exadb_vm_cluster#create OracleDatabaseExadbVmCluster#create}. |
+| <code><a href="#@cdktn/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_exadb_vm_cluster#delete OracleDatabaseExadbVmCluster#delete}. |
+| <code><a href="#@cdktn/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_exadb_vm_cluster#update OracleDatabaseExadbVmCluster#update}. |
 
 ---
 
@@ -1918,7 +1918,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_exadb_vm_cluster#create OracleDatabaseExadbVmCluster#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_exadb_vm_cluster#create OracleDatabaseExadbVmCluster#create}.
 
 ---
 
@@ -1930,7 +1930,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_exadb_vm_cluster#delete OracleDatabaseExadbVmCluster#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_exadb_vm_cluster#delete OracleDatabaseExadbVmCluster#delete}.
 
 ---
 
@@ -1942,7 +1942,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_exadb_vm_cluster#update OracleDatabaseExadbVmCluster#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_exadb_vm_cluster#update OracleDatabaseExadbVmCluster#update}.
 
 ---
 
@@ -1953,7 +1953,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterIdentityConnectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabaseexadbvmcluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/oracledatabaseexadbvmcluster"
 
 oracledatabaseexadbvmcluster.NewOracleDatabaseExadbVmClusterIdentityConnectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OracleDatabaseExadbVmClusterIdentityConnectorList
 ```
@@ -2102,7 +2102,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterIdentityConnectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabaseexadbvmcluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/oracledatabaseexadbvmcluster"
 
 oracledatabaseexadbvmcluster.NewOracleDatabaseExadbVmClusterIdentityConnectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OracleDatabaseExadbVmClusterIdentityConnectorOutputReference
 ```
@@ -2391,7 +2391,7 @@ func InternalValue() OracleDatabaseExadbVmClusterIdentityConnector
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterPropertiesDataCollectionOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabaseexadbvmcluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/oracledatabaseexadbvmcluster"
 
 oracledatabaseexadbvmcluster.NewOracleDatabaseExadbVmClusterPropertiesDataCollectionOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseExadbVmClusterPropertiesDataCollectionOptionsOutputReference
 ```
@@ -2727,7 +2727,7 @@ func InternalValue() OracleDatabaseExadbVmClusterPropertiesDataCollectionOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabaseexadbvmcluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/oracledatabaseexadbvmcluster"
 
 oracledatabaseexadbvmcluster.NewOracleDatabaseExadbVmClusterPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseExadbVmClusterPropertiesOutputReference
 ```
@@ -3420,7 +3420,7 @@ func InternalValue() OracleDatabaseExadbVmClusterProperties
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterPropertiesTimeZoneOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabaseexadbvmcluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/oracledatabaseexadbvmcluster"
 
 oracledatabaseexadbvmcluster.NewOracleDatabaseExadbVmClusterPropertiesTimeZoneOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseExadbVmClusterPropertiesTimeZoneOutputReference
 ```
@@ -3727,7 +3727,7 @@ func InternalValue() OracleDatabaseExadbVmClusterPropertiesTimeZone
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterPropertiesVmFileSystemStorageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabaseexadbvmcluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/oracledatabaseexadbvmcluster"
 
 oracledatabaseexadbvmcluster.NewOracleDatabaseExadbVmClusterPropertiesVmFileSystemStorageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseExadbVmClusterPropertiesVmFileSystemStorageOutputReference
 ```
@@ -3998,7 +3998,7 @@ func InternalValue() OracleDatabaseExadbVmClusterPropertiesVmFileSystemStorage
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseExadbVmCluster.OracleDatabaseExadbVmClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabaseexadbvmcluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/oracledatabaseexadbvmcluster"
 
 oracledatabaseexadbvmcluster.NewOracleDatabaseExadbVmClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseExadbVmClusterTimeoutsOutputReference
 ```

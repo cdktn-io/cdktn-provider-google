@@ -4,12 +4,12 @@
 
 ### DataGoogleComputeNetworkAttachment <a name="DataGoogleComputeNetworkAttachment" id="@cdktn/provider-google.dataGoogleComputeNetworkAttachment.DataGoogleComputeNetworkAttachment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_network_attachment google_compute_network_attachment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/compute_network_attachment google_compute_network_attachment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeNetworkAttachment.DataGoogleComputeNetworkAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputenetworkattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputenetworkattachment"
 
 datagooglecomputenetworkattachment.NewDataGoogleComputeNetworkAttachment(scope Construct, id *string, config DataGoogleComputeNetworkAttachmentConfig) DataGoogleComputeNetworkAttachment
 ```
@@ -305,7 +305,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleComputeNetworkAttachment.DataGoogleComputeNetworkAttachment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputenetworkattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputenetworkattachment"
 
 datagooglecomputenetworkattachment.DataGoogleComputeNetworkAttachment_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleComputeNetworkAttachment.DataGoogleComputeNetworkAttachment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputenetworkattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputenetworkattachment"
 
 datagooglecomputenetworkattachment.DataGoogleComputeNetworkAttachment_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ datagooglecomputenetworkattachment.DataGoogleComputeNetworkAttachment_IsTerrafor
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleComputeNetworkAttachment.DataGoogleComputeNetworkAttachment.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputenetworkattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputenetworkattachment"
 
 datagooglecomputenetworkattachment.DataGoogleComputeNetworkAttachment_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagooglecomputenetworkattachment.DataGoogleComputeNetworkAttachment_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleComputeNetworkAttachment.DataGoogleComputeNetworkAttachment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputenetworkattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputenetworkattachment"
 
 datagooglecomputenetworkattachment.DataGoogleComputeNetworkAttachment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataGoogleComputeNetworkAt
 
 The id of the existing DataGoogleComputeNetworkAttachment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_network_attachment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/compute_network_attachment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -792,7 +792,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeNetworkAttachment.DataGoogleComputeNetworkAttachmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputenetworkattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputenetworkattachment"
 
 &datagooglecomputenetworkattachment.DataGoogleComputeNetworkAttachmentConfig {
 	Connection: interface{},
@@ -821,7 +821,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomput
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeNetworkAttachment.DataGoogleComputeNetworkAttachmentConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeNetworkAttachment.DataGoogleComputeNetworkAttachmentConfig.property.name">Name</a></code> | <code>*string</code> | Name of the resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeNetworkAttachment.DataGoogleComputeNetworkAttachmentConfig.property.region">Region</a></code> | <code>*string</code> | URL of the region where the network attachment resides. |
-| <code><a href="#@cdktn/provider-google.dataGoogleComputeNetworkAttachment.DataGoogleComputeNetworkAttachmentConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_network_attachment#project DataGoogleComputeNetworkAttachment#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeNetworkAttachment.DataGoogleComputeNetworkAttachmentConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/compute_network_attachment#project DataGoogleComputeNetworkAttachment#project}. |
 
 ---
 
@@ -907,7 +907,7 @@ Name of the resource.
 
 Provided by the client when the resource is created. The name must be 1-63 characters long, and comply with RFC1035. Specifically, the name must be 1-63 characters long and match the regular expression [a-z](%5B-a-z0-9%5D*%5Ba-z0-9%5D)? which means the first character must be a lowercase letter, and all following characters must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_network_attachment#name DataGoogleComputeNetworkAttachment#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/compute_network_attachment#name DataGoogleComputeNetworkAttachment#name}
 
 ---
 
@@ -923,7 +923,7 @@ URL of the region where the network attachment resides.
 
 This field applies only to the region resource. You must specify this field as part of the HTTP request URL. It is not settable as a field in the request body.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_network_attachment#region DataGoogleComputeNetworkAttachment#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/compute_network_attachment#region DataGoogleComputeNetworkAttachment#region}
 
 ---
 
@@ -935,7 +935,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_network_attachment#project DataGoogleComputeNetworkAttachment#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/compute_network_attachment#project DataGoogleComputeNetworkAttachment#project}.
 
 ---
 
@@ -944,7 +944,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeNetworkAttachment.DataGoogleComputeNetworkAttachmentConnectionEndpoints.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputenetworkattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputenetworkattachment"
 
 &datagooglecomputenetworkattachment.DataGoogleComputeNetworkAttachmentConnectionEndpoints {
 
@@ -959,7 +959,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomput
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeNetworkAttachment.DataGoogleComputeNetworkAttachmentConnectionEndpointsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputenetworkattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputenetworkattachment"
 
 datagooglecomputenetworkattachment.NewDataGoogleComputeNetworkAttachmentConnectionEndpointsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeNetworkAttachmentConnectionEndpointsList
 ```
@@ -1108,7 +1108,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeNetworkAttachment.DataGoogleComputeNetworkAttachmentConnectionEndpointsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputenetworkattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputenetworkattachment"
 
 datagooglecomputenetworkattachment.NewDataGoogleComputeNetworkAttachmentConnectionEndpointsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeNetworkAttachmentConnectionEndpointsOutputReference
 ```

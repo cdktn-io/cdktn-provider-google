@@ -4694,7 +4694,7 @@ export class DataGoogleContainerClusterLoggingConfigOutputReference extends cdkt
 
   // enable_components - computed: true, optional: false, required: false
   public get enableComponents() {
-    return this.getListAttribute('enable_components');
+    return cdktn.Fn.tolist(this.getListAttribute('enable_components'));
   }
 }
 
@@ -6206,7 +6206,7 @@ export class DataGoogleContainerClusterMonitoringConfigOutputReference extends c
 
   // enable_components - computed: true, optional: false, required: false
   public get enableComponents() {
-    return this.getListAttribute('enable_components');
+    return cdktn.Fn.tolist(this.getListAttribute('enable_components'));
   }
 
   // managed_prometheus - computed: true, optional: false, required: false

@@ -4,12 +4,12 @@
 
 ### BeyondcorpSecurityGateway <a name="BeyondcorpSecurityGateway" id="@cdktn/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGateway"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/beyondcorp_security_gateway google_beyondcorp_security_gateway}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/beyondcorp_security_gateway google_beyondcorp_security_gateway}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/beyondcorpsecuritygateway"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/beyondcorpsecuritygateway"
 
 beyondcorpsecuritygateway.NewBeyondcorpSecurityGateway(scope Construct, id *string, config BeyondcorpSecurityGatewayConfig) BeyondcorpSecurityGateway
 ```
@@ -535,7 +535,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGateway.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/beyondcorpsecuritygateway"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/beyondcorpsecuritygateway"
 
 beyondcorpsecuritygateway.BeyondcorpSecurityGateway_IsConstruct(x interface{}) *bool
 ```
@@ -567,7 +567,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGateway.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/beyondcorpsecuritygateway"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/beyondcorpsecuritygateway"
 
 beyondcorpsecuritygateway.BeyondcorpSecurityGateway_IsTerraformElement(x interface{}) *bool
 ```
@@ -581,7 +581,7 @@ beyondcorpsecuritygateway.BeyondcorpSecurityGateway_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGateway.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/beyondcorpsecuritygateway"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/beyondcorpsecuritygateway"
 
 beyondcorpsecuritygateway.BeyondcorpSecurityGateway_IsTerraformResource(x interface{}) *bool
 ```
@@ -595,7 +595,7 @@ beyondcorpsecuritygateway.BeyondcorpSecurityGateway_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGateway.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/beyondcorpsecuritygateway"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/beyondcorpsecuritygateway"
 
 beyondcorpsecuritygateway.BeyondcorpSecurityGateway_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -624,7 +624,7 @@ The construct id used in the generated config for the BeyondcorpSecurityGateway 
 
 The id of the existing BeyondcorpSecurityGateway that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/beyondcorp_security_gateway#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/beyondcorp_security_gateway#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1132,7 +1132,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/beyondcorpsecuritygateway"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/beyondcorpsecuritygateway"
 
 &beyondcorpsecuritygateway.BeyondcorpSecurityGatewayConfig {
 	Connection: interface{},
@@ -1148,11 +1148,11 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/beyondcorpsecuri
 	Hubs: interface{},
 	Id: *string,
 	Location: *string,
-	Logging: github.com/cdktn-io/cdktn-provider-google-go/google/v20.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayLogging,
+	Logging: github.com/cdktn-io/cdktn-provider-google-go/google/v21.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayLogging,
 	Project: *string,
-	ProxyProtocolConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayProxyProtocolConfig,
-	ServiceDiscovery: github.com/cdktn-io/cdktn-provider-google-go/google/v20.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayServiceDiscovery,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayTimeouts,
+	ProxyProtocolConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayProxyProtocolConfig,
+	ServiceDiscovery: github.com/cdktn-io/cdktn-provider-google-go/google/v21.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayServiceDiscovery,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayTimeouts,
 }
 ```
 
@@ -1171,10 +1171,10 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/beyondcorpsecuri
 | <code><a href="#@cdktn/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | Optional. An arbitrary user-provided name for the SecurityGateway. Cannot exceed 64 characters. |
 | <code><a href="#@cdktn/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayConfig.property.hubs">Hubs</a></code> | <code>interface{}</code> | hubs block. |
-| <code><a href="#@cdktn/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/beyondcorp_security_gateway#id BeyondcorpSecurityGateway#id}. |
+| <code><a href="#@cdktn/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/beyondcorp_security_gateway#id BeyondcorpSecurityGateway#id}. |
 | <code><a href="#@cdktn/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayConfig.property.location">Location</a></code> | <code>*string</code> | Resource ID segment making up resource 'name'. |
 | <code><a href="#@cdktn/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayConfig.property.logging">Logging</a></code> | <code><a href="#@cdktn/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayLogging">BeyondcorpSecurityGatewayLogging</a></code> | logging block. |
-| <code><a href="#@cdktn/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/beyondcorp_security_gateway#project BeyondcorpSecurityGateway#project}. |
+| <code><a href="#@cdktn/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/beyondcorp_security_gateway#project BeyondcorpSecurityGateway#project}. |
 | <code><a href="#@cdktn/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayConfig.property.proxyProtocolConfig">ProxyProtocolConfig</a></code> | <code><a href="#@cdktn/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayProxyProtocolConfig">BeyondcorpSecurityGatewayProxyProtocolConfig</a></code> | proxy_protocol_config block. |
 | <code><a href="#@cdktn/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayConfig.property.serviceDiscovery">ServiceDiscovery</a></code> | <code><a href="#@cdktn/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayServiceDiscovery">BeyondcorpSecurityGatewayServiceDiscovery</a></code> | service_discovery block. |
 | <code><a href="#@cdktn/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayTimeouts">BeyondcorpSecurityGatewayTimeouts</a></code> | timeouts block. |
@@ -1267,7 +1267,7 @@ User-settable SecurityGateway resource ID.
 * Must contain between 4-63 characters from '/a-z-/'.
 * Must end with a number or letter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/beyondcorp_security_gateway#security_gateway_id BeyondcorpSecurityGateway#security_gateway_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/beyondcorp_security_gateway#security_gateway_id BeyondcorpSecurityGateway#security_gateway_id}
 
 ---
 
@@ -1288,7 +1288,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/beyondcorp_security_gateway#deletion_policy BeyondcorpSecurityGateway#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/beyondcorp_security_gateway#deletion_policy BeyondcorpSecurityGateway#deletion_policy}
 
 ---
 
@@ -1302,7 +1302,7 @@ DisplayName *string
 
 Optional. An arbitrary user-provided name for the SecurityGateway. Cannot exceed 64 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/beyondcorp_security_gateway#display_name BeyondcorpSecurityGateway#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/beyondcorp_security_gateway#display_name BeyondcorpSecurityGateway#display_name}
 
 ---
 
@@ -1316,7 +1316,7 @@ Hubs interface{}
 
 hubs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/beyondcorp_security_gateway#hubs BeyondcorpSecurityGateway#hubs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/beyondcorp_security_gateway#hubs BeyondcorpSecurityGateway#hubs}
 
 ---
 
@@ -1328,7 +1328,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/beyondcorp_security_gateway#id BeyondcorpSecurityGateway#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/beyondcorp_security_gateway#id BeyondcorpSecurityGateway#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1347,7 +1347,7 @@ Resource ID segment making up resource 'name'.
 
 It identifies the resource within its parent collection as described in https://google.aip.dev/122. Must be omitted or set to 'global'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/beyondcorp_security_gateway#location BeyondcorpSecurityGateway#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/beyondcorp_security_gateway#location BeyondcorpSecurityGateway#location}
 
 ---
 
@@ -1361,7 +1361,7 @@ Logging BeyondcorpSecurityGatewayLogging
 
 logging block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/beyondcorp_security_gateway#logging BeyondcorpSecurityGateway#logging}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/beyondcorp_security_gateway#logging BeyondcorpSecurityGateway#logging}
 
 ---
 
@@ -1373,7 +1373,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/beyondcorp_security_gateway#project BeyondcorpSecurityGateway#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/beyondcorp_security_gateway#project BeyondcorpSecurityGateway#project}.
 
 ---
 
@@ -1387,7 +1387,7 @@ ProxyProtocolConfig BeyondcorpSecurityGatewayProxyProtocolConfig
 
 proxy_protocol_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/beyondcorp_security_gateway#proxy_protocol_config BeyondcorpSecurityGateway#proxy_protocol_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/beyondcorp_security_gateway#proxy_protocol_config BeyondcorpSecurityGateway#proxy_protocol_config}
 
 ---
 
@@ -1401,7 +1401,7 @@ ServiceDiscovery BeyondcorpSecurityGatewayServiceDiscovery
 
 service_discovery block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/beyondcorp_security_gateway#service_discovery BeyondcorpSecurityGateway#service_discovery}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/beyondcorp_security_gateway#service_discovery BeyondcorpSecurityGateway#service_discovery}
 
 ---
 
@@ -1415,7 +1415,7 @@ Timeouts BeyondcorpSecurityGatewayTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/beyondcorp_security_gateway#timeouts BeyondcorpSecurityGateway#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/beyondcorp_security_gateway#timeouts BeyondcorpSecurityGateway#timeouts}
 
 ---
 
@@ -1424,11 +1424,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayHubs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/beyondcorpsecuritygateway"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/beyondcorpsecuritygateway"
 
 &beyondcorpsecuritygateway.BeyondcorpSecurityGatewayHubs {
 	Region: *string,
-	InternetGateway: github.com/cdktn-io/cdktn-provider-google-go/google/v20.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayHubsInternetGateway,
+	InternetGateway: github.com/cdktn-io/cdktn-provider-google-go/google/v21.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayHubsInternetGateway,
 }
 ```
 
@@ -1436,7 +1436,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/beyondcorpsecuri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayHubs.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/beyondcorp_security_gateway#region BeyondcorpSecurityGateway#region}. |
+| <code><a href="#@cdktn/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayHubs.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/beyondcorp_security_gateway#region BeyondcorpSecurityGateway#region}. |
 | <code><a href="#@cdktn/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayHubs.property.internetGateway">InternetGateway</a></code> | <code><a href="#@cdktn/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayHubsInternetGateway">BeyondcorpSecurityGatewayHubsInternetGateway</a></code> | internet_gateway block. |
 
 ---
@@ -1449,7 +1449,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/beyondcorp_security_gateway#region BeyondcorpSecurityGateway#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/beyondcorp_security_gateway#region BeyondcorpSecurityGateway#region}.
 
 ---
 
@@ -1463,7 +1463,7 @@ InternetGateway BeyondcorpSecurityGatewayHubsInternetGateway
 
 internet_gateway block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/beyondcorp_security_gateway#internet_gateway BeyondcorpSecurityGateway#internet_gateway}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/beyondcorp_security_gateway#internet_gateway BeyondcorpSecurityGateway#internet_gateway}
 
 ---
 
@@ -1472,7 +1472,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayHubsInternetGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/beyondcorpsecuritygateway"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/beyondcorpsecuritygateway"
 
 &beyondcorpsecuritygateway.BeyondcorpSecurityGatewayHubsInternetGateway {
 
@@ -1485,7 +1485,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/beyondcorpsecuri
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayLogging.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/beyondcorpsecuritygateway"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/beyondcorpsecuritygateway"
 
 &beyondcorpsecuritygateway.BeyondcorpSecurityGatewayLogging {
 
@@ -1498,12 +1498,12 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/beyondcorpsecuri
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayProxyProtocolConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/beyondcorpsecuritygateway"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/beyondcorpsecuritygateway"
 
 &beyondcorpsecuritygateway.BeyondcorpSecurityGatewayProxyProtocolConfig {
 	AllowedClientHeaders: *[]*string,
 	ClientIp: interface{},
-	ContextualHeaders: github.com/cdktn-io/cdktn-provider-google-go/google/v20.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeaders,
+	ContextualHeaders: github.com/cdktn-io/cdktn-provider-google-go/google/v21.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeaders,
 	GatewayIdentity: *string,
 	MetadataHeaders: *map[string]*string,
 }
@@ -1531,7 +1531,7 @@ AllowedClientHeaders *[]*string
 
 The configuration for the proxy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/beyondcorp_security_gateway#allowed_client_headers BeyondcorpSecurityGateway#allowed_client_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/beyondcorp_security_gateway#allowed_client_headers BeyondcorpSecurityGateway#allowed_client_headers}
 
 ---
 
@@ -1545,7 +1545,7 @@ ClientIp interface{}
 
 Client IP configuration. The client IP address is included if true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/beyondcorp_security_gateway#client_ip BeyondcorpSecurityGateway#client_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/beyondcorp_security_gateway#client_ip BeyondcorpSecurityGateway#client_ip}
 
 ---
 
@@ -1559,7 +1559,7 @@ ContextualHeaders BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeaders
 
 contextual_headers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/beyondcorp_security_gateway#contextual_headers BeyondcorpSecurityGateway#contextual_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/beyondcorp_security_gateway#contextual_headers BeyondcorpSecurityGateway#contextual_headers}
 
 ---
 
@@ -1573,7 +1573,7 @@ GatewayIdentity *string
 
 Gateway identity configuration. Possible values: ["RESOURCE_NAME"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/beyondcorp_security_gateway#gateway_identity BeyondcorpSecurityGateway#gateway_identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/beyondcorp_security_gateway#gateway_identity BeyondcorpSecurityGateway#gateway_identity}
 
 ---
 
@@ -1593,7 +1593,7 @@ The names should conform to RFC 9110:
 > and ".", and SHOULD begin with a letter.
 > Field values SHOULD contain only ASCII printable characters and tab.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/beyondcorp_security_gateway#metadata_headers BeyondcorpSecurityGateway#metadata_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/beyondcorp_security_gateway#metadata_headers BeyondcorpSecurityGateway#metadata_headers}
 
 ---
 
@@ -1602,13 +1602,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/beyondcorpsecuritygateway"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/beyondcorpsecuritygateway"
 
 &beyondcorpsecuritygateway.BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeaders {
-	DeviceInfo: github.com/cdktn-io/cdktn-provider-google-go/google/v20.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersDeviceInfo,
-	GroupInfo: github.com/cdktn-io/cdktn-provider-google-go/google/v20.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersGroupInfo,
+	DeviceInfo: github.com/cdktn-io/cdktn-provider-google-go/google/v21.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersDeviceInfo,
+	GroupInfo: github.com/cdktn-io/cdktn-provider-google-go/google/v21.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersGroupInfo,
 	OutputType: *string,
-	UserInfo: github.com/cdktn-io/cdktn-provider-google-go/google/v20.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersUserInfo,
+	UserInfo: github.com/cdktn-io/cdktn-provider-google-go/google/v21.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersUserInfo,
 }
 ```
 
@@ -1633,7 +1633,7 @@ DeviceInfo BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersDeviceIn
 
 device_info block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/beyondcorp_security_gateway#device_info BeyondcorpSecurityGateway#device_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/beyondcorp_security_gateway#device_info BeyondcorpSecurityGateway#device_info}
 
 ---
 
@@ -1647,7 +1647,7 @@ GroupInfo BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersGroupInfo
 
 group_info block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/beyondcorp_security_gateway#group_info BeyondcorpSecurityGateway#group_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/beyondcorp_security_gateway#group_info BeyondcorpSecurityGateway#group_info}
 
 ---
 
@@ -1661,7 +1661,7 @@ OutputType *string
 
 Default output type for all enabled headers. Possible values: ["PROTOBUF", "JSON", "NONE"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/beyondcorp_security_gateway#output_type BeyondcorpSecurityGateway#output_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/beyondcorp_security_gateway#output_type BeyondcorpSecurityGateway#output_type}
 
 ---
 
@@ -1675,7 +1675,7 @@ UserInfo BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersUserInfo
 
 user_info block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/beyondcorp_security_gateway#user_info BeyondcorpSecurityGateway#user_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/beyondcorp_security_gateway#user_info BeyondcorpSecurityGateway#user_info}
 
 ---
 
@@ -1684,7 +1684,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersDeviceInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/beyondcorpsecuritygateway"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/beyondcorpsecuritygateway"
 
 &beyondcorpsecuritygateway.BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersDeviceInfo {
 	OutputType: *string,
@@ -1709,7 +1709,7 @@ OutputType *string
 
 The output type of the delegated device info. Possible values: ["PROTOBUF", "JSON", "NONE"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/beyondcorp_security_gateway#output_type BeyondcorpSecurityGateway#output_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/beyondcorp_security_gateway#output_type BeyondcorpSecurityGateway#output_type}
 
 ---
 
@@ -1718,7 +1718,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersGroupInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/beyondcorpsecuritygateway"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/beyondcorpsecuritygateway"
 
 &beyondcorpsecuritygateway.BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersGroupInfo {
 	OutputType: *string,
@@ -1743,7 +1743,7 @@ OutputType *string
 
 The output type of the delegated group info. Possible values: ["PROTOBUF", "JSON", "NONE"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/beyondcorp_security_gateway#output_type BeyondcorpSecurityGateway#output_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/beyondcorp_security_gateway#output_type BeyondcorpSecurityGateway#output_type}
 
 ---
 
@@ -1752,7 +1752,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersUserInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/beyondcorpsecuritygateway"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/beyondcorpsecuritygateway"
 
 &beyondcorpsecuritygateway.BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersUserInfo {
 	OutputType: *string,
@@ -1777,7 +1777,7 @@ OutputType *string
 
 The output type of the delegated user info. Possible values: ["PROTOBUF", "JSON", "NONE"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/beyondcorp_security_gateway#output_type BeyondcorpSecurityGateway#output_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/beyondcorp_security_gateway#output_type BeyondcorpSecurityGateway#output_type}
 
 ---
 
@@ -1786,10 +1786,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayServiceDiscovery.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/beyondcorpsecuritygateway"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/beyondcorpsecuritygateway"
 
 &beyondcorpsecuritygateway.BeyondcorpSecurityGatewayServiceDiscovery {
-	ApiGateway: github.com/cdktn-io/cdktn-provider-google-go/google/v20.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayServiceDiscoveryApiGateway,
+	ApiGateway: github.com/cdktn-io/cdktn-provider-google-go/google/v21.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayServiceDiscoveryApiGateway,
 }
 ```
 
@@ -1811,7 +1811,7 @@ ApiGateway BeyondcorpSecurityGatewayServiceDiscoveryApiGateway
 
 api_gateway block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/beyondcorp_security_gateway#api_gateway BeyondcorpSecurityGateway#api_gateway}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/beyondcorp_security_gateway#api_gateway BeyondcorpSecurityGateway#api_gateway}
 
 ---
 
@@ -1820,10 +1820,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayServiceDiscoveryApiGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/beyondcorpsecuritygateway"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/beyondcorpsecuritygateway"
 
 &beyondcorpsecuritygateway.BeyondcorpSecurityGatewayServiceDiscoveryApiGateway {
-	ResourceOverride: github.com/cdktn-io/cdktn-provider-google-go/google/v20.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayServiceDiscoveryApiGatewayResourceOverride,
+	ResourceOverride: github.com/cdktn-io/cdktn-provider-google-go/google/v21.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayServiceDiscoveryApiGatewayResourceOverride,
 }
 ```
 
@@ -1845,7 +1845,7 @@ ResourceOverride BeyondcorpSecurityGatewayServiceDiscoveryApiGatewayResourceOver
 
 resource_override block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/beyondcorp_security_gateway#resource_override BeyondcorpSecurityGateway#resource_override}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/beyondcorp_security_gateway#resource_override BeyondcorpSecurityGateway#resource_override}
 
 ---
 
@@ -1854,7 +1854,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayServiceDiscoveryApiGatewayResourceOverride.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/beyondcorpsecuritygateway"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/beyondcorpsecuritygateway"
 
 &beyondcorpsecuritygateway.BeyondcorpSecurityGatewayServiceDiscoveryApiGatewayResourceOverride {
 	Path: *string,
@@ -1879,7 +1879,7 @@ Path *string
 
 Contains uri path fragment where HTTP request is sent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/beyondcorp_security_gateway#path BeyondcorpSecurityGateway#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/beyondcorp_security_gateway#path BeyondcorpSecurityGateway#path}
 
 ---
 
@@ -1888,7 +1888,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/beyondcorpsecuritygateway"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/beyondcorpsecuritygateway"
 
 &beyondcorpsecuritygateway.BeyondcorpSecurityGatewayTimeouts {
 	Create: *string,
@@ -1901,9 +1901,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/beyondcorpsecuri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/beyondcorp_security_gateway#create BeyondcorpSecurityGateway#create}. |
-| <code><a href="#@cdktn/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/beyondcorp_security_gateway#delete BeyondcorpSecurityGateway#delete}. |
-| <code><a href="#@cdktn/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/beyondcorp_security_gateway#update BeyondcorpSecurityGateway#update}. |
+| <code><a href="#@cdktn/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/beyondcorp_security_gateway#create BeyondcorpSecurityGateway#create}. |
+| <code><a href="#@cdktn/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/beyondcorp_security_gateway#delete BeyondcorpSecurityGateway#delete}. |
+| <code><a href="#@cdktn/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/beyondcorp_security_gateway#update BeyondcorpSecurityGateway#update}. |
 
 ---
 
@@ -1915,7 +1915,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/beyondcorp_security_gateway#create BeyondcorpSecurityGateway#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/beyondcorp_security_gateway#create BeyondcorpSecurityGateway#create}.
 
 ---
 
@@ -1927,7 +1927,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/beyondcorp_security_gateway#delete BeyondcorpSecurityGateway#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/beyondcorp_security_gateway#delete BeyondcorpSecurityGateway#delete}.
 
 ---
 
@@ -1939,7 +1939,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/beyondcorp_security_gateway#update BeyondcorpSecurityGateway#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/beyondcorp_security_gateway#update BeyondcorpSecurityGateway#update}.
 
 ---
 
@@ -1950,7 +1950,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayHubsInternetGatewayOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/beyondcorpsecuritygateway"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/beyondcorpsecuritygateway"
 
 beyondcorpsecuritygateway.NewBeyondcorpSecurityGatewayHubsInternetGatewayOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BeyondcorpSecurityGatewayHubsInternetGatewayOutputReference
 ```
@@ -2210,7 +2210,7 @@ func InternalValue() BeyondcorpSecurityGatewayHubsInternetGateway
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayHubsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/beyondcorpsecuritygateway"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/beyondcorpsecuritygateway"
 
 beyondcorpsecuritygateway.NewBeyondcorpSecurityGatewayHubsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BeyondcorpSecurityGatewayHubsList
 ```
@@ -2370,7 +2370,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayHubsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/beyondcorpsecuritygateway"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/beyondcorpsecuritygateway"
 
 beyondcorpsecuritygateway.NewBeyondcorpSecurityGatewayHubsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BeyondcorpSecurityGatewayHubsOutputReference
 ```
@@ -2701,7 +2701,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayLoggingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/beyondcorpsecuritygateway"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/beyondcorpsecuritygateway"
 
 beyondcorpsecuritygateway.NewBeyondcorpSecurityGatewayLoggingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BeyondcorpSecurityGatewayLoggingOutputReference
 ```
@@ -2950,7 +2950,7 @@ func InternalValue() BeyondcorpSecurityGatewayLogging
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersDeviceInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/beyondcorpsecuritygateway"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/beyondcorpsecuritygateway"
 
 beyondcorpsecuritygateway.NewBeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersDeviceInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersDeviceInfoOutputReference
 ```
@@ -3228,7 +3228,7 @@ func InternalValue() BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeade
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersGroupInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/beyondcorpsecuritygateway"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/beyondcorpsecuritygateway"
 
 beyondcorpsecuritygateway.NewBeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersGroupInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersGroupInfoOutputReference
 ```
@@ -3506,7 +3506,7 @@ func InternalValue() BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeade
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/beyondcorpsecuritygateway"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/beyondcorpsecuritygateway"
 
 beyondcorpsecuritygateway.NewBeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersOutputReference
 ```
@@ -3910,7 +3910,7 @@ func InternalValue() BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeade
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersUserInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/beyondcorpsecuritygateway"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/beyondcorpsecuritygateway"
 
 beyondcorpsecuritygateway.NewBeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersUserInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeadersUserInfoOutputReference
 ```
@@ -4188,7 +4188,7 @@ func InternalValue() BeyondcorpSecurityGatewayProxyProtocolConfigContextualHeade
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayProxyProtocolConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/beyondcorpsecuritygateway"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/beyondcorpsecuritygateway"
 
 beyondcorpsecuritygateway.NewBeyondcorpSecurityGatewayProxyProtocolConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BeyondcorpSecurityGatewayProxyProtocolConfigOutputReference
 ```
@@ -4595,7 +4595,7 @@ func InternalValue() BeyondcorpSecurityGatewayProxyProtocolConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayServiceDiscoveryApiGatewayOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/beyondcorpsecuritygateway"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/beyondcorpsecuritygateway"
 
 beyondcorpsecuritygateway.NewBeyondcorpSecurityGatewayServiceDiscoveryApiGatewayOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BeyondcorpSecurityGatewayServiceDiscoveryApiGatewayOutputReference
 ```
@@ -4886,7 +4886,7 @@ func InternalValue() BeyondcorpSecurityGatewayServiceDiscoveryApiGateway
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayServiceDiscoveryApiGatewayResourceOverrideOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/beyondcorpsecuritygateway"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/beyondcorpsecuritygateway"
 
 beyondcorpsecuritygateway.NewBeyondcorpSecurityGatewayServiceDiscoveryApiGatewayResourceOverrideOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BeyondcorpSecurityGatewayServiceDiscoveryApiGatewayResourceOverrideOutputReference
 ```
@@ -5164,7 +5164,7 @@ func InternalValue() BeyondcorpSecurityGatewayServiceDiscoveryApiGatewayResource
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayServiceDiscoveryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/beyondcorpsecuritygateway"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/beyondcorpsecuritygateway"
 
 beyondcorpsecuritygateway.NewBeyondcorpSecurityGatewayServiceDiscoveryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BeyondcorpSecurityGatewayServiceDiscoveryOutputReference
 ```
@@ -5455,7 +5455,7 @@ func InternalValue() BeyondcorpSecurityGatewayServiceDiscovery
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.beyondcorpSecurityGateway.BeyondcorpSecurityGatewayTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/beyondcorpsecuritygateway"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/beyondcorpsecuritygateway"
 
 beyondcorpsecuritygateway.NewBeyondcorpSecurityGatewayTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BeyondcorpSecurityGatewayTimeoutsOutputReference
 ```

@@ -4,7 +4,7 @@
 
 ### CesGuardrail <a name="CesGuardrail" id="@cdktn/provider-google.cesGuardrail.CesGuardrail"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail google_ces_guardrail}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail google_ces_guardrail}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cesGuardrail.CesGuardrail.Initializer"></a>
 
@@ -59,11 +59,11 @@ CesGuardrail.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrail.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrail.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Description of the guardrail. |
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrail.Initializer.parameter.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether the guardrail is enabled. |
-| <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrail.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#id CesGuardrail#id}. |
+| <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrail.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#id CesGuardrail#id}. |
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrail.Initializer.parameter.llmPolicy">llmPolicy</a></code> | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailLlmPolicy">CesGuardrailLlmPolicy</a></code> | llm_policy block. |
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrail.Initializer.parameter.llmPromptSecurity">llmPromptSecurity</a></code> | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailLlmPromptSecurity">CesGuardrailLlmPromptSecurity</a></code> | llm_prompt_security block. |
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrail.Initializer.parameter.modelSafety">modelSafety</a></code> | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailModelSafety">CesGuardrailModelSafety</a></code> | model_safety block. |
-| <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrail.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#project CesGuardrail#project}. |
+| <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrail.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#project CesGuardrail#project}. |
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrail.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailTimeouts">CesGuardrailTimeouts</a></code> | timeouts block. |
 
 ---
@@ -134,7 +134,7 @@ Must be unique amongst siblings in the same scope
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#app CesGuardrail#app}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#app CesGuardrail#app}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Display name of the guardrail.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#display_name CesGuardrail#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#display_name CesGuardrail#display_name}
 
 ---
 
@@ -157,7 +157,7 @@ The ID to use for the guardrail, which will become the final component of the gu
 If not provided, a unique ID will be
 automatically assigned for the guardrail.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#guardrail_id CesGuardrail#guardrail_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#guardrail_id CesGuardrail#guardrail_id}
 
 ---
 
@@ -167,7 +167,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#location CesGuardrail#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#location CesGuardrail#location}
 
 ---
 
@@ -177,7 +177,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#action CesGuardrail#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#action CesGuardrail#action}
 
 ---
 
@@ -187,7 +187,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 code_callback block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#code_callback CesGuardrail#code_callback}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#code_callback CesGuardrail#code_callback}
 
 ---
 
@@ -197,7 +197,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 content_filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#content_filter CesGuardrail#content_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#content_filter CesGuardrail#content_filter}
 
 ---
 
@@ -214,7 +214,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#deletion_policy CesGuardrail#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#deletion_policy CesGuardrail#deletion_policy}
 
 ---
 
@@ -224,7 +224,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Description of the guardrail.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#description CesGuardrail#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#description CesGuardrail#description}
 
 ---
 
@@ -234,7 +234,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Whether the guardrail is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#enabled CesGuardrail#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#enabled CesGuardrail#enabled}
 
 ---
 
@@ -242,7 +242,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#id CesGuardrail#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#id CesGuardrail#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -255,7 +255,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 llm_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#llm_policy CesGuardrail#llm_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#llm_policy CesGuardrail#llm_policy}
 
 ---
 
@@ -265,7 +265,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 llm_prompt_security block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#llm_prompt_security CesGuardrail#llm_prompt_security}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#llm_prompt_security CesGuardrail#llm_prompt_security}
 
 ---
 
@@ -275,7 +275,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 model_safety block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#model_safety CesGuardrail#model_safety}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#model_safety CesGuardrail#model_safety}
 
 ---
 
@@ -283,7 +283,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#project CesGuardrail#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#project CesGuardrail#project}.
 
 ---
 
@@ -293,7 +293,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#timeouts CesGuardrail#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#timeouts CesGuardrail#timeouts}
 
 ---
 
@@ -917,7 +917,7 @@ The construct id used in the generated config for the CesGuardrail to import.
 
 The id of the existing CesGuardrail that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1542,7 +1542,7 @@ public CesGuardrailActionGenerativeAnswer getGenerativeAnswer();
 
 generative_answer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#generative_answer CesGuardrail#generative_answer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#generative_answer CesGuardrail#generative_answer}
 
 ---
 
@@ -1556,7 +1556,7 @@ public CesGuardrailActionRespondImmediately getRespondImmediately();
 
 respond_immediately block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#respond_immediately CesGuardrail#respond_immediately}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#respond_immediately CesGuardrail#respond_immediately}
 
 ---
 
@@ -1570,7 +1570,7 @@ public CesGuardrailActionTransferAgent getTransferAgent();
 
 transfer_agent block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#transfer_agent CesGuardrail#transfer_agent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#transfer_agent CesGuardrail#transfer_agent}
 
 ---
 
@@ -1604,7 +1604,7 @@ public java.lang.String getPrompt();
 
 The prompt to use for the generative answer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#prompt CesGuardrail#prompt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#prompt CesGuardrail#prompt}
 
 ---
 
@@ -1638,7 +1638,7 @@ public IResolvable|java.util.List<CesGuardrailActionRespondImmediatelyResponses>
 
 responses block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#responses CesGuardrail#responses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#responses CesGuardrail#responses}
 
 ---
 
@@ -1674,7 +1674,7 @@ public java.lang.String getText();
 
 Text for the agent to respond with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#text CesGuardrail#text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#text CesGuardrail#text}
 
 ---
 
@@ -1688,7 +1688,7 @@ public java.lang.Boolean|IResolvable getDisabled();
 
 Whether the response is disabled. Disabled responses are not used by the agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#disabled CesGuardrail#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#disabled CesGuardrail#disabled}
 
 ---
 
@@ -1727,7 +1727,7 @@ in the same app as the current agent.
 Format:
 'projects/{project}/locations/{location}/apps/{app}/agents/{agent}'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#agent CesGuardrail#agent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#agent CesGuardrail#agent}
 
 ---
 
@@ -1767,7 +1767,7 @@ public CesGuardrailCodeCallbackAfterAgentCallback getAfterAgentCallback();
 
 after_agent_callback block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#after_agent_callback CesGuardrail#after_agent_callback}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#after_agent_callback CesGuardrail#after_agent_callback}
 
 ---
 
@@ -1781,7 +1781,7 @@ public CesGuardrailCodeCallbackAfterModelCallback getAfterModelCallback();
 
 after_model_callback block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#after_model_callback CesGuardrail#after_model_callback}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#after_model_callback CesGuardrail#after_model_callback}
 
 ---
 
@@ -1795,7 +1795,7 @@ public CesGuardrailCodeCallbackBeforeAgentCallback getBeforeAgentCallback();
 
 before_agent_callback block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#before_agent_callback CesGuardrail#before_agent_callback}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#before_agent_callback CesGuardrail#before_agent_callback}
 
 ---
 
@@ -1809,7 +1809,7 @@ public CesGuardrailCodeCallbackBeforeModelCallback getBeforeModelCallback();
 
 before_model_callback block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#before_model_callback CesGuardrail#before_model_callback}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#before_model_callback CesGuardrail#before_model_callback}
 
 ---
 
@@ -1824,6 +1824,7 @@ CesGuardrailCodeCallbackAfterAgentCallback.builder()
     .pythonCode(java.lang.String)
 //  .description(java.lang.String)
 //  .disabled(java.lang.Boolean|IResolvable)
+//  .proactiveExecutionEnabled(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -1834,6 +1835,7 @@ CesGuardrailCodeCallbackAfterAgentCallback.builder()
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackAfterAgentCallback.property.pythonCode">pythonCode</a></code> | <code>java.lang.String</code> | The python code to execute for the callback. |
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackAfterAgentCallback.property.description">description</a></code> | <code>java.lang.String</code> | Human-readable description of the callback. |
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackAfterAgentCallback.property.disabled">disabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether the callback is disabled. Disabled callbacks are ignored by the agent. |
+| <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackAfterAgentCallback.property.proactiveExecutionEnabled">proactiveExecutionEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | If enabled, the callback will also be executed on intermediate model outputs. |
 
 ---
 
@@ -1847,7 +1849,7 @@ public java.lang.String getPythonCode();
 
 The python code to execute for the callback.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#python_code CesGuardrail#python_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#python_code CesGuardrail#python_code}
 
 ---
 
@@ -1861,7 +1863,7 @@ public java.lang.String getDescription();
 
 Human-readable description of the callback.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#description CesGuardrail#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#description CesGuardrail#description}
 
 ---
 
@@ -1875,7 +1877,27 @@ public java.lang.Boolean|IResolvable getDisabled();
 
 Whether the callback is disabled. Disabled callbacks are ignored by the agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#disabled CesGuardrail#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#disabled CesGuardrail#disabled}
+
+---
+
+##### `proactiveExecutionEnabled`<sup>Optional</sup> <a name="proactiveExecutionEnabled" id="@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackAfterAgentCallback.property.proactiveExecutionEnabled"></a>
+
+```java
+public java.lang.Boolean|IResolvable getProactiveExecutionEnabled();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+If enabled, the callback will also be executed on intermediate model outputs.
+
+This setting only affects after model callback.
+**ENABLE WITH CAUTION**. Typically after model callback only needs to be
+executed after receiving all model responses. Enabling proactive execution
+may have negative implication on the execution cost and latency, and
+should only be enabled in rare situations.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#proactive_execution_enabled CesGuardrail#proactive_execution_enabled}
 
 ---
 
@@ -1890,6 +1912,7 @@ CesGuardrailCodeCallbackAfterModelCallback.builder()
     .pythonCode(java.lang.String)
 //  .description(java.lang.String)
 //  .disabled(java.lang.Boolean|IResolvable)
+//  .proactiveExecutionEnabled(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -1900,6 +1923,7 @@ CesGuardrailCodeCallbackAfterModelCallback.builder()
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackAfterModelCallback.property.pythonCode">pythonCode</a></code> | <code>java.lang.String</code> | The python code to execute for the callback. |
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackAfterModelCallback.property.description">description</a></code> | <code>java.lang.String</code> | Human-readable description of the callback. |
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackAfterModelCallback.property.disabled">disabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether the callback is disabled. Disabled callbacks are ignored by the agent. |
+| <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackAfterModelCallback.property.proactiveExecutionEnabled">proactiveExecutionEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | If enabled, the callback will also be executed on intermediate model outputs. |
 
 ---
 
@@ -1913,7 +1937,7 @@ public java.lang.String getPythonCode();
 
 The python code to execute for the callback.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#python_code CesGuardrail#python_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#python_code CesGuardrail#python_code}
 
 ---
 
@@ -1927,7 +1951,7 @@ public java.lang.String getDescription();
 
 Human-readable description of the callback.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#description CesGuardrail#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#description CesGuardrail#description}
 
 ---
 
@@ -1941,7 +1965,27 @@ public java.lang.Boolean|IResolvable getDisabled();
 
 Whether the callback is disabled. Disabled callbacks are ignored by the agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#disabled CesGuardrail#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#disabled CesGuardrail#disabled}
+
+---
+
+##### `proactiveExecutionEnabled`<sup>Optional</sup> <a name="proactiveExecutionEnabled" id="@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackAfterModelCallback.property.proactiveExecutionEnabled"></a>
+
+```java
+public java.lang.Boolean|IResolvable getProactiveExecutionEnabled();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+If enabled, the callback will also be executed on intermediate model outputs.
+
+This setting only affects after model callback.
+**ENABLE WITH CAUTION**. Typically after model callback only needs to be
+executed after receiving all model responses. Enabling proactive execution
+may have negative implication on the execution cost and latency, and
+should only be enabled in rare situations.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#proactive_execution_enabled CesGuardrail#proactive_execution_enabled}
 
 ---
 
@@ -1956,6 +2000,7 @@ CesGuardrailCodeCallbackBeforeAgentCallback.builder()
     .pythonCode(java.lang.String)
 //  .description(java.lang.String)
 //  .disabled(java.lang.Boolean|IResolvable)
+//  .proactiveExecutionEnabled(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -1966,6 +2011,7 @@ CesGuardrailCodeCallbackBeforeAgentCallback.builder()
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackBeforeAgentCallback.property.pythonCode">pythonCode</a></code> | <code>java.lang.String</code> | The python code to execute for the callback. |
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackBeforeAgentCallback.property.description">description</a></code> | <code>java.lang.String</code> | Human-readable description of the callback. |
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackBeforeAgentCallback.property.disabled">disabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether the callback is disabled. Disabled callbacks are ignored by the agent. |
+| <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackBeforeAgentCallback.property.proactiveExecutionEnabled">proactiveExecutionEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | If enabled, the callback will also be executed on intermediate model outputs. |
 
 ---
 
@@ -1979,7 +2025,7 @@ public java.lang.String getPythonCode();
 
 The python code to execute for the callback.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#python_code CesGuardrail#python_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#python_code CesGuardrail#python_code}
 
 ---
 
@@ -1993,7 +2039,7 @@ public java.lang.String getDescription();
 
 Human-readable description of the callback.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#description CesGuardrail#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#description CesGuardrail#description}
 
 ---
 
@@ -2007,7 +2053,27 @@ public java.lang.Boolean|IResolvable getDisabled();
 
 Whether the callback is disabled. Disabled callbacks are ignored by the agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#disabled CesGuardrail#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#disabled CesGuardrail#disabled}
+
+---
+
+##### `proactiveExecutionEnabled`<sup>Optional</sup> <a name="proactiveExecutionEnabled" id="@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackBeforeAgentCallback.property.proactiveExecutionEnabled"></a>
+
+```java
+public java.lang.Boolean|IResolvable getProactiveExecutionEnabled();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+If enabled, the callback will also be executed on intermediate model outputs.
+
+This setting only affects after model callback.
+**ENABLE WITH CAUTION**. Typically after model callback only needs to be
+executed after receiving all model responses. Enabling proactive execution
+may have negative implication on the execution cost and latency, and
+should only be enabled in rare situations.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#proactive_execution_enabled CesGuardrail#proactive_execution_enabled}
 
 ---
 
@@ -2022,6 +2088,7 @@ CesGuardrailCodeCallbackBeforeModelCallback.builder()
     .pythonCode(java.lang.String)
 //  .description(java.lang.String)
 //  .disabled(java.lang.Boolean|IResolvable)
+//  .proactiveExecutionEnabled(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -2032,6 +2099,7 @@ CesGuardrailCodeCallbackBeforeModelCallback.builder()
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackBeforeModelCallback.property.pythonCode">pythonCode</a></code> | <code>java.lang.String</code> | The python code to execute for the callback. |
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackBeforeModelCallback.property.description">description</a></code> | <code>java.lang.String</code> | Human-readable description of the callback. |
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackBeforeModelCallback.property.disabled">disabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether the callback is disabled. Disabled callbacks are ignored by the agent. |
+| <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackBeforeModelCallback.property.proactiveExecutionEnabled">proactiveExecutionEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | If enabled, the callback will also be executed on intermediate model outputs. |
 
 ---
 
@@ -2045,7 +2113,7 @@ public java.lang.String getPythonCode();
 
 The python code to execute for the callback.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#python_code CesGuardrail#python_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#python_code CesGuardrail#python_code}
 
 ---
 
@@ -2059,7 +2127,7 @@ public java.lang.String getDescription();
 
 Human-readable description of the callback.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#description CesGuardrail#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#description CesGuardrail#description}
 
 ---
 
@@ -2073,7 +2141,27 @@ public java.lang.Boolean|IResolvable getDisabled();
 
 Whether the callback is disabled. Disabled callbacks are ignored by the agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#disabled CesGuardrail#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#disabled CesGuardrail#disabled}
+
+---
+
+##### `proactiveExecutionEnabled`<sup>Optional</sup> <a name="proactiveExecutionEnabled" id="@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackBeforeModelCallback.property.proactiveExecutionEnabled"></a>
+
+```java
+public java.lang.Boolean|IResolvable getProactiveExecutionEnabled();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+If enabled, the callback will also be executed on intermediate model outputs.
+
+This setting only affects after model callback.
+**ENABLE WITH CAUTION**. Typically after model callback only needs to be
+executed after receiving all model responses. Enabling proactive execution
+may have negative implication on the execution cost and latency, and
+should only be enabled in rare situations.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#proactive_execution_enabled CesGuardrail#proactive_execution_enabled}
 
 ---
 
@@ -2132,11 +2220,11 @@ CesGuardrailConfig.builder()
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailConfig.property.description">description</a></code> | <code>java.lang.String</code> | Description of the guardrail. |
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailConfig.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether the guardrail is enabled. |
-| <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#id CesGuardrail#id}. |
+| <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#id CesGuardrail#id}. |
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailConfig.property.llmPolicy">llmPolicy</a></code> | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailLlmPolicy">CesGuardrailLlmPolicy</a></code> | llm_policy block. |
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailConfig.property.llmPromptSecurity">llmPromptSecurity</a></code> | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailLlmPromptSecurity">CesGuardrailLlmPromptSecurity</a></code> | llm_prompt_security block. |
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailConfig.property.modelSafety">modelSafety</a></code> | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailModelSafety">CesGuardrailModelSafety</a></code> | model_safety block. |
-| <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#project CesGuardrail#project}. |
+| <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#project CesGuardrail#project}. |
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailTimeouts">CesGuardrailTimeouts</a></code> | timeouts block. |
 
 ---
@@ -2221,7 +2309,7 @@ public java.lang.String getApp();
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#app CesGuardrail#app}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#app CesGuardrail#app}
 
 ---
 
@@ -2235,7 +2323,7 @@ public java.lang.String getDisplayName();
 
 Display name of the guardrail.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#display_name CesGuardrail#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#display_name CesGuardrail#display_name}
 
 ---
 
@@ -2252,7 +2340,7 @@ The ID to use for the guardrail, which will become the final component of the gu
 If not provided, a unique ID will be
 automatically assigned for the guardrail.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#guardrail_id CesGuardrail#guardrail_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#guardrail_id CesGuardrail#guardrail_id}
 
 ---
 
@@ -2266,7 +2354,7 @@ public java.lang.String getLocation();
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#location CesGuardrail#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#location CesGuardrail#location}
 
 ---
 
@@ -2280,7 +2368,7 @@ public CesGuardrailAction getAction();
 
 action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#action CesGuardrail#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#action CesGuardrail#action}
 
 ---
 
@@ -2294,7 +2382,7 @@ public CesGuardrailCodeCallback getCodeCallback();
 
 code_callback block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#code_callback CesGuardrail#code_callback}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#code_callback CesGuardrail#code_callback}
 
 ---
 
@@ -2308,7 +2396,7 @@ public CesGuardrailContentFilter getContentFilter();
 
 content_filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#content_filter CesGuardrail#content_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#content_filter CesGuardrail#content_filter}
 
 ---
 
@@ -2329,7 +2417,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#deletion_policy CesGuardrail#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#deletion_policy CesGuardrail#deletion_policy}
 
 ---
 
@@ -2343,7 +2431,7 @@ public java.lang.String getDescription();
 
 Description of the guardrail.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#description CesGuardrail#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#description CesGuardrail#description}
 
 ---
 
@@ -2357,7 +2445,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 Whether the guardrail is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#enabled CesGuardrail#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#enabled CesGuardrail#enabled}
 
 ---
 
@@ -2369,7 +2457,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#id CesGuardrail#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#id CesGuardrail#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2386,7 +2474,7 @@ public CesGuardrailLlmPolicy getLlmPolicy();
 
 llm_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#llm_policy CesGuardrail#llm_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#llm_policy CesGuardrail#llm_policy}
 
 ---
 
@@ -2400,7 +2488,7 @@ public CesGuardrailLlmPromptSecurity getLlmPromptSecurity();
 
 llm_prompt_security block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#llm_prompt_security CesGuardrail#llm_prompt_security}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#llm_prompt_security CesGuardrail#llm_prompt_security}
 
 ---
 
@@ -2414,7 +2502,7 @@ public CesGuardrailModelSafety getModelSafety();
 
 model_safety block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#model_safety CesGuardrail#model_safety}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#model_safety CesGuardrail#model_safety}
 
 ---
 
@@ -2426,7 +2514,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#project CesGuardrail#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#project CesGuardrail#project}.
 
 ---
 
@@ -2440,7 +2528,7 @@ public CesGuardrailTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#timeouts CesGuardrail#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#timeouts CesGuardrail#timeouts}
 
 ---
 
@@ -2482,7 +2570,7 @@ public java.lang.String getMatchType();
 
 Match type for the content filter. Possible values: SIMPLE_STRING_MATCH WORD_BOUNDARY_STRING_MATCH REGEXP_MATCH.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#match_type CesGuardrail#match_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#match_type CesGuardrail#match_type}
 
 ---
 
@@ -2496,7 +2584,7 @@ public java.util.List<java.lang.String> getBannedContents();
 
 List of banned phrases. Applies to both user inputs and agent responses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#banned_contents CesGuardrail#banned_contents}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#banned_contents CesGuardrail#banned_contents}
 
 ---
 
@@ -2510,7 +2598,7 @@ public java.util.List<java.lang.String> getBannedContentsInAgentResponse();
 
 List of banned phrases. Applies only to agent responses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#banned_contents_in_agent_response CesGuardrail#banned_contents_in_agent_response}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#banned_contents_in_agent_response CesGuardrail#banned_contents_in_agent_response}
 
 ---
 
@@ -2524,7 +2612,7 @@ public java.util.List<java.lang.String> getBannedContentsInUserInput();
 
 List of banned phrases. Applies only to user inputs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#banned_contents_in_user_input CesGuardrail#banned_contents_in_user_input}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#banned_contents_in_user_input CesGuardrail#banned_contents_in_user_input}
 
 ---
 
@@ -2538,7 +2626,7 @@ public java.lang.Boolean|IResolvable getDisregardDiacritics();
 
 If true, diacritics are ignored during matching.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#disregard_diacritics CesGuardrail#disregard_diacritics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#disregard_diacritics CesGuardrail#disregard_diacritics}
 
 ---
 
@@ -2591,7 +2679,7 @@ USER_QUERY
 AGENT_RESPONSE
 USER_QUERY_AND_AGENT_RESPONSE Possible values: ["USER_QUERY", "AGENT_RESPONSE", "USER_QUERY_AND_AGENT_RESPONSE"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#policy_scope CesGuardrail#policy_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#policy_scope CesGuardrail#policy_scope}
 
 ---
 
@@ -2605,7 +2693,7 @@ public java.lang.String getPrompt();
 
 Policy prompt.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#prompt CesGuardrail#prompt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#prompt CesGuardrail#prompt}
 
 ---
 
@@ -2622,7 +2710,7 @@ By default, the LLM policy check is bypassed for short utterances.
 Enabling this setting applies the policy check to all utterances,
 including those that would normally be skipped.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#allow_short_utterance CesGuardrail#allow_short_utterance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#allow_short_utterance CesGuardrail#allow_short_utterance}
 
 ---
 
@@ -2636,7 +2724,7 @@ public java.lang.Boolean|IResolvable getFailOpen();
 
 If an error occurs during the policy check, fail open and do not trigger the guardrail.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#fail_open CesGuardrail#fail_open}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#fail_open CesGuardrail#fail_open}
 
 ---
 
@@ -2652,7 +2740,7 @@ When checking this policy, consider the last 'n' messages in the conversation.
 
 When not set a default value of 10 will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#max_conversation_messages CesGuardrail#max_conversation_messages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#max_conversation_messages CesGuardrail#max_conversation_messages}
 
 ---
 
@@ -2666,7 +2754,7 @@ public CesGuardrailLlmPolicyModelSettings getModelSettings();
 
 model_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#model_settings CesGuardrail#model_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#model_settings CesGuardrail#model_settings}
 
 ---
 
@@ -2704,7 +2792,7 @@ The LLM model that the agent should use.
 
 If not set, the agent will inherit the model from its parent agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#model CesGuardrail#model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#model CesGuardrail#model}
 
 ---
 
@@ -2723,7 +2811,7 @@ controls the randomness of the model's responses. Lower temperatures
 produce responses that are more predictable. Higher temperatures produce
 responses that are more creative.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#temperature CesGuardrail#temperature}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#temperature CesGuardrail#temperature}
 
 ---
 
@@ -2761,7 +2849,7 @@ public CesGuardrailLlmPromptSecurityCustomPolicy getCustomPolicy();
 
 custom_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#custom_policy CesGuardrail#custom_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#custom_policy CesGuardrail#custom_policy}
 
 ---
 
@@ -2775,7 +2863,7 @@ public CesGuardrailLlmPromptSecurityDefaultSettings getDefaultSettings();
 
 default_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#default_settings CesGuardrail#default_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#default_settings CesGuardrail#default_settings}
 
 ---
 
@@ -2794,7 +2882,7 @@ Determines the behavior when the guardrail encounters an LLM error.
   Note: If a custom policy is provided, this field is ignored in favor of
   the policy's 'failOpen' configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#fail_open CesGuardrail#fail_open}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#fail_open CesGuardrail#fail_open}
 
 ---
 
@@ -2847,7 +2935,7 @@ USER_QUERY
 AGENT_RESPONSE
 USER_QUERY_AND_AGENT_RESPONSE
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#policy_scope CesGuardrail#policy_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#policy_scope CesGuardrail#policy_scope}
 
 ---
 
@@ -2861,7 +2949,7 @@ public java.lang.String getPrompt();
 
 Policy prompt.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#prompt CesGuardrail#prompt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#prompt CesGuardrail#prompt}
 
 ---
 
@@ -2878,7 +2966,7 @@ By default, the LLM policy check is bypassed for short utterances.
 Enabling this setting applies the policy check to all utterances,
 including those that would normally be skipped.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#allow_short_utterance CesGuardrail#allow_short_utterance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#allow_short_utterance CesGuardrail#allow_short_utterance}
 
 ---
 
@@ -2892,7 +2980,7 @@ public java.lang.Boolean|IResolvable getFailOpen();
 
 If an error occurs during the policy check, fail open and do not trigger the guardrail.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#fail_open CesGuardrail#fail_open}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#fail_open CesGuardrail#fail_open}
 
 ---
 
@@ -2908,7 +2996,7 @@ When checking this policy, consider the last 'n' messages in the conversation.
 
 When not set a default value of 10 will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#max_conversation_messages CesGuardrail#max_conversation_messages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#max_conversation_messages CesGuardrail#max_conversation_messages}
 
 ---
 
@@ -2922,7 +3010,7 @@ public CesGuardrailLlmPromptSecurityCustomPolicyModelSettings getModelSettings()
 
 model_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#model_settings CesGuardrail#model_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#model_settings CesGuardrail#model_settings}
 
 ---
 
@@ -2960,7 +3048,7 @@ The LLM model that the agent should use.
 
 If not set, the agent will inherit the model from its parent agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#model CesGuardrail#model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#model CesGuardrail#model}
 
 ---
 
@@ -2979,7 +3067,7 @@ controls the randomness of the model's responses. Lower temperatures
 produce responses that are more predictable. Higher temperatures produce
 responses that are more creative.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#temperature CesGuardrail#temperature}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#temperature CesGuardrail#temperature}
 
 ---
 
@@ -3025,7 +3113,7 @@ public IResolvable|java.util.List<CesGuardrailModelSafetySafetySettings> getSafe
 
 safety_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#safety_settings CesGuardrail#safety_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#safety_settings CesGuardrail#safety_settings}
 
 ---
 
@@ -3061,7 +3149,7 @@ public java.lang.String getCategory();
 
 The harm category. Possible values: HARM_CATEGORY_HATE_SPEECH HARM_CATEGORY_DANGEROUS_CONTENT HARM_CATEGORY_HARASSMENT HARM_CATEGORY_SEXUALLY_EXPLICIT Possible values: ["HARM_CATEGORY_HATE_SPEECH", "HARM_CATEGORY_DANGEROUS_CONTENT", "HARM_CATEGORY_HARASSMENT", "HARM_CATEGORY_SEXUALLY_EXPLICIT"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#category CesGuardrail#category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#category CesGuardrail#category}
 
 ---
 
@@ -3075,7 +3163,7 @@ public java.lang.String getThreshold();
 
 The harm block threshold. Possible values: BLOCK_LOW_AND_ABOVE BLOCK_MEDIUM_AND_ABOVE BLOCK_ONLY_HIGH BLOCK_NONE OFF Possible values: ["BLOCK_LOW_AND_ABOVE", "BLOCK_MEDIUM_AND_ABOVE", "BLOCK_ONLY_HIGH", "BLOCK_NONE", "OFF"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#threshold CesGuardrail#threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#threshold CesGuardrail#threshold}
 
 ---
 
@@ -3097,9 +3185,9 @@ CesGuardrailTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#create CesGuardrail#create}. |
-| <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#delete CesGuardrail#delete}. |
-| <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#update CesGuardrail#update}. |
+| <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#create CesGuardrail#create}. |
+| <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#delete CesGuardrail#delete}. |
+| <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#update CesGuardrail#update}. |
 
 ---
 
@@ -3111,7 +3199,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#create CesGuardrail#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#create CesGuardrail#create}.
 
 ---
 
@@ -3123,7 +3211,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#delete CesGuardrail#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#delete CesGuardrail#delete}.
 
 ---
 
@@ -3135,7 +3223,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_guardrail#update CesGuardrail#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_guardrail#update CesGuardrail#update}.
 
 ---
 
@@ -4872,6 +4960,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackAfterAgentCallbackOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackAfterAgentCallbackOutputReference.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackAfterAgentCallbackOutputReference.resetDisabled">resetDisabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackAfterAgentCallbackOutputReference.resetProactiveExecutionEnabled">resetProactiveExecutionEnabled</a></code> | *No description.* |
 
 ---
 
@@ -5037,6 +5126,12 @@ public void resetDescription()
 public void resetDisabled()
 ```
 
+##### `resetProactiveExecutionEnabled` <a name="resetProactiveExecutionEnabled" id="@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackAfterAgentCallbackOutputReference.resetProactiveExecutionEnabled"></a>
+
+```java
+public void resetProactiveExecutionEnabled()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -5046,9 +5141,11 @@ public void resetDisabled()
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackAfterAgentCallbackOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackAfterAgentCallbackOutputReference.property.descriptionInput">descriptionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackAfterAgentCallbackOutputReference.property.disabledInput">disabledInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackAfterAgentCallbackOutputReference.property.proactiveExecutionEnabledInput">proactiveExecutionEnabledInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackAfterAgentCallbackOutputReference.property.pythonCodeInput">pythonCodeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackAfterAgentCallbackOutputReference.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackAfterAgentCallbackOutputReference.property.disabled">disabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackAfterAgentCallbackOutputReference.property.proactiveExecutionEnabled">proactiveExecutionEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackAfterAgentCallbackOutputReference.property.pythonCode">pythonCode</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackAfterAgentCallbackOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackAfterAgentCallback">CesGuardrailCodeCallbackAfterAgentCallback</a></code> | *No description.* |
 
@@ -5098,6 +5195,16 @@ public java.lang.Boolean|IResolvable getDisabledInput();
 
 ---
 
+##### `proactiveExecutionEnabledInput`<sup>Optional</sup> <a name="proactiveExecutionEnabledInput" id="@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackAfterAgentCallbackOutputReference.property.proactiveExecutionEnabledInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getProactiveExecutionEnabledInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
 ##### `pythonCodeInput`<sup>Optional</sup> <a name="pythonCodeInput" id="@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackAfterAgentCallbackOutputReference.property.pythonCodeInput"></a>
 
 ```java
@@ -5122,6 +5229,16 @@ public java.lang.String getDescription();
 
 ```java
 public java.lang.Boolean|IResolvable getDisabled();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `proactiveExecutionEnabled`<sup>Required</sup> <a name="proactiveExecutionEnabled" id="@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackAfterAgentCallbackOutputReference.property.proactiveExecutionEnabled"></a>
+
+```java
+public java.lang.Boolean|IResolvable getProactiveExecutionEnabled();
 ```
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
@@ -5201,6 +5318,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackAfterModelCallbackOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackAfterModelCallbackOutputReference.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackAfterModelCallbackOutputReference.resetDisabled">resetDisabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackAfterModelCallbackOutputReference.resetProactiveExecutionEnabled">resetProactiveExecutionEnabled</a></code> | *No description.* |
 
 ---
 
@@ -5366,6 +5484,12 @@ public void resetDescription()
 public void resetDisabled()
 ```
 
+##### `resetProactiveExecutionEnabled` <a name="resetProactiveExecutionEnabled" id="@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackAfterModelCallbackOutputReference.resetProactiveExecutionEnabled"></a>
+
+```java
+public void resetProactiveExecutionEnabled()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -5375,9 +5499,11 @@ public void resetDisabled()
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackAfterModelCallbackOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackAfterModelCallbackOutputReference.property.descriptionInput">descriptionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackAfterModelCallbackOutputReference.property.disabledInput">disabledInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackAfterModelCallbackOutputReference.property.proactiveExecutionEnabledInput">proactiveExecutionEnabledInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackAfterModelCallbackOutputReference.property.pythonCodeInput">pythonCodeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackAfterModelCallbackOutputReference.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackAfterModelCallbackOutputReference.property.disabled">disabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackAfterModelCallbackOutputReference.property.proactiveExecutionEnabled">proactiveExecutionEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackAfterModelCallbackOutputReference.property.pythonCode">pythonCode</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackAfterModelCallbackOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackAfterModelCallback">CesGuardrailCodeCallbackAfterModelCallback</a></code> | *No description.* |
 
@@ -5427,6 +5553,16 @@ public java.lang.Boolean|IResolvable getDisabledInput();
 
 ---
 
+##### `proactiveExecutionEnabledInput`<sup>Optional</sup> <a name="proactiveExecutionEnabledInput" id="@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackAfterModelCallbackOutputReference.property.proactiveExecutionEnabledInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getProactiveExecutionEnabledInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
 ##### `pythonCodeInput`<sup>Optional</sup> <a name="pythonCodeInput" id="@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackAfterModelCallbackOutputReference.property.pythonCodeInput"></a>
 
 ```java
@@ -5451,6 +5587,16 @@ public java.lang.String getDescription();
 
 ```java
 public java.lang.Boolean|IResolvable getDisabled();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `proactiveExecutionEnabled`<sup>Required</sup> <a name="proactiveExecutionEnabled" id="@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackAfterModelCallbackOutputReference.property.proactiveExecutionEnabled"></a>
+
+```java
+public java.lang.Boolean|IResolvable getProactiveExecutionEnabled();
 ```
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
@@ -5530,6 +5676,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackBeforeAgentCallbackOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackBeforeAgentCallbackOutputReference.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackBeforeAgentCallbackOutputReference.resetDisabled">resetDisabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackBeforeAgentCallbackOutputReference.resetProactiveExecutionEnabled">resetProactiveExecutionEnabled</a></code> | *No description.* |
 
 ---
 
@@ -5695,6 +5842,12 @@ public void resetDescription()
 public void resetDisabled()
 ```
 
+##### `resetProactiveExecutionEnabled` <a name="resetProactiveExecutionEnabled" id="@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackBeforeAgentCallbackOutputReference.resetProactiveExecutionEnabled"></a>
+
+```java
+public void resetProactiveExecutionEnabled()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -5704,9 +5857,11 @@ public void resetDisabled()
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackBeforeAgentCallbackOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackBeforeAgentCallbackOutputReference.property.descriptionInput">descriptionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackBeforeAgentCallbackOutputReference.property.disabledInput">disabledInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackBeforeAgentCallbackOutputReference.property.proactiveExecutionEnabledInput">proactiveExecutionEnabledInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackBeforeAgentCallbackOutputReference.property.pythonCodeInput">pythonCodeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackBeforeAgentCallbackOutputReference.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackBeforeAgentCallbackOutputReference.property.disabled">disabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackBeforeAgentCallbackOutputReference.property.proactiveExecutionEnabled">proactiveExecutionEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackBeforeAgentCallbackOutputReference.property.pythonCode">pythonCode</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackBeforeAgentCallbackOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackBeforeAgentCallback">CesGuardrailCodeCallbackBeforeAgentCallback</a></code> | *No description.* |
 
@@ -5756,6 +5911,16 @@ public java.lang.Boolean|IResolvable getDisabledInput();
 
 ---
 
+##### `proactiveExecutionEnabledInput`<sup>Optional</sup> <a name="proactiveExecutionEnabledInput" id="@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackBeforeAgentCallbackOutputReference.property.proactiveExecutionEnabledInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getProactiveExecutionEnabledInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
 ##### `pythonCodeInput`<sup>Optional</sup> <a name="pythonCodeInput" id="@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackBeforeAgentCallbackOutputReference.property.pythonCodeInput"></a>
 
 ```java
@@ -5780,6 +5945,16 @@ public java.lang.String getDescription();
 
 ```java
 public java.lang.Boolean|IResolvable getDisabled();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `proactiveExecutionEnabled`<sup>Required</sup> <a name="proactiveExecutionEnabled" id="@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackBeforeAgentCallbackOutputReference.property.proactiveExecutionEnabled"></a>
+
+```java
+public java.lang.Boolean|IResolvable getProactiveExecutionEnabled();
 ```
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
@@ -5859,6 +6034,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackBeforeModelCallbackOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackBeforeModelCallbackOutputReference.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackBeforeModelCallbackOutputReference.resetDisabled">resetDisabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackBeforeModelCallbackOutputReference.resetProactiveExecutionEnabled">resetProactiveExecutionEnabled</a></code> | *No description.* |
 
 ---
 
@@ -6024,6 +6200,12 @@ public void resetDescription()
 public void resetDisabled()
 ```
 
+##### `resetProactiveExecutionEnabled` <a name="resetProactiveExecutionEnabled" id="@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackBeforeModelCallbackOutputReference.resetProactiveExecutionEnabled"></a>
+
+```java
+public void resetProactiveExecutionEnabled()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -6033,9 +6215,11 @@ public void resetDisabled()
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackBeforeModelCallbackOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackBeforeModelCallbackOutputReference.property.descriptionInput">descriptionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackBeforeModelCallbackOutputReference.property.disabledInput">disabledInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackBeforeModelCallbackOutputReference.property.proactiveExecutionEnabledInput">proactiveExecutionEnabledInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackBeforeModelCallbackOutputReference.property.pythonCodeInput">pythonCodeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackBeforeModelCallbackOutputReference.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackBeforeModelCallbackOutputReference.property.disabled">disabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackBeforeModelCallbackOutputReference.property.proactiveExecutionEnabled">proactiveExecutionEnabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackBeforeModelCallbackOutputReference.property.pythonCode">pythonCode</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackBeforeModelCallbackOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackBeforeModelCallback">CesGuardrailCodeCallbackBeforeModelCallback</a></code> | *No description.* |
 
@@ -6085,6 +6269,16 @@ public java.lang.Boolean|IResolvable getDisabledInput();
 
 ---
 
+##### `proactiveExecutionEnabledInput`<sup>Optional</sup> <a name="proactiveExecutionEnabledInput" id="@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackBeforeModelCallbackOutputReference.property.proactiveExecutionEnabledInput"></a>
+
+```java
+public java.lang.Boolean|IResolvable getProactiveExecutionEnabledInput();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
 ##### `pythonCodeInput`<sup>Optional</sup> <a name="pythonCodeInput" id="@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackBeforeModelCallbackOutputReference.property.pythonCodeInput"></a>
 
 ```java
@@ -6109,6 +6303,16 @@ public java.lang.String getDescription();
 
 ```java
 public java.lang.Boolean|IResolvable getDisabled();
+```
+
+- *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
+
+---
+
+##### `proactiveExecutionEnabled`<sup>Required</sup> <a name="proactiveExecutionEnabled" id="@cdktn/provider-google.cesGuardrail.CesGuardrailCodeCallbackBeforeModelCallbackOutputReference.property.proactiveExecutionEnabled"></a>
+
+```java
+public java.lang.Boolean|IResolvable getProactiveExecutionEnabled();
 ```
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable

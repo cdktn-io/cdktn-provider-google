@@ -4,12 +4,12 @@
 
 ### LustreInstance <a name="LustreInstance" id="@cdktn/provider-google.lustreInstance.LustreInstance"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/lustre_instance google_lustre_instance}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/lustre_instance google_lustre_instance}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.lustreInstance.LustreInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lustreinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/lustreinstance"
 
 lustreinstance.NewLustreInstance(scope Construct, id *string, config LustreInstanceConfig) LustreInstance
 ```
@@ -90,6 +90,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.lustreInstance.LustreInstance.resetPerUnitStorageThroughput">ResetPerUnitStorageThroughput</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lustreInstance.LustreInstance.resetPlacementPolicy">ResetPlacementPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lustreInstance.LustreInstance.resetProject">ResetProject</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lustreInstance.LustreInstance.resetTargetVersion">ResetTargetVersion</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lustreInstance.LustreInstance.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 
 ---
@@ -523,6 +524,12 @@ func ResetPlacementPolicy()
 func ResetProject()
 ```
 
+##### `ResetTargetVersion` <a name="ResetTargetVersion" id="@cdktn/provider-google.lustreInstance.LustreInstance.resetTargetVersion"></a>
+
+```go
+func ResetTargetVersion()
+```
+
 ##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktn/provider-google.lustreInstance.LustreInstance.resetTimeouts"></a>
 
 ```go
@@ -543,7 +550,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.lustreInstance.LustreInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lustreinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/lustreinstance"
 
 lustreinstance.LustreInstance_IsConstruct(x interface{}) *bool
 ```
@@ -575,7 +582,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.lustreInstance.LustreInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lustreinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/lustreinstance"
 
 lustreinstance.LustreInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -589,7 +596,7 @@ lustreinstance.LustreInstance_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.lustreInstance.LustreInstance.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lustreinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/lustreinstance"
 
 lustreinstance.LustreInstance_IsTerraformResource(x interface{}) *bool
 ```
@@ -603,7 +610,7 @@ lustreinstance.LustreInstance_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.lustreInstance.LustreInstance.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lustreinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/lustreinstance"
 
 lustreinstance.LustreInstance_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -632,7 +639,7 @@ The construct id used in the generated config for the LustreInstance to import.
 
 The id of the existing LustreInstance that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/lustre_instance#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/lustre_instance#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -663,9 +670,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.lustreInstance.LustreInstance.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lustreInstance.LustreInstance.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lustreInstance.LustreInstance.property.accessRulesOptions">AccessRulesOptions</a></code> | <code><a href="#@cdktn/provider-google.lustreInstance.LustreInstanceAccessRulesOptionsOutputReference">LustreInstanceAccessRulesOptionsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lustreInstance.LustreInstance.property.availableVersion">AvailableVersion</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lustreInstance.LustreInstance.property.createTime">CreateTime</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lustreInstance.LustreInstance.property.dynamicTierOptions">DynamicTierOptions</a></code> | <code><a href="#@cdktn/provider-google.lustreInstance.LustreInstanceDynamicTierOptionsOutputReference">LustreInstanceDynamicTierOptionsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lustreInstance.LustreInstance.property.effectiveLabels">EffectiveLabels</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lustreInstance.LustreInstance.property.effectiveVersion">EffectiveVersion</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lustreInstance.LustreInstance.property.maintenancePolicy">MaintenancePolicy</a></code> | <code><a href="#@cdktn/provider-google.lustreInstance.LustreInstanceMaintenancePolicyOutputReference">LustreInstanceMaintenancePolicyOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lustreInstance.LustreInstance.property.mountPoint">MountPoint</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lustreInstance.LustreInstance.property.name">Name</a></code> | <code>*string</code> | *No description.* |
@@ -693,6 +702,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.lustreInstance.LustreInstance.property.perUnitStorageThroughputInput">PerUnitStorageThroughputInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lustreInstance.LustreInstance.property.placementPolicyInput">PlacementPolicyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lustreInstance.LustreInstance.property.projectInput">ProjectInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lustreInstance.LustreInstance.property.targetVersionInput">TargetVersionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lustreInstance.LustreInstance.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lustreInstance.LustreInstance.property.capacityGib">CapacityGib</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lustreInstance.LustreInstance.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | *No description.* |
@@ -708,6 +718,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.lustreInstance.LustreInstance.property.perUnitStorageThroughput">PerUnitStorageThroughput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lustreInstance.LustreInstance.property.placementPolicy">PlacementPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.lustreInstance.LustreInstance.property.project">Project</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.lustreInstance.LustreInstance.property.targetVersion">TargetVersion</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
@@ -863,6 +874,16 @@ func AccessRulesOptions() LustreInstanceAccessRulesOptionsOutputReference
 
 ---
 
+##### `AvailableVersion`<sup>Required</sup> <a name="AvailableVersion" id="@cdktn/provider-google.lustreInstance.LustreInstance.property.availableVersion"></a>
+
+```go
+func AvailableVersion() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `CreateTime`<sup>Required</sup> <a name="CreateTime" id="@cdktn/provider-google.lustreInstance.LustreInstance.property.createTime"></a>
 
 ```go
@@ -890,6 +911,16 @@ func EffectiveLabels() StringMap
 ```
 
 - *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.StringMap
+
+---
+
+##### `EffectiveVersion`<sup>Required</sup> <a name="EffectiveVersion" id="@cdktn/provider-google.lustreInstance.LustreInstance.property.effectiveVersion"></a>
+
+```go
+func EffectiveVersion() *string
+```
+
+- *Type:* *string
 
 ---
 
@@ -1163,6 +1194,16 @@ func ProjectInput() *string
 
 ---
 
+##### `TargetVersionInput`<sup>Optional</sup> <a name="TargetVersionInput" id="@cdktn/provider-google.lustreInstance.LustreInstance.property.targetVersionInput"></a>
+
+```go
+func TargetVersionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktn/provider-google.lustreInstance.LustreInstance.property.timeoutsInput"></a>
 
 ```go
@@ -1313,6 +1354,16 @@ func Project() *string
 
 ---
 
+##### `TargetVersion`<sup>Required</sup> <a name="TargetVersion" id="@cdktn/provider-google.lustreInstance.LustreInstance.property.targetVersion"></a>
+
+```go
+func TargetVersion() *string
+```
+
+- *Type:* *string
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -1338,7 +1389,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.lustreInstance.LustreInstanceAccessRulesOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lustreinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/lustreinstance"
 
 &lustreinstance.LustreInstanceAccessRulesOptions {
 	DefaultSquashMode: *string,
@@ -1369,7 +1420,7 @@ DefaultSquashMode *string
 
 The squash mode for the default access rule. Possible values: NO_SQUASH ROOT_SQUASH.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/lustre_instance#default_squash_mode LustreInstance#default_squash_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/lustre_instance#default_squash_mode LustreInstance#default_squash_mode}
 
 ---
 
@@ -1383,7 +1434,7 @@ AccessRules interface{}
 
 access_rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/lustre_instance#access_rules LustreInstance#access_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/lustre_instance#access_rules LustreInstance#access_rules}
 
 ---
 
@@ -1401,7 +1452,7 @@ This user squash GID applies to all root users connecting from clients
 that are not matched by any of the access rules. If not set, the default
 is 0 (no GID squash).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/lustre_instance#default_squash_gid LustreInstance#default_squash_gid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/lustre_instance#default_squash_gid LustreInstance#default_squash_gid}
 
 ---
 
@@ -1419,7 +1470,7 @@ This user squash UID applies to all root users connecting from clients
 that are not matched by any of the access rules. If not set, the default
 is 0 (no UID squash).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/lustre_instance#default_squash_uid LustreInstance#default_squash_uid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/lustre_instance#default_squash_uid LustreInstance#default_squash_uid}
 
 ---
 
@@ -1428,7 +1479,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.lustreInstance.LustreInstanceAccessRulesOptionsAccessRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lustreinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/lustreinstance"
 
 &lustreinstance.LustreInstanceAccessRulesOptionsAccessRules {
 	IpAddressRanges: *[]*string,
@@ -1461,7 +1512,7 @@ Accepts
 non-overlapping CIDR ranges (e.g., '192.168.1.0/24') and IP addresses
 (e.g., '192.168.1.0').
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/lustre_instance#ip_address_ranges LustreInstance#ip_address_ranges}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/lustre_instance#ip_address_ranges LustreInstance#ip_address_ranges}
 
 ---
 
@@ -1475,7 +1526,7 @@ Name *string
 
 The name of the access rule policy group. Must be 16 characters or less and include only alphanumeric characters or '_'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/lustre_instance#name LustreInstance#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/lustre_instance#name LustreInstance#name}
 
 ---
 
@@ -1489,7 +1540,7 @@ SquashMode *string
 
 Squash mode for the access rule. Possible values: NO_SQUASH ROOT_SQUASH.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/lustre_instance#squash_mode LustreInstance#squash_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/lustre_instance#squash_mode LustreInstance#squash_mode}
 
 ---
 
@@ -1498,7 +1549,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.lustreInstance.LustreInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lustreinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/lustreinstance"
 
 &lustreinstance.LustreInstanceConfig {
 	Connection: interface{},
@@ -1513,19 +1564,20 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lustreinstance"
 	InstanceId: *string,
 	Location: *string,
 	Network: *string,
-	AccessRulesOptions: github.com/cdktn-io/cdktn-provider-google-go/google/v20.lustreInstance.LustreInstanceAccessRulesOptions,
+	AccessRulesOptions: github.com/cdktn-io/cdktn-provider-google-go/google/v21.lustreInstance.LustreInstanceAccessRulesOptions,
 	DeletionPolicy: *string,
 	Description: *string,
-	DynamicTierOptions: github.com/cdktn-io/cdktn-provider-google-go/google/v20.lustreInstance.LustreInstanceDynamicTierOptions,
+	DynamicTierOptions: github.com/cdktn-io/cdktn-provider-google-go/google/v21.lustreInstance.LustreInstanceDynamicTierOptions,
 	GkeSupportEnabled: interface{},
 	Id: *string,
 	KmsKey: *string,
 	Labels: *map[string]*string,
-	MaintenancePolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v20.lustreInstance.LustreInstanceMaintenancePolicy,
+	MaintenancePolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v21.lustreInstance.LustreInstanceMaintenancePolicy,
 	PerUnitStorageThroughput: *string,
 	PlacementPolicy: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.lustreInstance.LustreInstanceTimeouts,
+	TargetVersion: *string,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.lustreInstance.LustreInstanceTimeouts,
 }
 ```
 
@@ -1550,13 +1602,14 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lustreinstance"
 | <code><a href="#@cdktn/provider-google.lustreInstance.LustreInstanceConfig.property.description">Description</a></code> | <code>*string</code> | A user-readable description of the instance. |
 | <code><a href="#@cdktn/provider-google.lustreInstance.LustreInstanceConfig.property.dynamicTierOptions">DynamicTierOptions</a></code> | <code><a href="#@cdktn/provider-google.lustreInstance.LustreInstanceDynamicTierOptions">LustreInstanceDynamicTierOptions</a></code> | dynamic_tier_options block. |
 | <code><a href="#@cdktn/provider-google.lustreInstance.LustreInstanceConfig.property.gkeSupportEnabled">GkeSupportEnabled</a></code> | <code>interface{}</code> | Indicates whether you want to enable support for GKE clients. By default, GKE clients are not supported. |
-| <code><a href="#@cdktn/provider-google.lustreInstance.LustreInstanceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/lustre_instance#id LustreInstance#id}. |
+| <code><a href="#@cdktn/provider-google.lustreInstance.LustreInstanceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/lustre_instance#id LustreInstance#id}. |
 | <code><a href="#@cdktn/provider-google.lustreInstance.LustreInstanceConfig.property.kmsKey">KmsKey</a></code> | <code>*string</code> | The Cloud KMS key name to use for data encryption. |
 | <code><a href="#@cdktn/provider-google.lustreInstance.LustreInstanceConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | Labels as key value pairs. |
 | <code><a href="#@cdktn/provider-google.lustreInstance.LustreInstanceConfig.property.maintenancePolicy">MaintenancePolicy</a></code> | <code><a href="#@cdktn/provider-google.lustreInstance.LustreInstanceMaintenancePolicy">LustreInstanceMaintenancePolicy</a></code> | maintenance_policy block. |
 | <code><a href="#@cdktn/provider-google.lustreInstance.LustreInstanceConfig.property.perUnitStorageThroughput">PerUnitStorageThroughput</a></code> | <code>*string</code> | The throughput of the instance in MBps per TiB. |
 | <code><a href="#@cdktn/provider-google.lustreInstance.LustreInstanceConfig.property.placementPolicy">PlacementPolicy</a></code> | <code>*string</code> | The placement policy name for the instance in the format of projects/{project}/locations/{location}/resourcePolicies/{resource_policy}. |
-| <code><a href="#@cdktn/provider-google.lustreInstance.LustreInstanceConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/lustre_instance#project LustreInstance#project}. |
+| <code><a href="#@cdktn/provider-google.lustreInstance.LustreInstanceConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/lustre_instance#project LustreInstance#project}. |
+| <code><a href="#@cdktn/provider-google.lustreInstance.LustreInstanceConfig.property.targetVersion">TargetVersion</a></code> | <code>*string</code> | The version to upgrade this instance to. |
 | <code><a href="#@cdktn/provider-google.lustreInstance.LustreInstanceConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.lustreInstance.LustreInstanceTimeouts">LustreInstanceTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1647,7 +1700,7 @@ See [Performance tiers and maximum storage
 capacities](https://cloud.google.com/managed-lustre/docs/create-instance#performance-tiers)
 for specific minimums, maximums, and step sizes for each performance tier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/lustre_instance#capacity_gib LustreInstance#capacity_gib}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/lustre_instance#capacity_gib LustreInstance#capacity_gib}
 
 ---
 
@@ -1665,7 +1718,7 @@ This name is used by client-side
 tools, including when mounting the instance. Must be eight characters or
 less and can only contain letters and numbers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/lustre_instance#filesystem LustreInstance#filesystem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/lustre_instance#filesystem LustreInstance#filesystem}
 
 ---
 
@@ -1684,7 +1737,7 @@ The name of the Managed Lustre instance.
 * Must be between 1-63 characters.
 * Must end with a number or a letter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/lustre_instance#instance_id LustreInstance#instance_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/lustre_instance#instance_id LustreInstance#instance_id}
 
 ---
 
@@ -1698,7 +1751,7 @@ Location *string
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/lustre_instance#location LustreInstance#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/lustre_instance#location LustreInstance#location}
 
 ---
 
@@ -1712,7 +1765,7 @@ Network *string
 
 The full name of the VPC network to which the instance is connected. Must be in the format 'projects/{project_id}/global/networks/{network_name}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/lustre_instance#network LustreInstance#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/lustre_instance#network LustreInstance#network}
 
 ---
 
@@ -1726,7 +1779,7 @@ AccessRulesOptions LustreInstanceAccessRulesOptions
 
 access_rules_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/lustre_instance#access_rules_options LustreInstance#access_rules_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/lustre_instance#access_rules_options LustreInstance#access_rules_options}
 
 ---
 
@@ -1747,7 +1800,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/lustre_instance#deletion_policy LustreInstance#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/lustre_instance#deletion_policy LustreInstance#deletion_policy}
 
 ---
 
@@ -1761,7 +1814,7 @@ Description *string
 
 A user-readable description of the instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/lustre_instance#description LustreInstance#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/lustre_instance#description LustreInstance#description}
 
 ---
 
@@ -1775,7 +1828,7 @@ DynamicTierOptions LustreInstanceDynamicTierOptions
 
 dynamic_tier_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/lustre_instance#dynamic_tier_options LustreInstance#dynamic_tier_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/lustre_instance#dynamic_tier_options LustreInstance#dynamic_tier_options}
 
 ---
 
@@ -1789,7 +1842,7 @@ GkeSupportEnabled interface{}
 
 Indicates whether you want to enable support for GKE clients. By default, GKE clients are not supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/lustre_instance#gke_support_enabled LustreInstance#gke_support_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/lustre_instance#gke_support_enabled LustreInstance#gke_support_enabled}
 
 ---
 
@@ -1801,7 +1854,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/lustre_instance#id LustreInstance#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/lustre_instance#id LustreInstance#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1824,7 +1877,7 @@ The key must be in the same region as the instance.
 The key format is:
 projects/{project}/locations/{location}/keyRings/{key_ring}/cryptoKeys/{key}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/lustre_instance#kms_key LustreInstance#kms_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/lustre_instance#kms_key LustreInstance#kms_key}
 
 ---
 
@@ -1841,7 +1894,7 @@ Labels as key value pairs.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/lustre_instance#labels LustreInstance#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/lustre_instance#labels LustreInstance#labels}
 
 ---
 
@@ -1855,7 +1908,7 @@ MaintenancePolicy LustreInstanceMaintenancePolicy
 
 maintenance_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/lustre_instance#maintenance_policy LustreInstance#maintenance_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/lustre_instance#maintenance_policy LustreInstance#maintenance_policy}
 
 ---
 
@@ -1878,7 +1931,7 @@ for more information.
 If the instance is using the Dynamic tier, this field must not be set or
 must be set to zero.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/lustre_instance#per_unit_storage_throughput LustreInstance#per_unit_storage_throughput}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/lustre_instance#per_unit_storage_throughput LustreInstance#per_unit_storage_throughput}
 
 ---
 
@@ -1892,7 +1945,7 @@ PlacementPolicy *string
 
 The placement policy name for the instance in the format of projects/{project}/locations/{location}/resourcePolicies/{resource_policy}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/lustre_instance#placement_policy LustreInstance#placement_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/lustre_instance#placement_policy LustreInstance#placement_policy}
 
 ---
 
@@ -1904,7 +1957,32 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/lustre_instance#project LustreInstance#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/lustre_instance#project LustreInstance#project}.
+
+---
+
+##### `TargetVersion`<sup>Optional</sup> <a name="TargetVersion" id="@cdktn/provider-google.lustreInstance.LustreInstanceConfig.property.targetVersion"></a>
+
+```go
+TargetVersion *string
+```
+
+- *Type:* *string
+
+The version to upgrade this instance to.
+
+Set this to the value reported in
+'availableVersion', or to 'latest' to move to the newest version available
+at the time of the upgrade.
+This field cannot be set when the instance is created; new instances are
+always provisioned from the current release. It also cannot be changed in
+the same operation as 'capacityGib' or 'maintenancePolicy', and the
+instance must be ACTIVE and outside of the hour preceding a scheduled
+maintenance window.
+The API clears this field once the upgrade finishes, so it always reads
+back as empty on an idle instance.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/lustre_instance#target_version LustreInstance#target_version}
 
 ---
 
@@ -1918,7 +1996,7 @@ Timeouts LustreInstanceTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/lustre_instance#timeouts LustreInstance#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/lustre_instance#timeouts LustreInstance#timeouts}
 
 ---
 
@@ -1927,7 +2005,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.lustreInstance.LustreInstanceDynamicTierOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lustreinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/lustreinstance"
 
 &lustreinstance.LustreInstanceDynamicTierOptions {
 	Mode: *string,
@@ -1952,7 +2030,7 @@ Mode *string
 
 The dynamic tier mode of the instance. Possible values: DISABLED DEFAULT_CACHE.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/lustre_instance#mode LustreInstance#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/lustre_instance#mode LustreInstance#mode}
 
 ---
 
@@ -1961,11 +2039,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.lustreInstance.LustreInstanceMaintenancePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lustreinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/lustreinstance"
 
 &lustreinstance.LustreInstanceMaintenancePolicy {
-	WeeklyMaintenanceWindows: github.com/cdktn-io/cdktn-provider-google-go/google/v20.lustreInstance.LustreInstanceMaintenancePolicyWeeklyMaintenanceWindows,
-	MaintenanceExclusionWindow: github.com/cdktn-io/cdktn-provider-google-go/google/v20.lustreInstance.LustreInstanceMaintenancePolicyMaintenanceExclusionWindow,
+	WeeklyMaintenanceWindows: github.com/cdktn-io/cdktn-provider-google-go/google/v21.lustreInstance.LustreInstanceMaintenancePolicyWeeklyMaintenanceWindows,
+	MaintenanceExclusionWindow: github.com/cdktn-io/cdktn-provider-google-go/google/v21.lustreInstance.LustreInstanceMaintenancePolicyMaintenanceExclusionWindow,
 }
 ```
 
@@ -1988,7 +2066,7 @@ WeeklyMaintenanceWindows LustreInstanceMaintenancePolicyWeeklyMaintenanceWindows
 
 weekly_maintenance_windows block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/lustre_instance#weekly_maintenance_windows LustreInstance#weekly_maintenance_windows}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/lustre_instance#weekly_maintenance_windows LustreInstance#weekly_maintenance_windows}
 
 ---
 
@@ -2002,7 +2080,7 @@ MaintenanceExclusionWindow LustreInstanceMaintenancePolicyMaintenanceExclusionWi
 
 maintenance_exclusion_window block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/lustre_instance#maintenance_exclusion_window LustreInstance#maintenance_exclusion_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/lustre_instance#maintenance_exclusion_window LustreInstance#maintenance_exclusion_window}
 
 ---
 
@@ -2011,12 +2089,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.lustreInstance.LustreInstanceMaintenancePolicyMaintenanceExclusionWindow.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lustreinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/lustreinstance"
 
 &lustreinstance.LustreInstanceMaintenancePolicyMaintenanceExclusionWindow {
-	EndDate: github.com/cdktn-io/cdktn-provider-google-go/google/v20.lustreInstance.LustreInstanceMaintenancePolicyMaintenanceExclusionWindowEndDate,
-	StartDate: github.com/cdktn-io/cdktn-provider-google-go/google/v20.lustreInstance.LustreInstanceMaintenancePolicyMaintenanceExclusionWindowStartDate,
-	Time: github.com/cdktn-io/cdktn-provider-google-go/google/v20.lustreInstance.LustreInstanceMaintenancePolicyMaintenanceExclusionWindowTime,
+	EndDate: github.com/cdktn-io/cdktn-provider-google-go/google/v21.lustreInstance.LustreInstanceMaintenancePolicyMaintenanceExclusionWindowEndDate,
+	StartDate: github.com/cdktn-io/cdktn-provider-google-go/google/v21.lustreInstance.LustreInstanceMaintenancePolicyMaintenanceExclusionWindowStartDate,
+	Time: github.com/cdktn-io/cdktn-provider-google-go/google/v21.lustreInstance.LustreInstanceMaintenancePolicyMaintenanceExclusionWindowTime,
 }
 ```
 
@@ -2040,7 +2118,7 @@ EndDate LustreInstanceMaintenancePolicyMaintenanceExclusionWindowEndDate
 
 end_date block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/lustre_instance#end_date LustreInstance#end_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/lustre_instance#end_date LustreInstance#end_date}
 
 ---
 
@@ -2054,7 +2132,7 @@ StartDate LustreInstanceMaintenancePolicyMaintenanceExclusionWindowStartDate
 
 start_date block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/lustre_instance#start_date LustreInstance#start_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/lustre_instance#start_date LustreInstance#start_date}
 
 ---
 
@@ -2068,7 +2146,7 @@ Time LustreInstanceMaintenancePolicyMaintenanceExclusionWindowTime
 
 time block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/lustre_instance#time LustreInstance#time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/lustre_instance#time LustreInstance#time}
 
 ---
 
@@ -2077,7 +2155,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.lustreInstance.LustreInstanceMaintenancePolicyMaintenanceExclusionWindowEndDate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lustreinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/lustreinstance"
 
 &lustreinstance.LustreInstanceMaintenancePolicyMaintenanceExclusionWindowEndDate {
 	Day: *f64,
@@ -2110,7 +2188,7 @@ Must be from 1 to 31 and valid for the year and month, or 0
 to specify a year by itself or a year and month where the day isn't
 significant.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/lustre_instance#day LustreInstance#day}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/lustre_instance#day LustreInstance#day}
 
 ---
 
@@ -2127,7 +2205,7 @@ Month of a year.
 Must be from 1 to 12, or 0 to specify a year without a
 month and day.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/lustre_instance#month LustreInstance#month}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/lustre_instance#month LustreInstance#month}
 
 ---
 
@@ -2141,7 +2219,7 @@ Year *f64
 
 Year of the date. Must be from 1 to 9999, or 0 to specify a date without a year.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/lustre_instance#year LustreInstance#year}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/lustre_instance#year LustreInstance#year}
 
 ---
 
@@ -2150,7 +2228,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.lustreInstance.LustreInstanceMaintenancePolicyMaintenanceExclusionWindowStartDate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lustreinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/lustreinstance"
 
 &lustreinstance.LustreInstanceMaintenancePolicyMaintenanceExclusionWindowStartDate {
 	Day: *f64,
@@ -2183,7 +2261,7 @@ Must be from 1 to 31 and valid for the year and month, or 0
 to specify a year by itself or a year and month where the day isn't
 significant.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/lustre_instance#day LustreInstance#day}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/lustre_instance#day LustreInstance#day}
 
 ---
 
@@ -2200,7 +2278,7 @@ Month of a year.
 Must be from 1 to 12, or 0 to specify a year without a
 month and day.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/lustre_instance#month LustreInstance#month}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/lustre_instance#month LustreInstance#month}
 
 ---
 
@@ -2214,7 +2292,7 @@ Year *f64
 
 Year of the date. Must be from 1 to 9999, or 0 to specify a date without a year.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/lustre_instance#year LustreInstance#year}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/lustre_instance#year LustreInstance#year}
 
 ---
 
@@ -2223,7 +2301,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.lustreInstance.LustreInstanceMaintenancePolicyMaintenanceExclusionWindowTime.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lustreinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/lustreinstance"
 
 &lustreinstance.LustreInstanceMaintenancePolicyMaintenanceExclusionWindowTime {
 	Hours: *f64,
@@ -2258,7 +2336,7 @@ Must be greater than or equal to 0 and
 typically must be less than or equal to 23. An API may choose to allow the
 value "24:00:00" for scenarios like business closing time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/lustre_instance#hours LustreInstance#hours}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/lustre_instance#hours LustreInstance#hours}
 
 ---
 
@@ -2272,7 +2350,7 @@ Minutes *f64
 
 Minutes of an hour. Must be greater than or equal to 0 and less than or equal to 59.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/lustre_instance#minutes LustreInstance#minutes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/lustre_instance#minutes LustreInstance#minutes}
 
 ---
 
@@ -2286,7 +2364,7 @@ Nanos *f64
 
 Fractions of seconds, in nanoseconds. Must be greater than or equal to 0 and less than or equal to 999,999,999.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/lustre_instance#nanos LustreInstance#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/lustre_instance#nanos LustreInstance#nanos}
 
 ---
 
@@ -2304,7 +2382,7 @@ Must be greater than or equal to 0 and typically must
 be less than or equal to 59. An API may allow the value 60 if it allows
 leap-seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/lustre_instance#seconds LustreInstance#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/lustre_instance#seconds LustreInstance#seconds}
 
 ---
 
@@ -2313,11 +2391,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.lustreInstance.LustreInstanceMaintenancePolicyWeeklyMaintenanceWindows.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lustreinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/lustreinstance"
 
 &lustreinstance.LustreInstanceMaintenancePolicyWeeklyMaintenanceWindows {
 	DayOfWeek: *string,
-	StartTime: github.com/cdktn-io/cdktn-provider-google-go/google/v20.lustreInstance.LustreInstanceMaintenancePolicyWeeklyMaintenanceWindowsStartTime,
+	StartTime: github.com/cdktn-io/cdktn-provider-google-go/google/v21.lustreInstance.LustreInstanceMaintenancePolicyWeeklyMaintenanceWindowsStartTime,
 }
 ```
 
@@ -2340,7 +2418,7 @@ DayOfWeek *string
 
 Possible values: MONDAY TUESDAY WEDNESDAY THURSDAY FRIDAY SATURDAY SUNDAY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/lustre_instance#day_of_week LustreInstance#day_of_week}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/lustre_instance#day_of_week LustreInstance#day_of_week}
 
 ---
 
@@ -2354,7 +2432,7 @@ StartTime LustreInstanceMaintenancePolicyWeeklyMaintenanceWindowsStartTime
 
 start_time block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/lustre_instance#start_time LustreInstance#start_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/lustre_instance#start_time LustreInstance#start_time}
 
 ---
 
@@ -2363,7 +2441,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.lustreInstance.LustreInstanceMaintenancePolicyWeeklyMaintenanceWindowsStartTime.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lustreinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/lustreinstance"
 
 &lustreinstance.LustreInstanceMaintenancePolicyWeeklyMaintenanceWindowsStartTime {
 	Hours: *f64,
@@ -2398,7 +2476,7 @@ Must be greater than or equal to 0 and
 typically must be less than or equal to 23. An API may choose to allow the
 value "24:00:00" for scenarios like business closing time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/lustre_instance#hours LustreInstance#hours}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/lustre_instance#hours LustreInstance#hours}
 
 ---
 
@@ -2412,7 +2490,7 @@ Minutes *f64
 
 Minutes of an hour. Must be greater than or equal to 0 and less than or equal to 59.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/lustre_instance#minutes LustreInstance#minutes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/lustre_instance#minutes LustreInstance#minutes}
 
 ---
 
@@ -2426,7 +2504,7 @@ Nanos *f64
 
 Fractions of seconds, in nanoseconds. Must be greater than or equal to 0 and less than or equal to 999,999,999.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/lustre_instance#nanos LustreInstance#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/lustre_instance#nanos LustreInstance#nanos}
 
 ---
 
@@ -2444,7 +2522,7 @@ Must be greater than or equal to 0 and typically must
 be less than or equal to 59. An API may allow the value 60 if it allows
 leap-seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/lustre_instance#seconds LustreInstance#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/lustre_instance#seconds LustreInstance#seconds}
 
 ---
 
@@ -2453,7 +2531,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.lustreInstance.LustreInstanceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lustreinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/lustreinstance"
 
 &lustreinstance.LustreInstanceTimeouts {
 	Create: *string,
@@ -2466,9 +2544,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lustreinstance"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.lustreInstance.LustreInstanceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/lustre_instance#create LustreInstance#create}. |
-| <code><a href="#@cdktn/provider-google.lustreInstance.LustreInstanceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/lustre_instance#delete LustreInstance#delete}. |
-| <code><a href="#@cdktn/provider-google.lustreInstance.LustreInstanceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/lustre_instance#update LustreInstance#update}. |
+| <code><a href="#@cdktn/provider-google.lustreInstance.LustreInstanceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/lustre_instance#create LustreInstance#create}. |
+| <code><a href="#@cdktn/provider-google.lustreInstance.LustreInstanceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/lustre_instance#delete LustreInstance#delete}. |
+| <code><a href="#@cdktn/provider-google.lustreInstance.LustreInstanceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/lustre_instance#update LustreInstance#update}. |
 
 ---
 
@@ -2480,7 +2558,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/lustre_instance#create LustreInstance#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/lustre_instance#create LustreInstance#create}.
 
 ---
 
@@ -2492,7 +2570,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/lustre_instance#delete LustreInstance#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/lustre_instance#delete LustreInstance#delete}.
 
 ---
 
@@ -2504,7 +2582,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/lustre_instance#update LustreInstance#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/lustre_instance#update LustreInstance#update}.
 
 ---
 
@@ -2513,7 +2591,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.lustreInstance.LustreInstanceUpcomingMaintenanceSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lustreinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/lustreinstance"
 
 &lustreinstance.LustreInstanceUpcomingMaintenanceSchedule {
 
@@ -2528,7 +2606,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lustreinstance"
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.lustreInstance.LustreInstanceAccessRulesOptionsAccessRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lustreinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/lustreinstance"
 
 lustreinstance.NewLustreInstanceAccessRulesOptionsAccessRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LustreInstanceAccessRulesOptionsAccessRulesList
 ```
@@ -2688,7 +2766,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.lustreInstance.LustreInstanceAccessRulesOptionsAccessRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lustreinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/lustreinstance"
 
 lustreinstance.NewLustreInstanceAccessRulesOptionsAccessRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LustreInstanceAccessRulesOptionsAccessRulesOutputReference
 ```
@@ -3021,7 +3099,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.lustreInstance.LustreInstanceAccessRulesOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lustreinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/lustreinstance"
 
 lustreinstance.NewLustreInstanceAccessRulesOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LustreInstanceAccessRulesOptionsOutputReference
 ```
@@ -3392,7 +3470,7 @@ func InternalValue() LustreInstanceAccessRulesOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.lustreInstance.LustreInstanceDynamicTierOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lustreinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/lustreinstance"
 
 lustreinstance.NewLustreInstanceDynamicTierOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LustreInstanceDynamicTierOptionsOutputReference
 ```
@@ -3663,7 +3741,7 @@ func InternalValue() LustreInstanceDynamicTierOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.lustreInstance.LustreInstanceMaintenancePolicyMaintenanceExclusionWindowEndDateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lustreinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/lustreinstance"
 
 lustreinstance.NewLustreInstanceMaintenancePolicyMaintenanceExclusionWindowEndDateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LustreInstanceMaintenancePolicyMaintenanceExclusionWindowEndDateOutputReference
 ```
@@ -3999,7 +4077,7 @@ func InternalValue() LustreInstanceMaintenancePolicyMaintenanceExclusionWindowEn
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.lustreInstance.LustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lustreinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/lustreinstance"
 
 lustreinstance.NewLustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutputReference
 ```
@@ -4353,7 +4431,7 @@ func InternalValue() LustreInstanceMaintenancePolicyMaintenanceExclusionWindow
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.lustreInstance.LustreInstanceMaintenancePolicyMaintenanceExclusionWindowStartDateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lustreinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/lustreinstance"
 
 lustreinstance.NewLustreInstanceMaintenancePolicyMaintenanceExclusionWindowStartDateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LustreInstanceMaintenancePolicyMaintenanceExclusionWindowStartDateOutputReference
 ```
@@ -4689,7 +4767,7 @@ func InternalValue() LustreInstanceMaintenancePolicyMaintenanceExclusionWindowSt
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.lustreInstance.LustreInstanceMaintenancePolicyMaintenanceExclusionWindowTimeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lustreinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/lustreinstance"
 
 lustreinstance.NewLustreInstanceMaintenancePolicyMaintenanceExclusionWindowTimeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LustreInstanceMaintenancePolicyMaintenanceExclusionWindowTimeOutputReference
 ```
@@ -5054,7 +5132,7 @@ func InternalValue() LustreInstanceMaintenancePolicyMaintenanceExclusionWindowTi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.lustreInstance.LustreInstanceMaintenancePolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lustreinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/lustreinstance"
 
 lustreinstance.NewLustreInstanceMaintenancePolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LustreInstanceMaintenancePolicyOutputReference
 ```
@@ -5380,7 +5458,7 @@ func InternalValue() LustreInstanceMaintenancePolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.lustreInstance.LustreInstanceMaintenancePolicyWeeklyMaintenanceWindowsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lustreinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/lustreinstance"
 
 lustreinstance.NewLustreInstanceMaintenancePolicyWeeklyMaintenanceWindowsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LustreInstanceMaintenancePolicyWeeklyMaintenanceWindowsOutputReference
 ```
@@ -5686,7 +5764,7 @@ func InternalValue() LustreInstanceMaintenancePolicyWeeklyMaintenanceWindows
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.lustreInstance.LustreInstanceMaintenancePolicyWeeklyMaintenanceWindowsStartTimeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lustreinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/lustreinstance"
 
 lustreinstance.NewLustreInstanceMaintenancePolicyWeeklyMaintenanceWindowsStartTimeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LustreInstanceMaintenancePolicyWeeklyMaintenanceWindowsStartTimeOutputReference
 ```
@@ -6051,7 +6129,7 @@ func InternalValue() LustreInstanceMaintenancePolicyWeeklyMaintenanceWindowsStar
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.lustreInstance.LustreInstanceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lustreinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/lustreinstance"
 
 lustreinstance.NewLustreInstanceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LustreInstanceTimeoutsOutputReference
 ```
@@ -6387,7 +6465,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.lustreInstance.LustreInstanceUpcomingMaintenanceScheduleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lustreinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/lustreinstance"
 
 lustreinstance.NewLustreInstanceUpcomingMaintenanceScheduleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LustreInstanceUpcomingMaintenanceScheduleList
 ```
@@ -6536,7 +6614,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.lustreInstance.LustreInstanceUpcomingMaintenanceScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/lustreinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/lustreinstance"
 
 lustreinstance.NewLustreInstanceUpcomingMaintenanceScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LustreInstanceUpcomingMaintenanceScheduleOutputReference
 ```

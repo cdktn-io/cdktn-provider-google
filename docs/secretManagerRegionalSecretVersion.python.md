@@ -4,7 +4,7 @@
 
 ### SecretManagerRegionalSecretVersion <a name="SecretManagerRegionalSecretVersion" id="@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersion"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_regional_secret_version google_secret_manager_regional_secret_version}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_regional_secret_version google_secret_manager_regional_secret_version}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersion.Initializer"></a>
 
@@ -22,11 +22,13 @@ secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersion(
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   secret: str,
-  secret_data: str,
   deletion_policy: str = None,
   enabled: bool | IResolvable = None,
   id: str = None,
   is_secret_data_base64: bool | IResolvable = None,
+  secret_data: str = None,
+  secret_data_wo: str = None,
+  secret_data_wo_version: str = None,
   timeouts: SecretManagerRegionalSecretVersionTimeouts = None
 )
 ```
@@ -43,11 +45,13 @@ secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersion(
 | <code><a href="#@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersion.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersion.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersion.Initializer.parameter.secret">secret</a></code> | <code>str</code> | Secret Manager regional secret resource. |
-| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersion.Initializer.parameter.secretData">secret_data</a></code> | <code>str</code> | The secret data. Must be no larger than 64KiB. |
 | <code><a href="#@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersion.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | This field uses a custom implementation please refer to documentation under /hashicorp/terraform-provider-google-beta/website/docs/r/secret_manager_regional_regional_secret_version.html.markdown for specifics. |
 | <code><a href="#@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersion.Initializer.parameter.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | The current state of the regional secret version. |
-| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersion.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_regional_secret_version#id SecretManagerRegionalSecretVersion#id}. |
+| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersion.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_regional_secret_version#id SecretManagerRegionalSecretVersion#id}. |
 | <code><a href="#@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersion.Initializer.parameter.isSecretDataBase64">is_secret_data_base64</a></code> | <code>bool \| cdktn.IResolvable</code> | If set to 'true', the secret data is expected to be base64-encoded string and would be sent as is. |
+| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersion.Initializer.parameter.secretData">secret_data</a></code> | <code>str</code> | The secret data. Must be no larger than 64KiB. |
+| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersion.Initializer.parameter.secretDataWo">secret_data_wo</a></code> | <code>str</code> | The secret data. Must be no larger than 64KiB. |
+| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersion.Initializer.parameter.secretDataWoVersion">secret_data_wo_version</a></code> | <code>str</code> | Triggers update of 'secret_data_wo' write-only. |
 | <code><a href="#@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersion.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersionTimeouts">SecretManagerRegionalSecretVersionTimeouts</a></code> | timeouts block. |
 
 ---
@@ -118,17 +122,7 @@ Must be unique amongst siblings in the same scope
 
 Secret Manager regional secret resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_regional_secret_version#secret SecretManagerRegionalSecretVersion#secret}
-
----
-
-##### `secret_data`<sup>Required</sup> <a name="secret_data" id="@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersion.Initializer.parameter.secretData"></a>
-
-- *Type:* str
-
-The secret data. Must be no larger than 64KiB.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_regional_secret_version#secret_data SecretManagerRegionalSecretVersion#secret_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_regional_secret_version#secret SecretManagerRegionalSecretVersion#secret}
 
 ---
 
@@ -138,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 This field uses a custom implementation please refer to documentation under /hashicorp/terraform-provider-google-beta/website/docs/r/secret_manager_regional_regional_secret_version.html.markdown for specifics.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_regional_secret_version#deletion_policy SecretManagerRegionalSecretVersion#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_regional_secret_version#deletion_policy SecretManagerRegionalSecretVersion#deletion_policy}
 
 ---
 
@@ -148,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The current state of the regional secret version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_regional_secret_version#enabled SecretManagerRegionalSecretVersion#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_regional_secret_version#enabled SecretManagerRegionalSecretVersion#enabled}
 
 ---
 
@@ -156,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_regional_secret_version#id SecretManagerRegionalSecretVersion#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_regional_secret_version#id SecretManagerRegionalSecretVersion#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -169,7 +163,39 @@ If you experience problems setting this value it might not be settable. Please t
 
 If set to 'true', the secret data is expected to be base64-encoded string and would be sent as is.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_regional_secret_version#is_secret_data_base64 SecretManagerRegionalSecretVersion#is_secret_data_base64}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_regional_secret_version#is_secret_data_base64 SecretManagerRegionalSecretVersion#is_secret_data_base64}
+
+---
+
+##### `secret_data`<sup>Optional</sup> <a name="secret_data" id="@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersion.Initializer.parameter.secretData"></a>
+
+- *Type:* str
+
+The secret data. Must be no larger than 64KiB.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_regional_secret_version#secret_data SecretManagerRegionalSecretVersion#secret_data}
+
+---
+
+##### `secret_data_wo`<sup>Optional</sup> <a name="secret_data_wo" id="@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersion.Initializer.parameter.secretDataWo"></a>
+
+- *Type:* str
+
+The secret data. Must be no larger than 64KiB.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_regional_secret_version#secret_data_wo SecretManagerRegionalSecretVersion#secret_data_wo}
+
+---
+
+##### `secret_data_wo_version`<sup>Optional</sup> <a name="secret_data_wo_version" id="@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersion.Initializer.parameter.secretDataWoVersion"></a>
+
+- *Type:* str
+
+Triggers update of 'secret_data_wo' write-only.
+
+Increment this value when an update to 'secret_data_wo' is needed. For more info see [updating write-only arguments](/docs/providers/google/guides/using_write_only_arguments.html#updating-write-only-arguments)
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_regional_secret_version#secret_data_wo_version SecretManagerRegionalSecretVersion#secret_data_wo_version}
 
 ---
 
@@ -179,7 +205,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_regional_secret_version#timeouts SecretManagerRegionalSecretVersion#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_regional_secret_version#timeouts SecretManagerRegionalSecretVersion#timeouts}
 
 ---
 
@@ -216,6 +242,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersion.resetEnabled">reset_enabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersion.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersion.resetIsSecretDataBase64">reset_is_secret_data_base64</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersion.resetSecretData">reset_secret_data</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersion.resetSecretDataWo">reset_secret_data_wo</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersion.resetSecretDataWoVersion">reset_secret_data_wo_version</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersion.resetTimeouts">reset_timeouts</a></code> | *No description.* |
 
 ---
@@ -582,7 +611,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_regional_secret_version#create SecretManagerRegionalSecretVersion#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_regional_secret_version#create SecretManagerRegionalSecretVersion#create}.
 
 ---
 
@@ -590,7 +619,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_regional_secret_version#delete SecretManagerRegionalSecretVersion#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_regional_secret_version#delete SecretManagerRegionalSecretVersion#delete}.
 
 ---
 
@@ -598,7 +627,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_regional_secret_version#update SecretManagerRegionalSecretVersion#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_regional_secret_version#update SecretManagerRegionalSecretVersion#update}.
 
 ---
 
@@ -624,6 +653,24 @@ def reset_id() -> None
 
 ```python
 def reset_is_secret_data_base64() -> None
+```
+
+##### `reset_secret_data` <a name="reset_secret_data" id="@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersion.resetSecretData"></a>
+
+```python
+def reset_secret_data() -> None
+```
+
+##### `reset_secret_data_wo` <a name="reset_secret_data_wo" id="@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersion.resetSecretDataWo"></a>
+
+```python
+def reset_secret_data_wo() -> None
+```
+
+##### `reset_secret_data_wo_version` <a name="reset_secret_data_wo_version" id="@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersion.resetSecretDataWoVersion"></a>
+
+```python
+def reset_secret_data_wo_version() -> None
 ```
 
 ##### `reset_timeouts` <a name="reset_timeouts" id="@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersion.resetTimeouts"></a>
@@ -746,7 +793,7 @@ The construct id used in the generated config for the SecretManagerRegionalSecre
 
 The id of the existing SecretManagerRegionalSecretVersion that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_regional_secret_version#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_regional_secret_version#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -788,6 +835,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersion.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersion.property.isSecretDataBase64Input">is_secret_data_base64_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersion.property.secretDataInput">secret_data_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersion.property.secretDataWoInput">secret_data_wo_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersion.property.secretDataWoVersionInput">secret_data_wo_version_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersion.property.secretInput">secret_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersion.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersionTimeouts">SecretManagerRegionalSecretVersionTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersion.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | *No description.* |
@@ -796,6 +845,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersion.property.isSecretDataBase64">is_secret_data_base64</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersion.property.secret">secret</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersion.property.secretData">secret_data</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersion.property.secretDataWo">secret_data_wo</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersion.property.secretDataWoVersion">secret_data_wo_version</a></code> | <code>str</code> | *No description.* |
 
 ---
 
@@ -1061,6 +1112,26 @@ secret_data_input: str
 
 ---
 
+##### `secret_data_wo_input`<sup>Optional</sup> <a name="secret_data_wo_input" id="@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersion.property.secretDataWoInput"></a>
+
+```python
+secret_data_wo_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `secret_data_wo_version_input`<sup>Optional</sup> <a name="secret_data_wo_version_input" id="@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersion.property.secretDataWoVersionInput"></a>
+
+```python
+secret_data_wo_version_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `secret_input`<sup>Optional</sup> <a name="secret_input" id="@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersion.property.secretInput"></a>
 
 ```python
@@ -1141,6 +1212,28 @@ secret_data: str
 
 ---
 
+##### ~~`secret_data_wo`~~<sup>Required</sup> <a name="secret_data_wo" id="@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersion.property.secretDataWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+
+```python
+secret_data_wo: str
+```
+
+- *Type:* str
+
+---
+
+##### `secret_data_wo_version`<sup>Required</sup> <a name="secret_data_wo_version" id="@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersion.property.secretDataWoVersion"></a>
+
+```python
+secret_data_wo_version: str
+```
+
+- *Type:* str
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -1177,11 +1270,13 @@ secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersionConfig(
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   secret: str,
-  secret_data: str,
   deletion_policy: str = None,
   enabled: bool | IResolvable = None,
   id: str = None,
   is_secret_data_base64: bool | IResolvable = None,
+  secret_data: str = None,
+  secret_data_wo: str = None,
+  secret_data_wo_version: str = None,
   timeouts: SecretManagerRegionalSecretVersionTimeouts = None
 )
 ```
@@ -1198,11 +1293,13 @@ secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersionConfig(
 | <code><a href="#@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersionConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersionConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersionConfig.property.secret">secret</a></code> | <code>str</code> | Secret Manager regional secret resource. |
-| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersionConfig.property.secretData">secret_data</a></code> | <code>str</code> | The secret data. Must be no larger than 64KiB. |
 | <code><a href="#@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersionConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | This field uses a custom implementation please refer to documentation under /hashicorp/terraform-provider-google-beta/website/docs/r/secret_manager_regional_regional_secret_version.html.markdown for specifics. |
 | <code><a href="#@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersionConfig.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | The current state of the regional secret version. |
-| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_regional_secret_version#id SecretManagerRegionalSecretVersion#id}. |
+| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_regional_secret_version#id SecretManagerRegionalSecretVersion#id}. |
 | <code><a href="#@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersionConfig.property.isSecretDataBase64">is_secret_data_base64</a></code> | <code>bool \| cdktn.IResolvable</code> | If set to 'true', the secret data is expected to be base64-encoded string and would be sent as is. |
+| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersionConfig.property.secretData">secret_data</a></code> | <code>str</code> | The secret data. Must be no larger than 64KiB. |
+| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersionConfig.property.secretDataWo">secret_data_wo</a></code> | <code>str</code> | The secret data. Must be no larger than 64KiB. |
+| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersionConfig.property.secretDataWoVersion">secret_data_wo_version</a></code> | <code>str</code> | Triggers update of 'secret_data_wo' write-only. |
 | <code><a href="#@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersionConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersionTimeouts">SecretManagerRegionalSecretVersionTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1287,21 +1384,7 @@ secret: str
 
 Secret Manager regional secret resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_regional_secret_version#secret SecretManagerRegionalSecretVersion#secret}
-
----
-
-##### `secret_data`<sup>Required</sup> <a name="secret_data" id="@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersionConfig.property.secretData"></a>
-
-```python
-secret_data: str
-```
-
-- *Type:* str
-
-The secret data. Must be no larger than 64KiB.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_regional_secret_version#secret_data SecretManagerRegionalSecretVersion#secret_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_regional_secret_version#secret SecretManagerRegionalSecretVersion#secret}
 
 ---
 
@@ -1315,7 +1398,7 @@ deletion_policy: str
 
 This field uses a custom implementation please refer to documentation under /hashicorp/terraform-provider-google-beta/website/docs/r/secret_manager_regional_regional_secret_version.html.markdown for specifics.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_regional_secret_version#deletion_policy SecretManagerRegionalSecretVersion#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_regional_secret_version#deletion_policy SecretManagerRegionalSecretVersion#deletion_policy}
 
 ---
 
@@ -1329,7 +1412,7 @@ enabled: bool | IResolvable
 
 The current state of the regional secret version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_regional_secret_version#enabled SecretManagerRegionalSecretVersion#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_regional_secret_version#enabled SecretManagerRegionalSecretVersion#enabled}
 
 ---
 
@@ -1341,7 +1424,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_regional_secret_version#id SecretManagerRegionalSecretVersion#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_regional_secret_version#id SecretManagerRegionalSecretVersion#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1358,7 +1441,51 @@ is_secret_data_base64: bool | IResolvable
 
 If set to 'true', the secret data is expected to be base64-encoded string and would be sent as is.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_regional_secret_version#is_secret_data_base64 SecretManagerRegionalSecretVersion#is_secret_data_base64}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_regional_secret_version#is_secret_data_base64 SecretManagerRegionalSecretVersion#is_secret_data_base64}
+
+---
+
+##### `secret_data`<sup>Optional</sup> <a name="secret_data" id="@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersionConfig.property.secretData"></a>
+
+```python
+secret_data: str
+```
+
+- *Type:* str
+
+The secret data. Must be no larger than 64KiB.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_regional_secret_version#secret_data SecretManagerRegionalSecretVersion#secret_data}
+
+---
+
+##### `secret_data_wo`<sup>Optional</sup> <a name="secret_data_wo" id="@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersionConfig.property.secretDataWo"></a>
+
+```python
+secret_data_wo: str
+```
+
+- *Type:* str
+
+The secret data. Must be no larger than 64KiB.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_regional_secret_version#secret_data_wo SecretManagerRegionalSecretVersion#secret_data_wo}
+
+---
+
+##### `secret_data_wo_version`<sup>Optional</sup> <a name="secret_data_wo_version" id="@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersionConfig.property.secretDataWoVersion"></a>
+
+```python
+secret_data_wo_version: str
+```
+
+- *Type:* str
+
+Triggers update of 'secret_data_wo' write-only.
+
+Increment this value when an update to 'secret_data_wo' is needed. For more info see [updating write-only arguments](/docs/providers/google/guides/using_write_only_arguments.html#updating-write-only-arguments)
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_regional_secret_version#secret_data_wo_version SecretManagerRegionalSecretVersion#secret_data_wo_version}
 
 ---
 
@@ -1372,7 +1499,7 @@ timeouts: SecretManagerRegionalSecretVersionTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_regional_secret_version#timeouts SecretManagerRegionalSecretVersion#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_regional_secret_version#timeouts SecretManagerRegionalSecretVersion#timeouts}
 
 ---
 
@@ -1405,9 +1532,9 @@ secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersionTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersionTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_regional_secret_version#create SecretManagerRegionalSecretVersion#create}. |
-| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersionTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_regional_secret_version#delete SecretManagerRegionalSecretVersion#delete}. |
-| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersionTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_regional_secret_version#update SecretManagerRegionalSecretVersion#update}. |
+| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersionTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_regional_secret_version#create SecretManagerRegionalSecretVersion#create}. |
+| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersionTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_regional_secret_version#delete SecretManagerRegionalSecretVersion#delete}. |
+| <code><a href="#@cdktn/provider-google.secretManagerRegionalSecretVersion.SecretManagerRegionalSecretVersionTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_regional_secret_version#update SecretManagerRegionalSecretVersion#update}. |
 
 ---
 
@@ -1419,7 +1546,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_regional_secret_version#create SecretManagerRegionalSecretVersion#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_regional_secret_version#create SecretManagerRegionalSecretVersion#create}.
 
 ---
 
@@ -1431,7 +1558,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_regional_secret_version#delete SecretManagerRegionalSecretVersion#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_regional_secret_version#delete SecretManagerRegionalSecretVersion#delete}.
 
 ---
 
@@ -1443,7 +1570,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secret_manager_regional_secret_version#update SecretManagerRegionalSecretVersion#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secret_manager_regional_secret_version#update SecretManagerRegionalSecretVersion#update}.
 
 ---
 

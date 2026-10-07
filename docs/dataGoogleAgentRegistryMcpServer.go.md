@@ -4,12 +4,12 @@
 
 ### DataGoogleAgentRegistryMcpServer <a name="DataGoogleAgentRegistryMcpServer" id="@cdktn/provider-google.dataGoogleAgentRegistryMcpServer.DataGoogleAgentRegistryMcpServer"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/agent_registry_mcp_server google_agent_registry_mcp_server}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/agent_registry_mcp_server google_agent_registry_mcp_server}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleAgentRegistryMcpServer.DataGoogleAgentRegistryMcpServer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleagentregistrymcpserver"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleagentregistrymcpserver"
 
 datagoogleagentregistrymcpserver.NewDataGoogleAgentRegistryMcpServer(scope Construct, id *string, config DataGoogleAgentRegistryMcpServerConfig) DataGoogleAgentRegistryMcpServer
 ```
@@ -326,7 +326,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleAgentRegistryMcpServer.DataGoogleAgentRegistryMcpServer.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleagentregistrymcpserver"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleagentregistrymcpserver"
 
 datagoogleagentregistrymcpserver.DataGoogleAgentRegistryMcpServer_IsConstruct(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleAgentRegistryMcpServer.DataGoogleAgentRegistryMcpServer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleagentregistrymcpserver"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleagentregistrymcpserver"
 
 datagoogleagentregistrymcpserver.DataGoogleAgentRegistryMcpServer_IsTerraformElement(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datagoogleagentregistrymcpserver.DataGoogleAgentRegistryMcpServer_IsTerraformEle
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleAgentRegistryMcpServer.DataGoogleAgentRegistryMcpServer.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleagentregistrymcpserver"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleagentregistrymcpserver"
 
 datagoogleagentregistrymcpserver.DataGoogleAgentRegistryMcpServer_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -386,7 +386,7 @@ datagoogleagentregistrymcpserver.DataGoogleAgentRegistryMcpServer_IsTerraformDat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleAgentRegistryMcpServer.DataGoogleAgentRegistryMcpServer.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleagentregistrymcpserver"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleagentregistrymcpserver"
 
 datagoogleagentregistrymcpserver.DataGoogleAgentRegistryMcpServer_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -415,7 +415,7 @@ The construct id used in the generated config for the DataGoogleAgentRegistryMcp
 
 The id of the existing DataGoogleAgentRegistryMcpServer that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/agent_registry_mcp_server#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/agent_registry_mcp_server#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -791,7 +791,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleAgentRegistryMcpServer.DataGoogleAgentRegistryMcpServerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleagentregistrymcpserver"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleagentregistrymcpserver"
 
 &datagoogleagentregistrymcpserver.DataGoogleAgentRegistryMcpServerConfig {
 	Connection: interface{},
@@ -822,9 +822,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleagentr
 | <code><a href="#@cdktn/provider-google.dataGoogleAgentRegistryMcpServer.DataGoogleAgentRegistryMcpServerConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleAgentRegistryMcpServer.DataGoogleAgentRegistryMcpServerConfig.property.location">Location</a></code> | <code>*string</code> | The location of the resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleAgentRegistryMcpServer.DataGoogleAgentRegistryMcpServerConfig.property.filter">Filter</a></code> | <code>*string</code> | A filter string that identifies a unique MCP server. |
-| <code><a href="#@cdktn/provider-google.dataGoogleAgentRegistryMcpServer.DataGoogleAgentRegistryMcpServerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/agent_registry_mcp_server#id DataGoogleAgentRegistryMcpServer#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleAgentRegistryMcpServer.DataGoogleAgentRegistryMcpServerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/agent_registry_mcp_server#id DataGoogleAgentRegistryMcpServer#id}. |
 | <code><a href="#@cdktn/provider-google.dataGoogleAgentRegistryMcpServer.DataGoogleAgentRegistryMcpServerConfig.property.mcpServerId">McpServerId</a></code> | <code>*string</code> | The unique identifier for the MCP server. |
-| <code><a href="#@cdktn/provider-google.dataGoogleAgentRegistryMcpServer.DataGoogleAgentRegistryMcpServerConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/agent_registry_mcp_server#project DataGoogleAgentRegistryMcpServer#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleAgentRegistryMcpServer.DataGoogleAgentRegistryMcpServerConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/agent_registry_mcp_server#project DataGoogleAgentRegistryMcpServer#project}. |
 
 ---
 
@@ -908,7 +908,7 @@ Location *string
 
 The location of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/agent_registry_mcp_server#location DataGoogleAgentRegistryMcpServer#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/agent_registry_mcp_server#location DataGoogleAgentRegistryMcpServer#location}
 
 ---
 
@@ -922,7 +922,7 @@ Filter *string
 
 A filter string that identifies a unique MCP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/agent_registry_mcp_server#filter DataGoogleAgentRegistryMcpServer#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/agent_registry_mcp_server#filter DataGoogleAgentRegistryMcpServer#filter}
 
 ---
 
@@ -934,7 +934,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/agent_registry_mcp_server#id DataGoogleAgentRegistryMcpServer#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/agent_registry_mcp_server#id DataGoogleAgentRegistryMcpServer#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -951,7 +951,7 @@ McpServerId *string
 
 The unique identifier for the MCP server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/agent_registry_mcp_server#mcp_server_id DataGoogleAgentRegistryMcpServer#mcp_server_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/agent_registry_mcp_server#mcp_server_id DataGoogleAgentRegistryMcpServer#mcp_server_id}
 
 ---
 
@@ -963,7 +963,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/agent_registry_mcp_server#project DataGoogleAgentRegistryMcpServer#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/agent_registry_mcp_server#project DataGoogleAgentRegistryMcpServer#project}.
 
 ---
 
@@ -972,7 +972,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleAgentRegistryMcpServer.DataGoogleAgentRegistryMcpServerInterfaces.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleagentregistrymcpserver"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleagentregistrymcpserver"
 
 &datagoogleagentregistrymcpserver.DataGoogleAgentRegistryMcpServerInterfaces {
 
@@ -985,7 +985,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleagentr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleAgentRegistryMcpServer.DataGoogleAgentRegistryMcpServerTools.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleagentregistrymcpserver"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleagentregistrymcpserver"
 
 &datagoogleagentregistrymcpserver.DataGoogleAgentRegistryMcpServerTools {
 
@@ -998,7 +998,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleagentr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleAgentRegistryMcpServer.DataGoogleAgentRegistryMcpServerToolsAnnotations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleagentregistrymcpserver"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleagentregistrymcpserver"
 
 &datagoogleagentregistrymcpserver.DataGoogleAgentRegistryMcpServerToolsAnnotations {
 
@@ -1013,7 +1013,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleagentr
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleAgentRegistryMcpServer.DataGoogleAgentRegistryMcpServerInterfacesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleagentregistrymcpserver"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleagentregistrymcpserver"
 
 datagoogleagentregistrymcpserver.NewDataGoogleAgentRegistryMcpServerInterfacesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleAgentRegistryMcpServerInterfacesList
 ```
@@ -1162,7 +1162,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleAgentRegistryMcpServer.DataGoogleAgentRegistryMcpServerInterfacesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleagentregistrymcpserver"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleagentregistrymcpserver"
 
 datagoogleagentregistrymcpserver.NewDataGoogleAgentRegistryMcpServerInterfacesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleAgentRegistryMcpServerInterfacesOutputReference
 ```
@@ -1451,7 +1451,7 @@ func InternalValue() DataGoogleAgentRegistryMcpServerInterfaces
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleAgentRegistryMcpServer.DataGoogleAgentRegistryMcpServerToolsAnnotationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleagentregistrymcpserver"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleagentregistrymcpserver"
 
 datagoogleagentregistrymcpserver.NewDataGoogleAgentRegistryMcpServerToolsAnnotationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleAgentRegistryMcpServerToolsAnnotationsList
 ```
@@ -1600,7 +1600,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleAgentRegistryMcpServer.DataGoogleAgentRegistryMcpServerToolsAnnotationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleagentregistrymcpserver"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleagentregistrymcpserver"
 
 datagoogleagentregistrymcpserver.NewDataGoogleAgentRegistryMcpServerToolsAnnotationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleAgentRegistryMcpServerToolsAnnotationsOutputReference
 ```
@@ -1922,7 +1922,7 @@ func InternalValue() DataGoogleAgentRegistryMcpServerToolsAnnotations
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleAgentRegistryMcpServer.DataGoogleAgentRegistryMcpServerToolsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleagentregistrymcpserver"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleagentregistrymcpserver"
 
 datagoogleagentregistrymcpserver.NewDataGoogleAgentRegistryMcpServerToolsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleAgentRegistryMcpServerToolsList
 ```
@@ -2071,7 +2071,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleAgentRegistryMcpServer.DataGoogleAgentRegistryMcpServerToolsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleagentregistrymcpserver"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleagentregistrymcpserver"
 
 datagoogleagentregistrymcpserver.NewDataGoogleAgentRegistryMcpServerToolsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleAgentRegistryMcpServerToolsOutputReference
 ```

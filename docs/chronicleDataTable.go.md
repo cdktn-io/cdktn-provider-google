@@ -4,12 +4,12 @@
 
 ### ChronicleDataTable <a name="ChronicleDataTable" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_data_table google_chronicle_data_table}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_data_table google_chronicle_data_table}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicledatatable"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chronicledatatable"
 
 chronicledatatable.NewChronicleDataTable(scope Construct, id *string, config ChronicleDataTableConfig) ChronicleDataTable
 ```
@@ -488,7 +488,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicledatatable"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chronicledatatable"
 
 chronicledatatable.ChronicleDataTable_IsConstruct(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicledatatable"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chronicledatatable"
 
 chronicledatatable.ChronicleDataTable_IsTerraformElement(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ chronicledatatable.ChronicleDataTable_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicledatatable"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chronicledatatable"
 
 chronicledatatable.ChronicleDataTable_IsTerraformResource(x interface{}) *bool
 ```
@@ -548,7 +548,7 @@ chronicledatatable.ChronicleDataTable_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTable.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicledatatable"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chronicledatatable"
 
 chronicledatatable.ChronicleDataTable_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -577,7 +577,7 @@ The construct id used in the generated config for the ChronicleDataTable to impo
 
 The id of the existing ChronicleDataTable that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_data_table#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_data_table#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1129,7 +1129,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicledatatable"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chronicledatatable"
 
 &chronicledatatable.ChronicleDataTableColumnInfo {
 	ColumnIndex: *f64,
@@ -1164,7 +1164,7 @@ ColumnIndex *f64
 
 Column Index. 0,1,2...
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_data_table#column_index ChronicleDataTable#column_index}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_data_table#column_index ChronicleDataTable#column_index}
 
 ---
 
@@ -1185,7 +1185,7 @@ following requirements:
 * Contains only letters, numbers and underscore.
 * Must be unique and has length < 256
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_data_table#original_column ChronicleDataTable#original_column}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_data_table#original_column ChronicleDataTable#original_column}
 
 ---
 
@@ -1199,7 +1199,7 @@ ColumnType *string
 
 Column type can be STRING, CIDR (Ex- 10.1.1.0/24), REGEX Possible values: STRING REGEX CIDR NUMBER Possible values: ["STRING", "REGEX", "CIDR", "NUMBER"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_data_table#column_type ChronicleDataTable#column_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_data_table#column_type ChronicleDataTable#column_type}
 
 ---
 
@@ -1216,7 +1216,7 @@ Whether to include this column in the calculation of the row ID.
 If no columns have key_column = true, all columns will be included in the
 calculation of the row ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_data_table#key_column ChronicleDataTable#key_column}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_data_table#key_column ChronicleDataTable#key_column}
 
 ---
 
@@ -1230,7 +1230,7 @@ MappedColumnPath *string
 
 Entity proto field path that the column is mapped to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_data_table#mapped_column_path ChronicleDataTable#mapped_column_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_data_table#mapped_column_path ChronicleDataTable#mapped_column_path}
 
 ---
 
@@ -1244,7 +1244,7 @@ RepeatedValues interface{}
 
 Whether the column is a repeated values column.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_data_table#repeated_values ChronicleDataTable#repeated_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_data_table#repeated_values ChronicleDataTable#repeated_values}
 
 ---
 
@@ -1253,7 +1253,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicledatatable"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chronicledatatable"
 
 &chronicledatatable.ChronicleDataTableConfig {
 	Connection: interface{},
@@ -1272,8 +1272,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicledatatab
 	Id: *string,
 	Project: *string,
 	RowTimeToLive: *string,
-	ScopeInfo: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleDataTable.ChronicleDataTableScopeInfo,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleDataTable.ChronicleDataTableTimeouts,
+	ScopeInfo: github.com/cdktn-io/cdktn-provider-google-go/google/v21.chronicleDataTable.ChronicleDataTableScopeInfo,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.chronicleDataTable.ChronicleDataTableTimeouts,
 }
 ```
 
@@ -1294,8 +1294,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicledatatab
 | <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableConfig.property.location">Location</a></code> | <code>*string</code> | Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122. |
 | <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableConfig.property.columnInfo">ColumnInfo</a></code> | <code>interface{}</code> | column_info block. |
 | <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | This field uses a custom implementation please refer to documentation under /hashicorp/terraform-provider-google-beta/website/docs/r/chronicle_data_table.html.markdown for specifics. |
-| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_data_table#id ChronicleDataTable#id}. |
-| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_data_table#project ChronicleDataTable#project}. |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_data_table#id ChronicleDataTable#id}. |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_data_table#project ChronicleDataTable#project}. |
 | <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableConfig.property.rowTimeToLive">RowTimeToLive</a></code> | <code>*string</code> | User-provided TTL of the data table. |
 | <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableConfig.property.scopeInfo">ScopeInfo</a></code> | <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfo">ChronicleDataTableScopeInfo</a></code> | scope_info block. |
 | <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeouts">ChronicleDataTableTimeouts</a></code> | timeouts block. |
@@ -1389,7 +1389,7 @@ the data table. It must satisfy the following requirements:
 * Contains only letters, numbers and underscore.
 * Must be unique and has length < 256.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_data_table#data_table_id ChronicleDataTable#data_table_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_data_table#data_table_id ChronicleDataTable#data_table_id}
 
 ---
 
@@ -1403,7 +1403,7 @@ Description *string
 
 A user-provided description of the data table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_data_table#description ChronicleDataTable#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_data_table#description ChronicleDataTable#description}
 
 ---
 
@@ -1417,7 +1417,7 @@ Instance *string
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_data_table#instance ChronicleDataTable#instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_data_table#instance ChronicleDataTable#instance}
 
 ---
 
@@ -1431,7 +1431,7 @@ Location *string
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_data_table#location ChronicleDataTable#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_data_table#location ChronicleDataTable#location}
 
 ---
 
@@ -1445,7 +1445,7 @@ ColumnInfo interface{}
 
 column_info block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_data_table#column_info ChronicleDataTable#column_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_data_table#column_info ChronicleDataTable#column_info}
 
 ---
 
@@ -1459,7 +1459,7 @@ DeletionPolicy *string
 
 This field uses a custom implementation please refer to documentation under /hashicorp/terraform-provider-google-beta/website/docs/r/chronicle_data_table.html.markdown for specifics.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_data_table#deletion_policy ChronicleDataTable#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_data_table#deletion_policy ChronicleDataTable#deletion_policy}
 
 ---
 
@@ -1471,7 +1471,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_data_table#id ChronicleDataTable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_data_table#id ChronicleDataTable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1486,7 +1486,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_data_table#project ChronicleDataTable#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_data_table#project ChronicleDataTable#project}.
 
 ---
 
@@ -1500,7 +1500,7 @@ RowTimeToLive *string
 
 User-provided TTL of the data table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_data_table#row_time_to_live ChronicleDataTable#row_time_to_live}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_data_table#row_time_to_live ChronicleDataTable#row_time_to_live}
 
 ---
 
@@ -1514,7 +1514,7 @@ ScopeInfo ChronicleDataTableScopeInfo
 
 scope_info block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_data_table#scope_info ChronicleDataTable#scope_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_data_table#scope_info ChronicleDataTable#scope_info}
 
 ---
 
@@ -1528,7 +1528,7 @@ Timeouts ChronicleDataTableTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_data_table#timeouts ChronicleDataTable#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_data_table#timeouts ChronicleDataTable#timeouts}
 
 ---
 
@@ -1537,7 +1537,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicledatatable"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chronicledatatable"
 
 &chronicledatatable.ChronicleDataTableScopeInfo {
 	DataAccessScopes: *[]*string,
@@ -1567,7 +1567,7 @@ the data table is treated as unscoped. The scope names should be
 full resource names and should be of the format:
 "projects/{project}/locations/{location}/instances/{instance}/dataAccessScopes/{scope_name}"
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_data_table#data_access_scopes ChronicleDataTable#data_access_scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_data_table#data_access_scopes ChronicleDataTable#data_access_scopes}
 
 ---
 
@@ -1576,7 +1576,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicledatatable"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chronicledatatable"
 
 &chronicledatatable.ChronicleDataTableTimeouts {
 	Create: *string,
@@ -1589,9 +1589,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicledatatab
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_data_table#create ChronicleDataTable#create}. |
-| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_data_table#delete ChronicleDataTable#delete}. |
-| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_data_table#update ChronicleDataTable#update}. |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_data_table#create ChronicleDataTable#create}. |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_data_table#delete ChronicleDataTable#delete}. |
+| <code><a href="#@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_data_table#update ChronicleDataTable#update}. |
 
 ---
 
@@ -1603,7 +1603,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_data_table#create ChronicleDataTable#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_data_table#create ChronicleDataTable#create}.
 
 ---
 
@@ -1615,7 +1615,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_data_table#delete ChronicleDataTable#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_data_table#delete ChronicleDataTable#delete}.
 
 ---
 
@@ -1627,7 +1627,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_data_table#update ChronicleDataTable#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_data_table#update ChronicleDataTable#update}.
 
 ---
 
@@ -1638,7 +1638,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicledatatable"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chronicledatatable"
 
 chronicledatatable.NewChronicleDataTableColumnInfoList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ChronicleDataTableColumnInfoList
 ```
@@ -1798,7 +1798,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicledatatable"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chronicledatatable"
 
 chronicledatatable.NewChronicleDataTableColumnInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ChronicleDataTableColumnInfoOutputReference
 ```
@@ -2225,7 +2225,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicledatatable"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chronicledatatable"
 
 chronicledatatable.NewChronicleDataTableScopeInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleDataTableScopeInfoOutputReference
 ```
@@ -2496,7 +2496,7 @@ func InternalValue() ChronicleDataTableScopeInfo
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicledatatable"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chronicledatatable"
 
 chronicledatatable.NewChronicleDataTableTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleDataTableTimeoutsOutputReference
 ```

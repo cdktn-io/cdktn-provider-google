@@ -4,7 +4,7 @@
 
 ### DataGoogleCloudRunV2Job <a name="DataGoogleCloudRunV2Job" id="@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2Job"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/cloud_run_v2_job google_cloud_run_v2_job}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/cloud_run_v2_job google_cloud_run_v2_job}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2Job.Initializer"></a>
 
@@ -38,9 +38,9 @@ DataGoogleCloudRunV2Job.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2Job.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2Job.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2Job.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Name of the Job. |
-| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2Job.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/cloud_run_v2_job#id DataGoogleCloudRunV2Job#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2Job.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/cloud_run_v2_job#id DataGoogleCloudRunV2Job#id}. |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2Job.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | The location of the cloud run job. |
-| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2Job.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/cloud_run_v2_job#project DataGoogleCloudRunV2Job#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2Job.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/cloud_run_v2_job#project DataGoogleCloudRunV2Job#project}. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 Name of the Job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/cloud_run_v2_job#name DataGoogleCloudRunV2Job#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/cloud_run_v2_job#name DataGoogleCloudRunV2Job#name}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/cloud_run_v2_job#id DataGoogleCloudRunV2Job#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/cloud_run_v2_job#id DataGoogleCloudRunV2Job#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -131,7 +131,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The location of the cloud run job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/cloud_run_v2_job#location DataGoogleCloudRunV2Job#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/cloud_run_v2_job#location DataGoogleCloudRunV2Job#location}
 
 ---
 
@@ -139,7 +139,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/cloud_run_v2_job#project DataGoogleCloudRunV2Job#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/cloud_run_v2_job#project DataGoogleCloudRunV2Job#project}.
 
 ---
 
@@ -505,7 +505,7 @@ The construct id used in the generated config for the DataGoogleCloudRunV2Job to
 
 The id of the existing DataGoogleCloudRunV2Job that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/cloud_run_v2_job#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/cloud_run_v2_job#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1154,9 +1154,9 @@ DataGoogleCloudRunV2JobConfig.builder()
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobConfig.property.name">name</a></code> | <code>java.lang.String</code> | Name of the Job. |
-| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/cloud_run_v2_job#id DataGoogleCloudRunV2Job#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/cloud_run_v2_job#id DataGoogleCloudRunV2Job#id}. |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobConfig.property.location">location</a></code> | <code>java.lang.String</code> | The location of the cloud run job. |
-| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/cloud_run_v2_job#project DataGoogleCloudRunV2Job#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/cloud_run_v2_job#project DataGoogleCloudRunV2Job#project}. |
 
 ---
 
@@ -1240,7 +1240,7 @@ public java.lang.String getName();
 
 Name of the Job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/cloud_run_v2_job#name DataGoogleCloudRunV2Job#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/cloud_run_v2_job#name DataGoogleCloudRunV2Job#name}
 
 ---
 
@@ -1252,7 +1252,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/cloud_run_v2_job#id DataGoogleCloudRunV2Job#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/cloud_run_v2_job#id DataGoogleCloudRunV2Job#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1269,7 +1269,7 @@ public java.lang.String getLocation();
 
 The location of the cloud run job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/cloud_run_v2_job#location DataGoogleCloudRunV2Job#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/cloud_run_v2_job#location DataGoogleCloudRunV2Job#location}
 
 ---
 
@@ -1281,7 +1281,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/cloud_run_v2_job#project DataGoogleCloudRunV2Job#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/cloud_run_v2_job#project DataGoogleCloudRunV2Job#project}.
 
 ---
 
@@ -3379,6 +3379,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateOutputReference.property.annotations">annotations</a></code> | <code>io.cdktn.cdktn.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateOutputReference.property.delayExecution">delayExecution</a></code> | <code>io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateOutputReference.property.labels">labels</a></code> | <code>io.cdktn.cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateOutputReference.property.parallelism">parallelism</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateOutputReference.property.taskCount">taskCount</a></code> | <code>java.lang.Number</code> | *No description.* |
@@ -3418,6 +3419,16 @@ public StringMap getAnnotations();
 ```
 
 - *Type:* io.cdktn.cdktn.StringMap
+
+---
+
+##### `delayExecution`<sup>Required</sup> <a name="delayExecution" id="@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateOutputReference.property.delayExecution"></a>
+
+```java
+public IResolvable getDelayExecution();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable
 
 ---
 
@@ -5171,6 +5182,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateContainersOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateContainersOutputReference.property.ports">ports</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateContainersPortsList">DataGoogleCloudRunV2JobTemplateTemplateContainersPortsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateContainersOutputReference.property.resources">resources</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateContainersResourcesList">DataGoogleCloudRunV2JobTemplateTemplateContainersResourcesList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateContainersOutputReference.property.sandboxLauncher">sandboxLauncher</a></code> | <code>io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateContainersOutputReference.property.startupProbe">startupProbe</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateContainersStartupProbeList">DataGoogleCloudRunV2JobTemplateTemplateContainersStartupProbeList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateContainersOutputReference.property.volumeMounts">volumeMounts</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateContainersVolumeMountsList">DataGoogleCloudRunV2JobTemplateTemplateContainersVolumeMountsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateContainersOutputReference.property.workingDir">workingDir</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -5279,6 +5291,16 @@ public DataGoogleCloudRunV2JobTemplateTemplateContainersResourcesList getResourc
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateContainersResourcesList">DataGoogleCloudRunV2JobTemplateTemplateContainersResourcesList</a>
+
+---
+
+##### `sandboxLauncher`<sup>Required</sup> <a name="sandboxLauncher" id="@cdktn/provider-google.dataGoogleCloudRunV2Job.DataGoogleCloudRunV2JobTemplateTemplateContainersOutputReference.property.sandboxLauncher"></a>
+
+```java
+public IResolvable getSandboxLauncher();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable
 
 ---
 

@@ -4,12 +4,12 @@
 
 ### NetappHostGroup <a name="NetappHostGroup" id="@cdktn/provider-google.netappHostGroup.NetappHostGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_host_group google_netapp_host_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/netapp_host_group google_netapp_host_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.netappHostGroup.NetappHostGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netapphostgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/netapphostgroup"
 
 netapphostgroup.NewNetappHostGroup(scope Construct, id *string, config NetappHostGroupConfig) NetappHostGroup
 ```
@@ -455,7 +455,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.netappHostGroup.NetappHostGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netapphostgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/netapphostgroup"
 
 netapphostgroup.NetappHostGroup_IsConstruct(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.netappHostGroup.NetappHostGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netapphostgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/netapphostgroup"
 
 netapphostgroup.NetappHostGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ netapphostgroup.NetappHostGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.netappHostGroup.NetappHostGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netapphostgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/netapphostgroup"
 
 netapphostgroup.NetappHostGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ netapphostgroup.NetappHostGroup_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.netappHostGroup.NetappHostGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netapphostgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/netapphostgroup"
 
 netapphostgroup.NetappHostGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -544,7 +544,7 @@ The construct id used in the generated config for the NetappHostGroup to import.
 
 The id of the existing NetappHostGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_host_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/netapp_host_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1030,7 +1030,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.netappHostGroup.NetappHostGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netapphostgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/netapphostgroup"
 
 &netapphostgroup.NetappHostGroupConfig {
 	Connection: interface{},
@@ -1050,7 +1050,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netapphostgroup"
 	Id: *string,
 	Labels: *map[string]*string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.netappHostGroup.NetappHostGroupTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.netappHostGroup.NetappHostGroupTimeouts,
 }
 ```
 
@@ -1072,9 +1072,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netapphostgroup"
 | <code><a href="#@cdktn/provider-google.netappHostGroup.NetappHostGroupConfig.property.type">Type</a></code> | <code>*string</code> | Type of the host group. Possible values: ["ISCSI_INITIATOR"]. |
 | <code><a href="#@cdktn/provider-google.netappHostGroup.NetappHostGroupConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.netappHostGroup.NetappHostGroupConfig.property.description">Description</a></code> | <code>*string</code> | An optional description of this resource. |
-| <code><a href="#@cdktn/provider-google.netappHostGroup.NetappHostGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_host_group#id NetappHostGroup#id}. |
+| <code><a href="#@cdktn/provider-google.netappHostGroup.NetappHostGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/netapp_host_group#id NetappHostGroup#id}. |
 | <code><a href="#@cdktn/provider-google.netappHostGroup.NetappHostGroupConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | Labels as key value pairs. Example: '{ "owner": "Bob", "department": "finance", "purpose": "testing" }'. |
-| <code><a href="#@cdktn/provider-google.netappHostGroup.NetappHostGroupConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_host_group#project NetappHostGroup#project}. |
+| <code><a href="#@cdktn/provider-google.netappHostGroup.NetappHostGroupConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/netapp_host_group#project NetappHostGroup#project}. |
 | <code><a href="#@cdktn/provider-google.netappHostGroup.NetappHostGroupConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.netappHostGroup.NetappHostGroupTimeouts">NetappHostGroupTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1159,7 +1159,7 @@ Hosts *[]*string
 
 The list of hosts associated with the host group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_host_group#hosts NetappHostGroup#hosts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/netapp_host_group#hosts NetappHostGroup#hosts}
 
 ---
 
@@ -1173,7 +1173,7 @@ Location *string
 
 Location (region) of the Host Group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_host_group#location NetappHostGroup#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/netapp_host_group#location NetappHostGroup#location}
 
 ---
 
@@ -1187,7 +1187,7 @@ Name *string
 
 The resource name of the Host Group. Needs to be unique per location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_host_group#name NetappHostGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/netapp_host_group#name NetappHostGroup#name}
 
 ---
 
@@ -1205,7 +1205,7 @@ It indicates the type of operating system
 used by all of the hosts in the HostGroup. All hosts in a HostGroup must be
 of the same OS type. This can be set only when creating a HostGroup. Possible values: ["LINUX", "WINDOWS", "ESXI"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_host_group#os_type NetappHostGroup#os_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/netapp_host_group#os_type NetappHostGroup#os_type}
 
 ---
 
@@ -1219,7 +1219,7 @@ Type *string
 
 Type of the host group. Possible values: ["ISCSI_INITIATOR"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_host_group#type NetappHostGroup#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/netapp_host_group#type NetappHostGroup#type}
 
 ---
 
@@ -1240,7 +1240,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_host_group#deletion_policy NetappHostGroup#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/netapp_host_group#deletion_policy NetappHostGroup#deletion_policy}
 
 ---
 
@@ -1254,7 +1254,7 @@ Description *string
 
 An optional description of this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_host_group#description NetappHostGroup#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/netapp_host_group#description NetappHostGroup#description}
 
 ---
 
@@ -1266,7 +1266,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_host_group#id NetappHostGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/netapp_host_group#id NetappHostGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1286,7 +1286,7 @@ Labels as key value pairs. Example: '{ "owner": "Bob", "department": "finance", 
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_host_group#labels NetappHostGroup#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/netapp_host_group#labels NetappHostGroup#labels}
 
 ---
 
@@ -1298,7 +1298,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_host_group#project NetappHostGroup#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/netapp_host_group#project NetappHostGroup#project}.
 
 ---
 
@@ -1312,7 +1312,7 @@ Timeouts NetappHostGroupTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_host_group#timeouts NetappHostGroup#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/netapp_host_group#timeouts NetappHostGroup#timeouts}
 
 ---
 
@@ -1321,7 +1321,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.netappHostGroup.NetappHostGroupTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netapphostgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/netapphostgroup"
 
 &netapphostgroup.NetappHostGroupTimeouts {
 	Create: *string,
@@ -1334,9 +1334,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netapphostgroup"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.netappHostGroup.NetappHostGroupTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_host_group#create NetappHostGroup#create}. |
-| <code><a href="#@cdktn/provider-google.netappHostGroup.NetappHostGroupTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_host_group#delete NetappHostGroup#delete}. |
-| <code><a href="#@cdktn/provider-google.netappHostGroup.NetappHostGroupTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_host_group#update NetappHostGroup#update}. |
+| <code><a href="#@cdktn/provider-google.netappHostGroup.NetappHostGroupTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/netapp_host_group#create NetappHostGroup#create}. |
+| <code><a href="#@cdktn/provider-google.netappHostGroup.NetappHostGroupTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/netapp_host_group#delete NetappHostGroup#delete}. |
+| <code><a href="#@cdktn/provider-google.netappHostGroup.NetappHostGroupTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/netapp_host_group#update NetappHostGroup#update}. |
 
 ---
 
@@ -1348,7 +1348,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_host_group#create NetappHostGroup#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/netapp_host_group#create NetappHostGroup#create}.
 
 ---
 
@@ -1360,7 +1360,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_host_group#delete NetappHostGroup#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/netapp_host_group#delete NetappHostGroup#delete}.
 
 ---
 
@@ -1372,7 +1372,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_host_group#update NetappHostGroup#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/netapp_host_group#update NetappHostGroup#update}.
 
 ---
 
@@ -1383,7 +1383,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.netappHostGroup.NetappHostGroupTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netapphostgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/netapphostgroup"
 
 netapphostgroup.NewNetappHostGroupTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetappHostGroupTimeoutsOutputReference
 ```

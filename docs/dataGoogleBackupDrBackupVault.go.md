@@ -4,12 +4,12 @@
 
 ### DataGoogleBackupDrBackupVault <a name="DataGoogleBackupDrBackupVault" id="@cdktn/provider-google.dataGoogleBackupDrBackupVault.DataGoogleBackupDrBackupVault"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/backup_dr_backup_vault google_backup_dr_backup_vault}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/backup_dr_backup_vault google_backup_dr_backup_vault}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleBackupDrBackupVault.DataGoogleBackupDrBackupVault.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebackupdrbackupvault"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglebackupdrbackupvault"
 
 datagooglebackupdrbackupvault.NewDataGoogleBackupDrBackupVault(scope Construct, id *string, config DataGoogleBackupDrBackupVaultConfig) DataGoogleBackupDrBackupVault
 ```
@@ -312,7 +312,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleBackupDrBackupVault.DataGoogleBackupDrBackupVault.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebackupdrbackupvault"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglebackupdrbackupvault"
 
 datagooglebackupdrbackupvault.DataGoogleBackupDrBackupVault_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleBackupDrBackupVault.DataGoogleBackupDrBackupVault.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebackupdrbackupvault"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglebackupdrbackupvault"
 
 datagooglebackupdrbackupvault.DataGoogleBackupDrBackupVault_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datagooglebackupdrbackupvault.DataGoogleBackupDrBackupVault_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleBackupDrBackupVault.DataGoogleBackupDrBackupVault.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebackupdrbackupvault"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglebackupdrbackupvault"
 
 datagooglebackupdrbackupvault.DataGoogleBackupDrBackupVault_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datagooglebackupdrbackupvault.DataGoogleBackupDrBackupVault_IsTerraformDataSourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleBackupDrBackupVault.DataGoogleBackupDrBackupVault.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebackupdrbackupvault"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglebackupdrbackupvault"
 
 datagooglebackupdrbackupvault.DataGoogleBackupDrBackupVault_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataGoogleBackupDrBackupVa
 
 The id of the existing DataGoogleBackupDrBackupVault that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/backup_dr_backup_vault#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/backup_dr_backup_vault#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -975,7 +975,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleBackupDrBackupVault.DataGoogleBackupDrBackupVaultConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebackupdrbackupvault"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglebackupdrbackupvault"
 
 &datagooglebackupdrbackupvault.DataGoogleBackupDrBackupVaultConfig {
 	Connection: interface{},
@@ -1005,8 +1005,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebackup
 | <code><a href="#@cdktn/provider-google.dataGoogleBackupDrBackupVault.DataGoogleBackupDrBackupVaultConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleBackupDrBackupVault.DataGoogleBackupDrBackupVaultConfig.property.backupVaultId">BackupVaultId</a></code> | <code>*string</code> | Required. ID of the requesting object. |
 | <code><a href="#@cdktn/provider-google.dataGoogleBackupDrBackupVault.DataGoogleBackupDrBackupVaultConfig.property.location">Location</a></code> | <code>*string</code> | The GCP location for the backup vault. |
-| <code><a href="#@cdktn/provider-google.dataGoogleBackupDrBackupVault.DataGoogleBackupDrBackupVaultConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/backup_dr_backup_vault#id DataGoogleBackupDrBackupVault#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleBackupDrBackupVault.DataGoogleBackupDrBackupVaultConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/backup_dr_backup_vault#project DataGoogleBackupDrBackupVault#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleBackupDrBackupVault.DataGoogleBackupDrBackupVaultConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/backup_dr_backup_vault#id DataGoogleBackupDrBackupVault#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleBackupDrBackupVault.DataGoogleBackupDrBackupVaultConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/backup_dr_backup_vault#project DataGoogleBackupDrBackupVault#project}. |
 
 ---
 
@@ -1090,7 +1090,7 @@ BackupVaultId *string
 
 Required. ID of the requesting object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/backup_dr_backup_vault#backup_vault_id DataGoogleBackupDrBackupVault#backup_vault_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/backup_dr_backup_vault#backup_vault_id DataGoogleBackupDrBackupVault#backup_vault_id}
 
 ---
 
@@ -1104,7 +1104,7 @@ Location *string
 
 The GCP location for the backup vault.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/backup_dr_backup_vault#location DataGoogleBackupDrBackupVault#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/backup_dr_backup_vault#location DataGoogleBackupDrBackupVault#location}
 
 ---
 
@@ -1116,7 +1116,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/backup_dr_backup_vault#id DataGoogleBackupDrBackupVault#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/backup_dr_backup_vault#id DataGoogleBackupDrBackupVault#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1131,7 +1131,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/backup_dr_backup_vault#project DataGoogleBackupDrBackupVault#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/backup_dr_backup_vault#project DataGoogleBackupDrBackupVault#project}.
 
 ---
 
@@ -1140,7 +1140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleBackupDrBackupVault.DataGoogleBackupDrBackupVaultEncryptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebackupdrbackupvault"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglebackupdrbackupvault"
 
 &datagooglebackupdrbackupvault.DataGoogleBackupDrBackupVaultEncryptionConfig {
 
@@ -1155,7 +1155,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebackup
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleBackupDrBackupVault.DataGoogleBackupDrBackupVaultEncryptionConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebackupdrbackupvault"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglebackupdrbackupvault"
 
 datagooglebackupdrbackupvault.NewDataGoogleBackupDrBackupVaultEncryptionConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleBackupDrBackupVaultEncryptionConfigList
 ```
@@ -1304,7 +1304,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleBackupDrBackupVault.DataGoogleBackupDrBackupVaultEncryptionConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebackupdrbackupvault"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglebackupdrbackupvault"
 
 datagooglebackupdrbackupvault.NewDataGoogleBackupDrBackupVaultEncryptionConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleBackupDrBackupVaultEncryptionConfigOutputReference
 ```

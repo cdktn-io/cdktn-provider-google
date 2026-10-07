@@ -4,12 +4,12 @@
 
 ### ComputeInstanceGroupNamedPortA <a name="ComputeInstanceGroupNamedPortA" id="@cdktn/provider-google.computeInstanceGroupNamedPort.ComputeInstanceGroupNamedPortA"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_instance_group_named_port google_compute_instance_group_named_port}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_instance_group_named_port google_compute_instance_group_named_port}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInstanceGroupNamedPort.ComputeInstanceGroupNamedPortA.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeinstancegroupnamedport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeinstancegroupnamedport"
 
 computeinstancegroupnamedport.NewComputeInstanceGroupNamedPortA(scope Construct, id *string, config ComputeInstanceGroupNamedPortAConfig) ComputeInstanceGroupNamedPortA
 ```
@@ -448,7 +448,7 @@ func ResetZone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeInstanceGroupNamedPort.ComputeInstanceGroupNamedPortA.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeinstancegroupnamedport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeinstancegroupnamedport"
 
 computeinstancegroupnamedport.ComputeInstanceGroupNamedPortA_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeInstanceGroupNamedPort.ComputeInstanceGroupNamedPortA.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeinstancegroupnamedport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeinstancegroupnamedport"
 
 computeinstancegroupnamedport.ComputeInstanceGroupNamedPortA_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ computeinstancegroupnamedport.ComputeInstanceGroupNamedPortA_IsTerraformElement(
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeInstanceGroupNamedPort.ComputeInstanceGroupNamedPortA.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeinstancegroupnamedport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeinstancegroupnamedport"
 
 computeinstancegroupnamedport.ComputeInstanceGroupNamedPortA_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ computeinstancegroupnamedport.ComputeInstanceGroupNamedPortA_IsTerraformResource
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeInstanceGroupNamedPort.ComputeInstanceGroupNamedPortA.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeinstancegroupnamedport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeinstancegroupnamedport"
 
 computeinstancegroupnamedport.ComputeInstanceGroupNamedPortA_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -537,7 +537,7 @@ The construct id used in the generated config for the ComputeInstanceGroupNamedP
 
 The id of the existing ComputeInstanceGroupNamedPortA that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_instance_group_named_port#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_instance_group_named_port#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -913,7 +913,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeInstanceGroupNamedPort.ComputeInstanceGroupNamedPortAConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeinstancegroupnamedport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeinstancegroupnamedport"
 
 &computeinstancegroupnamedport.ComputeInstanceGroupNamedPortAConfig {
 	Connection: interface{},
@@ -929,7 +929,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeinstanceg
 	DeletionPolicy: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeInstanceGroupNamedPort.ComputeInstanceGroupNamedPortTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.computeInstanceGroupNamedPort.ComputeInstanceGroupNamedPortTimeouts,
 	Zone: *string,
 }
 ```
@@ -949,8 +949,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeinstanceg
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupNamedPort.ComputeInstanceGroupNamedPortAConfig.property.name">Name</a></code> | <code>*string</code> | The name for this named port. The name must be 1-63 characters long, and comply with RFC1035. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupNamedPort.ComputeInstanceGroupNamedPortAConfig.property.port">Port</a></code> | <code>*f64</code> | The port number, which can be a value between 1 and 65535. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupNamedPort.ComputeInstanceGroupNamedPortAConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupNamedPort.ComputeInstanceGroupNamedPortAConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_instance_group_named_port#id ComputeInstanceGroupNamedPortA#id}. |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupNamedPort.ComputeInstanceGroupNamedPortAConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_instance_group_named_port#project ComputeInstanceGroupNamedPortA#project}. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupNamedPort.ComputeInstanceGroupNamedPortAConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_instance_group_named_port#id ComputeInstanceGroupNamedPortA#id}. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupNamedPort.ComputeInstanceGroupNamedPortAConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_instance_group_named_port#project ComputeInstanceGroupNamedPortA#project}. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupNamedPort.ComputeInstanceGroupNamedPortAConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeInstanceGroupNamedPort.ComputeInstanceGroupNamedPortTimeouts">ComputeInstanceGroupNamedPortTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.computeInstanceGroupNamedPort.ComputeInstanceGroupNamedPortAConfig.property.zone">Zone</a></code> | <code>*string</code> | The zone of the instance group. |
 
@@ -1036,7 +1036,7 @@ Group *string
 
 The name of the instance group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_instance_group_named_port#group ComputeInstanceGroupNamedPortA#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_instance_group_named_port#group ComputeInstanceGroupNamedPortA#group}
 
 ---
 
@@ -1050,7 +1050,7 @@ Name *string
 
 The name for this named port. The name must be 1-63 characters long, and comply with RFC1035.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_instance_group_named_port#name ComputeInstanceGroupNamedPortA#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_instance_group_named_port#name ComputeInstanceGroupNamedPortA#name}
 
 ---
 
@@ -1064,7 +1064,7 @@ Port *f64
 
 The port number, which can be a value between 1 and 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_instance_group_named_port#port ComputeInstanceGroupNamedPortA#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_instance_group_named_port#port ComputeInstanceGroupNamedPortA#port}
 
 ---
 
@@ -1085,7 +1085,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_instance_group_named_port#deletion_policy ComputeInstanceGroupNamedPortA#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_instance_group_named_port#deletion_policy ComputeInstanceGroupNamedPortA#deletion_policy}
 
 ---
 
@@ -1097,7 +1097,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_instance_group_named_port#id ComputeInstanceGroupNamedPortA#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_instance_group_named_port#id ComputeInstanceGroupNamedPortA#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1112,7 +1112,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_instance_group_named_port#project ComputeInstanceGroupNamedPortA#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_instance_group_named_port#project ComputeInstanceGroupNamedPortA#project}.
 
 ---
 
@@ -1126,7 +1126,7 @@ Timeouts ComputeInstanceGroupNamedPortTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_instance_group_named_port#timeouts ComputeInstanceGroupNamedPortA#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_instance_group_named_port#timeouts ComputeInstanceGroupNamedPortA#timeouts}
 
 ---
 
@@ -1140,7 +1140,7 @@ Zone *string
 
 The zone of the instance group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_instance_group_named_port#zone ComputeInstanceGroupNamedPortA#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_instance_group_named_port#zone ComputeInstanceGroupNamedPortA#zone}
 
 ---
 
@@ -1149,7 +1149,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeInstanceGroupNamedPort.ComputeInstanceGroupNamedPortTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeinstancegroupnamedport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeinstancegroupnamedport"
 
 &computeinstancegroupnamedport.ComputeInstanceGroupNamedPortTimeouts {
 	Create: *string,
@@ -1161,8 +1161,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeinstanceg
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupNamedPort.ComputeInstanceGroupNamedPortTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_instance_group_named_port#create ComputeInstanceGroupNamedPortA#create}. |
-| <code><a href="#@cdktn/provider-google.computeInstanceGroupNamedPort.ComputeInstanceGroupNamedPortTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_instance_group_named_port#delete ComputeInstanceGroupNamedPortA#delete}. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupNamedPort.ComputeInstanceGroupNamedPortTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_instance_group_named_port#create ComputeInstanceGroupNamedPortA#create}. |
+| <code><a href="#@cdktn/provider-google.computeInstanceGroupNamedPort.ComputeInstanceGroupNamedPortTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_instance_group_named_port#delete ComputeInstanceGroupNamedPortA#delete}. |
 
 ---
 
@@ -1174,7 +1174,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_instance_group_named_port#create ComputeInstanceGroupNamedPortA#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_instance_group_named_port#create ComputeInstanceGroupNamedPortA#create}.
 
 ---
 
@@ -1186,7 +1186,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_instance_group_named_port#delete ComputeInstanceGroupNamedPortA#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_instance_group_named_port#delete ComputeInstanceGroupNamedPortA#delete}.
 
 ---
 
@@ -1197,7 +1197,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeInstanceGroupNamedPort.ComputeInstanceGroupNamedPortTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeinstancegroupnamedport"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeinstancegroupnamedport"
 
 computeinstancegroupnamedport.NewComputeInstanceGroupNamedPortTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeInstanceGroupNamedPortTimeoutsOutputReference
 ```

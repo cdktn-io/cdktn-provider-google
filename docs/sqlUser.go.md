@@ -4,12 +4,12 @@
 
 ### SqlUser <a name="SqlUser" id="@cdktn/provider-google.sqlUser.SqlUser"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/sql_user google_sql_user}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/sql_user google_sql_user}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.sqlUser.SqlUser.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sqluser"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/sqluser"
 
 sqluser.NewSqlUser(scope Construct, id *string, config SqlUserConfig) SqlUser
 ```
@@ -503,7 +503,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.sqlUser.SqlUser.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sqluser"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/sqluser"
 
 sqluser.SqlUser_IsConstruct(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.sqlUser.SqlUser.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sqluser"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/sqluser"
 
 sqluser.SqlUser_IsTerraformElement(x interface{}) *bool
 ```
@@ -549,7 +549,7 @@ sqluser.SqlUser_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.sqlUser.SqlUser.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sqluser"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/sqluser"
 
 sqluser.SqlUser_IsTerraformResource(x interface{}) *bool
 ```
@@ -563,7 +563,7 @@ sqluser.SqlUser_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.sqlUser.SqlUser.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sqluser"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/sqluser"
 
 sqluser.SqlUser_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -592,7 +592,7 @@ The construct id used in the generated config for the SqlUser to import.
 
 The id of the existing SqlUser that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/sql_user#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/sql_user#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1102,7 +1102,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.sqlUser.SqlUserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sqluser"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/sqluser"
 
 &sqluser.SqlUserConfig {
 	Connection: interface{},
@@ -1119,11 +1119,11 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sqluser"
 	Host: *string,
 	Id: *string,
 	Password: *string,
-	PasswordPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v20.sqlUser.SqlUserPasswordPolicy,
+	PasswordPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v21.sqlUser.SqlUserPasswordPolicy,
 	PasswordWo: *string,
 	PasswordWoVersion: *f64,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.sqlUser.SqlUserTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.sqlUser.SqlUserTimeouts,
 	Type: *string,
 }
 ```
@@ -1144,7 +1144,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sqluser"
 | <code><a href="#@cdktn/provider-google.sqlUser.SqlUserConfig.property.databaseRoles">DatabaseRoles</a></code> | <code>*[]*string</code> | A list of database roles to be assigned to the user. |
 | <code><a href="#@cdktn/provider-google.sqlUser.SqlUserConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.sqlUser.SqlUserConfig.property.host">Host</a></code> | <code>*string</code> | The host the user can connect from. |
-| <code><a href="#@cdktn/provider-google.sqlUser.SqlUserConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/sql_user#id SqlUser#id}. |
+| <code><a href="#@cdktn/provider-google.sqlUser.SqlUserConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/sql_user#id SqlUser#id}. |
 | <code><a href="#@cdktn/provider-google.sqlUser.SqlUserConfig.property.password">Password</a></code> | <code>*string</code> | The password for the user. |
 | <code><a href="#@cdktn/provider-google.sqlUser.SqlUserConfig.property.passwordPolicy">PasswordPolicy</a></code> | <code><a href="#@cdktn/provider-google.sqlUser.SqlUserPasswordPolicy">SqlUserPasswordPolicy</a></code> | password_policy block. |
 | <code><a href="#@cdktn/provider-google.sqlUser.SqlUserConfig.property.passwordWo">PasswordWo</a></code> | <code>*string</code> | The password for the user. |
@@ -1235,7 +1235,7 @@ Instance *string
 
 The name of the Cloud SQL instance. Changing this forces a new resource to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/sql_user#instance SqlUser#instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/sql_user#instance SqlUser#instance}
 
 ---
 
@@ -1249,7 +1249,7 @@ Name *string
 
 The name of the user. Changing this forces a new resource to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/sql_user#name SqlUser#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/sql_user#name SqlUser#name}
 
 ---
 
@@ -1265,7 +1265,7 @@ A list of database roles to be assigned to the user.
 
 This option is only available for MySQL and PostgreSQL instances.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/sql_user#database_roles SqlUser#database_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/sql_user#database_roles SqlUser#database_roles}
 
 ---
 
@@ -1286,7 +1286,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/sql_user#deletion_policy SqlUser#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/sql_user#deletion_policy SqlUser#deletion_policy}
 
 ---
 
@@ -1302,7 +1302,7 @@ The host the user can connect from.
 
 This is only supported for MySQL instances. Don't set this field for PostgreSQL instances. Can be an IP address. Changing this forces a new resource to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/sql_user#host SqlUser#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/sql_user#host SqlUser#host}
 
 ---
 
@@ -1314,7 +1314,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/sql_user#id SqlUser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/sql_user#id SqlUser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1334,7 +1334,7 @@ The password for the user.
 Can be updated. For Postgres instances this is a Required field, unless type is set to
 either CLOUD_IAM_USER or CLOUD_IAM_SERVICE_ACCOUNT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/sql_user#password SqlUser#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/sql_user#password SqlUser#password}
 
 ---
 
@@ -1348,7 +1348,7 @@ PasswordPolicy SqlUserPasswordPolicy
 
 password_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/sql_user#password_policy SqlUser#password_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/sql_user#password_policy SqlUser#password_policy}
 
 ---
 
@@ -1365,7 +1365,7 @@ The password for the user.
 Can be updated. For Postgres instances this is a Required field, unless type is set to
 either CLOUD_IAM_USER or CLOUD_IAM_SERVICE_ACCOUNT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/sql_user#password_wo SqlUser#password_wo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/sql_user#password_wo SqlUser#password_wo}
 
 ---
 
@@ -1379,7 +1379,7 @@ PasswordWoVersion *f64
 
 The version of the password_wo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/sql_user#password_wo_version SqlUser#password_wo_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/sql_user#password_wo_version SqlUser#password_wo_version}
 
 ---
 
@@ -1395,7 +1395,7 @@ The ID of the project in which the resource belongs.
 
 If it is not provided, the provider project is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/sql_user#project SqlUser#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/sql_user#project SqlUser#project}
 
 ---
 
@@ -1409,7 +1409,7 @@ Timeouts SqlUserTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/sql_user#timeouts SqlUser#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/sql_user#timeouts SqlUser#timeouts}
 
 ---
 
@@ -1426,7 +1426,7 @@ The user type.
 It determines the method to authenticate the user during login.
 The default is the database's built-in user type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/sql_user#type SqlUser#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/sql_user#type SqlUser#type}
 
 ---
 
@@ -1435,7 +1435,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.sqlUser.SqlUserPasswordPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sqluser"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/sqluser"
 
 &sqluser.SqlUserPasswordPolicy {
 	AllowedFailedAttempts: *f64,
@@ -1466,7 +1466,7 @@ AllowedFailedAttempts *f64
 
 Number of failed attempts allowed before the user get locked.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/sql_user#allowed_failed_attempts SqlUser#allowed_failed_attempts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/sql_user#allowed_failed_attempts SqlUser#allowed_failed_attempts}
 
 ---
 
@@ -1480,7 +1480,7 @@ EnableFailedAttemptsCheck interface{}
 
 If true, the check that will lock user after too many failed login attempts will be enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/sql_user#enable_failed_attempts_check SqlUser#enable_failed_attempts_check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/sql_user#enable_failed_attempts_check SqlUser#enable_failed_attempts_check}
 
 ---
 
@@ -1496,7 +1496,7 @@ If true, the user must specify the current password before changing the password
 
 This flag is supported only for MySQL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/sql_user#enable_password_verification SqlUser#enable_password_verification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/sql_user#enable_password_verification SqlUser#enable_password_verification}
 
 ---
 
@@ -1510,7 +1510,7 @@ PasswordExpirationDuration *string
 
 Password expiration duration with one week grace period.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/sql_user#password_expiration_duration SqlUser#password_expiration_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/sql_user#password_expiration_duration SqlUser#password_expiration_duration}
 
 ---
 
@@ -1519,7 +1519,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.sqlUser.SqlUserPasswordPolicyStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sqluser"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/sqluser"
 
 &sqluser.SqlUserPasswordPolicyStatus {
 
@@ -1532,7 +1532,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sqluser"
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.sqlUser.SqlUserSqlServerUserDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sqluser"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/sqluser"
 
 &sqluser.SqlUserSqlServerUserDetails {
 
@@ -1545,7 +1545,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sqluser"
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.sqlUser.SqlUserTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sqluser"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/sqluser"
 
 &sqluser.SqlUserTimeouts {
 	Create: *string,
@@ -1558,9 +1558,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sqluser"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.sqlUser.SqlUserTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/sql_user#create SqlUser#create}. |
-| <code><a href="#@cdktn/provider-google.sqlUser.SqlUserTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/sql_user#delete SqlUser#delete}. |
-| <code><a href="#@cdktn/provider-google.sqlUser.SqlUserTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/sql_user#update SqlUser#update}. |
+| <code><a href="#@cdktn/provider-google.sqlUser.SqlUserTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/sql_user#create SqlUser#create}. |
+| <code><a href="#@cdktn/provider-google.sqlUser.SqlUserTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/sql_user#delete SqlUser#delete}. |
+| <code><a href="#@cdktn/provider-google.sqlUser.SqlUserTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/sql_user#update SqlUser#update}. |
 
 ---
 
@@ -1572,7 +1572,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/sql_user#create SqlUser#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/sql_user#create SqlUser#create}.
 
 ---
 
@@ -1584,7 +1584,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/sql_user#delete SqlUser#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/sql_user#delete SqlUser#delete}.
 
 ---
 
@@ -1596,7 +1596,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/sql_user#update SqlUser#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/sql_user#update SqlUser#update}.
 
 ---
 
@@ -1607,7 +1607,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.sqlUser.SqlUserPasswordPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sqluser"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/sqluser"
 
 sqluser.NewSqlUserPasswordPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SqlUserPasswordPolicyOutputReference
 ```
@@ -1983,7 +1983,7 @@ func InternalValue() SqlUserPasswordPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.sqlUser.SqlUserPasswordPolicyStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sqluser"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/sqluser"
 
 sqluser.NewSqlUserPasswordPolicyStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SqlUserPasswordPolicyStatusList
 ```
@@ -2132,7 +2132,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.sqlUser.SqlUserPasswordPolicyStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sqluser"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/sqluser"
 
 sqluser.NewSqlUserPasswordPolicyStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SqlUserPasswordPolicyStatusOutputReference
 ```
@@ -2421,7 +2421,7 @@ func InternalValue() SqlUserPasswordPolicyStatus
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.sqlUser.SqlUserSqlServerUserDetailsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sqluser"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/sqluser"
 
 sqluser.NewSqlUserSqlServerUserDetailsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SqlUserSqlServerUserDetailsList
 ```
@@ -2570,7 +2570,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.sqlUser.SqlUserSqlServerUserDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sqluser"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/sqluser"
 
 sqluser.NewSqlUserSqlServerUserDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SqlUserSqlServerUserDetailsOutputReference
 ```
@@ -2859,7 +2859,7 @@ func InternalValue() SqlUserSqlServerUserDetails
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.sqlUser.SqlUserTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sqluser"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/sqluser"
 
 sqluser.NewSqlUserTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SqlUserTimeoutsOutputReference
 ```

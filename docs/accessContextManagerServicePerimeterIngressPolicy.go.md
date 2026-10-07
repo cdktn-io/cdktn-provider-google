@@ -4,12 +4,12 @@
 
 ### AccessContextManagerServicePerimeterIngressPolicy <a name="AccessContextManagerServicePerimeterIngressPolicy" id="@cdktn/provider-google.accessContextManagerServicePerimeterIngressPolicy.AccessContextManagerServicePerimeterIngressPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/access_context_manager_service_perimeter_ingress_policy google_access_context_manager_service_perimeter_ingress_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/access_context_manager_service_perimeter_ingress_policy google_access_context_manager_service_perimeter_ingress_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeterIngressPolicy.AccessContextManagerServicePerimeterIngressPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeteringresspolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/accesscontextmanagerserviceperimeteringresspolicy"
 
 accesscontextmanagerserviceperimeteringresspolicy.NewAccessContextManagerServicePerimeterIngressPolicy(scope Construct, id *string, config AccessContextManagerServicePerimeterIngressPolicyConfig) AccessContextManagerServicePerimeterIngressPolicy
 ```
@@ -481,7 +481,7 @@ func ResetTitle()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.accessContextManagerServicePerimeterIngressPolicy.AccessContextManagerServicePerimeterIngressPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeteringresspolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/accesscontextmanagerserviceperimeteringresspolicy"
 
 accesscontextmanagerserviceperimeteringresspolicy.AccessContextManagerServicePerimeterIngressPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.accessContextManagerServicePerimeterIngressPolicy.AccessContextManagerServicePerimeterIngressPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeteringresspolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/accesscontextmanagerserviceperimeteringresspolicy"
 
 accesscontextmanagerserviceperimeteringresspolicy.AccessContextManagerServicePerimeterIngressPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ accesscontextmanagerserviceperimeteringresspolicy.AccessContextManagerServicePer
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.accessContextManagerServicePerimeterIngressPolicy.AccessContextManagerServicePerimeterIngressPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeteringresspolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/accesscontextmanagerserviceperimeteringresspolicy"
 
 accesscontextmanagerserviceperimeteringresspolicy.AccessContextManagerServicePerimeterIngressPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -541,7 +541,7 @@ accesscontextmanagerserviceperimeteringresspolicy.AccessContextManagerServicePer
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.accessContextManagerServicePerimeterIngressPolicy.AccessContextManagerServicePerimeterIngressPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeteringresspolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/accesscontextmanagerserviceperimeteringresspolicy"
 
 accesscontextmanagerserviceperimeteringresspolicy.AccessContextManagerServicePerimeterIngressPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -570,7 +570,7 @@ The construct id used in the generated config for the AccessContextManagerServic
 
 The id of the existing AccessContextManagerServicePerimeterIngressPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/access_context_manager_service_perimeter_ingress_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/access_context_manager_service_perimeter_ingress_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -946,7 +946,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.accessContextManagerServicePerimeterIngressPolicy.AccessContextManagerServicePerimeterIngressPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeteringresspolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/accesscontextmanagerserviceperimeteringresspolicy"
 
 &accesscontextmanagerserviceperimeteringresspolicy.AccessContextManagerServicePerimeterIngressPolicyConfig {
 	Connection: interface{},
@@ -959,9 +959,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextman
 	Perimeter: *string,
 	DeletionPolicy: *string,
 	Id: *string,
-	IngressFrom: github.com/cdktn-io/cdktn-provider-google-go/google/v20.accessContextManagerServicePerimeterIngressPolicy.AccessContextManagerServicePerimeterIngressPolicyIngressFrom,
-	IngressTo: github.com/cdktn-io/cdktn-provider-google-go/google/v20.accessContextManagerServicePerimeterIngressPolicy.AccessContextManagerServicePerimeterIngressPolicyIngressTo,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.accessContextManagerServicePerimeterIngressPolicy.AccessContextManagerServicePerimeterIngressPolicyTimeouts,
+	IngressFrom: github.com/cdktn-io/cdktn-provider-google-go/google/v21.accessContextManagerServicePerimeterIngressPolicy.AccessContextManagerServicePerimeterIngressPolicyIngressFrom,
+	IngressTo: github.com/cdktn-io/cdktn-provider-google-go/google/v21.accessContextManagerServicePerimeterIngressPolicy.AccessContextManagerServicePerimeterIngressPolicyIngressTo,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.accessContextManagerServicePerimeterIngressPolicy.AccessContextManagerServicePerimeterIngressPolicyTimeouts,
 	Title: *string,
 }
 ```
@@ -979,7 +979,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextman
 | <code><a href="#@cdktn/provider-google.accessContextManagerServicePerimeterIngressPolicy.AccessContextManagerServicePerimeterIngressPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.accessContextManagerServicePerimeterIngressPolicy.AccessContextManagerServicePerimeterIngressPolicyConfig.property.perimeter">Perimeter</a></code> | <code>*string</code> | The name of the Service Perimeter to add this resource to. |
 | <code><a href="#@cdktn/provider-google.accessContextManagerServicePerimeterIngressPolicy.AccessContextManagerServicePerimeterIngressPolicyConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.accessContextManagerServicePerimeterIngressPolicy.AccessContextManagerServicePerimeterIngressPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/access_context_manager_service_perimeter_ingress_policy#id AccessContextManagerServicePerimeterIngressPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.accessContextManagerServicePerimeterIngressPolicy.AccessContextManagerServicePerimeterIngressPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/access_context_manager_service_perimeter_ingress_policy#id AccessContextManagerServicePerimeterIngressPolicy#id}. |
 | <code><a href="#@cdktn/provider-google.accessContextManagerServicePerimeterIngressPolicy.AccessContextManagerServicePerimeterIngressPolicyConfig.property.ingressFrom">IngressFrom</a></code> | <code><a href="#@cdktn/provider-google.accessContextManagerServicePerimeterIngressPolicy.AccessContextManagerServicePerimeterIngressPolicyIngressFrom">AccessContextManagerServicePerimeterIngressPolicyIngressFrom</a></code> | ingress_from block. |
 | <code><a href="#@cdktn/provider-google.accessContextManagerServicePerimeterIngressPolicy.AccessContextManagerServicePerimeterIngressPolicyConfig.property.ingressTo">IngressTo</a></code> | <code><a href="#@cdktn/provider-google.accessContextManagerServicePerimeterIngressPolicy.AccessContextManagerServicePerimeterIngressPolicyIngressTo">AccessContextManagerServicePerimeterIngressPolicyIngressTo</a></code> | ingress_to block. |
 | <code><a href="#@cdktn/provider-google.accessContextManagerServicePerimeterIngressPolicy.AccessContextManagerServicePerimeterIngressPolicyConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.accessContextManagerServicePerimeterIngressPolicy.AccessContextManagerServicePerimeterIngressPolicyTimeouts">AccessContextManagerServicePerimeterIngressPolicyTimeouts</a></code> | timeouts block. |
@@ -1067,7 +1067,7 @@ Perimeter *string
 
 The name of the Service Perimeter to add this resource to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/access_context_manager_service_perimeter_ingress_policy#perimeter AccessContextManagerServicePerimeterIngressPolicy#perimeter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/access_context_manager_service_perimeter_ingress_policy#perimeter AccessContextManagerServicePerimeterIngressPolicy#perimeter}
 
 ---
 
@@ -1088,7 +1088,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/access_context_manager_service_perimeter_ingress_policy#deletion_policy AccessContextManagerServicePerimeterIngressPolicy#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/access_context_manager_service_perimeter_ingress_policy#deletion_policy AccessContextManagerServicePerimeterIngressPolicy#deletion_policy}
 
 ---
 
@@ -1100,7 +1100,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/access_context_manager_service_perimeter_ingress_policy#id AccessContextManagerServicePerimeterIngressPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/access_context_manager_service_perimeter_ingress_policy#id AccessContextManagerServicePerimeterIngressPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1117,7 +1117,7 @@ IngressFrom AccessContextManagerServicePerimeterIngressPolicyIngressFrom
 
 ingress_from block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/access_context_manager_service_perimeter_ingress_policy#ingress_from AccessContextManagerServicePerimeterIngressPolicy#ingress_from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/access_context_manager_service_perimeter_ingress_policy#ingress_from AccessContextManagerServicePerimeterIngressPolicy#ingress_from}
 
 ---
 
@@ -1131,7 +1131,7 @@ IngressTo AccessContextManagerServicePerimeterIngressPolicyIngressTo
 
 ingress_to block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/access_context_manager_service_perimeter_ingress_policy#ingress_to AccessContextManagerServicePerimeterIngressPolicy#ingress_to}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/access_context_manager_service_perimeter_ingress_policy#ingress_to AccessContextManagerServicePerimeterIngressPolicy#ingress_to}
 
 ---
 
@@ -1145,7 +1145,7 @@ Timeouts AccessContextManagerServicePerimeterIngressPolicyTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/access_context_manager_service_perimeter_ingress_policy#timeouts AccessContextManagerServicePerimeterIngressPolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/access_context_manager_service_perimeter_ingress_policy#timeouts AccessContextManagerServicePerimeterIngressPolicy#timeouts}
 
 ---
 
@@ -1159,7 +1159,7 @@ Title *string
 
 Human readable title. Must be unique within the perimeter. Does not affect behavior.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/access_context_manager_service_perimeter_ingress_policy#title AccessContextManagerServicePerimeterIngressPolicy#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/access_context_manager_service_perimeter_ingress_policy#title AccessContextManagerServicePerimeterIngressPolicy#title}
 
 ---
 
@@ -1168,7 +1168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.accessContextManagerServicePerimeterIngressPolicy.AccessContextManagerServicePerimeterIngressPolicyIngressFrom.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeteringresspolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/accesscontextmanagerserviceperimeteringresspolicy"
 
 &accesscontextmanagerserviceperimeteringresspolicy.AccessContextManagerServicePerimeterIngressPolicyIngressFrom {
 	Identities: *[]*string,
@@ -1202,7 +1202,7 @@ are supported and other identity types are not supported.The v1 identities
 that have the prefix user, group and serviceAccount in
 https://cloud.google.com/iam/docs/principal-identifiers#v1 are supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/access_context_manager_service_perimeter_ingress_policy#identities AccessContextManagerServicePerimeterIngressPolicy#identities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/access_context_manager_service_perimeter_ingress_policy#identities AccessContextManagerServicePerimeterIngressPolicy#identities}
 
 ---
 
@@ -1219,7 +1219,7 @@ Specifies the type of identities that are allowed access from outside the perime
 If left unspecified, then members of 'identities' field will be
 allowed access. Possible values: ["ANY_IDENTITY", "ANY_USER_ACCOUNT", "ANY_SERVICE_ACCOUNT"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/access_context_manager_service_perimeter_ingress_policy#identity_type AccessContextManagerServicePerimeterIngressPolicy#identity_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/access_context_manager_service_perimeter_ingress_policy#identity_type AccessContextManagerServicePerimeterIngressPolicy#identity_type}
 
 ---
 
@@ -1233,7 +1233,7 @@ Sources interface{}
 
 sources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/access_context_manager_service_perimeter_ingress_policy#sources AccessContextManagerServicePerimeterIngressPolicy#sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/access_context_manager_service_perimeter_ingress_policy#sources AccessContextManagerServicePerimeterIngressPolicy#sources}
 
 ---
 
@@ -1242,11 +1242,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.accessContextManagerServicePerimeterIngressPolicy.AccessContextManagerServicePerimeterIngressPolicyIngressFromSources.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeteringresspolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/accesscontextmanagerserviceperimeteringresspolicy"
 
 &accesscontextmanagerserviceperimeteringresspolicy.AccessContextManagerServicePerimeterIngressPolicyIngressFromSources {
 	AccessLevel: *string,
-	PscEndpoint: github.com/cdktn-io/cdktn-provider-google-go/google/v20.accessContextManagerServicePerimeterIngressPolicy.AccessContextManagerServicePerimeterIngressPolicyIngressFromSourcesPscEndpoint,
+	PscEndpoint: github.com/cdktn-io/cdktn-provider-google-go/google/v21.accessContextManagerServicePerimeterIngressPolicy.AccessContextManagerServicePerimeterIngressPolicyIngressFromSourcesPscEndpoint,
 	Resource: *string,
 }
 ```
@@ -1279,7 +1279,7 @@ with request origins within the perimeter.
 Example 'accessPolicies/MY_POLICY/accessLevels/MY_LEVEL.'
 If * is specified, then all IngressSources will be allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/access_context_manager_service_perimeter_ingress_policy#access_level AccessContextManagerServicePerimeterIngressPolicy#access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/access_context_manager_service_perimeter_ingress_policy#access_level AccessContextManagerServicePerimeterIngressPolicy#access_level}
 
 ---
 
@@ -1293,7 +1293,7 @@ PscEndpoint AccessContextManagerServicePerimeterIngressPolicyIngressFromSourcesP
 
 psc_endpoint block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/access_context_manager_service_perimeter_ingress_policy#psc_endpoint AccessContextManagerServicePerimeterIngressPolicy#psc_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/access_context_manager_service_perimeter_ingress_policy#psc_endpoint AccessContextManagerServicePerimeterIngressPolicy#psc_endpoint}
 
 ---
 
@@ -1316,7 +1316,7 @@ The project may be in any Google Cloud organization, not just the
 organization that the perimeter is defined in. '*' is not allowed, the case
 of allowing all Google Cloud resources only is not supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/access_context_manager_service_perimeter_ingress_policy#resource AccessContextManagerServicePerimeterIngressPolicy#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/access_context_manager_service_perimeter_ingress_policy#resource AccessContextManagerServicePerimeterIngressPolicy#resource}
 
 ---
 
@@ -1325,7 +1325,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.accessContextManagerServicePerimeterIngressPolicy.AccessContextManagerServicePerimeterIngressPolicyIngressFromSourcesPscEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeteringresspolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/accesscontextmanagerserviceperimeteringresspolicy"
 
 &accesscontextmanagerserviceperimeteringresspolicy.AccessContextManagerServicePerimeterIngressPolicyIngressFromSourcesPscEndpoint {
 	ForwardingRule: *string,
@@ -1350,7 +1350,7 @@ ForwardingRule *string
 
 The full resource name of the global forwarding rule that identifies a Private Service Connect endpoint. Forwarding rule format: '//compute.googleapis.com/projects/{PROJECT_ID}/global/forwardingRules/{FORWARDING_RULE_ID}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/access_context_manager_service_perimeter_ingress_policy#forwarding_rule AccessContextManagerServicePerimeterIngressPolicy#forwarding_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/access_context_manager_service_perimeter_ingress_policy#forwarding_rule AccessContextManagerServicePerimeterIngressPolicy#forwarding_rule}
 
 ---
 
@@ -1359,7 +1359,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.accessContextManagerServicePerimeterIngressPolicy.AccessContextManagerServicePerimeterIngressPolicyIngressTo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeteringresspolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/accesscontextmanagerserviceperimeteringresspolicy"
 
 &accesscontextmanagerserviceperimeteringresspolicy.AccessContextManagerServicePerimeterIngressPolicyIngressTo {
 	Operations: interface{},
@@ -1388,7 +1388,7 @@ Operations interface{}
 
 operations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/access_context_manager_service_perimeter_ingress_policy#operations AccessContextManagerServicePerimeterIngressPolicy#operations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/access_context_manager_service_perimeter_ingress_policy#operations AccessContextManagerServicePerimeterIngressPolicy#operations}
 
 ---
 
@@ -1408,7 +1408,7 @@ then this 'IngressTo' rule will authorize access to all
 resources inside the perimeter, provided that the request
 also matches the 'operations' field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/access_context_manager_service_perimeter_ingress_policy#resources AccessContextManagerServicePerimeterIngressPolicy#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/access_context_manager_service_perimeter_ingress_policy#resources AccessContextManagerServicePerimeterIngressPolicy#resources}
 
 ---
 
@@ -1422,7 +1422,7 @@ Roles *[]*string
 
 A list of IAM roles that represent the set of operations that the sources specified in the corresponding 'IngressFrom' are allowed to perform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/access_context_manager_service_perimeter_ingress_policy#roles AccessContextManagerServicePerimeterIngressPolicy#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/access_context_manager_service_perimeter_ingress_policy#roles AccessContextManagerServicePerimeterIngressPolicy#roles}
 
 ---
 
@@ -1431,7 +1431,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.accessContextManagerServicePerimeterIngressPolicy.AccessContextManagerServicePerimeterIngressPolicyIngressToOperations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeteringresspolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/accesscontextmanagerserviceperimeteringresspolicy"
 
 &accesscontextmanagerserviceperimeteringresspolicy.AccessContextManagerServicePerimeterIngressPolicyIngressToOperations {
 	MethodSelectors: interface{},
@@ -1458,7 +1458,7 @@ MethodSelectors interface{}
 
 method_selectors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/access_context_manager_service_perimeter_ingress_policy#method_selectors AccessContextManagerServicePerimeterIngressPolicy#method_selectors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/access_context_manager_service_perimeter_ingress_policy#method_selectors AccessContextManagerServicePerimeterIngressPolicy#method_selectors}
 
 ---
 
@@ -1475,7 +1475,7 @@ The name of the API whose methods or permissions the 'IngressPolicy' or 'EgressP
 A single 'ApiOperation' with 'serviceName'
 field set to '*' will allow all methods AND permissions for all services.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/access_context_manager_service_perimeter_ingress_policy#service_name AccessContextManagerServicePerimeterIngressPolicy#service_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/access_context_manager_service_perimeter_ingress_policy#service_name AccessContextManagerServicePerimeterIngressPolicy#service_name}
 
 ---
 
@@ -1484,7 +1484,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.accessContextManagerServicePerimeterIngressPolicy.AccessContextManagerServicePerimeterIngressPolicyIngressToOperationsMethodSelectors.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeteringresspolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/accesscontextmanagerserviceperimeteringresspolicy"
 
 &accesscontextmanagerserviceperimeteringresspolicy.AccessContextManagerServicePerimeterIngressPolicyIngressToOperationsMethodSelectors {
 	Method: *string,
@@ -1514,7 +1514,7 @@ Value for method should be a valid method name for the corresponding serviceName
 If '*' used as value for 'method', then
 ALL methods and permissions are allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/access_context_manager_service_perimeter_ingress_policy#method AccessContextManagerServicePerimeterIngressPolicy#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/access_context_manager_service_perimeter_ingress_policy#method AccessContextManagerServicePerimeterIngressPolicy#method}
 
 ---
 
@@ -1528,7 +1528,7 @@ Permission *string
 
 Value for permission should be a valid Cloud IAM permission for the corresponding 'serviceName' in 'ApiOperation'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/access_context_manager_service_perimeter_ingress_policy#permission AccessContextManagerServicePerimeterIngressPolicy#permission}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/access_context_manager_service_perimeter_ingress_policy#permission AccessContextManagerServicePerimeterIngressPolicy#permission}
 
 ---
 
@@ -1537,7 +1537,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.accessContextManagerServicePerimeterIngressPolicy.AccessContextManagerServicePerimeterIngressPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeteringresspolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/accesscontextmanagerserviceperimeteringresspolicy"
 
 &accesscontextmanagerserviceperimeteringresspolicy.AccessContextManagerServicePerimeterIngressPolicyTimeouts {
 	Create: *string,
@@ -1550,9 +1550,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextman
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.accessContextManagerServicePerimeterIngressPolicy.AccessContextManagerServicePerimeterIngressPolicyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/access_context_manager_service_perimeter_ingress_policy#create AccessContextManagerServicePerimeterIngressPolicy#create}. |
-| <code><a href="#@cdktn/provider-google.accessContextManagerServicePerimeterIngressPolicy.AccessContextManagerServicePerimeterIngressPolicyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/access_context_manager_service_perimeter_ingress_policy#delete AccessContextManagerServicePerimeterIngressPolicy#delete}. |
-| <code><a href="#@cdktn/provider-google.accessContextManagerServicePerimeterIngressPolicy.AccessContextManagerServicePerimeterIngressPolicyTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/access_context_manager_service_perimeter_ingress_policy#update AccessContextManagerServicePerimeterIngressPolicy#update}. |
+| <code><a href="#@cdktn/provider-google.accessContextManagerServicePerimeterIngressPolicy.AccessContextManagerServicePerimeterIngressPolicyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/access_context_manager_service_perimeter_ingress_policy#create AccessContextManagerServicePerimeterIngressPolicy#create}. |
+| <code><a href="#@cdktn/provider-google.accessContextManagerServicePerimeterIngressPolicy.AccessContextManagerServicePerimeterIngressPolicyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/access_context_manager_service_perimeter_ingress_policy#delete AccessContextManagerServicePerimeterIngressPolicy#delete}. |
+| <code><a href="#@cdktn/provider-google.accessContextManagerServicePerimeterIngressPolicy.AccessContextManagerServicePerimeterIngressPolicyTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/access_context_manager_service_perimeter_ingress_policy#update AccessContextManagerServicePerimeterIngressPolicy#update}. |
 
 ---
 
@@ -1564,7 +1564,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/access_context_manager_service_perimeter_ingress_policy#create AccessContextManagerServicePerimeterIngressPolicy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/access_context_manager_service_perimeter_ingress_policy#create AccessContextManagerServicePerimeterIngressPolicy#create}.
 
 ---
 
@@ -1576,7 +1576,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/access_context_manager_service_perimeter_ingress_policy#delete AccessContextManagerServicePerimeterIngressPolicy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/access_context_manager_service_perimeter_ingress_policy#delete AccessContextManagerServicePerimeterIngressPolicy#delete}.
 
 ---
 
@@ -1588,7 +1588,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/access_context_manager_service_perimeter_ingress_policy#update AccessContextManagerServicePerimeterIngressPolicy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/access_context_manager_service_perimeter_ingress_policy#update AccessContextManagerServicePerimeterIngressPolicy#update}.
 
 ---
 
@@ -1599,7 +1599,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeterIngressPolicy.AccessContextManagerServicePerimeterIngressPolicyIngressFromOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeteringresspolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/accesscontextmanagerserviceperimeteringresspolicy"
 
 accesscontextmanagerserviceperimeteringresspolicy.NewAccessContextManagerServicePerimeterIngressPolicyIngressFromOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessContextManagerServicePerimeterIngressPolicyIngressFromOutputReference
 ```
@@ -1948,7 +1948,7 @@ func InternalValue() AccessContextManagerServicePerimeterIngressPolicyIngressFro
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeterIngressPolicy.AccessContextManagerServicePerimeterIngressPolicyIngressFromSourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeteringresspolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/accesscontextmanagerserviceperimeteringresspolicy"
 
 accesscontextmanagerserviceperimeteringresspolicy.NewAccessContextManagerServicePerimeterIngressPolicyIngressFromSourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessContextManagerServicePerimeterIngressPolicyIngressFromSourcesList
 ```
@@ -2108,7 +2108,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeterIngressPolicy.AccessContextManagerServicePerimeterIngressPolicyIngressFromSourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeteringresspolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/accesscontextmanagerserviceperimeteringresspolicy"
 
 accesscontextmanagerserviceperimeteringresspolicy.NewAccessContextManagerServicePerimeterIngressPolicyIngressFromSourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessContextManagerServicePerimeterIngressPolicyIngressFromSourcesOutputReference
 ```
@@ -2475,7 +2475,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeterIngressPolicy.AccessContextManagerServicePerimeterIngressPolicyIngressFromSourcesPscEndpointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeteringresspolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/accesscontextmanagerserviceperimeteringresspolicy"
 
 accesscontextmanagerserviceperimeteringresspolicy.NewAccessContextManagerServicePerimeterIngressPolicyIngressFromSourcesPscEndpointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessContextManagerServicePerimeterIngressPolicyIngressFromSourcesPscEndpointOutputReference
 ```
@@ -2753,7 +2753,7 @@ func InternalValue() AccessContextManagerServicePerimeterIngressPolicyIngressFro
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeterIngressPolicy.AccessContextManagerServicePerimeterIngressPolicyIngressToOperationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeteringresspolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/accesscontextmanagerserviceperimeteringresspolicy"
 
 accesscontextmanagerserviceperimeteringresspolicy.NewAccessContextManagerServicePerimeterIngressPolicyIngressToOperationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessContextManagerServicePerimeterIngressPolicyIngressToOperationsList
 ```
@@ -2913,7 +2913,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeterIngressPolicy.AccessContextManagerServicePerimeterIngressPolicyIngressToOperationsMethodSelectorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeteringresspolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/accesscontextmanagerserviceperimeteringresspolicy"
 
 accesscontextmanagerserviceperimeteringresspolicy.NewAccessContextManagerServicePerimeterIngressPolicyIngressToOperationsMethodSelectorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessContextManagerServicePerimeterIngressPolicyIngressToOperationsMethodSelectorsList
 ```
@@ -3073,7 +3073,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeterIngressPolicy.AccessContextManagerServicePerimeterIngressPolicyIngressToOperationsMethodSelectorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeteringresspolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/accesscontextmanagerserviceperimeteringresspolicy"
 
 accesscontextmanagerserviceperimeteringresspolicy.NewAccessContextManagerServicePerimeterIngressPolicyIngressToOperationsMethodSelectorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessContextManagerServicePerimeterIngressPolicyIngressToOperationsMethodSelectorsOutputReference
 ```
@@ -3398,7 +3398,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeterIngressPolicy.AccessContextManagerServicePerimeterIngressPolicyIngressToOperationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeteringresspolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/accesscontextmanagerserviceperimeteringresspolicy"
 
 accesscontextmanagerserviceperimeteringresspolicy.NewAccessContextManagerServicePerimeterIngressPolicyIngressToOperationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessContextManagerServicePerimeterIngressPolicyIngressToOperationsOutputReference
 ```
@@ -3736,7 +3736,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeterIngressPolicy.AccessContextManagerServicePerimeterIngressPolicyIngressToOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeteringresspolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/accesscontextmanagerserviceperimeteringresspolicy"
 
 accesscontextmanagerserviceperimeteringresspolicy.NewAccessContextManagerServicePerimeterIngressPolicyIngressToOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessContextManagerServicePerimeterIngressPolicyIngressToOutputReference
 ```
@@ -4085,7 +4085,7 @@ func InternalValue() AccessContextManagerServicePerimeterIngressPolicyIngressTo
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerServicePerimeterIngressPolicy.AccessContextManagerServicePerimeterIngressPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/accesscontextmanagerserviceperimeteringresspolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/accesscontextmanagerserviceperimeteringresspolicy"
 
 accesscontextmanagerserviceperimeteringresspolicy.NewAccessContextManagerServicePerimeterIngressPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessContextManagerServicePerimeterIngressPolicyTimeoutsOutputReference
 ```

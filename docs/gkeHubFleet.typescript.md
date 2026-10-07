@@ -4,7 +4,7 @@
 
 ### GkeHubFleet <a name="GkeHubFleet" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gke_hub_fleet google_gke_hub_fleet}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gke_hub_fleet google_gke_hub_fleet}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleet.Initializer"></a>
 
@@ -80,6 +80,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleet.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleet.resetDisplayName">resetDisplayName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleet.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleet.resetLabels">resetLabels</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleet.resetProject">resetProject</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleet.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 
@@ -442,6 +443,12 @@ public resetDisplayName(): void
 public resetId(): void
 ```
 
+##### `resetLabels` <a name="resetLabels" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleet.resetLabels"></a>
+
+```typescript
+public resetLabels(): void
+```
+
 ##### `resetProject` <a name="resetProject" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleet.resetProject"></a>
 
 ```typescript
@@ -557,7 +564,7 @@ The construct id used in the generated config for the GkeHubFleet to import.
 
 The id of the existing GkeHubFleet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gke_hub_fleet#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gke_hub_fleet#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -590,7 +597,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleet.property.createTime">createTime</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleet.property.defaultClusterConfig">defaultClusterConfig</a></code> | <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigOutputReference">GkeHubFleetDefaultClusterConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleet.property.deleteTime">deleteTime</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleet.property.effectiveLabels">effectiveLabels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleet.property.state">state</a></code> | <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetStateList">GkeHubFleetStateList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleet.property.terraformLabels">terraformLabels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleet.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetTimeoutsOutputReference">GkeHubFleetTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleet.property.uid">uid</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleet.property.updateTime">updateTime</a></code> | <code>string</code> | *No description.* |
@@ -598,11 +607,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleet.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleet.property.displayNameInput">displayNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleet.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleet.property.labelsInput">labelsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleet.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleet.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetTimeouts">GkeHubFleetTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleet.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleet.property.displayName">displayName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleet.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleet.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleet.property.project">project</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -779,6 +790,16 @@ public readonly deleteTime: string;
 
 ---
 
+##### `effectiveLabels`<sup>Required</sup> <a name="effectiveLabels" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleet.property.effectiveLabels"></a>
+
+```typescript
+public readonly effectiveLabels: StringMap;
+```
+
+- *Type:* cdktn.StringMap
+
+---
+
 ##### `state`<sup>Required</sup> <a name="state" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleet.property.state"></a>
 
 ```typescript
@@ -786,6 +807,16 @@ public readonly state: GkeHubFleetStateList;
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetStateList">GkeHubFleetStateList</a>
+
+---
+
+##### `terraformLabels`<sup>Required</sup> <a name="terraformLabels" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleet.property.terraformLabels"></a>
+
+```typescript
+public readonly terraformLabels: StringMap;
+```
+
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -859,6 +890,16 @@ public readonly idInput: string;
 
 ---
 
+##### `labelsInput`<sup>Optional</sup> <a name="labelsInput" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleet.property.labelsInput"></a>
+
+```typescript
+public readonly labelsInput: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
+
+---
+
 ##### `projectInput`<sup>Optional</sup> <a name="projectInput" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleet.property.projectInput"></a>
 
 ```typescript
@@ -906,6 +947,16 @@ public readonly id: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `labels`<sup>Required</sup> <a name="labels" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleet.property.labels"></a>
+
+```typescript
+public readonly labels: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
 
 ---
 
@@ -963,8 +1014,9 @@ const gkeHubFleetConfig: gkeHubFleet.GkeHubFleetConfig = { ... }
 | <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetConfig.property.defaultClusterConfig">defaultClusterConfig</a></code> | <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfig">GkeHubFleetDefaultClusterConfig</a></code> | default_cluster_config block. |
 | <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetConfig.property.displayName">displayName</a></code> | <code>string</code> | A user-assigned display name of the Fleet. |
-| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gke_hub_fleet#id GkeHubFleet#id}. |
-| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gke_hub_fleet#project GkeHubFleet#project}. |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gke_hub_fleet#id GkeHubFleet#id}. |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetConfig.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | Labels for this Fleet. |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gke_hub_fleet#project GkeHubFleet#project}. |
 | <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetTimeouts">GkeHubFleetTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1049,7 +1101,7 @@ public readonly defaultClusterConfig: GkeHubFleetDefaultClusterConfig;
 
 default_cluster_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gke_hub_fleet#default_cluster_config GkeHubFleet#default_cluster_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gke_hub_fleet#default_cluster_config GkeHubFleet#default_cluster_config}
 
 ---
 
@@ -1071,7 +1123,7 @@ management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gke_hub_fleet#deletion_policy GkeHubFleet#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gke_hub_fleet#deletion_policy GkeHubFleet#deletion_policy}
 
 ---
 
@@ -1088,7 +1140,7 @@ A user-assigned display name of the Fleet.
 When present, it must be between 4 to 30 characters.
 Allowed characters are: lowercase and uppercase letters, numbers, hyphen, single-quote, double-quote, space, and exclamation point.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gke_hub_fleet#display_name GkeHubFleet#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gke_hub_fleet#display_name GkeHubFleet#display_name}
 
 ---
 
@@ -1100,10 +1152,27 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gke_hub_fleet#id GkeHubFleet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gke_hub_fleet#id GkeHubFleet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `labels`<sup>Optional</sup> <a name="labels" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetConfig.property.labels"></a>
+
+```typescript
+public readonly labels: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
+
+Labels for this Fleet.
+
+**Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+Please refer to the field 'effective_labels' for all of the labels present on the resource.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gke_hub_fleet#labels GkeHubFleet#labels}
 
 ---
 
@@ -1115,7 +1184,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gke_hub_fleet#project GkeHubFleet#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gke_hub_fleet#project GkeHubFleet#project}.
 
 ---
 
@@ -1129,7 +1198,7 @@ public readonly timeouts: GkeHubFleetTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gke_hub_fleet#timeouts GkeHubFleet#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gke_hub_fleet#timeouts GkeHubFleet#timeouts}
 
 ---
 
@@ -1148,6 +1217,7 @@ const gkeHubFleetDefaultClusterConfig: gkeHubFleet.GkeHubFleetDefaultClusterConf
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfig.property.binaryAuthorizationConfig">binaryAuthorizationConfig</a></code> | <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigBinaryAuthorizationConfig">GkeHubFleetDefaultClusterConfigBinaryAuthorizationConfig</a></code> | binary_authorization_config block. |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfig.property.compliancePostureConfig">compliancePostureConfig</a></code> | <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfig">GkeHubFleetDefaultClusterConfigCompliancePostureConfig</a></code> | compliance_posture_config block. |
 | <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfig.property.securityPostureConfig">securityPostureConfig</a></code> | <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigSecurityPostureConfig">GkeHubFleetDefaultClusterConfigSecurityPostureConfig</a></code> | security_posture_config block. |
 
 ---
@@ -1162,7 +1232,21 @@ public readonly binaryAuthorizationConfig: GkeHubFleetDefaultClusterConfigBinary
 
 binary_authorization_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gke_hub_fleet#binary_authorization_config GkeHubFleet#binary_authorization_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gke_hub_fleet#binary_authorization_config GkeHubFleet#binary_authorization_config}
+
+---
+
+##### `compliancePostureConfig`<sup>Optional</sup> <a name="compliancePostureConfig" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfig.property.compliancePostureConfig"></a>
+
+```typescript
+public readonly compliancePostureConfig: GkeHubFleetDefaultClusterConfigCompliancePostureConfig;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfig">GkeHubFleetDefaultClusterConfigCompliancePostureConfig</a>
+
+compliance_posture_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gke_hub_fleet#compliance_posture_config GkeHubFleet#compliance_posture_config}
 
 ---
 
@@ -1176,7 +1260,7 @@ public readonly securityPostureConfig: GkeHubFleetDefaultClusterConfigSecurityPo
 
 security_posture_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gke_hub_fleet#security_posture_config GkeHubFleet#security_posture_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gke_hub_fleet#security_posture_config GkeHubFleet#security_posture_config}
 
 ---
 
@@ -1209,7 +1293,7 @@ public readonly evaluationMode: string;
 
 Mode of operation for binauthz policy evaluation. Possible values: ["DISABLED", "POLICY_BINDINGS"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gke_hub_fleet#evaluation_mode GkeHubFleet#evaluation_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gke_hub_fleet#evaluation_mode GkeHubFleet#evaluation_mode}
 
 ---
 
@@ -1223,7 +1307,7 @@ public readonly policyBindings: IResolvable | GkeHubFleetDefaultClusterConfigBin
 
 policy_bindings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gke_hub_fleet#policy_bindings GkeHubFleet#policy_bindings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gke_hub_fleet#policy_bindings GkeHubFleet#policy_bindings}
 
 ---
 
@@ -1255,7 +1339,86 @@ public readonly name: string;
 
 The relative resource name of the binauthz platform policy to audit. GKE platform policies have the following format: 'projects/{project_number}/platforms/gke/policies/{policy_id}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gke_hub_fleet#name GkeHubFleet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gke_hub_fleet#name GkeHubFleet#name}
+
+---
+
+### GkeHubFleetDefaultClusterConfigCompliancePostureConfig <a name="GkeHubFleetDefaultClusterConfigCompliancePostureConfig" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfig.Initializer"></a>
+
+```typescript
+import { gkeHubFleet } from '@cdktn/provider-google'
+
+const gkeHubFleetDefaultClusterConfigCompliancePostureConfig: gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfig.property.complianceStandards">complianceStandards</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandards">GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandards</a>[]</code> | compliance_standards block. |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfig.property.mode">mode</a></code> | <code>string</code> | Sets which mode to use for Compliance Posture features. Possible values: ["DISABLED", "ENABLED"]. |
+
+---
+
+##### `complianceStandards`<sup>Optional</sup> <a name="complianceStandards" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfig.property.complianceStandards"></a>
+
+```typescript
+public readonly complianceStandards: IResolvable | GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandards[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandards">GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandards</a>[]
+
+compliance_standards block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gke_hub_fleet#compliance_standards GkeHubFleet#compliance_standards}
+
+---
+
+##### `mode`<sup>Optional</sup> <a name="mode" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfig.property.mode"></a>
+
+```typescript
+public readonly mode: string;
+```
+
+- *Type:* string
+
+Sets which mode to use for Compliance Posture features. Possible values: ["DISABLED", "ENABLED"].
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gke_hub_fleet#mode GkeHubFleet#mode}
+
+---
+
+### GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandards <a name="GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandards" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandards"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandards.Initializer"></a>
+
+```typescript
+import { gkeHubFleet } from '@cdktn/provider-google'
+
+const gkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandards: gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandards = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandards.property.standard">standard</a></code> | <code>string</code> | Name of the compliance standard. |
+
+---
+
+##### `standard`<sup>Optional</sup> <a name="standard" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandards.property.standard"></a>
+
+```typescript
+public readonly standard: string;
+```
+
+- *Type:* string
+
+Name of the compliance standard.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gke_hub_fleet#standard GkeHubFleet#standard}
 
 ---
 
@@ -1288,7 +1451,7 @@ public readonly mode: string;
 
 Sets which mode to use for Security Posture features. Possible values: ["DISABLED", "BASIC", "ENTERPRISE"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gke_hub_fleet#mode GkeHubFleet#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gke_hub_fleet#mode GkeHubFleet#mode}
 
 ---
 
@@ -1302,7 +1465,7 @@ public readonly vulnerabilityMode: string;
 
 Sets which mode to use for vulnerability scanning. Possible values: ["VULNERABILITY_DISABLED", "VULNERABILITY_BASIC", "VULNERABILITY_ENTERPRISE"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gke_hub_fleet#vulnerability_mode GkeHubFleet#vulnerability_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gke_hub_fleet#vulnerability_mode GkeHubFleet#vulnerability_mode}
 
 ---
 
@@ -1331,9 +1494,9 @@ const gkeHubFleetTimeouts: gkeHubFleet.GkeHubFleetTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gke_hub_fleet#create GkeHubFleet#create}. |
-| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gke_hub_fleet#delete GkeHubFleet#delete}. |
-| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gke_hub_fleet#update GkeHubFleet#update}. |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gke_hub_fleet#create GkeHubFleet#create}. |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gke_hub_fleet#delete GkeHubFleet#delete}. |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gke_hub_fleet#update GkeHubFleet#update}. |
 
 ---
 
@@ -1345,7 +1508,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gke_hub_fleet#create GkeHubFleet#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gke_hub_fleet#create GkeHubFleet#create}.
 
 ---
 
@@ -1357,7 +1520,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gke_hub_fleet#delete GkeHubFleet#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gke_hub_fleet#delete GkeHubFleet#delete}.
 
 ---
 
@@ -1369,7 +1532,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gke_hub_fleet#update GkeHubFleet#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gke_hub_fleet#update GkeHubFleet#update}.
 
 ---
 
@@ -2151,6 +2314,782 @@ public readonly internalValue: IResolvable | GkeHubFleetDefaultClusterConfigBina
 ---
 
 
+### GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsList <a name="GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsList" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsList.Initializer"></a>
+
+```typescript
+import { gkeHubFleet } from '@cdktn/provider-google'
+
+new gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsList.allWithMapKey"></a>
+
+```typescript
+public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsList.get"></a>
+
+```typescript
+public get(index: number): GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandards">GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandards</a>[]</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsList.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandards[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandards">GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandards</a>[]
+
+---
+
+
+### GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsOutputReference <a name="GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsOutputReference" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsOutputReference.Initializer"></a>
+
+```typescript
+import { gkeHubFleet } from '@cdktn/provider-google'
+
+new gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsOutputReference.resetStandard">resetStandard</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetStandard` <a name="resetStandard" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsOutputReference.resetStandard"></a>
+
+```typescript
+public resetStandard(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsOutputReference.property.standardInput">standardInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsOutputReference.property.standard">standard</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandards">GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandards</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `standardInput`<sup>Optional</sup> <a name="standardInput" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsOutputReference.property.standardInput"></a>
+
+```typescript
+public readonly standardInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `standard`<sup>Required</sup> <a name="standard" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsOutputReference.property.standard"></a>
+
+```typescript
+public readonly standard: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandards;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandards">GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandards</a>
+
+---
+
+
+### GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference <a name="GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference.Initializer"></a>
+
+```typescript
+import { gkeHubFleet } from '@cdktn/provider-google'
+
+new gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference.putComplianceStandards">putComplianceStandards</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference.resetComplianceStandards">resetComplianceStandards</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference.resetMode">resetMode</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putComplianceStandards` <a name="putComplianceStandards" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference.putComplianceStandards"></a>
+
+```typescript
+public putComplianceStandards(value: IResolvable | GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandards[]): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference.putComplianceStandards.parameter.value"></a>
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandards">GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandards</a>[]
+
+---
+
+##### `resetComplianceStandards` <a name="resetComplianceStandards" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference.resetComplianceStandards"></a>
+
+```typescript
+public resetComplianceStandards(): void
+```
+
+##### `resetMode` <a name="resetMode" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference.resetMode"></a>
+
+```typescript
+public resetMode(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference.property.complianceStandards">complianceStandards</a></code> | <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsList">GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference.property.complianceStandardsInput">complianceStandardsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandards">GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandards</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference.property.modeInput">modeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference.property.mode">mode</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfig">GkeHubFleetDefaultClusterConfigCompliancePostureConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `complianceStandards`<sup>Required</sup> <a name="complianceStandards" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference.property.complianceStandards"></a>
+
+```typescript
+public readonly complianceStandards: GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsList;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsList">GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandardsList</a>
+
+---
+
+##### `complianceStandardsInput`<sup>Optional</sup> <a name="complianceStandardsInput" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference.property.complianceStandardsInput"></a>
+
+```typescript
+public readonly complianceStandardsInput: IResolvable | GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandards[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandards">GkeHubFleetDefaultClusterConfigCompliancePostureConfigComplianceStandards</a>[]
+
+---
+
+##### `modeInput`<sup>Optional</sup> <a name="modeInput" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference.property.modeInput"></a>
+
+```typescript
+public readonly modeInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `mode`<sup>Required</sup> <a name="mode" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference.property.mode"></a>
+
+```typescript
+public readonly mode: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: GkeHubFleetDefaultClusterConfigCompliancePostureConfig;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfig">GkeHubFleetDefaultClusterConfigCompliancePostureConfig</a>
+
+---
+
+
 ### GkeHubFleetDefaultClusterConfigOutputReference <a name="GkeHubFleetDefaultClusterConfigOutputReference" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigOutputReference.Initializer"></a>
@@ -2202,8 +3141,10 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigOutputReference.putBinaryAuthorizationConfig">putBinaryAuthorizationConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigOutputReference.putCompliancePostureConfig">putCompliancePostureConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigOutputReference.putSecurityPostureConfig">putSecurityPostureConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigOutputReference.resetBinaryAuthorizationConfig">resetBinaryAuthorizationConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigOutputReference.resetCompliancePostureConfig">resetCompliancePostureConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigOutputReference.resetSecurityPostureConfig">resetSecurityPostureConfig</a></code> | *No description.* |
 
 ---
@@ -2370,6 +3311,18 @@ public putBinaryAuthorizationConfig(value: GkeHubFleetDefaultClusterConfigBinary
 
 ---
 
+##### `putCompliancePostureConfig` <a name="putCompliancePostureConfig" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigOutputReference.putCompliancePostureConfig"></a>
+
+```typescript
+public putCompliancePostureConfig(value: GkeHubFleetDefaultClusterConfigCompliancePostureConfig): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigOutputReference.putCompliancePostureConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfig">GkeHubFleetDefaultClusterConfigCompliancePostureConfig</a>
+
+---
+
 ##### `putSecurityPostureConfig` <a name="putSecurityPostureConfig" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigOutputReference.putSecurityPostureConfig"></a>
 
 ```typescript
@@ -2388,6 +3341,12 @@ public putSecurityPostureConfig(value: GkeHubFleetDefaultClusterConfigSecurityPo
 public resetBinaryAuthorizationConfig(): void
 ```
 
+##### `resetCompliancePostureConfig` <a name="resetCompliancePostureConfig" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigOutputReference.resetCompliancePostureConfig"></a>
+
+```typescript
+public resetCompliancePostureConfig(): void
+```
+
 ##### `resetSecurityPostureConfig` <a name="resetSecurityPostureConfig" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigOutputReference.resetSecurityPostureConfig"></a>
 
 ```typescript
@@ -2402,8 +3361,10 @@ public resetSecurityPostureConfig(): void
 | <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigOutputReference.property.binaryAuthorizationConfig">binaryAuthorizationConfig</a></code> | <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigOutputReference">GkeHubFleetDefaultClusterConfigBinaryAuthorizationConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigOutputReference.property.compliancePostureConfig">compliancePostureConfig</a></code> | <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference">GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigOutputReference.property.securityPostureConfig">securityPostureConfig</a></code> | <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigSecurityPostureConfigOutputReference">GkeHubFleetDefaultClusterConfigSecurityPostureConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigOutputReference.property.binaryAuthorizationConfigInput">binaryAuthorizationConfigInput</a></code> | <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigBinaryAuthorizationConfig">GkeHubFleetDefaultClusterConfigBinaryAuthorizationConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigOutputReference.property.compliancePostureConfigInput">compliancePostureConfigInput</a></code> | <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfig">GkeHubFleetDefaultClusterConfigCompliancePostureConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigOutputReference.property.securityPostureConfigInput">securityPostureConfigInput</a></code> | <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigSecurityPostureConfig">GkeHubFleetDefaultClusterConfigSecurityPostureConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfig">GkeHubFleetDefaultClusterConfig</a></code> | *No description.* |
 
@@ -2443,6 +3404,16 @@ public readonly binaryAuthorizationConfig: GkeHubFleetDefaultClusterConfigBinary
 
 ---
 
+##### `compliancePostureConfig`<sup>Required</sup> <a name="compliancePostureConfig" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigOutputReference.property.compliancePostureConfig"></a>
+
+```typescript
+public readonly compliancePostureConfig: GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference">GkeHubFleetDefaultClusterConfigCompliancePostureConfigOutputReference</a>
+
+---
+
 ##### `securityPostureConfig`<sup>Required</sup> <a name="securityPostureConfig" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigOutputReference.property.securityPostureConfig"></a>
 
 ```typescript
@@ -2460,6 +3431,16 @@ public readonly binaryAuthorizationConfigInput: GkeHubFleetDefaultClusterConfigB
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigBinaryAuthorizationConfig">GkeHubFleetDefaultClusterConfigBinaryAuthorizationConfig</a>
+
+---
+
+##### `compliancePostureConfigInput`<sup>Optional</sup> <a name="compliancePostureConfigInput" id="@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigOutputReference.property.compliancePostureConfigInput"></a>
+
+```typescript
+public readonly compliancePostureConfigInput: GkeHubFleetDefaultClusterConfigCompliancePostureConfig;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.gkeHubFleet.GkeHubFleetDefaultClusterConfigCompliancePostureConfig">GkeHubFleetDefaultClusterConfigCompliancePostureConfig</a>
 
 ---
 

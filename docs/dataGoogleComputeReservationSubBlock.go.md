@@ -4,12 +4,12 @@
 
 ### DataGoogleComputeReservationSubBlock <a name="DataGoogleComputeReservationSubBlock" id="@cdktn/provider-google.dataGoogleComputeReservationSubBlock.DataGoogleComputeReservationSubBlock"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_reservation_sub_block google_compute_reservation_sub_block}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/compute_reservation_sub_block google_compute_reservation_sub_block}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeReservationSubBlock.DataGoogleComputeReservationSubBlock.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputereservationsubblock"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputereservationsubblock"
 
 datagooglecomputereservationsubblock.NewDataGoogleComputeReservationSubBlock(scope Construct, id *string, config DataGoogleComputeReservationSubBlockConfig) DataGoogleComputeReservationSubBlock
 ```
@@ -319,7 +319,7 @@ func ResetZone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleComputeReservationSubBlock.DataGoogleComputeReservationSubBlock.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputereservationsubblock"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputereservationsubblock"
 
 datagooglecomputereservationsubblock.DataGoogleComputeReservationSubBlock_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleComputeReservationSubBlock.DataGoogleComputeReservationSubBlock.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputereservationsubblock"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputereservationsubblock"
 
 datagooglecomputereservationsubblock.DataGoogleComputeReservationSubBlock_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagooglecomputereservationsubblock.DataGoogleComputeReservationSubBlock_IsTerr
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleComputeReservationSubBlock.DataGoogleComputeReservationSubBlock.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputereservationsubblock"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputereservationsubblock"
 
 datagooglecomputereservationsubblock.DataGoogleComputeReservationSubBlock_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ datagooglecomputereservationsubblock.DataGoogleComputeReservationSubBlock_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleComputeReservationSubBlock.DataGoogleComputeReservationSubBlock.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputereservationsubblock"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputereservationsubblock"
 
 datagooglecomputereservationsubblock.DataGoogleComputeReservationSubBlock_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -408,7 +408,7 @@ The construct id used in the generated config for the DataGoogleComputeReservati
 
 The id of the existing DataGoogleComputeReservationSubBlock that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_reservation_sub_block#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/compute_reservation_sub_block#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -839,7 +839,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeReservationSubBlock.DataGoogleComputeReservationSubBlockConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputereservationsubblock"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputereservationsubblock"
 
 &datagooglecomputereservationsubblock.DataGoogleComputeReservationSubBlockConfig {
 	Connection: interface{},
@@ -872,7 +872,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomput
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeReservationSubBlock.DataGoogleComputeReservationSubBlockConfig.property.name">Name</a></code> | <code>*string</code> | The name of the reservation sub-block. |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeReservationSubBlock.DataGoogleComputeReservationSubBlockConfig.property.reservation">Reservation</a></code> | <code>*string</code> | The name of the parent reservation. |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeReservationSubBlock.DataGoogleComputeReservationSubBlockConfig.property.reservationBlock">ReservationBlock</a></code> | <code>*string</code> | The name of the parent reservation block. |
-| <code><a href="#@cdktn/provider-google.dataGoogleComputeReservationSubBlock.DataGoogleComputeReservationSubBlockConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_reservation_sub_block#id DataGoogleComputeReservationSubBlock#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeReservationSubBlock.DataGoogleComputeReservationSubBlockConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/compute_reservation_sub_block#id DataGoogleComputeReservationSubBlock#id}. |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeReservationSubBlock.DataGoogleComputeReservationSubBlockConfig.property.project">Project</a></code> | <code>*string</code> | The project in which the resource belongs. |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeReservationSubBlock.DataGoogleComputeReservationSubBlockConfig.property.zone">Zone</a></code> | <code>*string</code> | The zone where the reservation sub-block resides. |
 
@@ -958,7 +958,7 @@ Name *string
 
 The name of the reservation sub-block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_reservation_sub_block#name DataGoogleComputeReservationSubBlock#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/compute_reservation_sub_block#name DataGoogleComputeReservationSubBlock#name}
 
 ---
 
@@ -972,7 +972,7 @@ Reservation *string
 
 The name of the parent reservation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_reservation_sub_block#reservation DataGoogleComputeReservationSubBlock#reservation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/compute_reservation_sub_block#reservation DataGoogleComputeReservationSubBlock#reservation}
 
 ---
 
@@ -986,7 +986,7 @@ ReservationBlock *string
 
 The name of the parent reservation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_reservation_sub_block#reservation_block DataGoogleComputeReservationSubBlock#reservation_block}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/compute_reservation_sub_block#reservation_block DataGoogleComputeReservationSubBlock#reservation_block}
 
 ---
 
@@ -998,7 +998,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_reservation_sub_block#id DataGoogleComputeReservationSubBlock#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/compute_reservation_sub_block#id DataGoogleComputeReservationSubBlock#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1015,7 +1015,7 @@ Project *string
 
 The project in which the resource belongs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_reservation_sub_block#project DataGoogleComputeReservationSubBlock#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/compute_reservation_sub_block#project DataGoogleComputeReservationSubBlock#project}
 
 ---
 
@@ -1029,7 +1029,7 @@ Zone *string
 
 The zone where the reservation sub-block resides.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_reservation_sub_block#zone DataGoogleComputeReservationSubBlock#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/compute_reservation_sub_block#zone DataGoogleComputeReservationSubBlock#zone}
 
 ---
 
@@ -1038,7 +1038,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeReservationSubBlock.DataGoogleComputeReservationSubBlockHealthInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputereservationsubblock"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputereservationsubblock"
 
 &datagooglecomputereservationsubblock.DataGoogleComputeReservationSubBlockHealthInfo {
 
@@ -1051,7 +1051,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomput
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeReservationSubBlock.DataGoogleComputeReservationSubBlockPhysicalTopology.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputereservationsubblock"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputereservationsubblock"
 
 &datagooglecomputereservationsubblock.DataGoogleComputeReservationSubBlockPhysicalTopology {
 
@@ -1064,7 +1064,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomput
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeReservationSubBlock.DataGoogleComputeReservationSubBlockReservationSubBlockMaintenance.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputereservationsubblock"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputereservationsubblock"
 
 &datagooglecomputereservationsubblock.DataGoogleComputeReservationSubBlockReservationSubBlockMaintenance {
 
@@ -1079,7 +1079,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomput
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeReservationSubBlock.DataGoogleComputeReservationSubBlockHealthInfoList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputereservationsubblock"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputereservationsubblock"
 
 datagooglecomputereservationsubblock.NewDataGoogleComputeReservationSubBlockHealthInfoList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeReservationSubBlockHealthInfoList
 ```
@@ -1228,7 +1228,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeReservationSubBlock.DataGoogleComputeReservationSubBlockHealthInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputereservationsubblock"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputereservationsubblock"
 
 datagooglecomputereservationsubblock.NewDataGoogleComputeReservationSubBlockHealthInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeReservationSubBlockHealthInfoOutputReference
 ```
@@ -1550,7 +1550,7 @@ func InternalValue() DataGoogleComputeReservationSubBlockHealthInfo
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeReservationSubBlock.DataGoogleComputeReservationSubBlockPhysicalTopologyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputereservationsubblock"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputereservationsubblock"
 
 datagooglecomputereservationsubblock.NewDataGoogleComputeReservationSubBlockPhysicalTopologyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeReservationSubBlockPhysicalTopologyList
 ```
@@ -1699,7 +1699,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeReservationSubBlock.DataGoogleComputeReservationSubBlockPhysicalTopologyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputereservationsubblock"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputereservationsubblock"
 
 datagooglecomputereservationsubblock.NewDataGoogleComputeReservationSubBlockPhysicalTopologyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeReservationSubBlockPhysicalTopologyOutputReference
 ```
@@ -1999,7 +1999,7 @@ func InternalValue() DataGoogleComputeReservationSubBlockPhysicalTopology
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeReservationSubBlock.DataGoogleComputeReservationSubBlockReservationSubBlockMaintenanceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputereservationsubblock"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputereservationsubblock"
 
 datagooglecomputereservationsubblock.NewDataGoogleComputeReservationSubBlockReservationSubBlockMaintenanceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeReservationSubBlockReservationSubBlockMaintenanceList
 ```
@@ -2148,7 +2148,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeReservationSubBlock.DataGoogleComputeReservationSubBlockReservationSubBlockMaintenanceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputereservationsubblock"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputereservationsubblock"
 
 datagooglecomputereservationsubblock.NewDataGoogleComputeReservationSubBlockReservationSubBlockMaintenanceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeReservationSubBlockReservationSubBlockMaintenanceOutputReference
 ```

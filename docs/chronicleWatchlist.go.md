@@ -4,12 +4,12 @@
 
 ### ChronicleWatchlist <a name="ChronicleWatchlist" id="@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlist"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_watchlist google_chronicle_watchlist}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_watchlist google_chronicle_watchlist}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlist.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclewatchlist"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chroniclewatchlist"
 
 chroniclewatchlist.NewChronicleWatchlist(scope Construct, id *string, config ChronicleWatchlistConfig) ChronicleWatchlist
 ```
@@ -495,7 +495,7 @@ func ResetWatchlistUserPreferences()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlist.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclewatchlist"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chroniclewatchlist"
 
 chroniclewatchlist.ChronicleWatchlist_IsConstruct(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlist.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclewatchlist"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chroniclewatchlist"
 
 chroniclewatchlist.ChronicleWatchlist_IsTerraformElement(x interface{}) *bool
 ```
@@ -541,7 +541,7 @@ chroniclewatchlist.ChronicleWatchlist_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlist.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclewatchlist"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chroniclewatchlist"
 
 chroniclewatchlist.ChronicleWatchlist_IsTerraformResource(x interface{}) *bool
 ```
@@ -555,7 +555,7 @@ chroniclewatchlist.ChronicleWatchlist_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlist.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclewatchlist"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chroniclewatchlist"
 
 chroniclewatchlist.ChronicleWatchlist_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -584,7 +584,7 @@ The construct id used in the generated config for the ChronicleWatchlist to impo
 
 The id of the existing ChronicleWatchlist that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_watchlist#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_watchlist#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1092,7 +1092,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclewatchlist"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chroniclewatchlist"
 
 &chroniclewatchlist.ChronicleWatchlistConfig {
 	Connection: interface{},
@@ -1103,7 +1103,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclewatchli
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	DisplayName: *string,
-	EntityPopulationMechanism: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleWatchlist.ChronicleWatchlistEntityPopulationMechanism,
+	EntityPopulationMechanism: github.com/cdktn-io/cdktn-provider-google-go/google/v21.chronicleWatchlist.ChronicleWatchlistEntityPopulationMechanism,
 	Instance: *string,
 	Location: *string,
 	DeletionPolicy: *string,
@@ -1111,9 +1111,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclewatchli
 	Id: *string,
 	MultiplyingFactor: *f64,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleWatchlist.ChronicleWatchlistTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.chronicleWatchlist.ChronicleWatchlistTimeouts,
 	WatchlistId: *string,
-	WatchlistUserPreferences: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleWatchlist.ChronicleWatchlistWatchlistUserPreferences,
+	WatchlistUserPreferences: github.com/cdktn-io/cdktn-provider-google-go/google/v21.chronicleWatchlist.ChronicleWatchlistWatchlistUserPreferences,
 }
 ```
 
@@ -1134,9 +1134,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclewatchli
 | <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistConfig.property.location">Location</a></code> | <code>*string</code> | The location of the resource. |
 | <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistConfig.property.description">Description</a></code> | <code>*string</code> | Optional. Description of the watchlist. |
-| <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_watchlist#id ChronicleWatchlist#id}. |
+| <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_watchlist#id ChronicleWatchlist#id}. |
 | <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistConfig.property.multiplyingFactor">MultiplyingFactor</a></code> | <code>*f64</code> | Optional. Weight applied to the risk score for entities in this watchlist. The default is 1.0 if it is not specified. |
-| <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_watchlist#project ChronicleWatchlist#project}. |
+| <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_watchlist#project ChronicleWatchlist#project}. |
 | <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistTimeouts">ChronicleWatchlistTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistConfig.property.watchlistId">WatchlistId</a></code> | <code>*string</code> | Optional. |
 | <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistConfig.property.watchlistUserPreferences">WatchlistUserPreferences</a></code> | <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistWatchlistUserPreferences">ChronicleWatchlistWatchlistUserPreferences</a></code> | watchlist_user_preferences block. |
@@ -1223,7 +1223,7 @@ DisplayName *string
 
 Required. Display name of the watchlist. Note that it must be at least one character and less than 63 characters (https://google.aip.dev/148).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_watchlist#display_name ChronicleWatchlist#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_watchlist#display_name ChronicleWatchlist#display_name}
 
 ---
 
@@ -1237,7 +1237,7 @@ EntityPopulationMechanism ChronicleWatchlistEntityPopulationMechanism
 
 entity_population_mechanism block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_watchlist#entity_population_mechanism ChronicleWatchlist#entity_population_mechanism}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_watchlist#entity_population_mechanism ChronicleWatchlist#entity_population_mechanism}
 
 ---
 
@@ -1251,7 +1251,7 @@ Instance *string
 
 The unique identifier for the Chronicle instance, which is the same as the customer ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_watchlist#instance ChronicleWatchlist#instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_watchlist#instance ChronicleWatchlist#instance}
 
 ---
 
@@ -1267,7 +1267,7 @@ The location of the resource.
 
 This is the geographical region where the Chronicle instance resides, such as "us" or "europe-west2".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_watchlist#location ChronicleWatchlist#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_watchlist#location ChronicleWatchlist#location}
 
 ---
 
@@ -1288,7 +1288,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_watchlist#deletion_policy ChronicleWatchlist#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_watchlist#deletion_policy ChronicleWatchlist#deletion_policy}
 
 ---
 
@@ -1302,7 +1302,7 @@ Description *string
 
 Optional. Description of the watchlist.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_watchlist#description ChronicleWatchlist#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_watchlist#description ChronicleWatchlist#description}
 
 ---
 
@@ -1314,7 +1314,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_watchlist#id ChronicleWatchlist#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_watchlist#id ChronicleWatchlist#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1331,7 +1331,7 @@ MultiplyingFactor *f64
 
 Optional. Weight applied to the risk score for entities in this watchlist. The default is 1.0 if it is not specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_watchlist#multiplying_factor ChronicleWatchlist#multiplying_factor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_watchlist#multiplying_factor ChronicleWatchlist#multiplying_factor}
 
 ---
 
@@ -1343,7 +1343,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_watchlist#project ChronicleWatchlist#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_watchlist#project ChronicleWatchlist#project}.
 
 ---
 
@@ -1357,7 +1357,7 @@ Timeouts ChronicleWatchlistTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_watchlist#timeouts ChronicleWatchlist#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_watchlist#timeouts ChronicleWatchlist#timeouts}
 
 ---
 
@@ -1376,7 +1376,7 @@ which will become the final component of the watchlist's resource name.
 This value should be 4-63 characters, and valid characters
 are /a-z-/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_watchlist#watchlist_id ChronicleWatchlist#watchlist_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_watchlist#watchlist_id ChronicleWatchlist#watchlist_id}
 
 ---
 
@@ -1390,7 +1390,7 @@ WatchlistUserPreferences ChronicleWatchlistWatchlistUserPreferences
 
 watchlist_user_preferences block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_watchlist#watchlist_user_preferences ChronicleWatchlist#watchlist_user_preferences}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_watchlist#watchlist_user_preferences ChronicleWatchlist#watchlist_user_preferences}
 
 ---
 
@@ -1399,7 +1399,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistEntityCount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclewatchlist"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chroniclewatchlist"
 
 &chroniclewatchlist.ChronicleWatchlistEntityCount {
 
@@ -1412,10 +1412,10 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclewatchli
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistEntityPopulationMechanism.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclewatchlist"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chroniclewatchlist"
 
 &chroniclewatchlist.ChronicleWatchlistEntityPopulationMechanism {
-	Manual: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleWatchlist.ChronicleWatchlistEntityPopulationMechanismManual,
+	Manual: github.com/cdktn-io/cdktn-provider-google-go/google/v21.chronicleWatchlist.ChronicleWatchlistEntityPopulationMechanismManual,
 }
 ```
 
@@ -1437,7 +1437,7 @@ Manual ChronicleWatchlistEntityPopulationMechanismManual
 
 manual block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_watchlist#manual ChronicleWatchlist#manual}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_watchlist#manual ChronicleWatchlist#manual}
 
 ---
 
@@ -1446,7 +1446,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistEntityPopulationMechanismManual.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclewatchlist"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chroniclewatchlist"
 
 &chroniclewatchlist.ChronicleWatchlistEntityPopulationMechanismManual {
 
@@ -1459,7 +1459,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclewatchli
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclewatchlist"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chroniclewatchlist"
 
 &chroniclewatchlist.ChronicleWatchlistTimeouts {
 	Create: *string,
@@ -1472,9 +1472,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclewatchli
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_watchlist#create ChronicleWatchlist#create}. |
-| <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_watchlist#delete ChronicleWatchlist#delete}. |
-| <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_watchlist#update ChronicleWatchlist#update}. |
+| <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_watchlist#create ChronicleWatchlist#create}. |
+| <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_watchlist#delete ChronicleWatchlist#delete}. |
+| <code><a href="#@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_watchlist#update ChronicleWatchlist#update}. |
 
 ---
 
@@ -1486,7 +1486,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_watchlist#create ChronicleWatchlist#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_watchlist#create ChronicleWatchlist#create}.
 
 ---
 
@@ -1498,7 +1498,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_watchlist#delete ChronicleWatchlist#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_watchlist#delete ChronicleWatchlist#delete}.
 
 ---
 
@@ -1510,7 +1510,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_watchlist#update ChronicleWatchlist#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_watchlist#update ChronicleWatchlist#update}.
 
 ---
 
@@ -1519,7 +1519,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistWatchlistUserPreferences.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclewatchlist"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chroniclewatchlist"
 
 &chroniclewatchlist.ChronicleWatchlistWatchlistUserPreferences {
 	Pinned: interface{},
@@ -1544,7 +1544,7 @@ Pinned interface{}
 
 Optional. Whether the watchlist is pinned on the dashboard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_watchlist#pinned ChronicleWatchlist#pinned}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_watchlist#pinned ChronicleWatchlist#pinned}
 
 ---
 
@@ -1555,7 +1555,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistEntityCountList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclewatchlist"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chroniclewatchlist"
 
 chroniclewatchlist.NewChronicleWatchlistEntityCountList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ChronicleWatchlistEntityCountList
 ```
@@ -1704,7 +1704,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistEntityCountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclewatchlist"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chroniclewatchlist"
 
 chroniclewatchlist.NewChronicleWatchlistEntityCountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ChronicleWatchlistEntityCountOutputReference
 ```
@@ -1993,7 +1993,7 @@ func InternalValue() ChronicleWatchlistEntityCount
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistEntityPopulationMechanismManualOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclewatchlist"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chroniclewatchlist"
 
 chroniclewatchlist.NewChronicleWatchlistEntityPopulationMechanismManualOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleWatchlistEntityPopulationMechanismManualOutputReference
 ```
@@ -2242,7 +2242,7 @@ func InternalValue() ChronicleWatchlistEntityPopulationMechanismManual
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistEntityPopulationMechanismOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclewatchlist"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chroniclewatchlist"
 
 chroniclewatchlist.NewChronicleWatchlistEntityPopulationMechanismOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleWatchlistEntityPopulationMechanismOutputReference
 ```
@@ -2533,7 +2533,7 @@ func InternalValue() ChronicleWatchlistEntityPopulationMechanism
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclewatchlist"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chroniclewatchlist"
 
 chroniclewatchlist.NewChronicleWatchlistTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleWatchlistTimeoutsOutputReference
 ```
@@ -2869,7 +2869,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistWatchlistUserPreferencesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chroniclewatchlist"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chroniclewatchlist"
 
 chroniclewatchlist.NewChronicleWatchlistWatchlistUserPreferencesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleWatchlistWatchlistUserPreferencesOutputReference
 ```

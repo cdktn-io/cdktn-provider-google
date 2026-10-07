@@ -4,12 +4,12 @@
 
 ### DataGoogleArtifactRegistryPackages <a name="DataGoogleArtifactRegistryPackages" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackages.DataGoogleArtifactRegistryPackages"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/artifact_registry_packages google_artifact_registry_packages}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/artifact_registry_packages google_artifact_registry_packages}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackages.DataGoogleArtifactRegistryPackages.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleartifactregistrypackages"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleartifactregistrypackages"
 
 datagoogleartifactregistrypackages.NewDataGoogleArtifactRegistryPackages(scope Construct, id *string, config DataGoogleArtifactRegistryPackagesConfig) DataGoogleArtifactRegistryPackages
 ```
@@ -319,7 +319,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackages.DataGoogleArtifactRegistryPackages.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleartifactregistrypackages"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleartifactregistrypackages"
 
 datagoogleartifactregistrypackages.DataGoogleArtifactRegistryPackages_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackages.DataGoogleArtifactRegistryPackages.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleartifactregistrypackages"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleartifactregistrypackages"
 
 datagoogleartifactregistrypackages.DataGoogleArtifactRegistryPackages_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagoogleartifactregistrypackages.DataGoogleArtifactRegistryPackages_IsTerrafor
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackages.DataGoogleArtifactRegistryPackages.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleartifactregistrypackages"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleartifactregistrypackages"
 
 datagoogleartifactregistrypackages.DataGoogleArtifactRegistryPackages_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ datagoogleartifactregistrypackages.DataGoogleArtifactRegistryPackages_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackages.DataGoogleArtifactRegistryPackages.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleartifactregistrypackages"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleartifactregistrypackages"
 
 datagoogleartifactregistrypackages.DataGoogleArtifactRegistryPackages_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -408,7 +408,7 @@ The construct id used in the generated config for the DataGoogleArtifactRegistry
 
 The id of the existing DataGoogleArtifactRegistryPackages that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/artifact_registry_packages#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/artifact_registry_packages#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -707,7 +707,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackages.DataGoogleArtifactRegistryPackagesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleartifactregistrypackages"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleartifactregistrypackages"
 
 &datagoogleartifactregistrypackages.DataGoogleArtifactRegistryPackagesConfig {
 	Connection: interface{},
@@ -736,11 +736,11 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleartifa
 | <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackages.DataGoogleArtifactRegistryPackagesConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackages.DataGoogleArtifactRegistryPackagesConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackages.DataGoogleArtifactRegistryPackagesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackages.DataGoogleArtifactRegistryPackagesConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/artifact_registry_packages#location DataGoogleArtifactRegistryPackages#location}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackages.DataGoogleArtifactRegistryPackagesConfig.property.repositoryId">RepositoryId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/artifact_registry_packages#repository_id DataGoogleArtifactRegistryPackages#repository_id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackages.DataGoogleArtifactRegistryPackagesConfig.property.filter">Filter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/artifact_registry_packages#filter DataGoogleArtifactRegistryPackages#filter}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackages.DataGoogleArtifactRegistryPackagesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/artifact_registry_packages#id DataGoogleArtifactRegistryPackages#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackages.DataGoogleArtifactRegistryPackagesConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/artifact_registry_packages#project DataGoogleArtifactRegistryPackages#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackages.DataGoogleArtifactRegistryPackagesConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/artifact_registry_packages#location DataGoogleArtifactRegistryPackages#location}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackages.DataGoogleArtifactRegistryPackagesConfig.property.repositoryId">RepositoryId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/artifact_registry_packages#repository_id DataGoogleArtifactRegistryPackages#repository_id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackages.DataGoogleArtifactRegistryPackagesConfig.property.filter">Filter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/artifact_registry_packages#filter DataGoogleArtifactRegistryPackages#filter}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackages.DataGoogleArtifactRegistryPackagesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/artifact_registry_packages#id DataGoogleArtifactRegistryPackages#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackages.DataGoogleArtifactRegistryPackagesConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/artifact_registry_packages#project DataGoogleArtifactRegistryPackages#project}. |
 
 ---
 
@@ -822,7 +822,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/artifact_registry_packages#location DataGoogleArtifactRegistryPackages#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/artifact_registry_packages#location DataGoogleArtifactRegistryPackages#location}.
 
 ---
 
@@ -834,7 +834,7 @@ RepositoryId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/artifact_registry_packages#repository_id DataGoogleArtifactRegistryPackages#repository_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/artifact_registry_packages#repository_id DataGoogleArtifactRegistryPackages#repository_id}.
 
 ---
 
@@ -846,7 +846,7 @@ Filter *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/artifact_registry_packages#filter DataGoogleArtifactRegistryPackages#filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/artifact_registry_packages#filter DataGoogleArtifactRegistryPackages#filter}.
 
 ---
 
@@ -858,7 +858,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/artifact_registry_packages#id DataGoogleArtifactRegistryPackages#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/artifact_registry_packages#id DataGoogleArtifactRegistryPackages#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -873,7 +873,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/artifact_registry_packages#project DataGoogleArtifactRegistryPackages#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/artifact_registry_packages#project DataGoogleArtifactRegistryPackages#project}.
 
 ---
 
@@ -882,7 +882,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackages.DataGoogleArtifactRegistryPackagesPackages.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleartifactregistrypackages"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleartifactregistrypackages"
 
 &datagoogleartifactregistrypackages.DataGoogleArtifactRegistryPackagesPackages {
 
@@ -897,7 +897,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleartifa
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackages.DataGoogleArtifactRegistryPackagesPackagesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleartifactregistrypackages"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleartifactregistrypackages"
 
 datagoogleartifactregistrypackages.NewDataGoogleArtifactRegistryPackagesPackagesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleArtifactRegistryPackagesPackagesList
 ```
@@ -1046,7 +1046,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackages.DataGoogleArtifactRegistryPackagesPackagesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleartifactregistrypackages"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleartifactregistrypackages"
 
 datagoogleartifactregistrypackages.NewDataGoogleArtifactRegistryPackagesPackagesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleArtifactRegistryPackagesPackagesOutputReference
 ```

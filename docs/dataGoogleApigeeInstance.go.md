@@ -4,12 +4,12 @@
 
 ### DataGoogleApigeeInstance <a name="DataGoogleApigeeInstance" id="@cdktn/provider-google.dataGoogleApigeeInstance.DataGoogleApigeeInstance"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/apigee_instance google_apigee_instance}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/apigee_instance google_apigee_instance}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleApigeeInstance.DataGoogleApigeeInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleapigeeinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleapigeeinstance"
 
 datagoogleapigeeinstance.NewDataGoogleApigeeInstance(scope Construct, id *string, config DataGoogleApigeeInstanceConfig) DataGoogleApigeeInstance
 ```
@@ -305,7 +305,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleApigeeInstance.DataGoogleApigeeInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleapigeeinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleapigeeinstance"
 
 datagoogleapigeeinstance.DataGoogleApigeeInstance_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleApigeeInstance.DataGoogleApigeeInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleapigeeinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleapigeeinstance"
 
 datagoogleapigeeinstance.DataGoogleApigeeInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ datagoogleapigeeinstance.DataGoogleApigeeInstance_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleApigeeInstance.DataGoogleApigeeInstance.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleapigeeinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleapigeeinstance"
 
 datagoogleapigeeinstance.DataGoogleApigeeInstance_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagoogleapigeeinstance.DataGoogleApigeeInstance_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleApigeeInstance.DataGoogleApigeeInstance.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleapigeeinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleapigeeinstance"
 
 datagoogleapigeeinstance.DataGoogleApigeeInstance_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataGoogleApigeeInstance t
 
 The id of the existing DataGoogleApigeeInstance that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/apigee_instance#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/apigee_instance#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -770,7 +770,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleApigeeInstance.DataGoogleApigeeInstanceAccessLoggingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleapigeeinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleapigeeinstance"
 
 &datagoogleapigeeinstance.DataGoogleApigeeInstanceAccessLoggingConfig {
 
@@ -783,7 +783,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleapigee
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleApigeeInstance.DataGoogleApigeeInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleapigeeinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleapigeeinstance"
 
 &datagoogleapigeeinstance.DataGoogleApigeeInstanceConfig {
 	Connection: interface{},
@@ -812,7 +812,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleapigee
 | <code><a href="#@cdktn/provider-google.dataGoogleApigeeInstance.DataGoogleApigeeInstanceConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleApigeeInstance.DataGoogleApigeeInstanceConfig.property.name">Name</a></code> | <code>*string</code> | Resource ID of the instance. |
 | <code><a href="#@cdktn/provider-google.dataGoogleApigeeInstance.DataGoogleApigeeInstanceConfig.property.orgId">OrgId</a></code> | <code>*string</code> | The Apigee Organization associated with the Apigee instance, in the format 'organizations/{{org_name}}'. |
-| <code><a href="#@cdktn/provider-google.dataGoogleApigeeInstance.DataGoogleApigeeInstanceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/apigee_instance#id DataGoogleApigeeInstance#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleApigeeInstance.DataGoogleApigeeInstanceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/apigee_instance#id DataGoogleApigeeInstance#id}. |
 
 ---
 
@@ -896,7 +896,7 @@ Name *string
 
 Resource ID of the instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/apigee_instance#name DataGoogleApigeeInstance#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/apigee_instance#name DataGoogleApigeeInstance#name}
 
 ---
 
@@ -910,7 +910,7 @@ OrgId *string
 
 The Apigee Organization associated with the Apigee instance, in the format 'organizations/{{org_name}}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/apigee_instance#org_id DataGoogleApigeeInstance#org_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/apigee_instance#org_id DataGoogleApigeeInstance#org_id}
 
 ---
 
@@ -922,7 +922,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/apigee_instance#id DataGoogleApigeeInstance#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/apigee_instance#id DataGoogleApigeeInstance#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -936,7 +936,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleApigeeInstance.DataGoogleApigeeInstanceAccessLoggingConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleapigeeinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleapigeeinstance"
 
 datagoogleapigeeinstance.NewDataGoogleApigeeInstanceAccessLoggingConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleApigeeInstanceAccessLoggingConfigList
 ```
@@ -1085,7 +1085,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleApigeeInstance.DataGoogleApigeeInstanceAccessLoggingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleapigeeinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleapigeeinstance"
 
 datagoogleapigeeinstance.NewDataGoogleApigeeInstanceAccessLoggingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleApigeeInstanceAccessLoggingConfigOutputReference
 ```

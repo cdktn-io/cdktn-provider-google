@@ -4,12 +4,12 @@
 
 ### ChronicleEnvironmentGroup <a name="ChronicleEnvironmentGroup" id="@cdktn/provider-google.chronicleEnvironmentGroup.ChronicleEnvironmentGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment_group google_chronicle_environment_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment_group google_chronicle_environment_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleEnvironmentGroup.ChronicleEnvironmentGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleenvironmentgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chronicleenvironmentgroup"
 
 chronicleenvironmentgroup.NewChronicleEnvironmentGroup(scope Construct, id *string, config ChronicleEnvironmentGroupConfig) ChronicleEnvironmentGroup
 ```
@@ -441,7 +441,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.chronicleEnvironmentGroup.ChronicleEnvironmentGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleenvironmentgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chronicleenvironmentgroup"
 
 chronicleenvironmentgroup.ChronicleEnvironmentGroup_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.chronicleEnvironmentGroup.ChronicleEnvironmentGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleenvironmentgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chronicleenvironmentgroup"
 
 chronicleenvironmentgroup.ChronicleEnvironmentGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ chronicleenvironmentgroup.ChronicleEnvironmentGroup_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.chronicleEnvironmentGroup.ChronicleEnvironmentGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleenvironmentgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chronicleenvironmentgroup"
 
 chronicleenvironmentgroup.ChronicleEnvironmentGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ chronicleenvironmentgroup.ChronicleEnvironmentGroup_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.chronicleEnvironmentGroup.ChronicleEnvironmentGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleenvironmentgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chronicleenvironmentgroup"
 
 chronicleenvironmentgroup.ChronicleEnvironmentGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -530,7 +530,7 @@ The construct id used in the generated config for the ChronicleEnvironmentGroup 
 
 The id of the existing ChronicleEnvironmentGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -950,7 +950,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleEnvironmentGroup.ChronicleEnvironmentGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleenvironmentgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chronicleenvironmentgroup"
 
 &chronicleenvironmentgroup.ChronicleEnvironmentGroupConfig {
 	Connection: interface{},
@@ -968,7 +968,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleenviron
 	DeletionPolicy: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleEnvironmentGroup.ChronicleEnvironmentGroupTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.chronicleEnvironmentGroup.ChronicleEnvironmentGroupTimeouts,
 }
 ```
 
@@ -989,8 +989,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleenviron
 | <code><a href="#@cdktn/provider-google.chronicleEnvironmentGroup.ChronicleEnvironmentGroupConfig.property.instance">Instance</a></code> | <code>*string</code> | Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122. |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironmentGroup.ChronicleEnvironmentGroupConfig.property.location">Location</a></code> | <code>*string</code> | Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122. |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironmentGroup.ChronicleEnvironmentGroupConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.chronicleEnvironmentGroup.ChronicleEnvironmentGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment_group#id ChronicleEnvironmentGroup#id}. |
-| <code><a href="#@cdktn/provider-google.chronicleEnvironmentGroup.ChronicleEnvironmentGroupConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment_group#project ChronicleEnvironmentGroup#project}. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironmentGroup.ChronicleEnvironmentGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment_group#id ChronicleEnvironmentGroup#id}. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironmentGroup.ChronicleEnvironmentGroupConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment_group#project ChronicleEnvironmentGroup#project}. |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironmentGroup.ChronicleEnvironmentGroupConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.chronicleEnvironmentGroup.ChronicleEnvironmentGroupTimeouts">ChronicleEnvironmentGroupTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1075,7 +1075,7 @@ Description *string
 
 The EnvironmentGroup description. This value is optional. This value should be up to 250 characters, and valid characters are /a-z-/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment_group#description ChronicleEnvironmentGroup#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment_group#description ChronicleEnvironmentGroup#description}
 
 ---
 
@@ -1089,7 +1089,7 @@ DisplayName *string
 
 The group name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment_group#display_name ChronicleEnvironmentGroup#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment_group#display_name ChronicleEnvironmentGroup#display_name}
 
 ---
 
@@ -1103,7 +1103,7 @@ EnvironmentsIds *[]*string
 
 The environment IDs for the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment_group#environments_ids ChronicleEnvironmentGroup#environments_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment_group#environments_ids ChronicleEnvironmentGroup#environments_ids}
 
 ---
 
@@ -1117,7 +1117,7 @@ Instance *string
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment_group#instance ChronicleEnvironmentGroup#instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment_group#instance ChronicleEnvironmentGroup#instance}
 
 ---
 
@@ -1131,7 +1131,7 @@ Location *string
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment_group#location ChronicleEnvironmentGroup#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment_group#location ChronicleEnvironmentGroup#location}
 
 ---
 
@@ -1152,7 +1152,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment_group#deletion_policy ChronicleEnvironmentGroup#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment_group#deletion_policy ChronicleEnvironmentGroup#deletion_policy}
 
 ---
 
@@ -1164,7 +1164,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment_group#id ChronicleEnvironmentGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment_group#id ChronicleEnvironmentGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1179,7 +1179,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment_group#project ChronicleEnvironmentGroup#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment_group#project ChronicleEnvironmentGroup#project}.
 
 ---
 
@@ -1193,7 +1193,7 @@ Timeouts ChronicleEnvironmentGroupTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment_group#timeouts ChronicleEnvironmentGroup#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment_group#timeouts ChronicleEnvironmentGroup#timeouts}
 
 ---
 
@@ -1202,7 +1202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleEnvironmentGroup.ChronicleEnvironmentGroupTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleenvironmentgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chronicleenvironmentgroup"
 
 &chronicleenvironmentgroup.ChronicleEnvironmentGroupTimeouts {
 	Create: *string,
@@ -1215,9 +1215,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleenviron
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.chronicleEnvironmentGroup.ChronicleEnvironmentGroupTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment_group#create ChronicleEnvironmentGroup#create}. |
-| <code><a href="#@cdktn/provider-google.chronicleEnvironmentGroup.ChronicleEnvironmentGroupTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment_group#delete ChronicleEnvironmentGroup#delete}. |
-| <code><a href="#@cdktn/provider-google.chronicleEnvironmentGroup.ChronicleEnvironmentGroupTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment_group#update ChronicleEnvironmentGroup#update}. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironmentGroup.ChronicleEnvironmentGroupTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment_group#create ChronicleEnvironmentGroup#create}. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironmentGroup.ChronicleEnvironmentGroupTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment_group#delete ChronicleEnvironmentGroup#delete}. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironmentGroup.ChronicleEnvironmentGroupTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment_group#update ChronicleEnvironmentGroup#update}. |
 
 ---
 
@@ -1229,7 +1229,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment_group#create ChronicleEnvironmentGroup#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment_group#create ChronicleEnvironmentGroup#create}.
 
 ---
 
@@ -1241,7 +1241,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment_group#delete ChronicleEnvironmentGroup#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment_group#delete ChronicleEnvironmentGroup#delete}.
 
 ---
 
@@ -1253,7 +1253,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment_group#update ChronicleEnvironmentGroup#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment_group#update ChronicleEnvironmentGroup#update}.
 
 ---
 
@@ -1264,7 +1264,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleEnvironmentGroup.ChronicleEnvironmentGroupTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleenvironmentgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chronicleenvironmentgroup"
 
 chronicleenvironmentgroup.NewChronicleEnvironmentGroupTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleEnvironmentGroupTimeoutsOutputReference
 ```

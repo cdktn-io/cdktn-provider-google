@@ -4,12 +4,12 @@
 
 ### ComputeRouterInterface <a name="ComputeRouterInterface" id="@cdktn/provider-google.computeRouterInterface.ComputeRouterInterface"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_router_interface google_compute_router_interface}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_router_interface google_compute_router_interface}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRouterInterface.ComputeRouterInterface.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerouterinterface"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computerouterinterface"
 
 computerouterinterface.NewComputeRouterInterface(scope Construct, id *string, config ComputeRouterInterfaceConfig) ComputeRouterInterface
 ```
@@ -497,7 +497,7 @@ func ResetVpnTunnel()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeRouterInterface.ComputeRouterInterface.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerouterinterface"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computerouterinterface"
 
 computerouterinterface.ComputeRouterInterface_IsConstruct(x interface{}) *bool
 ```
@@ -529,7 +529,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeRouterInterface.ComputeRouterInterface.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerouterinterface"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computerouterinterface"
 
 computerouterinterface.ComputeRouterInterface_IsTerraformElement(x interface{}) *bool
 ```
@@ -543,7 +543,7 @@ computerouterinterface.ComputeRouterInterface_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeRouterInterface.ComputeRouterInterface.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerouterinterface"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computerouterinterface"
 
 computerouterinterface.ComputeRouterInterface_IsTerraformResource(x interface{}) *bool
 ```
@@ -557,7 +557,7 @@ computerouterinterface.ComputeRouterInterface_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeRouterInterface.ComputeRouterInterface.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerouterinterface"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computerouterinterface"
 
 computerouterinterface.ComputeRouterInterface_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -586,7 +586,7 @@ The construct id used in the generated config for the ComputeRouterInterface to 
 
 The id of the existing ComputeRouterInterface that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_router_interface#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_router_interface#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1094,7 +1094,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRouterInterface.ComputeRouterInterfaceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerouterinterface"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computerouterinterface"
 
 &computerouterinterface.ComputeRouterInterfaceConfig {
 	Connection: interface{},
@@ -1116,7 +1116,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerouterint
 	RedundantInterface: *string,
 	Region: *string,
 	Subnetwork: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRouterInterface.ComputeRouterInterfaceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.computeRouterInterface.ComputeRouterInterfaceTimeouts,
 	VpnTunnel: *string,
 }
 ```
@@ -1135,7 +1135,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerouterint
 | <code><a href="#@cdktn/provider-google.computeRouterInterface.ComputeRouterInterfaceConfig.property.name">Name</a></code> | <code>*string</code> | A unique name for the interface, required by GCE. Changing this forces a new interface to be created. |
 | <code><a href="#@cdktn/provider-google.computeRouterInterface.ComputeRouterInterfaceConfig.property.router">Router</a></code> | <code>*string</code> | The name of the router this interface will be attached to. |
 | <code><a href="#@cdktn/provider-google.computeRouterInterface.ComputeRouterInterfaceConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.computeRouterInterface.ComputeRouterInterfaceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_router_interface#id ComputeRouterInterface#id}. |
+| <code><a href="#@cdktn/provider-google.computeRouterInterface.ComputeRouterInterfaceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_router_interface#id ComputeRouterInterface#id}. |
 | <code><a href="#@cdktn/provider-google.computeRouterInterface.ComputeRouterInterfaceConfig.property.interconnectAttachment">InterconnectAttachment</a></code> | <code>*string</code> | The name or resource link to the VLAN interconnect for this interface. |
 | <code><a href="#@cdktn/provider-google.computeRouterInterface.ComputeRouterInterfaceConfig.property.ipRange">IpRange</a></code> | <code>*string</code> | The IP address and range of the interface. |
 | <code><a href="#@cdktn/provider-google.computeRouterInterface.ComputeRouterInterfaceConfig.property.ipVersion">IpVersion</a></code> | <code>*string</code> | IP version of this interface. |
@@ -1229,7 +1229,7 @@ Name *string
 
 A unique name for the interface, required by GCE. Changing this forces a new interface to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_router_interface#name ComputeRouterInterface#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_router_interface#name ComputeRouterInterface#name}
 
 ---
 
@@ -1245,7 +1245,7 @@ The name of the router this interface will be attached to.
 
 Changing this forces a new interface to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_router_interface#router ComputeRouterInterface#router}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_router_interface#router ComputeRouterInterface#router}
 
 ---
 
@@ -1266,7 +1266,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_router_interface#deletion_policy ComputeRouterInterface#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_router_interface#deletion_policy ComputeRouterInterface#deletion_policy}
 
 ---
 
@@ -1278,7 +1278,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_router_interface#id ComputeRouterInterface#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_router_interface#id ComputeRouterInterface#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1297,7 +1297,7 @@ The name or resource link to the VLAN interconnect for this interface.
 
 Changing this forces a new interface to be created. Only one of interconnect_attachment, subnetwork or vpn_tunnel can be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_router_interface#interconnect_attachment ComputeRouterInterface#interconnect_attachment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_router_interface#interconnect_attachment ComputeRouterInterface#interconnect_attachment}
 
 ---
 
@@ -1313,7 +1313,7 @@ The IP address and range of the interface.
 
 The IP range must be in the RFC3927 link-local IP space. Changing this forces a new interface to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_router_interface#ip_range ComputeRouterInterface#ip_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_router_interface#ip_range ComputeRouterInterface#ip_range}
 
 ---
 
@@ -1327,7 +1327,7 @@ IpVersion *string
 
 IP version of this interface.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_router_interface#ip_version ComputeRouterInterface#ip_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_router_interface#ip_version ComputeRouterInterface#ip_version}
 
 ---
 
@@ -1343,7 +1343,7 @@ The regional private internal IP address that is used to establish BGP sessions 
 
 Changing this forces a new interface to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_router_interface#private_ip_address ComputeRouterInterface#private_ip_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_router_interface#private_ip_address ComputeRouterInterface#private_ip_address}
 
 ---
 
@@ -1359,7 +1359,7 @@ The ID of the project in which this interface's router belongs.
 
 If it is not provided, the provider project is used. Changing this forces a new interface to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_router_interface#project ComputeRouterInterface#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_router_interface#project ComputeRouterInterface#project}
 
 ---
 
@@ -1375,7 +1375,7 @@ The name of the interface that is redundant to this interface.
 
 Changing this forces a new interface to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_router_interface#redundant_interface ComputeRouterInterface#redundant_interface}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_router_interface#redundant_interface ComputeRouterInterface#redundant_interface}
 
 ---
 
@@ -1391,7 +1391,7 @@ The region this interface's router sits in.
 
 If not specified, the project region will be used. Changing this forces a new interface to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_router_interface#region ComputeRouterInterface#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_router_interface#region ComputeRouterInterface#region}
 
 ---
 
@@ -1407,7 +1407,7 @@ The URI of the subnetwork resource that this interface belongs to, which must be
 
 Changing this forces a new interface to be created. Only one of subnetwork, interconnect_attachment or vpn_tunnel can be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_router_interface#subnetwork ComputeRouterInterface#subnetwork}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_router_interface#subnetwork ComputeRouterInterface#subnetwork}
 
 ---
 
@@ -1421,7 +1421,7 @@ Timeouts ComputeRouterInterfaceTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_router_interface#timeouts ComputeRouterInterface#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_router_interface#timeouts ComputeRouterInterface#timeouts}
 
 ---
 
@@ -1437,7 +1437,7 @@ The name or resource link to the VPN tunnel this interface will be linked to.
 
 Changing this forces a new interface to be created. Only one of vpn_tunnel, interconnect_attachment or subnetwork can be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_router_interface#vpn_tunnel ComputeRouterInterface#vpn_tunnel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_router_interface#vpn_tunnel ComputeRouterInterface#vpn_tunnel}
 
 ---
 
@@ -1446,7 +1446,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRouterInterface.ComputeRouterInterfaceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerouterinterface"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computerouterinterface"
 
 &computerouterinterface.ComputeRouterInterfaceTimeouts {
 	Create: *string,
@@ -1458,8 +1458,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerouterint
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRouterInterface.ComputeRouterInterfaceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_router_interface#create ComputeRouterInterface#create}. |
-| <code><a href="#@cdktn/provider-google.computeRouterInterface.ComputeRouterInterfaceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_router_interface#delete ComputeRouterInterface#delete}. |
+| <code><a href="#@cdktn/provider-google.computeRouterInterface.ComputeRouterInterfaceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_router_interface#create ComputeRouterInterface#create}. |
+| <code><a href="#@cdktn/provider-google.computeRouterInterface.ComputeRouterInterfaceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_router_interface#delete ComputeRouterInterface#delete}. |
 
 ---
 
@@ -1471,7 +1471,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_router_interface#create ComputeRouterInterface#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_router_interface#create ComputeRouterInterface#create}.
 
 ---
 
@@ -1483,7 +1483,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_router_interface#delete ComputeRouterInterface#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_router_interface#delete ComputeRouterInterface#delete}.
 
 ---
 
@@ -1494,7 +1494,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRouterInterface.ComputeRouterInterfaceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerouterinterface"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computerouterinterface"
 
 computerouterinterface.NewComputeRouterInterfaceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRouterInterfaceTimeoutsOutputReference
 ```

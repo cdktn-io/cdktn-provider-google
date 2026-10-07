@@ -4,12 +4,12 @@
 
 ### DataGoogleRedisClusterAclPolicy <a name="DataGoogleRedisClusterAclPolicy" id="@cdktn/provider-google.dataGoogleRedisClusterAclPolicy.DataGoogleRedisClusterAclPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/redis_cluster_acl_policy google_redis_cluster_acl_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/redis_cluster_acl_policy google_redis_cluster_acl_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleRedisClusterAclPolicy.DataGoogleRedisClusterAclPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleredisclusteraclpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleredisclusteraclpolicy"
 
 datagoogleredisclusteraclpolicy.NewDataGoogleRedisClusterAclPolicy(scope Construct, id *string, config DataGoogleRedisClusterAclPolicyConfig) DataGoogleRedisClusterAclPolicy
 ```
@@ -319,7 +319,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleRedisClusterAclPolicy.DataGoogleRedisClusterAclPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleredisclusteraclpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleredisclusteraclpolicy"
 
 datagoogleredisclusteraclpolicy.DataGoogleRedisClusterAclPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleRedisClusterAclPolicy.DataGoogleRedisClusterAclPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleredisclusteraclpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleredisclusteraclpolicy"
 
 datagoogleredisclusteraclpolicy.DataGoogleRedisClusterAclPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagoogleredisclusteraclpolicy.DataGoogleRedisClusterAclPolicy_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleRedisClusterAclPolicy.DataGoogleRedisClusterAclPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleredisclusteraclpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleredisclusteraclpolicy"
 
 datagoogleredisclusteraclpolicy.DataGoogleRedisClusterAclPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ datagoogleredisclusteraclpolicy.DataGoogleRedisClusterAclPolicy_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleRedisClusterAclPolicy.DataGoogleRedisClusterAclPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleredisclusteraclpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleredisclusteraclpolicy"
 
 datagoogleredisclusteraclpolicy.DataGoogleRedisClusterAclPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -408,7 +408,7 @@ The construct id used in the generated config for the DataGoogleRedisClusterAclP
 
 The id of the existing DataGoogleRedisClusterAclPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/redis_cluster_acl_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/redis_cluster_acl_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -729,7 +729,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleRedisClusterAclPolicy.DataGoogleRedisClusterAclPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleredisclusteraclpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleredisclusteraclpolicy"
 
 &datagoogleredisclusteraclpolicy.DataGoogleRedisClusterAclPolicyConfig {
 	Connection: interface{},
@@ -758,9 +758,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleredisc
 | <code><a href="#@cdktn/provider-google.dataGoogleRedisClusterAclPolicy.DataGoogleRedisClusterAclPolicyConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleRedisClusterAclPolicy.DataGoogleRedisClusterAclPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleRedisClusterAclPolicy.DataGoogleRedisClusterAclPolicyConfig.property.aclPolicyId">AclPolicyId</a></code> | <code>*string</code> | The logical name of the ACL policy in the customer project with the following restrictions:. |
-| <code><a href="#@cdktn/provider-google.dataGoogleRedisClusterAclPolicy.DataGoogleRedisClusterAclPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/redis_cluster_acl_policy#id DataGoogleRedisClusterAclPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleRedisClusterAclPolicy.DataGoogleRedisClusterAclPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/redis_cluster_acl_policy#id DataGoogleRedisClusterAclPolicy#id}. |
 | <code><a href="#@cdktn/provider-google.dataGoogleRedisClusterAclPolicy.DataGoogleRedisClusterAclPolicyConfig.property.location">Location</a></code> | <code>*string</code> | Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122. |
-| <code><a href="#@cdktn/provider-google.dataGoogleRedisClusterAclPolicy.DataGoogleRedisClusterAclPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/redis_cluster_acl_policy#project DataGoogleRedisClusterAclPolicy#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleRedisClusterAclPolicy.DataGoogleRedisClusterAclPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/redis_cluster_acl_policy#project DataGoogleRedisClusterAclPolicy#project}. |
 
 ---
 
@@ -850,7 +850,7 @@ The logical name of the ACL policy in the customer project with the following re
 * Must end with a number or a letter.
 * Must be unique within the customer project / location
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/redis_cluster_acl_policy#acl_policy_id DataGoogleRedisClusterAclPolicy#acl_policy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/redis_cluster_acl_policy#acl_policy_id DataGoogleRedisClusterAclPolicy#acl_policy_id}
 
 ---
 
@@ -862,7 +862,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/redis_cluster_acl_policy#id DataGoogleRedisClusterAclPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/redis_cluster_acl_policy#id DataGoogleRedisClusterAclPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -879,7 +879,7 @@ Location *string
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/redis_cluster_acl_policy#location DataGoogleRedisClusterAclPolicy#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/redis_cluster_acl_policy#location DataGoogleRedisClusterAclPolicy#location}
 
 ---
 
@@ -891,7 +891,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/redis_cluster_acl_policy#project DataGoogleRedisClusterAclPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/redis_cluster_acl_policy#project DataGoogleRedisClusterAclPolicy#project}.
 
 ---
 
@@ -900,7 +900,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleRedisClusterAclPolicy.DataGoogleRedisClusterAclPolicyRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleredisclusteraclpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleredisclusteraclpolicy"
 
 &datagoogleredisclusteraclpolicy.DataGoogleRedisClusterAclPolicyRules {
 
@@ -915,7 +915,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleredisc
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleRedisClusterAclPolicy.DataGoogleRedisClusterAclPolicyRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleredisclusteraclpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleredisclusteraclpolicy"
 
 datagoogleredisclusteraclpolicy.NewDataGoogleRedisClusterAclPolicyRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleRedisClusterAclPolicyRulesList
 ```
@@ -1064,7 +1064,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleRedisClusterAclPolicy.DataGoogleRedisClusterAclPolicyRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleredisclusteraclpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleredisclusteraclpolicy"
 
 datagoogleredisclusteraclpolicy.NewDataGoogleRedisClusterAclPolicyRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleRedisClusterAclPolicyRulesOutputReference
 ```

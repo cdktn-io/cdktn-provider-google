@@ -4,12 +4,12 @@
 
 ### DataGoogleVmwareengineAnnouncements <a name="DataGoogleVmwareengineAnnouncements" id="@cdktn/provider-google.dataGoogleVmwareengineAnnouncements.DataGoogleVmwareengineAnnouncements"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/vmwareengine_announcements google_vmwareengine_announcements}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/vmwareengine_announcements google_vmwareengine_announcements}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleVmwareengineAnnouncements.DataGoogleVmwareengineAnnouncements.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglevmwareengineannouncements"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglevmwareengineannouncements"
 
 datagooglevmwareengineannouncements.NewDataGoogleVmwareengineAnnouncements(scope Construct, id *string, config DataGoogleVmwareengineAnnouncementsConfig) DataGoogleVmwareengineAnnouncements
 ```
@@ -312,7 +312,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleVmwareengineAnnouncements.DataGoogleVmwareengineAnnouncements.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglevmwareengineannouncements"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglevmwareengineannouncements"
 
 datagooglevmwareengineannouncements.DataGoogleVmwareengineAnnouncements_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleVmwareengineAnnouncements.DataGoogleVmwareengineAnnouncements.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglevmwareengineannouncements"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglevmwareengineannouncements"
 
 datagooglevmwareengineannouncements.DataGoogleVmwareengineAnnouncements_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datagooglevmwareengineannouncements.DataGoogleVmwareengineAnnouncements_IsTerraf
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleVmwareengineAnnouncements.DataGoogleVmwareengineAnnouncements.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglevmwareengineannouncements"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglevmwareengineannouncements"
 
 datagooglevmwareengineannouncements.DataGoogleVmwareengineAnnouncements_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datagooglevmwareengineannouncements.DataGoogleVmwareengineAnnouncements_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleVmwareengineAnnouncements.DataGoogleVmwareengineAnnouncements.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglevmwareengineannouncements"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglevmwareengineannouncements"
 
 datagooglevmwareengineannouncements.DataGoogleVmwareengineAnnouncements_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataGoogleVmwareengineAnno
 
 The id of the existing DataGoogleVmwareengineAnnouncements that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/vmwareengine_announcements#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/vmwareengine_announcements#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -656,7 +656,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleVmwareengineAnnouncements.DataGoogleVmwareengineAnnouncementsAnnouncements.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglevmwareengineannouncements"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglevmwareengineannouncements"
 
 &datagooglevmwareengineannouncements.DataGoogleVmwareengineAnnouncementsAnnouncements {
 
@@ -669,7 +669,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglevmware
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleVmwareengineAnnouncements.DataGoogleVmwareengineAnnouncementsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglevmwareengineannouncements"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglevmwareengineannouncements"
 
 &datagooglevmwareengineannouncements.DataGoogleVmwareengineAnnouncementsConfig {
 	Connection: interface{},
@@ -697,7 +697,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglevmware
 | <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineAnnouncements.DataGoogleVmwareengineAnnouncementsConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineAnnouncements.DataGoogleVmwareengineAnnouncementsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineAnnouncements.DataGoogleVmwareengineAnnouncementsConfig.property.parent">Parent</a></code> | <code>*string</code> | Required. |
-| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineAnnouncements.DataGoogleVmwareengineAnnouncementsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/vmwareengine_announcements#id DataGoogleVmwareengineAnnouncements#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineAnnouncements.DataGoogleVmwareengineAnnouncementsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/vmwareengine_announcements#id DataGoogleVmwareengineAnnouncements#id}. |
 | <code><a href="#@cdktn/provider-google.dataGoogleVmwareengineAnnouncements.DataGoogleVmwareengineAnnouncementsConfig.property.name">Name</a></code> | <code>*string</code> | The resource name of the specific Announcements to retrieve. If provided, the 'announcements' list will contain only this announcement. |
 
 ---
@@ -784,7 +784,7 @@ Required.
 
 The resource name of the location to be queried for announcements. Resource names are schemeless URIs that follow the conventions in https://cloud.google.com/apis/design/resource_names. For example: projects/my-project/locations/us-west1-a
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/vmwareengine_announcements#parent DataGoogleVmwareengineAnnouncements#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/vmwareengine_announcements#parent DataGoogleVmwareengineAnnouncements#parent}
 
 ---
 
@@ -796,7 +796,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/vmwareengine_announcements#id DataGoogleVmwareengineAnnouncements#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/vmwareengine_announcements#id DataGoogleVmwareengineAnnouncements#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -813,7 +813,7 @@ Name *string
 
 The resource name of the specific Announcements to retrieve. If provided, the 'announcements' list will contain only this announcement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/vmwareengine_announcements#name DataGoogleVmwareengineAnnouncements#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/vmwareengine_announcements#name DataGoogleVmwareengineAnnouncements#name}
 
 ---
 
@@ -824,7 +824,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleVmwareengineAnnouncements.DataGoogleVmwareengineAnnouncementsAnnouncementsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglevmwareengineannouncements"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglevmwareengineannouncements"
 
 datagooglevmwareengineannouncements.NewDataGoogleVmwareengineAnnouncementsAnnouncementsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleVmwareengineAnnouncementsAnnouncementsList
 ```
@@ -973,7 +973,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleVmwareengineAnnouncements.DataGoogleVmwareengineAnnouncementsAnnouncementsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglevmwareengineannouncements"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglevmwareengineannouncements"
 
 datagooglevmwareengineannouncements.NewDataGoogleVmwareengineAnnouncementsAnnouncementsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleVmwareengineAnnouncementsAnnouncementsOutputReference
 ```

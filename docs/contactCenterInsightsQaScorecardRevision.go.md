@@ -4,12 +4,12 @@
 
 ### ContactCenterInsightsQaScorecardRevision <a name="ContactCenterInsightsQaScorecardRevision" id="@cdktn/provider-google.contactCenterInsightsQaScorecardRevision.ContactCenterInsightsQaScorecardRevision"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/contact_center_insights_qa_scorecard_revision google_contact_center_insights_qa_scorecard_revision}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/contact_center_insights_qa_scorecard_revision google_contact_center_insights_qa_scorecard_revision}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.contactCenterInsightsQaScorecardRevision.ContactCenterInsightsQaScorecardRevision.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/contactcenterinsightsqascorecardrevision"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/contactcenterinsightsqascorecardrevision"
 
 contactcenterinsightsqascorecardrevision.NewContactCenterInsightsQaScorecardRevision(scope Construct, id *string, config ContactCenterInsightsQaScorecardRevisionConfig) ContactCenterInsightsQaScorecardRevision
 ```
@@ -441,7 +441,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.contactCenterInsightsQaScorecardRevision.ContactCenterInsightsQaScorecardRevision.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/contactcenterinsightsqascorecardrevision"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/contactcenterinsightsqascorecardrevision"
 
 contactcenterinsightsqascorecardrevision.ContactCenterInsightsQaScorecardRevision_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.contactCenterInsightsQaScorecardRevision.ContactCenterInsightsQaScorecardRevision.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/contactcenterinsightsqascorecardrevision"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/contactcenterinsightsqascorecardrevision"
 
 contactcenterinsightsqascorecardrevision.ContactCenterInsightsQaScorecardRevision_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ contactcenterinsightsqascorecardrevision.ContactCenterInsightsQaScorecardRevisio
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.contactCenterInsightsQaScorecardRevision.ContactCenterInsightsQaScorecardRevision.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/contactcenterinsightsqascorecardrevision"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/contactcenterinsightsqascorecardrevision"
 
 contactcenterinsightsqascorecardrevision.ContactCenterInsightsQaScorecardRevision_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ contactcenterinsightsqascorecardrevision.ContactCenterInsightsQaScorecardRevisio
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.contactCenterInsightsQaScorecardRevision.ContactCenterInsightsQaScorecardRevision.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/contactcenterinsightsqascorecardrevision"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/contactcenterinsightsqascorecardrevision"
 
 contactcenterinsightsqascorecardrevision.ContactCenterInsightsQaScorecardRevision_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -530,7 +530,7 @@ The construct id used in the generated config for the ContactCenterInsightsQaSco
 
 The id of the existing ContactCenterInsightsQaScorecardRevision that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/contact_center_insights_qa_scorecard_revision#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/contact_center_insights_qa_scorecard_revision#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -917,7 +917,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.contactCenterInsightsQaScorecardRevision.ContactCenterInsightsQaScorecardRevisionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/contactcenterinsightsqascorecardrevision"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/contactcenterinsightsqascorecardrevision"
 
 &contactcenterinsightsqascorecardrevision.ContactCenterInsightsQaScorecardRevisionConfig {
 	Connection: interface{},
@@ -932,7 +932,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/contactcenterins
 	Id: *string,
 	Project: *string,
 	QaScorecardRevisionId: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.contactCenterInsightsQaScorecardRevision.ContactCenterInsightsQaScorecardRevisionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.contactCenterInsightsQaScorecardRevision.ContactCenterInsightsQaScorecardRevisionTimeouts,
 }
 ```
 
@@ -949,8 +949,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/contactcenterins
 | <code><a href="#@cdktn/provider-google.contactCenterInsightsQaScorecardRevision.ContactCenterInsightsQaScorecardRevisionConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.contactCenterInsightsQaScorecardRevision.ContactCenterInsightsQaScorecardRevisionConfig.property.location">Location</a></code> | <code>*string</code> | Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122. |
 | <code><a href="#@cdktn/provider-google.contactCenterInsightsQaScorecardRevision.ContactCenterInsightsQaScorecardRevisionConfig.property.qaScorecard">QaScorecard</a></code> | <code>*string</code> | Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122. |
-| <code><a href="#@cdktn/provider-google.contactCenterInsightsQaScorecardRevision.ContactCenterInsightsQaScorecardRevisionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/contact_center_insights_qa_scorecard_revision#id ContactCenterInsightsQaScorecardRevision#id}. |
-| <code><a href="#@cdktn/provider-google.contactCenterInsightsQaScorecardRevision.ContactCenterInsightsQaScorecardRevisionConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/contact_center_insights_qa_scorecard_revision#project ContactCenterInsightsQaScorecardRevision#project}. |
+| <code><a href="#@cdktn/provider-google.contactCenterInsightsQaScorecardRevision.ContactCenterInsightsQaScorecardRevisionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/contact_center_insights_qa_scorecard_revision#id ContactCenterInsightsQaScorecardRevision#id}. |
+| <code><a href="#@cdktn/provider-google.contactCenterInsightsQaScorecardRevision.ContactCenterInsightsQaScorecardRevisionConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/contact_center_insights_qa_scorecard_revision#project ContactCenterInsightsQaScorecardRevision#project}. |
 | <code><a href="#@cdktn/provider-google.contactCenterInsightsQaScorecardRevision.ContactCenterInsightsQaScorecardRevisionConfig.property.qaScorecardRevisionId">QaScorecardRevisionId</a></code> | <code>*string</code> | A unique ID for the new QaScorecardRevision. |
 | <code><a href="#@cdktn/provider-google.contactCenterInsightsQaScorecardRevision.ContactCenterInsightsQaScorecardRevisionConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.contactCenterInsightsQaScorecardRevision.ContactCenterInsightsQaScorecardRevisionTimeouts">ContactCenterInsightsQaScorecardRevisionTimeouts</a></code> | timeouts block. |
 
@@ -1036,7 +1036,7 @@ Location *string
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/contact_center_insights_qa_scorecard_revision#location ContactCenterInsightsQaScorecardRevision#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/contact_center_insights_qa_scorecard_revision#location ContactCenterInsightsQaScorecardRevision#location}
 
 ---
 
@@ -1050,7 +1050,7 @@ QaScorecard *string
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/contact_center_insights_qa_scorecard_revision#qa_scorecard ContactCenterInsightsQaScorecardRevision#qa_scorecard}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/contact_center_insights_qa_scorecard_revision#qa_scorecard ContactCenterInsightsQaScorecardRevision#qa_scorecard}
 
 ---
 
@@ -1062,7 +1062,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/contact_center_insights_qa_scorecard_revision#id ContactCenterInsightsQaScorecardRevision#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/contact_center_insights_qa_scorecard_revision#id ContactCenterInsightsQaScorecardRevision#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1077,7 +1077,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/contact_center_insights_qa_scorecard_revision#project ContactCenterInsightsQaScorecardRevision#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/contact_center_insights_qa_scorecard_revision#project ContactCenterInsightsQaScorecardRevision#project}.
 
 ---
 
@@ -1095,7 +1095,7 @@ This ID will become the final
 component of the QaScorecardRevision's resource name.
 If no ID is specified this resource will get the latest revision on the given scorecard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/contact_center_insights_qa_scorecard_revision#qa_scorecard_revision_id ContactCenterInsightsQaScorecardRevision#qa_scorecard_revision_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/contact_center_insights_qa_scorecard_revision#qa_scorecard_revision_id ContactCenterInsightsQaScorecardRevision#qa_scorecard_revision_id}
 
 ---
 
@@ -1109,7 +1109,7 @@ Timeouts ContactCenterInsightsQaScorecardRevisionTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/contact_center_insights_qa_scorecard_revision#timeouts ContactCenterInsightsQaScorecardRevision#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/contact_center_insights_qa_scorecard_revision#timeouts ContactCenterInsightsQaScorecardRevision#timeouts}
 
 ---
 
@@ -1118,7 +1118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.contactCenterInsightsQaScorecardRevision.ContactCenterInsightsQaScorecardRevisionSnapshot.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/contactcenterinsightsqascorecardrevision"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/contactcenterinsightsqascorecardrevision"
 
 &contactcenterinsightsqascorecardrevision.ContactCenterInsightsQaScorecardRevisionSnapshot {
 
@@ -1131,7 +1131,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/contactcenterins
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.contactCenterInsightsQaScorecardRevision.ContactCenterInsightsQaScorecardRevisionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/contactcenterinsightsqascorecardrevision"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/contactcenterinsightsqascorecardrevision"
 
 &contactcenterinsightsqascorecardrevision.ContactCenterInsightsQaScorecardRevisionTimeouts {
 	Create: *string,
@@ -1143,8 +1143,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/contactcenterins
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.contactCenterInsightsQaScorecardRevision.ContactCenterInsightsQaScorecardRevisionTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/contact_center_insights_qa_scorecard_revision#create ContactCenterInsightsQaScorecardRevision#create}. |
-| <code><a href="#@cdktn/provider-google.contactCenterInsightsQaScorecardRevision.ContactCenterInsightsQaScorecardRevisionTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/contact_center_insights_qa_scorecard_revision#delete ContactCenterInsightsQaScorecardRevision#delete}. |
+| <code><a href="#@cdktn/provider-google.contactCenterInsightsQaScorecardRevision.ContactCenterInsightsQaScorecardRevisionTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/contact_center_insights_qa_scorecard_revision#create ContactCenterInsightsQaScorecardRevision#create}. |
+| <code><a href="#@cdktn/provider-google.contactCenterInsightsQaScorecardRevision.ContactCenterInsightsQaScorecardRevisionTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/contact_center_insights_qa_scorecard_revision#delete ContactCenterInsightsQaScorecardRevision#delete}. |
 
 ---
 
@@ -1156,7 +1156,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/contact_center_insights_qa_scorecard_revision#create ContactCenterInsightsQaScorecardRevision#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/contact_center_insights_qa_scorecard_revision#create ContactCenterInsightsQaScorecardRevision#create}.
 
 ---
 
@@ -1168,7 +1168,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/contact_center_insights_qa_scorecard_revision#delete ContactCenterInsightsQaScorecardRevision#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/contact_center_insights_qa_scorecard_revision#delete ContactCenterInsightsQaScorecardRevision#delete}.
 
 ---
 
@@ -1179,7 +1179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.contactCenterInsightsQaScorecardRevision.ContactCenterInsightsQaScorecardRevisionSnapshotList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/contactcenterinsightsqascorecardrevision"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/contactcenterinsightsqascorecardrevision"
 
 contactcenterinsightsqascorecardrevision.NewContactCenterInsightsQaScorecardRevisionSnapshotList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContactCenterInsightsQaScorecardRevisionSnapshotList
 ```
@@ -1328,7 +1328,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.contactCenterInsightsQaScorecardRevision.ContactCenterInsightsQaScorecardRevisionSnapshotOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/contactcenterinsightsqascorecardrevision"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/contactcenterinsightsqascorecardrevision"
 
 contactcenterinsightsqascorecardrevision.NewContactCenterInsightsQaScorecardRevisionSnapshotOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContactCenterInsightsQaScorecardRevisionSnapshotOutputReference
 ```
@@ -1672,7 +1672,7 @@ func InternalValue() ContactCenterInsightsQaScorecardRevisionSnapshot
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.contactCenterInsightsQaScorecardRevision.ContactCenterInsightsQaScorecardRevisionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/contactcenterinsightsqascorecardrevision"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/contactcenterinsightsqascorecardrevision"
 
 contactcenterinsightsqascorecardrevision.NewContactCenterInsightsQaScorecardRevisionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContactCenterInsightsQaScorecardRevisionTimeoutsOutputReference
 ```

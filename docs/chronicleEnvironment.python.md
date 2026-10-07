@@ -4,7 +4,7 @@
 
 ### ChronicleEnvironment <a name="ChronicleEnvironment" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment google_chronicle_environment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment google_chronicle_environment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.Initializer"></a>
 
@@ -30,12 +30,17 @@ chronicleEnvironment.ChronicleEnvironment(
   location: str,
   retention_duration: typing.Union[int, float],
   aliases_json: str = None,
+  base64_image: str = None,
   data_access_scopes_json: str = None,
   deletion_policy: str = None,
   deletion_protection: bool | IResolvable = None,
+  dynamic_parameters: IResolvable | typing.List[ChronicleEnvironmentDynamicParameters] = None,
   id: str = None,
+  instance_uri: str = None,
+  parallel_instance: str = None,
   project: str = None,
-  timeouts: ChronicleEnvironmentTimeouts = None
+  timeouts: ChronicleEnvironmentTimeouts = None,
+  weight: typing.Union[int, float] = None
 )
 ```
 
@@ -59,12 +64,17 @@ chronicleEnvironment.ChronicleEnvironment(
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.Initializer.parameter.location">location</a></code> | <code>str</code> | Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122. |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.Initializer.parameter.retentionDuration">retention_duration</a></code> | <code>typing.Union[int, float]</code> | Environment data retention in months. |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.Initializer.parameter.aliasesJson">aliases_json</a></code> | <code>str</code> | Environment nicknames. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.Initializer.parameter.base64Image">base64_image</a></code> | <code>str</code> | Environment icon. |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.Initializer.parameter.dataAccessScopesJson">data_access_scopes_json</a></code> | <code>str</code> | data access scopes. |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.Initializer.parameter.deletionProtection">deletion_protection</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether Terraform will be prevented from destroying the environment. |
-| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#id ChronicleEnvironment#id}. |
-| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#project ChronicleEnvironment#project}. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.Initializer.parameter.dynamicParameters">dynamic_parameters</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParameters">ChronicleEnvironmentDynamicParameters</a>]</code> | dynamic_parameters block. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#id ChronicleEnvironment#id}. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.Initializer.parameter.instanceUri">instance_uri</a></code> | <code>str</code> | URL of the environment. Used to route UI links to the correct SIEM instance when making cross-SecOps requests from SOAR. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.Initializer.parameter.parallelInstance">parallel_instance</a></code> | <code>str</code> | The optional parallel SIEM instance used as a data source. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#project ChronicleEnvironment#project}. |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentTimeouts">ChronicleEnvironmentTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.Initializer.parameter.weight">weight</a></code> | <code>typing.Union[int, float]</code> | The weight of the environment, enabling customers to control distribution of resources between the separate environments in a single instance of Chronicle SOAR. |
 
 ---
 
@@ -134,7 +144,7 @@ Must be unique amongst siblings in the same scope
 
 MAX_NAME_LENGTH = 256 Name of the contact for the environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#contact ChronicleEnvironment#contact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#contact ChronicleEnvironment#contact}
 
 ---
 
@@ -144,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 MAX_NAME_LENGTH = 256 Email of the contact for the environment. Multiple emails can be sepereated with the ';' character.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#contact_emails ChronicleEnvironment#contact_emails}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#contact_emails ChronicleEnvironment#contact_emails}
 
 ---
 
@@ -154,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 MAX_NAME_LENGTH = 256 Phone number of the contact for the environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#contact_phone ChronicleEnvironment#contact_phone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#contact_phone ChronicleEnvironment#contact_phone}
 
 ---
 
@@ -164,7 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 MAX_NAME_LENGTH = 256 Description of the environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#description ChronicleEnvironment#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#description ChronicleEnvironment#description}
 
 ---
 
@@ -174,7 +184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Name of the environment MAX_NAME_LENGTH = 256.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#display_name ChronicleEnvironment#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#display_name ChronicleEnvironment#display_name}
 
 ---
 
@@ -184,7 +194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#instance ChronicleEnvironment#instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#instance ChronicleEnvironment#instance}
 
 ---
 
@@ -194,7 +204,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#location ChronicleEnvironment#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#location ChronicleEnvironment#location}
 
 ---
 
@@ -204,7 +214,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Environment data retention in months.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#retention_duration ChronicleEnvironment#retention_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#retention_duration ChronicleEnvironment#retention_duration}
 
 ---
 
@@ -214,7 +224,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Environment nicknames.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#aliases_json ChronicleEnvironment#aliases_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#aliases_json ChronicleEnvironment#aliases_json}
+
+---
+
+##### `base64_image`<sup>Optional</sup> <a name="base64_image" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.Initializer.parameter.base64Image"></a>
+
+- *Type:* str
+
+Environment icon.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#base64_image ChronicleEnvironment#base64_image}
 
 ---
 
@@ -224,7 +244,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 data access scopes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#data_access_scopes_json ChronicleEnvironment#data_access_scopes_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#data_access_scopes_json ChronicleEnvironment#data_access_scopes_json}
 
 ---
 
@@ -241,7 +261,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#deletion_policy ChronicleEnvironment#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#deletion_policy ChronicleEnvironment#deletion_policy}
 
 ---
 
@@ -253,7 +273,17 @@ Whether Terraform will be prevented from destroying the environment.
 
 Deleting an environment will remove all its data and all playbooks, environments, integrations instances, reports and agents related to the environment. Once you delete an environment, it cannot be reversed. Deleting environments via terraform destroy or terraform apply will only succeed if this field is false in the Terraform state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#deletion_protection ChronicleEnvironment#deletion_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#deletion_protection ChronicleEnvironment#deletion_protection}
+
+---
+
+##### `dynamic_parameters`<sup>Optional</sup> <a name="dynamic_parameters" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.Initializer.parameter.dynamicParameters"></a>
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParameters">ChronicleEnvironmentDynamicParameters</a>]
+
+dynamic_parameters block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#dynamic_parameters ChronicleEnvironment#dynamic_parameters}
 
 ---
 
@@ -261,10 +291,37 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#id ChronicleEnvironment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#id ChronicleEnvironment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `instance_uri`<sup>Optional</sup> <a name="instance_uri" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.Initializer.parameter.instanceUri"></a>
+
+- *Type:* str
+
+URL of the environment. Used to route UI links to the correct SIEM instance when making cross-SecOps requests from SOAR.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#instance_uri ChronicleEnvironment#instance_uri}
+
+---
+
+##### `parallel_instance`<sup>Optional</sup> <a name="parallel_instance" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.Initializer.parameter.parallelInstance"></a>
+
+- *Type:* str
+
+The optional parallel SIEM instance used as a data source.
+
+Used to route
+API requests to the correct SIEM instance when making cross-SecOps requests
+from SOAR. For most customers, this is not required, since the parent
+instance is used as the data source by default.
+Format:
+projects/{project}/locations/{location}/instances/{instance}
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#parallel_instance ChronicleEnvironment#parallel_instance}
 
 ---
 
@@ -272,7 +329,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#project ChronicleEnvironment#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#project ChronicleEnvironment#project}.
 
 ---
 
@@ -282,7 +339,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#timeouts ChronicleEnvironment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#timeouts ChronicleEnvironment#timeouts}
+
+---
+
+##### `weight`<sup>Optional</sup> <a name="weight" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.Initializer.parameter.weight"></a>
+
+- *Type:* typing.Union[int, float]
+
+The weight of the environment, enabling customers to control distribution of resources between the separate environments in a single instance of Chronicle SOAR.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#weight ChronicleEnvironment#weight}
 
 ---
 
@@ -314,14 +381,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.putDynamicParameters">put_dynamic_parameters</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.putTimeouts">put_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.resetAliasesJson">reset_aliases_json</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.resetBase64Image">reset_base64_image</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.resetDataAccessScopesJson">reset_data_access_scopes_json</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.resetDeletionPolicy">reset_deletion_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.resetDeletionProtection">reset_deletion_protection</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.resetDynamicParameters">reset_dynamic_parameters</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.resetInstanceUri">reset_instance_uri</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.resetParallelInstance">reset_parallel_instance</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.resetProject">reset_project</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.resetTimeouts">reset_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.resetWeight">reset_weight</a></code> | *No description.* |
 
 ---
 
@@ -673,6 +746,20 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `put_dynamic_parameters` <a name="put_dynamic_parameters" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.putDynamicParameters"></a>
+
+```python
+def put_dynamic_parameters(
+  value: IResolvable | typing.List[ChronicleEnvironmentDynamicParameters]
+) -> None
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.putDynamicParameters.parameter.value"></a>
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParameters">ChronicleEnvironmentDynamicParameters</a>]
+
+---
+
 ##### `put_timeouts` <a name="put_timeouts" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.putTimeouts"></a>
 
 ```python
@@ -687,7 +774,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#create ChronicleEnvironment#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#create ChronicleEnvironment#create}.
 
 ---
 
@@ -695,7 +782,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#delete ChronicleEnvironment#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#delete ChronicleEnvironment#delete}.
 
 ---
 
@@ -703,7 +790,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#update ChronicleEnvironment#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#update ChronicleEnvironment#update}.
 
 ---
 
@@ -711,6 +798,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ```python
 def reset_aliases_json() -> None
+```
+
+##### `reset_base64_image` <a name="reset_base64_image" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.resetBase64Image"></a>
+
+```python
+def reset_base64_image() -> None
 ```
 
 ##### `reset_data_access_scopes_json` <a name="reset_data_access_scopes_json" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.resetDataAccessScopesJson"></a>
@@ -731,10 +824,28 @@ def reset_deletion_policy() -> None
 def reset_deletion_protection() -> None
 ```
 
+##### `reset_dynamic_parameters` <a name="reset_dynamic_parameters" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.resetDynamicParameters"></a>
+
+```python
+def reset_dynamic_parameters() -> None
+```
+
 ##### `reset_id` <a name="reset_id" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.resetId"></a>
 
 ```python
 def reset_id() -> None
+```
+
+##### `reset_instance_uri` <a name="reset_instance_uri" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.resetInstanceUri"></a>
+
+```python
+def reset_instance_uri() -> None
+```
+
+##### `reset_parallel_instance` <a name="reset_parallel_instance" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.resetParallelInstance"></a>
+
+```python
+def reset_parallel_instance() -> None
 ```
 
 ##### `reset_project` <a name="reset_project" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.resetProject"></a>
@@ -747,6 +858,12 @@ def reset_project() -> None
 
 ```python
 def reset_timeouts() -> None
+```
+
+##### `reset_weight` <a name="reset_weight" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.resetWeight"></a>
+
+```python
+def reset_weight() -> None
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -863,7 +980,7 @@ The construct id used in the generated config for the ChronicleEnvironment to im
 
 The id of the existing ChronicleEnvironment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -893,10 +1010,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.dynamicParameters">dynamic_parameters</a></code> | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList">ChronicleEnvironmentDynamicParametersList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.environmentId">environment_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentTimeoutsOutputReference">ChronicleEnvironmentTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.aliasesJsonInput">aliases_json_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.base64ImageInput">base64_image_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.contactEmailsInput">contact_emails_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.contactInput">contact_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.contactPhoneInput">contact_phone_input</a></code> | <code>str</code> | *No description.* |
@@ -905,13 +1024,18 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.deletionProtectionInput">deletion_protection_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.displayNameInput">display_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.dynamicParametersInput">dynamic_parameters_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParameters">ChronicleEnvironmentDynamicParameters</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.instanceInput">instance_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.instanceUriInput">instance_uri_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.locationInput">location_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.parallelInstanceInput">parallel_instance_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.retentionDurationInput">retention_duration_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentTimeouts">ChronicleEnvironmentTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.weightInput">weight_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.aliasesJson">aliases_json</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.base64Image">base64_image</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.contact">contact</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.contactEmails">contact_emails</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.contactPhone">contact_phone</a></code> | <code>str</code> | *No description.* |
@@ -922,9 +1046,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.displayName">display_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.instance">instance</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.instanceUri">instance_uri</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.location">location</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.parallelInstance">parallel_instance</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.project">project</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.retentionDuration">retention_duration</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.weight">weight</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 
 ---
 
@@ -1070,6 +1197,16 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
+##### `dynamic_parameters`<sup>Required</sup> <a name="dynamic_parameters" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.dynamicParameters"></a>
+
+```python
+dynamic_parameters: ChronicleEnvironmentDynamicParametersList
+```
+
+- *Type:* <a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList">ChronicleEnvironmentDynamicParametersList</a>
+
+---
+
 ##### `environment_id`<sup>Required</sup> <a name="environment_id" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.environmentId"></a>
 
 ```python
@@ -1104,6 +1241,16 @@ timeouts: ChronicleEnvironmentTimeoutsOutputReference
 
 ```python
 aliases_json_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `base64_image_input`<sup>Optional</sup> <a name="base64_image_input" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.base64ImageInput"></a>
+
+```python
+base64_image_input: str
 ```
 
 - *Type:* str
@@ -1190,6 +1337,16 @@ display_name_input: str
 
 ---
 
+##### `dynamic_parameters_input`<sup>Optional</sup> <a name="dynamic_parameters_input" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.dynamicParametersInput"></a>
+
+```python
+dynamic_parameters_input: IResolvable | typing.List[ChronicleEnvironmentDynamicParameters]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParameters">ChronicleEnvironmentDynamicParameters</a>]
+
+---
+
 ##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.idInput"></a>
 
 ```python
@@ -1210,10 +1367,30 @@ instance_input: str
 
 ---
 
+##### `instance_uri_input`<sup>Optional</sup> <a name="instance_uri_input" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.instanceUriInput"></a>
+
+```python
+instance_uri_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `location_input`<sup>Optional</sup> <a name="location_input" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.locationInput"></a>
 
 ```python
 location_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `parallel_instance_input`<sup>Optional</sup> <a name="parallel_instance_input" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.parallelInstanceInput"></a>
+
+```python
+parallel_instance_input: str
 ```
 
 - *Type:* str
@@ -1250,10 +1427,30 @@ timeouts_input: IResolvable | ChronicleEnvironmentTimeouts
 
 ---
 
+##### `weight_input`<sup>Optional</sup> <a name="weight_input" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.weightInput"></a>
+
+```python
+weight_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
 ##### `aliases_json`<sup>Required</sup> <a name="aliases_json" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.aliasesJson"></a>
 
 ```python
 aliases_json: str
+```
+
+- *Type:* str
+
+---
+
+##### `base64_image`<sup>Required</sup> <a name="base64_image" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.base64Image"></a>
+
+```python
+base64_image: str
 ```
 
 - *Type:* str
@@ -1360,10 +1557,30 @@ instance: str
 
 ---
 
+##### `instance_uri`<sup>Required</sup> <a name="instance_uri" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.instanceUri"></a>
+
+```python
+instance_uri: str
+```
+
+- *Type:* str
+
+---
+
 ##### `location`<sup>Required</sup> <a name="location" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.location"></a>
 
 ```python
 location: str
+```
+
+- *Type:* str
+
+---
+
+##### `parallel_instance`<sup>Required</sup> <a name="parallel_instance" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.parallelInstance"></a>
+
+```python
+parallel_instance: str
 ```
 
 - *Type:* str
@@ -1384,6 +1601,16 @@ project: str
 
 ```python
 retention_duration: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `weight`<sup>Required</sup> <a name="weight" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironment.property.weight"></a>
+
+```python
+weight: typing.Union[int, float]
 ```
 
 - *Type:* typing.Union[int, float]
@@ -1434,12 +1661,17 @@ chronicleEnvironment.ChronicleEnvironmentConfig(
   location: str,
   retention_duration: typing.Union[int, float],
   aliases_json: str = None,
+  base64_image: str = None,
   data_access_scopes_json: str = None,
   deletion_policy: str = None,
   deletion_protection: bool | IResolvable = None,
+  dynamic_parameters: IResolvable | typing.List[ChronicleEnvironmentDynamicParameters] = None,
   id: str = None,
+  instance_uri: str = None,
+  parallel_instance: str = None,
   project: str = None,
-  timeouts: ChronicleEnvironmentTimeouts = None
+  timeouts: ChronicleEnvironmentTimeouts = None,
+  weight: typing.Union[int, float] = None
 )
 ```
 
@@ -1463,12 +1695,17 @@ chronicleEnvironment.ChronicleEnvironmentConfig(
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentConfig.property.location">location</a></code> | <code>str</code> | Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122. |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentConfig.property.retentionDuration">retention_duration</a></code> | <code>typing.Union[int, float]</code> | Environment data retention in months. |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentConfig.property.aliasesJson">aliases_json</a></code> | <code>str</code> | Environment nicknames. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentConfig.property.base64Image">base64_image</a></code> | <code>str</code> | Environment icon. |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentConfig.property.dataAccessScopesJson">data_access_scopes_json</a></code> | <code>str</code> | data access scopes. |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentConfig.property.deletionProtection">deletion_protection</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether Terraform will be prevented from destroying the environment. |
-| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#id ChronicleEnvironment#id}. |
-| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#project ChronicleEnvironment#project}. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentConfig.property.dynamicParameters">dynamic_parameters</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParameters">ChronicleEnvironmentDynamicParameters</a>]</code> | dynamic_parameters block. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#id ChronicleEnvironment#id}. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentConfig.property.instanceUri">instance_uri</a></code> | <code>str</code> | URL of the environment. Used to route UI links to the correct SIEM instance when making cross-SecOps requests from SOAR. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentConfig.property.parallelInstance">parallel_instance</a></code> | <code>str</code> | The optional parallel SIEM instance used as a data source. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#project ChronicleEnvironment#project}. |
 | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentTimeouts">ChronicleEnvironmentTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentConfig.property.weight">weight</a></code> | <code>typing.Union[int, float]</code> | The weight of the environment, enabling customers to control distribution of resources between the separate environments in a single instance of Chronicle SOAR. |
 
 ---
 
@@ -1552,7 +1789,7 @@ contact: str
 
 MAX_NAME_LENGTH = 256 Name of the contact for the environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#contact ChronicleEnvironment#contact}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#contact ChronicleEnvironment#contact}
 
 ---
 
@@ -1566,7 +1803,7 @@ contact_emails: str
 
 MAX_NAME_LENGTH = 256 Email of the contact for the environment. Multiple emails can be sepereated with the ';' character.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#contact_emails ChronicleEnvironment#contact_emails}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#contact_emails ChronicleEnvironment#contact_emails}
 
 ---
 
@@ -1580,7 +1817,7 @@ contact_phone: str
 
 MAX_NAME_LENGTH = 256 Phone number of the contact for the environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#contact_phone ChronicleEnvironment#contact_phone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#contact_phone ChronicleEnvironment#contact_phone}
 
 ---
 
@@ -1594,7 +1831,7 @@ description: str
 
 MAX_NAME_LENGTH = 256 Description of the environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#description ChronicleEnvironment#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#description ChronicleEnvironment#description}
 
 ---
 
@@ -1608,7 +1845,7 @@ display_name: str
 
 Name of the environment MAX_NAME_LENGTH = 256.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#display_name ChronicleEnvironment#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#display_name ChronicleEnvironment#display_name}
 
 ---
 
@@ -1622,7 +1859,7 @@ instance: str
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#instance ChronicleEnvironment#instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#instance ChronicleEnvironment#instance}
 
 ---
 
@@ -1636,7 +1873,7 @@ location: str
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#location ChronicleEnvironment#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#location ChronicleEnvironment#location}
 
 ---
 
@@ -1650,7 +1887,7 @@ retention_duration: typing.Union[int, float]
 
 Environment data retention in months.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#retention_duration ChronicleEnvironment#retention_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#retention_duration ChronicleEnvironment#retention_duration}
 
 ---
 
@@ -1664,7 +1901,21 @@ aliases_json: str
 
 Environment nicknames.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#aliases_json ChronicleEnvironment#aliases_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#aliases_json ChronicleEnvironment#aliases_json}
+
+---
+
+##### `base64_image`<sup>Optional</sup> <a name="base64_image" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentConfig.property.base64Image"></a>
+
+```python
+base64_image: str
+```
+
+- *Type:* str
+
+Environment icon.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#base64_image ChronicleEnvironment#base64_image}
 
 ---
 
@@ -1678,7 +1929,7 @@ data_access_scopes_json: str
 
 data access scopes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#data_access_scopes_json ChronicleEnvironment#data_access_scopes_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#data_access_scopes_json ChronicleEnvironment#data_access_scopes_json}
 
 ---
 
@@ -1699,7 +1950,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#deletion_policy ChronicleEnvironment#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#deletion_policy ChronicleEnvironment#deletion_policy}
 
 ---
 
@@ -1715,7 +1966,21 @@ Whether Terraform will be prevented from destroying the environment.
 
 Deleting an environment will remove all its data and all playbooks, environments, integrations instances, reports and agents related to the environment. Once you delete an environment, it cannot be reversed. Deleting environments via terraform destroy or terraform apply will only succeed if this field is false in the Terraform state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#deletion_protection ChronicleEnvironment#deletion_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#deletion_protection ChronicleEnvironment#deletion_protection}
+
+---
+
+##### `dynamic_parameters`<sup>Optional</sup> <a name="dynamic_parameters" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentConfig.property.dynamicParameters"></a>
+
+```python
+dynamic_parameters: IResolvable | typing.List[ChronicleEnvironmentDynamicParameters]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParameters">ChronicleEnvironmentDynamicParameters</a>]
+
+dynamic_parameters block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#dynamic_parameters ChronicleEnvironment#dynamic_parameters}
 
 ---
 
@@ -1727,10 +1992,45 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#id ChronicleEnvironment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#id ChronicleEnvironment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `instance_uri`<sup>Optional</sup> <a name="instance_uri" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentConfig.property.instanceUri"></a>
+
+```python
+instance_uri: str
+```
+
+- *Type:* str
+
+URL of the environment. Used to route UI links to the correct SIEM instance when making cross-SecOps requests from SOAR.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#instance_uri ChronicleEnvironment#instance_uri}
+
+---
+
+##### `parallel_instance`<sup>Optional</sup> <a name="parallel_instance" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentConfig.property.parallelInstance"></a>
+
+```python
+parallel_instance: str
+```
+
+- *Type:* str
+
+The optional parallel SIEM instance used as a data source.
+
+Used to route
+API requests to the correct SIEM instance when making cross-SecOps requests
+from SOAR. For most customers, this is not required, since the parent
+instance is used as the data source by default.
+Format:
+projects/{project}/locations/{location}/instances/{instance}
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#parallel_instance ChronicleEnvironment#parallel_instance}
 
 ---
 
@@ -1742,7 +2042,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#project ChronicleEnvironment#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#project ChronicleEnvironment#project}.
 
 ---
 
@@ -1756,7 +2056,71 @@ timeouts: ChronicleEnvironmentTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#timeouts ChronicleEnvironment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#timeouts ChronicleEnvironment#timeouts}
+
+---
+
+##### `weight`<sup>Optional</sup> <a name="weight" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentConfig.property.weight"></a>
+
+```python
+weight: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+The weight of the environment, enabling customers to control distribution of resources between the separate environments in a single instance of Chronicle SOAR.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#weight ChronicleEnvironment#weight}
+
+---
+
+### ChronicleEnvironmentDynamicParameters <a name="ChronicleEnvironmentDynamicParameters" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParameters"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParameters.Initializer"></a>
+
+```python
+from cdktn_provider_google import chronicle_environment
+
+chronicleEnvironment.ChronicleEnvironmentDynamicParameters(
+  dynamic_parameter_id: typing.Union[int, float],
+  value: str
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParameters.property.dynamicParameterId">dynamic_parameter_id</a></code> | <code>typing.Union[int, float]</code> | The ID of the dynamic parameter. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParameters.property.value">value</a></code> | <code>str</code> | The value of the dynamic parameter. |
+
+---
+
+##### `dynamic_parameter_id`<sup>Required</sup> <a name="dynamic_parameter_id" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParameters.property.dynamicParameterId"></a>
+
+```python
+dynamic_parameter_id: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+The ID of the dynamic parameter.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#dynamic_parameter_id ChronicleEnvironment#dynamic_parameter_id}
+
+---
+
+##### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParameters.property.value"></a>
+
+```python
+value: str
+```
+
+- *Type:* str
+
+The value of the dynamic parameter.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#value ChronicleEnvironment#value}
 
 ---
 
@@ -1778,9 +2142,9 @@ chronicleEnvironment.ChronicleEnvironmentTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#create ChronicleEnvironment#create}. |
-| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#delete ChronicleEnvironment#delete}. |
-| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#update ChronicleEnvironment#update}. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#create ChronicleEnvironment#create}. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#delete ChronicleEnvironment#delete}. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#update ChronicleEnvironment#update}. |
 
 ---
 
@@ -1792,7 +2156,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#create ChronicleEnvironment#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#create ChronicleEnvironment#create}.
 
 ---
 
@@ -1804,7 +2168,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#delete ChronicleEnvironment#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#delete ChronicleEnvironment#delete}.
 
 ---
 
@@ -1816,11 +2180,530 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_environment#update ChronicleEnvironment#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_environment#update ChronicleEnvironment#update}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### ChronicleEnvironmentDynamicParametersList <a name="ChronicleEnvironmentDynamicParametersList" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.Initializer"></a>
+
+```python
+from cdktn_provider_google import chronicle_environment
+
+chronicleEnvironment.ChronicleEnvironmentDynamicParametersList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> ChronicleEnvironmentDynamicParametersOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParameters">ChronicleEnvironmentDynamicParameters</a>]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersList.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | typing.List[ChronicleEnvironmentDynamicParameters]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParameters">ChronicleEnvironmentDynamicParameters</a>]
+
+---
+
+
+### ChronicleEnvironmentDynamicParametersOutputReference <a name="ChronicleEnvironmentDynamicParametersOutputReference" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_google import chronicle_environment
+
+chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.property.environmentId">environment_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.property.dynamicParameterIdInput">dynamic_parameter_id_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.property.dynamicParameterId">dynamic_parameter_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParameters">ChronicleEnvironmentDynamicParameters</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `environment_id`<sup>Required</sup> <a name="environment_id" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.property.environmentId"></a>
+
+```python
+environment_id: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `dynamic_parameter_id_input`<sup>Optional</sup> <a name="dynamic_parameter_id_input" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.property.dynamicParameterIdInput"></a>
+
+```python
+dynamic_parameter_id_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `value_input`<sup>Optional</sup> <a name="value_input" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.property.valueInput"></a>
+
+```python
+value_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `dynamic_parameter_id`<sup>Required</sup> <a name="dynamic_parameter_id" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.property.dynamicParameterId"></a>
+
+```python
+dynamic_parameter_id: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.property.value"></a>
+
+```python
+value: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParametersOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | ChronicleEnvironmentDynamicParameters
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentDynamicParameters">ChronicleEnvironmentDynamicParameters</a>
+
+---
+
 
 ### ChronicleEnvironmentTimeoutsOutputReference <a name="ChronicleEnvironmentTimeoutsOutputReference" id="@cdktn/provider-google.chronicleEnvironment.ChronicleEnvironmentTimeoutsOutputReference"></a>
 
