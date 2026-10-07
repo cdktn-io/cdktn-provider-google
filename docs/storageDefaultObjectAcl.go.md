@@ -4,12 +4,12 @@
 
 ### StorageDefaultObjectAcl <a name="StorageDefaultObjectAcl" id="@cdktn/provider-google.storageDefaultObjectAcl.StorageDefaultObjectAcl"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_default_object_acl google_storage_default_object_acl}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_default_object_acl google_storage_default_object_acl}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageDefaultObjectAcl.StorageDefaultObjectAcl.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagedefaultobjectacl"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagedefaultobjectacl"
 
 storagedefaultobjectacl.NewStorageDefaultObjectAcl(scope Construct, id *string, config StorageDefaultObjectAclConfig) StorageDefaultObjectAcl
 ```
@@ -421,7 +421,7 @@ func ResetRoleEntity()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.storageDefaultObjectAcl.StorageDefaultObjectAcl.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagedefaultobjectacl"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagedefaultobjectacl"
 
 storagedefaultobjectacl.StorageDefaultObjectAcl_IsConstruct(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.storageDefaultObjectAcl.StorageDefaultObjectAcl.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagedefaultobjectacl"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagedefaultobjectacl"
 
 storagedefaultobjectacl.StorageDefaultObjectAcl_IsTerraformElement(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ storagedefaultobjectacl.StorageDefaultObjectAcl_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.storageDefaultObjectAcl.StorageDefaultObjectAcl.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagedefaultobjectacl"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagedefaultobjectacl"
 
 storagedefaultobjectacl.StorageDefaultObjectAcl_IsTerraformResource(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ storagedefaultobjectacl.StorageDefaultObjectAcl_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.storageDefaultObjectAcl.StorageDefaultObjectAcl.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagedefaultobjectacl"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagedefaultobjectacl"
 
 storagedefaultobjectacl.StorageDefaultObjectAcl_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -510,7 +510,7 @@ The construct id used in the generated config for the StorageDefaultObjectAcl to
 
 The id of the existing StorageDefaultObjectAcl that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_default_object_acl#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_default_object_acl#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -798,7 +798,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageDefaultObjectAcl.StorageDefaultObjectAclConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagedefaultobjectacl"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storagedefaultobjectacl"
 
 &storagedefaultobjectacl.StorageDefaultObjectAclConfig {
 	Connection: interface{},
@@ -826,10 +826,10 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storagedefaultob
 | <code><a href="#@cdktn/provider-google.storageDefaultObjectAcl.StorageDefaultObjectAclConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageDefaultObjectAcl.StorageDefaultObjectAclConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageDefaultObjectAcl.StorageDefaultObjectAclConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.storageDefaultObjectAcl.StorageDefaultObjectAclConfig.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_default_object_acl#bucket StorageDefaultObjectAcl#bucket}. |
+| <code><a href="#@cdktn/provider-google.storageDefaultObjectAcl.StorageDefaultObjectAclConfig.property.bucket">Bucket</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_default_object_acl#bucket StorageDefaultObjectAcl#bucket}. |
 | <code><a href="#@cdktn/provider-google.storageDefaultObjectAcl.StorageDefaultObjectAclConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.storageDefaultObjectAcl.StorageDefaultObjectAclConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_default_object_acl#id StorageDefaultObjectAcl#id}. |
-| <code><a href="#@cdktn/provider-google.storageDefaultObjectAcl.StorageDefaultObjectAclConfig.property.roleEntity">RoleEntity</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_default_object_acl#role_entity StorageDefaultObjectAcl#role_entity}. |
+| <code><a href="#@cdktn/provider-google.storageDefaultObjectAcl.StorageDefaultObjectAclConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_default_object_acl#id StorageDefaultObjectAcl#id}. |
+| <code><a href="#@cdktn/provider-google.storageDefaultObjectAcl.StorageDefaultObjectAclConfig.property.roleEntity">RoleEntity</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_default_object_acl#role_entity StorageDefaultObjectAcl#role_entity}. |
 
 ---
 
@@ -911,7 +911,7 @@ Bucket *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_default_object_acl#bucket StorageDefaultObjectAcl#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_default_object_acl#bucket StorageDefaultObjectAcl#bucket}.
 
 ---
 
@@ -932,7 +932,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_default_object_acl#deletion_policy StorageDefaultObjectAcl#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_default_object_acl#deletion_policy StorageDefaultObjectAcl#deletion_policy}
 
 ---
 
@@ -944,7 +944,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_default_object_acl#id StorageDefaultObjectAcl#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_default_object_acl#id StorageDefaultObjectAcl#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -959,7 +959,7 @@ RoleEntity *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_default_object_acl#role_entity StorageDefaultObjectAcl#role_entity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_default_object_acl#role_entity StorageDefaultObjectAcl#role_entity}.
 
 ---
 

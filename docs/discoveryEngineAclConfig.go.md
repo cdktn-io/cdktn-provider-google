@@ -4,12 +4,12 @@
 
 ### DiscoveryEngineAclConfig <a name="DiscoveryEngineAclConfig" id="@cdktn/provider-google.discoveryEngineAclConfig.DiscoveryEngineAclConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_acl_config google_discovery_engine_acl_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_acl_config google_discovery_engine_acl_config}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineAclConfig.DiscoveryEngineAclConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryengineaclconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/discoveryengineaclconfig"
 
 discoveryengineaclconfig.NewDiscoveryEngineAclConfig(scope Construct, id *string, config DiscoveryEngineAclConfigConfig) DiscoveryEngineAclConfig
 ```
@@ -454,7 +454,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.discoveryEngineAclConfig.DiscoveryEngineAclConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryengineaclconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/discoveryengineaclconfig"
 
 discoveryengineaclconfig.DiscoveryEngineAclConfig_IsConstruct(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.discoveryEngineAclConfig.DiscoveryEngineAclConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryengineaclconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/discoveryengineaclconfig"
 
 discoveryengineaclconfig.DiscoveryEngineAclConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ discoveryengineaclconfig.DiscoveryEngineAclConfig_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.discoveryEngineAclConfig.DiscoveryEngineAclConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryengineaclconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/discoveryengineaclconfig"
 
 discoveryengineaclconfig.DiscoveryEngineAclConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ discoveryengineaclconfig.DiscoveryEngineAclConfig_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.discoveryEngineAclConfig.DiscoveryEngineAclConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryengineaclconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/discoveryengineaclconfig"
 
 discoveryengineaclconfig.DiscoveryEngineAclConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -543,7 +543,7 @@ The construct id used in the generated config for the DiscoveryEngineAclConfig t
 
 The id of the existing DiscoveryEngineAclConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_acl_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_acl_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -864,7 +864,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineAclConfig.DiscoveryEngineAclConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryengineaclconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/discoveryengineaclconfig"
 
 &discoveryengineaclconfig.DiscoveryEngineAclConfigConfig {
 	Connection: interface{},
@@ -876,9 +876,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginea
 	Provisioners: *[]interface{},
 	Location: *string,
 	Id: *string,
-	IdpConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.discoveryEngineAclConfig.DiscoveryEngineAclConfigIdpConfig,
+	IdpConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.discoveryEngineAclConfig.DiscoveryEngineAclConfigIdpConfig,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.discoveryEngineAclConfig.DiscoveryEngineAclConfigTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.discoveryEngineAclConfig.DiscoveryEngineAclConfigTimeouts,
 }
 ```
 
@@ -894,9 +894,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginea
 | <code><a href="#@cdktn/provider-google.discoveryEngineAclConfig.DiscoveryEngineAclConfigConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineAclConfig.DiscoveryEngineAclConfigConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineAclConfig.DiscoveryEngineAclConfigConfig.property.location">Location</a></code> | <code>*string</code> | The geographic location where the data store should reside. The value can only be one of "global", "us" and "eu". |
-| <code><a href="#@cdktn/provider-google.discoveryEngineAclConfig.DiscoveryEngineAclConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_acl_config#id DiscoveryEngineAclConfig#id}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineAclConfig.DiscoveryEngineAclConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_acl_config#id DiscoveryEngineAclConfig#id}. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineAclConfig.DiscoveryEngineAclConfigConfig.property.idpConfig">IdpConfig</a></code> | <code><a href="#@cdktn/provider-google.discoveryEngineAclConfig.DiscoveryEngineAclConfigIdpConfig">DiscoveryEngineAclConfigIdpConfig</a></code> | idp_config block. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineAclConfig.DiscoveryEngineAclConfigConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_acl_config#project DiscoveryEngineAclConfig#project}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineAclConfig.DiscoveryEngineAclConfigConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_acl_config#project DiscoveryEngineAclConfig#project}. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineAclConfig.DiscoveryEngineAclConfigConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.discoveryEngineAclConfig.DiscoveryEngineAclConfigTimeouts">DiscoveryEngineAclConfigTimeouts</a></code> | timeouts block. |
 
 ---
@@ -981,7 +981,7 @@ Location *string
 
 The geographic location where the data store should reside. The value can only be one of "global", "us" and "eu".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_acl_config#location DiscoveryEngineAclConfig#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_acl_config#location DiscoveryEngineAclConfig#location}
 
 ---
 
@@ -993,7 +993,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_acl_config#id DiscoveryEngineAclConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_acl_config#id DiscoveryEngineAclConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1010,7 +1010,7 @@ IdpConfig DiscoveryEngineAclConfigIdpConfig
 
 idp_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_acl_config#idp_config DiscoveryEngineAclConfig#idp_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_acl_config#idp_config DiscoveryEngineAclConfig#idp_config}
 
 ---
 
@@ -1022,7 +1022,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_acl_config#project DiscoveryEngineAclConfig#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_acl_config#project DiscoveryEngineAclConfig#project}.
 
 ---
 
@@ -1036,7 +1036,7 @@ Timeouts DiscoveryEngineAclConfigTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_acl_config#timeouts DiscoveryEngineAclConfig#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_acl_config#timeouts DiscoveryEngineAclConfig#timeouts}
 
 ---
 
@@ -1045,10 +1045,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineAclConfig.DiscoveryEngineAclConfigIdpConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryengineaclconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/discoveryengineaclconfig"
 
 &discoveryengineaclconfig.DiscoveryEngineAclConfigIdpConfig {
-	ExternalIdpConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.discoveryEngineAclConfig.DiscoveryEngineAclConfigIdpConfigExternalIdpConfig,
+	ExternalIdpConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.discoveryEngineAclConfig.DiscoveryEngineAclConfigIdpConfigExternalIdpConfig,
 	IdpType: *string,
 }
 ```
@@ -1072,7 +1072,7 @@ ExternalIdpConfig DiscoveryEngineAclConfigIdpConfigExternalIdpConfig
 
 external_idp_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_acl_config#external_idp_config DiscoveryEngineAclConfig#external_idp_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_acl_config#external_idp_config DiscoveryEngineAclConfig#external_idp_config}
 
 ---
 
@@ -1086,7 +1086,7 @@ IdpType *string
 
 Identity provider type. Possible values: ["GSUITE", "THIRD_PARTY"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_acl_config#idp_type DiscoveryEngineAclConfig#idp_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_acl_config#idp_type DiscoveryEngineAclConfig#idp_type}
 
 ---
 
@@ -1095,7 +1095,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineAclConfig.DiscoveryEngineAclConfigIdpConfigExternalIdpConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryengineaclconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/discoveryengineaclconfig"
 
 &discoveryengineaclconfig.DiscoveryEngineAclConfigIdpConfigExternalIdpConfig {
 	WorkforcePoolName: *string,
@@ -1120,7 +1120,7 @@ WorkforcePoolName *string
 
 Workforce pool name: "locations/global/workforcePools/pool_id".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_acl_config#workforce_pool_name DiscoveryEngineAclConfig#workforce_pool_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_acl_config#workforce_pool_name DiscoveryEngineAclConfig#workforce_pool_name}
 
 ---
 
@@ -1129,7 +1129,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineAclConfig.DiscoveryEngineAclConfigTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryengineaclconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/discoveryengineaclconfig"
 
 &discoveryengineaclconfig.DiscoveryEngineAclConfigTimeouts {
 	Create: *string,
@@ -1142,9 +1142,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginea
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.discoveryEngineAclConfig.DiscoveryEngineAclConfigTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_acl_config#create DiscoveryEngineAclConfig#create}. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineAclConfig.DiscoveryEngineAclConfigTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_acl_config#delete DiscoveryEngineAclConfig#delete}. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineAclConfig.DiscoveryEngineAclConfigTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_acl_config#update DiscoveryEngineAclConfig#update}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineAclConfig.DiscoveryEngineAclConfigTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_acl_config#create DiscoveryEngineAclConfig#create}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineAclConfig.DiscoveryEngineAclConfigTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_acl_config#delete DiscoveryEngineAclConfig#delete}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineAclConfig.DiscoveryEngineAclConfigTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_acl_config#update DiscoveryEngineAclConfig#update}. |
 
 ---
 
@@ -1156,7 +1156,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_acl_config#create DiscoveryEngineAclConfig#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_acl_config#create DiscoveryEngineAclConfig#create}.
 
 ---
 
@@ -1168,7 +1168,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_acl_config#delete DiscoveryEngineAclConfig#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_acl_config#delete DiscoveryEngineAclConfig#delete}.
 
 ---
 
@@ -1180,7 +1180,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_acl_config#update DiscoveryEngineAclConfig#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_acl_config#update DiscoveryEngineAclConfig#update}.
 
 ---
 
@@ -1191,7 +1191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineAclConfig.DiscoveryEngineAclConfigIdpConfigExternalIdpConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryengineaclconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/discoveryengineaclconfig"
 
 discoveryengineaclconfig.NewDiscoveryEngineAclConfigIdpConfigExternalIdpConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineAclConfigIdpConfigExternalIdpConfigOutputReference
 ```
@@ -1469,7 +1469,7 @@ func InternalValue() DiscoveryEngineAclConfigIdpConfigExternalIdpConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineAclConfig.DiscoveryEngineAclConfigIdpConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryengineaclconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/discoveryengineaclconfig"
 
 discoveryengineaclconfig.NewDiscoveryEngineAclConfigIdpConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineAclConfigIdpConfigOutputReference
 ```
@@ -1789,7 +1789,7 @@ func InternalValue() DiscoveryEngineAclConfigIdpConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineAclConfig.DiscoveryEngineAclConfigTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryengineaclconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/discoveryengineaclconfig"
 
 discoveryengineaclconfig.NewDiscoveryEngineAclConfigTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineAclConfigTimeoutsOutputReference
 ```

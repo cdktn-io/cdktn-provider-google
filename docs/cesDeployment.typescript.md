@@ -4,7 +4,7 @@
 
 ### CesDeployment <a name="CesDeployment" id="@cdktn/provider-google.cesDeployment.CesDeployment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_deployment google_ces_deployment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_deployment google_ces_deployment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cesDeployment.CesDeployment.Initializer"></a>
 
@@ -75,11 +75,15 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeployment.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeployment.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeployment.putChannelProfile">putChannelProfile</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeployment.putInstagramCredentials">putInstagramCredentials</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeployment.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeployment.putWhatsappCredentials">putWhatsappCredentials</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeployment.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeployment.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeployment.resetInstagramCredentials">resetInstagramCredentials</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeployment.resetProject">resetProject</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeployment.resetTimeouts">resetTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeployment.resetWhatsappCredentials">resetWhatsappCredentials</a></code> | *No description.* |
 
 ---
 
@@ -404,6 +408,18 @@ public putChannelProfile(value: CesDeploymentChannelProfile): void
 
 ---
 
+##### `putInstagramCredentials` <a name="putInstagramCredentials" id="@cdktn/provider-google.cesDeployment.CesDeployment.putInstagramCredentials"></a>
+
+```typescript
+public putInstagramCredentials(value: CesDeploymentInstagramCredentials): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.cesDeployment.CesDeployment.putInstagramCredentials.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentials">CesDeploymentInstagramCredentials</a>
+
+---
+
 ##### `putTimeouts` <a name="putTimeouts" id="@cdktn/provider-google.cesDeployment.CesDeployment.putTimeouts"></a>
 
 ```typescript
@@ -413,6 +429,18 @@ public putTimeouts(value: CesDeploymentTimeouts): void
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.cesDeployment.CesDeployment.putTimeouts.parameter.value"></a>
 
 - *Type:* <a href="#@cdktn/provider-google.cesDeployment.CesDeploymentTimeouts">CesDeploymentTimeouts</a>
+
+---
+
+##### `putWhatsappCredentials` <a name="putWhatsappCredentials" id="@cdktn/provider-google.cesDeployment.CesDeployment.putWhatsappCredentials"></a>
+
+```typescript
+public putWhatsappCredentials(value: CesDeploymentWhatsappCredentials): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.cesDeployment.CesDeployment.putWhatsappCredentials.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentials">CesDeploymentWhatsappCredentials</a>
 
 ---
 
@@ -428,6 +456,12 @@ public resetDeletionPolicy(): void
 public resetId(): void
 ```
 
+##### `resetInstagramCredentials` <a name="resetInstagramCredentials" id="@cdktn/provider-google.cesDeployment.CesDeployment.resetInstagramCredentials"></a>
+
+```typescript
+public resetInstagramCredentials(): void
+```
+
 ##### `resetProject` <a name="resetProject" id="@cdktn/provider-google.cesDeployment.CesDeployment.resetProject"></a>
 
 ```typescript
@@ -438,6 +472,12 @@ public resetProject(): void
 
 ```typescript
 public resetTimeouts(): void
+```
+
+##### `resetWhatsappCredentials` <a name="resetWhatsappCredentials" id="@cdktn/provider-google.cesDeployment.CesDeployment.resetWhatsappCredentials"></a>
+
+```typescript
+public resetWhatsappCredentials(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -543,7 +583,7 @@ The construct id used in the generated config for the CesDeployment to import.
 
 The id of the existing CesDeployment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_deployment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_deployment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -576,18 +616,22 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeployment.property.channelProfile">channelProfile</a></code> | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileOutputReference">CesDeploymentChannelProfileOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeployment.property.createTime">createTime</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeployment.property.etag">etag</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeployment.property.instagramCredentials">instagramCredentials</a></code> | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference">CesDeploymentInstagramCredentialsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeployment.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeployment.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentTimeoutsOutputReference">CesDeploymentTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeployment.property.updateTime">updateTime</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeployment.property.whatsappCredentials">whatsappCredentials</a></code> | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference">CesDeploymentWhatsappCredentialsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeployment.property.appInput">appInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeployment.property.appVersionInput">appVersionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeployment.property.channelProfileInput">channelProfileInput</a></code> | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfile">CesDeploymentChannelProfile</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeployment.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeployment.property.displayNameInput">displayNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeployment.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeployment.property.instagramCredentialsInput">instagramCredentialsInput</a></code> | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentials">CesDeploymentInstagramCredentials</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeployment.property.locationInput">locationInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeployment.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeployment.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cesDeployment.CesDeploymentTimeouts">CesDeploymentTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeployment.property.whatsappCredentialsInput">whatsappCredentialsInput</a></code> | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentials">CesDeploymentWhatsappCredentials</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeployment.property.app">app</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeployment.property.appVersion">appVersion</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeployment.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | *No description.* |
@@ -770,6 +814,16 @@ public readonly etag: string;
 
 ---
 
+##### `instagramCredentials`<sup>Required</sup> <a name="instagramCredentials" id="@cdktn/provider-google.cesDeployment.CesDeployment.property.instagramCredentials"></a>
+
+```typescript
+public readonly instagramCredentials: CesDeploymentInstagramCredentialsOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference">CesDeploymentInstagramCredentialsOutputReference</a>
+
+---
+
 ##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-google.cesDeployment.CesDeployment.property.name"></a>
 
 ```typescript
@@ -797,6 +851,16 @@ public readonly updateTime: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `whatsappCredentials`<sup>Required</sup> <a name="whatsappCredentials" id="@cdktn/provider-google.cesDeployment.CesDeployment.property.whatsappCredentials"></a>
+
+```typescript
+public readonly whatsappCredentials: CesDeploymentWhatsappCredentialsOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference">CesDeploymentWhatsappCredentialsOutputReference</a>
 
 ---
 
@@ -860,6 +924,16 @@ public readonly idInput: string;
 
 ---
 
+##### `instagramCredentialsInput`<sup>Optional</sup> <a name="instagramCredentialsInput" id="@cdktn/provider-google.cesDeployment.CesDeployment.property.instagramCredentialsInput"></a>
+
+```typescript
+public readonly instagramCredentialsInput: CesDeploymentInstagramCredentials;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentials">CesDeploymentInstagramCredentials</a>
+
+---
+
 ##### `locationInput`<sup>Optional</sup> <a name="locationInput" id="@cdktn/provider-google.cesDeployment.CesDeployment.property.locationInput"></a>
 
 ```typescript
@@ -887,6 +961,16 @@ public readonly timeoutsInput: IResolvable | CesDeploymentTimeouts;
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cesDeployment.CesDeploymentTimeouts">CesDeploymentTimeouts</a>
+
+---
+
+##### `whatsappCredentialsInput`<sup>Optional</sup> <a name="whatsappCredentialsInput" id="@cdktn/provider-google.cesDeployment.CesDeployment.property.whatsappCredentialsInput"></a>
+
+```typescript
+public readonly whatsappCredentialsInput: CesDeploymentWhatsappCredentials;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentials">CesDeploymentWhatsappCredentials</a>
 
 ---
 
@@ -994,12 +1078,13 @@ const cesDeploymentChannelProfile: cesDeployment.CesDeploymentChannelProfile = {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfile.property.channelType">channelType</a></code> | <code>string</code> | The type of the channel profile. Possible values: UNKNOWN WEB_UI API TWILIO GOOGLE_TELEPHONY_PLATFORM CONTACT_CENTER_AS_A_SERVICE FIVE9 CONTACT_CENTER_INTEGRATION. |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfile.property.channelType">channelType</a></code> | <code>string</code> | The type of the channel profile. Possible values: UNKNOWN WEB_UI API TWILIO GOOGLE_TELEPHONY_PLATFORM CONTACT_CENTER_AS_A_SERVICE FIVE9 CONTACT_CENTER_INTEGRATION WHATSAPP INSTAGRAM. |
 | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfile.property.disableBargeInControl">disableBargeInControl</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether to disable user barge-in control in the conversation. |
 | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfile.property.disableDtmf">disableDtmf</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether to disable DTMF (dual-tone multi-frequency). |
 | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfile.property.personaProperty">personaProperty</a></code> | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfilePersonaProperty">CesDeploymentChannelProfilePersonaProperty</a></code> | persona_property block. |
 | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfile.property.profileId">profileId</a></code> | <code>string</code> | The unique identifier of the channel profile. |
 | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfile.property.webWidgetConfig">webWidgetConfig</a></code> | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWebWidgetConfig">CesDeploymentChannelProfileWebWidgetConfig</a></code> | web_widget_config block. |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfile.property.whatsappConfig">whatsappConfig</a></code> | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfig">CesDeploymentChannelProfileWhatsappConfig</a></code> | whatsapp_config block. |
 
 ---
 
@@ -1011,9 +1096,9 @@ public readonly channelType: string;
 
 - *Type:* string
 
-The type of the channel profile. Possible values: UNKNOWN WEB_UI API TWILIO GOOGLE_TELEPHONY_PLATFORM CONTACT_CENTER_AS_A_SERVICE FIVE9 CONTACT_CENTER_INTEGRATION.
+The type of the channel profile. Possible values: UNKNOWN WEB_UI API TWILIO GOOGLE_TELEPHONY_PLATFORM CONTACT_CENTER_AS_A_SERVICE FIVE9 CONTACT_CENTER_INTEGRATION WHATSAPP INSTAGRAM.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_deployment#channel_type CesDeployment#channel_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_deployment#channel_type CesDeployment#channel_type}
 
 ---
 
@@ -1031,7 +1116,7 @@ Whether to disable user barge-in control in the conversation.
 - **false**: The agent retains automatic control over when the user can
 interrupt.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_deployment#disable_barge_in_control CesDeployment#disable_barge_in_control}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_deployment#disable_barge_in_control CesDeployment#disable_barge_in_control}
 
 ---
 
@@ -1045,7 +1130,7 @@ public readonly disableDtmf: boolean | IResolvable;
 
 Whether to disable DTMF (dual-tone multi-frequency).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_deployment#disable_dtmf CesDeployment#disable_dtmf}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_deployment#disable_dtmf CesDeployment#disable_dtmf}
 
 ---
 
@@ -1059,7 +1144,7 @@ public readonly personaProperty: CesDeploymentChannelProfilePersonaProperty;
 
 persona_property block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_deployment#persona_property CesDeployment#persona_property}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_deployment#persona_property CesDeployment#persona_property}
 
 ---
 
@@ -1073,7 +1158,7 @@ public readonly profileId: string;
 
 The unique identifier of the channel profile.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_deployment#profile_id CesDeployment#profile_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_deployment#profile_id CesDeployment#profile_id}
 
 ---
 
@@ -1087,7 +1172,21 @@ public readonly webWidgetConfig: CesDeploymentChannelProfileWebWidgetConfig;
 
 web_widget_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_deployment#web_widget_config CesDeployment#web_widget_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_deployment#web_widget_config CesDeployment#web_widget_config}
+
+---
+
+##### `whatsappConfig`<sup>Optional</sup> <a name="whatsappConfig" id="@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfile.property.whatsappConfig"></a>
+
+```typescript
+public readonly whatsappConfig: CesDeploymentChannelProfileWhatsappConfig;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfig">CesDeploymentChannelProfileWhatsappConfig</a>
+
+whatsapp_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_deployment#whatsapp_config CesDeployment#whatsapp_config}
 
 ---
 
@@ -1119,7 +1218,7 @@ public readonly persona: string;
 
 The persona of the channel. Possible values: UNKNOWN CONCISE CHATTY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_deployment#persona CesDeployment#persona}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_deployment#persona CesDeployment#persona}
 
 ---
 
@@ -1154,7 +1253,7 @@ public readonly modality: string;
 
 The modality of the web widget. Possible values: MODALITY_UNSPECIFIED CHAT_AND_VOICE VOICE_ONLY CHAT_ONLY CHAT_VOICE_AND_VIDEO.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_deployment#modality CesDeployment#modality}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_deployment#modality CesDeployment#modality}
 
 ---
 
@@ -1168,7 +1267,7 @@ public readonly securitySettings: CesDeploymentChannelProfileWebWidgetConfigSecu
 
 security_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_deployment#security_settings CesDeployment#security_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_deployment#security_settings CesDeployment#security_settings}
 
 ---
 
@@ -1182,7 +1281,7 @@ public readonly theme: string;
 
 The theme of the web widget. Possible values: THEME_UNSPECIFIED LIGHT DARK.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_deployment#theme CesDeployment#theme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_deployment#theme CesDeployment#theme}
 
 ---
 
@@ -1196,7 +1295,7 @@ public readonly webWidgetTitle: string;
 
 The title of the web widget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_deployment#web_widget_title CesDeployment#web_widget_title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_deployment#web_widget_title CesDeployment#web_widget_title}
 
 ---
 
@@ -1233,7 +1332,7 @@ The origins that are allowed to host the web widget.
 
 An origin is defined by RFC 6454. If empty, all origins are allowed. A maximum of 100 origins is allowed. Example: "https://example.com"
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_deployment#allowed_origins CesDeployment#allowed_origins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_deployment#allowed_origins CesDeployment#allowed_origins}
 
 ---
 
@@ -1249,7 +1348,7 @@ Indicates whether origin check for the web widget is enabled.
 
 If true, the web widget will check the origin of the website that loads the web widget and only allow it to be loaded in the same origin or any of the allowed origins.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_deployment#enable_origin_check CesDeployment#enable_origin_check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_deployment#enable_origin_check CesDeployment#enable_origin_check}
 
 ---
 
@@ -1265,7 +1364,7 @@ Indicates whether public access to the web widget is enabled.
 
 If true, the web widget will be publicly accessible. If false, the web widget must be integrated with your own authentication and authorization system to return valid credentials for accessing the CES agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_deployment#enable_public_access CesDeployment#enable_public_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_deployment#enable_public_access CesDeployment#enable_public_access}
 
 ---
 
@@ -1279,7 +1378,69 @@ public readonly enableRecaptcha: boolean | IResolvable;
 
 Indicates whether reCAPTCHA verification for the web widget is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_deployment#enable_recaptcha CesDeployment#enable_recaptcha}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_deployment#enable_recaptcha CesDeployment#enable_recaptcha}
+
+---
+
+### CesDeploymentChannelProfileWhatsappConfig <a name="CesDeploymentChannelProfileWhatsappConfig" id="@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfig.Initializer"></a>
+
+```typescript
+import { cesDeployment } from '@cdktn/provider-google'
+
+const cesDeploymentChannelProfileWhatsappConfig: cesDeployment.CesDeploymentChannelProfileWhatsappConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfig.property.phoneNumberId">phoneNumberId</a></code> | <code>string</code> | Required. The Meta phone number ID. |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfig.property.wabaId">wabaId</a></code> | <code>string</code> | Required. The WhatsApp Business Account ID. |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfig.property.phoneNumber">phoneNumber</a></code> | <code>string</code> | Optional. The phone number in E.164 format. |
+
+---
+
+##### `phoneNumberId`<sup>Required</sup> <a name="phoneNumberId" id="@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfig.property.phoneNumberId"></a>
+
+```typescript
+public readonly phoneNumberId: string;
+```
+
+- *Type:* string
+
+Required. The Meta phone number ID.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_deployment#phone_number_id CesDeployment#phone_number_id}
+
+---
+
+##### `wabaId`<sup>Required</sup> <a name="wabaId" id="@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfig.property.wabaId"></a>
+
+```typescript
+public readonly wabaId: string;
+```
+
+- *Type:* string
+
+Required. The WhatsApp Business Account ID.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_deployment#waba_id CesDeployment#waba_id}
+
+---
+
+##### `phoneNumber`<sup>Optional</sup> <a name="phoneNumber" id="@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfig.property.phoneNumber"></a>
+
+```typescript
+public readonly phoneNumber: string;
+```
+
+- *Type:* string
+
+Optional. The phone number in E.164 format.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_deployment#phone_number CesDeployment#phone_number}
 
 ---
 
@@ -1310,9 +1471,11 @@ const cesDeploymentConfig: cesDeployment.CesDeploymentConfig = { ... }
 | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentConfig.property.displayName">displayName</a></code> | <code>string</code> | Display name of the deployment. |
 | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentConfig.property.location">location</a></code> | <code>string</code> | Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122. |
 | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_deployment#id CesDeployment#id}. |
-| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_deployment#project CesDeployment#project}. |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_deployment#id CesDeployment#id}. |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentConfig.property.instagramCredentials">instagramCredentials</a></code> | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentials">CesDeploymentInstagramCredentials</a></code> | instagram_credentials block. |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_deployment#project CesDeployment#project}. |
 | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentTimeouts">CesDeploymentTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentConfig.property.whatsappCredentials">whatsappCredentials</a></code> | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentials">CesDeploymentWhatsappCredentials</a></code> | whatsapp_credentials block. |
 
 ---
 
@@ -1396,7 +1559,7 @@ public readonly app: string;
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_deployment#app CesDeployment#app}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_deployment#app CesDeployment#app}
 
 ---
 
@@ -1410,7 +1573,7 @@ public readonly appVersion: string;
 
 The resource name of the app version to deploy. Format: projects/{project}/locations/{location}/apps/{app}/versions/{version}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_deployment#app_version CesDeployment#app_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_deployment#app_version CesDeployment#app_version}
 
 ---
 
@@ -1424,7 +1587,7 @@ public readonly channelProfile: CesDeploymentChannelProfile;
 
 channel_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_deployment#channel_profile CesDeployment#channel_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_deployment#channel_profile CesDeployment#channel_profile}
 
 ---
 
@@ -1438,7 +1601,7 @@ public readonly displayName: string;
 
 Display name of the deployment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_deployment#display_name CesDeployment#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_deployment#display_name CesDeployment#display_name}
 
 ---
 
@@ -1452,7 +1615,7 @@ public readonly location: string;
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_deployment#location CesDeployment#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_deployment#location CesDeployment#location}
 
 ---
 
@@ -1474,7 +1637,7 @@ management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_deployment#deletion_policy CesDeployment#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_deployment#deletion_policy CesDeployment#deletion_policy}
 
 ---
 
@@ -1486,10 +1649,24 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_deployment#id CesDeployment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_deployment#id CesDeployment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `instagramCredentials`<sup>Optional</sup> <a name="instagramCredentials" id="@cdktn/provider-google.cesDeployment.CesDeploymentConfig.property.instagramCredentials"></a>
+
+```typescript
+public readonly instagramCredentials: CesDeploymentInstagramCredentials;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentials">CesDeploymentInstagramCredentials</a>
+
+instagram_credentials block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_deployment#instagram_credentials CesDeployment#instagram_credentials}
 
 ---
 
@@ -1501,7 +1678,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_deployment#project CesDeployment#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_deployment#project CesDeployment#project}.
 
 ---
 
@@ -1515,7 +1692,100 @@ public readonly timeouts: CesDeploymentTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_deployment#timeouts CesDeployment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_deployment#timeouts CesDeployment#timeouts}
+
+---
+
+##### `whatsappCredentials`<sup>Optional</sup> <a name="whatsappCredentials" id="@cdktn/provider-google.cesDeployment.CesDeploymentConfig.property.whatsappCredentials"></a>
+
+```typescript
+public readonly whatsappCredentials: CesDeploymentWhatsappCredentials;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentials">CesDeploymentWhatsappCredentials</a>
+
+whatsapp_credentials block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_deployment#whatsapp_credentials CesDeployment#whatsapp_credentials}
+
+---
+
+### CesDeploymentInstagramCredentials <a name="CesDeploymentInstagramCredentials" id="@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentials"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentials.Initializer"></a>
+
+```typescript
+import { cesDeployment } from '@cdktn/provider-google'
+
+const cesDeploymentInstagramCredentials: cesDeployment.CesDeploymentInstagramCredentials = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentials.property.authCode">authCode</a></code> | <code>string</code> | The Meta auth code provided by the embedded signup flow. |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentials.property.authCodeWo">authCodeWo</a></code> | <code>string</code> | The Meta auth code provided by the embedded signup flow. |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentials.property.authCodeWoVersion">authCodeWoVersion</a></code> | <code>string</code> | Triggers update of 'auth_code_wo' write-only. |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentials.property.conversationProfileId">conversationProfileId</a></code> | <code>string</code> | The Conversation Profile ID to use for the deployment. |
+
+---
+
+##### `authCode`<sup>Optional</sup> <a name="authCode" id="@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentials.property.authCode"></a>
+
+```typescript
+public readonly authCode: string;
+```
+
+- *Type:* string
+
+The Meta auth code provided by the embedded signup flow.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_deployment#auth_code CesDeployment#auth_code}
+
+---
+
+##### `authCodeWo`<sup>Optional</sup> <a name="authCodeWo" id="@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentials.property.authCodeWo"></a>
+
+```typescript
+public readonly authCodeWo: string;
+```
+
+- *Type:* string
+
+The Meta auth code provided by the embedded signup flow.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_deployment#auth_code_wo CesDeployment#auth_code_wo}
+
+---
+
+##### `authCodeWoVersion`<sup>Optional</sup> <a name="authCodeWoVersion" id="@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentials.property.authCodeWoVersion"></a>
+
+```typescript
+public readonly authCodeWoVersion: string;
+```
+
+- *Type:* string
+
+Triggers update of 'auth_code_wo' write-only.
+
+Increment this value when an update to 'auth_code_wo' is needed. For more info see [updating write-only arguments](/docs/providers/google/guides/using_write_only_arguments.html#updating-write-only-arguments)
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_deployment#auth_code_wo_version CesDeployment#auth_code_wo_version}
+
+---
+
+##### `conversationProfileId`<sup>Optional</sup> <a name="conversationProfileId" id="@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentials.property.conversationProfileId"></a>
+
+```typescript
+public readonly conversationProfileId: string;
+```
+
+- *Type:* string
+
+The Conversation Profile ID to use for the deployment.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_deployment#conversation_profile_id CesDeployment#conversation_profile_id}
 
 ---
 
@@ -1533,9 +1803,9 @@ const cesDeploymentTimeouts: cesDeployment.CesDeploymentTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_deployment#create CesDeployment#create}. |
-| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_deployment#delete CesDeployment#delete}. |
-| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_deployment#update CesDeployment#update}. |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_deployment#create CesDeployment#create}. |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_deployment#delete CesDeployment#delete}. |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_deployment#update CesDeployment#update}. |
 
 ---
 
@@ -1547,7 +1817,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_deployment#create CesDeployment#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_deployment#create CesDeployment#create}.
 
 ---
 
@@ -1559,7 +1829,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_deployment#delete CesDeployment#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_deployment#delete CesDeployment#delete}.
 
 ---
 
@@ -1571,7 +1841,178 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_deployment#update CesDeployment#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_deployment#update CesDeployment#update}.
+
+---
+
+### CesDeploymentWhatsappCredentials <a name="CesDeploymentWhatsappCredentials" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentials"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentials.Initializer"></a>
+
+```typescript
+import { cesDeployment } from '@cdktn/provider-google'
+
+const cesDeploymentWhatsappCredentials: cesDeployment.CesDeploymentWhatsappCredentials = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentials.property.businessAccountId">businessAccountId</a></code> | <code>string</code> | The Business Account ID to use for the phone number. |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentials.property.phoneNumber">phoneNumber</a></code> | <code>string</code> | The phone number to register with WhatsApp. |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentials.property.wabaId">wabaId</a></code> | <code>string</code> | The WhatsApp Business Account ID. |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentials.property.authCode">authCode</a></code> | <code>string</code> | The Meta auth code provided by the embedded signup flow. |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentials.property.authCodeWo">authCodeWo</a></code> | <code>string</code> | The Meta auth code provided by the embedded signup flow. |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentials.property.authCodeWoVersion">authCodeWoVersion</a></code> | <code>string</code> | Triggers update of 'auth_code_wo' write-only. |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentials.property.conversationProfileId">conversationProfileId</a></code> | <code>string</code> | The Conversation Profile ID to use for the deployment. |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentials.property.pin">pin</a></code> | <code>string</code> | The 6-digit PIN created by the user for two-step verification. |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentials.property.pinWo">pinWo</a></code> | <code>string</code> | The 6-digit PIN created by the user for two-step verification. |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentials.property.pinWoVersion">pinWoVersion</a></code> | <code>string</code> | Triggers update of 'pin_wo' write-only. |
+
+---
+
+##### `businessAccountId`<sup>Required</sup> <a name="businessAccountId" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentials.property.businessAccountId"></a>
+
+```typescript
+public readonly businessAccountId: string;
+```
+
+- *Type:* string
+
+The Business Account ID to use for the phone number.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_deployment#business_account_id CesDeployment#business_account_id}
+
+---
+
+##### `phoneNumber`<sup>Required</sup> <a name="phoneNumber" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentials.property.phoneNumber"></a>
+
+```typescript
+public readonly phoneNumber: string;
+```
+
+- *Type:* string
+
+The phone number to register with WhatsApp.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_deployment#phone_number CesDeployment#phone_number}
+
+---
+
+##### `wabaId`<sup>Required</sup> <a name="wabaId" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentials.property.wabaId"></a>
+
+```typescript
+public readonly wabaId: string;
+```
+
+- *Type:* string
+
+The WhatsApp Business Account ID.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_deployment#waba_id CesDeployment#waba_id}
+
+---
+
+##### `authCode`<sup>Optional</sup> <a name="authCode" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentials.property.authCode"></a>
+
+```typescript
+public readonly authCode: string;
+```
+
+- *Type:* string
+
+The Meta auth code provided by the embedded signup flow.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_deployment#auth_code CesDeployment#auth_code}
+
+---
+
+##### `authCodeWo`<sup>Optional</sup> <a name="authCodeWo" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentials.property.authCodeWo"></a>
+
+```typescript
+public readonly authCodeWo: string;
+```
+
+- *Type:* string
+
+The Meta auth code provided by the embedded signup flow.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_deployment#auth_code_wo CesDeployment#auth_code_wo}
+
+---
+
+##### `authCodeWoVersion`<sup>Optional</sup> <a name="authCodeWoVersion" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentials.property.authCodeWoVersion"></a>
+
+```typescript
+public readonly authCodeWoVersion: string;
+```
+
+- *Type:* string
+
+Triggers update of 'auth_code_wo' write-only.
+
+Increment this value when an update to 'auth_code_wo' is needed. For more info see [updating write-only arguments](/docs/providers/google/guides/using_write_only_arguments.html#updating-write-only-arguments)
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_deployment#auth_code_wo_version CesDeployment#auth_code_wo_version}
+
+---
+
+##### `conversationProfileId`<sup>Optional</sup> <a name="conversationProfileId" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentials.property.conversationProfileId"></a>
+
+```typescript
+public readonly conversationProfileId: string;
+```
+
+- *Type:* string
+
+The Conversation Profile ID to use for the deployment.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_deployment#conversation_profile_id CesDeployment#conversation_profile_id}
+
+---
+
+##### `pin`<sup>Optional</sup> <a name="pin" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentials.property.pin"></a>
+
+```typescript
+public readonly pin: string;
+```
+
+- *Type:* string
+
+The 6-digit PIN created by the user for two-step verification.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_deployment#pin CesDeployment#pin}
+
+---
+
+##### `pinWo`<sup>Optional</sup> <a name="pinWo" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentials.property.pinWo"></a>
+
+```typescript
+public readonly pinWo: string;
+```
+
+- *Type:* string
+
+The 6-digit PIN created by the user for two-step verification.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_deployment#pin_wo CesDeployment#pin_wo}
+
+---
+
+##### `pinWoVersion`<sup>Optional</sup> <a name="pinWoVersion" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentials.property.pinWoVersion"></a>
+
+```typescript
+public readonly pinWoVersion: string;
+```
+
+- *Type:* string
+
+Triggers update of 'pin_wo' write-only.
+
+Increment this value when an update to 'pin_wo' is needed. For more info see [updating write-only arguments](/docs/providers/google/guides/using_write_only_arguments.html#updating-write-only-arguments)
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_deployment#pin_wo_version CesDeployment#pin_wo_version}
 
 ---
 
@@ -1629,12 +2070,14 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileOutputReference.putPersonaProperty">putPersonaProperty</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileOutputReference.putWebWidgetConfig">putWebWidgetConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileOutputReference.putWhatsappConfig">putWhatsappConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileOutputReference.resetChannelType">resetChannelType</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileOutputReference.resetDisableBargeInControl">resetDisableBargeInControl</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileOutputReference.resetDisableDtmf">resetDisableDtmf</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileOutputReference.resetPersonaProperty">resetPersonaProperty</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileOutputReference.resetProfileId">resetProfileId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileOutputReference.resetWebWidgetConfig">resetWebWidgetConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileOutputReference.resetWhatsappConfig">resetWhatsappConfig</a></code> | *No description.* |
 
 ---
 
@@ -1812,6 +2255,18 @@ public putWebWidgetConfig(value: CesDeploymentChannelProfileWebWidgetConfig): vo
 
 ---
 
+##### `putWhatsappConfig` <a name="putWhatsappConfig" id="@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileOutputReference.putWhatsappConfig"></a>
+
+```typescript
+public putWhatsappConfig(value: CesDeploymentChannelProfileWhatsappConfig): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileOutputReference.putWhatsappConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfig">CesDeploymentChannelProfileWhatsappConfig</a>
+
+---
+
 ##### `resetChannelType` <a name="resetChannelType" id="@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileOutputReference.resetChannelType"></a>
 
 ```typescript
@@ -1848,6 +2303,12 @@ public resetProfileId(): void
 public resetWebWidgetConfig(): void
 ```
 
+##### `resetWhatsappConfig` <a name="resetWhatsappConfig" id="@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileOutputReference.resetWhatsappConfig"></a>
+
+```typescript
+public resetWhatsappConfig(): void
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -1857,12 +2318,14 @@ public resetWebWidgetConfig(): void
 | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileOutputReference.property.personaProperty">personaProperty</a></code> | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfilePersonaPropertyOutputReference">CesDeploymentChannelProfilePersonaPropertyOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileOutputReference.property.webWidgetConfig">webWidgetConfig</a></code> | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWebWidgetConfigOutputReference">CesDeploymentChannelProfileWebWidgetConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileOutputReference.property.whatsappConfig">whatsappConfig</a></code> | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference">CesDeploymentChannelProfileWhatsappConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileOutputReference.property.channelTypeInput">channelTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileOutputReference.property.disableBargeInControlInput">disableBargeInControlInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileOutputReference.property.disableDtmfInput">disableDtmfInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileOutputReference.property.personaPropertyInput">personaPropertyInput</a></code> | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfilePersonaProperty">CesDeploymentChannelProfilePersonaProperty</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileOutputReference.property.profileIdInput">profileIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileOutputReference.property.webWidgetConfigInput">webWidgetConfigInput</a></code> | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWebWidgetConfig">CesDeploymentChannelProfileWebWidgetConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileOutputReference.property.whatsappConfigInput">whatsappConfigInput</a></code> | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfig">CesDeploymentChannelProfileWhatsappConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileOutputReference.property.channelType">channelType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileOutputReference.property.disableBargeInControl">disableBargeInControl</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileOutputReference.property.disableDtmf">disableDtmf</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
@@ -1912,6 +2375,16 @@ public readonly webWidgetConfig: CesDeploymentChannelProfileWebWidgetConfigOutpu
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWebWidgetConfigOutputReference">CesDeploymentChannelProfileWebWidgetConfigOutputReference</a>
+
+---
+
+##### `whatsappConfig`<sup>Required</sup> <a name="whatsappConfig" id="@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileOutputReference.property.whatsappConfig"></a>
+
+```typescript
+public readonly whatsappConfig: CesDeploymentChannelProfileWhatsappConfigOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference">CesDeploymentChannelProfileWhatsappConfigOutputReference</a>
 
 ---
 
@@ -1972,6 +2445,16 @@ public readonly webWidgetConfigInput: CesDeploymentChannelProfileWebWidgetConfig
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWebWidgetConfig">CesDeploymentChannelProfileWebWidgetConfig</a>
+
+---
+
+##### `whatsappConfigInput`<sup>Optional</sup> <a name="whatsappConfigInput" id="@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileOutputReference.property.whatsappConfigInput"></a>
+
+```typescript
+public readonly whatsappConfigInput: CesDeploymentChannelProfileWhatsappConfig;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfig">CesDeploymentChannelProfileWhatsappConfig</a>
 
 ---
 
@@ -3047,6 +3530,728 @@ public readonly internalValue: CesDeploymentChannelProfileWebWidgetConfigSecurit
 ---
 
 
+### CesDeploymentChannelProfileWhatsappConfigOutputReference <a name="CesDeploymentChannelProfileWhatsappConfigOutputReference" id="@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference.Initializer"></a>
+
+```typescript
+import { cesDeployment } from '@cdktn/provider-google'
+
+new cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference.resetPhoneNumber">resetPhoneNumber</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetPhoneNumber` <a name="resetPhoneNumber" id="@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference.resetPhoneNumber"></a>
+
+```typescript
+public resetPhoneNumber(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference.property.description">description</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference.property.displayName">displayName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference.property.thumbnailUrl">thumbnailUrl</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference.property.phoneNumberIdInput">phoneNumberIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference.property.phoneNumberInput">phoneNumberInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference.property.wabaIdInput">wabaIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference.property.phoneNumber">phoneNumber</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference.property.phoneNumberId">phoneNumberId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference.property.wabaId">wabaId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfig">CesDeploymentChannelProfileWhatsappConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference.property.description"></a>
+
+```typescript
+public readonly description: string;
+```
+
+- *Type:* string
+
+---
+
+##### `displayName`<sup>Required</sup> <a name="displayName" id="@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference.property.displayName"></a>
+
+```typescript
+public readonly displayName: string;
+```
+
+- *Type:* string
+
+---
+
+##### `thumbnailUrl`<sup>Required</sup> <a name="thumbnailUrl" id="@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference.property.thumbnailUrl"></a>
+
+```typescript
+public readonly thumbnailUrl: string;
+```
+
+- *Type:* string
+
+---
+
+##### `phoneNumberIdInput`<sup>Optional</sup> <a name="phoneNumberIdInput" id="@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference.property.phoneNumberIdInput"></a>
+
+```typescript
+public readonly phoneNumberIdInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `phoneNumberInput`<sup>Optional</sup> <a name="phoneNumberInput" id="@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference.property.phoneNumberInput"></a>
+
+```typescript
+public readonly phoneNumberInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `wabaIdInput`<sup>Optional</sup> <a name="wabaIdInput" id="@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference.property.wabaIdInput"></a>
+
+```typescript
+public readonly wabaIdInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `phoneNumber`<sup>Required</sup> <a name="phoneNumber" id="@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference.property.phoneNumber"></a>
+
+```typescript
+public readonly phoneNumber: string;
+```
+
+- *Type:* string
+
+---
+
+##### `phoneNumberId`<sup>Required</sup> <a name="phoneNumberId" id="@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference.property.phoneNumberId"></a>
+
+```typescript
+public readonly phoneNumberId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `wabaId`<sup>Required</sup> <a name="wabaId" id="@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference.property.wabaId"></a>
+
+```typescript
+public readonly wabaId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfigOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: CesDeploymentChannelProfileWhatsappConfig;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesDeployment.CesDeploymentChannelProfileWhatsappConfig">CesDeploymentChannelProfileWhatsappConfig</a>
+
+---
+
+
+### CesDeploymentInstagramCredentialsOutputReference <a name="CesDeploymentInstagramCredentialsOutputReference" id="@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.Initializer"></a>
+
+```typescript
+import { cesDeployment } from '@cdktn/provider-google'
+
+new cesDeployment.CesDeploymentInstagramCredentialsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.resetAuthCode">resetAuthCode</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.resetAuthCodeWo">resetAuthCodeWo</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.resetAuthCodeWoVersion">resetAuthCodeWoVersion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.resetConversationProfileId">resetConversationProfileId</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetAuthCode` <a name="resetAuthCode" id="@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.resetAuthCode"></a>
+
+```typescript
+public resetAuthCode(): void
+```
+
+##### `resetAuthCodeWo` <a name="resetAuthCodeWo" id="@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.resetAuthCodeWo"></a>
+
+```typescript
+public resetAuthCodeWo(): void
+```
+
+##### `resetAuthCodeWoVersion` <a name="resetAuthCodeWoVersion" id="@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.resetAuthCodeWoVersion"></a>
+
+```typescript
+public resetAuthCodeWoVersion(): void
+```
+
+##### `resetConversationProfileId` <a name="resetConversationProfileId" id="@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.resetConversationProfileId"></a>
+
+```typescript
+public resetConversationProfileId(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.property.authCodeInput">authCodeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.property.authCodeWoInput">authCodeWoInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.property.authCodeWoVersionInput">authCodeWoVersionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.property.conversationProfileIdInput">conversationProfileIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.property.authCode">authCode</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.property.authCodeWo">authCodeWo</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.property.authCodeWoVersion">authCodeWoVersion</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.property.conversationProfileId">conversationProfileId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentials">CesDeploymentInstagramCredentials</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `authCodeInput`<sup>Optional</sup> <a name="authCodeInput" id="@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.property.authCodeInput"></a>
+
+```typescript
+public readonly authCodeInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `authCodeWoInput`<sup>Optional</sup> <a name="authCodeWoInput" id="@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.property.authCodeWoInput"></a>
+
+```typescript
+public readonly authCodeWoInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `authCodeWoVersionInput`<sup>Optional</sup> <a name="authCodeWoVersionInput" id="@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.property.authCodeWoVersionInput"></a>
+
+```typescript
+public readonly authCodeWoVersionInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `conversationProfileIdInput`<sup>Optional</sup> <a name="conversationProfileIdInput" id="@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.property.conversationProfileIdInput"></a>
+
+```typescript
+public readonly conversationProfileIdInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `authCode`<sup>Required</sup> <a name="authCode" id="@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.property.authCode"></a>
+
+```typescript
+public readonly authCode: string;
+```
+
+- *Type:* string
+
+---
+
+##### ~~`authCodeWo`~~<sup>Required</sup> <a name="authCodeWo" id="@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.property.authCodeWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+
+```typescript
+public readonly authCodeWo: string;
+```
+
+- *Type:* string
+
+---
+
+##### `authCodeWoVersion`<sup>Required</sup> <a name="authCodeWoVersion" id="@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.property.authCodeWoVersion"></a>
+
+```typescript
+public readonly authCodeWoVersion: string;
+```
+
+- *Type:* string
+
+---
+
+##### `conversationProfileId`<sup>Required</sup> <a name="conversationProfileId" id="@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.property.conversationProfileId"></a>
+
+```typescript
+public readonly conversationProfileId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentialsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: CesDeploymentInstagramCredentials;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesDeployment.CesDeploymentInstagramCredentials">CesDeploymentInstagramCredentials</a>
+
+---
+
+
 ### CesDeploymentTimeoutsOutputReference <a name="CesDeploymentTimeoutsOutputReference" id="@cdktn/provider-google.cesDeployment.CesDeploymentTimeoutsOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cesDeployment.CesDeploymentTimeoutsOutputReference.Initializer"></a>
@@ -3379,6 +4584,528 @@ public readonly internalValue: IResolvable | CesDeploymentTimeouts;
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.cesDeployment.CesDeploymentTimeouts">CesDeploymentTimeouts</a>
+
+---
+
+
+### CesDeploymentWhatsappCredentialsOutputReference <a name="CesDeploymentWhatsappCredentialsOutputReference" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.Initializer"></a>
+
+```typescript
+import { cesDeployment } from '@cdktn/provider-google'
+
+new cesDeployment.CesDeploymentWhatsappCredentialsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.resetAuthCode">resetAuthCode</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.resetAuthCodeWo">resetAuthCodeWo</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.resetAuthCodeWoVersion">resetAuthCodeWoVersion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.resetConversationProfileId">resetConversationProfileId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.resetPin">resetPin</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.resetPinWo">resetPinWo</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.resetPinWoVersion">resetPinWoVersion</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetAuthCode` <a name="resetAuthCode" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.resetAuthCode"></a>
+
+```typescript
+public resetAuthCode(): void
+```
+
+##### `resetAuthCodeWo` <a name="resetAuthCodeWo" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.resetAuthCodeWo"></a>
+
+```typescript
+public resetAuthCodeWo(): void
+```
+
+##### `resetAuthCodeWoVersion` <a name="resetAuthCodeWoVersion" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.resetAuthCodeWoVersion"></a>
+
+```typescript
+public resetAuthCodeWoVersion(): void
+```
+
+##### `resetConversationProfileId` <a name="resetConversationProfileId" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.resetConversationProfileId"></a>
+
+```typescript
+public resetConversationProfileId(): void
+```
+
+##### `resetPin` <a name="resetPin" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.resetPin"></a>
+
+```typescript
+public resetPin(): void
+```
+
+##### `resetPinWo` <a name="resetPinWo" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.resetPinWo"></a>
+
+```typescript
+public resetPinWo(): void
+```
+
+##### `resetPinWoVersion` <a name="resetPinWoVersion" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.resetPinWoVersion"></a>
+
+```typescript
+public resetPinWoVersion(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.property.authCodeInput">authCodeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.property.authCodeWoInput">authCodeWoInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.property.authCodeWoVersionInput">authCodeWoVersionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.property.businessAccountIdInput">businessAccountIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.property.conversationProfileIdInput">conversationProfileIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.property.phoneNumberInput">phoneNumberInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.property.pinInput">pinInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.property.pinWoInput">pinWoInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.property.pinWoVersionInput">pinWoVersionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.property.wabaIdInput">wabaIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.property.authCode">authCode</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.property.authCodeWo">authCodeWo</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.property.authCodeWoVersion">authCodeWoVersion</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.property.businessAccountId">businessAccountId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.property.conversationProfileId">conversationProfileId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.property.phoneNumber">phoneNumber</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.property.pin">pin</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.property.pinWo">pinWo</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.property.pinWoVersion">pinWoVersion</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.property.wabaId">wabaId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentials">CesDeploymentWhatsappCredentials</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `authCodeInput`<sup>Optional</sup> <a name="authCodeInput" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.property.authCodeInput"></a>
+
+```typescript
+public readonly authCodeInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `authCodeWoInput`<sup>Optional</sup> <a name="authCodeWoInput" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.property.authCodeWoInput"></a>
+
+```typescript
+public readonly authCodeWoInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `authCodeWoVersionInput`<sup>Optional</sup> <a name="authCodeWoVersionInput" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.property.authCodeWoVersionInput"></a>
+
+```typescript
+public readonly authCodeWoVersionInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `businessAccountIdInput`<sup>Optional</sup> <a name="businessAccountIdInput" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.property.businessAccountIdInput"></a>
+
+```typescript
+public readonly businessAccountIdInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `conversationProfileIdInput`<sup>Optional</sup> <a name="conversationProfileIdInput" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.property.conversationProfileIdInput"></a>
+
+```typescript
+public readonly conversationProfileIdInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `phoneNumberInput`<sup>Optional</sup> <a name="phoneNumberInput" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.property.phoneNumberInput"></a>
+
+```typescript
+public readonly phoneNumberInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `pinInput`<sup>Optional</sup> <a name="pinInput" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.property.pinInput"></a>
+
+```typescript
+public readonly pinInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `pinWoInput`<sup>Optional</sup> <a name="pinWoInput" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.property.pinWoInput"></a>
+
+```typescript
+public readonly pinWoInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `pinWoVersionInput`<sup>Optional</sup> <a name="pinWoVersionInput" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.property.pinWoVersionInput"></a>
+
+```typescript
+public readonly pinWoVersionInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `wabaIdInput`<sup>Optional</sup> <a name="wabaIdInput" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.property.wabaIdInput"></a>
+
+```typescript
+public readonly wabaIdInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `authCode`<sup>Required</sup> <a name="authCode" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.property.authCode"></a>
+
+```typescript
+public readonly authCode: string;
+```
+
+- *Type:* string
+
+---
+
+##### ~~`authCodeWo`~~<sup>Required</sup> <a name="authCodeWo" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.property.authCodeWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+
+```typescript
+public readonly authCodeWo: string;
+```
+
+- *Type:* string
+
+---
+
+##### `authCodeWoVersion`<sup>Required</sup> <a name="authCodeWoVersion" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.property.authCodeWoVersion"></a>
+
+```typescript
+public readonly authCodeWoVersion: string;
+```
+
+- *Type:* string
+
+---
+
+##### `businessAccountId`<sup>Required</sup> <a name="businessAccountId" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.property.businessAccountId"></a>
+
+```typescript
+public readonly businessAccountId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `conversationProfileId`<sup>Required</sup> <a name="conversationProfileId" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.property.conversationProfileId"></a>
+
+```typescript
+public readonly conversationProfileId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `phoneNumber`<sup>Required</sup> <a name="phoneNumber" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.property.phoneNumber"></a>
+
+```typescript
+public readonly phoneNumber: string;
+```
+
+- *Type:* string
+
+---
+
+##### `pin`<sup>Required</sup> <a name="pin" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.property.pin"></a>
+
+```typescript
+public readonly pin: string;
+```
+
+- *Type:* string
+
+---
+
+##### ~~`pinWo`~~<sup>Required</sup> <a name="pinWo" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.property.pinWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+
+```typescript
+public readonly pinWo: string;
+```
+
+- *Type:* string
+
+---
+
+##### `pinWoVersion`<sup>Required</sup> <a name="pinWoVersion" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.property.pinWoVersion"></a>
+
+```typescript
+public readonly pinWoVersion: string;
+```
+
+- *Type:* string
+
+---
+
+##### `wabaId`<sup>Required</sup> <a name="wabaId" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.property.wabaId"></a>
+
+```typescript
+public readonly wabaId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentialsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: CesDeploymentWhatsappCredentials;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesDeployment.CesDeploymentWhatsappCredentials">CesDeploymentWhatsappCredentials</a>
 
 ---
 

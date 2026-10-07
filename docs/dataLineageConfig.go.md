@@ -4,12 +4,12 @@
 
 ### DataLineageConfig <a name="DataLineageConfig" id="@cdktn/provider-google.dataLineageConfig.DataLineageConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_lineage_config google_data_lineage_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_lineage_config google_data_lineage_config}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLineageConfig.DataLineageConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datalineageconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalineageconfig"
 
 datalineageconfig.NewDataLineageConfig(scope Construct, id *string, config DataLineageConfigConfig) DataLineageConfig
 ```
@@ -447,7 +447,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataLineageConfig.DataLineageConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datalineageconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalineageconfig"
 
 datalineageconfig.DataLineageConfig_IsConstruct(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataLineageConfig.DataLineageConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datalineageconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalineageconfig"
 
 datalineageconfig.DataLineageConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ datalineageconfig.DataLineageConfig_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.dataLineageConfig.DataLineageConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datalineageconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalineageconfig"
 
 datalineageconfig.DataLineageConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ datalineageconfig.DataLineageConfig_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataLineageConfig.DataLineageConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datalineageconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalineageconfig"
 
 datalineageconfig.DataLineageConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -536,7 +536,7 @@ The construct id used in the generated config for the DataLineageConfig to impor
 
 The id of the existing DataLineageConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_lineage_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_lineage_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -890,7 +890,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLineageConfig.DataLineageConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datalineageconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalineageconfig"
 
 &datalineageconfig.DataLineageConfigConfig {
 	Connection: interface{},
@@ -900,12 +900,12 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datalineageconfi
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	Ingestion: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dataLineageConfig.DataLineageConfigIngestion,
+	Ingestion: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataLineageConfig.DataLineageConfigIngestion,
 	Location: *string,
 	Parent: *string,
 	DeletionPolicy: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dataLineageConfig.DataLineageConfigTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataLineageConfig.DataLineageConfigTimeouts,
 }
 ```
 
@@ -924,7 +924,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datalineageconfi
 | <code><a href="#@cdktn/provider-google.dataLineageConfig.DataLineageConfigConfig.property.location">Location</a></code> | <code>*string</code> | The region of the data lineage configuration for integration. |
 | <code><a href="#@cdktn/provider-google.dataLineageConfig.DataLineageConfigConfig.property.parent">Parent</a></code> | <code>*string</code> | Parent scope for the config. Format: projects/{project-id\|project-number} or folders/{folder-number} or organizations/{organization-number}. |
 | <code><a href="#@cdktn/provider-google.dataLineageConfig.DataLineageConfigConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.dataLineageConfig.DataLineageConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_lineage_config#id DataLineageConfig#id}. |
+| <code><a href="#@cdktn/provider-google.dataLineageConfig.DataLineageConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_lineage_config#id DataLineageConfig#id}. |
 | <code><a href="#@cdktn/provider-google.dataLineageConfig.DataLineageConfigConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.dataLineageConfig.DataLineageConfigTimeouts">DataLineageConfigTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1009,7 +1009,7 @@ Ingestion DataLineageConfigIngestion
 
 ingestion block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_lineage_config#ingestion DataLineageConfig#ingestion}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_lineage_config#ingestion DataLineageConfig#ingestion}
 
 ---
 
@@ -1023,7 +1023,7 @@ Location *string
 
 The region of the data lineage configuration for integration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_lineage_config#location DataLineageConfig#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_lineage_config#location DataLineageConfig#location}
 
 ---
 
@@ -1037,7 +1037,7 @@ Parent *string
 
 Parent scope for the config. Format: projects/{project-id|project-number} or folders/{folder-number} or organizations/{organization-number}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_lineage_config#parent DataLineageConfig#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_lineage_config#parent DataLineageConfig#parent}
 
 ---
 
@@ -1058,7 +1058,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_lineage_config#deletion_policy DataLineageConfig#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_lineage_config#deletion_policy DataLineageConfig#deletion_policy}
 
 ---
 
@@ -1070,7 +1070,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_lineage_config#id DataLineageConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_lineage_config#id DataLineageConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1087,7 +1087,7 @@ Timeouts DataLineageConfigTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_lineage_config#timeouts DataLineageConfig#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_lineage_config#timeouts DataLineageConfig#timeouts}
 
 ---
 
@@ -1096,7 +1096,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLineageConfig.DataLineageConfigIngestion.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datalineageconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalineageconfig"
 
 &datalineageconfig.DataLineageConfigIngestion {
 	Rule: interface{},
@@ -1121,7 +1121,7 @@ Rule interface{}
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_lineage_config#rule DataLineageConfig#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_lineage_config#rule DataLineageConfig#rule}
 
 ---
 
@@ -1130,11 +1130,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLineageConfig.DataLineageConfigIngestionRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datalineageconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalineageconfig"
 
 &datalineageconfig.DataLineageConfigIngestionRule {
-	IntegrationSelector: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dataLineageConfig.DataLineageConfigIngestionRuleIntegrationSelector,
-	LineageEnablement: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dataLineageConfig.DataLineageConfigIngestionRuleLineageEnablement,
+	IntegrationSelector: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataLineageConfig.DataLineageConfigIngestionRuleIntegrationSelector,
+	LineageEnablement: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataLineageConfig.DataLineageConfigIngestionRuleLineageEnablement,
 }
 ```
 
@@ -1157,7 +1157,7 @@ IntegrationSelector DataLineageConfigIngestionRuleIntegrationSelector
 
 integration_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_lineage_config#integration_selector DataLineageConfig#integration_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_lineage_config#integration_selector DataLineageConfig#integration_selector}
 
 ---
 
@@ -1171,7 +1171,7 @@ LineageEnablement DataLineageConfigIngestionRuleLineageEnablement
 
 lineage_enablement block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_lineage_config#lineage_enablement DataLineageConfig#lineage_enablement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_lineage_config#lineage_enablement DataLineageConfig#lineage_enablement}
 
 ---
 
@@ -1180,7 +1180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLineageConfig.DataLineageConfigIngestionRuleIntegrationSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datalineageconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalineageconfig"
 
 &datalineageconfig.DataLineageConfigIngestionRuleIntegrationSelector {
 	Integration: *string,
@@ -1205,7 +1205,7 @@ Integration *string
 
 Integration to which the rule applies. Possible values: ["DATAPROC", "LOOKER_CORE"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_lineage_config#integration DataLineageConfig#integration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_lineage_config#integration DataLineageConfig#integration}
 
 ---
 
@@ -1214,7 +1214,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLineageConfig.DataLineageConfigIngestionRuleLineageEnablement.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datalineageconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalineageconfig"
 
 &datalineageconfig.DataLineageConfigIngestionRuleLineageEnablement {
 	Enabled: interface{},
@@ -1239,7 +1239,7 @@ Enabled interface{}
 
 Whether ingestion of lineage should be enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_lineage_config#enabled DataLineageConfig#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_lineage_config#enabled DataLineageConfig#enabled}
 
 ---
 
@@ -1248,7 +1248,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataLineageConfig.DataLineageConfigTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datalineageconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalineageconfig"
 
 &datalineageconfig.DataLineageConfigTimeouts {
 	Create: *string,
@@ -1261,9 +1261,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datalineageconfi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataLineageConfig.DataLineageConfigTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_lineage_config#create DataLineageConfig#create}. |
-| <code><a href="#@cdktn/provider-google.dataLineageConfig.DataLineageConfigTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_lineage_config#delete DataLineageConfig#delete}. |
-| <code><a href="#@cdktn/provider-google.dataLineageConfig.DataLineageConfigTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_lineage_config#update DataLineageConfig#update}. |
+| <code><a href="#@cdktn/provider-google.dataLineageConfig.DataLineageConfigTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_lineage_config#create DataLineageConfig#create}. |
+| <code><a href="#@cdktn/provider-google.dataLineageConfig.DataLineageConfigTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_lineage_config#delete DataLineageConfig#delete}. |
+| <code><a href="#@cdktn/provider-google.dataLineageConfig.DataLineageConfigTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_lineage_config#update DataLineageConfig#update}. |
 
 ---
 
@@ -1275,7 +1275,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_lineage_config#create DataLineageConfig#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_lineage_config#create DataLineageConfig#create}.
 
 ---
 
@@ -1287,7 +1287,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_lineage_config#delete DataLineageConfig#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_lineage_config#delete DataLineageConfig#delete}.
 
 ---
 
@@ -1299,7 +1299,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_lineage_config#update DataLineageConfig#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_lineage_config#update DataLineageConfig#update}.
 
 ---
 
@@ -1310,7 +1310,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLineageConfig.DataLineageConfigIngestionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datalineageconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalineageconfig"
 
 datalineageconfig.NewDataLineageConfigIngestionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLineageConfigIngestionOutputReference
 ```
@@ -1594,7 +1594,7 @@ func InternalValue() DataLineageConfigIngestion
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLineageConfig.DataLineageConfigIngestionRuleIntegrationSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datalineageconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalineageconfig"
 
 datalineageconfig.NewDataLineageConfigIngestionRuleIntegrationSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLineageConfigIngestionRuleIntegrationSelectorOutputReference
 ```
@@ -1865,7 +1865,7 @@ func InternalValue() DataLineageConfigIngestionRuleIntegrationSelector
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLineageConfig.DataLineageConfigIngestionRuleLineageEnablementOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datalineageconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalineageconfig"
 
 datalineageconfig.NewDataLineageConfigIngestionRuleLineageEnablementOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLineageConfigIngestionRuleLineageEnablementOutputReference
 ```
@@ -2136,7 +2136,7 @@ func InternalValue() DataLineageConfigIngestionRuleLineageEnablement
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLineageConfig.DataLineageConfigIngestionRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datalineageconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalineageconfig"
 
 datalineageconfig.NewDataLineageConfigIngestionRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataLineageConfigIngestionRuleList
 ```
@@ -2296,7 +2296,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLineageConfig.DataLineageConfigIngestionRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datalineageconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalineageconfig"
 
 datalineageconfig.NewDataLineageConfigIngestionRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataLineageConfigIngestionRuleOutputReference
 ```
@@ -2633,7 +2633,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataLineageConfig.DataLineageConfigTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datalineageconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datalineageconfig"
 
 datalineageconfig.NewDataLineageConfigTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataLineageConfigTimeoutsOutputReference
 ```

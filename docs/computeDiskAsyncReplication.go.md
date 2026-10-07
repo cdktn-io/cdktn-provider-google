@@ -4,12 +4,12 @@
 
 ### ComputeDiskAsyncReplication <a name="ComputeDiskAsyncReplication" id="@cdktn/provider-google.computeDiskAsyncReplication.ComputeDiskAsyncReplication"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk_async_replication google_compute_disk_async_replication}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk_async_replication google_compute_disk_async_replication}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeDiskAsyncReplication.ComputeDiskAsyncReplication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computediskasyncreplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computediskasyncreplication"
 
 computediskasyncreplication.NewComputeDiskAsyncReplication(scope Construct, id *string, config ComputeDiskAsyncReplicationConfig) ComputeDiskAsyncReplication
 ```
@@ -447,7 +447,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeDiskAsyncReplication.ComputeDiskAsyncReplication.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computediskasyncreplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computediskasyncreplication"
 
 computediskasyncreplication.ComputeDiskAsyncReplication_IsConstruct(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeDiskAsyncReplication.ComputeDiskAsyncReplication.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computediskasyncreplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computediskasyncreplication"
 
 computediskasyncreplication.ComputeDiskAsyncReplication_IsTerraformElement(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ computediskasyncreplication.ComputeDiskAsyncReplication_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeDiskAsyncReplication.ComputeDiskAsyncReplication.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computediskasyncreplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computediskasyncreplication"
 
 computediskasyncreplication.ComputeDiskAsyncReplication_IsTerraformResource(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ computediskasyncreplication.ComputeDiskAsyncReplication_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeDiskAsyncReplication.ComputeDiskAsyncReplication.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computediskasyncreplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computediskasyncreplication"
 
 computediskasyncreplication.ComputeDiskAsyncReplication_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -536,7 +536,7 @@ The construct id used in the generated config for the ComputeDiskAsyncReplicatio
 
 The id of the existing ComputeDiskAsyncReplication that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk_async_replication#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk_async_replication#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -846,7 +846,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeDiskAsyncReplication.ComputeDiskAsyncReplicationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computediskasyncreplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computediskasyncreplication"
 
 &computediskasyncreplication.ComputeDiskAsyncReplicationConfig {
 	Connection: interface{},
@@ -857,10 +857,10 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computediskasync
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	PrimaryDisk: *string,
-	SecondaryDisk: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeDiskAsyncReplication.ComputeDiskAsyncReplicationSecondaryDisk,
+	SecondaryDisk: github.com/cdktn-io/cdktn-provider-google-go/google/v21.computeDiskAsyncReplication.ComputeDiskAsyncReplicationSecondaryDisk,
 	DeletionPolicy: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeDiskAsyncReplication.ComputeDiskAsyncReplicationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.computeDiskAsyncReplication.ComputeDiskAsyncReplicationTimeouts,
 }
 ```
 
@@ -878,7 +878,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computediskasync
 | <code><a href="#@cdktn/provider-google.computeDiskAsyncReplication.ComputeDiskAsyncReplicationConfig.property.primaryDisk">PrimaryDisk</a></code> | <code>*string</code> | Primary disk for asynchronous replication. |
 | <code><a href="#@cdktn/provider-google.computeDiskAsyncReplication.ComputeDiskAsyncReplicationConfig.property.secondaryDisk">SecondaryDisk</a></code> | <code><a href="#@cdktn/provider-google.computeDiskAsyncReplication.ComputeDiskAsyncReplicationSecondaryDisk">ComputeDiskAsyncReplicationSecondaryDisk</a></code> | secondary_disk block. |
 | <code><a href="#@cdktn/provider-google.computeDiskAsyncReplication.ComputeDiskAsyncReplicationConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.computeDiskAsyncReplication.ComputeDiskAsyncReplicationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk_async_replication#id ComputeDiskAsyncReplication#id}. |
+| <code><a href="#@cdktn/provider-google.computeDiskAsyncReplication.ComputeDiskAsyncReplicationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk_async_replication#id ComputeDiskAsyncReplication#id}. |
 | <code><a href="#@cdktn/provider-google.computeDiskAsyncReplication.ComputeDiskAsyncReplicationConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeDiskAsyncReplication.ComputeDiskAsyncReplicationTimeouts">ComputeDiskAsyncReplicationTimeouts</a></code> | timeouts block. |
 
 ---
@@ -963,7 +963,7 @@ PrimaryDisk *string
 
 Primary disk for asynchronous replication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk_async_replication#primary_disk ComputeDiskAsyncReplication#primary_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk_async_replication#primary_disk ComputeDiskAsyncReplication#primary_disk}
 
 ---
 
@@ -977,7 +977,7 @@ SecondaryDisk ComputeDiskAsyncReplicationSecondaryDisk
 
 secondary_disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk_async_replication#secondary_disk ComputeDiskAsyncReplication#secondary_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk_async_replication#secondary_disk ComputeDiskAsyncReplication#secondary_disk}
 
 ---
 
@@ -998,7 +998,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk_async_replication#deletion_policy ComputeDiskAsyncReplication#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk_async_replication#deletion_policy ComputeDiskAsyncReplication#deletion_policy}
 
 ---
 
@@ -1010,7 +1010,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk_async_replication#id ComputeDiskAsyncReplication#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk_async_replication#id ComputeDiskAsyncReplication#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1027,7 +1027,7 @@ Timeouts ComputeDiskAsyncReplicationTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk_async_replication#timeouts ComputeDiskAsyncReplication#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk_async_replication#timeouts ComputeDiskAsyncReplication#timeouts}
 
 ---
 
@@ -1036,7 +1036,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeDiskAsyncReplication.ComputeDiskAsyncReplicationSecondaryDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computediskasyncreplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computediskasyncreplication"
 
 &computediskasyncreplication.ComputeDiskAsyncReplicationSecondaryDisk {
 	Disk: *string,
@@ -1061,7 +1061,7 @@ Disk *string
 
 Secondary disk for asynchronous replication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk_async_replication#disk ComputeDiskAsyncReplication#disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk_async_replication#disk ComputeDiskAsyncReplication#disk}
 
 ---
 
@@ -1070,7 +1070,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeDiskAsyncReplication.ComputeDiskAsyncReplicationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computediskasyncreplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computediskasyncreplication"
 
 &computediskasyncreplication.ComputeDiskAsyncReplicationTimeouts {
 	Create: *string,
@@ -1082,8 +1082,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computediskasync
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeDiskAsyncReplication.ComputeDiskAsyncReplicationTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk_async_replication#create ComputeDiskAsyncReplication#create}. |
-| <code><a href="#@cdktn/provider-google.computeDiskAsyncReplication.ComputeDiskAsyncReplicationTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk_async_replication#delete ComputeDiskAsyncReplication#delete}. |
+| <code><a href="#@cdktn/provider-google.computeDiskAsyncReplication.ComputeDiskAsyncReplicationTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk_async_replication#create ComputeDiskAsyncReplication#create}. |
+| <code><a href="#@cdktn/provider-google.computeDiskAsyncReplication.ComputeDiskAsyncReplicationTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk_async_replication#delete ComputeDiskAsyncReplication#delete}. |
 
 ---
 
@@ -1095,7 +1095,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk_async_replication#create ComputeDiskAsyncReplication#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk_async_replication#create ComputeDiskAsyncReplication#create}.
 
 ---
 
@@ -1107,7 +1107,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_disk_async_replication#delete ComputeDiskAsyncReplication#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_disk_async_replication#delete ComputeDiskAsyncReplication#delete}.
 
 ---
 
@@ -1118,7 +1118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeDiskAsyncReplication.ComputeDiskAsyncReplicationSecondaryDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computediskasyncreplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computediskasyncreplication"
 
 computediskasyncreplication.NewComputeDiskAsyncReplicationSecondaryDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeDiskAsyncReplicationSecondaryDiskOutputReference
 ```
@@ -1400,7 +1400,7 @@ func InternalValue() ComputeDiskAsyncReplicationSecondaryDisk
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeDiskAsyncReplication.ComputeDiskAsyncReplicationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computediskasyncreplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computediskasyncreplication"
 
 computediskasyncreplication.NewComputeDiskAsyncReplicationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeDiskAsyncReplicationTimeoutsOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### SecureSourceManagerRepository <a name="SecureSourceManagerRepository" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepository"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_repository google_secure_source_manager_repository}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secure_source_manager_repository google_secure_source_manager_repository}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepository.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securesourcemanagerrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/securesourcemanagerrepository"
 
 securesourcemanagerrepository.NewSecureSourceManagerRepository(scope Construct, id *string, config SecureSourceManagerRepositoryConfig) SecureSourceManagerRepository
 ```
@@ -495,7 +495,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepository.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securesourcemanagerrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/securesourcemanagerrepository"
 
 securesourcemanagerrepository.SecureSourceManagerRepository_IsConstruct(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepository.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securesourcemanagerrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/securesourcemanagerrepository"
 
 securesourcemanagerrepository.SecureSourceManagerRepository_IsTerraformElement(x interface{}) *bool
 ```
@@ -541,7 +541,7 @@ securesourcemanagerrepository.SecureSourceManagerRepository_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepository.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securesourcemanagerrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/securesourcemanagerrepository"
 
 securesourcemanagerrepository.SecureSourceManagerRepository_IsTerraformResource(x interface{}) *bool
 ```
@@ -555,7 +555,7 @@ securesourcemanagerrepository.SecureSourceManagerRepository_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepository.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securesourcemanagerrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/securesourcemanagerrepository"
 
 securesourcemanagerrepository.SecureSourceManagerRepository_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -584,7 +584,7 @@ The construct id used in the generated config for the SecureSourceManagerReposit
 
 The id of the existing SecureSourceManagerRepository that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_repository#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secure_source_manager_repository#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1081,7 +1081,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securesourcemanagerrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/securesourcemanagerrepository"
 
 &securesourcemanagerrepository.SecureSourceManagerRepositoryConfig {
 	Connection: interface{},
@@ -1097,11 +1097,11 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securesourcemana
 	DeletionPolicy: *string,
 	Description: *string,
 	Id: *string,
-	InitialConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.secureSourceManagerRepository.SecureSourceManagerRepositoryInitialConfig,
+	InitialConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.secureSourceManagerRepository.SecureSourceManagerRepositoryInitialConfig,
 	Project: *string,
-	ScanConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfig,
+	ScanConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfig,
 	ServiceAccount: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.secureSourceManagerRepository.SecureSourceManagerRepositoryTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.secureSourceManagerRepository.SecureSourceManagerRepositoryTimeouts,
 }
 ```
 
@@ -1121,9 +1121,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securesourcemana
 | <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryConfig.property.repositoryId">RepositoryId</a></code> | <code>*string</code> | The ID for the Repository. |
 | <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryConfig.property.description">Description</a></code> | <code>*string</code> | Description of the repository, which cannot exceed 500 characters. |
-| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_repository#id SecureSourceManagerRepository#id}. |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secure_source_manager_repository#id SecureSourceManagerRepository#id}. |
 | <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryConfig.property.initialConfig">InitialConfig</a></code> | <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryInitialConfig">SecureSourceManagerRepositoryInitialConfig</a></code> | initial_config block. |
-| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_repository#project SecureSourceManagerRepository#project}. |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secure_source_manager_repository#project SecureSourceManagerRepository#project}. |
 | <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryConfig.property.scanConfig">ScanConfig</a></code> | <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfig">SecureSourceManagerRepositoryScanConfig</a></code> | scan_config block. |
 | <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryConfig.property.serviceAccount">ServiceAccount</a></code> | <code>*string</code> | Repository level service account. |
 | <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryTimeouts">SecureSourceManagerRepositoryTimeouts</a></code> | timeouts block. |
@@ -1210,7 +1210,7 @@ Instance *string
 
 The name of the instance in which the repository is hosted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_repository#instance SecureSourceManagerRepository#instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secure_source_manager_repository#instance SecureSourceManagerRepository#instance}
 
 ---
 
@@ -1224,7 +1224,7 @@ Location *string
 
 The location for the Repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_repository#location SecureSourceManagerRepository#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secure_source_manager_repository#location SecureSourceManagerRepository#location}
 
 ---
 
@@ -1238,7 +1238,7 @@ RepositoryId *string
 
 The ID for the Repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_repository#repository_id SecureSourceManagerRepository#repository_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secure_source_manager_repository#repository_id SecureSourceManagerRepository#repository_id}
 
 ---
 
@@ -1259,7 +1259,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_repository#deletion_policy SecureSourceManagerRepository#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secure_source_manager_repository#deletion_policy SecureSourceManagerRepository#deletion_policy}
 
 ---
 
@@ -1273,7 +1273,7 @@ Description *string
 
 Description of the repository, which cannot exceed 500 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_repository#description SecureSourceManagerRepository#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secure_source_manager_repository#description SecureSourceManagerRepository#description}
 
 ---
 
@@ -1285,7 +1285,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_repository#id SecureSourceManagerRepository#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secure_source_manager_repository#id SecureSourceManagerRepository#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1302,7 +1302,7 @@ InitialConfig SecureSourceManagerRepositoryInitialConfig
 
 initial_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_repository#initial_config SecureSourceManagerRepository#initial_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secure_source_manager_repository#initial_config SecureSourceManagerRepository#initial_config}
 
 ---
 
@@ -1314,7 +1314,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_repository#project SecureSourceManagerRepository#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secure_source_manager_repository#project SecureSourceManagerRepository#project}.
 
 ---
 
@@ -1328,7 +1328,7 @@ ScanConfig SecureSourceManagerRepositoryScanConfig
 
 scan_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_repository#scan_config SecureSourceManagerRepository#scan_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secure_source_manager_repository#scan_config SecureSourceManagerRepository#scan_config}
 
 ---
 
@@ -1342,7 +1342,7 @@ ServiceAccount *string
 
 Repository level service account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_repository#service_account SecureSourceManagerRepository#service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secure_source_manager_repository#service_account SecureSourceManagerRepository#service_account}
 
 ---
 
@@ -1356,7 +1356,7 @@ Timeouts SecureSourceManagerRepositoryTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_repository#timeouts SecureSourceManagerRepository#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secure_source_manager_repository#timeouts SecureSourceManagerRepository#timeouts}
 
 ---
 
@@ -1365,7 +1365,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryInitialConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securesourcemanagerrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/securesourcemanagerrepository"
 
 &securesourcemanagerrepository.SecureSourceManagerRepositoryInitialConfig {
 	DefaultBranch: *string,
@@ -1396,7 +1396,7 @@ DefaultBranch *string
 
 Default branch name of the repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_repository#default_branch SecureSourceManagerRepository#default_branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secure_source_manager_repository#default_branch SecureSourceManagerRepository#default_branch}
 
 ---
 
@@ -1410,7 +1410,7 @@ Gitignores *[]*string
 
 List of gitignore template names user can choose from. Valid values can be viewed at https://cloud.google.com/secure-source-manager/docs/reference/rest/v1/projects.locations.repositories#initialconfig.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_repository#gitignores SecureSourceManagerRepository#gitignores}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secure_source_manager_repository#gitignores SecureSourceManagerRepository#gitignores}
 
 ---
 
@@ -1424,7 +1424,7 @@ License *string
 
 License template name user can choose from. Valid values can be viewed at https://cloud.google.com/secure-source-manager/docs/reference/rest/v1/projects.locations.repositories#initialconfig.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_repository#license SecureSourceManagerRepository#license}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secure_source_manager_repository#license SecureSourceManagerRepository#license}
 
 ---
 
@@ -1438,7 +1438,7 @@ Readme *string
 
 README template name. Valid values can be viewed at https://cloud.google.com/secure-source-manager/docs/reference/rest/v1/projects.locations.repositories#initialconfig.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_repository#readme SecureSourceManagerRepository#readme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secure_source_manager_repository#readme SecureSourceManagerRepository#readme}
 
 ---
 
@@ -1447,10 +1447,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securesourcemanagerrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/securesourcemanagerrepository"
 
 &securesourcemanagerrepository.SecureSourceManagerRepositoryScanConfig {
-	SecretScanConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfig,
+	SecretScanConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfig,
 }
 ```
 
@@ -1472,7 +1472,7 @@ SecretScanConfig SecureSourceManagerRepositoryScanConfigSecretScanConfig
 
 secret_scan_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_repository#secret_scan_config SecureSourceManagerRepository#secret_scan_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secure_source_manager_repository#secret_scan_config SecureSourceManagerRepository#secret_scan_config}
 
 ---
 
@@ -1481,7 +1481,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securesourcemanagerrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/securesourcemanagerrepository"
 
 &securesourcemanagerrepository.SecureSourceManagerRepositoryScanConfigSecretScanConfig {
 	Enabled: interface{},
@@ -1508,7 +1508,7 @@ Enabled interface{}
 
 Enables secret scanning for the repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_repository#enabled SecureSourceManagerRepository#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secure_source_manager_repository#enabled SecureSourceManagerRepository#enabled}
 
 ---
 
@@ -1522,7 +1522,7 @@ InspectTemplate *string
 
 The DLP inspect template to use for secret scanning.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_repository#inspect_template SecureSourceManagerRepository#inspect_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secure_source_manager_repository#inspect_template SecureSourceManagerRepository#inspect_template}
 
 ---
 
@@ -1531,7 +1531,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securesourcemanagerrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/securesourcemanagerrepository"
 
 &securesourcemanagerrepository.SecureSourceManagerRepositoryTimeouts {
 	Create: *string,
@@ -1544,9 +1544,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securesourcemana
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_repository#create SecureSourceManagerRepository#create}. |
-| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_repository#delete SecureSourceManagerRepository#delete}. |
-| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_repository#update SecureSourceManagerRepository#update}. |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secure_source_manager_repository#create SecureSourceManagerRepository#create}. |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secure_source_manager_repository#delete SecureSourceManagerRepository#delete}. |
+| <code><a href="#@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secure_source_manager_repository#update SecureSourceManagerRepository#update}. |
 
 ---
 
@@ -1558,7 +1558,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_repository#create SecureSourceManagerRepository#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secure_source_manager_repository#create SecureSourceManagerRepository#create}.
 
 ---
 
@@ -1570,7 +1570,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_repository#delete SecureSourceManagerRepository#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secure_source_manager_repository#delete SecureSourceManagerRepository#delete}.
 
 ---
 
@@ -1582,7 +1582,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/secure_source_manager_repository#update SecureSourceManagerRepository#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/secure_source_manager_repository#update SecureSourceManagerRepository#update}.
 
 ---
 
@@ -1591,7 +1591,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryUris.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securesourcemanagerrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/securesourcemanagerrepository"
 
 &securesourcemanagerrepository.SecureSourceManagerRepositoryUris {
 
@@ -1606,7 +1606,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securesourcemana
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryInitialConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securesourcemanagerrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/securesourcemanagerrepository"
 
 securesourcemanagerrepository.NewSecureSourceManagerRepositoryInitialConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecureSourceManagerRepositoryInitialConfigOutputReference
 ```
@@ -1971,7 +1971,7 @@ func InternalValue() SecureSourceManagerRepositoryInitialConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securesourcemanagerrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/securesourcemanagerrepository"
 
 securesourcemanagerrepository.NewSecureSourceManagerRepositoryScanConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecureSourceManagerRepositoryScanConfigOutputReference
 ```
@@ -2262,7 +2262,7 @@ func InternalValue() SecureSourceManagerRepositoryScanConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securesourcemanagerrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/securesourcemanagerrepository"
 
 securesourcemanagerrepository.NewSecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecureSourceManagerRepositoryScanConfigSecretScanConfigOutputReference
 ```
@@ -2569,7 +2569,7 @@ func InternalValue() SecureSourceManagerRepositoryScanConfigSecretScanConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securesourcemanagerrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/securesourcemanagerrepository"
 
 securesourcemanagerrepository.NewSecureSourceManagerRepositoryTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecureSourceManagerRepositoryTimeoutsOutputReference
 ```
@@ -2905,7 +2905,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryUrisList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securesourcemanagerrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/securesourcemanagerrepository"
 
 securesourcemanagerrepository.NewSecureSourceManagerRepositoryUrisList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SecureSourceManagerRepositoryUrisList
 ```
@@ -3054,7 +3054,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.secureSourceManagerRepository.SecureSourceManagerRepositoryUrisOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/securesourcemanagerrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/securesourcemanagerrepository"
 
 securesourcemanagerrepository.NewSecureSourceManagerRepositoryUrisOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SecureSourceManagerRepositoryUrisOutputReference
 ```

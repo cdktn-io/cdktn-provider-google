@@ -4,7 +4,7 @@
 
 ### IamOrganizationsPolicyBinding <a name="IamOrganizationsPolicyBinding" id="@cdktn/provider-google.iamOrganizationsPolicyBinding.IamOrganizationsPolicyBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_organizations_policy_binding google_iam_organizations_policy_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_organizations_policy_binding google_iam_organizations_policy_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iamOrganizationsPolicyBinding.IamOrganizationsPolicyBinding.Initializer"></a>
 
@@ -56,7 +56,7 @@ iamOrganizationsPolicyBinding.IamOrganizationsPolicyBinding(
 | <code><a href="#@cdktn/provider-google.iamOrganizationsPolicyBinding.IamOrganizationsPolicyBinding.Initializer.parameter.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.iamOrganizationsPolicyBinding.IamOrganizationsPolicyBindingCondition">IamOrganizationsPolicyBindingCondition</a></code> | condition block. |
 | <code><a href="#@cdktn/provider-google.iamOrganizationsPolicyBinding.IamOrganizationsPolicyBinding.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.iamOrganizationsPolicyBinding.IamOrganizationsPolicyBinding.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | Optional. The description of the policy binding. Must be less than or equal to 63 characters. |
-| <code><a href="#@cdktn/provider-google.iamOrganizationsPolicyBinding.IamOrganizationsPolicyBinding.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_organizations_policy_binding#id IamOrganizationsPolicyBinding#id}. |
+| <code><a href="#@cdktn/provider-google.iamOrganizationsPolicyBinding.IamOrganizationsPolicyBinding.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_organizations_policy_binding#id IamOrganizationsPolicyBinding#id}. |
 | <code><a href="#@cdktn/provider-google.iamOrganizationsPolicyBinding.IamOrganizationsPolicyBinding.Initializer.parameter.policyKind">policy_kind</a></code> | <code>str</code> | Immutable. |
 | <code><a href="#@cdktn/provider-google.iamOrganizationsPolicyBinding.IamOrganizationsPolicyBinding.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.iamOrganizationsPolicyBinding.IamOrganizationsPolicyBindingTimeouts">IamOrganizationsPolicyBindingTimeouts</a></code> | timeouts block. |
 
@@ -128,7 +128,7 @@ Must be unique amongst siblings in the same scope
 
 The location of the Policy Binding.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_organizations_policy_binding#location IamOrganizationsPolicyBinding#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_organizations_policy_binding#location IamOrganizationsPolicyBinding#location}
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The parent organization of the Policy Binding.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_organizations_policy_binding#organization IamOrganizationsPolicyBinding#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_organizations_policy_binding#organization IamOrganizationsPolicyBinding#organization}
 
 ---
 
@@ -150,7 +150,7 @@ Required.
 
 Immutable. The resource name of the policy to be bound. The binding parent and policy must belong to the same Organization (or Project).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_organizations_policy_binding#policy IamOrganizationsPolicyBinding#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_organizations_policy_binding#policy IamOrganizationsPolicyBinding#policy}
 
 ---
 
@@ -160,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The Policy Binding ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_organizations_policy_binding#policy_binding_id IamOrganizationsPolicyBinding#policy_binding_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_organizations_policy_binding#policy_binding_id IamOrganizationsPolicyBinding#policy_binding_id}
 
 ---
 
@@ -170,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 target block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_organizations_policy_binding#target IamOrganizationsPolicyBinding#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_organizations_policy_binding#target IamOrganizationsPolicyBinding#target}
 
 ---
 
@@ -183,7 +183,7 @@ Optional. User defined annotations. See https://google.aip.dev/148#annotations f
 **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
 Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_organizations_policy_binding#annotations IamOrganizationsPolicyBinding#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_organizations_policy_binding#annotations IamOrganizationsPolicyBinding#annotations}
 
 ---
 
@@ -193,7 +193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_organizations_policy_binding#condition IamOrganizationsPolicyBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_organizations_policy_binding#condition IamOrganizationsPolicyBinding#condition}
 
 ---
 
@@ -210,7 +210,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_organizations_policy_binding#deletion_policy IamOrganizationsPolicyBinding#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_organizations_policy_binding#deletion_policy IamOrganizationsPolicyBinding#deletion_policy}
 
 ---
 
@@ -220,7 +220,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Optional. The description of the policy binding. Must be less than or equal to 63 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_organizations_policy_binding#display_name IamOrganizationsPolicyBinding#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_organizations_policy_binding#display_name IamOrganizationsPolicyBinding#display_name}
 
 ---
 
@@ -228,7 +228,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_organizations_policy_binding#id IamOrganizationsPolicyBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_organizations_policy_binding#id IamOrganizationsPolicyBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -245,7 +245,7 @@ The kind of the policy to attach in this binding. This
 field must be one of the following:  - Left empty (will be automatically set
 to the policy kind) - The input policy kind   Possible values:  POLICY_KIND_UNSPECIFIED PRINCIPAL_ACCESS_BOUNDARY ACCESS
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_organizations_policy_binding#policy_kind IamOrganizationsPolicyBinding#policy_kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_organizations_policy_binding#policy_kind IamOrganizationsPolicyBinding#policy_kind}
 
 ---
 
@@ -255,7 +255,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_organizations_policy_binding#timeouts IamOrganizationsPolicyBinding#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_organizations_policy_binding#timeouts IamOrganizationsPolicyBinding#timeouts}
 
 ---
 
@@ -667,7 +667,7 @@ Optional.
 
 Description of the expression. This is a longer text which describes the expression, e.g. when hovered over it in a UI.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_organizations_policy_binding#description IamOrganizationsPolicyBinding#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_organizations_policy_binding#description IamOrganizationsPolicyBinding#description}
 
 ---
 
@@ -677,7 +677,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Textual representation of an expression in Common Expression Language syntax.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_organizations_policy_binding#expression IamOrganizationsPolicyBinding#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_organizations_policy_binding#expression IamOrganizationsPolicyBinding#expression}
 
 ---
 
@@ -689,7 +689,7 @@ Optional.
 
 String indicating the location of the expression for error reporting, e.g. a file name and a position in the file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_organizations_policy_binding#location IamOrganizationsPolicyBinding#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_organizations_policy_binding#location IamOrganizationsPolicyBinding#location}
 
 ---
 
@@ -701,7 +701,7 @@ Optional.
 
 Title for the expression, i.e. a short string describing its purpose. This can be used e.g. in UIs which allow to enter the expression.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_organizations_policy_binding#title IamOrganizationsPolicyBinding#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_organizations_policy_binding#title IamOrganizationsPolicyBinding#title}
 
 ---
 
@@ -709,7 +709,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ```python
 def put_target(
-  principal_set: str = None
+  principal_set: str = None,
+  resource: str = None
 ) -> None
 ```
 
@@ -717,9 +718,9 @@ def put_target(
 
 - *Type:* str
 
-Required.
+Immutable.
 
-Immutable. Full Resource Name of the principal set used for principal access boundary policy bindings.
+Full Resource Name of the principal set used for principal access boundary policy bindings.
 Examples for each one of the following supported principal set types:
 
 * Organization '//cloudresourcemanager.googleapis.com/organizations/ORGANIZATION_ID'
@@ -727,7 +728,23 @@ Examples for each one of the following supported principal set types:
 * Workspace Identity: '//iam.googleapis.com/locations/global/workspace/WORKSPACE_ID'
   It must be parent by the policy binding's parent (the organization).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_organizations_policy_binding#principal_set IamOrganizationsPolicyBinding#principal_set}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_organizations_policy_binding#principal_set IamOrganizationsPolicyBinding#principal_set}
+
+---
+
+###### `resource`<sup>Optional</sup> <a name="resource" id="@cdktn/provider-google.iamOrganizationsPolicyBinding.IamOrganizationsPolicyBinding.putTarget.parameter.resource"></a>
+
+- *Type:* str
+
+Immutable.
+
+Full Resource Name of the resource used for access policy bindings.
+Use this together with 'policy_kind = "ACCESS"'. Examples:
+
+* Organization: '//cloudresourcemanager.googleapis.com/organizations/ORGANIZATION_ID'
+  It must be the policy binding's parent (the organization).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_organizations_policy_binding#resource IamOrganizationsPolicyBinding#resource}
 
 ---
 
@@ -745,7 +762,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_organizations_policy_binding#create IamOrganizationsPolicyBinding#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_organizations_policy_binding#create IamOrganizationsPolicyBinding#create}.
 
 ---
 
@@ -753,7 +770,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_organizations_policy_binding#delete IamOrganizationsPolicyBinding#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_organizations_policy_binding#delete IamOrganizationsPolicyBinding#delete}.
 
 ---
 
@@ -761,7 +778,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_organizations_policy_binding#update IamOrganizationsPolicyBinding#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_organizations_policy_binding#update IamOrganizationsPolicyBinding#update}.
 
 ---
 
@@ -921,7 +938,7 @@ The construct id used in the generated config for the IamOrganizationsPolicyBind
 
 The id of the existing IamOrganizationsPolicyBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_organizations_policy_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_organizations_policy_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1495,7 +1512,7 @@ Optional.
 
 Description of the expression. This is a longer text which describes the expression, e.g. when hovered over it in a UI.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_organizations_policy_binding#description IamOrganizationsPolicyBinding#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_organizations_policy_binding#description IamOrganizationsPolicyBinding#description}
 
 ---
 
@@ -1509,7 +1526,7 @@ expression: str
 
 Textual representation of an expression in Common Expression Language syntax.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_organizations_policy_binding#expression IamOrganizationsPolicyBinding#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_organizations_policy_binding#expression IamOrganizationsPolicyBinding#expression}
 
 ---
 
@@ -1525,7 +1542,7 @@ Optional.
 
 String indicating the location of the expression for error reporting, e.g. a file name and a position in the file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_organizations_policy_binding#location IamOrganizationsPolicyBinding#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_organizations_policy_binding#location IamOrganizationsPolicyBinding#location}
 
 ---
 
@@ -1541,7 +1558,7 @@ Optional.
 
 Title for the expression, i.e. a short string describing its purpose. This can be used e.g. in UIs which allow to enter the expression.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_organizations_policy_binding#title IamOrganizationsPolicyBinding#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_organizations_policy_binding#title IamOrganizationsPolicyBinding#title}
 
 ---
 
@@ -1595,7 +1612,7 @@ iamOrganizationsPolicyBinding.IamOrganizationsPolicyBindingConfig(
 | <code><a href="#@cdktn/provider-google.iamOrganizationsPolicyBinding.IamOrganizationsPolicyBindingConfig.property.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.iamOrganizationsPolicyBinding.IamOrganizationsPolicyBindingCondition">IamOrganizationsPolicyBindingCondition</a></code> | condition block. |
 | <code><a href="#@cdktn/provider-google.iamOrganizationsPolicyBinding.IamOrganizationsPolicyBindingConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.iamOrganizationsPolicyBinding.IamOrganizationsPolicyBindingConfig.property.displayName">display_name</a></code> | <code>str</code> | Optional. The description of the policy binding. Must be less than or equal to 63 characters. |
-| <code><a href="#@cdktn/provider-google.iamOrganizationsPolicyBinding.IamOrganizationsPolicyBindingConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_organizations_policy_binding#id IamOrganizationsPolicyBinding#id}. |
+| <code><a href="#@cdktn/provider-google.iamOrganizationsPolicyBinding.IamOrganizationsPolicyBindingConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_organizations_policy_binding#id IamOrganizationsPolicyBinding#id}. |
 | <code><a href="#@cdktn/provider-google.iamOrganizationsPolicyBinding.IamOrganizationsPolicyBindingConfig.property.policyKind">policy_kind</a></code> | <code>str</code> | Immutable. |
 | <code><a href="#@cdktn/provider-google.iamOrganizationsPolicyBinding.IamOrganizationsPolicyBindingConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.iamOrganizationsPolicyBinding.IamOrganizationsPolicyBindingTimeouts">IamOrganizationsPolicyBindingTimeouts</a></code> | timeouts block. |
 
@@ -1681,7 +1698,7 @@ location: str
 
 The location of the Policy Binding.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_organizations_policy_binding#location IamOrganizationsPolicyBinding#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_organizations_policy_binding#location IamOrganizationsPolicyBinding#location}
 
 ---
 
@@ -1695,7 +1712,7 @@ organization: str
 
 The parent organization of the Policy Binding.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_organizations_policy_binding#organization IamOrganizationsPolicyBinding#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_organizations_policy_binding#organization IamOrganizationsPolicyBinding#organization}
 
 ---
 
@@ -1711,7 +1728,7 @@ Required.
 
 Immutable. The resource name of the policy to be bound. The binding parent and policy must belong to the same Organization (or Project).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_organizations_policy_binding#policy IamOrganizationsPolicyBinding#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_organizations_policy_binding#policy IamOrganizationsPolicyBinding#policy}
 
 ---
 
@@ -1725,7 +1742,7 @@ policy_binding_id: str
 
 The Policy Binding ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_organizations_policy_binding#policy_binding_id IamOrganizationsPolicyBinding#policy_binding_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_organizations_policy_binding#policy_binding_id IamOrganizationsPolicyBinding#policy_binding_id}
 
 ---
 
@@ -1739,7 +1756,7 @@ target: IamOrganizationsPolicyBindingTarget
 
 target block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_organizations_policy_binding#target IamOrganizationsPolicyBinding#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_organizations_policy_binding#target IamOrganizationsPolicyBinding#target}
 
 ---
 
@@ -1756,7 +1773,7 @@ Optional. User defined annotations. See https://google.aip.dev/148#annotations f
 **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
 Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_organizations_policy_binding#annotations IamOrganizationsPolicyBinding#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_organizations_policy_binding#annotations IamOrganizationsPolicyBinding#annotations}
 
 ---
 
@@ -1770,7 +1787,7 @@ condition: IamOrganizationsPolicyBindingCondition
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_organizations_policy_binding#condition IamOrganizationsPolicyBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_organizations_policy_binding#condition IamOrganizationsPolicyBinding#condition}
 
 ---
 
@@ -1791,7 +1808,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_organizations_policy_binding#deletion_policy IamOrganizationsPolicyBinding#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_organizations_policy_binding#deletion_policy IamOrganizationsPolicyBinding#deletion_policy}
 
 ---
 
@@ -1805,7 +1822,7 @@ display_name: str
 
 Optional. The description of the policy binding. Must be less than or equal to 63 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_organizations_policy_binding#display_name IamOrganizationsPolicyBinding#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_organizations_policy_binding#display_name IamOrganizationsPolicyBinding#display_name}
 
 ---
 
@@ -1817,7 +1834,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_organizations_policy_binding#id IamOrganizationsPolicyBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_organizations_policy_binding#id IamOrganizationsPolicyBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1838,7 +1855,7 @@ The kind of the policy to attach in this binding. This
 field must be one of the following:  - Left empty (will be automatically set
 to the policy kind) - The input policy kind   Possible values:  POLICY_KIND_UNSPECIFIED PRINCIPAL_ACCESS_BOUNDARY ACCESS
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_organizations_policy_binding#policy_kind IamOrganizationsPolicyBinding#policy_kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_organizations_policy_binding#policy_kind IamOrganizationsPolicyBinding#policy_kind}
 
 ---
 
@@ -1852,7 +1869,7 @@ timeouts: IamOrganizationsPolicyBindingTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_organizations_policy_binding#timeouts IamOrganizationsPolicyBinding#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_organizations_policy_binding#timeouts IamOrganizationsPolicyBinding#timeouts}
 
 ---
 
@@ -1864,7 +1881,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktn_provider_google import iam_organizations_policy_binding
 
 iamOrganizationsPolicyBinding.IamOrganizationsPolicyBindingTarget(
-  principal_set: str = None
+  principal_set: str = None,
+  resource: str = None
 )
 ```
 
@@ -1872,7 +1890,8 @@ iamOrganizationsPolicyBinding.IamOrganizationsPolicyBindingTarget(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.iamOrganizationsPolicyBinding.IamOrganizationsPolicyBindingTarget.property.principalSet">principal_set</a></code> | <code>str</code> | Required. |
+| <code><a href="#@cdktn/provider-google.iamOrganizationsPolicyBinding.IamOrganizationsPolicyBindingTarget.property.principalSet">principal_set</a></code> | <code>str</code> | Immutable. |
+| <code><a href="#@cdktn/provider-google.iamOrganizationsPolicyBinding.IamOrganizationsPolicyBindingTarget.property.resource">resource</a></code> | <code>str</code> | Immutable. |
 
 ---
 
@@ -1884,9 +1903,9 @@ principal_set: str
 
 - *Type:* str
 
-Required.
+Immutable.
 
-Immutable. Full Resource Name of the principal set used for principal access boundary policy bindings.
+Full Resource Name of the principal set used for principal access boundary policy bindings.
 Examples for each one of the following supported principal set types:
 
 * Organization '//cloudresourcemanager.googleapis.com/organizations/ORGANIZATION_ID'
@@ -1894,7 +1913,27 @@ Examples for each one of the following supported principal set types:
 * Workspace Identity: '//iam.googleapis.com/locations/global/workspace/WORKSPACE_ID'
   It must be parent by the policy binding's parent (the organization).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_organizations_policy_binding#principal_set IamOrganizationsPolicyBinding#principal_set}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_organizations_policy_binding#principal_set IamOrganizationsPolicyBinding#principal_set}
+
+---
+
+##### `resource`<sup>Optional</sup> <a name="resource" id="@cdktn/provider-google.iamOrganizationsPolicyBinding.IamOrganizationsPolicyBindingTarget.property.resource"></a>
+
+```python
+resource: str
+```
+
+- *Type:* str
+
+Immutable.
+
+Full Resource Name of the resource used for access policy bindings.
+Use this together with 'policy_kind = "ACCESS"'. Examples:
+
+* Organization: '//cloudresourcemanager.googleapis.com/organizations/ORGANIZATION_ID'
+  It must be the policy binding's parent (the organization).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_organizations_policy_binding#resource IamOrganizationsPolicyBinding#resource}
 
 ---
 
@@ -1916,9 +1955,9 @@ iamOrganizationsPolicyBinding.IamOrganizationsPolicyBindingTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.iamOrganizationsPolicyBinding.IamOrganizationsPolicyBindingTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_organizations_policy_binding#create IamOrganizationsPolicyBinding#create}. |
-| <code><a href="#@cdktn/provider-google.iamOrganizationsPolicyBinding.IamOrganizationsPolicyBindingTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_organizations_policy_binding#delete IamOrganizationsPolicyBinding#delete}. |
-| <code><a href="#@cdktn/provider-google.iamOrganizationsPolicyBinding.IamOrganizationsPolicyBindingTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_organizations_policy_binding#update IamOrganizationsPolicyBinding#update}. |
+| <code><a href="#@cdktn/provider-google.iamOrganizationsPolicyBinding.IamOrganizationsPolicyBindingTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_organizations_policy_binding#create IamOrganizationsPolicyBinding#create}. |
+| <code><a href="#@cdktn/provider-google.iamOrganizationsPolicyBinding.IamOrganizationsPolicyBindingTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_organizations_policy_binding#delete IamOrganizationsPolicyBinding#delete}. |
+| <code><a href="#@cdktn/provider-google.iamOrganizationsPolicyBinding.IamOrganizationsPolicyBindingTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_organizations_policy_binding#update IamOrganizationsPolicyBinding#update}. |
 
 ---
 
@@ -1930,7 +1969,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_organizations_policy_binding#create IamOrganizationsPolicyBinding#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_organizations_policy_binding#create IamOrganizationsPolicyBinding#create}.
 
 ---
 
@@ -1942,7 +1981,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_organizations_policy_binding#delete IamOrganizationsPolicyBinding#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_organizations_policy_binding#delete IamOrganizationsPolicyBinding#delete}.
 
 ---
 
@@ -1954,7 +1993,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/iam_organizations_policy_binding#update IamOrganizationsPolicyBinding#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/iam_organizations_policy_binding#update IamOrganizationsPolicyBinding#update}.
 
 ---
 
@@ -2404,6 +2443,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-google.iamOrganizationsPolicyBinding.IamOrganizationsPolicyBindingTargetOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-google.iamOrganizationsPolicyBinding.IamOrganizationsPolicyBindingTargetOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-google.iamOrganizationsPolicyBinding.IamOrganizationsPolicyBindingTargetOutputReference.resetPrincipalSet">reset_principal_set</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamOrganizationsPolicyBinding.IamOrganizationsPolicyBindingTargetOutputReference.resetResource">reset_resource</a></code> | *No description.* |
 
 ---
 
@@ -2585,6 +2625,12 @@ Returns a reversible string representation.
 def reset_principal_set() -> None
 ```
 
+##### `reset_resource` <a name="reset_resource" id="@cdktn/provider-google.iamOrganizationsPolicyBinding.IamOrganizationsPolicyBindingTargetOutputReference.resetResource"></a>
+
+```python
+def reset_resource() -> None
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -2593,7 +2639,9 @@ def reset_principal_set() -> None
 | <code><a href="#@cdktn/provider-google.iamOrganizationsPolicyBinding.IamOrganizationsPolicyBindingTargetOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.iamOrganizationsPolicyBinding.IamOrganizationsPolicyBindingTargetOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamOrganizationsPolicyBinding.IamOrganizationsPolicyBindingTargetOutputReference.property.principalSetInput">principal_set_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamOrganizationsPolicyBinding.IamOrganizationsPolicyBindingTargetOutputReference.property.resourceInput">resource_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamOrganizationsPolicyBinding.IamOrganizationsPolicyBindingTargetOutputReference.property.principalSet">principal_set</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.iamOrganizationsPolicyBinding.IamOrganizationsPolicyBindingTargetOutputReference.property.resource">resource</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.iamOrganizationsPolicyBinding.IamOrganizationsPolicyBindingTargetOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.iamOrganizationsPolicyBinding.IamOrganizationsPolicyBindingTarget">IamOrganizationsPolicyBindingTarget</a></code> | *No description.* |
 
 ---
@@ -2632,10 +2680,30 @@ principal_set_input: str
 
 ---
 
+##### `resource_input`<sup>Optional</sup> <a name="resource_input" id="@cdktn/provider-google.iamOrganizationsPolicyBinding.IamOrganizationsPolicyBindingTargetOutputReference.property.resourceInput"></a>
+
+```python
+resource_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `principal_set`<sup>Required</sup> <a name="principal_set" id="@cdktn/provider-google.iamOrganizationsPolicyBinding.IamOrganizationsPolicyBindingTargetOutputReference.property.principalSet"></a>
 
 ```python
 principal_set: str
+```
+
+- *Type:* str
+
+---
+
+##### `resource`<sup>Required</sup> <a name="resource" id="@cdktn/provider-google.iamOrganizationsPolicyBinding.IamOrganizationsPolicyBindingTargetOutputReference.property.resource"></a>
+
+```python
+resource: str
 ```
 
 - *Type:* str

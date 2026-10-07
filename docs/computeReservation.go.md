@@ -4,12 +4,12 @@
 
 ### ComputeReservation <a name="ComputeReservation" id="@cdktn/provider-google.computeReservation.ComputeReservation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_reservation google_compute_reservation}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_reservation google_compute_reservation}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeReservation.ComputeReservation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computereservation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computereservation"
 
 computereservation.NewComputeReservation(scope Construct, id *string, config ComputeReservationConfig) ComputeReservation
 ```
@@ -548,7 +548,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeReservation.ComputeReservation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computereservation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computereservation"
 
 computereservation.ComputeReservation_IsConstruct(x interface{}) *bool
 ```
@@ -580,7 +580,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeReservation.ComputeReservation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computereservation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computereservation"
 
 computereservation.ComputeReservation_IsTerraformElement(x interface{}) *bool
 ```
@@ -594,7 +594,7 @@ computereservation.ComputeReservation_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeReservation.ComputeReservation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computereservation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computereservation"
 
 computereservation.ComputeReservation_IsTerraformResource(x interface{}) *bool
 ```
@@ -608,7 +608,7 @@ computereservation.ComputeReservation_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeReservation.ComputeReservation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computereservation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computereservation"
 
 computereservation.ComputeReservation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -637,7 +637,7 @@ The construct id used in the generated config for the ComputeReservation to impo
 
 The id of the existing ComputeReservation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_reservation#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_reservation#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -675,7 +675,6 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.computeReservation.ComputeReservation.property.kind">Kind</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeReservation.ComputeReservation.property.linkedCommitments">LinkedCommitments</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeReservation.ComputeReservation.property.params">Params</a></code> | <code><a href="#@cdktn/provider-google.computeReservation.ComputeReservationParamsOutputReference">ComputeReservationParamsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeReservation.ComputeReservation.property.reservationBlockCount">ReservationBlockCount</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeReservation.ComputeReservation.property.reservationSharingPolicy">ReservationSharingPolicy</a></code> | <code><a href="#@cdktn/provider-google.computeReservation.ComputeReservationReservationSharingPolicyOutputReference">ComputeReservationReservationSharingPolicyOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeReservation.ComputeReservation.property.resourceStatus">ResourceStatus</a></code> | <code><a href="#@cdktn/provider-google.computeReservation.ComputeReservationResourceStatusList">ComputeReservationResourceStatusList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeReservation.ComputeReservation.property.satisfiesPzs">SatisfiesPzs</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IResolvable</code> | *No description.* |
@@ -926,16 +925,6 @@ func Params() ComputeReservationParamsOutputReference
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.computeReservation.ComputeReservationParamsOutputReference">ComputeReservationParamsOutputReference</a>
-
----
-
-##### `ReservationBlockCount`<sup>Required</sup> <a name="ReservationBlockCount" id="@cdktn/provider-google.computeReservation.ComputeReservation.property.reservationBlockCount"></a>
-
-```go
-func ReservationBlockCount() *f64
-```
-
-- *Type:* *f64
 
 ---
 
@@ -1244,7 +1233,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeReservation.ComputeReservationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computereservation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computereservation"
 
 &computereservation.ComputeReservationConfig {
 	Connection: interface{},
@@ -1255,18 +1244,18 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computereservati
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	SpecificReservation: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeReservation.ComputeReservationSpecificReservation,
+	SpecificReservation: github.com/cdktn-io/cdktn-provider-google-go/google/v21.computeReservation.ComputeReservationSpecificReservation,
 	Zone: *string,
-	DeleteAfterDuration: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeReservation.ComputeReservationDeleteAfterDuration,
+	DeleteAfterDuration: github.com/cdktn-io/cdktn-provider-google-go/google/v21.computeReservation.ComputeReservationDeleteAfterDuration,
 	DeleteAtTime: *string,
 	DeletionPolicy: *string,
 	Description: *string,
-	Params: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeReservation.ComputeReservationParams,
+	Params: github.com/cdktn-io/cdktn-provider-google-go/google/v21.computeReservation.ComputeReservationParams,
 	Project: *string,
-	ReservationSharingPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeReservation.ComputeReservationReservationSharingPolicy,
-	ShareSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeReservation.ComputeReservationShareSettings,
+	ReservationSharingPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v21.computeReservation.ComputeReservationReservationSharingPolicy,
+	ShareSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v21.computeReservation.ComputeReservationShareSettings,
 	SpecificReservationRequired: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeReservation.ComputeReservationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.computeReservation.ComputeReservationTimeouts,
 }
 ```
 
@@ -1289,7 +1278,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computereservati
 | <code><a href="#@cdktn/provider-google.computeReservation.ComputeReservationConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.computeReservation.ComputeReservationConfig.property.description">Description</a></code> | <code>*string</code> | An optional description of this resource. |
 | <code><a href="#@cdktn/provider-google.computeReservation.ComputeReservationConfig.property.params">Params</a></code> | <code><a href="#@cdktn/provider-google.computeReservation.ComputeReservationParams">ComputeReservationParams</a></code> | params block. |
-| <code><a href="#@cdktn/provider-google.computeReservation.ComputeReservationConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_reservation#project ComputeReservation#project}. |
+| <code><a href="#@cdktn/provider-google.computeReservation.ComputeReservationConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_reservation#project ComputeReservation#project}. |
 | <code><a href="#@cdktn/provider-google.computeReservation.ComputeReservationConfig.property.reservationSharingPolicy">ReservationSharingPolicy</a></code> | <code><a href="#@cdktn/provider-google.computeReservation.ComputeReservationReservationSharingPolicy">ComputeReservationReservationSharingPolicy</a></code> | reservation_sharing_policy block. |
 | <code><a href="#@cdktn/provider-google.computeReservation.ComputeReservationConfig.property.shareSettings">ShareSettings</a></code> | <code><a href="#@cdktn/provider-google.computeReservation.ComputeReservationShareSettings">ComputeReservationShareSettings</a></code> | share_settings block. |
 | <code><a href="#@cdktn/provider-google.computeReservation.ComputeReservationConfig.property.specificReservationRequired">SpecificReservationRequired</a></code> | <code>interface{}</code> | When set to true, only VMs that target this reservation by name can consume this reservation. |
@@ -1385,7 +1374,7 @@ first character must be a lowercase letter, and all following
 characters must be a dash, lowercase letter, or digit, except the last
 character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_reservation#name ComputeReservation#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_reservation#name ComputeReservation#name}
 
 ---
 
@@ -1399,7 +1388,7 @@ SpecificReservation ComputeReservationSpecificReservation
 
 specific_reservation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_reservation#specific_reservation ComputeReservation#specific_reservation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_reservation#specific_reservation ComputeReservation#specific_reservation}
 
 ---
 
@@ -1413,7 +1402,7 @@ Zone *string
 
 The zone where the reservation is made.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_reservation#zone ComputeReservation#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_reservation#zone ComputeReservation#zone}
 
 ---
 
@@ -1427,7 +1416,7 @@ DeleteAfterDuration ComputeReservationDeleteAfterDuration
 
 delete_after_duration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_reservation#delete_after_duration ComputeReservation#delete_after_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_reservation#delete_after_duration ComputeReservation#delete_after_duration}
 
 ---
 
@@ -1444,7 +1433,7 @@ Absolute time in future when the reservation will be auto-deleted by Compute Eng
 Timestamp is represented in RFC3339 text format.
 Cannot be used with delete_after_duration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_reservation#delete_at_time ComputeReservation#delete_at_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_reservation#delete_at_time ComputeReservation#delete_at_time}
 
 ---
 
@@ -1465,7 +1454,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_reservation#deletion_policy ComputeReservation#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_reservation#deletion_policy ComputeReservation#deletion_policy}
 
 ---
 
@@ -1479,7 +1468,7 @@ Description *string
 
 An optional description of this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_reservation#description ComputeReservation#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_reservation#description ComputeReservation#description}
 
 ---
 
@@ -1493,7 +1482,7 @@ Params ComputeReservationParams
 
 params block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_reservation#params ComputeReservation#params}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_reservation#params ComputeReservation#params}
 
 ---
 
@@ -1505,7 +1494,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_reservation#project ComputeReservation#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_reservation#project ComputeReservation#project}.
 
 ---
 
@@ -1519,7 +1508,7 @@ ReservationSharingPolicy ComputeReservationReservationSharingPolicy
 
 reservation_sharing_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_reservation#reservation_sharing_policy ComputeReservation#reservation_sharing_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_reservation#reservation_sharing_policy ComputeReservation#reservation_sharing_policy}
 
 ---
 
@@ -1533,7 +1522,7 @@ ShareSettings ComputeReservationShareSettings
 
 share_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_reservation#share_settings ComputeReservation#share_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_reservation#share_settings ComputeReservation#share_settings}
 
 ---
 
@@ -1550,7 +1539,7 @@ When set to true, only VMs that target this reservation by name can consume this
 Otherwise, it can be consumed by VMs with
 affinity for any reservation. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_reservation#specific_reservation_required ComputeReservation#specific_reservation_required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_reservation#specific_reservation_required ComputeReservation#specific_reservation_required}
 
 ---
 
@@ -1564,7 +1553,7 @@ Timeouts ComputeReservationTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_reservation#timeouts ComputeReservation#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_reservation#timeouts ComputeReservation#timeouts}
 
 ---
 
@@ -1573,7 +1562,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeReservation.ComputeReservationDeleteAfterDuration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computereservation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computereservation"
 
 &computereservation.ComputeReservationDeleteAfterDuration {
 	Nanos: *f64,
@@ -1600,7 +1589,7 @@ Nanos *f64
 
 Number of nanoseconds for the auto-delete duration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_reservation#nanos ComputeReservation#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_reservation#nanos ComputeReservation#nanos}
 
 ---
 
@@ -1614,7 +1603,7 @@ Seconds *string
 
 Number of seconds for the auto-delete duration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_reservation#seconds ComputeReservation#seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_reservation#seconds ComputeReservation#seconds}
 
 ---
 
@@ -1623,7 +1612,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeReservation.ComputeReservationParams.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computereservation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computereservation"
 
 &computereservation.ComputeReservationParams {
 	ResourceManagerTags: *map[string]*string,
@@ -1652,7 +1641,7 @@ Tag keys and values have the
 same definition as resource manager tags. Keys must be in the format tagKeys/{tag_key_id},
 and values are in the format tagValues/456.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_reservation#resource_manager_tags ComputeReservation#resource_manager_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_reservation#resource_manager_tags ComputeReservation#resource_manager_tags}
 
 ---
 
@@ -1661,7 +1650,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeReservation.ComputeReservationReservationSharingPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computereservation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computereservation"
 
 &computereservation.ComputeReservationReservationSharingPolicy {
 	ServiceShareType: *string,
@@ -1686,7 +1675,7 @@ ServiceShareType *string
 
 Sharing config for all Google Cloud services. Possible values: ["ALLOW_ALL", "DISALLOW_ALL"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_reservation#service_share_type ComputeReservation#service_share_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_reservation#service_share_type ComputeReservation#service_share_type}
 
 ---
 
@@ -1695,7 +1684,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeReservation.ComputeReservationResourceStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computereservation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computereservation"
 
 &computereservation.ComputeReservationResourceStatus {
 
@@ -1708,7 +1697,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computereservati
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeReservation.ComputeReservationResourceStatusHealthInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computereservation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computereservation"
 
 &computereservation.ComputeReservationResourceStatusHealthInfo {
 
@@ -1721,7 +1710,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computereservati
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeReservation.ComputeReservationResourceStatusReservationMaintenance.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computereservation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computereservation"
 
 &computereservation.ComputeReservationResourceStatusReservationMaintenance {
 
@@ -1734,7 +1723,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computereservati
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeReservation.ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenance.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computereservation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computereservation"
 
 &computereservation.ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenance {
 
@@ -1747,7 +1736,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computereservati
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeReservation.ComputeReservationResourceStatusSpecificSkuAllocation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computereservation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computereservation"
 
 &computereservation.ComputeReservationResourceStatusSpecificSkuAllocation {
 
@@ -1760,7 +1749,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computereservati
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeReservation.ComputeReservationShareSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computereservation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computereservation"
 
 &computereservation.ComputeReservationShareSettings {
 	ProjectMap: interface{},
@@ -1787,7 +1776,7 @@ ProjectMap interface{}
 
 project_map block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_reservation#project_map ComputeReservation#project_map}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_reservation#project_map ComputeReservation#project_map}
 
 ---
 
@@ -1801,7 +1790,7 @@ ShareType *string
 
 Type of sharing for this shared-reservation Possible values: ["LOCAL", "SPECIFIC_PROJECTS"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_reservation#share_type ComputeReservation#share_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_reservation#share_type ComputeReservation#share_type}
 
 ---
 
@@ -1810,7 +1799,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeReservation.ComputeReservationShareSettingsProjectMap.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computereservation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computereservation"
 
 &computereservation.ComputeReservationShareSettingsProjectMap {
 	Id: *string,
@@ -1822,7 +1811,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computereservati
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeReservation.ComputeReservationShareSettingsProjectMap.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_reservation#id ComputeReservation#id}. |
+| <code><a href="#@cdktn/provider-google.computeReservation.ComputeReservationShareSettingsProjectMap.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_reservation#id ComputeReservation#id}. |
 | <code><a href="#@cdktn/provider-google.computeReservation.ComputeReservationShareSettingsProjectMap.property.projectId">ProjectId</a></code> | <code>*string</code> | The project id/number, should be same as the key of this project config in the project map. |
 
 ---
@@ -1835,7 +1824,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_reservation#id ComputeReservation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_reservation#id ComputeReservation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1852,7 +1841,7 @@ ProjectId *string
 
 The project id/number, should be same as the key of this project config in the project map.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_reservation#project_id ComputeReservation#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_reservation#project_id ComputeReservation#project_id}
 
 ---
 
@@ -1861,11 +1850,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeReservation.ComputeReservationSpecificReservation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computereservation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computereservation"
 
 &computereservation.ComputeReservationSpecificReservation {
 	Count: *f64,
-	InstanceProperties: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeReservation.ComputeReservationSpecificReservationInstanceProperties,
+	InstanceProperties: github.com/cdktn-io/cdktn-provider-google-go/google/v21.computeReservation.ComputeReservationSpecificReservationInstanceProperties,
 	SourceInstanceTemplate: *string,
 }
 ```
@@ -1890,7 +1879,7 @@ Count *f64
 
 The number of resources that are allocated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_reservation#count ComputeReservation#count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_reservation#count ComputeReservation#count}
 
 ---
 
@@ -1904,7 +1893,7 @@ InstanceProperties ComputeReservationSpecificReservationInstanceProperties
 
 instance_properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_reservation#instance_properties ComputeReservation#instance_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_reservation#instance_properties ComputeReservation#instance_properties}
 
 ---
 
@@ -1918,7 +1907,7 @@ SourceInstanceTemplate *string
 
 Specifies the instance template to create the reservation. If you use this field, you must exclude the instanceProperties field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_reservation#source_instance_template ComputeReservation#source_instance_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_reservation#source_instance_template ComputeReservation#source_instance_template}
 
 ---
 
@@ -1927,7 +1916,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeReservation.ComputeReservationSpecificReservationInstanceProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computereservation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computereservation"
 
 &computereservation.ComputeReservationSpecificReservationInstanceProperties {
 	MachineType: *string,
@@ -1958,7 +1947,7 @@ MachineType *string
 
 The name of the machine type to reserve.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_reservation#machine_type ComputeReservation#machine_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_reservation#machine_type ComputeReservation#machine_type}
 
 ---
 
@@ -1972,7 +1961,7 @@ GuestAccelerators interface{}
 
 guest_accelerators block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_reservation#guest_accelerators ComputeReservation#guest_accelerators}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_reservation#guest_accelerators ComputeReservation#guest_accelerators}
 
 ---
 
@@ -1986,7 +1975,7 @@ LocalSsds interface{}
 
 local_ssds block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_reservation#local_ssds ComputeReservation#local_ssds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_reservation#local_ssds ComputeReservation#local_ssds}
 
 ---
 
@@ -2005,7 +1994,7 @@ For example,
 the CPU platform availability reference](https://cloud.google.com/compute/docs/instances/specify-min-cpu-platform#availablezones)
 for information on available CPU platforms.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_reservation#min_cpu_platform ComputeReservation#min_cpu_platform}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_reservation#min_cpu_platform ComputeReservation#min_cpu_platform}
 
 ---
 
@@ -2014,7 +2003,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeReservation.ComputeReservationSpecificReservationInstancePropertiesGuestAccelerators.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computereservation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computereservation"
 
 &computereservation.ComputeReservationSpecificReservationInstancePropertiesGuestAccelerators {
 	AcceleratorCount: *f64,
@@ -2041,7 +2030,7 @@ AcceleratorCount *f64
 
 The number of the guest accelerator cards exposed to this instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_reservation#accelerator_count ComputeReservation#accelerator_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_reservation#accelerator_count ComputeReservation#accelerator_count}
 
 ---
 
@@ -2057,7 +2046,7 @@ The full or partial URL of the accelerator type to attach to this instance. For 
 
 If you are creating an instance template, specify only the accelerator name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_reservation#accelerator_type ComputeReservation#accelerator_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_reservation#accelerator_type ComputeReservation#accelerator_type}
 
 ---
 
@@ -2066,7 +2055,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeReservation.ComputeReservationSpecificReservationInstancePropertiesLocalSsds.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computereservation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computereservation"
 
 &computereservation.ComputeReservationSpecificReservationInstancePropertiesLocalSsds {
 	DiskSizeGb: *f64,
@@ -2093,7 +2082,7 @@ DiskSizeGb *f64
 
 The size of the disk in base-2 GB.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_reservation#disk_size_gb ComputeReservation#disk_size_gb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_reservation#disk_size_gb ComputeReservation#disk_size_gb}
 
 ---
 
@@ -2107,7 +2096,7 @@ Interface *string
 
 The disk interface to use for attaching this disk. Default value: "SCSI" Possible values: ["SCSI", "NVME"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_reservation#interface ComputeReservation#interface}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_reservation#interface ComputeReservation#interface}
 
 ---
 
@@ -2116,7 +2105,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeReservation.ComputeReservationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computereservation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computereservation"
 
 &computereservation.ComputeReservationTimeouts {
 	Create: *string,
@@ -2129,9 +2118,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computereservati
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeReservation.ComputeReservationTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_reservation#create ComputeReservation#create}. |
-| <code><a href="#@cdktn/provider-google.computeReservation.ComputeReservationTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_reservation#delete ComputeReservation#delete}. |
-| <code><a href="#@cdktn/provider-google.computeReservation.ComputeReservationTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_reservation#update ComputeReservation#update}. |
+| <code><a href="#@cdktn/provider-google.computeReservation.ComputeReservationTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_reservation#create ComputeReservation#create}. |
+| <code><a href="#@cdktn/provider-google.computeReservation.ComputeReservationTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_reservation#delete ComputeReservation#delete}. |
+| <code><a href="#@cdktn/provider-google.computeReservation.ComputeReservationTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_reservation#update ComputeReservation#update}. |
 
 ---
 
@@ -2143,7 +2132,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_reservation#create ComputeReservation#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_reservation#create ComputeReservation#create}.
 
 ---
 
@@ -2155,7 +2144,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_reservation#delete ComputeReservation#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_reservation#delete ComputeReservation#delete}.
 
 ---
 
@@ -2167,7 +2156,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_reservation#update ComputeReservation#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_reservation#update ComputeReservation#update}.
 
 ---
 
@@ -2178,7 +2167,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeReservation.ComputeReservationDeleteAfterDurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computereservation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computereservation"
 
 computereservation.NewComputeReservationDeleteAfterDurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeReservationDeleteAfterDurationOutputReference
 ```
@@ -2485,7 +2474,7 @@ func InternalValue() ComputeReservationDeleteAfterDuration
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeReservation.ComputeReservationParamsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computereservation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computereservation"
 
 computereservation.NewComputeReservationParamsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeReservationParamsOutputReference
 ```
@@ -2763,7 +2752,7 @@ func InternalValue() ComputeReservationParams
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeReservation.ComputeReservationReservationSharingPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computereservation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computereservation"
 
 computereservation.NewComputeReservationReservationSharingPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeReservationReservationSharingPolicyOutputReference
 ```
@@ -3041,7 +3030,7 @@ func InternalValue() ComputeReservationReservationSharingPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeReservation.ComputeReservationResourceStatusHealthInfoList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computereservation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computereservation"
 
 computereservation.NewComputeReservationResourceStatusHealthInfoList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeReservationResourceStatusHealthInfoList
 ```
@@ -3190,7 +3179,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeReservation.ComputeReservationResourceStatusHealthInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computereservation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computereservation"
 
 computereservation.NewComputeReservationResourceStatusHealthInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeReservationResourceStatusHealthInfoOutputReference
 ```
@@ -3490,7 +3479,7 @@ func InternalValue() ComputeReservationResourceStatusHealthInfo
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeReservation.ComputeReservationResourceStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computereservation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computereservation"
 
 computereservation.NewComputeReservationResourceStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeReservationResourceStatusList
 ```
@@ -3639,7 +3628,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeReservation.ComputeReservationResourceStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computereservation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computereservation"
 
 computereservation.NewComputeReservationResourceStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeReservationResourceStatusOutputReference
 ```
@@ -3950,7 +3939,7 @@ func InternalValue() ComputeReservationResourceStatus
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeReservation.ComputeReservationResourceStatusReservationMaintenanceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computereservation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computereservation"
 
 computereservation.NewComputeReservationResourceStatusReservationMaintenanceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeReservationResourceStatusReservationMaintenanceList
 ```
@@ -4099,7 +4088,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeReservation.ComputeReservationResourceStatusReservationMaintenanceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computereservation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computereservation"
 
 computereservation.NewComputeReservationResourceStatusReservationMaintenanceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeReservationResourceStatusReservationMaintenanceOutputReference
 ```
@@ -4454,7 +4443,7 @@ func InternalValue() ComputeReservationResourceStatusReservationMaintenance
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeReservation.ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenanceList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computereservation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computereservation"
 
 computereservation.NewComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenanceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenanceList
 ```
@@ -4603,7 +4592,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeReservation.ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenanceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computereservation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computereservation"
 
 computereservation.NewComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenanceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenanceOutputReference
 ```
@@ -4958,7 +4947,7 @@ func InternalValue() ComputeReservationResourceStatusReservationMaintenanceUpcom
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeReservation.ComputeReservationResourceStatusSpecificSkuAllocationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computereservation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computereservation"
 
 computereservation.NewComputeReservationResourceStatusSpecificSkuAllocationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeReservationResourceStatusSpecificSkuAllocationList
 ```
@@ -5107,7 +5096,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeReservation.ComputeReservationResourceStatusSpecificSkuAllocationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computereservation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computereservation"
 
 computereservation.NewComputeReservationResourceStatusSpecificSkuAllocationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeReservationResourceStatusSpecificSkuAllocationOutputReference
 ```
@@ -5396,7 +5385,7 @@ func InternalValue() ComputeReservationResourceStatusSpecificSkuAllocation
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeReservation.ComputeReservationShareSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computereservation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computereservation"
 
 computereservation.NewComputeReservationShareSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeReservationShareSettingsOutputReference
 ```
@@ -5716,7 +5705,7 @@ func InternalValue() ComputeReservationShareSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeReservation.ComputeReservationShareSettingsProjectMapList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computereservation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computereservation"
 
 computereservation.NewComputeReservationShareSettingsProjectMapList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeReservationShareSettingsProjectMapList
 ```
@@ -5876,7 +5865,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeReservation.ComputeReservationShareSettingsProjectMapOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computereservation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computereservation"
 
 computereservation.NewComputeReservationShareSettingsProjectMapOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeReservationShareSettingsProjectMapOutputReference
 ```
@@ -6194,7 +6183,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeReservation.ComputeReservationSpecificReservationInstancePropertiesGuestAcceleratorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computereservation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computereservation"
 
 computereservation.NewComputeReservationSpecificReservationInstancePropertiesGuestAcceleratorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeReservationSpecificReservationInstancePropertiesGuestAcceleratorsList
 ```
@@ -6354,7 +6343,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeReservation.ComputeReservationSpecificReservationInstancePropertiesGuestAcceleratorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computereservation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computereservation"
 
 computereservation.NewComputeReservationSpecificReservationInstancePropertiesGuestAcceleratorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeReservationSpecificReservationInstancePropertiesGuestAcceleratorsOutputReference
 ```
@@ -6665,7 +6654,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeReservation.ComputeReservationSpecificReservationInstancePropertiesLocalSsdsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computereservation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computereservation"
 
 computereservation.NewComputeReservationSpecificReservationInstancePropertiesLocalSsdsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeReservationSpecificReservationInstancePropertiesLocalSsdsList
 ```
@@ -6825,7 +6814,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeReservation.ComputeReservationSpecificReservationInstancePropertiesLocalSsdsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computereservation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computereservation"
 
 computereservation.NewComputeReservationSpecificReservationInstancePropertiesLocalSsdsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeReservationSpecificReservationInstancePropertiesLocalSsdsOutputReference
 ```
@@ -7143,7 +7132,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeReservation.ComputeReservationSpecificReservationInstancePropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computereservation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computereservation"
 
 computereservation.NewComputeReservationSpecificReservationInstancePropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeReservationSpecificReservationInstancePropertiesOutputReference
 ```
@@ -7538,7 +7527,7 @@ func InternalValue() ComputeReservationSpecificReservationInstanceProperties
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeReservation.ComputeReservationSpecificReservationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computereservation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computereservation"
 
 computereservation.NewComputeReservationSpecificReservationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeReservationSpecificReservationOutputReference
 ```
@@ -7902,7 +7891,7 @@ func InternalValue() ComputeReservationSpecificReservation
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeReservation.ComputeReservationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computereservation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computereservation"
 
 computereservation.NewComputeReservationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeReservationTimeoutsOutputReference
 ```

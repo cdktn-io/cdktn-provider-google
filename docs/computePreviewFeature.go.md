@@ -4,12 +4,12 @@
 
 ### ComputePreviewFeature <a name="ComputePreviewFeature" id="@cdktn/provider-google.computePreviewFeature.ComputePreviewFeature"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_preview_feature google_compute_preview_feature}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_preview_feature google_compute_preview_feature}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computePreviewFeature.ComputePreviewFeature.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computepreviewfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computepreviewfeature"
 
 computepreviewfeature.NewComputePreviewFeature(scope Construct, id *string, config ComputePreviewFeatureConfig) ComputePreviewFeature
 ```
@@ -454,7 +454,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computePreviewFeature.ComputePreviewFeature.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computepreviewfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computepreviewfeature"
 
 computepreviewfeature.ComputePreviewFeature_IsConstruct(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computePreviewFeature.ComputePreviewFeature.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computepreviewfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computepreviewfeature"
 
 computepreviewfeature.ComputePreviewFeature_IsTerraformElement(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ computepreviewfeature.ComputePreviewFeature_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computePreviewFeature.ComputePreviewFeature.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computepreviewfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computepreviewfeature"
 
 computepreviewfeature.ComputePreviewFeature_IsTerraformResource(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ computepreviewfeature.ComputePreviewFeature_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computePreviewFeature.ComputePreviewFeature.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computepreviewfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computepreviewfeature"
 
 computepreviewfeature.ComputePreviewFeature_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -543,7 +543,7 @@ The construct id used in the generated config for the ComputePreviewFeature to i
 
 The id of the existing ComputePreviewFeature that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_preview_feature#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_preview_feature#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -875,7 +875,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computePreviewFeature.ComputePreviewFeatureConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computepreviewfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computepreviewfeature"
 
 &computepreviewfeature.ComputePreviewFeatureConfig {
 	Connection: interface{},
@@ -889,8 +889,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computepreviewfe
 	Name: *string,
 	Id: *string,
 	Project: *string,
-	RolloutOperation: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computePreviewFeature.ComputePreviewFeatureRolloutOperation,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computePreviewFeature.ComputePreviewFeatureTimeouts,
+	RolloutOperation: github.com/cdktn-io/cdktn-provider-google-go/google/v21.computePreviewFeature.ComputePreviewFeatureRolloutOperation,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.computePreviewFeature.ComputePreviewFeatureTimeouts,
 }
 ```
 
@@ -907,8 +907,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computepreviewfe
 | <code><a href="#@cdktn/provider-google.computePreviewFeature.ComputePreviewFeatureConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computePreviewFeature.ComputePreviewFeatureConfig.property.activationStatus">ActivationStatus</a></code> | <code>*string</code> | The activation status of the preview feature. Possible values: ["ENABLED", "ACTIVATION_STATE_UNSPECIFIED"]. |
 | <code><a href="#@cdktn/provider-google.computePreviewFeature.ComputePreviewFeatureConfig.property.name">Name</a></code> | <code>*string</code> | The name of the preview feature. |
-| <code><a href="#@cdktn/provider-google.computePreviewFeature.ComputePreviewFeatureConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_preview_feature#id ComputePreviewFeature#id}. |
-| <code><a href="#@cdktn/provider-google.computePreviewFeature.ComputePreviewFeatureConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_preview_feature#project ComputePreviewFeature#project}. |
+| <code><a href="#@cdktn/provider-google.computePreviewFeature.ComputePreviewFeatureConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_preview_feature#id ComputePreviewFeature#id}. |
+| <code><a href="#@cdktn/provider-google.computePreviewFeature.ComputePreviewFeatureConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_preview_feature#project ComputePreviewFeature#project}. |
 | <code><a href="#@cdktn/provider-google.computePreviewFeature.ComputePreviewFeatureConfig.property.rolloutOperation">RolloutOperation</a></code> | <code><a href="#@cdktn/provider-google.computePreviewFeature.ComputePreviewFeatureRolloutOperation">ComputePreviewFeatureRolloutOperation</a></code> | rollout_operation block. |
 | <code><a href="#@cdktn/provider-google.computePreviewFeature.ComputePreviewFeatureConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.computePreviewFeature.ComputePreviewFeatureTimeouts">ComputePreviewFeatureTimeouts</a></code> | timeouts block. |
 
@@ -994,7 +994,7 @@ ActivationStatus *string
 
 The activation status of the preview feature. Possible values: ["ENABLED", "ACTIVATION_STATE_UNSPECIFIED"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_preview_feature#activation_status ComputePreviewFeature#activation_status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_preview_feature#activation_status ComputePreviewFeature#activation_status}
 
 ---
 
@@ -1008,7 +1008,7 @@ Name *string
 
 The name of the preview feature.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_preview_feature#name ComputePreviewFeature#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_preview_feature#name ComputePreviewFeature#name}
 
 ---
 
@@ -1020,7 +1020,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_preview_feature#id ComputePreviewFeature#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_preview_feature#id ComputePreviewFeature#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1035,7 +1035,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_preview_feature#project ComputePreviewFeature#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_preview_feature#project ComputePreviewFeature#project}.
 
 ---
 
@@ -1049,7 +1049,7 @@ RolloutOperation ComputePreviewFeatureRolloutOperation
 
 rollout_operation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_preview_feature#rollout_operation ComputePreviewFeature#rollout_operation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_preview_feature#rollout_operation ComputePreviewFeature#rollout_operation}
 
 ---
 
@@ -1063,7 +1063,7 @@ Timeouts ComputePreviewFeatureTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_preview_feature#timeouts ComputePreviewFeature#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_preview_feature#timeouts ComputePreviewFeature#timeouts}
 
 ---
 
@@ -1072,10 +1072,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computePreviewFeature.ComputePreviewFeatureRolloutOperation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computepreviewfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computepreviewfeature"
 
 &computepreviewfeature.ComputePreviewFeatureRolloutOperation {
-	RolloutInput: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computePreviewFeature.ComputePreviewFeatureRolloutOperationRolloutInput,
+	RolloutInput: github.com/cdktn-io/cdktn-provider-google-go/google/v21.computePreviewFeature.ComputePreviewFeatureRolloutOperationRolloutInput,
 }
 ```
 
@@ -1097,7 +1097,7 @@ RolloutInput ComputePreviewFeatureRolloutOperationRolloutInput
 
 rollout_input block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_preview_feature#rollout_input ComputePreviewFeature#rollout_input}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_preview_feature#rollout_input ComputePreviewFeature#rollout_input}
 
 ---
 
@@ -1106,7 +1106,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computePreviewFeature.ComputePreviewFeatureRolloutOperationRolloutInput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computepreviewfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computepreviewfeature"
 
 &computepreviewfeature.ComputePreviewFeatureRolloutOperationRolloutInput {
 	PredefinedRolloutPlan: *string,
@@ -1131,7 +1131,7 @@ PredefinedRolloutPlan *string
 
 Predefined rollout plans. Possible values: ["ROLLOUT_PLAN_FAST_ROLLOUT"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_preview_feature#predefined_rollout_plan ComputePreviewFeature#predefined_rollout_plan}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_preview_feature#predefined_rollout_plan ComputePreviewFeature#predefined_rollout_plan}
 
 ---
 
@@ -1140,7 +1140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computePreviewFeature.ComputePreviewFeatureTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computepreviewfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computepreviewfeature"
 
 &computepreviewfeature.ComputePreviewFeatureTimeouts {
 	Create: *string,
@@ -1153,9 +1153,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computepreviewfe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computePreviewFeature.ComputePreviewFeatureTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_preview_feature#create ComputePreviewFeature#create}. |
-| <code><a href="#@cdktn/provider-google.computePreviewFeature.ComputePreviewFeatureTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_preview_feature#delete ComputePreviewFeature#delete}. |
-| <code><a href="#@cdktn/provider-google.computePreviewFeature.ComputePreviewFeatureTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_preview_feature#update ComputePreviewFeature#update}. |
+| <code><a href="#@cdktn/provider-google.computePreviewFeature.ComputePreviewFeatureTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_preview_feature#create ComputePreviewFeature#create}. |
+| <code><a href="#@cdktn/provider-google.computePreviewFeature.ComputePreviewFeatureTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_preview_feature#delete ComputePreviewFeature#delete}. |
+| <code><a href="#@cdktn/provider-google.computePreviewFeature.ComputePreviewFeatureTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_preview_feature#update ComputePreviewFeature#update}. |
 
 ---
 
@@ -1167,7 +1167,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_preview_feature#create ComputePreviewFeature#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_preview_feature#create ComputePreviewFeature#create}.
 
 ---
 
@@ -1179,7 +1179,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_preview_feature#delete ComputePreviewFeature#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_preview_feature#delete ComputePreviewFeature#delete}.
 
 ---
 
@@ -1191,7 +1191,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_preview_feature#update ComputePreviewFeature#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_preview_feature#update ComputePreviewFeature#update}.
 
 ---
 
@@ -1202,7 +1202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computePreviewFeature.ComputePreviewFeatureRolloutOperationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computepreviewfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computepreviewfeature"
 
 computepreviewfeature.NewComputePreviewFeatureRolloutOperationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputePreviewFeatureRolloutOperationOutputReference
 ```
@@ -1493,7 +1493,7 @@ func InternalValue() ComputePreviewFeatureRolloutOperation
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computePreviewFeature.ComputePreviewFeatureRolloutOperationRolloutInputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computepreviewfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computepreviewfeature"
 
 computepreviewfeature.NewComputePreviewFeatureRolloutOperationRolloutInputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputePreviewFeatureRolloutOperationRolloutInputOutputReference
 ```
@@ -1764,7 +1764,7 @@ func InternalValue() ComputePreviewFeatureRolloutOperationRolloutInput
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computePreviewFeature.ComputePreviewFeatureTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computepreviewfeature"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computepreviewfeature"
 
 computepreviewfeature.NewComputePreviewFeatureTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputePreviewFeatureTimeoutsOutputReference
 ```

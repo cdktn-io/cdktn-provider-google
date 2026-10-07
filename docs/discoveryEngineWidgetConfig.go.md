@@ -4,12 +4,12 @@
 
 ### DiscoveryEngineWidgetConfig <a name="DiscoveryEngineWidgetConfig" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_widget_config google_discovery_engine_widget_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config google_discovery_engine_widget_config}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginewidgetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/discoveryenginewidgetconfig"
 
 discoveryenginewidgetconfig.NewDiscoveryEngineWidgetConfig(scope Construct, id *string, config DiscoveryEngineWidgetConfigConfig) DiscoveryEngineWidgetConfig
 ```
@@ -528,7 +528,7 @@ func ResetWidgetConfigId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginewidgetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/discoveryenginewidgetconfig"
 
 discoveryenginewidgetconfig.DiscoveryEngineWidgetConfig_IsConstruct(x interface{}) *bool
 ```
@@ -560,7 +560,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginewidgetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/discoveryenginewidgetconfig"
 
 discoveryenginewidgetconfig.DiscoveryEngineWidgetConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -574,7 +574,7 @@ discoveryenginewidgetconfig.DiscoveryEngineWidgetConfig_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginewidgetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/discoveryenginewidgetconfig"
 
 discoveryenginewidgetconfig.DiscoveryEngineWidgetConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -588,7 +588,7 @@ discoveryenginewidgetconfig.DiscoveryEngineWidgetConfig_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginewidgetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/discoveryenginewidgetconfig"
 
 discoveryenginewidgetconfig.DiscoveryEngineWidgetConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -617,7 +617,7 @@ The construct id used in the generated config for the DiscoveryEngineWidgetConfi
 
 The id of the existing DiscoveryEngineWidgetConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_widget_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1081,7 +1081,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigAccessSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginewidgetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/discoveryenginewidgetconfig"
 
 &discoveryenginewidgetconfig.DiscoveryEngineWidgetConfigAccessSettings {
 	AllowlistedDomains: *[]*string,
@@ -1114,7 +1114,7 @@ AllowlistedDomains *[]*string
 
 List of domains that are allowed to integrate the search widget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_widget_config#allowlisted_domains DiscoveryEngineWidgetConfig#allowlisted_domains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#allowlisted_domains DiscoveryEngineWidgetConfig#allowlisted_domains}
 
 ---
 
@@ -1128,7 +1128,7 @@ AllowPublicAccess interface{}
 
 Whether public unauthenticated access is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_widget_config#allow_public_access DiscoveryEngineWidgetConfig#allow_public_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#allow_public_access DiscoveryEngineWidgetConfig#allow_public_access}
 
 ---
 
@@ -1142,7 +1142,7 @@ EnableWebApp interface{}
 
 Whether web app access is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_widget_config#enable_web_app DiscoveryEngineWidgetConfig#enable_web_app}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#enable_web_app DiscoveryEngineWidgetConfig#enable_web_app}
 
 ---
 
@@ -1156,7 +1156,7 @@ LanguageCode *string
 
 Language code for user interface. Use language tags defined by [BCP47](https://www.rfc-editor.org/rfc/bcp/bcp47.txt). If unset, the default language code is "en-US".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_widget_config#language_code DiscoveryEngineWidgetConfig#language_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#language_code DiscoveryEngineWidgetConfig#language_code}
 
 ---
 
@@ -1170,7 +1170,7 @@ WorkforceIdentityPoolProvider *string
 
 The workforce identity pool provider used to access the widget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_widget_config#workforce_identity_pool_provider DiscoveryEngineWidgetConfig#workforce_identity_pool_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#workforce_identity_pool_provider DiscoveryEngineWidgetConfig#workforce_identity_pool_provider}
 
 ---
 
@@ -1179,7 +1179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginewidgetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/discoveryenginewidgetconfig"
 
 &discoveryenginewidgetconfig.DiscoveryEngineWidgetConfigConfig {
 	Connection: interface{},
@@ -1191,14 +1191,14 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginew
 	Provisioners: *[]interface{},
 	EngineId: *string,
 	Location: *string,
-	AccessSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigAccessSettings,
+	AccessSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v21.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigAccessSettings,
 	CollectionId: *string,
-	HomepageSetting: github.com/cdktn-io/cdktn-provider-google-go/google/v20.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigHomepageSetting,
+	HomepageSetting: github.com/cdktn-io/cdktn-provider-google-go/google/v21.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigHomepageSetting,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigTimeouts,
-	UiBranding: github.com/cdktn-io/cdktn-provider-google-go/google/v20.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiBranding,
-	UiSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v20.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettings,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigTimeouts,
+	UiBranding: github.com/cdktn-io/cdktn-provider-google-go/google/v21.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiBranding,
+	UiSettings: github.com/cdktn-io/cdktn-provider-google-go/google/v21.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettings,
 	WidgetConfigId: *string,
 }
 ```
@@ -1219,8 +1219,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginew
 | <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigConfig.property.accessSettings">AccessSettings</a></code> | <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigAccessSettings">DiscoveryEngineWidgetConfigAccessSettings</a></code> | access_settings block. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigConfig.property.collectionId">CollectionId</a></code> | <code>*string</code> | The collection ID. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigConfig.property.homepageSetting">HomepageSetting</a></code> | <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigHomepageSetting">DiscoveryEngineWidgetConfigHomepageSetting</a></code> | homepage_setting block. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_widget_config#id DiscoveryEngineWidgetConfig#id}. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_widget_config#project DiscoveryEngineWidgetConfig#project}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#id DiscoveryEngineWidgetConfig#id}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#project DiscoveryEngineWidgetConfig#project}. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigTimeouts">DiscoveryEngineWidgetConfigTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigConfig.property.uiBranding">UiBranding</a></code> | <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiBranding">DiscoveryEngineWidgetConfigUiBranding</a></code> | ui_branding block. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigConfig.property.uiSettings">UiSettings</a></code> | <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettings">DiscoveryEngineWidgetConfigUiSettings</a></code> | ui_settings block. |
@@ -1308,7 +1308,7 @@ EngineId *string
 
 The engine ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_widget_config#engine_id DiscoveryEngineWidgetConfig#engine_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#engine_id DiscoveryEngineWidgetConfig#engine_id}
 
 ---
 
@@ -1322,7 +1322,7 @@ Location *string
 
 The geographic location where the data store should reside. The value can only be one of "global", "us" and "eu".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_widget_config#location DiscoveryEngineWidgetConfig#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#location DiscoveryEngineWidgetConfig#location}
 
 ---
 
@@ -1336,7 +1336,7 @@ AccessSettings DiscoveryEngineWidgetConfigAccessSettings
 
 access_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_widget_config#access_settings DiscoveryEngineWidgetConfig#access_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#access_settings DiscoveryEngineWidgetConfig#access_settings}
 
 ---
 
@@ -1350,7 +1350,7 @@ CollectionId *string
 
 The collection ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_widget_config#collection_id DiscoveryEngineWidgetConfig#collection_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#collection_id DiscoveryEngineWidgetConfig#collection_id}
 
 ---
 
@@ -1364,7 +1364,7 @@ HomepageSetting DiscoveryEngineWidgetConfigHomepageSetting
 
 homepage_setting block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_widget_config#homepage_setting DiscoveryEngineWidgetConfig#homepage_setting}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#homepage_setting DiscoveryEngineWidgetConfig#homepage_setting}
 
 ---
 
@@ -1376,7 +1376,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_widget_config#id DiscoveryEngineWidgetConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#id DiscoveryEngineWidgetConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1391,7 +1391,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_widget_config#project DiscoveryEngineWidgetConfig#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#project DiscoveryEngineWidgetConfig#project}.
 
 ---
 
@@ -1405,7 +1405,7 @@ Timeouts DiscoveryEngineWidgetConfigTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_widget_config#timeouts DiscoveryEngineWidgetConfig#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#timeouts DiscoveryEngineWidgetConfig#timeouts}
 
 ---
 
@@ -1419,7 +1419,7 @@ UiBranding DiscoveryEngineWidgetConfigUiBranding
 
 ui_branding block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_widget_config#ui_branding DiscoveryEngineWidgetConfig#ui_branding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#ui_branding DiscoveryEngineWidgetConfig#ui_branding}
 
 ---
 
@@ -1433,7 +1433,7 @@ UiSettings DiscoveryEngineWidgetConfigUiSettings
 
 ui_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_widget_config#ui_settings DiscoveryEngineWidgetConfig#ui_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#ui_settings DiscoveryEngineWidgetConfig#ui_settings}
 
 ---
 
@@ -1447,7 +1447,7 @@ WidgetConfigId *string
 
 The unique ID to use for the WidgetConfig. Currently only accepts "default_search_widget_config".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_widget_config#widget_config_id DiscoveryEngineWidgetConfig#widget_config_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#widget_config_id DiscoveryEngineWidgetConfig#widget_config_id}
 
 ---
 
@@ -1456,7 +1456,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigHomepageSetting.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginewidgetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/discoveryenginewidgetconfig"
 
 &discoveryenginewidgetconfig.DiscoveryEngineWidgetConfigHomepageSetting {
 	Shortcuts: interface{},
@@ -1481,7 +1481,7 @@ Shortcuts interface{}
 
 shortcuts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_widget_config#shortcuts DiscoveryEngineWidgetConfig#shortcuts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#shortcuts DiscoveryEngineWidgetConfig#shortcuts}
 
 ---
 
@@ -1490,11 +1490,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigHomepageSettingShortcuts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginewidgetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/discoveryenginewidgetconfig"
 
 &discoveryenginewidgetconfig.DiscoveryEngineWidgetConfigHomepageSettingShortcuts {
 	DestinationUri: *string,
-	Icon: github.com/cdktn-io/cdktn-provider-google-go/google/v20.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigHomepageSettingShortcutsIcon,
+	Icon: github.com/cdktn-io/cdktn-provider-google-go/google/v21.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigHomepageSettingShortcutsIcon,
 	Title: *string,
 }
 ```
@@ -1519,7 +1519,7 @@ DestinationUri *string
 
 Destination URL of shortcut.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_widget_config#destination_uri DiscoveryEngineWidgetConfig#destination_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#destination_uri DiscoveryEngineWidgetConfig#destination_uri}
 
 ---
 
@@ -1533,7 +1533,7 @@ Icon DiscoveryEngineWidgetConfigHomepageSettingShortcutsIcon
 
 icon block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_widget_config#icon DiscoveryEngineWidgetConfig#icon}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#icon DiscoveryEngineWidgetConfig#icon}
 
 ---
 
@@ -1547,7 +1547,7 @@ Title *string
 
 Title of the shortcut.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_widget_config#title DiscoveryEngineWidgetConfig#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#title DiscoveryEngineWidgetConfig#title}
 
 ---
 
@@ -1556,7 +1556,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigHomepageSettingShortcutsIcon.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginewidgetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/discoveryenginewidgetconfig"
 
 &discoveryenginewidgetconfig.DiscoveryEngineWidgetConfigHomepageSettingShortcutsIcon {
 	Url: *string,
@@ -1581,7 +1581,7 @@ Url *string
 
 Image URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_widget_config#url DiscoveryEngineWidgetConfig#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#url DiscoveryEngineWidgetConfig#url}
 
 ---
 
@@ -1590,7 +1590,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginewidgetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/discoveryenginewidgetconfig"
 
 &discoveryenginewidgetconfig.DiscoveryEngineWidgetConfigTimeouts {
 	Create: *string,
@@ -1603,9 +1603,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginew
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_widget_config#create DiscoveryEngineWidgetConfig#create}. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_widget_config#delete DiscoveryEngineWidgetConfig#delete}. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_widget_config#update DiscoveryEngineWidgetConfig#update}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#create DiscoveryEngineWidgetConfig#create}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#delete DiscoveryEngineWidgetConfig#delete}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#update DiscoveryEngineWidgetConfig#update}. |
 
 ---
 
@@ -1617,7 +1617,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_widget_config#create DiscoveryEngineWidgetConfig#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#create DiscoveryEngineWidgetConfig#create}.
 
 ---
 
@@ -1629,7 +1629,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_widget_config#delete DiscoveryEngineWidgetConfig#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#delete DiscoveryEngineWidgetConfig#delete}.
 
 ---
 
@@ -1641,7 +1641,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_widget_config#update DiscoveryEngineWidgetConfig#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#update DiscoveryEngineWidgetConfig#update}.
 
 ---
 
@@ -1650,10 +1650,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiBranding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginewidgetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/discoveryenginewidgetconfig"
 
 &discoveryenginewidgetconfig.DiscoveryEngineWidgetConfigUiBranding {
-	Logo: github.com/cdktn-io/cdktn-provider-google-go/google/v20.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiBrandingLogo,
+	Logo: github.com/cdktn-io/cdktn-provider-google-go/google/v21.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiBrandingLogo,
 }
 ```
 
@@ -1675,7 +1675,7 @@ Logo DiscoveryEngineWidgetConfigUiBrandingLogo
 
 logo block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_widget_config#logo DiscoveryEngineWidgetConfig#logo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#logo DiscoveryEngineWidgetConfig#logo}
 
 ---
 
@@ -1684,7 +1684,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiBrandingLogo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginewidgetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/discoveryenginewidgetconfig"
 
 &discoveryenginewidgetconfig.DiscoveryEngineWidgetConfigUiBrandingLogo {
 	Url: *string,
@@ -1709,7 +1709,7 @@ Url *string
 
 Image URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_widget_config#url DiscoveryEngineWidgetConfig#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#url DiscoveryEngineWidgetConfig#url}
 
 ---
 
@@ -1718,7 +1718,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginewidgetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/discoveryenginewidgetconfig"
 
 &discoveryenginewidgetconfig.DiscoveryEngineWidgetConfigUiSettings {
 	DataStoreUiConfigs: interface{},
@@ -1731,9 +1731,11 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginew
 	EnableSafeSearch: interface{},
 	EnableSearchAsYouType: interface{},
 	EnableVisualContentSummary: interface{},
-	GenerativeAnswerConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfig,
+	GenerativeAnswerConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfig,
 	InteractionType: *string,
 	ResultDescriptionType: *string,
+	SearchAddonSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v21.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpec,
+	SourceAdminDisplayNameEnabled: interface{},
 }
 ```
 
@@ -1754,6 +1756,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginew
 | <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettings.property.generativeAnswerConfig">GenerativeAnswerConfig</a></code> | <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfig">DiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfig</a></code> | generative_answer_config block. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettings.property.interactionType">InteractionType</a></code> | <code>*string</code> | Describes widget (or web app) interaction type Possible values: ["SEARCH_ONLY", "SEARCH_WITH_ANSWER", "SEARCH_WITH_FOLLOW_UPS"]. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettings.property.resultDescriptionType">ResultDescriptionType</a></code> | <code>*string</code> | Controls whether result extract is display and how (snippet or extractive answer). |
+| <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettings.property.searchAddonSpec">SearchAddonSpec</a></code> | <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpec">DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpec</a></code> | search_addon_spec block. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettings.property.sourceAdminDisplayNameEnabled">SourceAdminDisplayNameEnabled</a></code> | <code>interface{}</code> | Whether to show the admin-configured display name for data connectors in the widget sources UI (instead of the connector kind). |
 
 ---
 
@@ -1767,7 +1771,7 @@ DataStoreUiConfigs interface{}
 
 data_store_ui_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_widget_config#data_store_ui_configs DiscoveryEngineWidgetConfig#data_store_ui_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#data_store_ui_configs DiscoveryEngineWidgetConfig#data_store_ui_configs}
 
 ---
 
@@ -1781,7 +1785,7 @@ DefaultSearchRequestOrderBy *string
 
 The default ordering for search results if specified. Used to set SearchRequest#orderBy on applicable requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_widget_config#default_search_request_order_by DiscoveryEngineWidgetConfig#default_search_request_order_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#default_search_request_order_by DiscoveryEngineWidgetConfig#default_search_request_order_by}
 
 ---
 
@@ -1795,7 +1799,7 @@ DisableUserEventsCollection interface{}
 
 If set to true, the widget will not collect user events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_widget_config#disable_user_events_collection DiscoveryEngineWidgetConfig#disable_user_events_collection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#disable_user_events_collection DiscoveryEngineWidgetConfig#disable_user_events_collection}
 
 ---
 
@@ -1809,7 +1813,7 @@ EnableAutocomplete interface{}
 
 Whether or not to enable autocomplete.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_widget_config#enable_autocomplete DiscoveryEngineWidgetConfig#enable_autocomplete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#enable_autocomplete DiscoveryEngineWidgetConfig#enable_autocomplete}
 
 ---
 
@@ -1823,7 +1827,7 @@ EnableCreateAgentButton interface{}
 
 If set to true, the widget will enable the create agent button.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_widget_config#enable_create_agent_button DiscoveryEngineWidgetConfig#enable_create_agent_button}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#enable_create_agent_button DiscoveryEngineWidgetConfig#enable_create_agent_button}
 
 ---
 
@@ -1837,7 +1841,7 @@ EnablePeopleSearch interface{}
 
 If set to true, the widget will enable people search.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_widget_config#enable_people_search DiscoveryEngineWidgetConfig#enable_people_search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#enable_people_search DiscoveryEngineWidgetConfig#enable_people_search}
 
 ---
 
@@ -1851,7 +1855,7 @@ EnableQualityFeedback interface{}
 
 Turn on or off collecting the search result quality feedback from end users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_widget_config#enable_quality_feedback DiscoveryEngineWidgetConfig#enable_quality_feedback}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#enable_quality_feedback DiscoveryEngineWidgetConfig#enable_quality_feedback}
 
 ---
 
@@ -1865,7 +1869,7 @@ EnableSafeSearch interface{}
 
 Whether to enable safe search.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_widget_config#enable_safe_search DiscoveryEngineWidgetConfig#enable_safe_search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#enable_safe_search DiscoveryEngineWidgetConfig#enable_safe_search}
 
 ---
 
@@ -1879,7 +1883,7 @@ EnableSearchAsYouType interface{}
 
 Whether to enable search-as-you-type behavior for the search widget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_widget_config#enable_search_as_you_type DiscoveryEngineWidgetConfig#enable_search_as_you_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#enable_search_as_you_type DiscoveryEngineWidgetConfig#enable_search_as_you_type}
 
 ---
 
@@ -1893,7 +1897,7 @@ EnableVisualContentSummary interface{}
 
 If set to true, the widget will enable visual content summary on applicable search requests. Only used by healthcare search.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_widget_config#enable_visual_content_summary DiscoveryEngineWidgetConfig#enable_visual_content_summary}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#enable_visual_content_summary DiscoveryEngineWidgetConfig#enable_visual_content_summary}
 
 ---
 
@@ -1907,7 +1911,7 @@ GenerativeAnswerConfig DiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConf
 
 generative_answer_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_widget_config#generative_answer_config DiscoveryEngineWidgetConfig#generative_answer_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#generative_answer_config DiscoveryEngineWidgetConfig#generative_answer_config}
 
 ---
 
@@ -1921,7 +1925,7 @@ InteractionType *string
 
 Describes widget (or web app) interaction type Possible values: ["SEARCH_ONLY", "SEARCH_WITH_ANSWER", "SEARCH_WITH_FOLLOW_UPS"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_widget_config#interaction_type DiscoveryEngineWidgetConfig#interaction_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#interaction_type DiscoveryEngineWidgetConfig#interaction_type}
 
 ---
 
@@ -1937,7 +1941,38 @@ Controls whether result extract is display and how (snippet or extractive answer
 
 Default to no result if unspecified. Possible values: ["SNIPPET", "EXTRACTIVE_ANSWER"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_widget_config#result_description_type DiscoveryEngineWidgetConfig#result_description_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#result_description_type DiscoveryEngineWidgetConfig#result_description_type}
+
+---
+
+##### `SearchAddonSpec`<sup>Optional</sup> <a name="SearchAddonSpec" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettings.property.searchAddonSpec"></a>
+
+```go
+SearchAddonSpec DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpec
+```
+
+- *Type:* <a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpec">DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpec</a>
+
+search_addon_spec block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#search_addon_spec DiscoveryEngineWidgetConfig#search_addon_spec}
+
+---
+
+##### `SourceAdminDisplayNameEnabled`<sup>Optional</sup> <a name="SourceAdminDisplayNameEnabled" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettings.property.sourceAdminDisplayNameEnabled"></a>
+
+```go
+SourceAdminDisplayNameEnabled interface{}
+```
+
+- *Type:* interface{}
+
+Whether to show the admin-configured display name for data connectors in the widget sources UI (instead of the connector kind).
+
+Opt-in; defaults
+to false.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#source_admin_display_name_enabled DiscoveryEngineWidgetConfig#source_admin_display_name_enabled}
 
 ---
 
@@ -1946,7 +1981,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginewidgetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/discoveryenginewidgetconfig"
 
 &discoveryenginewidgetconfig.DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigs {
 	FacetField: interface{},
@@ -1975,7 +2010,7 @@ FacetField interface{}
 
 facet_field block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_widget_config#facet_field DiscoveryEngineWidgetConfig#facet_field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#facet_field DiscoveryEngineWidgetConfig#facet_field}
 
 ---
 
@@ -1989,7 +2024,7 @@ FieldsUiComponentsMap interface{}
 
 fields_ui_components_map block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_widget_config#fields_ui_components_map DiscoveryEngineWidgetConfig#fields_ui_components_map}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#fields_ui_components_map DiscoveryEngineWidgetConfig#fields_ui_components_map}
 
 ---
 
@@ -2008,7 +2043,7 @@ It should be data store resource name. Format:
 For APIs under 'WidgetService', such as [WidgetService.LookUpWidgetConfig][],
 the project number and location part is erased in this field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_widget_config#name DiscoveryEngineWidgetConfig#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#name DiscoveryEngineWidgetConfig#name}
 
 ---
 
@@ -2017,7 +2052,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsFacetField.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginewidgetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/discoveryenginewidgetconfig"
 
 &discoveryenginewidgetconfig.DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsFacetField {
 	Field: *string,
@@ -2044,7 +2079,7 @@ Field *string
 
 Registered field name. The format is 'field.abc'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_widget_config#field DiscoveryEngineWidgetConfig#field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#field DiscoveryEngineWidgetConfig#field}
 
 ---
 
@@ -2058,7 +2093,7 @@ DisplayName *string
 
 The field name that end users will see.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_widget_config#display_name DiscoveryEngineWidgetConfig#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#display_name DiscoveryEngineWidgetConfig#display_name}
 
 ---
 
@@ -2067,7 +2102,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsFieldsUiComponentsMap.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginewidgetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/discoveryenginewidgetconfig"
 
 &discoveryenginewidgetconfig.DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsFieldsUiComponentsMap {
 	Field: *string,
@@ -2082,7 +2117,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginew
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsFieldsUiComponentsMap.property.field">Field</a></code> | <code>*string</code> | Registered field name. The format is 'field.abc'. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsFieldsUiComponentsMap.property.uiComponent">UiComponent</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_widget_config#ui_component DiscoveryEngineWidgetConfig#ui_component}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsFieldsUiComponentsMap.property.uiComponent">UiComponent</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#ui_component DiscoveryEngineWidgetConfig#ui_component}. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsFieldsUiComponentsMap.property.deviceVisibility">DeviceVisibility</a></code> | <code>*[]*string</code> | Possible values: ["MOBILE", "DESKTOP"]. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsFieldsUiComponentsMap.property.displayTemplate">DisplayTemplate</a></code> | <code>*string</code> | The template to customize how the field is displayed. |
 
@@ -2098,7 +2133,7 @@ Field *string
 
 Registered field name. The format is 'field.abc'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_widget_config#field DiscoveryEngineWidgetConfig#field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#field DiscoveryEngineWidgetConfig#field}
 
 ---
 
@@ -2110,7 +2145,7 @@ UiComponent *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_widget_config#ui_component DiscoveryEngineWidgetConfig#ui_component}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#ui_component DiscoveryEngineWidgetConfig#ui_component}.
 
 ---
 
@@ -2124,7 +2159,7 @@ DeviceVisibility *[]*string
 
 Possible values: ["MOBILE", "DESKTOP"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_widget_config#device_visibility DiscoveryEngineWidgetConfig#device_visibility}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#device_visibility DiscoveryEngineWidgetConfig#device_visibility}
 
 ---
 
@@ -2140,7 +2175,7 @@ The template to customize how the field is displayed.
 
 An example value would be a string that looks like: "Price: {value}".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_widget_config#display_template DiscoveryEngineWidgetConfig#display_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#display_template DiscoveryEngineWidgetConfig#display_template}
 
 ---
 
@@ -2149,7 +2184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginewidgetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/discoveryenginewidgetconfig"
 
 &discoveryenginewidgetconfig.DiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfig {
 	DisableRelatedQuestions: interface{},
@@ -2192,7 +2227,7 @@ DisableRelatedQuestions interface{}
 
 Whether generated answer contains suggested related questions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_widget_config#disable_related_questions DiscoveryEngineWidgetConfig#disable_related_questions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#disable_related_questions DiscoveryEngineWidgetConfig#disable_related_questions}
 
 ---
 
@@ -2206,7 +2241,7 @@ IgnoreAdversarialQuery interface{}
 
 Specifies whether to filter out queries that are adversarial.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_widget_config#ignore_adversarial_query DiscoveryEngineWidgetConfig#ignore_adversarial_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#ignore_adversarial_query DiscoveryEngineWidgetConfig#ignore_adversarial_query}
 
 ---
 
@@ -2220,7 +2255,7 @@ IgnoreLowRelevantContent interface{}
 
 Specifies whether to filter out queries that are not relevant to the content.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_widget_config#ignore_low_relevant_content DiscoveryEngineWidgetConfig#ignore_low_relevant_content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#ignore_low_relevant_content DiscoveryEngineWidgetConfig#ignore_low_relevant_content}
 
 ---
 
@@ -2239,7 +2274,7 @@ is classified as a non-answer seeking query.
 If this field is set to 'true', we skip generating answers for
 non-answer seeking queries and return fallback messages instead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_widget_config#ignore_non_answer_seeking_query DiscoveryEngineWidgetConfig#ignore_non_answer_seeking_query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#ignore_non_answer_seeking_query DiscoveryEngineWidgetConfig#ignore_non_answer_seeking_query}
 
 ---
 
@@ -2253,7 +2288,7 @@ ImageSource *string
 
 Source of image returned in the answer. Possible values: ["ALL_AVAILABLE_SOURCES", "CORPUS_IMAGE_ONLY", "FIGURE_GENERATION_ONLY"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_widget_config#image_source DiscoveryEngineWidgetConfig#image_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#image_source DiscoveryEngineWidgetConfig#image_source}
 
 ---
 
@@ -2267,7 +2302,7 @@ LanguageCode *string
 
 Language code for Summary. Use language tags defined by [BCP47](https://www.rfc-editor.org/rfc/bcp/bcp47.txt). Note: This is an experimental feature.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_widget_config#language_code DiscoveryEngineWidgetConfig#language_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#language_code DiscoveryEngineWidgetConfig#language_code}
 
 ---
 
@@ -2284,7 +2319,7 @@ Max rephrase steps.
 The max number is 5 steps. If not set or
 set to < 1, it will be set to 1 by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_widget_config#max_rephrase_steps DiscoveryEngineWidgetConfig#max_rephrase_steps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#max_rephrase_steps DiscoveryEngineWidgetConfig#max_rephrase_steps}
 
 ---
 
@@ -2298,7 +2333,7 @@ ModelPromptPreamble *string
 
 Text at the beginning of the prompt that instructs the model that generates the answer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_widget_config#model_prompt_preamble DiscoveryEngineWidgetConfig#model_prompt_preamble}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#model_prompt_preamble DiscoveryEngineWidgetConfig#model_prompt_preamble}
 
 ---
 
@@ -2312,7 +2347,7 @@ ModelVersion *string
 
 The model version used to generate the answer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_widget_config#model_version DiscoveryEngineWidgetConfig#model_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#model_version DiscoveryEngineWidgetConfig#model_version}
 
 ---
 
@@ -2326,7 +2361,73 @@ ResultCount *f64
 
 The number of top results to generate the answer from. Up to 10.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_widget_config#result_count DiscoveryEngineWidgetConfig#result_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#result_count DiscoveryEngineWidgetConfig#result_count}
+
+---
+
+### DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpec <a name="DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpec" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpec"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpec.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/discoveryenginewidgetconfig"
+
+&discoveryenginewidgetconfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpec {
+	GenerativeAnswerAddOnDisabled: interface{},
+	KpiPersonalizationAddOnDisabled: interface{},
+	SemanticAddOnDisabled: interface{},
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpec.property.generativeAnswerAddOnDisabled">GenerativeAnswerAddOnDisabled</a></code> | <code>interface{}</code> | If true, generative answer add-on is disabled. Generative answer add-on includes natural language to filters and simple answers. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpec.property.kpiPersonalizationAddOnDisabled">KpiPersonalizationAddOnDisabled</a></code> | <code>interface{}</code> | If true, disables event re-ranking and personalization to optimize KPIs & personalize results. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpec.property.semanticAddOnDisabled">SemanticAddOnDisabled</a></code> | <code>interface{}</code> | If true, semantic add-on is disabled. Semantic add-on includes embeddings and jetstream. |
+
+---
+
+##### `GenerativeAnswerAddOnDisabled`<sup>Optional</sup> <a name="GenerativeAnswerAddOnDisabled" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpec.property.generativeAnswerAddOnDisabled"></a>
+
+```go
+GenerativeAnswerAddOnDisabled interface{}
+```
+
+- *Type:* interface{}
+
+If true, generative answer add-on is disabled. Generative answer add-on includes natural language to filters and simple answers.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#generative_answer_add_on_disabled DiscoveryEngineWidgetConfig#generative_answer_add_on_disabled}
+
+---
+
+##### `KpiPersonalizationAddOnDisabled`<sup>Optional</sup> <a name="KpiPersonalizationAddOnDisabled" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpec.property.kpiPersonalizationAddOnDisabled"></a>
+
+```go
+KpiPersonalizationAddOnDisabled interface{}
+```
+
+- *Type:* interface{}
+
+If true, disables event re-ranking and personalization to optimize KPIs & personalize results.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#kpi_personalization_add_on_disabled DiscoveryEngineWidgetConfig#kpi_personalization_add_on_disabled}
+
+---
+
+##### `SemanticAddOnDisabled`<sup>Optional</sup> <a name="SemanticAddOnDisabled" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpec.property.semanticAddOnDisabled"></a>
+
+```go
+SemanticAddOnDisabled interface{}
+```
+
+- *Type:* interface{}
+
+If true, semantic add-on is disabled. Semantic add-on includes embeddings and jetstream.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_widget_config#semantic_add_on_disabled DiscoveryEngineWidgetConfig#semantic_add_on_disabled}
 
 ---
 
@@ -2337,7 +2438,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigAccessSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginewidgetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/discoveryenginewidgetconfig"
 
 discoveryenginewidgetconfig.NewDiscoveryEngineWidgetConfigAccessSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineWidgetConfigAccessSettingsOutputReference
 ```
@@ -2731,7 +2832,7 @@ func InternalValue() DiscoveryEngineWidgetConfigAccessSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigHomepageSettingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginewidgetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/discoveryenginewidgetconfig"
 
 discoveryenginewidgetconfig.NewDiscoveryEngineWidgetConfigHomepageSettingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineWidgetConfigHomepageSettingOutputReference
 ```
@@ -3022,7 +3123,7 @@ func InternalValue() DiscoveryEngineWidgetConfigHomepageSetting
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigHomepageSettingShortcutsIconOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginewidgetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/discoveryenginewidgetconfig"
 
 discoveryenginewidgetconfig.NewDiscoveryEngineWidgetConfigHomepageSettingShortcutsIconOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineWidgetConfigHomepageSettingShortcutsIconOutputReference
 ```
@@ -3300,7 +3401,7 @@ func InternalValue() DiscoveryEngineWidgetConfigHomepageSettingShortcutsIcon
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigHomepageSettingShortcutsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginewidgetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/discoveryenginewidgetconfig"
 
 discoveryenginewidgetconfig.NewDiscoveryEngineWidgetConfigHomepageSettingShortcutsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DiscoveryEngineWidgetConfigHomepageSettingShortcutsList
 ```
@@ -3460,7 +3561,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigHomepageSettingShortcutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginewidgetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/discoveryenginewidgetconfig"
 
 discoveryenginewidgetconfig.NewDiscoveryEngineWidgetConfigHomepageSettingShortcutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DiscoveryEngineWidgetConfigHomepageSettingShortcutsOutputReference
 ```
@@ -3827,7 +3928,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginewidgetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/discoveryenginewidgetconfig"
 
 discoveryenginewidgetconfig.NewDiscoveryEngineWidgetConfigTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineWidgetConfigTimeoutsOutputReference
 ```
@@ -4163,7 +4264,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiBrandingLogoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginewidgetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/discoveryenginewidgetconfig"
 
 discoveryenginewidgetconfig.NewDiscoveryEngineWidgetConfigUiBrandingLogoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineWidgetConfigUiBrandingLogoOutputReference
 ```
@@ -4441,7 +4542,7 @@ func InternalValue() DiscoveryEngineWidgetConfigUiBrandingLogo
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiBrandingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginewidgetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/discoveryenginewidgetconfig"
 
 discoveryenginewidgetconfig.NewDiscoveryEngineWidgetConfigUiBrandingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineWidgetConfigUiBrandingOutputReference
 ```
@@ -4732,7 +4833,7 @@ func InternalValue() DiscoveryEngineWidgetConfigUiBranding
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsFacetFieldList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginewidgetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/discoveryenginewidgetconfig"
 
 discoveryenginewidgetconfig.NewDiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsFacetFieldList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsFacetFieldList
 ```
@@ -4892,7 +4993,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsFacetFieldOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginewidgetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/discoveryenginewidgetconfig"
 
 discoveryenginewidgetconfig.NewDiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsFacetFieldOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsFacetFieldOutputReference
 ```
@@ -5210,7 +5311,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsFieldsUiComponentsMapList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginewidgetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/discoveryenginewidgetconfig"
 
 discoveryenginewidgetconfig.NewDiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsFieldsUiComponentsMapList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsFieldsUiComponentsMapList
 ```
@@ -5370,7 +5471,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsFieldsUiComponentsMapOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginewidgetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/discoveryenginewidgetconfig"
 
 discoveryenginewidgetconfig.NewDiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsFieldsUiComponentsMapOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsFieldsUiComponentsMapOutputReference
 ```
@@ -5739,7 +5840,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginewidgetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/discoveryenginewidgetconfig"
 
 discoveryenginewidgetconfig.NewDiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsList
 ```
@@ -5899,7 +6000,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginewidgetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/discoveryenginewidgetconfig"
 
 discoveryenginewidgetconfig.NewDiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsOutputReference
 ```
@@ -6279,7 +6380,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginewidgetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/discoveryenginewidgetconfig"
 
 discoveryenginewidgetconfig.NewDiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfigOutputReference
 ```
@@ -6818,7 +6919,7 @@ func InternalValue() DiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginewidgetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/discoveryenginewidgetconfig"
 
 discoveryenginewidgetconfig.NewDiscoveryEngineWidgetConfigUiSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineWidgetConfigUiSettingsOutputReference
 ```
@@ -6865,6 +6966,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsOutputReference.putDataStoreUiConfigs">PutDataStoreUiConfigs</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsOutputReference.putGenerativeAnswerConfig">PutGenerativeAnswerConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsOutputReference.putSearchAddonSpec">PutSearchAddonSpec</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsOutputReference.resetDataStoreUiConfigs">ResetDataStoreUiConfigs</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsOutputReference.resetDefaultSearchRequestOrderBy">ResetDefaultSearchRequestOrderBy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsOutputReference.resetDisableUserEventsCollection">ResetDisableUserEventsCollection</a></code> | *No description.* |
@@ -6878,6 +6980,8 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsOutputReference.resetGenerativeAnswerConfig">ResetGenerativeAnswerConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsOutputReference.resetInteractionType">ResetInteractionType</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsOutputReference.resetResultDescriptionType">ResetResultDescriptionType</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsOutputReference.resetSearchAddonSpec">ResetSearchAddonSpec</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsOutputReference.resetSourceAdminDisplayNameEnabled">ResetSourceAdminDisplayNameEnabled</a></code> | *No description.* |
 
 ---
 
@@ -7055,6 +7159,18 @@ func PutGenerativeAnswerConfig(value DiscoveryEngineWidgetConfigUiSettingsGenera
 
 ---
 
+##### `PutSearchAddonSpec` <a name="PutSearchAddonSpec" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsOutputReference.putSearchAddonSpec"></a>
+
+```go
+func PutSearchAddonSpec(value DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpec)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsOutputReference.putSearchAddonSpec.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpec">DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpec</a>
+
+---
+
 ##### `ResetDataStoreUiConfigs` <a name="ResetDataStoreUiConfigs" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsOutputReference.resetDataStoreUiConfigs"></a>
 
 ```go
@@ -7133,6 +7249,18 @@ func ResetInteractionType()
 func ResetResultDescriptionType()
 ```
 
+##### `ResetSearchAddonSpec` <a name="ResetSearchAddonSpec" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsOutputReference.resetSearchAddonSpec"></a>
+
+```go
+func ResetSearchAddonSpec()
+```
+
+##### `ResetSourceAdminDisplayNameEnabled` <a name="ResetSourceAdminDisplayNameEnabled" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsOutputReference.resetSourceAdminDisplayNameEnabled"></a>
+
+```go
+func ResetSourceAdminDisplayNameEnabled()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -7142,6 +7270,7 @@ func ResetResultDescriptionType()
 | <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsOutputReference.property.dataStoreUiConfigs">DataStoreUiConfigs</a></code> | <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsList">DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsOutputReference.property.generativeAnswerConfig">GenerativeAnswerConfig</a></code> | <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfigOutputReference">DiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsOutputReference.property.searchAddonSpec">SearchAddonSpec</a></code> | <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference">DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsOutputReference.property.dataStoreUiConfigsInput">DataStoreUiConfigsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsOutputReference.property.defaultSearchRequestOrderByInput">DefaultSearchRequestOrderByInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsOutputReference.property.disableUserEventsCollectionInput">DisableUserEventsCollectionInput</a></code> | <code>interface{}</code> | *No description.* |
@@ -7155,6 +7284,8 @@ func ResetResultDescriptionType()
 | <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsOutputReference.property.generativeAnswerConfigInput">GenerativeAnswerConfigInput</a></code> | <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfig">DiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsOutputReference.property.interactionTypeInput">InteractionTypeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsOutputReference.property.resultDescriptionTypeInput">ResultDescriptionTypeInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsOutputReference.property.searchAddonSpecInput">SearchAddonSpecInput</a></code> | <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpec">DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpec</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsOutputReference.property.sourceAdminDisplayNameEnabledInput">SourceAdminDisplayNameEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsOutputReference.property.defaultSearchRequestOrderBy">DefaultSearchRequestOrderBy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsOutputReference.property.disableUserEventsCollection">DisableUserEventsCollection</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsOutputReference.property.enableAutocomplete">EnableAutocomplete</a></code> | <code>interface{}</code> | *No description.* |
@@ -7166,6 +7297,7 @@ func ResetResultDescriptionType()
 | <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsOutputReference.property.enableVisualContentSummary">EnableVisualContentSummary</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsOutputReference.property.interactionType">InteractionType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsOutputReference.property.resultDescriptionType">ResultDescriptionType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsOutputReference.property.sourceAdminDisplayNameEnabled">SourceAdminDisplayNameEnabled</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettings">DiscoveryEngineWidgetConfigUiSettings</a></code> | *No description.* |
 
 ---
@@ -7211,6 +7343,16 @@ func GenerativeAnswerConfig() DiscoveryEngineWidgetConfigUiSettingsGenerativeAns
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfigOutputReference">DiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfigOutputReference</a>
+
+---
+
+##### `SearchAddonSpec`<sup>Required</sup> <a name="SearchAddonSpec" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsOutputReference.property.searchAddonSpec"></a>
+
+```go
+func SearchAddonSpec() DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference">DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference</a>
 
 ---
 
@@ -7344,6 +7486,26 @@ func ResultDescriptionTypeInput() *string
 
 ---
 
+##### `SearchAddonSpecInput`<sup>Optional</sup> <a name="SearchAddonSpecInput" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsOutputReference.property.searchAddonSpecInput"></a>
+
+```go
+func SearchAddonSpecInput() DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpec
+```
+
+- *Type:* <a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpec">DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpec</a>
+
+---
+
+##### `SourceAdminDisplayNameEnabledInput`<sup>Optional</sup> <a name="SourceAdminDisplayNameEnabledInput" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsOutputReference.property.sourceAdminDisplayNameEnabledInput"></a>
+
+```go
+func SourceAdminDisplayNameEnabledInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `DefaultSearchRequestOrderBy`<sup>Required</sup> <a name="DefaultSearchRequestOrderBy" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsOutputReference.property.defaultSearchRequestOrderBy"></a>
 
 ```go
@@ -7454,6 +7616,16 @@ func ResultDescriptionType() *string
 
 ---
 
+##### `SourceAdminDisplayNameEnabled`<sup>Required</sup> <a name="SourceAdminDisplayNameEnabled" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsOutputReference.property.sourceAdminDisplayNameEnabled"></a>
+
+```go
+func SourceAdminDisplayNameEnabled() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsOutputReference.property.internalValue"></a>
 
 ```go
@@ -7461,6 +7633,342 @@ func InternalValue() DiscoveryEngineWidgetConfigUiSettings
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettings">DiscoveryEngineWidgetConfigUiSettings</a>
+
+---
+
+
+### DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference <a name="DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/discoveryenginewidgetconfig"
+
+discoveryenginewidgetconfig.NewDiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference.resetGenerativeAnswerAddOnDisabled">ResetGenerativeAnswerAddOnDisabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference.resetKpiPersonalizationAddOnDisabled">ResetKpiPersonalizationAddOnDisabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference.resetSemanticAddOnDisabled">ResetSemanticAddOnDisabled</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetGenerativeAnswerAddOnDisabled` <a name="ResetGenerativeAnswerAddOnDisabled" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference.resetGenerativeAnswerAddOnDisabled"></a>
+
+```go
+func ResetGenerativeAnswerAddOnDisabled()
+```
+
+##### `ResetKpiPersonalizationAddOnDisabled` <a name="ResetKpiPersonalizationAddOnDisabled" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference.resetKpiPersonalizationAddOnDisabled"></a>
+
+```go
+func ResetKpiPersonalizationAddOnDisabled()
+```
+
+##### `ResetSemanticAddOnDisabled` <a name="ResetSemanticAddOnDisabled" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference.resetSemanticAddOnDisabled"></a>
+
+```go
+func ResetSemanticAddOnDisabled()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference.property.generativeAnswerAddOnDisabledInput">GenerativeAnswerAddOnDisabledInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference.property.kpiPersonalizationAddOnDisabledInput">KpiPersonalizationAddOnDisabledInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference.property.semanticAddOnDisabledInput">SemanticAddOnDisabledInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference.property.generativeAnswerAddOnDisabled">GenerativeAnswerAddOnDisabled</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference.property.kpiPersonalizationAddOnDisabled">KpiPersonalizationAddOnDisabled</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference.property.semanticAddOnDisabled">SemanticAddOnDisabled</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpec">DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpec</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `GenerativeAnswerAddOnDisabledInput`<sup>Optional</sup> <a name="GenerativeAnswerAddOnDisabledInput" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference.property.generativeAnswerAddOnDisabledInput"></a>
+
+```go
+func GenerativeAnswerAddOnDisabledInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `KpiPersonalizationAddOnDisabledInput`<sup>Optional</sup> <a name="KpiPersonalizationAddOnDisabledInput" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference.property.kpiPersonalizationAddOnDisabledInput"></a>
+
+```go
+func KpiPersonalizationAddOnDisabledInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `SemanticAddOnDisabledInput`<sup>Optional</sup> <a name="SemanticAddOnDisabledInput" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference.property.semanticAddOnDisabledInput"></a>
+
+```go
+func SemanticAddOnDisabledInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `GenerativeAnswerAddOnDisabled`<sup>Required</sup> <a name="GenerativeAnswerAddOnDisabled" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference.property.generativeAnswerAddOnDisabled"></a>
+
+```go
+func GenerativeAnswerAddOnDisabled() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `KpiPersonalizationAddOnDisabled`<sup>Required</sup> <a name="KpiPersonalizationAddOnDisabled" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference.property.kpiPersonalizationAddOnDisabled"></a>
+
+```go
+func KpiPersonalizationAddOnDisabled() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `SemanticAddOnDisabled`<sup>Required</sup> <a name="SemanticAddOnDisabled" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference.property.semanticAddOnDisabled"></a>
+
+```go
+func SemanticAddOnDisabled() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpecOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpec
+```
+
+- *Type:* <a href="#@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpec">DiscoveryEngineWidgetConfigUiSettingsSearchAddonSpec</a>
 
 ---
 

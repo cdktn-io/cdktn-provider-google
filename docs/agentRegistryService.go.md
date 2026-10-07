@@ -4,12 +4,12 @@
 
 ### AgentRegistryService <a name="AgentRegistryService" id="@cdktn/provider-google.agentRegistryService.AgentRegistryService"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/agent_registry_service google_agent_registry_service}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/agent_registry_service google_agent_registry_service}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.agentRegistryService.AgentRegistryService.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentregistryservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/agentregistryservice"
 
 agentregistryservice.NewAgentRegistryService(scope Construct, id *string, config AgentRegistryServiceConfig) AgentRegistryService
 ```
@@ -535,7 +535,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.agentRegistryService.AgentRegistryService.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentregistryservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/agentregistryservice"
 
 agentregistryservice.AgentRegistryService_IsConstruct(x interface{}) *bool
 ```
@@ -567,7 +567,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.agentRegistryService.AgentRegistryService.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentregistryservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/agentregistryservice"
 
 agentregistryservice.AgentRegistryService_IsTerraformElement(x interface{}) *bool
 ```
@@ -581,7 +581,7 @@ agentregistryservice.AgentRegistryService_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.agentRegistryService.AgentRegistryService.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentregistryservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/agentregistryservice"
 
 agentregistryservice.AgentRegistryService_IsTerraformResource(x interface{}) *bool
 ```
@@ -595,7 +595,7 @@ agentregistryservice.AgentRegistryService_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.agentRegistryService.AgentRegistryService.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentregistryservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/agentregistryservice"
 
 agentregistryservice.AgentRegistryService_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -624,7 +624,7 @@ The construct id used in the generated config for the AgentRegistryService to im
 
 The id of the existing AgentRegistryService that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/agent_registry_service#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/agent_registry_service#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1132,7 +1132,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.agentRegistryService.AgentRegistryServiceAgentSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentregistryservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/agentregistryservice"
 
 &agentregistryservice.AgentRegistryServiceAgentSpec {
 	Type: *string,
@@ -1159,7 +1159,7 @@ Type *string
 
 The type of the Agent spec content. Possible values: ["NO_SPEC", "A2A_AGENT_CARD"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/agent_registry_service#type AgentRegistryService#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/agent_registry_service#type AgentRegistryService#type}
 
 ---
 
@@ -1175,7 +1175,7 @@ The content of the Agent spec in the JSON format.
 
 This payload is validated against the schema for the specified type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/agent_registry_service#content AgentRegistryService#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/agent_registry_service#content AgentRegistryService#content}
 
 ---
 
@@ -1184,7 +1184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.agentRegistryService.AgentRegistryServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentregistryservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/agentregistryservice"
 
 &agentregistryservice.AgentRegistryServiceConfig {
 	Connection: interface{},
@@ -1196,16 +1196,16 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentregistryser
 	Provisioners: *[]interface{},
 	Location: *string,
 	ServiceId: *string,
-	AgentSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v20.agentRegistryService.AgentRegistryServiceAgentSpec,
+	AgentSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v21.agentRegistryService.AgentRegistryServiceAgentSpec,
 	DeletionPolicy: *string,
 	Description: *string,
 	DisplayName: *string,
-	EndpointSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v20.agentRegistryService.AgentRegistryServiceEndpointSpec,
+	EndpointSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v21.agentRegistryService.AgentRegistryServiceEndpointSpec,
 	Id: *string,
 	Interfaces: interface{},
-	McpServerSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v20.agentRegistryService.AgentRegistryServiceMcpServerSpec,
+	McpServerSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v21.agentRegistryService.AgentRegistryServiceMcpServerSpec,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.agentRegistryService.AgentRegistryServiceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.agentRegistryService.AgentRegistryServiceTimeouts,
 }
 ```
 
@@ -1227,10 +1227,10 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentregistryser
 | <code><a href="#@cdktn/provider-google.agentRegistryService.AgentRegistryServiceConfig.property.description">Description</a></code> | <code>*string</code> | The description of the Service. |
 | <code><a href="#@cdktn/provider-google.agentRegistryService.AgentRegistryServiceConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | User-defined display name for the Service. Can have a maximum length of 63 characters. |
 | <code><a href="#@cdktn/provider-google.agentRegistryService.AgentRegistryServiceConfig.property.endpointSpec">EndpointSpec</a></code> | <code><a href="#@cdktn/provider-google.agentRegistryService.AgentRegistryServiceEndpointSpec">AgentRegistryServiceEndpointSpec</a></code> | endpoint_spec block. |
-| <code><a href="#@cdktn/provider-google.agentRegistryService.AgentRegistryServiceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/agent_registry_service#id AgentRegistryService#id}. |
+| <code><a href="#@cdktn/provider-google.agentRegistryService.AgentRegistryServiceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/agent_registry_service#id AgentRegistryService#id}. |
 | <code><a href="#@cdktn/provider-google.agentRegistryService.AgentRegistryServiceConfig.property.interfaces">Interfaces</a></code> | <code>interface{}</code> | interfaces block. |
 | <code><a href="#@cdktn/provider-google.agentRegistryService.AgentRegistryServiceConfig.property.mcpServerSpec">McpServerSpec</a></code> | <code><a href="#@cdktn/provider-google.agentRegistryService.AgentRegistryServiceMcpServerSpec">AgentRegistryServiceMcpServerSpec</a></code> | mcp_server_spec block. |
-| <code><a href="#@cdktn/provider-google.agentRegistryService.AgentRegistryServiceConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/agent_registry_service#project AgentRegistryService#project}. |
+| <code><a href="#@cdktn/provider-google.agentRegistryService.AgentRegistryServiceConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/agent_registry_service#project AgentRegistryService#project}. |
 | <code><a href="#@cdktn/provider-google.agentRegistryService.AgentRegistryServiceConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.agentRegistryService.AgentRegistryServiceTimeouts">AgentRegistryServiceTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1315,7 +1315,7 @@ Location *string
 
 The location of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/agent_registry_service#location AgentRegistryService#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/agent_registry_service#location AgentRegistryService#location}
 
 ---
 
@@ -1329,7 +1329,7 @@ ServiceId *string
 
 The name of the Service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/agent_registry_service#service_id AgentRegistryService#service_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/agent_registry_service#service_id AgentRegistryService#service_id}
 
 ---
 
@@ -1343,7 +1343,7 @@ AgentSpec AgentRegistryServiceAgentSpec
 
 agent_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/agent_registry_service#agent_spec AgentRegistryService#agent_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/agent_registry_service#agent_spec AgentRegistryService#agent_spec}
 
 ---
 
@@ -1364,7 +1364,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/agent_registry_service#deletion_policy AgentRegistryService#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/agent_registry_service#deletion_policy AgentRegistryService#deletion_policy}
 
 ---
 
@@ -1378,7 +1378,7 @@ Description *string
 
 The description of the Service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/agent_registry_service#description AgentRegistryService#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/agent_registry_service#description AgentRegistryService#description}
 
 ---
 
@@ -1392,7 +1392,7 @@ DisplayName *string
 
 User-defined display name for the Service. Can have a maximum length of 63 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/agent_registry_service#display_name AgentRegistryService#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/agent_registry_service#display_name AgentRegistryService#display_name}
 
 ---
 
@@ -1406,7 +1406,7 @@ EndpointSpec AgentRegistryServiceEndpointSpec
 
 endpoint_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/agent_registry_service#endpoint_spec AgentRegistryService#endpoint_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/agent_registry_service#endpoint_spec AgentRegistryService#endpoint_spec}
 
 ---
 
@@ -1418,7 +1418,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/agent_registry_service#id AgentRegistryService#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/agent_registry_service#id AgentRegistryService#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1435,7 +1435,7 @@ Interfaces interface{}
 
 interfaces block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/agent_registry_service#interfaces AgentRegistryService#interfaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/agent_registry_service#interfaces AgentRegistryService#interfaces}
 
 ---
 
@@ -1449,7 +1449,7 @@ McpServerSpec AgentRegistryServiceMcpServerSpec
 
 mcp_server_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/agent_registry_service#mcp_server_spec AgentRegistryService#mcp_server_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/agent_registry_service#mcp_server_spec AgentRegistryService#mcp_server_spec}
 
 ---
 
@@ -1461,7 +1461,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/agent_registry_service#project AgentRegistryService#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/agent_registry_service#project AgentRegistryService#project}.
 
 ---
 
@@ -1475,7 +1475,7 @@ Timeouts AgentRegistryServiceTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/agent_registry_service#timeouts AgentRegistryService#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/agent_registry_service#timeouts AgentRegistryService#timeouts}
 
 ---
 
@@ -1484,7 +1484,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.agentRegistryService.AgentRegistryServiceEndpointSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentregistryservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/agentregistryservice"
 
 &agentregistryservice.AgentRegistryServiceEndpointSpec {
 	Type: *string,
@@ -1509,7 +1509,7 @@ Type *string
 
 The type of the Endpoint spec content. Possible values: ["NO_SPEC"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/agent_registry_service#type AgentRegistryService#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/agent_registry_service#type AgentRegistryService#type}
 
 ---
 
@@ -1518,7 +1518,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.agentRegistryService.AgentRegistryServiceInterfaces.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentregistryservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/agentregistryservice"
 
 &agentregistryservice.AgentRegistryServiceInterfaces {
 	ProtocolBinding: *string,
@@ -1545,7 +1545,7 @@ ProtocolBinding *string
 
 The protocol binding of the interface. Possible values: ["JSONRPC", "GRPC", "HTTP_JSON"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/agent_registry_service#protocol_binding AgentRegistryService#protocol_binding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/agent_registry_service#protocol_binding AgentRegistryService#protocol_binding}
 
 ---
 
@@ -1559,7 +1559,7 @@ Url *string
 
 The destination URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/agent_registry_service#url AgentRegistryService#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/agent_registry_service#url AgentRegistryService#url}
 
 ---
 
@@ -1568,7 +1568,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.agentRegistryService.AgentRegistryServiceMcpServerSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentregistryservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/agentregistryservice"
 
 &agentregistryservice.AgentRegistryServiceMcpServerSpec {
 	Type: *string,
@@ -1595,7 +1595,7 @@ Type *string
 
 The type of the MCP Server spec content. Possible values: ["NO_SPEC", "TOOL_SPEC"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/agent_registry_service#type AgentRegistryService#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/agent_registry_service#type AgentRegistryService#type}
 
 ---
 
@@ -1609,7 +1609,7 @@ Content *string
 
 The content of the MCP Server spec. This payload is validated against the schema for the specified type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/agent_registry_service#content AgentRegistryService#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/agent_registry_service#content AgentRegistryService#content}
 
 ---
 
@@ -1618,7 +1618,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.agentRegistryService.AgentRegistryServiceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentregistryservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/agentregistryservice"
 
 &agentregistryservice.AgentRegistryServiceTimeouts {
 	Create: *string,
@@ -1631,9 +1631,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentregistryser
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.agentRegistryService.AgentRegistryServiceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/agent_registry_service#create AgentRegistryService#create}. |
-| <code><a href="#@cdktn/provider-google.agentRegistryService.AgentRegistryServiceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/agent_registry_service#delete AgentRegistryService#delete}. |
-| <code><a href="#@cdktn/provider-google.agentRegistryService.AgentRegistryServiceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/agent_registry_service#update AgentRegistryService#update}. |
+| <code><a href="#@cdktn/provider-google.agentRegistryService.AgentRegistryServiceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/agent_registry_service#create AgentRegistryService#create}. |
+| <code><a href="#@cdktn/provider-google.agentRegistryService.AgentRegistryServiceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/agent_registry_service#delete AgentRegistryService#delete}. |
+| <code><a href="#@cdktn/provider-google.agentRegistryService.AgentRegistryServiceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/agent_registry_service#update AgentRegistryService#update}. |
 
 ---
 
@@ -1645,7 +1645,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/agent_registry_service#create AgentRegistryService#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/agent_registry_service#create AgentRegistryService#create}.
 
 ---
 
@@ -1657,7 +1657,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/agent_registry_service#delete AgentRegistryService#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/agent_registry_service#delete AgentRegistryService#delete}.
 
 ---
 
@@ -1669,7 +1669,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/agent_registry_service#update AgentRegistryService#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/agent_registry_service#update AgentRegistryService#update}.
 
 ---
 
@@ -1680,7 +1680,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.agentRegistryService.AgentRegistryServiceAgentSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentregistryservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/agentregistryservice"
 
 agentregistryservice.NewAgentRegistryServiceAgentSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AgentRegistryServiceAgentSpecOutputReference
 ```
@@ -1980,7 +1980,7 @@ func InternalValue() AgentRegistryServiceAgentSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.agentRegistryService.AgentRegistryServiceEndpointSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentregistryservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/agentregistryservice"
 
 agentregistryservice.NewAgentRegistryServiceEndpointSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AgentRegistryServiceEndpointSpecOutputReference
 ```
@@ -2251,7 +2251,7 @@ func InternalValue() AgentRegistryServiceEndpointSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.agentRegistryService.AgentRegistryServiceInterfacesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentregistryservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/agentregistryservice"
 
 agentregistryservice.NewAgentRegistryServiceInterfacesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AgentRegistryServiceInterfacesList
 ```
@@ -2411,7 +2411,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.agentRegistryService.AgentRegistryServiceInterfacesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentregistryservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/agentregistryservice"
 
 agentregistryservice.NewAgentRegistryServiceInterfacesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AgentRegistryServiceInterfacesOutputReference
 ```
@@ -2722,7 +2722,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.agentRegistryService.AgentRegistryServiceMcpServerSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentregistryservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/agentregistryservice"
 
 agentregistryservice.NewAgentRegistryServiceMcpServerSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AgentRegistryServiceMcpServerSpecOutputReference
 ```
@@ -3022,7 +3022,7 @@ func InternalValue() AgentRegistryServiceMcpServerSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.agentRegistryService.AgentRegistryServiceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/agentregistryservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/agentregistryservice"
 
 agentregistryservice.NewAgentRegistryServiceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AgentRegistryServiceTimeoutsOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### BigtableTableIamPolicy <a name="BigtableTableIamPolicy" id="@cdktn/provider-google.bigtableTableIamPolicy.BigtableTableIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/bigtable_table_iam_policy google_bigtable_table_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/bigtable_table_iam_policy google_bigtable_table_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.bigtableTableIamPolicy.BigtableTableIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/bigtabletableiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/bigtabletableiampolicy"
 
 bigtabletableiampolicy.NewBigtableTableIamPolicy(scope Construct, id *string, config BigtableTableIamPolicyConfig) BigtableTableIamPolicy
 ```
@@ -414,7 +414,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.bigtableTableIamPolicy.BigtableTableIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/bigtabletableiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/bigtabletableiampolicy"
 
 bigtabletableiampolicy.BigtableTableIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.bigtableTableIamPolicy.BigtableTableIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/bigtabletableiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/bigtabletableiampolicy"
 
 bigtabletableiampolicy.BigtableTableIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ bigtabletableiampolicy.BigtableTableIamPolicy_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.bigtableTableIamPolicy.BigtableTableIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/bigtabletableiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/bigtabletableiampolicy"
 
 bigtabletableiampolicy.BigtableTableIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ bigtabletableiampolicy.BigtableTableIamPolicy_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.bigtableTableIamPolicy.BigtableTableIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/bigtabletableiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/bigtabletableiampolicy"
 
 bigtabletableiampolicy.BigtableTableIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -503,7 +503,7 @@ The construct id used in the generated config for the BigtableTableIamPolicy to 
 
 The id of the existing BigtableTableIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/bigtable_table_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/bigtable_table_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -824,7 +824,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.bigtableTableIamPolicy.BigtableTableIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/bigtabletableiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/bigtabletableiampolicy"
 
 &bigtabletableiampolicy.BigtableTableIamPolicyConfig {
 	Connection: interface{},
@@ -853,11 +853,11 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/bigtabletableiam
 | <code><a href="#@cdktn/provider-google.bigtableTableIamPolicy.BigtableTableIamPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableTableIamPolicy.BigtableTableIamPolicyConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.bigtableTableIamPolicy.BigtableTableIamPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.bigtableTableIamPolicy.BigtableTableIamPolicyConfig.property.instanceName">InstanceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/bigtable_table_iam_policy#instance_name BigtableTableIamPolicy#instance_name}. |
-| <code><a href="#@cdktn/provider-google.bigtableTableIamPolicy.BigtableTableIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/bigtable_table_iam_policy#policy_data BigtableTableIamPolicy#policy_data}. |
-| <code><a href="#@cdktn/provider-google.bigtableTableIamPolicy.BigtableTableIamPolicyConfig.property.table">Table</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/bigtable_table_iam_policy#table BigtableTableIamPolicy#table}. |
-| <code><a href="#@cdktn/provider-google.bigtableTableIamPolicy.BigtableTableIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/bigtable_table_iam_policy#id BigtableTableIamPolicy#id}. |
-| <code><a href="#@cdktn/provider-google.bigtableTableIamPolicy.BigtableTableIamPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/bigtable_table_iam_policy#project BigtableTableIamPolicy#project}. |
+| <code><a href="#@cdktn/provider-google.bigtableTableIamPolicy.BigtableTableIamPolicyConfig.property.instanceName">InstanceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/bigtable_table_iam_policy#instance_name BigtableTableIamPolicy#instance_name}. |
+| <code><a href="#@cdktn/provider-google.bigtableTableIamPolicy.BigtableTableIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/bigtable_table_iam_policy#policy_data BigtableTableIamPolicy#policy_data}. |
+| <code><a href="#@cdktn/provider-google.bigtableTableIamPolicy.BigtableTableIamPolicyConfig.property.table">Table</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/bigtable_table_iam_policy#table BigtableTableIamPolicy#table}. |
+| <code><a href="#@cdktn/provider-google.bigtableTableIamPolicy.BigtableTableIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/bigtable_table_iam_policy#id BigtableTableIamPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.bigtableTableIamPolicy.BigtableTableIamPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/bigtable_table_iam_policy#project BigtableTableIamPolicy#project}. |
 
 ---
 
@@ -939,7 +939,7 @@ InstanceName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/bigtable_table_iam_policy#instance_name BigtableTableIamPolicy#instance_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/bigtable_table_iam_policy#instance_name BigtableTableIamPolicy#instance_name}.
 
 ---
 
@@ -951,7 +951,7 @@ PolicyData *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/bigtable_table_iam_policy#policy_data BigtableTableIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/bigtable_table_iam_policy#policy_data BigtableTableIamPolicy#policy_data}.
 
 ---
 
@@ -963,7 +963,7 @@ Table *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/bigtable_table_iam_policy#table BigtableTableIamPolicy#table}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/bigtable_table_iam_policy#table BigtableTableIamPolicy#table}.
 
 ---
 
@@ -975,7 +975,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/bigtable_table_iam_policy#id BigtableTableIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/bigtable_table_iam_policy#id BigtableTableIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -990,7 +990,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/bigtable_table_iam_policy#project BigtableTableIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/bigtable_table_iam_policy#project BigtableTableIamPolicy#project}.
 
 ---
 

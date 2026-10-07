@@ -4,12 +4,12 @@
 
 ### ApphubApplication <a name="ApphubApplication" id="@cdktn/provider-google.apphubApplication.ApphubApplication"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apphub_application google_apphub_application}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apphub_application google_apphub_application}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apphubApplication.ApphubApplication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apphubapplication"
 
 apphubapplication.NewApphubApplication(scope Construct, id *string, config ApphubApplicationConfig) ApphubApplication
 ```
@@ -488,7 +488,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.apphubApplication.ApphubApplication.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apphubapplication"
 
 apphubapplication.ApphubApplication_IsConstruct(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.apphubApplication.ApphubApplication.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apphubapplication"
 
 apphubapplication.ApphubApplication_IsTerraformElement(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ apphubapplication.ApphubApplication_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.apphubApplication.ApphubApplication.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apphubapplication"
 
 apphubapplication.ApphubApplication_IsTerraformResource(x interface{}) *bool
 ```
@@ -548,7 +548,7 @@ apphubapplication.ApphubApplication_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.apphubApplication.ApphubApplication.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apphubapplication"
 
 apphubapplication.ApphubApplication_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -577,7 +577,7 @@ The construct id used in the generated config for the ApphubApplication to impor
 
 The id of the existing ApphubApplication that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apphub_application#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apphub_application#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1052,13 +1052,13 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apphubApplication.ApphubApplicationAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apphubapplication"
 
 &apphubapplication.ApphubApplicationAttributes {
 	BusinessOwners: interface{},
-	Criticality: github.com/cdktn-io/cdktn-provider-google-go/google/v20.apphubApplication.ApphubApplicationAttributesCriticality,
+	Criticality: github.com/cdktn-io/cdktn-provider-google-go/google/v21.apphubApplication.ApphubApplicationAttributesCriticality,
 	DeveloperOwners: interface{},
-	Environment: github.com/cdktn-io/cdktn-provider-google-go/google/v20.apphubApplication.ApphubApplicationAttributesEnvironment,
+	Environment: github.com/cdktn-io/cdktn-provider-google-go/google/v21.apphubApplication.ApphubApplicationAttributesEnvironment,
 	OperatorOwners: interface{},
 }
 ```
@@ -1085,7 +1085,7 @@ BusinessOwners interface{}
 
 business_owners block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apphub_application#business_owners ApphubApplication#business_owners}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apphub_application#business_owners ApphubApplication#business_owners}
 
 ---
 
@@ -1099,7 +1099,7 @@ Criticality ApphubApplicationAttributesCriticality
 
 criticality block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apphub_application#criticality ApphubApplication#criticality}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apphub_application#criticality ApphubApplication#criticality}
 
 ---
 
@@ -1113,7 +1113,7 @@ DeveloperOwners interface{}
 
 developer_owners block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apphub_application#developer_owners ApphubApplication#developer_owners}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apphub_application#developer_owners ApphubApplication#developer_owners}
 
 ---
 
@@ -1127,7 +1127,7 @@ Environment ApphubApplicationAttributesEnvironment
 
 environment block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apphub_application#environment ApphubApplication#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apphub_application#environment ApphubApplication#environment}
 
 ---
 
@@ -1141,7 +1141,7 @@ OperatorOwners interface{}
 
 operator_owners block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apphub_application#operator_owners ApphubApplication#operator_owners}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apphub_application#operator_owners ApphubApplication#operator_owners}
 
 ---
 
@@ -1150,7 +1150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesBusinessOwners.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apphubapplication"
 
 &apphubapplication.ApphubApplicationAttributesBusinessOwners {
 	Email: *string,
@@ -1177,7 +1177,7 @@ Email *string
 
 Required. Email address of the contacts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apphub_application#email ApphubApplication#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apphub_application#email ApphubApplication#email}
 
 ---
 
@@ -1191,7 +1191,7 @@ DisplayName *string
 
 Optional. Contact's name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apphub_application#display_name ApphubApplication#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apphub_application#display_name ApphubApplication#display_name}
 
 ---
 
@@ -1200,7 +1200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesCriticality.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apphubapplication"
 
 &apphubapplication.ApphubApplicationAttributesCriticality {
 	Type: *string,
@@ -1225,7 +1225,7 @@ Type *string
 
 Criticality type. Possible values: ["MISSION_CRITICAL", "HIGH", "MEDIUM", "LOW"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apphub_application#type ApphubApplication#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apphub_application#type ApphubApplication#type}
 
 ---
 
@@ -1234,7 +1234,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesDeveloperOwners.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apphubapplication"
 
 &apphubapplication.ApphubApplicationAttributesDeveloperOwners {
 	Email: *string,
@@ -1261,7 +1261,7 @@ Email *string
 
 Required. Email address of the contacts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apphub_application#email ApphubApplication#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apphub_application#email ApphubApplication#email}
 
 ---
 
@@ -1275,7 +1275,7 @@ DisplayName *string
 
 Optional. Contact's name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apphub_application#display_name ApphubApplication#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apphub_application#display_name ApphubApplication#display_name}
 
 ---
 
@@ -1284,7 +1284,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesEnvironment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apphubapplication"
 
 &apphubapplication.ApphubApplicationAttributesEnvironment {
 	Type: *string,
@@ -1309,7 +1309,7 @@ Type *string
 
 Environment type. Possible values: ["PRODUCTION", "STAGING", "TEST", "DEVELOPMENT"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apphub_application#type ApphubApplication#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apphub_application#type ApphubApplication#type}
 
 ---
 
@@ -1318,7 +1318,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOperatorOwners.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apphubapplication"
 
 &apphubapplication.ApphubApplicationAttributesOperatorOwners {
 	Email: *string,
@@ -1345,7 +1345,7 @@ Email *string
 
 Required. Email address of the contacts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apphub_application#email ApphubApplication#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apphub_application#email ApphubApplication#email}
 
 ---
 
@@ -1359,7 +1359,7 @@ DisplayName *string
 
 Optional. Contact's name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apphub_application#display_name ApphubApplication#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apphub_application#display_name ApphubApplication#display_name}
 
 ---
 
@@ -1368,7 +1368,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apphubApplication.ApphubApplicationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apphubapplication"
 
 &apphubapplication.ApphubApplicationConfig {
 	Connection: interface{},
@@ -1380,14 +1380,14 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubapplicatio
 	Provisioners: *[]interface{},
 	ApplicationId: *string,
 	Location: *string,
-	Scope: github.com/cdktn-io/cdktn-provider-google-go/google/v20.apphubApplication.ApphubApplicationScope,
-	Attributes: github.com/cdktn-io/cdktn-provider-google-go/google/v20.apphubApplication.ApphubApplicationAttributes,
+	Scope: github.com/cdktn-io/cdktn-provider-google-go/google/v21.apphubApplication.ApphubApplicationScope,
+	Attributes: github.com/cdktn-io/cdktn-provider-google-go/google/v21.apphubApplication.ApphubApplicationAttributes,
 	DeletionPolicy: *string,
 	Description: *string,
 	DisplayName: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.apphubApplication.ApphubApplicationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.apphubApplication.ApphubApplicationTimeouts,
 }
 ```
 
@@ -1409,8 +1409,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubapplicatio
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationConfig.property.description">Description</a></code> | <code>*string</code> | Optional. User-defined description of an Application. |
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | Optional. User-defined name for the Application. |
-| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apphub_application#id ApphubApplication#id}. |
-| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apphub_application#project ApphubApplication#project}. |
+| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apphub_application#id ApphubApplication#id}. |
+| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apphub_application#project ApphubApplication#project}. |
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationTimeouts">ApphubApplicationTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1495,7 +1495,7 @@ ApplicationId *string
 
 Required. The Application identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apphub_application#application_id ApphubApplication#application_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apphub_application#application_id ApphubApplication#application_id}
 
 ---
 
@@ -1509,7 +1509,7 @@ Location *string
 
 Part of 'parent'. See documentation of 'projectsId'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apphub_application#location ApphubApplication#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apphub_application#location ApphubApplication#location}
 
 ---
 
@@ -1523,7 +1523,7 @@ Scope ApphubApplicationScope
 
 scope block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apphub_application#scope ApphubApplication#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apphub_application#scope ApphubApplication#scope}
 
 ---
 
@@ -1537,7 +1537,7 @@ Attributes ApphubApplicationAttributes
 
 attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apphub_application#attributes ApphubApplication#attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apphub_application#attributes ApphubApplication#attributes}
 
 ---
 
@@ -1558,7 +1558,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apphub_application#deletion_policy ApphubApplication#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apphub_application#deletion_policy ApphubApplication#deletion_policy}
 
 ---
 
@@ -1572,7 +1572,7 @@ Description *string
 
 Optional. User-defined description of an Application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apphub_application#description ApphubApplication#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apphub_application#description ApphubApplication#description}
 
 ---
 
@@ -1586,7 +1586,7 @@ DisplayName *string
 
 Optional. User-defined name for the Application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apphub_application#display_name ApphubApplication#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apphub_application#display_name ApphubApplication#display_name}
 
 ---
 
@@ -1598,7 +1598,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apphub_application#id ApphubApplication#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apphub_application#id ApphubApplication#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1613,7 +1613,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apphub_application#project ApphubApplication#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apphub_application#project ApphubApplication#project}.
 
 ---
 
@@ -1627,7 +1627,7 @@ Timeouts ApphubApplicationTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apphub_application#timeouts ApphubApplication#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apphub_application#timeouts ApphubApplication#timeouts}
 
 ---
 
@@ -1636,7 +1636,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apphubApplication.ApphubApplicationScope.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apphubapplication"
 
 &apphubapplication.ApphubApplicationScope {
 	Type: *string,
@@ -1661,7 +1661,7 @@ Type *string
 
 Required. Scope Type.   Possible values: REGIONAL GLOBAL Possible values: ["REGIONAL", "GLOBAL"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apphub_application#type ApphubApplication#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apphub_application#type ApphubApplication#type}
 
 ---
 
@@ -1670,7 +1670,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apphubApplication.ApphubApplicationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apphubapplication"
 
 &apphubapplication.ApphubApplicationTimeouts {
 	Create: *string,
@@ -1683,9 +1683,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubapplicatio
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apphub_application#create ApphubApplication#create}. |
-| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apphub_application#delete ApphubApplication#delete}. |
-| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apphub_application#update ApphubApplication#update}. |
+| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apphub_application#create ApphubApplication#create}. |
+| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apphub_application#delete ApphubApplication#delete}. |
+| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apphub_application#update ApphubApplication#update}. |
 
 ---
 
@@ -1697,7 +1697,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apphub_application#create ApphubApplication#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apphub_application#create ApphubApplication#create}.
 
 ---
 
@@ -1709,7 +1709,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apphub_application#delete ApphubApplication#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apphub_application#delete ApphubApplication#delete}.
 
 ---
 
@@ -1721,7 +1721,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apphub_application#update ApphubApplication#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apphub_application#update ApphubApplication#update}.
 
 ---
 
@@ -1732,7 +1732,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesBusinessOwnersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apphubapplication"
 
 apphubapplication.NewApphubApplicationAttributesBusinessOwnersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApphubApplicationAttributesBusinessOwnersList
 ```
@@ -1892,7 +1892,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesBusinessOwnersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apphubapplication"
 
 apphubapplication.NewApphubApplicationAttributesBusinessOwnersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApphubApplicationAttributesBusinessOwnersOutputReference
 ```
@@ -2210,7 +2210,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesCriticalityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apphubapplication"
 
 apphubapplication.NewApphubApplicationAttributesCriticalityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApphubApplicationAttributesCriticalityOutputReference
 ```
@@ -2481,7 +2481,7 @@ func InternalValue() ApphubApplicationAttributesCriticality
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesDeveloperOwnersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apphubapplication"
 
 apphubapplication.NewApphubApplicationAttributesDeveloperOwnersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApphubApplicationAttributesDeveloperOwnersList
 ```
@@ -2641,7 +2641,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesDeveloperOwnersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apphubapplication"
 
 apphubapplication.NewApphubApplicationAttributesDeveloperOwnersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApphubApplicationAttributesDeveloperOwnersOutputReference
 ```
@@ -2959,7 +2959,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesEnvironmentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apphubapplication"
 
 apphubapplication.NewApphubApplicationAttributesEnvironmentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApphubApplicationAttributesEnvironmentOutputReference
 ```
@@ -3230,7 +3230,7 @@ func InternalValue() ApphubApplicationAttributesEnvironment
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOperatorOwnersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apphubapplication"
 
 apphubapplication.NewApphubApplicationAttributesOperatorOwnersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApphubApplicationAttributesOperatorOwnersList
 ```
@@ -3390,7 +3390,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOperatorOwnersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apphubapplication"
 
 apphubapplication.NewApphubApplicationAttributesOperatorOwnersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApphubApplicationAttributesOperatorOwnersOutputReference
 ```
@@ -3708,7 +3708,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apphubapplication"
 
 apphubapplication.NewApphubApplicationAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApphubApplicationAttributesOutputReference
 ```
@@ -4167,7 +4167,7 @@ func InternalValue() ApphubApplicationAttributes
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apphubApplication.ApphubApplicationScopeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apphubapplication"
 
 apphubapplication.NewApphubApplicationScopeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApphubApplicationScopeOutputReference
 ```
@@ -4438,7 +4438,7 @@ func InternalValue() ApphubApplicationScope
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apphubApplication.ApphubApplicationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apphubapplication"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apphubapplication"
 
 apphubapplication.NewApphubApplicationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApphubApplicationTimeoutsOutputReference
 ```

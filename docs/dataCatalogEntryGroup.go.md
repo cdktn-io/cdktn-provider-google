@@ -4,12 +4,12 @@
 
 ### DataCatalogEntryGroup <a name="DataCatalogEntryGroup" id="@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_catalog_entry_group google_data_catalog_entry_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_catalog_entry_group google_data_catalog_entry_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datacatalogentrygroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datacatalogentrygroup"
 
 datacatalogentrygroup.NewDataCatalogEntryGroup(scope Construct, id *string, config DataCatalogEntryGroupConfig) DataCatalogEntryGroup
 ```
@@ -462,7 +462,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datacatalogentrygroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datacatalogentrygroup"
 
 datacatalogentrygroup.DataCatalogEntryGroup_IsConstruct(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datacatalogentrygroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datacatalogentrygroup"
 
 datacatalogentrygroup.DataCatalogEntryGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ datacatalogentrygroup.DataCatalogEntryGroup_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datacatalogentrygroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datacatalogentrygroup"
 
 datacatalogentrygroup.DataCatalogEntryGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ datacatalogentrygroup.DataCatalogEntryGroup_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datacatalogentrygroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datacatalogentrygroup"
 
 datacatalogentrygroup.DataCatalogEntryGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -551,7 +551,7 @@ The construct id used in the generated config for the DataCatalogEntryGroup to i
 
 The id of the existing DataCatalogEntryGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_catalog_entry_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_catalog_entry_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -938,7 +938,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datacatalogentrygroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datacatalogentrygroup"
 
 &datacatalogentrygroup.DataCatalogEntryGroupConfig {
 	Connection: interface{},
@@ -955,7 +955,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datacatalogentry
 	Id: *string,
 	Project: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.dataCatalogEntryGroup.DataCatalogEntryGroupTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dataCatalogEntryGroup.DataCatalogEntryGroupTimeouts,
 }
 ```
 
@@ -974,8 +974,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datacatalogentry
 | <code><a href="#@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroupConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroupConfig.property.description">Description</a></code> | <code>*string</code> | Entry group description, which can consist of several sentences or paragraphs that describe entry group contents. |
 | <code><a href="#@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroupConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | A short name to identify the entry group, for example, "analytics data - jan 2011". |
-| <code><a href="#@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_catalog_entry_group#id DataCatalogEntryGroup#id}. |
-| <code><a href="#@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroupConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_catalog_entry_group#project DataCatalogEntryGroup#project}. |
+| <code><a href="#@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_catalog_entry_group#id DataCatalogEntryGroup#id}. |
+| <code><a href="#@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroupConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_catalog_entry_group#project DataCatalogEntryGroup#project}. |
 | <code><a href="#@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroupConfig.property.region">Region</a></code> | <code>*string</code> | EntryGroup location region. |
 | <code><a href="#@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroupConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroupTimeouts">DataCatalogEntryGroupTimeouts</a></code> | timeouts block. |
 
@@ -1064,7 +1064,7 @@ The id of the entry group to create.
 The id must begin with a letter or underscore,
 contain only English letters, numbers and underscores, and be at most 64 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_catalog_entry_group#entry_group_id DataCatalogEntryGroup#entry_group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_catalog_entry_group#entry_group_id DataCatalogEntryGroup#entry_group_id}
 
 ---
 
@@ -1085,7 +1085,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_catalog_entry_group#deletion_policy DataCatalogEntryGroup#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_catalog_entry_group#deletion_policy DataCatalogEntryGroup#deletion_policy}
 
 ---
 
@@ -1099,7 +1099,7 @@ Description *string
 
 Entry group description, which can consist of several sentences or paragraphs that describe entry group contents.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_catalog_entry_group#description DataCatalogEntryGroup#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_catalog_entry_group#description DataCatalogEntryGroup#description}
 
 ---
 
@@ -1113,7 +1113,7 @@ DisplayName *string
 
 A short name to identify the entry group, for example, "analytics data - jan 2011".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_catalog_entry_group#display_name DataCatalogEntryGroup#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_catalog_entry_group#display_name DataCatalogEntryGroup#display_name}
 
 ---
 
@@ -1125,7 +1125,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_catalog_entry_group#id DataCatalogEntryGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_catalog_entry_group#id DataCatalogEntryGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1140,7 +1140,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_catalog_entry_group#project DataCatalogEntryGroup#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_catalog_entry_group#project DataCatalogEntryGroup#project}.
 
 ---
 
@@ -1154,7 +1154,7 @@ Region *string
 
 EntryGroup location region.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_catalog_entry_group#region DataCatalogEntryGroup#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_catalog_entry_group#region DataCatalogEntryGroup#region}
 
 ---
 
@@ -1168,7 +1168,7 @@ Timeouts DataCatalogEntryGroupTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_catalog_entry_group#timeouts DataCatalogEntryGroup#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_catalog_entry_group#timeouts DataCatalogEntryGroup#timeouts}
 
 ---
 
@@ -1177,7 +1177,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroupTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datacatalogentrygroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datacatalogentrygroup"
 
 &datacatalogentrygroup.DataCatalogEntryGroupTimeouts {
 	Create: *string,
@@ -1190,9 +1190,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datacatalogentry
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroupTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_catalog_entry_group#create DataCatalogEntryGroup#create}. |
-| <code><a href="#@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroupTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_catalog_entry_group#delete DataCatalogEntryGroup#delete}. |
-| <code><a href="#@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroupTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_catalog_entry_group#update DataCatalogEntryGroup#update}. |
+| <code><a href="#@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroupTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_catalog_entry_group#create DataCatalogEntryGroup#create}. |
+| <code><a href="#@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroupTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_catalog_entry_group#delete DataCatalogEntryGroup#delete}. |
+| <code><a href="#@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroupTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_catalog_entry_group#update DataCatalogEntryGroup#update}. |
 
 ---
 
@@ -1204,7 +1204,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_catalog_entry_group#create DataCatalogEntryGroup#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_catalog_entry_group#create DataCatalogEntryGroup#create}.
 
 ---
 
@@ -1216,7 +1216,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_catalog_entry_group#delete DataCatalogEntryGroup#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_catalog_entry_group#delete DataCatalogEntryGroup#delete}.
 
 ---
 
@@ -1228,7 +1228,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/data_catalog_entry_group#update DataCatalogEntryGroup#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/data_catalog_entry_group#update DataCatalogEntryGroup#update}.
 
 ---
 
@@ -1239,7 +1239,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataCatalogEntryGroup.DataCatalogEntryGroupTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datacatalogentrygroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datacatalogentrygroup"
 
 datacatalogentrygroup.NewDataCatalogEntryGroupTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCatalogEntryGroupTimeoutsOutputReference
 ```

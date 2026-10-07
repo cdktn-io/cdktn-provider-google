@@ -4,12 +4,12 @@
 
 ### NetappBackupVault <a name="NetappBackupVault" id="@cdktn/provider-google.netappBackupVault.NetappBackupVault"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_backup_vault google_netapp_backup_vault}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/netapp_backup_vault google_netapp_backup_vault}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.netappBackupVault.NetappBackupVault.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappbackupvault"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/netappbackupvault"
 
 netappbackupvault.NewNetappBackupVault(scope Construct, id *string, config NetappBackupVaultConfig) NetappBackupVault
 ```
@@ -496,7 +496,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.netappBackupVault.NetappBackupVault.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappbackupvault"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/netappbackupvault"
 
 netappbackupvault.NetappBackupVault_IsConstruct(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.netappBackupVault.NetappBackupVault.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappbackupvault"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/netappbackupvault"
 
 netappbackupvault.NetappBackupVault_IsTerraformElement(x interface{}) *bool
 ```
@@ -542,7 +542,7 @@ netappbackupvault.NetappBackupVault_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.netappBackupVault.NetappBackupVault.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappbackupvault"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/netappbackupvault"
 
 netappbackupvault.NetappBackupVault_IsTerraformResource(x interface{}) *bool
 ```
@@ -556,7 +556,7 @@ netappbackupvault.NetappBackupVault_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.netappBackupVault.NetappBackupVault.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappbackupvault"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/netappbackupvault"
 
 netappbackupvault.NetappBackupVault_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -585,7 +585,7 @@ The construct id used in the generated config for the NetappBackupVault to impor
 
 The id of the existing NetappBackupVault that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_backup_vault#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/netapp_backup_vault#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1148,7 +1148,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.netappBackupVault.NetappBackupVaultBackupRetentionPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappbackupvault"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/netappbackupvault"
 
 &netappbackupvault.NetappBackupVaultBackupRetentionPolicy {
 	BackupMinimumEnforcedRetentionDays: *f64,
@@ -1181,7 +1181,7 @@ BackupMinimumEnforcedRetentionDays *f64
 
 Minimum retention duration in days for backups in the backup vault.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_backup_vault#backup_minimum_enforced_retention_days NetappBackupVault#backup_minimum_enforced_retention_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/netapp_backup_vault#backup_minimum_enforced_retention_days NetappBackupVault#backup_minimum_enforced_retention_days}
 
 ---
 
@@ -1195,7 +1195,7 @@ DailyBackupImmutable interface{}
 
 Indicates if the daily backups are immutable. At least one of daily_backup_immutable, weekly_backup_immutable, monthly_backup_immutable and manual_backup_immutable must be true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_backup_vault#daily_backup_immutable NetappBackupVault#daily_backup_immutable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/netapp_backup_vault#daily_backup_immutable NetappBackupVault#daily_backup_immutable}
 
 ---
 
@@ -1209,7 +1209,7 @@ ManualBackupImmutable interface{}
 
 Indicates if the manual backups are immutable. At least one of daily_backup_immutable, weekly_backup_immutable, monthly_backup_immutable and manual_backup_immutable must be true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_backup_vault#manual_backup_immutable NetappBackupVault#manual_backup_immutable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/netapp_backup_vault#manual_backup_immutable NetappBackupVault#manual_backup_immutable}
 
 ---
 
@@ -1223,7 +1223,7 @@ MonthlyBackupImmutable interface{}
 
 Indicates if the monthly backups are immutable. At least one of daily_backup_immutable, weekly_backup_immutable, monthly_backup_immutable and manual_backup_immutable must be true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_backup_vault#monthly_backup_immutable NetappBackupVault#monthly_backup_immutable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/netapp_backup_vault#monthly_backup_immutable NetappBackupVault#monthly_backup_immutable}
 
 ---
 
@@ -1237,7 +1237,7 @@ WeeklyBackupImmutable interface{}
 
 Indicates if the weekly backups are immutable. At least one of daily_backup_immutable, weekly_backup_immutable, monthly_backup_immutable and manual_backup_immutable must be true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_backup_vault#weekly_backup_immutable NetappBackupVault#weekly_backup_immutable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/netapp_backup_vault#weekly_backup_immutable NetappBackupVault#weekly_backup_immutable}
 
 ---
 
@@ -1246,7 +1246,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.netappBackupVault.NetappBackupVaultConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappbackupvault"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/netappbackupvault"
 
 &netappbackupvault.NetappBackupVaultConfig {
 	Connection: interface{},
@@ -1259,7 +1259,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappbackupvaul
 	Location: *string,
 	Name: *string,
 	BackupRegion: *string,
-	BackupRetentionPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v20.netappBackupVault.NetappBackupVaultBackupRetentionPolicy,
+	BackupRetentionPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v21.netappBackupVault.NetappBackupVaultBackupRetentionPolicy,
 	BackupVaultType: *string,
 	DeletionPolicy: *string,
 	Description: *string,
@@ -1267,7 +1267,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappbackupvaul
 	KmsConfig: *string,
 	Labels: *map[string]*string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.netappBackupVault.NetappBackupVaultTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.netappBackupVault.NetappBackupVaultTimeouts,
 }
 ```
 
@@ -1289,10 +1289,10 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappbackupvaul
 | <code><a href="#@cdktn/provider-google.netappBackupVault.NetappBackupVaultConfig.property.backupVaultType">BackupVaultType</a></code> | <code>*string</code> | Type of the backup vault to be created. Default is IN_REGION. Possible values: ["BACKUP_VAULT_TYPE_UNSPECIFIED", "IN_REGION", "CROSS_REGION"]. |
 | <code><a href="#@cdktn/provider-google.netappBackupVault.NetappBackupVaultConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.netappBackupVault.NetappBackupVaultConfig.property.description">Description</a></code> | <code>*string</code> | An optional description of this resource. |
-| <code><a href="#@cdktn/provider-google.netappBackupVault.NetappBackupVaultConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_backup_vault#id NetappBackupVault#id}. |
+| <code><a href="#@cdktn/provider-google.netappBackupVault.NetappBackupVaultConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/netapp_backup_vault#id NetappBackupVault#id}. |
 | <code><a href="#@cdktn/provider-google.netappBackupVault.NetappBackupVaultConfig.property.kmsConfig">KmsConfig</a></code> | <code>*string</code> | Specifies the Key Management System (KMS) configuration to be used for backup encryption. Format: 'projects/{{project}}/locations/{{location}}/kmsConfigs/{{kms_config}}'. |
 | <code><a href="#@cdktn/provider-google.netappBackupVault.NetappBackupVaultConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | Labels as key value pairs. Example: '{ "owner": "Bob", "department": "finance", "purpose": "testing" }'. |
-| <code><a href="#@cdktn/provider-google.netappBackupVault.NetappBackupVaultConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_backup_vault#project NetappBackupVault#project}. |
+| <code><a href="#@cdktn/provider-google.netappBackupVault.NetappBackupVaultConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/netapp_backup_vault#project NetappBackupVault#project}. |
 | <code><a href="#@cdktn/provider-google.netappBackupVault.NetappBackupVaultConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.netappBackupVault.NetappBackupVaultTimeouts">NetappBackupVaultTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1377,7 +1377,7 @@ Location *string
 
 Location (region) of the backup vault.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_backup_vault#location NetappBackupVault#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/netapp_backup_vault#location NetappBackupVault#location}
 
 ---
 
@@ -1391,7 +1391,7 @@ Name *string
 
 The resource name of the backup vault. Needs to be unique per location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_backup_vault#name NetappBackupVault#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/netapp_backup_vault#name NetappBackupVault#name}
 
 ---
 
@@ -1405,7 +1405,7 @@ BackupRegion *string
 
 Region in which backup is stored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_backup_vault#backup_region NetappBackupVault#backup_region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/netapp_backup_vault#backup_region NetappBackupVault#backup_region}
 
 ---
 
@@ -1419,7 +1419,7 @@ BackupRetentionPolicy NetappBackupVaultBackupRetentionPolicy
 
 backup_retention_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_backup_vault#backup_retention_policy NetappBackupVault#backup_retention_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/netapp_backup_vault#backup_retention_policy NetappBackupVault#backup_retention_policy}
 
 ---
 
@@ -1433,7 +1433,7 @@ BackupVaultType *string
 
 Type of the backup vault to be created. Default is IN_REGION. Possible values: ["BACKUP_VAULT_TYPE_UNSPECIFIED", "IN_REGION", "CROSS_REGION"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_backup_vault#backup_vault_type NetappBackupVault#backup_vault_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/netapp_backup_vault#backup_vault_type NetappBackupVault#backup_vault_type}
 
 ---
 
@@ -1454,7 +1454,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_backup_vault#deletion_policy NetappBackupVault#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/netapp_backup_vault#deletion_policy NetappBackupVault#deletion_policy}
 
 ---
 
@@ -1468,7 +1468,7 @@ Description *string
 
 An optional description of this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_backup_vault#description NetappBackupVault#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/netapp_backup_vault#description NetappBackupVault#description}
 
 ---
 
@@ -1480,7 +1480,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_backup_vault#id NetappBackupVault#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/netapp_backup_vault#id NetappBackupVault#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1497,7 +1497,7 @@ KmsConfig *string
 
 Specifies the Key Management System (KMS) configuration to be used for backup encryption. Format: 'projects/{{project}}/locations/{{location}}/kmsConfigs/{{kms_config}}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_backup_vault#kms_config NetappBackupVault#kms_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/netapp_backup_vault#kms_config NetappBackupVault#kms_config}
 
 ---
 
@@ -1514,7 +1514,7 @@ Labels as key value pairs. Example: '{ "owner": "Bob", "department": "finance", 
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_backup_vault#labels NetappBackupVault#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/netapp_backup_vault#labels NetappBackupVault#labels}
 
 ---
 
@@ -1526,7 +1526,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_backup_vault#project NetappBackupVault#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/netapp_backup_vault#project NetappBackupVault#project}.
 
 ---
 
@@ -1540,7 +1540,7 @@ Timeouts NetappBackupVaultTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_backup_vault#timeouts NetappBackupVault#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/netapp_backup_vault#timeouts NetappBackupVault#timeouts}
 
 ---
 
@@ -1549,7 +1549,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.netappBackupVault.NetappBackupVaultTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappbackupvault"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/netappbackupvault"
 
 &netappbackupvault.NetappBackupVaultTimeouts {
 	Create: *string,
@@ -1562,9 +1562,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappbackupvaul
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.netappBackupVault.NetappBackupVaultTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_backup_vault#create NetappBackupVault#create}. |
-| <code><a href="#@cdktn/provider-google.netappBackupVault.NetappBackupVaultTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_backup_vault#delete NetappBackupVault#delete}. |
-| <code><a href="#@cdktn/provider-google.netappBackupVault.NetappBackupVaultTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_backup_vault#update NetappBackupVault#update}. |
+| <code><a href="#@cdktn/provider-google.netappBackupVault.NetappBackupVaultTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/netapp_backup_vault#create NetappBackupVault#create}. |
+| <code><a href="#@cdktn/provider-google.netappBackupVault.NetappBackupVaultTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/netapp_backup_vault#delete NetappBackupVault#delete}. |
+| <code><a href="#@cdktn/provider-google.netappBackupVault.NetappBackupVaultTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/netapp_backup_vault#update NetappBackupVault#update}. |
 
 ---
 
@@ -1576,7 +1576,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_backup_vault#create NetappBackupVault#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/netapp_backup_vault#create NetappBackupVault#create}.
 
 ---
 
@@ -1588,7 +1588,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_backup_vault#delete NetappBackupVault#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/netapp_backup_vault#delete NetappBackupVault#delete}.
 
 ---
 
@@ -1600,7 +1600,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/netapp_backup_vault#update NetappBackupVault#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/netapp_backup_vault#update NetappBackupVault#update}.
 
 ---
 
@@ -1611,7 +1611,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.netappBackupVault.NetappBackupVaultBackupRetentionPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappbackupvault"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/netappbackupvault"
 
 netappbackupvault.NewNetappBackupVaultBackupRetentionPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetappBackupVaultBackupRetentionPolicyOutputReference
 ```
@@ -1998,7 +1998,7 @@ func InternalValue() NetappBackupVaultBackupRetentionPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.netappBackupVault.NetappBackupVaultTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/netappbackupvault"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/netappbackupvault"
 
 netappbackupvault.NewNetappBackupVaultTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetappBackupVaultTimeoutsOutputReference
 ```

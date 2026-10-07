@@ -4,7 +4,7 @@
 
 ### ComputeRegionDisk <a name="ComputeRegionDisk" id="@cdktn/provider-google.computeRegionDisk.ComputeRegionDisk"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_disk google_compute_region_disk}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_disk google_compute_region_disk}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionDisk.ComputeRegionDisk.Initializer"></a>
 
@@ -735,7 +735,7 @@ The construct id used in the generated config for the ComputeRegionDisk to impor
 
 The id of the existing ComputeRegionDisk that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_disk#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_disk#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1662,7 +1662,7 @@ public readonly disk: string;
 
 Primary disk for asynchronous disk replication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_disk#disk ComputeRegionDisk#disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_disk#disk ComputeRegionDisk#disk}
 
 ---
 
@@ -1697,12 +1697,12 @@ const computeRegionDiskConfig: computeRegionDisk.ComputeRegionDiskConfig = { ...
 | <code><a href="#@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskConfig.property.description">description</a></code> | <code>string</code> | An optional description of this resource. Provide this property when you create the resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskConfig.property.diskEncryptionKey">diskEncryptionKey</a></code> | <code><a href="#@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskDiskEncryptionKey">ComputeRegionDiskDiskEncryptionKey</a></code> | disk_encryption_key block. |
 | <code><a href="#@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskConfig.property.guestOsFeatures">guestOsFeatures</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskGuestOsFeatures">ComputeRegionDiskGuestOsFeatures</a>[]</code> | guest_os_features block. |
-| <code><a href="#@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_disk#id ComputeRegionDisk#id}. |
+| <code><a href="#@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_disk#id ComputeRegionDisk#id}. |
 | <code><a href="#@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskConfig.property.image">image</a></code> | <code>string</code> | The image from which to initialize this disk. |
 | <code><a href="#@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskConfig.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | Labels to apply to this disk.  A list of key->value pairs. |
 | <code><a href="#@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskConfig.property.licenses">licenses</a></code> | <code>string[]</code> | Any applicable license URI. |
 | <code><a href="#@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskConfig.property.physicalBlockSizeBytes">physicalBlockSizeBytes</a></code> | <code>number</code> | Physical block size of the persistent disk, in bytes. |
-| <code><a href="#@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_disk#project ComputeRegionDisk#project}. |
+| <code><a href="#@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_disk#project ComputeRegionDisk#project}. |
 | <code><a href="#@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskConfig.property.provisionedIops">provisionedIops</a></code> | <code>number</code> | Indicates how many IOPS to provision for the disk. |
 | <code><a href="#@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskConfig.property.provisionedThroughput">provisionedThroughput</a></code> | <code>number</code> | Indicates how much throughput to provision for the disk. |
 | <code><a href="#@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskConfig.property.region">region</a></code> | <code>string</code> | A reference to the region where the disk resides. |
@@ -1804,7 +1804,7 @@ first character must be a lowercase letter, and all following
 characters must be a dash, lowercase letter, or digit, except the last
 character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_disk#name ComputeRegionDisk#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_disk#name ComputeRegionDisk#name}
 
 ---
 
@@ -1818,7 +1818,7 @@ public readonly replicaZones: string[];
 
 URLs of the zones where the disk should be replicated to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_disk#replica_zones ComputeRegionDisk#replica_zones}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_disk#replica_zones ComputeRegionDisk#replica_zones}
 
 ---
 
@@ -1838,7 +1838,7 @@ For example:
   * READ_ONLY_SINGLE: The AccessMode means the disk can be attached to multiple instances in RO mode.
 The AccessMode is only valid for Hyperdisk disk types.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_disk#access_mode ComputeRegionDisk#access_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_disk#access_mode ComputeRegionDisk#access_mode}
 
 ---
 
@@ -1852,7 +1852,7 @@ public readonly asyncPrimaryDisk: ComputeRegionDiskAsyncPrimaryDisk;
 
 async_primary_disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_disk#async_primary_disk ComputeRegionDisk#async_primary_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_disk#async_primary_disk ComputeRegionDisk#async_primary_disk}
 
 ---
 
@@ -1869,7 +1869,7 @@ If set to true, a snapshot of the disk will be created before it is destroyed.
 If your disk is encrypted with customer managed encryption keys these will be reused for the snapshot creation.
 The name of the snapshot by default will be '{{disk-name}}-YYYYMMDD-HHmm'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_disk#create_snapshot_before_destroy ComputeRegionDisk#create_snapshot_before_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_disk#create_snapshot_before_destroy ComputeRegionDisk#create_snapshot_before_destroy}
 
 ---
 
@@ -1883,7 +1883,7 @@ public readonly createSnapshotBeforeDestroyPrefix: string;
 
 This will set a custom name prefix for the snapshot that's created when the disk is deleted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_disk#create_snapshot_before_destroy_prefix ComputeRegionDisk#create_snapshot_before_destroy_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_disk#create_snapshot_before_destroy_prefix ComputeRegionDisk#create_snapshot_before_destroy_prefix}
 
 ---
 
@@ -1905,7 +1905,7 @@ management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_disk#deletion_policy ComputeRegionDisk#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_disk#deletion_policy ComputeRegionDisk#deletion_policy}
 
 ---
 
@@ -1919,7 +1919,7 @@ public readonly description: string;
 
 An optional description of this resource. Provide this property when you create the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_disk#description ComputeRegionDisk#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_disk#description ComputeRegionDisk#description}
 
 ---
 
@@ -1933,7 +1933,7 @@ public readonly diskEncryptionKey: ComputeRegionDiskDiskEncryptionKey;
 
 disk_encryption_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_disk#disk_encryption_key ComputeRegionDisk#disk_encryption_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_disk#disk_encryption_key ComputeRegionDisk#disk_encryption_key}
 
 ---
 
@@ -1947,7 +1947,7 @@ public readonly guestOsFeatures: IResolvable | ComputeRegionDiskGuestOsFeatures[
 
 guest_os_features block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_disk#guest_os_features ComputeRegionDisk#guest_os_features}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_disk#guest_os_features ComputeRegionDisk#guest_os_features}
 
 ---
 
@@ -1959,7 +1959,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_disk#id ComputeRegionDisk#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_disk#id ComputeRegionDisk#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1986,7 +1986,7 @@ images names must include the family name. If they don't, use the
 For instance, the image 'centos-6-v20180104' includes its family name 'centos-6'.
 These images can be referred by family name here.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_disk#image ComputeRegionDisk#image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_disk#image ComputeRegionDisk#image}
 
 ---
 
@@ -2003,7 +2003,7 @@ Labels to apply to this disk.  A list of key->value pairs.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_disk#labels ComputeRegionDisk#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_disk#labels ComputeRegionDisk#labels}
 
 ---
 
@@ -2017,7 +2017,7 @@ public readonly licenses: string[];
 
 Any applicable license URI.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_disk#licenses ComputeRegionDisk#licenses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_disk#licenses ComputeRegionDisk#licenses}
 
 ---
 
@@ -2037,7 +2037,7 @@ are 4096 and 16384, other sizes may be added in the future.
 If an unsupported value is requested, the error message will list
 the supported values for the caller's project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_disk#physical_block_size_bytes ComputeRegionDisk#physical_block_size_bytes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_disk#physical_block_size_bytes ComputeRegionDisk#physical_block_size_bytes}
 
 ---
 
@@ -2049,7 +2049,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_disk#project ComputeRegionDisk#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_disk#project ComputeRegionDisk#project}.
 
 ---
 
@@ -2067,7 +2067,7 @@ This sets the number of I/O operations per second
 that the disk can handle. Values must be between 10,000 and 120,000.
 For more details, see the Extreme persistent disk [documentation](https://cloud.google.com/compute/docs/disks/extreme-persistent-disk).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_disk#provisioned_iops ComputeRegionDisk#provisioned_iops}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_disk#provisioned_iops ComputeRegionDisk#provisioned_iops}
 
 ---
 
@@ -2084,7 +2084,7 @@ Indicates how much throughput to provision for the disk.
 This sets the number of throughput
 mb per second that the disk can handle. Values must be greater than or equal to 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_disk#provisioned_throughput ComputeRegionDisk#provisioned_throughput}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_disk#provisioned_throughput ComputeRegionDisk#provisioned_throughput}
 
 ---
 
@@ -2098,7 +2098,7 @@ public readonly region: string;
 
 A reference to the region where the disk resides.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_disk#region ComputeRegionDisk#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_disk#region ComputeRegionDisk#region}
 
 ---
 
@@ -2121,7 +2121,7 @@ If you specify this field along with sourceImage or sourceSnapshot,
 the value of sizeGb must not be less than the size of the sourceImage
 or the size of the snapshot.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_disk#size ComputeRegionDisk#size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_disk#size ComputeRegionDisk#size}
 
 ---
 
@@ -2144,7 +2144,7 @@ valid values:
 * 'global/snapshots/snapshot'
 * 'snapshot'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_disk#snapshot ComputeRegionDisk#snapshot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_disk#snapshot ComputeRegionDisk#snapshot}
 
 ---
 
@@ -2168,7 +2168,7 @@ For example, the following are valid values:
 * zones/{zone}/disks/{disk}
 * regions/{region}/disks/{disk}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_disk#source_disk ComputeRegionDisk#source_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_disk#source_disk ComputeRegionDisk#source_disk}
 
 ---
 
@@ -2182,7 +2182,7 @@ public readonly sourceImageEncryptionKey: ComputeRegionDiskSourceImageEncryption
 
 source_image_encryption_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_disk#source_image_encryption_key ComputeRegionDisk#source_image_encryption_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_disk#source_image_encryption_key ComputeRegionDisk#source_image_encryption_key}
 
 ---
 
@@ -2196,7 +2196,7 @@ public readonly sourceSnapshotEncryptionKey: ComputeRegionDiskSourceSnapshotEncr
 
 source_snapshot_encryption_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_disk#source_snapshot_encryption_key ComputeRegionDisk#source_snapshot_encryption_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_disk#source_snapshot_encryption_key ComputeRegionDisk#source_snapshot_encryption_key}
 
 ---
 
@@ -2210,7 +2210,7 @@ public readonly timeouts: ComputeRegionDiskTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_disk#timeouts ComputeRegionDisk#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_disk#timeouts ComputeRegionDisk#timeouts}
 
 ---
 
@@ -2226,7 +2226,7 @@ URL of the disk type resource describing which disk type to use to create the di
 
 Provide this when creating the disk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_disk#type ComputeRegionDisk#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_disk#type ComputeRegionDisk#type}
 
 ---
 
@@ -2246,7 +2246,11 @@ const computeRegionDiskDiskEncryptionKey: computeRegionDisk.ComputeRegionDiskDis
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskDiskEncryptionKey.property.kmsKeyName">kmsKeyName</a></code> | <code>string</code> | The name of the encryption key that is stored in Google Cloud KMS. |
 | <code><a href="#@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskDiskEncryptionKey.property.rawKey">rawKey</a></code> | <code>string</code> | Specifies a 256-bit customer-supplied encryption key, encoded in RFC 4648 base64 to either encrypt or decrypt this resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskDiskEncryptionKey.property.rawKeyWo">rawKeyWo</a></code> | <code>string</code> | Specifies a 256-bit customer-supplied encryption key, encoded in RFC 4648 base64 to either encrypt or decrypt this resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskDiskEncryptionKey.property.rawKeyWoVersion">rawKeyWoVersion</a></code> | <code>string</code> | Triggers update of 'raw_key_wo' write-only. |
 | <code><a href="#@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskDiskEncryptionKey.property.rsaEncryptedKey">rsaEncryptedKey</a></code> | <code>string</code> | Specifies an RFC 4648 base64 encoded, RSA-wrapped 2048-bit customer-supplied encryption key to either encrypt or decrypt this resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskDiskEncryptionKey.property.rsaEncryptedKeyWo">rsaEncryptedKeyWo</a></code> | <code>string</code> | Specifies an RFC 4648 base64 encoded, RSA-wrapped 2048-bit customer-supplied encryption key to either encrypt or decrypt this resource. |
+| <code><a href="#@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskDiskEncryptionKey.property.rsaEncryptedKeyWoVersion">rsaEncryptedKeyWoVersion</a></code> | <code>string</code> | Triggers update of 'rsa_encrypted_key_wo' write-only. |
 
 ---
 
@@ -2260,7 +2264,7 @@ public readonly kmsKeyName: string;
 
 The name of the encryption key that is stored in Google Cloud KMS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_disk#kms_key_name ComputeRegionDisk#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_disk#kms_key_name ComputeRegionDisk#kms_key_name}
 
 ---
 
@@ -2274,7 +2278,37 @@ public readonly rawKey: string;
 
 Specifies a 256-bit customer-supplied encryption key, encoded in RFC 4648 base64 to either encrypt or decrypt this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_disk#raw_key ComputeRegionDisk#raw_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_disk#raw_key ComputeRegionDisk#raw_key}
+
+---
+
+##### `rawKeyWo`<sup>Optional</sup> <a name="rawKeyWo" id="@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskDiskEncryptionKey.property.rawKeyWo"></a>
+
+```typescript
+public readonly rawKeyWo: string;
+```
+
+- *Type:* string
+
+Specifies a 256-bit customer-supplied encryption key, encoded in RFC 4648 base64 to either encrypt or decrypt this resource.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_disk#raw_key_wo ComputeRegionDisk#raw_key_wo}
+
+---
+
+##### `rawKeyWoVersion`<sup>Optional</sup> <a name="rawKeyWoVersion" id="@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskDiskEncryptionKey.property.rawKeyWoVersion"></a>
+
+```typescript
+public readonly rawKeyWoVersion: string;
+```
+
+- *Type:* string
+
+Triggers update of 'raw_key_wo' write-only.
+
+Increment this value when an update to 'raw_key_wo' is needed. For more info see [updating write-only arguments](/docs/providers/google/guides/using_write_only_arguments.html#updating-write-only-arguments)
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_disk#raw_key_wo_version ComputeRegionDisk#raw_key_wo_version}
 
 ---
 
@@ -2290,7 +2324,39 @@ Specifies an RFC 4648 base64 encoded, RSA-wrapped 2048-bit customer-supplied enc
 
 You can provide either the rawKey or the rsaEncryptedKey.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_disk#rsa_encrypted_key ComputeRegionDisk#rsa_encrypted_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_disk#rsa_encrypted_key ComputeRegionDisk#rsa_encrypted_key}
+
+---
+
+##### `rsaEncryptedKeyWo`<sup>Optional</sup> <a name="rsaEncryptedKeyWo" id="@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskDiskEncryptionKey.property.rsaEncryptedKeyWo"></a>
+
+```typescript
+public readonly rsaEncryptedKeyWo: string;
+```
+
+- *Type:* string
+
+Specifies an RFC 4648 base64 encoded, RSA-wrapped 2048-bit customer-supplied encryption key to either encrypt or decrypt this resource.
+
+You can provide either the rawKey or the rsaEncryptedKey.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_disk#rsa_encrypted_key_wo ComputeRegionDisk#rsa_encrypted_key_wo}
+
+---
+
+##### `rsaEncryptedKeyWoVersion`<sup>Optional</sup> <a name="rsaEncryptedKeyWoVersion" id="@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskDiskEncryptionKey.property.rsaEncryptedKeyWoVersion"></a>
+
+```typescript
+public readonly rsaEncryptedKeyWoVersion: string;
+```
+
+- *Type:* string
+
+Triggers update of 'rsa_encrypted_key_wo' write-only.
+
+Increment this value when an update to 'rsa_encrypted_key_wo' is needed. For more info see [updating write-only arguments](/docs/providers/google/guides/using_write_only_arguments.html#updating-write-only-arguments)
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_disk#rsa_encrypted_key_wo_version ComputeRegionDisk#rsa_encrypted_key_wo_version}
 
 ---
 
@@ -2324,7 +2390,7 @@ The type of supported feature.
 
 Read [Enabling guest operating system features](https://cloud.google.com/compute/docs/images/create-delete-deprecate-private-images#guest-os-features) to see a list of available options. Possible values: ["MULTI_IP_SUBNET", "SECURE_BOOT", "SEV_CAPABLE", "UEFI_COMPATIBLE", "VIRTIO_SCSI_MULTIQUEUE", "WINDOWS", "GVNIC", "SEV_LIVE_MIGRATABLE", "SEV_SNP_CAPABLE", "SUSPEND_RESUME_COMPATIBLE", "TDX_CAPABLE", "SEV_LIVE_MIGRATABLE_V2", "SNP_SVSM_CAPABLE"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_disk#type ComputeRegionDisk#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_disk#type ComputeRegionDisk#type}
 
 ---
 
@@ -2359,7 +2425,7 @@ public readonly kmsKeyName: string;
 
 The name of the encryption key that is stored in Google Cloud KMS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_disk#kms_key_name ComputeRegionDisk#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_disk#kms_key_name ComputeRegionDisk#kms_key_name}
 
 ---
 
@@ -2375,7 +2441,7 @@ The service account used for the encryption request for the given KMS key.
 
 If absent, the Compute Engine Service Agent service account is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_disk#kms_key_service_account ComputeRegionDisk#kms_key_service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_disk#kms_key_service_account ComputeRegionDisk#kms_key_service_account}
 
 ---
 
@@ -2389,7 +2455,7 @@ public readonly rawKey: string;
 
 Specifies a 256-bit customer-supplied encryption key, encoded in RFC 4648 base64 to either encrypt or decrypt this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_disk#raw_key ComputeRegionDisk#raw_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_disk#raw_key ComputeRegionDisk#raw_key}
 
 ---
 
@@ -2405,7 +2471,7 @@ Specifies an RFC 4648 base64 encoded, RSA-wrapped 2048-bit customer-supplied enc
 
 You can provide either the rawKey or the rsaEncryptedKey.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_disk#rsa_encrypted_key ComputeRegionDisk#rsa_encrypted_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_disk#rsa_encrypted_key ComputeRegionDisk#rsa_encrypted_key}
 
 ---
 
@@ -2437,7 +2503,7 @@ public readonly rawKey: string;
 
 Specifies a 256-bit customer-supplied encryption key, encoded in RFC 4648 base64 to either encrypt or decrypt this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_disk#raw_key ComputeRegionDisk#raw_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_disk#raw_key ComputeRegionDisk#raw_key}
 
 ---
 
@@ -2455,9 +2521,9 @@ const computeRegionDiskTimeouts: computeRegionDisk.ComputeRegionDiskTimeouts = {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_disk#create ComputeRegionDisk#create}. |
-| <code><a href="#@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_disk#delete ComputeRegionDisk#delete}. |
-| <code><a href="#@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_disk#update ComputeRegionDisk#update}. |
+| <code><a href="#@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_disk#create ComputeRegionDisk#create}. |
+| <code><a href="#@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_disk#delete ComputeRegionDisk#delete}. |
+| <code><a href="#@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_disk#update ComputeRegionDisk#update}. |
 
 ---
 
@@ -2469,7 +2535,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_disk#create ComputeRegionDisk#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_disk#create ComputeRegionDisk#create}.
 
 ---
 
@@ -2481,7 +2547,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_disk#delete ComputeRegionDisk#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_disk#delete ComputeRegionDisk#delete}.
 
 ---
 
@@ -2493,7 +2559,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_disk#update ComputeRegionDisk#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_disk#update ComputeRegionDisk#update}.
 
 ---
 
@@ -2822,7 +2888,11 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskDiskEncryptionKeyOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskDiskEncryptionKeyOutputReference.resetKmsKeyName">resetKmsKeyName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskDiskEncryptionKeyOutputReference.resetRawKey">resetRawKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskDiskEncryptionKeyOutputReference.resetRawKeyWo">resetRawKeyWo</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskDiskEncryptionKeyOutputReference.resetRawKeyWoVersion">resetRawKeyWoVersion</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskDiskEncryptionKeyOutputReference.resetRsaEncryptedKey">resetRsaEncryptedKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskDiskEncryptionKeyOutputReference.resetRsaEncryptedKeyWo">resetRsaEncryptedKeyWo</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskDiskEncryptionKeyOutputReference.resetRsaEncryptedKeyWoVersion">resetRsaEncryptedKeyWoVersion</a></code> | *No description.* |
 
 ---
 
@@ -2988,10 +3058,34 @@ public resetKmsKeyName(): void
 public resetRawKey(): void
 ```
 
+##### `resetRawKeyWo` <a name="resetRawKeyWo" id="@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskDiskEncryptionKeyOutputReference.resetRawKeyWo"></a>
+
+```typescript
+public resetRawKeyWo(): void
+```
+
+##### `resetRawKeyWoVersion` <a name="resetRawKeyWoVersion" id="@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskDiskEncryptionKeyOutputReference.resetRawKeyWoVersion"></a>
+
+```typescript
+public resetRawKeyWoVersion(): void
+```
+
 ##### `resetRsaEncryptedKey` <a name="resetRsaEncryptedKey" id="@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskDiskEncryptionKeyOutputReference.resetRsaEncryptedKey"></a>
 
 ```typescript
 public resetRsaEncryptedKey(): void
+```
+
+##### `resetRsaEncryptedKeyWo` <a name="resetRsaEncryptedKeyWo" id="@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskDiskEncryptionKeyOutputReference.resetRsaEncryptedKeyWo"></a>
+
+```typescript
+public resetRsaEncryptedKeyWo(): void
+```
+
+##### `resetRsaEncryptedKeyWoVersion` <a name="resetRsaEncryptedKeyWoVersion" id="@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskDiskEncryptionKeyOutputReference.resetRsaEncryptedKeyWoVersion"></a>
+
+```typescript
+public resetRsaEncryptedKeyWoVersion(): void
 ```
 
 
@@ -3004,10 +3098,18 @@ public resetRsaEncryptedKey(): void
 | <code><a href="#@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskDiskEncryptionKeyOutputReference.property.sha256">sha256</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskDiskEncryptionKeyOutputReference.property.kmsKeyNameInput">kmsKeyNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskDiskEncryptionKeyOutputReference.property.rawKeyInput">rawKeyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskDiskEncryptionKeyOutputReference.property.rawKeyWoInput">rawKeyWoInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskDiskEncryptionKeyOutputReference.property.rawKeyWoVersionInput">rawKeyWoVersionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskDiskEncryptionKeyOutputReference.property.rsaEncryptedKeyInput">rsaEncryptedKeyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskDiskEncryptionKeyOutputReference.property.rsaEncryptedKeyWoInput">rsaEncryptedKeyWoInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskDiskEncryptionKeyOutputReference.property.rsaEncryptedKeyWoVersionInput">rsaEncryptedKeyWoVersionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskDiskEncryptionKeyOutputReference.property.kmsKeyName">kmsKeyName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskDiskEncryptionKeyOutputReference.property.rawKey">rawKey</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskDiskEncryptionKeyOutputReference.property.rawKeyWo">rawKeyWo</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskDiskEncryptionKeyOutputReference.property.rawKeyWoVersion">rawKeyWoVersion</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskDiskEncryptionKeyOutputReference.property.rsaEncryptedKey">rsaEncryptedKey</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskDiskEncryptionKeyOutputReference.property.rsaEncryptedKeyWo">rsaEncryptedKeyWo</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskDiskEncryptionKeyOutputReference.property.rsaEncryptedKeyWoVersion">rsaEncryptedKeyWoVersion</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskDiskEncryptionKeyOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskDiskEncryptionKey">ComputeRegionDiskDiskEncryptionKey</a></code> | *No description.* |
 
 ---
@@ -3066,10 +3168,50 @@ public readonly rawKeyInput: string;
 
 ---
 
+##### `rawKeyWoInput`<sup>Optional</sup> <a name="rawKeyWoInput" id="@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskDiskEncryptionKeyOutputReference.property.rawKeyWoInput"></a>
+
+```typescript
+public readonly rawKeyWoInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `rawKeyWoVersionInput`<sup>Optional</sup> <a name="rawKeyWoVersionInput" id="@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskDiskEncryptionKeyOutputReference.property.rawKeyWoVersionInput"></a>
+
+```typescript
+public readonly rawKeyWoVersionInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `rsaEncryptedKeyInput`<sup>Optional</sup> <a name="rsaEncryptedKeyInput" id="@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskDiskEncryptionKeyOutputReference.property.rsaEncryptedKeyInput"></a>
 
 ```typescript
 public readonly rsaEncryptedKeyInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `rsaEncryptedKeyWoInput`<sup>Optional</sup> <a name="rsaEncryptedKeyWoInput" id="@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskDiskEncryptionKeyOutputReference.property.rsaEncryptedKeyWoInput"></a>
+
+```typescript
+public readonly rsaEncryptedKeyWoInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `rsaEncryptedKeyWoVersionInput`<sup>Optional</sup> <a name="rsaEncryptedKeyWoVersionInput" id="@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskDiskEncryptionKeyOutputReference.property.rsaEncryptedKeyWoVersionInput"></a>
+
+```typescript
+public readonly rsaEncryptedKeyWoVersionInput: string;
 ```
 
 - *Type:* string
@@ -3096,10 +3238,54 @@ public readonly rawKey: string;
 
 ---
 
+##### ~~`rawKeyWo`~~<sup>Required</sup> <a name="rawKeyWo" id="@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskDiskEncryptionKeyOutputReference.property.rawKeyWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+
+```typescript
+public readonly rawKeyWo: string;
+```
+
+- *Type:* string
+
+---
+
+##### `rawKeyWoVersion`<sup>Required</sup> <a name="rawKeyWoVersion" id="@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskDiskEncryptionKeyOutputReference.property.rawKeyWoVersion"></a>
+
+```typescript
+public readonly rawKeyWoVersion: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `rsaEncryptedKey`<sup>Required</sup> <a name="rsaEncryptedKey" id="@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskDiskEncryptionKeyOutputReference.property.rsaEncryptedKey"></a>
 
 ```typescript
 public readonly rsaEncryptedKey: string;
+```
+
+- *Type:* string
+
+---
+
+##### ~~`rsaEncryptedKeyWo`~~<sup>Required</sup> <a name="rsaEncryptedKeyWo" id="@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskDiskEncryptionKeyOutputReference.property.rsaEncryptedKeyWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+
+```typescript
+public readonly rsaEncryptedKeyWo: string;
+```
+
+- *Type:* string
+
+---
+
+##### `rsaEncryptedKeyWoVersion`<sup>Required</sup> <a name="rsaEncryptedKeyWoVersion" id="@cdktn/provider-google.computeRegionDisk.ComputeRegionDiskDiskEncryptionKeyOutputReference.property.rsaEncryptedKeyWoVersion"></a>
+
+```typescript
+public readonly rsaEncryptedKeyWoVersion: string;
 ```
 
 - *Type:* string

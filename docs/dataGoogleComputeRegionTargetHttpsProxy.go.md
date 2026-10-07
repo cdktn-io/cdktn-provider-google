@@ -4,12 +4,12 @@
 
 ### DataGoogleComputeRegionTargetHttpsProxy <a name="DataGoogleComputeRegionTargetHttpsProxy" id="@cdktn/provider-google.dataGoogleComputeRegionTargetHttpsProxy.DataGoogleComputeRegionTargetHttpsProxy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_region_target_https_proxy google_compute_region_target_https_proxy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/compute_region_target_https_proxy google_compute_region_target_https_proxy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeRegionTargetHttpsProxy.DataGoogleComputeRegionTargetHttpsProxy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregiontargethttpsproxy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputeregiontargethttpsproxy"
 
 datagooglecomputeregiontargethttpsproxy.NewDataGoogleComputeRegionTargetHttpsProxy(scope Construct, id *string, config DataGoogleComputeRegionTargetHttpsProxyConfig) DataGoogleComputeRegionTargetHttpsProxy
 ```
@@ -319,7 +319,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleComputeRegionTargetHttpsProxy.DataGoogleComputeRegionTargetHttpsProxy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregiontargethttpsproxy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputeregiontargethttpsproxy"
 
 datagooglecomputeregiontargethttpsproxy.DataGoogleComputeRegionTargetHttpsProxy_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleComputeRegionTargetHttpsProxy.DataGoogleComputeRegionTargetHttpsProxy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregiontargethttpsproxy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputeregiontargethttpsproxy"
 
 datagooglecomputeregiontargethttpsproxy.DataGoogleComputeRegionTargetHttpsProxy_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagooglecomputeregiontargethttpsproxy.DataGoogleComputeRegionTargetHttpsProxy_
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleComputeRegionTargetHttpsProxy.DataGoogleComputeRegionTargetHttpsProxy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregiontargethttpsproxy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputeregiontargethttpsproxy"
 
 datagooglecomputeregiontargethttpsproxy.DataGoogleComputeRegionTargetHttpsProxy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ datagooglecomputeregiontargethttpsproxy.DataGoogleComputeRegionTargetHttpsProxy_
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleComputeRegionTargetHttpsProxy.DataGoogleComputeRegionTargetHttpsProxy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregiontargethttpsproxy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputeregiontargethttpsproxy"
 
 datagooglecomputeregiontargethttpsproxy.DataGoogleComputeRegionTargetHttpsProxy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -408,7 +408,7 @@ The construct id used in the generated config for the DataGoogleComputeRegionTar
 
 The id of the existing DataGoogleComputeRegionTargetHttpsProxy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_region_target_https_proxy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/compute_region_target_https_proxy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -795,7 +795,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeRegionTargetHttpsProxy.DataGoogleComputeRegionTargetHttpsProxyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputeregiontargethttpsproxy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputeregiontargethttpsproxy"
 
 &datagooglecomputeregiontargethttpsproxy.DataGoogleComputeRegionTargetHttpsProxyConfig {
 	Connection: interface{},
@@ -824,8 +824,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomput
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeRegionTargetHttpsProxy.DataGoogleComputeRegionTargetHttpsProxyConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeRegionTargetHttpsProxy.DataGoogleComputeRegionTargetHttpsProxyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeRegionTargetHttpsProxy.DataGoogleComputeRegionTargetHttpsProxyConfig.property.name">Name</a></code> | <code>*string</code> | Name of the resource. |
-| <code><a href="#@cdktn/provider-google.dataGoogleComputeRegionTargetHttpsProxy.DataGoogleComputeRegionTargetHttpsProxyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_region_target_https_proxy#id DataGoogleComputeRegionTargetHttpsProxy#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleComputeRegionTargetHttpsProxy.DataGoogleComputeRegionTargetHttpsProxyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_region_target_https_proxy#project DataGoogleComputeRegionTargetHttpsProxy#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeRegionTargetHttpsProxy.DataGoogleComputeRegionTargetHttpsProxyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/compute_region_target_https_proxy#id DataGoogleComputeRegionTargetHttpsProxy#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeRegionTargetHttpsProxy.DataGoogleComputeRegionTargetHttpsProxyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/compute_region_target_https_proxy#project DataGoogleComputeRegionTargetHttpsProxy#project}. |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeRegionTargetHttpsProxy.DataGoogleComputeRegionTargetHttpsProxyConfig.property.region">Region</a></code> | <code>*string</code> | The Region in which the created target https proxy should reside. |
 
 ---
@@ -918,7 +918,7 @@ first character must be a lowercase letter, and all following
 characters must be a dash, lowercase letter, or digit, except the last
 character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_region_target_https_proxy#name DataGoogleComputeRegionTargetHttpsProxy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/compute_region_target_https_proxy#name DataGoogleComputeRegionTargetHttpsProxy#name}
 
 ---
 
@@ -930,7 +930,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_region_target_https_proxy#id DataGoogleComputeRegionTargetHttpsProxy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/compute_region_target_https_proxy#id DataGoogleComputeRegionTargetHttpsProxy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -945,7 +945,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_region_target_https_proxy#project DataGoogleComputeRegionTargetHttpsProxy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/compute_region_target_https_proxy#project DataGoogleComputeRegionTargetHttpsProxy#project}.
 
 ---
 
@@ -961,7 +961,7 @@ The Region in which the created target https proxy should reside.
 
 If it is not provided, the provider region is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_region_target_https_proxy#region DataGoogleComputeRegionTargetHttpsProxy#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/compute_region_target_https_proxy#region DataGoogleComputeRegionTargetHttpsProxy#region}
 
 ---
 

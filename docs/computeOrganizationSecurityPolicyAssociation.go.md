@@ -4,12 +4,12 @@
 
 ### ComputeOrganizationSecurityPolicyAssociation <a name="ComputeOrganizationSecurityPolicyAssociation" id="@cdktn/provider-google.computeOrganizationSecurityPolicyAssociation.ComputeOrganizationSecurityPolicyAssociation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_organization_security_policy_association google_compute_organization_security_policy_association}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_organization_security_policy_association google_compute_organization_security_policy_association}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeOrganizationSecurityPolicyAssociation.ComputeOrganizationSecurityPolicyAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeorganizationsecuritypolicyassociation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeorganizationsecuritypolicyassociation"
 
 computeorganizationsecuritypolicyassociation.NewComputeOrganizationSecurityPolicyAssociation(scope Construct, id *string, config ComputeOrganizationSecurityPolicyAssociationConfig) ComputeOrganizationSecurityPolicyAssociation
 ```
@@ -448,7 +448,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeOrganizationSecurityPolicyAssociation.ComputeOrganizationSecurityPolicyAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeorganizationsecuritypolicyassociation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeorganizationsecuritypolicyassociation"
 
 computeorganizationsecuritypolicyassociation.ComputeOrganizationSecurityPolicyAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeOrganizationSecurityPolicyAssociation.ComputeOrganizationSecurityPolicyAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeorganizationsecuritypolicyassociation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeorganizationsecuritypolicyassociation"
 
 computeorganizationsecuritypolicyassociation.ComputeOrganizationSecurityPolicyAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ computeorganizationsecuritypolicyassociation.ComputeOrganizationSecurityPolicyAs
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeOrganizationSecurityPolicyAssociation.ComputeOrganizationSecurityPolicyAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeorganizationsecuritypolicyassociation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeorganizationsecuritypolicyassociation"
 
 computeorganizationsecuritypolicyassociation.ComputeOrganizationSecurityPolicyAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ computeorganizationsecuritypolicyassociation.ComputeOrganizationSecurityPolicyAs
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeOrganizationSecurityPolicyAssociation.ComputeOrganizationSecurityPolicyAssociation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeorganizationsecuritypolicyassociation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeorganizationsecuritypolicyassociation"
 
 computeorganizationsecuritypolicyassociation.ComputeOrganizationSecurityPolicyAssociation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -537,7 +537,7 @@ The construct id used in the generated config for the ComputeOrganizationSecurit
 
 The id of the existing ComputeOrganizationSecurityPolicyAssociation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_organization_security_policy_association#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_organization_security_policy_association#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -924,7 +924,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeOrganizationSecurityPolicyAssociation.ComputeOrganizationSecurityPolicyAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeorganizationsecuritypolicyassociation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeorganizationsecuritypolicyassociation"
 
 &computeorganizationsecuritypolicyassociation.ComputeOrganizationSecurityPolicyAssociationConfig {
 	Connection: interface{},
@@ -941,7 +941,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeorganizat
 	ExcludedFolders: *[]*string,
 	ExcludedProjects: *[]*string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeOrganizationSecurityPolicyAssociation.ComputeOrganizationSecurityPolicyAssociationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.computeOrganizationSecurityPolicyAssociation.ComputeOrganizationSecurityPolicyAssociationTimeouts,
 }
 ```
 
@@ -962,7 +962,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeorganizat
 | <code><a href="#@cdktn/provider-google.computeOrganizationSecurityPolicyAssociation.ComputeOrganizationSecurityPolicyAssociationConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.computeOrganizationSecurityPolicyAssociation.ComputeOrganizationSecurityPolicyAssociationConfig.property.excludedFolders">ExcludedFolders</a></code> | <code>*[]*string</code> | A list of folders to exclude from the security policy. |
 | <code><a href="#@cdktn/provider-google.computeOrganizationSecurityPolicyAssociation.ComputeOrganizationSecurityPolicyAssociationConfig.property.excludedProjects">ExcludedProjects</a></code> | <code>*[]*string</code> | A list of projects to exclude from the security policy. |
-| <code><a href="#@cdktn/provider-google.computeOrganizationSecurityPolicyAssociation.ComputeOrganizationSecurityPolicyAssociationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_organization_security_policy_association#id ComputeOrganizationSecurityPolicyAssociation#id}. |
+| <code><a href="#@cdktn/provider-google.computeOrganizationSecurityPolicyAssociation.ComputeOrganizationSecurityPolicyAssociationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_organization_security_policy_association#id ComputeOrganizationSecurityPolicyAssociation#id}. |
 | <code><a href="#@cdktn/provider-google.computeOrganizationSecurityPolicyAssociation.ComputeOrganizationSecurityPolicyAssociationConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeOrganizationSecurityPolicyAssociation.ComputeOrganizationSecurityPolicyAssociationTimeouts">ComputeOrganizationSecurityPolicyAssociationTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1047,7 +1047,7 @@ AttachmentId *string
 
 The resource that the security policy is attached to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_organization_security_policy_association#attachment_id ComputeOrganizationSecurityPolicyAssociation#attachment_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_organization_security_policy_association#attachment_id ComputeOrganizationSecurityPolicyAssociation#attachment_id}
 
 ---
 
@@ -1061,7 +1061,7 @@ Name *string
 
 The name for an association.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_organization_security_policy_association#name ComputeOrganizationSecurityPolicyAssociation#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_organization_security_policy_association#name ComputeOrganizationSecurityPolicyAssociation#name}
 
 ---
 
@@ -1075,7 +1075,7 @@ PolicyId *string
 
 The security policy ID of the association.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_organization_security_policy_association#policy_id ComputeOrganizationSecurityPolicyAssociation#policy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_organization_security_policy_association#policy_id ComputeOrganizationSecurityPolicyAssociation#policy_id}
 
 ---
 
@@ -1096,7 +1096,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_organization_security_policy_association#deletion_policy ComputeOrganizationSecurityPolicyAssociation#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_organization_security_policy_association#deletion_policy ComputeOrganizationSecurityPolicyAssociation#deletion_policy}
 
 ---
 
@@ -1110,7 +1110,7 @@ ExcludedFolders *[]*string
 
 A list of folders to exclude from the security policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_organization_security_policy_association#excluded_folders ComputeOrganizationSecurityPolicyAssociation#excluded_folders}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_organization_security_policy_association#excluded_folders ComputeOrganizationSecurityPolicyAssociation#excluded_folders}
 
 ---
 
@@ -1124,7 +1124,7 @@ ExcludedProjects *[]*string
 
 A list of projects to exclude from the security policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_organization_security_policy_association#excluded_projects ComputeOrganizationSecurityPolicyAssociation#excluded_projects}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_organization_security_policy_association#excluded_projects ComputeOrganizationSecurityPolicyAssociation#excluded_projects}
 
 ---
 
@@ -1136,7 +1136,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_organization_security_policy_association#id ComputeOrganizationSecurityPolicyAssociation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_organization_security_policy_association#id ComputeOrganizationSecurityPolicyAssociation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1153,7 +1153,7 @@ Timeouts ComputeOrganizationSecurityPolicyAssociationTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_organization_security_policy_association#timeouts ComputeOrganizationSecurityPolicyAssociation#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_organization_security_policy_association#timeouts ComputeOrganizationSecurityPolicyAssociation#timeouts}
 
 ---
 
@@ -1162,7 +1162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeOrganizationSecurityPolicyAssociation.ComputeOrganizationSecurityPolicyAssociationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeorganizationsecuritypolicyassociation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeorganizationsecuritypolicyassociation"
 
 &computeorganizationsecuritypolicyassociation.ComputeOrganizationSecurityPolicyAssociationTimeouts {
 	Create: *string,
@@ -1174,8 +1174,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeorganizat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeOrganizationSecurityPolicyAssociation.ComputeOrganizationSecurityPolicyAssociationTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_organization_security_policy_association#create ComputeOrganizationSecurityPolicyAssociation#create}. |
-| <code><a href="#@cdktn/provider-google.computeOrganizationSecurityPolicyAssociation.ComputeOrganizationSecurityPolicyAssociationTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_organization_security_policy_association#delete ComputeOrganizationSecurityPolicyAssociation#delete}. |
+| <code><a href="#@cdktn/provider-google.computeOrganizationSecurityPolicyAssociation.ComputeOrganizationSecurityPolicyAssociationTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_organization_security_policy_association#create ComputeOrganizationSecurityPolicyAssociation#create}. |
+| <code><a href="#@cdktn/provider-google.computeOrganizationSecurityPolicyAssociation.ComputeOrganizationSecurityPolicyAssociationTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_organization_security_policy_association#delete ComputeOrganizationSecurityPolicyAssociation#delete}. |
 
 ---
 
@@ -1187,7 +1187,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_organization_security_policy_association#create ComputeOrganizationSecurityPolicyAssociation#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_organization_security_policy_association#create ComputeOrganizationSecurityPolicyAssociation#create}.
 
 ---
 
@@ -1199,7 +1199,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_organization_security_policy_association#delete ComputeOrganizationSecurityPolicyAssociation#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_organization_security_policy_association#delete ComputeOrganizationSecurityPolicyAssociation#delete}.
 
 ---
 
@@ -1210,7 +1210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeOrganizationSecurityPolicyAssociation.ComputeOrganizationSecurityPolicyAssociationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeorganizationsecuritypolicyassociation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeorganizationsecuritypolicyassociation"
 
 computeorganizationsecuritypolicyassociation.NewComputeOrganizationSecurityPolicyAssociationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeOrganizationSecurityPolicyAssociationTimeoutsOutputReference
 ```

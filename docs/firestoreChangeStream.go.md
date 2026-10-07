@@ -4,12 +4,12 @@
 
 ### FirestoreChangeStream <a name="FirestoreChangeStream" id="@cdktn/provider-google.firestoreChangeStream.FirestoreChangeStream"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/firestore_change_stream google_firestore_change_stream}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/firestore_change_stream google_firestore_change_stream}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firestoreChangeStream.FirestoreChangeStream.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firestorechangestream"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/firestorechangestream"
 
 firestorechangestream.NewFirestoreChangeStream(scope Construct, id *string, config FirestoreChangeStreamConfig) FirestoreChangeStream
 ```
@@ -488,7 +488,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.firestoreChangeStream.FirestoreChangeStream.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firestorechangestream"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/firestorechangestream"
 
 firestorechangestream.FirestoreChangeStream_IsConstruct(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.firestoreChangeStream.FirestoreChangeStream.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firestorechangestream"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/firestorechangestream"
 
 firestorechangestream.FirestoreChangeStream_IsTerraformElement(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ firestorechangestream.FirestoreChangeStream_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.firestoreChangeStream.FirestoreChangeStream.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firestorechangestream"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/firestorechangestream"
 
 firestorechangestream.FirestoreChangeStream_IsTerraformResource(x interface{}) *bool
 ```
@@ -548,7 +548,7 @@ firestorechangestream.FirestoreChangeStream_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.firestoreChangeStream.FirestoreChangeStream.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firestorechangestream"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/firestorechangestream"
 
 firestorechangestream.FirestoreChangeStream_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -577,7 +577,7 @@ The construct id used in the generated config for the FirestoreChangeStream to i
 
 The id of the existing FirestoreChangeStream that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/firestore_change_stream#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/firestore_change_stream#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1019,7 +1019,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firestoreChangeStream.FirestoreChangeStreamCollectionGroupScope.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firestorechangestream"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/firestorechangestream"
 
 &firestorechangestream.FirestoreChangeStreamCollectionGroupScope {
 	CollectionGroupId: *string,
@@ -1044,7 +1044,7 @@ CollectionGroupId *string
 
 The ID of the collection group to track.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/firestore_change_stream#collection_group_id FirestoreChangeStream#collection_group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/firestore_change_stream#collection_group_id FirestoreChangeStream#collection_group_id}
 
 ---
 
@@ -1053,7 +1053,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firestoreChangeStream.FirestoreChangeStreamConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firestorechangestream"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/firestorechangestream"
 
 &firestorechangestream.FirestoreChangeStreamConfig {
 	Connection: interface{},
@@ -1065,13 +1065,13 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firestorechanges
 	Provisioners: *[]interface{},
 	Name: *string,
 	RetentionPeriod: *string,
-	CollectionGroupScope: github.com/cdktn-io/cdktn-provider-google-go/google/v20.firestoreChangeStream.FirestoreChangeStreamCollectionGroupScope,
+	CollectionGroupScope: github.com/cdktn-io/cdktn-provider-google-go/google/v21.firestoreChangeStream.FirestoreChangeStreamCollectionGroupScope,
 	Database: *string,
-	DatabaseScope: github.com/cdktn-io/cdktn-provider-google-go/google/v20.firestoreChangeStream.FirestoreChangeStreamDatabaseScope,
+	DatabaseScope: github.com/cdktn-io/cdktn-provider-google-go/google/v21.firestoreChangeStream.FirestoreChangeStreamDatabaseScope,
 	DeletionPolicy: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.firestoreChangeStream.FirestoreChangeStreamTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.firestoreChangeStream.FirestoreChangeStreamTimeouts,
 }
 ```
 
@@ -1092,8 +1092,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firestorechanges
 | <code><a href="#@cdktn/provider-google.firestoreChangeStream.FirestoreChangeStreamConfig.property.database">Database</a></code> | <code>*string</code> | The Firestore database ID. Defaults to '"(default)"'. |
 | <code><a href="#@cdktn/provider-google.firestoreChangeStream.FirestoreChangeStreamConfig.property.databaseScope">DatabaseScope</a></code> | <code><a href="#@cdktn/provider-google.firestoreChangeStream.FirestoreChangeStreamDatabaseScope">FirestoreChangeStreamDatabaseScope</a></code> | database_scope block. |
 | <code><a href="#@cdktn/provider-google.firestoreChangeStream.FirestoreChangeStreamConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.firestoreChangeStream.FirestoreChangeStreamConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/firestore_change_stream#id FirestoreChangeStream#id}. |
-| <code><a href="#@cdktn/provider-google.firestoreChangeStream.FirestoreChangeStreamConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/firestore_change_stream#project FirestoreChangeStream#project}. |
+| <code><a href="#@cdktn/provider-google.firestoreChangeStream.FirestoreChangeStreamConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/firestore_change_stream#id FirestoreChangeStream#id}. |
+| <code><a href="#@cdktn/provider-google.firestoreChangeStream.FirestoreChangeStreamConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/firestore_change_stream#project FirestoreChangeStream#project}. |
 | <code><a href="#@cdktn/provider-google.firestoreChangeStream.FirestoreChangeStreamConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.firestoreChangeStream.FirestoreChangeStreamTimeouts">FirestoreChangeStreamTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1178,7 +1178,7 @@ Name *string
 
 The ID to use for the change stream, which will become the final component of the change stream's resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/firestore_change_stream#name FirestoreChangeStream#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/firestore_change_stream#name FirestoreChangeStream#name}
 
 ---
 
@@ -1194,7 +1194,7 @@ The duration for which change stream data is retained.
 
 A duration in seconds with up to nine fractional digits, ending with 's'. Example: "86400s".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/firestore_change_stream#retention_period FirestoreChangeStream#retention_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/firestore_change_stream#retention_period FirestoreChangeStream#retention_period}
 
 ---
 
@@ -1208,7 +1208,7 @@ CollectionGroupScope FirestoreChangeStreamCollectionGroupScope
 
 collection_group_scope block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/firestore_change_stream#collection_group_scope FirestoreChangeStream#collection_group_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/firestore_change_stream#collection_group_scope FirestoreChangeStream#collection_group_scope}
 
 ---
 
@@ -1222,7 +1222,7 @@ Database *string
 
 The Firestore database ID. Defaults to '"(default)"'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/firestore_change_stream#database FirestoreChangeStream#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/firestore_change_stream#database FirestoreChangeStream#database}
 
 ---
 
@@ -1236,7 +1236,7 @@ DatabaseScope FirestoreChangeStreamDatabaseScope
 
 database_scope block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/firestore_change_stream#database_scope FirestoreChangeStream#database_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/firestore_change_stream#database_scope FirestoreChangeStream#database_scope}
 
 ---
 
@@ -1257,7 +1257,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/firestore_change_stream#deletion_policy FirestoreChangeStream#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/firestore_change_stream#deletion_policy FirestoreChangeStream#deletion_policy}
 
 ---
 
@@ -1269,7 +1269,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/firestore_change_stream#id FirestoreChangeStream#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/firestore_change_stream#id FirestoreChangeStream#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1284,7 +1284,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/firestore_change_stream#project FirestoreChangeStream#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/firestore_change_stream#project FirestoreChangeStream#project}.
 
 ---
 
@@ -1298,7 +1298,7 @@ Timeouts FirestoreChangeStreamTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/firestore_change_stream#timeouts FirestoreChangeStream#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/firestore_change_stream#timeouts FirestoreChangeStream#timeouts}
 
 ---
 
@@ -1307,7 +1307,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firestoreChangeStream.FirestoreChangeStreamDatabaseScope.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firestorechangestream"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/firestorechangestream"
 
 &firestorechangestream.FirestoreChangeStreamDatabaseScope {
 
@@ -1320,7 +1320,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firestorechanges
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firestoreChangeStream.FirestoreChangeStreamTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firestorechangestream"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/firestorechangestream"
 
 &firestorechangestream.FirestoreChangeStreamTimeouts {
 	Create: *string,
@@ -1333,9 +1333,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firestorechanges
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.firestoreChangeStream.FirestoreChangeStreamTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/firestore_change_stream#create FirestoreChangeStream#create}. |
-| <code><a href="#@cdktn/provider-google.firestoreChangeStream.FirestoreChangeStreamTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/firestore_change_stream#delete FirestoreChangeStream#delete}. |
-| <code><a href="#@cdktn/provider-google.firestoreChangeStream.FirestoreChangeStreamTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/firestore_change_stream#update FirestoreChangeStream#update}. |
+| <code><a href="#@cdktn/provider-google.firestoreChangeStream.FirestoreChangeStreamTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/firestore_change_stream#create FirestoreChangeStream#create}. |
+| <code><a href="#@cdktn/provider-google.firestoreChangeStream.FirestoreChangeStreamTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/firestore_change_stream#delete FirestoreChangeStream#delete}. |
+| <code><a href="#@cdktn/provider-google.firestoreChangeStream.FirestoreChangeStreamTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/firestore_change_stream#update FirestoreChangeStream#update}. |
 
 ---
 
@@ -1347,7 +1347,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/firestore_change_stream#create FirestoreChangeStream#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/firestore_change_stream#create FirestoreChangeStream#create}.
 
 ---
 
@@ -1359,7 +1359,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/firestore_change_stream#delete FirestoreChangeStream#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/firestore_change_stream#delete FirestoreChangeStream#delete}.
 
 ---
 
@@ -1371,7 +1371,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/firestore_change_stream#update FirestoreChangeStream#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/firestore_change_stream#update FirestoreChangeStream#update}.
 
 ---
 
@@ -1382,7 +1382,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firestoreChangeStream.FirestoreChangeStreamCollectionGroupScopeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firestorechangestream"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/firestorechangestream"
 
 firestorechangestream.NewFirestoreChangeStreamCollectionGroupScopeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FirestoreChangeStreamCollectionGroupScopeOutputReference
 ```
@@ -1653,7 +1653,7 @@ func InternalValue() FirestoreChangeStreamCollectionGroupScope
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firestoreChangeStream.FirestoreChangeStreamDatabaseScopeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firestorechangestream"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/firestorechangestream"
 
 firestorechangestream.NewFirestoreChangeStreamDatabaseScopeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FirestoreChangeStreamDatabaseScopeOutputReference
 ```
@@ -1902,7 +1902,7 @@ func InternalValue() FirestoreChangeStreamDatabaseScope
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firestoreChangeStream.FirestoreChangeStreamTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firestorechangestream"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/firestorechangestream"
 
 firestorechangestream.NewFirestoreChangeStreamTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FirestoreChangeStreamTimeoutsOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### SccEventThreatDetectionCustomModule <a name="SccEventThreatDetectionCustomModule" id="@cdktn/provider-google.sccEventThreatDetectionCustomModule.SccEventThreatDetectionCustomModule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/scc_event_threat_detection_custom_module google_scc_event_threat_detection_custom_module}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_event_threat_detection_custom_module google_scc_event_threat_detection_custom_module}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.sccEventThreatDetectionCustomModule.SccEventThreatDetectionCustomModule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/scceventthreatdetectioncustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/scceventthreatdetectioncustommodule"
 
 scceventthreatdetectioncustommodule.NewSccEventThreatDetectionCustomModule(scope Construct, id *string, config SccEventThreatDetectionCustomModuleConfig) SccEventThreatDetectionCustomModule
 ```
@@ -441,7 +441,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.sccEventThreatDetectionCustomModule.SccEventThreatDetectionCustomModule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/scceventthreatdetectioncustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/scceventthreatdetectioncustommodule"
 
 scceventthreatdetectioncustommodule.SccEventThreatDetectionCustomModule_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.sccEventThreatDetectionCustomModule.SccEventThreatDetectionCustomModule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/scceventthreatdetectioncustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/scceventthreatdetectioncustommodule"
 
 scceventthreatdetectioncustommodule.SccEventThreatDetectionCustomModule_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ scceventthreatdetectioncustommodule.SccEventThreatDetectionCustomModule_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.sccEventThreatDetectionCustomModule.SccEventThreatDetectionCustomModule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/scceventthreatdetectioncustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/scceventthreatdetectioncustommodule"
 
 scceventthreatdetectioncustommodule.SccEventThreatDetectionCustomModule_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ scceventthreatdetectioncustommodule.SccEventThreatDetectionCustomModule_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.sccEventThreatDetectionCustomModule.SccEventThreatDetectionCustomModule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/scceventthreatdetectioncustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/scceventthreatdetectioncustommodule"
 
 scceventthreatdetectioncustommodule.SccEventThreatDetectionCustomModule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -530,7 +530,7 @@ The construct id used in the generated config for the SccEventThreatDetectionCus
 
 The id of the existing SccEventThreatDetectionCustomModule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/scc_event_threat_detection_custom_module#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_event_threat_detection_custom_module#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -939,7 +939,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.sccEventThreatDetectionCustomModule.SccEventThreatDetectionCustomModuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/scceventthreatdetectioncustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/scceventthreatdetectioncustommodule"
 
 &scceventthreatdetectioncustommodule.SccEventThreatDetectionCustomModuleConfig {
 	Connection: interface{},
@@ -956,7 +956,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/scceventthreatde
 	DeletionPolicy: *string,
 	DisplayName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.sccEventThreatDetectionCustomModule.SccEventThreatDetectionCustomModuleTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.sccEventThreatDetectionCustomModule.SccEventThreatDetectionCustomModuleTimeouts,
 }
 ```
 
@@ -977,7 +977,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/scceventthreatde
 | <code><a href="#@cdktn/provider-google.sccEventThreatDetectionCustomModule.SccEventThreatDetectionCustomModuleConfig.property.type">Type</a></code> | <code>*string</code> | Immutable. Type for the module. e.g. CONFIGURABLE_BAD_IP. |
 | <code><a href="#@cdktn/provider-google.sccEventThreatDetectionCustomModule.SccEventThreatDetectionCustomModuleConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.sccEventThreatDetectionCustomModule.SccEventThreatDetectionCustomModuleConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | The human readable name to be displayed for the module. |
-| <code><a href="#@cdktn/provider-google.sccEventThreatDetectionCustomModule.SccEventThreatDetectionCustomModuleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/scc_event_threat_detection_custom_module#id SccEventThreatDetectionCustomModule#id}. |
+| <code><a href="#@cdktn/provider-google.sccEventThreatDetectionCustomModule.SccEventThreatDetectionCustomModuleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_event_threat_detection_custom_module#id SccEventThreatDetectionCustomModule#id}. |
 | <code><a href="#@cdktn/provider-google.sccEventThreatDetectionCustomModule.SccEventThreatDetectionCustomModuleConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.sccEventThreatDetectionCustomModule.SccEventThreatDetectionCustomModuleTimeouts">SccEventThreatDetectionCustomModuleTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1065,7 +1065,7 @@ Config for the module.
 For the resident module, its config value is defined at this level.
 For the inherited module, its config value is inherited from the ancestor module.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/scc_event_threat_detection_custom_module#config SccEventThreatDetectionCustomModule#config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_event_threat_detection_custom_module#config SccEventThreatDetectionCustomModule#config}
 
 ---
 
@@ -1079,7 +1079,7 @@ EnablementState *string
 
 The state of enablement for the module at the given level of the hierarchy. Possible values: ["ENABLED", "DISABLED"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/scc_event_threat_detection_custom_module#enablement_state SccEventThreatDetectionCustomModule#enablement_state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_event_threat_detection_custom_module#enablement_state SccEventThreatDetectionCustomModule#enablement_state}
 
 ---
 
@@ -1093,7 +1093,7 @@ Organization *string
 
 Numerical ID of the parent organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/scc_event_threat_detection_custom_module#organization SccEventThreatDetectionCustomModule#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_event_threat_detection_custom_module#organization SccEventThreatDetectionCustomModule#organization}
 
 ---
 
@@ -1107,7 +1107,7 @@ Type *string
 
 Immutable. Type for the module. e.g. CONFIGURABLE_BAD_IP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/scc_event_threat_detection_custom_module#type SccEventThreatDetectionCustomModule#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_event_threat_detection_custom_module#type SccEventThreatDetectionCustomModule#type}
 
 ---
 
@@ -1128,7 +1128,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/scc_event_threat_detection_custom_module#deletion_policy SccEventThreatDetectionCustomModule#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_event_threat_detection_custom_module#deletion_policy SccEventThreatDetectionCustomModule#deletion_policy}
 
 ---
 
@@ -1142,7 +1142,7 @@ DisplayName *string
 
 The human readable name to be displayed for the module.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/scc_event_threat_detection_custom_module#display_name SccEventThreatDetectionCustomModule#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_event_threat_detection_custom_module#display_name SccEventThreatDetectionCustomModule#display_name}
 
 ---
 
@@ -1154,7 +1154,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/scc_event_threat_detection_custom_module#id SccEventThreatDetectionCustomModule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_event_threat_detection_custom_module#id SccEventThreatDetectionCustomModule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1171,7 +1171,7 @@ Timeouts SccEventThreatDetectionCustomModuleTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/scc_event_threat_detection_custom_module#timeouts SccEventThreatDetectionCustomModule#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_event_threat_detection_custom_module#timeouts SccEventThreatDetectionCustomModule#timeouts}
 
 ---
 
@@ -1180,7 +1180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.sccEventThreatDetectionCustomModule.SccEventThreatDetectionCustomModuleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/scceventthreatdetectioncustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/scceventthreatdetectioncustommodule"
 
 &scceventthreatdetectioncustommodule.SccEventThreatDetectionCustomModuleTimeouts {
 	Create: *string,
@@ -1193,9 +1193,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/scceventthreatde
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.sccEventThreatDetectionCustomModule.SccEventThreatDetectionCustomModuleTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/scc_event_threat_detection_custom_module#create SccEventThreatDetectionCustomModule#create}. |
-| <code><a href="#@cdktn/provider-google.sccEventThreatDetectionCustomModule.SccEventThreatDetectionCustomModuleTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/scc_event_threat_detection_custom_module#delete SccEventThreatDetectionCustomModule#delete}. |
-| <code><a href="#@cdktn/provider-google.sccEventThreatDetectionCustomModule.SccEventThreatDetectionCustomModuleTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/scc_event_threat_detection_custom_module#update SccEventThreatDetectionCustomModule#update}. |
+| <code><a href="#@cdktn/provider-google.sccEventThreatDetectionCustomModule.SccEventThreatDetectionCustomModuleTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_event_threat_detection_custom_module#create SccEventThreatDetectionCustomModule#create}. |
+| <code><a href="#@cdktn/provider-google.sccEventThreatDetectionCustomModule.SccEventThreatDetectionCustomModuleTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_event_threat_detection_custom_module#delete SccEventThreatDetectionCustomModule#delete}. |
+| <code><a href="#@cdktn/provider-google.sccEventThreatDetectionCustomModule.SccEventThreatDetectionCustomModuleTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_event_threat_detection_custom_module#update SccEventThreatDetectionCustomModule#update}. |
 
 ---
 
@@ -1207,7 +1207,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/scc_event_threat_detection_custom_module#create SccEventThreatDetectionCustomModule#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_event_threat_detection_custom_module#create SccEventThreatDetectionCustomModule#create}.
 
 ---
 
@@ -1219,7 +1219,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/scc_event_threat_detection_custom_module#delete SccEventThreatDetectionCustomModule#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_event_threat_detection_custom_module#delete SccEventThreatDetectionCustomModule#delete}.
 
 ---
 
@@ -1231,7 +1231,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/scc_event_threat_detection_custom_module#update SccEventThreatDetectionCustomModule#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_event_threat_detection_custom_module#update SccEventThreatDetectionCustomModule#update}.
 
 ---
 
@@ -1242,7 +1242,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.sccEventThreatDetectionCustomModule.SccEventThreatDetectionCustomModuleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/scceventthreatdetectioncustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/scceventthreatdetectioncustommodule"
 
 scceventthreatdetectioncustommodule.NewSccEventThreatDetectionCustomModuleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SccEventThreatDetectionCustomModuleTimeoutsOutputReference
 ```

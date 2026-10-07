@@ -4,12 +4,12 @@
 
 ### ApigeeInstance <a name="ApigeeInstance" id="@cdktn/provider-google.apigeeInstance.ApigeeInstance"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apigee_instance google_apigee_instance}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apigee_instance google_apigee_instance}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeInstance.ApigeeInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeeinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apigeeinstance"
 
 apigeeinstance.NewApigeeInstance(scope Construct, id *string, config ApigeeInstanceConfig) ApigeeInstance
 ```
@@ -496,7 +496,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.apigeeInstance.ApigeeInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeeinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apigeeinstance"
 
 apigeeinstance.ApigeeInstance_IsConstruct(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.apigeeInstance.ApigeeInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeeinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apigeeinstance"
 
 apigeeinstance.ApigeeInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -542,7 +542,7 @@ apigeeinstance.ApigeeInstance_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.apigeeInstance.ApigeeInstance.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeeinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apigeeinstance"
 
 apigeeinstance.ApigeeInstance_IsTerraformResource(x interface{}) *bool
 ```
@@ -556,7 +556,7 @@ apigeeinstance.ApigeeInstance_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.apigeeInstance.ApigeeInstance.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeeinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apigeeinstance"
 
 apigeeinstance.ApigeeInstance_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -585,7 +585,7 @@ The construct id used in the generated config for the ApigeeInstance to import.
 
 The id of the existing ApigeeInstance that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apigee_instance#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apigee_instance#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1104,7 +1104,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeInstance.ApigeeInstanceAccessLoggingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeeinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apigeeinstance"
 
 &apigeeinstance.ApigeeInstanceAccessLoggingConfig {
 	Enabled: interface{},
@@ -1131,7 +1131,7 @@ Enabled interface{}
 
 Boolean flag that specifies whether the customer access log feature is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apigee_instance#enabled ApigeeInstance#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apigee_instance#enabled ApigeeInstance#enabled}
 
 ---
 
@@ -1149,7 +1149,7 @@ The statusCode is the only expected/supported filter field. (Ex: statusCode)
 The filter will parse it to the Common Expression Language semantics for expression
 evaluation to build the filter condition. (Ex: "filter": statusCode >= 200 && statusCode < 300 )
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apigee_instance#filter ApigeeInstance#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apigee_instance#filter ApigeeInstance#filter}
 
 ---
 
@@ -1158,7 +1158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeInstance.ApigeeInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeeinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apigeeinstance"
 
 &apigeeinstance.ApigeeInstanceConfig {
 	Connection: interface{},
@@ -1171,7 +1171,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeeinstance"
 	Location: *string,
 	Name: *string,
 	OrgId: *string,
-	AccessLoggingConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.apigeeInstance.ApigeeInstanceAccessLoggingConfig,
+	AccessLoggingConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.apigeeInstance.ApigeeInstanceAccessLoggingConfig,
 	ConsumerAcceptList: *[]*string,
 	DeletionPolicy: *string,
 	Description: *string,
@@ -1180,7 +1180,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeeinstance"
 	Id: *string,
 	IpRange: *string,
 	PeeringCidrRange: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.apigeeInstance.ApigeeInstanceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.apigeeInstance.ApigeeInstanceTimeouts,
 }
 ```
 
@@ -1204,7 +1204,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeeinstance"
 | <code><a href="#@cdktn/provider-google.apigeeInstance.ApigeeInstanceConfig.property.description">Description</a></code> | <code>*string</code> | Description of the instance. |
 | <code><a href="#@cdktn/provider-google.apigeeInstance.ApigeeInstanceConfig.property.diskEncryptionKeyName">DiskEncryptionKeyName</a></code> | <code>*string</code> | Customer Managed Encryption Key (CMEK) used for disk and volume encryption. |
 | <code><a href="#@cdktn/provider-google.apigeeInstance.ApigeeInstanceConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | Display name of the instance. |
-| <code><a href="#@cdktn/provider-google.apigeeInstance.ApigeeInstanceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apigee_instance#id ApigeeInstance#id}. |
+| <code><a href="#@cdktn/provider-google.apigeeInstance.ApigeeInstanceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apigee_instance#id ApigeeInstance#id}. |
 | <code><a href="#@cdktn/provider-google.apigeeInstance.ApigeeInstanceConfig.property.ipRange">IpRange</a></code> | <code>*string</code> | IP range represents the customer-provided CIDR block of length 22 that will be used for the Apigee instance creation. |
 | <code><a href="#@cdktn/provider-google.apigeeInstance.ApigeeInstanceConfig.property.peeringCidrRange">PeeringCidrRange</a></code> | <code>*string</code> | The size of the CIDR block range that will be reserved by the instance. |
 | <code><a href="#@cdktn/provider-google.apigeeInstance.ApigeeInstanceConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.apigeeInstance.ApigeeInstanceTimeouts">ApigeeInstanceTimeouts</a></code> | timeouts block. |
@@ -1291,7 +1291,7 @@ Location *string
 
 Required. Compute Engine location where the instance resides.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apigee_instance#location ApigeeInstance#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apigee_instance#location ApigeeInstance#location}
 
 ---
 
@@ -1305,7 +1305,7 @@ Name *string
 
 Resource ID of the instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apigee_instance#name ApigeeInstance#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apigee_instance#name ApigeeInstance#name}
 
 ---
 
@@ -1319,7 +1319,7 @@ OrgId *string
 
 The Apigee Organization associated with the Apigee instance, in the format 'organizations/{{org_name}}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apigee_instance#org_id ApigeeInstance#org_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apigee_instance#org_id ApigeeInstance#org_id}
 
 ---
 
@@ -1333,7 +1333,7 @@ AccessLoggingConfig ApigeeInstanceAccessLoggingConfig
 
 access_logging_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apigee_instance#access_logging_config ApigeeInstance#access_logging_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apigee_instance#access_logging_config ApigeeInstance#access_logging_config}
 
 ---
 
@@ -1352,7 +1352,7 @@ side that can privately connect to the service attachment. It is an optional fie
 which the customers can provide during the instance creation. By default, the customer
 project associated with the Apigee organization will be included to the list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apigee_instance#consumer_accept_list ApigeeInstance#consumer_accept_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apigee_instance#consumer_accept_list ApigeeInstance#consumer_accept_list}
 
 ---
 
@@ -1373,7 +1373,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apigee_instance#deletion_policy ApigeeInstance#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apigee_instance#deletion_policy ApigeeInstance#deletion_policy}
 
 ---
 
@@ -1387,7 +1387,7 @@ Description *string
 
 Description of the instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apigee_instance#description ApigeeInstance#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apigee_instance#description ApigeeInstance#description}
 
 ---
 
@@ -1404,7 +1404,7 @@ Customer Managed Encryption Key (CMEK) used for disk and volume encryption.
 Required for Apigee paid subscriptions only.
 Use the following format: 'projects/([^/]+)/locations/([^/]+)/keyRings/([^/]+)/cryptoKeys/([^/]+)'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apigee_instance#disk_encryption_key_name ApigeeInstance#disk_encryption_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apigee_instance#disk_encryption_key_name ApigeeInstance#disk_encryption_key_name}
 
 ---
 
@@ -1418,7 +1418,7 @@ DisplayName *string
 
 Display name of the instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apigee_instance#display_name ApigeeInstance#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apigee_instance#display_name ApigeeInstance#display_name}
 
 ---
 
@@ -1430,7 +1430,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apigee_instance#id ApigeeInstance#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apigee_instance#id ApigeeInstance#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1454,7 +1454,7 @@ available /22 CIDR block from Service Networking. The customer should use this C
 for configuring their firewall needs to allow traffic from Apigee.
 Input format: "a.b.c.d/22"
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apigee_instance#ip_range ApigeeInstance#ip_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apigee_instance#ip_range ApigeeInstance#ip_range}
 
 ---
 
@@ -1471,7 +1471,7 @@ The size of the CIDR block range that will be reserved by the instance.
 For valid values,
 see [CidrRange](https://cloud.google.com/apigee/docs/reference/apis/apigee/rest/v1/organizations.instances#CidrRange) on the documentation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apigee_instance#peering_cidr_range ApigeeInstance#peering_cidr_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apigee_instance#peering_cidr_range ApigeeInstance#peering_cidr_range}
 
 ---
 
@@ -1485,7 +1485,7 @@ Timeouts ApigeeInstanceTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apigee_instance#timeouts ApigeeInstance#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apigee_instance#timeouts ApigeeInstance#timeouts}
 
 ---
 
@@ -1494,7 +1494,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeInstance.ApigeeInstanceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeeinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apigeeinstance"
 
 &apigeeinstance.ApigeeInstanceTimeouts {
 	Create: *string,
@@ -1507,9 +1507,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeeinstance"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apigeeInstance.ApigeeInstanceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apigee_instance#create ApigeeInstance#create}. |
-| <code><a href="#@cdktn/provider-google.apigeeInstance.ApigeeInstanceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apigee_instance#delete ApigeeInstance#delete}. |
-| <code><a href="#@cdktn/provider-google.apigeeInstance.ApigeeInstanceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apigee_instance#update ApigeeInstance#update}. |
+| <code><a href="#@cdktn/provider-google.apigeeInstance.ApigeeInstanceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apigee_instance#create ApigeeInstance#create}. |
+| <code><a href="#@cdktn/provider-google.apigeeInstance.ApigeeInstanceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apigee_instance#delete ApigeeInstance#delete}. |
+| <code><a href="#@cdktn/provider-google.apigeeInstance.ApigeeInstanceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apigee_instance#update ApigeeInstance#update}. |
 
 ---
 
@@ -1521,7 +1521,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apigee_instance#create ApigeeInstance#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apigee_instance#create ApigeeInstance#create}.
 
 ---
 
@@ -1533,7 +1533,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apigee_instance#delete ApigeeInstance#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apigee_instance#delete ApigeeInstance#delete}.
 
 ---
 
@@ -1545,7 +1545,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apigee_instance#update ApigeeInstance#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apigee_instance#update ApigeeInstance#update}.
 
 ---
 
@@ -1556,7 +1556,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeInstance.ApigeeInstanceAccessLoggingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeeinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apigeeinstance"
 
 apigeeinstance.NewApigeeInstanceAccessLoggingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApigeeInstanceAccessLoggingConfigOutputReference
 ```
@@ -1856,7 +1856,7 @@ func InternalValue() ApigeeInstanceAccessLoggingConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeInstance.ApigeeInstanceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeeinstance"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apigeeinstance"
 
 apigeeinstance.NewApigeeInstanceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApigeeInstanceTimeoutsOutputReference
 ```

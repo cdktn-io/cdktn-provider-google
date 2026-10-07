@@ -4,12 +4,12 @@
 
 ### StorageObjectAccessControl <a name="StorageObjectAccessControl" id="@cdktn/provider-google.storageObjectAccessControl.StorageObjectAccessControl"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_object_access_control google_storage_object_access_control}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_object_access_control google_storage_object_access_control}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageObjectAccessControl.StorageObjectAccessControl.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storageobjectaccesscontrol"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storageobjectaccesscontrol"
 
 storageobjectaccesscontrol.NewStorageObjectAccessControl(scope Construct, id *string, config StorageObjectAccessControlConfig) StorageObjectAccessControl
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.storageObjectAccessControl.StorageObjectAccessControl.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storageobjectaccesscontrol"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storageobjectaccesscontrol"
 
 storageobjectaccesscontrol.StorageObjectAccessControl_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.storageObjectAccessControl.StorageObjectAccessControl.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storageobjectaccesscontrol"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storageobjectaccesscontrol"
 
 storageobjectaccesscontrol.StorageObjectAccessControl_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ storageobjectaccesscontrol.StorageObjectAccessControl_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.storageObjectAccessControl.StorageObjectAccessControl.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storageobjectaccesscontrol"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storageobjectaccesscontrol"
 
 storageobjectaccesscontrol.StorageObjectAccessControl_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ storageobjectaccesscontrol.StorageObjectAccessControl_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.storageObjectAccessControl.StorageObjectAccessControl.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storageobjectaccesscontrol"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storageobjectaccesscontrol"
 
 storageobjectaccesscontrol.StorageObjectAccessControl_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -523,7 +523,7 @@ The construct id used in the generated config for the StorageObjectAccessControl
 
 The id of the existing StorageObjectAccessControl that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_object_access_control#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_object_access_control#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -932,7 +932,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageObjectAccessControl.StorageObjectAccessControlConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storageobjectaccesscontrol"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storageobjectaccesscontrol"
 
 &storageobjectaccesscontrol.StorageObjectAccessControlConfig {
 	Connection: interface{},
@@ -948,7 +948,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storageobjectacc
 	Role: *string,
 	DeletionPolicy: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.storageObjectAccessControl.StorageObjectAccessControlTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.storageObjectAccessControl.StorageObjectAccessControlTimeouts,
 }
 ```
 
@@ -968,7 +968,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storageobjectacc
 | <code><a href="#@cdktn/provider-google.storageObjectAccessControl.StorageObjectAccessControlConfig.property.object">Object</a></code> | <code>*string</code> | The name of the object to apply the access control to. |
 | <code><a href="#@cdktn/provider-google.storageObjectAccessControl.StorageObjectAccessControlConfig.property.role">Role</a></code> | <code>*string</code> | The access permission for the entity. Possible values: ["OWNER", "READER"]. |
 | <code><a href="#@cdktn/provider-google.storageObjectAccessControl.StorageObjectAccessControlConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.storageObjectAccessControl.StorageObjectAccessControlConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_object_access_control#id StorageObjectAccessControl#id}. |
+| <code><a href="#@cdktn/provider-google.storageObjectAccessControl.StorageObjectAccessControlConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_object_access_control#id StorageObjectAccessControl#id}. |
 | <code><a href="#@cdktn/provider-google.storageObjectAccessControl.StorageObjectAccessControlConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.storageObjectAccessControl.StorageObjectAccessControlTimeouts">StorageObjectAccessControlTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1053,7 +1053,7 @@ Bucket *string
 
 The name of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_object_access_control#bucket StorageObjectAccessControl#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_object_access_control#bucket StorageObjectAccessControl#bucket}
 
 ---
 
@@ -1067,7 +1067,7 @@ Entity *string
 
 The entity holding the permission, in one of the following forms:   * user-{{userId}}   * user-{{email}} (such as "user-liz@example.com")   * group-{{groupId}}   * group-{{email}} (such as "group-example@googlegroups.com")   * domain-{{domain}} (such as "domain-example.com")   * project-team-{{projectId}}   * allUsers   * allAuthenticatedUsers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_object_access_control#entity StorageObjectAccessControl#entity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_object_access_control#entity StorageObjectAccessControl#entity}
 
 ---
 
@@ -1081,7 +1081,7 @@ Object *string
 
 The name of the object to apply the access control to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_object_access_control#object StorageObjectAccessControl#object}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_object_access_control#object StorageObjectAccessControl#object}
 
 ---
 
@@ -1095,7 +1095,7 @@ Role *string
 
 The access permission for the entity. Possible values: ["OWNER", "READER"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_object_access_control#role StorageObjectAccessControl#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_object_access_control#role StorageObjectAccessControl#role}
 
 ---
 
@@ -1116,7 +1116,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_object_access_control#deletion_policy StorageObjectAccessControl#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_object_access_control#deletion_policy StorageObjectAccessControl#deletion_policy}
 
 ---
 
@@ -1128,7 +1128,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_object_access_control#id StorageObjectAccessControl#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_object_access_control#id StorageObjectAccessControl#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1145,7 +1145,7 @@ Timeouts StorageObjectAccessControlTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_object_access_control#timeouts StorageObjectAccessControl#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_object_access_control#timeouts StorageObjectAccessControl#timeouts}
 
 ---
 
@@ -1154,7 +1154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageObjectAccessControl.StorageObjectAccessControlProjectTeam.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storageobjectaccesscontrol"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storageobjectaccesscontrol"
 
 &storageobjectaccesscontrol.StorageObjectAccessControlProjectTeam {
 
@@ -1167,7 +1167,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storageobjectacc
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageObjectAccessControl.StorageObjectAccessControlTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storageobjectaccesscontrol"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storageobjectaccesscontrol"
 
 &storageobjectaccesscontrol.StorageObjectAccessControlTimeouts {
 	Create: *string,
@@ -1180,9 +1180,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storageobjectacc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.storageObjectAccessControl.StorageObjectAccessControlTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_object_access_control#create StorageObjectAccessControl#create}. |
-| <code><a href="#@cdktn/provider-google.storageObjectAccessControl.StorageObjectAccessControlTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_object_access_control#delete StorageObjectAccessControl#delete}. |
-| <code><a href="#@cdktn/provider-google.storageObjectAccessControl.StorageObjectAccessControlTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_object_access_control#update StorageObjectAccessControl#update}. |
+| <code><a href="#@cdktn/provider-google.storageObjectAccessControl.StorageObjectAccessControlTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_object_access_control#create StorageObjectAccessControl#create}. |
+| <code><a href="#@cdktn/provider-google.storageObjectAccessControl.StorageObjectAccessControlTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_object_access_control#delete StorageObjectAccessControl#delete}. |
+| <code><a href="#@cdktn/provider-google.storageObjectAccessControl.StorageObjectAccessControlTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_object_access_control#update StorageObjectAccessControl#update}. |
 
 ---
 
@@ -1194,7 +1194,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_object_access_control#create StorageObjectAccessControl#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_object_access_control#create StorageObjectAccessControl#create}.
 
 ---
 
@@ -1206,7 +1206,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_object_access_control#delete StorageObjectAccessControl#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_object_access_control#delete StorageObjectAccessControl#delete}.
 
 ---
 
@@ -1218,7 +1218,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_object_access_control#update StorageObjectAccessControl#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_object_access_control#update StorageObjectAccessControl#update}.
 
 ---
 
@@ -1229,7 +1229,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageObjectAccessControl.StorageObjectAccessControlProjectTeamList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storageobjectaccesscontrol"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storageobjectaccesscontrol"
 
 storageobjectaccesscontrol.NewStorageObjectAccessControlProjectTeamList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StorageObjectAccessControlProjectTeamList
 ```
@@ -1378,7 +1378,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageObjectAccessControl.StorageObjectAccessControlProjectTeamOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storageobjectaccesscontrol"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storageobjectaccesscontrol"
 
 storageobjectaccesscontrol.NewStorageObjectAccessControlProjectTeamOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StorageObjectAccessControlProjectTeamOutputReference
 ```
@@ -1667,7 +1667,7 @@ func InternalValue() StorageObjectAccessControlProjectTeam
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageObjectAccessControl.StorageObjectAccessControlTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storageobjectaccesscontrol"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storageobjectaccesscontrol"
 
 storageobjectaccesscontrol.NewStorageObjectAccessControlTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageObjectAccessControlTimeoutsOutputReference
 ```

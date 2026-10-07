@@ -4,12 +4,12 @@
 
 ### ServiceNetworkingPeeredDnsDomain <a name="ServiceNetworkingPeeredDnsDomain" id="@cdktn/provider-google.serviceNetworkingPeeredDnsDomain.ServiceNetworkingPeeredDnsDomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/service_networking_peered_dns_domain google_service_networking_peered_dns_domain}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/service_networking_peered_dns_domain google_service_networking_peered_dns_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.serviceNetworkingPeeredDnsDomain.ServiceNetworkingPeeredDnsDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/servicenetworkingpeereddnsdomain"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/servicenetworkingpeereddnsdomain"
 
 servicenetworkingpeereddnsdomain.NewServiceNetworkingPeeredDnsDomain(scope Construct, id *string, config ServiceNetworkingPeeredDnsDomainConfig) ServiceNetworkingPeeredDnsDomain
 ```
@@ -448,7 +448,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.serviceNetworkingPeeredDnsDomain.ServiceNetworkingPeeredDnsDomain.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/servicenetworkingpeereddnsdomain"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/servicenetworkingpeereddnsdomain"
 
 servicenetworkingpeereddnsdomain.ServiceNetworkingPeeredDnsDomain_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.serviceNetworkingPeeredDnsDomain.ServiceNetworkingPeeredDnsDomain.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/servicenetworkingpeereddnsdomain"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/servicenetworkingpeereddnsdomain"
 
 servicenetworkingpeereddnsdomain.ServiceNetworkingPeeredDnsDomain_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ servicenetworkingpeereddnsdomain.ServiceNetworkingPeeredDnsDomain_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.serviceNetworkingPeeredDnsDomain.ServiceNetworkingPeeredDnsDomain.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/servicenetworkingpeereddnsdomain"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/servicenetworkingpeereddnsdomain"
 
 servicenetworkingpeereddnsdomain.ServiceNetworkingPeeredDnsDomain_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ servicenetworkingpeereddnsdomain.ServiceNetworkingPeeredDnsDomain_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.serviceNetworkingPeeredDnsDomain.ServiceNetworkingPeeredDnsDomain.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/servicenetworkingpeereddnsdomain"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/servicenetworkingpeereddnsdomain"
 
 servicenetworkingpeereddnsdomain.ServiceNetworkingPeeredDnsDomain_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -537,7 +537,7 @@ The construct id used in the generated config for the ServiceNetworkingPeeredDns
 
 The id of the existing ServiceNetworkingPeeredDnsDomain that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/service_networking_peered_dns_domain#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/service_networking_peered_dns_domain#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -924,7 +924,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.serviceNetworkingPeeredDnsDomain.ServiceNetworkingPeeredDnsDomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/servicenetworkingpeereddnsdomain"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/servicenetworkingpeereddnsdomain"
 
 &servicenetworkingpeereddnsdomain.ServiceNetworkingPeeredDnsDomainConfig {
 	Connection: interface{},
@@ -941,7 +941,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/servicenetworkin
 	Id: *string,
 	Project: *string,
 	Service: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.serviceNetworkingPeeredDnsDomain.ServiceNetworkingPeeredDnsDomainTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.serviceNetworkingPeeredDnsDomain.ServiceNetworkingPeeredDnsDomainTimeouts,
 }
 ```
 
@@ -960,7 +960,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/servicenetworkin
 | <code><a href="#@cdktn/provider-google.serviceNetworkingPeeredDnsDomain.ServiceNetworkingPeeredDnsDomainConfig.property.name">Name</a></code> | <code>*string</code> | Name of the peered DNS domain. |
 | <code><a href="#@cdktn/provider-google.serviceNetworkingPeeredDnsDomain.ServiceNetworkingPeeredDnsDomainConfig.property.network">Network</a></code> | <code>*string</code> | Network in the consumer project to peer with. |
 | <code><a href="#@cdktn/provider-google.serviceNetworkingPeeredDnsDomain.ServiceNetworkingPeeredDnsDomainConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.serviceNetworkingPeeredDnsDomain.ServiceNetworkingPeeredDnsDomainConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/service_networking_peered_dns_domain#id ServiceNetworkingPeeredDnsDomain#id}. |
+| <code><a href="#@cdktn/provider-google.serviceNetworkingPeeredDnsDomain.ServiceNetworkingPeeredDnsDomainConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/service_networking_peered_dns_domain#id ServiceNetworkingPeeredDnsDomain#id}. |
 | <code><a href="#@cdktn/provider-google.serviceNetworkingPeeredDnsDomain.ServiceNetworkingPeeredDnsDomainConfig.property.project">Project</a></code> | <code>*string</code> | The ID of the project that the service account will be created in. Defaults to the provider project configuration. |
 | <code><a href="#@cdktn/provider-google.serviceNetworkingPeeredDnsDomain.ServiceNetworkingPeeredDnsDomainConfig.property.service">Service</a></code> | <code>*string</code> | The name of the service to create a peered DNS domain for, e.g. servicenetworking.googleapis.com. |
 | <code><a href="#@cdktn/provider-google.serviceNetworkingPeeredDnsDomain.ServiceNetworkingPeeredDnsDomainConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.serviceNetworkingPeeredDnsDomain.ServiceNetworkingPeeredDnsDomainTimeouts">ServiceNetworkingPeeredDnsDomainTimeouts</a></code> | timeouts block. |
@@ -1047,7 +1047,7 @@ DnsSuffix *string
 
 The DNS domain name suffix of the peered DNS domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/service_networking_peered_dns_domain#dns_suffix ServiceNetworkingPeeredDnsDomain#dns_suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/service_networking_peered_dns_domain#dns_suffix ServiceNetworkingPeeredDnsDomain#dns_suffix}
 
 ---
 
@@ -1061,7 +1061,7 @@ Name *string
 
 Name of the peered DNS domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/service_networking_peered_dns_domain#name ServiceNetworkingPeeredDnsDomain#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/service_networking_peered_dns_domain#name ServiceNetworkingPeeredDnsDomain#name}
 
 ---
 
@@ -1075,7 +1075,7 @@ Network *string
 
 Network in the consumer project to peer with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/service_networking_peered_dns_domain#network ServiceNetworkingPeeredDnsDomain#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/service_networking_peered_dns_domain#network ServiceNetworkingPeeredDnsDomain#network}
 
 ---
 
@@ -1096,7 +1096,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/service_networking_peered_dns_domain#deletion_policy ServiceNetworkingPeeredDnsDomain#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/service_networking_peered_dns_domain#deletion_policy ServiceNetworkingPeeredDnsDomain#deletion_policy}
 
 ---
 
@@ -1108,7 +1108,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/service_networking_peered_dns_domain#id ServiceNetworkingPeeredDnsDomain#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/service_networking_peered_dns_domain#id ServiceNetworkingPeeredDnsDomain#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1125,7 +1125,7 @@ Project *string
 
 The ID of the project that the service account will be created in. Defaults to the provider project configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/service_networking_peered_dns_domain#project ServiceNetworkingPeeredDnsDomain#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/service_networking_peered_dns_domain#project ServiceNetworkingPeeredDnsDomain#project}
 
 ---
 
@@ -1139,7 +1139,7 @@ Service *string
 
 The name of the service to create a peered DNS domain for, e.g. servicenetworking.googleapis.com.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/service_networking_peered_dns_domain#service ServiceNetworkingPeeredDnsDomain#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/service_networking_peered_dns_domain#service ServiceNetworkingPeeredDnsDomain#service}
 
 ---
 
@@ -1153,7 +1153,7 @@ Timeouts ServiceNetworkingPeeredDnsDomainTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/service_networking_peered_dns_domain#timeouts ServiceNetworkingPeeredDnsDomain#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/service_networking_peered_dns_domain#timeouts ServiceNetworkingPeeredDnsDomain#timeouts}
 
 ---
 
@@ -1162,7 +1162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.serviceNetworkingPeeredDnsDomain.ServiceNetworkingPeeredDnsDomainTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/servicenetworkingpeereddnsdomain"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/servicenetworkingpeereddnsdomain"
 
 &servicenetworkingpeereddnsdomain.ServiceNetworkingPeeredDnsDomainTimeouts {
 	Create: *string,
@@ -1175,9 +1175,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/servicenetworkin
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.serviceNetworkingPeeredDnsDomain.ServiceNetworkingPeeredDnsDomainTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/service_networking_peered_dns_domain#create ServiceNetworkingPeeredDnsDomain#create}. |
-| <code><a href="#@cdktn/provider-google.serviceNetworkingPeeredDnsDomain.ServiceNetworkingPeeredDnsDomainTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/service_networking_peered_dns_domain#delete ServiceNetworkingPeeredDnsDomain#delete}. |
-| <code><a href="#@cdktn/provider-google.serviceNetworkingPeeredDnsDomain.ServiceNetworkingPeeredDnsDomainTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/service_networking_peered_dns_domain#read ServiceNetworkingPeeredDnsDomain#read}. |
+| <code><a href="#@cdktn/provider-google.serviceNetworkingPeeredDnsDomain.ServiceNetworkingPeeredDnsDomainTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/service_networking_peered_dns_domain#create ServiceNetworkingPeeredDnsDomain#create}. |
+| <code><a href="#@cdktn/provider-google.serviceNetworkingPeeredDnsDomain.ServiceNetworkingPeeredDnsDomainTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/service_networking_peered_dns_domain#delete ServiceNetworkingPeeredDnsDomain#delete}. |
+| <code><a href="#@cdktn/provider-google.serviceNetworkingPeeredDnsDomain.ServiceNetworkingPeeredDnsDomainTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/service_networking_peered_dns_domain#read ServiceNetworkingPeeredDnsDomain#read}. |
 
 ---
 
@@ -1189,7 +1189,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/service_networking_peered_dns_domain#create ServiceNetworkingPeeredDnsDomain#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/service_networking_peered_dns_domain#create ServiceNetworkingPeeredDnsDomain#create}.
 
 ---
 
@@ -1201,7 +1201,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/service_networking_peered_dns_domain#delete ServiceNetworkingPeeredDnsDomain#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/service_networking_peered_dns_domain#delete ServiceNetworkingPeeredDnsDomain#delete}.
 
 ---
 
@@ -1213,7 +1213,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/service_networking_peered_dns_domain#read ServiceNetworkingPeeredDnsDomain#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/service_networking_peered_dns_domain#read ServiceNetworkingPeeredDnsDomain#read}.
 
 ---
 
@@ -1224,7 +1224,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.serviceNetworkingPeeredDnsDomain.ServiceNetworkingPeeredDnsDomainTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/servicenetworkingpeereddnsdomain"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/servicenetworkingpeereddnsdomain"
 
 servicenetworkingpeereddnsdomain.NewServiceNetworkingPeeredDnsDomainTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServiceNetworkingPeeredDnsDomainTimeoutsOutputReference
 ```

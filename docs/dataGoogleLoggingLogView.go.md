@@ -4,12 +4,12 @@
 
 ### DataGoogleLoggingLogView <a name="DataGoogleLoggingLogView" id="@cdktn/provider-google.dataGoogleLoggingLogView.DataGoogleLoggingLogView"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/logging_log_view google_logging_log_view}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/logging_log_view google_logging_log_view}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleLoggingLogView.DataGoogleLoggingLogView.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglelogginglogview"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglelogginglogview"
 
 datagooglelogginglogview.NewDataGoogleLoggingLogView(scope Construct, id *string, config DataGoogleLoggingLogViewConfig) DataGoogleLoggingLogView
 ```
@@ -305,7 +305,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleLoggingLogView.DataGoogleLoggingLogView.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglelogginglogview"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglelogginglogview"
 
 datagooglelogginglogview.DataGoogleLoggingLogView_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleLoggingLogView.DataGoogleLoggingLogView.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglelogginglogview"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglelogginglogview"
 
 datagooglelogginglogview.DataGoogleLoggingLogView_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ datagooglelogginglogview.DataGoogleLoggingLogView_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleLoggingLogView.DataGoogleLoggingLogView.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglelogginglogview"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglelogginglogview"
 
 datagooglelogginglogview.DataGoogleLoggingLogView_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagooglelogginglogview.DataGoogleLoggingLogView_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleLoggingLogView.DataGoogleLoggingLogView.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglelogginglogview"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglelogginglogview"
 
 datagooglelogginglogview.DataGoogleLoggingLogView_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataGoogleLoggingLogView t
 
 The id of the existing DataGoogleLoggingLogView that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/logging_log_view#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/logging_log_view#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -737,7 +737,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleLoggingLogView.DataGoogleLoggingLogViewConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglelogginglogview"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglelogginglogview"
 
 &datagooglelogginglogview.DataGoogleLoggingLogViewConfig {
 	Connection: interface{},
@@ -770,7 +770,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleloggin
 | <code><a href="#@cdktn/provider-google.dataGoogleLoggingLogView.DataGoogleLoggingLogViewConfig.property.location">Location</a></code> | <code>*string</code> | The location of the resource. The supported locations are: global, us-central1, us-east1, us-west1, asia-east1, europe-west1. |
 | <code><a href="#@cdktn/provider-google.dataGoogleLoggingLogView.DataGoogleLoggingLogViewConfig.property.name">Name</a></code> | <code>*string</code> | The resource name of the view. For example: \'projects/my-project/locations/global/buckets/my-bucket/views/my-view\'. |
 | <code><a href="#@cdktn/provider-google.dataGoogleLoggingLogView.DataGoogleLoggingLogViewConfig.property.parent">Parent</a></code> | <code>*string</code> | The parent of the resource. |
-| <code><a href="#@cdktn/provider-google.dataGoogleLoggingLogView.DataGoogleLoggingLogViewConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/logging_log_view#id DataGoogleLoggingLogView#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleLoggingLogView.DataGoogleLoggingLogViewConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/logging_log_view#id DataGoogleLoggingLogView#id}. |
 
 ---
 
@@ -854,7 +854,7 @@ Bucket *string
 
 The bucket of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/logging_log_view#bucket DataGoogleLoggingLogView#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/logging_log_view#bucket DataGoogleLoggingLogView#bucket}
 
 ---
 
@@ -868,7 +868,7 @@ Location *string
 
 The location of the resource. The supported locations are: global, us-central1, us-east1, us-west1, asia-east1, europe-west1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/logging_log_view#location DataGoogleLoggingLogView#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/logging_log_view#location DataGoogleLoggingLogView#location}
 
 ---
 
@@ -882,7 +882,7 @@ Name *string
 
 The resource name of the view. For example: \'projects/my-project/locations/global/buckets/my-bucket/views/my-view\'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/logging_log_view#name DataGoogleLoggingLogView#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/logging_log_view#name DataGoogleLoggingLogView#name}
 
 ---
 
@@ -896,7 +896,7 @@ Parent *string
 
 The parent of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/logging_log_view#parent DataGoogleLoggingLogView#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/logging_log_view#parent DataGoogleLoggingLogView#parent}
 
 ---
 
@@ -908,7 +908,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/logging_log_view#id DataGoogleLoggingLogView#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/logging_log_view#id DataGoogleLoggingLogView#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

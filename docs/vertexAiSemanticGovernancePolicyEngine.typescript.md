@@ -4,7 +4,7 @@
 
 ### VertexAiSemanticGovernancePolicyEngine <a name="VertexAiSemanticGovernancePolicyEngine" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngine"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/vertex_ai_semantic_governance_policy_engine google_vertex_ai_semantic_governance_policy_engine}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_semantic_governance_policy_engine google_vertex_ai_semantic_governance_policy_engine}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngine.Initializer"></a>
 
@@ -74,8 +74,10 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngine.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngine.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngine.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngine.putGatewayConfigs">putGatewayConfigs</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngine.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngine.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngine.resetGatewayConfigs">resetGatewayConfigs</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngine.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngine.resetProject">resetProject</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngine.resetRegion">resetRegion</a></code> | *No description.* |
@@ -392,6 +394,18 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `putGatewayConfigs` <a name="putGatewayConfigs" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngine.putGatewayConfigs"></a>
+
+```typescript
+public putGatewayConfigs(value: IResolvable | VertexAiSemanticGovernancePolicyEngineGatewayConfigs[]): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngine.putGatewayConfigs.parameter.value"></a>
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigs">VertexAiSemanticGovernancePolicyEngineGatewayConfigs</a>[]
+
+---
+
 ##### `putTimeouts` <a name="putTimeouts" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngine.putTimeouts"></a>
 
 ```typescript
@@ -408,6 +422,12 @@ public putTimeouts(value: VertexAiSemanticGovernancePolicyEngineTimeouts): void
 
 ```typescript
 public resetDeletionPolicy(): void
+```
+
+##### `resetGatewayConfigs` <a name="resetGatewayConfigs" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngine.resetGatewayConfigs"></a>
+
+```typescript
+public resetGatewayConfigs(): void
 ```
 
 ##### `resetId` <a name="resetId" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngine.resetId"></a>
@@ -537,7 +557,7 @@ The construct id used in the generated config for the VertexAiSemanticGovernance
 
 The id of the existing VertexAiSemanticGovernancePolicyEngine that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/vertex_ai_semantic_governance_policy_engine#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_semantic_governance_policy_engine#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -568,6 +588,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngine.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngine.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngine.property.createTime">createTime</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngine.property.gatewayConfigs">gatewayConfigs</a></code> | <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsList">VertexAiSemanticGovernancePolicyEngineGatewayConfigsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngine.property.ipAddress">ipAddress</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngine.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngine.property.pscForwardingRule">pscForwardingRule</a></code> | <code>string</code> | *No description.* |
@@ -576,6 +597,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngine.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineTimeoutsOutputReference">VertexAiSemanticGovernancePolicyEngineTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngine.property.updateTime">updateTime</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngine.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngine.property.gatewayConfigsInput">gatewayConfigsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigs">VertexAiSemanticGovernancePolicyEngineGatewayConfigs</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngine.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngine.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngine.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
@@ -739,6 +761,16 @@ public readonly createTime: string;
 
 ---
 
+##### `gatewayConfigs`<sup>Required</sup> <a name="gatewayConfigs" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngine.property.gatewayConfigs"></a>
+
+```typescript
+public readonly gatewayConfigs: VertexAiSemanticGovernancePolicyEngineGatewayConfigsList;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsList">VertexAiSemanticGovernancePolicyEngineGatewayConfigsList</a>
+
+---
+
 ##### `ipAddress`<sup>Required</sup> <a name="ipAddress" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngine.property.ipAddress"></a>
 
 ```typescript
@@ -816,6 +848,16 @@ public readonly deletionPolicyInput: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `gatewayConfigsInput`<sup>Optional</sup> <a name="gatewayConfigsInput" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngine.property.gatewayConfigsInput"></a>
+
+```typescript
+public readonly gatewayConfigsInput: IResolvable | VertexAiSemanticGovernancePolicyEngineGatewayConfigs[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigs">VertexAiSemanticGovernancePolicyEngineGatewayConfigs</a>[]
 
 ---
 
@@ -941,8 +983,9 @@ const vertexAiSemanticGovernancePolicyEngineConfig: vertexAiSemanticGovernancePo
 | <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/vertex_ai_semantic_governance_policy_engine#id VertexAiSemanticGovernancePolicyEngine#id}. |
-| <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/vertex_ai_semantic_governance_policy_engine#project VertexAiSemanticGovernancePolicyEngine#project}. |
+| <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineConfig.property.gatewayConfigs">gatewayConfigs</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigs">VertexAiSemanticGovernancePolicyEngineGatewayConfigs</a>[]</code> | gateway_configs block. |
+| <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_semantic_governance_policy_engine#id VertexAiSemanticGovernancePolicyEngine#id}. |
+| <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_semantic_governance_policy_engine#project VertexAiSemanticGovernancePolicyEngine#project}. |
 | <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineConfig.property.region">region</a></code> | <code>string</code> | The region of the SemanticGovernancePolicyEngine, e.g. 'us-central1'. |
 | <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineTimeouts">VertexAiSemanticGovernancePolicyEngineTimeouts</a></code> | timeouts block. |
 
@@ -1036,7 +1079,21 @@ management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/vertex_ai_semantic_governance_policy_engine#deletion_policy VertexAiSemanticGovernancePolicyEngine#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_semantic_governance_policy_engine#deletion_policy VertexAiSemanticGovernancePolicyEngine#deletion_policy}
+
+---
+
+##### `gatewayConfigs`<sup>Optional</sup> <a name="gatewayConfigs" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineConfig.property.gatewayConfigs"></a>
+
+```typescript
+public readonly gatewayConfigs: IResolvable | VertexAiSemanticGovernancePolicyEngineGatewayConfigs[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigs">VertexAiSemanticGovernancePolicyEngineGatewayConfigs</a>[]
+
+gateway_configs block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_semantic_governance_policy_engine#gateway_configs VertexAiSemanticGovernancePolicyEngine#gateway_configs}
 
 ---
 
@@ -1048,7 +1105,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/vertex_ai_semantic_governance_policy_engine#id VertexAiSemanticGovernancePolicyEngine#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_semantic_governance_policy_engine#id VertexAiSemanticGovernancePolicyEngine#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1063,7 +1120,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/vertex_ai_semantic_governance_policy_engine#project VertexAiSemanticGovernancePolicyEngine#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_semantic_governance_policy_engine#project VertexAiSemanticGovernancePolicyEngine#project}.
 
 ---
 
@@ -1077,7 +1134,7 @@ public readonly region: string;
 
 The region of the SemanticGovernancePolicyEngine, e.g. 'us-central1'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/vertex_ai_semantic_governance_policy_engine#region VertexAiSemanticGovernancePolicyEngine#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_semantic_governance_policy_engine#region VertexAiSemanticGovernancePolicyEngine#region}
 
 ---
 
@@ -1091,7 +1148,118 @@ public readonly timeouts: VertexAiSemanticGovernancePolicyEngineTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/vertex_ai_semantic_governance_policy_engine#timeouts VertexAiSemanticGovernancePolicyEngine#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_semantic_governance_policy_engine#timeouts VertexAiSemanticGovernancePolicyEngine#timeouts}
+
+---
+
+### VertexAiSemanticGovernancePolicyEngineGatewayConfigs <a name="VertexAiSemanticGovernancePolicyEngineGatewayConfigs" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigs"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigs.Initializer"></a>
+
+```typescript
+import { vertexAiSemanticGovernancePolicyEngine } from '@cdktn/provider-google'
+
+const vertexAiSemanticGovernancePolicyEngineGatewayConfigs: vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigs = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigs.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_semantic_governance_policy_engine#name VertexAiSemanticGovernancePolicyEngine#name}. |
+| <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigs.property.allowedProjects">allowedProjects</a></code> | <code>string[]</code> | Additional consumer projects permitted to attach their own PSC endpoint to this gateway's ServiceAttachment. |
+| <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigs.property.dnsZoneName">dnsZoneName</a></code> | <code>string</code> | The name of the private Cloud DNS managed zone in which the backend creates the DNS record set for this gateway's PSC endpoint. |
+| <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigs.property.network">network</a></code> | <code>string</code> | The URI of the network resource where the gateway's PSC endpoint is provisioned. |
+| <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigs.property.subnetwork">subnetwork</a></code> | <code>string</code> | The URI of the subnetwork resource where the gateway's PSC endpoint is provisioned. |
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigs.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_semantic_governance_policy_engine#name VertexAiSemanticGovernancePolicyEngine#name}.
+
+---
+
+##### `allowedProjects`<sup>Optional</sup> <a name="allowedProjects" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigs.property.allowedProjects"></a>
+
+```typescript
+public readonly allowedProjects: string[];
+```
+
+- *Type:* string[]
+
+Additional consumer projects permitted to attach their own PSC endpoint to this gateway's ServiceAttachment.
+
+This is the "decoupled" mode, where
+the customer creates the PSC endpoint in a project other than this
+gateway's network project. Each listed project is VPC-SC enforced: it
+must be within the caller's service perimeter. The owning
+SemanticGovernancePolicyEngine's own project is always permitted
+implicitly and need not be listed. Format: projects/{project} (ID or number).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_semantic_governance_policy_engine#allowed_projects VertexAiSemanticGovernancePolicyEngine#allowed_projects}
+
+---
+
+##### `dnsZoneName`<sup>Optional</sup> <a name="dnsZoneName" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigs.property.dnsZoneName"></a>
+
+```typescript
+public readonly dnsZoneName: string;
+```
+
+- *Type:* string
+
+The name of the private Cloud DNS managed zone in which the backend creates the DNS record set for this gateway's PSC endpoint.
+
+This is the
+managed-zone resource name, not a fully-qualified domain name. The zone
+must already exist and be attached to the gateway's VPC at provision
+time. The name must match '^[a-z0-9.-]{1,63}$'. Must be set together
+with 'network' and 'subnetwork' (all three or none).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_semantic_governance_policy_engine#dns_zone_name VertexAiSemanticGovernancePolicyEngine#dns_zone_name}
+
+---
+
+##### `network`<sup>Optional</sup> <a name="network" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigs.property.network"></a>
+
+```typescript
+public readonly network: string;
+```
+
+- *Type:* string
+
+The URI of the network resource where the gateway's PSC endpoint is provisioned.
+
+Format: projects/{project}/global/networks/{network}.
+'network', 'subnetwork', and 'dns_zone_name' must all be set together
+or all omitted; setting only some is rejected by the API.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_semantic_governance_policy_engine#network VertexAiSemanticGovernancePolicyEngine#network}
+
+---
+
+##### `subnetwork`<sup>Optional</sup> <a name="subnetwork" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigs.property.subnetwork"></a>
+
+```typescript
+public readonly subnetwork: string;
+```
+
+- *Type:* string
+
+The URI of the subnetwork resource where the gateway's PSC endpoint is provisioned.
+
+Format:
+projects/{project}/regions/{region}/subnetworks/{subnetwork}. Must be
+set together with 'network' and 'dns_zone_name' (all three or none).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_semantic_governance_policy_engine#subnetwork VertexAiSemanticGovernancePolicyEngine#subnetwork}
 
 ---
 
@@ -1109,9 +1277,9 @@ const vertexAiSemanticGovernancePolicyEngineTimeouts: vertexAiSemanticGovernance
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/vertex_ai_semantic_governance_policy_engine#create VertexAiSemanticGovernancePolicyEngine#create}. |
-| <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/vertex_ai_semantic_governance_policy_engine#delete VertexAiSemanticGovernancePolicyEngine#delete}. |
-| <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/vertex_ai_semantic_governance_policy_engine#update VertexAiSemanticGovernancePolicyEngine#update}. |
+| <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_semantic_governance_policy_engine#create VertexAiSemanticGovernancePolicyEngine#create}. |
+| <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_semantic_governance_policy_engine#delete VertexAiSemanticGovernancePolicyEngine#delete}. |
+| <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_semantic_governance_policy_engine#update VertexAiSemanticGovernancePolicyEngine#update}. |
 
 ---
 
@@ -1123,7 +1291,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/vertex_ai_semantic_governance_policy_engine#create VertexAiSemanticGovernancePolicyEngine#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_semantic_governance_policy_engine#create VertexAiSemanticGovernancePolicyEngine#create}.
 
 ---
 
@@ -1135,7 +1303,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/vertex_ai_semantic_governance_policy_engine#delete VertexAiSemanticGovernancePolicyEngine#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_semantic_governance_policy_engine#delete VertexAiSemanticGovernancePolicyEngine#delete}.
 
 ---
 
@@ -1147,11 +1315,620 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/vertex_ai_semantic_governance_policy_engine#update VertexAiSemanticGovernancePolicyEngine#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_semantic_governance_policy_engine#update VertexAiSemanticGovernancePolicyEngine#update}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### VertexAiSemanticGovernancePolicyEngineGatewayConfigsList <a name="VertexAiSemanticGovernancePolicyEngineGatewayConfigsList" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsList.Initializer"></a>
+
+```typescript
+import { vertexAiSemanticGovernancePolicyEngine } from '@cdktn/provider-google'
+
+new vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsList.allWithMapKey"></a>
+
+```typescript
+public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsList.get"></a>
+
+```typescript
+public get(index: number): VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigs">VertexAiSemanticGovernancePolicyEngineGatewayConfigs</a>[]</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsList.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | VertexAiSemanticGovernancePolicyEngineGatewayConfigs[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigs">VertexAiSemanticGovernancePolicyEngineGatewayConfigs</a>[]
+
+---
+
+
+### VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference <a name="VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.Initializer"></a>
+
+```typescript
+import { vertexAiSemanticGovernancePolicyEngine } from '@cdktn/provider-google'
+
+new vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.resetAllowedProjects">resetAllowedProjects</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.resetDnsZoneName">resetDnsZoneName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.resetNetwork">resetNetwork</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.resetSubnetwork">resetSubnetwork</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetAllowedProjects` <a name="resetAllowedProjects" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.resetAllowedProjects"></a>
+
+```typescript
+public resetAllowedProjects(): void
+```
+
+##### `resetDnsZoneName` <a name="resetDnsZoneName" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.resetDnsZoneName"></a>
+
+```typescript
+public resetDnsZoneName(): void
+```
+
+##### `resetNetwork` <a name="resetNetwork" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.resetNetwork"></a>
+
+```typescript
+public resetNetwork(): void
+```
+
+##### `resetSubnetwork` <a name="resetSubnetwork" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.resetSubnetwork"></a>
+
+```typescript
+public resetSubnetwork(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.property.dnsRecord">dnsRecord</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.property.ipAddress">ipAddress</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.property.pscEndpoint">pscEndpoint</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.property.state">state</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.property.allowedProjectsInput">allowedProjectsInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.property.dnsZoneNameInput">dnsZoneNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.property.networkInput">networkInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.property.subnetworkInput">subnetworkInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.property.allowedProjects">allowedProjects</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.property.dnsZoneName">dnsZoneName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.property.network">network</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.property.subnetwork">subnetwork</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigs">VertexAiSemanticGovernancePolicyEngineGatewayConfigs</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `dnsRecord`<sup>Required</sup> <a name="dnsRecord" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.property.dnsRecord"></a>
+
+```typescript
+public readonly dnsRecord: string;
+```
+
+- *Type:* string
+
+---
+
+##### `ipAddress`<sup>Required</sup> <a name="ipAddress" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.property.ipAddress"></a>
+
+```typescript
+public readonly ipAddress: string;
+```
+
+- *Type:* string
+
+---
+
+##### `pscEndpoint`<sup>Required</sup> <a name="pscEndpoint" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.property.pscEndpoint"></a>
+
+```typescript
+public readonly pscEndpoint: string;
+```
+
+- *Type:* string
+
+---
+
+##### `state`<sup>Required</sup> <a name="state" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.property.state"></a>
+
+```typescript
+public readonly state: string;
+```
+
+- *Type:* string
+
+---
+
+##### `allowedProjectsInput`<sup>Optional</sup> <a name="allowedProjectsInput" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.property.allowedProjectsInput"></a>
+
+```typescript
+public readonly allowedProjectsInput: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `dnsZoneNameInput`<sup>Optional</sup> <a name="dnsZoneNameInput" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.property.dnsZoneNameInput"></a>
+
+```typescript
+public readonly dnsZoneNameInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.property.nameInput"></a>
+
+```typescript
+public readonly nameInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `networkInput`<sup>Optional</sup> <a name="networkInput" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.property.networkInput"></a>
+
+```typescript
+public readonly networkInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `subnetworkInput`<sup>Optional</sup> <a name="subnetworkInput" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.property.subnetworkInput"></a>
+
+```typescript
+public readonly subnetworkInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `allowedProjects`<sup>Required</sup> <a name="allowedProjects" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.property.allowedProjects"></a>
+
+```typescript
+public readonly allowedProjects: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `dnsZoneName`<sup>Required</sup> <a name="dnsZoneName" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.property.dnsZoneName"></a>
+
+```typescript
+public readonly dnsZoneName: string;
+```
+
+- *Type:* string
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+---
+
+##### `network`<sup>Required</sup> <a name="network" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.property.network"></a>
+
+```typescript
+public readonly network: string;
+```
+
+- *Type:* string
+
+---
+
+##### `subnetwork`<sup>Required</sup> <a name="subnetwork" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.property.subnetwork"></a>
+
+```typescript
+public readonly subnetwork: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | VertexAiSemanticGovernancePolicyEngineGatewayConfigs;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineGatewayConfigs">VertexAiSemanticGovernancePolicyEngineGatewayConfigs</a>
+
+---
+
 
 ### VertexAiSemanticGovernancePolicyEngineTimeoutsOutputReference <a name="VertexAiSemanticGovernancePolicyEngineTimeoutsOutputReference" id="@cdktn/provider-google.vertexAiSemanticGovernancePolicyEngine.VertexAiSemanticGovernancePolicyEngineTimeoutsOutputReference"></a>
 

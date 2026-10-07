@@ -4,12 +4,12 @@
 
 ### EphemeralGoogleServiceAccountJwt <a name="EphemeralGoogleServiceAccountJwt" id="@cdktn/provider-google.ephemeralGoogleServiceAccountJwt.EphemeralGoogleServiceAccountJwt"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/ephemeral-resources/service_account_jwt google_service_account_jwt}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/ephemeral-resources/service_account_jwt google_service_account_jwt}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.ephemeralGoogleServiceAccountJwt.EphemeralGoogleServiceAccountJwt.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/ephemeralgoogleserviceaccountjwt"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/ephemeralgoogleserviceaccountjwt"
 
 ephemeralgoogleserviceaccountjwt.NewEphemeralGoogleServiceAccountJwt(scope Construct, id *string, config EphemeralGoogleServiceAccountJwtConfig) EphemeralGoogleServiceAccountJwt
 ```
@@ -309,7 +309,7 @@ func ResetExpiresIn()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.ephemeralGoogleServiceAccountJwt.EphemeralGoogleServiceAccountJwt.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/ephemeralgoogleserviceaccountjwt"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/ephemeralgoogleserviceaccountjwt"
 
 ephemeralgoogleserviceaccountjwt.EphemeralGoogleServiceAccountJwt_IsConstruct(x interface{}) *bool
 ```
@@ -341,7 +341,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.ephemeralGoogleServiceAccountJwt.EphemeralGoogleServiceAccountJwt.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/ephemeralgoogleserviceaccountjwt"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/ephemeralgoogleserviceaccountjwt"
 
 ephemeralgoogleserviceaccountjwt.EphemeralGoogleServiceAccountJwt_IsTerraformElement(x interface{}) *bool
 ```
@@ -355,7 +355,7 @@ ephemeralgoogleserviceaccountjwt.EphemeralGoogleServiceAccountJwt_IsTerraformEle
 ##### `IsTerraformEphemeralResource` <a name="IsTerraformEphemeralResource" id="@cdktn/provider-google.ephemeralGoogleServiceAccountJwt.EphemeralGoogleServiceAccountJwt.isTerraformEphemeralResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/ephemeralgoogleserviceaccountjwt"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/ephemeralgoogleserviceaccountjwt"
 
 ephemeralgoogleserviceaccountjwt.EphemeralGoogleServiceAccountJwt_IsTerraformEphemeralResource(x interface{}) *bool
 ```
@@ -631,7 +631,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.ephemeralGoogleServiceAccountJwt.EphemeralGoogleServiceAccountJwtConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/ephemeralgoogleserviceaccountjwt"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/ephemeralgoogleserviceaccountjwt"
 
 &ephemeralgoogleserviceaccountjwt.EphemeralGoogleServiceAccountJwtConfig {
 	Count: interface{},
@@ -722,7 +722,7 @@ Payload *string
 
 A JSON-encoded JWT claims set that will be included in the signed JWT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/ephemeral-resources/service_account_jwt#payload EphemeralGoogleServiceAccountJwt#payload}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/ephemeral-resources/service_account_jwt#payload EphemeralGoogleServiceAccountJwt#payload}
 
 ---
 
@@ -736,7 +736,7 @@ TargetServiceAccount *string
 
 The email of the service account that will sign the JWT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/ephemeral-resources/service_account_jwt#target_service_account EphemeralGoogleServiceAccountJwt#target_service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/ephemeral-resources/service_account_jwt#target_service_account EphemeralGoogleServiceAccountJwt#target_service_account}
 
 ---
 
@@ -750,7 +750,7 @@ Delegates *[]*string
 
 Delegate chain of approvals needed to perform full impersonation. Specify the fully qualified service account name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/ephemeral-resources/service_account_jwt#delegates EphemeralGoogleServiceAccountJwt#delegates}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/ephemeral-resources/service_account_jwt#delegates EphemeralGoogleServiceAccountJwt#delegates}
 
 ---
 
@@ -766,7 +766,7 @@ Number of seconds until the JWT expires.
 
 If set and non-zero an `exp` claim will be added to the payload derived from the current timestamp plus expires_in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/ephemeral-resources/service_account_jwt#expires_in EphemeralGoogleServiceAccountJwt#expires_in}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/ephemeral-resources/service_account_jwt#expires_in EphemeralGoogleServiceAccountJwt#expires_in}
 
 ---
 

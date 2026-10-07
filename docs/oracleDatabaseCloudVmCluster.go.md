@@ -4,12 +4,12 @@
 
 ### OracleDatabaseCloudVmCluster <a name="OracleDatabaseCloudVmCluster" id="@cdktn/provider-google.oracleDatabaseCloudVmCluster.OracleDatabaseCloudVmCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_cloud_vm_cluster google_oracle_database_cloud_vm_cluster}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_cloud_vm_cluster google_oracle_database_cloud_vm_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseCloudVmCluster.OracleDatabaseCloudVmCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasecloudvmcluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/oracledatabasecloudvmcluster"
 
 oracledatabasecloudvmcluster.NewOracleDatabaseCloudVmCluster(scope Construct, id *string, config OracleDatabaseCloudVmClusterConfig) OracleDatabaseCloudVmCluster
 ```
@@ -531,7 +531,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.oracleDatabaseCloudVmCluster.OracleDatabaseCloudVmCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasecloudvmcluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/oracledatabasecloudvmcluster"
 
 oracledatabasecloudvmcluster.OracleDatabaseCloudVmCluster_IsConstruct(x interface{}) *bool
 ```
@@ -563,7 +563,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.oracleDatabaseCloudVmCluster.OracleDatabaseCloudVmCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasecloudvmcluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/oracledatabasecloudvmcluster"
 
 oracledatabasecloudvmcluster.OracleDatabaseCloudVmCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -577,7 +577,7 @@ oracledatabasecloudvmcluster.OracleDatabaseCloudVmCluster_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.oracleDatabaseCloudVmCluster.OracleDatabaseCloudVmCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasecloudvmcluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/oracledatabasecloudvmcluster"
 
 oracledatabasecloudvmcluster.OracleDatabaseCloudVmCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -591,7 +591,7 @@ oracledatabasecloudvmcluster.OracleDatabaseCloudVmCluster_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.oracleDatabaseCloudVmCluster.OracleDatabaseCloudVmCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasecloudvmcluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/oracledatabasecloudvmcluster"
 
 oracledatabasecloudvmcluster.OracleDatabaseCloudVmCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -620,7 +620,7 @@ The construct id used in the generated config for the OracleDatabaseCloudVmClust
 
 The id of the existing OracleDatabaseCloudVmCluster that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_cloud_vm_cluster#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_cloud_vm_cluster#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1282,7 +1282,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseCloudVmCluster.OracleDatabaseCloudVmClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasecloudvmcluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/oracledatabasecloudvmcluster"
 
 &oracledatabasecloudvmcluster.OracleDatabaseCloudVmClusterConfig {
 	Connection: interface{},
@@ -1308,8 +1308,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasecl
 	OdbNetwork: *string,
 	OdbSubnet: *string,
 	Project: *string,
-	Properties: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseCloudVmCluster.OracleDatabaseCloudVmClusterProperties,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseCloudVmCluster.OracleDatabaseCloudVmClusterTimeouts,
+	Properties: github.com/cdktn-io/cdktn-provider-google-go/google/v21.oracleDatabaseCloudVmCluster.OracleDatabaseCloudVmClusterProperties,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.oracleDatabaseCloudVmCluster.OracleDatabaseCloudVmClusterTimeouts,
 }
 ```
 
@@ -1334,12 +1334,12 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasecl
 | <code><a href="#@cdktn/provider-google.oracleDatabaseCloudVmCluster.OracleDatabaseCloudVmClusterConfig.property.deletionProtection">DeletionProtection</a></code> | <code>interface{}</code> | Whether Terraform will be prevented from destroying the cluster. |
 | <code><a href="#@cdktn/provider-google.oracleDatabaseCloudVmCluster.OracleDatabaseCloudVmClusterConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | User friendly name for this resource. |
 | <code><a href="#@cdktn/provider-google.oracleDatabaseCloudVmCluster.OracleDatabaseCloudVmClusterConfig.property.exascaleDbStorageVault">ExascaleDbStorageVault</a></code> | <code>*string</code> | The name of ExascaleDbStorageVault associated with the VM Cluster. Format: projects/{project}/locations/{location}/exascaleDbStorageVaults/{exascale_db_storage_vault}. |
-| <code><a href="#@cdktn/provider-google.oracleDatabaseCloudVmCluster.OracleDatabaseCloudVmClusterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_cloud_vm_cluster#id OracleDatabaseCloudVmCluster#id}. |
+| <code><a href="#@cdktn/provider-google.oracleDatabaseCloudVmCluster.OracleDatabaseCloudVmClusterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_cloud_vm_cluster#id OracleDatabaseCloudVmCluster#id}. |
 | <code><a href="#@cdktn/provider-google.oracleDatabaseCloudVmCluster.OracleDatabaseCloudVmClusterConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | Labels or tags associated with the VM Cluster. |
 | <code><a href="#@cdktn/provider-google.oracleDatabaseCloudVmCluster.OracleDatabaseCloudVmClusterConfig.property.network">Network</a></code> | <code>*string</code> | The name of the VPC network. Format: projects/{project}/global/networks/{network}. |
 | <code><a href="#@cdktn/provider-google.oracleDatabaseCloudVmCluster.OracleDatabaseCloudVmClusterConfig.property.odbNetwork">OdbNetwork</a></code> | <code>*string</code> | The name of the OdbNetwork associated with the VM Cluster. |
 | <code><a href="#@cdktn/provider-google.oracleDatabaseCloudVmCluster.OracleDatabaseCloudVmClusterConfig.property.odbSubnet">OdbSubnet</a></code> | <code>*string</code> | The name of the OdbSubnet associated with the VM Cluster for IP allocation. Format: projects/{project}/locations/{location}/odbNetworks/{odb_network}/odbSubnets/{odb_subnet}. |
-| <code><a href="#@cdktn/provider-google.oracleDatabaseCloudVmCluster.OracleDatabaseCloudVmClusterConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_cloud_vm_cluster#project OracleDatabaseCloudVmCluster#project}. |
+| <code><a href="#@cdktn/provider-google.oracleDatabaseCloudVmCluster.OracleDatabaseCloudVmClusterConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_cloud_vm_cluster#project OracleDatabaseCloudVmCluster#project}. |
 | <code><a href="#@cdktn/provider-google.oracleDatabaseCloudVmCluster.OracleDatabaseCloudVmClusterConfig.property.properties">Properties</a></code> | <code><a href="#@cdktn/provider-google.oracleDatabaseCloudVmCluster.OracleDatabaseCloudVmClusterProperties">OracleDatabaseCloudVmClusterProperties</a></code> | properties block. |
 | <code><a href="#@cdktn/provider-google.oracleDatabaseCloudVmCluster.OracleDatabaseCloudVmClusterConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.oracleDatabaseCloudVmCluster.OracleDatabaseCloudVmClusterTimeouts">OracleDatabaseCloudVmClusterTimeouts</a></code> | timeouts block. |
 
@@ -1430,7 +1430,7 @@ to (^[a-z](%5Ba-z0-9-%5D%7B0,61%7D%5Ba-z0-9%5D)?$) and must be a maximum of 63
 characters in length. The value must start with a letter and end with
 a letter or a number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_cloud_vm_cluster#cloud_vm_cluster_id OracleDatabaseCloudVmCluster#cloud_vm_cluster_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_cloud_vm_cluster#cloud_vm_cluster_id OracleDatabaseCloudVmCluster#cloud_vm_cluster_id}
 
 ---
 
@@ -1444,7 +1444,7 @@ ExadataInfrastructure *string
 
 The name of the Exadata Infrastructure resource on which VM cluster resource is created, in the following format: projects/{project}/locations/{region}/cloudExadataInfrastuctures/{cloud_extradata_infrastructure}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_cloud_vm_cluster#exadata_infrastructure OracleDatabaseCloudVmCluster#exadata_infrastructure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_cloud_vm_cluster#exadata_infrastructure OracleDatabaseCloudVmCluster#exadata_infrastructure}
 
 ---
 
@@ -1458,7 +1458,7 @@ Location *string
 
 Resource ID segment making up resource 'name'. See documentation for resource type 'oracledatabase.googleapis.com/DbNode'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_cloud_vm_cluster#location OracleDatabaseCloudVmCluster#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_cloud_vm_cluster#location OracleDatabaseCloudVmCluster#location}
 
 ---
 
@@ -1472,7 +1472,7 @@ BackupOdbSubnet *string
 
 The name of the backup OdbSubnet associated with the VM Cluster. Format: projects/{project}/locations/{location}/odbNetworks/{odb_network}/odbSubnets/{odb_subnet}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_cloud_vm_cluster#backup_odb_subnet OracleDatabaseCloudVmCluster#backup_odb_subnet}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_cloud_vm_cluster#backup_odb_subnet OracleDatabaseCloudVmCluster#backup_odb_subnet}
 
 ---
 
@@ -1486,7 +1486,7 @@ BackupSubnetCidr *string
 
 CIDR range of the backup subnet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_cloud_vm_cluster#backup_subnet_cidr OracleDatabaseCloudVmCluster#backup_subnet_cidr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_cloud_vm_cluster#backup_subnet_cidr OracleDatabaseCloudVmCluster#backup_subnet_cidr}
 
 ---
 
@@ -1500,7 +1500,7 @@ Cidr *string
 
 Network settings. CIDR to use for cluster IP allocation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_cloud_vm_cluster#cidr OracleDatabaseCloudVmCluster#cidr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_cloud_vm_cluster#cidr OracleDatabaseCloudVmCluster#cidr}
 
 ---
 
@@ -1521,7 +1521,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_cloud_vm_cluster#deletion_policy OracleDatabaseCloudVmCluster#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_cloud_vm_cluster#deletion_policy OracleDatabaseCloudVmCluster#deletion_policy}
 
 ---
 
@@ -1537,7 +1537,7 @@ Whether Terraform will be prevented from destroying the cluster.
 
 Deleting this cluster via terraform destroy or terraform apply will only succeed if this field is false in the Terraform state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_cloud_vm_cluster#deletion_protection OracleDatabaseCloudVmCluster#deletion_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_cloud_vm_cluster#deletion_protection OracleDatabaseCloudVmCluster#deletion_protection}
 
 ---
 
@@ -1551,7 +1551,7 @@ DisplayName *string
 
 User friendly name for this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_cloud_vm_cluster#display_name OracleDatabaseCloudVmCluster#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_cloud_vm_cluster#display_name OracleDatabaseCloudVmCluster#display_name}
 
 ---
 
@@ -1565,7 +1565,7 @@ ExascaleDbStorageVault *string
 
 The name of ExascaleDbStorageVault associated with the VM Cluster. Format: projects/{project}/locations/{location}/exascaleDbStorageVaults/{exascale_db_storage_vault}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_cloud_vm_cluster#exascale_db_storage_vault OracleDatabaseCloudVmCluster#exascale_db_storage_vault}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_cloud_vm_cluster#exascale_db_storage_vault OracleDatabaseCloudVmCluster#exascale_db_storage_vault}
 
 ---
 
@@ -1577,7 +1577,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_cloud_vm_cluster#id OracleDatabaseCloudVmCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_cloud_vm_cluster#id OracleDatabaseCloudVmCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1597,7 +1597,7 @@ Labels or tags associated with the VM Cluster.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_cloud_vm_cluster#labels OracleDatabaseCloudVmCluster#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_cloud_vm_cluster#labels OracleDatabaseCloudVmCluster#labels}
 
 ---
 
@@ -1611,7 +1611,7 @@ Network *string
 
 The name of the VPC network. Format: projects/{project}/global/networks/{network}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_cloud_vm_cluster#network OracleDatabaseCloudVmCluster#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_cloud_vm_cluster#network OracleDatabaseCloudVmCluster#network}
 
 ---
 
@@ -1630,7 +1630,7 @@ projects/{project}/locations/{location}/odbNetworks/{odb_network}
 It is optional but if specified, this should match the parent ODBNetwork of
 the odb_subnet and backup_odb_subnet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_cloud_vm_cluster#odb_network OracleDatabaseCloudVmCluster#odb_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_cloud_vm_cluster#odb_network OracleDatabaseCloudVmCluster#odb_network}
 
 ---
 
@@ -1644,7 +1644,7 @@ OdbSubnet *string
 
 The name of the OdbSubnet associated with the VM Cluster for IP allocation. Format: projects/{project}/locations/{location}/odbNetworks/{odb_network}/odbSubnets/{odb_subnet}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_cloud_vm_cluster#odb_subnet OracleDatabaseCloudVmCluster#odb_subnet}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_cloud_vm_cluster#odb_subnet OracleDatabaseCloudVmCluster#odb_subnet}
 
 ---
 
@@ -1656,7 +1656,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_cloud_vm_cluster#project OracleDatabaseCloudVmCluster#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_cloud_vm_cluster#project OracleDatabaseCloudVmCluster#project}.
 
 ---
 
@@ -1670,7 +1670,7 @@ Properties OracleDatabaseCloudVmClusterProperties
 
 properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_cloud_vm_cluster#properties OracleDatabaseCloudVmCluster#properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_cloud_vm_cluster#properties OracleDatabaseCloudVmCluster#properties}
 
 ---
 
@@ -1684,7 +1684,7 @@ Timeouts OracleDatabaseCloudVmClusterTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_cloud_vm_cluster#timeouts OracleDatabaseCloudVmCluster#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_cloud_vm_cluster#timeouts OracleDatabaseCloudVmCluster#timeouts}
 
 ---
 
@@ -1693,7 +1693,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseCloudVmCluster.OracleDatabaseCloudVmClusterIdentityConnector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasecloudvmcluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/oracledatabasecloudvmcluster"
 
 &oracledatabasecloudvmcluster.OracleDatabaseCloudVmClusterIdentityConnector {
 
@@ -1706,7 +1706,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasecl
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseCloudVmCluster.OracleDatabaseCloudVmClusterProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasecloudvmcluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/oracledatabasecloudvmcluster"
 
 &oracledatabasecloudvmcluster.OracleDatabaseCloudVmClusterProperties {
 	CpuCoreCount: *f64,
@@ -1715,7 +1715,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasecl
 	DataStorageSizeTb: *f64,
 	DbNodeStorageSizeGb: *f64,
 	DbServerOcids: *[]*string,
-	DiagnosticsDataCollectionOptions: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseCloudVmCluster.OracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollectionOptions,
+	DiagnosticsDataCollectionOptions: github.com/cdktn-io/cdktn-provider-google-go/google/v21.oracleDatabaseCloudVmCluster.OracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollectionOptions,
 	DiskRedundancy: *string,
 	GiVersion: *string,
 	HostnamePrefix: *string,
@@ -1725,7 +1725,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasecl
 	OcpuCount: *f64,
 	SparseDiskgroupEnabled: interface{},
 	SshPublicKeys: *[]*string,
-	TimeZone: github.com/cdktn-io/cdktn-provider-google-go/google/v20.oracleDatabaseCloudVmCluster.OracleDatabaseCloudVmClusterPropertiesTimeZone,
+	TimeZone: github.com/cdktn-io/cdktn-provider-google-go/google/v21.oracleDatabaseCloudVmCluster.OracleDatabaseCloudVmClusterPropertiesTimeZone,
 }
 ```
 
@@ -1763,7 +1763,7 @@ CpuCoreCount *f64
 
 Number of enabled CPU cores.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_cloud_vm_cluster#cpu_core_count OracleDatabaseCloudVmCluster#cpu_core_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_cloud_vm_cluster#cpu_core_count OracleDatabaseCloudVmCluster#cpu_core_count}
 
 ---
 
@@ -1777,7 +1777,7 @@ LicenseType *string
 
 License type of VM Cluster.   Possible values:  LICENSE_TYPE_UNSPECIFIED LICENSE_INCLUDED BRING_YOUR_OWN_LICENSE.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_cloud_vm_cluster#license_type OracleDatabaseCloudVmCluster#license_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_cloud_vm_cluster#license_type OracleDatabaseCloudVmCluster#license_type}
 
 ---
 
@@ -1791,7 +1791,7 @@ ClusterName *string
 
 OCI Cluster name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_cloud_vm_cluster#cluster_name OracleDatabaseCloudVmCluster#cluster_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_cloud_vm_cluster#cluster_name OracleDatabaseCloudVmCluster#cluster_name}
 
 ---
 
@@ -1805,7 +1805,7 @@ DataStorageSizeTb *f64
 
 The data disk group size to be allocated in TBs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_cloud_vm_cluster#data_storage_size_tb OracleDatabaseCloudVmCluster#data_storage_size_tb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_cloud_vm_cluster#data_storage_size_tb OracleDatabaseCloudVmCluster#data_storage_size_tb}
 
 ---
 
@@ -1819,7 +1819,7 @@ DbNodeStorageSizeGb *f64
 
 Local storage per VM.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_cloud_vm_cluster#db_node_storage_size_gb OracleDatabaseCloudVmCluster#db_node_storage_size_gb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_cloud_vm_cluster#db_node_storage_size_gb OracleDatabaseCloudVmCluster#db_node_storage_size_gb}
 
 ---
 
@@ -1833,7 +1833,7 @@ DbServerOcids *[]*string
 
 OCID of database servers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_cloud_vm_cluster#db_server_ocids OracleDatabaseCloudVmCluster#db_server_ocids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_cloud_vm_cluster#db_server_ocids OracleDatabaseCloudVmCluster#db_server_ocids}
 
 ---
 
@@ -1847,7 +1847,7 @@ DiagnosticsDataCollectionOptions OracleDatabaseCloudVmClusterPropertiesDiagnosti
 
 diagnostics_data_collection_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_cloud_vm_cluster#diagnostics_data_collection_options OracleDatabaseCloudVmCluster#diagnostics_data_collection_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_cloud_vm_cluster#diagnostics_data_collection_options OracleDatabaseCloudVmCluster#diagnostics_data_collection_options}
 
 ---
 
@@ -1861,7 +1861,7 @@ DiskRedundancy *string
 
 The type of redundancy.   Possible values:  DISK_REDUNDANCY_UNSPECIFIED HIGH NORMAL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_cloud_vm_cluster#disk_redundancy OracleDatabaseCloudVmCluster#disk_redundancy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_cloud_vm_cluster#disk_redundancy OracleDatabaseCloudVmCluster#disk_redundancy}
 
 ---
 
@@ -1875,7 +1875,7 @@ GiVersion *string
 
 Grid Infrastructure Version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_cloud_vm_cluster#gi_version OracleDatabaseCloudVmCluster#gi_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_cloud_vm_cluster#gi_version OracleDatabaseCloudVmCluster#gi_version}
 
 ---
 
@@ -1889,7 +1889,7 @@ HostnamePrefix *string
 
 Prefix for VM cluster host names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_cloud_vm_cluster#hostname_prefix OracleDatabaseCloudVmCluster#hostname_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_cloud_vm_cluster#hostname_prefix OracleDatabaseCloudVmCluster#hostname_prefix}
 
 ---
 
@@ -1903,7 +1903,7 @@ LocalBackupEnabled interface{}
 
 Use local backup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_cloud_vm_cluster#local_backup_enabled OracleDatabaseCloudVmCluster#local_backup_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_cloud_vm_cluster#local_backup_enabled OracleDatabaseCloudVmCluster#local_backup_enabled}
 
 ---
 
@@ -1917,7 +1917,7 @@ MemorySizeGb *f64
 
 Memory allocated in GBs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_cloud_vm_cluster#memory_size_gb OracleDatabaseCloudVmCluster#memory_size_gb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_cloud_vm_cluster#memory_size_gb OracleDatabaseCloudVmCluster#memory_size_gb}
 
 ---
 
@@ -1931,7 +1931,7 @@ NodeCount *f64
 
 Number of database servers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_cloud_vm_cluster#node_count OracleDatabaseCloudVmCluster#node_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_cloud_vm_cluster#node_count OracleDatabaseCloudVmCluster#node_count}
 
 ---
 
@@ -1945,7 +1945,7 @@ OcpuCount *f64
 
 OCPU count per VM. Minimum is 0.1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_cloud_vm_cluster#ocpu_count OracleDatabaseCloudVmCluster#ocpu_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_cloud_vm_cluster#ocpu_count OracleDatabaseCloudVmCluster#ocpu_count}
 
 ---
 
@@ -1959,7 +1959,7 @@ SparseDiskgroupEnabled interface{}
 
 Use exadata sparse snapshots.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_cloud_vm_cluster#sparse_diskgroup_enabled OracleDatabaseCloudVmCluster#sparse_diskgroup_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_cloud_vm_cluster#sparse_diskgroup_enabled OracleDatabaseCloudVmCluster#sparse_diskgroup_enabled}
 
 ---
 
@@ -1973,7 +1973,7 @@ SshPublicKeys *[]*string
 
 SSH public keys to be stored with cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_cloud_vm_cluster#ssh_public_keys OracleDatabaseCloudVmCluster#ssh_public_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_cloud_vm_cluster#ssh_public_keys OracleDatabaseCloudVmCluster#ssh_public_keys}
 
 ---
 
@@ -1987,7 +1987,7 @@ TimeZone OracleDatabaseCloudVmClusterPropertiesTimeZone
 
 time_zone block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_cloud_vm_cluster#time_zone OracleDatabaseCloudVmCluster#time_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_cloud_vm_cluster#time_zone OracleDatabaseCloudVmCluster#time_zone}
 
 ---
 
@@ -1996,7 +1996,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseCloudVmCluster.OracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollectionOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasecloudvmcluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/oracledatabasecloudvmcluster"
 
 &oracledatabasecloudvmcluster.OracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollectionOptions {
 	DiagnosticsEventsEnabled: interface{},
@@ -2025,7 +2025,7 @@ DiagnosticsEventsEnabled interface{}
 
 Indicates whether diagnostic collection is enabled for the VM cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_cloud_vm_cluster#diagnostics_events_enabled OracleDatabaseCloudVmCluster#diagnostics_events_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_cloud_vm_cluster#diagnostics_events_enabled OracleDatabaseCloudVmCluster#diagnostics_events_enabled}
 
 ---
 
@@ -2039,7 +2039,7 @@ HealthMonitoringEnabled interface{}
 
 Indicates whether health monitoring is enabled for the VM cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_cloud_vm_cluster#health_monitoring_enabled OracleDatabaseCloudVmCluster#health_monitoring_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_cloud_vm_cluster#health_monitoring_enabled OracleDatabaseCloudVmCluster#health_monitoring_enabled}
 
 ---
 
@@ -2053,7 +2053,7 @@ IncidentLogsEnabled interface{}
 
 Indicates whether incident logs and trace collection are enabled for the VM cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_cloud_vm_cluster#incident_logs_enabled OracleDatabaseCloudVmCluster#incident_logs_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_cloud_vm_cluster#incident_logs_enabled OracleDatabaseCloudVmCluster#incident_logs_enabled}
 
 ---
 
@@ -2062,7 +2062,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseCloudVmCluster.OracleDatabaseCloudVmClusterPropertiesTimeZone.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasecloudvmcluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/oracledatabasecloudvmcluster"
 
 &oracledatabasecloudvmcluster.OracleDatabaseCloudVmClusterPropertiesTimeZone {
 	Id: *string,
@@ -2089,7 +2089,7 @@ Id *string
 
 IANA Time Zone Database time zone, e.g. "America/New_York".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_cloud_vm_cluster#id OracleDatabaseCloudVmCluster#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_cloud_vm_cluster#id OracleDatabaseCloudVmCluster#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2106,7 +2106,7 @@ Version *string
 
 IANA Time Zone Database version number, e.g. "2019a".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_cloud_vm_cluster#version OracleDatabaseCloudVmCluster#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_cloud_vm_cluster#version OracleDatabaseCloudVmCluster#version}
 
 ---
 
@@ -2115,7 +2115,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseCloudVmCluster.OracleDatabaseCloudVmClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasecloudvmcluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/oracledatabasecloudvmcluster"
 
 &oracledatabasecloudvmcluster.OracleDatabaseCloudVmClusterTimeouts {
 	Create: *string,
@@ -2128,9 +2128,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasecl
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.oracleDatabaseCloudVmCluster.OracleDatabaseCloudVmClusterTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_cloud_vm_cluster#create OracleDatabaseCloudVmCluster#create}. |
-| <code><a href="#@cdktn/provider-google.oracleDatabaseCloudVmCluster.OracleDatabaseCloudVmClusterTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_cloud_vm_cluster#delete OracleDatabaseCloudVmCluster#delete}. |
-| <code><a href="#@cdktn/provider-google.oracleDatabaseCloudVmCluster.OracleDatabaseCloudVmClusterTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_cloud_vm_cluster#update OracleDatabaseCloudVmCluster#update}. |
+| <code><a href="#@cdktn/provider-google.oracleDatabaseCloudVmCluster.OracleDatabaseCloudVmClusterTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_cloud_vm_cluster#create OracleDatabaseCloudVmCluster#create}. |
+| <code><a href="#@cdktn/provider-google.oracleDatabaseCloudVmCluster.OracleDatabaseCloudVmClusterTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_cloud_vm_cluster#delete OracleDatabaseCloudVmCluster#delete}. |
+| <code><a href="#@cdktn/provider-google.oracleDatabaseCloudVmCluster.OracleDatabaseCloudVmClusterTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_cloud_vm_cluster#update OracleDatabaseCloudVmCluster#update}. |
 
 ---
 
@@ -2142,7 +2142,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_cloud_vm_cluster#create OracleDatabaseCloudVmCluster#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_cloud_vm_cluster#create OracleDatabaseCloudVmCluster#create}.
 
 ---
 
@@ -2154,7 +2154,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_cloud_vm_cluster#delete OracleDatabaseCloudVmCluster#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_cloud_vm_cluster#delete OracleDatabaseCloudVmCluster#delete}.
 
 ---
 
@@ -2166,7 +2166,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/oracle_database_cloud_vm_cluster#update OracleDatabaseCloudVmCluster#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/oracle_database_cloud_vm_cluster#update OracleDatabaseCloudVmCluster#update}.
 
 ---
 
@@ -2177,7 +2177,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseCloudVmCluster.OracleDatabaseCloudVmClusterIdentityConnectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasecloudvmcluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/oracledatabasecloudvmcluster"
 
 oracledatabasecloudvmcluster.NewOracleDatabaseCloudVmClusterIdentityConnectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OracleDatabaseCloudVmClusterIdentityConnectorList
 ```
@@ -2326,7 +2326,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseCloudVmCluster.OracleDatabaseCloudVmClusterIdentityConnectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasecloudvmcluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/oracledatabasecloudvmcluster"
 
 oracledatabasecloudvmcluster.NewOracleDatabaseCloudVmClusterIdentityConnectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OracleDatabaseCloudVmClusterIdentityConnectorOutputReference
 ```
@@ -2615,7 +2615,7 @@ func InternalValue() OracleDatabaseCloudVmClusterIdentityConnector
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseCloudVmCluster.OracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollectionOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasecloudvmcluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/oracledatabasecloudvmcluster"
 
 oracledatabasecloudvmcluster.NewOracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollectionOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollectionOptionsOutputReference
 ```
@@ -2951,7 +2951,7 @@ func InternalValue() OracleDatabaseCloudVmClusterPropertiesDiagnosticsDataCollec
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseCloudVmCluster.OracleDatabaseCloudVmClusterPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasecloudvmcluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/oracledatabasecloudvmcluster"
 
 oracledatabasecloudvmcluster.NewOracleDatabaseCloudVmClusterPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseCloudVmClusterPropertiesOutputReference
 ```
@@ -3881,7 +3881,7 @@ func InternalValue() OracleDatabaseCloudVmClusterProperties
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseCloudVmCluster.OracleDatabaseCloudVmClusterPropertiesTimeZoneOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasecloudvmcluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/oracledatabasecloudvmcluster"
 
 oracledatabasecloudvmcluster.NewOracleDatabaseCloudVmClusterPropertiesTimeZoneOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseCloudVmClusterPropertiesTimeZoneOutputReference
 ```
@@ -4188,7 +4188,7 @@ func InternalValue() OracleDatabaseCloudVmClusterPropertiesTimeZone
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseCloudVmCluster.OracleDatabaseCloudVmClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/oracledatabasecloudvmcluster"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/oracledatabasecloudvmcluster"
 
 oracledatabasecloudvmcluster.NewOracleDatabaseCloudVmClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseCloudVmClusterTimeoutsOutputReference
 ```

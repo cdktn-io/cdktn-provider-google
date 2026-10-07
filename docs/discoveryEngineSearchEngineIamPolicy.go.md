@@ -4,12 +4,12 @@
 
 ### DiscoveryEngineSearchEngineIamPolicy <a name="DiscoveryEngineSearchEngineIamPolicy" id="@cdktn/provider-google.discoveryEngineSearchEngineIamPolicy.DiscoveryEngineSearchEngineIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_search_engine_iam_policy google_discovery_engine_search_engine_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_search_engine_iam_policy google_discovery_engine_search_engine_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineSearchEngineIamPolicy.DiscoveryEngineSearchEngineIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginesearchengineiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/discoveryenginesearchengineiampolicy"
 
 discoveryenginesearchengineiampolicy.NewDiscoveryEngineSearchEngineIamPolicy(scope Construct, id *string, config DiscoveryEngineSearchEngineIamPolicyConfig) DiscoveryEngineSearchEngineIamPolicy
 ```
@@ -421,7 +421,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.discoveryEngineSearchEngineIamPolicy.DiscoveryEngineSearchEngineIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginesearchengineiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/discoveryenginesearchengineiampolicy"
 
 discoveryenginesearchengineiampolicy.DiscoveryEngineSearchEngineIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.discoveryEngineSearchEngineIamPolicy.DiscoveryEngineSearchEngineIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginesearchengineiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/discoveryenginesearchengineiampolicy"
 
 discoveryenginesearchengineiampolicy.DiscoveryEngineSearchEngineIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ discoveryenginesearchengineiampolicy.DiscoveryEngineSearchEngineIamPolicy_IsTerr
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.discoveryEngineSearchEngineIamPolicy.DiscoveryEngineSearchEngineIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginesearchengineiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/discoveryenginesearchengineiampolicy"
 
 discoveryenginesearchengineiampolicy.DiscoveryEngineSearchEngineIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ discoveryenginesearchengineiampolicy.DiscoveryEngineSearchEngineIamPolicy_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.discoveryEngineSearchEngineIamPolicy.DiscoveryEngineSearchEngineIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginesearchengineiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/discoveryenginesearchengineiampolicy"
 
 discoveryenginesearchengineiampolicy.DiscoveryEngineSearchEngineIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -510,7 +510,7 @@ The construct id used in the generated config for the DiscoveryEngineSearchEngin
 
 The id of the existing DiscoveryEngineSearchEngineIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_search_engine_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_search_engine_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -853,7 +853,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineSearchEngineIamPolicy.DiscoveryEngineSearchEngineIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginesearchengineiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/discoveryenginesearchengineiampolicy"
 
 &discoveryenginesearchengineiampolicy.DiscoveryEngineSearchEngineIamPolicyConfig {
 	Connection: interface{},
@@ -883,12 +883,12 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryengines
 | <code><a href="#@cdktn/provider-google.discoveryEngineSearchEngineIamPolicy.DiscoveryEngineSearchEngineIamPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineSearchEngineIamPolicy.DiscoveryEngineSearchEngineIamPolicyConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.discoveryEngineSearchEngineIamPolicy.DiscoveryEngineSearchEngineIamPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.discoveryEngineSearchEngineIamPolicy.DiscoveryEngineSearchEngineIamPolicyConfig.property.collectionId">CollectionId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_search_engine_iam_policy#collection_id DiscoveryEngineSearchEngineIamPolicy#collection_id}. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineSearchEngineIamPolicy.DiscoveryEngineSearchEngineIamPolicyConfig.property.engineId">EngineId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_search_engine_iam_policy#engine_id DiscoveryEngineSearchEngineIamPolicy#engine_id}. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineSearchEngineIamPolicy.DiscoveryEngineSearchEngineIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_search_engine_iam_policy#policy_data DiscoveryEngineSearchEngineIamPolicy#policy_data}. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineSearchEngineIamPolicy.DiscoveryEngineSearchEngineIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_search_engine_iam_policy#id DiscoveryEngineSearchEngineIamPolicy#id}. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineSearchEngineIamPolicy.DiscoveryEngineSearchEngineIamPolicyConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_search_engine_iam_policy#location DiscoveryEngineSearchEngineIamPolicy#location}. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineSearchEngineIamPolicy.DiscoveryEngineSearchEngineIamPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_search_engine_iam_policy#project DiscoveryEngineSearchEngineIamPolicy#project}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineSearchEngineIamPolicy.DiscoveryEngineSearchEngineIamPolicyConfig.property.collectionId">CollectionId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_search_engine_iam_policy#collection_id DiscoveryEngineSearchEngineIamPolicy#collection_id}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineSearchEngineIamPolicy.DiscoveryEngineSearchEngineIamPolicyConfig.property.engineId">EngineId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_search_engine_iam_policy#engine_id DiscoveryEngineSearchEngineIamPolicy#engine_id}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineSearchEngineIamPolicy.DiscoveryEngineSearchEngineIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_search_engine_iam_policy#policy_data DiscoveryEngineSearchEngineIamPolicy#policy_data}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineSearchEngineIamPolicy.DiscoveryEngineSearchEngineIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_search_engine_iam_policy#id DiscoveryEngineSearchEngineIamPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineSearchEngineIamPolicy.DiscoveryEngineSearchEngineIamPolicyConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_search_engine_iam_policy#location DiscoveryEngineSearchEngineIamPolicy#location}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineSearchEngineIamPolicy.DiscoveryEngineSearchEngineIamPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_search_engine_iam_policy#project DiscoveryEngineSearchEngineIamPolicy#project}. |
 
 ---
 
@@ -970,7 +970,7 @@ CollectionId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_search_engine_iam_policy#collection_id DiscoveryEngineSearchEngineIamPolicy#collection_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_search_engine_iam_policy#collection_id DiscoveryEngineSearchEngineIamPolicy#collection_id}.
 
 ---
 
@@ -982,7 +982,7 @@ EngineId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_search_engine_iam_policy#engine_id DiscoveryEngineSearchEngineIamPolicy#engine_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_search_engine_iam_policy#engine_id DiscoveryEngineSearchEngineIamPolicy#engine_id}.
 
 ---
 
@@ -994,7 +994,7 @@ PolicyData *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_search_engine_iam_policy#policy_data DiscoveryEngineSearchEngineIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_search_engine_iam_policy#policy_data DiscoveryEngineSearchEngineIamPolicy#policy_data}.
 
 ---
 
@@ -1006,7 +1006,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_search_engine_iam_policy#id DiscoveryEngineSearchEngineIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_search_engine_iam_policy#id DiscoveryEngineSearchEngineIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1021,7 +1021,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_search_engine_iam_policy#location DiscoveryEngineSearchEngineIamPolicy#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_search_engine_iam_policy#location DiscoveryEngineSearchEngineIamPolicy#location}.
 
 ---
 
@@ -1033,7 +1033,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_search_engine_iam_policy#project DiscoveryEngineSearchEngineIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_search_engine_iam_policy#project DiscoveryEngineSearchEngineIamPolicy#project}.
 
 ---
 

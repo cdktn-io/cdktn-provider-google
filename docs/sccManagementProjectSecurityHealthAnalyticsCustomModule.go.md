@@ -4,12 +4,12 @@
 
 ### SccManagementProjectSecurityHealthAnalyticsCustomModule <a name="SccManagementProjectSecurityHealthAnalyticsCustomModule" id="@cdktn/provider-google.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/scc_management_project_security_health_analytics_custom_module google_scc_management_project_security_health_analytics_custom_module}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_management_project_security_health_analytics_custom_module google_scc_management_project_security_health_analytics_custom_module}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sccmanagementprojectsecurityhealthanalyticscustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/sccmanagementprojectsecurityhealthanalyticscustommodule"
 
 sccmanagementprojectsecurityhealthanalyticscustommodule.NewSccManagementProjectSecurityHealthAnalyticsCustomModule(scope Construct, id *string, config SccManagementProjectSecurityHealthAnalyticsCustomModuleConfig) SccManagementProjectSecurityHealthAnalyticsCustomModule
 ```
@@ -482,7 +482,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sccmanagementprojectsecurityhealthanalyticscustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/sccmanagementprojectsecurityhealthanalyticscustommodule"
 
 sccmanagementprojectsecurityhealthanalyticscustommodule.SccManagementProjectSecurityHealthAnalyticsCustomModule_IsConstruct(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sccmanagementprojectsecurityhealthanalyticscustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/sccmanagementprojectsecurityhealthanalyticscustommodule"
 
 sccmanagementprojectsecurityhealthanalyticscustommodule.SccManagementProjectSecurityHealthAnalyticsCustomModule_IsTerraformElement(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ sccmanagementprojectsecurityhealthanalyticscustommodule.SccManagementProjectSecu
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sccmanagementprojectsecurityhealthanalyticscustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/sccmanagementprojectsecurityhealthanalyticscustommodule"
 
 sccmanagementprojectsecurityhealthanalyticscustommodule.SccManagementProjectSecurityHealthAnalyticsCustomModule_IsTerraformResource(x interface{}) *bool
 ```
@@ -542,7 +542,7 @@ sccmanagementprojectsecurityhealthanalyticscustommodule.SccManagementProjectSecu
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sccmanagementprojectsecurityhealthanalyticscustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/sccmanagementprojectsecurityhealthanalyticscustommodule"
 
 sccmanagementprojectsecurityhealthanalyticscustommodule.SccManagementProjectSecurityHealthAnalyticsCustomModule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -571,7 +571,7 @@ The construct id used in the generated config for the SccManagementProjectSecuri
 
 The id of the existing SccManagementProjectSecurityHealthAnalyticsCustomModule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/scc_management_project_security_health_analytics_custom_module#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_management_project_security_health_analytics_custom_module#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -991,7 +991,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sccmanagementprojectsecurityhealthanalyticscustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/sccmanagementprojectsecurityhealthanalyticscustommodule"
 
 &sccmanagementprojectsecurityhealthanalyticscustommodule.SccManagementProjectSecurityHealthAnalyticsCustomModuleConfig {
 	Connection: interface{},
@@ -1001,14 +1001,14 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sccmanagementpro
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	CustomConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfig,
+	CustomConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfig,
 	DeletionPolicy: *string,
 	DisplayName: *string,
 	EnablementState: *string,
 	Id: *string,
 	Location: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleTimeouts,
 }
 ```
 
@@ -1027,9 +1027,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sccmanagementpro
 | <code><a href="#@cdktn/provider-google.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | The display name of the Security Health Analytics custom module. |
 | <code><a href="#@cdktn/provider-google.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleConfig.property.enablementState">EnablementState</a></code> | <code>*string</code> | The enablement state of the custom module. Possible values: ["ENABLED", "DISABLED"]. |
-| <code><a href="#@cdktn/provider-google.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/scc_management_project_security_health_analytics_custom_module#id SccManagementProjectSecurityHealthAnalyticsCustomModule#id}. |
+| <code><a href="#@cdktn/provider-google.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_management_project_security_health_analytics_custom_module#id SccManagementProjectSecurityHealthAnalyticsCustomModule#id}. |
 | <code><a href="#@cdktn/provider-google.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleConfig.property.location">Location</a></code> | <code>*string</code> | Location ID of the parent organization. If not provided, 'global' will be used as the default location. |
-| <code><a href="#@cdktn/provider-google.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/scc_management_project_security_health_analytics_custom_module#project SccManagementProjectSecurityHealthAnalyticsCustomModule#project}. |
+| <code><a href="#@cdktn/provider-google.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_management_project_security_health_analytics_custom_module#project SccManagementProjectSecurityHealthAnalyticsCustomModule#project}. |
 | <code><a href="#@cdktn/provider-google.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleTimeouts">SccManagementProjectSecurityHealthAnalyticsCustomModuleTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1114,7 +1114,7 @@ CustomConfig SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfig
 
 custom_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/scc_management_project_security_health_analytics_custom_module#custom_config SccManagementProjectSecurityHealthAnalyticsCustomModule#custom_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_management_project_security_health_analytics_custom_module#custom_config SccManagementProjectSecurityHealthAnalyticsCustomModule#custom_config}
 
 ---
 
@@ -1135,7 +1135,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/scc_management_project_security_health_analytics_custom_module#deletion_policy SccManagementProjectSecurityHealthAnalyticsCustomModule#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_management_project_security_health_analytics_custom_module#deletion_policy SccManagementProjectSecurityHealthAnalyticsCustomModule#deletion_policy}
 
 ---
 
@@ -1155,7 +1155,7 @@ returned by this custom module. The display name must be between 1 and
 128 characters, start with a lowercase letter, and contain alphanumeric
 characters or underscores only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/scc_management_project_security_health_analytics_custom_module#display_name SccManagementProjectSecurityHealthAnalyticsCustomModule#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_management_project_security_health_analytics_custom_module#display_name SccManagementProjectSecurityHealthAnalyticsCustomModule#display_name}
 
 ---
 
@@ -1169,7 +1169,7 @@ EnablementState *string
 
 The enablement state of the custom module. Possible values: ["ENABLED", "DISABLED"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/scc_management_project_security_health_analytics_custom_module#enablement_state SccManagementProjectSecurityHealthAnalyticsCustomModule#enablement_state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_management_project_security_health_analytics_custom_module#enablement_state SccManagementProjectSecurityHealthAnalyticsCustomModule#enablement_state}
 
 ---
 
@@ -1181,7 +1181,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/scc_management_project_security_health_analytics_custom_module#id SccManagementProjectSecurityHealthAnalyticsCustomModule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_management_project_security_health_analytics_custom_module#id SccManagementProjectSecurityHealthAnalyticsCustomModule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1198,7 +1198,7 @@ Location *string
 
 Location ID of the parent organization. If not provided, 'global' will be used as the default location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/scc_management_project_security_health_analytics_custom_module#location SccManagementProjectSecurityHealthAnalyticsCustomModule#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_management_project_security_health_analytics_custom_module#location SccManagementProjectSecurityHealthAnalyticsCustomModule#location}
 
 ---
 
@@ -1210,7 +1210,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/scc_management_project_security_health_analytics_custom_module#project SccManagementProjectSecurityHealthAnalyticsCustomModule#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_management_project_security_health_analytics_custom_module#project SccManagementProjectSecurityHealthAnalyticsCustomModule#project}.
 
 ---
 
@@ -1224,7 +1224,7 @@ Timeouts SccManagementProjectSecurityHealthAnalyticsCustomModuleTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/scc_management_project_security_health_analytics_custom_module#timeouts SccManagementProjectSecurityHealthAnalyticsCustomModule#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_management_project_security_health_analytics_custom_module#timeouts SccManagementProjectSecurityHealthAnalyticsCustomModule#timeouts}
 
 ---
 
@@ -1233,14 +1233,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sccmanagementprojectsecurityhealthanalyticscustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/sccmanagementprojectsecurityhealthanalyticscustommodule"
 
 &sccmanagementprojectsecurityhealthanalyticscustommodule.SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfig {
-	Predicate: github.com/cdktn-io/cdktn-provider-google-go/google/v20.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigPredicate,
+	Predicate: github.com/cdktn-io/cdktn-provider-google-go/google/v21.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigPredicate,
 	Recommendation: *string,
-	ResourceSelector: github.com/cdktn-io/cdktn-provider-google-go/google/v20.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigResourceSelector,
+	ResourceSelector: github.com/cdktn-io/cdktn-provider-google-go/google/v21.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigResourceSelector,
 	Severity: *string,
-	CustomOutput: github.com/cdktn-io/cdktn-provider-google-go/google/v20.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutput,
+	CustomOutput: github.com/cdktn-io/cdktn-provider-google-go/google/v21.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutput,
 	Description: *string,
 }
 ```
@@ -1268,7 +1268,7 @@ Predicate SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigPre
 
 predicate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/scc_management_project_security_health_analytics_custom_module#predicate SccManagementProjectSecurityHealthAnalyticsCustomModule#predicate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_management_project_security_health_analytics_custom_module#predicate SccManagementProjectSecurityHealthAnalyticsCustomModule#predicate}
 
 ---
 
@@ -1285,7 +1285,7 @@ An explanation of the recommended steps that security teams can take to resolve 
 This explanation is returned with each finding generated by
 this module in the nextSteps property of the finding JSON.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/scc_management_project_security_health_analytics_custom_module#recommendation SccManagementProjectSecurityHealthAnalyticsCustomModule#recommendation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_management_project_security_health_analytics_custom_module#recommendation SccManagementProjectSecurityHealthAnalyticsCustomModule#recommendation}
 
 ---
 
@@ -1299,7 +1299,7 @@ ResourceSelector SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomCo
 
 resource_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/scc_management_project_security_health_analytics_custom_module#resource_selector SccManagementProjectSecurityHealthAnalyticsCustomModule#resource_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_management_project_security_health_analytics_custom_module#resource_selector SccManagementProjectSecurityHealthAnalyticsCustomModule#resource_selector}
 
 ---
 
@@ -1313,7 +1313,7 @@ Severity *string
 
 The severity to assign to findings generated by the module. Possible values: ["CRITICAL", "HIGH", "MEDIUM", "LOW"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/scc_management_project_security_health_analytics_custom_module#severity SccManagementProjectSecurityHealthAnalyticsCustomModule#severity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_management_project_security_health_analytics_custom_module#severity SccManagementProjectSecurityHealthAnalyticsCustomModule#severity}
 
 ---
 
@@ -1327,7 +1327,7 @@ CustomOutput SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfig
 
 custom_output block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/scc_management_project_security_health_analytics_custom_module#custom_output SccManagementProjectSecurityHealthAnalyticsCustomModule#custom_output}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_management_project_security_health_analytics_custom_module#custom_output SccManagementProjectSecurityHealthAnalyticsCustomModule#custom_output}
 
 ---
 
@@ -1344,7 +1344,7 @@ Text that describes the vulnerability or misconfiguration that the custom module
 This explanation is returned with each finding instance to
 help investigators understand the detected issue. The text must be enclosed in quotation marks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/scc_management_project_security_health_analytics_custom_module#description SccManagementProjectSecurityHealthAnalyticsCustomModule#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_management_project_security_health_analytics_custom_module#description SccManagementProjectSecurityHealthAnalyticsCustomModule#description}
 
 ---
 
@@ -1353,7 +1353,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sccmanagementprojectsecurityhealthanalyticscustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/sccmanagementprojectsecurityhealthanalyticscustommodule"
 
 &sccmanagementprojectsecurityhealthanalyticscustommodule.SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutput {
 	Properties: interface{},
@@ -1378,7 +1378,7 @@ Properties interface{}
 
 properties block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/scc_management_project_security_health_analytics_custom_module#properties SccManagementProjectSecurityHealthAnalyticsCustomModule#properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_management_project_security_health_analytics_custom_module#properties SccManagementProjectSecurityHealthAnalyticsCustomModule#properties}
 
 ---
 
@@ -1387,11 +1387,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sccmanagementprojectsecurityhealthanalyticscustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/sccmanagementprojectsecurityhealthanalyticscustommodule"
 
 &sccmanagementprojectsecurityhealthanalyticscustommodule.SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputProperties {
 	Name: *string,
-	ValueExpression: github.com/cdktn-io/cdktn-provider-google-go/google/v20.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputPropertiesValueExpression,
+	ValueExpression: github.com/cdktn-io/cdktn-provider-google-go/google/v21.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputPropertiesValueExpression,
 }
 ```
 
@@ -1414,7 +1414,7 @@ Name *string
 
 Name of the property for the custom output.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/scc_management_project_security_health_analytics_custom_module#name SccManagementProjectSecurityHealthAnalyticsCustomModule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_management_project_security_health_analytics_custom_module#name SccManagementProjectSecurityHealthAnalyticsCustomModule#name}
 
 ---
 
@@ -1428,7 +1428,7 @@ ValueExpression SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomCon
 
 value_expression block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/scc_management_project_security_health_analytics_custom_module#value_expression SccManagementProjectSecurityHealthAnalyticsCustomModule#value_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_management_project_security_health_analytics_custom_module#value_expression SccManagementProjectSecurityHealthAnalyticsCustomModule#value_expression}
 
 ---
 
@@ -1437,7 +1437,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputPropertiesValueExpression.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sccmanagementprojectsecurityhealthanalyticscustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/sccmanagementprojectsecurityhealthanalyticscustommodule"
 
 &sccmanagementprojectsecurityhealthanalyticscustommodule.SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputPropertiesValueExpression {
 	Expression: *string,
@@ -1468,7 +1468,7 @@ Expression *string
 
 Textual representation of an expression in Common Expression Language syntax.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/scc_management_project_security_health_analytics_custom_module#expression SccManagementProjectSecurityHealthAnalyticsCustomModule#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_management_project_security_health_analytics_custom_module#expression SccManagementProjectSecurityHealthAnalyticsCustomModule#expression}
 
 ---
 
@@ -1485,7 +1485,7 @@ Description of the expression.
 This is a longer text which describes the
 expression, e.g. when hovered over it in a UI.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/scc_management_project_security_health_analytics_custom_module#description SccManagementProjectSecurityHealthAnalyticsCustomModule#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_management_project_security_health_analytics_custom_module#description SccManagementProjectSecurityHealthAnalyticsCustomModule#description}
 
 ---
 
@@ -1499,7 +1499,7 @@ Location *string
 
 String indicating the location of the expression for error reporting, e.g. a file name and a position in the file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/scc_management_project_security_health_analytics_custom_module#location SccManagementProjectSecurityHealthAnalyticsCustomModule#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_management_project_security_health_analytics_custom_module#location SccManagementProjectSecurityHealthAnalyticsCustomModule#location}
 
 ---
 
@@ -1513,7 +1513,7 @@ Title *string
 
 Title for the expression, i.e. a short string describing its purpose. This can be used e.g. in UIs which allow to enter the expression.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/scc_management_project_security_health_analytics_custom_module#title SccManagementProjectSecurityHealthAnalyticsCustomModule#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_management_project_security_health_analytics_custom_module#title SccManagementProjectSecurityHealthAnalyticsCustomModule#title}
 
 ---
 
@@ -1522,7 +1522,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigPredicate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sccmanagementprojectsecurityhealthanalyticscustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/sccmanagementprojectsecurityhealthanalyticscustommodule"
 
 &sccmanagementprojectsecurityhealthanalyticscustommodule.SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigPredicate {
 	Expression: *string,
@@ -1553,7 +1553,7 @@ Expression *string
 
 Textual representation of an expression in Common Expression Language syntax.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/scc_management_project_security_health_analytics_custom_module#expression SccManagementProjectSecurityHealthAnalyticsCustomModule#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_management_project_security_health_analytics_custom_module#expression SccManagementProjectSecurityHealthAnalyticsCustomModule#expression}
 
 ---
 
@@ -1570,7 +1570,7 @@ Description of the expression.
 This is a longer text which describes the
 expression, e.g. when hovered over it in a UI.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/scc_management_project_security_health_analytics_custom_module#description SccManagementProjectSecurityHealthAnalyticsCustomModule#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_management_project_security_health_analytics_custom_module#description SccManagementProjectSecurityHealthAnalyticsCustomModule#description}
 
 ---
 
@@ -1584,7 +1584,7 @@ Location *string
 
 String indicating the location of the expression for error reporting, e.g. a file name and a position in the file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/scc_management_project_security_health_analytics_custom_module#location SccManagementProjectSecurityHealthAnalyticsCustomModule#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_management_project_security_health_analytics_custom_module#location SccManagementProjectSecurityHealthAnalyticsCustomModule#location}
 
 ---
 
@@ -1598,7 +1598,7 @@ Title *string
 
 Title for the expression, i.e. a short string describing its purpose. This can be used e.g. in UIs which allow to enter the expression.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/scc_management_project_security_health_analytics_custom_module#title SccManagementProjectSecurityHealthAnalyticsCustomModule#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_management_project_security_health_analytics_custom_module#title SccManagementProjectSecurityHealthAnalyticsCustomModule#title}
 
 ---
 
@@ -1607,7 +1607,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigResourceSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sccmanagementprojectsecurityhealthanalyticscustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/sccmanagementprojectsecurityhealthanalyticscustommodule"
 
 &sccmanagementprojectsecurityhealthanalyticscustommodule.SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigResourceSelector {
 	ResourceTypes: *[]*string,
@@ -1632,7 +1632,7 @@ ResourceTypes *[]*string
 
 The resource types to run the detector on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/scc_management_project_security_health_analytics_custom_module#resource_types SccManagementProjectSecurityHealthAnalyticsCustomModule#resource_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_management_project_security_health_analytics_custom_module#resource_types SccManagementProjectSecurityHealthAnalyticsCustomModule#resource_types}
 
 ---
 
@@ -1641,7 +1641,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sccmanagementprojectsecurityhealthanalyticscustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/sccmanagementprojectsecurityhealthanalyticscustommodule"
 
 &sccmanagementprojectsecurityhealthanalyticscustommodule.SccManagementProjectSecurityHealthAnalyticsCustomModuleTimeouts {
 	Create: *string,
@@ -1654,9 +1654,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sccmanagementpro
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/scc_management_project_security_health_analytics_custom_module#create SccManagementProjectSecurityHealthAnalyticsCustomModule#create}. |
-| <code><a href="#@cdktn/provider-google.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/scc_management_project_security_health_analytics_custom_module#delete SccManagementProjectSecurityHealthAnalyticsCustomModule#delete}. |
-| <code><a href="#@cdktn/provider-google.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/scc_management_project_security_health_analytics_custom_module#update SccManagementProjectSecurityHealthAnalyticsCustomModule#update}. |
+| <code><a href="#@cdktn/provider-google.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_management_project_security_health_analytics_custom_module#create SccManagementProjectSecurityHealthAnalyticsCustomModule#create}. |
+| <code><a href="#@cdktn/provider-google.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_management_project_security_health_analytics_custom_module#delete SccManagementProjectSecurityHealthAnalyticsCustomModule#delete}. |
+| <code><a href="#@cdktn/provider-google.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_management_project_security_health_analytics_custom_module#update SccManagementProjectSecurityHealthAnalyticsCustomModule#update}. |
 
 ---
 
@@ -1668,7 +1668,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/scc_management_project_security_health_analytics_custom_module#create SccManagementProjectSecurityHealthAnalyticsCustomModule#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_management_project_security_health_analytics_custom_module#create SccManagementProjectSecurityHealthAnalyticsCustomModule#create}.
 
 ---
 
@@ -1680,7 +1680,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/scc_management_project_security_health_analytics_custom_module#delete SccManagementProjectSecurityHealthAnalyticsCustomModule#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_management_project_security_health_analytics_custom_module#delete SccManagementProjectSecurityHealthAnalyticsCustomModule#delete}.
 
 ---
 
@@ -1692,7 +1692,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/scc_management_project_security_health_analytics_custom_module#update SccManagementProjectSecurityHealthAnalyticsCustomModule#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_management_project_security_health_analytics_custom_module#update SccManagementProjectSecurityHealthAnalyticsCustomModule#update}.
 
 ---
 
@@ -1703,7 +1703,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sccmanagementprojectsecurityhealthanalyticscustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/sccmanagementprojectsecurityhealthanalyticscustommodule"
 
 sccmanagementprojectsecurityhealthanalyticscustommodule.NewSccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputOutputReference
 ```
@@ -1994,7 +1994,7 @@ func InternalValue() SccManagementProjectSecurityHealthAnalyticsCustomModuleCust
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputPropertiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sccmanagementprojectsecurityhealthanalyticscustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/sccmanagementprojectsecurityhealthanalyticscustommodule"
 
 sccmanagementprojectsecurityhealthanalyticscustommodule.NewSccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputPropertiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputPropertiesList
 ```
@@ -2154,7 +2154,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sccmanagementprojectsecurityhealthanalyticscustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/sccmanagementprojectsecurityhealthanalyticscustommodule"
 
 sccmanagementprojectsecurityhealthanalyticscustommodule.NewSccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputPropertiesOutputReference
 ```
@@ -2492,7 +2492,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputPropertiesValueExpressionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sccmanagementprojectsecurityhealthanalyticscustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/sccmanagementprojectsecurityhealthanalyticscustommodule"
 
 sccmanagementprojectsecurityhealthanalyticscustommodule.NewSccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputPropertiesValueExpressionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigCustomOutputPropertiesValueExpressionOutputReference
 ```
@@ -2850,7 +2850,7 @@ func InternalValue() SccManagementProjectSecurityHealthAnalyticsCustomModuleCust
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sccmanagementprojectsecurityhealthanalyticscustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/sccmanagementprojectsecurityhealthanalyticscustommodule"
 
 sccmanagementprojectsecurityhealthanalyticscustommodule.NewSccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigOutputReference
 ```
@@ -3284,7 +3284,7 @@ func InternalValue() SccManagementProjectSecurityHealthAnalyticsCustomModuleCust
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigPredicateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sccmanagementprojectsecurityhealthanalyticscustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/sccmanagementprojectsecurityhealthanalyticscustommodule"
 
 sccmanagementprojectsecurityhealthanalyticscustommodule.NewSccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigPredicateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigPredicateOutputReference
 ```
@@ -3642,7 +3642,7 @@ func InternalValue() SccManagementProjectSecurityHealthAnalyticsCustomModuleCust
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigResourceSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sccmanagementprojectsecurityhealthanalyticscustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/sccmanagementprojectsecurityhealthanalyticscustommodule"
 
 sccmanagementprojectsecurityhealthanalyticscustommodule.NewSccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigResourceSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SccManagementProjectSecurityHealthAnalyticsCustomModuleCustomConfigResourceSelectorOutputReference
 ```
@@ -3913,7 +3913,7 @@ func InternalValue() SccManagementProjectSecurityHealthAnalyticsCustomModuleCust
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.sccManagementProjectSecurityHealthAnalyticsCustomModule.SccManagementProjectSecurityHealthAnalyticsCustomModuleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/sccmanagementprojectsecurityhealthanalyticscustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/sccmanagementprojectsecurityhealthanalyticscustommodule"
 
 sccmanagementprojectsecurityhealthanalyticscustommodule.NewSccManagementProjectSecurityHealthAnalyticsCustomModuleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SccManagementProjectSecurityHealthAnalyticsCustomModuleTimeoutsOutputReference
 ```

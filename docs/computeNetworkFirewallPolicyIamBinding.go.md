@@ -4,12 +4,12 @@
 
 ### ComputeNetworkFirewallPolicyIamBinding <a name="ComputeNetworkFirewallPolicyIamBinding" id="@cdktn/provider-google.computeNetworkFirewallPolicyIamBinding.ComputeNetworkFirewallPolicyIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_network_firewall_policy_iam_binding google_compute_network_firewall_policy_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_network_firewall_policy_iam_binding google_compute_network_firewall_policy_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeNetworkFirewallPolicyIamBinding.ComputeNetworkFirewallPolicyIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computenetworkfirewallpolicyiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computenetworkfirewallpolicyiambinding"
 
 computenetworkfirewallpolicyiambinding.NewComputeNetworkFirewallPolicyIamBinding(scope Construct, id *string, config ComputeNetworkFirewallPolicyIamBindingConfig) ComputeNetworkFirewallPolicyIamBinding
 ```
@@ -434,7 +434,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeNetworkFirewallPolicyIamBinding.ComputeNetworkFirewallPolicyIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computenetworkfirewallpolicyiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computenetworkfirewallpolicyiambinding"
 
 computenetworkfirewallpolicyiambinding.ComputeNetworkFirewallPolicyIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeNetworkFirewallPolicyIamBinding.ComputeNetworkFirewallPolicyIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computenetworkfirewallpolicyiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computenetworkfirewallpolicyiambinding"
 
 computenetworkfirewallpolicyiambinding.ComputeNetworkFirewallPolicyIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ computenetworkfirewallpolicyiambinding.ComputeNetworkFirewallPolicyIamBinding_Is
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeNetworkFirewallPolicyIamBinding.ComputeNetworkFirewallPolicyIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computenetworkfirewallpolicyiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computenetworkfirewallpolicyiambinding"
 
 computenetworkfirewallpolicyiambinding.ComputeNetworkFirewallPolicyIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ computenetworkfirewallpolicyiambinding.ComputeNetworkFirewallPolicyIamBinding_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeNetworkFirewallPolicyIamBinding.ComputeNetworkFirewallPolicyIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computenetworkfirewallpolicyiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computenetworkfirewallpolicyiambinding"
 
 computenetworkfirewallpolicyiambinding.ComputeNetworkFirewallPolicyIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -523,7 +523,7 @@ The construct id used in the generated config for the ComputeNetworkFirewallPoli
 
 The id of the existing ComputeNetworkFirewallPolicyIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_network_firewall_policy_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_network_firewall_policy_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -866,7 +866,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeNetworkFirewallPolicyIamBinding.ComputeNetworkFirewallPolicyIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computenetworkfirewallpolicyiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computenetworkfirewallpolicyiambinding"
 
 &computenetworkfirewallpolicyiambinding.ComputeNetworkFirewallPolicyIamBindingCondition {
 	Expression: *string,
@@ -879,9 +879,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computenetworkfi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicyIamBinding.ComputeNetworkFirewallPolicyIamBindingCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_network_firewall_policy_iam_binding#expression ComputeNetworkFirewallPolicyIamBinding#expression}. |
-| <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicyIamBinding.ComputeNetworkFirewallPolicyIamBindingCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_network_firewall_policy_iam_binding#title ComputeNetworkFirewallPolicyIamBinding#title}. |
-| <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicyIamBinding.ComputeNetworkFirewallPolicyIamBindingCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_network_firewall_policy_iam_binding#description ComputeNetworkFirewallPolicyIamBinding#description}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicyIamBinding.ComputeNetworkFirewallPolicyIamBindingCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_network_firewall_policy_iam_binding#expression ComputeNetworkFirewallPolicyIamBinding#expression}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicyIamBinding.ComputeNetworkFirewallPolicyIamBindingCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_network_firewall_policy_iam_binding#title ComputeNetworkFirewallPolicyIamBinding#title}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicyIamBinding.ComputeNetworkFirewallPolicyIamBindingCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_network_firewall_policy_iam_binding#description ComputeNetworkFirewallPolicyIamBinding#description}. |
 
 ---
 
@@ -893,7 +893,7 @@ Expression *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_network_firewall_policy_iam_binding#expression ComputeNetworkFirewallPolicyIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_network_firewall_policy_iam_binding#expression ComputeNetworkFirewallPolicyIamBinding#expression}.
 
 ---
 
@@ -905,7 +905,7 @@ Title *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_network_firewall_policy_iam_binding#title ComputeNetworkFirewallPolicyIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_network_firewall_policy_iam_binding#title ComputeNetworkFirewallPolicyIamBinding#title}.
 
 ---
 
@@ -917,7 +917,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_network_firewall_policy_iam_binding#description ComputeNetworkFirewallPolicyIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_network_firewall_policy_iam_binding#description ComputeNetworkFirewallPolicyIamBinding#description}.
 
 ---
 
@@ -926,7 +926,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeNetworkFirewallPolicyIamBinding.ComputeNetworkFirewallPolicyIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computenetworkfirewallpolicyiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computenetworkfirewallpolicyiambinding"
 
 &computenetworkfirewallpolicyiambinding.ComputeNetworkFirewallPolicyIamBindingConfig {
 	Connection: interface{},
@@ -939,7 +939,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computenetworkfi
 	Members: *[]*string,
 	Name: *string,
 	Role: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeNetworkFirewallPolicyIamBinding.ComputeNetworkFirewallPolicyIamBindingCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v21.computeNetworkFirewallPolicyIamBinding.ComputeNetworkFirewallPolicyIamBindingCondition,
 	Id: *string,
 	Project: *string,
 }
@@ -956,12 +956,12 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computenetworkfi
 | <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicyIamBinding.ComputeNetworkFirewallPolicyIamBindingConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicyIamBinding.ComputeNetworkFirewallPolicyIamBindingConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicyIamBinding.ComputeNetworkFirewallPolicyIamBindingConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicyIamBinding.ComputeNetworkFirewallPolicyIamBindingConfig.property.members">Members</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_network_firewall_policy_iam_binding#members ComputeNetworkFirewallPolicyIamBinding#members}. |
-| <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicyIamBinding.ComputeNetworkFirewallPolicyIamBindingConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_network_firewall_policy_iam_binding#name ComputeNetworkFirewallPolicyIamBinding#name}. |
-| <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicyIamBinding.ComputeNetworkFirewallPolicyIamBindingConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_network_firewall_policy_iam_binding#role ComputeNetworkFirewallPolicyIamBinding#role}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicyIamBinding.ComputeNetworkFirewallPolicyIamBindingConfig.property.members">Members</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_network_firewall_policy_iam_binding#members ComputeNetworkFirewallPolicyIamBinding#members}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicyIamBinding.ComputeNetworkFirewallPolicyIamBindingConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_network_firewall_policy_iam_binding#name ComputeNetworkFirewallPolicyIamBinding#name}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicyIamBinding.ComputeNetworkFirewallPolicyIamBindingConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_network_firewall_policy_iam_binding#role ComputeNetworkFirewallPolicyIamBinding#role}. |
 | <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicyIamBinding.ComputeNetworkFirewallPolicyIamBindingConfig.property.condition">Condition</a></code> | <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicyIamBinding.ComputeNetworkFirewallPolicyIamBindingCondition">ComputeNetworkFirewallPolicyIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicyIamBinding.ComputeNetworkFirewallPolicyIamBindingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_network_firewall_policy_iam_binding#id ComputeNetworkFirewallPolicyIamBinding#id}. |
-| <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicyIamBinding.ComputeNetworkFirewallPolicyIamBindingConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_network_firewall_policy_iam_binding#project ComputeNetworkFirewallPolicyIamBinding#project}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicyIamBinding.ComputeNetworkFirewallPolicyIamBindingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_network_firewall_policy_iam_binding#id ComputeNetworkFirewallPolicyIamBinding#id}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkFirewallPolicyIamBinding.ComputeNetworkFirewallPolicyIamBindingConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_network_firewall_policy_iam_binding#project ComputeNetworkFirewallPolicyIamBinding#project}. |
 
 ---
 
@@ -1043,7 +1043,7 @@ Members *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_network_firewall_policy_iam_binding#members ComputeNetworkFirewallPolicyIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_network_firewall_policy_iam_binding#members ComputeNetworkFirewallPolicyIamBinding#members}.
 
 ---
 
@@ -1055,7 +1055,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_network_firewall_policy_iam_binding#name ComputeNetworkFirewallPolicyIamBinding#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_network_firewall_policy_iam_binding#name ComputeNetworkFirewallPolicyIamBinding#name}.
 
 ---
 
@@ -1067,7 +1067,7 @@ Role *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_network_firewall_policy_iam_binding#role ComputeNetworkFirewallPolicyIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_network_firewall_policy_iam_binding#role ComputeNetworkFirewallPolicyIamBinding#role}.
 
 ---
 
@@ -1081,7 +1081,7 @@ Condition ComputeNetworkFirewallPolicyIamBindingCondition
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_network_firewall_policy_iam_binding#condition ComputeNetworkFirewallPolicyIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_network_firewall_policy_iam_binding#condition ComputeNetworkFirewallPolicyIamBinding#condition}
 
 ---
 
@@ -1093,7 +1093,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_network_firewall_policy_iam_binding#id ComputeNetworkFirewallPolicyIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_network_firewall_policy_iam_binding#id ComputeNetworkFirewallPolicyIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1108,7 +1108,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_network_firewall_policy_iam_binding#project ComputeNetworkFirewallPolicyIamBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_network_firewall_policy_iam_binding#project ComputeNetworkFirewallPolicyIamBinding#project}.
 
 ---
 
@@ -1119,7 +1119,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeNetworkFirewallPolicyIamBinding.ComputeNetworkFirewallPolicyIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computenetworkfirewallpolicyiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computenetworkfirewallpolicyiambinding"
 
 computenetworkfirewallpolicyiambinding.NewComputeNetworkFirewallPolicyIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeNetworkFirewallPolicyIamBindingConditionOutputReference
 ```

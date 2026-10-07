@@ -4,12 +4,12 @@
 
 ### MigrationCenterAssetsExportJob <a name="MigrationCenterAssetsExportJob" id="@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJob"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/migration_center_assets_export_job google_migration_center_assets_export_job}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/migration_center_assets_export_job google_migration_center_assets_export_job}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJob.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterassetsexportjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/migrationcenterassetsexportjob"
 
 migrationcenterassetsexportjob.NewMigrationCenterAssetsExportJob(scope Construct, id *string, config MigrationCenterAssetsExportJobConfig) MigrationCenterAssetsExportJob
 ```
@@ -515,7 +515,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJob.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterassetsexportjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/migrationcenterassetsexportjob"
 
 migrationcenterassetsexportjob.MigrationCenterAssetsExportJob_IsConstruct(x interface{}) *bool
 ```
@@ -547,7 +547,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJob.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterassetsexportjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/migrationcenterassetsexportjob"
 
 migrationcenterassetsexportjob.MigrationCenterAssetsExportJob_IsTerraformElement(x interface{}) *bool
 ```
@@ -561,7 +561,7 @@ migrationcenterassetsexportjob.MigrationCenterAssetsExportJob_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJob.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterassetsexportjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/migrationcenterassetsexportjob"
 
 migrationcenterassetsexportjob.MigrationCenterAssetsExportJob_IsTerraformResource(x interface{}) *bool
 ```
@@ -575,7 +575,7 @@ migrationcenterassetsexportjob.MigrationCenterAssetsExportJob_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJob.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterassetsexportjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/migrationcenterassetsexportjob"
 
 migrationcenterassetsexportjob.MigrationCenterAssetsExportJob_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -604,7 +604,7 @@ The construct id used in the generated config for the MigrationCenterAssetsExpor
 
 The id of the existing MigrationCenterAssetsExportJob that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/migration_center_assets_export_job#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/migration_center_assets_export_job#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1134,7 +1134,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterassetsexportjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/migrationcenterassetsexportjob"
 
 &migrationcenterassetsexportjob.MigrationCenterAssetsExportJobCondition {
 	Filter: *string,
@@ -1159,7 +1159,7 @@ Filter *string
 
 Assets filter, supports the same syntax as asset listing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/migration_center_assets_export_job#filter MigrationCenterAssetsExportJob#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/migration_center_assets_export_job#filter MigrationCenterAssetsExportJob#filter}
 
 ---
 
@@ -1168,7 +1168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterassetsexportjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/migrationcenterassetsexportjob"
 
 &migrationcenterassetsexportjob.MigrationCenterAssetsExportJobConfig {
 	Connection: interface{},
@@ -1180,15 +1180,15 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcentera
 	Provisioners: *[]interface{},
 	AssetsExportJobId: *string,
 	Location: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v20.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v21.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobCondition,
 	DeletionPolicy: *string,
 	Id: *string,
 	Labels: *map[string]*string,
-	PerformanceData: github.com/cdktn-io/cdktn-provider-google-go/google/v20.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobPerformanceData,
+	PerformanceData: github.com/cdktn-io/cdktn-provider-google-go/google/v21.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobPerformanceData,
 	Project: *string,
 	ShowHidden: interface{},
-	SignedUriDestination: github.com/cdktn-io/cdktn-provider-google-go/google/v20.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobSignedUriDestination,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobTimeouts,
+	SignedUriDestination: github.com/cdktn-io/cdktn-provider-google-go/google/v21.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobSignedUriDestination,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobTimeouts,
 }
 ```
 
@@ -1207,10 +1207,10 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcentera
 | <code><a href="#@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobConfig.property.location">Location</a></code> | <code>*string</code> | Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122. |
 | <code><a href="#@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobConfig.property.condition">Condition</a></code> | <code><a href="#@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobCondition">MigrationCenterAssetsExportJobCondition</a></code> | condition block. |
 | <code><a href="#@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/migration_center_assets_export_job#id MigrationCenterAssetsExportJob#id}. |
+| <code><a href="#@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/migration_center_assets_export_job#id MigrationCenterAssetsExportJob#id}. |
 | <code><a href="#@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | Labels as key value pairs. Labels must meet the following constraints:. |
 | <code><a href="#@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobConfig.property.performanceData">PerformanceData</a></code> | <code><a href="#@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobPerformanceData">MigrationCenterAssetsExportJobPerformanceData</a></code> | performance_data block. |
-| <code><a href="#@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/migration_center_assets_export_job#project MigrationCenterAssetsExportJob#project}. |
+| <code><a href="#@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/migration_center_assets_export_job#project MigrationCenterAssetsExportJob#project}. |
 | <code><a href="#@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobConfig.property.showHidden">ShowHidden</a></code> | <code>interface{}</code> | When this value is set to 'true' the response will include all assets, including those that are hidden. |
 | <code><a href="#@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobConfig.property.signedUriDestination">SignedUriDestination</a></code> | <code><a href="#@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobSignedUriDestination">MigrationCenterAssetsExportJobSignedUriDestination</a></code> | signed_uri_destination block. |
 | <code><a href="#@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobTimeouts">MigrationCenterAssetsExportJobTimeouts</a></code> | timeouts block. |
@@ -1297,7 +1297,7 @@ AssetsExportJobId *string
 
 The ID to use for the asset export job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/migration_center_assets_export_job#assets_export_job_id MigrationCenterAssetsExportJob#assets_export_job_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/migration_center_assets_export_job#assets_export_job_id MigrationCenterAssetsExportJob#assets_export_job_id}
 
 ---
 
@@ -1311,7 +1311,7 @@ Location *string
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/migration_center_assets_export_job#location MigrationCenterAssetsExportJob#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/migration_center_assets_export_job#location MigrationCenterAssetsExportJob#location}
 
 ---
 
@@ -1325,7 +1325,7 @@ Condition MigrationCenterAssetsExportJobCondition
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/migration_center_assets_export_job#condition MigrationCenterAssetsExportJob#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/migration_center_assets_export_job#condition MigrationCenterAssetsExportJob#condition}
 
 ---
 
@@ -1346,7 +1346,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/migration_center_assets_export_job#deletion_policy MigrationCenterAssetsExportJob#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/migration_center_assets_export_job#deletion_policy MigrationCenterAssetsExportJob#deletion_policy}
 
 ---
 
@@ -1358,7 +1358,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/migration_center_assets_export_job#id MigrationCenterAssetsExportJob#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/migration_center_assets_export_job#id MigrationCenterAssetsExportJob#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1387,7 +1387,7 @@ Both keys and values are additionally constrained to be <= 128 bytes.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/migration_center_assets_export_job#labels MigrationCenterAssetsExportJob#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/migration_center_assets_export_job#labels MigrationCenterAssetsExportJob#labels}
 
 ---
 
@@ -1401,7 +1401,7 @@ PerformanceData MigrationCenterAssetsExportJobPerformanceData
 
 performance_data block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/migration_center_assets_export_job#performance_data MigrationCenterAssetsExportJob#performance_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/migration_center_assets_export_job#performance_data MigrationCenterAssetsExportJob#performance_data}
 
 ---
 
@@ -1413,7 +1413,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/migration_center_assets_export_job#project MigrationCenterAssetsExportJob#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/migration_center_assets_export_job#project MigrationCenterAssetsExportJob#project}.
 
 ---
 
@@ -1427,7 +1427,7 @@ ShowHidden interface{}
 
 When this value is set to 'true' the response will include all assets, including those that are hidden.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/migration_center_assets_export_job#show_hidden MigrationCenterAssetsExportJob#show_hidden}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/migration_center_assets_export_job#show_hidden MigrationCenterAssetsExportJob#show_hidden}
 
 ---
 
@@ -1441,7 +1441,7 @@ SignedUriDestination MigrationCenterAssetsExportJobSignedUriDestination
 
 signed_uri_destination block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/migration_center_assets_export_job#signed_uri_destination MigrationCenterAssetsExportJob#signed_uri_destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/migration_center_assets_export_job#signed_uri_destination MigrationCenterAssetsExportJob#signed_uri_destination}
 
 ---
 
@@ -1455,7 +1455,7 @@ Timeouts MigrationCenterAssetsExportJobTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/migration_center_assets_export_job#timeouts MigrationCenterAssetsExportJob#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/migration_center_assets_export_job#timeouts MigrationCenterAssetsExportJob#timeouts}
 
 ---
 
@@ -1464,7 +1464,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobInventory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterassetsexportjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/migrationcenterassetsexportjob"
 
 &migrationcenterassetsexportjob.MigrationCenterAssetsExportJobInventory {
 
@@ -1477,7 +1477,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcentera
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobNetworkDependencies.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterassetsexportjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/migrationcenterassetsexportjob"
 
 &migrationcenterassetsexportjob.MigrationCenterAssetsExportJobNetworkDependencies {
 
@@ -1490,7 +1490,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcentera
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobPerformanceData.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterassetsexportjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/migrationcenterassetsexportjob"
 
 &migrationcenterassetsexportjob.MigrationCenterAssetsExportJobPerformanceData {
 	MaxDays: *f64,
@@ -1520,7 +1520,7 @@ all available data is returned.
 The maximum value is 420; values above 420 will be coerced to 420.
 If unset (0 value) a default value of 40 will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/migration_center_assets_export_job#max_days MigrationCenterAssetsExportJob#max_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/migration_center_assets_export_job#max_days MigrationCenterAssetsExportJob#max_days}
 
 ---
 
@@ -1529,7 +1529,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobRecentExecutions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterassetsexportjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/migrationcenterassetsexportjob"
 
 &migrationcenterassetsexportjob.MigrationCenterAssetsExportJobRecentExecutions {
 
@@ -1542,7 +1542,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcentera
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobRecentExecutionsResult.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterassetsexportjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/migrationcenterassetsexportjob"
 
 &migrationcenterassetsexportjob.MigrationCenterAssetsExportJobRecentExecutionsResult {
 
@@ -1555,7 +1555,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcentera
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobRecentExecutionsResultError.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterassetsexportjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/migrationcenterassetsexportjob"
 
 &migrationcenterassetsexportjob.MigrationCenterAssetsExportJobRecentExecutionsResultError {
 
@@ -1568,7 +1568,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcentera
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobRecentExecutionsResultErrorDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterassetsexportjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/migrationcenterassetsexportjob"
 
 &migrationcenterassetsexportjob.MigrationCenterAssetsExportJobRecentExecutionsResultErrorDetails {
 
@@ -1581,7 +1581,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcentera
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobRecentExecutionsResultOutputFiles.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterassetsexportjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/migrationcenterassetsexportjob"
 
 &migrationcenterassetsexportjob.MigrationCenterAssetsExportJobRecentExecutionsResultOutputFiles {
 
@@ -1594,7 +1594,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcentera
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobRecentExecutionsResultOutputFilesEntries.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterassetsexportjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/migrationcenterassetsexportjob"
 
 &migrationcenterassetsexportjob.MigrationCenterAssetsExportJobRecentExecutionsResultOutputFilesEntries {
 
@@ -1607,7 +1607,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcentera
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobRecentExecutionsResultOutputFilesEntriesCsvOutputFile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterassetsexportjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/migrationcenterassetsexportjob"
 
 &migrationcenterassetsexportjob.MigrationCenterAssetsExportJobRecentExecutionsResultOutputFilesEntriesCsvOutputFile {
 
@@ -1620,7 +1620,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcentera
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobRecentExecutionsResultOutputFilesEntriesCsvOutputFileSignedUri.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterassetsexportjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/migrationcenterassetsexportjob"
 
 &migrationcenterassetsexportjob.MigrationCenterAssetsExportJobRecentExecutionsResultOutputFilesEntriesCsvOutputFileSignedUri {
 
@@ -1633,7 +1633,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcentera
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobRecentExecutionsResultOutputFilesEntriesXlsxOutputFile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterassetsexportjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/migrationcenterassetsexportjob"
 
 &migrationcenterassetsexportjob.MigrationCenterAssetsExportJobRecentExecutionsResultOutputFilesEntriesXlsxOutputFile {
 
@@ -1646,7 +1646,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcentera
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobRecentExecutionsResultOutputFilesEntriesXlsxOutputFileSignedUri.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterassetsexportjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/migrationcenterassetsexportjob"
 
 &migrationcenterassetsexportjob.MigrationCenterAssetsExportJobRecentExecutionsResultOutputFilesEntriesXlsxOutputFileSignedUri {
 
@@ -1659,7 +1659,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcentera
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobRecentExecutionsResultSignedUris.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterassetsexportjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/migrationcenterassetsexportjob"
 
 &migrationcenterassetsexportjob.MigrationCenterAssetsExportJobRecentExecutionsResultSignedUris {
 
@@ -1672,7 +1672,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcentera
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobRecentExecutionsResultSignedUrisSignedUris.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterassetsexportjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/migrationcenterassetsexportjob"
 
 &migrationcenterassetsexportjob.MigrationCenterAssetsExportJobRecentExecutionsResultSignedUrisSignedUris {
 
@@ -1685,7 +1685,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcentera
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobSignedUriDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterassetsexportjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/migrationcenterassetsexportjob"
 
 &migrationcenterassetsexportjob.MigrationCenterAssetsExportJobSignedUriDestination {
 	FileFormat: *string,
@@ -1710,7 +1710,7 @@ FileFormat *string
 
 The file format to export. Possible values: CSV XLSX.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/migration_center_assets_export_job#file_format MigrationCenterAssetsExportJob#file_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/migration_center_assets_export_job#file_format MigrationCenterAssetsExportJob#file_format}
 
 ---
 
@@ -1719,7 +1719,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterassetsexportjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/migrationcenterassetsexportjob"
 
 &migrationcenterassetsexportjob.MigrationCenterAssetsExportJobTimeouts {
 	Create: *string,
@@ -1732,9 +1732,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcentera
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/migration_center_assets_export_job#create MigrationCenterAssetsExportJob#create}. |
-| <code><a href="#@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/migration_center_assets_export_job#delete MigrationCenterAssetsExportJob#delete}. |
-| <code><a href="#@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/migration_center_assets_export_job#update MigrationCenterAssetsExportJob#update}. |
+| <code><a href="#@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/migration_center_assets_export_job#create MigrationCenterAssetsExportJob#create}. |
+| <code><a href="#@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/migration_center_assets_export_job#delete MigrationCenterAssetsExportJob#delete}. |
+| <code><a href="#@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/migration_center_assets_export_job#update MigrationCenterAssetsExportJob#update}. |
 
 ---
 
@@ -1746,7 +1746,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/migration_center_assets_export_job#create MigrationCenterAssetsExportJob#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/migration_center_assets_export_job#create MigrationCenterAssetsExportJob#create}.
 
 ---
 
@@ -1758,7 +1758,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/migration_center_assets_export_job#delete MigrationCenterAssetsExportJob#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/migration_center_assets_export_job#delete MigrationCenterAssetsExportJob#delete}.
 
 ---
 
@@ -1770,7 +1770,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/migration_center_assets_export_job#update MigrationCenterAssetsExportJob#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/migration_center_assets_export_job#update MigrationCenterAssetsExportJob#update}.
 
 ---
 
@@ -1781,7 +1781,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterassetsexportjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/migrationcenterassetsexportjob"
 
 migrationcenterassetsexportjob.NewMigrationCenterAssetsExportJobConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MigrationCenterAssetsExportJobConditionOutputReference
 ```
@@ -2059,7 +2059,7 @@ func InternalValue() MigrationCenterAssetsExportJobCondition
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobInventoryList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterassetsexportjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/migrationcenterassetsexportjob"
 
 migrationcenterassetsexportjob.NewMigrationCenterAssetsExportJobInventoryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterAssetsExportJobInventoryList
 ```
@@ -2208,7 +2208,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobInventoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterassetsexportjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/migrationcenterassetsexportjob"
 
 migrationcenterassetsexportjob.NewMigrationCenterAssetsExportJobInventoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterAssetsExportJobInventoryOutputReference
 ```
@@ -2475,7 +2475,7 @@ func InternalValue() MigrationCenterAssetsExportJobInventory
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobNetworkDependenciesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterassetsexportjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/migrationcenterassetsexportjob"
 
 migrationcenterassetsexportjob.NewMigrationCenterAssetsExportJobNetworkDependenciesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterAssetsExportJobNetworkDependenciesList
 ```
@@ -2624,7 +2624,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobNetworkDependenciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterassetsexportjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/migrationcenterassetsexportjob"
 
 migrationcenterassetsexportjob.NewMigrationCenterAssetsExportJobNetworkDependenciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterAssetsExportJobNetworkDependenciesOutputReference
 ```
@@ -2891,7 +2891,7 @@ func InternalValue() MigrationCenterAssetsExportJobNetworkDependencies
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobPerformanceDataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterassetsexportjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/migrationcenterassetsexportjob"
 
 migrationcenterassetsexportjob.NewMigrationCenterAssetsExportJobPerformanceDataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MigrationCenterAssetsExportJobPerformanceDataOutputReference
 ```
@@ -3169,7 +3169,7 @@ func InternalValue() MigrationCenterAssetsExportJobPerformanceData
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobRecentExecutionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterassetsexportjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/migrationcenterassetsexportjob"
 
 migrationcenterassetsexportjob.NewMigrationCenterAssetsExportJobRecentExecutionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterAssetsExportJobRecentExecutionsList
 ```
@@ -3318,7 +3318,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobRecentExecutionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterassetsexportjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/migrationcenterassetsexportjob"
 
 migrationcenterassetsexportjob.NewMigrationCenterAssetsExportJobRecentExecutionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterAssetsExportJobRecentExecutionsOutputReference
 ```
@@ -3651,7 +3651,7 @@ func InternalValue() MigrationCenterAssetsExportJobRecentExecutions
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobRecentExecutionsResultErrorDetailsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterassetsexportjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/migrationcenterassetsexportjob"
 
 migrationcenterassetsexportjob.NewMigrationCenterAssetsExportJobRecentExecutionsResultErrorDetailsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterAssetsExportJobRecentExecutionsResultErrorDetailsList
 ```
@@ -3800,7 +3800,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobRecentExecutionsResultErrorDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterassetsexportjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/migrationcenterassetsexportjob"
 
 migrationcenterassetsexportjob.NewMigrationCenterAssetsExportJobRecentExecutionsResultErrorDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterAssetsExportJobRecentExecutionsResultErrorDetailsOutputReference
 ```
@@ -4067,7 +4067,7 @@ func InternalValue() MigrationCenterAssetsExportJobRecentExecutionsResultErrorDe
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobRecentExecutionsResultErrorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterassetsexportjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/migrationcenterassetsexportjob"
 
 migrationcenterassetsexportjob.NewMigrationCenterAssetsExportJobRecentExecutionsResultErrorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterAssetsExportJobRecentExecutionsResultErrorList
 ```
@@ -4216,7 +4216,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobRecentExecutionsResultErrorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterassetsexportjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/migrationcenterassetsexportjob"
 
 migrationcenterassetsexportjob.NewMigrationCenterAssetsExportJobRecentExecutionsResultErrorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterAssetsExportJobRecentExecutionsResultErrorOutputReference
 ```
@@ -4516,7 +4516,7 @@ func InternalValue() MigrationCenterAssetsExportJobRecentExecutionsResultError
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobRecentExecutionsResultList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterassetsexportjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/migrationcenterassetsexportjob"
 
 migrationcenterassetsexportjob.NewMigrationCenterAssetsExportJobRecentExecutionsResultList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterAssetsExportJobRecentExecutionsResultList
 ```
@@ -4665,7 +4665,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobRecentExecutionsResultOutputFilesEntriesCsvOutputFileList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterassetsexportjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/migrationcenterassetsexportjob"
 
 migrationcenterassetsexportjob.NewMigrationCenterAssetsExportJobRecentExecutionsResultOutputFilesEntriesCsvOutputFileList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterAssetsExportJobRecentExecutionsResultOutputFilesEntriesCsvOutputFileList
 ```
@@ -4814,7 +4814,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobRecentExecutionsResultOutputFilesEntriesCsvOutputFileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterassetsexportjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/migrationcenterassetsexportjob"
 
 migrationcenterassetsexportjob.NewMigrationCenterAssetsExportJobRecentExecutionsResultOutputFilesEntriesCsvOutputFileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterAssetsExportJobRecentExecutionsResultOutputFilesEntriesCsvOutputFileOutputReference
 ```
@@ -5114,7 +5114,7 @@ func InternalValue() MigrationCenterAssetsExportJobRecentExecutionsResultOutputF
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobRecentExecutionsResultOutputFilesEntriesCsvOutputFileSignedUriList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterassetsexportjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/migrationcenterassetsexportjob"
 
 migrationcenterassetsexportjob.NewMigrationCenterAssetsExportJobRecentExecutionsResultOutputFilesEntriesCsvOutputFileSignedUriList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterAssetsExportJobRecentExecutionsResultOutputFilesEntriesCsvOutputFileSignedUriList
 ```
@@ -5263,7 +5263,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobRecentExecutionsResultOutputFilesEntriesCsvOutputFileSignedUriOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterassetsexportjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/migrationcenterassetsexportjob"
 
 migrationcenterassetsexportjob.NewMigrationCenterAssetsExportJobRecentExecutionsResultOutputFilesEntriesCsvOutputFileSignedUriOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterAssetsExportJobRecentExecutionsResultOutputFilesEntriesCsvOutputFileSignedUriOutputReference
 ```
@@ -5552,7 +5552,7 @@ func InternalValue() MigrationCenterAssetsExportJobRecentExecutionsResultOutputF
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobRecentExecutionsResultOutputFilesEntriesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterassetsexportjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/migrationcenterassetsexportjob"
 
 migrationcenterassetsexportjob.NewMigrationCenterAssetsExportJobRecentExecutionsResultOutputFilesEntriesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterAssetsExportJobRecentExecutionsResultOutputFilesEntriesList
 ```
@@ -5701,7 +5701,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobRecentExecutionsResultOutputFilesEntriesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterassetsexportjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/migrationcenterassetsexportjob"
 
 migrationcenterassetsexportjob.NewMigrationCenterAssetsExportJobRecentExecutionsResultOutputFilesEntriesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterAssetsExportJobRecentExecutionsResultOutputFilesEntriesOutputReference
 ```
@@ -6001,7 +6001,7 @@ func InternalValue() MigrationCenterAssetsExportJobRecentExecutionsResultOutputF
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobRecentExecutionsResultOutputFilesEntriesXlsxOutputFileList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterassetsexportjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/migrationcenterassetsexportjob"
 
 migrationcenterassetsexportjob.NewMigrationCenterAssetsExportJobRecentExecutionsResultOutputFilesEntriesXlsxOutputFileList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterAssetsExportJobRecentExecutionsResultOutputFilesEntriesXlsxOutputFileList
 ```
@@ -6150,7 +6150,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobRecentExecutionsResultOutputFilesEntriesXlsxOutputFileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterassetsexportjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/migrationcenterassetsexportjob"
 
 migrationcenterassetsexportjob.NewMigrationCenterAssetsExportJobRecentExecutionsResultOutputFilesEntriesXlsxOutputFileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterAssetsExportJobRecentExecutionsResultOutputFilesEntriesXlsxOutputFileOutputReference
 ```
@@ -6428,7 +6428,7 @@ func InternalValue() MigrationCenterAssetsExportJobRecentExecutionsResultOutputF
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobRecentExecutionsResultOutputFilesEntriesXlsxOutputFileSignedUriList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterassetsexportjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/migrationcenterassetsexportjob"
 
 migrationcenterassetsexportjob.NewMigrationCenterAssetsExportJobRecentExecutionsResultOutputFilesEntriesXlsxOutputFileSignedUriList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterAssetsExportJobRecentExecutionsResultOutputFilesEntriesXlsxOutputFileSignedUriList
 ```
@@ -6577,7 +6577,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobRecentExecutionsResultOutputFilesEntriesXlsxOutputFileSignedUriOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterassetsexportjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/migrationcenterassetsexportjob"
 
 migrationcenterassetsexportjob.NewMigrationCenterAssetsExportJobRecentExecutionsResultOutputFilesEntriesXlsxOutputFileSignedUriOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterAssetsExportJobRecentExecutionsResultOutputFilesEntriesXlsxOutputFileSignedUriOutputReference
 ```
@@ -6866,7 +6866,7 @@ func InternalValue() MigrationCenterAssetsExportJobRecentExecutionsResultOutputF
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobRecentExecutionsResultOutputFilesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterassetsexportjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/migrationcenterassetsexportjob"
 
 migrationcenterassetsexportjob.NewMigrationCenterAssetsExportJobRecentExecutionsResultOutputFilesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterAssetsExportJobRecentExecutionsResultOutputFilesList
 ```
@@ -7015,7 +7015,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobRecentExecutionsResultOutputFilesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterassetsexportjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/migrationcenterassetsexportjob"
 
 migrationcenterassetsexportjob.NewMigrationCenterAssetsExportJobRecentExecutionsResultOutputFilesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterAssetsExportJobRecentExecutionsResultOutputFilesOutputReference
 ```
@@ -7293,7 +7293,7 @@ func InternalValue() MigrationCenterAssetsExportJobRecentExecutionsResultOutputF
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobRecentExecutionsResultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterassetsexportjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/migrationcenterassetsexportjob"
 
 migrationcenterassetsexportjob.NewMigrationCenterAssetsExportJobRecentExecutionsResultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterAssetsExportJobRecentExecutionsResultOutputReference
 ```
@@ -7593,7 +7593,7 @@ func InternalValue() MigrationCenterAssetsExportJobRecentExecutionsResult
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobRecentExecutionsResultSignedUrisList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterassetsexportjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/migrationcenterassetsexportjob"
 
 migrationcenterassetsexportjob.NewMigrationCenterAssetsExportJobRecentExecutionsResultSignedUrisList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterAssetsExportJobRecentExecutionsResultSignedUrisList
 ```
@@ -7742,7 +7742,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobRecentExecutionsResultSignedUrisOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterassetsexportjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/migrationcenterassetsexportjob"
 
 migrationcenterassetsexportjob.NewMigrationCenterAssetsExportJobRecentExecutionsResultSignedUrisOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterAssetsExportJobRecentExecutionsResultSignedUrisOutputReference
 ```
@@ -8020,7 +8020,7 @@ func InternalValue() MigrationCenterAssetsExportJobRecentExecutionsResultSignedU
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobRecentExecutionsResultSignedUrisSignedUrisList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterassetsexportjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/migrationcenterassetsexportjob"
 
 migrationcenterassetsexportjob.NewMigrationCenterAssetsExportJobRecentExecutionsResultSignedUrisSignedUrisList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MigrationCenterAssetsExportJobRecentExecutionsResultSignedUrisSignedUrisList
 ```
@@ -8169,7 +8169,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobRecentExecutionsResultSignedUrisSignedUrisOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterassetsexportjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/migrationcenterassetsexportjob"
 
 migrationcenterassetsexportjob.NewMigrationCenterAssetsExportJobRecentExecutionsResultSignedUrisSignedUrisOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MigrationCenterAssetsExportJobRecentExecutionsResultSignedUrisSignedUrisOutputReference
 ```
@@ -8458,7 +8458,7 @@ func InternalValue() MigrationCenterAssetsExportJobRecentExecutionsResultSignedU
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobSignedUriDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterassetsexportjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/migrationcenterassetsexportjob"
 
 migrationcenterassetsexportjob.NewMigrationCenterAssetsExportJobSignedUriDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MigrationCenterAssetsExportJobSignedUriDestinationOutputReference
 ```
@@ -8729,7 +8729,7 @@ func InternalValue() MigrationCenterAssetsExportJobSignedUriDestination
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.migrationCenterAssetsExportJob.MigrationCenterAssetsExportJobTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/migrationcenterassetsexportjob"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/migrationcenterassetsexportjob"
 
 migrationcenterassetsexportjob.NewMigrationCenterAssetsExportJobTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MigrationCenterAssetsExportJobTimeoutsOutputReference
 ```

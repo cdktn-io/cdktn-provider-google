@@ -4,12 +4,12 @@
 
 ### ArtifactRegistryRule <a name="ArtifactRegistryRule" id="@cdktn/provider-google.artifactRegistryRule.ArtifactRegistryRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/artifact_registry_rule google_artifact_registry_rule}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/artifact_registry_rule google_artifact_registry_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.artifactRegistryRule.ArtifactRegistryRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistryrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/artifactregistryrule"
 
 artifactregistryrule.NewArtifactRegistryRule(scope Construct, id *string, config ArtifactRegistryRuleConfig) ArtifactRegistryRule
 ```
@@ -489,7 +489,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.artifactRegistryRule.ArtifactRegistryRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistryrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/artifactregistryrule"
 
 artifactregistryrule.ArtifactRegistryRule_IsConstruct(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.artifactRegistryRule.ArtifactRegistryRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistryrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/artifactregistryrule"
 
 artifactregistryrule.ArtifactRegistryRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ artifactregistryrule.ArtifactRegistryRule_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.artifactRegistryRule.ArtifactRegistryRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistryrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/artifactregistryrule"
 
 artifactregistryrule.ArtifactRegistryRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -549,7 +549,7 @@ artifactregistryrule.ArtifactRegistryRule_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.artifactRegistryRule.ArtifactRegistryRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistryrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/artifactregistryrule"
 
 artifactregistryrule.ArtifactRegistryRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -578,7 +578,7 @@ The construct id used in the generated config for the ArtifactRegistryRule to im
 
 The id of the existing ArtifactRegistryRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/artifact_registry_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/artifact_registry_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1031,7 +1031,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.artifactRegistryRule.ArtifactRegistryRuleCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistryrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/artifactregistryrule"
 
 &artifactregistryrule.ArtifactRegistryRuleCondition {
 	Expression: *string,
@@ -1062,7 +1062,7 @@ Expression *string
 
 Textual representation of an expression in Common Expression Language syntax.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/artifact_registry_rule#expression ArtifactRegistryRule#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/artifact_registry_rule#expression ArtifactRegistryRule#expression}
 
 ---
 
@@ -1079,7 +1079,7 @@ Optional.
 Description of the expression. This is a longer text which
 describes the expression, e.g. when hovered over it in a UI.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/artifact_registry_rule#description ArtifactRegistryRule#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/artifact_registry_rule#description ArtifactRegistryRule#description}
 
 ---
 
@@ -1096,7 +1096,7 @@ Optional.
 String indicating the location of the expression for error
 reporting, e.g. a file name and a position in the file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/artifact_registry_rule#location ArtifactRegistryRule#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/artifact_registry_rule#location ArtifactRegistryRule#location}
 
 ---
 
@@ -1110,7 +1110,7 @@ Title *string
 
 Optional. Title for the expression, i.e. a short string describing its purpose.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/artifact_registry_rule#title ArtifactRegistryRule#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/artifact_registry_rule#title ArtifactRegistryRule#title}
 
 ---
 
@@ -1119,7 +1119,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.artifactRegistryRule.ArtifactRegistryRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistryrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/artifactregistryrule"
 
 &artifactregistryrule.ArtifactRegistryRuleConfig {
 	Connection: interface{},
@@ -1132,14 +1132,14 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistry
 	RepositoryId: *string,
 	RuleId: *string,
 	Action: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v20.artifactRegistryRule.ArtifactRegistryRuleCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v21.artifactRegistryRule.ArtifactRegistryRuleCondition,
 	DeletionPolicy: *string,
 	Id: *string,
 	Location: *string,
 	Operation: *string,
 	PackageId: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.artifactRegistryRule.ArtifactRegistryRuleTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.artifactRegistryRule.ArtifactRegistryRuleTimeouts,
 }
 ```
 
@@ -1159,11 +1159,11 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistry
 | <code><a href="#@cdktn/provider-google.artifactRegistryRule.ArtifactRegistryRuleConfig.property.action">Action</a></code> | <code>*string</code> | The action this rule takes. Possible values: ["ACTION_UNSPECIFIED", "ALLOW", "DENY"]. |
 | <code><a href="#@cdktn/provider-google.artifactRegistryRule.ArtifactRegistryRuleConfig.property.condition">Condition</a></code> | <code><a href="#@cdktn/provider-google.artifactRegistryRule.ArtifactRegistryRuleCondition">ArtifactRegistryRuleCondition</a></code> | condition block. |
 | <code><a href="#@cdktn/provider-google.artifactRegistryRule.ArtifactRegistryRuleConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.artifactRegistryRule.ArtifactRegistryRuleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/artifact_registry_rule#id ArtifactRegistryRule#id}. |
+| <code><a href="#@cdktn/provider-google.artifactRegistryRule.ArtifactRegistryRuleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/artifact_registry_rule#id ArtifactRegistryRule#id}. |
 | <code><a href="#@cdktn/provider-google.artifactRegistryRule.ArtifactRegistryRuleConfig.property.location">Location</a></code> | <code>*string</code> | The name of the repository's location. |
 | <code><a href="#@cdktn/provider-google.artifactRegistryRule.ArtifactRegistryRuleConfig.property.operation">Operation</a></code> | <code>*string</code> | The operation the rule applies to. Possible values: ["OPERATION_UNSPECIFIED", "DOWNLOAD"]. |
 | <code><a href="#@cdktn/provider-google.artifactRegistryRule.ArtifactRegistryRuleConfig.property.packageId">PackageId</a></code> | <code>*string</code> | The package ID the rule applies to. If empty, this rule applies to all packages inside the repository. |
-| <code><a href="#@cdktn/provider-google.artifactRegistryRule.ArtifactRegistryRuleConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/artifact_registry_rule#project ArtifactRegistryRule#project}. |
+| <code><a href="#@cdktn/provider-google.artifactRegistryRule.ArtifactRegistryRuleConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/artifact_registry_rule#project ArtifactRegistryRule#project}. |
 | <code><a href="#@cdktn/provider-google.artifactRegistryRule.ArtifactRegistryRuleConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.artifactRegistryRule.ArtifactRegistryRuleTimeouts">ArtifactRegistryRuleTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1248,7 +1248,7 @@ RepositoryId *string
 
 The last part of the repository name, for example: "repo1".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/artifact_registry_rule#repository_id ArtifactRegistryRule#repository_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/artifact_registry_rule#repository_id ArtifactRegistryRule#repository_id}
 
 ---
 
@@ -1262,7 +1262,7 @@ RuleId *string
 
 The rule id to use for this repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/artifact_registry_rule#rule_id ArtifactRegistryRule#rule_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/artifact_registry_rule#rule_id ArtifactRegistryRule#rule_id}
 
 ---
 
@@ -1276,7 +1276,7 @@ Action *string
 
 The action this rule takes. Possible values: ["ACTION_UNSPECIFIED", "ALLOW", "DENY"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/artifact_registry_rule#action ArtifactRegistryRule#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/artifact_registry_rule#action ArtifactRegistryRule#action}
 
 ---
 
@@ -1290,7 +1290,7 @@ Condition ArtifactRegistryRuleCondition
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/artifact_registry_rule#condition ArtifactRegistryRule#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/artifact_registry_rule#condition ArtifactRegistryRule#condition}
 
 ---
 
@@ -1311,7 +1311,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/artifact_registry_rule#deletion_policy ArtifactRegistryRule#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/artifact_registry_rule#deletion_policy ArtifactRegistryRule#deletion_policy}
 
 ---
 
@@ -1323,7 +1323,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/artifact_registry_rule#id ArtifactRegistryRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/artifact_registry_rule#id ArtifactRegistryRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1347,7 +1347,7 @@ or use the
 [google_artifact_registry_locations](https://registry.terraform.io/providers/hashicorp/google/latest/docs/data-sources/artifact_registry_locations)
 data source for possible values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/artifact_registry_rule#location ArtifactRegistryRule#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/artifact_registry_rule#location ArtifactRegistryRule#location}
 
 ---
 
@@ -1361,7 +1361,7 @@ Operation *string
 
 The operation the rule applies to. Possible values: ["OPERATION_UNSPECIFIED", "DOWNLOAD"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/artifact_registry_rule#operation ArtifactRegistryRule#operation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/artifact_registry_rule#operation ArtifactRegistryRule#operation}
 
 ---
 
@@ -1375,7 +1375,7 @@ PackageId *string
 
 The package ID the rule applies to. If empty, this rule applies to all packages inside the repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/artifact_registry_rule#package_id ArtifactRegistryRule#package_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/artifact_registry_rule#package_id ArtifactRegistryRule#package_id}
 
 ---
 
@@ -1387,7 +1387,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/artifact_registry_rule#project ArtifactRegistryRule#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/artifact_registry_rule#project ArtifactRegistryRule#project}.
 
 ---
 
@@ -1401,7 +1401,7 @@ Timeouts ArtifactRegistryRuleTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/artifact_registry_rule#timeouts ArtifactRegistryRule#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/artifact_registry_rule#timeouts ArtifactRegistryRule#timeouts}
 
 ---
 
@@ -1410,7 +1410,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.artifactRegistryRule.ArtifactRegistryRuleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistryrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/artifactregistryrule"
 
 &artifactregistryrule.ArtifactRegistryRuleTimeouts {
 	Create: *string,
@@ -1423,9 +1423,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistry
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.artifactRegistryRule.ArtifactRegistryRuleTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/artifact_registry_rule#create ArtifactRegistryRule#create}. |
-| <code><a href="#@cdktn/provider-google.artifactRegistryRule.ArtifactRegistryRuleTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/artifact_registry_rule#delete ArtifactRegistryRule#delete}. |
-| <code><a href="#@cdktn/provider-google.artifactRegistryRule.ArtifactRegistryRuleTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/artifact_registry_rule#update ArtifactRegistryRule#update}. |
+| <code><a href="#@cdktn/provider-google.artifactRegistryRule.ArtifactRegistryRuleTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/artifact_registry_rule#create ArtifactRegistryRule#create}. |
+| <code><a href="#@cdktn/provider-google.artifactRegistryRule.ArtifactRegistryRuleTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/artifact_registry_rule#delete ArtifactRegistryRule#delete}. |
+| <code><a href="#@cdktn/provider-google.artifactRegistryRule.ArtifactRegistryRuleTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/artifact_registry_rule#update ArtifactRegistryRule#update}. |
 
 ---
 
@@ -1437,7 +1437,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/artifact_registry_rule#create ArtifactRegistryRule#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/artifact_registry_rule#create ArtifactRegistryRule#create}.
 
 ---
 
@@ -1449,7 +1449,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/artifact_registry_rule#delete ArtifactRegistryRule#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/artifact_registry_rule#delete ArtifactRegistryRule#delete}.
 
 ---
 
@@ -1461,7 +1461,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/artifact_registry_rule#update ArtifactRegistryRule#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/artifact_registry_rule#update ArtifactRegistryRule#update}.
 
 ---
 
@@ -1472,7 +1472,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.artifactRegistryRule.ArtifactRegistryRuleConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistryrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/artifactregistryrule"
 
 artifactregistryrule.NewArtifactRegistryRuleConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ArtifactRegistryRuleConditionOutputReference
 ```
@@ -1830,7 +1830,7 @@ func InternalValue() ArtifactRegistryRuleCondition
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.artifactRegistryRule.ArtifactRegistryRuleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/artifactregistryrule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/artifactregistryrule"
 
 artifactregistryrule.NewArtifactRegistryRuleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ArtifactRegistryRuleTimeoutsOutputReference
 ```

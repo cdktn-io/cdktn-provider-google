@@ -4,12 +4,12 @@
 
 ### GeminiCodeToolsSetting <a name="GeminiCodeToolsSetting" id="@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSetting"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gemini_code_tools_setting google_gemini_code_tools_setting}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gemini_code_tools_setting google_gemini_code_tools_setting}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSetting.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/geminicodetoolssetting"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/geminicodetoolssetting"
 
 geminicodetoolssetting.NewGeminiCodeToolsSetting(scope Construct, id *string, config GeminiCodeToolsSettingConfig) GeminiCodeToolsSetting
 ```
@@ -468,7 +468,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSetting.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/geminicodetoolssetting"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/geminicodetoolssetting"
 
 geminicodetoolssetting.GeminiCodeToolsSetting_IsConstruct(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSetting.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/geminicodetoolssetting"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/geminicodetoolssetting"
 
 geminicodetoolssetting.GeminiCodeToolsSetting_IsTerraformElement(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ geminicodetoolssetting.GeminiCodeToolsSetting_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSetting.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/geminicodetoolssetting"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/geminicodetoolssetting"
 
 geminicodetoolssetting.GeminiCodeToolsSetting_IsTerraformResource(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ geminicodetoolssetting.GeminiCodeToolsSetting_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSetting.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/geminicodetoolssetting"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/geminicodetoolssetting"
 
 geminicodetoolssetting.GeminiCodeToolsSetting_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -557,7 +557,7 @@ The construct id used in the generated config for the GeminiCodeToolsSetting to 
 
 The id of the existing GeminiCodeToolsSetting that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gemini_code_tools_setting#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gemini_code_tools_setting#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -988,7 +988,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSettingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/geminicodetoolssetting"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/geminicodetoolssetting"
 
 &geminicodetoolssetting.GeminiCodeToolsSettingConfig {
 	Connection: interface{},
@@ -1005,7 +1005,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/geminicodetoolss
 	Labels: *map[string]*string,
 	Location: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.geminiCodeToolsSetting.GeminiCodeToolsSettingTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.geminiCodeToolsSetting.GeminiCodeToolsSettingTimeouts,
 }
 ```
 
@@ -1023,10 +1023,10 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/geminicodetoolss
 | <code><a href="#@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSettingConfig.property.codeToolsSettingId">CodeToolsSettingId</a></code> | <code>*string</code> | Id of the Code Tools Setting. |
 | <code><a href="#@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSettingConfig.property.enabledTool">EnabledTool</a></code> | <code>interface{}</code> | enabled_tool block. |
 | <code><a href="#@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSettingConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSettingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gemini_code_tools_setting#id GeminiCodeToolsSetting#id}. |
+| <code><a href="#@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSettingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gemini_code_tools_setting#id GeminiCodeToolsSetting#id}. |
 | <code><a href="#@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSettingConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | Labels as key value pairs. |
 | <code><a href="#@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSettingConfig.property.location">Location</a></code> | <code>*string</code> | Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122. |
-| <code><a href="#@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSettingConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gemini_code_tools_setting#project GeminiCodeToolsSetting#project}. |
+| <code><a href="#@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSettingConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gemini_code_tools_setting#project GeminiCodeToolsSetting#project}. |
 | <code><a href="#@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSettingConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSettingTimeouts">GeminiCodeToolsSettingTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1111,7 +1111,7 @@ CodeToolsSettingId *string
 
 Id of the Code Tools Setting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gemini_code_tools_setting#code_tools_setting_id GeminiCodeToolsSetting#code_tools_setting_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gemini_code_tools_setting#code_tools_setting_id GeminiCodeToolsSetting#code_tools_setting_id}
 
 ---
 
@@ -1125,7 +1125,7 @@ EnabledTool interface{}
 
 enabled_tool block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gemini_code_tools_setting#enabled_tool GeminiCodeToolsSetting#enabled_tool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gemini_code_tools_setting#enabled_tool GeminiCodeToolsSetting#enabled_tool}
 
 ---
 
@@ -1146,7 +1146,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gemini_code_tools_setting#deletion_policy GeminiCodeToolsSetting#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gemini_code_tools_setting#deletion_policy GeminiCodeToolsSetting#deletion_policy}
 
 ---
 
@@ -1158,7 +1158,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gemini_code_tools_setting#id GeminiCodeToolsSetting#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gemini_code_tools_setting#id GeminiCodeToolsSetting#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1178,7 +1178,7 @@ Labels as key value pairs.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gemini_code_tools_setting#labels GeminiCodeToolsSetting#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gemini_code_tools_setting#labels GeminiCodeToolsSetting#labels}
 
 ---
 
@@ -1192,7 +1192,7 @@ Location *string
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gemini_code_tools_setting#location GeminiCodeToolsSetting#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gemini_code_tools_setting#location GeminiCodeToolsSetting#location}
 
 ---
 
@@ -1204,7 +1204,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gemini_code_tools_setting#project GeminiCodeToolsSetting#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gemini_code_tools_setting#project GeminiCodeToolsSetting#project}.
 
 ---
 
@@ -1218,7 +1218,7 @@ Timeouts GeminiCodeToolsSettingTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gemini_code_tools_setting#timeouts GeminiCodeToolsSetting#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gemini_code_tools_setting#timeouts GeminiCodeToolsSetting#timeouts}
 
 ---
 
@@ -1227,7 +1227,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSettingEnabledTool.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/geminicodetoolssetting"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/geminicodetoolssetting"
 
 &geminicodetoolssetting.GeminiCodeToolsSettingEnabledTool {
 	Handle: *string,
@@ -1260,7 +1260,7 @@ Handle *string
 
 Handle used to invoke the tool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gemini_code_tools_setting#handle GeminiCodeToolsSetting#handle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gemini_code_tools_setting#handle GeminiCodeToolsSetting#handle}
 
 ---
 
@@ -1274,7 +1274,7 @@ Tool *string
 
 Link to the Tool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gemini_code_tools_setting#tool GeminiCodeToolsSetting#tool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gemini_code_tools_setting#tool GeminiCodeToolsSetting#tool}
 
 ---
 
@@ -1288,7 +1288,7 @@ AccountConnector *string
 
 Link to the Dev Connect Account Connector that holds the user credentials. projects/{project}/locations/{location}/accountConnectors/{account_connector_id}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gemini_code_tools_setting#account_connector GeminiCodeToolsSetting#account_connector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gemini_code_tools_setting#account_connector GeminiCodeToolsSetting#account_connector}
 
 ---
 
@@ -1302,7 +1302,7 @@ Config interface{}
 
 config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gemini_code_tools_setting#config GeminiCodeToolsSetting#config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gemini_code_tools_setting#config GeminiCodeToolsSetting#config}
 
 ---
 
@@ -1316,7 +1316,7 @@ UriOverride *string
 
 Overridden URI, if allowed by Tool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gemini_code_tools_setting#uri_override GeminiCodeToolsSetting#uri_override}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gemini_code_tools_setting#uri_override GeminiCodeToolsSetting#uri_override}
 
 ---
 
@@ -1325,7 +1325,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSettingEnabledToolConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/geminicodetoolssetting"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/geminicodetoolssetting"
 
 &geminicodetoolssetting.GeminiCodeToolsSettingEnabledToolConfig {
 	Key: *string,
@@ -1352,7 +1352,7 @@ Key *string
 
 Key of the configuration item.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gemini_code_tools_setting#key GeminiCodeToolsSetting#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gemini_code_tools_setting#key GeminiCodeToolsSetting#key}
 
 ---
 
@@ -1366,7 +1366,7 @@ Value *string
 
 Value of the configuration item.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gemini_code_tools_setting#value GeminiCodeToolsSetting#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gemini_code_tools_setting#value GeminiCodeToolsSetting#value}
 
 ---
 
@@ -1375,7 +1375,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSettingTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/geminicodetoolssetting"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/geminicodetoolssetting"
 
 &geminicodetoolssetting.GeminiCodeToolsSettingTimeouts {
 	Create: *string,
@@ -1388,9 +1388,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/geminicodetoolss
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSettingTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gemini_code_tools_setting#create GeminiCodeToolsSetting#create}. |
-| <code><a href="#@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSettingTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gemini_code_tools_setting#delete GeminiCodeToolsSetting#delete}. |
-| <code><a href="#@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSettingTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gemini_code_tools_setting#update GeminiCodeToolsSetting#update}. |
+| <code><a href="#@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSettingTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gemini_code_tools_setting#create GeminiCodeToolsSetting#create}. |
+| <code><a href="#@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSettingTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gemini_code_tools_setting#delete GeminiCodeToolsSetting#delete}. |
+| <code><a href="#@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSettingTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gemini_code_tools_setting#update GeminiCodeToolsSetting#update}. |
 
 ---
 
@@ -1402,7 +1402,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gemini_code_tools_setting#create GeminiCodeToolsSetting#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gemini_code_tools_setting#create GeminiCodeToolsSetting#create}.
 
 ---
 
@@ -1414,7 +1414,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gemini_code_tools_setting#delete GeminiCodeToolsSetting#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gemini_code_tools_setting#delete GeminiCodeToolsSetting#delete}.
 
 ---
 
@@ -1426,7 +1426,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/gemini_code_tools_setting#update GeminiCodeToolsSetting#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gemini_code_tools_setting#update GeminiCodeToolsSetting#update}.
 
 ---
 
@@ -1437,7 +1437,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSettingEnabledToolConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/geminicodetoolssetting"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/geminicodetoolssetting"
 
 geminicodetoolssetting.NewGeminiCodeToolsSettingEnabledToolConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GeminiCodeToolsSettingEnabledToolConfigList
 ```
@@ -1597,7 +1597,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSettingEnabledToolConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/geminicodetoolssetting"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/geminicodetoolssetting"
 
 geminicodetoolssetting.NewGeminiCodeToolsSettingEnabledToolConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GeminiCodeToolsSettingEnabledToolConfigOutputReference
 ```
@@ -1908,7 +1908,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSettingEnabledToolList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/geminicodetoolssetting"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/geminicodetoolssetting"
 
 geminicodetoolssetting.NewGeminiCodeToolsSettingEnabledToolList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GeminiCodeToolsSettingEnabledToolList
 ```
@@ -2068,7 +2068,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSettingEnabledToolOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/geminicodetoolssetting"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/geminicodetoolssetting"
 
 geminicodetoolssetting.NewGeminiCodeToolsSettingEnabledToolOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GeminiCodeToolsSettingEnabledToolOutputReference
 ```
@@ -2479,7 +2479,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.geminiCodeToolsSetting.GeminiCodeToolsSettingTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/geminicodetoolssetting"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/geminicodetoolssetting"
 
 geminicodetoolssetting.NewGeminiCodeToolsSettingTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GeminiCodeToolsSettingTimeoutsOutputReference
 ```

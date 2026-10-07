@@ -4,12 +4,12 @@
 
 ### DataGoogleComputeStoragePool <a name="DataGoogleComputeStoragePool" id="@cdktn/provider-google.dataGoogleComputeStoragePool.DataGoogleComputeStoragePool"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_storage_pool google_compute_storage_pool}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/compute_storage_pool google_compute_storage_pool}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeStoragePool.DataGoogleComputeStoragePool.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputestoragepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputestoragepool"
 
 datagooglecomputestoragepool.NewDataGoogleComputeStoragePool(scope Construct, id *string, config DataGoogleComputeStoragePoolConfig) DataGoogleComputeStoragePool
 ```
@@ -305,7 +305,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleComputeStoragePool.DataGoogleComputeStoragePool.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputestoragepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputestoragepool"
 
 datagooglecomputestoragepool.DataGoogleComputeStoragePool_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleComputeStoragePool.DataGoogleComputeStoragePool.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputestoragepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputestoragepool"
 
 datagooglecomputestoragepool.DataGoogleComputeStoragePool_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ datagooglecomputestoragepool.DataGoogleComputeStoragePool_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleComputeStoragePool.DataGoogleComputeStoragePool.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputestoragepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputestoragepool"
 
 datagooglecomputestoragepool.DataGoogleComputeStoragePool_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagooglecomputestoragepool.DataGoogleComputeStoragePool_IsTerraformDataSource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleComputeStoragePool.DataGoogleComputeStoragePool.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputestoragepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputestoragepool"
 
 datagooglecomputestoragepool.DataGoogleComputeStoragePool_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataGoogleComputeStoragePo
 
 The id of the existing DataGoogleComputeStoragePool that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_storage_pool#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/compute_storage_pool#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -847,7 +847,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeStoragePool.DataGoogleComputeStoragePoolConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputestoragepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputestoragepool"
 
 &datagooglecomputestoragepool.DataGoogleComputeStoragePoolConfig {
 	Connection: interface{},
@@ -876,7 +876,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomput
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeStoragePool.DataGoogleComputeStoragePoolConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeStoragePool.DataGoogleComputeStoragePoolConfig.property.name">Name</a></code> | <code>*string</code> | Name of the resource. |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeStoragePool.DataGoogleComputeStoragePoolConfig.property.zone">Zone</a></code> | <code>*string</code> | A reference to the zone where the storage pool resides. |
-| <code><a href="#@cdktn/provider-google.dataGoogleComputeStoragePool.DataGoogleComputeStoragePoolConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_storage_pool#project DataGoogleComputeStoragePool#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeStoragePool.DataGoogleComputeStoragePoolConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/compute_storage_pool#project DataGoogleComputeStoragePool#project}. |
 
 ---
 
@@ -968,7 +968,7 @@ which means the first character must be a lowercase letter,
 and all following characters must be a dash, lowercase letter, or digit,
 except the last character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_storage_pool#name DataGoogleComputeStoragePool#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/compute_storage_pool#name DataGoogleComputeStoragePool#name}
 
 ---
 
@@ -982,7 +982,7 @@ Zone *string
 
 A reference to the zone where the storage pool resides.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_storage_pool#zone DataGoogleComputeStoragePool#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/compute_storage_pool#zone DataGoogleComputeStoragePool#zone}
 
 ---
 
@@ -994,7 +994,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_storage_pool#project DataGoogleComputeStoragePool#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/compute_storage_pool#project DataGoogleComputeStoragePool#project}.
 
 ---
 
@@ -1003,7 +1003,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeStoragePool.DataGoogleComputeStoragePoolParams.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputestoragepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputestoragepool"
 
 &datagooglecomputestoragepool.DataGoogleComputeStoragePoolParams {
 
@@ -1016,7 +1016,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomput
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeStoragePool.DataGoogleComputeStoragePoolResourceStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputestoragepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputestoragepool"
 
 &datagooglecomputestoragepool.DataGoogleComputeStoragePoolResourceStatus {
 
@@ -1029,7 +1029,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomput
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeStoragePool.DataGoogleComputeStoragePoolStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputestoragepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputestoragepool"
 
 &datagooglecomputestoragepool.DataGoogleComputeStoragePoolStatus {
 
@@ -1044,7 +1044,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomput
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeStoragePool.DataGoogleComputeStoragePoolParamsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputestoragepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputestoragepool"
 
 datagooglecomputestoragepool.NewDataGoogleComputeStoragePoolParamsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeStoragePoolParamsList
 ```
@@ -1193,7 +1193,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeStoragePool.DataGoogleComputeStoragePoolParamsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputestoragepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputestoragepool"
 
 datagooglecomputestoragepool.NewDataGoogleComputeStoragePoolParamsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeStoragePoolParamsOutputReference
 ```
@@ -1471,7 +1471,7 @@ func InternalValue() DataGoogleComputeStoragePoolParams
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeStoragePool.DataGoogleComputeStoragePoolResourceStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputestoragepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputestoragepool"
 
 datagooglecomputestoragepool.NewDataGoogleComputeStoragePoolResourceStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeStoragePoolResourceStatusList
 ```
@@ -1620,7 +1620,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeStoragePool.DataGoogleComputeStoragePoolResourceStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputestoragepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputestoragepool"
 
 datagooglecomputestoragepool.NewDataGoogleComputeStoragePoolResourceStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeStoragePoolResourceStatusOutputReference
 ```
@@ -1997,7 +1997,7 @@ func InternalValue() DataGoogleComputeStoragePoolResourceStatus
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeStoragePool.DataGoogleComputeStoragePoolStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputestoragepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputestoragepool"
 
 datagooglecomputestoragepool.NewDataGoogleComputeStoragePoolStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeStoragePoolStatusList
 ```
@@ -2146,7 +2146,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeStoragePool.DataGoogleComputeStoragePoolStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputestoragepool"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputestoragepool"
 
 datagooglecomputestoragepool.NewDataGoogleComputeStoragePoolStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeStoragePoolStatusOutputReference
 ```

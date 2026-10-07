@@ -4,12 +4,12 @@
 
 ### ComputeOrganizationSecurityPolicy <a name="ComputeOrganizationSecurityPolicy" id="@cdktn/provider-google.computeOrganizationSecurityPolicy.ComputeOrganizationSecurityPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_organization_security_policy google_compute_organization_security_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_organization_security_policy google_compute_organization_security_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeOrganizationSecurityPolicy.ComputeOrganizationSecurityPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeorganizationsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeorganizationsecuritypolicy"
 
 computeorganizationsecuritypolicy.NewComputeOrganizationSecurityPolicy(scope Construct, id *string, config ComputeOrganizationSecurityPolicyConfig) ComputeOrganizationSecurityPolicy
 ```
@@ -482,7 +482,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeOrganizationSecurityPolicy.ComputeOrganizationSecurityPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeorganizationsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeorganizationsecuritypolicy"
 
 computeorganizationsecuritypolicy.ComputeOrganizationSecurityPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeOrganizationSecurityPolicy.ComputeOrganizationSecurityPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeorganizationsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeorganizationsecuritypolicy"
 
 computeorganizationsecuritypolicy.ComputeOrganizationSecurityPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ computeorganizationsecuritypolicy.ComputeOrganizationSecurityPolicy_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeOrganizationSecurityPolicy.ComputeOrganizationSecurityPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeorganizationsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeorganizationsecuritypolicy"
 
 computeorganizationsecuritypolicy.ComputeOrganizationSecurityPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -542,7 +542,7 @@ computeorganizationsecuritypolicy.ComputeOrganizationSecurityPolicy_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeOrganizationSecurityPolicy.ComputeOrganizationSecurityPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeorganizationsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeorganizationsecuritypolicy"
 
 computeorganizationsecuritypolicy.ComputeOrganizationSecurityPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -571,7 +571,7 @@ The construct id used in the generated config for the ComputeOrganizationSecurit
 
 The id of the existing ComputeOrganizationSecurityPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_organization_security_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_organization_security_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -991,10 +991,10 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeOrganizationSecurityPolicy.ComputeOrganizationSecurityPolicyAdvancedOptionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeorganizationsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeorganizationsecuritypolicy"
 
 &computeorganizationsecuritypolicy.ComputeOrganizationSecurityPolicyAdvancedOptionsConfig {
-	JsonCustomConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeOrganizationSecurityPolicy.ComputeOrganizationSecurityPolicyAdvancedOptionsConfigJsonCustomConfig,
+	JsonCustomConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.computeOrganizationSecurityPolicy.ComputeOrganizationSecurityPolicyAdvancedOptionsConfigJsonCustomConfig,
 	JsonParsing: *string,
 	LogLevel: *string,
 	RequestBodyInspectionSize: *string,
@@ -1024,7 +1024,7 @@ JsonCustomConfig ComputeOrganizationSecurityPolicyAdvancedOptionsConfigJsonCusto
 
 json_custom_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_organization_security_policy#json_custom_config ComputeOrganizationSecurityPolicy#json_custom_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_organization_security_policy#json_custom_config ComputeOrganizationSecurityPolicy#json_custom_config}
 
 ---
 
@@ -1038,7 +1038,7 @@ JsonParsing *string
 
 JSON body parsing. Supported values include: "DISABLED", "STANDARD", "STANDARD_WITH_GRAPHQL". Possible values: ["DISABLED", "STANDARD", "STANDARD_WITH_GRAPHQL"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_organization_security_policy#json_parsing ComputeOrganizationSecurityPolicy#json_parsing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_organization_security_policy#json_parsing ComputeOrganizationSecurityPolicy#json_parsing}
 
 ---
 
@@ -1052,7 +1052,7 @@ LogLevel *string
 
 Logging level. Supported values include: "NORMAL", "VERBOSE". Possible values: ["NORMAL", "VERBOSE"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_organization_security_policy#log_level ComputeOrganizationSecurityPolicy#log_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_organization_security_policy#log_level ComputeOrganizationSecurityPolicy#log_level}
 
 ---
 
@@ -1069,7 +1069,7 @@ The maximum request size chosen by the customer with Waf enabled.
 Values supported are "8KB", "16KB", "32KB", "48KB" and "64KB".
 Values are case insensitive. Possible values: ["8KB", "16KB", "32KB", "48KB", "64KB"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_organization_security_policy#request_body_inspection_size ComputeOrganizationSecurityPolicy#request_body_inspection_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_organization_security_policy#request_body_inspection_size ComputeOrganizationSecurityPolicy#request_body_inspection_size}
 
 ---
 
@@ -1083,7 +1083,7 @@ UserIpRequestHeaders *[]*string
 
 An optional list of case-insensitive request header names to use for resolving the client source IP address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_organization_security_policy#user_ip_request_headers ComputeOrganizationSecurityPolicy#user_ip_request_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_organization_security_policy#user_ip_request_headers ComputeOrganizationSecurityPolicy#user_ip_request_headers}
 
 ---
 
@@ -1092,7 +1092,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeOrganizationSecurityPolicy.ComputeOrganizationSecurityPolicyAdvancedOptionsConfigJsonCustomConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeorganizationsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeorganizationsecuritypolicy"
 
 &computeorganizationsecuritypolicy.ComputeOrganizationSecurityPolicyAdvancedOptionsConfigJsonCustomConfig {
 	ContentTypes: *[]*string,
@@ -1117,7 +1117,7 @@ ContentTypes *[]*string
 
 A list of content types to be parsed as JSON.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_organization_security_policy#content_types ComputeOrganizationSecurityPolicy#content_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_organization_security_policy#content_types ComputeOrganizationSecurityPolicy#content_types}
 
 ---
 
@@ -1126,7 +1126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeOrganizationSecurityPolicy.ComputeOrganizationSecurityPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeorganizationsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeorganizationsecuritypolicy"
 
 &computeorganizationsecuritypolicy.ComputeOrganizationSecurityPolicyConfig {
 	Connection: interface{},
@@ -1137,13 +1137,13 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeorganizat
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Parent: *string,
-	AdvancedOptionsConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeOrganizationSecurityPolicy.ComputeOrganizationSecurityPolicyAdvancedOptionsConfig,
+	AdvancedOptionsConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.computeOrganizationSecurityPolicy.ComputeOrganizationSecurityPolicyAdvancedOptionsConfig,
 	DeletionPolicy: *string,
 	Description: *string,
 	DisplayName: *string,
 	Id: *string,
 	ShortName: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeOrganizationSecurityPolicy.ComputeOrganizationSecurityPolicyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.computeOrganizationSecurityPolicy.ComputeOrganizationSecurityPolicyTimeouts,
 	Type: *string,
 }
 ```
@@ -1164,7 +1164,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeorganizat
 | <code><a href="#@cdktn/provider-google.computeOrganizationSecurityPolicy.ComputeOrganizationSecurityPolicyConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.computeOrganizationSecurityPolicy.ComputeOrganizationSecurityPolicyConfig.property.description">Description</a></code> | <code>*string</code> | A textual description for the organization security policy. |
 | <code><a href="#@cdktn/provider-google.computeOrganizationSecurityPolicy.ComputeOrganizationSecurityPolicyConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | User-provided name of the organization security policy. |
-| <code><a href="#@cdktn/provider-google.computeOrganizationSecurityPolicy.ComputeOrganizationSecurityPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_organization_security_policy#id ComputeOrganizationSecurityPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.computeOrganizationSecurityPolicy.ComputeOrganizationSecurityPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_organization_security_policy#id ComputeOrganizationSecurityPolicy#id}. |
 | <code><a href="#@cdktn/provider-google.computeOrganizationSecurityPolicy.ComputeOrganizationSecurityPolicyConfig.property.shortName">ShortName</a></code> | <code>*string</code> | User-provided name of the organization security policy. |
 | <code><a href="#@cdktn/provider-google.computeOrganizationSecurityPolicy.ComputeOrganizationSecurityPolicyConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeOrganizationSecurityPolicy.ComputeOrganizationSecurityPolicyTimeouts">ComputeOrganizationSecurityPolicyTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.computeOrganizationSecurityPolicy.ComputeOrganizationSecurityPolicyConfig.property.type">Type</a></code> | <code>*string</code> | The type indicates the intended use of the security policy. |
@@ -1251,7 +1251,7 @@ Parent *string
 
 The parent of this OrganizationSecurityPolicy in the Cloud Resource Hierarchy. Format: organizations/{organization_id} or folders/{folder_id}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_organization_security_policy#parent ComputeOrganizationSecurityPolicy#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_organization_security_policy#parent ComputeOrganizationSecurityPolicy#parent}
 
 ---
 
@@ -1265,7 +1265,7 @@ AdvancedOptionsConfig ComputeOrganizationSecurityPolicyAdvancedOptionsConfig
 
 advanced_options_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_organization_security_policy#advanced_options_config ComputeOrganizationSecurityPolicy#advanced_options_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_organization_security_policy#advanced_options_config ComputeOrganizationSecurityPolicy#advanced_options_config}
 
 ---
 
@@ -1286,7 +1286,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_organization_security_policy#deletion_policy ComputeOrganizationSecurityPolicy#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_organization_security_policy#deletion_policy ComputeOrganizationSecurityPolicy#deletion_policy}
 
 ---
 
@@ -1300,7 +1300,7 @@ Description *string
 
 A textual description for the organization security policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_organization_security_policy#description ComputeOrganizationSecurityPolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_organization_security_policy#description ComputeOrganizationSecurityPolicy#description}
 
 ---
 
@@ -1316,7 +1316,7 @@ User-provided name of the organization security policy.
 
 The name should be unique in the organization in which the security policy is created. This should only be used when SecurityPolicyType is FIREWALL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_organization_security_policy#display_name ComputeOrganizationSecurityPolicy#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_organization_security_policy#display_name ComputeOrganizationSecurityPolicy#display_name}
 
 ---
 
@@ -1328,7 +1328,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_organization_security_policy#id ComputeOrganizationSecurityPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_organization_security_policy#id ComputeOrganizationSecurityPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1347,7 +1347,7 @@ User-provided name of the organization security policy.
 
 The name should be unique in the organization in which the security policy is created. This should only be used when SecurityPolicyType is CLOUD_ARMOR.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_organization_security_policy#short_name ComputeOrganizationSecurityPolicy#short_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_organization_security_policy#short_name ComputeOrganizationSecurityPolicy#short_name}
 
 ---
 
@@ -1361,7 +1361,7 @@ Timeouts ComputeOrganizationSecurityPolicyTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_organization_security_policy#timeouts ComputeOrganizationSecurityPolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_organization_security_policy#timeouts ComputeOrganizationSecurityPolicy#timeouts}
 
 ---
 
@@ -1379,7 +1379,7 @@ This field can be set only at resource creation time.
 
 **NOTE** : 'FIREWALL' type is deprecated and will be removed in a future major release. Please use 'google_compute_firewall_policy' instead." Possible values: ["FIREWALL", "CLOUD_ARMOR", "CLOUD_ARMOR_EDGE", "CLOUD_ARMOR_INTERNAL_SERVICE", "CLOUD_ARMOR_NETWORK"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_organization_security_policy#type ComputeOrganizationSecurityPolicy#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_organization_security_policy#type ComputeOrganizationSecurityPolicy#type}
 
 ---
 
@@ -1388,7 +1388,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeOrganizationSecurityPolicy.ComputeOrganizationSecurityPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeorganizationsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeorganizationsecuritypolicy"
 
 &computeorganizationsecuritypolicy.ComputeOrganizationSecurityPolicyTimeouts {
 	Create: *string,
@@ -1401,9 +1401,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeorganizat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeOrganizationSecurityPolicy.ComputeOrganizationSecurityPolicyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_organization_security_policy#create ComputeOrganizationSecurityPolicy#create}. |
-| <code><a href="#@cdktn/provider-google.computeOrganizationSecurityPolicy.ComputeOrganizationSecurityPolicyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_organization_security_policy#delete ComputeOrganizationSecurityPolicy#delete}. |
-| <code><a href="#@cdktn/provider-google.computeOrganizationSecurityPolicy.ComputeOrganizationSecurityPolicyTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_organization_security_policy#update ComputeOrganizationSecurityPolicy#update}. |
+| <code><a href="#@cdktn/provider-google.computeOrganizationSecurityPolicy.ComputeOrganizationSecurityPolicyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_organization_security_policy#create ComputeOrganizationSecurityPolicy#create}. |
+| <code><a href="#@cdktn/provider-google.computeOrganizationSecurityPolicy.ComputeOrganizationSecurityPolicyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_organization_security_policy#delete ComputeOrganizationSecurityPolicy#delete}. |
+| <code><a href="#@cdktn/provider-google.computeOrganizationSecurityPolicy.ComputeOrganizationSecurityPolicyTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_organization_security_policy#update ComputeOrganizationSecurityPolicy#update}. |
 
 ---
 
@@ -1415,7 +1415,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_organization_security_policy#create ComputeOrganizationSecurityPolicy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_organization_security_policy#create ComputeOrganizationSecurityPolicy#create}.
 
 ---
 
@@ -1427,7 +1427,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_organization_security_policy#delete ComputeOrganizationSecurityPolicy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_organization_security_policy#delete ComputeOrganizationSecurityPolicy#delete}.
 
 ---
 
@@ -1439,7 +1439,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_organization_security_policy#update ComputeOrganizationSecurityPolicy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_organization_security_policy#update ComputeOrganizationSecurityPolicy#update}.
 
 ---
 
@@ -1450,7 +1450,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeOrganizationSecurityPolicy.ComputeOrganizationSecurityPolicyAdvancedOptionsConfigJsonCustomConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeorganizationsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeorganizationsecuritypolicy"
 
 computeorganizationsecuritypolicy.NewComputeOrganizationSecurityPolicyAdvancedOptionsConfigJsonCustomConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeOrganizationSecurityPolicyAdvancedOptionsConfigJsonCustomConfigOutputReference
 ```
@@ -1721,7 +1721,7 @@ func InternalValue() ComputeOrganizationSecurityPolicyAdvancedOptionsConfigJsonC
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeOrganizationSecurityPolicy.ComputeOrganizationSecurityPolicyAdvancedOptionsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeorganizationsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeorganizationsecuritypolicy"
 
 computeorganizationsecuritypolicy.NewComputeOrganizationSecurityPolicyAdvancedOptionsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeOrganizationSecurityPolicyAdvancedOptionsConfigOutputReference
 ```
@@ -2128,7 +2128,7 @@ func InternalValue() ComputeOrganizationSecurityPolicyAdvancedOptionsConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeOrganizationSecurityPolicy.ComputeOrganizationSecurityPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeorganizationsecuritypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeorganizationsecuritypolicy"
 
 computeorganizationsecuritypolicy.NewComputeOrganizationSecurityPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeOrganizationSecurityPolicyTimeoutsOutputReference
 ```

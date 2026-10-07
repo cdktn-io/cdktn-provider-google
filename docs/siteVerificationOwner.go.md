@@ -4,12 +4,12 @@
 
 ### SiteVerificationOwner <a name="SiteVerificationOwner" id="@cdktn/provider-google.siteVerificationOwner.SiteVerificationOwner"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/site_verification_owner google_site_verification_owner}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/site_verification_owner google_site_verification_owner}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.siteVerificationOwner.SiteVerificationOwner.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/siteverificationowner"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/siteverificationowner"
 
 siteverificationowner.NewSiteVerificationOwner(scope Construct, id *string, config SiteVerificationOwnerConfig) SiteVerificationOwner
 ```
@@ -434,7 +434,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.siteVerificationOwner.SiteVerificationOwner.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/siteverificationowner"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/siteverificationowner"
 
 siteverificationowner.SiteVerificationOwner_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.siteVerificationOwner.SiteVerificationOwner.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/siteverificationowner"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/siteverificationowner"
 
 siteverificationowner.SiteVerificationOwner_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ siteverificationowner.SiteVerificationOwner_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.siteVerificationOwner.SiteVerificationOwner.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/siteverificationowner"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/siteverificationowner"
 
 siteverificationowner.SiteVerificationOwner_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ siteverificationowner.SiteVerificationOwner_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.siteVerificationOwner.SiteVerificationOwner.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/siteverificationowner"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/siteverificationowner"
 
 siteverificationowner.SiteVerificationOwner_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -523,7 +523,7 @@ The construct id used in the generated config for the SiteVerificationOwner to i
 
 The id of the existing SiteVerificationOwner that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/site_verification_owner#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/site_verification_owner#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -833,7 +833,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.siteVerificationOwner.SiteVerificationOwnerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/siteverificationowner"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/siteverificationowner"
 
 &siteverificationowner.SiteVerificationOwnerConfig {
 	Connection: interface{},
@@ -847,7 +847,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/siteverification
 	WebResourceId: *string,
 	DeletionPolicy: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.siteVerificationOwner.SiteVerificationOwnerTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.siteVerificationOwner.SiteVerificationOwnerTimeouts,
 }
 ```
 
@@ -865,7 +865,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/siteverification
 | <code><a href="#@cdktn/provider-google.siteVerificationOwner.SiteVerificationOwnerConfig.property.email">Email</a></code> | <code>*string</code> | The email address of the owner. |
 | <code><a href="#@cdktn/provider-google.siteVerificationOwner.SiteVerificationOwnerConfig.property.webResourceId">WebResourceId</a></code> | <code>*string</code> | The id of the Web Resource to add this owner to, in the form "webResource/<web-resource-id>". |
 | <code><a href="#@cdktn/provider-google.siteVerificationOwner.SiteVerificationOwnerConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.siteVerificationOwner.SiteVerificationOwnerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/site_verification_owner#id SiteVerificationOwner#id}. |
+| <code><a href="#@cdktn/provider-google.siteVerificationOwner.SiteVerificationOwnerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/site_verification_owner#id SiteVerificationOwner#id}. |
 | <code><a href="#@cdktn/provider-google.siteVerificationOwner.SiteVerificationOwnerConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.siteVerificationOwner.SiteVerificationOwnerTimeouts">SiteVerificationOwnerTimeouts</a></code> | timeouts block. |
 
 ---
@@ -950,7 +950,7 @@ Email *string
 
 The email address of the owner.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/site_verification_owner#email SiteVerificationOwner#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/site_verification_owner#email SiteVerificationOwner#email}
 
 ---
 
@@ -964,7 +964,7 @@ WebResourceId *string
 
 The id of the Web Resource to add this owner to, in the form "webResource/<web-resource-id>".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/site_verification_owner#web_resource_id SiteVerificationOwner#web_resource_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/site_verification_owner#web_resource_id SiteVerificationOwner#web_resource_id}
 
 ---
 
@@ -985,7 +985,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/site_verification_owner#deletion_policy SiteVerificationOwner#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/site_verification_owner#deletion_policy SiteVerificationOwner#deletion_policy}
 
 ---
 
@@ -997,7 +997,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/site_verification_owner#id SiteVerificationOwner#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/site_verification_owner#id SiteVerificationOwner#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1014,7 +1014,7 @@ Timeouts SiteVerificationOwnerTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/site_verification_owner#timeouts SiteVerificationOwner#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/site_verification_owner#timeouts SiteVerificationOwner#timeouts}
 
 ---
 
@@ -1023,7 +1023,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.siteVerificationOwner.SiteVerificationOwnerTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/siteverificationowner"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/siteverificationowner"
 
 &siteverificationowner.SiteVerificationOwnerTimeouts {
 	Create: *string,
@@ -1035,8 +1035,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/siteverification
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.siteVerificationOwner.SiteVerificationOwnerTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/site_verification_owner#create SiteVerificationOwner#create}. |
-| <code><a href="#@cdktn/provider-google.siteVerificationOwner.SiteVerificationOwnerTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/site_verification_owner#delete SiteVerificationOwner#delete}. |
+| <code><a href="#@cdktn/provider-google.siteVerificationOwner.SiteVerificationOwnerTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/site_verification_owner#create SiteVerificationOwner#create}. |
+| <code><a href="#@cdktn/provider-google.siteVerificationOwner.SiteVerificationOwnerTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/site_verification_owner#delete SiteVerificationOwner#delete}. |
 
 ---
 
@@ -1048,7 +1048,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/site_verification_owner#create SiteVerificationOwner#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/site_verification_owner#create SiteVerificationOwner#create}.
 
 ---
 
@@ -1060,7 +1060,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/site_verification_owner#delete SiteVerificationOwner#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/site_verification_owner#delete SiteVerificationOwner#delete}.
 
 ---
 
@@ -1071,7 +1071,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.siteVerificationOwner.SiteVerificationOwnerTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/siteverificationowner"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/siteverificationowner"
 
 siteverificationowner.NewSiteVerificationOwnerTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SiteVerificationOwnerTimeoutsOutputReference
 ```

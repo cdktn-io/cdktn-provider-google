@@ -4,12 +4,12 @@
 
 ### ComputeRegionCompositeHealthCheck <a name="ComputeRegionCompositeHealthCheck" id="@cdktn/provider-google.computeRegionCompositeHealthCheck.ComputeRegionCompositeHealthCheck"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_composite_health_check google_compute_region_composite_health_check}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_composite_health_check google_compute_region_composite_health_check}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionCompositeHealthCheck.ComputeRegionCompositeHealthCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregioncompositehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeregioncompositehealthcheck"
 
 computeregioncompositehealthcheck.NewComputeRegionCompositeHealthCheck(scope Construct, id *string, config ComputeRegionCompositeHealthCheckConfig) ComputeRegionCompositeHealthCheck
 ```
@@ -448,7 +448,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeRegionCompositeHealthCheck.ComputeRegionCompositeHealthCheck.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregioncompositehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeregioncompositehealthcheck"
 
 computeregioncompositehealthcheck.ComputeRegionCompositeHealthCheck_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeRegionCompositeHealthCheck.ComputeRegionCompositeHealthCheck.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregioncompositehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeregioncompositehealthcheck"
 
 computeregioncompositehealthcheck.ComputeRegionCompositeHealthCheck_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ computeregioncompositehealthcheck.ComputeRegionCompositeHealthCheck_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeRegionCompositeHealthCheck.ComputeRegionCompositeHealthCheck.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregioncompositehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeregioncompositehealthcheck"
 
 computeregioncompositehealthcheck.ComputeRegionCompositeHealthCheck_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ computeregioncompositehealthcheck.ComputeRegionCompositeHealthCheck_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeRegionCompositeHealthCheck.ComputeRegionCompositeHealthCheck.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregioncompositehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeregioncompositehealthcheck"
 
 computeregioncompositehealthcheck.ComputeRegionCompositeHealthCheck_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -537,7 +537,7 @@ The construct id used in the generated config for the ComputeRegionCompositeHeal
 
 The id of the existing ComputeRegionCompositeHealthCheck that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_composite_health_check#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_composite_health_check#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -957,7 +957,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionCompositeHealthCheck.ComputeRegionCompositeHealthCheckConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregioncompositehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeregioncompositehealthcheck"
 
 &computeregioncompositehealthcheck.ComputeRegionCompositeHealthCheckConfig {
 	Connection: interface{},
@@ -974,7 +974,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregioncom
 	Description: *string,
 	HealthSources: *[]*string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRegionCompositeHealthCheck.ComputeRegionCompositeHealthCheckTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.computeRegionCompositeHealthCheck.ComputeRegionCompositeHealthCheckTimeouts,
 }
 ```
 
@@ -995,7 +995,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregioncom
 | <code><a href="#@cdktn/provider-google.computeRegionCompositeHealthCheck.ComputeRegionCompositeHealthCheckConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.computeRegionCompositeHealthCheck.ComputeRegionCompositeHealthCheckConfig.property.description">Description</a></code> | <code>*string</code> | An optional description of this resource. Provide this property when you create the resource. |
 | <code><a href="#@cdktn/provider-google.computeRegionCompositeHealthCheck.ComputeRegionCompositeHealthCheckConfig.property.healthSources">HealthSources</a></code> | <code>*[]*string</code> | URLs to the HealthSource resources whose results are AND'ed. |
-| <code><a href="#@cdktn/provider-google.computeRegionCompositeHealthCheck.ComputeRegionCompositeHealthCheckConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_composite_health_check#project ComputeRegionCompositeHealthCheck#project}. |
+| <code><a href="#@cdktn/provider-google.computeRegionCompositeHealthCheck.ComputeRegionCompositeHealthCheckConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_composite_health_check#project ComputeRegionCompositeHealthCheck#project}. |
 | <code><a href="#@cdktn/provider-google.computeRegionCompositeHealthCheck.ComputeRegionCompositeHealthCheckConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeRegionCompositeHealthCheck.ComputeRegionCompositeHealthCheckTimeouts">ComputeRegionCompositeHealthCheckTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1087,7 +1087,7 @@ INTERNAL_MANAGED and must be regional and in the same region
 as the CompositeHealthCheck (cross-region deployment for
 INTERNAL_MANAGED is not supported). Can be mutated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_composite_health_check#health_destination ComputeRegionCompositeHealthCheck#health_destination}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_composite_health_check#health_destination ComputeRegionCompositeHealthCheck#health_destination}
 
 ---
 
@@ -1109,7 +1109,7 @@ character must be a lowercase letter, and all following characters must
 be a dash, lowercase letter, or digit, except the last character, which
 cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_composite_health_check#name ComputeRegionCompositeHealthCheck#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_composite_health_check#name ComputeRegionCompositeHealthCheck#name}
 
 ---
 
@@ -1123,7 +1123,7 @@ Region *string
 
 URL of the region where the composite health check resides.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_composite_health_check#region ComputeRegionCompositeHealthCheck#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_composite_health_check#region ComputeRegionCompositeHealthCheck#region}
 
 ---
 
@@ -1144,7 +1144,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_composite_health_check#deletion_policy ComputeRegionCompositeHealthCheck#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_composite_health_check#deletion_policy ComputeRegionCompositeHealthCheck#deletion_policy}
 
 ---
 
@@ -1158,7 +1158,7 @@ Description *string
 
 An optional description of this resource. Provide this property when you create the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_composite_health_check#description ComputeRegionCompositeHealthCheck#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_composite_health_check#description ComputeRegionCompositeHealthCheck#description}
 
 ---
 
@@ -1177,7 +1177,7 @@ are HEALTHY. Must have at least 1. Must not have more than 10.
 Must be regional and in the same region as the
 CompositeHealthCheck. Can be mutated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_composite_health_check#health_sources ComputeRegionCompositeHealthCheck#health_sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_composite_health_check#health_sources ComputeRegionCompositeHealthCheck#health_sources}
 
 ---
 
@@ -1189,7 +1189,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_composite_health_check#project ComputeRegionCompositeHealthCheck#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_composite_health_check#project ComputeRegionCompositeHealthCheck#project}.
 
 ---
 
@@ -1203,7 +1203,7 @@ Timeouts ComputeRegionCompositeHealthCheckTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_composite_health_check#timeouts ComputeRegionCompositeHealthCheck#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_composite_health_check#timeouts ComputeRegionCompositeHealthCheck#timeouts}
 
 ---
 
@@ -1212,7 +1212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRegionCompositeHealthCheck.ComputeRegionCompositeHealthCheckTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregioncompositehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeregioncompositehealthcheck"
 
 &computeregioncompositehealthcheck.ComputeRegionCompositeHealthCheckTimeouts {
 	Create: *string,
@@ -1225,9 +1225,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregioncom
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionCompositeHealthCheck.ComputeRegionCompositeHealthCheckTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_composite_health_check#create ComputeRegionCompositeHealthCheck#create}. |
-| <code><a href="#@cdktn/provider-google.computeRegionCompositeHealthCheck.ComputeRegionCompositeHealthCheckTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_composite_health_check#delete ComputeRegionCompositeHealthCheck#delete}. |
-| <code><a href="#@cdktn/provider-google.computeRegionCompositeHealthCheck.ComputeRegionCompositeHealthCheckTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_composite_health_check#update ComputeRegionCompositeHealthCheck#update}. |
+| <code><a href="#@cdktn/provider-google.computeRegionCompositeHealthCheck.ComputeRegionCompositeHealthCheckTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_composite_health_check#create ComputeRegionCompositeHealthCheck#create}. |
+| <code><a href="#@cdktn/provider-google.computeRegionCompositeHealthCheck.ComputeRegionCompositeHealthCheckTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_composite_health_check#delete ComputeRegionCompositeHealthCheck#delete}. |
+| <code><a href="#@cdktn/provider-google.computeRegionCompositeHealthCheck.ComputeRegionCompositeHealthCheckTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_composite_health_check#update ComputeRegionCompositeHealthCheck#update}. |
 
 ---
 
@@ -1239,7 +1239,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_composite_health_check#create ComputeRegionCompositeHealthCheck#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_composite_health_check#create ComputeRegionCompositeHealthCheck#create}.
 
 ---
 
@@ -1251,7 +1251,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_composite_health_check#delete ComputeRegionCompositeHealthCheck#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_composite_health_check#delete ComputeRegionCompositeHealthCheck#delete}.
 
 ---
 
@@ -1263,7 +1263,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_composite_health_check#update ComputeRegionCompositeHealthCheck#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_composite_health_check#update ComputeRegionCompositeHealthCheck#update}.
 
 ---
 
@@ -1274,7 +1274,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionCompositeHealthCheck.ComputeRegionCompositeHealthCheckTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeregioncompositehealthcheck"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeregioncompositehealthcheck"
 
 computeregioncompositehealthcheck.NewComputeRegionCompositeHealthCheckTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRegionCompositeHealthCheckTimeoutsOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### DatastreamConnectionProfile <a name="DatastreamConnectionProfile" id="@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfile"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile google_datastream_connection_profile}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile google_datastream_connection_profile}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datastreamconnectionprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datastreamconnectionprofile"
 
 datastreamconnectionprofile.NewDatastreamConnectionProfile(scope Construct, id *string, config DatastreamConnectionProfileConfig) DatastreamConnectionProfile
 ```
@@ -635,7 +635,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfile.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datastreamconnectionprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datastreamconnectionprofile"
 
 datastreamconnectionprofile.DatastreamConnectionProfile_IsConstruct(x interface{}) *bool
 ```
@@ -667,7 +667,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfile.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datastreamconnectionprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datastreamconnectionprofile"
 
 datastreamconnectionprofile.DatastreamConnectionProfile_IsTerraformElement(x interface{}) *bool
 ```
@@ -681,7 +681,7 @@ datastreamconnectionprofile.DatastreamConnectionProfile_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfile.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datastreamconnectionprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datastreamconnectionprofile"
 
 datastreamconnectionprofile.DatastreamConnectionProfile_IsTerraformResource(x interface{}) *bool
 ```
@@ -695,7 +695,7 @@ datastreamconnectionprofile.DatastreamConnectionProfile_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfile.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datastreamconnectionprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datastreamconnectionprofile"
 
 datastreamconnectionprofile.DatastreamConnectionProfile_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -724,7 +724,7 @@ The construct id used in the generated config for the DatastreamConnectionProfil
 
 The id of the existing DatastreamConnectionProfile that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1353,7 +1353,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileBigqueryProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datastreamconnectionprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datastreamconnectionprofile"
 
 &datastreamconnectionprofile.DatastreamConnectionProfileBigqueryProfile {
 
@@ -1366,7 +1366,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datastreamconnec
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datastreamconnectionprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datastreamconnectionprofile"
 
 &datastreamconnectionprofile.DatastreamConnectionProfileConfig {
 	Connection: interface{},
@@ -1379,21 +1379,21 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datastreamconnec
 	ConnectionProfileId: *string,
 	DisplayName: *string,
 	Location: *string,
-	BigqueryProfile: github.com/cdktn-io/cdktn-provider-google-go/google/v20.datastreamConnectionProfile.DatastreamConnectionProfileBigqueryProfile,
+	BigqueryProfile: github.com/cdktn-io/cdktn-provider-google-go/google/v21.datastreamConnectionProfile.DatastreamConnectionProfileBigqueryProfile,
 	CreateWithoutValidation: interface{},
 	DeletionPolicy: *string,
-	ForwardSshConnectivity: github.com/cdktn-io/cdktn-provider-google-go/google/v20.datastreamConnectionProfile.DatastreamConnectionProfileForwardSshConnectivity,
-	GcsProfile: github.com/cdktn-io/cdktn-provider-google-go/google/v20.datastreamConnectionProfile.DatastreamConnectionProfileGcsProfile,
+	ForwardSshConnectivity: github.com/cdktn-io/cdktn-provider-google-go/google/v21.datastreamConnectionProfile.DatastreamConnectionProfileForwardSshConnectivity,
+	GcsProfile: github.com/cdktn-io/cdktn-provider-google-go/google/v21.datastreamConnectionProfile.DatastreamConnectionProfileGcsProfile,
 	Id: *string,
 	Labels: *map[string]*string,
-	MongodbProfile: github.com/cdktn-io/cdktn-provider-google-go/google/v20.datastreamConnectionProfile.DatastreamConnectionProfileMongodbProfile,
-	MysqlProfile: github.com/cdktn-io/cdktn-provider-google-go/google/v20.datastreamConnectionProfile.DatastreamConnectionProfileMysqlProfile,
-	OracleProfile: github.com/cdktn-io/cdktn-provider-google-go/google/v20.datastreamConnectionProfile.DatastreamConnectionProfileOracleProfile,
-	PostgresqlProfile: github.com/cdktn-io/cdktn-provider-google-go/google/v20.datastreamConnectionProfile.DatastreamConnectionProfilePostgresqlProfile,
-	PrivateConnectivity: github.com/cdktn-io/cdktn-provider-google-go/google/v20.datastreamConnectionProfile.DatastreamConnectionProfilePrivateConnectivity,
+	MongodbProfile: github.com/cdktn-io/cdktn-provider-google-go/google/v21.datastreamConnectionProfile.DatastreamConnectionProfileMongodbProfile,
+	MysqlProfile: github.com/cdktn-io/cdktn-provider-google-go/google/v21.datastreamConnectionProfile.DatastreamConnectionProfileMysqlProfile,
+	OracleProfile: github.com/cdktn-io/cdktn-provider-google-go/google/v21.datastreamConnectionProfile.DatastreamConnectionProfileOracleProfile,
+	PostgresqlProfile: github.com/cdktn-io/cdktn-provider-google-go/google/v21.datastreamConnectionProfile.DatastreamConnectionProfilePostgresqlProfile,
+	PrivateConnectivity: github.com/cdktn-io/cdktn-provider-google-go/google/v21.datastreamConnectionProfile.DatastreamConnectionProfilePrivateConnectivity,
 	Project: *string,
-	SqlServerProfile: github.com/cdktn-io/cdktn-provider-google-go/google/v20.datastreamConnectionProfile.DatastreamConnectionProfileSqlServerProfile,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.datastreamConnectionProfile.DatastreamConnectionProfileTimeouts,
+	SqlServerProfile: github.com/cdktn-io/cdktn-provider-google-go/google/v21.datastreamConnectionProfile.DatastreamConnectionProfileSqlServerProfile,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.datastreamConnectionProfile.DatastreamConnectionProfileTimeouts,
 }
 ```
 
@@ -1416,14 +1416,14 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datastreamconnec
 | <code><a href="#@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileConfig.property.forwardSshConnectivity">ForwardSshConnectivity</a></code> | <code><a href="#@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileForwardSshConnectivity">DatastreamConnectionProfileForwardSshConnectivity</a></code> | forward_ssh_connectivity block. |
 | <code><a href="#@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileConfig.property.gcsProfile">GcsProfile</a></code> | <code><a href="#@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileGcsProfile">DatastreamConnectionProfileGcsProfile</a></code> | gcs_profile block. |
-| <code><a href="#@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#id DatastreamConnectionProfile#id}. |
+| <code><a href="#@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#id DatastreamConnectionProfile#id}. |
 | <code><a href="#@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | Labels. |
 | <code><a href="#@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileConfig.property.mongodbProfile">MongodbProfile</a></code> | <code><a href="#@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileMongodbProfile">DatastreamConnectionProfileMongodbProfile</a></code> | mongodb_profile block. |
 | <code><a href="#@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileConfig.property.mysqlProfile">MysqlProfile</a></code> | <code><a href="#@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileMysqlProfile">DatastreamConnectionProfileMysqlProfile</a></code> | mysql_profile block. |
 | <code><a href="#@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileConfig.property.oracleProfile">OracleProfile</a></code> | <code><a href="#@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileOracleProfile">DatastreamConnectionProfileOracleProfile</a></code> | oracle_profile block. |
 | <code><a href="#@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileConfig.property.postgresqlProfile">PostgresqlProfile</a></code> | <code><a href="#@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfilePostgresqlProfile">DatastreamConnectionProfilePostgresqlProfile</a></code> | postgresql_profile block. |
 | <code><a href="#@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileConfig.property.privateConnectivity">PrivateConnectivity</a></code> | <code><a href="#@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfilePrivateConnectivity">DatastreamConnectionProfilePrivateConnectivity</a></code> | private_connectivity block. |
-| <code><a href="#@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#project DatastreamConnectionProfile#project}. |
+| <code><a href="#@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#project DatastreamConnectionProfile#project}. |
 | <code><a href="#@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileConfig.property.sqlServerProfile">SqlServerProfile</a></code> | <code><a href="#@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileSqlServerProfile">DatastreamConnectionProfileSqlServerProfile</a></code> | sql_server_profile block. |
 | <code><a href="#@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileTimeouts">DatastreamConnectionProfileTimeouts</a></code> | timeouts block. |
 
@@ -1509,7 +1509,7 @@ ConnectionProfileId *string
 
 The connection profile identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#connection_profile_id DatastreamConnectionProfile#connection_profile_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#connection_profile_id DatastreamConnectionProfile#connection_profile_id}
 
 ---
 
@@ -1523,7 +1523,7 @@ DisplayName *string
 
 Display name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#display_name DatastreamConnectionProfile#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#display_name DatastreamConnectionProfile#display_name}
 
 ---
 
@@ -1537,7 +1537,7 @@ Location *string
 
 The name of the location this connection profile is located in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#location DatastreamConnectionProfile#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#location DatastreamConnectionProfile#location}
 
 ---
 
@@ -1551,7 +1551,7 @@ BigqueryProfile DatastreamConnectionProfileBigqueryProfile
 
 bigquery_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#bigquery_profile DatastreamConnectionProfile#bigquery_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#bigquery_profile DatastreamConnectionProfile#bigquery_profile}
 
 ---
 
@@ -1565,7 +1565,7 @@ CreateWithoutValidation interface{}
 
 Create the connection profile without validating it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#create_without_validation DatastreamConnectionProfile#create_without_validation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#create_without_validation DatastreamConnectionProfile#create_without_validation}
 
 ---
 
@@ -1586,7 +1586,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#deletion_policy DatastreamConnectionProfile#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#deletion_policy DatastreamConnectionProfile#deletion_policy}
 
 ---
 
@@ -1600,7 +1600,7 @@ ForwardSshConnectivity DatastreamConnectionProfileForwardSshConnectivity
 
 forward_ssh_connectivity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#forward_ssh_connectivity DatastreamConnectionProfile#forward_ssh_connectivity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#forward_ssh_connectivity DatastreamConnectionProfile#forward_ssh_connectivity}
 
 ---
 
@@ -1614,7 +1614,7 @@ GcsProfile DatastreamConnectionProfileGcsProfile
 
 gcs_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#gcs_profile DatastreamConnectionProfile#gcs_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#gcs_profile DatastreamConnectionProfile#gcs_profile}
 
 ---
 
@@ -1626,7 +1626,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#id DatastreamConnectionProfile#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#id DatastreamConnectionProfile#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1646,7 +1646,7 @@ Labels.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#labels DatastreamConnectionProfile#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#labels DatastreamConnectionProfile#labels}
 
 ---
 
@@ -1660,7 +1660,7 @@ MongodbProfile DatastreamConnectionProfileMongodbProfile
 
 mongodb_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#mongodb_profile DatastreamConnectionProfile#mongodb_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#mongodb_profile DatastreamConnectionProfile#mongodb_profile}
 
 ---
 
@@ -1674,7 +1674,7 @@ MysqlProfile DatastreamConnectionProfileMysqlProfile
 
 mysql_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#mysql_profile DatastreamConnectionProfile#mysql_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#mysql_profile DatastreamConnectionProfile#mysql_profile}
 
 ---
 
@@ -1688,7 +1688,7 @@ OracleProfile DatastreamConnectionProfileOracleProfile
 
 oracle_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#oracle_profile DatastreamConnectionProfile#oracle_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#oracle_profile DatastreamConnectionProfile#oracle_profile}
 
 ---
 
@@ -1702,7 +1702,7 @@ PostgresqlProfile DatastreamConnectionProfilePostgresqlProfile
 
 postgresql_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#postgresql_profile DatastreamConnectionProfile#postgresql_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#postgresql_profile DatastreamConnectionProfile#postgresql_profile}
 
 ---
 
@@ -1716,7 +1716,7 @@ PrivateConnectivity DatastreamConnectionProfilePrivateConnectivity
 
 private_connectivity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#private_connectivity DatastreamConnectionProfile#private_connectivity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#private_connectivity DatastreamConnectionProfile#private_connectivity}
 
 ---
 
@@ -1728,7 +1728,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#project DatastreamConnectionProfile#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#project DatastreamConnectionProfile#project}.
 
 ---
 
@@ -1742,7 +1742,7 @@ SqlServerProfile DatastreamConnectionProfileSqlServerProfile
 
 sql_server_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#sql_server_profile DatastreamConnectionProfile#sql_server_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#sql_server_profile DatastreamConnectionProfile#sql_server_profile}
 
 ---
 
@@ -1756,7 +1756,7 @@ Timeouts DatastreamConnectionProfileTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#timeouts DatastreamConnectionProfile#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#timeouts DatastreamConnectionProfile#timeouts}
 
 ---
 
@@ -1765,7 +1765,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileForwardSshConnectivity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datastreamconnectionprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datastreamconnectionprofile"
 
 &datastreamconnectionprofile.DatastreamConnectionProfileForwardSshConnectivity {
 	Hostname: *string,
@@ -1798,7 +1798,7 @@ Hostname *string
 
 Hostname for the SSH tunnel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#hostname DatastreamConnectionProfile#hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#hostname DatastreamConnectionProfile#hostname}
 
 ---
 
@@ -1812,7 +1812,7 @@ Username *string
 
 Username for the SSH tunnel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#username DatastreamConnectionProfile#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#username DatastreamConnectionProfile#username}
 
 ---
 
@@ -1826,7 +1826,7 @@ Password *string
 
 SSH password.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#password DatastreamConnectionProfile#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#password DatastreamConnectionProfile#password}
 
 ---
 
@@ -1840,7 +1840,7 @@ Port *f64
 
 Port for the SSH tunnel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#port DatastreamConnectionProfile#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#port DatastreamConnectionProfile#port}
 
 ---
 
@@ -1854,7 +1854,7 @@ PrivateKey *string
 
 SSH private key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#private_key DatastreamConnectionProfile#private_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#private_key DatastreamConnectionProfile#private_key}
 
 ---
 
@@ -1863,7 +1863,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileGcsProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datastreamconnectionprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datastreamconnectionprofile"
 
 &datastreamconnectionprofile.DatastreamConnectionProfileGcsProfile {
 	Bucket: *string,
@@ -1890,7 +1890,7 @@ Bucket *string
 
 The Cloud Storage bucket name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#bucket DatastreamConnectionProfile#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#bucket DatastreamConnectionProfile#bucket}
 
 ---
 
@@ -1904,7 +1904,7 @@ RootPath *string
 
 The root path inside the Cloud Storage bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#root_path DatastreamConnectionProfile#root_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#root_path DatastreamConnectionProfile#root_path}
 
 ---
 
@@ -1913,7 +1913,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileMongodbProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datastreamconnectionprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datastreamconnectionprofile"
 
 &datastreamconnectionprofile.DatastreamConnectionProfileMongodbProfile {
 	HostAddresses: interface{},
@@ -1922,9 +1922,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datastreamconnec
 	Password: *string,
 	ReplicaSet: *string,
 	SecretManagerStoredPassword: *string,
-	SrvConnectionFormat: github.com/cdktn-io/cdktn-provider-google-go/google/v20.datastreamConnectionProfile.DatastreamConnectionProfileMongodbProfileSrvConnectionFormat,
-	SslConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.datastreamConnectionProfile.DatastreamConnectionProfileMongodbProfileSslConfig,
-	StandardConnectionFormat: github.com/cdktn-io/cdktn-provider-google-go/google/v20.datastreamConnectionProfile.DatastreamConnectionProfileMongodbProfileStandardConnectionFormat,
+	SrvConnectionFormat: github.com/cdktn-io/cdktn-provider-google-go/google/v21.datastreamConnectionProfile.DatastreamConnectionProfileMongodbProfileSrvConnectionFormat,
+	SslConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.datastreamConnectionProfile.DatastreamConnectionProfileMongodbProfileSslConfig,
+	StandardConnectionFormat: github.com/cdktn-io/cdktn-provider-google-go/google/v21.datastreamConnectionProfile.DatastreamConnectionProfileMongodbProfileStandardConnectionFormat,
 }
 ```
 
@@ -1954,7 +1954,7 @@ HostAddresses interface{}
 
 host_addresses block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#host_addresses DatastreamConnectionProfile#host_addresses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#host_addresses DatastreamConnectionProfile#host_addresses}
 
 ---
 
@@ -1968,7 +1968,7 @@ Username *string
 
 Username for the MongoDB connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#username DatastreamConnectionProfile#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#username DatastreamConnectionProfile#username}
 
 ---
 
@@ -1985,7 +1985,7 @@ A map of additional options for the MongoDB connection.
 Keys are case-sensitive and should match the official
 MongoDB connection string options: https://www.mongodb.com/docs/manual/reference/connection-string-options/
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#additional_options DatastreamConnectionProfile#additional_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#additional_options DatastreamConnectionProfile#additional_options}
 
 ---
 
@@ -1999,7 +1999,7 @@ Password *string
 
 Password for the MongoDB connection. Mutually exclusive with secretManagerStoredPassword.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#password DatastreamConnectionProfile#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#password DatastreamConnectionProfile#password}
 
 ---
 
@@ -2013,7 +2013,7 @@ ReplicaSet *string
 
 Name of the replica set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#replica_set DatastreamConnectionProfile#replica_set}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#replica_set DatastreamConnectionProfile#replica_set}
 
 ---
 
@@ -2027,7 +2027,7 @@ SecretManagerStoredPassword *string
 
 A reference to a Secret Manager resource name storing the MongoDB connection password. Mutually exclusive with password.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#secret_manager_stored_password DatastreamConnectionProfile#secret_manager_stored_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#secret_manager_stored_password DatastreamConnectionProfile#secret_manager_stored_password}
 
 ---
 
@@ -2041,7 +2041,7 @@ SrvConnectionFormat DatastreamConnectionProfileMongodbProfileSrvConnectionFormat
 
 srv_connection_format block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#srv_connection_format DatastreamConnectionProfile#srv_connection_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#srv_connection_format DatastreamConnectionProfile#srv_connection_format}
 
 ---
 
@@ -2055,7 +2055,7 @@ SslConfig DatastreamConnectionProfileMongodbProfileSslConfig
 
 ssl_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#ssl_config DatastreamConnectionProfile#ssl_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#ssl_config DatastreamConnectionProfile#ssl_config}
 
 ---
 
@@ -2069,7 +2069,7 @@ StandardConnectionFormat DatastreamConnectionProfileMongodbProfileStandardConnec
 
 standard_connection_format block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#standard_connection_format DatastreamConnectionProfile#standard_connection_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#standard_connection_format DatastreamConnectionProfile#standard_connection_format}
 
 ---
 
@@ -2078,7 +2078,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileMongodbProfileHostAddresses.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datastreamconnectionprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datastreamconnectionprofile"
 
 &datastreamconnectionprofile.DatastreamConnectionProfileMongodbProfileHostAddresses {
 	Hostname: *string,
@@ -2105,7 +2105,7 @@ Hostname *string
 
 Hostname for the connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#hostname DatastreamConnectionProfile#hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#hostname DatastreamConnectionProfile#hostname}
 
 ---
 
@@ -2119,7 +2119,7 @@ Port *f64
 
 Port for the connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#port DatastreamConnectionProfile#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#port DatastreamConnectionProfile#port}
 
 ---
 
@@ -2128,7 +2128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileMongodbProfileSrvConnectionFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datastreamconnectionprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datastreamconnectionprofile"
 
 &datastreamconnectionprofile.DatastreamConnectionProfileMongodbProfileSrvConnectionFormat {
 
@@ -2141,7 +2141,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datastreamconnec
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileMongodbProfileSslConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datastreamconnectionprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datastreamconnectionprofile"
 
 &datastreamconnectionprofile.DatastreamConnectionProfileMongodbProfileSslConfig {
 	CaCertificate: *string,
@@ -2172,7 +2172,7 @@ CaCertificate *string
 
 PEM-encoded certificate of the CA that signed the source database server's certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#ca_certificate DatastreamConnectionProfile#ca_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#ca_certificate DatastreamConnectionProfile#ca_certificate}
 
 ---
 
@@ -2190,7 +2190,7 @@ If this field
 is used then the 'clientKey' and the 'caCertificate' fields are
 mandatory.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#client_certificate DatastreamConnectionProfile#client_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#client_certificate DatastreamConnectionProfile#client_certificate}
 
 ---
 
@@ -2207,7 +2207,7 @@ PEM-encoded private key associated with the Client Certificate.
 If this field is used then the 'client_certificate' and the
 'ca_certificate' fields are mandatory.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#client_key DatastreamConnectionProfile#client_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#client_key DatastreamConnectionProfile#client_key}
 
 ---
 
@@ -2221,7 +2221,7 @@ SecretManagerStoredClientKey *string
 
 A reference to a Secret Manager resource name storing the PEM-encoded private key. Mutually exclusive with clientKey.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#secret_manager_stored_client_key DatastreamConnectionProfile#secret_manager_stored_client_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#secret_manager_stored_client_key DatastreamConnectionProfile#secret_manager_stored_client_key}
 
 ---
 
@@ -2230,7 +2230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileMongodbProfileStandardConnectionFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datastreamconnectionprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datastreamconnectionprofile"
 
 &datastreamconnectionprofile.DatastreamConnectionProfileMongodbProfileStandardConnectionFormat {
 	DirectConnection: interface{},
@@ -2255,7 +2255,7 @@ DirectConnection interface{}
 
 Specifies whether the client connects directly to the host[:port] in the connection URI.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#direct_connection DatastreamConnectionProfile#direct_connection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#direct_connection DatastreamConnectionProfile#direct_connection}
 
 ---
 
@@ -2264,7 +2264,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileMysqlProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datastreamconnectionprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datastreamconnectionprofile"
 
 &datastreamconnectionprofile.DatastreamConnectionProfileMysqlProfile {
 	Hostname: *string,
@@ -2272,7 +2272,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datastreamconnec
 	Password: *string,
 	Port: *f64,
 	SecretManagerStoredPassword: *string,
-	SslConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.datastreamConnectionProfile.DatastreamConnectionProfileMysqlProfileSslConfig,
+	SslConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.datastreamConnectionProfile.DatastreamConnectionProfileMysqlProfileSslConfig,
 }
 ```
 
@@ -2299,7 +2299,7 @@ Hostname *string
 
 Hostname for the MySQL connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#hostname DatastreamConnectionProfile#hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#hostname DatastreamConnectionProfile#hostname}
 
 ---
 
@@ -2313,7 +2313,7 @@ Username *string
 
 Username for the MySQL connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#username DatastreamConnectionProfile#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#username DatastreamConnectionProfile#username}
 
 ---
 
@@ -2327,7 +2327,7 @@ Password *string
 
 Password for the MySQL connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#password DatastreamConnectionProfile#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#password DatastreamConnectionProfile#password}
 
 ---
 
@@ -2341,7 +2341,7 @@ Port *f64
 
 Port for the MySQL connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#port DatastreamConnectionProfile#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#port DatastreamConnectionProfile#port}
 
 ---
 
@@ -2355,7 +2355,7 @@ SecretManagerStoredPassword *string
 
 A reference to a Secret Manager resource name storing the user's password.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#secret_manager_stored_password DatastreamConnectionProfile#secret_manager_stored_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#secret_manager_stored_password DatastreamConnectionProfile#secret_manager_stored_password}
 
 ---
 
@@ -2369,7 +2369,7 @@ SslConfig DatastreamConnectionProfileMysqlProfileSslConfig
 
 ssl_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#ssl_config DatastreamConnectionProfile#ssl_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#ssl_config DatastreamConnectionProfile#ssl_config}
 
 ---
 
@@ -2378,7 +2378,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileMysqlProfileSslConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datastreamconnectionprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datastreamconnectionprofile"
 
 &datastreamconnectionprofile.DatastreamConnectionProfileMysqlProfileSslConfig {
 	CaCertificate: *string,
@@ -2407,7 +2407,7 @@ CaCertificate *string
 
 PEM-encoded certificate of the CA that signed the source database server's certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#ca_certificate DatastreamConnectionProfile#ca_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#ca_certificate DatastreamConnectionProfile#ca_certificate}
 
 ---
 
@@ -2425,7 +2425,7 @@ If this field
 is used then the 'clientKey' and the 'caCertificate' fields are
 mandatory.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#client_certificate DatastreamConnectionProfile#client_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#client_certificate DatastreamConnectionProfile#client_certificate}
 
 ---
 
@@ -2442,7 +2442,7 @@ PEM-encoded private key associated with the Client Certificate.
 If this field is used then the 'client_certificate' and the
 'ca_certificate' fields are mandatory.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#client_key DatastreamConnectionProfile#client_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#client_key DatastreamConnectionProfile#client_key}
 
 ---
 
@@ -2451,7 +2451,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileOracleProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datastreamconnectionprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datastreamconnectionprofile"
 
 &datastreamconnectionprofile.DatastreamConnectionProfileOracleProfile {
 	DatabaseService: *string,
@@ -2488,7 +2488,7 @@ DatabaseService *string
 
 Database for the Oracle connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#database_service DatastreamConnectionProfile#database_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#database_service DatastreamConnectionProfile#database_service}
 
 ---
 
@@ -2502,7 +2502,7 @@ Hostname *string
 
 Hostname for the Oracle connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#hostname DatastreamConnectionProfile#hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#hostname DatastreamConnectionProfile#hostname}
 
 ---
 
@@ -2516,7 +2516,7 @@ Username *string
 
 Username for the Oracle connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#username DatastreamConnectionProfile#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#username DatastreamConnectionProfile#username}
 
 ---
 
@@ -2530,7 +2530,7 @@ ConnectionAttributes *map[string]*string
 
 Connection string attributes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#connection_attributes DatastreamConnectionProfile#connection_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#connection_attributes DatastreamConnectionProfile#connection_attributes}
 
 ---
 
@@ -2544,7 +2544,7 @@ Password *string
 
 Password for the Oracle connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#password DatastreamConnectionProfile#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#password DatastreamConnectionProfile#password}
 
 ---
 
@@ -2558,7 +2558,7 @@ Port *f64
 
 Port for the Oracle connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#port DatastreamConnectionProfile#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#port DatastreamConnectionProfile#port}
 
 ---
 
@@ -2572,7 +2572,7 @@ SecretManagerStoredPassword *string
 
 A reference to a Secret Manager resource name storing the user's password.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#secret_manager_stored_password DatastreamConnectionProfile#secret_manager_stored_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#secret_manager_stored_password DatastreamConnectionProfile#secret_manager_stored_password}
 
 ---
 
@@ -2581,7 +2581,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfilePostgresqlProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datastreamconnectionprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datastreamconnectionprofile"
 
 &datastreamconnectionprofile.DatastreamConnectionProfilePostgresqlProfile {
 	Database: *string,
@@ -2590,7 +2590,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datastreamconnec
 	Password: *string,
 	Port: *f64,
 	SecretManagerStoredPassword: *string,
-	SslConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.datastreamConnectionProfile.DatastreamConnectionProfilePostgresqlProfileSslConfig,
+	SslConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.datastreamConnectionProfile.DatastreamConnectionProfilePostgresqlProfileSslConfig,
 }
 ```
 
@@ -2618,7 +2618,7 @@ Database *string
 
 Database for the PostgreSQL connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#database DatastreamConnectionProfile#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#database DatastreamConnectionProfile#database}
 
 ---
 
@@ -2632,7 +2632,7 @@ Hostname *string
 
 Hostname for the PostgreSQL connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#hostname DatastreamConnectionProfile#hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#hostname DatastreamConnectionProfile#hostname}
 
 ---
 
@@ -2646,7 +2646,7 @@ Username *string
 
 Username for the PostgreSQL connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#username DatastreamConnectionProfile#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#username DatastreamConnectionProfile#username}
 
 ---
 
@@ -2660,7 +2660,7 @@ Password *string
 
 Password for the PostgreSQL connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#password DatastreamConnectionProfile#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#password DatastreamConnectionProfile#password}
 
 ---
 
@@ -2674,7 +2674,7 @@ Port *f64
 
 Port for the PostgreSQL connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#port DatastreamConnectionProfile#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#port DatastreamConnectionProfile#port}
 
 ---
 
@@ -2688,7 +2688,7 @@ SecretManagerStoredPassword *string
 
 A reference to a Secret Manager resource name storing the user's password.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#secret_manager_stored_password DatastreamConnectionProfile#secret_manager_stored_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#secret_manager_stored_password DatastreamConnectionProfile#secret_manager_stored_password}
 
 ---
 
@@ -2702,7 +2702,7 @@ SslConfig DatastreamConnectionProfilePostgresqlProfileSslConfig
 
 ssl_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#ssl_config DatastreamConnectionProfile#ssl_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#ssl_config DatastreamConnectionProfile#ssl_config}
 
 ---
 
@@ -2711,11 +2711,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfilePostgresqlProfileSslConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datastreamconnectionprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datastreamconnectionprofile"
 
 &datastreamconnectionprofile.DatastreamConnectionProfilePostgresqlProfileSslConfig {
-	ServerAndClientVerification: github.com/cdktn-io/cdktn-provider-google-go/google/v20.datastreamConnectionProfile.DatastreamConnectionProfilePostgresqlProfileSslConfigServerAndClientVerification,
-	ServerVerification: github.com/cdktn-io/cdktn-provider-google-go/google/v20.datastreamConnectionProfile.DatastreamConnectionProfilePostgresqlProfileSslConfigServerVerification,
+	ServerAndClientVerification: github.com/cdktn-io/cdktn-provider-google-go/google/v21.datastreamConnectionProfile.DatastreamConnectionProfilePostgresqlProfileSslConfigServerAndClientVerification,
+	ServerVerification: github.com/cdktn-io/cdktn-provider-google-go/google/v21.datastreamConnectionProfile.DatastreamConnectionProfilePostgresqlProfileSslConfigServerVerification,
 }
 ```
 
@@ -2738,7 +2738,7 @@ ServerAndClientVerification DatastreamConnectionProfilePostgresqlProfileSslConfi
 
 server_and_client_verification block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#server_and_client_verification DatastreamConnectionProfile#server_and_client_verification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#server_and_client_verification DatastreamConnectionProfile#server_and_client_verification}
 
 ---
 
@@ -2752,7 +2752,7 @@ ServerVerification DatastreamConnectionProfilePostgresqlProfileSslConfigServerVe
 
 server_verification block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#server_verification DatastreamConnectionProfile#server_verification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#server_verification DatastreamConnectionProfile#server_verification}
 
 ---
 
@@ -2761,7 +2761,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfilePostgresqlProfileSslConfigServerAndClientVerification.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datastreamconnectionprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datastreamconnectionprofile"
 
 &datastreamconnectionprofile.DatastreamConnectionProfilePostgresqlProfileSslConfigServerAndClientVerification {
 	CaCertificate: *string,
@@ -2790,7 +2790,7 @@ CaCertificate *string
 
 PEM-encoded server root CA certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#ca_certificate DatastreamConnectionProfile#ca_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#ca_certificate DatastreamConnectionProfile#ca_certificate}
 
 ---
 
@@ -2804,7 +2804,7 @@ ClientCertificate *string
 
 PEM-encoded certificate used by the source database to authenticate the client identity (i.e., the Datastream's identity). This certificate is signed by either a root certificate trusted by the server or one or more intermediate certificates (which is stored with the leaf certificate) to link to this certificate to the trusted root certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#client_certificate DatastreamConnectionProfile#client_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#client_certificate DatastreamConnectionProfile#client_certificate}
 
 ---
 
@@ -2822,7 +2822,7 @@ This value will be used during the SSL/TLS handshake, allowing
 the PostgreSQL server to authenticate the client's identity,
 i.e. identity of the stream.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#client_key DatastreamConnectionProfile#client_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#client_key DatastreamConnectionProfile#client_key}
 
 ---
 
@@ -2831,7 +2831,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfilePostgresqlProfileSslConfigServerVerification.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datastreamconnectionprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datastreamconnectionprofile"
 
 &datastreamconnectionprofile.DatastreamConnectionProfilePostgresqlProfileSslConfigServerVerification {
 	CaCertificate: *string,
@@ -2856,7 +2856,7 @@ CaCertificate *string
 
 PEM-encoded server root CA certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#ca_certificate DatastreamConnectionProfile#ca_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#ca_certificate DatastreamConnectionProfile#ca_certificate}
 
 ---
 
@@ -2865,7 +2865,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfilePrivateConnectivity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datastreamconnectionprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datastreamconnectionprofile"
 
 &datastreamconnectionprofile.DatastreamConnectionProfilePrivateConnectivity {
 	PrivateConnection: *string,
@@ -2890,7 +2890,7 @@ PrivateConnection *string
 
 A reference to a private connection resource. Format: 'projects/{project}/locations/{location}/privateConnections/{name}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#private_connection DatastreamConnectionProfile#private_connection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#private_connection DatastreamConnectionProfile#private_connection}
 
 ---
 
@@ -2899,7 +2899,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileSqlServerProfile.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datastreamconnectionprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datastreamconnectionprofile"
 
 &datastreamconnectionprofile.DatastreamConnectionProfileSqlServerProfile {
 	Database: *string,
@@ -2934,7 +2934,7 @@ Database *string
 
 Database for the SQL Server connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#database DatastreamConnectionProfile#database}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#database DatastreamConnectionProfile#database}
 
 ---
 
@@ -2948,7 +2948,7 @@ Hostname *string
 
 Hostname for the SQL Server connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#hostname DatastreamConnectionProfile#hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#hostname DatastreamConnectionProfile#hostname}
 
 ---
 
@@ -2962,7 +2962,7 @@ Username *string
 
 Username for the SQL Server connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#username DatastreamConnectionProfile#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#username DatastreamConnectionProfile#username}
 
 ---
 
@@ -2976,7 +2976,7 @@ Password *string
 
 Password for the SQL Server connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#password DatastreamConnectionProfile#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#password DatastreamConnectionProfile#password}
 
 ---
 
@@ -2990,7 +2990,7 @@ Port *f64
 
 Port for the SQL Server connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#port DatastreamConnectionProfile#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#port DatastreamConnectionProfile#port}
 
 ---
 
@@ -3004,7 +3004,7 @@ SecretManagerStoredPassword *string
 
 A reference to a Secret Manager resource name storing the user's password.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#secret_manager_stored_password DatastreamConnectionProfile#secret_manager_stored_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#secret_manager_stored_password DatastreamConnectionProfile#secret_manager_stored_password}
 
 ---
 
@@ -3013,7 +3013,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datastreamconnectionprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datastreamconnectionprofile"
 
 &datastreamconnectionprofile.DatastreamConnectionProfileTimeouts {
 	Create: *string,
@@ -3026,9 +3026,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datastreamconnec
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#create DatastreamConnectionProfile#create}. |
-| <code><a href="#@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#delete DatastreamConnectionProfile#delete}. |
-| <code><a href="#@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#update DatastreamConnectionProfile#update}. |
+| <code><a href="#@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#create DatastreamConnectionProfile#create}. |
+| <code><a href="#@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#delete DatastreamConnectionProfile#delete}. |
+| <code><a href="#@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#update DatastreamConnectionProfile#update}. |
 
 ---
 
@@ -3040,7 +3040,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#create DatastreamConnectionProfile#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#create DatastreamConnectionProfile#create}.
 
 ---
 
@@ -3052,7 +3052,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#delete DatastreamConnectionProfile#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#delete DatastreamConnectionProfile#delete}.
 
 ---
 
@@ -3064,7 +3064,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/datastream_connection_profile#update DatastreamConnectionProfile#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/datastream_connection_profile#update DatastreamConnectionProfile#update}.
 
 ---
 
@@ -3075,7 +3075,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileBigqueryProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datastreamconnectionprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datastreamconnectionprofile"
 
 datastreamconnectionprofile.NewDatastreamConnectionProfileBigqueryProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatastreamConnectionProfileBigqueryProfileOutputReference
 ```
@@ -3324,7 +3324,7 @@ func InternalValue() DatastreamConnectionProfileBigqueryProfile
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileForwardSshConnectivityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datastreamconnectionprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datastreamconnectionprofile"
 
 datastreamconnectionprofile.NewDatastreamConnectionProfileForwardSshConnectivityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatastreamConnectionProfileForwardSshConnectivityOutputReference
 ```
@@ -3704,7 +3704,7 @@ func InternalValue() DatastreamConnectionProfileForwardSshConnectivity
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileGcsProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datastreamconnectionprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datastreamconnectionprofile"
 
 datastreamconnectionprofile.NewDatastreamConnectionProfileGcsProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatastreamConnectionProfileGcsProfileOutputReference
 ```
@@ -4004,7 +4004,7 @@ func InternalValue() DatastreamConnectionProfileGcsProfile
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileMongodbProfileHostAddressesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datastreamconnectionprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datastreamconnectionprofile"
 
 datastreamconnectionprofile.NewDatastreamConnectionProfileMongodbProfileHostAddressesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatastreamConnectionProfileMongodbProfileHostAddressesList
 ```
@@ -4164,7 +4164,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileMongodbProfileHostAddressesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datastreamconnectionprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datastreamconnectionprofile"
 
 datastreamconnectionprofile.NewDatastreamConnectionProfileMongodbProfileHostAddressesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatastreamConnectionProfileMongodbProfileHostAddressesOutputReference
 ```
@@ -4482,7 +4482,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileMongodbProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datastreamconnectionprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datastreamconnectionprofile"
 
 datastreamconnectionprofile.NewDatastreamConnectionProfileMongodbProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatastreamConnectionProfileMongodbProfileOutputReference
 ```
@@ -5030,7 +5030,7 @@ func InternalValue() DatastreamConnectionProfileMongodbProfile
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileMongodbProfileSrvConnectionFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datastreamconnectionprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datastreamconnectionprofile"
 
 datastreamconnectionprofile.NewDatastreamConnectionProfileMongodbProfileSrvConnectionFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatastreamConnectionProfileMongodbProfileSrvConnectionFormatOutputReference
 ```
@@ -5279,7 +5279,7 @@ func InternalValue() DatastreamConnectionProfileMongodbProfileSrvConnectionForma
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileMongodbProfileSslConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datastreamconnectionprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datastreamconnectionprofile"
 
 datastreamconnectionprofile.NewDatastreamConnectionProfileMongodbProfileSslConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatastreamConnectionProfileMongodbProfileSslConfigOutputReference
 ```
@@ -5677,7 +5677,7 @@ func InternalValue() DatastreamConnectionProfileMongodbProfileSslConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileMongodbProfileStandardConnectionFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datastreamconnectionprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datastreamconnectionprofile"
 
 datastreamconnectionprofile.NewDatastreamConnectionProfileMongodbProfileStandardConnectionFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatastreamConnectionProfileMongodbProfileStandardConnectionFormatOutputReference
 ```
@@ -5955,7 +5955,7 @@ func InternalValue() DatastreamConnectionProfileMongodbProfileStandardConnection
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileMysqlProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datastreamconnectionprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datastreamconnectionprofile"
 
 datastreamconnectionprofile.NewDatastreamConnectionProfileMysqlProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatastreamConnectionProfileMysqlProfileOutputReference
 ```
@@ -6377,7 +6377,7 @@ func InternalValue() DatastreamConnectionProfileMysqlProfile
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileMysqlProfileSslConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datastreamconnectionprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datastreamconnectionprofile"
 
 datastreamconnectionprofile.NewDatastreamConnectionProfileMysqlProfileSslConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatastreamConnectionProfileMysqlProfileSslConfigOutputReference
 ```
@@ -6746,7 +6746,7 @@ func InternalValue() DatastreamConnectionProfileMysqlProfileSslConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileOracleProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datastreamconnectionprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datastreamconnectionprofile"
 
 datastreamconnectionprofile.NewDatastreamConnectionProfileOracleProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatastreamConnectionProfileOracleProfileOutputReference
 ```
@@ -7177,7 +7177,7 @@ func InternalValue() DatastreamConnectionProfileOracleProfile
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfilePostgresqlProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datastreamconnectionprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datastreamconnectionprofile"
 
 datastreamconnectionprofile.NewDatastreamConnectionProfilePostgresqlProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatastreamConnectionProfilePostgresqlProfileOutputReference
 ```
@@ -7621,7 +7621,7 @@ func InternalValue() DatastreamConnectionProfilePostgresqlProfile
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfilePostgresqlProfileSslConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datastreamconnectionprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datastreamconnectionprofile"
 
 datastreamconnectionprofile.NewDatastreamConnectionProfilePostgresqlProfileSslConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatastreamConnectionProfilePostgresqlProfileSslConfigOutputReference
 ```
@@ -7954,7 +7954,7 @@ func InternalValue() DatastreamConnectionProfilePostgresqlProfileSslConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfilePostgresqlProfileSslConfigServerAndClientVerificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datastreamconnectionprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datastreamconnectionprofile"
 
 datastreamconnectionprofile.NewDatastreamConnectionProfilePostgresqlProfileSslConfigServerAndClientVerificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatastreamConnectionProfilePostgresqlProfileSslConfigServerAndClientVerificationOutputReference
 ```
@@ -8269,7 +8269,7 @@ func InternalValue() DatastreamConnectionProfilePostgresqlProfileSslConfigServer
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfilePostgresqlProfileSslConfigServerVerificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datastreamconnectionprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datastreamconnectionprofile"
 
 datastreamconnectionprofile.NewDatastreamConnectionProfilePostgresqlProfileSslConfigServerVerificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatastreamConnectionProfilePostgresqlProfileSslConfigServerVerificationOutputReference
 ```
@@ -8540,7 +8540,7 @@ func InternalValue() DatastreamConnectionProfilePostgresqlProfileSslConfigServer
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfilePrivateConnectivityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datastreamconnectionprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datastreamconnectionprofile"
 
 datastreamconnectionprofile.NewDatastreamConnectionProfilePrivateConnectivityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatastreamConnectionProfilePrivateConnectivityOutputReference
 ```
@@ -8811,7 +8811,7 @@ func InternalValue() DatastreamConnectionProfilePrivateConnectivity
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileSqlServerProfileOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datastreamconnectionprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datastreamconnectionprofile"
 
 datastreamconnectionprofile.NewDatastreamConnectionProfileSqlServerProfileOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatastreamConnectionProfileSqlServerProfileOutputReference
 ```
@@ -9213,7 +9213,7 @@ func InternalValue() DatastreamConnectionProfileSqlServerProfile
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datastreamconnectionprofile"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datastreamconnectionprofile"
 
 datastreamconnectionprofile.NewDatastreamConnectionProfileTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatastreamConnectionProfileTimeoutsOutputReference
 ```

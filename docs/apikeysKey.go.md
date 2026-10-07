@@ -4,12 +4,12 @@
 
 ### ApikeysKey <a name="ApikeysKey" id="@cdktn/provider-google.apikeysKey.ApikeysKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apikeys_key google_apikeys_key}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apikeys_key google_apikeys_key}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apikeysKey.ApikeysKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apikeyskey"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apikeyskey"
 
 apikeyskey.NewApikeysKey(scope Construct, id *string, config ApikeysKeyConfig) ApikeysKey
 ```
@@ -76,6 +76,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKey.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKey.putRestrictions">PutRestrictions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKey.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKey.resetCheckExistingUsage">ResetCheckExistingUsage</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKey.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKey.resetDisplayName">ResetDisplayName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKey.resetId">ResetId</a></code> | *No description.* |
@@ -419,6 +420,12 @@ func PutTimeouts(value ApikeysKeyTimeouts)
 
 ---
 
+##### `ResetCheckExistingUsage` <a name="ResetCheckExistingUsage" id="@cdktn/provider-google.apikeysKey.ApikeysKey.resetCheckExistingUsage"></a>
+
+```go
+func ResetCheckExistingUsage()
+```
+
 ##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.apikeysKey.ApikeysKey.resetDeletionPolicy"></a>
 
 ```go
@@ -475,7 +482,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.apikeysKey.ApikeysKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apikeyskey"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apikeyskey"
 
 apikeyskey.ApikeysKey_IsConstruct(x interface{}) *bool
 ```
@@ -507,7 +514,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.apikeysKey.ApikeysKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apikeyskey"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apikeyskey"
 
 apikeyskey.ApikeysKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -521,7 +528,7 @@ apikeyskey.ApikeysKey_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.apikeysKey.ApikeysKey.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apikeyskey"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apikeyskey"
 
 apikeyskey.ApikeysKey_IsTerraformResource(x interface{}) *bool
 ```
@@ -535,7 +542,7 @@ apikeyskey.ApikeysKey_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.apikeysKey.ApikeysKey.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apikeyskey"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apikeyskey"
 
 apikeyskey.ApikeysKey_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -564,7 +571,7 @@ The construct id used in the generated config for the ApikeysKey to import.
 
 The id of the existing ApikeysKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apikeys_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apikeys_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -598,6 +605,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKey.property.restrictions">Restrictions</a></code> | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsOutputReference">ApikeysKeyRestrictionsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKey.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyTimeoutsOutputReference">ApikeysKeyTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKey.property.uid">Uid</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKey.property.checkExistingUsageInput">CheckExistingUsageInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKey.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKey.property.displayNameInput">DisplayNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKey.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
@@ -606,6 +614,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKey.property.restrictionsInput">RestrictionsInput</a></code> | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictions">ApikeysKeyRestrictions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKey.property.serviceAccountEmailInput">ServiceAccountEmailInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKey.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKey.property.checkExistingUsage">CheckExistingUsage</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKey.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKey.property.displayName">DisplayName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKey.property.id">Id</a></code> | <code>*string</code> | *No description.* |
@@ -797,6 +806,16 @@ func Uid() *string
 
 ---
 
+##### `CheckExistingUsageInput`<sup>Optional</sup> <a name="CheckExistingUsageInput" id="@cdktn/provider-google.apikeysKey.ApikeysKey.property.checkExistingUsageInput"></a>
+
+```go
+func CheckExistingUsageInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.apikeysKey.ApikeysKey.property.deletionPolicyInput"></a>
 
 ```go
@@ -874,6 +893,16 @@ func TimeoutsInput() interface{}
 ```
 
 - *Type:* interface{}
+
+---
+
+##### `CheckExistingUsage`<sup>Required</sup> <a name="CheckExistingUsage" id="@cdktn/provider-google.apikeysKey.ApikeysKey.property.checkExistingUsage"></a>
+
+```go
+func CheckExistingUsage() *string
+```
+
+- *Type:* *string
 
 ---
 
@@ -962,7 +991,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apikeysKey.ApikeysKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apikeyskey"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apikeyskey"
 
 &apikeyskey.ApikeysKeyConfig {
 	Connection: interface{},
@@ -973,13 +1002,14 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apikeyskey"
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
+	CheckExistingUsage: *string,
 	DeletionPolicy: *string,
 	DisplayName: *string,
 	Id: *string,
 	Project: *string,
-	Restrictions: github.com/cdktn-io/cdktn-provider-google-go/google/v20.apikeysKey.ApikeysKeyRestrictions,
+	Restrictions: github.com/cdktn-io/cdktn-provider-google-go/google/v21.apikeysKey.ApikeysKeyRestrictions,
 	ServiceAccountEmail: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.apikeysKey.ApikeysKeyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.apikeysKey.ApikeysKeyTimeouts,
 }
 ```
 
@@ -995,9 +1025,10 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apikeyskey"
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyConfig.property.name">Name</a></code> | <code>*string</code> | The resource name of the key. |
-| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
+| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyConfig.property.checkExistingUsage">CheckExistingUsage</a></code> | <code>*string</code> | Defines the behavior for checking existing usage when updating a key. Possible values: 'SKIP', 'CHECK'. |
+| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the resource. |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | Human-readable display name of this API key. Modifiable by user. |
-| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apikeys_key#id ApikeysKey#id}. |
+| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apikeys_key#id ApikeysKey#id}. |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyConfig.property.project">Project</a></code> | <code>*string</code> | The project for the resource. |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyConfig.property.restrictions">Restrictions</a></code> | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictions">ApikeysKeyRestrictions</a></code> | restrictions block. |
 | <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyConfig.property.serviceAccountEmail">ServiceAccountEmail</a></code> | <code>*string</code> | The email of the service account the key is bound to. |
@@ -1087,7 +1118,21 @@ The resource name of the key.
 
 The name must be unique within the project, must conform with RFC-1034, is restricted to lower-cased letters, and has a maximum length of 63 characters. In another word, the name must match the regular expression: `[a-z]([a-z0-9-]{0,61}[a-z0-9])?`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apikeys_key#name ApikeysKey#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apikeys_key#name ApikeysKey#name}
+
+---
+
+##### `CheckExistingUsage`<sup>Optional</sup> <a name="CheckExistingUsage" id="@cdktn/provider-google.apikeysKey.ApikeysKeyConfig.property.checkExistingUsage"></a>
+
+```go
+CheckExistingUsage *string
+```
+
+- *Type:* *string
+
+Defines the behavior for checking existing usage when updating a key. Possible values: 'SKIP', 'CHECK'.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apikeys_key#check_existing_usage ApikeysKey#check_existing_usage}
 
 ---
 
@@ -1099,16 +1144,17 @@ DeletionPolicy *string
 
 - *Type:* *string
 
-Whether Terraform will be prevented from destroying the instance.
+Whether Terraform will be prevented from destroying the resource.
 
 Defaults to "DELETE".
-When a 'terraform destroy' or 'terraform apply' would delete the instance,
+When a 'terraform destroy' or 'terraform apply' would delete the resource,
 the command will fail if this field is set to "PREVENT" in Terraform state.
 When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
-When set to "DELETE", deleting the resource is allowed.
+When set to "DELETE", deleting the resource is allowed, and existing traffic usage will be checked. If active usage was detected in the last 7 days, the request fails.
+When set to "FORCE", deleting the resource will bypass the active traffic usage check.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apikeys_key#deletion_policy ApikeysKey#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apikeys_key#deletion_policy ApikeysKey#deletion_policy}
 
 ---
 
@@ -1122,7 +1168,7 @@ DisplayName *string
 
 Human-readable display name of this API key. Modifiable by user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apikeys_key#display_name ApikeysKey#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apikeys_key#display_name ApikeysKey#display_name}
 
 ---
 
@@ -1134,7 +1180,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apikeys_key#id ApikeysKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apikeys_key#id ApikeysKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1151,7 +1197,7 @@ Project *string
 
 The project for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apikeys_key#project ApikeysKey#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apikeys_key#project ApikeysKey#project}
 
 ---
 
@@ -1165,7 +1211,7 @@ Restrictions ApikeysKeyRestrictions
 
 restrictions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apikeys_key#restrictions ApikeysKey#restrictions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apikeys_key#restrictions ApikeysKey#restrictions}
 
 ---
 
@@ -1181,7 +1227,7 @@ The email of the service account the key is bound to.
 
 If this field is specified, the key is a service account bound key and auth enabled. See [Documentation](https://cloud.google.com/docs/authentication/api-keys?#api-keys-bound-sa) for more details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apikeys_key#service_account_email ApikeysKey#service_account_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apikeys_key#service_account_email ApikeysKey#service_account_email}
 
 ---
 
@@ -1195,7 +1241,7 @@ Timeouts ApikeysKeyTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apikeys_key#timeouts ApikeysKey#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apikeys_key#timeouts ApikeysKey#timeouts}
 
 ---
 
@@ -1204,14 +1250,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apikeyskey"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apikeyskey"
 
 &apikeyskey.ApikeysKeyRestrictions {
-	AndroidKeyRestrictions: github.com/cdktn-io/cdktn-provider-google-go/google/v20.apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictions,
+	AndroidKeyRestrictions: github.com/cdktn-io/cdktn-provider-google-go/google/v21.apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictions,
 	ApiTargets: interface{},
-	BrowserKeyRestrictions: github.com/cdktn-io/cdktn-provider-google-go/google/v20.apikeysKey.ApikeysKeyRestrictionsBrowserKeyRestrictions,
-	IosKeyRestrictions: github.com/cdktn-io/cdktn-provider-google-go/google/v20.apikeysKey.ApikeysKeyRestrictionsIosKeyRestrictions,
-	ServerKeyRestrictions: github.com/cdktn-io/cdktn-provider-google-go/google/v20.apikeysKey.ApikeysKeyRestrictionsServerKeyRestrictions,
+	BrowserKeyRestrictions: github.com/cdktn-io/cdktn-provider-google-go/google/v21.apikeysKey.ApikeysKeyRestrictionsBrowserKeyRestrictions,
+	IosKeyRestrictions: github.com/cdktn-io/cdktn-provider-google-go/google/v21.apikeysKey.ApikeysKeyRestrictionsIosKeyRestrictions,
+	ServerKeyRestrictions: github.com/cdktn-io/cdktn-provider-google-go/google/v21.apikeysKey.ApikeysKeyRestrictionsServerKeyRestrictions,
 }
 ```
 
@@ -1237,7 +1283,7 @@ AndroidKeyRestrictions ApikeysKeyRestrictionsAndroidKeyRestrictions
 
 android_key_restrictions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apikeys_key#android_key_restrictions ApikeysKey#android_key_restrictions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apikeys_key#android_key_restrictions ApikeysKey#android_key_restrictions}
 
 ---
 
@@ -1251,7 +1297,7 @@ ApiTargets interface{}
 
 api_targets block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apikeys_key#api_targets ApikeysKey#api_targets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apikeys_key#api_targets ApikeysKey#api_targets}
 
 ---
 
@@ -1265,7 +1311,7 @@ BrowserKeyRestrictions ApikeysKeyRestrictionsBrowserKeyRestrictions
 
 browser_key_restrictions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apikeys_key#browser_key_restrictions ApikeysKey#browser_key_restrictions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apikeys_key#browser_key_restrictions ApikeysKey#browser_key_restrictions}
 
 ---
 
@@ -1279,7 +1325,7 @@ IosKeyRestrictions ApikeysKeyRestrictionsIosKeyRestrictions
 
 ios_key_restrictions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apikeys_key#ios_key_restrictions ApikeysKey#ios_key_restrictions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apikeys_key#ios_key_restrictions ApikeysKey#ios_key_restrictions}
 
 ---
 
@@ -1293,7 +1339,7 @@ ServerKeyRestrictions ApikeysKeyRestrictionsServerKeyRestrictions
 
 server_key_restrictions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apikeys_key#server_key_restrictions ApikeysKey#server_key_restrictions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apikeys_key#server_key_restrictions ApikeysKey#server_key_restrictions}
 
 ---
 
@@ -1302,7 +1348,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apikeyskey"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apikeyskey"
 
 &apikeyskey.ApikeysKeyRestrictionsAndroidKeyRestrictions {
 	AllowedApplications: interface{},
@@ -1327,7 +1373,7 @@ AllowedApplications interface{}
 
 allowed_applications block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apikeys_key#allowed_applications ApikeysKey#allowed_applications}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apikeys_key#allowed_applications ApikeysKey#allowed_applications}
 
 ---
 
@@ -1336,7 +1382,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplications.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apikeyskey"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apikeyskey"
 
 &apikeyskey.ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplications {
 	PackageName: *string,
@@ -1363,7 +1409,7 @@ PackageName *string
 
 The package name of the application.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apikeys_key#package_name ApikeysKey#package_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apikeys_key#package_name ApikeysKey#package_name}
 
 ---
 
@@ -1379,7 +1425,7 @@ The SHA1 fingerprint of the application.
 
 For example, both sha1 formats are acceptable : DA:39:A3:EE:5E:6B:4B:0D:32:55:BF:EF:95:60:18:90:AF:D8:07:09 or DA39A3EE5E6B4B0D3255BFEF95601890AFD80709. Output format is the latter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apikeys_key#sha1_fingerprint ApikeysKey#sha1_fingerprint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apikeys_key#sha1_fingerprint ApikeysKey#sha1_fingerprint}
 
 ---
 
@@ -1388,7 +1434,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsApiTargets.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apikeyskey"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apikeyskey"
 
 &apikeyskey.ApikeysKeyRestrictionsApiTargets {
 	Service: *string,
@@ -1417,7 +1463,7 @@ The service for this restriction.
 
 It should be the canonical service name, for example: `translate.googleapis.com`. You can use `gcloud services list` to get a list of services that are enabled in the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apikeys_key#service ApikeysKey#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apikeys_key#service ApikeysKey#service}
 
 ---
 
@@ -1433,7 +1479,7 @@ Optional.
 
 List of one or more methods that can be called. If empty, all methods for the service are allowed. A wildcard (*) can be used as the last symbol. Valid examples: `google.cloud.translate.v2.TranslateService.GetSupportedLanguage` `TranslateText` `Get*` `translate.googleapis.com.Get*`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apikeys_key#methods ApikeysKey#methods}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apikeys_key#methods ApikeysKey#methods}
 
 ---
 
@@ -1442,7 +1488,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsBrowserKeyRestrictions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apikeyskey"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apikeyskey"
 
 &apikeyskey.ApikeysKeyRestrictionsBrowserKeyRestrictions {
 	AllowedReferrers: *[]*string,
@@ -1467,7 +1513,7 @@ AllowedReferrers *[]*string
 
 A list of regular expressions for the referrer URLs that are allowed to make API calls with this key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apikeys_key#allowed_referrers ApikeysKey#allowed_referrers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apikeys_key#allowed_referrers ApikeysKey#allowed_referrers}
 
 ---
 
@@ -1476,7 +1522,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsIosKeyRestrictions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apikeyskey"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apikeyskey"
 
 &apikeyskey.ApikeysKeyRestrictionsIosKeyRestrictions {
 	AllowedBundleIds: *[]*string,
@@ -1501,7 +1547,7 @@ AllowedBundleIds *[]*string
 
 A list of bundle IDs that are allowed when making API calls with this key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apikeys_key#allowed_bundle_ids ApikeysKey#allowed_bundle_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apikeys_key#allowed_bundle_ids ApikeysKey#allowed_bundle_ids}
 
 ---
 
@@ -1510,7 +1556,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsServerKeyRestrictions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apikeyskey"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apikeyskey"
 
 &apikeyskey.ApikeysKeyRestrictionsServerKeyRestrictions {
 	AllowedIps: *[]*string,
@@ -1535,7 +1581,7 @@ AllowedIps *[]*string
 
 A list of the caller IP addresses that are allowed to make API calls with this key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apikeys_key#allowed_ips ApikeysKey#allowed_ips}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apikeys_key#allowed_ips ApikeysKey#allowed_ips}
 
 ---
 
@@ -1544,7 +1590,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apikeysKey.ApikeysKeyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apikeyskey"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apikeyskey"
 
 &apikeyskey.ApikeysKeyTimeouts {
 	Create: *string,
@@ -1557,9 +1603,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apikeyskey"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apikeys_key#create ApikeysKey#create}. |
-| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apikeys_key#delete ApikeysKey#delete}. |
-| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apikeys_key#update ApikeysKey#update}. |
+| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apikeys_key#create ApikeysKey#create}. |
+| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apikeys_key#delete ApikeysKey#delete}. |
+| <code><a href="#@cdktn/provider-google.apikeysKey.ApikeysKeyTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apikeys_key#update ApikeysKey#update}. |
 
 ---
 
@@ -1571,7 +1617,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apikeys_key#create ApikeysKey#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apikeys_key#create ApikeysKey#create}.
 
 ---
 
@@ -1583,7 +1629,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apikeys_key#delete ApikeysKey#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apikeys_key#delete ApikeysKey#delete}.
 
 ---
 
@@ -1595,7 +1641,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apikeys_key#update ApikeysKey#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apikeys_key#update ApikeysKey#update}.
 
 ---
 
@@ -1606,7 +1652,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apikeyskey"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apikeyskey"
 
 apikeyskey.NewApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationsList
 ```
@@ -1766,7 +1812,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apikeyskey"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apikeyskey"
 
 apikeyskey.NewApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicationsOutputReference
 ```
@@ -2077,7 +2123,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsAndroidKeyRestrictionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apikeyskey"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apikeyskey"
 
 apikeyskey.NewApikeysKeyRestrictionsAndroidKeyRestrictionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApikeysKeyRestrictionsAndroidKeyRestrictionsOutputReference
 ```
@@ -2361,7 +2407,7 @@ func InternalValue() ApikeysKeyRestrictionsAndroidKeyRestrictions
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsApiTargetsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apikeyskey"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apikeyskey"
 
 apikeyskey.NewApikeysKeyRestrictionsApiTargetsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApikeysKeyRestrictionsApiTargetsList
 ```
@@ -2521,7 +2567,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsApiTargetsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apikeyskey"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apikeyskey"
 
 apikeyskey.NewApikeysKeyRestrictionsApiTargetsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApikeysKeyRestrictionsApiTargetsOutputReference
 ```
@@ -2839,7 +2885,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsBrowserKeyRestrictionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apikeyskey"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apikeyskey"
 
 apikeyskey.NewApikeysKeyRestrictionsBrowserKeyRestrictionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApikeysKeyRestrictionsBrowserKeyRestrictionsOutputReference
 ```
@@ -3110,7 +3156,7 @@ func InternalValue() ApikeysKeyRestrictionsBrowserKeyRestrictions
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsIosKeyRestrictionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apikeyskey"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apikeyskey"
 
 apikeyskey.NewApikeysKeyRestrictionsIosKeyRestrictionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApikeysKeyRestrictionsIosKeyRestrictionsOutputReference
 ```
@@ -3381,7 +3427,7 @@ func InternalValue() ApikeysKeyRestrictionsIosKeyRestrictions
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apikeyskey"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apikeyskey"
 
 apikeyskey.NewApikeysKeyRestrictionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApikeysKeyRestrictionsOutputReference
 ```
@@ -3840,7 +3886,7 @@ func InternalValue() ApikeysKeyRestrictions
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apikeysKey.ApikeysKeyRestrictionsServerKeyRestrictionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apikeyskey"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apikeyskey"
 
 apikeyskey.NewApikeysKeyRestrictionsServerKeyRestrictionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApikeysKeyRestrictionsServerKeyRestrictionsOutputReference
 ```
@@ -4111,7 +4157,7 @@ func InternalValue() ApikeysKeyRestrictionsServerKeyRestrictions
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apikeysKey.ApikeysKeyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apikeyskey"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apikeyskey"
 
 apikeyskey.NewApikeysKeyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApikeysKeyTimeoutsOutputReference
 ```

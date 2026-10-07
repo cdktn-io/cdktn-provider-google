@@ -4,12 +4,12 @@
 
 ### DataGoogleComputeTargetHttpsProxy <a name="DataGoogleComputeTargetHttpsProxy" id="@cdktn/provider-google.dataGoogleComputeTargetHttpsProxy.DataGoogleComputeTargetHttpsProxy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_target_https_proxy google_compute_target_https_proxy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/compute_target_https_proxy google_compute_target_https_proxy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeTargetHttpsProxy.DataGoogleComputeTargetHttpsProxy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputetargethttpsproxy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputetargethttpsproxy"
 
 datagooglecomputetargethttpsproxy.NewDataGoogleComputeTargetHttpsProxy(scope Construct, id *string, config DataGoogleComputeTargetHttpsProxyConfig) DataGoogleComputeTargetHttpsProxy
 ```
@@ -312,7 +312,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleComputeTargetHttpsProxy.DataGoogleComputeTargetHttpsProxy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputetargethttpsproxy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputetargethttpsproxy"
 
 datagooglecomputetargethttpsproxy.DataGoogleComputeTargetHttpsProxy_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleComputeTargetHttpsProxy.DataGoogleComputeTargetHttpsProxy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputetargethttpsproxy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputetargethttpsproxy"
 
 datagooglecomputetargethttpsproxy.DataGoogleComputeTargetHttpsProxy_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datagooglecomputetargethttpsproxy.DataGoogleComputeTargetHttpsProxy_IsTerraformE
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleComputeTargetHttpsProxy.DataGoogleComputeTargetHttpsProxy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputetargethttpsproxy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputetargethttpsproxy"
 
 datagooglecomputetargethttpsproxy.DataGoogleComputeTargetHttpsProxy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datagooglecomputetargethttpsproxy.DataGoogleComputeTargetHttpsProxy_IsTerraformD
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleComputeTargetHttpsProxy.DataGoogleComputeTargetHttpsProxy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputetargethttpsproxy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputetargethttpsproxy"
 
 datagooglecomputetargethttpsproxy.DataGoogleComputeTargetHttpsProxy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataGoogleComputeTargetHtt
 
 The id of the existing DataGoogleComputeTargetHttpsProxy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_target_https_proxy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/compute_target_https_proxy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -821,7 +821,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeTargetHttpsProxy.DataGoogleComputeTargetHttpsProxyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomputetargethttpsproxy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglecomputetargethttpsproxy"
 
 &datagooglecomputetargethttpsproxy.DataGoogleComputeTargetHttpsProxyConfig {
 	Connection: interface{},
@@ -849,8 +849,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglecomput
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeTargetHttpsProxy.DataGoogleComputeTargetHttpsProxyConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeTargetHttpsProxy.DataGoogleComputeTargetHttpsProxyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleComputeTargetHttpsProxy.DataGoogleComputeTargetHttpsProxyConfig.property.name">Name</a></code> | <code>*string</code> | Name of the resource. |
-| <code><a href="#@cdktn/provider-google.dataGoogleComputeTargetHttpsProxy.DataGoogleComputeTargetHttpsProxyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_target_https_proxy#id DataGoogleComputeTargetHttpsProxy#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleComputeTargetHttpsProxy.DataGoogleComputeTargetHttpsProxyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_target_https_proxy#project DataGoogleComputeTargetHttpsProxy#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeTargetHttpsProxy.DataGoogleComputeTargetHttpsProxyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/compute_target_https_proxy#id DataGoogleComputeTargetHttpsProxy#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleComputeTargetHttpsProxy.DataGoogleComputeTargetHttpsProxyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/compute_target_https_proxy#project DataGoogleComputeTargetHttpsProxy#project}. |
 
 ---
 
@@ -942,7 +942,7 @@ first character must be a lowercase letter, and all following
 characters must be a dash, lowercase letter, or digit, except the last
 character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_target_https_proxy#name DataGoogleComputeTargetHttpsProxy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/compute_target_https_proxy#name DataGoogleComputeTargetHttpsProxy#name}
 
 ---
 
@@ -954,7 +954,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_target_https_proxy#id DataGoogleComputeTargetHttpsProxy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/compute_target_https_proxy#id DataGoogleComputeTargetHttpsProxy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -969,7 +969,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/compute_target_https_proxy#project DataGoogleComputeTargetHttpsProxy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/compute_target_https_proxy#project DataGoogleComputeTargetHttpsProxy#project}.
 
 ---
 

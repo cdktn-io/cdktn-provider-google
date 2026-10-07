@@ -4,12 +4,12 @@
 
 ### WorkloadIdentityServiceAgent <a name="WorkloadIdentityServiceAgent" id="@cdktn/provider-google.workloadIdentityServiceAgent.WorkloadIdentityServiceAgent"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/workload_identity_service_agent google_workload_identity_service_agent}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/workload_identity_service_agent google_workload_identity_service_agent}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.workloadIdentityServiceAgent.WorkloadIdentityServiceAgent.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workloadidentityserviceagent"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/workloadidentityserviceagent"
 
 workloadidentityserviceagent.NewWorkloadIdentityServiceAgent(scope Construct, id *string, config WorkloadIdentityServiceAgentConfig) WorkloadIdentityServiceAgent
 ```
@@ -427,7 +427,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.workloadIdentityServiceAgent.WorkloadIdentityServiceAgent.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workloadidentityserviceagent"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/workloadidentityserviceagent"
 
 workloadidentityserviceagent.WorkloadIdentityServiceAgent_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.workloadIdentityServiceAgent.WorkloadIdentityServiceAgent.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workloadidentityserviceagent"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/workloadidentityserviceagent"
 
 workloadidentityserviceagent.WorkloadIdentityServiceAgent_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ workloadidentityserviceagent.WorkloadIdentityServiceAgent_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.workloadIdentityServiceAgent.WorkloadIdentityServiceAgent.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workloadidentityserviceagent"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/workloadidentityserviceagent"
 
 workloadidentityserviceagent.WorkloadIdentityServiceAgent_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ workloadidentityserviceagent.WorkloadIdentityServiceAgent_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.workloadIdentityServiceAgent.WorkloadIdentityServiceAgent.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workloadidentityserviceagent"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/workloadidentityserviceagent"
 
 workloadidentityserviceagent.WorkloadIdentityServiceAgent_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -516,7 +516,7 @@ The construct id used in the generated config for the WorkloadIdentityServiceAge
 
 The id of the existing WorkloadIdentityServiceAgent that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/workload_identity_service_agent#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/workload_identity_service_agent#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -793,7 +793,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.workloadIdentityServiceAgent.WorkloadIdentityServiceAgentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workloadidentityserviceagent"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/workloadidentityserviceagent"
 
 &workloadidentityserviceagent.WorkloadIdentityServiceAgentConfig {
 	Connection: interface{},
@@ -805,7 +805,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workloadidentity
 	Provisioners: *[]interface{},
 	Parent: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.workloadIdentityServiceAgent.WorkloadIdentityServiceAgentTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.workloadIdentityServiceAgent.WorkloadIdentityServiceAgentTimeouts,
 }
 ```
 
@@ -821,7 +821,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workloadidentity
 | <code><a href="#@cdktn/provider-google.workloadIdentityServiceAgent.WorkloadIdentityServiceAgentConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.workloadIdentityServiceAgent.WorkloadIdentityServiceAgentConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.workloadIdentityServiceAgent.WorkloadIdentityServiceAgentConfig.property.parent">Parent</a></code> | <code>*string</code> | The parent resource path. |
-| <code><a href="#@cdktn/provider-google.workloadIdentityServiceAgent.WorkloadIdentityServiceAgentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/workload_identity_service_agent#id WorkloadIdentityServiceAgent#id}. |
+| <code><a href="#@cdktn/provider-google.workloadIdentityServiceAgent.WorkloadIdentityServiceAgentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/workload_identity_service_agent#id WorkloadIdentityServiceAgent#id}. |
 | <code><a href="#@cdktn/provider-google.workloadIdentityServiceAgent.WorkloadIdentityServiceAgentConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.workloadIdentityServiceAgent.WorkloadIdentityServiceAgentTimeouts">WorkloadIdentityServiceAgentTimeouts</a></code> | timeouts block. |
 
 ---
@@ -906,7 +906,7 @@ Parent *string
 
 The parent resource path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/workload_identity_service_agent#parent WorkloadIdentityServiceAgent#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/workload_identity_service_agent#parent WorkloadIdentityServiceAgent#parent}
 
 ---
 
@@ -918,7 +918,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/workload_identity_service_agent#id WorkloadIdentityServiceAgent#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/workload_identity_service_agent#id WorkloadIdentityServiceAgent#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -935,7 +935,7 @@ Timeouts WorkloadIdentityServiceAgentTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/workload_identity_service_agent#timeouts WorkloadIdentityServiceAgent#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/workload_identity_service_agent#timeouts WorkloadIdentityServiceAgent#timeouts}
 
 ---
 
@@ -944,7 +944,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.workloadIdentityServiceAgent.WorkloadIdentityServiceAgentServiceAgents.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workloadidentityserviceagent"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/workloadidentityserviceagent"
 
 &workloadidentityserviceagent.WorkloadIdentityServiceAgentServiceAgents {
 
@@ -957,7 +957,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workloadidentity
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.workloadIdentityServiceAgent.WorkloadIdentityServiceAgentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workloadidentityserviceagent"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/workloadidentityserviceagent"
 
 &workloadidentityserviceagent.WorkloadIdentityServiceAgentTimeouts {
 	Create: *string,
@@ -969,8 +969,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workloadidentity
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.workloadIdentityServiceAgent.WorkloadIdentityServiceAgentTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/workload_identity_service_agent#create WorkloadIdentityServiceAgent#create}. |
-| <code><a href="#@cdktn/provider-google.workloadIdentityServiceAgent.WorkloadIdentityServiceAgentTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/workload_identity_service_agent#delete WorkloadIdentityServiceAgent#delete}. |
+| <code><a href="#@cdktn/provider-google.workloadIdentityServiceAgent.WorkloadIdentityServiceAgentTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/workload_identity_service_agent#create WorkloadIdentityServiceAgent#create}. |
+| <code><a href="#@cdktn/provider-google.workloadIdentityServiceAgent.WorkloadIdentityServiceAgentTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/workload_identity_service_agent#delete WorkloadIdentityServiceAgent#delete}. |
 
 ---
 
@@ -982,7 +982,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/workload_identity_service_agent#create WorkloadIdentityServiceAgent#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/workload_identity_service_agent#create WorkloadIdentityServiceAgent#create}.
 
 ---
 
@@ -994,7 +994,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/workload_identity_service_agent#delete WorkloadIdentityServiceAgent#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/workload_identity_service_agent#delete WorkloadIdentityServiceAgent#delete}.
 
 ---
 
@@ -1005,7 +1005,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.workloadIdentityServiceAgent.WorkloadIdentityServiceAgentServiceAgentsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workloadidentityserviceagent"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/workloadidentityserviceagent"
 
 workloadidentityserviceagent.NewWorkloadIdentityServiceAgentServiceAgentsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkloadIdentityServiceAgentServiceAgentsList
 ```
@@ -1154,7 +1154,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.workloadIdentityServiceAgent.WorkloadIdentityServiceAgentServiceAgentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workloadidentityserviceagent"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/workloadidentityserviceagent"
 
 workloadidentityserviceagent.NewWorkloadIdentityServiceAgentServiceAgentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WorkloadIdentityServiceAgentServiceAgentsOutputReference
 ```
@@ -1487,7 +1487,7 @@ func InternalValue() WorkloadIdentityServiceAgentServiceAgents
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.workloadIdentityServiceAgent.WorkloadIdentityServiceAgentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/workloadidentityserviceagent"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/workloadidentityserviceagent"
 
 workloadidentityserviceagent.NewWorkloadIdentityServiceAgentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkloadIdentityServiceAgentTimeoutsOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### DataGoogleMemorystoreAclPolicy <a name="DataGoogleMemorystoreAclPolicy" id="@cdktn/provider-google.dataGoogleMemorystoreAclPolicy.DataGoogleMemorystoreAclPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/memorystore_acl_policy google_memorystore_acl_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/memorystore_acl_policy google_memorystore_acl_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleMemorystoreAclPolicy.DataGoogleMemorystoreAclPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglememorystoreaclpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglememorystoreaclpolicy"
 
 datagooglememorystoreaclpolicy.NewDataGoogleMemorystoreAclPolicy(scope Construct, id *string, config DataGoogleMemorystoreAclPolicyConfig) DataGoogleMemorystoreAclPolicy
 ```
@@ -319,7 +319,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleMemorystoreAclPolicy.DataGoogleMemorystoreAclPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglememorystoreaclpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglememorystoreaclpolicy"
 
 datagooglememorystoreaclpolicy.DataGoogleMemorystoreAclPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleMemorystoreAclPolicy.DataGoogleMemorystoreAclPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglememorystoreaclpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglememorystoreaclpolicy"
 
 datagooglememorystoreaclpolicy.DataGoogleMemorystoreAclPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagooglememorystoreaclpolicy.DataGoogleMemorystoreAclPolicy_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleMemorystoreAclPolicy.DataGoogleMemorystoreAclPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglememorystoreaclpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglememorystoreaclpolicy"
 
 datagooglememorystoreaclpolicy.DataGoogleMemorystoreAclPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ datagooglememorystoreaclpolicy.DataGoogleMemorystoreAclPolicy_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleMemorystoreAclPolicy.DataGoogleMemorystoreAclPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglememorystoreaclpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglememorystoreaclpolicy"
 
 datagooglememorystoreaclpolicy.DataGoogleMemorystoreAclPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -408,7 +408,7 @@ The construct id used in the generated config for the DataGoogleMemorystoreAclPo
 
 The id of the existing DataGoogleMemorystoreAclPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/memorystore_acl_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/memorystore_acl_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -729,7 +729,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleMemorystoreAclPolicy.DataGoogleMemorystoreAclPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglememorystoreaclpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglememorystoreaclpolicy"
 
 &datagooglememorystoreaclpolicy.DataGoogleMemorystoreAclPolicyConfig {
 	Connection: interface{},
@@ -758,9 +758,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglememory
 | <code><a href="#@cdktn/provider-google.dataGoogleMemorystoreAclPolicy.DataGoogleMemorystoreAclPolicyConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleMemorystoreAclPolicy.DataGoogleMemorystoreAclPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleMemorystoreAclPolicy.DataGoogleMemorystoreAclPolicyConfig.property.aclPolicyId">AclPolicyId</a></code> | <code>*string</code> | The logical name of the ACL policy in the customer project with the following restrictions:. |
-| <code><a href="#@cdktn/provider-google.dataGoogleMemorystoreAclPolicy.DataGoogleMemorystoreAclPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/memorystore_acl_policy#id DataGoogleMemorystoreAclPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleMemorystoreAclPolicy.DataGoogleMemorystoreAclPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/memorystore_acl_policy#id DataGoogleMemorystoreAclPolicy#id}. |
 | <code><a href="#@cdktn/provider-google.dataGoogleMemorystoreAclPolicy.DataGoogleMemorystoreAclPolicyConfig.property.location">Location</a></code> | <code>*string</code> | Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122. |
-| <code><a href="#@cdktn/provider-google.dataGoogleMemorystoreAclPolicy.DataGoogleMemorystoreAclPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/memorystore_acl_policy#project DataGoogleMemorystoreAclPolicy#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleMemorystoreAclPolicy.DataGoogleMemorystoreAclPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/memorystore_acl_policy#project DataGoogleMemorystoreAclPolicy#project}. |
 
 ---
 
@@ -850,7 +850,7 @@ The logical name of the ACL policy in the customer project with the following re
 * Must end with a number or a letter.
 * Must be unique within the customer project / location
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/memorystore_acl_policy#acl_policy_id DataGoogleMemorystoreAclPolicy#acl_policy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/memorystore_acl_policy#acl_policy_id DataGoogleMemorystoreAclPolicy#acl_policy_id}
 
 ---
 
@@ -862,7 +862,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/memorystore_acl_policy#id DataGoogleMemorystoreAclPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/memorystore_acl_policy#id DataGoogleMemorystoreAclPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -879,7 +879,7 @@ Location *string
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/memorystore_acl_policy#location DataGoogleMemorystoreAclPolicy#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/memorystore_acl_policy#location DataGoogleMemorystoreAclPolicy#location}
 
 ---
 
@@ -891,7 +891,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/memorystore_acl_policy#project DataGoogleMemorystoreAclPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/memorystore_acl_policy#project DataGoogleMemorystoreAclPolicy#project}.
 
 ---
 
@@ -900,7 +900,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleMemorystoreAclPolicy.DataGoogleMemorystoreAclPolicyRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglememorystoreaclpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglememorystoreaclpolicy"
 
 &datagooglememorystoreaclpolicy.DataGoogleMemorystoreAclPolicyRules {
 
@@ -915,7 +915,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglememory
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleMemorystoreAclPolicy.DataGoogleMemorystoreAclPolicyRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglememorystoreaclpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglememorystoreaclpolicy"
 
 datagooglememorystoreaclpolicy.NewDataGoogleMemorystoreAclPolicyRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleMemorystoreAclPolicyRulesList
 ```
@@ -1064,7 +1064,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleMemorystoreAclPolicy.DataGoogleMemorystoreAclPolicyRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglememorystoreaclpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglememorystoreaclpolicy"
 
 datagooglememorystoreaclpolicy.NewDataGoogleMemorystoreAclPolicyRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleMemorystoreAclPolicyRulesOutputReference
 ```

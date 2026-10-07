@@ -4,12 +4,12 @@
 
 ### StorageInsightsDatasetConfig <a name="StorageInsightsDatasetConfig" id="@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_insights_dataset_config google_storage_insights_dataset_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_insights_dataset_config google_storage_insights_dataset_config}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storageinsightsdatasetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storageinsightsdatasetconfig"
 
 storageinsightsdatasetconfig.NewStorageInsightsDatasetConfig(scope Construct, id *string, config StorageInsightsDatasetConfigConfig) StorageInsightsDatasetConfig
 ```
@@ -616,7 +616,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storageinsightsdatasetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storageinsightsdatasetconfig"
 
 storageinsightsdatasetconfig.StorageInsightsDatasetConfig_IsConstruct(x interface{}) *bool
 ```
@@ -648,7 +648,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storageinsightsdatasetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storageinsightsdatasetconfig"
 
 storageinsightsdatasetconfig.StorageInsightsDatasetConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -662,7 +662,7 @@ storageinsightsdatasetconfig.StorageInsightsDatasetConfig_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storageinsightsdatasetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storageinsightsdatasetconfig"
 
 storageinsightsdatasetconfig.StorageInsightsDatasetConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -676,7 +676,7 @@ storageinsightsdatasetconfig.StorageInsightsDatasetConfig_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storageinsightsdatasetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storageinsightsdatasetconfig"
 
 storageinsightsdatasetconfig.StorageInsightsDatasetConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -705,7 +705,7 @@ The construct id used in the generated config for the StorageInsightsDatasetConf
 
 The id of the existing StorageInsightsDatasetConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_insights_dataset_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_insights_dataset_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1411,7 +1411,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storageinsightsdatasetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storageinsightsdatasetconfig"
 
 &storageinsightsdatasetconfig.StorageInsightsDatasetConfigConfig {
 	Connection: interface{},
@@ -1422,25 +1422,25 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storageinsightsd
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	DatasetConfigId: *string,
-	Identity: github.com/cdktn-io/cdktn-provider-google-go/google/v20.storageInsightsDatasetConfig.StorageInsightsDatasetConfigIdentity,
+	Identity: github.com/cdktn-io/cdktn-provider-google-go/google/v21.storageInsightsDatasetConfig.StorageInsightsDatasetConfigIdentity,
 	Location: *string,
 	RetentionPeriodDays: *f64,
 	ActivityDataRetentionPeriodDays: *f64,
 	DeletionPolicy: *string,
 	Description: *string,
-	ExcludeCloudStorageBuckets: github.com/cdktn-io/cdktn-provider-google-go/google/v20.storageInsightsDatasetConfig.StorageInsightsDatasetConfigExcludeCloudStorageBuckets,
-	ExcludeCloudStorageLocations: github.com/cdktn-io/cdktn-provider-google-go/google/v20.storageInsightsDatasetConfig.StorageInsightsDatasetConfigExcludeCloudStorageLocations,
+	ExcludeCloudStorageBuckets: github.com/cdktn-io/cdktn-provider-google-go/google/v21.storageInsightsDatasetConfig.StorageInsightsDatasetConfigExcludeCloudStorageBuckets,
+	ExcludeCloudStorageLocations: github.com/cdktn-io/cdktn-provider-google-go/google/v21.storageInsightsDatasetConfig.StorageInsightsDatasetConfigExcludeCloudStorageLocations,
 	Id: *string,
-	IncludeCloudStorageBuckets: github.com/cdktn-io/cdktn-provider-google-go/google/v20.storageInsightsDatasetConfig.StorageInsightsDatasetConfigIncludeCloudStorageBuckets,
-	IncludeCloudStorageLocations: github.com/cdktn-io/cdktn-provider-google-go/google/v20.storageInsightsDatasetConfig.StorageInsightsDatasetConfigIncludeCloudStorageLocations,
+	IncludeCloudStorageBuckets: github.com/cdktn-io/cdktn-provider-google-go/google/v21.storageInsightsDatasetConfig.StorageInsightsDatasetConfigIncludeCloudStorageBuckets,
+	IncludeCloudStorageLocations: github.com/cdktn-io/cdktn-provider-google-go/google/v21.storageInsightsDatasetConfig.StorageInsightsDatasetConfigIncludeCloudStorageLocations,
 	IncludeNewlyCreatedBuckets: interface{},
 	LinkDataset: interface{},
 	OrganizationNumber: *string,
 	OrganizationScope: interface{},
 	Project: *string,
-	SourceFolders: github.com/cdktn-io/cdktn-provider-google-go/google/v20.storageInsightsDatasetConfig.StorageInsightsDatasetConfigSourceFolders,
-	SourceProjects: github.com/cdktn-io/cdktn-provider-google-go/google/v20.storageInsightsDatasetConfig.StorageInsightsDatasetConfigSourceProjects,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.storageInsightsDatasetConfig.StorageInsightsDatasetConfigTimeouts,
+	SourceFolders: github.com/cdktn-io/cdktn-provider-google-go/google/v21.storageInsightsDatasetConfig.StorageInsightsDatasetConfigSourceFolders,
+	SourceProjects: github.com/cdktn-io/cdktn-provider-google-go/google/v21.storageInsightsDatasetConfig.StorageInsightsDatasetConfigSourceProjects,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.storageInsightsDatasetConfig.StorageInsightsDatasetConfigTimeouts,
 }
 ```
 
@@ -1464,14 +1464,14 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storageinsightsd
 | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigConfig.property.description">Description</a></code> | <code>*string</code> | An optional user-provided description for the dataset configuration with a maximum length of 256 characters. |
 | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigConfig.property.excludeCloudStorageBuckets">ExcludeCloudStorageBuckets</a></code> | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigExcludeCloudStorageBuckets">StorageInsightsDatasetConfigExcludeCloudStorageBuckets</a></code> | exclude_cloud_storage_buckets block. |
 | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigConfig.property.excludeCloudStorageLocations">ExcludeCloudStorageLocations</a></code> | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigExcludeCloudStorageLocations">StorageInsightsDatasetConfigExcludeCloudStorageLocations</a></code> | exclude_cloud_storage_locations block. |
-| <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_insights_dataset_config#id StorageInsightsDatasetConfig#id}. |
+| <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_insights_dataset_config#id StorageInsightsDatasetConfig#id}. |
 | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigConfig.property.includeCloudStorageBuckets">IncludeCloudStorageBuckets</a></code> | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigIncludeCloudStorageBuckets">StorageInsightsDatasetConfigIncludeCloudStorageBuckets</a></code> | include_cloud_storage_buckets block. |
 | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigConfig.property.includeCloudStorageLocations">IncludeCloudStorageLocations</a></code> | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigIncludeCloudStorageLocations">StorageInsightsDatasetConfigIncludeCloudStorageLocations</a></code> | include_cloud_storage_locations block. |
 | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigConfig.property.includeNewlyCreatedBuckets">IncludeNewlyCreatedBuckets</a></code> | <code>interface{}</code> | If set to true, the request includes all the newly created buckets in the dataset that meet the inclusion and exclusion rules. |
 | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigConfig.property.linkDataset">LinkDataset</a></code> | <code>interface{}</code> | A boolean terraform only flag to link/unlink dataset. |
 | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigConfig.property.organizationNumber">OrganizationNumber</a></code> | <code>*string</code> | Organization resource ID that the source projects should belong to. |
 | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigConfig.property.organizationScope">OrganizationScope</a></code> | <code>interface{}</code> | Defines the options for providing a source organization for the DatasetConfig. |
-| <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_insights_dataset_config#project StorageInsightsDatasetConfig#project}. |
+| <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_insights_dataset_config#project StorageInsightsDatasetConfig#project}. |
 | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigConfig.property.sourceFolders">SourceFolders</a></code> | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigSourceFolders">StorageInsightsDatasetConfigSourceFolders</a></code> | source_folders block. |
 | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigConfig.property.sourceProjects">SourceProjects</a></code> | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigSourceProjects">StorageInsightsDatasetConfigSourceProjects</a></code> | source_projects block. |
 | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigTimeouts">StorageInsightsDatasetConfigTimeouts</a></code> | timeouts block. |
@@ -1558,7 +1558,7 @@ DatasetConfigId *string
 
 The user-defined ID of the DatasetConfig.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_insights_dataset_config#dataset_config_id StorageInsightsDatasetConfig#dataset_config_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_insights_dataset_config#dataset_config_id StorageInsightsDatasetConfig#dataset_config_id}
 
 ---
 
@@ -1572,7 +1572,7 @@ Identity StorageInsightsDatasetConfigIdentity
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_insights_dataset_config#identity StorageInsightsDatasetConfig#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_insights_dataset_config#identity StorageInsightsDatasetConfig#identity}
 
 ---
 
@@ -1586,7 +1586,7 @@ Location *string
 
 The location of the DatasetConfig.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_insights_dataset_config#location StorageInsightsDatasetConfig#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_insights_dataset_config#location StorageInsightsDatasetConfig#location}
 
 ---
 
@@ -1600,7 +1600,7 @@ RetentionPeriodDays *f64
 
 Number of days of history that must be retained.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_insights_dataset_config#retention_period_days StorageInsightsDatasetConfig#retention_period_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_insights_dataset_config#retention_period_days StorageInsightsDatasetConfig#retention_period_days}
 
 ---
 
@@ -1616,7 +1616,7 @@ Number of days of activity data that must be retained.
 
 If not specified, retentionPeriodDays will be used. Set to 0 to turn off the activity data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_insights_dataset_config#activity_data_retention_period_days StorageInsightsDatasetConfig#activity_data_retention_period_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_insights_dataset_config#activity_data_retention_period_days StorageInsightsDatasetConfig#activity_data_retention_period_days}
 
 ---
 
@@ -1637,7 +1637,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_insights_dataset_config#deletion_policy StorageInsightsDatasetConfig#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_insights_dataset_config#deletion_policy StorageInsightsDatasetConfig#deletion_policy}
 
 ---
 
@@ -1651,7 +1651,7 @@ Description *string
 
 An optional user-provided description for the dataset configuration with a maximum length of 256 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_insights_dataset_config#description StorageInsightsDatasetConfig#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_insights_dataset_config#description StorageInsightsDatasetConfig#description}
 
 ---
 
@@ -1665,7 +1665,7 @@ ExcludeCloudStorageBuckets StorageInsightsDatasetConfigExcludeCloudStorageBucket
 
 exclude_cloud_storage_buckets block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_insights_dataset_config#exclude_cloud_storage_buckets StorageInsightsDatasetConfig#exclude_cloud_storage_buckets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_insights_dataset_config#exclude_cloud_storage_buckets StorageInsightsDatasetConfig#exclude_cloud_storage_buckets}
 
 ---
 
@@ -1679,7 +1679,7 @@ ExcludeCloudStorageLocations StorageInsightsDatasetConfigExcludeCloudStorageLoca
 
 exclude_cloud_storage_locations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_insights_dataset_config#exclude_cloud_storage_locations StorageInsightsDatasetConfig#exclude_cloud_storage_locations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_insights_dataset_config#exclude_cloud_storage_locations StorageInsightsDatasetConfig#exclude_cloud_storage_locations}
 
 ---
 
@@ -1691,7 +1691,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_insights_dataset_config#id StorageInsightsDatasetConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_insights_dataset_config#id StorageInsightsDatasetConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1708,7 +1708,7 @@ IncludeCloudStorageBuckets StorageInsightsDatasetConfigIncludeCloudStorageBucket
 
 include_cloud_storage_buckets block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_insights_dataset_config#include_cloud_storage_buckets StorageInsightsDatasetConfig#include_cloud_storage_buckets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_insights_dataset_config#include_cloud_storage_buckets StorageInsightsDatasetConfig#include_cloud_storage_buckets}
 
 ---
 
@@ -1722,7 +1722,7 @@ IncludeCloudStorageLocations StorageInsightsDatasetConfigIncludeCloudStorageLoca
 
 include_cloud_storage_locations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_insights_dataset_config#include_cloud_storage_locations StorageInsightsDatasetConfig#include_cloud_storage_locations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_insights_dataset_config#include_cloud_storage_locations StorageInsightsDatasetConfig#include_cloud_storage_locations}
 
 ---
 
@@ -1736,7 +1736,7 @@ IncludeNewlyCreatedBuckets interface{}
 
 If set to true, the request includes all the newly created buckets in the dataset that meet the inclusion and exclusion rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_insights_dataset_config#include_newly_created_buckets StorageInsightsDatasetConfig#include_newly_created_buckets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_insights_dataset_config#include_newly_created_buckets StorageInsightsDatasetConfig#include_newly_created_buckets}
 
 ---
 
@@ -1754,7 +1754,7 @@ Setting this field to true while creation will automatically link the created da
 -> **Note** A dataset config resource can only be destroyed once it is unlinked,
 so users must set this field to false to unlink the dataset and destroy the dataset config resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_insights_dataset_config#link_dataset StorageInsightsDatasetConfig#link_dataset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_insights_dataset_config#link_dataset StorageInsightsDatasetConfig#link_dataset}
 
 ---
 
@@ -1770,7 +1770,7 @@ Organization resource ID that the source projects should belong to.
 
 Projects that do not belong to the provided organization are not considered when creating the dataset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_insights_dataset_config#organization_number StorageInsightsDatasetConfig#organization_number}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_insights_dataset_config#organization_number StorageInsightsDatasetConfig#organization_number}
 
 ---
 
@@ -1784,7 +1784,7 @@ OrganizationScope interface{}
 
 Defines the options for providing a source organization for the DatasetConfig.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_insights_dataset_config#organization_scope StorageInsightsDatasetConfig#organization_scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_insights_dataset_config#organization_scope StorageInsightsDatasetConfig#organization_scope}
 
 ---
 
@@ -1796,7 +1796,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_insights_dataset_config#project StorageInsightsDatasetConfig#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_insights_dataset_config#project StorageInsightsDatasetConfig#project}.
 
 ---
 
@@ -1810,7 +1810,7 @@ SourceFolders StorageInsightsDatasetConfigSourceFolders
 
 source_folders block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_insights_dataset_config#source_folders StorageInsightsDatasetConfig#source_folders}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_insights_dataset_config#source_folders StorageInsightsDatasetConfig#source_folders}
 
 ---
 
@@ -1824,7 +1824,7 @@ SourceProjects StorageInsightsDatasetConfigSourceProjects
 
 source_projects block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_insights_dataset_config#source_projects StorageInsightsDatasetConfig#source_projects}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_insights_dataset_config#source_projects StorageInsightsDatasetConfig#source_projects}
 
 ---
 
@@ -1838,7 +1838,7 @@ Timeouts StorageInsightsDatasetConfigTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_insights_dataset_config#timeouts StorageInsightsDatasetConfig#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_insights_dataset_config#timeouts StorageInsightsDatasetConfig#timeouts}
 
 ---
 
@@ -1847,7 +1847,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigExcludeCloudStorageBuckets.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storageinsightsdatasetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storageinsightsdatasetconfig"
 
 &storageinsightsdatasetconfig.StorageInsightsDatasetConfigExcludeCloudStorageBuckets {
 	CloudStorageBuckets: interface{},
@@ -1872,7 +1872,7 @@ CloudStorageBuckets interface{}
 
 cloud_storage_buckets block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_insights_dataset_config#cloud_storage_buckets StorageInsightsDatasetConfig#cloud_storage_buckets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_insights_dataset_config#cloud_storage_buckets StorageInsightsDatasetConfig#cloud_storage_buckets}
 
 ---
 
@@ -1881,7 +1881,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigExcludeCloudStorageBucketsCloudStorageBuckets.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storageinsightsdatasetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storageinsightsdatasetconfig"
 
 &storageinsightsdatasetconfig.StorageInsightsDatasetConfigExcludeCloudStorageBucketsCloudStorageBuckets {
 	BucketName: *string,
@@ -1910,7 +1910,7 @@ The list of cloud storage bucket names to exclude in the DatasetConfig.
 
 Exactly one of the bucket_name and bucket_prefix_regex should be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_insights_dataset_config#bucket_name StorageInsightsDatasetConfig#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_insights_dataset_config#bucket_name StorageInsightsDatasetConfig#bucket_name}
 
 ---
 
@@ -1927,7 +1927,7 @@ The list of regex patterns for bucket names matching the regex.
 Regex should follow the syntax specified in google/re2 on GitHub.
 Exactly one of the bucket_name and bucket_prefix_regex should be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_insights_dataset_config#bucket_prefix_regex StorageInsightsDatasetConfig#bucket_prefix_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_insights_dataset_config#bucket_prefix_regex StorageInsightsDatasetConfig#bucket_prefix_regex}
 
 ---
 
@@ -1936,7 +1936,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigExcludeCloudStorageLocations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storageinsightsdatasetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storageinsightsdatasetconfig"
 
 &storageinsightsdatasetconfig.StorageInsightsDatasetConfigExcludeCloudStorageLocations {
 	Locations: *[]*string,
@@ -1961,7 +1961,7 @@ Locations *[]*string
 
 The list of cloud storage locations to exclude in the DatasetConfig.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_insights_dataset_config#locations StorageInsightsDatasetConfig#locations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_insights_dataset_config#locations StorageInsightsDatasetConfig#locations}
 
 ---
 
@@ -1970,7 +1970,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storageinsightsdatasetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storageinsightsdatasetconfig"
 
 &storageinsightsdatasetconfig.StorageInsightsDatasetConfigIdentity {
 	Type: *string,
@@ -1995,7 +1995,7 @@ Type *string
 
 Type of identity to use for the DatasetConfig. Possible values: ["IDENTITY_TYPE_PER_CONFIG", "IDENTITY_TYPE_PER_PROJECT"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_insights_dataset_config#type StorageInsightsDatasetConfig#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_insights_dataset_config#type StorageInsightsDatasetConfig#type}
 
 ---
 
@@ -2004,7 +2004,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigIncludeCloudStorageBuckets.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storageinsightsdatasetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storageinsightsdatasetconfig"
 
 &storageinsightsdatasetconfig.StorageInsightsDatasetConfigIncludeCloudStorageBuckets {
 	CloudStorageBuckets: interface{},
@@ -2029,7 +2029,7 @@ CloudStorageBuckets interface{}
 
 cloud_storage_buckets block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_insights_dataset_config#cloud_storage_buckets StorageInsightsDatasetConfig#cloud_storage_buckets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_insights_dataset_config#cloud_storage_buckets StorageInsightsDatasetConfig#cloud_storage_buckets}
 
 ---
 
@@ -2038,7 +2038,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigIncludeCloudStorageBucketsCloudStorageBuckets.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storageinsightsdatasetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storageinsightsdatasetconfig"
 
 &storageinsightsdatasetconfig.StorageInsightsDatasetConfigIncludeCloudStorageBucketsCloudStorageBuckets {
 	BucketName: *string,
@@ -2067,7 +2067,7 @@ The list of cloud storage bucket names to include in the DatasetConfig.
 
 Exactly one of the bucket_name and bucket_prefix_regex should be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_insights_dataset_config#bucket_name StorageInsightsDatasetConfig#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_insights_dataset_config#bucket_name StorageInsightsDatasetConfig#bucket_name}
 
 ---
 
@@ -2084,7 +2084,7 @@ The list of regex patterns for bucket names matching the regex.
 Regex should follow the syntax specified in google/re2 on GitHub.
 Exactly one of the bucket_name and bucket_prefix_regex should be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_insights_dataset_config#bucket_prefix_regex StorageInsightsDatasetConfig#bucket_prefix_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_insights_dataset_config#bucket_prefix_regex StorageInsightsDatasetConfig#bucket_prefix_regex}
 
 ---
 
@@ -2093,7 +2093,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigIncludeCloudStorageLocations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storageinsightsdatasetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storageinsightsdatasetconfig"
 
 &storageinsightsdatasetconfig.StorageInsightsDatasetConfigIncludeCloudStorageLocations {
 	Locations: *[]*string,
@@ -2118,7 +2118,7 @@ Locations *[]*string
 
 The list of cloud storage locations to include in the DatasetConfig.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_insights_dataset_config#locations StorageInsightsDatasetConfig#locations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_insights_dataset_config#locations StorageInsightsDatasetConfig#locations}
 
 ---
 
@@ -2127,7 +2127,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigLink.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storageinsightsdatasetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storageinsightsdatasetconfig"
 
 &storageinsightsdatasetconfig.StorageInsightsDatasetConfigLink {
 
@@ -2140,7 +2140,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storageinsightsd
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigSourceFolders.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storageinsightsdatasetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storageinsightsdatasetconfig"
 
 &storageinsightsdatasetconfig.StorageInsightsDatasetConfigSourceFolders {
 	FolderNumbers: *[]*string,
@@ -2165,7 +2165,7 @@ FolderNumbers *[]*string
 
 The list of folder numbers to include in the DatasetConfig.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_insights_dataset_config#folder_numbers StorageInsightsDatasetConfig#folder_numbers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_insights_dataset_config#folder_numbers StorageInsightsDatasetConfig#folder_numbers}
 
 ---
 
@@ -2174,7 +2174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigSourceProjects.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storageinsightsdatasetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storageinsightsdatasetconfig"
 
 &storageinsightsdatasetconfig.StorageInsightsDatasetConfigSourceProjects {
 	ProjectNumbers: *[]*string,
@@ -2199,7 +2199,7 @@ ProjectNumbers *[]*string
 
 The list of project numbers to include in the DatasetConfig.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_insights_dataset_config#project_numbers StorageInsightsDatasetConfig#project_numbers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_insights_dataset_config#project_numbers StorageInsightsDatasetConfig#project_numbers}
 
 ---
 
@@ -2208,7 +2208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storageinsightsdatasetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storageinsightsdatasetconfig"
 
 &storageinsightsdatasetconfig.StorageInsightsDatasetConfigTimeouts {
 	Create: *string,
@@ -2221,9 +2221,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storageinsightsd
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_insights_dataset_config#create StorageInsightsDatasetConfig#create}. |
-| <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_insights_dataset_config#delete StorageInsightsDatasetConfig#delete}. |
-| <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_insights_dataset_config#update StorageInsightsDatasetConfig#update}. |
+| <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_insights_dataset_config#create StorageInsightsDatasetConfig#create}. |
+| <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_insights_dataset_config#delete StorageInsightsDatasetConfig#delete}. |
+| <code><a href="#@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_insights_dataset_config#update StorageInsightsDatasetConfig#update}. |
 
 ---
 
@@ -2235,7 +2235,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_insights_dataset_config#create StorageInsightsDatasetConfig#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_insights_dataset_config#create StorageInsightsDatasetConfig#create}.
 
 ---
 
@@ -2247,7 +2247,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_insights_dataset_config#delete StorageInsightsDatasetConfig#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_insights_dataset_config#delete StorageInsightsDatasetConfig#delete}.
 
 ---
 
@@ -2259,7 +2259,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/storage_insights_dataset_config#update StorageInsightsDatasetConfig#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/storage_insights_dataset_config#update StorageInsightsDatasetConfig#update}.
 
 ---
 
@@ -2270,7 +2270,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigExcludeCloudStorageBucketsCloudStorageBucketsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storageinsightsdatasetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storageinsightsdatasetconfig"
 
 storageinsightsdatasetconfig.NewStorageInsightsDatasetConfigExcludeCloudStorageBucketsCloudStorageBucketsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StorageInsightsDatasetConfigExcludeCloudStorageBucketsCloudStorageBucketsList
 ```
@@ -2430,7 +2430,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigExcludeCloudStorageBucketsCloudStorageBucketsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storageinsightsdatasetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storageinsightsdatasetconfig"
 
 storageinsightsdatasetconfig.NewStorageInsightsDatasetConfigExcludeCloudStorageBucketsCloudStorageBucketsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StorageInsightsDatasetConfigExcludeCloudStorageBucketsCloudStorageBucketsOutputReference
 ```
@@ -2755,7 +2755,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigExcludeCloudStorageBucketsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storageinsightsdatasetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storageinsightsdatasetconfig"
 
 storageinsightsdatasetconfig.NewStorageInsightsDatasetConfigExcludeCloudStorageBucketsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageInsightsDatasetConfigExcludeCloudStorageBucketsOutputReference
 ```
@@ -3039,7 +3039,7 @@ func InternalValue() StorageInsightsDatasetConfigExcludeCloudStorageBuckets
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigExcludeCloudStorageLocationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storageinsightsdatasetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storageinsightsdatasetconfig"
 
 storageinsightsdatasetconfig.NewStorageInsightsDatasetConfigExcludeCloudStorageLocationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageInsightsDatasetConfigExcludeCloudStorageLocationsOutputReference
 ```
@@ -3310,7 +3310,7 @@ func InternalValue() StorageInsightsDatasetConfigExcludeCloudStorageLocations
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storageinsightsdatasetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storageinsightsdatasetconfig"
 
 storageinsightsdatasetconfig.NewStorageInsightsDatasetConfigIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageInsightsDatasetConfigIdentityOutputReference
 ```
@@ -3592,7 +3592,7 @@ func InternalValue() StorageInsightsDatasetConfigIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigIncludeCloudStorageBucketsCloudStorageBucketsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storageinsightsdatasetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storageinsightsdatasetconfig"
 
 storageinsightsdatasetconfig.NewStorageInsightsDatasetConfigIncludeCloudStorageBucketsCloudStorageBucketsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StorageInsightsDatasetConfigIncludeCloudStorageBucketsCloudStorageBucketsList
 ```
@@ -3752,7 +3752,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigIncludeCloudStorageBucketsCloudStorageBucketsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storageinsightsdatasetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storageinsightsdatasetconfig"
 
 storageinsightsdatasetconfig.NewStorageInsightsDatasetConfigIncludeCloudStorageBucketsCloudStorageBucketsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StorageInsightsDatasetConfigIncludeCloudStorageBucketsCloudStorageBucketsOutputReference
 ```
@@ -4077,7 +4077,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigIncludeCloudStorageBucketsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storageinsightsdatasetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storageinsightsdatasetconfig"
 
 storageinsightsdatasetconfig.NewStorageInsightsDatasetConfigIncludeCloudStorageBucketsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageInsightsDatasetConfigIncludeCloudStorageBucketsOutputReference
 ```
@@ -4361,7 +4361,7 @@ func InternalValue() StorageInsightsDatasetConfigIncludeCloudStorageBuckets
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigIncludeCloudStorageLocationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storageinsightsdatasetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storageinsightsdatasetconfig"
 
 storageinsightsdatasetconfig.NewStorageInsightsDatasetConfigIncludeCloudStorageLocationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageInsightsDatasetConfigIncludeCloudStorageLocationsOutputReference
 ```
@@ -4632,7 +4632,7 @@ func InternalValue() StorageInsightsDatasetConfigIncludeCloudStorageLocations
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigLinkList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storageinsightsdatasetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storageinsightsdatasetconfig"
 
 storageinsightsdatasetconfig.NewStorageInsightsDatasetConfigLinkList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StorageInsightsDatasetConfigLinkList
 ```
@@ -4781,7 +4781,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigLinkOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storageinsightsdatasetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storageinsightsdatasetconfig"
 
 storageinsightsdatasetconfig.NewStorageInsightsDatasetConfigLinkOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StorageInsightsDatasetConfigLinkOutputReference
 ```
@@ -5070,7 +5070,7 @@ func InternalValue() StorageInsightsDatasetConfigLink
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigSourceFoldersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storageinsightsdatasetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storageinsightsdatasetconfig"
 
 storageinsightsdatasetconfig.NewStorageInsightsDatasetConfigSourceFoldersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageInsightsDatasetConfigSourceFoldersOutputReference
 ```
@@ -5348,7 +5348,7 @@ func InternalValue() StorageInsightsDatasetConfigSourceFolders
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigSourceProjectsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storageinsightsdatasetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storageinsightsdatasetconfig"
 
 storageinsightsdatasetconfig.NewStorageInsightsDatasetConfigSourceProjectsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageInsightsDatasetConfigSourceProjectsOutputReference
 ```
@@ -5626,7 +5626,7 @@ func InternalValue() StorageInsightsDatasetConfigSourceProjects
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/storageinsightsdatasetconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/storageinsightsdatasetconfig"
 
 storageinsightsdatasetconfig.NewStorageInsightsDatasetConfigTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageInsightsDatasetConfigTimeoutsOutputReference
 ```

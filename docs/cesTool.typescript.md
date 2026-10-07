@@ -4,7 +4,7 @@
 
 ### CesTool <a name="CesTool" id="@cdktn/provider-google.cesTool.CesTool"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool google_ces_tool}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool google_ces_tool}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cesTool.CesTool.Initializer"></a>
 
@@ -704,7 +704,7 @@ The construct id used in the generated config for the CesTool to import.
 
 The id of the existing CesTool that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1424,7 +1424,7 @@ public readonly name: string;
 
 Required. The name of the agent tool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#name CesTool#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#name CesTool#name}
 
 ---
 
@@ -1438,7 +1438,7 @@ public readonly agent: string;
 
 Optional. The resource name of the agent that is the entry point of the tool. Format: projects/{project}/locations/{location}/agents/{agent}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#agent CesTool#agent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#agent CesTool#agent}
 
 ---
 
@@ -1452,7 +1452,7 @@ public readonly description: string;
 
 Optional. Description of the tool's purpose.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#description CesTool#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#description CesTool#description}
 
 ---
 
@@ -1487,7 +1487,7 @@ public readonly name: string;
 
 The function name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#name CesTool#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#name CesTool#name}
 
 ---
 
@@ -1501,7 +1501,7 @@ public readonly description: string;
 
 The function description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#description CesTool#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#description CesTool#description}
 
 ---
 
@@ -1515,7 +1515,7 @@ public readonly parameters: CesToolClientFunctionParameters;
 
 parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#parameters CesTool#parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#parameters CesTool#parameters}
 
 ---
 
@@ -1529,7 +1529,7 @@ public readonly response: CesToolClientFunctionResponse;
 
 response block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#response CesTool#response}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#response CesTool#response}
 
 ---
 
@@ -1579,7 +1579,7 @@ public readonly type: string;
 
 The type of the data. Possible values: STRING INTEGER NUMBER BOOLEAN OBJECT ARRAY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#type CesTool#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#type CesTool#type}
 
 ---
 
@@ -1596,7 +1596,7 @@ Defines the schema for additional properties allowed in an object.
 The value must be a valid JSON string representing the Schema object.
 (Note: OpenAPI also allows a boolean, this definition expects a Schema JSON).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#additional_properties CesTool#additional_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#additional_properties CesTool#additional_properties}
 
 ---
 
@@ -1610,7 +1610,7 @@ public readonly anyOf: string;
 
 The instance value should be valid against at least one of the schemas in this list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#any_of CesTool#any_of}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#any_of CesTool#any_of}
 
 ---
 
@@ -1629,7 +1629,7 @@ which can be either null, a number, a string, a boolean, a struct,
 or a list of values. The provided default value must be compatible
 with the defined 'type' and other schema constraints.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#default CesTool#default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#default CesTool#default}
 
 ---
 
@@ -1643,7 +1643,7 @@ public readonly defs: string;
 
 A map of definitions for use by ref. Only allowed at the root of the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#defs CesTool#defs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#defs CesTool#defs}
 
 ---
 
@@ -1657,7 +1657,7 @@ public readonly description: string;
 
 The description of the data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#description CesTool#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#description CesTool#description}
 
 ---
 
@@ -1677,7 +1677,7 @@ Examples:
 2. We can define apartment number as :
 {type:INTEGER, format:enum, enum:["101", "201", "301"]}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#enum CesTool#enum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#enum CesTool#enum}
 
 ---
 
@@ -1691,7 +1691,7 @@ public readonly items: string;
 
 Schema of the elements of Type.ARRAY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#items CesTool#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#items CesTool#items}
 
 ---
 
@@ -1705,7 +1705,7 @@ public readonly maximum: number;
 
 Maximum value for Type.INTEGER and Type.NUMBER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#maximum CesTool#maximum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#maximum CesTool#maximum}
 
 ---
 
@@ -1719,7 +1719,7 @@ public readonly maxItems: number;
 
 Maximum number of the elements for Type.ARRAY. (int64 format).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#max_items CesTool#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#max_items CesTool#max_items}
 
 ---
 
@@ -1733,7 +1733,7 @@ public readonly minimum: number;
 
 Minimum value for Type.INTEGER and Type.NUMBER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#minimum CesTool#minimum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#minimum CesTool#minimum}
 
 ---
 
@@ -1747,7 +1747,7 @@ public readonly minItems: number;
 
 Minimum number of the elements for Type.ARRAY. (int64 format).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#min_items CesTool#min_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#min_items CesTool#min_items}
 
 ---
 
@@ -1761,7 +1761,7 @@ public readonly nullable: boolean | IResolvable;
 
 Indicates if the value may be null.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#nullable CesTool#nullable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#nullable CesTool#nullable}
 
 ---
 
@@ -1775,7 +1775,7 @@ public readonly prefixItems: string;
 
 Schemas of initial elements of Type.ARRAY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#prefix_items CesTool#prefix_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#prefix_items CesTool#prefix_items}
 
 ---
 
@@ -1789,7 +1789,7 @@ public readonly properties: string;
 
 Properties of Type.OBJECT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#properties CesTool#properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#properties CesTool#properties}
 
 ---
 
@@ -1822,7 +1822,7 @@ named "Pet".
 See details in
 https://json-schema.org/understanding-json-schema/structuring.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#ref CesTool#ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#ref CesTool#ref}
 
 ---
 
@@ -1836,7 +1836,7 @@ public readonly required: string[];
 
 Required properties of Type.OBJECT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#required CesTool#required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#required CesTool#required}
 
 ---
 
@@ -1850,7 +1850,7 @@ public readonly title: string;
 
 The title of the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#title CesTool#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#title CesTool#title}
 
 ---
 
@@ -1864,7 +1864,7 @@ public readonly uniqueItems: boolean | IResolvable;
 
 Indicate the items in the array must be unique. Only applies to TYPE.ARRAY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#unique_items CesTool#unique_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#unique_items CesTool#unique_items}
 
 ---
 
@@ -1914,7 +1914,7 @@ public readonly type: string;
 
 The type of the data. Possible values: STRING INTEGER NUMBER BOOLEAN OBJECT ARRAY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#type CesTool#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#type CesTool#type}
 
 ---
 
@@ -1931,7 +1931,7 @@ Defines the schema for additional properties allowed in an object.
 The value must be a valid JSON string representing the Schema object.
 (Note: OpenAPI also allows a boolean, this definition expects a Schema JSON).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#additional_properties CesTool#additional_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#additional_properties CesTool#additional_properties}
 
 ---
 
@@ -1945,7 +1945,7 @@ public readonly anyOf: string;
 
 The instance value should be valid against at least one of the schemas in this list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#any_of CesTool#any_of}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#any_of CesTool#any_of}
 
 ---
 
@@ -1964,7 +1964,7 @@ which can be either null, a number, a string, a boolean, a struct,
 or a list of values. The provided default value must be compatible
 with the defined 'type' and other schema constraints.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#default CesTool#default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#default CesTool#default}
 
 ---
 
@@ -1978,7 +1978,7 @@ public readonly defs: string;
 
 A map of definitions for use by ref. Only allowed at the root of the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#defs CesTool#defs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#defs CesTool#defs}
 
 ---
 
@@ -1992,7 +1992,7 @@ public readonly description: string;
 
 The description of the data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#description CesTool#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#description CesTool#description}
 
 ---
 
@@ -2012,7 +2012,7 @@ Examples:
 2. We can define apartment number as :
 {type:INTEGER, format:enum, enum:["101", "201", "301"]}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#enum CesTool#enum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#enum CesTool#enum}
 
 ---
 
@@ -2026,7 +2026,7 @@ public readonly items: string;
 
 Schema of the elements of Type.ARRAY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#items CesTool#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#items CesTool#items}
 
 ---
 
@@ -2040,7 +2040,7 @@ public readonly maximum: number;
 
 Maximum value for Type.INTEGER and Type.NUMBER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#maximum CesTool#maximum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#maximum CesTool#maximum}
 
 ---
 
@@ -2054,7 +2054,7 @@ public readonly maxItems: number;
 
 Maximum number of the elements for Type.ARRAY. (int64 format).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#max_items CesTool#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#max_items CesTool#max_items}
 
 ---
 
@@ -2068,7 +2068,7 @@ public readonly minimum: number;
 
 Minimum value for Type.INTEGER and Type.NUMBER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#minimum CesTool#minimum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#minimum CesTool#minimum}
 
 ---
 
@@ -2082,7 +2082,7 @@ public readonly minItems: number;
 
 Minimum number of the elements for Type.ARRAY. (int64 format).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#min_items CesTool#min_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#min_items CesTool#min_items}
 
 ---
 
@@ -2096,7 +2096,7 @@ public readonly nullable: boolean | IResolvable;
 
 Indicates if the value may be null.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#nullable CesTool#nullable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#nullable CesTool#nullable}
 
 ---
 
@@ -2110,7 +2110,7 @@ public readonly prefixItems: string;
 
 Schemas of initial elements of Type.ARRAY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#prefix_items CesTool#prefix_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#prefix_items CesTool#prefix_items}
 
 ---
 
@@ -2124,7 +2124,7 @@ public readonly properties: string;
 
 Properties of Type.OBJECT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#properties CesTool#properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#properties CesTool#properties}
 
 ---
 
@@ -2157,7 +2157,7 @@ named "Pet".
 See details in
 https://json-schema.org/understanding-json-schema/structuring.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#ref CesTool#ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#ref CesTool#ref}
 
 ---
 
@@ -2171,7 +2171,7 @@ public readonly required: string[];
 
 Required properties of Type.OBJECT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#required CesTool#required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#required CesTool#required}
 
 ---
 
@@ -2185,7 +2185,7 @@ public readonly title: string;
 
 The title of the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#title CesTool#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#title CesTool#title}
 
 ---
 
@@ -2199,7 +2199,7 @@ public readonly uniqueItems: boolean | IResolvable;
 
 Indicate the items in the array must be unique. Only applies to TYPE.ARRAY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#unique_items CesTool#unique_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#unique_items CesTool#unique_items}
 
 ---
 
@@ -2234,8 +2234,8 @@ const cesToolConfig: cesTool.CesToolConfig = { ... }
 | <code><a href="#@cdktn/provider-google.cesTool.CesToolConfig.property.executionType">executionType</a></code> | <code>string</code> | Possible values: SYNCHRONOUS ASYNCHRONOUS. |
 | <code><a href="#@cdktn/provider-google.cesTool.CesToolConfig.property.fileSearchTool">fileSearchTool</a></code> | <code><a href="#@cdktn/provider-google.cesTool.CesToolFileSearchTool">CesToolFileSearchTool</a></code> | file_search_tool block. |
 | <code><a href="#@cdktn/provider-google.cesTool.CesToolConfig.property.googleSearchTool">googleSearchTool</a></code> | <code><a href="#@cdktn/provider-google.cesTool.CesToolGoogleSearchTool">CesToolGoogleSearchTool</a></code> | google_search_tool block. |
-| <code><a href="#@cdktn/provider-google.cesTool.CesToolConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#id CesTool#id}. |
-| <code><a href="#@cdktn/provider-google.cesTool.CesToolConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#project CesTool#project}. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#id CesTool#id}. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#project CesTool#project}. |
 | <code><a href="#@cdktn/provider-google.cesTool.CesToolConfig.property.pythonFunction">pythonFunction</a></code> | <code><a href="#@cdktn/provider-google.cesTool.CesToolPythonFunction">CesToolPythonFunction</a></code> | python_function block. |
 | <code><a href="#@cdktn/provider-google.cesTool.CesToolConfig.property.timeout">timeout</a></code> | <code>string</code> | The timeout for the tool execution. |
 | <code><a href="#@cdktn/provider-google.cesTool.CesToolConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.cesTool.CesToolTimeouts">CesToolTimeouts</a></code> | timeouts block. |
@@ -2324,7 +2324,7 @@ public readonly app: string;
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#app CesTool#app}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#app CesTool#app}
 
 ---
 
@@ -2338,7 +2338,7 @@ public readonly location: string;
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#location CesTool#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#location CesTool#location}
 
 ---
 
@@ -2355,7 +2355,7 @@ The ID to use for the tool, which will become the final component of the tool's 
 If not provided, a unique ID will be
 automatically assigned for the tool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#tool_id CesTool#tool_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#tool_id CesTool#tool_id}
 
 ---
 
@@ -2369,7 +2369,7 @@ public readonly agentTool: CesToolAgentTool;
 
 agent_tool block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#agent_tool CesTool#agent_tool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#agent_tool CesTool#agent_tool}
 
 ---
 
@@ -2383,7 +2383,7 @@ public readonly clientFunction: CesToolClientFunction;
 
 client_function block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#client_function CesTool#client_function}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#client_function CesTool#client_function}
 
 ---
 
@@ -2397,7 +2397,7 @@ public readonly dataStoreTool: CesToolDataStoreTool;
 
 data_store_tool block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#data_store_tool CesTool#data_store_tool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#data_store_tool CesTool#data_store_tool}
 
 ---
 
@@ -2419,7 +2419,7 @@ management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#deletion_policy CesTool#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#deletion_policy CesTool#deletion_policy}
 
 ---
 
@@ -2433,7 +2433,7 @@ public readonly executionType: string;
 
 Possible values: SYNCHRONOUS ASYNCHRONOUS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#execution_type CesTool#execution_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#execution_type CesTool#execution_type}
 
 ---
 
@@ -2447,7 +2447,7 @@ public readonly fileSearchTool: CesToolFileSearchTool;
 
 file_search_tool block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#file_search_tool CesTool#file_search_tool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#file_search_tool CesTool#file_search_tool}
 
 ---
 
@@ -2461,7 +2461,7 @@ public readonly googleSearchTool: CesToolGoogleSearchTool;
 
 google_search_tool block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#google_search_tool CesTool#google_search_tool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#google_search_tool CesTool#google_search_tool}
 
 ---
 
@@ -2473,7 +2473,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#id CesTool#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#id CesTool#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2488,7 +2488,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#project CesTool#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#project CesTool#project}.
 
 ---
 
@@ -2502,7 +2502,7 @@ public readonly pythonFunction: CesToolPythonFunction;
 
 python_function block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#python_function CesTool#python_function}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#python_function CesTool#python_function}
 
 ---
 
@@ -2519,7 +2519,7 @@ The timeout for the tool execution.
 If not set, the default timeout is 30
 seconds for SYNCHRONOUS tools and 60 seconds for ASYNCHRONOUS tools.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#timeout CesTool#timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#timeout CesTool#timeout}
 
 ---
 
@@ -2533,7 +2533,7 @@ public readonly timeouts: CesToolTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#timeouts CesTool#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#timeouts CesTool#timeouts}
 
 ---
 
@@ -2547,7 +2547,7 @@ public readonly toolFakeConfig: CesToolToolFakeConfig;
 
 tool_fake_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#tool_fake_config CesTool#tool_fake_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#tool_fake_config CesTool#tool_fake_config}
 
 ---
 
@@ -2561,7 +2561,7 @@ public readonly widgetTool: CesToolWidgetTool;
 
 widget_tool block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#widget_tool CesTool#widget_tool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#widget_tool CesTool#widget_tool}
 
 ---
 
@@ -2633,7 +2633,7 @@ public readonly name: string;
 
 The data store tool name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#name CesTool#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#name CesTool#name}
 
 ---
 
@@ -2647,7 +2647,7 @@ public readonly boostSpecs: IResolvable | CesToolDataStoreToolBoostSpecs[];
 
 boost_specs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#boost_specs CesTool#boost_specs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#boost_specs CesTool#boost_specs}
 
 ---
 
@@ -2661,7 +2661,7 @@ public readonly dataStoreSource: CesToolDataStoreToolDataStoreSource;
 
 data_store_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#data_store_source CesTool#data_store_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#data_store_source CesTool#data_store_source}
 
 ---
 
@@ -2675,7 +2675,7 @@ public readonly description: string;
 
 The tool description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#description CesTool#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#description CesTool#description}
 
 ---
 
@@ -2689,7 +2689,7 @@ public readonly engineSource: CesToolDataStoreToolEngineSource;
 
 engine_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#engine_source CesTool#engine_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#engine_source CesTool#engine_source}
 
 ---
 
@@ -2703,7 +2703,7 @@ public readonly filterParameterBehavior: string;
 
 Optional. The filter parameter behavior. Possible values: FILTER_PARAMETER_BEHAVIOR_UNSPECIFIED ALWAYS_INCLUDE NEVER_INCLUDE Possible values: ["FILTER_PARAMETER_BEHAVIOR_UNSPECIFIED", "ALWAYS_INCLUDE", "NEVER_INCLUDE"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#filter_parameter_behavior CesTool#filter_parameter_behavior}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#filter_parameter_behavior CesTool#filter_parameter_behavior}
 
 ---
 
@@ -2717,7 +2717,7 @@ public readonly maxResults: number;
 
 Number of search results to return per query. The default value is 10. The maximum allowed value is 10.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#max_results CesTool#max_results}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#max_results CesTool#max_results}
 
 ---
 
@@ -2731,7 +2731,7 @@ public readonly modalityConfigs: IResolvable | CesToolDataStoreToolModalityConfi
 
 modality_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#modality_configs CesTool#modality_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#modality_configs CesTool#modality_configs}
 
 ---
 
@@ -2764,7 +2764,7 @@ public readonly dataStores: string[];
 
 The Data Store where the boosting configuration is applied. Full resource name of DataStore, such as projects/{project}/locations/{location}/collections/{collection}/dataStores/{dataStore}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#data_stores CesTool#data_stores}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#data_stores CesTool#data_stores}
 
 ---
 
@@ -2778,7 +2778,7 @@ public readonly spec: IResolvable | CesToolDataStoreToolBoostSpecsSpec[];
 
 spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#spec CesTool#spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#spec CesTool#spec}
 
 ---
 
@@ -2810,7 +2810,7 @@ public readonly conditionBoostSpecs: IResolvable | CesToolDataStoreToolBoostSpec
 
 condition_boost_specs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#condition_boost_specs CesTool#condition_boost_specs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#condition_boost_specs CesTool#condition_boost_specs}
 
 ---
 
@@ -2850,7 +2850,7 @@ a list of BCP-47 lang codes.
 Example: To boost suggestions in languages en or fr:
 (lang_code: ANY("en", "fr"))
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#condition CesTool#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#condition CesTool#condition}
 
 ---
 
@@ -2873,7 +2873,7 @@ suggestions that are relevant might still be shown.
 Setting to 0.0 means no boost applied. The boosting condition is
 ignored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#boost CesTool#boost}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#boost CesTool#boost}
 
 ---
 
@@ -2887,7 +2887,7 @@ public readonly boostControlSpec: CesToolDataStoreToolBoostSpecsSpecConditionBoo
 
 boost_control_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#boost_control_spec CesTool#boost_control_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#boost_control_spec CesTool#boost_control_spec}
 
 ---
 
@@ -2931,7 +2931,7 @@ Possible values:
 NUMERICAL
 FRESHNESS
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#attribute_type CesTool#attribute_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#attribute_type CesTool#attribute_type}
 
 ---
 
@@ -2945,7 +2945,7 @@ public readonly controlPoints: IResolvable | CesToolDataStoreToolBoostSpecsSpecC
 
 control_points block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#control_points CesTool#control_points}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#control_points CesTool#control_points}
 
 ---
 
@@ -2959,7 +2959,7 @@ public readonly fieldName: string;
 
 The name of the field whose value will be used to determine the boost amount.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#field_name CesTool#field_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#field_name CesTool#field_name}
 
 ---
 
@@ -2973,7 +2973,7 @@ public readonly interpolationType: string;
 
 The interpolation type to be applied to connect the control points listed below. Possible values: LINEAR.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#interpolation_type CesTool#interpolation_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#interpolation_type CesTool#interpolation_type}
 
 ---
 
@@ -3012,7 +3012,7 @@ The value must be formatted as an XSD 'dayTimeDuration' value (a
 restricted subset of an ISO 8601 duration value). The pattern for
 this is: 'nDnM]'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#attribute_value CesTool#attribute_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#attribute_value CesTool#attribute_value}
 
 ---
 
@@ -3026,7 +3026,7 @@ public readonly boostAmount: number;
 
 The value between -1 to 1 by which to boost the score if the attribute_value evaluates to the value specified above.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#boost_amount CesTool#boost_amount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#boost_amount CesTool#boost_amount}
 
 ---
 
@@ -3059,7 +3059,7 @@ public readonly dataStore: CesToolDataStoreToolDataStoreSourceDataStore;
 
 data_store block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#data_store CesTool#data_store}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#data_store CesTool#data_store}
 
 ---
 
@@ -3073,7 +3073,7 @@ public readonly filter: string;
 
 Optional. Filter specification for the DataStore. See: https://cloud.google.com/generative-ai-app-builder/docs/filter-search-metadata.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#filter CesTool#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#filter CesTool#filter}
 
 ---
 
@@ -3105,7 +3105,7 @@ public readonly name: string;
 
 Full resource name of the DataStore. Format: projects/{project}/locations/{location}/collections/{collection}/dataStores/{dataStore}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#name CesTool#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#name CesTool#name}
 
 ---
 
@@ -3150,7 +3150,7 @@ public readonly engine: string;
 
 Full resource name of the Engine. Format: 'projects/{project}/locations/{location}/collections/{collection}/engines/{engine}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#engine CesTool#engine}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#engine CesTool#engine}
 
 ---
 
@@ -3164,7 +3164,7 @@ public readonly dataStoreSources: IResolvable | CesToolDataStoreToolEngineSource
 
 data_store_sources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#data_store_sources CesTool#data_store_sources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#data_store_sources CesTool#data_store_sources}
 
 ---
 
@@ -3178,7 +3178,7 @@ public readonly filter: string;
 
 A filter applied to the search across the Engine. Not relevant and not used if 'data_store_sources' is provided. See: https://cloud.google.com/generative-ai-app-builder/docs/filter-search-metadata.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#filter CesTool#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#filter CesTool#filter}
 
 ---
 
@@ -3211,7 +3211,7 @@ public readonly dataStore: CesToolDataStoreToolEngineSourceDataStoreSourcesDataS
 
 data_store block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#data_store CesTool#data_store}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#data_store CesTool#data_store}
 
 ---
 
@@ -3225,7 +3225,7 @@ public readonly filter: string;
 
 Filter specification for the DataStore. See: https://cloud.google.com/generative-ai-app-builder/docs/filter-search-metadata.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#filter CesTool#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#filter CesTool#filter}
 
 ---
 
@@ -3257,7 +3257,7 @@ public readonly name: string;
 
 Full resource name of the DataStore. Format: 'projects/{project}/locations/{location}/collections/{collection}/dataStores/{dataStore}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#name CesTool#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#name CesTool#name}
 
 ---
 
@@ -3304,7 +3304,7 @@ public readonly modalityType: string;
 
 The modality type. Possible values: TEXT AUDIO.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#modality_type CesTool#modality_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#modality_type CesTool#modality_type}
 
 ---
 
@@ -3318,7 +3318,7 @@ public readonly groundingConfig: CesToolDataStoreToolModalityConfigsGroundingCon
 
 grounding_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#grounding_config CesTool#grounding_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#grounding_config CesTool#grounding_config}
 
 ---
 
@@ -3332,7 +3332,7 @@ public readonly rewriterConfig: CesToolDataStoreToolModalityConfigsRewriterConfi
 
 rewriter_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#rewriter_config CesTool#rewriter_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#rewriter_config CesTool#rewriter_config}
 
 ---
 
@@ -3346,7 +3346,7 @@ public readonly snippetsConfig: CesToolDataStoreToolModalityConfigsSnippetsConfi
 
 snippets_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#snippets_config CesTool#snippets_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#snippets_config CesTool#snippets_config}
 
 ---
 
@@ -3360,7 +3360,7 @@ public readonly summarizationConfig: CesToolDataStoreToolModalityConfigsSummariz
 
 summarization_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#summarization_config CesTool#summarization_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#summarization_config CesTool#summarization_config}
 
 ---
 
@@ -3393,7 +3393,7 @@ public readonly disabled: boolean | IResolvable;
 
 Whether grounding is disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#disabled CesTool#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#disabled CesTool#disabled}
 
 ---
 
@@ -3414,7 +3414,7 @@ relevant snippets only.
 For example, a level of 3 means that the groundedness score must be
 3 or higher for the response to be returned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#grounding_level CesTool#grounding_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#grounding_level CesTool#grounding_level}
 
 ---
 
@@ -3448,7 +3448,7 @@ public readonly modelSettings: CesToolDataStoreToolModalityConfigsRewriterConfig
 
 model_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#model_settings CesTool#model_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#model_settings CesTool#model_settings}
 
 ---
 
@@ -3462,7 +3462,7 @@ public readonly disabled: boolean | IResolvable;
 
 Whether the rewriter is disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#disabled CesTool#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#disabled CesTool#disabled}
 
 ---
 
@@ -3476,7 +3476,7 @@ public readonly prompt: string;
 
 The prompt definition. If not set, default prompt will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#prompt CesTool#prompt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#prompt CesTool#prompt}
 
 ---
 
@@ -3511,7 +3511,7 @@ The LLM model that the agent should use.
 
 If not set, the agent will inherit the model from its parent agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#model CesTool#model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#model CesTool#model}
 
 ---
 
@@ -3530,7 +3530,7 @@ controls the randomness of the model's responses. Lower temperatures
 produce responses that are more predictable. Higher temperatures produce
 responses that are more creative.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#temperature CesTool#temperature}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#temperature CesTool#temperature}
 
 ---
 
@@ -3562,7 +3562,7 @@ public readonly enableSnippets: boolean | IResolvable;
 
 Whether snippets are enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#enable_snippets CesTool#enable_snippets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#enable_snippets CesTool#enable_snippets}
 
 ---
 
@@ -3596,7 +3596,7 @@ public readonly disabled: boolean | IResolvable;
 
 Whether summarization is disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#disabled CesTool#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#disabled CesTool#disabled}
 
 ---
 
@@ -3610,7 +3610,7 @@ public readonly modelSettings: CesToolDataStoreToolModalityConfigsSummarizationC
 
 model_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#model_settings CesTool#model_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#model_settings CesTool#model_settings}
 
 ---
 
@@ -3624,7 +3624,7 @@ public readonly prompt: string;
 
 The prompt definition. If not set, default prompt will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#prompt CesTool#prompt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#prompt CesTool#prompt}
 
 ---
 
@@ -3659,7 +3659,7 @@ The LLM model that the agent should use.
 
 If not set, the agent will inherit the model from its parent agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#model CesTool#model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#model CesTool#model}
 
 ---
 
@@ -3678,7 +3678,7 @@ controls the randomness of the model's responses. Lower temperatures
 produce responses that are more predictable. Higher temperatures produce
 responses that are more creative.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#temperature CesTool#temperature}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#temperature CesTool#temperature}
 
 ---
 
@@ -3713,7 +3713,7 @@ public readonly name: string;
 
 Required. The tool name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#name CesTool#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#name CesTool#name}
 
 ---
 
@@ -3727,7 +3727,7 @@ public readonly corpusType: string;
 
 Optional. The type of the corpus. Default is FULLY_MANAGED. Possible values: CORPUS_TYPE_UNSPECIFIED USER_OWNED FULLY_MANAGED Possible values: ["CORPUS_TYPE_UNSPECIFIED", "USER_OWNED", "FULLY_MANAGED"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#corpus_type CesTool#corpus_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#corpus_type CesTool#corpus_type}
 
 ---
 
@@ -3741,7 +3741,7 @@ public readonly description: string;
 
 Optional. The tool description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#description CesTool#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#description CesTool#description}
 
 ---
 
@@ -3755,7 +3755,7 @@ public readonly fileCorpus: string;
 
 Optional. The corpus where files are stored. Format: projects/{project}/locations/{location}/ragCorpora/{rag_corpus}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#file_corpus CesTool#file_corpus}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#file_corpus CesTool#file_corpus}
 
 ---
 
@@ -3792,7 +3792,7 @@ public readonly name: string;
 
 The name of the tool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#name CesTool#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#name CesTool#name}
 
 ---
 
@@ -3809,7 +3809,7 @@ Content will be fetched directly from these URLs for context and grounding.
 More details: https://cloud.google.com/vertex-ai/generative-ai/docs/url-context.
 Example: "https://example.com/path.html". A maximum of 20 URLs are allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#context_urls CesTool#context_urls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#context_urls CesTool#context_urls}
 
 ---
 
@@ -3823,7 +3823,7 @@ public readonly description: string;
 
 Description of the tool's purpose.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#description CesTool#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#description CesTool#description}
 
 ---
 
@@ -3837,7 +3837,7 @@ public readonly excludeDomains: string[];
 
 List of domains to be excluded from the search results. Example: "example.com". A maximum of 2000 domains can be excluded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#exclude_domains CesTool#exclude_domains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#exclude_domains CesTool#exclude_domains}
 
 ---
 
@@ -3858,7 +3858,7 @@ not be exclusively reflected in the final search results.
 Example: "example.com", "another.site".
 A maximum of 20 domains can be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#preferred_domains CesTool#preferred_domains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#preferred_domains CesTool#preferred_domains}
 
 ---
 
@@ -3872,7 +3872,7 @@ public readonly promptConfig: CesToolGoogleSearchToolPromptConfig;
 
 prompt_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#prompt_config CesTool#prompt_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#prompt_config CesTool#prompt_config}
 
 ---
 
@@ -3908,7 +3908,7 @@ Optional.
 Defines the prompt used for the system instructions when interacting with the
 agent in chat conversations. If not set, default prompt will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#text_prompt CesTool#text_prompt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#text_prompt CesTool#text_prompt}
 
 ---
 
@@ -3925,7 +3925,7 @@ Optional.
 Defines the prompt used for the system instructions when interacting with the
 agent in voice conversations. If not set, default prompt will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#voice_prompt CesTool#voice_prompt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#voice_prompt CesTool#voice_prompt}
 
 ---
 
@@ -4183,7 +4183,7 @@ Must match a Python function
 name defined in the python code. Case sensitive. If the name is not
 provided, the first function defined in the python code will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#name CesTool#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#name CesTool#name}
 
 ---
 
@@ -4197,7 +4197,7 @@ public readonly pythonCode: string;
 
 The Python code to execute for the tool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#python_code CesTool#python_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#python_code CesTool#python_code}
 
 ---
 
@@ -4211,7 +4211,7 @@ public readonly serviceDirectoryConfig: CesToolPythonFunctionServiceDirectoryCon
 
 service_directory_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#service_directory_config CesTool#service_directory_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#service_directory_config CesTool#service_directory_config}
 
 ---
 
@@ -4243,7 +4243,7 @@ public readonly service: string;
 
 The name of Service Directory service. Format: projects/{project}/locations/{location}/namespaces/{namespace}/services/{service}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#service CesTool#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#service CesTool#service}
 
 ---
 
@@ -4291,6 +4291,72 @@ const cesToolRemoteAgentToolAgentCardSupportedInterfaces: cesTool.CesToolRemoteA
 ```
 
 
+### CesToolRemoteAgentToolApiAuthentication <a name="CesToolRemoteAgentToolApiAuthentication" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthentication"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthentication.Initializer"></a>
+
+```typescript
+import { cesTool } from '@cdktn/provider-google'
+
+const cesToolRemoteAgentToolApiAuthentication: cesTool.CesToolRemoteAgentToolApiAuthentication = { ... }
+```
+
+
+### CesToolRemoteAgentToolApiAuthenticationApiKeyConfig <a name="CesToolRemoteAgentToolApiAuthenticationApiKeyConfig" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfig.Initializer"></a>
+
+```typescript
+import { cesTool } from '@cdktn/provider-google'
+
+const cesToolRemoteAgentToolApiAuthenticationApiKeyConfig: cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfig = { ... }
+```
+
+
+### CesToolRemoteAgentToolApiAuthenticationBearerTokenConfig <a name="CesToolRemoteAgentToolApiAuthenticationBearerTokenConfig" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfig.Initializer"></a>
+
+```typescript
+import { cesTool } from '@cdktn/provider-google'
+
+const cesToolRemoteAgentToolApiAuthenticationBearerTokenConfig: cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfig = { ... }
+```
+
+
+### CesToolRemoteAgentToolApiAuthenticationOauthConfig <a name="CesToolRemoteAgentToolApiAuthenticationOauthConfig" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfig.Initializer"></a>
+
+```typescript
+import { cesTool } from '@cdktn/provider-google'
+
+const cesToolRemoteAgentToolApiAuthenticationOauthConfig: cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfig = { ... }
+```
+
+
+### CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfig <a name="CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfig" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfig.Initializer"></a>
+
+```typescript
+import { cesTool } from '@cdktn/provider-google'
+
+const cesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfig: cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfig = { ... }
+```
+
+
+### CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfig <a name="CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfig" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfig.Initializer"></a>
+
+```typescript
+import { cesTool } from '@cdktn/provider-google'
+
+const cesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfig: cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfig = { ... }
+```
+
+
 ### CesToolSystemTool <a name="CesToolSystemTool" id="@cdktn/provider-google.cesTool.CesToolSystemTool"></a>
 
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.cesTool.CesToolSystemTool.Initializer"></a>
@@ -4316,9 +4382,9 @@ const cesToolTimeouts: cesTool.CesToolTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cesTool.CesToolTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#create CesTool#create}. |
-| <code><a href="#@cdktn/provider-google.cesTool.CesToolTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#delete CesTool#delete}. |
-| <code><a href="#@cdktn/provider-google.cesTool.CesToolTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#update CesTool#update}. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#create CesTool#create}. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#delete CesTool#delete}. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#update CesTool#update}. |
 
 ---
 
@@ -4330,7 +4396,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#create CesTool#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#create CesTool#create}.
 
 ---
 
@@ -4342,7 +4408,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#delete CesTool#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#delete CesTool#delete}.
 
 ---
 
@@ -4354,7 +4420,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#update CesTool#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#update CesTool#update}.
 
 ---
 
@@ -4387,7 +4453,7 @@ public readonly codeBlock: CesToolToolFakeConfigCodeBlock;
 
 code_block block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#code_block CesTool#code_block}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#code_block CesTool#code_block}
 
 ---
 
@@ -4401,7 +4467,7 @@ public readonly enableFakeMode: boolean | IResolvable;
 
 Whether the tool is using fake mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#enable_fake_mode CesTool#enable_fake_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#enable_fake_mode CesTool#enable_fake_mode}
 
 ---
 
@@ -4433,7 +4499,7 @@ public readonly pythonCode: string;
 
 Python code which will be invoked in tool fake mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#python_code CesTool#python_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#python_code CesTool#python_code}
 
 ---
 
@@ -4471,7 +4537,7 @@ public readonly name: string;
 
 Required. The display name of the widget tool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#name CesTool#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#name CesTool#name}
 
 ---
 
@@ -4485,7 +4551,7 @@ public readonly dataMapping: CesToolWidgetToolDataMapping;
 
 data_mapping block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#data_mapping CesTool#data_mapping}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#data_mapping CesTool#data_mapping}
 
 ---
 
@@ -4499,7 +4565,7 @@ public readonly description: string;
 
 Optional. The description of the widget tool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#description CesTool#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#description CesTool#description}
 
 ---
 
@@ -4513,7 +4579,7 @@ public readonly parameters: CesToolWidgetToolParameters;
 
 parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#parameters CesTool#parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#parameters CesTool#parameters}
 
 ---
 
@@ -4527,7 +4593,7 @@ public readonly textResponseConfig: CesToolWidgetToolTextResponseConfig;
 
 text_response_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#text_response_config CesTool#text_response_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#text_response_config CesTool#text_response_config}
 
 ---
 
@@ -4541,7 +4607,7 @@ public readonly uiConfig: string;
 
 Optional. Configuration for rendering the widget. Represents a JSON object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#ui_config CesTool#ui_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#ui_config CesTool#ui_config}
 
 ---
 
@@ -4571,7 +4637,7 @@ APPOINTMENT_DETAILS
 APPOINTMENT_SCHEDULER
 CONTACT_FORM Possible values: ["WIDGET_TYPE_UNSPECIFIED", "CUSTOM", "PRODUCT_CAROUSEL", "PRODUCT_DETAILS", "QUICK_ACTIONS", "PRODUCT_COMPARISON", "ADVANCED_PRODUCT_DETAILS", "SHORT_FORM", "OVERALL_SATISFACTION", "ORDER_SUMMARY", "APPOINTMENT_DETAILS", "APPOINTMENT_SCHEDULER", "CONTACT_FORM"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#widget_type CesTool#widget_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#widget_type CesTool#widget_type}
 
 ---
 
@@ -4609,7 +4675,7 @@ Optional.
 A map of widget input parameter fields to the corresponding output fields of the source tool.
 An object containing a list of "key": value pairs. Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#field_mappings CesTool#field_mappings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#field_mappings CesTool#field_mappings}
 
 ---
 
@@ -4623,7 +4689,7 @@ public readonly mode: string;
 
 Optional. The mode of the data mapping. Possible values: MODE_UNSPECIFIED FIELD_MAPPING PYTHON_SCRIPT Possible values: ["MODE_UNSPECIFIED", "FIELD_MAPPING", "PYTHON_SCRIPT"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#mode CesTool#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#mode CesTool#mode}
 
 ---
 
@@ -4637,7 +4703,7 @@ public readonly pythonFunction: CesToolWidgetToolDataMappingPythonFunction;
 
 python_function block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#python_function CesTool#python_function}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#python_function CesTool#python_function}
 
 ---
 
@@ -4654,7 +4720,7 @@ Optional.
 The resource name of the tool that provides the data for the widget (e.g., a search tool or a custom function).
 Format: projects/{project}/locations/{location}/agents/{agent}/tools/{tool}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#source_tool_name CesTool#source_tool_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#source_tool_name CesTool#source_tool_name}
 
 ---
 
@@ -4691,7 +4757,7 @@ The name of the Python function to execute. Must match a Python function
 name defined in the python code. Case sensitive. If the name is not
 provided, the first function defined in the python code will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#name CesTool#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#name CesTool#name}
 
 ---
 
@@ -4705,7 +4771,7 @@ public readonly pythonCode: string;
 
 Optional. The Python code to execute for the tool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#python_code CesTool#python_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#python_code CesTool#python_code}
 
 ---
 
@@ -4755,7 +4821,7 @@ public readonly type: string;
 
 The type of the data. Possible values: STRING INTEGER NUMBER BOOLEAN OBJECT ARRAY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#type CesTool#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#type CesTool#type}
 
 ---
 
@@ -4772,7 +4838,7 @@ Defines the schema for additional properties allowed in an object.
 The value must be a valid JSON string representing the Schema object.
 (Note: OpenAPI also allows a boolean, this definition expects a Schema JSON).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#additional_properties CesTool#additional_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#additional_properties CesTool#additional_properties}
 
 ---
 
@@ -4786,7 +4852,7 @@ public readonly anyOf: string;
 
 The instance value should be valid against at least one of the schemas in this list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#any_of CesTool#any_of}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#any_of CesTool#any_of}
 
 ---
 
@@ -4805,7 +4871,7 @@ which can be either null, a number, a string, a boolean, a struct,
 or a list of values. The provided default value must be compatible
 with the defined 'type' and other schema constraints.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#default CesTool#default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#default CesTool#default}
 
 ---
 
@@ -4819,7 +4885,7 @@ public readonly defs: string;
 
 A map of definitions for use by ref. Only allowed at the root of the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#defs CesTool#defs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#defs CesTool#defs}
 
 ---
 
@@ -4833,7 +4899,7 @@ public readonly description: string;
 
 The description of the data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#description CesTool#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#description CesTool#description}
 
 ---
 
@@ -4853,7 +4919,7 @@ Examples:
 2. We can define apartment number as :
 {type:INTEGER, format:enum, enum:["101", "201", "301"]}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#enum CesTool#enum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#enum CesTool#enum}
 
 ---
 
@@ -4867,7 +4933,7 @@ public readonly items: string;
 
 Schema of the elements of Type.ARRAY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#items CesTool#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#items CesTool#items}
 
 ---
 
@@ -4881,7 +4947,7 @@ public readonly maximum: number;
 
 Maximum value for Type.INTEGER and Type.NUMBER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#maximum CesTool#maximum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#maximum CesTool#maximum}
 
 ---
 
@@ -4895,7 +4961,7 @@ public readonly maxItems: number;
 
 Maximum number of the elements for Type.ARRAY. (int64 format).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#max_items CesTool#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#max_items CesTool#max_items}
 
 ---
 
@@ -4909,7 +4975,7 @@ public readonly minimum: number;
 
 Minimum value for Type.INTEGER and Type.NUMBER.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#minimum CesTool#minimum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#minimum CesTool#minimum}
 
 ---
 
@@ -4923,7 +4989,7 @@ public readonly minItems: number;
 
 Minimum number of the elements for Type.ARRAY. (int64 format).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#min_items CesTool#min_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#min_items CesTool#min_items}
 
 ---
 
@@ -4937,7 +5003,7 @@ public readonly nullable: boolean | IResolvable;
 
 Indicates if the value may be null.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#nullable CesTool#nullable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#nullable CesTool#nullable}
 
 ---
 
@@ -4951,7 +5017,7 @@ public readonly prefixItems: string;
 
 Schemas of initial elements of Type.ARRAY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#prefix_items CesTool#prefix_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#prefix_items CesTool#prefix_items}
 
 ---
 
@@ -4965,7 +5031,7 @@ public readonly properties: string;
 
 Properties of Type.OBJECT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#properties CesTool#properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#properties CesTool#properties}
 
 ---
 
@@ -4998,7 +5064,7 @@ named "Pet".
 See details in
 https://json-schema.org/understanding-json-schema/structuring.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#ref CesTool#ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#ref CesTool#ref}
 
 ---
 
@@ -5012,7 +5078,7 @@ public readonly required: string[];
 
 Required properties of Type.OBJECT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#required CesTool#required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#required CesTool#required}
 
 ---
 
@@ -5026,7 +5092,7 @@ public readonly title: string;
 
 The title of the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#title CesTool#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#title CesTool#title}
 
 ---
 
@@ -5040,7 +5106,7 @@ public readonly uniqueItems: boolean | IResolvable;
 
 Indicate the items in the array must be unique. Only applies to TYPE.ARRAY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#unique_items CesTool#unique_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#unique_items CesTool#unique_items}
 
 ---
 
@@ -5074,7 +5140,7 @@ public readonly staticText: string;
 
 Optional. The static text response to return when type is STATIC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#static_text CesTool#static_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#static_text CesTool#static_text}
 
 ---
 
@@ -5091,7 +5157,7 @@ Optional.
 Instruction for the LLM on how to generate the text response. Used as
 the description for the text response parameter if type is LLM_GENERATED.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#text_response_instruction CesTool#text_response_instruction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#text_response_instruction CesTool#text_response_instruction}
 
 ---
 
@@ -5105,7 +5171,7 @@ public readonly type: string;
 
 Optional. The strategy for providing the text response. Possible values: TYPE_UNSPECIFIED NONE LLM_GENERATED STATIC Possible values: ["TYPE_UNSPECIFIED", "NONE", "LLM_GENERATED", "STATIC"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_tool#type CesTool#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_tool#type CesTool#type}
 
 ---
 
@@ -20140,6 +20206,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.cesTool.CesToolMcpToolApiAuthenticationServiceAccountAuthConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.cesTool.CesToolMcpToolApiAuthenticationServiceAccountAuthConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolMcpToolApiAuthenticationServiceAccountAuthConfigOutputReference.property.scopes">scopes</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesTool.CesToolMcpToolApiAuthenticationServiceAccountAuthConfigOutputReference.property.serviceAccount">serviceAccount</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesTool.CesToolMcpToolApiAuthenticationServiceAccountAuthConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.cesTool.CesToolMcpToolApiAuthenticationServiceAccountAuthConfig">CesToolMcpToolApiAuthenticationServiceAccountAuthConfig</a></code> | *No description.* |
 
@@ -20166,6 +20233,16 @@ public readonly fqn: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `scopes`<sup>Required</sup> <a name="scopes" id="@cdktn/provider-google.cesTool.CesToolMcpToolApiAuthenticationServiceAccountAuthConfigOutputReference.property.scopes"></a>
+
+```typescript
+public readonly scopes: string[];
+```
+
+- *Type:* string[]
 
 ---
 
@@ -24630,6 +24707,7 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.cesTool.CesToolOpenApiToolApiAuthenticationServiceAccountAuthConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.cesTool.CesToolOpenApiToolApiAuthenticationServiceAccountAuthConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolOpenApiToolApiAuthenticationServiceAccountAuthConfigOutputReference.property.scopes">scopes</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesTool.CesToolOpenApiToolApiAuthenticationServiceAccountAuthConfigOutputReference.property.serviceAccount">serviceAccount</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesTool.CesToolOpenApiToolApiAuthenticationServiceAccountAuthConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.cesTool.CesToolOpenApiToolApiAuthenticationServiceAccountAuthConfig">CesToolOpenApiToolApiAuthenticationServiceAccountAuthConfig</a></code> | *No description.* |
 
@@ -24656,6 +24734,16 @@ public readonly fqn: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `scopes`<sup>Required</sup> <a name="scopes" id="@cdktn/provider-google.cesTool.CesToolOpenApiToolApiAuthenticationServiceAccountAuthConfigOutputReference.property.scopes"></a>
+
+```typescript
+public readonly scopes: string[];
+```
+
+- *Type:* string[]
 
 ---
 
@@ -28947,6 +29035,2678 @@ public readonly internalValue: CesToolRemoteAgentToolAgentCardSupportedInterface
 ---
 
 
+### CesToolRemoteAgentToolApiAuthenticationApiKeyConfigList <a name="CesToolRemoteAgentToolApiAuthenticationApiKeyConfigList" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigList.Initializer"></a>
+
+```typescript
+import { cesTool } from '@cdktn/provider-google'
+
+new cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigList.allWithMapKey"></a>
+
+```typescript
+public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigList.get"></a>
+
+```typescript
+public get(index: number): CesToolRemoteAgentToolApiAuthenticationApiKeyConfigOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+
+### CesToolRemoteAgentToolApiAuthenticationApiKeyConfigOutputReference <a name="CesToolRemoteAgentToolApiAuthenticationApiKeyConfigOutputReference" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigOutputReference.Initializer"></a>
+
+```typescript
+import { cesTool } from '@cdktn/provider-google'
+
+new cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigOutputReference.property.apiKeySecretVersion">apiKeySecretVersion</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigOutputReference.property.keyName">keyName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigOutputReference.property.requestLocation">requestLocation</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfig">CesToolRemoteAgentToolApiAuthenticationApiKeyConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `apiKeySecretVersion`<sup>Required</sup> <a name="apiKeySecretVersion" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigOutputReference.property.apiKeySecretVersion"></a>
+
+```typescript
+public readonly apiKeySecretVersion: string;
+```
+
+- *Type:* string
+
+---
+
+##### `keyName`<sup>Required</sup> <a name="keyName" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigOutputReference.property.keyName"></a>
+
+```typescript
+public readonly keyName: string;
+```
+
+- *Type:* string
+
+---
+
+##### `requestLocation`<sup>Required</sup> <a name="requestLocation" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigOutputReference.property.requestLocation"></a>
+
+```typescript
+public readonly requestLocation: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: CesToolRemoteAgentToolApiAuthenticationApiKeyConfig;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfig">CesToolRemoteAgentToolApiAuthenticationApiKeyConfig</a>
+
+---
+
+
+### CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigList <a name="CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigList" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigList.Initializer"></a>
+
+```typescript
+import { cesTool } from '@cdktn/provider-google'
+
+new cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigList.allWithMapKey"></a>
+
+```typescript
+public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigList.get"></a>
+
+```typescript
+public get(index: number): CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+
+### CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigOutputReference <a name="CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigOutputReference" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigOutputReference.Initializer"></a>
+
+```typescript
+import { cesTool } from '@cdktn/provider-google'
+
+new cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigOutputReference.property.token">token</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfig">CesToolRemoteAgentToolApiAuthenticationBearerTokenConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `token`<sup>Required</sup> <a name="token" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigOutputReference.property.token"></a>
+
+```typescript
+public readonly token: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: CesToolRemoteAgentToolApiAuthenticationBearerTokenConfig;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfig">CesToolRemoteAgentToolApiAuthenticationBearerTokenConfig</a>
+
+---
+
+
+### CesToolRemoteAgentToolApiAuthenticationList <a name="CesToolRemoteAgentToolApiAuthenticationList" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationList.Initializer"></a>
+
+```typescript
+import { cesTool } from '@cdktn/provider-google'
+
+new cesTool.CesToolRemoteAgentToolApiAuthenticationList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationList.allWithMapKey"></a>
+
+```typescript
+public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationList.get"></a>
+
+```typescript
+public get(index: number): CesToolRemoteAgentToolApiAuthenticationOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+
+### CesToolRemoteAgentToolApiAuthenticationOauthConfigList <a name="CesToolRemoteAgentToolApiAuthenticationOauthConfigList" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigList.Initializer"></a>
+
+```typescript
+import { cesTool } from '@cdktn/provider-google'
+
+new cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigList.allWithMapKey"></a>
+
+```typescript
+public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigList.get"></a>
+
+```typescript
+public get(index: number): CesToolRemoteAgentToolApiAuthenticationOauthConfigOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+
+### CesToolRemoteAgentToolApiAuthenticationOauthConfigOutputReference <a name="CesToolRemoteAgentToolApiAuthenticationOauthConfigOutputReference" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigOutputReference.Initializer"></a>
+
+```typescript
+import { cesTool } from '@cdktn/provider-google'
+
+new cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigOutputReference.property.clientId">clientId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigOutputReference.property.clientSecretVersion">clientSecretVersion</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigOutputReference.property.oauthGrantType">oauthGrantType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigOutputReference.property.scopes">scopes</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigOutputReference.property.tokenEndpoint">tokenEndpoint</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfig">CesToolRemoteAgentToolApiAuthenticationOauthConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `clientId`<sup>Required</sup> <a name="clientId" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigOutputReference.property.clientId"></a>
+
+```typescript
+public readonly clientId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `clientSecretVersion`<sup>Required</sup> <a name="clientSecretVersion" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigOutputReference.property.clientSecretVersion"></a>
+
+```typescript
+public readonly clientSecretVersion: string;
+```
+
+- *Type:* string
+
+---
+
+##### `oauthGrantType`<sup>Required</sup> <a name="oauthGrantType" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigOutputReference.property.oauthGrantType"></a>
+
+```typescript
+public readonly oauthGrantType: string;
+```
+
+- *Type:* string
+
+---
+
+##### `scopes`<sup>Required</sup> <a name="scopes" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigOutputReference.property.scopes"></a>
+
+```typescript
+public readonly scopes: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `tokenEndpoint`<sup>Required</sup> <a name="tokenEndpoint" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigOutputReference.property.tokenEndpoint"></a>
+
+```typescript
+public readonly tokenEndpoint: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: CesToolRemoteAgentToolApiAuthenticationOauthConfig;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfig">CesToolRemoteAgentToolApiAuthenticationOauthConfig</a>
+
+---
+
+
+### CesToolRemoteAgentToolApiAuthenticationOutputReference <a name="CesToolRemoteAgentToolApiAuthenticationOutputReference" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOutputReference.Initializer"></a>
+
+```typescript
+import { cesTool } from '@cdktn/provider-google'
+
+new cesTool.CesToolRemoteAgentToolApiAuthenticationOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOutputReference.property.apiKeyConfig">apiKeyConfig</a></code> | <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigList">CesToolRemoteAgentToolApiAuthenticationApiKeyConfigList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOutputReference.property.bearerTokenConfig">bearerTokenConfig</a></code> | <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigList">CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOutputReference.property.oauthConfig">oauthConfig</a></code> | <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigList">CesToolRemoteAgentToolApiAuthenticationOauthConfigList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOutputReference.property.serviceAccountAuthConfig">serviceAccountAuthConfig</a></code> | <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigList">CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOutputReference.property.serviceAgentIdTokenAuthConfig">serviceAgentIdTokenAuthConfig</a></code> | <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigList">CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthentication">CesToolRemoteAgentToolApiAuthentication</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `apiKeyConfig`<sup>Required</sup> <a name="apiKeyConfig" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOutputReference.property.apiKeyConfig"></a>
+
+```typescript
+public readonly apiKeyConfig: CesToolRemoteAgentToolApiAuthenticationApiKeyConfigList;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationApiKeyConfigList">CesToolRemoteAgentToolApiAuthenticationApiKeyConfigList</a>
+
+---
+
+##### `bearerTokenConfig`<sup>Required</sup> <a name="bearerTokenConfig" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOutputReference.property.bearerTokenConfig"></a>
+
+```typescript
+public readonly bearerTokenConfig: CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigList;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigList">CesToolRemoteAgentToolApiAuthenticationBearerTokenConfigList</a>
+
+---
+
+##### `oauthConfig`<sup>Required</sup> <a name="oauthConfig" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOutputReference.property.oauthConfig"></a>
+
+```typescript
+public readonly oauthConfig: CesToolRemoteAgentToolApiAuthenticationOauthConfigList;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOauthConfigList">CesToolRemoteAgentToolApiAuthenticationOauthConfigList</a>
+
+---
+
+##### `serviceAccountAuthConfig`<sup>Required</sup> <a name="serviceAccountAuthConfig" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOutputReference.property.serviceAccountAuthConfig"></a>
+
+```typescript
+public readonly serviceAccountAuthConfig: CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigList;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigList">CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigList</a>
+
+---
+
+##### `serviceAgentIdTokenAuthConfig`<sup>Required</sup> <a name="serviceAgentIdTokenAuthConfig" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOutputReference.property.serviceAgentIdTokenAuthConfig"></a>
+
+```typescript
+public readonly serviceAgentIdTokenAuthConfig: CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigList;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigList">CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigList</a>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: CesToolRemoteAgentToolApiAuthentication;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthentication">CesToolRemoteAgentToolApiAuthentication</a>
+
+---
+
+
+### CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigList <a name="CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigList" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigList.Initializer"></a>
+
+```typescript
+import { cesTool } from '@cdktn/provider-google'
+
+new cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigList.allWithMapKey"></a>
+
+```typescript
+public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigList.get"></a>
+
+```typescript
+public get(index: number): CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+
+### CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigOutputReference <a name="CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigOutputReference" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigOutputReference.Initializer"></a>
+
+```typescript
+import { cesTool } from '@cdktn/provider-google'
+
+new cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigOutputReference.property.scopes">scopes</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigOutputReference.property.serviceAccount">serviceAccount</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfig">CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `scopes`<sup>Required</sup> <a name="scopes" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigOutputReference.property.scopes"></a>
+
+```typescript
+public readonly scopes: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `serviceAccount`<sup>Required</sup> <a name="serviceAccount" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigOutputReference.property.serviceAccount"></a>
+
+```typescript
+public readonly serviceAccount: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfigOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfig;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfig">CesToolRemoteAgentToolApiAuthenticationServiceAccountAuthConfig</a>
+
+---
+
+
+### CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigList <a name="CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigList" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigList.Initializer"></a>
+
+```typescript
+import { cesTool } from '@cdktn/provider-google'
+
+new cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigList.allWithMapKey"></a>
+
+```typescript
+public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigList.get"></a>
+
+```typescript
+public get(index: number): CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+
+### CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference <a name="CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference.Initializer"></a>
+
+```typescript
+import { cesTool } from '@cdktn/provider-google'
+
+new cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfig">CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfigOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfig;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfig">CesToolRemoteAgentToolApiAuthenticationServiceAgentIdTokenAuthConfig</a>
+
+---
+
+
 ### CesToolRemoteAgentToolList <a name="CesToolRemoteAgentToolList" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolList"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolList.Initializer"></a>
@@ -29325,6 +32085,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolOutputReference.property.agentCard">agentCard</a></code> | <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolAgentCardList">CesToolRemoteAgentToolAgentCardList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolOutputReference.property.apiAuthentication">apiAuthentication</a></code> | <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationList">CesToolRemoteAgentToolApiAuthenticationList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolOutputReference.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentTool">CesToolRemoteAgentTool</a></code> | *No description.* |
@@ -29362,6 +32123,16 @@ public readonly agentCard: CesToolRemoteAgentToolAgentCardList;
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolAgentCardList">CesToolRemoteAgentToolAgentCardList</a>
+
+---
+
+##### `apiAuthentication`<sup>Required</sup> <a name="apiAuthentication" id="@cdktn/provider-google.cesTool.CesToolRemoteAgentToolOutputReference.property.apiAuthentication"></a>
+
+```typescript
+public readonly apiAuthentication: CesToolRemoteAgentToolApiAuthenticationList;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesTool.CesToolRemoteAgentToolApiAuthenticationList">CesToolRemoteAgentToolApiAuthenticationList</a>
 
 ---
 

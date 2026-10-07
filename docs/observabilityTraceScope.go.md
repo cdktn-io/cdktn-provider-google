@@ -4,12 +4,12 @@
 
 ### ObservabilityTraceScope <a name="ObservabilityTraceScope" id="@cdktn/provider-google.observabilityTraceScope.ObservabilityTraceScope"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/observability_trace_scope google_observability_trace_scope}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/observability_trace_scope google_observability_trace_scope}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.observabilityTraceScope.ObservabilityTraceScope.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/observabilitytracescope"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/observabilitytracescope"
 
 observabilitytracescope.NewObservabilityTraceScope(scope Construct, id *string, config ObservabilityTraceScopeConfig) ObservabilityTraceScope
 ```
@@ -448,7 +448,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.observabilityTraceScope.ObservabilityTraceScope.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/observabilitytracescope"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/observabilitytracescope"
 
 observabilitytracescope.ObservabilityTraceScope_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.observabilityTraceScope.ObservabilityTraceScope.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/observabilitytracescope"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/observabilitytracescope"
 
 observabilitytracescope.ObservabilityTraceScope_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ observabilitytracescope.ObservabilityTraceScope_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.observabilityTraceScope.ObservabilityTraceScope.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/observabilitytracescope"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/observabilitytracescope"
 
 observabilitytracescope.ObservabilityTraceScope_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ observabilitytracescope.ObservabilityTraceScope_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.observabilityTraceScope.ObservabilityTraceScope.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/observabilitytracescope"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/observabilitytracescope"
 
 observabilitytracescope.ObservabilityTraceScope_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -537,7 +537,7 @@ The construct id used in the generated config for the ObservabilityTraceScope to
 
 The id of the existing ObservabilityTraceScope that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/observability_trace_scope#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/observability_trace_scope#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -946,7 +946,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.observabilityTraceScope.ObservabilityTraceScopeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/observabilitytracescope"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/observabilitytracescope"
 
 &observabilitytracescope.ObservabilityTraceScopeConfig {
 	Connection: interface{},
@@ -963,7 +963,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/observabilitytra
 	Description: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.observabilityTraceScope.ObservabilityTraceScopeTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.observabilityTraceScope.ObservabilityTraceScopeTimeouts,
 }
 ```
 
@@ -983,8 +983,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/observabilitytra
 | <code><a href="#@cdktn/provider-google.observabilityTraceScope.ObservabilityTraceScopeConfig.property.traceScopeId">TraceScopeId</a></code> | <code>*string</code> | A client-assigned identifier for the trace scope. |
 | <code><a href="#@cdktn/provider-google.observabilityTraceScope.ObservabilityTraceScopeConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.observabilityTraceScope.ObservabilityTraceScopeConfig.property.description">Description</a></code> | <code>*string</code> | Describes this trace scope. |
-| <code><a href="#@cdktn/provider-google.observabilityTraceScope.ObservabilityTraceScopeConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/observability_trace_scope#id ObservabilityTraceScope#id}. |
-| <code><a href="#@cdktn/provider-google.observabilityTraceScope.ObservabilityTraceScopeConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/observability_trace_scope#project ObservabilityTraceScope#project}. |
+| <code><a href="#@cdktn/provider-google.observabilityTraceScope.ObservabilityTraceScopeConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/observability_trace_scope#id ObservabilityTraceScope#id}. |
+| <code><a href="#@cdktn/provider-google.observabilityTraceScope.ObservabilityTraceScopeConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/observability_trace_scope#project ObservabilityTraceScope#project}. |
 | <code><a href="#@cdktn/provider-google.observabilityTraceScope.ObservabilityTraceScopeConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.observabilityTraceScope.ObservabilityTraceScopeTimeouts">ObservabilityTraceScopeTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1069,7 +1069,7 @@ Location *string
 
 GCP region the TraceScope is stored in. Only 'global' is supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/observability_trace_scope#location ObservabilityTraceScope#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/observability_trace_scope#location ObservabilityTraceScope#location}
 
 ---
 
@@ -1087,7 +1087,7 @@ Names of the projects that are included in this trace scope.
 
 A trace scope can include a maximum of 20 projects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/observability_trace_scope#resource_names ObservabilityTraceScope#resource_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/observability_trace_scope#resource_names ObservabilityTraceScope#resource_names}
 
 ---
 
@@ -1101,7 +1101,7 @@ TraceScopeId *string
 
 A client-assigned identifier for the trace scope.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/observability_trace_scope#trace_scope_id ObservabilityTraceScope#trace_scope_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/observability_trace_scope#trace_scope_id ObservabilityTraceScope#trace_scope_id}
 
 ---
 
@@ -1122,7 +1122,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/observability_trace_scope#deletion_policy ObservabilityTraceScope#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/observability_trace_scope#deletion_policy ObservabilityTraceScope#deletion_policy}
 
 ---
 
@@ -1138,7 +1138,7 @@ Describes this trace scope.
 
 The maximum length of the description is 8000 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/observability_trace_scope#description ObservabilityTraceScope#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/observability_trace_scope#description ObservabilityTraceScope#description}
 
 ---
 
@@ -1150,7 +1150,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/observability_trace_scope#id ObservabilityTraceScope#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/observability_trace_scope#id ObservabilityTraceScope#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1165,7 +1165,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/observability_trace_scope#project ObservabilityTraceScope#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/observability_trace_scope#project ObservabilityTraceScope#project}.
 
 ---
 
@@ -1179,7 +1179,7 @@ Timeouts ObservabilityTraceScopeTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/observability_trace_scope#timeouts ObservabilityTraceScope#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/observability_trace_scope#timeouts ObservabilityTraceScope#timeouts}
 
 ---
 
@@ -1188,7 +1188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.observabilityTraceScope.ObservabilityTraceScopeTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/observabilitytracescope"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/observabilitytracescope"
 
 &observabilitytracescope.ObservabilityTraceScopeTimeouts {
 	Create: *string,
@@ -1201,9 +1201,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/observabilitytra
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.observabilityTraceScope.ObservabilityTraceScopeTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/observability_trace_scope#create ObservabilityTraceScope#create}. |
-| <code><a href="#@cdktn/provider-google.observabilityTraceScope.ObservabilityTraceScopeTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/observability_trace_scope#delete ObservabilityTraceScope#delete}. |
-| <code><a href="#@cdktn/provider-google.observabilityTraceScope.ObservabilityTraceScopeTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/observability_trace_scope#update ObservabilityTraceScope#update}. |
+| <code><a href="#@cdktn/provider-google.observabilityTraceScope.ObservabilityTraceScopeTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/observability_trace_scope#create ObservabilityTraceScope#create}. |
+| <code><a href="#@cdktn/provider-google.observabilityTraceScope.ObservabilityTraceScopeTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/observability_trace_scope#delete ObservabilityTraceScope#delete}. |
+| <code><a href="#@cdktn/provider-google.observabilityTraceScope.ObservabilityTraceScopeTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/observability_trace_scope#update ObservabilityTraceScope#update}. |
 
 ---
 
@@ -1215,7 +1215,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/observability_trace_scope#create ObservabilityTraceScope#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/observability_trace_scope#create ObservabilityTraceScope#create}.
 
 ---
 
@@ -1227,7 +1227,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/observability_trace_scope#delete ObservabilityTraceScope#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/observability_trace_scope#delete ObservabilityTraceScope#delete}.
 
 ---
 
@@ -1239,7 +1239,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/observability_trace_scope#update ObservabilityTraceScope#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/observability_trace_scope#update ObservabilityTraceScope#update}.
 
 ---
 
@@ -1250,7 +1250,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.observabilityTraceScope.ObservabilityTraceScopeTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/observabilitytracescope"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/observabilitytracescope"
 
 observabilitytracescope.NewObservabilityTraceScopeTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ObservabilityTraceScopeTimeoutsOutputReference
 ```

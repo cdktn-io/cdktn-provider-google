@@ -4,12 +4,12 @@
 
 ### ApigeeDeveloperApp <a name="ApigeeDeveloperApp" id="@cdktn/provider-google.apigeeDeveloperApp.ApigeeDeveloperApp"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apigee_developer_app google_apigee_developer_app}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apigee_developer_app google_apigee_developer_app}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeDeveloperApp.ApigeeDeveloperApp.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeedeveloperapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apigeedeveloperapp"
 
 apigeedeveloperapp.NewApigeeDeveloperApp(scope Construct, id *string, config ApigeeDeveloperAppConfig) ApigeeDeveloperApp
 ```
@@ -503,7 +503,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.apigeeDeveloperApp.ApigeeDeveloperApp.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeedeveloperapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apigeedeveloperapp"
 
 apigeedeveloperapp.ApigeeDeveloperApp_IsConstruct(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.apigeeDeveloperApp.ApigeeDeveloperApp.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeedeveloperapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apigeedeveloperapp"
 
 apigeedeveloperapp.ApigeeDeveloperApp_IsTerraformElement(x interface{}) *bool
 ```
@@ -549,7 +549,7 @@ apigeedeveloperapp.ApigeeDeveloperApp_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.apigeeDeveloperApp.ApigeeDeveloperApp.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeedeveloperapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apigeedeveloperapp"
 
 apigeedeveloperapp.ApigeeDeveloperApp_IsTerraformResource(x interface{}) *bool
 ```
@@ -563,7 +563,7 @@ apigeedeveloperapp.ApigeeDeveloperApp_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.apigeeDeveloperApp.ApigeeDeveloperApp.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeedeveloperapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apigeedeveloperapp"
 
 apigeedeveloperapp.ApigeeDeveloperApp_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -592,7 +592,7 @@ The construct id used in the generated config for the ApigeeDeveloperApp to impo
 
 The id of the existing ApigeeDeveloperApp that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apigee_developer_app#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apigee_developer_app#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1177,7 +1177,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeDeveloperApp.ApigeeDeveloperAppAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeedeveloperapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apigeedeveloperapp"
 
 &apigeedeveloperapp.ApigeeDeveloperAppAttributes {
 	Name: *string,
@@ -1204,7 +1204,7 @@ Name *string
 
 Key of the attribute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apigee_developer_app#name ApigeeDeveloperApp#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apigee_developer_app#name ApigeeDeveloperApp#name}
 
 ---
 
@@ -1218,7 +1218,7 @@ Value *string
 
 Value of the attribute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apigee_developer_app#value ApigeeDeveloperApp#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apigee_developer_app#value ApigeeDeveloperApp#value}
 
 ---
 
@@ -1227,7 +1227,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeDeveloperApp.ApigeeDeveloperAppConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeedeveloperapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apigeedeveloperapp"
 
 &apigeedeveloperapp.ApigeeDeveloperAppConfig {
 	Connection: interface{},
@@ -1251,7 +1251,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeedevelopera
 	KeyExpiresIn: *string,
 	Scopes: *[]*string,
 	Status: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.apigeeDeveloperApp.ApigeeDeveloperAppTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.apigeeDeveloperApp.ApigeeDeveloperAppTimeouts,
 }
 ```
 
@@ -1276,7 +1276,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeedevelopera
 | <code><a href="#@cdktn/provider-google.apigeeDeveloperApp.ApigeeDeveloperAppConfig.property.consumerKey">ConsumerKey</a></code> | <code>*string</code> | Optionally specify a static consumer key for the developer app's credential. |
 | <code><a href="#@cdktn/provider-google.apigeeDeveloperApp.ApigeeDeveloperAppConfig.property.consumerSecret">ConsumerSecret</a></code> | <code>*string</code> | Optionally specify a static consumer secret for the developer app's credential. |
 | <code><a href="#@cdktn/provider-google.apigeeDeveloperApp.ApigeeDeveloperAppConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.apigeeDeveloperApp.ApigeeDeveloperAppConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apigee_developer_app#id ApigeeDeveloperApp#id}. |
+| <code><a href="#@cdktn/provider-google.apigeeDeveloperApp.ApigeeDeveloperAppConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apigee_developer_app#id ApigeeDeveloperApp#id}. |
 | <code><a href="#@cdktn/provider-google.apigeeDeveloperApp.ApigeeDeveloperAppConfig.property.keyExpiresIn">KeyExpiresIn</a></code> | <code>*string</code> | Expiration time, in milliseconds, for the consumer key that is generated for the developer app. |
 | <code><a href="#@cdktn/provider-google.apigeeDeveloperApp.ApigeeDeveloperAppConfig.property.scopes">Scopes</a></code> | <code>*[]*string</code> | Scopes to apply to the developer app. |
 | <code><a href="#@cdktn/provider-google.apigeeDeveloperApp.ApigeeDeveloperAppConfig.property.status">Status</a></code> | <code>*string</code> | Status of the credential. Valid values include approved or revoked. |
@@ -1364,7 +1364,7 @@ CallbackUrl *string
 
 Callback URL used by OAuth 2.0 authorization servers to communicate authorization codes back to developer apps.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apigee_developer_app#callback_url ApigeeDeveloperApp#callback_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apigee_developer_app#callback_url ApigeeDeveloperApp#callback_url}
 
 ---
 
@@ -1381,7 +1381,7 @@ Email address of the developer.
 This value is used to uniquely identify the developer in Apigee hybrid.
 Note that the email address has to be in lowercase only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apigee_developer_app#developer_email ApigeeDeveloperApp#developer_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apigee_developer_app#developer_email ApigeeDeveloperApp#developer_email}
 
 ---
 
@@ -1395,7 +1395,7 @@ Name *string
 
 Name of the developer app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apigee_developer_app#name ApigeeDeveloperApp#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apigee_developer_app#name ApigeeDeveloperApp#name}
 
 ---
 
@@ -1409,7 +1409,7 @@ OrgId *string
 
 The Apigee Organization associated with the Apigee instance, in the format 'organizations/{{org_name}}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apigee_developer_app#org_id ApigeeDeveloperApp#org_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apigee_developer_app#org_id ApigeeDeveloperApp#org_id}
 
 ---
 
@@ -1423,7 +1423,7 @@ ApiProducts *[]*string
 
 List of API products associated with the developer app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apigee_developer_app#api_products ApigeeDeveloperApp#api_products}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apigee_developer_app#api_products ApigeeDeveloperApp#api_products}
 
 ---
 
@@ -1437,7 +1437,7 @@ AppFamily *string
 
 Developer app family.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apigee_developer_app#app_family ApigeeDeveloperApp#app_family}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apigee_developer_app#app_family ApigeeDeveloperApp#app_family}
 
 ---
 
@@ -1451,7 +1451,7 @@ Attributes interface{}
 
 attributes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apigee_developer_app#attributes ApigeeDeveloperApp#attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apigee_developer_app#attributes ApigeeDeveloperApp#attributes}
 
 ---
 
@@ -1473,7 +1473,7 @@ This is a write-only input used at create time: the provider creates the
 credential with this key via the keys API and removes the auto-generated
 one. The effective key is exposed in the 'credentials' output.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apigee_developer_app#consumer_key ApigeeDeveloperApp#consumer_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apigee_developer_app#consumer_key ApigeeDeveloperApp#consumer_key}
 
 ---
 
@@ -1494,7 +1494,7 @@ recreated.
 This is a write-only input used at create time; the effective secret is
 exposed in the 'credentials' output.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apigee_developer_app#consumer_secret ApigeeDeveloperApp#consumer_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apigee_developer_app#consumer_secret ApigeeDeveloperApp#consumer_secret}
 
 ---
 
@@ -1515,7 +1515,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apigee_developer_app#deletion_policy ApigeeDeveloperApp#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apigee_developer_app#deletion_policy ApigeeDeveloperApp#deletion_policy}
 
 ---
 
@@ -1527,7 +1527,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apigee_developer_app#id ApigeeDeveloperApp#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apigee_developer_app#id ApigeeDeveloperApp#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1547,7 +1547,7 @@ Expiration time, in milliseconds, for the consumer key that is generated for the
 If not set or left to the default value of -1,
 the API key never expires. The expiration time can't be updated after it is set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apigee_developer_app#key_expires_in ApigeeDeveloperApp#key_expires_in}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apigee_developer_app#key_expires_in ApigeeDeveloperApp#key_expires_in}
 
 ---
 
@@ -1564,7 +1564,7 @@ Scopes to apply to the developer app.
 The specified scopes must already exist for the API product that
 you associate with the developer app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apigee_developer_app#scopes ApigeeDeveloperApp#scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apigee_developer_app#scopes ApigeeDeveloperApp#scopes}
 
 ---
 
@@ -1578,7 +1578,7 @@ Status *string
 
 Status of the credential. Valid values include approved or revoked.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apigee_developer_app#status ApigeeDeveloperApp#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apigee_developer_app#status ApigeeDeveloperApp#status}
 
 ---
 
@@ -1592,7 +1592,7 @@ Timeouts ApigeeDeveloperAppTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apigee_developer_app#timeouts ApigeeDeveloperApp#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apigee_developer_app#timeouts ApigeeDeveloperApp#timeouts}
 
 ---
 
@@ -1601,7 +1601,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeDeveloperApp.ApigeeDeveloperAppCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeedeveloperapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apigeedeveloperapp"
 
 &apigeedeveloperapp.ApigeeDeveloperAppCredentials {
 
@@ -1614,7 +1614,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeedevelopera
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeDeveloperApp.ApigeeDeveloperAppCredentialsApiProducts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeedeveloperapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apigeedeveloperapp"
 
 &apigeedeveloperapp.ApigeeDeveloperAppCredentialsApiProducts {
 
@@ -1627,7 +1627,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeedevelopera
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeDeveloperApp.ApigeeDeveloperAppCredentialsAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeedeveloperapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apigeedeveloperapp"
 
 &apigeedeveloperapp.ApigeeDeveloperAppCredentialsAttributes {
 
@@ -1640,7 +1640,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeedevelopera
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.apigeeDeveloperApp.ApigeeDeveloperAppTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeedeveloperapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apigeedeveloperapp"
 
 &apigeedeveloperapp.ApigeeDeveloperAppTimeouts {
 	Create: *string,
@@ -1653,9 +1653,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeedevelopera
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apigeeDeveloperApp.ApigeeDeveloperAppTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apigee_developer_app#create ApigeeDeveloperApp#create}. |
-| <code><a href="#@cdktn/provider-google.apigeeDeveloperApp.ApigeeDeveloperAppTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apigee_developer_app#delete ApigeeDeveloperApp#delete}. |
-| <code><a href="#@cdktn/provider-google.apigeeDeveloperApp.ApigeeDeveloperAppTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apigee_developer_app#update ApigeeDeveloperApp#update}. |
+| <code><a href="#@cdktn/provider-google.apigeeDeveloperApp.ApigeeDeveloperAppTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apigee_developer_app#create ApigeeDeveloperApp#create}. |
+| <code><a href="#@cdktn/provider-google.apigeeDeveloperApp.ApigeeDeveloperAppTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apigee_developer_app#delete ApigeeDeveloperApp#delete}. |
+| <code><a href="#@cdktn/provider-google.apigeeDeveloperApp.ApigeeDeveloperAppTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apigee_developer_app#update ApigeeDeveloperApp#update}. |
 
 ---
 
@@ -1667,7 +1667,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apigee_developer_app#create ApigeeDeveloperApp#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apigee_developer_app#create ApigeeDeveloperApp#create}.
 
 ---
 
@@ -1679,7 +1679,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apigee_developer_app#delete ApigeeDeveloperApp#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apigee_developer_app#delete ApigeeDeveloperApp#delete}.
 
 ---
 
@@ -1691,7 +1691,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/apigee_developer_app#update ApigeeDeveloperApp#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/apigee_developer_app#update ApigeeDeveloperApp#update}.
 
 ---
 
@@ -1702,7 +1702,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeDeveloperApp.ApigeeDeveloperAppAttributesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeedeveloperapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apigeedeveloperapp"
 
 apigeedeveloperapp.NewApigeeDeveloperAppAttributesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApigeeDeveloperAppAttributesList
 ```
@@ -1862,7 +1862,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeDeveloperApp.ApigeeDeveloperAppAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeedeveloperapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apigeedeveloperapp"
 
 apigeedeveloperapp.NewApigeeDeveloperAppAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApigeeDeveloperAppAttributesOutputReference
 ```
@@ -2187,7 +2187,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeDeveloperApp.ApigeeDeveloperAppCredentialsApiProductsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeedeveloperapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apigeedeveloperapp"
 
 apigeedeveloperapp.NewApigeeDeveloperAppCredentialsApiProductsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApigeeDeveloperAppCredentialsApiProductsList
 ```
@@ -2336,7 +2336,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeDeveloperApp.ApigeeDeveloperAppCredentialsApiProductsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeedeveloperapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apigeedeveloperapp"
 
 apigeedeveloperapp.NewApigeeDeveloperAppCredentialsApiProductsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApigeeDeveloperAppCredentialsApiProductsOutputReference
 ```
@@ -2625,7 +2625,7 @@ func InternalValue() ApigeeDeveloperAppCredentialsApiProducts
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeDeveloperApp.ApigeeDeveloperAppCredentialsAttributesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeedeveloperapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apigeedeveloperapp"
 
 apigeedeveloperapp.NewApigeeDeveloperAppCredentialsAttributesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApigeeDeveloperAppCredentialsAttributesList
 ```
@@ -2774,7 +2774,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeDeveloperApp.ApigeeDeveloperAppCredentialsAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeedeveloperapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apigeedeveloperapp"
 
 apigeedeveloperapp.NewApigeeDeveloperAppCredentialsAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApigeeDeveloperAppCredentialsAttributesOutputReference
 ```
@@ -3063,7 +3063,7 @@ func InternalValue() ApigeeDeveloperAppCredentialsAttributes
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeDeveloperApp.ApigeeDeveloperAppCredentialsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeedeveloperapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apigeedeveloperapp"
 
 apigeedeveloperapp.NewApigeeDeveloperAppCredentialsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApigeeDeveloperAppCredentialsList
 ```
@@ -3212,7 +3212,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeDeveloperApp.ApigeeDeveloperAppCredentialsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeedeveloperapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apigeedeveloperapp"
 
 apigeedeveloperapp.NewApigeeDeveloperAppCredentialsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApigeeDeveloperAppCredentialsOutputReference
 ```
@@ -3567,7 +3567,7 @@ func InternalValue() ApigeeDeveloperAppCredentials
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.apigeeDeveloperApp.ApigeeDeveloperAppTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/apigeedeveloperapp"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/apigeedeveloperapp"
 
 apigeedeveloperapp.NewApigeeDeveloperAppTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApigeeDeveloperAppTimeoutsOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### ComputeRouterNamedSet <a name="ComputeRouterNamedSet" id="@cdktn/provider-google.computeRouterNamedSet.ComputeRouterNamedSet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_router_named_set google_compute_router_named_set}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_router_named_set google_compute_router_named_set}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRouterNamedSet.ComputeRouterNamedSet.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerouternamedset"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computerouternamedset"
 
 computerouternamedset.NewComputeRouterNamedSet(scope Construct, id *string, config ComputeRouterNamedSetConfig) ComputeRouterNamedSet
 ```
@@ -475,7 +475,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeRouterNamedSet.ComputeRouterNamedSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerouternamedset"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computerouternamedset"
 
 computerouternamedset.ComputeRouterNamedSet_IsConstruct(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeRouterNamedSet.ComputeRouterNamedSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerouternamedset"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computerouternamedset"
 
 computerouternamedset.ComputeRouterNamedSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ computerouternamedset.ComputeRouterNamedSet_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeRouterNamedSet.ComputeRouterNamedSet.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerouternamedset"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computerouternamedset"
 
 computerouternamedset.ComputeRouterNamedSet_IsTerraformResource(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ computerouternamedset.ComputeRouterNamedSet_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeRouterNamedSet.ComputeRouterNamedSet.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerouternamedset"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computerouternamedset"
 
 computerouternamedset.ComputeRouterNamedSet_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -564,7 +564,7 @@ The construct id used in the generated config for the ComputeRouterNamedSet to i
 
 The id of the existing ComputeRouterNamedSet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_router_named_set#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_router_named_set#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -995,7 +995,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRouterNamedSet.ComputeRouterNamedSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerouternamedset"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computerouternamedset"
 
 &computerouternamedset.ComputeRouterNamedSetConfig {
 	Connection: interface{},
@@ -1014,7 +1014,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerouternam
 	Id: *string,
 	Project: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeRouterNamedSet.ComputeRouterNamedSetTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.computeRouterNamedSet.ComputeRouterNamedSetTimeouts,
 }
 ```
 
@@ -1035,8 +1035,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerouternam
 | <code><a href="#@cdktn/provider-google.computeRouterNamedSet.ComputeRouterNamedSetConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.computeRouterNamedSet.ComputeRouterNamedSetConfig.property.description">Description</a></code> | <code>*string</code> | An optional description of the Named Set. |
 | <code><a href="#@cdktn/provider-google.computeRouterNamedSet.ComputeRouterNamedSetConfig.property.elements">Elements</a></code> | <code>interface{}</code> | elements block. |
-| <code><a href="#@cdktn/provider-google.computeRouterNamedSet.ComputeRouterNamedSetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_router_named_set#id ComputeRouterNamedSet#id}. |
-| <code><a href="#@cdktn/provider-google.computeRouterNamedSet.ComputeRouterNamedSetConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_router_named_set#project ComputeRouterNamedSet#project}. |
+| <code><a href="#@cdktn/provider-google.computeRouterNamedSet.ComputeRouterNamedSetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_router_named_set#id ComputeRouterNamedSet#id}. |
+| <code><a href="#@cdktn/provider-google.computeRouterNamedSet.ComputeRouterNamedSetConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_router_named_set#project ComputeRouterNamedSet#project}. |
 | <code><a href="#@cdktn/provider-google.computeRouterNamedSet.ComputeRouterNamedSetConfig.property.region">Region</a></code> | <code>*string</code> | Region where the router resides. |
 | <code><a href="#@cdktn/provider-google.computeRouterNamedSet.ComputeRouterNamedSetConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeRouterNamedSet.ComputeRouterNamedSetTimeouts">ComputeRouterNamedSetTimeouts</a></code> | timeouts block. |
 
@@ -1122,7 +1122,7 @@ Name *string
 
 The name of the Named Set, which must be a resource ID segment and unique within all named sets owned by the Router.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_router_named_set#name ComputeRouterNamedSet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_router_named_set#name ComputeRouterNamedSet#name}
 
 ---
 
@@ -1136,7 +1136,7 @@ Router *string
 
 The name of the Cloud Router in which this Named Set will be configured.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_router_named_set#router ComputeRouterNamedSet#router}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_router_named_set#router ComputeRouterNamedSet#router}
 
 ---
 
@@ -1150,7 +1150,7 @@ Type *string
 
 The type of the Named Set. Possible values: ["NAMED_SET_TYPE_PREFIX", "NAMED_SET_TYPE_COMMUNITY"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_router_named_set#type ComputeRouterNamedSet#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_router_named_set#type ComputeRouterNamedSet#type}
 
 ---
 
@@ -1171,7 +1171,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_router_named_set#deletion_policy ComputeRouterNamedSet#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_router_named_set#deletion_policy ComputeRouterNamedSet#deletion_policy}
 
 ---
 
@@ -1185,7 +1185,7 @@ Description *string
 
 An optional description of the Named Set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_router_named_set#description ComputeRouterNamedSet#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_router_named_set#description ComputeRouterNamedSet#description}
 
 ---
 
@@ -1199,7 +1199,7 @@ Elements interface{}
 
 elements block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_router_named_set#elements ComputeRouterNamedSet#elements}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_router_named_set#elements ComputeRouterNamedSet#elements}
 
 ---
 
@@ -1211,7 +1211,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_router_named_set#id ComputeRouterNamedSet#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_router_named_set#id ComputeRouterNamedSet#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1226,7 +1226,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_router_named_set#project ComputeRouterNamedSet#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_router_named_set#project ComputeRouterNamedSet#project}.
 
 ---
 
@@ -1240,7 +1240,7 @@ Region *string
 
 Region where the router resides.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_router_named_set#region ComputeRouterNamedSet#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_router_named_set#region ComputeRouterNamedSet#region}
 
 ---
 
@@ -1254,7 +1254,7 @@ Timeouts ComputeRouterNamedSetTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_router_named_set#timeouts ComputeRouterNamedSet#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_router_named_set#timeouts ComputeRouterNamedSet#timeouts}
 
 ---
 
@@ -1263,7 +1263,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRouterNamedSet.ComputeRouterNamedSetElements.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerouternamedset"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computerouternamedset"
 
 &computerouternamedset.ComputeRouterNamedSetElements {
 	Expression: *string,
@@ -1294,7 +1294,7 @@ Expression *string
 
 Textual representation of an expression in Common Expression Language syntax.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_router_named_set#expression ComputeRouterNamedSet#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_router_named_set#expression ComputeRouterNamedSet#expression}
 
 ---
 
@@ -1308,7 +1308,7 @@ Description *string
 
 Description of the expression.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_router_named_set#description ComputeRouterNamedSet#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_router_named_set#description ComputeRouterNamedSet#description}
 
 ---
 
@@ -1322,7 +1322,7 @@ Location *string
 
 String indicating the location of the expression for error reporting, e.g. a file name and a position in the file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_router_named_set#location ComputeRouterNamedSet#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_router_named_set#location ComputeRouterNamedSet#location}
 
 ---
 
@@ -1336,7 +1336,7 @@ Title *string
 
 Title for the expression, i.e. a short string describing its purpose.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_router_named_set#title ComputeRouterNamedSet#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_router_named_set#title ComputeRouterNamedSet#title}
 
 ---
 
@@ -1345,7 +1345,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeRouterNamedSet.ComputeRouterNamedSetTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerouternamedset"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computerouternamedset"
 
 &computerouternamedset.ComputeRouterNamedSetTimeouts {
 	Create: *string,
@@ -1358,9 +1358,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerouternam
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRouterNamedSet.ComputeRouterNamedSetTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_router_named_set#create ComputeRouterNamedSet#create}. |
-| <code><a href="#@cdktn/provider-google.computeRouterNamedSet.ComputeRouterNamedSetTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_router_named_set#delete ComputeRouterNamedSet#delete}. |
-| <code><a href="#@cdktn/provider-google.computeRouterNamedSet.ComputeRouterNamedSetTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_router_named_set#update ComputeRouterNamedSet#update}. |
+| <code><a href="#@cdktn/provider-google.computeRouterNamedSet.ComputeRouterNamedSetTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_router_named_set#create ComputeRouterNamedSet#create}. |
+| <code><a href="#@cdktn/provider-google.computeRouterNamedSet.ComputeRouterNamedSetTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_router_named_set#delete ComputeRouterNamedSet#delete}. |
+| <code><a href="#@cdktn/provider-google.computeRouterNamedSet.ComputeRouterNamedSetTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_router_named_set#update ComputeRouterNamedSet#update}. |
 
 ---
 
@@ -1372,7 +1372,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_router_named_set#create ComputeRouterNamedSet#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_router_named_set#create ComputeRouterNamedSet#create}.
 
 ---
 
@@ -1384,7 +1384,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_router_named_set#delete ComputeRouterNamedSet#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_router_named_set#delete ComputeRouterNamedSet#delete}.
 
 ---
 
@@ -1396,7 +1396,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_router_named_set#update ComputeRouterNamedSet#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_router_named_set#update ComputeRouterNamedSet#update}.
 
 ---
 
@@ -1407,7 +1407,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRouterNamedSet.ComputeRouterNamedSetElementsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerouternamedset"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computerouternamedset"
 
 computerouternamedset.NewComputeRouterNamedSetElementsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeRouterNamedSetElementsList
 ```
@@ -1567,7 +1567,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRouterNamedSet.ComputeRouterNamedSetElementsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerouternamedset"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computerouternamedset"
 
 computerouternamedset.NewComputeRouterNamedSetElementsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeRouterNamedSetElementsOutputReference
 ```
@@ -1943,7 +1943,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRouterNamedSet.ComputeRouterNamedSetTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computerouternamedset"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computerouternamedset"
 
 computerouternamedset.NewComputeRouterNamedSetTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeRouterNamedSetTimeoutsOutputReference
 ```

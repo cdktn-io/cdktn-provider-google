@@ -4,12 +4,12 @@
 
 ### DataGoogleIamWorkloadIdentityPoolOpenidConfig <a name="DataGoogleIamWorkloadIdentityPoolOpenidConfig" id="@cdktn/provider-google.dataGoogleIamWorkloadIdentityPoolOpenidConfig.DataGoogleIamWorkloadIdentityPoolOpenidConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/iam_workload_identity_pool_openid_config google_iam_workload_identity_pool_openid_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/iam_workload_identity_pool_openid_config google_iam_workload_identity_pool_openid_config}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleIamWorkloadIdentityPoolOpenidConfig.DataGoogleIamWorkloadIdentityPoolOpenidConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleiamworkloadidentitypoolopenidconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleiamworkloadidentitypoolopenidconfig"
 
 datagoogleiamworkloadidentitypoolopenidconfig.NewDataGoogleIamWorkloadIdentityPoolOpenidConfig(scope Construct, id *string, config DataGoogleIamWorkloadIdentityPoolOpenidConfigConfig) DataGoogleIamWorkloadIdentityPoolOpenidConfig
 ```
@@ -305,7 +305,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleIamWorkloadIdentityPoolOpenidConfig.DataGoogleIamWorkloadIdentityPoolOpenidConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleiamworkloadidentitypoolopenidconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleiamworkloadidentitypoolopenidconfig"
 
 datagoogleiamworkloadidentitypoolopenidconfig.DataGoogleIamWorkloadIdentityPoolOpenidConfig_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleIamWorkloadIdentityPoolOpenidConfig.DataGoogleIamWorkloadIdentityPoolOpenidConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleiamworkloadidentitypoolopenidconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleiamworkloadidentitypoolopenidconfig"
 
 datagoogleiamworkloadidentitypoolopenidconfig.DataGoogleIamWorkloadIdentityPoolOpenidConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ datagoogleiamworkloadidentitypoolopenidconfig.DataGoogleIamWorkloadIdentityPoolO
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleIamWorkloadIdentityPoolOpenidConfig.DataGoogleIamWorkloadIdentityPoolOpenidConfig.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleiamworkloadidentitypoolopenidconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleiamworkloadidentitypoolopenidconfig"
 
 datagoogleiamworkloadidentitypoolopenidconfig.DataGoogleIamWorkloadIdentityPoolOpenidConfig_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datagoogleiamworkloadidentitypoolopenidconfig.DataGoogleIamWorkloadIdentityPoolO
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleIamWorkloadIdentityPoolOpenidConfig.DataGoogleIamWorkloadIdentityPoolOpenidConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleiamworkloadidentitypoolopenidconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleiamworkloadidentitypoolopenidconfig"
 
 datagoogleiamworkloadidentitypoolopenidconfig.DataGoogleIamWorkloadIdentityPoolOpenidConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataGoogleIamWorkloadIdent
 
 The id of the existing DataGoogleIamWorkloadIdentityPoolOpenidConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/iam_workload_identity_pool_openid_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/iam_workload_identity_pool_openid_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -693,7 +693,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleIamWorkloadIdentityPoolOpenidConfig.DataGoogleIamWorkloadIdentityPoolOpenidConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleiamworkloadidentitypoolopenidconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleiamworkloadidentitypoolopenidconfig"
 
 &datagoogleiamworkloadidentitypoolopenidconfig.DataGoogleIamWorkloadIdentityPoolOpenidConfigConfig {
 	Connection: interface{},
@@ -720,7 +720,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleiamwor
 | <code><a href="#@cdktn/provider-google.dataGoogleIamWorkloadIdentityPoolOpenidConfig.DataGoogleIamWorkloadIdentityPoolOpenidConfigConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleIamWorkloadIdentityPoolOpenidConfig.DataGoogleIamWorkloadIdentityPoolOpenidConfigConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleIamWorkloadIdentityPoolOpenidConfig.DataGoogleIamWorkloadIdentityPoolOpenidConfigConfig.property.resourceName">ResourceName</a></code> | <code>*string</code> | The OIDC discovery URI. |
-| <code><a href="#@cdktn/provider-google.dataGoogleIamWorkloadIdentityPoolOpenidConfig.DataGoogleIamWorkloadIdentityPoolOpenidConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/iam_workload_identity_pool_openid_config#id DataGoogleIamWorkloadIdentityPoolOpenidConfig#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleIamWorkloadIdentityPoolOpenidConfig.DataGoogleIamWorkloadIdentityPoolOpenidConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/iam_workload_identity_pool_openid_config#id DataGoogleIamWorkloadIdentityPoolOpenidConfig#id}. |
 
 ---
 
@@ -804,7 +804,7 @@ ResourceName *string
 
 The OIDC discovery URI.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/iam_workload_identity_pool_openid_config#resource_name DataGoogleIamWorkloadIdentityPoolOpenidConfig#resource_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/iam_workload_identity_pool_openid_config#resource_name DataGoogleIamWorkloadIdentityPoolOpenidConfig#resource_name}
 
 ---
 
@@ -816,7 +816,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/iam_workload_identity_pool_openid_config#id DataGoogleIamWorkloadIdentityPoolOpenidConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/iam_workload_identity_pool_openid_config#id DataGoogleIamWorkloadIdentityPoolOpenidConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

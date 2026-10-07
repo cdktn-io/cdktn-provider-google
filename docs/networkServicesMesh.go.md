@@ -4,12 +4,12 @@
 
 ### NetworkServicesMesh <a name="NetworkServicesMesh" id="@cdktn/provider-google.networkServicesMesh.NetworkServicesMesh"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_mesh google_network_services_mesh}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_mesh google_network_services_mesh}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesMesh.NetworkServicesMesh.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmesh"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networkservicesmesh"
 
 networkservicesmesh.NewNetworkServicesMesh(scope Construct, id *string, config NetworkServicesMeshConfig) NetworkServicesMesh
 ```
@@ -469,7 +469,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.networkServicesMesh.NetworkServicesMesh.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmesh"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networkservicesmesh"
 
 networkservicesmesh.NetworkServicesMesh_IsConstruct(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.networkServicesMesh.NetworkServicesMesh.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmesh"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networkservicesmesh"
 
 networkservicesmesh.NetworkServicesMesh_IsTerraformElement(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ networkservicesmesh.NetworkServicesMesh_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.networkServicesMesh.NetworkServicesMesh.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmesh"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networkservicesmesh"
 
 networkservicesmesh.NetworkServicesMesh_IsTerraformResource(x interface{}) *bool
 ```
@@ -529,7 +529,7 @@ networkservicesmesh.NetworkServicesMesh_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.networkServicesMesh.NetworkServicesMesh.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmesh"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networkservicesmesh"
 
 networkservicesmesh.NetworkServicesMesh_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -558,7 +558,7 @@ The construct id used in the generated config for the NetworkServicesMesh to imp
 
 The id of the existing NetworkServicesMesh that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_mesh#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_mesh#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1011,7 +1011,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkServicesMesh.NetworkServicesMeshConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmesh"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networkservicesmesh"
 
 &networkservicesmesh.NetworkServicesMeshConfig {
 	Connection: interface{},
@@ -1029,7 +1029,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesm
 	Labels: *map[string]*string,
 	Location: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.networkServicesMesh.NetworkServicesMeshTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.networkServicesMesh.NetworkServicesMeshTimeouts,
 }
 ```
 
@@ -1047,11 +1047,11 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesm
 | <code><a href="#@cdktn/provider-google.networkServicesMesh.NetworkServicesMeshConfig.property.name">Name</a></code> | <code>*string</code> | Short name of the Mesh resource to be created. |
 | <code><a href="#@cdktn/provider-google.networkServicesMesh.NetworkServicesMeshConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.networkServicesMesh.NetworkServicesMeshConfig.property.description">Description</a></code> | <code>*string</code> | A free-text description of the resource. Max length 1024 characters. |
-| <code><a href="#@cdktn/provider-google.networkServicesMesh.NetworkServicesMeshConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_mesh#id NetworkServicesMesh#id}. |
+| <code><a href="#@cdktn/provider-google.networkServicesMesh.NetworkServicesMeshConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_mesh#id NetworkServicesMesh#id}. |
 | <code><a href="#@cdktn/provider-google.networkServicesMesh.NetworkServicesMeshConfig.property.interceptionPort">InterceptionPort</a></code> | <code>*f64</code> | Optional. |
 | <code><a href="#@cdktn/provider-google.networkServicesMesh.NetworkServicesMeshConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | Set of label tags associated with the Mesh resource. |
 | <code><a href="#@cdktn/provider-google.networkServicesMesh.NetworkServicesMeshConfig.property.location">Location</a></code> | <code>*string</code> | Location (region) of the Mesh resource to be created. |
-| <code><a href="#@cdktn/provider-google.networkServicesMesh.NetworkServicesMeshConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_mesh#project NetworkServicesMesh#project}. |
+| <code><a href="#@cdktn/provider-google.networkServicesMesh.NetworkServicesMeshConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_mesh#project NetworkServicesMesh#project}. |
 | <code><a href="#@cdktn/provider-google.networkServicesMesh.NetworkServicesMeshConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.networkServicesMesh.NetworkServicesMeshTimeouts">NetworkServicesMeshTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1136,7 +1136,7 @@ Name *string
 
 Short name of the Mesh resource to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_mesh#name NetworkServicesMesh#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_mesh#name NetworkServicesMesh#name}
 
 ---
 
@@ -1157,7 +1157,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_mesh#deletion_policy NetworkServicesMesh#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_mesh#deletion_policy NetworkServicesMesh#deletion_policy}
 
 ---
 
@@ -1171,7 +1171,7 @@ Description *string
 
 A free-text description of the resource. Max length 1024 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_mesh#description NetworkServicesMesh#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_mesh#description NetworkServicesMesh#description}
 
 ---
 
@@ -1183,7 +1183,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_mesh#id NetworkServicesMesh#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_mesh#id NetworkServicesMesh#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1206,7 +1206,7 @@ be redirected to this port regardless of its actual ip:port destination. If unse
 '15001' is used as the interception port. This will is applicable only for sidecar proxy
 deployments.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_mesh#interception_port NetworkServicesMesh#interception_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_mesh#interception_port NetworkServicesMesh#interception_port}
 
 ---
 
@@ -1223,7 +1223,7 @@ Set of label tags associated with the Mesh resource.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_mesh#labels NetworkServicesMesh#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_mesh#labels NetworkServicesMesh#labels}
 
 ---
 
@@ -1239,7 +1239,7 @@ Location (region) of the Mesh resource to be created.
 
 Only the value 'global' is currently allowed; defaults to 'global' if omitted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_mesh#location NetworkServicesMesh#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_mesh#location NetworkServicesMesh#location}
 
 ---
 
@@ -1251,7 +1251,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_mesh#project NetworkServicesMesh#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_mesh#project NetworkServicesMesh#project}.
 
 ---
 
@@ -1265,7 +1265,7 @@ Timeouts NetworkServicesMeshTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_mesh#timeouts NetworkServicesMesh#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_mesh#timeouts NetworkServicesMesh#timeouts}
 
 ---
 
@@ -1274,7 +1274,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkServicesMesh.NetworkServicesMeshTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmesh"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networkservicesmesh"
 
 &networkservicesmesh.NetworkServicesMeshTimeouts {
 	Create: *string,
@@ -1287,9 +1287,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesm
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.networkServicesMesh.NetworkServicesMeshTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_mesh#create NetworkServicesMesh#create}. |
-| <code><a href="#@cdktn/provider-google.networkServicesMesh.NetworkServicesMeshTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_mesh#delete NetworkServicesMesh#delete}. |
-| <code><a href="#@cdktn/provider-google.networkServicesMesh.NetworkServicesMeshTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_mesh#update NetworkServicesMesh#update}. |
+| <code><a href="#@cdktn/provider-google.networkServicesMesh.NetworkServicesMeshTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_mesh#create NetworkServicesMesh#create}. |
+| <code><a href="#@cdktn/provider-google.networkServicesMesh.NetworkServicesMeshTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_mesh#delete NetworkServicesMesh#delete}. |
+| <code><a href="#@cdktn/provider-google.networkServicesMesh.NetworkServicesMeshTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_mesh#update NetworkServicesMesh#update}. |
 
 ---
 
@@ -1301,7 +1301,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_mesh#create NetworkServicesMesh#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_mesh#create NetworkServicesMesh#create}.
 
 ---
 
@@ -1313,7 +1313,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_mesh#delete NetworkServicesMesh#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_mesh#delete NetworkServicesMesh#delete}.
 
 ---
 
@@ -1325,7 +1325,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_mesh#update NetworkServicesMesh#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_mesh#update NetworkServicesMesh#update}.
 
 ---
 
@@ -1336,7 +1336,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesMesh.NetworkServicesMeshTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmesh"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networkservicesmesh"
 
 networkservicesmesh.NewNetworkServicesMeshTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkServicesMeshTimeoutsOutputReference
 ```

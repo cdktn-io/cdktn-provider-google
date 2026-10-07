@@ -4,12 +4,12 @@
 
 ### ChronicleParserExtension <a name="ChronicleParserExtension" id="@cdktn/provider-google.chronicleParserExtension.ChronicleParserExtension"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_parser_extension google_chronicle_parser_extension}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_parser_extension google_chronicle_parser_extension}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleParserExtension.ChronicleParserExtension.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleparserextension"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chronicleparserextension"
 
 chronicleparserextension.NewChronicleParserExtension(scope Construct, id *string, config ChronicleParserExtensionConfig) ChronicleParserExtension
 ```
@@ -502,7 +502,7 @@ func ResetValidationSkipped()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.chronicleParserExtension.ChronicleParserExtension.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleparserextension"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chronicleparserextension"
 
 chronicleparserextension.ChronicleParserExtension_IsConstruct(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.chronicleParserExtension.ChronicleParserExtension.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleparserextension"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chronicleparserextension"
 
 chronicleparserextension.ChronicleParserExtension_IsTerraformElement(x interface{}) *bool
 ```
@@ -548,7 +548,7 @@ chronicleparserextension.ChronicleParserExtension_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.chronicleParserExtension.ChronicleParserExtension.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleparserextension"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chronicleparserextension"
 
 chronicleparserextension.ChronicleParserExtension_IsTerraformResource(x interface{}) *bool
 ```
@@ -562,7 +562,7 @@ chronicleparserextension.ChronicleParserExtension_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.chronicleParserExtension.ChronicleParserExtension.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleparserextension"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chronicleparserextension"
 
 chronicleparserextension.ChronicleParserExtension_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -591,7 +591,7 @@ The construct id used in the generated config for the ChronicleParserExtension t
 
 The id of the existing ChronicleParserExtension that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_parser_extension#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_parser_extension#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1143,7 +1143,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleParserExtension.ChronicleParserExtensionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleparserextension"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chronicleparserextension"
 
 &chronicleparserextension.ChronicleParserExtensionConfig {
 	Connection: interface{},
@@ -1158,12 +1158,12 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleparsere
 	LogType: *string,
 	CbnSnippet: *string,
 	DeletionPolicy: *string,
-	DynamicParsing: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleParserExtension.ChronicleParserExtensionDynamicParsing,
-	FieldExtractors: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleParserExtension.ChronicleParserExtensionFieldExtractors,
+	DynamicParsing: github.com/cdktn-io/cdktn-provider-google-go/google/v21.chronicleParserExtension.ChronicleParserExtensionDynamicParsing,
+	FieldExtractors: github.com/cdktn-io/cdktn-provider-google-go/google/v21.chronicleParserExtension.ChronicleParserExtensionFieldExtractors,
 	Id: *string,
 	Log: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleParserExtension.ChronicleParserExtensionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.chronicleParserExtension.ChronicleParserExtensionTimeouts,
 	ValidationSkipped: interface{},
 }
 ```
@@ -1186,9 +1186,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleparsere
 | <code><a href="#@cdktn/provider-google.chronicleParserExtension.ChronicleParserExtensionConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.chronicleParserExtension.ChronicleParserExtensionConfig.property.dynamicParsing">DynamicParsing</a></code> | <code><a href="#@cdktn/provider-google.chronicleParserExtension.ChronicleParserExtensionDynamicParsing">ChronicleParserExtensionDynamicParsing</a></code> | dynamic_parsing block. |
 | <code><a href="#@cdktn/provider-google.chronicleParserExtension.ChronicleParserExtensionConfig.property.fieldExtractors">FieldExtractors</a></code> | <code><a href="#@cdktn/provider-google.chronicleParserExtension.ChronicleParserExtensionFieldExtractors">ChronicleParserExtensionFieldExtractors</a></code> | field_extractors block. |
-| <code><a href="#@cdktn/provider-google.chronicleParserExtension.ChronicleParserExtensionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_parser_extension#id ChronicleParserExtension#id}. |
+| <code><a href="#@cdktn/provider-google.chronicleParserExtension.ChronicleParserExtensionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_parser_extension#id ChronicleParserExtension#id}. |
 | <code><a href="#@cdktn/provider-google.chronicleParserExtension.ChronicleParserExtensionConfig.property.log">Log</a></code> | <code>*string</code> | Raw log used to assist the user in creation of augmentation. |
-| <code><a href="#@cdktn/provider-google.chronicleParserExtension.ChronicleParserExtensionConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_parser_extension#project ChronicleParserExtension#project}. |
+| <code><a href="#@cdktn/provider-google.chronicleParserExtension.ChronicleParserExtensionConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_parser_extension#project ChronicleParserExtension#project}. |
 | <code><a href="#@cdktn/provider-google.chronicleParserExtension.ChronicleParserExtensionConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.chronicleParserExtension.ChronicleParserExtensionTimeouts">ChronicleParserExtensionTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.chronicleParserExtension.ChronicleParserExtensionConfig.property.validationSkipped">ValidationSkipped</a></code> | <code>interface{}</code> | Flag to bypass parser extension validation. |
 
@@ -1274,7 +1274,7 @@ Instance *string
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_parser_extension#instance ChronicleParserExtension#instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_parser_extension#instance ChronicleParserExtension#instance}
 
 ---
 
@@ -1288,7 +1288,7 @@ Location *string
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_parser_extension#location ChronicleParserExtension#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_parser_extension#location ChronicleParserExtension#location}
 
 ---
 
@@ -1302,7 +1302,7 @@ LogType *string
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_parser_extension#log_type ChronicleParserExtension#log_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_parser_extension#log_type ChronicleParserExtension#log_type}
 
 ---
 
@@ -1316,7 +1316,7 @@ CbnSnippet *string
 
 Parser config could be a cbn snippet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_parser_extension#cbn_snippet ChronicleParserExtension#cbn_snippet}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_parser_extension#cbn_snippet ChronicleParserExtension#cbn_snippet}
 
 ---
 
@@ -1337,7 +1337,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_parser_extension#deletion_policy ChronicleParserExtension#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_parser_extension#deletion_policy ChronicleParserExtension#deletion_policy}
 
 ---
 
@@ -1351,7 +1351,7 @@ DynamicParsing ChronicleParserExtensionDynamicParsing
 
 dynamic_parsing block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_parser_extension#dynamic_parsing ChronicleParserExtension#dynamic_parsing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_parser_extension#dynamic_parsing ChronicleParserExtension#dynamic_parsing}
 
 ---
 
@@ -1365,7 +1365,7 @@ FieldExtractors ChronicleParserExtensionFieldExtractors
 
 field_extractors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_parser_extension#field_extractors ChronicleParserExtension#field_extractors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_parser_extension#field_extractors ChronicleParserExtension#field_extractors}
 
 ---
 
@@ -1377,7 +1377,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_parser_extension#id ChronicleParserExtension#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_parser_extension#id ChronicleParserExtension#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1394,7 +1394,7 @@ Log *string
 
 Raw log used to assist the user in creation of augmentation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_parser_extension#log ChronicleParserExtension#log}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_parser_extension#log ChronicleParserExtension#log}
 
 ---
 
@@ -1406,7 +1406,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_parser_extension#project ChronicleParserExtension#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_parser_extension#project ChronicleParserExtension#project}.
 
 ---
 
@@ -1420,7 +1420,7 @@ Timeouts ChronicleParserExtensionTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_parser_extension#timeouts ChronicleParserExtension#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_parser_extension#timeouts ChronicleParserExtension#timeouts}
 
 ---
 
@@ -1437,7 +1437,7 @@ Flag to bypass parser extension validation.
 If enabled, the parser extension won't be rejected during the validation
 phase and validation will be skipped.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_parser_extension#validation_skipped ChronicleParserExtension#validation_skipped}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_parser_extension#validation_skipped ChronicleParserExtension#validation_skipped}
 
 ---
 
@@ -1446,7 +1446,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleParserExtension.ChronicleParserExtensionDynamicParsing.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleparserextension"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chronicleparserextension"
 
 &chronicleparserextension.ChronicleParserExtensionDynamicParsing {
 	OptedFields: interface{},
@@ -1471,7 +1471,7 @@ OptedFields interface{}
 
 opted_fields block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_parser_extension#opted_fields ChronicleParserExtension#opted_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_parser_extension#opted_fields ChronicleParserExtension#opted_fields}
 
 ---
 
@@ -1480,7 +1480,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleParserExtension.ChronicleParserExtensionDynamicParsingOptedFields.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleparserextension"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chronicleparserextension"
 
 &chronicleparserextension.ChronicleParserExtensionDynamicParsingOptedFields {
 	Path: *string,
@@ -1507,7 +1507,7 @@ Path *string
 
 Path of the log field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_parser_extension#path ChronicleParserExtension#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_parser_extension#path ChronicleParserExtension#path}
 
 ---
 
@@ -1521,7 +1521,7 @@ SampleValue *string
 
 Sample value of the log field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_parser_extension#sample_value ChronicleParserExtension#sample_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_parser_extension#sample_value ChronicleParserExtension#sample_value}
 
 ---
 
@@ -1530,13 +1530,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleParserExtension.ChronicleParserExtensionFieldExtractors.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleparserextension"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chronicleparserextension"
 
 &chronicleparserextension.ChronicleParserExtensionFieldExtractors {
 	AppendRepeatedFields: interface{},
 	Extractors: interface{},
 	LogFormat: *string,
-	PreprocessConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.chronicleParserExtension.ChronicleParserExtensionFieldExtractorsPreprocessConfig,
+	PreprocessConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.chronicleParserExtension.ChronicleParserExtensionFieldExtractorsPreprocessConfig,
 }
 ```
 
@@ -1561,7 +1561,7 @@ AppendRepeatedFields interface{}
 
 Whether to append repeated fields or not. When false, repeated fields will be replaced.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_parser_extension#append_repeated_fields ChronicleParserExtension#append_repeated_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_parser_extension#append_repeated_fields ChronicleParserExtension#append_repeated_fields}
 
 ---
 
@@ -1575,7 +1575,7 @@ Extractors interface{}
 
 extractors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_parser_extension#extractors ChronicleParserExtension#extractors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_parser_extension#extractors ChronicleParserExtension#extractors}
 
 ---
 
@@ -1589,7 +1589,7 @@ LogFormat *string
 
 Possible values: JSON CSV XML.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_parser_extension#log_format ChronicleParserExtension#log_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_parser_extension#log_format ChronicleParserExtension#log_format}
 
 ---
 
@@ -1603,7 +1603,7 @@ PreprocessConfig ChronicleParserExtensionFieldExtractorsPreprocessConfig
 
 preprocess_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_parser_extension#preprocess_config ChronicleParserExtension#preprocess_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_parser_extension#preprocess_config ChronicleParserExtension#preprocess_config}
 
 ---
 
@@ -1612,7 +1612,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleParserExtension.ChronicleParserExtensionFieldExtractorsExtractors.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleparserextension"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chronicleparserextension"
 
 &chronicleparserextension.ChronicleParserExtensionFieldExtractorsExtractors {
 	DestinationPath: *string,
@@ -1650,7 +1650,7 @@ Path in generated event which is to be populated.
 This is required if the
 FieldExtractor is used to specify the parser extension.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_parser_extension#destination_path ChronicleParserExtension#destination_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_parser_extension#destination_path ChronicleParserExtension#destination_path}
 
 ---
 
@@ -1668,7 +1668,7 @@ It refers to a section or substring in raw log.
 This is required if the FieldExtractor is used to specify the parser
 extension.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_parser_extension#field_path ChronicleParserExtension#field_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_parser_extension#field_path ChronicleParserExtension#field_path}
 
 ---
 
@@ -1682,7 +1682,7 @@ PreconditionOp *string
 
 Operator used for precondition. Possible values: EQUALS NOT_EQUALS.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_parser_extension#precondition_op ChronicleParserExtension#precondition_op}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_parser_extension#precondition_op ChronicleParserExtension#precondition_op}
 
 ---
 
@@ -1698,7 +1698,7 @@ Precondition path could be a json path, xml path or csv column name depending on
 
 It refers to a section or substring in raw log.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_parser_extension#precondition_path ChronicleParserExtension#precondition_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_parser_extension#precondition_path ChronicleParserExtension#precondition_path}
 
 ---
 
@@ -1712,7 +1712,7 @@ PreconditionValue *string
 
 Precondition value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_parser_extension#precondition_value ChronicleParserExtension#precondition_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_parser_extension#precondition_value ChronicleParserExtension#precondition_value}
 
 ---
 
@@ -1726,7 +1726,7 @@ Value *string
 
 Value to be mapped to the destination path directly.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_parser_extension#value ChronicleParserExtension#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_parser_extension#value ChronicleParserExtension#value}
 
 ---
 
@@ -1735,7 +1735,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleParserExtension.ChronicleParserExtensionFieldExtractorsPreprocessConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleparserextension"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chronicleparserextension"
 
 &chronicleparserextension.ChronicleParserExtensionFieldExtractorsPreprocessConfig {
 	GrokRegex: *string,
@@ -1762,7 +1762,7 @@ GrokRegex *string
 
 GROK Regex to extract the structured part of the log. syntax documentation: www.elastic.co/guide/en/logstash/current/plugins-filters-grok.html.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_parser_extension#grok_regex ChronicleParserExtension#grok_regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_parser_extension#grok_regex ChronicleParserExtension#grok_regex}
 
 ---
 
@@ -1776,7 +1776,7 @@ Target *string
 
 Target field name for the structured part of the log. This should match a SEMANTIC identifier from the grok expression.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_parser_extension#target ChronicleParserExtension#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_parser_extension#target ChronicleParserExtension#target}
 
 ---
 
@@ -1785,7 +1785,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.chronicleParserExtension.ChronicleParserExtensionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleparserextension"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chronicleparserextension"
 
 &chronicleparserextension.ChronicleParserExtensionTimeouts {
 	Create: *string,
@@ -1797,8 +1797,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleparsere
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.chronicleParserExtension.ChronicleParserExtensionTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_parser_extension#create ChronicleParserExtension#create}. |
-| <code><a href="#@cdktn/provider-google.chronicleParserExtension.ChronicleParserExtensionTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_parser_extension#delete ChronicleParserExtension#delete}. |
+| <code><a href="#@cdktn/provider-google.chronicleParserExtension.ChronicleParserExtensionTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_parser_extension#create ChronicleParserExtension#create}. |
+| <code><a href="#@cdktn/provider-google.chronicleParserExtension.ChronicleParserExtensionTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_parser_extension#delete ChronicleParserExtension#delete}. |
 
 ---
 
@@ -1810,7 +1810,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_parser_extension#create ChronicleParserExtension#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_parser_extension#create ChronicleParserExtension#create}.
 
 ---
 
@@ -1822,7 +1822,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/chronicle_parser_extension#delete ChronicleParserExtension#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_parser_extension#delete ChronicleParserExtension#delete}.
 
 ---
 
@@ -1833,7 +1833,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleParserExtension.ChronicleParserExtensionDynamicParsingOptedFieldsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleparserextension"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chronicleparserextension"
 
 chronicleparserextension.NewChronicleParserExtensionDynamicParsingOptedFieldsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ChronicleParserExtensionDynamicParsingOptedFieldsList
 ```
@@ -1993,7 +1993,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleParserExtension.ChronicleParserExtensionDynamicParsingOptedFieldsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleparserextension"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chronicleparserextension"
 
 chronicleparserextension.NewChronicleParserExtensionDynamicParsingOptedFieldsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ChronicleParserExtensionDynamicParsingOptedFieldsOutputReference
 ```
@@ -2318,7 +2318,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleParserExtension.ChronicleParserExtensionDynamicParsingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleparserextension"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chronicleparserextension"
 
 chronicleparserextension.NewChronicleParserExtensionDynamicParsingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleParserExtensionDynamicParsingOutputReference
 ```
@@ -2609,7 +2609,7 @@ func InternalValue() ChronicleParserExtensionDynamicParsing
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleParserExtension.ChronicleParserExtensionFieldExtractorsExtractorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleparserextension"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chronicleparserextension"
 
 chronicleparserextension.NewChronicleParserExtensionFieldExtractorsExtractorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ChronicleParserExtensionFieldExtractorsExtractorsList
 ```
@@ -2769,7 +2769,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleParserExtension.ChronicleParserExtensionFieldExtractorsExtractorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleparserextension"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chronicleparserextension"
 
 chronicleparserextension.NewChronicleParserExtensionFieldExtractorsExtractorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ChronicleParserExtensionFieldExtractorsExtractorsOutputReference
 ```
@@ -3210,7 +3210,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleParserExtension.ChronicleParserExtensionFieldExtractorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleparserextension"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chronicleparserextension"
 
 chronicleparserextension.NewChronicleParserExtensionFieldExtractorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleParserExtensionFieldExtractorsOutputReference
 ```
@@ -3612,7 +3612,7 @@ func InternalValue() ChronicleParserExtensionFieldExtractors
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleParserExtension.ChronicleParserExtensionFieldExtractorsPreprocessConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleparserextension"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chronicleparserextension"
 
 chronicleparserextension.NewChronicleParserExtensionFieldExtractorsPreprocessConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleParserExtensionFieldExtractorsPreprocessConfigOutputReference
 ```
@@ -3919,7 +3919,7 @@ func InternalValue() ChronicleParserExtensionFieldExtractorsPreprocessConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleParserExtension.ChronicleParserExtensionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/chronicleparserextension"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/chronicleparserextension"
 
 chronicleparserextension.NewChronicleParserExtensionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ChronicleParserExtensionTimeoutsOutputReference
 ```

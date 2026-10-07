@@ -4,12 +4,12 @@
 
 ### BiglakeCatalog <a name="BiglakeCatalog" id="@cdktn/provider-google.biglakeCatalog.BiglakeCatalog"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/biglake_catalog google_biglake_catalog}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/biglake_catalog google_biglake_catalog}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.biglakeCatalog.BiglakeCatalog.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakecatalog"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/biglakecatalog"
 
 biglakecatalog.NewBiglakeCatalog(scope Construct, id *string, config BiglakeCatalogConfig) BiglakeCatalog
 ```
@@ -441,7 +441,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.biglakeCatalog.BiglakeCatalog.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakecatalog"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/biglakecatalog"
 
 biglakecatalog.BiglakeCatalog_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.biglakeCatalog.BiglakeCatalog.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakecatalog"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/biglakecatalog"
 
 biglakecatalog.BiglakeCatalog_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ biglakecatalog.BiglakeCatalog_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.biglakeCatalog.BiglakeCatalog.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakecatalog"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/biglakecatalog"
 
 biglakecatalog.BiglakeCatalog_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ biglakecatalog.BiglakeCatalog_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.biglakeCatalog.BiglakeCatalog.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakecatalog"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/biglakecatalog"
 
 biglakecatalog.BiglakeCatalog_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -530,7 +530,7 @@ The construct id used in the generated config for the BiglakeCatalog to import.
 
 The id of the existing BiglakeCatalog that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/biglake_catalog#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/biglake_catalog#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -906,7 +906,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.biglakeCatalog.BiglakeCatalogConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakecatalog"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/biglakecatalog"
 
 &biglakecatalog.BiglakeCatalogConfig {
 	Connection: interface{},
@@ -921,7 +921,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakecatalog"
 	DeletionPolicy: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.biglakeCatalog.BiglakeCatalogTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.biglakeCatalog.BiglakeCatalogTimeouts,
 }
 ```
 
@@ -939,8 +939,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakecatalog"
 | <code><a href="#@cdktn/provider-google.biglakeCatalog.BiglakeCatalogConfig.property.location">Location</a></code> | <code>*string</code> | The geographic location where the Catalog should reside. |
 | <code><a href="#@cdktn/provider-google.biglakeCatalog.BiglakeCatalogConfig.property.name">Name</a></code> | <code>*string</code> | The name of the Catalog. Format: projects/{project_id_or_number}/locations/{locationId}/catalogs/{catalogId}. |
 | <code><a href="#@cdktn/provider-google.biglakeCatalog.BiglakeCatalogConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.biglakeCatalog.BiglakeCatalogConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/biglake_catalog#id BiglakeCatalog#id}. |
-| <code><a href="#@cdktn/provider-google.biglakeCatalog.BiglakeCatalogConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/biglake_catalog#project BiglakeCatalog#project}. |
+| <code><a href="#@cdktn/provider-google.biglakeCatalog.BiglakeCatalogConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/biglake_catalog#id BiglakeCatalog#id}. |
+| <code><a href="#@cdktn/provider-google.biglakeCatalog.BiglakeCatalogConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/biglake_catalog#project BiglakeCatalog#project}. |
 | <code><a href="#@cdktn/provider-google.biglakeCatalog.BiglakeCatalogConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.biglakeCatalog.BiglakeCatalogTimeouts">BiglakeCatalogTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1025,7 +1025,7 @@ Location *string
 
 The geographic location where the Catalog should reside.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/biglake_catalog#location BiglakeCatalog#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/biglake_catalog#location BiglakeCatalog#location}
 
 ---
 
@@ -1039,7 +1039,7 @@ Name *string
 
 The name of the Catalog. Format: projects/{project_id_or_number}/locations/{locationId}/catalogs/{catalogId}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/biglake_catalog#name BiglakeCatalog#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/biglake_catalog#name BiglakeCatalog#name}
 
 ---
 
@@ -1060,7 +1060,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/biglake_catalog#deletion_policy BiglakeCatalog#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/biglake_catalog#deletion_policy BiglakeCatalog#deletion_policy}
 
 ---
 
@@ -1072,7 +1072,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/biglake_catalog#id BiglakeCatalog#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/biglake_catalog#id BiglakeCatalog#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1087,7 +1087,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/biglake_catalog#project BiglakeCatalog#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/biglake_catalog#project BiglakeCatalog#project}.
 
 ---
 
@@ -1101,7 +1101,7 @@ Timeouts BiglakeCatalogTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/biglake_catalog#timeouts BiglakeCatalog#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/biglake_catalog#timeouts BiglakeCatalog#timeouts}
 
 ---
 
@@ -1110,7 +1110,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.biglakeCatalog.BiglakeCatalogTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakecatalog"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/biglakecatalog"
 
 &biglakecatalog.BiglakeCatalogTimeouts {
 	Create: *string,
@@ -1122,8 +1122,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakecatalog"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.biglakeCatalog.BiglakeCatalogTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/biglake_catalog#create BiglakeCatalog#create}. |
-| <code><a href="#@cdktn/provider-google.biglakeCatalog.BiglakeCatalogTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/biglake_catalog#delete BiglakeCatalog#delete}. |
+| <code><a href="#@cdktn/provider-google.biglakeCatalog.BiglakeCatalogTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/biglake_catalog#create BiglakeCatalog#create}. |
+| <code><a href="#@cdktn/provider-google.biglakeCatalog.BiglakeCatalogTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/biglake_catalog#delete BiglakeCatalog#delete}. |
 
 ---
 
@@ -1135,7 +1135,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/biglake_catalog#create BiglakeCatalog#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/biglake_catalog#create BiglakeCatalog#create}.
 
 ---
 
@@ -1147,7 +1147,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/biglake_catalog#delete BiglakeCatalog#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/biglake_catalog#delete BiglakeCatalog#delete}.
 
 ---
 
@@ -1158,7 +1158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.biglakeCatalog.BiglakeCatalogTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/biglakecatalog"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/biglakecatalog"
 
 biglakecatalog.NewBiglakeCatalogTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BiglakeCatalogTimeoutsOutputReference
 ```

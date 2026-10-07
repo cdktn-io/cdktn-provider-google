@@ -4,7 +4,7 @@
 
 ### NetworkServicesAgentGateway <a name="NetworkServicesAgentGateway" id="@cdktn/provider-google.networkServicesAgentGateway.NetworkServicesAgentGateway"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_agent_gateway google_network_services_agent_gateway}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_agent_gateway google_network_services_agent_gateway}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesAgentGateway.NetworkServicesAgentGateway.Initializer"></a>
 
@@ -78,6 +78,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.networkServicesAgentGateway.NetworkServicesAgentGateway.putNetworkConfig">PutNetworkConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesAgentGateway.NetworkServicesAgentGateway.putSelfManaged">PutSelfManaged</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesAgentGateway.NetworkServicesAgentGateway.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkServicesAgentGateway.NetworkServicesAgentGateway.resetAgentConnectivityTemplate">ResetAgentConnectivityTemplate</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesAgentGateway.NetworkServicesAgentGateway.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesAgentGateway.NetworkServicesAgentGateway.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesAgentGateway.NetworkServicesAgentGateway.resetGoogleManaged">ResetGoogleManaged</a></code> | *No description.* |
@@ -449,6 +450,12 @@ private void PutTimeouts(NetworkServicesAgentGatewayTimeouts Value)
 
 ---
 
+##### `ResetAgentConnectivityTemplate` <a name="ResetAgentConnectivityTemplate" id="@cdktn/provider-google.networkServicesAgentGateway.NetworkServicesAgentGateway.resetAgentConnectivityTemplate"></a>
+
+```csharp
+private void ResetAgentConnectivityTemplate()
+```
+
 ##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.networkServicesAgentGateway.NetworkServicesAgentGateway.resetDeletionPolicy"></a>
 
 ```csharp
@@ -618,7 +625,7 @@ The construct id used in the generated config for the NetworkServicesAgentGatewa
 
 The id of the existing NetworkServicesAgentGateway that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_agent_gateway#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_agent_gateway#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -658,6 +665,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.networkServicesAgentGateway.NetworkServicesAgentGateway.property.terraformLabels">TerraformLabels</a></code> | <code>Io.Cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesAgentGateway.NetworkServicesAgentGateway.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.networkServicesAgentGateway.NetworkServicesAgentGatewayTimeoutsOutputReference">NetworkServicesAgentGatewayTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesAgentGateway.NetworkServicesAgentGateway.property.updateTime">UpdateTime</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkServicesAgentGateway.NetworkServicesAgentGateway.property.agentConnectivityTemplateInput">AgentConnectivityTemplateInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesAgentGateway.NetworkServicesAgentGateway.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesAgentGateway.NetworkServicesAgentGateway.property.descriptionInput">DescriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesAgentGateway.NetworkServicesAgentGateway.property.googleManagedInput">GoogleManagedInput</a></code> | <code><a href="#@cdktn/provider-google.networkServicesAgentGateway.NetworkServicesAgentGatewayGoogleManaged">NetworkServicesAgentGatewayGoogleManaged</a></code> | *No description.* |
@@ -671,6 +679,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.networkServicesAgentGateway.NetworkServicesAgentGateway.property.registriesInput">RegistriesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesAgentGateway.NetworkServicesAgentGateway.property.selfManagedInput">SelfManagedInput</a></code> | <code><a href="#@cdktn/provider-google.networkServicesAgentGateway.NetworkServicesAgentGatewaySelfManaged">NetworkServicesAgentGatewaySelfManaged</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesAgentGateway.NetworkServicesAgentGateway.property.timeoutsInput">TimeoutsInput</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-google.networkServicesAgentGateway.NetworkServicesAgentGatewayTimeouts">NetworkServicesAgentGatewayTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkServicesAgentGateway.NetworkServicesAgentGateway.property.agentConnectivityTemplate">AgentConnectivityTemplate</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesAgentGateway.NetworkServicesAgentGateway.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesAgentGateway.NetworkServicesAgentGateway.property.description">Description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesAgentGateway.NetworkServicesAgentGateway.property.id">Id</a></code> | <code>string</code> | *No description.* |
@@ -925,6 +934,16 @@ public string UpdateTime { get; }
 
 ---
 
+##### `AgentConnectivityTemplateInput`<sup>Optional</sup> <a name="AgentConnectivityTemplateInput" id="@cdktn/provider-google.networkServicesAgentGateway.NetworkServicesAgentGateway.property.agentConnectivityTemplateInput"></a>
+
+```csharp
+public string AgentConnectivityTemplateInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.networkServicesAgentGateway.NetworkServicesAgentGateway.property.deletionPolicyInput"></a>
 
 ```csharp
@@ -1052,6 +1071,16 @@ public IResolvable|NetworkServicesAgentGatewayTimeouts TimeoutsInput { get; }
 ```
 
 - *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-google.networkServicesAgentGateway.NetworkServicesAgentGatewayTimeouts">NetworkServicesAgentGatewayTimeouts</a>
+
+---
+
+##### `AgentConnectivityTemplate`<sup>Required</sup> <a name="AgentConnectivityTemplate" id="@cdktn/provider-google.networkServicesAgentGateway.NetworkServicesAgentGateway.property.agentConnectivityTemplate"></a>
+
+```csharp
+public string AgentConnectivityTemplate { get; }
+```
+
+- *Type:* string
 
 ---
 
@@ -1195,6 +1224,7 @@ new NetworkServicesAgentGatewayConfig {
     (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string Location,
     string Name,
+    string AgentConnectivityTemplate = null,
     string DeletionPolicy = null,
     string Description = null,
     NetworkServicesAgentGatewayGoogleManaged GoogleManaged = null,
@@ -1222,13 +1252,14 @@ new NetworkServicesAgentGatewayConfig {
 | <code><a href="#@cdktn/provider-google.networkServicesAgentGateway.NetworkServicesAgentGatewayConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.networkServicesAgentGateway.NetworkServicesAgentGatewayConfig.property.location">Location</a></code> | <code>string</code> | The location of the agent gateway. |
 | <code><a href="#@cdktn/provider-google.networkServicesAgentGateway.NetworkServicesAgentGatewayConfig.property.name">Name</a></code> | <code>string</code> | Name of the AgentGateway resource. |
+| <code><a href="#@cdktn/provider-google.networkServicesAgentGateway.NetworkServicesAgentGatewayConfig.property.agentConnectivityTemplate">AgentConnectivityTemplate</a></code> | <code>string</code> | The resource name of the AgentConnectivityTemplate. Must be of format 'projects/{{project}}/locations/{{location}}/agentConnectivityTemplates/{{agent_connectivity_template}}'. |
 | <code><a href="#@cdktn/provider-google.networkServicesAgentGateway.NetworkServicesAgentGatewayConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.networkServicesAgentGateway.NetworkServicesAgentGatewayConfig.property.description">Description</a></code> | <code>string</code> | A free-text description of the resource. Max length 1024 characters. |
 | <code><a href="#@cdktn/provider-google.networkServicesAgentGateway.NetworkServicesAgentGatewayConfig.property.googleManaged">GoogleManaged</a></code> | <code><a href="#@cdktn/provider-google.networkServicesAgentGateway.NetworkServicesAgentGatewayGoogleManaged">NetworkServicesAgentGatewayGoogleManaged</a></code> | google_managed block. |
-| <code><a href="#@cdktn/provider-google.networkServicesAgentGateway.NetworkServicesAgentGatewayConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_agent_gateway#id NetworkServicesAgentGateway#id}. |
+| <code><a href="#@cdktn/provider-google.networkServicesAgentGateway.NetworkServicesAgentGatewayConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_agent_gateway#id NetworkServicesAgentGateway#id}. |
 | <code><a href="#@cdktn/provider-google.networkServicesAgentGateway.NetworkServicesAgentGatewayConfig.property.labels">Labels</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Set of label tags associated with the AgentGateway resource. |
 | <code><a href="#@cdktn/provider-google.networkServicesAgentGateway.NetworkServicesAgentGatewayConfig.property.networkConfig">NetworkConfig</a></code> | <code><a href="#@cdktn/provider-google.networkServicesAgentGateway.NetworkServicesAgentGatewayNetworkConfig">NetworkServicesAgentGatewayNetworkConfig</a></code> | network_config block. |
-| <code><a href="#@cdktn/provider-google.networkServicesAgentGateway.NetworkServicesAgentGatewayConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_agent_gateway#project NetworkServicesAgentGateway#project}. |
+| <code><a href="#@cdktn/provider-google.networkServicesAgentGateway.NetworkServicesAgentGatewayConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_agent_gateway#project NetworkServicesAgentGateway#project}. |
 | <code><a href="#@cdktn/provider-google.networkServicesAgentGateway.NetworkServicesAgentGatewayConfig.property.protocols">Protocols</a></code> | <code>string[]</code> | List of protocols supported by an Agent Gateway. Possible values: ["MCP"]. |
 | <code><a href="#@cdktn/provider-google.networkServicesAgentGateway.NetworkServicesAgentGatewayConfig.property.registries">Registries</a></code> | <code>string[]</code> | A list of Agent registries containing the agents, MCP servers and tools governed by the Agent Gateway. |
 | <code><a href="#@cdktn/provider-google.networkServicesAgentGateway.NetworkServicesAgentGatewayConfig.property.selfManaged">SelfManaged</a></code> | <code><a href="#@cdktn/provider-google.networkServicesAgentGateway.NetworkServicesAgentGatewaySelfManaged">NetworkServicesAgentGatewaySelfManaged</a></code> | self_managed block. |
@@ -1316,7 +1347,7 @@ public string Location { get; set; }
 
 The location of the agent gateway.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_agent_gateway#location NetworkServicesAgentGateway#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_agent_gateway#location NetworkServicesAgentGateway#location}
 
 ---
 
@@ -1330,7 +1361,21 @@ public string Name { get; set; }
 
 Name of the AgentGateway resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_agent_gateway#name NetworkServicesAgentGateway#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_agent_gateway#name NetworkServicesAgentGateway#name}
+
+---
+
+##### `AgentConnectivityTemplate`<sup>Optional</sup> <a name="AgentConnectivityTemplate" id="@cdktn/provider-google.networkServicesAgentGateway.NetworkServicesAgentGatewayConfig.property.agentConnectivityTemplate"></a>
+
+```csharp
+public string AgentConnectivityTemplate { get; set; }
+```
+
+- *Type:* string
+
+The resource name of the AgentConnectivityTemplate. Must be of format 'projects/{{project}}/locations/{{location}}/agentConnectivityTemplates/{{agent_connectivity_template}}'.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_agent_gateway#agent_connectivity_template NetworkServicesAgentGateway#agent_connectivity_template}
 
 ---
 
@@ -1351,7 +1396,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_agent_gateway#deletion_policy NetworkServicesAgentGateway#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_agent_gateway#deletion_policy NetworkServicesAgentGateway#deletion_policy}
 
 ---
 
@@ -1365,7 +1410,7 @@ public string Description { get; set; }
 
 A free-text description of the resource. Max length 1024 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_agent_gateway#description NetworkServicesAgentGateway#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_agent_gateway#description NetworkServicesAgentGateway#description}
 
 ---
 
@@ -1379,7 +1424,7 @@ public NetworkServicesAgentGatewayGoogleManaged GoogleManaged { get; set; }
 
 google_managed block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_agent_gateway#google_managed NetworkServicesAgentGateway#google_managed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_agent_gateway#google_managed NetworkServicesAgentGateway#google_managed}
 
 ---
 
@@ -1391,7 +1436,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_agent_gateway#id NetworkServicesAgentGateway#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_agent_gateway#id NetworkServicesAgentGateway#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1411,7 +1456,7 @@ Set of label tags associated with the AgentGateway resource.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_agent_gateway#labels NetworkServicesAgentGateway#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_agent_gateway#labels NetworkServicesAgentGateway#labels}
 
 ---
 
@@ -1425,7 +1470,7 @@ public NetworkServicesAgentGatewayNetworkConfig NetworkConfig { get; set; }
 
 network_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_agent_gateway#network_config NetworkServicesAgentGateway#network_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_agent_gateway#network_config NetworkServicesAgentGateway#network_config}
 
 ---
 
@@ -1437,7 +1482,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_agent_gateway#project NetworkServicesAgentGateway#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_agent_gateway#project NetworkServicesAgentGateway#project}.
 
 ---
 
@@ -1451,7 +1496,7 @@ public string[] Protocols { get; set; }
 
 List of protocols supported by an Agent Gateway. Possible values: ["MCP"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_agent_gateway#protocols NetworkServicesAgentGateway#protocols}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_agent_gateway#protocols NetworkServicesAgentGateway#protocols}
 
 ---
 
@@ -1468,7 +1513,7 @@ A list of Agent registries containing the agents, MCP servers and tools governed
 Note: Currently limited to project-scoped registries Must be of format
 '//agentregistry.googleapis.com/{version}/projects/{{project}}/locations/{{location}}'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_agent_gateway#registries NetworkServicesAgentGateway#registries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_agent_gateway#registries NetworkServicesAgentGateway#registries}
 
 ---
 
@@ -1482,7 +1527,7 @@ public NetworkServicesAgentGatewaySelfManaged SelfManaged { get; set; }
 
 self_managed block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_agent_gateway#self_managed NetworkServicesAgentGateway#self_managed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_agent_gateway#self_managed NetworkServicesAgentGateway#self_managed}
 
 ---
 
@@ -1496,7 +1541,7 @@ public NetworkServicesAgentGatewayTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_agent_gateway#timeouts NetworkServicesAgentGateway#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_agent_gateway#timeouts NetworkServicesAgentGateway#timeouts}
 
 ---
 
@@ -1530,7 +1575,7 @@ public string GovernedAccessPath { get; set; }
 
 Operating Mode of Agent Gateway. Possible values: ["AGENT_TO_ANYWHERE", "CLIENT_TO_AGENT"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_agent_gateway#governed_access_path NetworkServicesAgentGateway#governed_access_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_agent_gateway#governed_access_path NetworkServicesAgentGateway#governed_access_path}
 
 ---
 
@@ -1566,7 +1611,7 @@ public NetworkServicesAgentGatewayNetworkConfigEgress Egress { get; set; }
 
 egress block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_agent_gateway#egress NetworkServicesAgentGateway#egress}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_agent_gateway#egress NetworkServicesAgentGateway#egress}
 
 ---
 
@@ -1580,7 +1625,7 @@ public NetworkServicesAgentGatewayNetworkConfigDnsPeeringConfig DnsPeeringConfig
 
 dns_peering_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_agent_gateway#dns_peering_config NetworkServicesAgentGateway#dns_peering_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_agent_gateway#dns_peering_config NetworkServicesAgentGateway#dns_peering_config}
 
 ---
 
@@ -1622,7 +1667,7 @@ Each entry
 must be a fully qualified domain name ending with a dot
 (for example, 'example.com.').
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_agent_gateway#domains NetworkServicesAgentGateway#domains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_agent_gateway#domains NetworkServicesAgentGateway#domains}
 
 ---
 
@@ -1636,7 +1681,7 @@ public string TargetNetwork { get; set; }
 
 The URI of the target VPC network for DNS peering. Must be of the form 'projects/{project}/global/networks/{network}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_agent_gateway#target_network NetworkServicesAgentGateway#target_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_agent_gateway#target_network NetworkServicesAgentGateway#target_network}
 
 ---
 
@@ -1650,7 +1695,7 @@ public string TargetProject { get; set; }
 
 The ID of the project that hosts the target VPC network for DNS peering.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_agent_gateway#target_project NetworkServicesAgentGateway#target_project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_agent_gateway#target_project NetworkServicesAgentGateway#target_project}
 
 ---
 
@@ -1684,7 +1729,7 @@ public string NetworkAttachment { get; set; }
 
 The URI of the Network Attachment resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_agent_gateway#network_attachment NetworkServicesAgentGateway#network_attachment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_agent_gateway#network_attachment NetworkServicesAgentGateway#network_attachment}
 
 ---
 
@@ -1718,7 +1763,7 @@ public string ResourceUri { get; set; }
 
 A supported Google Cloud networking proxy in the Project and Location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_agent_gateway#resource_uri NetworkServicesAgentGateway#resource_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_agent_gateway#resource_uri NetworkServicesAgentGateway#resource_uri}
 
 ---
 
@@ -1740,9 +1785,9 @@ new NetworkServicesAgentGatewayTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.networkServicesAgentGateway.NetworkServicesAgentGatewayTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_agent_gateway#create NetworkServicesAgentGateway#create}. |
-| <code><a href="#@cdktn/provider-google.networkServicesAgentGateway.NetworkServicesAgentGatewayTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_agent_gateway#delete NetworkServicesAgentGateway#delete}. |
-| <code><a href="#@cdktn/provider-google.networkServicesAgentGateway.NetworkServicesAgentGatewayTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_agent_gateway#update NetworkServicesAgentGateway#update}. |
+| <code><a href="#@cdktn/provider-google.networkServicesAgentGateway.NetworkServicesAgentGatewayTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_agent_gateway#create NetworkServicesAgentGateway#create}. |
+| <code><a href="#@cdktn/provider-google.networkServicesAgentGateway.NetworkServicesAgentGatewayTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_agent_gateway#delete NetworkServicesAgentGateway#delete}. |
+| <code><a href="#@cdktn/provider-google.networkServicesAgentGateway.NetworkServicesAgentGatewayTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_agent_gateway#update NetworkServicesAgentGateway#update}. |
 
 ---
 
@@ -1754,7 +1799,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_agent_gateway#create NetworkServicesAgentGateway#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_agent_gateway#create NetworkServicesAgentGateway#create}.
 
 ---
 
@@ -1766,7 +1811,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_agent_gateway#delete NetworkServicesAgentGateway#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_agent_gateway#delete NetworkServicesAgentGateway#delete}.
 
 ---
 
@@ -1778,7 +1823,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_agent_gateway#update NetworkServicesAgentGateway#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_agent_gateway#update NetworkServicesAgentGateway#update}.
 
 ---
 

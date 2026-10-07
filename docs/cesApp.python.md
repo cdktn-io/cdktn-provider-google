@@ -4,7 +4,7 @@
 
 ### CesApp <a name="CesApp" id="@cdktn/provider-google.cesApp.CesApp"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app google_ces_app}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app google_ces_app}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cesApp.CesApp.Initializer"></a>
 
@@ -30,11 +30,13 @@ cesApp.CesApp(
   default_channel_profile: CesAppDefaultChannelProfile = None,
   deletion_policy: str = None,
   description: str = None,
+  error_handling_settings: CesAppErrorHandlingSettings = None,
   evaluation_metrics_thresholds: CesAppEvaluationMetricsThresholds = None,
   global_instruction: str = None,
   guardrails: typing.List[str] = None,
   id: str = None,
   language_settings: CesAppLanguageSettings = None,
+  locked: bool | IResolvable = None,
   logging_settings: CesAppLoggingSettings = None,
   metadata: typing.Mapping[str] = None,
   model_settings: CesAppModelSettings = None,
@@ -44,7 +46,8 @@ cesApp.CesApp(
   timeouts: CesAppTimeouts = None,
   time_zone_settings: CesAppTimeZoneSettings = None,
   tool_execution_mode: str = None,
-  variable_declarations: IResolvable | typing.List[CesAppVariableDeclarations] = None
+  variable_declarations: IResolvable | typing.List[CesAppVariableDeclarations] = None,
+  vpc_sc_settings: CesAppVpcScSettings = None
 )
 ```
 
@@ -68,21 +71,24 @@ cesApp.CesApp(
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.Initializer.parameter.defaultChannelProfile">default_channel_profile</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfile">CesAppDefaultChannelProfile</a></code> | default_channel_profile block. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.Initializer.parameter.description">description</a></code> | <code>str</code> | Human-readable description of the app. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesApp.Initializer.parameter.errorHandlingSettings">error_handling_settings</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettings">CesAppErrorHandlingSettings</a></code> | error_handling_settings block. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.Initializer.parameter.evaluationMetricsThresholds">evaluation_metrics_thresholds</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholds">CesAppEvaluationMetricsThresholds</a></code> | evaluation_metrics_thresholds block. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.Initializer.parameter.globalInstruction">global_instruction</a></code> | <code>str</code> | Instructions for all the agents in the app. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.Initializer.parameter.guardrails">guardrails</a></code> | <code>typing.List[str]</code> | List of guardrails for the app. Format: 'projects/{project}/locations/{location}/apps/{app}/guardrails/{guardrail}'. |
-| <code><a href="#@cdktn/provider-google.cesApp.CesApp.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#id CesApp#id}. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesApp.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#id CesApp#id}. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.Initializer.parameter.languageSettings">language_settings</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppLanguageSettings">CesAppLanguageSettings</a></code> | language_settings block. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesApp.Initializer.parameter.locked">locked</a></code> | <code>bool \| cdktn.IResolvable</code> | Indicates whether the app is locked for changes. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.Initializer.parameter.loggingSettings">logging_settings</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettings">CesAppLoggingSettings</a></code> | logging_settings block. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.Initializer.parameter.metadata">metadata</a></code> | <code>typing.Mapping[str]</code> | Metadata about the app. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.Initializer.parameter.modelSettings">model_settings</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppModelSettings">CesAppModelSettings</a></code> | model_settings block. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.Initializer.parameter.pinned">pinned</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether the app is pinned in the app list. |
-| <code><a href="#@cdktn/provider-google.cesApp.CesApp.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#project CesApp#project}. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesApp.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#project CesApp#project}. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.Initializer.parameter.rootAgent">root_agent</a></code> | <code>str</code> | The root agent is the entry point of the app. Format: 'projects/{project}/locations/{location}/apps/{app}/agents/{agent}'. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppTimeouts">CesAppTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.Initializer.parameter.timeZoneSettings">time_zone_settings</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppTimeZoneSettings">CesAppTimeZoneSettings</a></code> | time_zone_settings block. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.Initializer.parameter.toolExecutionMode">tool_execution_mode</a></code> | <code>str</code> | The tool execution mode for the app. See the [API reference](https://docs.cloud.google.com/customer-engagement-ai/conversational-agents/ps/reference/rpc/google.cloud.ces.v1#google.cloud.ces.v1.App.ToolExecutionMode) for more details. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.Initializer.parameter.variableDeclarations">variable_declarations</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.cesApp.CesAppVariableDeclarations">CesAppVariableDeclarations</a>]</code> | variable_declarations block. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesApp.Initializer.parameter.vpcScSettings">vpc_sc_settings</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppVpcScSettings">CesAppVpcScSettings</a></code> | vpc_sc_settings block. |
 
 ---
 
@@ -155,7 +161,7 @@ The ID to use for the app, which will become the final component of the app's re
 If not provided, a unique ID will be
 automatically assigned for the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#app_id CesApp#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#app_id CesApp#app_id}
 
 ---
 
@@ -165,7 +171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Display name of the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#display_name CesApp#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#display_name CesApp#display_name}
 
 ---
 
@@ -175,7 +181,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#location CesApp#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#location CesApp#location}
 
 ---
 
@@ -185,7 +191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 audio_processing_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#audio_processing_config CesApp#audio_processing_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#audio_processing_config CesApp#audio_processing_config}
 
 ---
 
@@ -195,7 +201,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 client_certificate_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#client_certificate_settings CesApp#client_certificate_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#client_certificate_settings CesApp#client_certificate_settings}
 
 ---
 
@@ -205,7 +211,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 data_store_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#data_store_settings CesApp#data_store_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#data_store_settings CesApp#data_store_settings}
 
 ---
 
@@ -215,7 +221,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 default_channel_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#default_channel_profile CesApp#default_channel_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#default_channel_profile CesApp#default_channel_profile}
 
 ---
 
@@ -232,7 +238,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#deletion_policy CesApp#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#deletion_policy CesApp#deletion_policy}
 
 ---
 
@@ -242,7 +248,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Human-readable description of the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#description CesApp#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#description CesApp#description}
+
+---
+
+##### `error_handling_settings`<sup>Optional</sup> <a name="error_handling_settings" id="@cdktn/provider-google.cesApp.CesApp.Initializer.parameter.errorHandlingSettings"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettings">CesAppErrorHandlingSettings</a>
+
+error_handling_settings block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#error_handling_settings CesApp#error_handling_settings}
 
 ---
 
@@ -252,7 +268,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 evaluation_metrics_thresholds block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#evaluation_metrics_thresholds CesApp#evaluation_metrics_thresholds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#evaluation_metrics_thresholds CesApp#evaluation_metrics_thresholds}
 
 ---
 
@@ -265,7 +281,7 @@ Instructions for all the agents in the app.
 You can use this instruction to set up a stable identity or personality
 across all the agents.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#global_instruction CesApp#global_instruction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#global_instruction CesApp#global_instruction}
 
 ---
 
@@ -275,7 +291,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 List of guardrails for the app. Format: 'projects/{project}/locations/{location}/apps/{app}/guardrails/{guardrail}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#guardrails CesApp#guardrails}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#guardrails CesApp#guardrails}
 
 ---
 
@@ -283,7 +299,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#id CesApp#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#id CesApp#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -296,7 +312,20 @@ If you experience problems setting this value it might not be settable. Please t
 
 language_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#language_settings CesApp#language_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#language_settings CesApp#language_settings}
+
+---
+
+##### `locked`<sup>Optional</sup> <a name="locked" id="@cdktn/provider-google.cesApp.CesApp.Initializer.parameter.locked"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Indicates whether the app is locked for changes.
+
+If the app is locked,
+modifications to the app resources will be rejected.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#locked CesApp#locked}
 
 ---
 
@@ -306,7 +335,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 logging_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#logging_settings CesApp#logging_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#logging_settings CesApp#logging_settings}
 
 ---
 
@@ -319,7 +348,7 @@ Metadata about the app.
 This field can be used to store additional
 information relevant to the app's details or intended usages.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#metadata CesApp#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#metadata CesApp#metadata}
 
 ---
 
@@ -329,7 +358,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 model_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#model_settings CesApp#model_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#model_settings CesApp#model_settings}
 
 ---
 
@@ -339,7 +368,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Whether the app is pinned in the app list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#pinned CesApp#pinned}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#pinned CesApp#pinned}
 
 ---
 
@@ -347,7 +376,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#project CesApp#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#project CesApp#project}.
 
 ---
 
@@ -357,7 +386,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The root agent is the entry point of the app. Format: 'projects/{project}/locations/{location}/apps/{app}/agents/{agent}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#root_agent CesApp#root_agent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#root_agent CesApp#root_agent}
 
 ---
 
@@ -367,7 +396,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#timeouts CesApp#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#timeouts CesApp#timeouts}
 
 ---
 
@@ -377,7 +406,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 time_zone_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#time_zone_settings CesApp#time_zone_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#time_zone_settings CesApp#time_zone_settings}
 
 ---
 
@@ -387,7 +416,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The tool execution mode for the app. See the [API reference](https://docs.cloud.google.com/customer-engagement-ai/conversational-agents/ps/reference/rpc/google.cloud.ces.v1#google.cloud.ces.v1.App.ToolExecutionMode) for more details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#tool_execution_mode CesApp#tool_execution_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#tool_execution_mode CesApp#tool_execution_mode}
 
 ---
 
@@ -397,7 +426,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 variable_declarations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#variable_declarations CesApp#variable_declarations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#variable_declarations CesApp#variable_declarations}
+
+---
+
+##### `vpc_sc_settings`<sup>Optional</sup> <a name="vpc_sc_settings" id="@cdktn/provider-google.cesApp.CesApp.Initializer.parameter.vpcScSettings"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.cesApp.CesAppVpcScSettings">CesAppVpcScSettings</a>
+
+vpc_sc_settings block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#vpc_sc_settings CesApp#vpc_sc_settings}
 
 ---
 
@@ -433,6 +472,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.putClientCertificateSettings">put_client_certificate_settings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.putDataStoreSettings">put_data_store_settings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.putDefaultChannelProfile">put_default_channel_profile</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesApp.putErrorHandlingSettings">put_error_handling_settings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.putEvaluationMetricsThresholds">put_evaluation_metrics_thresholds</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.putLanguageSettings">put_language_settings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.putLoggingSettings">put_logging_settings</a></code> | *No description.* |
@@ -440,17 +480,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.putTimeouts">put_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.putTimeZoneSettings">put_time_zone_settings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.putVariableDeclarations">put_variable_declarations</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesApp.putVpcScSettings">put_vpc_sc_settings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.resetAudioProcessingConfig">reset_audio_processing_config</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.resetClientCertificateSettings">reset_client_certificate_settings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.resetDataStoreSettings">reset_data_store_settings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.resetDefaultChannelProfile">reset_default_channel_profile</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.resetDeletionPolicy">reset_deletion_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.resetDescription">reset_description</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesApp.resetErrorHandlingSettings">reset_error_handling_settings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.resetEvaluationMetricsThresholds">reset_evaluation_metrics_thresholds</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.resetGlobalInstruction">reset_global_instruction</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.resetGuardrails">reset_guardrails</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.resetLanguageSettings">reset_language_settings</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesApp.resetLocked">reset_locked</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.resetLoggingSettings">reset_logging_settings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.resetMetadata">reset_metadata</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.resetModelSettings">reset_model_settings</a></code> | *No description.* |
@@ -461,6 +504,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.resetTimeZoneSettings">reset_time_zone_settings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.resetToolExecutionMode">reset_tool_execution_mode</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.resetVariableDeclarations">reset_variable_declarations</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesApp.resetVpcScSettings">reset_vpc_sc_settings</a></code> | *No description.* |
 
 ---
 
@@ -829,7 +873,7 @@ def put_audio_processing_config(
 
 ambient_sound_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#ambient_sound_config CesApp#ambient_sound_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#ambient_sound_config CesApp#ambient_sound_config}
 
 ---
 
@@ -839,7 +883,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 barge_in_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#barge_in_config CesApp#barge_in_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#barge_in_config CesApp#barge_in_config}
 
 ---
 
@@ -852,7 +896,7 @@ The duration of user inactivity (no speech or interaction) before the agent prom
 If not set, the agent will not prompt
 the user for reengagement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#inactivity_timeout CesApp#inactivity_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#inactivity_timeout CesApp#inactivity_timeout}
 
 ---
 
@@ -862,7 +906,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 synthesize_speech_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#synthesize_speech_configs CesApp#synthesize_speech_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#synthesize_speech_configs CesApp#synthesize_speech_configs}
 
 ---
 
@@ -882,7 +926,7 @@ def put_client_certificate_settings(
 
 The name of the SecretManager secret version resource storing the private key encoded in PEM format. Format: projects/{project}/secrets/{secret}/versions/{version}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#private_key CesApp#private_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#private_key CesApp#private_key}
 
 ---
 
@@ -892,7 +936,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The TLS certificate encoded in PEM format. This string must include the begin header and end footer lines.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#tls_certificate CesApp#tls_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#tls_certificate CesApp#tls_certificate}
 
 ---
 
@@ -902,7 +946,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The passphrase to decrypt the private key. Should be left unset if the private key is not encrypted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#passphrase CesApp#passphrase}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#passphrase CesApp#passphrase}
 
 ---
 
@@ -921,7 +965,8 @@ def put_default_channel_profile(
   disable_dtmf: bool | IResolvable = None,
   persona_property: CesAppDefaultChannelProfilePersonaProperty = None,
   profile_id: str = None,
-  web_widget_config: CesAppDefaultChannelProfileWebWidgetConfig = None
+  web_widget_config: CesAppDefaultChannelProfileWebWidgetConfig = None,
+  whatsapp_config: CesAppDefaultChannelProfileWhatsappConfig = None
 ) -> None
 ```
 
@@ -931,7 +976,7 @@ def put_default_channel_profile(
 
 The type of the channel profile. Possible values: UNKNOWN WEB_UI API TWILIO GOOGLE_TELEPHONY_PLATFORM CONTACT_CENTER_AS_A_SERVICE.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#channel_type CesApp#channel_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#channel_type CesApp#channel_type}
 
 ---
 
@@ -944,7 +989,7 @@ Whether to disable user barge-in in the conversation.
 * true: User interruptions are disabled while the agent is speaking.
 * false: The agent retains automatic control over when the user can interrupt.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#disable_barge_in_control CesApp#disable_barge_in_control}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#disable_barge_in_control CesApp#disable_barge_in_control}
 
 ---
 
@@ -954,7 +999,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Whether to disable DTMF (dual-tone multi-frequency).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#disable_dtmf CesApp#disable_dtmf}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#disable_dtmf CesApp#disable_dtmf}
 
 ---
 
@@ -964,7 +1009,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 persona_property block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#persona_property CesApp#persona_property}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#persona_property CesApp#persona_property}
 
 ---
 
@@ -974,7 +1019,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The unique identifier of the channel profile.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#profile_id CesApp#profile_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#profile_id CesApp#profile_id}
 
 ---
 
@@ -984,7 +1029,57 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 web_widget_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#web_widget_config CesApp#web_widget_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#web_widget_config CesApp#web_widget_config}
+
+---
+
+###### `whatsapp_config`<sup>Optional</sup> <a name="whatsapp_config" id="@cdktn/provider-google.cesApp.CesApp.putDefaultChannelProfile.parameter.whatsappConfig"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfig">CesAppDefaultChannelProfileWhatsappConfig</a>
+
+whatsapp_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#whatsapp_config CesApp#whatsapp_config}
+
+---
+
+##### `put_error_handling_settings` <a name="put_error_handling_settings" id="@cdktn/provider-google.cesApp.CesApp.putErrorHandlingSettings"></a>
+
+```python
+def put_error_handling_settings(
+  end_session_config: CesAppErrorHandlingSettingsEndSessionConfig = None,
+  error_handling_strategy: str = None,
+  fallback_response_config: CesAppErrorHandlingSettingsFallbackResponseConfig = None
+) -> None
+```
+
+###### `end_session_config`<sup>Optional</sup> <a name="end_session_config" id="@cdktn/provider-google.cesApp.CesApp.putErrorHandlingSettings.parameter.endSessionConfig"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsEndSessionConfig">CesAppErrorHandlingSettingsEndSessionConfig</a>
+
+end_session_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#end_session_config CesApp#end_session_config}
+
+---
+
+###### `error_handling_strategy`<sup>Optional</sup> <a name="error_handling_strategy" id="@cdktn/provider-google.cesApp.CesApp.putErrorHandlingSettings.parameter.errorHandlingStrategy"></a>
+
+- *Type:* str
+
+The strategy to use for error handling. Possible values: NONE FALLBACK_RESPONSE END_SESSION.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#error_handling_strategy CesApp#error_handling_strategy}
+
+---
+
+###### `fallback_response_config`<sup>Optional</sup> <a name="fallback_response_config" id="@cdktn/provider-google.cesApp.CesApp.putErrorHandlingSettings.parameter.fallbackResponseConfig"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfig">CesAppErrorHandlingSettingsFallbackResponseConfig</a>
+
+fallback_response_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#fallback_response_config CesApp#fallback_response_config}
 
 ---
 
@@ -992,7 +1087,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ```python
 def put_evaluation_metrics_thresholds(
-  golden_evaluation_metrics_thresholds: CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholds = None
+  golden_evaluation_metrics_thresholds: CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholds = None,
+  golden_hallucination_metric_behavior: str = None,
+  scenario_hallucination_metric_behavior: str = None
 ) -> None
 ```
 
@@ -1002,7 +1099,27 @@ def put_evaluation_metrics_thresholds(
 
 golden_evaluation_metrics_thresholds block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#golden_evaluation_metrics_thresholds CesApp#golden_evaluation_metrics_thresholds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#golden_evaluation_metrics_thresholds CesApp#golden_evaluation_metrics_thresholds}
+
+---
+
+###### `golden_hallucination_metric_behavior`<sup>Optional</sup> <a name="golden_hallucination_metric_behavior" id="@cdktn/provider-google.cesApp.CesApp.putEvaluationMetricsThresholds.parameter.goldenHallucinationMetricBehavior"></a>
+
+- *Type:* str
+
+The hallucination metric behavior for golden evaluations. Possible values: ["DISABLED", "ENABLED"].
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#golden_hallucination_metric_behavior CesApp#golden_hallucination_metric_behavior}
+
+---
+
+###### `scenario_hallucination_metric_behavior`<sup>Optional</sup> <a name="scenario_hallucination_metric_behavior" id="@cdktn/provider-google.cesApp.CesApp.putEvaluationMetricsThresholds.parameter.scenarioHallucinationMetricBehavior"></a>
+
+- *Type:* str
+
+The hallucination metric behavior for scenario evaluations. Possible values: ["DISABLED", "ENABLED"].
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#scenario_hallucination_metric_behavior CesApp#scenario_hallucination_metric_behavior}
 
 ---
 
@@ -1023,7 +1140,7 @@ def put_language_settings(
 
 The default language code of the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#default_language_code CesApp#default_language_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#default_language_code CesApp#default_language_code}
 
 ---
 
@@ -1033,7 +1150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Enables multilingual support. If true, agents in the app will use pre-built instructions to improve handling of multilingual input.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#enable_multilingual_support CesApp#enable_multilingual_support}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#enable_multilingual_support CesApp#enable_multilingual_support}
 
 ---
 
@@ -1051,7 +1168,7 @@ Valid values are:
   an EndSession signal with corresponding metadata
   to terminate the conversation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#fallback_action CesApp#fallback_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#fallback_action CesApp#fallback_action}
 
 ---
 
@@ -1061,7 +1178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 List of languages codes supported by the app, in addition to the 'default_language_code'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#supported_language_codes CesApp#supported_language_codes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#supported_language_codes CesApp#supported_language_codes}
 
 ---
 
@@ -1073,6 +1190,7 @@ def put_logging_settings(
   bigquery_export_settings: CesAppLoggingSettingsBigqueryExportSettings = None,
   cloud_logging_settings: CesAppLoggingSettingsCloudLoggingSettings = None,
   conversation_logging_settings: CesAppLoggingSettingsConversationLoggingSettings = None,
+  metric_analysis_settings: CesAppLoggingSettingsMetricAnalysisSettings = None,
   redaction_config: CesAppLoggingSettingsRedactionConfig = None
 ) -> None
 ```
@@ -1083,7 +1201,7 @@ def put_logging_settings(
 
 audio_recording_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#audio_recording_config CesApp#audio_recording_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#audio_recording_config CesApp#audio_recording_config}
 
 ---
 
@@ -1093,7 +1211,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 bigquery_export_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#bigquery_export_settings CesApp#bigquery_export_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#bigquery_export_settings CesApp#bigquery_export_settings}
 
 ---
 
@@ -1103,7 +1221,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 cloud_logging_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#cloud_logging_settings CesApp#cloud_logging_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#cloud_logging_settings CesApp#cloud_logging_settings}
 
 ---
 
@@ -1113,7 +1231,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 conversation_logging_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#conversation_logging_settings CesApp#conversation_logging_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#conversation_logging_settings CesApp#conversation_logging_settings}
+
+---
+
+###### `metric_analysis_settings`<sup>Optional</sup> <a name="metric_analysis_settings" id="@cdktn/provider-google.cesApp.CesApp.putLoggingSettings.parameter.metricAnalysisSettings"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsMetricAnalysisSettings">CesAppLoggingSettingsMetricAnalysisSettings</a>
+
+metric_analysis_settings block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#metric_analysis_settings CesApp#metric_analysis_settings}
 
 ---
 
@@ -1123,7 +1251,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 redaction_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#redaction_config CesApp#redaction_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#redaction_config CesApp#redaction_config}
 
 ---
 
@@ -1144,7 +1272,7 @@ The LLM model that the agent should use.
 
 If not set, the agent will inherit the model from its parent agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#model CesApp#model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#model CesApp#model}
 
 ---
 
@@ -1159,7 +1287,7 @@ controls the randomness of the model's responses. Lower temperatures
 produce responses that are more predictable. Higher temperatures produce
 responses that are more creative.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#temperature CesApp#temperature}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#temperature CesApp#temperature}
 
 ---
 
@@ -1177,7 +1305,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#create CesApp#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#create CesApp#create}.
 
 ---
 
@@ -1185,7 +1313,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#delete CesApp#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#delete CesApp#delete}.
 
 ---
 
@@ -1193,7 +1321,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#update CesApp#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#update CesApp#update}.
 
 ---
 
@@ -1211,7 +1339,7 @@ def put_time_zone_settings(
 
 The time zone of the app from the time zone database, e.g., America/Los_Angeles, Europe/Paris.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#time_zone CesApp#time_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#time_zone CesApp#time_zone}
 
 ---
 
@@ -1226,6 +1354,29 @@ def put_variable_declarations(
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.cesApp.CesApp.putVariableDeclarations.parameter.value"></a>
 
 - *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.cesApp.CesAppVariableDeclarations">CesAppVariableDeclarations</a>]
+
+---
+
+##### `put_vpc_sc_settings` <a name="put_vpc_sc_settings" id="@cdktn/provider-google.cesApp.CesApp.putVpcScSettings"></a>
+
+```python
+def put_vpc_sc_settings(
+  allowed_origins: typing.List[str] = None
+) -> None
+```
+
+###### `allowed_origins`<sup>Optional</sup> <a name="allowed_origins" id="@cdktn/provider-google.cesApp.CesApp.putVpcScSettings.parameter.allowedOrigins"></a>
+
+- *Type:* typing.List[str]
+
+The allowed HTTP(s) origins that OpenAPI tools in the App are able to directly call when VPC Service Controls are enabled.
+
+These strings
+must match the origin exactly, including the port if specified. For
+example, "https://example.com" or "https://example.com:443". This list does
+not yet apply to Python tools that may make direct HTTP calls.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#allowed_origins CesApp#allowed_origins}
 
 ---
 
@@ -1265,6 +1416,12 @@ def reset_deletion_policy() -> None
 def reset_description() -> None
 ```
 
+##### `reset_error_handling_settings` <a name="reset_error_handling_settings" id="@cdktn/provider-google.cesApp.CesApp.resetErrorHandlingSettings"></a>
+
+```python
+def reset_error_handling_settings() -> None
+```
+
 ##### `reset_evaluation_metrics_thresholds` <a name="reset_evaluation_metrics_thresholds" id="@cdktn/provider-google.cesApp.CesApp.resetEvaluationMetricsThresholds"></a>
 
 ```python
@@ -1293,6 +1450,12 @@ def reset_id() -> None
 
 ```python
 def reset_language_settings() -> None
+```
+
+##### `reset_locked` <a name="reset_locked" id="@cdktn/provider-google.cesApp.CesApp.resetLocked"></a>
+
+```python
+def reset_locked() -> None
 ```
 
 ##### `reset_logging_settings` <a name="reset_logging_settings" id="@cdktn/provider-google.cesApp.CesApp.resetLoggingSettings"></a>
@@ -1353,6 +1516,12 @@ def reset_tool_execution_mode() -> None
 
 ```python
 def reset_variable_declarations() -> None
+```
+
+##### `reset_vpc_sc_settings` <a name="reset_vpc_sc_settings" id="@cdktn/provider-google.cesApp.CesApp.resetVpcScSettings"></a>
+
+```python
+def reset_vpc_sc_settings() -> None
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -1469,7 +1638,7 @@ The construct id used in the generated config for the CesApp to import.
 
 The id of the existing CesApp that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1505,6 +1674,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.property.dataStoreSettings">data_store_settings</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppDataStoreSettingsOutputReference">CesAppDataStoreSettingsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.property.defaultChannelProfile">default_channel_profile</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileOutputReference">CesAppDefaultChannelProfileOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.property.deploymentCount">deployment_count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesApp.property.errorHandlingSettings">error_handling_settings</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference">CesAppErrorHandlingSettingsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.property.etag">etag</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.property.evaluationMetricsThresholds">evaluation_metrics_thresholds</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsOutputReference">CesAppEvaluationMetricsThresholdsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.property.languageSettings">language_settings</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppLanguageSettingsOutputReference">CesAppLanguageSettingsOutputReference</a></code> | *No description.* |
@@ -1515,6 +1685,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.property.timeZoneSettings">time_zone_settings</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppTimeZoneSettingsOutputReference">CesAppTimeZoneSettingsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.property.updateTime">update_time</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.property.variableDeclarations">variable_declarations</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppVariableDeclarationsList">CesAppVariableDeclarationsList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesApp.property.vpcScSettings">vpc_sc_settings</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppVpcScSettingsOutputReference">CesAppVpcScSettingsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.property.appIdInput">app_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.property.audioProcessingConfigInput">audio_processing_config_input</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppAudioProcessingConfig">CesAppAudioProcessingConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.property.clientCertificateSettingsInput">client_certificate_settings_input</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppClientCertificateSettings">CesAppClientCertificateSettings</a></code> | *No description.* |
@@ -1523,12 +1694,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.property.deletionPolicyInput">deletion_policy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.property.displayNameInput">display_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesApp.property.errorHandlingSettingsInput">error_handling_settings_input</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettings">CesAppErrorHandlingSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.property.evaluationMetricsThresholdsInput">evaluation_metrics_thresholds_input</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholds">CesAppEvaluationMetricsThresholds</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.property.globalInstructionInput">global_instruction_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.property.guardrailsInput">guardrails_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.property.languageSettingsInput">language_settings_input</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppLanguageSettings">CesAppLanguageSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.property.locationInput">location_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesApp.property.lockedInput">locked_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.property.loggingSettingsInput">logging_settings_input</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettings">CesAppLoggingSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.property.metadataInput">metadata_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.property.modelSettingsInput">model_settings_input</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppModelSettings">CesAppModelSettings</a></code> | *No description.* |
@@ -1539,6 +1712,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.property.timeZoneSettingsInput">time_zone_settings_input</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppTimeZoneSettings">CesAppTimeZoneSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.property.toolExecutionModeInput">tool_execution_mode_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.property.variableDeclarationsInput">variable_declarations_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.cesApp.CesAppVariableDeclarations">CesAppVariableDeclarations</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesApp.property.vpcScSettingsInput">vpc_sc_settings_input</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppVpcScSettings">CesAppVpcScSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.property.appId">app_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.property.description">description</a></code> | <code>str</code> | *No description.* |
@@ -1547,6 +1721,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.property.guardrails">guardrails</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.property.location">location</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesApp.property.locked">locked</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.property.metadata">metadata</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.property.pinned">pinned</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesApp.property.project">project</a></code> | <code>str</code> | *No description.* |
@@ -1757,6 +1932,16 @@ deployment_count: typing.Union[int, float]
 
 ---
 
+##### `error_handling_settings`<sup>Required</sup> <a name="error_handling_settings" id="@cdktn/provider-google.cesApp.CesApp.property.errorHandlingSettings"></a>
+
+```python
+error_handling_settings: CesAppErrorHandlingSettingsOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference">CesAppErrorHandlingSettingsOutputReference</a>
+
+---
+
 ##### `etag`<sup>Required</sup> <a name="etag" id="@cdktn/provider-google.cesApp.CesApp.property.etag"></a>
 
 ```python
@@ -1857,6 +2042,16 @@ variable_declarations: CesAppVariableDeclarationsList
 
 ---
 
+##### `vpc_sc_settings`<sup>Required</sup> <a name="vpc_sc_settings" id="@cdktn/provider-google.cesApp.CesApp.property.vpcScSettings"></a>
+
+```python
+vpc_sc_settings: CesAppVpcScSettingsOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesApp.CesAppVpcScSettingsOutputReference">CesAppVpcScSettingsOutputReference</a>
+
+---
+
 ##### `app_id_input`<sup>Optional</sup> <a name="app_id_input" id="@cdktn/provider-google.cesApp.CesApp.property.appIdInput"></a>
 
 ```python
@@ -1937,6 +2132,16 @@ display_name_input: str
 
 ---
 
+##### `error_handling_settings_input`<sup>Optional</sup> <a name="error_handling_settings_input" id="@cdktn/provider-google.cesApp.CesApp.property.errorHandlingSettingsInput"></a>
+
+```python
+error_handling_settings_input: CesAppErrorHandlingSettings
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettings">CesAppErrorHandlingSettings</a>
+
+---
+
 ##### `evaluation_metrics_thresholds_input`<sup>Optional</sup> <a name="evaluation_metrics_thresholds_input" id="@cdktn/provider-google.cesApp.CesApp.property.evaluationMetricsThresholdsInput"></a>
 
 ```python
@@ -1994,6 +2199,16 @@ location_input: str
 ```
 
 - *Type:* str
+
+---
+
+##### `locked_input`<sup>Optional</sup> <a name="locked_input" id="@cdktn/provider-google.cesApp.CesApp.property.lockedInput"></a>
+
+```python
+locked_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -2097,6 +2312,16 @@ variable_declarations_input: IResolvable | typing.List[CesAppVariableDeclaration
 
 ---
 
+##### `vpc_sc_settings_input`<sup>Optional</sup> <a name="vpc_sc_settings_input" id="@cdktn/provider-google.cesApp.CesApp.property.vpcScSettingsInput"></a>
+
+```python
+vpc_sc_settings_input: CesAppVpcScSettings
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesApp.CesAppVpcScSettings">CesAppVpcScSettings</a>
+
+---
+
 ##### `app_id`<sup>Required</sup> <a name="app_id" id="@cdktn/provider-google.cesApp.CesApp.property.appId"></a>
 
 ```python
@@ -2174,6 +2399,16 @@ location: str
 ```
 
 - *Type:* str
+
+---
+
+##### `locked`<sup>Required</sup> <a name="locked" id="@cdktn/provider-google.cesApp.CesApp.property.locked"></a>
+
+```python
+locked: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -2283,7 +2518,7 @@ ambient_sound_config: CesAppAudioProcessingConfigAmbientSoundConfig
 
 ambient_sound_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#ambient_sound_config CesApp#ambient_sound_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#ambient_sound_config CesApp#ambient_sound_config}
 
 ---
 
@@ -2297,7 +2532,7 @@ barge_in_config: CesAppAudioProcessingConfigBargeInConfig
 
 barge_in_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#barge_in_config CesApp#barge_in_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#barge_in_config CesApp#barge_in_config}
 
 ---
 
@@ -2314,7 +2549,7 @@ The duration of user inactivity (no speech or interaction) before the agent prom
 If not set, the agent will not prompt
 the user for reengagement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#inactivity_timeout CesApp#inactivity_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#inactivity_timeout CesApp#inactivity_timeout}
 
 ---
 
@@ -2328,7 +2563,7 @@ synthesize_speech_configs: IResolvable | typing.List[CesAppAudioProcessingConfig
 
 synthesize_speech_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#synthesize_speech_configs CesApp#synthesize_speech_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#synthesize_speech_configs CesApp#synthesize_speech_configs}
 
 ---
 
@@ -2366,7 +2601,7 @@ gcs_uri: str
 
 Ambient noise as a mono-channel, 16kHz WAV file stored in [Cloud Storage](https://cloud.google.com/storage). Note: Please make sure the CES service agent 'service-@gcp-sa-ces.iam.gserviceaccount.com' has 'storage.objects.get' permission to the Cloud Storage object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#gcs_uri CesApp#gcs_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#gcs_uri CesApp#gcs_uri}
 
 ---
 
@@ -2385,7 +2620,7 @@ Valid values are: - "coffee_shop" - "keyboard" - "keypad" - "hum"
 -"room_1" - "room_2" - "room_3"
 -"room_4" - "room_5" - "air_conditioner"
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#prebuilt_ambient_sound CesApp#prebuilt_ambient_sound}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#prebuilt_ambient_sound CesApp#prebuilt_ambient_sound}
 
 ---
 
@@ -2399,7 +2634,7 @@ volume_gain_db: typing.Union[int, float]
 
 Volume gain (in dB) of the normal native volume supported by ambient noise, in the range [-96.0, 16.0]. If unset, or set to a value of 0.0 (dB), will play at normal native signal amplitude. A value of -6.0 (dB) will play at approximately half the amplitude of the normal native signal amplitude. A value of +6.0 (dB) will play at approximately twice the amplitude of the normal native signal amplitude. We strongly recommend not to exceed +10 (dB) as there's usually no effective increase in loudness for any value greater than that.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#volume_gain_db CesApp#volume_gain_db}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#volume_gain_db CesApp#volume_gain_db}
 
 ---
 
@@ -2436,7 +2671,7 @@ If enabled, the agent will adapt its next response based on the assumption that 
 This should not be used in scenarios where agent responses are displayed
 visually.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#barge_in_awareness CesApp#barge_in_awareness}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#barge_in_awareness CesApp#barge_in_awareness}
 
 ---
 
@@ -2449,6 +2684,8 @@ from cdktn_provider_google import ces_app
 
 cesApp.CesAppAudioProcessingConfigSynthesizeSpeechConfigs(
   language_code: str,
+  instruction: str = None,
+  model: str = None,
   speaking_rate: typing.Union[int, float] = None,
   voice: str = None
 )
@@ -2458,7 +2695,9 @@ cesApp.CesAppAudioProcessingConfigSynthesizeSpeechConfigs(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cesApp.CesAppAudioProcessingConfigSynthesizeSpeechConfigs.property.languageCode">language_code</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#language_code CesApp#language_code}. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppAudioProcessingConfigSynthesizeSpeechConfigs.property.languageCode">language_code</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#language_code CesApp#language_code}. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppAudioProcessingConfigSynthesizeSpeechConfigs.property.instruction">instruction</a></code> | <code>str</code> | The instruction used to synthesize speech when using a generative model. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppAudioProcessingConfigSynthesizeSpeechConfigs.property.model">model</a></code> | <code>str</code> | The model used to synthesize audio. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppAudioProcessingConfigSynthesizeSpeechConfigs.property.speakingRate">speaking_rate</a></code> | <code>typing.Union[int, float]</code> | The speaking rate/speed in the range [0.25, 2.0]. 1.0 is the normal native speed supported by the specific voice. 2.0 is twice as fast, and 0.5 is half as fast. Values outside of the range [0.25, 2.0] will return an error. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppAudioProcessingConfigSynthesizeSpeechConfigs.property.voice">voice</a></code> | <code>str</code> | The name of the voice. |
 
@@ -2472,7 +2711,35 @@ language_code: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#language_code CesApp#language_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#language_code CesApp#language_code}.
+
+---
+
+##### `instruction`<sup>Optional</sup> <a name="instruction" id="@cdktn/provider-google.cesApp.CesAppAudioProcessingConfigSynthesizeSpeechConfigs.property.instruction"></a>
+
+```python
+instruction: str
+```
+
+- *Type:* str
+
+The instruction used to synthesize speech when using a generative model.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#instruction CesApp#instruction}
+
+---
+
+##### `model`<sup>Optional</sup> <a name="model" id="@cdktn/provider-google.cesApp.CesAppAudioProcessingConfigSynthesizeSpeechConfigs.property.model"></a>
+
+```python
+model: str
+```
+
+- *Type:* str
+
+The model used to synthesize audio.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#model CesApp#model}
 
 ---
 
@@ -2486,7 +2753,7 @@ speaking_rate: typing.Union[int, float]
 
 The speaking rate/speed in the range [0.25, 2.0]. 1.0 is the normal native speed supported by the specific voice. 2.0 is twice as fast, and 0.5 is half as fast. Values outside of the range [0.25, 2.0] will return an error.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#speaking_rate CesApp#speaking_rate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#speaking_rate CesApp#speaking_rate}
 
 ---
 
@@ -2505,7 +2772,7 @@ voice based on the other parameters such as language_code.
 For the list of available voices, please refer to Supported voices and
 languages from Cloud Text-to-Speech.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#voice CesApp#voice}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#voice CesApp#voice}
 
 ---
 
@@ -2543,7 +2810,7 @@ private_key: str
 
 The name of the SecretManager secret version resource storing the private key encoded in PEM format. Format: projects/{project}/secrets/{secret}/versions/{version}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#private_key CesApp#private_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#private_key CesApp#private_key}
 
 ---
 
@@ -2557,7 +2824,7 @@ tls_certificate: str
 
 The TLS certificate encoded in PEM format. This string must include the begin header and end footer lines.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#tls_certificate CesApp#tls_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#tls_certificate CesApp#tls_certificate}
 
 ---
 
@@ -2571,7 +2838,7 @@ passphrase: str
 
 The passphrase to decrypt the private key. Should be left unset if the private key is not encrypted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#passphrase CesApp#passphrase}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#passphrase CesApp#passphrase}
 
 ---
 
@@ -2599,11 +2866,13 @@ cesApp.CesAppConfig(
   default_channel_profile: CesAppDefaultChannelProfile = None,
   deletion_policy: str = None,
   description: str = None,
+  error_handling_settings: CesAppErrorHandlingSettings = None,
   evaluation_metrics_thresholds: CesAppEvaluationMetricsThresholds = None,
   global_instruction: str = None,
   guardrails: typing.List[str] = None,
   id: str = None,
   language_settings: CesAppLanguageSettings = None,
+  locked: bool | IResolvable = None,
   logging_settings: CesAppLoggingSettings = None,
   metadata: typing.Mapping[str] = None,
   model_settings: CesAppModelSettings = None,
@@ -2613,7 +2882,8 @@ cesApp.CesAppConfig(
   timeouts: CesAppTimeouts = None,
   time_zone_settings: CesAppTimeZoneSettings = None,
   tool_execution_mode: str = None,
-  variable_declarations: IResolvable | typing.List[CesAppVariableDeclarations] = None
+  variable_declarations: IResolvable | typing.List[CesAppVariableDeclarations] = None,
+  vpc_sc_settings: CesAppVpcScSettings = None
 )
 ```
 
@@ -2637,21 +2907,24 @@ cesApp.CesAppConfig(
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppConfig.property.defaultChannelProfile">default_channel_profile</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfile">CesAppDefaultChannelProfile</a></code> | default_channel_profile block. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppConfig.property.description">description</a></code> | <code>str</code> | Human-readable description of the app. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppConfig.property.errorHandlingSettings">error_handling_settings</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettings">CesAppErrorHandlingSettings</a></code> | error_handling_settings block. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppConfig.property.evaluationMetricsThresholds">evaluation_metrics_thresholds</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholds">CesAppEvaluationMetricsThresholds</a></code> | evaluation_metrics_thresholds block. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppConfig.property.globalInstruction">global_instruction</a></code> | <code>str</code> | Instructions for all the agents in the app. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppConfig.property.guardrails">guardrails</a></code> | <code>typing.List[str]</code> | List of guardrails for the app. Format: 'projects/{project}/locations/{location}/apps/{app}/guardrails/{guardrail}'. |
-| <code><a href="#@cdktn/provider-google.cesApp.CesAppConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#id CesApp#id}. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#id CesApp#id}. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppConfig.property.languageSettings">language_settings</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppLanguageSettings">CesAppLanguageSettings</a></code> | language_settings block. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppConfig.property.locked">locked</a></code> | <code>bool \| cdktn.IResolvable</code> | Indicates whether the app is locked for changes. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppConfig.property.loggingSettings">logging_settings</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettings">CesAppLoggingSettings</a></code> | logging_settings block. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppConfig.property.metadata">metadata</a></code> | <code>typing.Mapping[str]</code> | Metadata about the app. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppConfig.property.modelSettings">model_settings</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppModelSettings">CesAppModelSettings</a></code> | model_settings block. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppConfig.property.pinned">pinned</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether the app is pinned in the app list. |
-| <code><a href="#@cdktn/provider-google.cesApp.CesAppConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#project CesApp#project}. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#project CesApp#project}. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppConfig.property.rootAgent">root_agent</a></code> | <code>str</code> | The root agent is the entry point of the app. Format: 'projects/{project}/locations/{location}/apps/{app}/agents/{agent}'. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppTimeouts">CesAppTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppConfig.property.timeZoneSettings">time_zone_settings</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppTimeZoneSettings">CesAppTimeZoneSettings</a></code> | time_zone_settings block. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppConfig.property.toolExecutionMode">tool_execution_mode</a></code> | <code>str</code> | The tool execution mode for the app. See the [API reference](https://docs.cloud.google.com/customer-engagement-ai/conversational-agents/ps/reference/rpc/google.cloud.ces.v1#google.cloud.ces.v1.App.ToolExecutionMode) for more details. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppConfig.property.variableDeclarations">variable_declarations</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.cesApp.CesAppVariableDeclarations">CesAppVariableDeclarations</a>]</code> | variable_declarations block. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppConfig.property.vpcScSettings">vpc_sc_settings</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppVpcScSettings">CesAppVpcScSettings</a></code> | vpc_sc_settings block. |
 
 ---
 
@@ -2738,7 +3011,7 @@ The ID to use for the app, which will become the final component of the app's re
 If not provided, a unique ID will be
 automatically assigned for the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#app_id CesApp#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#app_id CesApp#app_id}
 
 ---
 
@@ -2752,7 +3025,7 @@ display_name: str
 
 Display name of the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#display_name CesApp#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#display_name CesApp#display_name}
 
 ---
 
@@ -2766,7 +3039,7 @@ location: str
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#location CesApp#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#location CesApp#location}
 
 ---
 
@@ -2780,7 +3053,7 @@ audio_processing_config: CesAppAudioProcessingConfig
 
 audio_processing_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#audio_processing_config CesApp#audio_processing_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#audio_processing_config CesApp#audio_processing_config}
 
 ---
 
@@ -2794,7 +3067,7 @@ client_certificate_settings: CesAppClientCertificateSettings
 
 client_certificate_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#client_certificate_settings CesApp#client_certificate_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#client_certificate_settings CesApp#client_certificate_settings}
 
 ---
 
@@ -2808,7 +3081,7 @@ data_store_settings: CesAppDataStoreSettings
 
 data_store_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#data_store_settings CesApp#data_store_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#data_store_settings CesApp#data_store_settings}
 
 ---
 
@@ -2822,7 +3095,7 @@ default_channel_profile: CesAppDefaultChannelProfile
 
 default_channel_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#default_channel_profile CesApp#default_channel_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#default_channel_profile CesApp#default_channel_profile}
 
 ---
 
@@ -2843,7 +3116,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#deletion_policy CesApp#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#deletion_policy CesApp#deletion_policy}
 
 ---
 
@@ -2857,7 +3130,21 @@ description: str
 
 Human-readable description of the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#description CesApp#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#description CesApp#description}
+
+---
+
+##### `error_handling_settings`<sup>Optional</sup> <a name="error_handling_settings" id="@cdktn/provider-google.cesApp.CesAppConfig.property.errorHandlingSettings"></a>
+
+```python
+error_handling_settings: CesAppErrorHandlingSettings
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettings">CesAppErrorHandlingSettings</a>
+
+error_handling_settings block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#error_handling_settings CesApp#error_handling_settings}
 
 ---
 
@@ -2871,7 +3158,7 @@ evaluation_metrics_thresholds: CesAppEvaluationMetricsThresholds
 
 evaluation_metrics_thresholds block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#evaluation_metrics_thresholds CesApp#evaluation_metrics_thresholds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#evaluation_metrics_thresholds CesApp#evaluation_metrics_thresholds}
 
 ---
 
@@ -2888,7 +3175,7 @@ Instructions for all the agents in the app.
 You can use this instruction to set up a stable identity or personality
 across all the agents.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#global_instruction CesApp#global_instruction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#global_instruction CesApp#global_instruction}
 
 ---
 
@@ -2902,7 +3189,7 @@ guardrails: typing.List[str]
 
 List of guardrails for the app. Format: 'projects/{project}/locations/{location}/apps/{app}/guardrails/{guardrail}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#guardrails CesApp#guardrails}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#guardrails CesApp#guardrails}
 
 ---
 
@@ -2914,7 +3201,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#id CesApp#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#id CesApp#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2931,7 +3218,24 @@ language_settings: CesAppLanguageSettings
 
 language_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#language_settings CesApp#language_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#language_settings CesApp#language_settings}
+
+---
+
+##### `locked`<sup>Optional</sup> <a name="locked" id="@cdktn/provider-google.cesApp.CesAppConfig.property.locked"></a>
+
+```python
+locked: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Indicates whether the app is locked for changes.
+
+If the app is locked,
+modifications to the app resources will be rejected.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#locked CesApp#locked}
 
 ---
 
@@ -2945,7 +3249,7 @@ logging_settings: CesAppLoggingSettings
 
 logging_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#logging_settings CesApp#logging_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#logging_settings CesApp#logging_settings}
 
 ---
 
@@ -2962,7 +3266,7 @@ Metadata about the app.
 This field can be used to store additional
 information relevant to the app's details or intended usages.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#metadata CesApp#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#metadata CesApp#metadata}
 
 ---
 
@@ -2976,7 +3280,7 @@ model_settings: CesAppModelSettings
 
 model_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#model_settings CesApp#model_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#model_settings CesApp#model_settings}
 
 ---
 
@@ -2990,7 +3294,7 @@ pinned: bool | IResolvable
 
 Whether the app is pinned in the app list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#pinned CesApp#pinned}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#pinned CesApp#pinned}
 
 ---
 
@@ -3002,7 +3306,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#project CesApp#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#project CesApp#project}.
 
 ---
 
@@ -3016,7 +3320,7 @@ root_agent: str
 
 The root agent is the entry point of the app. Format: 'projects/{project}/locations/{location}/apps/{app}/agents/{agent}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#root_agent CesApp#root_agent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#root_agent CesApp#root_agent}
 
 ---
 
@@ -3030,7 +3334,7 @@ timeouts: CesAppTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#timeouts CesApp#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#timeouts CesApp#timeouts}
 
 ---
 
@@ -3044,7 +3348,7 @@ time_zone_settings: CesAppTimeZoneSettings
 
 time_zone_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#time_zone_settings CesApp#time_zone_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#time_zone_settings CesApp#time_zone_settings}
 
 ---
 
@@ -3058,7 +3362,7 @@ tool_execution_mode: str
 
 The tool execution mode for the app. See the [API reference](https://docs.cloud.google.com/customer-engagement-ai/conversational-agents/ps/reference/rpc/google.cloud.ces.v1#google.cloud.ces.v1.App.ToolExecutionMode) for more details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#tool_execution_mode CesApp#tool_execution_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#tool_execution_mode CesApp#tool_execution_mode}
 
 ---
 
@@ -3072,7 +3376,21 @@ variable_declarations: IResolvable | typing.List[CesAppVariableDeclarations]
 
 variable_declarations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#variable_declarations CesApp#variable_declarations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#variable_declarations CesApp#variable_declarations}
+
+---
+
+##### `vpc_sc_settings`<sup>Optional</sup> <a name="vpc_sc_settings" id="@cdktn/provider-google.cesApp.CesAppConfig.property.vpcScSettings"></a>
+
+```python
+vpc_sc_settings: CesAppVpcScSettings
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesApp.CesAppVpcScSettings">CesAppVpcScSettings</a>
+
+vpc_sc_settings block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#vpc_sc_settings CesApp#vpc_sc_settings}
 
 ---
 
@@ -3111,7 +3429,8 @@ cesApp.CesAppDefaultChannelProfile(
   disable_dtmf: bool | IResolvable = None,
   persona_property: CesAppDefaultChannelProfilePersonaProperty = None,
   profile_id: str = None,
-  web_widget_config: CesAppDefaultChannelProfileWebWidgetConfig = None
+  web_widget_config: CesAppDefaultChannelProfileWebWidgetConfig = None,
+  whatsapp_config: CesAppDefaultChannelProfileWhatsappConfig = None
 )
 ```
 
@@ -3125,6 +3444,7 @@ cesApp.CesAppDefaultChannelProfile(
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfile.property.personaProperty">persona_property</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfilePersonaProperty">CesAppDefaultChannelProfilePersonaProperty</a></code> | persona_property block. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfile.property.profileId">profile_id</a></code> | <code>str</code> | The unique identifier of the channel profile. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfile.property.webWidgetConfig">web_widget_config</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfig">CesAppDefaultChannelProfileWebWidgetConfig</a></code> | web_widget_config block. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfile.property.whatsappConfig">whatsapp_config</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfig">CesAppDefaultChannelProfileWhatsappConfig</a></code> | whatsapp_config block. |
 
 ---
 
@@ -3138,7 +3458,7 @@ channel_type: str
 
 The type of the channel profile. Possible values: UNKNOWN WEB_UI API TWILIO GOOGLE_TELEPHONY_PLATFORM CONTACT_CENTER_AS_A_SERVICE.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#channel_type CesApp#channel_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#channel_type CesApp#channel_type}
 
 ---
 
@@ -3155,7 +3475,7 @@ Whether to disable user barge-in in the conversation.
 * true: User interruptions are disabled while the agent is speaking.
 * false: The agent retains automatic control over when the user can interrupt.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#disable_barge_in_control CesApp#disable_barge_in_control}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#disable_barge_in_control CesApp#disable_barge_in_control}
 
 ---
 
@@ -3169,7 +3489,7 @@ disable_dtmf: bool | IResolvable
 
 Whether to disable DTMF (dual-tone multi-frequency).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#disable_dtmf CesApp#disable_dtmf}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#disable_dtmf CesApp#disable_dtmf}
 
 ---
 
@@ -3183,7 +3503,7 @@ persona_property: CesAppDefaultChannelProfilePersonaProperty
 
 persona_property block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#persona_property CesApp#persona_property}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#persona_property CesApp#persona_property}
 
 ---
 
@@ -3197,7 +3517,7 @@ profile_id: str
 
 The unique identifier of the channel profile.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#profile_id CesApp#profile_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#profile_id CesApp#profile_id}
 
 ---
 
@@ -3211,7 +3531,21 @@ web_widget_config: CesAppDefaultChannelProfileWebWidgetConfig
 
 web_widget_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#web_widget_config CesApp#web_widget_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#web_widget_config CesApp#web_widget_config}
+
+---
+
+##### `whatsapp_config`<sup>Optional</sup> <a name="whatsapp_config" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfile.property.whatsappConfig"></a>
+
+```python
+whatsapp_config: CesAppDefaultChannelProfileWhatsappConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfig">CesAppDefaultChannelProfileWhatsappConfig</a>
+
+whatsapp_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#whatsapp_config CesApp#whatsapp_config}
 
 ---
 
@@ -3245,7 +3579,7 @@ persona: str
 
 The persona of the channel. Possible values: UNKNOWN CONCISE CHATTY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#persona CesApp#persona}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#persona CesApp#persona}
 
 ---
 
@@ -3258,6 +3592,7 @@ from cdktn_provider_google import ces_app
 
 cesApp.CesAppDefaultChannelProfileWebWidgetConfig(
   modality: str = None,
+  security_settings: CesAppDefaultChannelProfileWebWidgetConfigSecuritySettings = None,
   theme: str = None,
   web_widget_title: str = None
 )
@@ -3268,6 +3603,7 @@ cesApp.CesAppDefaultChannelProfileWebWidgetConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfig.property.modality">modality</a></code> | <code>str</code> | The modality of the web widget. Possible values: UNKNOWN_MODALITY CHAT_AND_VOICE VOICE_ONLY CHAT_ONLY. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfig.property.securitySettings">security_settings</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettings">CesAppDefaultChannelProfileWebWidgetConfigSecuritySettings</a></code> | security_settings block. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfig.property.theme">theme</a></code> | <code>str</code> | The theme of the web widget. Possible values: UNKNOWN_THEME LIGHT DARK. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfig.property.webWidgetTitle">web_widget_title</a></code> | <code>str</code> | The title of the web widget. |
 
@@ -3283,7 +3619,21 @@ modality: str
 
 The modality of the web widget. Possible values: UNKNOWN_MODALITY CHAT_AND_VOICE VOICE_ONLY CHAT_ONLY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#modality CesApp#modality}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#modality CesApp#modality}
+
+---
+
+##### `security_settings`<sup>Optional</sup> <a name="security_settings" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfig.property.securitySettings"></a>
+
+```python
+security_settings: CesAppDefaultChannelProfileWebWidgetConfigSecuritySettings
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettings">CesAppDefaultChannelProfileWebWidgetConfigSecuritySettings</a>
+
+security_settings block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#security_settings CesApp#security_settings}
 
 ---
 
@@ -3297,7 +3647,7 @@ theme: str
 
 The theme of the web widget. Possible values: UNKNOWN_THEME LIGHT DARK.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#theme CesApp#theme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#theme CesApp#theme}
 
 ---
 
@@ -3311,7 +3661,319 @@ web_widget_title: str
 
 The title of the web widget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#web_widget_title CesApp#web_widget_title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#web_widget_title CesApp#web_widget_title}
+
+---
+
+### CesAppDefaultChannelProfileWebWidgetConfigSecuritySettings <a name="CesAppDefaultChannelProfileWebWidgetConfigSecuritySettings" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettings"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettings.Initializer"></a>
+
+```python
+from cdktn_provider_google import ces_app
+
+cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettings(
+  allowed_origins: typing.List[str] = None,
+  enable_origin_check: bool | IResolvable = None,
+  enable_public_access: bool | IResolvable = None,
+  enable_recaptcha: bool | IResolvable = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettings.property.allowedOrigins">allowed_origins</a></code> | <code>typing.List[str]</code> | The origins that are allowed to host the web widget. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettings.property.enableOriginCheck">enable_origin_check</a></code> | <code>bool \| cdktn.IResolvable</code> | Indicates whether origin check for the web widget is enabled. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettings.property.enablePublicAccess">enable_public_access</a></code> | <code>bool \| cdktn.IResolvable</code> | Indicates whether public access to the web widget is enabled. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettings.property.enableRecaptcha">enable_recaptcha</a></code> | <code>bool \| cdktn.IResolvable</code> | Indicates whether reCAPTCHA verification for the web widget is enabled. |
+
+---
+
+##### `allowed_origins`<sup>Optional</sup> <a name="allowed_origins" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettings.property.allowedOrigins"></a>
+
+```python
+allowed_origins: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The origins that are allowed to host the web widget.
+
+An origin is
+defined by RFC 6454. If empty, all origins are allowed.
+A maximum of 100 origins is allowed.
+Example: "https://example.com"
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#allowed_origins CesApp#allowed_origins}
+
+---
+
+##### `enable_origin_check`<sup>Optional</sup> <a name="enable_origin_check" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettings.property.enableOriginCheck"></a>
+
+```python
+enable_origin_check: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Indicates whether origin check for the web widget is enabled.
+
+If 'true', the web widget will check the origin of the website that
+loads the web widget and only allow it to be loaded in the same origin
+or any of the allowed origins.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#enable_origin_check CesApp#enable_origin_check}
+
+---
+
+##### `enable_public_access`<sup>Optional</sup> <a name="enable_public_access" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettings.property.enablePublicAccess"></a>
+
+```python
+enable_public_access: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Indicates whether public access to the web widget is enabled.
+
+If 'true', the web widget will be publicly accessible.
+If 'false', the web widget must be integrated with your own
+authentication and authorization system to return valid credentials for
+accessing the CES agent.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#enable_public_access CesApp#enable_public_access}
+
+---
+
+##### `enable_recaptcha`<sup>Optional</sup> <a name="enable_recaptcha" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettings.property.enableRecaptcha"></a>
+
+```python
+enable_recaptcha: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Indicates whether reCAPTCHA verification for the web widget is enabled.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#enable_recaptcha CesApp#enable_recaptcha}
+
+---
+
+### CesAppDefaultChannelProfileWhatsappConfig <a name="CesAppDefaultChannelProfileWhatsappConfig" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfig.Initializer"></a>
+
+```python
+from cdktn_provider_google import ces_app
+
+cesApp.CesAppDefaultChannelProfileWhatsappConfig(
+  phone_number_id: str,
+  waba_id: str,
+  phone_number: str = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfig.property.phoneNumberId">phone_number_id</a></code> | <code>str</code> | The Meta phone number ID. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfig.property.wabaId">waba_id</a></code> | <code>str</code> | The WhatsApp Business Account ID. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfig.property.phoneNumber">phone_number</a></code> | <code>str</code> | The phone number in E.164 format. |
+
+---
+
+##### `phone_number_id`<sup>Required</sup> <a name="phone_number_id" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfig.property.phoneNumberId"></a>
+
+```python
+phone_number_id: str
+```
+
+- *Type:* str
+
+The Meta phone number ID.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#phone_number_id CesApp#phone_number_id}
+
+---
+
+##### `waba_id`<sup>Required</sup> <a name="waba_id" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfig.property.wabaId"></a>
+
+```python
+waba_id: str
+```
+
+- *Type:* str
+
+The WhatsApp Business Account ID.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#waba_id CesApp#waba_id}
+
+---
+
+##### `phone_number`<sup>Optional</sup> <a name="phone_number" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfig.property.phoneNumber"></a>
+
+```python
+phone_number: str
+```
+
+- *Type:* str
+
+The phone number in E.164 format.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#phone_number CesApp#phone_number}
+
+---
+
+### CesAppErrorHandlingSettings <a name="CesAppErrorHandlingSettings" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettings"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettings.Initializer"></a>
+
+```python
+from cdktn_provider_google import ces_app
+
+cesApp.CesAppErrorHandlingSettings(
+  end_session_config: CesAppErrorHandlingSettingsEndSessionConfig = None,
+  error_handling_strategy: str = None,
+  fallback_response_config: CesAppErrorHandlingSettingsFallbackResponseConfig = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettings.property.endSessionConfig">end_session_config</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsEndSessionConfig">CesAppErrorHandlingSettingsEndSessionConfig</a></code> | end_session_config block. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettings.property.errorHandlingStrategy">error_handling_strategy</a></code> | <code>str</code> | The strategy to use for error handling. Possible values: NONE FALLBACK_RESPONSE END_SESSION. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettings.property.fallbackResponseConfig">fallback_response_config</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfig">CesAppErrorHandlingSettingsFallbackResponseConfig</a></code> | fallback_response_config block. |
+
+---
+
+##### `end_session_config`<sup>Optional</sup> <a name="end_session_config" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettings.property.endSessionConfig"></a>
+
+```python
+end_session_config: CesAppErrorHandlingSettingsEndSessionConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsEndSessionConfig">CesAppErrorHandlingSettingsEndSessionConfig</a>
+
+end_session_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#end_session_config CesApp#end_session_config}
+
+---
+
+##### `error_handling_strategy`<sup>Optional</sup> <a name="error_handling_strategy" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettings.property.errorHandlingStrategy"></a>
+
+```python
+error_handling_strategy: str
+```
+
+- *Type:* str
+
+The strategy to use for error handling. Possible values: NONE FALLBACK_RESPONSE END_SESSION.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#error_handling_strategy CesApp#error_handling_strategy}
+
+---
+
+##### `fallback_response_config`<sup>Optional</sup> <a name="fallback_response_config" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettings.property.fallbackResponseConfig"></a>
+
+```python
+fallback_response_config: CesAppErrorHandlingSettingsFallbackResponseConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfig">CesAppErrorHandlingSettingsFallbackResponseConfig</a>
+
+fallback_response_config block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#fallback_response_config CesApp#fallback_response_config}
+
+---
+
+### CesAppErrorHandlingSettingsEndSessionConfig <a name="CesAppErrorHandlingSettingsEndSessionConfig" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsEndSessionConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsEndSessionConfig.Initializer"></a>
+
+```python
+from cdktn_provider_google import ces_app
+
+cesApp.CesAppErrorHandlingSettingsEndSessionConfig(
+  escalate_session: bool | IResolvable = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsEndSessionConfig.property.escalateSession">escalate_session</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether to escalate the session in EndSession. If session is escalated, metadata in EndSession will contain session_escalated = true. |
+
+---
+
+##### `escalate_session`<sup>Optional</sup> <a name="escalate_session" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsEndSessionConfig.property.escalateSession"></a>
+
+```python
+escalate_session: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether to escalate the session in EndSession. If session is escalated, metadata in EndSession will contain session_escalated = true.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#escalate_session CesApp#escalate_session}
+
+---
+
+### CesAppErrorHandlingSettingsFallbackResponseConfig <a name="CesAppErrorHandlingSettingsFallbackResponseConfig" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfig.Initializer"></a>
+
+```python
+from cdktn_provider_google import ces_app
+
+cesApp.CesAppErrorHandlingSettingsFallbackResponseConfig(
+  custom_fallback_messages: typing.Mapping[str] = None,
+  max_fallback_attempts: typing.Union[int, float] = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfig.property.customFallbackMessages">custom_fallback_messages</a></code> | <code>typing.Mapping[str]</code> | The fallback messages in case of system errors (e.g. LLM errors), mapped by supported language code (https://docs.cloud.google.com/customer-engagement-ai/conversational-agents/ps/reference/language). |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfig.property.maxFallbackAttempts">max_fallback_attempts</a></code> | <code>typing.Union[int, float]</code> | The maximum number of fallback attempts to make before the agent emitting EndSession Signal. |
+
+---
+
+##### `custom_fallback_messages`<sup>Optional</sup> <a name="custom_fallback_messages" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfig.property.customFallbackMessages"></a>
+
+```python
+custom_fallback_messages: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
+
+The fallback messages in case of system errors (e.g. LLM errors), mapped by supported language code (https://docs.cloud.google.com/customer-engagement-ai/conversational-agents/ps/reference/language).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#custom_fallback_messages CesApp#custom_fallback_messages}
+
+---
+
+##### `max_fallback_attempts`<sup>Optional</sup> <a name="max_fallback_attempts" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfig.property.maxFallbackAttempts"></a>
+
+```python
+max_fallback_attempts: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+The maximum number of fallback attempts to make before the agent emitting EndSession Signal.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#max_fallback_attempts CesApp#max_fallback_attempts}
 
 ---
 
@@ -3323,7 +3985,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktn_provider_google import ces_app
 
 cesApp.CesAppEvaluationMetricsThresholds(
-  golden_evaluation_metrics_thresholds: CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholds = None
+  golden_evaluation_metrics_thresholds: CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholds = None,
+  golden_hallucination_metric_behavior: str = None,
+  scenario_hallucination_metric_behavior: str = None
 )
 ```
 
@@ -3332,6 +3996,8 @@ cesApp.CesAppEvaluationMetricsThresholds(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholds.property.goldenEvaluationMetricsThresholds">golden_evaluation_metrics_thresholds</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholds">CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholds</a></code> | golden_evaluation_metrics_thresholds block. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholds.property.goldenHallucinationMetricBehavior">golden_hallucination_metric_behavior</a></code> | <code>str</code> | The hallucination metric behavior for golden evaluations. Possible values: ["DISABLED", "ENABLED"]. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholds.property.scenarioHallucinationMetricBehavior">scenario_hallucination_metric_behavior</a></code> | <code>str</code> | The hallucination metric behavior for scenario evaluations. Possible values: ["DISABLED", "ENABLED"]. |
 
 ---
 
@@ -3345,7 +4011,35 @@ golden_evaluation_metrics_thresholds: CesAppEvaluationMetricsThresholdsGoldenEva
 
 golden_evaluation_metrics_thresholds block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#golden_evaluation_metrics_thresholds CesApp#golden_evaluation_metrics_thresholds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#golden_evaluation_metrics_thresholds CesApp#golden_evaluation_metrics_thresholds}
+
+---
+
+##### `golden_hallucination_metric_behavior`<sup>Optional</sup> <a name="golden_hallucination_metric_behavior" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholds.property.goldenHallucinationMetricBehavior"></a>
+
+```python
+golden_hallucination_metric_behavior: str
+```
+
+- *Type:* str
+
+The hallucination metric behavior for golden evaluations. Possible values: ["DISABLED", "ENABLED"].
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#golden_hallucination_metric_behavior CesApp#golden_hallucination_metric_behavior}
+
+---
+
+##### `scenario_hallucination_metric_behavior`<sup>Optional</sup> <a name="scenario_hallucination_metric_behavior" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholds.property.scenarioHallucinationMetricBehavior"></a>
+
+```python
+scenario_hallucination_metric_behavior: str
+```
+
+- *Type:* str
+
+The hallucination metric behavior for scenario evaluations. Possible values: ["DISABLED", "ENABLED"].
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#scenario_hallucination_metric_behavior CesApp#scenario_hallucination_metric_behavior}
 
 ---
 
@@ -3358,6 +4052,7 @@ from cdktn_provider_google import ces_app
 
 cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholds(
   expectation_level_metrics_thresholds: CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsExpectationLevelMetricsThresholds = None,
+  tool_matching_settings: CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettings = None,
   turn_level_metrics_thresholds: CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholds = None
 )
 ```
@@ -3367,6 +4062,7 @@ cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholds(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholds.property.expectationLevelMetricsThresholds">expectation_level_metrics_thresholds</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsExpectationLevelMetricsThresholds">CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsExpectationLevelMetricsThresholds</a></code> | expectation_level_metrics_thresholds block. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholds.property.toolMatchingSettings">tool_matching_settings</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettings">CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettings</a></code> | tool_matching_settings block. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholds.property.turnLevelMetricsThresholds">turn_level_metrics_thresholds</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholds">CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholds</a></code> | turn_level_metrics_thresholds block. |
 
 ---
@@ -3381,7 +4077,21 @@ expectation_level_metrics_thresholds: CesAppEvaluationMetricsThresholdsGoldenEva
 
 expectation_level_metrics_thresholds block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#expectation_level_metrics_thresholds CesApp#expectation_level_metrics_thresholds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#expectation_level_metrics_thresholds CesApp#expectation_level_metrics_thresholds}
+
+---
+
+##### `tool_matching_settings`<sup>Optional</sup> <a name="tool_matching_settings" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholds.property.toolMatchingSettings"></a>
+
+```python
+tool_matching_settings: CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettings
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettings">CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettings</a>
+
+tool_matching_settings block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#tool_matching_settings CesApp#tool_matching_settings}
 
 ---
 
@@ -3395,7 +4105,7 @@ turn_level_metrics_thresholds: CesAppEvaluationMetricsThresholdsGoldenEvaluation
 
 turn_level_metrics_thresholds block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#turn_level_metrics_thresholds CesApp#turn_level_metrics_thresholds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#turn_level_metrics_thresholds CesApp#turn_level_metrics_thresholds}
 
 ---
 
@@ -3429,7 +4139,45 @@ tool_invocation_parameter_correctness_threshold: typing.Union[int, float]
 
 The success threshold for individual tool invocation parameter correctness. Must be a float between 0 and 1. Default is 1.0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#tool_invocation_parameter_correctness_threshold CesApp#tool_invocation_parameter_correctness_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#tool_invocation_parameter_correctness_threshold CesApp#tool_invocation_parameter_correctness_threshold}
+
+---
+
+### CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettings <a name="CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettings" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettings"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettings.Initializer"></a>
+
+```python
+from cdktn_provider_google import ces_app
+
+cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettings(
+  extra_tool_call_behavior: str = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettings.property.extraToolCallBehavior">extra_tool_call_behavior</a></code> | <code>str</code> | Defines the behavior when an extra tool call is encountered. |
+
+---
+
+##### `extra_tool_call_behavior`<sup>Optional</sup> <a name="extra_tool_call_behavior" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettings.property.extraToolCallBehavior"></a>
+
+```python
+extra_tool_call_behavior: str
+```
+
+- *Type:* str
+
+Defines the behavior when an extra tool call is encountered.
+
+An extra
+tool call is a tool call that is present in the execution but does
+not match any tool call in the golden expectation. Possible values: ["FAIL", "ALLOW"]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#extra_tool_call_behavior CesApp#extra_tool_call_behavior}
 
 ---
 
@@ -3442,6 +4190,7 @@ from cdktn_provider_google import ces_app
 
 cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholds(
   overall_tool_invocation_correctness_threshold: typing.Union[int, float] = None,
+  semantic_similarity_channel: str = None,
   semantic_similarity_success_threshold: typing.Union[int, float] = None
 )
 ```
@@ -3451,6 +4200,7 @@ cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLev
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholds.property.overallToolInvocationCorrectnessThreshold">overall_tool_invocation_correctness_threshold</a></code> | <code>typing.Union[int, float]</code> | The success threshold for overall tool invocation correctness. Must be a float between 0 and 1. Default is 1.0. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholds.property.semanticSimilarityChannel">semantic_similarity_channel</a></code> | <code>str</code> | The semantic similarity channel to use for evaluation. Possible values: SEMANTIC_SIMILARITY_CHANNEL_UNSPECIFIED TEXT AUDIO. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholds.property.semanticSimilaritySuccessThreshold">semantic_similarity_success_threshold</a></code> | <code>typing.Union[int, float]</code> | The success threshold for semantic similarity. Must be an integer between 0 and 4. Default is >= 3. |
 
 ---
@@ -3465,7 +4215,21 @@ overall_tool_invocation_correctness_threshold: typing.Union[int, float]
 
 The success threshold for overall tool invocation correctness. Must be a float between 0 and 1. Default is 1.0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#overall_tool_invocation_correctness_threshold CesApp#overall_tool_invocation_correctness_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#overall_tool_invocation_correctness_threshold CesApp#overall_tool_invocation_correctness_threshold}
+
+---
+
+##### `semantic_similarity_channel`<sup>Optional</sup> <a name="semantic_similarity_channel" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholds.property.semanticSimilarityChannel"></a>
+
+```python
+semantic_similarity_channel: str
+```
+
+- *Type:* str
+
+The semantic similarity channel to use for evaluation. Possible values: SEMANTIC_SIMILARITY_CHANNEL_UNSPECIFIED TEXT AUDIO.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#semantic_similarity_channel CesApp#semantic_similarity_channel}
 
 ---
 
@@ -3479,7 +4243,7 @@ semantic_similarity_success_threshold: typing.Union[int, float]
 
 The success threshold for semantic similarity. Must be an integer between 0 and 4. Default is >= 3.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#semantic_similarity_success_threshold CesApp#semantic_similarity_success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#semantic_similarity_success_threshold CesApp#semantic_similarity_success_threshold}
 
 ---
 
@@ -3519,7 +4283,7 @@ default_language_code: str
 
 The default language code of the app.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#default_language_code CesApp#default_language_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#default_language_code CesApp#default_language_code}
 
 ---
 
@@ -3533,7 +4297,7 @@ enable_multilingual_support: bool | IResolvable
 
 Enables multilingual support. If true, agents in the app will use pre-built instructions to improve handling of multilingual input.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#enable_multilingual_support CesApp#enable_multilingual_support}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#enable_multilingual_support CesApp#enable_multilingual_support}
 
 ---
 
@@ -3555,7 +4319,7 @@ Valid values are:
   an EndSession signal with corresponding metadata
   to terminate the conversation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#fallback_action CesApp#fallback_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#fallback_action CesApp#fallback_action}
 
 ---
 
@@ -3569,7 +4333,7 @@ supported_language_codes: typing.List[str]
 
 List of languages codes supported by the app, in addition to the 'default_language_code'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#supported_language_codes CesApp#supported_language_codes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#supported_language_codes CesApp#supported_language_codes}
 
 ---
 
@@ -3585,6 +4349,7 @@ cesApp.CesAppLoggingSettings(
   bigquery_export_settings: CesAppLoggingSettingsBigqueryExportSettings = None,
   cloud_logging_settings: CesAppLoggingSettingsCloudLoggingSettings = None,
   conversation_logging_settings: CesAppLoggingSettingsConversationLoggingSettings = None,
+  metric_analysis_settings: CesAppLoggingSettingsMetricAnalysisSettings = None,
   redaction_config: CesAppLoggingSettingsRedactionConfig = None
 )
 ```
@@ -3597,6 +4362,7 @@ cesApp.CesAppLoggingSettings(
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettings.property.bigqueryExportSettings">bigquery_export_settings</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsBigqueryExportSettings">CesAppLoggingSettingsBigqueryExportSettings</a></code> | bigquery_export_settings block. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettings.property.cloudLoggingSettings">cloud_logging_settings</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsCloudLoggingSettings">CesAppLoggingSettingsCloudLoggingSettings</a></code> | cloud_logging_settings block. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettings.property.conversationLoggingSettings">conversation_logging_settings</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsConversationLoggingSettings">CesAppLoggingSettingsConversationLoggingSettings</a></code> | conversation_logging_settings block. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettings.property.metricAnalysisSettings">metric_analysis_settings</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsMetricAnalysisSettings">CesAppLoggingSettingsMetricAnalysisSettings</a></code> | metric_analysis_settings block. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettings.property.redactionConfig">redaction_config</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsRedactionConfig">CesAppLoggingSettingsRedactionConfig</a></code> | redaction_config block. |
 
 ---
@@ -3611,7 +4377,7 @@ audio_recording_config: CesAppLoggingSettingsAudioRecordingConfig
 
 audio_recording_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#audio_recording_config CesApp#audio_recording_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#audio_recording_config CesApp#audio_recording_config}
 
 ---
 
@@ -3625,7 +4391,7 @@ bigquery_export_settings: CesAppLoggingSettingsBigqueryExportSettings
 
 bigquery_export_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#bigquery_export_settings CesApp#bigquery_export_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#bigquery_export_settings CesApp#bigquery_export_settings}
 
 ---
 
@@ -3639,7 +4405,7 @@ cloud_logging_settings: CesAppLoggingSettingsCloudLoggingSettings
 
 cloud_logging_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#cloud_logging_settings CesApp#cloud_logging_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#cloud_logging_settings CesApp#cloud_logging_settings}
 
 ---
 
@@ -3653,7 +4419,21 @@ conversation_logging_settings: CesAppLoggingSettingsConversationLoggingSettings
 
 conversation_logging_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#conversation_logging_settings CesApp#conversation_logging_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#conversation_logging_settings CesApp#conversation_logging_settings}
+
+---
+
+##### `metric_analysis_settings`<sup>Optional</sup> <a name="metric_analysis_settings" id="@cdktn/provider-google.cesApp.CesAppLoggingSettings.property.metricAnalysisSettings"></a>
+
+```python
+metric_analysis_settings: CesAppLoggingSettingsMetricAnalysisSettings
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsMetricAnalysisSettings">CesAppLoggingSettingsMetricAnalysisSettings</a>
+
+metric_analysis_settings block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#metric_analysis_settings CesApp#metric_analysis_settings}
 
 ---
 
@@ -3667,7 +4447,7 @@ redaction_config: CesAppLoggingSettingsRedactionConfig
 
 redaction_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#redaction_config CesApp#redaction_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#redaction_config CesApp#redaction_config}
 
 ---
 
@@ -3703,7 +4483,7 @@ gcs_bucket: str
 
 The [Cloud Storage](https://cloud.google.com/storage) bucket to store the session audio recordings. The URI must start with "gs://". Note: If the Cloud Storage bucket is in a different project from the app, you should grant 'storage.objects.create' permission to the CES service agent 'service-@gcp-sa-ces.iam.gserviceaccount.com'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#gcs_bucket CesApp#gcs_bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#gcs_bucket CesApp#gcs_bucket}
 
 ---
 
@@ -3728,7 +4508,7 @@ dynamically substituted at serving time:
   If the path prefix is not specified, the default prefix
   '$project/$location/$app/$date/$session/' will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#gcs_path_prefix CesApp#gcs_path_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#gcs_path_prefix CesApp#gcs_path_prefix}
 
 ---
 
@@ -3766,7 +4546,7 @@ dataset: str
 
 The BigQuery dataset to export the data to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#dataset CesApp#dataset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#dataset CesApp#dataset}
 
 ---
 
@@ -3780,7 +4560,7 @@ enabled: bool | IResolvable
 
 Indicates whether the BigQuery export is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#enabled CesApp#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#enabled CesApp#enabled}
 
 ---
 
@@ -3798,7 +4578,7 @@ Note: If the BigQuery dataset is in a different project from the app, you should
 roles/bigquery.admin role to the CES service agent service-<PROJECT-
 NUMBER>@gcp-sa-ces.iam.gserviceaccount.com.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#project CesApp#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#project CesApp#project}
 
 ---
 
@@ -3832,7 +4612,7 @@ enable_cloud_logging: bool | IResolvable
 
 Whether to enable Cloud Logging for the sessions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#enable_cloud_logging CesApp#enable_cloud_logging}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#enable_cloud_logging CesApp#enable_cloud_logging}
 
 ---
 
@@ -3844,7 +4624,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktn_provider_google import ces_app
 
 cesApp.CesAppLoggingSettingsConversationLoggingSettings(
-  disable_conversation_logging: bool | IResolvable = None
+  disable_conversation_logging: bool | IResolvable = None,
+  retention_window: str = None
 )
 ```
 
@@ -3853,6 +4634,7 @@ cesApp.CesAppLoggingSettingsConversationLoggingSettings(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsConversationLoggingSettings.property.disableConversationLogging">disable_conversation_logging</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether to disable conversation logging for the sessions. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsConversationLoggingSettings.property.retentionWindow">retention_window</a></code> | <code>str</code> | Controls the retention window for the conversation. If not set, the conversation will be retained for 365 days. |
 
 ---
 
@@ -3866,7 +4648,59 @@ disable_conversation_logging: bool | IResolvable
 
 Whether to disable conversation logging for the sessions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#disable_conversation_logging CesApp#disable_conversation_logging}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#disable_conversation_logging CesApp#disable_conversation_logging}
+
+---
+
+##### `retention_window`<sup>Optional</sup> <a name="retention_window" id="@cdktn/provider-google.cesApp.CesAppLoggingSettingsConversationLoggingSettings.property.retentionWindow"></a>
+
+```python
+retention_window: str
+```
+
+- *Type:* str
+
+Controls the retention window for the conversation. If not set, the conversation will be retained for 365 days.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#retention_window CesApp#retention_window}
+
+---
+
+### CesAppLoggingSettingsMetricAnalysisSettings <a name="CesAppLoggingSettingsMetricAnalysisSettings" id="@cdktn/provider-google.cesApp.CesAppLoggingSettingsMetricAnalysisSettings"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.cesApp.CesAppLoggingSettingsMetricAnalysisSettings.Initializer"></a>
+
+```python
+from cdktn_provider_google import ces_app
+
+cesApp.CesAppLoggingSettingsMetricAnalysisSettings(
+  llm_metrics_opted_out: bool | IResolvable = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsMetricAnalysisSettings.property.llmMetricsOptedOut">llm_metrics_opted_out</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether to collect conversation data for llm analysis metrics. |
+
+---
+
+##### `llm_metrics_opted_out`<sup>Optional</sup> <a name="llm_metrics_opted_out" id="@cdktn/provider-google.cesApp.CesAppLoggingSettingsMetricAnalysisSettings.property.llmMetricsOptedOut"></a>
+
+```python
+llm_metrics_opted_out: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether to collect conversation data for llm analysis metrics.
+
+If true,
+conversation data will not be collected for llm analysis metrics;
+otherwise, conversation data will be collected.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#llm_metrics_opted_out CesApp#llm_metrics_opted_out}
 
 ---
 
@@ -3904,7 +4738,7 @@ deidentify_template: str
 
 [DLP](https://cloud.google.com/dlp/docs) deidentify template name to instruct on how to de-identify content. Format: 'projects/{project}/locations/{location}/deidentifyTemplates/{deidentify_template}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#deidentify_template CesApp#deidentify_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#deidentify_template CesApp#deidentify_template}
 
 ---
 
@@ -3918,7 +4752,7 @@ enable_redaction: bool | IResolvable
 
 If true, redaction will be applied in various logging scenarios, including conversation history, Cloud Logging and audio recording.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#enable_redaction CesApp#enable_redaction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#enable_redaction CesApp#enable_redaction}
 
 ---
 
@@ -3932,7 +4766,7 @@ inspect_template: str
 
 [DLP](https://cloud.google.com/dlp/docs) inspect template name to configure detection of sensitive data types. Format: 'projects/{project}/locations/{location}/inspectTemplates/{inspect_template}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#inspect_template CesApp#inspect_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#inspect_template CesApp#inspect_template}
 
 ---
 
@@ -3970,7 +4804,7 @@ The LLM model that the agent should use.
 
 If not set, the agent will inherit the model from its parent agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#model CesApp#model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#model CesApp#model}
 
 ---
 
@@ -3989,7 +4823,7 @@ controls the randomness of the model's responses. Lower temperatures
 produce responses that are more predictable. Higher temperatures produce
 responses that are more creative.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#temperature CesApp#temperature}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#temperature CesApp#temperature}
 
 ---
 
@@ -4011,9 +4845,9 @@ cesApp.CesAppTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cesApp.CesAppTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#create CesApp#create}. |
-| <code><a href="#@cdktn/provider-google.cesApp.CesAppTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#delete CesApp#delete}. |
-| <code><a href="#@cdktn/provider-google.cesApp.CesAppTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#update CesApp#update}. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#create CesApp#create}. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#delete CesApp#delete}. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#update CesApp#update}. |
 
 ---
 
@@ -4025,7 +4859,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#create CesApp#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#create CesApp#create}.
 
 ---
 
@@ -4037,7 +4871,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#delete CesApp#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#delete CesApp#delete}.
 
 ---
 
@@ -4049,7 +4883,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#update CesApp#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#update CesApp#update}.
 
 ---
 
@@ -4083,7 +4917,7 @@ time_zone: str
 
 The time zone of the app from the time zone database, e.g., America/Los_Angeles, Europe/Paris.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#time_zone CesApp#time_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#time_zone CesApp#time_zone}
 
 ---
 
@@ -4121,7 +4955,7 @@ description: str
 
 The description of the variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#description CesApp#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#description CesApp#description}
 
 ---
 
@@ -4138,7 +4972,7 @@ The name of the variable.
 The name must start with a letter or underscore
 and contain only letters, numbers, or underscores.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#name CesApp#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#name CesApp#name}
 
 ---
 
@@ -4152,7 +4986,7 @@ schema: CesAppVariableDeclarationsSchema
 
 schema block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#schema CesApp#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#schema CesApp#schema}
 
 ---
 
@@ -4214,7 +5048,7 @@ type: str
 
 The type of the data. Possible values: STRING INTEGER NUMBER BOOLEAN OBJECT ARRAY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#type CesApp#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#type CesApp#type}
 
 ---
 
@@ -4232,7 +5066,7 @@ Defines the schema for additional properties allowed in an object.
 The value must be a valid JSON string representing the Schema object.
 (Note: OpenAPI also allows a boolean, this definition expects a Schema JSON).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#additional_properties CesApp#additional_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#additional_properties CesApp#additional_properties}
 
 ---
 
@@ -4246,7 +5080,7 @@ any_of: str
 
 Optional. The instance value should be valid against at least one of the schemas in this list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#any_of CesApp#any_of}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#any_of CesApp#any_of}
 
 ---
 
@@ -4265,7 +5099,7 @@ which can be either null, a number, a string, a boolean, a struct,
 or a list of values. The provided default value must be encoded as a JSON string.
 Use 'jsonencode' in Terraform HCL to encode the default value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#default CesApp#default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#default CesApp#default}
 
 ---
 
@@ -4279,7 +5113,7 @@ defs: str
 
 A map of definitions for use by ref. Only allowed at the root of the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#defs CesApp#defs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#defs CesApp#defs}
 
 ---
 
@@ -4293,7 +5127,7 @@ description: str
 
 The description of the data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#description CesApp#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#description CesApp#description}
 
 ---
 
@@ -4314,7 +5148,7 @@ Examples:
 2. We can define apartment number as :
    {type:INTEGER, format:enum, enum:["101", "201", "301"]}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#enum CesApp#enum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#enum CesApp#enum}
 
 ---
 
@@ -4328,7 +5162,7 @@ items: str
 
 Schema of the elements of Type.ARRAY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#items CesApp#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#items CesApp#items}
 
 ---
 
@@ -4342,7 +5176,7 @@ nullable: bool | IResolvable
 
 Indicates if the value may be null.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#nullable CesApp#nullable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#nullable CesApp#nullable}
 
 ---
 
@@ -4356,7 +5190,7 @@ prefix_items: str
 
 Optional. Schemas of initial elements of Type.ARRAY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#prefix_items CesApp#prefix_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#prefix_items CesApp#prefix_items}
 
 ---
 
@@ -4370,7 +5204,7 @@ properties: str
 
 Properties of Type.OBJECT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#properties CesApp#properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#properties CesApp#properties}
 
 ---
 
@@ -4403,7 +5237,7 @@ named "Pet".
 See details in
 https://json-schema.org/understanding-json-schema/structuring.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#ref CesApp#ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#ref CesApp#ref}
 
 ---
 
@@ -4417,7 +5251,7 @@ required: typing.List[str]
 
 Required properties of Type.OBJECT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#required CesApp#required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#required CesApp#required}
 
 ---
 
@@ -4431,7 +5265,7 @@ title: str
 
 The title of the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#title CesApp#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#title CesApp#title}
 
 ---
 
@@ -4445,7 +5279,46 @@ unique_items: bool | IResolvable
 
 Indicate the items in the array must be unique. Only applies to TYPE.ARRAY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#unique_items CesApp#unique_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#unique_items CesApp#unique_items}
+
+---
+
+### CesAppVpcScSettings <a name="CesAppVpcScSettings" id="@cdktn/provider-google.cesApp.CesAppVpcScSettings"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.cesApp.CesAppVpcScSettings.Initializer"></a>
+
+```python
+from cdktn_provider_google import ces_app
+
+cesApp.CesAppVpcScSettings(
+  allowed_origins: typing.List[str] = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppVpcScSettings.property.allowedOrigins">allowed_origins</a></code> | <code>typing.List[str]</code> | The allowed HTTP(s) origins that OpenAPI tools in the App are able to directly call when VPC Service Controls are enabled. |
+
+---
+
+##### `allowed_origins`<sup>Optional</sup> <a name="allowed_origins" id="@cdktn/provider-google.cesApp.CesAppVpcScSettings.property.allowedOrigins"></a>
+
+```python
+allowed_origins: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The allowed HTTP(s) origins that OpenAPI tools in the App are able to directly call when VPC Service Controls are enabled.
+
+These strings
+must match the origin exactly, including the port if specified. For
+example, "https://example.com" or "https://example.com:443". This list does
+not yet apply to Python tools that may make direct HTTP calls.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#allowed_origins CesApp#allowed_origins}
 
 ---
 
@@ -5366,7 +6239,7 @@ def put_ambient_sound_config(
 
 Ambient noise as a mono-channel, 16kHz WAV file stored in [Cloud Storage](https://cloud.google.com/storage). Note: Please make sure the CES service agent 'service-@gcp-sa-ces.iam.gserviceaccount.com' has 'storage.objects.get' permission to the Cloud Storage object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#gcs_uri CesApp#gcs_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#gcs_uri CesApp#gcs_uri}
 
 ---
 
@@ -5381,7 +6254,7 @@ Valid values are: - "coffee_shop" - "keyboard" - "keypad" - "hum"
 -"room_1" - "room_2" - "room_3"
 -"room_4" - "room_5" - "air_conditioner"
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#prebuilt_ambient_sound CesApp#prebuilt_ambient_sound}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#prebuilt_ambient_sound CesApp#prebuilt_ambient_sound}
 
 ---
 
@@ -5391,7 +6264,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Volume gain (in dB) of the normal native volume supported by ambient noise, in the range [-96.0, 16.0]. If unset, or set to a value of 0.0 (dB), will play at normal native signal amplitude. A value of -6.0 (dB) will play at approximately half the amplitude of the normal native signal amplitude. A value of +6.0 (dB) will play at approximately twice the amplitude of the normal native signal amplitude. We strongly recommend not to exceed +10 (dB) as there's usually no effective increase in loudness for any value greater than that.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#volume_gain_db CesApp#volume_gain_db}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#volume_gain_db CesApp#volume_gain_db}
 
 ---
 
@@ -5412,7 +6285,7 @@ If enabled, the agent will adapt its next response based on the assumption that 
 This should not be used in scenarios where agent responses are displayed
 visually.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#barge_in_awareness CesApp#barge_in_awareness}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#barge_in_awareness CesApp#barge_in_awareness}
 
 ---
 
@@ -5831,6 +6704,8 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppAudioProcessingConfigSynthesizeSpeechConfigsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppAudioProcessingConfigSynthesizeSpeechConfigsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppAudioProcessingConfigSynthesizeSpeechConfigsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppAudioProcessingConfigSynthesizeSpeechConfigsOutputReference.resetInstruction">reset_instruction</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppAudioProcessingConfigSynthesizeSpeechConfigsOutputReference.resetModel">reset_model</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppAudioProcessingConfigSynthesizeSpeechConfigsOutputReference.resetSpeakingRate">reset_speaking_rate</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppAudioProcessingConfigSynthesizeSpeechConfigsOutputReference.resetVoice">reset_voice</a></code> | *No description.* |
 
@@ -6008,6 +6883,18 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `reset_instruction` <a name="reset_instruction" id="@cdktn/provider-google.cesApp.CesAppAudioProcessingConfigSynthesizeSpeechConfigsOutputReference.resetInstruction"></a>
+
+```python
+def reset_instruction() -> None
+```
+
+##### `reset_model` <a name="reset_model" id="@cdktn/provider-google.cesApp.CesAppAudioProcessingConfigSynthesizeSpeechConfigsOutputReference.resetModel"></a>
+
+```python
+def reset_model() -> None
+```
+
 ##### `reset_speaking_rate` <a name="reset_speaking_rate" id="@cdktn/provider-google.cesApp.CesAppAudioProcessingConfigSynthesizeSpeechConfigsOutputReference.resetSpeakingRate"></a>
 
 ```python
@@ -6027,10 +6914,14 @@ def reset_voice() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppAudioProcessingConfigSynthesizeSpeechConfigsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppAudioProcessingConfigSynthesizeSpeechConfigsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppAudioProcessingConfigSynthesizeSpeechConfigsOutputReference.property.instructionInput">instruction_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppAudioProcessingConfigSynthesizeSpeechConfigsOutputReference.property.languageCodeInput">language_code_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppAudioProcessingConfigSynthesizeSpeechConfigsOutputReference.property.modelInput">model_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppAudioProcessingConfigSynthesizeSpeechConfigsOutputReference.property.speakingRateInput">speaking_rate_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppAudioProcessingConfigSynthesizeSpeechConfigsOutputReference.property.voiceInput">voice_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppAudioProcessingConfigSynthesizeSpeechConfigsOutputReference.property.instruction">instruction</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppAudioProcessingConfigSynthesizeSpeechConfigsOutputReference.property.languageCode">language_code</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppAudioProcessingConfigSynthesizeSpeechConfigsOutputReference.property.model">model</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppAudioProcessingConfigSynthesizeSpeechConfigsOutputReference.property.speakingRate">speaking_rate</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppAudioProcessingConfigSynthesizeSpeechConfigsOutputReference.property.voice">voice</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppAudioProcessingConfigSynthesizeSpeechConfigsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cesApp.CesAppAudioProcessingConfigSynthesizeSpeechConfigs">CesAppAudioProcessingConfigSynthesizeSpeechConfigs</a></code> | *No description.* |
@@ -6061,10 +6952,30 @@ fqn: str
 
 ---
 
+##### `instruction_input`<sup>Optional</sup> <a name="instruction_input" id="@cdktn/provider-google.cesApp.CesAppAudioProcessingConfigSynthesizeSpeechConfigsOutputReference.property.instructionInput"></a>
+
+```python
+instruction_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `language_code_input`<sup>Optional</sup> <a name="language_code_input" id="@cdktn/provider-google.cesApp.CesAppAudioProcessingConfigSynthesizeSpeechConfigsOutputReference.property.languageCodeInput"></a>
 
 ```python
 language_code_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `model_input`<sup>Optional</sup> <a name="model_input" id="@cdktn/provider-google.cesApp.CesAppAudioProcessingConfigSynthesizeSpeechConfigsOutputReference.property.modelInput"></a>
+
+```python
+model_input: str
 ```
 
 - *Type:* str
@@ -6091,10 +7002,30 @@ voice_input: str
 
 ---
 
+##### `instruction`<sup>Required</sup> <a name="instruction" id="@cdktn/provider-google.cesApp.CesAppAudioProcessingConfigSynthesizeSpeechConfigsOutputReference.property.instruction"></a>
+
+```python
+instruction: str
+```
+
+- *Type:* str
+
+---
+
 ##### `language_code`<sup>Required</sup> <a name="language_code" id="@cdktn/provider-google.cesApp.CesAppAudioProcessingConfigSynthesizeSpeechConfigsOutputReference.property.languageCode"></a>
 
 ```python
 language_code: str
+```
+
+- *Type:* str
+
+---
+
+##### `model`<sup>Required</sup> <a name="model" id="@cdktn/provider-google.cesApp.CesAppAudioProcessingConfigSynthesizeSpeechConfigsOutputReference.property.model"></a>
+
+```python
+model: str
 ```
 
 - *Type:* str
@@ -7294,12 +8225,14 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileOutputReference.putPersonaProperty">put_persona_property</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileOutputReference.putWebWidgetConfig">put_web_widget_config</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileOutputReference.putWhatsappConfig">put_whatsapp_config</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileOutputReference.resetChannelType">reset_channel_type</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileOutputReference.resetDisableBargeInControl">reset_disable_barge_in_control</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileOutputReference.resetDisableDtmf">reset_disable_dtmf</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileOutputReference.resetPersonaProperty">reset_persona_property</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileOutputReference.resetProfileId">reset_profile_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileOutputReference.resetWebWidgetConfig">reset_web_widget_config</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileOutputReference.resetWhatsappConfig">reset_whatsapp_config</a></code> | *No description.* |
 
 ---
 
@@ -7489,7 +8422,7 @@ def put_persona_property(
 
 The persona of the channel. Possible values: UNKNOWN CONCISE CHATTY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#persona CesApp#persona}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#persona CesApp#persona}
 
 ---
 
@@ -7498,6 +8431,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ```python
 def put_web_widget_config(
   modality: str = None,
+  security_settings: CesAppDefaultChannelProfileWebWidgetConfigSecuritySettings = None,
   theme: str = None,
   web_widget_title: str = None
 ) -> None
@@ -7509,7 +8443,17 @@ def put_web_widget_config(
 
 The modality of the web widget. Possible values: UNKNOWN_MODALITY CHAT_AND_VOICE VOICE_ONLY CHAT_ONLY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#modality CesApp#modality}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#modality CesApp#modality}
+
+---
+
+###### `security_settings`<sup>Optional</sup> <a name="security_settings" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileOutputReference.putWebWidgetConfig.parameter.securitySettings"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettings">CesAppDefaultChannelProfileWebWidgetConfigSecuritySettings</a>
+
+security_settings block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#security_settings CesApp#security_settings}
 
 ---
 
@@ -7519,7 +8463,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The theme of the web widget. Possible values: UNKNOWN_THEME LIGHT DARK.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#theme CesApp#theme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#theme CesApp#theme}
 
 ---
 
@@ -7529,7 +8473,47 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The title of the web widget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#web_widget_title CesApp#web_widget_title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#web_widget_title CesApp#web_widget_title}
+
+---
+
+##### `put_whatsapp_config` <a name="put_whatsapp_config" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileOutputReference.putWhatsappConfig"></a>
+
+```python
+def put_whatsapp_config(
+  phone_number_id: str,
+  waba_id: str,
+  phone_number: str = None
+) -> None
+```
+
+###### `phone_number_id`<sup>Required</sup> <a name="phone_number_id" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileOutputReference.putWhatsappConfig.parameter.phoneNumberId"></a>
+
+- *Type:* str
+
+The Meta phone number ID.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#phone_number_id CesApp#phone_number_id}
+
+---
+
+###### `waba_id`<sup>Required</sup> <a name="waba_id" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileOutputReference.putWhatsappConfig.parameter.wabaId"></a>
+
+- *Type:* str
+
+The WhatsApp Business Account ID.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#waba_id CesApp#waba_id}
+
+---
+
+###### `phone_number`<sup>Optional</sup> <a name="phone_number" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileOutputReference.putWhatsappConfig.parameter.phoneNumber"></a>
+
+- *Type:* str
+
+The phone number in E.164 format.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#phone_number CesApp#phone_number}
 
 ---
 
@@ -7569,6 +8553,12 @@ def reset_profile_id() -> None
 def reset_web_widget_config() -> None
 ```
 
+##### `reset_whatsapp_config` <a name="reset_whatsapp_config" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileOutputReference.resetWhatsappConfig"></a>
+
+```python
+def reset_whatsapp_config() -> None
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -7578,12 +8568,14 @@ def reset_web_widget_config() -> None
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileOutputReference.property.personaProperty">persona_property</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfilePersonaPropertyOutputReference">CesAppDefaultChannelProfilePersonaPropertyOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileOutputReference.property.webWidgetConfig">web_widget_config</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigOutputReference">CesAppDefaultChannelProfileWebWidgetConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileOutputReference.property.whatsappConfig">whatsapp_config</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference">CesAppDefaultChannelProfileWhatsappConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileOutputReference.property.channelTypeInput">channel_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileOutputReference.property.disableBargeInControlInput">disable_barge_in_control_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileOutputReference.property.disableDtmfInput">disable_dtmf_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileOutputReference.property.personaPropertyInput">persona_property_input</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfilePersonaProperty">CesAppDefaultChannelProfilePersonaProperty</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileOutputReference.property.profileIdInput">profile_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileOutputReference.property.webWidgetConfigInput">web_widget_config_input</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfig">CesAppDefaultChannelProfileWebWidgetConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileOutputReference.property.whatsappConfigInput">whatsapp_config_input</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfig">CesAppDefaultChannelProfileWhatsappConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileOutputReference.property.channelType">channel_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileOutputReference.property.disableBargeInControl">disable_barge_in_control</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileOutputReference.property.disableDtmf">disable_dtmf</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
@@ -7633,6 +8625,16 @@ web_widget_config: CesAppDefaultChannelProfileWebWidgetConfigOutputReference
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigOutputReference">CesAppDefaultChannelProfileWebWidgetConfigOutputReference</a>
+
+---
+
+##### `whatsapp_config`<sup>Required</sup> <a name="whatsapp_config" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileOutputReference.property.whatsappConfig"></a>
+
+```python
+whatsapp_config: CesAppDefaultChannelProfileWhatsappConfigOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference">CesAppDefaultChannelProfileWhatsappConfigOutputReference</a>
 
 ---
 
@@ -7693,6 +8695,16 @@ web_widget_config_input: CesAppDefaultChannelProfileWebWidgetConfig
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfig">CesAppDefaultChannelProfileWebWidgetConfig</a>
+
+---
+
+##### `whatsapp_config_input`<sup>Optional</sup> <a name="whatsapp_config_input" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileOutputReference.property.whatsappConfigInput"></a>
+
+```python
+whatsapp_config_input: CesAppDefaultChannelProfileWhatsappConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfig">CesAppDefaultChannelProfileWhatsappConfig</a>
 
 ---
 
@@ -8103,7 +9115,9 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigOutputReference.putSecuritySettings">put_security_settings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigOutputReference.resetModality">reset_modality</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigOutputReference.resetSecuritySettings">reset_security_settings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigOutputReference.resetTheme">reset_theme</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigOutputReference.resetWebWidgetTitle">reset_web_widget_title</a></code> | *No description.* |
 
@@ -8281,10 +9295,81 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `put_security_settings` <a name="put_security_settings" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigOutputReference.putSecuritySettings"></a>
+
+```python
+def put_security_settings(
+  allowed_origins: typing.List[str] = None,
+  enable_origin_check: bool | IResolvable = None,
+  enable_public_access: bool | IResolvable = None,
+  enable_recaptcha: bool | IResolvable = None
+) -> None
+```
+
+###### `allowed_origins`<sup>Optional</sup> <a name="allowed_origins" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigOutputReference.putSecuritySettings.parameter.allowedOrigins"></a>
+
+- *Type:* typing.List[str]
+
+The origins that are allowed to host the web widget.
+
+An origin is
+defined by RFC 6454. If empty, all origins are allowed.
+A maximum of 100 origins is allowed.
+Example: "https://example.com"
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#allowed_origins CesApp#allowed_origins}
+
+---
+
+###### `enable_origin_check`<sup>Optional</sup> <a name="enable_origin_check" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigOutputReference.putSecuritySettings.parameter.enableOriginCheck"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Indicates whether origin check for the web widget is enabled.
+
+If 'true', the web widget will check the origin of the website that
+loads the web widget and only allow it to be loaded in the same origin
+or any of the allowed origins.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#enable_origin_check CesApp#enable_origin_check}
+
+---
+
+###### `enable_public_access`<sup>Optional</sup> <a name="enable_public_access" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigOutputReference.putSecuritySettings.parameter.enablePublicAccess"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Indicates whether public access to the web widget is enabled.
+
+If 'true', the web widget will be publicly accessible.
+If 'false', the web widget must be integrated with your own
+authentication and authorization system to return valid credentials for
+accessing the CES agent.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#enable_public_access CesApp#enable_public_access}
+
+---
+
+###### `enable_recaptcha`<sup>Optional</sup> <a name="enable_recaptcha" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigOutputReference.putSecuritySettings.parameter.enableRecaptcha"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Indicates whether reCAPTCHA verification for the web widget is enabled.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#enable_recaptcha CesApp#enable_recaptcha}
+
+---
+
 ##### `reset_modality` <a name="reset_modality" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigOutputReference.resetModality"></a>
 
 ```python
 def reset_modality() -> None
+```
+
+##### `reset_security_settings` <a name="reset_security_settings" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigOutputReference.resetSecuritySettings"></a>
+
+```python
+def reset_security_settings() -> None
 ```
 
 ##### `reset_theme` <a name="reset_theme" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigOutputReference.resetTheme"></a>
@@ -8306,7 +9391,9 @@ def reset_web_widget_title() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigOutputReference.property.securitySettings">security_settings</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference">CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigOutputReference.property.modalityInput">modality_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigOutputReference.property.securitySettingsInput">security_settings_input</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettings">CesAppDefaultChannelProfileWebWidgetConfigSecuritySettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigOutputReference.property.themeInput">theme_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigOutputReference.property.webWidgetTitleInput">web_widget_title_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigOutputReference.property.modality">modality</a></code> | <code>str</code> | *No description.* |
@@ -8340,6 +9427,16 @@ fqn: str
 
 ---
 
+##### `security_settings`<sup>Required</sup> <a name="security_settings" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigOutputReference.property.securitySettings"></a>
+
+```python
+security_settings: CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference">CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference</a>
+
+---
+
 ##### `modality_input`<sup>Optional</sup> <a name="modality_input" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigOutputReference.property.modalityInput"></a>
 
 ```python
@@ -8347,6 +9444,16 @@ modality_input: str
 ```
 
 - *Type:* str
+
+---
+
+##### `security_settings_input`<sup>Optional</sup> <a name="security_settings_input" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigOutputReference.property.securitySettingsInput"></a>
+
+```python
+security_settings_input: CesAppDefaultChannelProfileWebWidgetConfigSecuritySettings
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettings">CesAppDefaultChannelProfileWebWidgetConfigSecuritySettings</a>
 
 ---
 
@@ -8407,6 +9514,1821 @@ internal_value: CesAppDefaultChannelProfileWebWidgetConfig
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfig">CesAppDefaultChannelProfileWebWidgetConfig</a>
+
+---
+
+
+### CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference <a name="CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_google import ces_app
+
+cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.resetAllowedOrigins">reset_allowed_origins</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.resetEnableOriginCheck">reset_enable_origin_check</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.resetEnablePublicAccess">reset_enable_public_access</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.resetEnableRecaptcha">reset_enable_recaptcha</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_allowed_origins` <a name="reset_allowed_origins" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.resetAllowedOrigins"></a>
+
+```python
+def reset_allowed_origins() -> None
+```
+
+##### `reset_enable_origin_check` <a name="reset_enable_origin_check" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.resetEnableOriginCheck"></a>
+
+```python
+def reset_enable_origin_check() -> None
+```
+
+##### `reset_enable_public_access` <a name="reset_enable_public_access" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.resetEnablePublicAccess"></a>
+
+```python
+def reset_enable_public_access() -> None
+```
+
+##### `reset_enable_recaptcha` <a name="reset_enable_recaptcha" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.resetEnableRecaptcha"></a>
+
+```python
+def reset_enable_recaptcha() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.property.allowedOriginsInput">allowed_origins_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.property.enableOriginCheckInput">enable_origin_check_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.property.enablePublicAccessInput">enable_public_access_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.property.enableRecaptchaInput">enable_recaptcha_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.property.allowedOrigins">allowed_origins</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.property.enableOriginCheck">enable_origin_check</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.property.enablePublicAccess">enable_public_access</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.property.enableRecaptcha">enable_recaptcha</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettings">CesAppDefaultChannelProfileWebWidgetConfigSecuritySettings</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `allowed_origins_input`<sup>Optional</sup> <a name="allowed_origins_input" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.property.allowedOriginsInput"></a>
+
+```python
+allowed_origins_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `enable_origin_check_input`<sup>Optional</sup> <a name="enable_origin_check_input" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.property.enableOriginCheckInput"></a>
+
+```python
+enable_origin_check_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `enable_public_access_input`<sup>Optional</sup> <a name="enable_public_access_input" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.property.enablePublicAccessInput"></a>
+
+```python
+enable_public_access_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `enable_recaptcha_input`<sup>Optional</sup> <a name="enable_recaptcha_input" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.property.enableRecaptchaInput"></a>
+
+```python
+enable_recaptcha_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `allowed_origins`<sup>Required</sup> <a name="allowed_origins" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.property.allowedOrigins"></a>
+
+```python
+allowed_origins: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `enable_origin_check`<sup>Required</sup> <a name="enable_origin_check" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.property.enableOriginCheck"></a>
+
+```python
+enable_origin_check: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `enable_public_access`<sup>Required</sup> <a name="enable_public_access" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.property.enablePublicAccess"></a>
+
+```python
+enable_public_access: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `enable_recaptcha`<sup>Required</sup> <a name="enable_recaptcha" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.property.enableRecaptcha"></a>
+
+```python
+enable_recaptcha: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettingsOutputReference.property.internalValue"></a>
+
+```python
+internal_value: CesAppDefaultChannelProfileWebWidgetConfigSecuritySettings
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigSecuritySettings">CesAppDefaultChannelProfileWebWidgetConfigSecuritySettings</a>
+
+---
+
+
+### CesAppDefaultChannelProfileWhatsappConfigOutputReference <a name="CesAppDefaultChannelProfileWhatsappConfigOutputReference" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_google import ces_app
+
+cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference.resetPhoneNumber">reset_phone_number</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_phone_number` <a name="reset_phone_number" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference.resetPhoneNumber"></a>
+
+```python
+def reset_phone_number() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference.property.description">description</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference.property.displayName">display_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference.property.thumbnailUrl">thumbnail_url</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference.property.phoneNumberIdInput">phone_number_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference.property.phoneNumberInput">phone_number_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference.property.wabaIdInput">waba_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference.property.phoneNumber">phone_number</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference.property.phoneNumberId">phone_number_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference.property.wabaId">waba_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfig">CesAppDefaultChannelProfileWhatsappConfig</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference.property.description"></a>
+
+```python
+description: str
+```
+
+- *Type:* str
+
+---
+
+##### `display_name`<sup>Required</sup> <a name="display_name" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference.property.displayName"></a>
+
+```python
+display_name: str
+```
+
+- *Type:* str
+
+---
+
+##### `thumbnail_url`<sup>Required</sup> <a name="thumbnail_url" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference.property.thumbnailUrl"></a>
+
+```python
+thumbnail_url: str
+```
+
+- *Type:* str
+
+---
+
+##### `phone_number_id_input`<sup>Optional</sup> <a name="phone_number_id_input" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference.property.phoneNumberIdInput"></a>
+
+```python
+phone_number_id_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `phone_number_input`<sup>Optional</sup> <a name="phone_number_input" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference.property.phoneNumberInput"></a>
+
+```python
+phone_number_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `waba_id_input`<sup>Optional</sup> <a name="waba_id_input" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference.property.wabaIdInput"></a>
+
+```python
+waba_id_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `phone_number`<sup>Required</sup> <a name="phone_number" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference.property.phoneNumber"></a>
+
+```python
+phone_number: str
+```
+
+- *Type:* str
+
+---
+
+##### `phone_number_id`<sup>Required</sup> <a name="phone_number_id" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference.property.phoneNumberId"></a>
+
+```python
+phone_number_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `waba_id`<sup>Required</sup> <a name="waba_id" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference.property.wabaId"></a>
+
+```python
+waba_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfigOutputReference.property.internalValue"></a>
+
+```python
+internal_value: CesAppDefaultChannelProfileWhatsappConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWhatsappConfig">CesAppDefaultChannelProfileWhatsappConfig</a>
+
+---
+
+
+### CesAppErrorHandlingSettingsEndSessionConfigOutputReference <a name="CesAppErrorHandlingSettingsEndSessionConfigOutputReference" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsEndSessionConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsEndSessionConfigOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_google import ces_app
+
+cesApp.CesAppErrorHandlingSettingsEndSessionConfigOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsEndSessionConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsEndSessionConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsEndSessionConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsEndSessionConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsEndSessionConfigOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsEndSessionConfigOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsEndSessionConfigOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsEndSessionConfigOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsEndSessionConfigOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsEndSessionConfigOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsEndSessionConfigOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsEndSessionConfigOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsEndSessionConfigOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsEndSessionConfigOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsEndSessionConfigOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsEndSessionConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsEndSessionConfigOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsEndSessionConfigOutputReference.resetEscalateSession">reset_escalate_session</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsEndSessionConfigOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsEndSessionConfigOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsEndSessionConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsEndSessionConfigOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsEndSessionConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsEndSessionConfigOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsEndSessionConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsEndSessionConfigOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsEndSessionConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsEndSessionConfigOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsEndSessionConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsEndSessionConfigOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsEndSessionConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsEndSessionConfigOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsEndSessionConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsEndSessionConfigOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsEndSessionConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsEndSessionConfigOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsEndSessionConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsEndSessionConfigOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsEndSessionConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsEndSessionConfigOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsEndSessionConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsEndSessionConfigOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_escalate_session` <a name="reset_escalate_session" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsEndSessionConfigOutputReference.resetEscalateSession"></a>
+
+```python
+def reset_escalate_session() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsEndSessionConfigOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsEndSessionConfigOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsEndSessionConfigOutputReference.property.escalateSessionInput">escalate_session_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsEndSessionConfigOutputReference.property.escalateSession">escalate_session</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsEndSessionConfigOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsEndSessionConfig">CesAppErrorHandlingSettingsEndSessionConfig</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsEndSessionConfigOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsEndSessionConfigOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `escalate_session_input`<sup>Optional</sup> <a name="escalate_session_input" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsEndSessionConfigOutputReference.property.escalateSessionInput"></a>
+
+```python
+escalate_session_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `escalate_session`<sup>Required</sup> <a name="escalate_session" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsEndSessionConfigOutputReference.property.escalateSession"></a>
+
+```python
+escalate_session: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsEndSessionConfigOutputReference.property.internalValue"></a>
+
+```python
+internal_value: CesAppErrorHandlingSettingsEndSessionConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsEndSessionConfig">CesAppErrorHandlingSettingsEndSessionConfig</a>
+
+---
+
+
+### CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference <a name="CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_google import ces_app
+
+cesApp.CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference.resetCustomFallbackMessages">reset_custom_fallback_messages</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference.resetMaxFallbackAttempts">reset_max_fallback_attempts</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_custom_fallback_messages` <a name="reset_custom_fallback_messages" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference.resetCustomFallbackMessages"></a>
+
+```python
+def reset_custom_fallback_messages() -> None
+```
+
+##### `reset_max_fallback_attempts` <a name="reset_max_fallback_attempts" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference.resetMaxFallbackAttempts"></a>
+
+```python
+def reset_max_fallback_attempts() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference.property.customFallbackMessagesInput">custom_fallback_messages_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference.property.maxFallbackAttemptsInput">max_fallback_attempts_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference.property.customFallbackMessages">custom_fallback_messages</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference.property.maxFallbackAttempts">max_fallback_attempts</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfig">CesAppErrorHandlingSettingsFallbackResponseConfig</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `custom_fallback_messages_input`<sup>Optional</sup> <a name="custom_fallback_messages_input" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference.property.customFallbackMessagesInput"></a>
+
+```python
+custom_fallback_messages_input: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
+
+---
+
+##### `max_fallback_attempts_input`<sup>Optional</sup> <a name="max_fallback_attempts_input" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference.property.maxFallbackAttemptsInput"></a>
+
+```python
+max_fallback_attempts_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `custom_fallback_messages`<sup>Required</sup> <a name="custom_fallback_messages" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference.property.customFallbackMessages"></a>
+
+```python
+custom_fallback_messages: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
+
+---
+
+##### `max_fallback_attempts`<sup>Required</sup> <a name="max_fallback_attempts" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference.property.maxFallbackAttempts"></a>
+
+```python
+max_fallback_attempts: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference.property.internalValue"></a>
+
+```python
+internal_value: CesAppErrorHandlingSettingsFallbackResponseConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfig">CesAppErrorHandlingSettingsFallbackResponseConfig</a>
+
+---
+
+
+### CesAppErrorHandlingSettingsOutputReference <a name="CesAppErrorHandlingSettingsOutputReference" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_google import ces_app
+
+cesApp.CesAppErrorHandlingSettingsOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.putEndSessionConfig">put_end_session_config</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.putFallbackResponseConfig">put_fallback_response_config</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.resetEndSessionConfig">reset_end_session_config</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.resetErrorHandlingStrategy">reset_error_handling_strategy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.resetFallbackResponseConfig">reset_fallback_response_config</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `put_end_session_config` <a name="put_end_session_config" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.putEndSessionConfig"></a>
+
+```python
+def put_end_session_config(
+  escalate_session: bool | IResolvable = None
+) -> None
+```
+
+###### `escalate_session`<sup>Optional</sup> <a name="escalate_session" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.putEndSessionConfig.parameter.escalateSession"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether to escalate the session in EndSession. If session is escalated, metadata in EndSession will contain session_escalated = true.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#escalate_session CesApp#escalate_session}
+
+---
+
+##### `put_fallback_response_config` <a name="put_fallback_response_config" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.putFallbackResponseConfig"></a>
+
+```python
+def put_fallback_response_config(
+  custom_fallback_messages: typing.Mapping[str] = None,
+  max_fallback_attempts: typing.Union[int, float] = None
+) -> None
+```
+
+###### `custom_fallback_messages`<sup>Optional</sup> <a name="custom_fallback_messages" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.putFallbackResponseConfig.parameter.customFallbackMessages"></a>
+
+- *Type:* typing.Mapping[str]
+
+The fallback messages in case of system errors (e.g. LLM errors), mapped by supported language code (https://docs.cloud.google.com/customer-engagement-ai/conversational-agents/ps/reference/language).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#custom_fallback_messages CesApp#custom_fallback_messages}
+
+---
+
+###### `max_fallback_attempts`<sup>Optional</sup> <a name="max_fallback_attempts" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.putFallbackResponseConfig.parameter.maxFallbackAttempts"></a>
+
+- *Type:* typing.Union[int, float]
+
+The maximum number of fallback attempts to make before the agent emitting EndSession Signal.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#max_fallback_attempts CesApp#max_fallback_attempts}
+
+---
+
+##### `reset_end_session_config` <a name="reset_end_session_config" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.resetEndSessionConfig"></a>
+
+```python
+def reset_end_session_config() -> None
+```
+
+##### `reset_error_handling_strategy` <a name="reset_error_handling_strategy" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.resetErrorHandlingStrategy"></a>
+
+```python
+def reset_error_handling_strategy() -> None
+```
+
+##### `reset_fallback_response_config` <a name="reset_fallback_response_config" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.resetFallbackResponseConfig"></a>
+
+```python
+def reset_fallback_response_config() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.property.endSessionConfig">end_session_config</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsEndSessionConfigOutputReference">CesAppErrorHandlingSettingsEndSessionConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.property.fallbackResponseConfig">fallback_response_config</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference">CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.property.endSessionConfigInput">end_session_config_input</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsEndSessionConfig">CesAppErrorHandlingSettingsEndSessionConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.property.errorHandlingStrategyInput">error_handling_strategy_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.property.fallbackResponseConfigInput">fallback_response_config_input</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfig">CesAppErrorHandlingSettingsFallbackResponseConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.property.errorHandlingStrategy">error_handling_strategy</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettings">CesAppErrorHandlingSettings</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `end_session_config`<sup>Required</sup> <a name="end_session_config" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.property.endSessionConfig"></a>
+
+```python
+end_session_config: CesAppErrorHandlingSettingsEndSessionConfigOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsEndSessionConfigOutputReference">CesAppErrorHandlingSettingsEndSessionConfigOutputReference</a>
+
+---
+
+##### `fallback_response_config`<sup>Required</sup> <a name="fallback_response_config" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.property.fallbackResponseConfig"></a>
+
+```python
+fallback_response_config: CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference">CesAppErrorHandlingSettingsFallbackResponseConfigOutputReference</a>
+
+---
+
+##### `end_session_config_input`<sup>Optional</sup> <a name="end_session_config_input" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.property.endSessionConfigInput"></a>
+
+```python
+end_session_config_input: CesAppErrorHandlingSettingsEndSessionConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsEndSessionConfig">CesAppErrorHandlingSettingsEndSessionConfig</a>
+
+---
+
+##### `error_handling_strategy_input`<sup>Optional</sup> <a name="error_handling_strategy_input" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.property.errorHandlingStrategyInput"></a>
+
+```python
+error_handling_strategy_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `fallback_response_config_input`<sup>Optional</sup> <a name="fallback_response_config_input" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.property.fallbackResponseConfigInput"></a>
+
+```python
+fallback_response_config_input: CesAppErrorHandlingSettingsFallbackResponseConfig
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsFallbackResponseConfig">CesAppErrorHandlingSettingsFallbackResponseConfig</a>
+
+---
+
+##### `error_handling_strategy`<sup>Required</sup> <a name="error_handling_strategy" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.property.errorHandlingStrategy"></a>
+
+```python
+error_handling_strategy: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.cesApp.CesAppErrorHandlingSettingsOutputReference.property.internalValue"></a>
+
+```python
+internal_value: CesAppErrorHandlingSettings
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesApp.CesAppErrorHandlingSettings">CesAppErrorHandlingSettings</a>
 
 ---
 
@@ -8768,8 +11690,10 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsOutputReference.putExpectationLevelMetricsThresholds">put_expectation_level_metrics_thresholds</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsOutputReference.putToolMatchingSettings">put_tool_matching_settings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsOutputReference.putTurnLevelMetricsThresholds">put_turn_level_metrics_thresholds</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsOutputReference.resetExpectationLevelMetricsThresholds">reset_expectation_level_metrics_thresholds</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsOutputReference.resetToolMatchingSettings">reset_tool_matching_settings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsOutputReference.resetTurnLevelMetricsThresholds">reset_turn_level_metrics_thresholds</a></code> | *No description.* |
 
 ---
@@ -8960,7 +11884,29 @@ def put_expectation_level_metrics_thresholds(
 
 The success threshold for individual tool invocation parameter correctness. Must be a float between 0 and 1. Default is 1.0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#tool_invocation_parameter_correctness_threshold CesApp#tool_invocation_parameter_correctness_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#tool_invocation_parameter_correctness_threshold CesApp#tool_invocation_parameter_correctness_threshold}
+
+---
+
+##### `put_tool_matching_settings` <a name="put_tool_matching_settings" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsOutputReference.putToolMatchingSettings"></a>
+
+```python
+def put_tool_matching_settings(
+  extra_tool_call_behavior: str = None
+) -> None
+```
+
+###### `extra_tool_call_behavior`<sup>Optional</sup> <a name="extra_tool_call_behavior" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsOutputReference.putToolMatchingSettings.parameter.extraToolCallBehavior"></a>
+
+- *Type:* str
+
+Defines the behavior when an extra tool call is encountered.
+
+An extra
+tool call is a tool call that is present in the execution but does
+not match any tool call in the golden expectation. Possible values: ["FAIL", "ALLOW"]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#extra_tool_call_behavior CesApp#extra_tool_call_behavior}
 
 ---
 
@@ -8969,6 +11915,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ```python
 def put_turn_level_metrics_thresholds(
   overall_tool_invocation_correctness_threshold: typing.Union[int, float] = None,
+  semantic_similarity_channel: str = None,
   semantic_similarity_success_threshold: typing.Union[int, float] = None
 ) -> None
 ```
@@ -8979,7 +11926,17 @@ def put_turn_level_metrics_thresholds(
 
 The success threshold for overall tool invocation correctness. Must be a float between 0 and 1. Default is 1.0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#overall_tool_invocation_correctness_threshold CesApp#overall_tool_invocation_correctness_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#overall_tool_invocation_correctness_threshold CesApp#overall_tool_invocation_correctness_threshold}
+
+---
+
+###### `semantic_similarity_channel`<sup>Optional</sup> <a name="semantic_similarity_channel" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsOutputReference.putTurnLevelMetricsThresholds.parameter.semanticSimilarityChannel"></a>
+
+- *Type:* str
+
+The semantic similarity channel to use for evaluation. Possible values: SEMANTIC_SIMILARITY_CHANNEL_UNSPECIFIED TEXT AUDIO.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#semantic_similarity_channel CesApp#semantic_similarity_channel}
 
 ---
 
@@ -8989,7 +11946,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The success threshold for semantic similarity. Must be an integer between 0 and 4. Default is >= 3.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#semantic_similarity_success_threshold CesApp#semantic_similarity_success_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#semantic_similarity_success_threshold CesApp#semantic_similarity_success_threshold}
 
 ---
 
@@ -8997,6 +11954,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ```python
 def reset_expectation_level_metrics_thresholds() -> None
+```
+
+##### `reset_tool_matching_settings` <a name="reset_tool_matching_settings" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsOutputReference.resetToolMatchingSettings"></a>
+
+```python
+def reset_tool_matching_settings() -> None
 ```
 
 ##### `reset_turn_level_metrics_thresholds` <a name="reset_turn_level_metrics_thresholds" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsOutputReference.resetTurnLevelMetricsThresholds"></a>
@@ -9013,8 +11976,10 @@ def reset_turn_level_metrics_thresholds() -> None
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsOutputReference.property.expectationLevelMetricsThresholds">expectation_level_metrics_thresholds</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsExpectationLevelMetricsThresholdsOutputReference">CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsExpectationLevelMetricsThresholdsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsOutputReference.property.toolMatchingSettings">tool_matching_settings</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference">CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsOutputReference.property.turnLevelMetricsThresholds">turn_level_metrics_thresholds</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholdsOutputReference">CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholdsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsOutputReference.property.expectationLevelMetricsThresholdsInput">expectation_level_metrics_thresholds_input</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsExpectationLevelMetricsThresholds">CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsExpectationLevelMetricsThresholds</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsOutputReference.property.toolMatchingSettingsInput">tool_matching_settings_input</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettings">CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsOutputReference.property.turnLevelMetricsThresholdsInput">turn_level_metrics_thresholds_input</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholds">CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholds</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholds">CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholds</a></code> | *No description.* |
 
@@ -9054,6 +12019,16 @@ expectation_level_metrics_thresholds: CesAppEvaluationMetricsThresholdsGoldenEva
 
 ---
 
+##### `tool_matching_settings`<sup>Required</sup> <a name="tool_matching_settings" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsOutputReference.property.toolMatchingSettings"></a>
+
+```python
+tool_matching_settings: CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference">CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference</a>
+
+---
+
 ##### `turn_level_metrics_thresholds`<sup>Required</sup> <a name="turn_level_metrics_thresholds" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsOutputReference.property.turnLevelMetricsThresholds"></a>
 
 ```python
@@ -9074,6 +12049,16 @@ expectation_level_metrics_thresholds_input: CesAppEvaluationMetricsThresholdsGol
 
 ---
 
+##### `tool_matching_settings_input`<sup>Optional</sup> <a name="tool_matching_settings_input" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsOutputReference.property.toolMatchingSettingsInput"></a>
+
+```python
+tool_matching_settings_input: CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettings
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettings">CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettings</a>
+
+---
+
 ##### `turn_level_metrics_thresholds_input`<sup>Optional</sup> <a name="turn_level_metrics_thresholds_input" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsOutputReference.property.turnLevelMetricsThresholdsInput"></a>
 
 ```python
@@ -9091,6 +12076,309 @@ internal_value: CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThreshol
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholds">CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholds</a>
+
+---
+
+
+### CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference <a name="CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_google import ces_app
+
+cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.resetExtraToolCallBehavior">reset_extra_tool_call_behavior</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_extra_tool_call_behavior` <a name="reset_extra_tool_call_behavior" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.resetExtraToolCallBehavior"></a>
+
+```python
+def reset_extra_tool_call_behavior() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.property.extraToolCallBehaviorInput">extra_tool_call_behavior_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.property.extraToolCallBehavior">extra_tool_call_behavior</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettings">CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettings</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `extra_tool_call_behavior_input`<sup>Optional</sup> <a name="extra_tool_call_behavior_input" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.property.extraToolCallBehaviorInput"></a>
+
+```python
+extra_tool_call_behavior_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `extra_tool_call_behavior`<sup>Required</sup> <a name="extra_tool_call_behavior" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.property.extraToolCallBehavior"></a>
+
+```python
+extra_tool_call_behavior: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettingsOutputReference.property.internalValue"></a>
+
+```python
+internal_value: CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettings
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettings">CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettings</a>
 
 ---
 
@@ -9149,6 +12437,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholdsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholdsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholdsOutputReference.resetOverallToolInvocationCorrectnessThreshold">reset_overall_tool_invocation_correctness_threshold</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholdsOutputReference.resetSemanticSimilarityChannel">reset_semantic_similarity_channel</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholdsOutputReference.resetSemanticSimilaritySuccessThreshold">reset_semantic_similarity_success_threshold</a></code> | *No description.* |
 
 ---
@@ -9331,6 +12620,12 @@ Returns a reversible string representation.
 def reset_overall_tool_invocation_correctness_threshold() -> None
 ```
 
+##### `reset_semantic_similarity_channel` <a name="reset_semantic_similarity_channel" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholdsOutputReference.resetSemanticSimilarityChannel"></a>
+
+```python
+def reset_semantic_similarity_channel() -> None
+```
+
 ##### `reset_semantic_similarity_success_threshold` <a name="reset_semantic_similarity_success_threshold" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholdsOutputReference.resetSemanticSimilaritySuccessThreshold"></a>
 
 ```python
@@ -9345,8 +12640,10 @@ def reset_semantic_similarity_success_threshold() -> None
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholdsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholdsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholdsOutputReference.property.overallToolInvocationCorrectnessThresholdInput">overall_tool_invocation_correctness_threshold_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholdsOutputReference.property.semanticSimilarityChannelInput">semantic_similarity_channel_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholdsOutputReference.property.semanticSimilaritySuccessThresholdInput">semantic_similarity_success_threshold_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholdsOutputReference.property.overallToolInvocationCorrectnessThreshold">overall_tool_invocation_correctness_threshold</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholdsOutputReference.property.semanticSimilarityChannel">semantic_similarity_channel</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholdsOutputReference.property.semanticSimilaritySuccessThreshold">semantic_similarity_success_threshold</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholdsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholds">CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholds</a></code> | *No description.* |
 
@@ -9386,6 +12683,16 @@ overall_tool_invocation_correctness_threshold_input: typing.Union[int, float]
 
 ---
 
+##### `semantic_similarity_channel_input`<sup>Optional</sup> <a name="semantic_similarity_channel_input" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholdsOutputReference.property.semanticSimilarityChannelInput"></a>
+
+```python
+semantic_similarity_channel_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `semantic_similarity_success_threshold_input`<sup>Optional</sup> <a name="semantic_similarity_success_threshold_input" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholdsOutputReference.property.semanticSimilaritySuccessThresholdInput"></a>
 
 ```python
@@ -9403,6 +12710,16 @@ overall_tool_invocation_correctness_threshold: typing.Union[int, float]
 ```
 
 - *Type:* typing.Union[int, float]
+
+---
+
+##### `semantic_similarity_channel`<sup>Required</sup> <a name="semantic_similarity_channel" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholdsOutputReference.property.semanticSimilarityChannel"></a>
+
+```python
+semantic_similarity_channel: str
+```
+
+- *Type:* str
 
 ---
 
@@ -9482,6 +12799,8 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsOutputReference.putGoldenEvaluationMetricsThresholds">put_golden_evaluation_metrics_thresholds</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsOutputReference.resetGoldenEvaluationMetricsThresholds">reset_golden_evaluation_metrics_thresholds</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsOutputReference.resetGoldenHallucinationMetricBehavior">reset_golden_hallucination_metric_behavior</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsOutputReference.resetScenarioHallucinationMetricBehavior">reset_scenario_hallucination_metric_behavior</a></code> | *No description.* |
 
 ---
 
@@ -9662,6 +12981,7 @@ Returns a reversible string representation.
 ```python
 def put_golden_evaluation_metrics_thresholds(
   expectation_level_metrics_thresholds: CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsExpectationLevelMetricsThresholds = None,
+  tool_matching_settings: CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettings = None,
   turn_level_metrics_thresholds: CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholds = None
 ) -> None
 ```
@@ -9672,7 +12992,17 @@ def put_golden_evaluation_metrics_thresholds(
 
 expectation_level_metrics_thresholds block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#expectation_level_metrics_thresholds CesApp#expectation_level_metrics_thresholds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#expectation_level_metrics_thresholds CesApp#expectation_level_metrics_thresholds}
+
+---
+
+###### `tool_matching_settings`<sup>Optional</sup> <a name="tool_matching_settings" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsOutputReference.putGoldenEvaluationMetricsThresholds.parameter.toolMatchingSettings"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettings">CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsToolMatchingSettings</a>
+
+tool_matching_settings block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#tool_matching_settings CesApp#tool_matching_settings}
 
 ---
 
@@ -9682,7 +13012,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 turn_level_metrics_thresholds block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#turn_level_metrics_thresholds CesApp#turn_level_metrics_thresholds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#turn_level_metrics_thresholds CesApp#turn_level_metrics_thresholds}
 
 ---
 
@@ -9690,6 +13020,18 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ```python
 def reset_golden_evaluation_metrics_thresholds() -> None
+```
+
+##### `reset_golden_hallucination_metric_behavior` <a name="reset_golden_hallucination_metric_behavior" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsOutputReference.resetGoldenHallucinationMetricBehavior"></a>
+
+```python
+def reset_golden_hallucination_metric_behavior() -> None
+```
+
+##### `reset_scenario_hallucination_metric_behavior` <a name="reset_scenario_hallucination_metric_behavior" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsOutputReference.resetScenarioHallucinationMetricBehavior"></a>
+
+```python
+def reset_scenario_hallucination_metric_behavior() -> None
 ```
 
 
@@ -9701,6 +13043,10 @@ def reset_golden_evaluation_metrics_thresholds() -> None
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsOutputReference.property.goldenEvaluationMetricsThresholds">golden_evaluation_metrics_thresholds</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsOutputReference">CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsOutputReference.property.goldenEvaluationMetricsThresholdsInput">golden_evaluation_metrics_thresholds_input</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholds">CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholds</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsOutputReference.property.goldenHallucinationMetricBehaviorInput">golden_hallucination_metric_behavior_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsOutputReference.property.scenarioHallucinationMetricBehaviorInput">scenario_hallucination_metric_behavior_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsOutputReference.property.goldenHallucinationMetricBehavior">golden_hallucination_metric_behavior</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsOutputReference.property.scenarioHallucinationMetricBehavior">scenario_hallucination_metric_behavior</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholds">CesAppEvaluationMetricsThresholds</a></code> | *No description.* |
 
 ---
@@ -9746,6 +13092,46 @@ golden_evaluation_metrics_thresholds_input: CesAppEvaluationMetricsThresholdsGol
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholds">CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholds</a>
+
+---
+
+##### `golden_hallucination_metric_behavior_input`<sup>Optional</sup> <a name="golden_hallucination_metric_behavior_input" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsOutputReference.property.goldenHallucinationMetricBehaviorInput"></a>
+
+```python
+golden_hallucination_metric_behavior_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `scenario_hallucination_metric_behavior_input`<sup>Optional</sup> <a name="scenario_hallucination_metric_behavior_input" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsOutputReference.property.scenarioHallucinationMetricBehaviorInput"></a>
+
+```python
+scenario_hallucination_metric_behavior_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `golden_hallucination_metric_behavior`<sup>Required</sup> <a name="golden_hallucination_metric_behavior" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsOutputReference.property.goldenHallucinationMetricBehavior"></a>
+
+```python
+golden_hallucination_metric_behavior: str
+```
+
+- *Type:* str
+
+---
+
+##### `scenario_hallucination_metric_behavior`<sup>Required</sup> <a name="scenario_hallucination_metric_behavior" id="@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsOutputReference.property.scenarioHallucinationMetricBehavior"></a>
+
+```python
+scenario_hallucination_metric_behavior: str
+```
+
+- *Type:* str
 
 ---
 
@@ -11200,6 +14586,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsConversationLoggingSettingsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsConversationLoggingSettingsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsConversationLoggingSettingsOutputReference.resetDisableConversationLogging">reset_disable_conversation_logging</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsConversationLoggingSettingsOutputReference.resetRetentionWindow">reset_retention_window</a></code> | *No description.* |
 
 ---
 
@@ -11381,6 +14768,12 @@ Returns a reversible string representation.
 def reset_disable_conversation_logging() -> None
 ```
 
+##### `reset_retention_window` <a name="reset_retention_window" id="@cdktn/provider-google.cesApp.CesAppLoggingSettingsConversationLoggingSettingsOutputReference.resetRetentionWindow"></a>
+
+```python
+def reset_retention_window() -> None
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -11389,7 +14782,9 @@ def reset_disable_conversation_logging() -> None
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsConversationLoggingSettingsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsConversationLoggingSettingsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsConversationLoggingSettingsOutputReference.property.disableConversationLoggingInput">disable_conversation_logging_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsConversationLoggingSettingsOutputReference.property.retentionWindowInput">retention_window_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsConversationLoggingSettingsOutputReference.property.disableConversationLogging">disable_conversation_logging</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsConversationLoggingSettingsOutputReference.property.retentionWindow">retention_window</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsConversationLoggingSettingsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsConversationLoggingSettings">CesAppLoggingSettingsConversationLoggingSettings</a></code> | *No description.* |
 
 ---
@@ -11428,6 +14823,16 @@ disable_conversation_logging_input: bool | IResolvable
 
 ---
 
+##### `retention_window_input`<sup>Optional</sup> <a name="retention_window_input" id="@cdktn/provider-google.cesApp.CesAppLoggingSettingsConversationLoggingSettingsOutputReference.property.retentionWindowInput"></a>
+
+```python
+retention_window_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `disable_conversation_logging`<sup>Required</sup> <a name="disable_conversation_logging" id="@cdktn/provider-google.cesApp.CesAppLoggingSettingsConversationLoggingSettingsOutputReference.property.disableConversationLogging"></a>
 
 ```python
@@ -11438,6 +14843,16 @@ disable_conversation_logging: bool | IResolvable
 
 ---
 
+##### `retention_window`<sup>Required</sup> <a name="retention_window" id="@cdktn/provider-google.cesApp.CesAppLoggingSettingsConversationLoggingSettingsOutputReference.property.retentionWindow"></a>
+
+```python
+retention_window: str
+```
+
+- *Type:* str
+
+---
+
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.cesApp.CesAppLoggingSettingsConversationLoggingSettingsOutputReference.property.internalValue"></a>
 
 ```python
@@ -11445,6 +14860,309 @@ internal_value: CesAppLoggingSettingsConversationLoggingSettings
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsConversationLoggingSettings">CesAppLoggingSettingsConversationLoggingSettings</a>
+
+---
+
+
+### CesAppLoggingSettingsMetricAnalysisSettingsOutputReference <a name="CesAppLoggingSettingsMetricAnalysisSettingsOutputReference" id="@cdktn/provider-google.cesApp.CesAppLoggingSettingsMetricAnalysisSettingsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cesApp.CesAppLoggingSettingsMetricAnalysisSettingsOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_google import ces_app
+
+cesApp.CesAppLoggingSettingsMetricAnalysisSettingsOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsMetricAnalysisSettingsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsMetricAnalysisSettingsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cesApp.CesAppLoggingSettingsMetricAnalysisSettingsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppLoggingSettingsMetricAnalysisSettingsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsMetricAnalysisSettingsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsMetricAnalysisSettingsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsMetricAnalysisSettingsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsMetricAnalysisSettingsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsMetricAnalysisSettingsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsMetricAnalysisSettingsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsMetricAnalysisSettingsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsMetricAnalysisSettingsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsMetricAnalysisSettingsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsMetricAnalysisSettingsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsMetricAnalysisSettingsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsMetricAnalysisSettingsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsMetricAnalysisSettingsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsMetricAnalysisSettingsOutputReference.resetLlmMetricsOptedOut">reset_llm_metrics_opted_out</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.cesApp.CesAppLoggingSettingsMetricAnalysisSettingsOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.cesApp.CesAppLoggingSettingsMetricAnalysisSettingsOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppLoggingSettingsMetricAnalysisSettingsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.cesApp.CesAppLoggingSettingsMetricAnalysisSettingsOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppLoggingSettingsMetricAnalysisSettingsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.cesApp.CesAppLoggingSettingsMetricAnalysisSettingsOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppLoggingSettingsMetricAnalysisSettingsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.cesApp.CesAppLoggingSettingsMetricAnalysisSettingsOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppLoggingSettingsMetricAnalysisSettingsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.cesApp.CesAppLoggingSettingsMetricAnalysisSettingsOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppLoggingSettingsMetricAnalysisSettingsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.cesApp.CesAppLoggingSettingsMetricAnalysisSettingsOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppLoggingSettingsMetricAnalysisSettingsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.cesApp.CesAppLoggingSettingsMetricAnalysisSettingsOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppLoggingSettingsMetricAnalysisSettingsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.cesApp.CesAppLoggingSettingsMetricAnalysisSettingsOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppLoggingSettingsMetricAnalysisSettingsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.cesApp.CesAppLoggingSettingsMetricAnalysisSettingsOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppLoggingSettingsMetricAnalysisSettingsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.cesApp.CesAppLoggingSettingsMetricAnalysisSettingsOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.cesApp.CesAppLoggingSettingsMetricAnalysisSettingsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cesApp.CesAppLoggingSettingsMetricAnalysisSettingsOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cesApp.CesAppLoggingSettingsMetricAnalysisSettingsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.cesApp.CesAppLoggingSettingsMetricAnalysisSettingsOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_llm_metrics_opted_out` <a name="reset_llm_metrics_opted_out" id="@cdktn/provider-google.cesApp.CesAppLoggingSettingsMetricAnalysisSettingsOutputReference.resetLlmMetricsOptedOut"></a>
+
+```python
+def reset_llm_metrics_opted_out() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsMetricAnalysisSettingsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsMetricAnalysisSettingsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsMetricAnalysisSettingsOutputReference.property.llmMetricsOptedOutInput">llm_metrics_opted_out_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsMetricAnalysisSettingsOutputReference.property.llmMetricsOptedOut">llm_metrics_opted_out</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsMetricAnalysisSettingsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsMetricAnalysisSettings">CesAppLoggingSettingsMetricAnalysisSettings</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.cesApp.CesAppLoggingSettingsMetricAnalysisSettingsOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cesApp.CesAppLoggingSettingsMetricAnalysisSettingsOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `llm_metrics_opted_out_input`<sup>Optional</sup> <a name="llm_metrics_opted_out_input" id="@cdktn/provider-google.cesApp.CesAppLoggingSettingsMetricAnalysisSettingsOutputReference.property.llmMetricsOptedOutInput"></a>
+
+```python
+llm_metrics_opted_out_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `llm_metrics_opted_out`<sup>Required</sup> <a name="llm_metrics_opted_out" id="@cdktn/provider-google.cesApp.CesAppLoggingSettingsMetricAnalysisSettingsOutputReference.property.llmMetricsOptedOut"></a>
+
+```python
+llm_metrics_opted_out: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.cesApp.CesAppLoggingSettingsMetricAnalysisSettingsOutputReference.property.internalValue"></a>
+
+```python
+internal_value: CesAppLoggingSettingsMetricAnalysisSettings
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsMetricAnalysisSettings">CesAppLoggingSettingsMetricAnalysisSettings</a>
 
 ---
 
@@ -11506,11 +15224,13 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsOutputReference.putBigqueryExportSettings">put_bigquery_export_settings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsOutputReference.putCloudLoggingSettings">put_cloud_logging_settings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsOutputReference.putConversationLoggingSettings">put_conversation_logging_settings</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsOutputReference.putMetricAnalysisSettings">put_metric_analysis_settings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsOutputReference.putRedactionConfig">put_redaction_config</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsOutputReference.resetAudioRecordingConfig">reset_audio_recording_config</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsOutputReference.resetBigqueryExportSettings">reset_bigquery_export_settings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsOutputReference.resetCloudLoggingSettings">reset_cloud_logging_settings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsOutputReference.resetConversationLoggingSettings">reset_conversation_logging_settings</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsOutputReference.resetMetricAnalysisSettings">reset_metric_analysis_settings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsOutputReference.resetRedactionConfig">reset_redaction_config</a></code> | *No description.* |
 
 ---
@@ -11702,7 +15422,7 @@ def put_audio_recording_config(
 
 The [Cloud Storage](https://cloud.google.com/storage) bucket to store the session audio recordings. The URI must start with "gs://". Note: If the Cloud Storage bucket is in a different project from the app, you should grant 'storage.objects.create' permission to the CES service agent 'service-@gcp-sa-ces.iam.gserviceaccount.com'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#gcs_bucket CesApp#gcs_bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#gcs_bucket CesApp#gcs_bucket}
 
 ---
 
@@ -11723,7 +15443,7 @@ dynamically substituted at serving time:
   If the path prefix is not specified, the default prefix
   '$project/$location/$app/$date/$session/' will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#gcs_path_prefix CesApp#gcs_path_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#gcs_path_prefix CesApp#gcs_path_prefix}
 
 ---
 
@@ -11743,7 +15463,7 @@ def put_bigquery_export_settings(
 
 The BigQuery dataset to export the data to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#dataset CesApp#dataset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#dataset CesApp#dataset}
 
 ---
 
@@ -11753,7 +15473,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Indicates whether the BigQuery export is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#enabled CesApp#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#enabled CesApp#enabled}
 
 ---
 
@@ -11767,7 +15487,7 @@ Note: If the BigQuery dataset is in a different project from the app, you should
 roles/bigquery.admin role to the CES service agent service-<PROJECT-
 NUMBER>@gcp-sa-ces.iam.gserviceaccount.com.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#project CesApp#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#project CesApp#project}
 
 ---
 
@@ -11785,7 +15505,7 @@ def put_cloud_logging_settings(
 
 Whether to enable Cloud Logging for the sessions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#enable_cloud_logging CesApp#enable_cloud_logging}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#enable_cloud_logging CesApp#enable_cloud_logging}
 
 ---
 
@@ -11793,7 +15513,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ```python
 def put_conversation_logging_settings(
-  disable_conversation_logging: bool | IResolvable = None
+  disable_conversation_logging: bool | IResolvable = None,
+  retention_window: str = None
 ) -> None
 ```
 
@@ -11803,7 +15524,39 @@ def put_conversation_logging_settings(
 
 Whether to disable conversation logging for the sessions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#disable_conversation_logging CesApp#disable_conversation_logging}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#disable_conversation_logging CesApp#disable_conversation_logging}
+
+---
+
+###### `retention_window`<sup>Optional</sup> <a name="retention_window" id="@cdktn/provider-google.cesApp.CesAppLoggingSettingsOutputReference.putConversationLoggingSettings.parameter.retentionWindow"></a>
+
+- *Type:* str
+
+Controls the retention window for the conversation. If not set, the conversation will be retained for 365 days.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#retention_window CesApp#retention_window}
+
+---
+
+##### `put_metric_analysis_settings` <a name="put_metric_analysis_settings" id="@cdktn/provider-google.cesApp.CesAppLoggingSettingsOutputReference.putMetricAnalysisSettings"></a>
+
+```python
+def put_metric_analysis_settings(
+  llm_metrics_opted_out: bool | IResolvable = None
+) -> None
+```
+
+###### `llm_metrics_opted_out`<sup>Optional</sup> <a name="llm_metrics_opted_out" id="@cdktn/provider-google.cesApp.CesAppLoggingSettingsOutputReference.putMetricAnalysisSettings.parameter.llmMetricsOptedOut"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether to collect conversation data for llm analysis metrics.
+
+If true,
+conversation data will not be collected for llm analysis metrics;
+otherwise, conversation data will be collected.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#llm_metrics_opted_out CesApp#llm_metrics_opted_out}
 
 ---
 
@@ -11823,7 +15576,7 @@ def put_redaction_config(
 
 [DLP](https://cloud.google.com/dlp/docs) deidentify template name to instruct on how to de-identify content. Format: 'projects/{project}/locations/{location}/deidentifyTemplates/{deidentify_template}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#deidentify_template CesApp#deidentify_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#deidentify_template CesApp#deidentify_template}
 
 ---
 
@@ -11833,7 +15586,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 If true, redaction will be applied in various logging scenarios, including conversation history, Cloud Logging and audio recording.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#enable_redaction CesApp#enable_redaction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#enable_redaction CesApp#enable_redaction}
 
 ---
 
@@ -11843,7 +15596,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 [DLP](https://cloud.google.com/dlp/docs) inspect template name to configure detection of sensitive data types. Format: 'projects/{project}/locations/{location}/inspectTemplates/{inspect_template}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#inspect_template CesApp#inspect_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#inspect_template CesApp#inspect_template}
 
 ---
 
@@ -11871,6 +15624,12 @@ def reset_cloud_logging_settings() -> None
 def reset_conversation_logging_settings() -> None
 ```
 
+##### `reset_metric_analysis_settings` <a name="reset_metric_analysis_settings" id="@cdktn/provider-google.cesApp.CesAppLoggingSettingsOutputReference.resetMetricAnalysisSettings"></a>
+
+```python
+def reset_metric_analysis_settings() -> None
+```
+
 ##### `reset_redaction_config` <a name="reset_redaction_config" id="@cdktn/provider-google.cesApp.CesAppLoggingSettingsOutputReference.resetRedactionConfig"></a>
 
 ```python
@@ -11888,11 +15647,13 @@ def reset_redaction_config() -> None
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsOutputReference.property.bigqueryExportSettings">bigquery_export_settings</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsBigqueryExportSettingsOutputReference">CesAppLoggingSettingsBigqueryExportSettingsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsOutputReference.property.cloudLoggingSettings">cloud_logging_settings</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsCloudLoggingSettingsOutputReference">CesAppLoggingSettingsCloudLoggingSettingsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsOutputReference.property.conversationLoggingSettings">conversation_logging_settings</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsConversationLoggingSettingsOutputReference">CesAppLoggingSettingsConversationLoggingSettingsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsOutputReference.property.metricAnalysisSettings">metric_analysis_settings</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsMetricAnalysisSettingsOutputReference">CesAppLoggingSettingsMetricAnalysisSettingsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsOutputReference.property.redactionConfig">redaction_config</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsRedactionConfigOutputReference">CesAppLoggingSettingsRedactionConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsOutputReference.property.audioRecordingConfigInput">audio_recording_config_input</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsAudioRecordingConfig">CesAppLoggingSettingsAudioRecordingConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsOutputReference.property.bigqueryExportSettingsInput">bigquery_export_settings_input</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsBigqueryExportSettings">CesAppLoggingSettingsBigqueryExportSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsOutputReference.property.cloudLoggingSettingsInput">cloud_logging_settings_input</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsCloudLoggingSettings">CesAppLoggingSettingsCloudLoggingSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsOutputReference.property.conversationLoggingSettingsInput">conversation_logging_settings_input</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsConversationLoggingSettings">CesAppLoggingSettingsConversationLoggingSettings</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsOutputReference.property.metricAnalysisSettingsInput">metric_analysis_settings_input</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsMetricAnalysisSettings">CesAppLoggingSettingsMetricAnalysisSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsOutputReference.property.redactionConfigInput">redaction_config_input</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsRedactionConfig">CesAppLoggingSettingsRedactionConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettings">CesAppLoggingSettings</a></code> | *No description.* |
 
@@ -11962,6 +15723,16 @@ conversation_logging_settings: CesAppLoggingSettingsConversationLoggingSettingsO
 
 ---
 
+##### `metric_analysis_settings`<sup>Required</sup> <a name="metric_analysis_settings" id="@cdktn/provider-google.cesApp.CesAppLoggingSettingsOutputReference.property.metricAnalysisSettings"></a>
+
+```python
+metric_analysis_settings: CesAppLoggingSettingsMetricAnalysisSettingsOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsMetricAnalysisSettingsOutputReference">CesAppLoggingSettingsMetricAnalysisSettingsOutputReference</a>
+
+---
+
 ##### `redaction_config`<sup>Required</sup> <a name="redaction_config" id="@cdktn/provider-google.cesApp.CesAppLoggingSettingsOutputReference.property.redactionConfig"></a>
 
 ```python
@@ -12009,6 +15780,16 @@ conversation_logging_settings_input: CesAppLoggingSettingsConversationLoggingSet
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsConversationLoggingSettings">CesAppLoggingSettingsConversationLoggingSettings</a>
+
+---
+
+##### `metric_analysis_settings_input`<sup>Optional</sup> <a name="metric_analysis_settings_input" id="@cdktn/provider-google.cesApp.CesAppLoggingSettingsOutputReference.property.metricAnalysisSettingsInput"></a>
+
+```python
+metric_analysis_settings_input: CesAppLoggingSettingsMetricAnalysisSettings
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesApp.CesAppLoggingSettingsMetricAnalysisSettings">CesAppLoggingSettingsMetricAnalysisSettings</a>
 
 ---
 
@@ -13837,7 +17618,7 @@ def put_schema(
 
 The type of the data. Possible values: STRING INTEGER NUMBER BOOLEAN OBJECT ARRAY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#type CesApp#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#type CesApp#type}
 
 ---
 
@@ -13851,7 +17632,7 @@ Defines the schema for additional properties allowed in an object.
 The value must be a valid JSON string representing the Schema object.
 (Note: OpenAPI also allows a boolean, this definition expects a Schema JSON).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#additional_properties CesApp#additional_properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#additional_properties CesApp#additional_properties}
 
 ---
 
@@ -13861,7 +17642,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Optional. The instance value should be valid against at least one of the schemas in this list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#any_of CesApp#any_of}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#any_of CesApp#any_of}
 
 ---
 
@@ -13876,7 +17657,7 @@ which can be either null, a number, a string, a boolean, a struct,
 or a list of values. The provided default value must be encoded as a JSON string.
 Use 'jsonencode' in Terraform HCL to encode the default value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#default CesApp#default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#default CesApp#default}
 
 ---
 
@@ -13886,7 +17667,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A map of definitions for use by ref. Only allowed at the root of the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#defs CesApp#defs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#defs CesApp#defs}
 
 ---
 
@@ -13896,7 +17677,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The description of the data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#description CesApp#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#description CesApp#description}
 
 ---
 
@@ -13913,7 +17694,7 @@ Examples:
 2. We can define apartment number as :
    {type:INTEGER, format:enum, enum:["101", "201", "301"]}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#enum CesApp#enum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#enum CesApp#enum}
 
 ---
 
@@ -13923,7 +17704,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Schema of the elements of Type.ARRAY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#items CesApp#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#items CesApp#items}
 
 ---
 
@@ -13933,7 +17714,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Indicates if the value may be null.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#nullable CesApp#nullable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#nullable CesApp#nullable}
 
 ---
 
@@ -13943,7 +17724,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Optional. Schemas of initial elements of Type.ARRAY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#prefix_items CesApp#prefix_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#prefix_items CesApp#prefix_items}
 
 ---
 
@@ -13953,7 +17734,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Properties of Type.OBJECT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#properties CesApp#properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#properties CesApp#properties}
 
 ---
 
@@ -13982,7 +17763,7 @@ named "Pet".
 See details in
 https://json-schema.org/understanding-json-schema/structuring.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#ref CesApp#ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#ref CesApp#ref}
 
 ---
 
@@ -13992,7 +17773,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Required properties of Type.OBJECT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#required CesApp#required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#required CesApp#required}
 
 ---
 
@@ -14002,7 +17783,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The title of the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#title CesApp#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#title CesApp#title}
 
 ---
 
@@ -14012,7 +17793,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Indicate the items in the array must be unique. Only applies to TYPE.ARRAY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_app#unique_items CesApp#unique_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_app#unique_items CesApp#unique_items}
 
 ---
 
@@ -14826,6 +18607,309 @@ internal_value: CesAppVariableDeclarationsSchema
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.cesApp.CesAppVariableDeclarationsSchema">CesAppVariableDeclarationsSchema</a>
+
+---
+
+
+### CesAppVpcScSettingsOutputReference <a name="CesAppVpcScSettingsOutputReference" id="@cdktn/provider-google.cesApp.CesAppVpcScSettingsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cesApp.CesAppVpcScSettingsOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_google import ces_app
+
+cesApp.CesAppVpcScSettingsOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppVpcScSettingsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppVpcScSettingsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.cesApp.CesAppVpcScSettingsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppVpcScSettingsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppVpcScSettingsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppVpcScSettingsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppVpcScSettingsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppVpcScSettingsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppVpcScSettingsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppVpcScSettingsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppVpcScSettingsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppVpcScSettingsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppVpcScSettingsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppVpcScSettingsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppVpcScSettingsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppVpcScSettingsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppVpcScSettingsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppVpcScSettingsOutputReference.resetAllowedOrigins">reset_allowed_origins</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.cesApp.CesAppVpcScSettingsOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.cesApp.CesAppVpcScSettingsOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppVpcScSettingsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.cesApp.CesAppVpcScSettingsOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppVpcScSettingsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.cesApp.CesAppVpcScSettingsOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppVpcScSettingsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.cesApp.CesAppVpcScSettingsOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppVpcScSettingsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.cesApp.CesAppVpcScSettingsOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppVpcScSettingsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.cesApp.CesAppVpcScSettingsOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppVpcScSettingsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.cesApp.CesAppVpcScSettingsOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppVpcScSettingsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.cesApp.CesAppVpcScSettingsOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppVpcScSettingsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.cesApp.CesAppVpcScSettingsOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.cesApp.CesAppVpcScSettingsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.cesApp.CesAppVpcScSettingsOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.cesApp.CesAppVpcScSettingsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cesApp.CesAppVpcScSettingsOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cesApp.CesAppVpcScSettingsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.cesApp.CesAppVpcScSettingsOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_allowed_origins` <a name="reset_allowed_origins" id="@cdktn/provider-google.cesApp.CesAppVpcScSettingsOutputReference.resetAllowedOrigins"></a>
+
+```python
+def reset_allowed_origins() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppVpcScSettingsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppVpcScSettingsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppVpcScSettingsOutputReference.property.allowedOriginsInput">allowed_origins_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppVpcScSettingsOutputReference.property.allowedOrigins">allowed_origins</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesApp.CesAppVpcScSettingsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.cesApp.CesAppVpcScSettings">CesAppVpcScSettings</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.cesApp.CesAppVpcScSettingsOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cesApp.CesAppVpcScSettingsOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `allowed_origins_input`<sup>Optional</sup> <a name="allowed_origins_input" id="@cdktn/provider-google.cesApp.CesAppVpcScSettingsOutputReference.property.allowedOriginsInput"></a>
+
+```python
+allowed_origins_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `allowed_origins`<sup>Required</sup> <a name="allowed_origins" id="@cdktn/provider-google.cesApp.CesAppVpcScSettingsOutputReference.property.allowedOrigins"></a>
+
+```python
+allowed_origins: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.cesApp.CesAppVpcScSettingsOutputReference.property.internalValue"></a>
+
+```python
+internal_value: CesAppVpcScSettings
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesApp.CesAppVpcScSettings">CesAppVpcScSettings</a>
 
 ---
 

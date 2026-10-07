@@ -4,12 +4,12 @@
 
 ### ServiceDirectoryNamespaceIamBinding <a name="ServiceDirectoryNamespaceIamBinding" id="@cdktn/provider-google.serviceDirectoryNamespaceIamBinding.ServiceDirectoryNamespaceIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/service_directory_namespace_iam_binding google_service_directory_namespace_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/service_directory_namespace_iam_binding google_service_directory_namespace_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.serviceDirectoryNamespaceIamBinding.ServiceDirectoryNamespaceIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/servicedirectorynamespaceiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/servicedirectorynamespaceiambinding"
 
 servicedirectorynamespaceiambinding.NewServiceDirectoryNamespaceIamBinding(scope Construct, id *string, config ServiceDirectoryNamespaceIamBindingConfig) ServiceDirectoryNamespaceIamBinding
 ```
@@ -427,7 +427,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.serviceDirectoryNamespaceIamBinding.ServiceDirectoryNamespaceIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/servicedirectorynamespaceiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/servicedirectorynamespaceiambinding"
 
 servicedirectorynamespaceiambinding.ServiceDirectoryNamespaceIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.serviceDirectoryNamespaceIamBinding.ServiceDirectoryNamespaceIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/servicedirectorynamespaceiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/servicedirectorynamespaceiambinding"
 
 servicedirectorynamespaceiambinding.ServiceDirectoryNamespaceIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ servicedirectorynamespaceiambinding.ServiceDirectoryNamespaceIamBinding_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.serviceDirectoryNamespaceIamBinding.ServiceDirectoryNamespaceIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/servicedirectorynamespaceiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/servicedirectorynamespaceiambinding"
 
 servicedirectorynamespaceiambinding.ServiceDirectoryNamespaceIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ servicedirectorynamespaceiambinding.ServiceDirectoryNamespaceIamBinding_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.serviceDirectoryNamespaceIamBinding.ServiceDirectoryNamespaceIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/servicedirectorynamespaceiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/servicedirectorynamespaceiambinding"
 
 servicedirectorynamespaceiambinding.ServiceDirectoryNamespaceIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -516,7 +516,7 @@ The construct id used in the generated config for the ServiceDirectoryNamespaceI
 
 The id of the existing ServiceDirectoryNamespaceIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/service_directory_namespace_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/service_directory_namespace_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -837,7 +837,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.serviceDirectoryNamespaceIamBinding.ServiceDirectoryNamespaceIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/servicedirectorynamespaceiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/servicedirectorynamespaceiambinding"
 
 &servicedirectorynamespaceiambinding.ServiceDirectoryNamespaceIamBindingCondition {
 	Expression: *string,
@@ -850,9 +850,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/servicedirectory
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.serviceDirectoryNamespaceIamBinding.ServiceDirectoryNamespaceIamBindingCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/service_directory_namespace_iam_binding#expression ServiceDirectoryNamespaceIamBinding#expression}. |
-| <code><a href="#@cdktn/provider-google.serviceDirectoryNamespaceIamBinding.ServiceDirectoryNamespaceIamBindingCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/service_directory_namespace_iam_binding#title ServiceDirectoryNamespaceIamBinding#title}. |
-| <code><a href="#@cdktn/provider-google.serviceDirectoryNamespaceIamBinding.ServiceDirectoryNamespaceIamBindingCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/service_directory_namespace_iam_binding#description ServiceDirectoryNamespaceIamBinding#description}. |
+| <code><a href="#@cdktn/provider-google.serviceDirectoryNamespaceIamBinding.ServiceDirectoryNamespaceIamBindingCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/service_directory_namespace_iam_binding#expression ServiceDirectoryNamespaceIamBinding#expression}. |
+| <code><a href="#@cdktn/provider-google.serviceDirectoryNamespaceIamBinding.ServiceDirectoryNamespaceIamBindingCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/service_directory_namespace_iam_binding#title ServiceDirectoryNamespaceIamBinding#title}. |
+| <code><a href="#@cdktn/provider-google.serviceDirectoryNamespaceIamBinding.ServiceDirectoryNamespaceIamBindingCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/service_directory_namespace_iam_binding#description ServiceDirectoryNamespaceIamBinding#description}. |
 
 ---
 
@@ -864,7 +864,7 @@ Expression *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/service_directory_namespace_iam_binding#expression ServiceDirectoryNamespaceIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/service_directory_namespace_iam_binding#expression ServiceDirectoryNamespaceIamBinding#expression}.
 
 ---
 
@@ -876,7 +876,7 @@ Title *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/service_directory_namespace_iam_binding#title ServiceDirectoryNamespaceIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/service_directory_namespace_iam_binding#title ServiceDirectoryNamespaceIamBinding#title}.
 
 ---
 
@@ -888,7 +888,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/service_directory_namespace_iam_binding#description ServiceDirectoryNamespaceIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/service_directory_namespace_iam_binding#description ServiceDirectoryNamespaceIamBinding#description}.
 
 ---
 
@@ -897,7 +897,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.serviceDirectoryNamespaceIamBinding.ServiceDirectoryNamespaceIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/servicedirectorynamespaceiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/servicedirectorynamespaceiambinding"
 
 &servicedirectorynamespaceiambinding.ServiceDirectoryNamespaceIamBindingConfig {
 	Connection: interface{},
@@ -910,7 +910,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/servicedirectory
 	Members: *[]*string,
 	Name: *string,
 	Role: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v20.serviceDirectoryNamespaceIamBinding.ServiceDirectoryNamespaceIamBindingCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v21.serviceDirectoryNamespaceIamBinding.ServiceDirectoryNamespaceIamBindingCondition,
 	Id: *string,
 }
 ```
@@ -926,11 +926,11 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/servicedirectory
 | <code><a href="#@cdktn/provider-google.serviceDirectoryNamespaceIamBinding.ServiceDirectoryNamespaceIamBindingConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.serviceDirectoryNamespaceIamBinding.ServiceDirectoryNamespaceIamBindingConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.serviceDirectoryNamespaceIamBinding.ServiceDirectoryNamespaceIamBindingConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.serviceDirectoryNamespaceIamBinding.ServiceDirectoryNamespaceIamBindingConfig.property.members">Members</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/service_directory_namespace_iam_binding#members ServiceDirectoryNamespaceIamBinding#members}. |
-| <code><a href="#@cdktn/provider-google.serviceDirectoryNamespaceIamBinding.ServiceDirectoryNamespaceIamBindingConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/service_directory_namespace_iam_binding#name ServiceDirectoryNamespaceIamBinding#name}. |
-| <code><a href="#@cdktn/provider-google.serviceDirectoryNamespaceIamBinding.ServiceDirectoryNamespaceIamBindingConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/service_directory_namespace_iam_binding#role ServiceDirectoryNamespaceIamBinding#role}. |
+| <code><a href="#@cdktn/provider-google.serviceDirectoryNamespaceIamBinding.ServiceDirectoryNamespaceIamBindingConfig.property.members">Members</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/service_directory_namespace_iam_binding#members ServiceDirectoryNamespaceIamBinding#members}. |
+| <code><a href="#@cdktn/provider-google.serviceDirectoryNamespaceIamBinding.ServiceDirectoryNamespaceIamBindingConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/service_directory_namespace_iam_binding#name ServiceDirectoryNamespaceIamBinding#name}. |
+| <code><a href="#@cdktn/provider-google.serviceDirectoryNamespaceIamBinding.ServiceDirectoryNamespaceIamBindingConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/service_directory_namespace_iam_binding#role ServiceDirectoryNamespaceIamBinding#role}. |
 | <code><a href="#@cdktn/provider-google.serviceDirectoryNamespaceIamBinding.ServiceDirectoryNamespaceIamBindingConfig.property.condition">Condition</a></code> | <code><a href="#@cdktn/provider-google.serviceDirectoryNamespaceIamBinding.ServiceDirectoryNamespaceIamBindingCondition">ServiceDirectoryNamespaceIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.serviceDirectoryNamespaceIamBinding.ServiceDirectoryNamespaceIamBindingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/service_directory_namespace_iam_binding#id ServiceDirectoryNamespaceIamBinding#id}. |
+| <code><a href="#@cdktn/provider-google.serviceDirectoryNamespaceIamBinding.ServiceDirectoryNamespaceIamBindingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/service_directory_namespace_iam_binding#id ServiceDirectoryNamespaceIamBinding#id}. |
 
 ---
 
@@ -1012,7 +1012,7 @@ Members *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/service_directory_namespace_iam_binding#members ServiceDirectoryNamespaceIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/service_directory_namespace_iam_binding#members ServiceDirectoryNamespaceIamBinding#members}.
 
 ---
 
@@ -1024,7 +1024,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/service_directory_namespace_iam_binding#name ServiceDirectoryNamespaceIamBinding#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/service_directory_namespace_iam_binding#name ServiceDirectoryNamespaceIamBinding#name}.
 
 ---
 
@@ -1036,7 +1036,7 @@ Role *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/service_directory_namespace_iam_binding#role ServiceDirectoryNamespaceIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/service_directory_namespace_iam_binding#role ServiceDirectoryNamespaceIamBinding#role}.
 
 ---
 
@@ -1050,7 +1050,7 @@ Condition ServiceDirectoryNamespaceIamBindingCondition
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/service_directory_namespace_iam_binding#condition ServiceDirectoryNamespaceIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/service_directory_namespace_iam_binding#condition ServiceDirectoryNamespaceIamBinding#condition}
 
 ---
 
@@ -1062,7 +1062,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/service_directory_namespace_iam_binding#id ServiceDirectoryNamespaceIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/service_directory_namespace_iam_binding#id ServiceDirectoryNamespaceIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1076,7 +1076,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.serviceDirectoryNamespaceIamBinding.ServiceDirectoryNamespaceIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/servicedirectorynamespaceiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/servicedirectorynamespaceiambinding"
 
 servicedirectorynamespaceiambinding.NewServiceDirectoryNamespaceIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServiceDirectoryNamespaceIamBindingConditionOutputReference
 ```

@@ -4,7 +4,7 @@
 
 ### CloudRunV2WorkerPool <a name="CloudRunV2WorkerPool" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPool"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool google_cloud_run_v2_worker_pool}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool google_cloud_run_v2_worker_pool}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPool.Initializer"></a>
 
@@ -28,7 +28,6 @@ cloudRunV2WorkerPool.CloudRunV2WorkerPool(
   binary_authorization: CloudRunV2WorkerPoolBinaryAuthorization = None,
   client: str = None,
   client_version: str = None,
-  custom_audiences: typing.List[str] = None,
   deletion_policy: str = None,
   deletion_protection: bool | IResolvable = None,
   description: str = None,
@@ -60,15 +59,14 @@ cloudRunV2WorkerPool.CloudRunV2WorkerPool(
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPool.Initializer.parameter.binaryAuthorization">binary_authorization</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolBinaryAuthorization">CloudRunV2WorkerPoolBinaryAuthorization</a></code> | binary_authorization block. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPool.Initializer.parameter.client">client</a></code> | <code>str</code> | Arbitrary identifier for the API client. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPool.Initializer.parameter.clientVersion">client_version</a></code> | <code>str</code> | Arbitrary version identifier for the API client. |
-| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPool.Initializer.parameter.customAudiences">custom_audiences</a></code> | <code>typing.List[str]</code> | One or more custom audiences that you want this worker pool to support. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPool.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPool.Initializer.parameter.deletionProtection">deletion_protection</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether Terraform will be prevented from destroying the service. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPool.Initializer.parameter.description">description</a></code> | <code>str</code> | User-provided description of the WorkerPool. This field currently has a 512-character limit. |
-| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPool.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#id CloudRunV2WorkerPool#id}. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPool.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#id CloudRunV2WorkerPool#id}. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPool.Initializer.parameter.instanceSplits">instance_splits</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolInstanceSplits">CloudRunV2WorkerPoolInstanceSplits</a>]</code> | instance_splits block. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPool.Initializer.parameter.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Unstructured key value map that can be used to organize and categorize objects. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPool.Initializer.parameter.launchStage">launch_stage</a></code> | <code>str</code> | The launch stage as defined by [Google Cloud Platform Launch Stages](https://cloud.google.com/products#product-launch-stages). Cloud Run supports ALPHA, BETA, and GA. If no value is specified, GA is assumed. Set the launch stage to a preview stage on input to allow use of preview features in that stage. On read (or output), describes whether the resource uses preview features. |
-| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPool.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#project CloudRunV2WorkerPool#project}. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPool.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#project CloudRunV2WorkerPool#project}. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPool.Initializer.parameter.scaling">scaling</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolScaling">CloudRunV2WorkerPoolScaling</a></code> | scaling block. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPool.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTimeouts">CloudRunV2WorkerPoolTimeouts</a></code> | timeouts block. |
 
@@ -140,7 +138,7 @@ Must be unique amongst siblings in the same scope
 
 The location of the cloud run worker pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#location CloudRunV2WorkerPool#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#location CloudRunV2WorkerPool#location}
 
 ---
 
@@ -150,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Name of the WorkerPool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#name CloudRunV2WorkerPool#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#name CloudRunV2WorkerPool#name}
 
 ---
 
@@ -160,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 template block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#template CloudRunV2WorkerPool#template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#template CloudRunV2WorkerPool#template}
 
 ---
 
@@ -180,7 +178,7 @@ This field follows Kubernetes annotations' namespacing, limits, and rules.
 **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
 Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#annotations CloudRunV2WorkerPool#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#annotations CloudRunV2WorkerPool#annotations}
 
 ---
 
@@ -190,7 +188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 binary_authorization block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#binary_authorization CloudRunV2WorkerPool#binary_authorization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#binary_authorization CloudRunV2WorkerPool#binary_authorization}
 
 ---
 
@@ -200,7 +198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Arbitrary identifier for the API client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#client CloudRunV2WorkerPool#client}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#client CloudRunV2WorkerPool#client}
 
 ---
 
@@ -210,20 +208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Arbitrary version identifier for the API client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#client_version CloudRunV2WorkerPool#client_version}
-
----
-
-##### `custom_audiences`<sup>Optional</sup> <a name="custom_audiences" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPool.Initializer.parameter.customAudiences"></a>
-
-- *Type:* typing.List[str]
-
-One or more custom audiences that you want this worker pool to support.
-
-Specify each custom audience as the full URL in a string. The custom audiences are encoded in the token and used to authenticate requests.
-For more information, see https://cloud.google.com/run/docs/configuring/custom-audiences.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#custom_audiences CloudRunV2WorkerPool#custom_audiences}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#client_version CloudRunV2WorkerPool#client_version}
 
 ---
 
@@ -240,7 +225,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#deletion_policy CloudRunV2WorkerPool#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#deletion_policy CloudRunV2WorkerPool#deletion_policy}
 
 ---
 
@@ -257,7 +242,7 @@ When the field is set to true or unset in Terraform state, a 'terraform apply'
 or 'terraform destroy' that would delete the WorkerPool will fail.
 When the field is set to false, deleting the WorkerPool is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#deletion_protection CloudRunV2WorkerPool#deletion_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#deletion_protection CloudRunV2WorkerPool#deletion_protection}
 
 ---
 
@@ -267,7 +252,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 User-provided description of the WorkerPool. This field currently has a 512-character limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#description CloudRunV2WorkerPool#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#description CloudRunV2WorkerPool#description}
 
 ---
 
@@ -275,7 +260,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#id CloudRunV2WorkerPool#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#id CloudRunV2WorkerPool#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -288,7 +273,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 instance_splits block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#instance_splits CloudRunV2WorkerPool#instance_splits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#instance_splits CloudRunV2WorkerPool#instance_splits}
 
 ---
 
@@ -307,7 +292,7 @@ All system labels in v1 now have a corresponding field in v2 WorkerPool.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#labels CloudRunV2WorkerPool#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#labels CloudRunV2WorkerPool#labels}
 
 ---
 
@@ -319,7 +304,7 @@ The launch stage as defined by [Google Cloud Platform Launch Stages](https://clo
 
 For example, if ALPHA is provided as input, but only BETA and GA-level features are used, this field will be BETA on output. Possible values: ["UNIMPLEMENTED", "PRELAUNCH", "EARLY_ACCESS", "ALPHA", "BETA", "GA", "DEPRECATED"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#launch_stage CloudRunV2WorkerPool#launch_stage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#launch_stage CloudRunV2WorkerPool#launch_stage}
 
 ---
 
@@ -327,7 +312,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#project CloudRunV2WorkerPool#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#project CloudRunV2WorkerPool#project}.
 
 ---
 
@@ -337,7 +322,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 scaling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#scaling CloudRunV2WorkerPool#scaling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#scaling CloudRunV2WorkerPool#scaling}
 
 ---
 
@@ -347,7 +332,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#timeouts CloudRunV2WorkerPool#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#timeouts CloudRunV2WorkerPool#timeouts}
 
 ---
 
@@ -388,7 +373,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPool.resetBinaryAuthorization">reset_binary_authorization</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPool.resetClient">reset_client</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPool.resetClientVersion">reset_client_version</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPool.resetCustomAudiences">reset_custom_audiences</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPool.resetDeletionPolicy">reset_deletion_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPool.resetDeletionProtection">reset_deletion_protection</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPool.resetDescription">reset_description</a></code> | *No description.* |
@@ -768,7 +752,7 @@ If present, indicates to use Breakglass using this justification.
 
 If useDefault is False, then it must be empty. For more information on breakglass, see https://cloud.google.com/binary-authorization/docs/using-breakglass
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#breakglass_justification CloudRunV2WorkerPool#breakglass_justification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#breakglass_justification CloudRunV2WorkerPool#breakglass_justification}
 
 ---
 
@@ -778,7 +762,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The path to a binary authorization policy. Format: projects/{project}/platforms/cloudRun/{policy-name}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#policy CloudRunV2WorkerPool#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#policy CloudRunV2WorkerPool#policy}
 
 ---
 
@@ -788,7 +772,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 If True, indicates to use the default project's binary authorization policy. If False, binary authorization will be disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#use_default CloudRunV2WorkerPool#use_default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#use_default CloudRunV2WorkerPool#use_default}
 
 ---
 
@@ -823,7 +807,7 @@ def put_scaling(
 
 The total number of instances in manual scaling mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#manual_instance_count CloudRunV2WorkerPool#manual_instance_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#manual_instance_count CloudRunV2WorkerPool#manual_instance_count}
 
 ---
 
@@ -833,7 +817,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The maximum count of instances distributed among revisions based on the specified instance split percentages.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#max_instance_count CloudRunV2WorkerPool#max_instance_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#max_instance_count CloudRunV2WorkerPool#max_instance_count}
 
 ---
 
@@ -843,7 +827,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The minimum count of instances distributed among revisions based on the specified instance split percentages.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#min_instance_count CloudRunV2WorkerPool#min_instance_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#min_instance_count CloudRunV2WorkerPool#min_instance_count}
 
 ---
 
@@ -853,7 +837,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The scaling mode for the worker pool. It defaults to MANUAL. Possible values: ["AUTOMATIC", "MANUAL"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#scaling_mode CloudRunV2WorkerPool#scaling_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#scaling_mode CloudRunV2WorkerPool#scaling_mode}
 
 ---
 
@@ -891,7 +875,7 @@ All system annotations in v1 now have a corresponding field in v2 WorkerPoolRevi
 
 This field follows Kubernetes annotations' namespacing, limits, and rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#annotations CloudRunV2WorkerPool#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#annotations CloudRunV2WorkerPool#annotations}
 
 ---
 
@@ -901,7 +885,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Arbitrary identifier for the API client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#client CloudRunV2WorkerPool#client}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#client CloudRunV2WorkerPool#client}
 
 ---
 
@@ -911,7 +895,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Arbitrary version identifier for the API client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#client_version CloudRunV2WorkerPool#client_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#client_version CloudRunV2WorkerPool#client_version}
 
 ---
 
@@ -921,7 +905,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 containers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#containers CloudRunV2WorkerPool#containers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#containers CloudRunV2WorkerPool#containers}
 
 ---
 
@@ -933,7 +917,7 @@ A reference to a customer managed encryption key (CMEK) to use to encrypt this c
 
 For more information, go to https://cloud.google.com/run/docs/securing/using-cmek
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#encryption_key CloudRunV2WorkerPool#encryption_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#encryption_key CloudRunV2WorkerPool#encryption_key}
 
 ---
 
@@ -943,7 +927,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The action to take if the encryption key is revoked. Possible values: ["PREVENT_NEW", "SHUTDOWN"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#encryption_key_revocation_action CloudRunV2WorkerPool#encryption_key_revocation_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#encryption_key_revocation_action CloudRunV2WorkerPool#encryption_key_revocation_action}
 
 ---
 
@@ -955,7 +939,7 @@ If encryptionKeyRevocationAction is SHUTDOWN, the duration before shutting down 
 
 A duration in seconds with up to nine fractional digits, ending with 's'. Example: "3.5s".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#encryption_key_shutdown_duration CloudRunV2WorkerPool#encryption_key_shutdown_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#encryption_key_shutdown_duration CloudRunV2WorkerPool#encryption_key_shutdown_duration}
 
 ---
 
@@ -965,7 +949,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 True if GPU zonal redundancy is disabled on this revision.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#gpu_zonal_redundancy_disabled CloudRunV2WorkerPool#gpu_zonal_redundancy_disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#gpu_zonal_redundancy_disabled CloudRunV2WorkerPool#gpu_zonal_redundancy_disabled}
 
 ---
 
@@ -981,7 +965,7 @@ For more information, visit https://docs.cloud.google.com/resource-manager/docs/
 Cloud Run API v2 does not support labels with 'run.googleapis.com', 'cloud.googleapis.com', 'serving.knative.dev', or 'autoscaling.knative.dev' namespaces, and they will be rejected.
 All system labels in v1 now have a corresponding field in v2 WorkerPoolRevisionTemplate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#labels CloudRunV2WorkerPool#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#labels CloudRunV2WorkerPool#labels}
 
 ---
 
@@ -991,7 +975,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 node_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#node_selector CloudRunV2WorkerPool#node_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#node_selector CloudRunV2WorkerPool#node_selector}
 
 ---
 
@@ -1003,7 +987,7 @@ The unique name for the revision.
 
 If this field is omitted, it will be automatically generated based on the WorkerPool name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#revision CloudRunV2WorkerPool#revision}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#revision CloudRunV2WorkerPool#revision}
 
 ---
 
@@ -1015,7 +999,7 @@ Email address of the IAM service account associated with the revision of the Wor
 
 The service account represents the identity of the running revision, and determines what permissions the revision has. If not provided, the revision will use the project's default service account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#service_account CloudRunV2WorkerPool#service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#service_account CloudRunV2WorkerPool#service_account}
 
 ---
 
@@ -1025,7 +1009,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 volumes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#volumes CloudRunV2WorkerPool#volumes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#volumes CloudRunV2WorkerPool#volumes}
 
 ---
 
@@ -1035,7 +1019,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 vpc_access block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#vpc_access CloudRunV2WorkerPool#vpc_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#vpc_access CloudRunV2WorkerPool#vpc_access}
 
 ---
 
@@ -1053,7 +1037,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#create CloudRunV2WorkerPool#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#create CloudRunV2WorkerPool#create}.
 
 ---
 
@@ -1061,7 +1045,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#delete CloudRunV2WorkerPool#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#delete CloudRunV2WorkerPool#delete}.
 
 ---
 
@@ -1069,7 +1053,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#update CloudRunV2WorkerPool#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#update CloudRunV2WorkerPool#update}.
 
 ---
 
@@ -1095,12 +1079,6 @@ def reset_client() -> None
 
 ```python
 def reset_client_version() -> None
-```
-
-##### `reset_custom_audiences` <a name="reset_custom_audiences" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPool.resetCustomAudiences"></a>
-
-```python
-def reset_custom_audiences() -> None
 ```
 
 ##### `reset_deletion_policy` <a name="reset_deletion_policy" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPool.resetDeletionPolicy"></a>
@@ -1277,7 +1255,7 @@ The construct id used in the generated config for the CloudRunV2WorkerPool to im
 
 The id of the existing CloudRunV2WorkerPool that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1335,7 +1313,6 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPool.property.binaryAuthorizationInput">binary_authorization_input</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolBinaryAuthorization">CloudRunV2WorkerPoolBinaryAuthorization</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPool.property.clientInput">client_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPool.property.clientVersionInput">client_version_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPool.property.customAudiencesInput">custom_audiences_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPool.property.deletionPolicyInput">deletion_policy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPool.property.deletionProtectionInput">deletion_protection_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPool.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
@@ -1352,7 +1329,6 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPool.property.annotations">annotations</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPool.property.client">client</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPool.property.clientVersion">client_version</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPool.property.customAudiences">custom_audiences</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPool.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPool.property.deletionProtection">deletion_protection</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPool.property.description">description</a></code> | <code>str</code> | *No description.* |
@@ -1787,16 +1763,6 @@ client_version_input: str
 
 ---
 
-##### `custom_audiences_input`<sup>Optional</sup> <a name="custom_audiences_input" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPool.property.customAudiencesInput"></a>
-
-```python
-custom_audiences_input: typing.List[str]
-```
-
-- *Type:* typing.List[str]
-
----
-
 ##### `deletion_policy_input`<sup>Optional</sup> <a name="deletion_policy_input" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPool.property.deletionPolicyInput"></a>
 
 ```python
@@ -1957,16 +1923,6 @@ client_version: str
 
 ---
 
-##### `custom_audiences`<sup>Required</sup> <a name="custom_audiences" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPool.property.customAudiences"></a>
-
-```python
-custom_audiences: typing.List[str]
-```
-
-- *Type:* typing.List[str]
-
----
-
 ##### `deletion_policy`<sup>Required</sup> <a name="deletion_policy" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPool.property.deletionPolicy"></a>
 
 ```python
@@ -2113,7 +2069,7 @@ If present, indicates to use Breakglass using this justification.
 
 If useDefault is False, then it must be empty. For more information on breakglass, see https://cloud.google.com/binary-authorization/docs/using-breakglass
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#breakglass_justification CloudRunV2WorkerPool#breakglass_justification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#breakglass_justification CloudRunV2WorkerPool#breakglass_justification}
 
 ---
 
@@ -2127,7 +2083,7 @@ policy: str
 
 The path to a binary authorization policy. Format: projects/{project}/platforms/cloudRun/{policy-name}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#policy CloudRunV2WorkerPool#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#policy CloudRunV2WorkerPool#policy}
 
 ---
 
@@ -2141,7 +2097,7 @@ use_default: bool | IResolvable
 
 If True, indicates to use the default project's binary authorization policy. If False, binary authorization will be disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#use_default CloudRunV2WorkerPool#use_default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#use_default CloudRunV2WorkerPool#use_default}
 
 ---
 
@@ -2178,7 +2134,6 @@ cloudRunV2WorkerPool.CloudRunV2WorkerPoolConfig(
   binary_authorization: CloudRunV2WorkerPoolBinaryAuthorization = None,
   client: str = None,
   client_version: str = None,
-  custom_audiences: typing.List[str] = None,
   deletion_policy: str = None,
   deletion_protection: bool | IResolvable = None,
   description: str = None,
@@ -2210,15 +2165,14 @@ cloudRunV2WorkerPool.CloudRunV2WorkerPoolConfig(
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolConfig.property.binaryAuthorization">binary_authorization</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolBinaryAuthorization">CloudRunV2WorkerPoolBinaryAuthorization</a></code> | binary_authorization block. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolConfig.property.client">client</a></code> | <code>str</code> | Arbitrary identifier for the API client. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolConfig.property.clientVersion">client_version</a></code> | <code>str</code> | Arbitrary version identifier for the API client. |
-| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolConfig.property.customAudiences">custom_audiences</a></code> | <code>typing.List[str]</code> | One or more custom audiences that you want this worker pool to support. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolConfig.property.deletionProtection">deletion_protection</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether Terraform will be prevented from destroying the service. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolConfig.property.description">description</a></code> | <code>str</code> | User-provided description of the WorkerPool. This field currently has a 512-character limit. |
-| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#id CloudRunV2WorkerPool#id}. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#id CloudRunV2WorkerPool#id}. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolConfig.property.instanceSplits">instance_splits</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolInstanceSplits">CloudRunV2WorkerPoolInstanceSplits</a>]</code> | instance_splits block. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolConfig.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Unstructured key value map that can be used to organize and categorize objects. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolConfig.property.launchStage">launch_stage</a></code> | <code>str</code> | The launch stage as defined by [Google Cloud Platform Launch Stages](https://cloud.google.com/products#product-launch-stages). Cloud Run supports ALPHA, BETA, and GA. If no value is specified, GA is assumed. Set the launch stage to a preview stage on input to allow use of preview features in that stage. On read (or output), describes whether the resource uses preview features. |
-| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#project CloudRunV2WorkerPool#project}. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#project CloudRunV2WorkerPool#project}. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolConfig.property.scaling">scaling</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolScaling">CloudRunV2WorkerPoolScaling</a></code> | scaling block. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTimeouts">CloudRunV2WorkerPoolTimeouts</a></code> | timeouts block. |
 
@@ -2304,7 +2258,7 @@ location: str
 
 The location of the cloud run worker pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#location CloudRunV2WorkerPool#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#location CloudRunV2WorkerPool#location}
 
 ---
 
@@ -2318,7 +2272,7 @@ name: str
 
 Name of the WorkerPool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#name CloudRunV2WorkerPool#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#name CloudRunV2WorkerPool#name}
 
 ---
 
@@ -2332,7 +2286,7 @@ template: CloudRunV2WorkerPoolTemplate
 
 template block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#template CloudRunV2WorkerPool#template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#template CloudRunV2WorkerPool#template}
 
 ---
 
@@ -2356,7 +2310,7 @@ This field follows Kubernetes annotations' namespacing, limits, and rules.
 **Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
 Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#annotations CloudRunV2WorkerPool#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#annotations CloudRunV2WorkerPool#annotations}
 
 ---
 
@@ -2370,7 +2324,7 @@ binary_authorization: CloudRunV2WorkerPoolBinaryAuthorization
 
 binary_authorization block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#binary_authorization CloudRunV2WorkerPool#binary_authorization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#binary_authorization CloudRunV2WorkerPool#binary_authorization}
 
 ---
 
@@ -2384,7 +2338,7 @@ client: str
 
 Arbitrary identifier for the API client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#client CloudRunV2WorkerPool#client}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#client CloudRunV2WorkerPool#client}
 
 ---
 
@@ -2398,24 +2352,7 @@ client_version: str
 
 Arbitrary version identifier for the API client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#client_version CloudRunV2WorkerPool#client_version}
-
----
-
-##### `custom_audiences`<sup>Optional</sup> <a name="custom_audiences" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolConfig.property.customAudiences"></a>
-
-```python
-custom_audiences: typing.List[str]
-```
-
-- *Type:* typing.List[str]
-
-One or more custom audiences that you want this worker pool to support.
-
-Specify each custom audience as the full URL in a string. The custom audiences are encoded in the token and used to authenticate requests.
-For more information, see https://cloud.google.com/run/docs/configuring/custom-audiences.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#custom_audiences CloudRunV2WorkerPool#custom_audiences}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#client_version CloudRunV2WorkerPool#client_version}
 
 ---
 
@@ -2436,7 +2373,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#deletion_policy CloudRunV2WorkerPool#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#deletion_policy CloudRunV2WorkerPool#deletion_policy}
 
 ---
 
@@ -2457,7 +2394,7 @@ When the field is set to true or unset in Terraform state, a 'terraform apply'
 or 'terraform destroy' that would delete the WorkerPool will fail.
 When the field is set to false, deleting the WorkerPool is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#deletion_protection CloudRunV2WorkerPool#deletion_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#deletion_protection CloudRunV2WorkerPool#deletion_protection}
 
 ---
 
@@ -2471,7 +2408,7 @@ description: str
 
 User-provided description of the WorkerPool. This field currently has a 512-character limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#description CloudRunV2WorkerPool#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#description CloudRunV2WorkerPool#description}
 
 ---
 
@@ -2483,7 +2420,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#id CloudRunV2WorkerPool#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#id CloudRunV2WorkerPool#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2500,7 +2437,7 @@ instance_splits: IResolvable | typing.List[CloudRunV2WorkerPoolInstanceSplits]
 
 instance_splits block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#instance_splits CloudRunV2WorkerPool#instance_splits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#instance_splits CloudRunV2WorkerPool#instance_splits}
 
 ---
 
@@ -2523,7 +2460,7 @@ All system labels in v1 now have a corresponding field in v2 WorkerPool.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#labels CloudRunV2WorkerPool#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#labels CloudRunV2WorkerPool#labels}
 
 ---
 
@@ -2539,7 +2476,7 @@ The launch stage as defined by [Google Cloud Platform Launch Stages](https://clo
 
 For example, if ALPHA is provided as input, but only BETA and GA-level features are used, this field will be BETA on output. Possible values: ["UNIMPLEMENTED", "PRELAUNCH", "EARLY_ACCESS", "ALPHA", "BETA", "GA", "DEPRECATED"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#launch_stage CloudRunV2WorkerPool#launch_stage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#launch_stage CloudRunV2WorkerPool#launch_stage}
 
 ---
 
@@ -2551,7 +2488,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#project CloudRunV2WorkerPool#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#project CloudRunV2WorkerPool#project}.
 
 ---
 
@@ -2565,7 +2502,7 @@ scaling: CloudRunV2WorkerPoolScaling
 
 scaling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#scaling CloudRunV2WorkerPool#scaling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#scaling CloudRunV2WorkerPool#scaling}
 
 ---
 
@@ -2579,7 +2516,7 @@ timeouts: CloudRunV2WorkerPoolTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#timeouts CloudRunV2WorkerPool#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#timeouts CloudRunV2WorkerPool#timeouts}
 
 ---
 
@@ -2617,7 +2554,7 @@ percent: typing.Union[int, float]
 
 Specifies percent of the instance split to this Revision. This defaults to zero if unspecified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#percent CloudRunV2WorkerPool#percent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#percent CloudRunV2WorkerPool#percent}
 
 ---
 
@@ -2631,7 +2568,7 @@ revision: str
 
 Revision to which to assign this portion of instances, if split allocation is by revision.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#revision CloudRunV2WorkerPool#revision}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#revision CloudRunV2WorkerPool#revision}
 
 ---
 
@@ -2645,7 +2582,7 @@ type: str
 
 The allocation type for this instance split. Possible values: ["INSTANCE_SPLIT_ALLOCATION_TYPE_LATEST", "INSTANCE_SPLIT_ALLOCATION_TYPE_REVISION"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#type CloudRunV2WorkerPool#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#type CloudRunV2WorkerPool#type}
 
 ---
 
@@ -2696,7 +2633,7 @@ manual_instance_count: typing.Union[int, float]
 
 The total number of instances in manual scaling mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#manual_instance_count CloudRunV2WorkerPool#manual_instance_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#manual_instance_count CloudRunV2WorkerPool#manual_instance_count}
 
 ---
 
@@ -2710,7 +2647,7 @@ max_instance_count: typing.Union[int, float]
 
 The maximum count of instances distributed among revisions based on the specified instance split percentages.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#max_instance_count CloudRunV2WorkerPool#max_instance_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#max_instance_count CloudRunV2WorkerPool#max_instance_count}
 
 ---
 
@@ -2724,7 +2661,7 @@ min_instance_count: typing.Union[int, float]
 
 The minimum count of instances distributed among revisions based on the specified instance split percentages.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#min_instance_count CloudRunV2WorkerPool#min_instance_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#min_instance_count CloudRunV2WorkerPool#min_instance_count}
 
 ---
 
@@ -2738,7 +2675,7 @@ scaling_mode: str
 
 The scaling mode for the worker pool. It defaults to MANUAL. Possible values: ["AUTOMATIC", "MANUAL"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#scaling_mode CloudRunV2WorkerPool#scaling_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#scaling_mode CloudRunV2WorkerPool#scaling_mode}
 
 ---
 
@@ -2805,7 +2742,7 @@ All system annotations in v1 now have a corresponding field in v2 WorkerPoolRevi
 
 This field follows Kubernetes annotations' namespacing, limits, and rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#annotations CloudRunV2WorkerPool#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#annotations CloudRunV2WorkerPool#annotations}
 
 ---
 
@@ -2819,7 +2756,7 @@ client: str
 
 Arbitrary identifier for the API client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#client CloudRunV2WorkerPool#client}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#client CloudRunV2WorkerPool#client}
 
 ---
 
@@ -2833,7 +2770,7 @@ client_version: str
 
 Arbitrary version identifier for the API client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#client_version CloudRunV2WorkerPool#client_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#client_version CloudRunV2WorkerPool#client_version}
 
 ---
 
@@ -2847,7 +2784,7 @@ containers: IResolvable | typing.List[CloudRunV2WorkerPoolTemplateContainers]
 
 containers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#containers CloudRunV2WorkerPool#containers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#containers CloudRunV2WorkerPool#containers}
 
 ---
 
@@ -2863,7 +2800,7 @@ A reference to a customer managed encryption key (CMEK) to use to encrypt this c
 
 For more information, go to https://cloud.google.com/run/docs/securing/using-cmek
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#encryption_key CloudRunV2WorkerPool#encryption_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#encryption_key CloudRunV2WorkerPool#encryption_key}
 
 ---
 
@@ -2877,7 +2814,7 @@ encryption_key_revocation_action: str
 
 The action to take if the encryption key is revoked. Possible values: ["PREVENT_NEW", "SHUTDOWN"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#encryption_key_revocation_action CloudRunV2WorkerPool#encryption_key_revocation_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#encryption_key_revocation_action CloudRunV2WorkerPool#encryption_key_revocation_action}
 
 ---
 
@@ -2893,7 +2830,7 @@ If encryptionKeyRevocationAction is SHUTDOWN, the duration before shutting down 
 
 A duration in seconds with up to nine fractional digits, ending with 's'. Example: "3.5s".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#encryption_key_shutdown_duration CloudRunV2WorkerPool#encryption_key_shutdown_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#encryption_key_shutdown_duration CloudRunV2WorkerPool#encryption_key_shutdown_duration}
 
 ---
 
@@ -2907,7 +2844,7 @@ gpu_zonal_redundancy_disabled: bool | IResolvable
 
 True if GPU zonal redundancy is disabled on this revision.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#gpu_zonal_redundancy_disabled CloudRunV2WorkerPool#gpu_zonal_redundancy_disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#gpu_zonal_redundancy_disabled CloudRunV2WorkerPool#gpu_zonal_redundancy_disabled}
 
 ---
 
@@ -2927,7 +2864,7 @@ For more information, visit https://docs.cloud.google.com/resource-manager/docs/
 Cloud Run API v2 does not support labels with 'run.googleapis.com', 'cloud.googleapis.com', 'serving.knative.dev', or 'autoscaling.knative.dev' namespaces, and they will be rejected.
 All system labels in v1 now have a corresponding field in v2 WorkerPoolRevisionTemplate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#labels CloudRunV2WorkerPool#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#labels CloudRunV2WorkerPool#labels}
 
 ---
 
@@ -2941,7 +2878,7 @@ node_selector: CloudRunV2WorkerPoolTemplateNodeSelector
 
 node_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#node_selector CloudRunV2WorkerPool#node_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#node_selector CloudRunV2WorkerPool#node_selector}
 
 ---
 
@@ -2957,7 +2894,7 @@ The unique name for the revision.
 
 If this field is omitted, it will be automatically generated based on the WorkerPool name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#revision CloudRunV2WorkerPool#revision}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#revision CloudRunV2WorkerPool#revision}
 
 ---
 
@@ -2973,7 +2910,7 @@ Email address of the IAM service account associated with the revision of the Wor
 
 The service account represents the identity of the running revision, and determines what permissions the revision has. If not provided, the revision will use the project's default service account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#service_account CloudRunV2WorkerPool#service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#service_account CloudRunV2WorkerPool#service_account}
 
 ---
 
@@ -2987,7 +2924,7 @@ volumes: IResolvable | typing.List[CloudRunV2WorkerPoolTemplateVolumes]
 
 volumes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#volumes CloudRunV2WorkerPool#volumes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#volumes CloudRunV2WorkerPool#volumes}
 
 ---
 
@@ -3001,7 +2938,7 @@ vpc_access: CloudRunV2WorkerPoolTemplateVpcAccess
 
 vpc_access block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#vpc_access CloudRunV2WorkerPool#vpc_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#vpc_access CloudRunV2WorkerPool#vpc_access}
 
 ---
 
@@ -3021,6 +2958,7 @@ cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainers(
   liveness_probe: CloudRunV2WorkerPoolTemplateContainersLivenessProbe = None,
   name: str = None,
   resources: CloudRunV2WorkerPoolTemplateContainersResources = None,
+  sandbox_launcher: bool | IResolvable = None,
   startup_probe: CloudRunV2WorkerPoolTemplateContainersStartupProbe = None,
   volume_mounts: IResolvable | typing.List[CloudRunV2WorkerPoolTemplateContainersVolumeMounts] = None,
   working_dir: str = None
@@ -3039,6 +2977,7 @@ cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainers(
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainers.property.livenessProbe">liveness_probe</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersLivenessProbe">CloudRunV2WorkerPoolTemplateContainersLivenessProbe</a></code> | liveness_probe block. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainers.property.name">name</a></code> | <code>str</code> | Name of the container specified as a DNS_LABEL. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainers.property.resources">resources</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersResources">CloudRunV2WorkerPoolTemplateContainersResources</a></code> | resources block. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainers.property.sandboxLauncher">sandbox_launcher</a></code> | <code>bool \| cdktn.IResolvable</code> | Indicates that this container can act as a sandbox supervisor and launch sandboxes. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainers.property.startupProbe">startup_probe</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersStartupProbe">CloudRunV2WorkerPoolTemplateContainersStartupProbe</a></code> | startup_probe block. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainers.property.volumeMounts">volume_mounts</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersVolumeMounts">CloudRunV2WorkerPoolTemplateContainersVolumeMounts</a>]</code> | volume_mounts block. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainers.property.workingDir">working_dir</a></code> | <code>str</code> | Container's working directory. |
@@ -3055,7 +2994,7 @@ image: str
 
 URL of the Container image in Google Container Registry or Google Artifact Registry. More info: https://kubernetes.io/docs/concepts/containers/images.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#image CloudRunV2WorkerPool#image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#image CloudRunV2WorkerPool#image}
 
 ---
 
@@ -3071,7 +3010,7 @@ Arguments to the entrypoint.
 
 The docker image's CMD is used if this is not provided. Variable references are not supported in Cloud Run.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#args CloudRunV2WorkerPool#args}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#args CloudRunV2WorkerPool#args}
 
 ---
 
@@ -3087,7 +3026,7 @@ Entrypoint array.
 
 Not executed within a shell. The docker image's ENTRYPOINT is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container's environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#command CloudRunV2WorkerPool#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#command CloudRunV2WorkerPool#command}
 
 ---
 
@@ -3101,7 +3040,7 @@ depends_on: typing.List[str]
 
 Names of the containers that must start before this container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#depends_on CloudRunV2WorkerPool#depends_on}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#depends_on CloudRunV2WorkerPool#depends_on}
 
 ---
 
@@ -3115,7 +3054,7 @@ env: IResolvable | typing.List[CloudRunV2WorkerPoolTemplateContainersEnv]
 
 env block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#env CloudRunV2WorkerPool#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#env CloudRunV2WorkerPool#env}
 
 ---
 
@@ -3129,7 +3068,7 @@ liveness_probe: CloudRunV2WorkerPoolTemplateContainersLivenessProbe
 
 liveness_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#liveness_probe CloudRunV2WorkerPool#liveness_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#liveness_probe CloudRunV2WorkerPool#liveness_probe}
 
 ---
 
@@ -3143,7 +3082,7 @@ name: str
 
 Name of the container specified as a DNS_LABEL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#name CloudRunV2WorkerPool#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#name CloudRunV2WorkerPool#name}
 
 ---
 
@@ -3157,7 +3096,21 @@ resources: CloudRunV2WorkerPoolTemplateContainersResources
 
 resources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#resources CloudRunV2WorkerPool#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#resources CloudRunV2WorkerPool#resources}
+
+---
+
+##### `sandbox_launcher`<sup>Optional</sup> <a name="sandbox_launcher" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainers.property.sandboxLauncher"></a>
+
+```python
+sandbox_launcher: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Indicates that this container can act as a sandbox supervisor and launch sandboxes.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#sandbox_launcher CloudRunV2WorkerPool#sandbox_launcher}
 
 ---
 
@@ -3171,7 +3124,7 @@ startup_probe: CloudRunV2WorkerPoolTemplateContainersStartupProbe
 
 startup_probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#startup_probe CloudRunV2WorkerPool#startup_probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#startup_probe CloudRunV2WorkerPool#startup_probe}
 
 ---
 
@@ -3185,7 +3138,7 @@ volume_mounts: IResolvable | typing.List[CloudRunV2WorkerPoolTemplateContainersV
 
 volume_mounts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#volume_mounts CloudRunV2WorkerPool#volume_mounts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#volume_mounts CloudRunV2WorkerPool#volume_mounts}
 
 ---
 
@@ -3201,7 +3154,7 @@ Container's working directory.
 
 If not specified, the container runtime's default will be used, which might be configured in the container image.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#working_dir CloudRunV2WorkerPool#working_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#working_dir CloudRunV2WorkerPool#working_dir}
 
 ---
 
@@ -3239,7 +3192,7 @@ name: str
 
 Name of the environment variable. Must be a C_IDENTIFIER, and may not exceed 32768 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#name CloudRunV2WorkerPool#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#name CloudRunV2WorkerPool#name}
 
 ---
 
@@ -3255,7 +3208,7 @@ Literal value of the environment variable.
 
 Defaults to "" and the maximum allowed length is 32768 characters. Variable references are not supported in Cloud Run.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#value CloudRunV2WorkerPool#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#value CloudRunV2WorkerPool#value}
 
 ---
 
@@ -3269,7 +3222,7 @@ value_source: CloudRunV2WorkerPoolTemplateContainersEnvValueSource
 
 value_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#value_source CloudRunV2WorkerPool#value_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#value_source CloudRunV2WorkerPool#value_source}
 
 ---
 
@@ -3303,7 +3256,7 @@ secret_key_ref: CloudRunV2WorkerPoolTemplateContainersEnvValueSourceSecretKeyRef
 
 secret_key_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#secret_key_ref CloudRunV2WorkerPool#secret_key_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#secret_key_ref CloudRunV2WorkerPool#secret_key_ref}
 
 ---
 
@@ -3341,7 +3294,7 @@ The name of the secret in Cloud Secret Manager.
 
 Format: {secretName} if the secret is in the same project. projects/{project}/secrets/{secretName} if the secret is in a different project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#secret CloudRunV2WorkerPool#secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#secret CloudRunV2WorkerPool#secret}
 
 ---
 
@@ -3357,7 +3310,7 @@ The Cloud Secret Manager secret version.
 
 Can be 'latest' for the latest value or an integer for a specific version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#version CloudRunV2WorkerPool#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#version CloudRunV2WorkerPool#version}
 
 ---
 
@@ -3405,7 +3358,7 @@ Optional.
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded. Defaults to 3. Minimum value is 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#failure_threshold CloudRunV2WorkerPool#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#failure_threshold CloudRunV2WorkerPool#failure_threshold}
 
 ---
 
@@ -3419,7 +3372,7 @@ grpc: CloudRunV2WorkerPoolTemplateContainersLivenessProbeGrpc
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#grpc CloudRunV2WorkerPool#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#grpc CloudRunV2WorkerPool#grpc}
 
 ---
 
@@ -3433,7 +3386,7 @@ http_get: CloudRunV2WorkerPoolTemplateContainersLivenessProbeHttpGet
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#http_get CloudRunV2WorkerPool#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#http_get CloudRunV2WorkerPool#http_get}
 
 ---
 
@@ -3449,7 +3402,7 @@ Optional.
 
 Number of seconds after the container has started before the probe is initiated. Defaults to 0 seconds. Minimum value is 0. Maximum value for liveness probe is 3600. Maximum value for startup probe is 240.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#initial_delay_seconds CloudRunV2WorkerPool#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#initial_delay_seconds CloudRunV2WorkerPool#initial_delay_seconds}
 
 ---
 
@@ -3465,7 +3418,7 @@ Optional.
 
 How often (in seconds) to perform the probe. Default to 10 seconds. Minimum value is 1. Maximum value for liveness probe is 3600. Maximum value for startup probe is 240. Must be greater or equal than timeout_seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#period_seconds CloudRunV2WorkerPool#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#period_seconds CloudRunV2WorkerPool#period_seconds}
 
 ---
 
@@ -3479,7 +3432,7 @@ tcp_socket: CloudRunV2WorkerPoolTemplateContainersLivenessProbeTcpSocket
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#tcp_socket CloudRunV2WorkerPool#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#tcp_socket CloudRunV2WorkerPool#tcp_socket}
 
 ---
 
@@ -3495,7 +3448,7 @@ Optional.
 
 Number of seconds after which the probe times out. Defaults to 1 second. Minimum value is 1. Maximum value is 3600. Must be smaller than period_seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#timeout_seconds CloudRunV2WorkerPool#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#timeout_seconds CloudRunV2WorkerPool#timeout_seconds}
 
 ---
 
@@ -3533,7 +3486,7 @@ Optional.
 
 Port number of the gRPC service. Number must be in the range 1 to 65535. If not specified, defaults to the exposed port of the container, which is the value of container.ports[0].containerPort.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#port CloudRunV2WorkerPool#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#port CloudRunV2WorkerPool#port}
 
 ---
 
@@ -3549,7 +3502,7 @@ Optional.
 
 Service is the name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md ). If this is not specified, the default behavior is defined by gRPC
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#service CloudRunV2WorkerPool#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#service CloudRunV2WorkerPool#service}
 
 ---
 
@@ -3587,7 +3540,7 @@ http_headers: IResolvable | typing.List[CloudRunV2WorkerPoolTemplateContainersLi
 
 http_headers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#http_headers CloudRunV2WorkerPool#http_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#http_headers CloudRunV2WorkerPool#http_headers}
 
 ---
 
@@ -3601,7 +3554,7 @@ path: str
 
 Optional. Path to access on the HTTP server. Defaults to '/'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#path CloudRunV2WorkerPool#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#path CloudRunV2WorkerPool#path}
 
 ---
 
@@ -3617,7 +3570,7 @@ Optional.
 
 Port number to access on the container. Must be in the range 1 to 65535. If not specified, defaults to the exposed port of the container, which is the value of container.ports[0].containerPort.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#port CloudRunV2WorkerPool#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#port CloudRunV2WorkerPool#port}
 
 ---
 
@@ -3629,8 +3582,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktn_provider_google import cloud_run_v2_worker_pool
 
 cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersLivenessProbeHttpGetHttpHeaders(
-  name: str = None,
-  port: typing.Union[int, float] = None,
+  name: str,
   value: str = None
 )
 ```
@@ -3640,12 +3592,11 @@ cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersLivenessProbeHttpGetH
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersLivenessProbeHttpGetHttpHeaders.property.name">name</a></code> | <code>str</code> | Required. The header field name. |
-| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersLivenessProbeHttpGetHttpHeaders.property.port">port</a></code> | <code>typing.Union[int, float]</code> | Required. The header field name. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersLivenessProbeHttpGetHttpHeaders.property.value">value</a></code> | <code>str</code> | Optional. The header field value. |
 
 ---
 
-##### `name`<sup>Optional</sup> <a name="name" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersLivenessProbeHttpGetHttpHeaders.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersLivenessProbeHttpGetHttpHeaders.property.name"></a>
 
 ```python
 name: str
@@ -3655,21 +3606,7 @@ name: str
 
 Required. The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#name CloudRunV2WorkerPool#name}
-
----
-
-##### `port`<sup>Optional</sup> <a name="port" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersLivenessProbeHttpGetHttpHeaders.property.port"></a>
-
-```python
-port: typing.Union[int, float]
-```
-
-- *Type:* typing.Union[int, float]
-
-Required. The header field name.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#port CloudRunV2WorkerPool#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#name CloudRunV2WorkerPool#name}
 
 ---
 
@@ -3683,7 +3620,7 @@ value: str
 
 Optional. The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#value CloudRunV2WorkerPool#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#value CloudRunV2WorkerPool#value}
 
 ---
 
@@ -3719,7 +3656,7 @@ Optional.
 
 Port number to access on the container. Must be in the range 1 to 65535. If not specified, defaults to the exposed port of the container, which is the value of container.ports[0].containerPort.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#port CloudRunV2WorkerPool#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#port CloudRunV2WorkerPool#port}
 
 ---
 
@@ -3753,7 +3690,7 @@ limits: typing.Mapping[str]
 
 Only memory, CPU, and nvidia.com/gpu are supported. Use key 'cpu' for CPU limit, 'memory' for memory limit, 'nvidia.com/gpu' for gpu limit. Note: The only supported values for CPU are '1', '2', '4', '6', and '8'. Setting 4 CPU requires at least 2Gi of memory, setting 6 or more CPU requires at least 4Gi of memory. The values of the map is string form of the 'quantity' k8s type: https://github.com/kubernetes/kubernetes/blob/master/staging/src/k8s.io/apimachinery/pkg/api/resource/quantity.go.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#limits CloudRunV2WorkerPool#limits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#limits CloudRunV2WorkerPool#limits}
 
 ---
 
@@ -3801,7 +3738,7 @@ Optional.
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded. Defaults to 3. Minimum value is 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#failure_threshold CloudRunV2WorkerPool#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#failure_threshold CloudRunV2WorkerPool#failure_threshold}
 
 ---
 
@@ -3815,7 +3752,7 @@ grpc: CloudRunV2WorkerPoolTemplateContainersStartupProbeGrpc
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#grpc CloudRunV2WorkerPool#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#grpc CloudRunV2WorkerPool#grpc}
 
 ---
 
@@ -3829,7 +3766,7 @@ http_get: CloudRunV2WorkerPoolTemplateContainersStartupProbeHttpGet
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#http_get CloudRunV2WorkerPool#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#http_get CloudRunV2WorkerPool#http_get}
 
 ---
 
@@ -3845,7 +3782,7 @@ Optional.
 
 Number of seconds after the container has started before the probe is initiated. Defaults to 0 seconds. Minimum value is 0. Maximum value for liveness probe is 3600. Maximum value for startup probe is 240.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#initial_delay_seconds CloudRunV2WorkerPool#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#initial_delay_seconds CloudRunV2WorkerPool#initial_delay_seconds}
 
 ---
 
@@ -3861,7 +3798,7 @@ Optional.
 
 How often (in seconds) to perform the probe. Default to 10 seconds. Minimum value is 1. Maximum value for liveness probe is 3600. Maximum value for startup probe is 240. Must be greater or equal than timeout_seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#period_seconds CloudRunV2WorkerPool#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#period_seconds CloudRunV2WorkerPool#period_seconds}
 
 ---
 
@@ -3875,7 +3812,7 @@ tcp_socket: CloudRunV2WorkerPoolTemplateContainersStartupProbeTcpSocket
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#tcp_socket CloudRunV2WorkerPool#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#tcp_socket CloudRunV2WorkerPool#tcp_socket}
 
 ---
 
@@ -3891,7 +3828,7 @@ Optional.
 
 Number of seconds after which the probe times out. Defaults to 1 second. Minimum value is 1. Maximum value is 3600. Must be smaller than period_seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#timeout_seconds CloudRunV2WorkerPool#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#timeout_seconds CloudRunV2WorkerPool#timeout_seconds}
 
 ---
 
@@ -3929,7 +3866,7 @@ Optional.
 
 Port number of the gRPC service. Number must be in the range 1 to 65535. If not specified, defaults to the exposed port of the container, which is the value of container.ports[0].containerPort.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#port CloudRunV2WorkerPool#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#port CloudRunV2WorkerPool#port}
 
 ---
 
@@ -3945,7 +3882,7 @@ Optional.
 
 Service is the name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md ). If this is not specified, the default behavior is defined by gRPC
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#service CloudRunV2WorkerPool#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#service CloudRunV2WorkerPool#service}
 
 ---
 
@@ -3983,7 +3920,7 @@ http_headers: IResolvable | typing.List[CloudRunV2WorkerPoolTemplateContainersSt
 
 http_headers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#http_headers CloudRunV2WorkerPool#http_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#http_headers CloudRunV2WorkerPool#http_headers}
 
 ---
 
@@ -3997,7 +3934,7 @@ path: str
 
 Optional. Path to access on the HTTP server. Defaults to '/'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#path CloudRunV2WorkerPool#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#path CloudRunV2WorkerPool#path}
 
 ---
 
@@ -4013,7 +3950,7 @@ Optional.
 
 Port number to access on the container. Must be in the range 1 to 65535. If not specified, defaults to the exposed port of the container, which is the value of container.ports[0].containerPort.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#port CloudRunV2WorkerPool#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#port CloudRunV2WorkerPool#port}
 
 ---
 
@@ -4025,8 +3962,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktn_provider_google import cloud_run_v2_worker_pool
 
 cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersStartupProbeHttpGetHttpHeaders(
-  name: str = None,
-  port: typing.Union[int, float] = None,
+  name: str,
   value: str = None
 )
 ```
@@ -4036,12 +3972,11 @@ cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersStartupProbeHttpGetHt
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersStartupProbeHttpGetHttpHeaders.property.name">name</a></code> | <code>str</code> | Required. The header field name. |
-| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersStartupProbeHttpGetHttpHeaders.property.port">port</a></code> | <code>typing.Union[int, float]</code> | Required. The header field name. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersStartupProbeHttpGetHttpHeaders.property.value">value</a></code> | <code>str</code> | Optional. The header field value. |
 
 ---
 
-##### `name`<sup>Optional</sup> <a name="name" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersStartupProbeHttpGetHttpHeaders.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersStartupProbeHttpGetHttpHeaders.property.name"></a>
 
 ```python
 name: str
@@ -4051,21 +3986,7 @@ name: str
 
 Required. The header field name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#name CloudRunV2WorkerPool#name}
-
----
-
-##### `port`<sup>Optional</sup> <a name="port" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersStartupProbeHttpGetHttpHeaders.property.port"></a>
-
-```python
-port: typing.Union[int, float]
-```
-
-- *Type:* typing.Union[int, float]
-
-Required. The header field name.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#port CloudRunV2WorkerPool#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#name CloudRunV2WorkerPool#name}
 
 ---
 
@@ -4079,7 +4000,7 @@ value: str
 
 Optional. The header field value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#value CloudRunV2WorkerPool#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#value CloudRunV2WorkerPool#value}
 
 ---
 
@@ -4115,7 +4036,7 @@ Optional.
 
 Port number to access on the container. Must be in the range 1 to 65535. If not specified, defaults to the exposed port of the container, which is the value of container.ports[0].containerPort.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#port CloudRunV2WorkerPool#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#port CloudRunV2WorkerPool#port}
 
 ---
 
@@ -4155,7 +4076,7 @@ Path within the container at which the volume should be mounted.
 
 Must not contain ':'. For Cloud SQL volumes, it can be left empty, or must otherwise be /cloudsql. All instances defined in the Volume will be available as /cloudsql/[instance]. For more information on Cloud SQL volumes, visit https://cloud.google.com/sql/docs/mysql/connect-run
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#mount_path CloudRunV2WorkerPool#mount_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#mount_path CloudRunV2WorkerPool#mount_path}
 
 ---
 
@@ -4169,7 +4090,7 @@ name: str
 
 This must match the Name of a Volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#name CloudRunV2WorkerPool#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#name CloudRunV2WorkerPool#name}
 
 ---
 
@@ -4183,7 +4104,7 @@ sub_path: str
 
 Path within the volume from which the container's volume should be mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#sub_path CloudRunV2WorkerPool#sub_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#sub_path CloudRunV2WorkerPool#sub_path}
 
 ---
 
@@ -4217,7 +4138,7 @@ accelerator: str
 
 The GPU to attach to an instance. See https://cloud.google.com/run/docs/configuring/services/gpu for configuring GPU.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#accelerator CloudRunV2WorkerPool#accelerator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#accelerator CloudRunV2WorkerPool#accelerator}
 
 ---
 
@@ -4261,7 +4182,7 @@ name: str
 
 Volume's name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#name CloudRunV2WorkerPool#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#name CloudRunV2WorkerPool#name}
 
 ---
 
@@ -4275,7 +4196,7 @@ cloud_sql_instance: CloudRunV2WorkerPoolTemplateVolumesCloudSqlInstance
 
 cloud_sql_instance block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#cloud_sql_instance CloudRunV2WorkerPool#cloud_sql_instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#cloud_sql_instance CloudRunV2WorkerPool#cloud_sql_instance}
 
 ---
 
@@ -4289,7 +4210,7 @@ empty_dir: CloudRunV2WorkerPoolTemplateVolumesEmptyDir
 
 empty_dir block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#empty_dir CloudRunV2WorkerPool#empty_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#empty_dir CloudRunV2WorkerPool#empty_dir}
 
 ---
 
@@ -4303,7 +4224,7 @@ gcs: CloudRunV2WorkerPoolTemplateVolumesGcs
 
 gcs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#gcs CloudRunV2WorkerPool#gcs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#gcs CloudRunV2WorkerPool#gcs}
 
 ---
 
@@ -4317,7 +4238,7 @@ nfs: CloudRunV2WorkerPoolTemplateVolumesNfs
 
 nfs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#nfs CloudRunV2WorkerPool#nfs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#nfs CloudRunV2WorkerPool#nfs}
 
 ---
 
@@ -4331,7 +4252,7 @@ secret: CloudRunV2WorkerPoolTemplateVolumesSecret
 
 secret block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#secret CloudRunV2WorkerPool#secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#secret CloudRunV2WorkerPool#secret}
 
 ---
 
@@ -4365,7 +4286,7 @@ instances: typing.List[str]
 
 The Cloud SQL instance connection names, as can be found in https://console.cloud.google.com/sql/instances. Visit https://cloud.google.com/sql/docs/mysql/connect-run for more information on how to connect Cloud SQL and Cloud Run. Format: {project}:{location}:{instance}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#instances CloudRunV2WorkerPool#instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#instances CloudRunV2WorkerPool#instances}
 
 ---
 
@@ -4401,7 +4322,7 @@ medium: str
 
 The different types of medium supported for EmptyDir. Default value: "MEMORY" Possible values: ["MEMORY", "DISK"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#medium CloudRunV2WorkerPool#medium}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#medium CloudRunV2WorkerPool#medium}
 
 ---
 
@@ -4417,7 +4338,7 @@ Limit on the storage usable by this EmptyDir volume.
 
 The size limit is also applicable for memory medium. The maximum usage on memory medium EmptyDir would be the minimum value between the SizeLimit specified here and the sum of memory limits of all containers in a pod. This field's values are of the 'Quantity' k8s type: https://kubernetes.io/docs/reference/kubernetes-api/common-definitions/quantity/. The default is nil which means that the limit is undefined. More info: https://kubernetes.io/docs/concepts/storage/volumes/#emptydir.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#size_limit CloudRunV2WorkerPool#size_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#size_limit CloudRunV2WorkerPool#size_limit}
 
 ---
 
@@ -4455,7 +4376,7 @@ bucket: str
 
 GCS Bucket name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#bucket CloudRunV2WorkerPool#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#bucket CloudRunV2WorkerPool#bucket}
 
 ---
 
@@ -4471,7 +4392,7 @@ A list of flags to pass to the gcsfuse command for configuring this volume.
 
 Flags should be passed without leading dashes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#mount_options CloudRunV2WorkerPool#mount_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#mount_options CloudRunV2WorkerPool#mount_options}
 
 ---
 
@@ -4485,7 +4406,7 @@ read_only: bool | IResolvable
 
 If true, mount the GCS bucket as read-only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#read_only CloudRunV2WorkerPool#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#read_only CloudRunV2WorkerPool#read_only}
 
 ---
 
@@ -4523,7 +4444,7 @@ path: str
 
 Path that is exported by the NFS server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#path CloudRunV2WorkerPool#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#path CloudRunV2WorkerPool#path}
 
 ---
 
@@ -4537,7 +4458,7 @@ server: str
 
 Hostname or IP address of the NFS server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#server CloudRunV2WorkerPool#server}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#server CloudRunV2WorkerPool#server}
 
 ---
 
@@ -4551,7 +4472,7 @@ read_only: bool | IResolvable
 
 If true, mount the NFS volume as read only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#read_only CloudRunV2WorkerPool#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#read_only CloudRunV2WorkerPool#read_only}
 
 ---
 
@@ -4591,7 +4512,7 @@ The name of the secret in Cloud Secret Manager.
 
 Format: {secret} if the secret is in the same project. projects/{project}/secrets/{secret} if the secret is in a different project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#secret CloudRunV2WorkerPool#secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#secret CloudRunV2WorkerPool#secret}
 
 ---
 
@@ -4607,7 +4528,7 @@ Integer representation of mode bits to use on created files by default.
 
 Must be a value between 0000 and 0777 (octal), defaulting to 0444. Directories within the path are not affected by this setting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#default_mode CloudRunV2WorkerPool#default_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#default_mode CloudRunV2WorkerPool#default_mode}
 
 ---
 
@@ -4621,7 +4542,7 @@ items: IResolvable | typing.List[CloudRunV2WorkerPoolTemplateVolumesSecretItems]
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#items CloudRunV2WorkerPool#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#items CloudRunV2WorkerPool#items}
 
 ---
 
@@ -4659,7 +4580,7 @@ path: str
 
 The relative path of the secret in the container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#path CloudRunV2WorkerPool#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#path CloudRunV2WorkerPool#path}
 
 ---
 
@@ -4675,7 +4596,7 @@ Integer octal mode bits to use on this file, must be a value between 01 and 0777
 
 If 0 or not set, the Volume's default mode will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#mode CloudRunV2WorkerPool#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#mode CloudRunV2WorkerPool#mode}
 
 ---
 
@@ -4691,7 +4612,7 @@ The Cloud Secret Manager secret version.
 
 Can be 'latest' for the latest value or an integer for a specific version
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#version CloudRunV2WorkerPool#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#version CloudRunV2WorkerPool#version}
 
 ---
 
@@ -4729,7 +4650,7 @@ connector: str
 
 VPC Access connector name. Format: projects/{project}/locations/{location}/connectors/{connector}, where {project} can be project id or number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#connector CloudRunV2WorkerPool#connector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#connector CloudRunV2WorkerPool#connector}
 
 ---
 
@@ -4743,7 +4664,7 @@ egress: str
 
 Traffic VPC egress settings. Possible values: ["ALL_TRAFFIC", "PRIVATE_RANGES_ONLY"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#egress CloudRunV2WorkerPool#egress}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#egress CloudRunV2WorkerPool#egress}
 
 ---
 
@@ -4757,7 +4678,7 @@ network_interfaces: IResolvable | typing.List[CloudRunV2WorkerPoolTemplateVpcAcc
 
 network_interfaces block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#network_interfaces CloudRunV2WorkerPool#network_interfaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#network_interfaces CloudRunV2WorkerPool#network_interfaces}
 
 ---
 
@@ -4799,7 +4720,7 @@ At least one of network or subnetwork must be specified. If both
 network and subnetwork are specified, the given VPC subnetwork must belong to the given VPC network. If network is not specified, it will be
 looked up from the subnetwork.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#network CloudRunV2WorkerPool#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#network CloudRunV2WorkerPool#network}
 
 ---
 
@@ -4817,7 +4738,7 @@ At least one of network or subnetwork must be specified. If both
 network and subnetwork are specified, the given VPC subnetwork must belong to the given VPC network. If subnetwork is not specified, the
 subnetwork with the same name with the network will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#subnetwork CloudRunV2WorkerPool#subnetwork}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#subnetwork CloudRunV2WorkerPool#subnetwork}
 
 ---
 
@@ -4831,7 +4752,7 @@ tags: typing.List[str]
 
 Network tags applied to this Cloud Run WorkerPool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#tags CloudRunV2WorkerPool#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#tags CloudRunV2WorkerPool#tags}
 
 ---
 
@@ -4864,9 +4785,9 @@ cloudRunV2WorkerPool.CloudRunV2WorkerPoolTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#create CloudRunV2WorkerPool#create}. |
-| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#delete CloudRunV2WorkerPool#delete}. |
-| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#update CloudRunV2WorkerPool#update}. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#create CloudRunV2WorkerPool#create}. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#delete CloudRunV2WorkerPool#delete}. |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#update CloudRunV2WorkerPool#update}. |
 
 ---
 
@@ -4878,7 +4799,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#create CloudRunV2WorkerPool#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#create CloudRunV2WorkerPool#create}.
 
 ---
 
@@ -4890,7 +4811,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#delete CloudRunV2WorkerPool#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#delete CloudRunV2WorkerPool#delete}.
 
 ---
 
@@ -4902,7 +4823,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#update CloudRunV2WorkerPool#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#update CloudRunV2WorkerPool#update}.
 
 ---
 
@@ -7672,7 +7593,7 @@ def put_value_source(
 
 secret_key_ref block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#secret_key_ref CloudRunV2WorkerPool#secret_key_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#secret_key_ref CloudRunV2WorkerPool#secret_key_ref}
 
 ---
 
@@ -8047,7 +7968,7 @@ The name of the secret in Cloud Secret Manager.
 
 Format: {secretName} if the secret is in the same project. projects/{project}/secrets/{secretName} if the secret is in a different project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#secret CloudRunV2WorkerPool#secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#secret CloudRunV2WorkerPool#secret}
 
 ---
 
@@ -8059,7 +7980,7 @@ The Cloud Secret Manager secret version.
 
 Can be 'latest' for the latest value or an integer for a specific version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#version CloudRunV2WorkerPool#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#version CloudRunV2WorkerPool#version}
 
 ---
 
@@ -9207,8 +9128,6 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersLivenessProbeHttpGetHttpHeadersOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersLivenessProbeHttpGetHttpHeadersOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersLivenessProbeHttpGetHttpHeadersOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersLivenessProbeHttpGetHttpHeadersOutputReference.resetName">reset_name</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersLivenessProbeHttpGetHttpHeadersOutputReference.resetPort">reset_port</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersLivenessProbeHttpGetHttpHeadersOutputReference.resetValue">reset_value</a></code> | *No description.* |
 
 ---
@@ -9385,18 +9304,6 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_name` <a name="reset_name" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersLivenessProbeHttpGetHttpHeadersOutputReference.resetName"></a>
-
-```python
-def reset_name() -> None
-```
-
-##### `reset_port` <a name="reset_port" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersLivenessProbeHttpGetHttpHeadersOutputReference.resetPort"></a>
-
-```python
-def reset_port() -> None
-```
-
 ##### `reset_value` <a name="reset_value" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersLivenessProbeHttpGetHttpHeadersOutputReference.resetValue"></a>
 
 ```python
@@ -9411,10 +9318,8 @@ def reset_value() -> None
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersLivenessProbeHttpGetHttpHeadersOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersLivenessProbeHttpGetHttpHeadersOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersLivenessProbeHttpGetHttpHeadersOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersLivenessProbeHttpGetHttpHeadersOutputReference.property.portInput">port_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersLivenessProbeHttpGetHttpHeadersOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersLivenessProbeHttpGetHttpHeadersOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersLivenessProbeHttpGetHttpHeadersOutputReference.property.port">port</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersLivenessProbeHttpGetHttpHeadersOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersLivenessProbeHttpGetHttpHeadersOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersLivenessProbeHttpGetHttpHeaders">CloudRunV2WorkerPoolTemplateContainersLivenessProbeHttpGetHttpHeaders</a></code> | *No description.* |
 
@@ -9454,16 +9359,6 @@ name_input: str
 
 ---
 
-##### `port_input`<sup>Optional</sup> <a name="port_input" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersLivenessProbeHttpGetHttpHeadersOutputReference.property.portInput"></a>
-
-```python
-port_input: typing.Union[int, float]
-```
-
-- *Type:* typing.Union[int, float]
-
----
-
 ##### `value_input`<sup>Optional</sup> <a name="value_input" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersLivenessProbeHttpGetHttpHeadersOutputReference.property.valueInput"></a>
 
 ```python
@@ -9481,16 +9376,6 @@ name: str
 ```
 
 - *Type:* str
-
----
-
-##### `port`<sup>Required</sup> <a name="port" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersLivenessProbeHttpGetHttpHeadersOutputReference.property.port"></a>
-
-```python
-port: typing.Union[int, float]
-```
-
-- *Type:* typing.Union[int, float]
 
 ---
 
@@ -10146,7 +10031,7 @@ Optional.
 
 Port number of the gRPC service. Number must be in the range 1 to 65535. If not specified, defaults to the exposed port of the container, which is the value of container.ports[0].containerPort.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#port CloudRunV2WorkerPool#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#port CloudRunV2WorkerPool#port}
 
 ---
 
@@ -10158,7 +10043,7 @@ Optional.
 
 Service is the name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md ). If this is not specified, the default behavior is defined by gRPC
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#service CloudRunV2WorkerPool#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#service CloudRunV2WorkerPool#service}
 
 ---
 
@@ -10178,7 +10063,7 @@ def put_http_get(
 
 http_headers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#http_headers CloudRunV2WorkerPool#http_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#http_headers CloudRunV2WorkerPool#http_headers}
 
 ---
 
@@ -10188,7 +10073,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Optional. Path to access on the HTTP server. Defaults to '/'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#path CloudRunV2WorkerPool#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#path CloudRunV2WorkerPool#path}
 
 ---
 
@@ -10200,7 +10085,7 @@ Optional.
 
 Port number to access on the container. Must be in the range 1 to 65535. If not specified, defaults to the exposed port of the container, which is the value of container.ports[0].containerPort.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#port CloudRunV2WorkerPool#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#port CloudRunV2WorkerPool#port}
 
 ---
 
@@ -10220,7 +10105,7 @@ Optional.
 
 Port number to access on the container. Must be in the range 1 to 65535. If not specified, defaults to the exposed port of the container, which is the value of container.ports[0].containerPort.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#port CloudRunV2WorkerPool#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#port CloudRunV2WorkerPool#port}
 
 ---
 
@@ -10854,6 +10739,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersOutputReference.resetLivenessProbe">reset_liveness_probe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersOutputReference.resetName">reset_name</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersOutputReference.resetResources">reset_resources</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersOutputReference.resetSandboxLauncher">reset_sandbox_launcher</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersOutputReference.resetStartupProbe">reset_startup_probe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersOutputReference.resetVolumeMounts">reset_volume_mounts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersOutputReference.resetWorkingDir">reset_working_dir</a></code> | *No description.* |
@@ -11068,7 +10954,7 @@ Optional.
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded. Defaults to 3. Minimum value is 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#failure_threshold CloudRunV2WorkerPool#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#failure_threshold CloudRunV2WorkerPool#failure_threshold}
 
 ---
 
@@ -11078,7 +10964,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#grpc CloudRunV2WorkerPool#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#grpc CloudRunV2WorkerPool#grpc}
 
 ---
 
@@ -11088,7 +10974,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#http_get CloudRunV2WorkerPool#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#http_get CloudRunV2WorkerPool#http_get}
 
 ---
 
@@ -11100,7 +10986,7 @@ Optional.
 
 Number of seconds after the container has started before the probe is initiated. Defaults to 0 seconds. Minimum value is 0. Maximum value for liveness probe is 3600. Maximum value for startup probe is 240.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#initial_delay_seconds CloudRunV2WorkerPool#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#initial_delay_seconds CloudRunV2WorkerPool#initial_delay_seconds}
 
 ---
 
@@ -11112,7 +10998,7 @@ Optional.
 
 How often (in seconds) to perform the probe. Default to 10 seconds. Minimum value is 1. Maximum value for liveness probe is 3600. Maximum value for startup probe is 240. Must be greater or equal than timeout_seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#period_seconds CloudRunV2WorkerPool#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#period_seconds CloudRunV2WorkerPool#period_seconds}
 
 ---
 
@@ -11122,7 +11008,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#tcp_socket CloudRunV2WorkerPool#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#tcp_socket CloudRunV2WorkerPool#tcp_socket}
 
 ---
 
@@ -11134,7 +11020,7 @@ Optional.
 
 Number of seconds after which the probe times out. Defaults to 1 second. Minimum value is 1. Maximum value is 3600. Must be smaller than period_seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#timeout_seconds CloudRunV2WorkerPool#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#timeout_seconds CloudRunV2WorkerPool#timeout_seconds}
 
 ---
 
@@ -11152,7 +11038,7 @@ def put_resources(
 
 Only memory, CPU, and nvidia.com/gpu are supported. Use key 'cpu' for CPU limit, 'memory' for memory limit, 'nvidia.com/gpu' for gpu limit. Note: The only supported values for CPU are '1', '2', '4', '6', and '8'. Setting 4 CPU requires at least 2Gi of memory, setting 6 or more CPU requires at least 4Gi of memory. The values of the map is string form of the 'quantity' k8s type: https://github.com/kubernetes/kubernetes/blob/master/staging/src/k8s.io/apimachinery/pkg/api/resource/quantity.go.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#limits CloudRunV2WorkerPool#limits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#limits CloudRunV2WorkerPool#limits}
 
 ---
 
@@ -11178,7 +11064,7 @@ Optional.
 
 Minimum consecutive failures for the probe to be considered failed after having succeeded. Defaults to 3. Minimum value is 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#failure_threshold CloudRunV2WorkerPool#failure_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#failure_threshold CloudRunV2WorkerPool#failure_threshold}
 
 ---
 
@@ -11188,7 +11074,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 grpc block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#grpc CloudRunV2WorkerPool#grpc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#grpc CloudRunV2WorkerPool#grpc}
 
 ---
 
@@ -11198,7 +11084,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 http_get block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#http_get CloudRunV2WorkerPool#http_get}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#http_get CloudRunV2WorkerPool#http_get}
 
 ---
 
@@ -11210,7 +11096,7 @@ Optional.
 
 Number of seconds after the container has started before the probe is initiated. Defaults to 0 seconds. Minimum value is 0. Maximum value for liveness probe is 3600. Maximum value for startup probe is 240.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#initial_delay_seconds CloudRunV2WorkerPool#initial_delay_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#initial_delay_seconds CloudRunV2WorkerPool#initial_delay_seconds}
 
 ---
 
@@ -11222,7 +11108,7 @@ Optional.
 
 How often (in seconds) to perform the probe. Default to 10 seconds. Minimum value is 1. Maximum value for liveness probe is 3600. Maximum value for startup probe is 240. Must be greater or equal than timeout_seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#period_seconds CloudRunV2WorkerPool#period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#period_seconds CloudRunV2WorkerPool#period_seconds}
 
 ---
 
@@ -11232,7 +11118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 tcp_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#tcp_socket CloudRunV2WorkerPool#tcp_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#tcp_socket CloudRunV2WorkerPool#tcp_socket}
 
 ---
 
@@ -11244,7 +11130,7 @@ Optional.
 
 Number of seconds after which the probe times out. Defaults to 1 second. Minimum value is 1. Maximum value is 3600. Must be smaller than period_seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#timeout_seconds CloudRunV2WorkerPool#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#timeout_seconds CloudRunV2WorkerPool#timeout_seconds}
 
 ---
 
@@ -11304,6 +11190,12 @@ def reset_name() -> None
 def reset_resources() -> None
 ```
 
+##### `reset_sandbox_launcher` <a name="reset_sandbox_launcher" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersOutputReference.resetSandboxLauncher"></a>
+
+```python
+def reset_sandbox_launcher() -> None
+```
+
 ##### `reset_startup_probe` <a name="reset_startup_probe" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersOutputReference.resetStartupProbe"></a>
 
 ```python
@@ -11342,6 +11234,7 @@ def reset_working_dir() -> None
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersOutputReference.property.livenessProbeInput">liveness_probe_input</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersLivenessProbe">CloudRunV2WorkerPoolTemplateContainersLivenessProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersOutputReference.property.resourcesInput">resources_input</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersResources">CloudRunV2WorkerPoolTemplateContainersResources</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersOutputReference.property.sandboxLauncherInput">sandbox_launcher_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersOutputReference.property.startupProbeInput">startup_probe_input</a></code> | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersStartupProbe">CloudRunV2WorkerPoolTemplateContainersStartupProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersOutputReference.property.volumeMountsInput">volume_mounts_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersVolumeMounts">CloudRunV2WorkerPoolTemplateContainersVolumeMounts</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersOutputReference.property.workingDirInput">working_dir_input</a></code> | <code>str</code> | *No description.* |
@@ -11350,6 +11243,7 @@ def reset_working_dir() -> None
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersOutputReference.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersOutputReference.property.image">image</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersOutputReference.property.sandboxLauncher">sandbox_launcher</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersOutputReference.property.workingDir">working_dir</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainers">CloudRunV2WorkerPoolTemplateContainers</a></code> | *No description.* |
 
@@ -11509,6 +11403,16 @@ resources_input: CloudRunV2WorkerPoolTemplateContainersResources
 
 ---
 
+##### `sandbox_launcher_input`<sup>Optional</sup> <a name="sandbox_launcher_input" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersOutputReference.property.sandboxLauncherInput"></a>
+
+```python
+sandbox_launcher_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
 ##### `startup_probe_input`<sup>Optional</sup> <a name="startup_probe_input" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersOutputReference.property.startupProbeInput"></a>
 
 ```python
@@ -11586,6 +11490,16 @@ name: str
 ```
 
 - *Type:* str
+
+---
+
+##### `sandbox_launcher`<sup>Required</sup> <a name="sandbox_launcher" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersOutputReference.property.sandboxLauncher"></a>
+
+```python
+sandbox_launcher: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -12488,8 +12402,6 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersStartupProbeHttpGetHttpHeadersOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersStartupProbeHttpGetHttpHeadersOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersStartupProbeHttpGetHttpHeadersOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersStartupProbeHttpGetHttpHeadersOutputReference.resetName">reset_name</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersStartupProbeHttpGetHttpHeadersOutputReference.resetPort">reset_port</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersStartupProbeHttpGetHttpHeadersOutputReference.resetValue">reset_value</a></code> | *No description.* |
 
 ---
@@ -12666,18 +12578,6 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_name` <a name="reset_name" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersStartupProbeHttpGetHttpHeadersOutputReference.resetName"></a>
-
-```python
-def reset_name() -> None
-```
-
-##### `reset_port` <a name="reset_port" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersStartupProbeHttpGetHttpHeadersOutputReference.resetPort"></a>
-
-```python
-def reset_port() -> None
-```
-
 ##### `reset_value` <a name="reset_value" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersStartupProbeHttpGetHttpHeadersOutputReference.resetValue"></a>
 
 ```python
@@ -12692,10 +12592,8 @@ def reset_value() -> None
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersStartupProbeHttpGetHttpHeadersOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersStartupProbeHttpGetHttpHeadersOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersStartupProbeHttpGetHttpHeadersOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersStartupProbeHttpGetHttpHeadersOutputReference.property.portInput">port_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersStartupProbeHttpGetHttpHeadersOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersStartupProbeHttpGetHttpHeadersOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersStartupProbeHttpGetHttpHeadersOutputReference.property.port">port</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersStartupProbeHttpGetHttpHeadersOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersStartupProbeHttpGetHttpHeadersOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersStartupProbeHttpGetHttpHeaders">CloudRunV2WorkerPoolTemplateContainersStartupProbeHttpGetHttpHeaders</a></code> | *No description.* |
 
@@ -12735,16 +12633,6 @@ name_input: str
 
 ---
 
-##### `port_input`<sup>Optional</sup> <a name="port_input" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersStartupProbeHttpGetHttpHeadersOutputReference.property.portInput"></a>
-
-```python
-port_input: typing.Union[int, float]
-```
-
-- *Type:* typing.Union[int, float]
-
----
-
 ##### `value_input`<sup>Optional</sup> <a name="value_input" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersStartupProbeHttpGetHttpHeadersOutputReference.property.valueInput"></a>
 
 ```python
@@ -12762,16 +12650,6 @@ name: str
 ```
 
 - *Type:* str
-
----
-
-##### `port`<sup>Required</sup> <a name="port" id="@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersStartupProbeHttpGetHttpHeadersOutputReference.property.port"></a>
-
-```python
-port: typing.Union[int, float]
-```
-
-- *Type:* typing.Union[int, float]
 
 ---
 
@@ -13427,7 +13305,7 @@ Optional.
 
 Port number of the gRPC service. Number must be in the range 1 to 65535. If not specified, defaults to the exposed port of the container, which is the value of container.ports[0].containerPort.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#port CloudRunV2WorkerPool#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#port CloudRunV2WorkerPool#port}
 
 ---
 
@@ -13439,7 +13317,7 @@ Optional.
 
 Service is the name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md ). If this is not specified, the default behavior is defined by gRPC
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#service CloudRunV2WorkerPool#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#service CloudRunV2WorkerPool#service}
 
 ---
 
@@ -13459,7 +13337,7 @@ def put_http_get(
 
 http_headers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#http_headers CloudRunV2WorkerPool#http_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#http_headers CloudRunV2WorkerPool#http_headers}
 
 ---
 
@@ -13469,7 +13347,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Optional. Path to access on the HTTP server. Defaults to '/'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#path CloudRunV2WorkerPool#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#path CloudRunV2WorkerPool#path}
 
 ---
 
@@ -13481,7 +13359,7 @@ Optional.
 
 Port number to access on the container. Must be in the range 1 to 65535. If not specified, defaults to the exposed port of the container, which is the value of container.ports[0].containerPort.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#port CloudRunV2WorkerPool#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#port CloudRunV2WorkerPool#port}
 
 ---
 
@@ -13501,7 +13379,7 @@ Optional.
 
 Port number to access on the container. Must be in the range 1 to 65535. If not specified, defaults to the exposed port of the container, which is the value of container.ports[0].containerPort.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#port CloudRunV2WorkerPool#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#port CloudRunV2WorkerPool#port}
 
 ---
 
@@ -15157,7 +15035,7 @@ def put_node_selector(
 
 The GPU to attach to an instance. See https://cloud.google.com/run/docs/configuring/services/gpu for configuring GPU.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#accelerator CloudRunV2WorkerPool#accelerator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#accelerator CloudRunV2WorkerPool#accelerator}
 
 ---
 
@@ -15191,7 +15069,7 @@ def put_vpc_access(
 
 VPC Access connector name. Format: projects/{project}/locations/{location}/connectors/{connector}, where {project} can be project id or number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#connector CloudRunV2WorkerPool#connector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#connector CloudRunV2WorkerPool#connector}
 
 ---
 
@@ -15201,7 +15079,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Traffic VPC egress settings. Possible values: ["ALL_TRAFFIC", "PRIVATE_RANGES_ONLY"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#egress CloudRunV2WorkerPool#egress}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#egress CloudRunV2WorkerPool#egress}
 
 ---
 
@@ -15211,7 +15089,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 network_interfaces block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#network_interfaces CloudRunV2WorkerPool#network_interfaces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#network_interfaces CloudRunV2WorkerPool#network_interfaces}
 
 ---
 
@@ -17431,7 +17309,7 @@ def put_cloud_sql_instance(
 
 The Cloud SQL instance connection names, as can be found in https://console.cloud.google.com/sql/instances. Visit https://cloud.google.com/sql/docs/mysql/connect-run for more information on how to connect Cloud SQL and Cloud Run. Format: {project}:{location}:{instance}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#instances CloudRunV2WorkerPool#instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#instances CloudRunV2WorkerPool#instances}
 
 ---
 
@@ -17450,7 +17328,7 @@ def put_empty_dir(
 
 The different types of medium supported for EmptyDir. Default value: "MEMORY" Possible values: ["MEMORY", "DISK"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#medium CloudRunV2WorkerPool#medium}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#medium CloudRunV2WorkerPool#medium}
 
 ---
 
@@ -17462,7 +17340,7 @@ Limit on the storage usable by this EmptyDir volume.
 
 The size limit is also applicable for memory medium. The maximum usage on memory medium EmptyDir would be the minimum value between the SizeLimit specified here and the sum of memory limits of all containers in a pod. This field's values are of the 'Quantity' k8s type: https://kubernetes.io/docs/reference/kubernetes-api/common-definitions/quantity/. The default is nil which means that the limit is undefined. More info: https://kubernetes.io/docs/concepts/storage/volumes/#emptydir.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#size_limit CloudRunV2WorkerPool#size_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#size_limit CloudRunV2WorkerPool#size_limit}
 
 ---
 
@@ -17482,7 +17360,7 @@ def put_gcs(
 
 GCS Bucket name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#bucket CloudRunV2WorkerPool#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#bucket CloudRunV2WorkerPool#bucket}
 
 ---
 
@@ -17494,7 +17372,7 @@ A list of flags to pass to the gcsfuse command for configuring this volume.
 
 Flags should be passed without leading dashes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#mount_options CloudRunV2WorkerPool#mount_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#mount_options CloudRunV2WorkerPool#mount_options}
 
 ---
 
@@ -17504,7 +17382,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 If true, mount the GCS bucket as read-only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#read_only CloudRunV2WorkerPool#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#read_only CloudRunV2WorkerPool#read_only}
 
 ---
 
@@ -17524,7 +17402,7 @@ def put_nfs(
 
 Path that is exported by the NFS server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#path CloudRunV2WorkerPool#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#path CloudRunV2WorkerPool#path}
 
 ---
 
@@ -17534,7 +17412,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Hostname or IP address of the NFS server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#server CloudRunV2WorkerPool#server}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#server CloudRunV2WorkerPool#server}
 
 ---
 
@@ -17544,7 +17422,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 If true, mount the NFS volume as read only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#read_only CloudRunV2WorkerPool#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#read_only CloudRunV2WorkerPool#read_only}
 
 ---
 
@@ -17566,7 +17444,7 @@ The name of the secret in Cloud Secret Manager.
 
 Format: {secret} if the secret is in the same project. projects/{project}/secrets/{secret} if the secret is in a different project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#secret CloudRunV2WorkerPool#secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#secret CloudRunV2WorkerPool#secret}
 
 ---
 
@@ -17578,7 +17456,7 @@ Integer representation of mode bits to use on created files by default.
 
 Must be a value between 0000 and 0777 (octal), defaulting to 0444. Directories within the path are not affected by this setting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#default_mode CloudRunV2WorkerPool#default_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#default_mode CloudRunV2WorkerPool#default_mode}
 
 ---
 
@@ -17588,7 +17466,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 items block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/cloud_run_v2_worker_pool#items CloudRunV2WorkerPool#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_run_v2_worker_pool#items CloudRunV2WorkerPool#items}
 
 ---
 

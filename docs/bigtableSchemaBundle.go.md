@@ -4,12 +4,12 @@
 
 ### BigtableSchemaBundle <a name="BigtableSchemaBundle" id="@cdktn/provider-google.bigtableSchemaBundle.BigtableSchemaBundle"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/bigtable_schema_bundle google_bigtable_schema_bundle}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/bigtable_schema_bundle google_bigtable_schema_bundle}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.bigtableSchemaBundle.BigtableSchemaBundle.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/bigtableschemabundle"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/bigtableschemabundle"
 
 bigtableschemabundle.NewBigtableSchemaBundle(scope Construct, id *string, config BigtableSchemaBundleConfig) BigtableSchemaBundle
 ```
@@ -475,7 +475,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.bigtableSchemaBundle.BigtableSchemaBundle.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/bigtableschemabundle"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/bigtableschemabundle"
 
 bigtableschemabundle.BigtableSchemaBundle_IsConstruct(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.bigtableSchemaBundle.BigtableSchemaBundle.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/bigtableschemabundle"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/bigtableschemabundle"
 
 bigtableschemabundle.BigtableSchemaBundle_IsTerraformElement(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ bigtableschemabundle.BigtableSchemaBundle_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.bigtableSchemaBundle.BigtableSchemaBundle.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/bigtableschemabundle"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/bigtableschemabundle"
 
 bigtableschemabundle.BigtableSchemaBundle_IsTerraformResource(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ bigtableschemabundle.BigtableSchemaBundle_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.bigtableSchemaBundle.BigtableSchemaBundle.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/bigtableschemabundle"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/bigtableschemabundle"
 
 bigtableschemabundle.BigtableSchemaBundle_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -564,7 +564,7 @@ The construct id used in the generated config for the BigtableSchemaBundle to im
 
 The id of the existing BigtableSchemaBundle that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/bigtable_schema_bundle#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/bigtable_schema_bundle#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -984,7 +984,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.bigtableSchemaBundle.BigtableSchemaBundleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/bigtableschemabundle"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/bigtableschemabundle"
 
 &bigtableschemabundle.BigtableSchemaBundleConfig {
 	Connection: interface{},
@@ -994,7 +994,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/bigtableschemabu
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	ProtoSchema: github.com/cdktn-io/cdktn-provider-google-go/google/v20.bigtableSchemaBundle.BigtableSchemaBundleProtoSchema,
+	ProtoSchema: github.com/cdktn-io/cdktn-provider-google-go/google/v21.bigtableSchemaBundle.BigtableSchemaBundleProtoSchema,
 	SchemaBundleId: *string,
 	DeletionPolicy: *string,
 	Id: *string,
@@ -1002,7 +1002,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/bigtableschemabu
 	Instance: *string,
 	Project: *string,
 	Table: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.bigtableSchemaBundle.BigtableSchemaBundleTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.bigtableSchemaBundle.BigtableSchemaBundleTimeouts,
 }
 ```
 
@@ -1020,10 +1020,10 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/bigtableschemabu
 | <code><a href="#@cdktn/provider-google.bigtableSchemaBundle.BigtableSchemaBundleConfig.property.protoSchema">ProtoSchema</a></code> | <code><a href="#@cdktn/provider-google.bigtableSchemaBundle.BigtableSchemaBundleProtoSchema">BigtableSchemaBundleProtoSchema</a></code> | proto_schema block. |
 | <code><a href="#@cdktn/provider-google.bigtableSchemaBundle.BigtableSchemaBundleConfig.property.schemaBundleId">SchemaBundleId</a></code> | <code>*string</code> | The unique name of the schema bundle in the form '[_a-zA-Z0-9][-_.a-zA-Z0-9]*'. |
 | <code><a href="#@cdktn/provider-google.bigtableSchemaBundle.BigtableSchemaBundleConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.bigtableSchemaBundle.BigtableSchemaBundleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/bigtable_schema_bundle#id BigtableSchemaBundle#id}. |
+| <code><a href="#@cdktn/provider-google.bigtableSchemaBundle.BigtableSchemaBundleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/bigtable_schema_bundle#id BigtableSchemaBundle#id}. |
 | <code><a href="#@cdktn/provider-google.bigtableSchemaBundle.BigtableSchemaBundleConfig.property.ignoreWarnings">IgnoreWarnings</a></code> | <code>interface{}</code> | If true, allow backwards incompatible changes. |
 | <code><a href="#@cdktn/provider-google.bigtableSchemaBundle.BigtableSchemaBundleConfig.property.instance">Instance</a></code> | <code>*string</code> | The name of the instance to create the schema bundle within. |
-| <code><a href="#@cdktn/provider-google.bigtableSchemaBundle.BigtableSchemaBundleConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/bigtable_schema_bundle#project BigtableSchemaBundle#project}. |
+| <code><a href="#@cdktn/provider-google.bigtableSchemaBundle.BigtableSchemaBundleConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/bigtable_schema_bundle#project BigtableSchemaBundle#project}. |
 | <code><a href="#@cdktn/provider-google.bigtableSchemaBundle.BigtableSchemaBundleConfig.property.table">Table</a></code> | <code>*string</code> | The name of the table to create the schema bundle within. |
 | <code><a href="#@cdktn/provider-google.bigtableSchemaBundle.BigtableSchemaBundleConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.bigtableSchemaBundle.BigtableSchemaBundleTimeouts">BigtableSchemaBundleTimeouts</a></code> | timeouts block. |
 
@@ -1109,7 +1109,7 @@ ProtoSchema BigtableSchemaBundleProtoSchema
 
 proto_schema block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/bigtable_schema_bundle#proto_schema BigtableSchemaBundle#proto_schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/bigtable_schema_bundle#proto_schema BigtableSchemaBundle#proto_schema}
 
 ---
 
@@ -1123,7 +1123,7 @@ SchemaBundleId *string
 
 The unique name of the schema bundle in the form '[_a-zA-Z0-9][-_.a-zA-Z0-9]*'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/bigtable_schema_bundle#schema_bundle_id BigtableSchemaBundle#schema_bundle_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/bigtable_schema_bundle#schema_bundle_id BigtableSchemaBundle#schema_bundle_id}
 
 ---
 
@@ -1144,7 +1144,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/bigtable_schema_bundle#deletion_policy BigtableSchemaBundle#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/bigtable_schema_bundle#deletion_policy BigtableSchemaBundle#deletion_policy}
 
 ---
 
@@ -1156,7 +1156,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/bigtable_schema_bundle#id BigtableSchemaBundle#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/bigtable_schema_bundle#id BigtableSchemaBundle#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1173,7 +1173,7 @@ IgnoreWarnings interface{}
 
 If true, allow backwards incompatible changes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/bigtable_schema_bundle#ignore_warnings BigtableSchemaBundle#ignore_warnings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/bigtable_schema_bundle#ignore_warnings BigtableSchemaBundle#ignore_warnings}
 
 ---
 
@@ -1187,7 +1187,7 @@ Instance *string
 
 The name of the instance to create the schema bundle within.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/bigtable_schema_bundle#instance BigtableSchemaBundle#instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/bigtable_schema_bundle#instance BigtableSchemaBundle#instance}
 
 ---
 
@@ -1199,7 +1199,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/bigtable_schema_bundle#project BigtableSchemaBundle#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/bigtable_schema_bundle#project BigtableSchemaBundle#project}.
 
 ---
 
@@ -1213,7 +1213,7 @@ Table *string
 
 The name of the table to create the schema bundle within.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/bigtable_schema_bundle#table BigtableSchemaBundle#table}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/bigtable_schema_bundle#table BigtableSchemaBundle#table}
 
 ---
 
@@ -1227,7 +1227,7 @@ Timeouts BigtableSchemaBundleTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/bigtable_schema_bundle#timeouts BigtableSchemaBundle#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/bigtable_schema_bundle#timeouts BigtableSchemaBundle#timeouts}
 
 ---
 
@@ -1236,7 +1236,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.bigtableSchemaBundle.BigtableSchemaBundleProtoSchema.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/bigtableschemabundle"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/bigtableschemabundle"
 
 &bigtableschemabundle.BigtableSchemaBundleProtoSchema {
 	ProtoDescriptors: *string,
@@ -1261,7 +1261,7 @@ ProtoDescriptors *string
 
 Base64 encoded content of the file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/bigtable_schema_bundle#proto_descriptors BigtableSchemaBundle#proto_descriptors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/bigtable_schema_bundle#proto_descriptors BigtableSchemaBundle#proto_descriptors}
 
 ---
 
@@ -1270,7 +1270,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.bigtableSchemaBundle.BigtableSchemaBundleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/bigtableschemabundle"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/bigtableschemabundle"
 
 &bigtableschemabundle.BigtableSchemaBundleTimeouts {
 	Create: *string,
@@ -1283,9 +1283,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/bigtableschemabu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.bigtableSchemaBundle.BigtableSchemaBundleTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/bigtable_schema_bundle#create BigtableSchemaBundle#create}. |
-| <code><a href="#@cdktn/provider-google.bigtableSchemaBundle.BigtableSchemaBundleTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/bigtable_schema_bundle#delete BigtableSchemaBundle#delete}. |
-| <code><a href="#@cdktn/provider-google.bigtableSchemaBundle.BigtableSchemaBundleTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/bigtable_schema_bundle#update BigtableSchemaBundle#update}. |
+| <code><a href="#@cdktn/provider-google.bigtableSchemaBundle.BigtableSchemaBundleTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/bigtable_schema_bundle#create BigtableSchemaBundle#create}. |
+| <code><a href="#@cdktn/provider-google.bigtableSchemaBundle.BigtableSchemaBundleTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/bigtable_schema_bundle#delete BigtableSchemaBundle#delete}. |
+| <code><a href="#@cdktn/provider-google.bigtableSchemaBundle.BigtableSchemaBundleTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/bigtable_schema_bundle#update BigtableSchemaBundle#update}. |
 
 ---
 
@@ -1297,7 +1297,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/bigtable_schema_bundle#create BigtableSchemaBundle#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/bigtable_schema_bundle#create BigtableSchemaBundle#create}.
 
 ---
 
@@ -1309,7 +1309,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/bigtable_schema_bundle#delete BigtableSchemaBundle#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/bigtable_schema_bundle#delete BigtableSchemaBundle#delete}.
 
 ---
 
@@ -1321,7 +1321,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/bigtable_schema_bundle#update BigtableSchemaBundle#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/bigtable_schema_bundle#update BigtableSchemaBundle#update}.
 
 ---
 
@@ -1332,7 +1332,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.bigtableSchemaBundle.BigtableSchemaBundleProtoSchemaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/bigtableschemabundle"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/bigtableschemabundle"
 
 bigtableschemabundle.NewBigtableSchemaBundleProtoSchemaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BigtableSchemaBundleProtoSchemaOutputReference
 ```
@@ -1603,7 +1603,7 @@ func InternalValue() BigtableSchemaBundleProtoSchema
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.bigtableSchemaBundle.BigtableSchemaBundleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/bigtableschemabundle"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/bigtableschemabundle"
 
 bigtableschemabundle.NewBigtableSchemaBundleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BigtableSchemaBundleTimeoutsOutputReference
 ```

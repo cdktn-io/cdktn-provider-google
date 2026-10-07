@@ -4,12 +4,12 @@
 
 ### DataGoogleStorageControlProjectIntelligenceFindingRevisions <a name="DataGoogleStorageControlProjectIntelligenceFindingRevisions" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisions"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/storage_control_project_intelligence_finding_revisions google_storage_control_project_intelligence_finding_revisions}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/storage_control_project_intelligence_finding_revisions google_storage_control_project_intelligence_finding_revisions}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 datagooglestoragecontrolprojectintelligencefindingrevisions.NewDataGoogleStorageControlProjectIntelligenceFindingRevisions(scope Construct, id *string, config DataGoogleStorageControlProjectIntelligenceFindingRevisionsConfig) DataGoogleStorageControlProjectIntelligenceFindingRevisions
 ```
@@ -326,7 +326,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisions.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 datagooglestoragecontrolprojectintelligencefindingrevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisions_IsConstruct(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisions.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 datagooglestoragecontrolprojectintelligencefindingrevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisions_IsTerraformElement(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datagooglestoragecontrolprojectintelligencefindingrevisions.DataGoogleStorageCon
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisions.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 datagooglestoragecontrolprojectintelligencefindingrevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisions_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -386,7 +386,7 @@ datagooglestoragecontrolprojectintelligencefindingrevisions.DataGoogleStorageCon
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisions.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 datagooglestoragecontrolprojectintelligencefindingrevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisions_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -415,7 +415,7 @@ The construct id used in the generated config for the DataGoogleStorageControlPr
 
 The id of the existing DataGoogleStorageControlProjectIntelligenceFindingRevisions that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/storage_control_project_intelligence_finding_revisions#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/storage_control_project_intelligence_finding_revisions#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -714,7 +714,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 &datagooglestoragecontrolprojectintelligencefindingrevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsConfig {
 	Connection: interface{},
@@ -744,7 +744,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestorag
 | <code><a href="#@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsConfig.property.findingId">FindingId</a></code> | <code>*string</code> | The ID of the intelligence finding. |
-| <code><a href="#@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/storage_control_project_intelligence_finding_revisions#id DataGoogleStorageControlProjectIntelligenceFindingRevisions#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/storage_control_project_intelligence_finding_revisions#id DataGoogleStorageControlProjectIntelligenceFindingRevisions#id}. |
 | <code><a href="#@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsConfig.property.location">Location</a></code> | <code>*string</code> | The location of the intelligence finding. Currently default value is global and users cannot use for input for now. |
 | <code><a href="#@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsConfig.property.pageSize">PageSize</a></code> | <code>*f64</code> | The maximum number of IntelligenceFindingRevision resources to return. |
 | <code><a href="#@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsConfig.property.project">Project</a></code> | <code>*string</code> | The ID of the project in which the resource belongs. |
@@ -831,7 +831,7 @@ FindingId *string
 
 The ID of the intelligence finding.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/storage_control_project_intelligence_finding_revisions#finding_id DataGoogleStorageControlProjectIntelligenceFindingRevisions#finding_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/storage_control_project_intelligence_finding_revisions#finding_id DataGoogleStorageControlProjectIntelligenceFindingRevisions#finding_id}
 
 ---
 
@@ -843,7 +843,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/storage_control_project_intelligence_finding_revisions#id DataGoogleStorageControlProjectIntelligenceFindingRevisions#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/storage_control_project_intelligence_finding_revisions#id DataGoogleStorageControlProjectIntelligenceFindingRevisions#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -860,7 +860,7 @@ Location *string
 
 The location of the intelligence finding. Currently default value is global and users cannot use for input for now.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/storage_control_project_intelligence_finding_revisions#location DataGoogleStorageControlProjectIntelligenceFindingRevisions#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/storage_control_project_intelligence_finding_revisions#location DataGoogleStorageControlProjectIntelligenceFindingRevisions#location}
 
 ---
 
@@ -874,7 +874,7 @@ PageSize *f64
 
 The maximum number of IntelligenceFindingRevision resources to return.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/storage_control_project_intelligence_finding_revisions#page_size DataGoogleStorageControlProjectIntelligenceFindingRevisions#page_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/storage_control_project_intelligence_finding_revisions#page_size DataGoogleStorageControlProjectIntelligenceFindingRevisions#page_size}
 
 ---
 
@@ -890,7 +890,7 @@ The ID of the project in which the resource belongs.
 
 If it is not provided, the provider project is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/storage_control_project_intelligence_finding_revisions#project DataGoogleStorageControlProjectIntelligenceFindingRevisions#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/storage_control_project_intelligence_finding_revisions#project DataGoogleStorageControlProjectIntelligenceFindingRevisions#project}
 
 ---
 
@@ -899,7 +899,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 &datagooglestoragecontrolprojectintelligencefindingrevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisions {
 
@@ -912,7 +912,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestorag
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshot.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 &datagooglestoragecontrolprojectintelligencefindingrevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshot {
 
@@ -925,7 +925,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestorag
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotColdlineAndArchivalStorageOperationsSpike.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 &datagooglestoragecontrolprojectintelligencefindingrevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotColdlineAndArchivalStorageOperationsSpike {
 
@@ -938,7 +938,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestorag
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotColdlineAndArchivalStorageOperationsSpikeTopBuckets.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 &datagooglestoragecontrolprojectintelligencefindingrevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotColdlineAndArchivalStorageOperationsSpikeTopBuckets {
 
@@ -951,7 +951,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestorag
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotColdlineAndArchivalStorageOperationsSpikeTopBucketsContribution.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 &datagooglestoragecontrolprojectintelligencefindingrevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotColdlineAndArchivalStorageOperationsSpikeTopBucketsContribution {
 
@@ -964,7 +964,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestorag
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotColdlineAndArchivalStorageOperationsSpikeTopBucketsContributionTopPrefixes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 &datagooglestoragecontrolprojectintelligencefindingrevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotColdlineAndArchivalStorageOperationsSpikeTopBucketsContributionTopPrefixes {
 
@@ -977,7 +977,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestorag
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotColdlineAndArchivalStorageOperationsSpikeTopBucketsError.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 &datagooglestoragecontrolprojectintelligencefindingrevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotColdlineAndArchivalStorageOperationsSpikeTopBucketsError {
 
@@ -990,7 +990,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestorag
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotCrossRegionEgressSpike.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 &datagooglestoragecontrolprojectintelligencefindingrevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotCrossRegionEgressSpike {
 
@@ -1003,7 +1003,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestorag
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotCrossRegionEgressSpikeTopBuckets.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 &datagooglestoragecontrolprojectintelligencefindingrevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotCrossRegionEgressSpikeTopBuckets {
 
@@ -1016,7 +1016,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestorag
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotCrossRegionEgressSpikeTopBucketsContribution.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 &datagooglestoragecontrolprojectintelligencefindingrevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotCrossRegionEgressSpikeTopBucketsContribution {
 
@@ -1029,7 +1029,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestorag
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotCrossRegionEgressSpikeTopBucketsContributionTopPrefixes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 &datagooglestoragecontrolprojectintelligencefindingrevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotCrossRegionEgressSpikeTopBucketsContributionTopPrefixes {
 
@@ -1042,7 +1042,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestorag
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotCrossRegionEgressSpikeTopBucketsError.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 &datagooglestoragecontrolprojectintelligencefindingrevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotCrossRegionEgressSpikeTopBucketsError {
 
@@ -1055,7 +1055,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestorag
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotObservationPeriod.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 &datagooglestoragecontrolprojectintelligencefindingrevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotObservationPeriod {
 
@@ -1068,7 +1068,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestorag
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotStorageGrowthAboveTrend.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 &datagooglestoragecontrolprojectintelligencefindingrevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotStorageGrowthAboveTrend {
 
@@ -1081,7 +1081,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestorag
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotStorageGrowthAboveTrendTopBuckets.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 &datagooglestoragecontrolprojectintelligencefindingrevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotStorageGrowthAboveTrendTopBuckets {
 
@@ -1094,7 +1094,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestorag
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotStorageGrowthAboveTrendTopBucketsContribution.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 &datagooglestoragecontrolprojectintelligencefindingrevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotStorageGrowthAboveTrendTopBucketsContribution {
 
@@ -1107,7 +1107,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestorag
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotStorageGrowthAboveTrendTopBucketsContributionTopPrefixes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 &datagooglestoragecontrolprojectintelligencefindingrevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotStorageGrowthAboveTrendTopBucketsContributionTopPrefixes {
 
@@ -1120,7 +1120,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestorag
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotStorageGrowthAboveTrendTopBucketsError.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 &datagooglestoragecontrolprojectintelligencefindingrevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotStorageGrowthAboveTrendTopBucketsError {
 
@@ -1133,7 +1133,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestorag
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotThrottledRequestsSpike.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 &datagooglestoragecontrolprojectintelligencefindingrevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotThrottledRequestsSpike {
 
@@ -1146,7 +1146,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestorag
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotThrottledRequestsSpikeTopBuckets.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 &datagooglestoragecontrolprojectintelligencefindingrevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotThrottledRequestsSpikeTopBuckets {
 
@@ -1159,7 +1159,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestorag
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotThrottledRequestsSpikeTopBucketsContribution.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 &datagooglestoragecontrolprojectintelligencefindingrevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotThrottledRequestsSpikeTopBucketsContribution {
 
@@ -1172,7 +1172,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestorag
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotThrottledRequestsSpikeTopBucketsContributionTopPrefixes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 &datagooglestoragecontrolprojectintelligencefindingrevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotThrottledRequestsSpikeTopBucketsContributionTopPrefixes {
 
@@ -1185,7 +1185,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestorag
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotThrottledRequestsSpikeTopBucketsError.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 &datagooglestoragecontrolprojectintelligencefindingrevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotThrottledRequestsSpikeTopBucketsError {
 
@@ -1200,7 +1200,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestorag
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 datagooglestoragecontrolprojectintelligencefindingrevisions.NewDataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsList
 ```
@@ -1349,7 +1349,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 datagooglestoragecontrolprojectintelligencefindingrevisions.NewDataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsOutputReference
 ```
@@ -1649,7 +1649,7 @@ func InternalValue() DataGoogleStorageControlProjectIntelligenceFindingRevisions
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotColdlineAndArchivalStorageOperationsSpikeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 datagooglestoragecontrolprojectintelligencefindingrevisions.NewDataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotColdlineAndArchivalStorageOperationsSpikeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotColdlineAndArchivalStorageOperationsSpikeList
 ```
@@ -1798,7 +1798,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotColdlineAndArchivalStorageOperationsSpikeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 datagooglestoragecontrolprojectintelligencefindingrevisions.NewDataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotColdlineAndArchivalStorageOperationsSpikeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotColdlineAndArchivalStorageOperationsSpikeOutputReference
 ```
@@ -2098,7 +2098,7 @@ func InternalValue() DataGoogleStorageControlProjectIntelligenceFindingRevisions
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotColdlineAndArchivalStorageOperationsSpikeTopBucketsContributionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 datagooglestoragecontrolprojectintelligencefindingrevisions.NewDataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotColdlineAndArchivalStorageOperationsSpikeTopBucketsContributionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotColdlineAndArchivalStorageOperationsSpikeTopBucketsContributionList
 ```
@@ -2247,7 +2247,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotColdlineAndArchivalStorageOperationsSpikeTopBucketsContributionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 datagooglestoragecontrolprojectintelligencefindingrevisions.NewDataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotColdlineAndArchivalStorageOperationsSpikeTopBucketsContributionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotColdlineAndArchivalStorageOperationsSpikeTopBucketsContributionOutputReference
 ```
@@ -2525,7 +2525,7 @@ func InternalValue() DataGoogleStorageControlProjectIntelligenceFindingRevisions
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotColdlineAndArchivalStorageOperationsSpikeTopBucketsContributionTopPrefixesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 datagooglestoragecontrolprojectintelligencefindingrevisions.NewDataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotColdlineAndArchivalStorageOperationsSpikeTopBucketsContributionTopPrefixesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotColdlineAndArchivalStorageOperationsSpikeTopBucketsContributionTopPrefixesList
 ```
@@ -2674,7 +2674,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotColdlineAndArchivalStorageOperationsSpikeTopBucketsContributionTopPrefixesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 datagooglestoragecontrolprojectintelligencefindingrevisions.NewDataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotColdlineAndArchivalStorageOperationsSpikeTopBucketsContributionTopPrefixesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotColdlineAndArchivalStorageOperationsSpikeTopBucketsContributionTopPrefixesOutputReference
 ```
@@ -2996,7 +2996,7 @@ func InternalValue() DataGoogleStorageControlProjectIntelligenceFindingRevisions
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotColdlineAndArchivalStorageOperationsSpikeTopBucketsErrorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 datagooglestoragecontrolprojectintelligencefindingrevisions.NewDataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotColdlineAndArchivalStorageOperationsSpikeTopBucketsErrorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotColdlineAndArchivalStorageOperationsSpikeTopBucketsErrorList
 ```
@@ -3145,7 +3145,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotColdlineAndArchivalStorageOperationsSpikeTopBucketsErrorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 datagooglestoragecontrolprojectintelligencefindingrevisions.NewDataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotColdlineAndArchivalStorageOperationsSpikeTopBucketsErrorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotColdlineAndArchivalStorageOperationsSpikeTopBucketsErrorOutputReference
 ```
@@ -3434,7 +3434,7 @@ func InternalValue() DataGoogleStorageControlProjectIntelligenceFindingRevisions
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotColdlineAndArchivalStorageOperationsSpikeTopBucketsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 datagooglestoragecontrolprojectintelligencefindingrevisions.NewDataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotColdlineAndArchivalStorageOperationsSpikeTopBucketsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotColdlineAndArchivalStorageOperationsSpikeTopBucketsList
 ```
@@ -3583,7 +3583,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotColdlineAndArchivalStorageOperationsSpikeTopBucketsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 datagooglestoragecontrolprojectintelligencefindingrevisions.NewDataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotColdlineAndArchivalStorageOperationsSpikeTopBucketsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotColdlineAndArchivalStorageOperationsSpikeTopBucketsOutputReference
 ```
@@ -3938,7 +3938,7 @@ func InternalValue() DataGoogleStorageControlProjectIntelligenceFindingRevisions
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotCrossRegionEgressSpikeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 datagooglestoragecontrolprojectintelligencefindingrevisions.NewDataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotCrossRegionEgressSpikeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotCrossRegionEgressSpikeList
 ```
@@ -4087,7 +4087,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotCrossRegionEgressSpikeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 datagooglestoragecontrolprojectintelligencefindingrevisions.NewDataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotCrossRegionEgressSpikeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotCrossRegionEgressSpikeOutputReference
 ```
@@ -4387,7 +4387,7 @@ func InternalValue() DataGoogleStorageControlProjectIntelligenceFindingRevisions
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotCrossRegionEgressSpikeTopBucketsContributionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 datagooglestoragecontrolprojectintelligencefindingrevisions.NewDataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotCrossRegionEgressSpikeTopBucketsContributionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotCrossRegionEgressSpikeTopBucketsContributionList
 ```
@@ -4536,7 +4536,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotCrossRegionEgressSpikeTopBucketsContributionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 datagooglestoragecontrolprojectintelligencefindingrevisions.NewDataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotCrossRegionEgressSpikeTopBucketsContributionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotCrossRegionEgressSpikeTopBucketsContributionOutputReference
 ```
@@ -4814,7 +4814,7 @@ func InternalValue() DataGoogleStorageControlProjectIntelligenceFindingRevisions
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotCrossRegionEgressSpikeTopBucketsContributionTopPrefixesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 datagooglestoragecontrolprojectintelligencefindingrevisions.NewDataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotCrossRegionEgressSpikeTopBucketsContributionTopPrefixesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotCrossRegionEgressSpikeTopBucketsContributionTopPrefixesList
 ```
@@ -4963,7 +4963,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotCrossRegionEgressSpikeTopBucketsContributionTopPrefixesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 datagooglestoragecontrolprojectintelligencefindingrevisions.NewDataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotCrossRegionEgressSpikeTopBucketsContributionTopPrefixesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotCrossRegionEgressSpikeTopBucketsContributionTopPrefixesOutputReference
 ```
@@ -5285,7 +5285,7 @@ func InternalValue() DataGoogleStorageControlProjectIntelligenceFindingRevisions
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotCrossRegionEgressSpikeTopBucketsErrorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 datagooglestoragecontrolprojectintelligencefindingrevisions.NewDataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotCrossRegionEgressSpikeTopBucketsErrorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotCrossRegionEgressSpikeTopBucketsErrorList
 ```
@@ -5434,7 +5434,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotCrossRegionEgressSpikeTopBucketsErrorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 datagooglestoragecontrolprojectintelligencefindingrevisions.NewDataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotCrossRegionEgressSpikeTopBucketsErrorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotCrossRegionEgressSpikeTopBucketsErrorOutputReference
 ```
@@ -5723,7 +5723,7 @@ func InternalValue() DataGoogleStorageControlProjectIntelligenceFindingRevisions
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotCrossRegionEgressSpikeTopBucketsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 datagooglestoragecontrolprojectintelligencefindingrevisions.NewDataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotCrossRegionEgressSpikeTopBucketsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotCrossRegionEgressSpikeTopBucketsList
 ```
@@ -5872,7 +5872,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotCrossRegionEgressSpikeTopBucketsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 datagooglestoragecontrolprojectintelligencefindingrevisions.NewDataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotCrossRegionEgressSpikeTopBucketsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotCrossRegionEgressSpikeTopBucketsOutputReference
 ```
@@ -6227,7 +6227,7 @@ func InternalValue() DataGoogleStorageControlProjectIntelligenceFindingRevisions
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 datagooglestoragecontrolprojectintelligencefindingrevisions.NewDataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotList
 ```
@@ -6376,7 +6376,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotObservationPeriodList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 datagooglestoragecontrolprojectintelligencefindingrevisions.NewDataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotObservationPeriodList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotObservationPeriodList
 ```
@@ -6525,7 +6525,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotObservationPeriodOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 datagooglestoragecontrolprojectintelligencefindingrevisions.NewDataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotObservationPeriodOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotObservationPeriodOutputReference
 ```
@@ -6814,7 +6814,7 @@ func InternalValue() DataGoogleStorageControlProjectIntelligenceFindingRevisions
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 datagooglestoragecontrolprojectintelligencefindingrevisions.NewDataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotOutputReference
 ```
@@ -7235,7 +7235,7 @@ func InternalValue() DataGoogleStorageControlProjectIntelligenceFindingRevisions
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotStorageGrowthAboveTrendList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 datagooglestoragecontrolprojectintelligencefindingrevisions.NewDataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotStorageGrowthAboveTrendList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotStorageGrowthAboveTrendList
 ```
@@ -7384,7 +7384,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotStorageGrowthAboveTrendOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 datagooglestoragecontrolprojectintelligencefindingrevisions.NewDataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotStorageGrowthAboveTrendOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotStorageGrowthAboveTrendOutputReference
 ```
@@ -7684,7 +7684,7 @@ func InternalValue() DataGoogleStorageControlProjectIntelligenceFindingRevisions
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotStorageGrowthAboveTrendTopBucketsContributionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 datagooglestoragecontrolprojectintelligencefindingrevisions.NewDataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotStorageGrowthAboveTrendTopBucketsContributionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotStorageGrowthAboveTrendTopBucketsContributionList
 ```
@@ -7833,7 +7833,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotStorageGrowthAboveTrendTopBucketsContributionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 datagooglestoragecontrolprojectintelligencefindingrevisions.NewDataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotStorageGrowthAboveTrendTopBucketsContributionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotStorageGrowthAboveTrendTopBucketsContributionOutputReference
 ```
@@ -8111,7 +8111,7 @@ func InternalValue() DataGoogleStorageControlProjectIntelligenceFindingRevisions
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotStorageGrowthAboveTrendTopBucketsContributionTopPrefixesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 datagooglestoragecontrolprojectintelligencefindingrevisions.NewDataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotStorageGrowthAboveTrendTopBucketsContributionTopPrefixesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotStorageGrowthAboveTrendTopBucketsContributionTopPrefixesList
 ```
@@ -8260,7 +8260,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotStorageGrowthAboveTrendTopBucketsContributionTopPrefixesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 datagooglestoragecontrolprojectintelligencefindingrevisions.NewDataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotStorageGrowthAboveTrendTopBucketsContributionTopPrefixesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotStorageGrowthAboveTrendTopBucketsContributionTopPrefixesOutputReference
 ```
@@ -8582,7 +8582,7 @@ func InternalValue() DataGoogleStorageControlProjectIntelligenceFindingRevisions
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotStorageGrowthAboveTrendTopBucketsErrorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 datagooglestoragecontrolprojectintelligencefindingrevisions.NewDataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotStorageGrowthAboveTrendTopBucketsErrorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotStorageGrowthAboveTrendTopBucketsErrorList
 ```
@@ -8731,7 +8731,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotStorageGrowthAboveTrendTopBucketsErrorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 datagooglestoragecontrolprojectintelligencefindingrevisions.NewDataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotStorageGrowthAboveTrendTopBucketsErrorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotStorageGrowthAboveTrendTopBucketsErrorOutputReference
 ```
@@ -9020,7 +9020,7 @@ func InternalValue() DataGoogleStorageControlProjectIntelligenceFindingRevisions
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotStorageGrowthAboveTrendTopBucketsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 datagooglestoragecontrolprojectintelligencefindingrevisions.NewDataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotStorageGrowthAboveTrendTopBucketsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotStorageGrowthAboveTrendTopBucketsList
 ```
@@ -9169,7 +9169,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotStorageGrowthAboveTrendTopBucketsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 datagooglestoragecontrolprojectintelligencefindingrevisions.NewDataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotStorageGrowthAboveTrendTopBucketsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotStorageGrowthAboveTrendTopBucketsOutputReference
 ```
@@ -9524,7 +9524,7 @@ func InternalValue() DataGoogleStorageControlProjectIntelligenceFindingRevisions
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotThrottledRequestsSpikeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 datagooglestoragecontrolprojectintelligencefindingrevisions.NewDataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotThrottledRequestsSpikeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotThrottledRequestsSpikeList
 ```
@@ -9673,7 +9673,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotThrottledRequestsSpikeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 datagooglestoragecontrolprojectintelligencefindingrevisions.NewDataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotThrottledRequestsSpikeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotThrottledRequestsSpikeOutputReference
 ```
@@ -9973,7 +9973,7 @@ func InternalValue() DataGoogleStorageControlProjectIntelligenceFindingRevisions
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotThrottledRequestsSpikeTopBucketsContributionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 datagooglestoragecontrolprojectintelligencefindingrevisions.NewDataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotThrottledRequestsSpikeTopBucketsContributionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotThrottledRequestsSpikeTopBucketsContributionList
 ```
@@ -10122,7 +10122,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotThrottledRequestsSpikeTopBucketsContributionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 datagooglestoragecontrolprojectintelligencefindingrevisions.NewDataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotThrottledRequestsSpikeTopBucketsContributionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotThrottledRequestsSpikeTopBucketsContributionOutputReference
 ```
@@ -10400,7 +10400,7 @@ func InternalValue() DataGoogleStorageControlProjectIntelligenceFindingRevisions
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotThrottledRequestsSpikeTopBucketsContributionTopPrefixesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 datagooglestoragecontrolprojectintelligencefindingrevisions.NewDataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotThrottledRequestsSpikeTopBucketsContributionTopPrefixesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotThrottledRequestsSpikeTopBucketsContributionTopPrefixesList
 ```
@@ -10549,7 +10549,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotThrottledRequestsSpikeTopBucketsContributionTopPrefixesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 datagooglestoragecontrolprojectintelligencefindingrevisions.NewDataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotThrottledRequestsSpikeTopBucketsContributionTopPrefixesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotThrottledRequestsSpikeTopBucketsContributionTopPrefixesOutputReference
 ```
@@ -10871,7 +10871,7 @@ func InternalValue() DataGoogleStorageControlProjectIntelligenceFindingRevisions
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotThrottledRequestsSpikeTopBucketsErrorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 datagooglestoragecontrolprojectintelligencefindingrevisions.NewDataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotThrottledRequestsSpikeTopBucketsErrorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotThrottledRequestsSpikeTopBucketsErrorList
 ```
@@ -11020,7 +11020,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotThrottledRequestsSpikeTopBucketsErrorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 datagooglestoragecontrolprojectintelligencefindingrevisions.NewDataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotThrottledRequestsSpikeTopBucketsErrorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotThrottledRequestsSpikeTopBucketsErrorOutputReference
 ```
@@ -11309,7 +11309,7 @@ func InternalValue() DataGoogleStorageControlProjectIntelligenceFindingRevisions
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotThrottledRequestsSpikeTopBucketsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 datagooglestoragecontrolprojectintelligencefindingrevisions.NewDataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotThrottledRequestsSpikeTopBucketsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotThrottledRequestsSpikeTopBucketsList
 ```
@@ -11458,7 +11458,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleStorageControlProjectIntelligenceFindingRevisions.DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotThrottledRequestsSpikeTopBucketsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglestoragecontrolprojectintelligencefindingrevisions"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglestoragecontrolprojectintelligencefindingrevisions"
 
 datagooglestoragecontrolprojectintelligencefindingrevisions.NewDataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotThrottledRequestsSpikeTopBucketsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleStorageControlProjectIntelligenceFindingRevisionsRevisionsSnapshotThrottledRequestsSpikeTopBucketsOutputReference
 ```

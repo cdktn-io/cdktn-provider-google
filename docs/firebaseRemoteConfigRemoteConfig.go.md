@@ -4,12 +4,12 @@
 
 ### FirebaseRemoteConfigRemoteConfig <a name="FirebaseRemoteConfigRemoteConfig" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/firebase_remote_config_remote_config google_firebase_remote_config_remote_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/firebase_remote_config_remote_config google_firebase_remote_config_remote_config}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/firebaseremoteconfigremoteconfig"
 
 firebaseremoteconfigremoteconfig.NewFirebaseRemoteConfigRemoteConfig(scope Construct, id *string, config FirebaseRemoteConfigRemoteConfigConfig) FirebaseRemoteConfigRemoteConfig
 ```
@@ -494,7 +494,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/firebaseremoteconfigremoteconfig"
 
 firebaseremoteconfigremoteconfig.FirebaseRemoteConfigRemoteConfig_IsConstruct(x interface{}) *bool
 ```
@@ -526,7 +526,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/firebaseremoteconfigremoteconfig"
 
 firebaseremoteconfigremoteconfig.FirebaseRemoteConfigRemoteConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -540,7 +540,7 @@ firebaseremoteconfigremoteconfig.FirebaseRemoteConfigRemoteConfig_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/firebaseremoteconfigremoteconfig"
 
 firebaseremoteconfigremoteconfig.FirebaseRemoteConfigRemoteConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -554,7 +554,7 @@ firebaseremoteconfigremoteconfig.FirebaseRemoteConfigRemoteConfig_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/firebaseremoteconfigremoteconfig"
 
 firebaseremoteconfigremoteconfig.FirebaseRemoteConfigRemoteConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -583,7 +583,7 @@ The construct id used in the generated config for the FirebaseRemoteConfigRemote
 
 The id of the existing FirebaseRemoteConfigRemoteConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/firebase_remote_config_remote_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/firebase_remote_config_remote_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -937,7 +937,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigConditions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/firebaseremoteconfigremoteconfig"
 
 &firebaseremoteconfigremoteconfig.FirebaseRemoteConfigRemoteConfigConditions {
 	Expression: *string,
@@ -971,7 +971,7 @@ See the documentation regarding
 Expressions](https://firebase.google.com/docs/remote-config/condition-reference)
 for the expected syntax of this field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/firebase_remote_config_remote_config#expression FirebaseRemoteConfigRemoteConfig#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/firebase_remote_config_remote_config#expression FirebaseRemoteConfigRemoteConfig#expression}
 
 ---
 
@@ -985,7 +985,7 @@ Name *string
 
 A non-empty and unique name of this condition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/firebase_remote_config_remote_config#name FirebaseRemoteConfigRemoteConfig#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/firebase_remote_config_remote_config#name FirebaseRemoteConfigRemoteConfig#name}
 
 ---
 
@@ -1001,7 +1001,7 @@ The color associated with this condition for display purposes in the Firebase Co
 
 Not specifying this value results in the Console picking an arbitrary color to associate with the condition. Possible values: ["BLUE", "BROWN", "CYAN", "DEEP_ORANGE", "GREEN", "INDIGO", "LIME", "ORANGE", "PINK", "PURPLE", "TEAL"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/firebase_remote_config_remote_config#tag_color FirebaseRemoteConfigRemoteConfig#tag_color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/firebase_remote_config_remote_config#tag_color FirebaseRemoteConfigRemoteConfig#tag_color}
 
 ---
 
@@ -1010,7 +1010,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/firebaseremoteconfigremoteconfig"
 
 &firebaseremoteconfigremoteconfig.FirebaseRemoteConfigRemoteConfigConfig {
 	Connection: interface{},
@@ -1025,7 +1025,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteco
 	ParameterGroups: interface{},
 	Parameters: interface{},
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigTimeouts,
 }
 ```
 
@@ -1041,10 +1041,10 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteco
 | <code><a href="#@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigConfig.property.conditions">Conditions</a></code> | <code>interface{}</code> | conditions block. |
-| <code><a href="#@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/firebase_remote_config_remote_config#id FirebaseRemoteConfigRemoteConfig#id}. |
+| <code><a href="#@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/firebase_remote_config_remote_config#id FirebaseRemoteConfigRemoteConfig#id}. |
 | <code><a href="#@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigConfig.property.parameterGroups">ParameterGroups</a></code> | <code>interface{}</code> | parameter_groups block. |
 | <code><a href="#@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigConfig.property.parameters">Parameters</a></code> | <code>interface{}</code> | parameters block. |
-| <code><a href="#@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/firebase_remote_config_remote_config#project FirebaseRemoteConfigRemoteConfig#project}. |
+| <code><a href="#@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/firebase_remote_config_remote_config#project FirebaseRemoteConfigRemoteConfig#project}. |
 | <code><a href="#@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigTimeouts">FirebaseRemoteConfigRemoteConfigTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1129,7 +1129,7 @@ Conditions interface{}
 
 conditions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/firebase_remote_config_remote_config#conditions FirebaseRemoteConfigRemoteConfig#conditions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/firebase_remote_config_remote_config#conditions FirebaseRemoteConfigRemoteConfig#conditions}
 
 ---
 
@@ -1141,7 +1141,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/firebase_remote_config_remote_config#id FirebaseRemoteConfigRemoteConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/firebase_remote_config_remote_config#id FirebaseRemoteConfigRemoteConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1158,7 +1158,7 @@ ParameterGroups interface{}
 
 parameter_groups block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/firebase_remote_config_remote_config#parameter_groups FirebaseRemoteConfigRemoteConfig#parameter_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/firebase_remote_config_remote_config#parameter_groups FirebaseRemoteConfigRemoteConfig#parameter_groups}
 
 ---
 
@@ -1172,7 +1172,7 @@ Parameters interface{}
 
 parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/firebase_remote_config_remote_config#parameters FirebaseRemoteConfigRemoteConfig#parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/firebase_remote_config_remote_config#parameters FirebaseRemoteConfigRemoteConfig#parameters}
 
 ---
 
@@ -1184,7 +1184,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/firebase_remote_config_remote_config#project FirebaseRemoteConfigRemoteConfig#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/firebase_remote_config_remote_config#project FirebaseRemoteConfigRemoteConfig#project}.
 
 ---
 
@@ -1198,7 +1198,7 @@ Timeouts FirebaseRemoteConfigRemoteConfigTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/firebase_remote_config_remote_config#timeouts FirebaseRemoteConfigRemoteConfig#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/firebase_remote_config_remote_config#timeouts FirebaseRemoteConfigRemoteConfig#timeouts}
 
 ---
 
@@ -1207,7 +1207,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParameterGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/firebaseremoteconfigremoteconfig"
 
 &firebaseremoteconfigremoteconfig.FirebaseRemoteConfigRemoteConfigParameterGroups {
 	ParameterGroupName: *string,
@@ -1220,7 +1220,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteco
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParameterGroups.property.parameterGroupName">ParameterGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/firebase_remote_config_remote_config#parameter_group_name FirebaseRemoteConfigRemoteConfig#parameter_group_name}. |
+| <code><a href="#@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParameterGroups.property.parameterGroupName">ParameterGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/firebase_remote_config_remote_config#parameter_group_name FirebaseRemoteConfigRemoteConfig#parameter_group_name}. |
 | <code><a href="#@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParameterGroups.property.description">Description</a></code> | <code>*string</code> | A description for the group. |
 | <code><a href="#@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParameterGroups.property.parameters">Parameters</a></code> | <code>interface{}</code> | parameters block. |
 
@@ -1234,7 +1234,7 @@ ParameterGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/firebase_remote_config_remote_config#parameter_group_name FirebaseRemoteConfigRemoteConfig#parameter_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/firebase_remote_config_remote_config#parameter_group_name FirebaseRemoteConfigRemoteConfig#parameter_group_name}.
 
 ---
 
@@ -1251,7 +1251,7 @@ A description for the group.
 Its length must be less than or equal to 256
 characters. A description may contain any Unicode characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/firebase_remote_config_remote_config#description FirebaseRemoteConfigRemoteConfig#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/firebase_remote_config_remote_config#description FirebaseRemoteConfigRemoteConfig#description}
 
 ---
 
@@ -1265,7 +1265,7 @@ Parameters interface{}
 
 parameters block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/firebase_remote_config_remote_config#parameters FirebaseRemoteConfigRemoteConfig#parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/firebase_remote_config_remote_config#parameters FirebaseRemoteConfigRemoteConfig#parameters}
 
 ---
 
@@ -1274,12 +1274,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParameterGroupsParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/firebaseremoteconfigremoteconfig"
 
 &firebaseremoteconfigremoteconfig.FirebaseRemoteConfigRemoteConfigParameterGroupsParameters {
 	ParameterName: *string,
 	ConditionalValues: interface{},
-	DefaultValue: github.com/cdktn-io/cdktn-provider-google-go/google/v20.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParameterGroupsParametersDefaultValue,
+	DefaultValue: github.com/cdktn-io/cdktn-provider-google-go/google/v21.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParameterGroupsParametersDefaultValue,
 	Description: *string,
 	ValueType: *string,
 }
@@ -1289,7 +1289,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteco
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParameterGroupsParameters.property.parameterName">ParameterName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/firebase_remote_config_remote_config#parameter_name FirebaseRemoteConfigRemoteConfig#parameter_name}. |
+| <code><a href="#@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParameterGroupsParameters.property.parameterName">ParameterName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/firebase_remote_config_remote_config#parameter_name FirebaseRemoteConfigRemoteConfig#parameter_name}. |
 | <code><a href="#@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParameterGroupsParameters.property.conditionalValues">ConditionalValues</a></code> | <code>interface{}</code> | conditional_values block. |
 | <code><a href="#@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParameterGroupsParameters.property.defaultValue">DefaultValue</a></code> | <code><a href="#@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParameterGroupsParametersDefaultValue">FirebaseRemoteConfigRemoteConfigParameterGroupsParametersDefaultValue</a></code> | default_value block. |
 | <code><a href="#@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParameterGroupsParameters.property.description">Description</a></code> | <code>*string</code> | A description for this Parameter. |
@@ -1305,7 +1305,7 @@ ParameterName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/firebase_remote_config_remote_config#parameter_name FirebaseRemoteConfigRemoteConfig#parameter_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/firebase_remote_config_remote_config#parameter_name FirebaseRemoteConfigRemoteConfig#parameter_name}.
 
 ---
 
@@ -1319,7 +1319,7 @@ ConditionalValues interface{}
 
 conditional_values block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/firebase_remote_config_remote_config#conditional_values FirebaseRemoteConfigRemoteConfig#conditional_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/firebase_remote_config_remote_config#conditional_values FirebaseRemoteConfigRemoteConfig#conditional_values}
 
 ---
 
@@ -1333,7 +1333,7 @@ DefaultValue FirebaseRemoteConfigRemoteConfigParameterGroupsParametersDefaultVal
 
 default_value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/firebase_remote_config_remote_config#default_value FirebaseRemoteConfigRemoteConfig#default_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/firebase_remote_config_remote_config#default_value FirebaseRemoteConfigRemoteConfig#default_value}
 
 ---
 
@@ -1350,7 +1350,7 @@ A description for this Parameter.
 Its length must be less than or equal to
 256 characters . A description may contain any Unicode characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/firebase_remote_config_remote_config#description FirebaseRemoteConfigRemoteConfig#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/firebase_remote_config_remote_config#description FirebaseRemoteConfigRemoteConfig#description}
 
 ---
 
@@ -1366,7 +1366,7 @@ The data type for all values of this parameter in the current version of the tem
 
 Default value: "STRING" Possible values: ["STRING", "BOOLEAN", "NUMBER", "JSON"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/firebase_remote_config_remote_config#value_type FirebaseRemoteConfigRemoteConfig#value_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/firebase_remote_config_remote_config#value_type FirebaseRemoteConfigRemoteConfig#value_type}
 
 ---
 
@@ -1375,7 +1375,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParameterGroupsParametersConditionalValues.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/firebaseremoteconfigremoteconfig"
 
 &firebaseremoteconfigremoteconfig.FirebaseRemoteConfigRemoteConfigParameterGroupsParametersConditionalValues {
 	ConditionName: *string,
@@ -1388,7 +1388,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteco
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParameterGroupsParametersConditionalValues.property.conditionName">ConditionName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/firebase_remote_config_remote_config#condition_name FirebaseRemoteConfigRemoteConfig#condition_name}. |
+| <code><a href="#@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParameterGroupsParametersConditionalValues.property.conditionName">ConditionName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/firebase_remote_config_remote_config#condition_name FirebaseRemoteConfigRemoteConfig#condition_name}. |
 | <code><a href="#@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParameterGroupsParametersConditionalValues.property.useInAppDefault">UseInAppDefault</a></code> | <code>interface{}</code> | If true, the parameter is omitted from the parameter values returned to a client. |
 | <code><a href="#@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParameterGroupsParametersConditionalValues.property.value">Value</a></code> | <code>*string</code> | The string value that the parameter is set to. |
 
@@ -1402,7 +1402,7 @@ ConditionName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/firebase_remote_config_remote_config#condition_name FirebaseRemoteConfigRemoteConfig#condition_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/firebase_remote_config_remote_config#condition_name FirebaseRemoteConfigRemoteConfig#condition_name}.
 
 ---
 
@@ -1416,7 +1416,7 @@ UseInAppDefault interface{}
 
 If true, the parameter is omitted from the parameter values returned to a client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/firebase_remote_config_remote_config#use_in_app_default FirebaseRemoteConfigRemoteConfig#use_in_app_default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/firebase_remote_config_remote_config#use_in_app_default FirebaseRemoteConfigRemoteConfig#use_in_app_default}
 
 ---
 
@@ -1430,7 +1430,7 @@ Value *string
 
 The string value that the parameter is set to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/firebase_remote_config_remote_config#value FirebaseRemoteConfigRemoteConfig#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/firebase_remote_config_remote_config#value FirebaseRemoteConfigRemoteConfig#value}
 
 ---
 
@@ -1439,7 +1439,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParameterGroupsParametersDefaultValue.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/firebaseremoteconfigremoteconfig"
 
 &firebaseremoteconfigremoteconfig.FirebaseRemoteConfigRemoteConfigParameterGroupsParametersDefaultValue {
 	UseInAppDefault: interface{},
@@ -1466,7 +1466,7 @@ UseInAppDefault interface{}
 
 If true, the parameter is omitted from the parameter values returned to a client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/firebase_remote_config_remote_config#use_in_app_default FirebaseRemoteConfigRemoteConfig#use_in_app_default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/firebase_remote_config_remote_config#use_in_app_default FirebaseRemoteConfigRemoteConfig#use_in_app_default}
 
 ---
 
@@ -1480,7 +1480,7 @@ Value *string
 
 The string value that the parameter is set to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/firebase_remote_config_remote_config#value FirebaseRemoteConfigRemoteConfig#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/firebase_remote_config_remote_config#value FirebaseRemoteConfigRemoteConfig#value}
 
 ---
 
@@ -1489,12 +1489,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/firebaseremoteconfigremoteconfig"
 
 &firebaseremoteconfigremoteconfig.FirebaseRemoteConfigRemoteConfigParameters {
 	ParameterName: *string,
 	ConditionalValues: interface{},
-	DefaultValue: github.com/cdktn-io/cdktn-provider-google-go/google/v20.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParametersDefaultValue,
+	DefaultValue: github.com/cdktn-io/cdktn-provider-google-go/google/v21.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParametersDefaultValue,
 	Description: *string,
 	ValueType: *string,
 }
@@ -1504,7 +1504,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteco
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParameters.property.parameterName">ParameterName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/firebase_remote_config_remote_config#parameter_name FirebaseRemoteConfigRemoteConfig#parameter_name}. |
+| <code><a href="#@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParameters.property.parameterName">ParameterName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/firebase_remote_config_remote_config#parameter_name FirebaseRemoteConfigRemoteConfig#parameter_name}. |
 | <code><a href="#@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParameters.property.conditionalValues">ConditionalValues</a></code> | <code>interface{}</code> | conditional_values block. |
 | <code><a href="#@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParameters.property.defaultValue">DefaultValue</a></code> | <code><a href="#@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParametersDefaultValue">FirebaseRemoteConfigRemoteConfigParametersDefaultValue</a></code> | default_value block. |
 | <code><a href="#@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParameters.property.description">Description</a></code> | <code>*string</code> | A description for this Parameter. |
@@ -1520,7 +1520,7 @@ ParameterName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/firebase_remote_config_remote_config#parameter_name FirebaseRemoteConfigRemoteConfig#parameter_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/firebase_remote_config_remote_config#parameter_name FirebaseRemoteConfigRemoteConfig#parameter_name}.
 
 ---
 
@@ -1534,7 +1534,7 @@ ConditionalValues interface{}
 
 conditional_values block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/firebase_remote_config_remote_config#conditional_values FirebaseRemoteConfigRemoteConfig#conditional_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/firebase_remote_config_remote_config#conditional_values FirebaseRemoteConfigRemoteConfig#conditional_values}
 
 ---
 
@@ -1548,7 +1548,7 @@ DefaultValue FirebaseRemoteConfigRemoteConfigParametersDefaultValue
 
 default_value block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/firebase_remote_config_remote_config#default_value FirebaseRemoteConfigRemoteConfig#default_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/firebase_remote_config_remote_config#default_value FirebaseRemoteConfigRemoteConfig#default_value}
 
 ---
 
@@ -1565,7 +1565,7 @@ A description for this Parameter.
 Its length must be less than or equal to
 256 characters . A description may contain any Unicode characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/firebase_remote_config_remote_config#description FirebaseRemoteConfigRemoteConfig#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/firebase_remote_config_remote_config#description FirebaseRemoteConfigRemoteConfig#description}
 
 ---
 
@@ -1581,7 +1581,7 @@ The data type for all values of this parameter in the current version of the tem
 
 Default value: "STRING" Possible values: ["STRING", "BOOLEAN", "NUMBER", "JSON"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/firebase_remote_config_remote_config#value_type FirebaseRemoteConfigRemoteConfig#value_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/firebase_remote_config_remote_config#value_type FirebaseRemoteConfigRemoteConfig#value_type}
 
 ---
 
@@ -1590,7 +1590,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParametersConditionalValues.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/firebaseremoteconfigremoteconfig"
 
 &firebaseremoteconfigremoteconfig.FirebaseRemoteConfigRemoteConfigParametersConditionalValues {
 	ConditionName: *string,
@@ -1603,7 +1603,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteco
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParametersConditionalValues.property.conditionName">ConditionName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/firebase_remote_config_remote_config#condition_name FirebaseRemoteConfigRemoteConfig#condition_name}. |
+| <code><a href="#@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParametersConditionalValues.property.conditionName">ConditionName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/firebase_remote_config_remote_config#condition_name FirebaseRemoteConfigRemoteConfig#condition_name}. |
 | <code><a href="#@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParametersConditionalValues.property.useInAppDefault">UseInAppDefault</a></code> | <code>interface{}</code> | If true, the parameter is omitted from the parameter values returned to a client. |
 | <code><a href="#@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParametersConditionalValues.property.value">Value</a></code> | <code>*string</code> | The string value that the parameter is set to. |
 
@@ -1617,7 +1617,7 @@ ConditionName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/firebase_remote_config_remote_config#condition_name FirebaseRemoteConfigRemoteConfig#condition_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/firebase_remote_config_remote_config#condition_name FirebaseRemoteConfigRemoteConfig#condition_name}.
 
 ---
 
@@ -1631,7 +1631,7 @@ UseInAppDefault interface{}
 
 If true, the parameter is omitted from the parameter values returned to a client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/firebase_remote_config_remote_config#use_in_app_default FirebaseRemoteConfigRemoteConfig#use_in_app_default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/firebase_remote_config_remote_config#use_in_app_default FirebaseRemoteConfigRemoteConfig#use_in_app_default}
 
 ---
 
@@ -1645,7 +1645,7 @@ Value *string
 
 The string value that the parameter is set to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/firebase_remote_config_remote_config#value FirebaseRemoteConfigRemoteConfig#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/firebase_remote_config_remote_config#value FirebaseRemoteConfigRemoteConfig#value}
 
 ---
 
@@ -1654,7 +1654,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParametersDefaultValue.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/firebaseremoteconfigremoteconfig"
 
 &firebaseremoteconfigremoteconfig.FirebaseRemoteConfigRemoteConfigParametersDefaultValue {
 	UseInAppDefault: interface{},
@@ -1681,7 +1681,7 @@ UseInAppDefault interface{}
 
 If true, the parameter is omitted from the parameter values returned to a client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/firebase_remote_config_remote_config#use_in_app_default FirebaseRemoteConfigRemoteConfig#use_in_app_default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/firebase_remote_config_remote_config#use_in_app_default FirebaseRemoteConfigRemoteConfig#use_in_app_default}
 
 ---
 
@@ -1695,7 +1695,7 @@ Value *string
 
 The string value that the parameter is set to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/firebase_remote_config_remote_config#value FirebaseRemoteConfigRemoteConfig#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/firebase_remote_config_remote_config#value FirebaseRemoteConfigRemoteConfig#value}
 
 ---
 
@@ -1704,7 +1704,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/firebaseremoteconfigremoteconfig"
 
 &firebaseremoteconfigremoteconfig.FirebaseRemoteConfigRemoteConfigTimeouts {
 	Create: *string,
@@ -1717,9 +1717,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteco
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/firebase_remote_config_remote_config#create FirebaseRemoteConfigRemoteConfig#create}. |
-| <code><a href="#@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/firebase_remote_config_remote_config#delete FirebaseRemoteConfigRemoteConfig#delete}. |
-| <code><a href="#@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/firebase_remote_config_remote_config#update FirebaseRemoteConfigRemoteConfig#update}. |
+| <code><a href="#@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/firebase_remote_config_remote_config#create FirebaseRemoteConfigRemoteConfig#create}. |
+| <code><a href="#@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/firebase_remote_config_remote_config#delete FirebaseRemoteConfigRemoteConfig#delete}. |
+| <code><a href="#@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/firebase_remote_config_remote_config#update FirebaseRemoteConfigRemoteConfig#update}. |
 
 ---
 
@@ -1731,7 +1731,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/firebase_remote_config_remote_config#create FirebaseRemoteConfigRemoteConfig#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/firebase_remote_config_remote_config#create FirebaseRemoteConfigRemoteConfig#create}.
 
 ---
 
@@ -1743,7 +1743,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/firebase_remote_config_remote_config#delete FirebaseRemoteConfigRemoteConfig#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/firebase_remote_config_remote_config#delete FirebaseRemoteConfigRemoteConfig#delete}.
 
 ---
 
@@ -1755,7 +1755,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/firebase_remote_config_remote_config#update FirebaseRemoteConfigRemoteConfig#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/firebase_remote_config_remote_config#update FirebaseRemoteConfigRemoteConfig#update}.
 
 ---
 
@@ -1764,7 +1764,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigVersion.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/firebaseremoteconfigremoteconfig"
 
 &firebaseremoteconfigremoteconfig.FirebaseRemoteConfigRemoteConfigVersion {
 
@@ -1777,7 +1777,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteco
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigVersionUpdateUser.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/firebaseremoteconfigremoteconfig"
 
 &firebaseremoteconfigremoteconfig.FirebaseRemoteConfigRemoteConfigVersionUpdateUser {
 
@@ -1792,7 +1792,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteco
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigConditionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/firebaseremoteconfigremoteconfig"
 
 firebaseremoteconfigremoteconfig.NewFirebaseRemoteConfigRemoteConfigConditionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FirebaseRemoteConfigRemoteConfigConditionsList
 ```
@@ -1952,7 +1952,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigConditionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/firebaseremoteconfigremoteconfig"
 
 firebaseremoteconfigremoteconfig.NewFirebaseRemoteConfigRemoteConfigConditionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FirebaseRemoteConfigRemoteConfigConditionsOutputReference
 ```
@@ -2292,7 +2292,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParameterGroupsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/firebaseremoteconfigremoteconfig"
 
 firebaseremoteconfigremoteconfig.NewFirebaseRemoteConfigRemoteConfigParameterGroupsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FirebaseRemoteConfigRemoteConfigParameterGroupsList
 ```
@@ -2452,7 +2452,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParameterGroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/firebaseremoteconfigremoteconfig"
 
 firebaseremoteconfigremoteconfig.NewFirebaseRemoteConfigRemoteConfigParameterGroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FirebaseRemoteConfigRemoteConfigParameterGroupsOutputReference
 ```
@@ -2812,7 +2812,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParameterGroupsParametersConditionalValuesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/firebaseremoteconfigremoteconfig"
 
 firebaseremoteconfigremoteconfig.NewFirebaseRemoteConfigRemoteConfigParameterGroupsParametersConditionalValuesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FirebaseRemoteConfigRemoteConfigParameterGroupsParametersConditionalValuesList
 ```
@@ -2972,7 +2972,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParameterGroupsParametersConditionalValuesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/firebaseremoteconfigremoteconfig"
 
 firebaseremoteconfigremoteconfig.NewFirebaseRemoteConfigRemoteConfigParameterGroupsParametersConditionalValuesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FirebaseRemoteConfigRemoteConfigParameterGroupsParametersConditionalValuesOutputReference
 ```
@@ -3319,7 +3319,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParameterGroupsParametersDefaultValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/firebaseremoteconfigremoteconfig"
 
 firebaseremoteconfigremoteconfig.NewFirebaseRemoteConfigRemoteConfigParameterGroupsParametersDefaultValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FirebaseRemoteConfigRemoteConfigParameterGroupsParametersDefaultValueOutputReference
 ```
@@ -3626,7 +3626,7 @@ func InternalValue() FirebaseRemoteConfigRemoteConfigParameterGroupsParametersDe
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParameterGroupsParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/firebaseremoteconfigremoteconfig"
 
 firebaseremoteconfigremoteconfig.NewFirebaseRemoteConfigRemoteConfigParameterGroupsParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FirebaseRemoteConfigRemoteConfigParameterGroupsParametersList
 ```
@@ -3786,7 +3786,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParameterGroupsParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/firebaseremoteconfigremoteconfig"
 
 firebaseremoteconfigremoteconfig.NewFirebaseRemoteConfigRemoteConfigParameterGroupsParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FirebaseRemoteConfigRemoteConfigParameterGroupsParametersOutputReference
 ```
@@ -4217,7 +4217,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParametersConditionalValuesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/firebaseremoteconfigremoteconfig"
 
 firebaseremoteconfigremoteconfig.NewFirebaseRemoteConfigRemoteConfigParametersConditionalValuesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FirebaseRemoteConfigRemoteConfigParametersConditionalValuesList
 ```
@@ -4377,7 +4377,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParametersConditionalValuesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/firebaseremoteconfigremoteconfig"
 
 firebaseremoteconfigremoteconfig.NewFirebaseRemoteConfigRemoteConfigParametersConditionalValuesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FirebaseRemoteConfigRemoteConfigParametersConditionalValuesOutputReference
 ```
@@ -4724,7 +4724,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParametersDefaultValueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/firebaseremoteconfigremoteconfig"
 
 firebaseremoteconfigremoteconfig.NewFirebaseRemoteConfigRemoteConfigParametersDefaultValueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FirebaseRemoteConfigRemoteConfigParametersDefaultValueOutputReference
 ```
@@ -5031,7 +5031,7 @@ func InternalValue() FirebaseRemoteConfigRemoteConfigParametersDefaultValue
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/firebaseremoteconfigremoteconfig"
 
 firebaseremoteconfigremoteconfig.NewFirebaseRemoteConfigRemoteConfigParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FirebaseRemoteConfigRemoteConfigParametersList
 ```
@@ -5191,7 +5191,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/firebaseremoteconfigremoteconfig"
 
 firebaseremoteconfigremoteconfig.NewFirebaseRemoteConfigRemoteConfigParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FirebaseRemoteConfigRemoteConfigParametersOutputReference
 ```
@@ -5622,7 +5622,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/firebaseremoteconfigremoteconfig"
 
 firebaseremoteconfigremoteconfig.NewFirebaseRemoteConfigRemoteConfigTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FirebaseRemoteConfigRemoteConfigTimeoutsOutputReference
 ```
@@ -5958,7 +5958,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigVersionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/firebaseremoteconfigremoteconfig"
 
 firebaseremoteconfigremoteconfig.NewFirebaseRemoteConfigRemoteConfigVersionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FirebaseRemoteConfigRemoteConfigVersionList
 ```
@@ -6107,7 +6107,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigVersionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/firebaseremoteconfigremoteconfig"
 
 firebaseremoteconfigremoteconfig.NewFirebaseRemoteConfigRemoteConfigVersionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FirebaseRemoteConfigRemoteConfigVersionOutputReference
 ```
@@ -6451,7 +6451,7 @@ func InternalValue() FirebaseRemoteConfigRemoteConfigVersion
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigVersionUpdateUserList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/firebaseremoteconfigremoteconfig"
 
 firebaseremoteconfigremoteconfig.NewFirebaseRemoteConfigRemoteConfigVersionUpdateUserList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FirebaseRemoteConfigRemoteConfigVersionUpdateUserList
 ```
@@ -6600,7 +6600,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.firebaseRemoteConfigRemoteConfig.FirebaseRemoteConfigRemoteConfigVersionUpdateUserOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/firebaseremoteconfigremoteconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/firebaseremoteconfigremoteconfig"
 
 firebaseremoteconfigremoteconfig.NewFirebaseRemoteConfigRemoteConfigVersionUpdateUserOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FirebaseRemoteConfigRemoteConfigVersionUpdateUserOutputReference
 ```

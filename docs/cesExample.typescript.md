@@ -4,7 +4,7 @@
 
 ### CesExample <a name="CesExample" id="@cdktn/provider-google.cesExample.CesExample"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_example google_ces_example}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_example google_ces_example}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cesExample.CesExample.Initializer"></a>
 
@@ -564,7 +564,7 @@ The construct id used in the generated config for the CesExample to import.
 
 The id of the existing CesExample that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_example#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_example#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1084,9 +1084,9 @@ const cesExampleConfig: cesExample.CesExampleConfig = { ... }
 | <code><a href="#@cdktn/provider-google.cesExample.CesExampleConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.cesExample.CesExampleConfig.property.description">description</a></code> | <code>string</code> | Human-readable description of the example. |
 | <code><a href="#@cdktn/provider-google.cesExample.CesExampleConfig.property.entryAgent">entryAgent</a></code> | <code>string</code> | The agent that initially handles the conversation. |
-| <code><a href="#@cdktn/provider-google.cesExample.CesExampleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_example#id CesExample#id}. |
+| <code><a href="#@cdktn/provider-google.cesExample.CesExampleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_example#id CesExample#id}. |
 | <code><a href="#@cdktn/provider-google.cesExample.CesExampleConfig.property.messages">messages</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.cesExample.CesExampleMessages">CesExampleMessages</a>[]</code> | messages block. |
-| <code><a href="#@cdktn/provider-google.cesExample.CesExampleConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_example#project CesExample#project}. |
+| <code><a href="#@cdktn/provider-google.cesExample.CesExampleConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_example#project CesExample#project}. |
 | <code><a href="#@cdktn/provider-google.cesExample.CesExampleConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.cesExample.CesExampleTimeouts">CesExampleTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1173,7 +1173,7 @@ Resource ID segment making up resource 'name', defining the app the example belo
 
 It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_example#app CesExample#app}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_example#app CesExample#app}
 
 ---
 
@@ -1187,7 +1187,7 @@ public readonly displayName: string;
 
 Display name of the example.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_example#display_name CesExample#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_example#display_name CesExample#display_name}
 
 ---
 
@@ -1203,7 +1203,7 @@ The ID to use for the example, which will become the final component of the exam
 
 In Terraform, this field is required.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_example#example_id CesExample#example_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_example#example_id CesExample#example_id}
 
 ---
 
@@ -1219,7 +1219,7 @@ Resource ID segment making up resource 'name', defining what region the parent a
 
 It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_example#location CesExample#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_example#location CesExample#location}
 
 ---
 
@@ -1241,7 +1241,7 @@ management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_example#deletion_policy CesExample#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_example#deletion_policy CesExample#deletion_policy}
 
 ---
 
@@ -1255,7 +1255,7 @@ public readonly description: string;
 
 Human-readable description of the example.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_example#description CesExample#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_example#description CesExample#description}
 
 ---
 
@@ -1273,7 +1273,7 @@ If not specified, the
 example represents a conversation that is handled by the root agent.
 Format: 'projects/{project}/locations/{location}/apps/{app}/agents/{agent}'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_example#entry_agent CesExample#entry_agent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_example#entry_agent CesExample#entry_agent}
 
 ---
 
@@ -1285,7 +1285,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_example#id CesExample#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_example#id CesExample#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1302,7 +1302,7 @@ public readonly messages: IResolvable | CesExampleMessages[];
 
 messages block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_example#messages CesExample#messages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_example#messages CesExample#messages}
 
 ---
 
@@ -1314,7 +1314,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_example#project CesExample#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_example#project CesExample#project}.
 
 ---
 
@@ -1328,7 +1328,7 @@ public readonly timeouts: CesExampleTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_example#timeouts CesExample#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_example#timeouts CesExample#timeouts}
 
 ---
 
@@ -1361,7 +1361,7 @@ public readonly chunks: IResolvable | CesExampleMessagesChunks[];
 
 chunks block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_example#chunks CesExample#chunks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_example#chunks CesExample#chunks}
 
 ---
 
@@ -1375,7 +1375,7 @@ public readonly role: string;
 
 The role within the conversation, e.g., user, agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_example#role CesExample#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_example#role CesExample#role}
 
 ---
 
@@ -1394,6 +1394,7 @@ const cesExampleMessagesChunks: cesExample.CesExampleMessagesChunks = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunks.property.agentTransfer">agentTransfer</a></code> | <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksAgentTransfer">CesExampleMessagesChunksAgentTransfer</a></code> | agent_transfer block. |
+| <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunks.property.blob">blob</a></code> | <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlob">CesExampleMessagesChunksBlob</a></code> | blob block. |
 | <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunks.property.image">image</a></code> | <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksImage">CesExampleMessagesChunksImage</a></code> | image block. |
 | <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunks.property.text">text</a></code> | <code>string</code> | Text data. |
 | <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunks.property.toolCall">toolCall</a></code> | <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksToolCall">CesExampleMessagesChunksToolCall</a></code> | tool_call block. |
@@ -1412,7 +1413,21 @@ public readonly agentTransfer: CesExampleMessagesChunksAgentTransfer;
 
 agent_transfer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_example#agent_transfer CesExample#agent_transfer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_example#agent_transfer CesExample#agent_transfer}
+
+---
+
+##### `blob`<sup>Optional</sup> <a name="blob" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunks.property.blob"></a>
+
+```typescript
+public readonly blob: CesExampleMessagesChunksBlob;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlob">CesExampleMessagesChunksBlob</a>
+
+blob block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_example#blob CesExample#blob}
 
 ---
 
@@ -1426,7 +1441,7 @@ public readonly image: CesExampleMessagesChunksImage;
 
 image block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_example#image CesExample#image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_example#image CesExample#image}
 
 ---
 
@@ -1440,7 +1455,7 @@ public readonly text: string;
 
 Text data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_example#text CesExample#text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_example#text CesExample#text}
 
 ---
 
@@ -1454,7 +1469,7 @@ public readonly toolCall: CesExampleMessagesChunksToolCall;
 
 tool_call block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_example#tool_call CesExample#tool_call}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_example#tool_call CesExample#tool_call}
 
 ---
 
@@ -1468,7 +1483,7 @@ public readonly toolResponse: CesExampleMessagesChunksToolResponse;
 
 tool_response block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_example#tool_response CesExample#tool_response}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_example#tool_response CesExample#tool_response}
 
 ---
 
@@ -1482,7 +1497,7 @@ public readonly updatedVariables: string;
 
 A struct represents variables that were updated in the conversation, keyed by variable names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_example#updated_variables CesExample#updated_variables}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_example#updated_variables CesExample#updated_variables}
 
 ---
 
@@ -1514,7 +1529,54 @@ public readonly targetAgent: string;
 
 The agent to which the conversation is being transferred. The agent will handle the conversation from this point forward. Format: 'projects/{project}/locations/{location}/apps/{app}/agents/{agent}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_example#target_agent CesExample#target_agent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_example#target_agent CesExample#target_agent}
+
+---
+
+### CesExampleMessagesChunksBlob <a name="CesExampleMessagesChunksBlob" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlob"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlob.Initializer"></a>
+
+```typescript
+import { cesExample } from '@cdktn/provider-google'
+
+const cesExampleMessagesChunksBlob: cesExample.CesExampleMessagesChunksBlob = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlob.property.data">data</a></code> | <code>string</code> | Raw bytes of the blob. |
+| <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlob.property.mimeType">mimeType</a></code> | <code>string</code> | The IANA standard MIME type of the source data. |
+
+---
+
+##### `data`<sup>Required</sup> <a name="data" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlob.property.data"></a>
+
+```typescript
+public readonly data: string;
+```
+
+- *Type:* string
+
+Raw bytes of the blob.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_example#data CesExample#data}
+
+---
+
+##### `mimeType`<sup>Required</sup> <a name="mimeType" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlob.property.mimeType"></a>
+
+```typescript
+public readonly mimeType: string;
+```
+
+- *Type:* string
+
+The IANA standard MIME type of the source data.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_example#mime_type CesExample#mime_type}
 
 ---
 
@@ -1534,6 +1596,7 @@ const cesExampleMessagesChunksImage: cesExample.CesExampleMessagesChunksImage = 
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksImage.property.data">data</a></code> | <code>string</code> | Raw bytes of the image. |
 | <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksImage.property.mimeType">mimeType</a></code> | <code>string</code> | The IANA standard MIME type of the source data. Supported image types includes: * image/png * image/jpeg * image/webp. |
+| <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksImage.property.altText">altText</a></code> | <code>string</code> | The alternative text for the image. |
 
 ---
 
@@ -1547,7 +1610,7 @@ public readonly data: string;
 
 Raw bytes of the image.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_example#data CesExample#data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_example#data CesExample#data}
 
 ---
 
@@ -1561,7 +1624,21 @@ public readonly mimeType: string;
 
 The IANA standard MIME type of the source data. Supported image types includes: * image/png * image/jpeg * image/webp.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_example#mime_type CesExample#mime_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_example#mime_type CesExample#mime_type}
+
+---
+
+##### `altText`<sup>Optional</sup> <a name="altText" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunksImage.property.altText"></a>
+
+```typescript
+public readonly altText: string;
+```
+
+- *Type:* string
+
+The alternative text for the image.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_example#alt_text CesExample#alt_text}
 
 ---
 
@@ -1596,7 +1673,7 @@ public readonly args: string;
 
 The input parameters and values for the tool in JSON object format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_example#args CesExample#args}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_example#args CesExample#args}
 
 ---
 
@@ -1614,7 +1691,7 @@ If populated, the client should
 return the execution result with the matching ID in
 ToolResponse.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_example#id CesExample#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_example#id CesExample#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1631,7 +1708,7 @@ public readonly tool: string;
 
 The name of the tool to execute. Format: 'projects/{project}/locations/{location}/apps/{app}/tools/{tool}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_example#tool CesExample#tool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_example#tool CesExample#tool}
 
 ---
 
@@ -1645,7 +1722,7 @@ public readonly toolsetTool: CesExampleMessagesChunksToolCallToolsetTool;
 
 toolset_tool block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_example#toolset_tool CesExample#toolset_tool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_example#toolset_tool CesExample#toolset_tool}
 
 ---
 
@@ -1678,7 +1755,7 @@ public readonly toolset: string;
 
 The resource name of the Toolset from which this tool is derived. Format: 'projects/{project}/locations/{location}/apps/{app}/toolsets/{toolset}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_example#toolset CesExample#toolset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_example#toolset CesExample#toolset}
 
 ---
 
@@ -1692,7 +1769,7 @@ public readonly toolId: string;
 
 The tool ID to filter the tools to retrieve the schema for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_example#tool_id CesExample#tool_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_example#tool_id CesExample#tool_id}
 
 ---
 
@@ -1731,7 +1808,7 @@ Use "output" key to specify tool response and "error" key to specify
 error details (if any). If "output" and "error" keys are not specified,
 then whole "response" is treated as tool execution result.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_example#response CesExample#response}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_example#response CesExample#response}
 
 ---
 
@@ -1745,7 +1822,7 @@ public readonly id: string;
 
 The matching ID of the tool call the response is for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_example#id CesExample#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_example#id CesExample#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1762,7 +1839,7 @@ public readonly tool: string;
 
 The name of the tool to execute. Format: 'projects/{project}/locations/{location}/apps/{app}/tools/{tool}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_example#tool CesExample#tool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_example#tool CesExample#tool}
 
 ---
 
@@ -1776,7 +1853,7 @@ public readonly toolsetTool: CesExampleMessagesChunksToolResponseToolsetTool;
 
 toolset_tool block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_example#toolset_tool CesExample#toolset_tool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_example#toolset_tool CesExample#toolset_tool}
 
 ---
 
@@ -1809,7 +1886,7 @@ public readonly toolset: string;
 
 The resource name of the Toolset from which this tool is derived. Format: 'projects/{project}/locations/{location}/apps/{app}/toolsets/{toolset}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_example#toolset CesExample#toolset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_example#toolset CesExample#toolset}
 
 ---
 
@@ -1823,7 +1900,7 @@ public readonly toolId: string;
 
 The tool ID to filter the tools to retrieve the schema for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_example#tool_id CesExample#tool_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_example#tool_id CesExample#tool_id}
 
 ---
 
@@ -1841,9 +1918,9 @@ const cesExampleTimeouts: cesExample.CesExampleTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.cesExample.CesExampleTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_example#create CesExample#create}. |
-| <code><a href="#@cdktn/provider-google.cesExample.CesExampleTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_example#delete CesExample#delete}. |
-| <code><a href="#@cdktn/provider-google.cesExample.CesExampleTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_example#update CesExample#update}. |
+| <code><a href="#@cdktn/provider-google.cesExample.CesExampleTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_example#create CesExample#create}. |
+| <code><a href="#@cdktn/provider-google.cesExample.CesExampleTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_example#delete CesExample#delete}. |
+| <code><a href="#@cdktn/provider-google.cesExample.CesExampleTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_example#update CesExample#update}. |
 
 ---
 
@@ -1855,7 +1932,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_example#create CesExample#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_example#create CesExample#create}.
 
 ---
 
@@ -1867,7 +1944,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_example#delete CesExample#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_example#delete CesExample#delete}.
 
 ---
 
@@ -1879,7 +1956,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/ces_example#update CesExample#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/ces_example#update CesExample#update}.
 
 ---
 
@@ -2167,6 +2244,299 @@ public readonly internalValue: CesExampleMessagesChunksAgentTransfer;
 ---
 
 
+### CesExampleMessagesChunksBlobOutputReference <a name="CesExampleMessagesChunksBlobOutputReference" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlobOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlobOutputReference.Initializer"></a>
+
+```typescript
+import { cesExample } from '@cdktn/provider-google'
+
+new cesExample.CesExampleMessagesChunksBlobOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlobOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlobOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlobOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlobOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlobOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlobOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlobOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlobOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlobOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlobOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlobOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlobOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlobOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlobOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlobOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlobOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlobOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlobOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlobOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlobOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlobOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlobOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlobOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlobOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlobOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlobOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlobOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlobOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlobOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlobOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlobOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlobOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlobOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlobOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlobOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlobOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlobOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlobOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlobOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlobOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlobOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlobOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlobOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlobOutputReference.property.dataInput">dataInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlobOutputReference.property.mimeTypeInput">mimeTypeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlobOutputReference.property.data">data</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlobOutputReference.property.mimeType">mimeType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlobOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlob">CesExampleMessagesChunksBlob</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlobOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlobOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `dataInput`<sup>Optional</sup> <a name="dataInput" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlobOutputReference.property.dataInput"></a>
+
+```typescript
+public readonly dataInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `mimeTypeInput`<sup>Optional</sup> <a name="mimeTypeInput" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlobOutputReference.property.mimeTypeInput"></a>
+
+```typescript
+public readonly mimeTypeInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `data`<sup>Required</sup> <a name="data" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlobOutputReference.property.data"></a>
+
+```typescript
+public readonly data: string;
+```
+
+- *Type:* string
+
+---
+
+##### `mimeType`<sup>Required</sup> <a name="mimeType" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlobOutputReference.property.mimeType"></a>
+
+```typescript
+public readonly mimeType: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlobOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: CesExampleMessagesChunksBlob;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlob">CesExampleMessagesChunksBlob</a>
+
+---
+
+
 ### CesExampleMessagesChunksImageOutputReference <a name="CesExampleMessagesChunksImageOutputReference" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunksImageOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunksImageOutputReference.Initializer"></a>
@@ -2217,6 +2587,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksImageOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksImageOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksImageOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksImageOutputReference.resetAltText">resetAltText</a></code> | *No description.* |
 
 ---
 
@@ -2370,6 +2741,12 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `resetAltText` <a name="resetAltText" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunksImageOutputReference.resetAltText"></a>
+
+```typescript
+public resetAltText(): void
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -2377,8 +2754,10 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksImageOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksImageOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksImageOutputReference.property.altTextInput">altTextInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksImageOutputReference.property.dataInput">dataInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksImageOutputReference.property.mimeTypeInput">mimeTypeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksImageOutputReference.property.altText">altText</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksImageOutputReference.property.data">data</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksImageOutputReference.property.mimeType">mimeType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksImageOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksImage">CesExampleMessagesChunksImage</a></code> | *No description.* |
@@ -2409,6 +2788,16 @@ public readonly fqn: string;
 
 ---
 
+##### `altTextInput`<sup>Optional</sup> <a name="altTextInput" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunksImageOutputReference.property.altTextInput"></a>
+
+```typescript
+public readonly altTextInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `dataInput`<sup>Optional</sup> <a name="dataInput" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunksImageOutputReference.property.dataInput"></a>
 
 ```typescript
@@ -2423,6 +2812,16 @@ public readonly dataInput: string;
 
 ```typescript
 public readonly mimeTypeInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `altText`<sup>Required</sup> <a name="altText" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunksImageOutputReference.property.altText"></a>
+
+```typescript
+public readonly altText: string;
 ```
 
 - *Type:* string
@@ -2689,10 +3088,12 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksOutputReference.putAgentTransfer">putAgentTransfer</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksOutputReference.putBlob">putBlob</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksOutputReference.putImage">putImage</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksOutputReference.putToolCall">putToolCall</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksOutputReference.putToolResponse">putToolResponse</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksOutputReference.resetAgentTransfer">resetAgentTransfer</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksOutputReference.resetBlob">resetBlob</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksOutputReference.resetImage">resetImage</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksOutputReference.resetText">resetText</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksOutputReference.resetToolCall">resetToolCall</a></code> | *No description.* |
@@ -2863,6 +3264,18 @@ public putAgentTransfer(value: CesExampleMessagesChunksAgentTransfer): void
 
 ---
 
+##### `putBlob` <a name="putBlob" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunksOutputReference.putBlob"></a>
+
+```typescript
+public putBlob(value: CesExampleMessagesChunksBlob): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunksOutputReference.putBlob.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlob">CesExampleMessagesChunksBlob</a>
+
+---
+
 ##### `putImage` <a name="putImage" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunksOutputReference.putImage"></a>
 
 ```typescript
@@ -2905,6 +3318,12 @@ public putToolResponse(value: CesExampleMessagesChunksToolResponse): void
 public resetAgentTransfer(): void
 ```
 
+##### `resetBlob` <a name="resetBlob" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunksOutputReference.resetBlob"></a>
+
+```typescript
+public resetBlob(): void
+```
+
 ##### `resetImage` <a name="resetImage" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunksOutputReference.resetImage"></a>
 
 ```typescript
@@ -2943,10 +3362,12 @@ public resetUpdatedVariables(): void
 | <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksOutputReference.property.agentTransfer">agentTransfer</a></code> | <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksAgentTransferOutputReference">CesExampleMessagesChunksAgentTransferOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksOutputReference.property.blob">blob</a></code> | <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlobOutputReference">CesExampleMessagesChunksBlobOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksOutputReference.property.image">image</a></code> | <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksImageOutputReference">CesExampleMessagesChunksImageOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksOutputReference.property.toolCall">toolCall</a></code> | <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksToolCallOutputReference">CesExampleMessagesChunksToolCallOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksOutputReference.property.toolResponse">toolResponse</a></code> | <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksToolResponseOutputReference">CesExampleMessagesChunksToolResponseOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksOutputReference.property.agentTransferInput">agentTransferInput</a></code> | <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksAgentTransfer">CesExampleMessagesChunksAgentTransfer</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksOutputReference.property.blobInput">blobInput</a></code> | <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlob">CesExampleMessagesChunksBlob</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksOutputReference.property.imageInput">imageInput</a></code> | <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksImage">CesExampleMessagesChunksImage</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksOutputReference.property.textInput">textInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksOutputReference.property.toolCallInput">toolCallInput</a></code> | <code><a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksToolCall">CesExampleMessagesChunksToolCall</a></code> | *No description.* |
@@ -2992,6 +3413,16 @@ public readonly agentTransfer: CesExampleMessagesChunksAgentTransferOutputRefere
 
 ---
 
+##### `blob`<sup>Required</sup> <a name="blob" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunksOutputReference.property.blob"></a>
+
+```typescript
+public readonly blob: CesExampleMessagesChunksBlobOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlobOutputReference">CesExampleMessagesChunksBlobOutputReference</a>
+
+---
+
 ##### `image`<sup>Required</sup> <a name="image" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunksOutputReference.property.image"></a>
 
 ```typescript
@@ -3029,6 +3460,16 @@ public readonly agentTransferInput: CesExampleMessagesChunksAgentTransfer;
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksAgentTransfer">CesExampleMessagesChunksAgentTransfer</a>
+
+---
+
+##### `blobInput`<sup>Optional</sup> <a name="blobInput" id="@cdktn/provider-google.cesExample.CesExampleMessagesChunksOutputReference.property.blobInput"></a>
+
+```typescript
+public readonly blobInput: CesExampleMessagesChunksBlob;
+```
+
+- *Type:* <a href="#@cdktn/provider-google.cesExample.CesExampleMessagesChunksBlob">CesExampleMessagesChunksBlob</a>
 
 ---
 

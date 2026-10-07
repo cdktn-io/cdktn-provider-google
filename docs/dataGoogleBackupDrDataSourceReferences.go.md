@@ -4,12 +4,12 @@
 
 ### DataGoogleBackupDrDataSourceReferences <a name="DataGoogleBackupDrDataSourceReferences" id="@cdktn/provider-google.dataGoogleBackupDrDataSourceReferences.DataGoogleBackupDrDataSourceReferences"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/backup_dr_data_source_references google_backup_dr_data_source_references}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/backup_dr_data_source_references google_backup_dr_data_source_references}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleBackupDrDataSourceReferences.DataGoogleBackupDrDataSourceReferences.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebackupdrdatasourcereferences"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglebackupdrdatasourcereferences"
 
 datagooglebackupdrdatasourcereferences.NewDataGoogleBackupDrDataSourceReferences(scope Construct, id *string, config DataGoogleBackupDrDataSourceReferencesConfig) DataGoogleBackupDrDataSourceReferences
 ```
@@ -70,7 +70,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.dataGoogleBackupDrDataSourceReferences.DataGoogleBackupDrDataSourceReferences.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleBackupDrDataSourceReferences.DataGoogleBackupDrDataSourceReferences.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleBackupDrDataSourceReferences.DataGoogleBackupDrDataSourceReferences.resetProject">ResetProject</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleBackupDrDataSourceReferences.DataGoogleBackupDrDataSourceReferences.resetResourceType">ResetResourceType</a></code> | *No description.* |
 
 ---
 
@@ -299,12 +298,6 @@ func ResetId()
 func ResetProject()
 ```
 
-##### `ResetResourceType` <a name="ResetResourceType" id="@cdktn/provider-google.dataGoogleBackupDrDataSourceReferences.DataGoogleBackupDrDataSourceReferences.resetResourceType"></a>
-
-```go
-func ResetResourceType()
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -319,7 +312,7 @@ func ResetResourceType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleBackupDrDataSourceReferences.DataGoogleBackupDrDataSourceReferences.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebackupdrdatasourcereferences"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglebackupdrdatasourcereferences"
 
 datagooglebackupdrdatasourcereferences.DataGoogleBackupDrDataSourceReferences_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleBackupDrDataSourceReferences.DataGoogleBackupDrDataSourceReferences.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebackupdrdatasourcereferences"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglebackupdrdatasourcereferences"
 
 datagooglebackupdrdatasourcereferences.DataGoogleBackupDrDataSourceReferences_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +358,7 @@ datagooglebackupdrdatasourcereferences.DataGoogleBackupDrDataSourceReferences_Is
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleBackupDrDataSourceReferences.DataGoogleBackupDrDataSourceReferences.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebackupdrdatasourcereferences"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglebackupdrdatasourcereferences"
 
 datagooglebackupdrdatasourcereferences.DataGoogleBackupDrDataSourceReferences_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +372,7 @@ datagooglebackupdrdatasourcereferences.DataGoogleBackupDrDataSourceReferences_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleBackupDrDataSourceReferences.DataGoogleBackupDrDataSourceReferences.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebackupdrdatasourcereferences"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglebackupdrdatasourcereferences"
 
 datagooglebackupdrdatasourcereferences.DataGoogleBackupDrDataSourceReferences_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -408,7 +401,7 @@ The construct id used in the generated config for the DataGoogleBackupDrDataSour
 
 The id of the existing DataGoogleBackupDrDataSourceReferences that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/backup_dr_data_source_references#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/backup_dr_data_source_references#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -440,11 +433,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.dataGoogleBackupDrDataSourceReferences.DataGoogleBackupDrDataSourceReferences.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleBackupDrDataSourceReferences.DataGoogleBackupDrDataSourceReferences.property.locationInput">LocationInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleBackupDrDataSourceReferences.DataGoogleBackupDrDataSourceReferences.property.projectInput">ProjectInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleBackupDrDataSourceReferences.DataGoogleBackupDrDataSourceReferences.property.resourceTypeInput">ResourceTypeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleBackupDrDataSourceReferences.DataGoogleBackupDrDataSourceReferences.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleBackupDrDataSourceReferences.DataGoogleBackupDrDataSourceReferences.property.location">Location</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleBackupDrDataSourceReferences.DataGoogleBackupDrDataSourceReferences.property.project">Project</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.dataGoogleBackupDrDataSourceReferences.DataGoogleBackupDrDataSourceReferences.property.resourceType">ResourceType</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
@@ -610,16 +601,6 @@ func ProjectInput() *string
 
 ---
 
-##### `ResourceTypeInput`<sup>Optional</sup> <a name="ResourceTypeInput" id="@cdktn/provider-google.dataGoogleBackupDrDataSourceReferences.DataGoogleBackupDrDataSourceReferences.property.resourceTypeInput"></a>
-
-```go
-func ResourceTypeInput() *string
-```
-
-- *Type:* *string
-
----
-
 ##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-google.dataGoogleBackupDrDataSourceReferences.DataGoogleBackupDrDataSourceReferences.property.id"></a>
 
 ```go
@@ -644,16 +625,6 @@ func Location() *string
 
 ```go
 func Project() *string
-```
-
-- *Type:* *string
-
----
-
-##### `ResourceType`<sup>Required</sup> <a name="ResourceType" id="@cdktn/provider-google.dataGoogleBackupDrDataSourceReferences.DataGoogleBackupDrDataSourceReferences.property.resourceType"></a>
-
-```go
-func ResourceType() *string
 ```
 
 - *Type:* *string
@@ -685,7 +656,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleBackupDrDataSourceReferences.DataGoogleBackupDrDataSourceReferencesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebackupdrdatasourcereferences"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglebackupdrdatasourcereferences"
 
 &datagooglebackupdrdatasourcereferences.DataGoogleBackupDrDataSourceReferencesConfig {
 	Connection: interface{},
@@ -698,7 +669,6 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebackup
 	Location: *string,
 	Id: *string,
 	Project: *string,
-	ResourceType: *string,
 }
 ```
 
@@ -714,9 +684,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebackup
 | <code><a href="#@cdktn/provider-google.dataGoogleBackupDrDataSourceReferences.DataGoogleBackupDrDataSourceReferencesConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleBackupDrDataSourceReferences.DataGoogleBackupDrDataSourceReferencesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleBackupDrDataSourceReferences.DataGoogleBackupDrDataSourceReferencesConfig.property.location">Location</a></code> | <code>*string</code> | The location to list the data source references from. |
-| <code><a href="#@cdktn/provider-google.dataGoogleBackupDrDataSourceReferences.DataGoogleBackupDrDataSourceReferencesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/backup_dr_data_source_references#id DataGoogleBackupDrDataSourceReferences#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleBackupDrDataSourceReferences.DataGoogleBackupDrDataSourceReferencesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/backup_dr_data_source_references#id DataGoogleBackupDrDataSourceReferences#id}. |
 | <code><a href="#@cdktn/provider-google.dataGoogleBackupDrDataSourceReferences.DataGoogleBackupDrDataSourceReferencesConfig.property.project">Project</a></code> | <code>*string</code> | The ID of the project in which the resource belongs. |
-| <code><a href="#@cdktn/provider-google.dataGoogleBackupDrDataSourceReferences.DataGoogleBackupDrDataSourceReferencesConfig.property.resourceType">ResourceType</a></code> | <code>*string</code> | The resource type of workload on which backup plan is applied. Examples include, "compute.googleapis.com/Instance", "compute.googleapis.com/Disk". |
 
 ---
 
@@ -800,7 +769,7 @@ Location *string
 
 The location to list the data source references from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/backup_dr_data_source_references#location DataGoogleBackupDrDataSourceReferences#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/backup_dr_data_source_references#location DataGoogleBackupDrDataSourceReferences#location}
 
 ---
 
@@ -812,7 +781,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/backup_dr_data_source_references#id DataGoogleBackupDrDataSourceReferences#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/backup_dr_data_source_references#id DataGoogleBackupDrDataSourceReferences#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -829,21 +798,7 @@ Project *string
 
 The ID of the project in which the resource belongs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/backup_dr_data_source_references#project DataGoogleBackupDrDataSourceReferences#project}
-
----
-
-##### `ResourceType`<sup>Optional</sup> <a name="ResourceType" id="@cdktn/provider-google.dataGoogleBackupDrDataSourceReferences.DataGoogleBackupDrDataSourceReferencesConfig.property.resourceType"></a>
-
-```go
-ResourceType *string
-```
-
-- *Type:* *string
-
-The resource type of workload on which backup plan is applied. Examples include, "compute.googleapis.com/Instance", "compute.googleapis.com/Disk".
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/backup_dr_data_source_references#resource_type DataGoogleBackupDrDataSourceReferences#resource_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/backup_dr_data_source_references#project DataGoogleBackupDrDataSourceReferences#project}
 
 ---
 
@@ -852,7 +807,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleBackupDrDataSourceReferences.DataGoogleBackupDrDataSourceReferencesDataSourceReferences.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebackupdrdatasourcereferences"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglebackupdrdatasourcereferences"
 
 &datagooglebackupdrdatasourcereferences.DataGoogleBackupDrDataSourceReferencesDataSourceReferences {
 
@@ -867,7 +822,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebackup
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleBackupDrDataSourceReferences.DataGoogleBackupDrDataSourceReferencesDataSourceReferencesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebackupdrdatasourcereferences"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglebackupdrdatasourcereferences"
 
 datagooglebackupdrdatasourcereferences.NewDataGoogleBackupDrDataSourceReferencesDataSourceReferencesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleBackupDrDataSourceReferencesDataSourceReferencesList
 ```
@@ -1016,7 +971,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleBackupDrDataSourceReferences.DataGoogleBackupDrDataSourceReferencesDataSourceReferencesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagooglebackupdrdatasourcereferences"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagooglebackupdrdatasourcereferences"
 
 datagooglebackupdrdatasourcereferences.NewDataGoogleBackupDrDataSourceReferencesDataSourceReferencesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleBackupDrDataSourceReferencesDataSourceReferencesOutputReference
 ```

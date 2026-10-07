@@ -4,7 +4,7 @@
 
 ### ComputeRegionTargetTcpProxy <a name="ComputeRegionTargetTcpProxy" id="@cdktn/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_target_tcp_proxy google_compute_region_target_tcp_proxy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_target_tcp_proxy google_compute_region_target_tcp_proxy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxy.Initializer"></a>
 
@@ -26,6 +26,7 @@ computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxy(
   deletion_policy: str = None,
   description: str = None,
   id: str = None,
+  load_balancing_scheme: str = None,
   project: str = None,
   proxy_bind: bool | IResolvable = None,
   proxy_header: str = None,
@@ -46,11 +47,12 @@ computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxy(
 | <code><a href="#@cdktn/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxy.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxy.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxy.Initializer.parameter.name">name</a></code> | <code>str</code> | Name of the resource. |
-| <code><a href="#@cdktn/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxy.Initializer.parameter.backendService">backend_service</a></code> | <code>str</code> | A reference to the BackendService resource. This field is optional when the loadBalancingScheme (available in beta) is specified. |
+| <code><a href="#@cdktn/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxy.Initializer.parameter.backendService">backend_service</a></code> | <code>str</code> | A reference to the BackendService resource. This field is optional when the loadBalancingScheme is specified. |
 | <code><a href="#@cdktn/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxy.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxy.Initializer.parameter.description">description</a></code> | <code>str</code> | An optional description of this resource. |
-| <code><a href="#@cdktn/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_target_tcp_proxy#id ComputeRegionTargetTcpProxy#id}. |
-| <code><a href="#@cdktn/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxy.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_target_tcp_proxy#project ComputeRegionTargetTcpProxy#project}. |
+| <code><a href="#@cdktn/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_target_tcp_proxy#id ComputeRegionTargetTcpProxy#id}. |
+| <code><a href="#@cdktn/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxy.Initializer.parameter.loadBalancingScheme">load_balancing_scheme</a></code> | <code>str</code> | Specifies the load balancer type. |
+| <code><a href="#@cdktn/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxy.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_target_tcp_proxy#project ComputeRegionTargetTcpProxy#project}. |
 | <code><a href="#@cdktn/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxy.Initializer.parameter.proxyBind">proxy_bind</a></code> | <code>bool \| cdktn.IResolvable</code> | This field only applies when the forwarding rule that references this target proxy has a loadBalancingScheme set to INTERNAL_SELF_MANAGED. |
 | <code><a href="#@cdktn/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxy.Initializer.parameter.proxyHeader">proxy_header</a></code> | <code>str</code> | Specifies the type of proxy header to append before sending data to the backend. |
 | <code><a href="#@cdktn/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxy.Initializer.parameter.region">region</a></code> | <code>str</code> | The Region in which the created target TCP proxy should reside. |
@@ -132,7 +134,7 @@ first character must be a lowercase letter, and all following
 characters must be a dash, lowercase letter, or digit, except the last
 character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_target_tcp_proxy#name ComputeRegionTargetTcpProxy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_target_tcp_proxy#name ComputeRegionTargetTcpProxy#name}
 
 ---
 
@@ -140,9 +142,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-A reference to the BackendService resource. This field is optional when the loadBalancingScheme (available in beta) is specified.
+A reference to the BackendService resource. This field is optional when the loadBalancingScheme is specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_target_tcp_proxy#backend_service ComputeRegionTargetTcpProxy#backend_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_target_tcp_proxy#backend_service ComputeRegionTargetTcpProxy#backend_service}
 
 ---
 
@@ -159,7 +161,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_target_tcp_proxy#deletion_policy ComputeRegionTargetTcpProxy#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_target_tcp_proxy#deletion_policy ComputeRegionTargetTcpProxy#deletion_policy}
 
 ---
 
@@ -169,7 +171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 An optional description of this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_target_tcp_proxy#description ComputeRegionTargetTcpProxy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_target_tcp_proxy#description ComputeRegionTargetTcpProxy#description}
 
 ---
 
@@ -177,10 +179,24 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_target_tcp_proxy#id ComputeRegionTargetTcpProxy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_target_tcp_proxy#id ComputeRegionTargetTcpProxy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `load_balancing_scheme`<sup>Optional</sup> <a name="load_balancing_scheme" id="@cdktn/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxy.Initializer.parameter.loadBalancingScheme"></a>
+
+- *Type:* str
+
+Specifies the load balancer type.
+
+A target TCP proxy created for one type
+of load balancer cannot be used with another. For more information, refer
+to [Summary of types of Google Cloud load balancers](https://docs.cloud.google.com/load-balancing/docs/load-balancing-overview#summary-gclb). Possible values: ["EXTERNAL_MANAGED", "INTERNAL_MANAGED"]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_target_tcp_proxy#load_balancing_scheme ComputeRegionTargetTcpProxy#load_balancing_scheme}
 
 ---
 
@@ -188,7 +204,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_target_tcp_proxy#project ComputeRegionTargetTcpProxy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_target_tcp_proxy#project ComputeRegionTargetTcpProxy#project}.
 
 ---
 
@@ -198,7 +214,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 This field only applies when the forwarding rule that references this target proxy has a loadBalancingScheme set to INTERNAL_SELF_MANAGED.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_target_tcp_proxy#proxy_bind ComputeRegionTargetTcpProxy#proxy_bind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_target_tcp_proxy#proxy_bind ComputeRegionTargetTcpProxy#proxy_bind}
 
 ---
 
@@ -210,7 +226,7 @@ Specifies the type of proxy header to append before sending data to the backend.
 
 Default value: "NONE" Possible values: ["NONE", "PROXY_V1"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_target_tcp_proxy#proxy_header ComputeRegionTargetTcpProxy#proxy_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_target_tcp_proxy#proxy_header ComputeRegionTargetTcpProxy#proxy_header}
 
 ---
 
@@ -222,7 +238,7 @@ The Region in which the created target TCP proxy should reside.
 
 If it is not provided, the provider region is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_target_tcp_proxy#region ComputeRegionTargetTcpProxy#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_target_tcp_proxy#region ComputeRegionTargetTcpProxy#region}
 
 ---
 
@@ -232,7 +248,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_target_tcp_proxy#timeouts ComputeRegionTargetTcpProxy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_target_tcp_proxy#timeouts ComputeRegionTargetTcpProxy#timeouts}
 
 ---
 
@@ -269,6 +285,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxy.resetDeletionPolicy">reset_deletion_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxy.resetDescription">reset_description</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxy.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxy.resetLoadBalancingScheme">reset_load_balancing_scheme</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxy.resetProject">reset_project</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxy.resetProxyBind">reset_proxy_bind</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxy.resetProxyHeader">reset_proxy_header</a></code> | *No description.* |
@@ -638,7 +655,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_target_tcp_proxy#create ComputeRegionTargetTcpProxy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_target_tcp_proxy#create ComputeRegionTargetTcpProxy#create}.
 
 ---
 
@@ -646,7 +663,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_target_tcp_proxy#delete ComputeRegionTargetTcpProxy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_target_tcp_proxy#delete ComputeRegionTargetTcpProxy#delete}.
 
 ---
 
@@ -672,6 +689,12 @@ def reset_description() -> None
 
 ```python
 def reset_id() -> None
+```
+
+##### `reset_load_balancing_scheme` <a name="reset_load_balancing_scheme" id="@cdktn/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxy.resetLoadBalancingScheme"></a>
+
+```python
+def reset_load_balancing_scheme() -> None
 ```
 
 ##### `reset_project` <a name="reset_project" id="@cdktn/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxy.resetProject"></a>
@@ -818,7 +841,7 @@ The construct id used in the generated config for the ComputeRegionTargetTcpProx
 
 The id of the existing ComputeRegionTargetTcpProxy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_target_tcp_proxy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_target_tcp_proxy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -856,6 +879,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxy.property.deletionPolicyInput">deletion_policy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxy.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxy.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxy.property.loadBalancingSchemeInput">load_balancing_scheme_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxy.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxy.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxy.property.proxyBindInput">proxy_bind_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
@@ -866,6 +890,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.4
 | <code><a href="#@cdktn/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxy.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxy.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxy.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxy.property.loadBalancingScheme">load_balancing_scheme</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxy.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxy.property.project">project</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxy.property.proxyBind">proxy_bind</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
@@ -1096,6 +1121,16 @@ id_input: str
 
 ---
 
+##### `load_balancing_scheme_input`<sup>Optional</sup> <a name="load_balancing_scheme_input" id="@cdktn/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxy.property.loadBalancingSchemeInput"></a>
+
+```python
+load_balancing_scheme_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxy.property.nameInput"></a>
 
 ```python
@@ -1196,6 +1231,16 @@ id: str
 
 ---
 
+##### `load_balancing_scheme`<sup>Required</sup> <a name="load_balancing_scheme" id="@cdktn/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxy.property.loadBalancingScheme"></a>
+
+```python
+load_balancing_scheme: str
+```
+
+- *Type:* str
+
+---
+
 ##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxy.property.name"></a>
 
 ```python
@@ -1286,6 +1331,7 @@ computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxyConfig(
   deletion_policy: str = None,
   description: str = None,
   id: str = None,
+  load_balancing_scheme: str = None,
   project: str = None,
   proxy_bind: bool | IResolvable = None,
   proxy_header: str = None,
@@ -1306,11 +1352,12 @@ computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxyConfig(
 | <code><a href="#@cdktn/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxyConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxyConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxyConfig.property.name">name</a></code> | <code>str</code> | Name of the resource. |
-| <code><a href="#@cdktn/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxyConfig.property.backendService">backend_service</a></code> | <code>str</code> | A reference to the BackendService resource. This field is optional when the loadBalancingScheme (available in beta) is specified. |
+| <code><a href="#@cdktn/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxyConfig.property.backendService">backend_service</a></code> | <code>str</code> | A reference to the BackendService resource. This field is optional when the loadBalancingScheme is specified. |
 | <code><a href="#@cdktn/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxyConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxyConfig.property.description">description</a></code> | <code>str</code> | An optional description of this resource. |
-| <code><a href="#@cdktn/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_target_tcp_proxy#id ComputeRegionTargetTcpProxy#id}. |
-| <code><a href="#@cdktn/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxyConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_target_tcp_proxy#project ComputeRegionTargetTcpProxy#project}. |
+| <code><a href="#@cdktn/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_target_tcp_proxy#id ComputeRegionTargetTcpProxy#id}. |
+| <code><a href="#@cdktn/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxyConfig.property.loadBalancingScheme">load_balancing_scheme</a></code> | <code>str</code> | Specifies the load balancer type. |
+| <code><a href="#@cdktn/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxyConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_target_tcp_proxy#project ComputeRegionTargetTcpProxy#project}. |
 | <code><a href="#@cdktn/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxyConfig.property.proxyBind">proxy_bind</a></code> | <code>bool \| cdktn.IResolvable</code> | This field only applies when the forwarding rule that references this target proxy has a loadBalancingScheme set to INTERNAL_SELF_MANAGED. |
 | <code><a href="#@cdktn/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxyConfig.property.proxyHeader">proxy_header</a></code> | <code>str</code> | Specifies the type of proxy header to append before sending data to the backend. |
 | <code><a href="#@cdktn/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxyConfig.property.region">region</a></code> | <code>str</code> | The Region in which the created target TCP proxy should reside. |
@@ -1406,7 +1453,7 @@ first character must be a lowercase letter, and all following
 characters must be a dash, lowercase letter, or digit, except the last
 character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_target_tcp_proxy#name ComputeRegionTargetTcpProxy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_target_tcp_proxy#name ComputeRegionTargetTcpProxy#name}
 
 ---
 
@@ -1418,9 +1465,9 @@ backend_service: str
 
 - *Type:* str
 
-A reference to the BackendService resource. This field is optional when the loadBalancingScheme (available in beta) is specified.
+A reference to the BackendService resource. This field is optional when the loadBalancingScheme is specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_target_tcp_proxy#backend_service ComputeRegionTargetTcpProxy#backend_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_target_tcp_proxy#backend_service ComputeRegionTargetTcpProxy#backend_service}
 
 ---
 
@@ -1441,7 +1488,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_target_tcp_proxy#deletion_policy ComputeRegionTargetTcpProxy#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_target_tcp_proxy#deletion_policy ComputeRegionTargetTcpProxy#deletion_policy}
 
 ---
 
@@ -1455,7 +1502,7 @@ description: str
 
 An optional description of this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_target_tcp_proxy#description ComputeRegionTargetTcpProxy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_target_tcp_proxy#description ComputeRegionTargetTcpProxy#description}
 
 ---
 
@@ -1467,10 +1514,28 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_target_tcp_proxy#id ComputeRegionTargetTcpProxy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_target_tcp_proxy#id ComputeRegionTargetTcpProxy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `load_balancing_scheme`<sup>Optional</sup> <a name="load_balancing_scheme" id="@cdktn/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxyConfig.property.loadBalancingScheme"></a>
+
+```python
+load_balancing_scheme: str
+```
+
+- *Type:* str
+
+Specifies the load balancer type.
+
+A target TCP proxy created for one type
+of load balancer cannot be used with another. For more information, refer
+to [Summary of types of Google Cloud load balancers](https://docs.cloud.google.com/load-balancing/docs/load-balancing-overview#summary-gclb). Possible values: ["EXTERNAL_MANAGED", "INTERNAL_MANAGED"]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_target_tcp_proxy#load_balancing_scheme ComputeRegionTargetTcpProxy#load_balancing_scheme}
 
 ---
 
@@ -1482,7 +1547,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_target_tcp_proxy#project ComputeRegionTargetTcpProxy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_target_tcp_proxy#project ComputeRegionTargetTcpProxy#project}.
 
 ---
 
@@ -1496,7 +1561,7 @@ proxy_bind: bool | IResolvable
 
 This field only applies when the forwarding rule that references this target proxy has a loadBalancingScheme set to INTERNAL_SELF_MANAGED.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_target_tcp_proxy#proxy_bind ComputeRegionTargetTcpProxy#proxy_bind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_target_tcp_proxy#proxy_bind ComputeRegionTargetTcpProxy#proxy_bind}
 
 ---
 
@@ -1512,7 +1577,7 @@ Specifies the type of proxy header to append before sending data to the backend.
 
 Default value: "NONE" Possible values: ["NONE", "PROXY_V1"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_target_tcp_proxy#proxy_header ComputeRegionTargetTcpProxy#proxy_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_target_tcp_proxy#proxy_header ComputeRegionTargetTcpProxy#proxy_header}
 
 ---
 
@@ -1528,7 +1593,7 @@ The Region in which the created target TCP proxy should reside.
 
 If it is not provided, the provider region is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_target_tcp_proxy#region ComputeRegionTargetTcpProxy#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_target_tcp_proxy#region ComputeRegionTargetTcpProxy#region}
 
 ---
 
@@ -1542,7 +1607,7 @@ timeouts: ComputeRegionTargetTcpProxyTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_target_tcp_proxy#timeouts ComputeRegionTargetTcpProxy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_target_tcp_proxy#timeouts ComputeRegionTargetTcpProxy#timeouts}
 
 ---
 
@@ -1563,8 +1628,8 @@ computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxyTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxyTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_target_tcp_proxy#create ComputeRegionTargetTcpProxy#create}. |
-| <code><a href="#@cdktn/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxyTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_target_tcp_proxy#delete ComputeRegionTargetTcpProxy#delete}. |
+| <code><a href="#@cdktn/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxyTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_target_tcp_proxy#create ComputeRegionTargetTcpProxy#create}. |
+| <code><a href="#@cdktn/provider-google.computeRegionTargetTcpProxy.ComputeRegionTargetTcpProxyTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_target_tcp_proxy#delete ComputeRegionTargetTcpProxy#delete}. |
 
 ---
 
@@ -1576,7 +1641,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_target_tcp_proxy#create ComputeRegionTargetTcpProxy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_target_tcp_proxy#create ComputeRegionTargetTcpProxy#create}.
 
 ---
 
@@ -1588,7 +1653,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_region_target_tcp_proxy#delete ComputeRegionTargetTcpProxy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_region_target_tcp_proxy#delete ComputeRegionTargetTcpProxy#delete}.
 
 ---
 

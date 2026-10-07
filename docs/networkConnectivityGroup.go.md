@@ -4,12 +4,12 @@
 
 ### NetworkConnectivityGroup <a name="NetworkConnectivityGroup" id="@cdktn/provider-google.networkConnectivityGroup.NetworkConnectivityGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_connectivity_group google_network_connectivity_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_connectivity_group google_network_connectivity_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkConnectivityGroup.NetworkConnectivityGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivitygroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networkconnectivitygroup"
 
 networkconnectivitygroup.NewNetworkConnectivityGroup(scope Construct, id *string, config NetworkConnectivityGroupConfig) NetworkConnectivityGroup
 ```
@@ -475,7 +475,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.networkConnectivityGroup.NetworkConnectivityGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivitygroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networkconnectivitygroup"
 
 networkconnectivitygroup.NetworkConnectivityGroup_IsConstruct(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.networkConnectivityGroup.NetworkConnectivityGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivitygroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networkconnectivitygroup"
 
 networkconnectivitygroup.NetworkConnectivityGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ networkconnectivitygroup.NetworkConnectivityGroup_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.networkConnectivityGroup.NetworkConnectivityGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivitygroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networkconnectivitygroup"
 
 networkconnectivitygroup.NetworkConnectivityGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ networkconnectivitygroup.NetworkConnectivityGroup_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.networkConnectivityGroup.NetworkConnectivityGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivitygroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networkconnectivitygroup"
 
 networkconnectivitygroup.NetworkConnectivityGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -564,7 +564,7 @@ The construct id used in the generated config for the NetworkConnectivityGroup t
 
 The id of the existing NetworkConnectivityGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_connectivity_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_connectivity_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1039,7 +1039,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkConnectivityGroup.NetworkConnectivityGroupAutoAccept.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivitygroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networkconnectivitygroup"
 
 &networkconnectivitygroup.NetworkConnectivityGroupAutoAccept {
 	AutoAcceptProjects: *[]*string,
@@ -1066,7 +1066,7 @@ A list of project ids or project numbers for which you want to enable auto-accep
 
 The auto-accept setting is applied to spokes being created or updated in these projects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_connectivity_group#auto_accept_projects NetworkConnectivityGroup#auto_accept_projects}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_connectivity_group#auto_accept_projects NetworkConnectivityGroup#auto_accept_projects}
 
 ---
 
@@ -1075,7 +1075,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkConnectivityGroup.NetworkConnectivityGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivitygroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networkconnectivitygroup"
 
 &networkconnectivitygroup.NetworkConnectivityGroupConfig {
 	Connection: interface{},
@@ -1087,13 +1087,13 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectiv
 	Provisioners: *[]interface{},
 	Hub: *string,
 	Name: *string,
-	AutoAccept: github.com/cdktn-io/cdktn-provider-google-go/google/v20.networkConnectivityGroup.NetworkConnectivityGroupAutoAccept,
+	AutoAccept: github.com/cdktn-io/cdktn-provider-google-go/google/v21.networkConnectivityGroup.NetworkConnectivityGroupAutoAccept,
 	DeletionPolicy: *string,
 	Description: *string,
 	Id: *string,
 	Labels: *map[string]*string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.networkConnectivityGroup.NetworkConnectivityGroupTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.networkConnectivityGroup.NetworkConnectivityGroupTimeouts,
 }
 ```
 
@@ -1113,9 +1113,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectiv
 | <code><a href="#@cdktn/provider-google.networkConnectivityGroup.NetworkConnectivityGroupConfig.property.autoAccept">AutoAccept</a></code> | <code><a href="#@cdktn/provider-google.networkConnectivityGroup.NetworkConnectivityGroupAutoAccept">NetworkConnectivityGroupAutoAccept</a></code> | auto_accept block. |
 | <code><a href="#@cdktn/provider-google.networkConnectivityGroup.NetworkConnectivityGroupConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.networkConnectivityGroup.NetworkConnectivityGroupConfig.property.description">Description</a></code> | <code>*string</code> | An optional description of the group. |
-| <code><a href="#@cdktn/provider-google.networkConnectivityGroup.NetworkConnectivityGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_connectivity_group#id NetworkConnectivityGroup#id}. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityGroup.NetworkConnectivityGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_connectivity_group#id NetworkConnectivityGroup#id}. |
 | <code><a href="#@cdktn/provider-google.networkConnectivityGroup.NetworkConnectivityGroupConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | Optional labels in key:value format. For more information about labels, see [Requirements for labels](https://docs.cloud.google.com/resource-manager/docs/creating-managing-labels#requirements). |
-| <code><a href="#@cdktn/provider-google.networkConnectivityGroup.NetworkConnectivityGroupConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_connectivity_group#project NetworkConnectivityGroup#project}. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityGroup.NetworkConnectivityGroupConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_connectivity_group#project NetworkConnectivityGroup#project}. |
 | <code><a href="#@cdktn/provider-google.networkConnectivityGroup.NetworkConnectivityGroupConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.networkConnectivityGroup.NetworkConnectivityGroupTimeouts">NetworkConnectivityGroupTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1200,7 +1200,7 @@ Hub *string
 
 The name of the hub. Hub names must be unique. They use the following form: projects/{projectNumber}/locations/global/hubs/{hubId}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_connectivity_group#hub NetworkConnectivityGroup#hub}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_connectivity_group#hub NetworkConnectivityGroup#hub}
 
 ---
 
@@ -1214,7 +1214,7 @@ Name *string
 
 The name of the group. Group names must be unique. Possible values: ["default", "center", "edge"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_connectivity_group#name NetworkConnectivityGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_connectivity_group#name NetworkConnectivityGroup#name}
 
 ---
 
@@ -1228,7 +1228,7 @@ AutoAccept NetworkConnectivityGroupAutoAccept
 
 auto_accept block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_connectivity_group#auto_accept NetworkConnectivityGroup#auto_accept}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_connectivity_group#auto_accept NetworkConnectivityGroup#auto_accept}
 
 ---
 
@@ -1249,7 +1249,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_connectivity_group#deletion_policy NetworkConnectivityGroup#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_connectivity_group#deletion_policy NetworkConnectivityGroup#deletion_policy}
 
 ---
 
@@ -1263,7 +1263,7 @@ Description *string
 
 An optional description of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_connectivity_group#description NetworkConnectivityGroup#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_connectivity_group#description NetworkConnectivityGroup#description}
 
 ---
 
@@ -1275,7 +1275,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_connectivity_group#id NetworkConnectivityGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_connectivity_group#id NetworkConnectivityGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1295,7 +1295,7 @@ Optional labels in key:value format. For more information about labels, see [Req
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_connectivity_group#labels NetworkConnectivityGroup#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_connectivity_group#labels NetworkConnectivityGroup#labels}
 
 ---
 
@@ -1307,7 +1307,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_connectivity_group#project NetworkConnectivityGroup#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_connectivity_group#project NetworkConnectivityGroup#project}.
 
 ---
 
@@ -1321,7 +1321,7 @@ Timeouts NetworkConnectivityGroupTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_connectivity_group#timeouts NetworkConnectivityGroup#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_connectivity_group#timeouts NetworkConnectivityGroup#timeouts}
 
 ---
 
@@ -1330,7 +1330,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkConnectivityGroup.NetworkConnectivityGroupTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivitygroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networkconnectivitygroup"
 
 &networkconnectivitygroup.NetworkConnectivityGroupTimeouts {
 	Create: *string,
@@ -1343,9 +1343,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectiv
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.networkConnectivityGroup.NetworkConnectivityGroupTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_connectivity_group#create NetworkConnectivityGroup#create}. |
-| <code><a href="#@cdktn/provider-google.networkConnectivityGroup.NetworkConnectivityGroupTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_connectivity_group#delete NetworkConnectivityGroup#delete}. |
-| <code><a href="#@cdktn/provider-google.networkConnectivityGroup.NetworkConnectivityGroupTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_connectivity_group#update NetworkConnectivityGroup#update}. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityGroup.NetworkConnectivityGroupTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_connectivity_group#create NetworkConnectivityGroup#create}. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityGroup.NetworkConnectivityGroupTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_connectivity_group#delete NetworkConnectivityGroup#delete}. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityGroup.NetworkConnectivityGroupTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_connectivity_group#update NetworkConnectivityGroup#update}. |
 
 ---
 
@@ -1357,7 +1357,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_connectivity_group#create NetworkConnectivityGroup#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_connectivity_group#create NetworkConnectivityGroup#create}.
 
 ---
 
@@ -1369,7 +1369,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_connectivity_group#delete NetworkConnectivityGroup#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_connectivity_group#delete NetworkConnectivityGroup#delete}.
 
 ---
 
@@ -1381,7 +1381,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_connectivity_group#update NetworkConnectivityGroup#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_connectivity_group#update NetworkConnectivityGroup#update}.
 
 ---
 
@@ -1392,7 +1392,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkConnectivityGroup.NetworkConnectivityGroupAutoAcceptOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivitygroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networkconnectivitygroup"
 
 networkconnectivitygroup.NewNetworkConnectivityGroupAutoAcceptOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkConnectivityGroupAutoAcceptOutputReference
 ```
@@ -1663,7 +1663,7 @@ func InternalValue() NetworkConnectivityGroupAutoAccept
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkConnectivityGroup.NetworkConnectivityGroupTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkconnectivitygroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networkconnectivitygroup"
 
 networkconnectivitygroup.NewNetworkConnectivityGroupTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkConnectivityGroupTimeoutsOutputReference
 ```

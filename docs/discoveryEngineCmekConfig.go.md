@@ -4,12 +4,12 @@
 
 ### DiscoveryEngineCmekConfig <a name="DiscoveryEngineCmekConfig" id="@cdktn/provider-google.discoveryEngineCmekConfig.DiscoveryEngineCmekConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_cmek_config google_discovery_engine_cmek_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_cmek_config google_discovery_engine_cmek_config}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineCmekConfig.DiscoveryEngineCmekConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginecmekconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/discoveryenginecmekconfig"
 
 discoveryenginecmekconfig.NewDiscoveryEngineCmekConfig(scope Construct, id *string, config DiscoveryEngineCmekConfigConfig) DiscoveryEngineCmekConfig
 ```
@@ -468,7 +468,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.discoveryEngineCmekConfig.DiscoveryEngineCmekConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginecmekconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/discoveryenginecmekconfig"
 
 discoveryenginecmekconfig.DiscoveryEngineCmekConfig_IsConstruct(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.discoveryEngineCmekConfig.DiscoveryEngineCmekConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginecmekconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/discoveryenginecmekconfig"
 
 discoveryenginecmekconfig.DiscoveryEngineCmekConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ discoveryenginecmekconfig.DiscoveryEngineCmekConfig_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.discoveryEngineCmekConfig.DiscoveryEngineCmekConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginecmekconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/discoveryenginecmekconfig"
 
 discoveryenginecmekconfig.DiscoveryEngineCmekConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -528,7 +528,7 @@ discoveryenginecmekconfig.DiscoveryEngineCmekConfig_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.discoveryEngineCmekConfig.DiscoveryEngineCmekConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginecmekconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/discoveryenginecmekconfig"
 
 discoveryenginecmekconfig.DiscoveryEngineCmekConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -557,7 +557,7 @@ The construct id used in the generated config for the DiscoveryEngineCmekConfig 
 
 The id of the existing DiscoveryEngineCmekConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_cmek_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_cmek_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1021,7 +1021,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineCmekConfig.DiscoveryEngineCmekConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginecmekconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/discoveryenginecmekconfig"
 
 &discoveryenginecmekconfig.DiscoveryEngineCmekConfigConfig {
 	Connection: interface{},
@@ -1039,7 +1039,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginec
 	Project: *string,
 	SetDefault: interface{},
 	SingleRegionKeys: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.discoveryEngineCmekConfig.DiscoveryEngineCmekConfigTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.discoveryEngineCmekConfig.DiscoveryEngineCmekConfigTimeouts,
 }
 ```
 
@@ -1058,8 +1058,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginec
 | <code><a href="#@cdktn/provider-google.discoveryEngineCmekConfig.DiscoveryEngineCmekConfigConfig.property.kmsKey">KmsKey</a></code> | <code>*string</code> | KMS key resource name which will be used to encrypt resources 'projects/{project}/locations/{location}/keyRings/{keyRing}/cryptoKeys/{keyId}'. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineCmekConfig.DiscoveryEngineCmekConfigConfig.property.location">Location</a></code> | <code>*string</code> | The geographic location where the CMEK config should reside. The value can only be one of "us" and "eu". |
 | <code><a href="#@cdktn/provider-google.discoveryEngineCmekConfig.DiscoveryEngineCmekConfigConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineCmekConfig.DiscoveryEngineCmekConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_cmek_config#id DiscoveryEngineCmekConfig#id}. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineCmekConfig.DiscoveryEngineCmekConfigConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_cmek_config#project DiscoveryEngineCmekConfig#project}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineCmekConfig.DiscoveryEngineCmekConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_cmek_config#id DiscoveryEngineCmekConfig#id}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineCmekConfig.DiscoveryEngineCmekConfigConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_cmek_config#project DiscoveryEngineCmekConfig#project}. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineCmekConfig.DiscoveryEngineCmekConfigConfig.property.setDefault">SetDefault</a></code> | <code>interface{}</code> | Set the following CmekConfig as the default to be used for child resources if one is not specified. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineCmekConfig.DiscoveryEngineCmekConfigConfig.property.singleRegionKeys">SingleRegionKeys</a></code> | <code>interface{}</code> | single_region_keys block. |
 | <code><a href="#@cdktn/provider-google.discoveryEngineCmekConfig.DiscoveryEngineCmekConfigConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.discoveryEngineCmekConfig.DiscoveryEngineCmekConfigTimeouts">DiscoveryEngineCmekConfigTimeouts</a></code> | timeouts block. |
@@ -1146,7 +1146,7 @@ CmekConfigId *string
 
 The unique id of the cmek config.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_cmek_config#cmek_config_id DiscoveryEngineCmekConfig#cmek_config_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_cmek_config#cmek_config_id DiscoveryEngineCmekConfig#cmek_config_id}
 
 ---
 
@@ -1160,7 +1160,7 @@ KmsKey *string
 
 KMS key resource name which will be used to encrypt resources 'projects/{project}/locations/{location}/keyRings/{keyRing}/cryptoKeys/{keyId}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_cmek_config#kms_key DiscoveryEngineCmekConfig#kms_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_cmek_config#kms_key DiscoveryEngineCmekConfig#kms_key}
 
 ---
 
@@ -1174,7 +1174,7 @@ Location *string
 
 The geographic location where the CMEK config should reside. The value can only be one of "us" and "eu".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_cmek_config#location DiscoveryEngineCmekConfig#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_cmek_config#location DiscoveryEngineCmekConfig#location}
 
 ---
 
@@ -1195,7 +1195,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_cmek_config#deletion_policy DiscoveryEngineCmekConfig#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_cmek_config#deletion_policy DiscoveryEngineCmekConfig#deletion_policy}
 
 ---
 
@@ -1207,7 +1207,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_cmek_config#id DiscoveryEngineCmekConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_cmek_config#id DiscoveryEngineCmekConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1222,7 +1222,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_cmek_config#project DiscoveryEngineCmekConfig#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_cmek_config#project DiscoveryEngineCmekConfig#project}.
 
 ---
 
@@ -1238,7 +1238,7 @@ Set the following CmekConfig as the default to be used for child resources if on
 
 The default value is true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_cmek_config#set_default DiscoveryEngineCmekConfig#set_default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_cmek_config#set_default DiscoveryEngineCmekConfig#set_default}
 
 ---
 
@@ -1252,7 +1252,7 @@ SingleRegionKeys interface{}
 
 single_region_keys block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_cmek_config#single_region_keys DiscoveryEngineCmekConfig#single_region_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_cmek_config#single_region_keys DiscoveryEngineCmekConfig#single_region_keys}
 
 ---
 
@@ -1266,7 +1266,7 @@ Timeouts DiscoveryEngineCmekConfigTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_cmek_config#timeouts DiscoveryEngineCmekConfig#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_cmek_config#timeouts DiscoveryEngineCmekConfig#timeouts}
 
 ---
 
@@ -1275,7 +1275,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineCmekConfig.DiscoveryEngineCmekConfigSingleRegionKeys.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginecmekconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/discoveryenginecmekconfig"
 
 &discoveryenginecmekconfig.DiscoveryEngineCmekConfigSingleRegionKeys {
 	KmsKey: *string,
@@ -1300,7 +1300,7 @@ KmsKey *string
 
 Single-regional kms key resource name which will be used to encrypt resources 'projects/{project}/locations/{location}/keyRings/{keyRing}/cryptoKeys/{keyId}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_cmek_config#kms_key DiscoveryEngineCmekConfig#kms_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_cmek_config#kms_key DiscoveryEngineCmekConfig#kms_key}
 
 ---
 
@@ -1309,7 +1309,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.discoveryEngineCmekConfig.DiscoveryEngineCmekConfigTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginecmekconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/discoveryenginecmekconfig"
 
 &discoveryenginecmekconfig.DiscoveryEngineCmekConfigTimeouts {
 	Create: *string,
@@ -1322,9 +1322,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginec
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.discoveryEngineCmekConfig.DiscoveryEngineCmekConfigTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_cmek_config#create DiscoveryEngineCmekConfig#create}. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineCmekConfig.DiscoveryEngineCmekConfigTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_cmek_config#delete DiscoveryEngineCmekConfig#delete}. |
-| <code><a href="#@cdktn/provider-google.discoveryEngineCmekConfig.DiscoveryEngineCmekConfigTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_cmek_config#update DiscoveryEngineCmekConfig#update}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineCmekConfig.DiscoveryEngineCmekConfigTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_cmek_config#create DiscoveryEngineCmekConfig#create}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineCmekConfig.DiscoveryEngineCmekConfigTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_cmek_config#delete DiscoveryEngineCmekConfig#delete}. |
+| <code><a href="#@cdktn/provider-google.discoveryEngineCmekConfig.DiscoveryEngineCmekConfigTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_cmek_config#update DiscoveryEngineCmekConfig#update}. |
 
 ---
 
@@ -1336,7 +1336,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_cmek_config#create DiscoveryEngineCmekConfig#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_cmek_config#create DiscoveryEngineCmekConfig#create}.
 
 ---
 
@@ -1348,7 +1348,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_cmek_config#delete DiscoveryEngineCmekConfig#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_cmek_config#delete DiscoveryEngineCmekConfig#delete}.
 
 ---
 
@@ -1360,7 +1360,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/discovery_engine_cmek_config#update DiscoveryEngineCmekConfig#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/discovery_engine_cmek_config#update DiscoveryEngineCmekConfig#update}.
 
 ---
 
@@ -1371,7 +1371,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineCmekConfig.DiscoveryEngineCmekConfigSingleRegionKeysList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginecmekconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/discoveryenginecmekconfig"
 
 discoveryenginecmekconfig.NewDiscoveryEngineCmekConfigSingleRegionKeysList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DiscoveryEngineCmekConfigSingleRegionKeysList
 ```
@@ -1531,7 +1531,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineCmekConfig.DiscoveryEngineCmekConfigSingleRegionKeysOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginecmekconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/discoveryenginecmekconfig"
 
 discoveryenginecmekconfig.NewDiscoveryEngineCmekConfigSingleRegionKeysOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DiscoveryEngineCmekConfigSingleRegionKeysOutputReference
 ```
@@ -1820,7 +1820,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.discoveryEngineCmekConfig.DiscoveryEngineCmekConfigTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/discoveryenginecmekconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/discoveryenginecmekconfig"
 
 discoveryenginecmekconfig.NewDiscoveryEngineCmekConfigTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineCmekConfigTimeoutsOutputReference
 ```

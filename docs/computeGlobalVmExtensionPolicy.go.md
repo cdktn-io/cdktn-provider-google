@@ -4,12 +4,12 @@
 
 ### ComputeGlobalVmExtensionPolicy <a name="ComputeGlobalVmExtensionPolicy" id="@cdktn/provider-google.computeGlobalVmExtensionPolicy.ComputeGlobalVmExtensionPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_global_vm_extension_policy google_compute_global_vm_extension_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_global_vm_extension_policy google_compute_global_vm_extension_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeGlobalVmExtensionPolicy.ComputeGlobalVmExtensionPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeglobalvmextensionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeglobalvmextensionpolicy"
 
 computeglobalvmextensionpolicy.NewComputeGlobalVmExtensionPolicy(scope Construct, id *string, config ComputeGlobalVmExtensionPolicyConfig) ComputeGlobalVmExtensionPolicy
 ```
@@ -494,7 +494,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeGlobalVmExtensionPolicy.ComputeGlobalVmExtensionPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeglobalvmextensionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeglobalvmextensionpolicy"
 
 computeglobalvmextensionpolicy.ComputeGlobalVmExtensionPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -526,7 +526,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeGlobalVmExtensionPolicy.ComputeGlobalVmExtensionPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeglobalvmextensionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeglobalvmextensionpolicy"
 
 computeglobalvmextensionpolicy.ComputeGlobalVmExtensionPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -540,7 +540,7 @@ computeglobalvmextensionpolicy.ComputeGlobalVmExtensionPolicy_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeGlobalVmExtensionPolicy.ComputeGlobalVmExtensionPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeglobalvmextensionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeglobalvmextensionpolicy"
 
 computeglobalvmextensionpolicy.ComputeGlobalVmExtensionPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -554,7 +554,7 @@ computeglobalvmextensionpolicy.ComputeGlobalVmExtensionPolicy_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeGlobalVmExtensionPolicy.ComputeGlobalVmExtensionPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeglobalvmextensionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeglobalvmextensionpolicy"
 
 computeglobalvmextensionpolicy.ComputeGlobalVmExtensionPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -583,7 +583,7 @@ The construct id used in the generated config for the ComputeGlobalVmExtensionPo
 
 The id of the existing ComputeGlobalVmExtensionPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_global_vm_extension_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_global_vm_extension_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1047,7 +1047,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeGlobalVmExtensionPolicy.ComputeGlobalVmExtensionPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeglobalvmextensionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeglobalvmextensionpolicy"
 
 &computeglobalvmextensionpolicy.ComputeGlobalVmExtensionPolicyConfig {
 	Connection: interface{},
@@ -1059,13 +1059,13 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeglobalvme
 	Provisioners: *[]interface{},
 	ExtensionPolicies: interface{},
 	Name: *string,
-	RolloutOperation: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeGlobalVmExtensionPolicy.ComputeGlobalVmExtensionPolicyRolloutOperation,
+	RolloutOperation: github.com/cdktn-io/cdktn-provider-google-go/google/v21.computeGlobalVmExtensionPolicy.ComputeGlobalVmExtensionPolicyRolloutOperation,
 	DeletionPolicy: *string,
 	Description: *string,
 	InstanceSelectors: interface{},
 	Priority: *f64,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeGlobalVmExtensionPolicy.ComputeGlobalVmExtensionPolicyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.computeGlobalVmExtensionPolicy.ComputeGlobalVmExtensionPolicyTimeouts,
 }
 ```
 
@@ -1087,7 +1087,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeglobalvme
 | <code><a href="#@cdktn/provider-google.computeGlobalVmExtensionPolicy.ComputeGlobalVmExtensionPolicyConfig.property.description">Description</a></code> | <code>*string</code> | An optional description of this resource. |
 | <code><a href="#@cdktn/provider-google.computeGlobalVmExtensionPolicy.ComputeGlobalVmExtensionPolicyConfig.property.instanceSelectors">InstanceSelectors</a></code> | <code>interface{}</code> | instance_selectors block. |
 | <code><a href="#@cdktn/provider-google.computeGlobalVmExtensionPolicy.ComputeGlobalVmExtensionPolicyConfig.property.priority">Priority</a></code> | <code>*f64</code> | Used to resolve conflicts when multiple policies are active. Defaults to 0. |
-| <code><a href="#@cdktn/provider-google.computeGlobalVmExtensionPolicy.ComputeGlobalVmExtensionPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_global_vm_extension_policy#project ComputeGlobalVmExtensionPolicy#project}. |
+| <code><a href="#@cdktn/provider-google.computeGlobalVmExtensionPolicy.ComputeGlobalVmExtensionPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_global_vm_extension_policy#project ComputeGlobalVmExtensionPolicy#project}. |
 | <code><a href="#@cdktn/provider-google.computeGlobalVmExtensionPolicy.ComputeGlobalVmExtensionPolicyConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeGlobalVmExtensionPolicy.ComputeGlobalVmExtensionPolicyTimeouts">ComputeGlobalVmExtensionPolicyTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1172,7 +1172,7 @@ ExtensionPolicies interface{}
 
 extension_policies block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_global_vm_extension_policy#extension_policies ComputeGlobalVmExtensionPolicy#extension_policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_global_vm_extension_policy#extension_policies ComputeGlobalVmExtensionPolicy#extension_policies}
 
 ---
 
@@ -1188,7 +1188,7 @@ Name of the resource.
 
 Provided by the client when the resource is created. The name must be 1-63 characters long and match the regular expression '^[a-z](%5B-a-z0-9%5D%7B0,61%7D%5Ba-z0-9%5D)?$' to comply with RFC1035.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_global_vm_extension_policy#name ComputeGlobalVmExtensionPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_global_vm_extension_policy#name ComputeGlobalVmExtensionPolicy#name}
 
 ---
 
@@ -1202,7 +1202,7 @@ RolloutOperation ComputeGlobalVmExtensionPolicyRolloutOperation
 
 rollout_operation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_global_vm_extension_policy#rollout_operation ComputeGlobalVmExtensionPolicy#rollout_operation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_global_vm_extension_policy#rollout_operation ComputeGlobalVmExtensionPolicy#rollout_operation}
 
 ---
 
@@ -1223,7 +1223,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_global_vm_extension_policy#deletion_policy ComputeGlobalVmExtensionPolicy#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_global_vm_extension_policy#deletion_policy ComputeGlobalVmExtensionPolicy#deletion_policy}
 
 ---
 
@@ -1237,7 +1237,7 @@ Description *string
 
 An optional description of this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_global_vm_extension_policy#description ComputeGlobalVmExtensionPolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_global_vm_extension_policy#description ComputeGlobalVmExtensionPolicy#description}
 
 ---
 
@@ -1251,7 +1251,7 @@ InstanceSelectors interface{}
 
 instance_selectors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_global_vm_extension_policy#instance_selectors ComputeGlobalVmExtensionPolicy#instance_selectors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_global_vm_extension_policy#instance_selectors ComputeGlobalVmExtensionPolicy#instance_selectors}
 
 ---
 
@@ -1265,7 +1265,7 @@ Priority *f64
 
 Used to resolve conflicts when multiple policies are active. Defaults to 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_global_vm_extension_policy#priority ComputeGlobalVmExtensionPolicy#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_global_vm_extension_policy#priority ComputeGlobalVmExtensionPolicy#priority}
 
 ---
 
@@ -1277,7 +1277,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_global_vm_extension_policy#project ComputeGlobalVmExtensionPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_global_vm_extension_policy#project ComputeGlobalVmExtensionPolicy#project}.
 
 ---
 
@@ -1291,7 +1291,7 @@ Timeouts ComputeGlobalVmExtensionPolicyTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_global_vm_extension_policy#timeouts ComputeGlobalVmExtensionPolicy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_global_vm_extension_policy#timeouts ComputeGlobalVmExtensionPolicy#timeouts}
 
 ---
 
@@ -1300,7 +1300,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeGlobalVmExtensionPolicy.ComputeGlobalVmExtensionPolicyExtensionPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeglobalvmextensionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeglobalvmextensionpolicy"
 
 &computeglobalvmextensionpolicy.ComputeGlobalVmExtensionPolicyExtensionPolicies {
 	ExtensionName: *string,
@@ -1313,7 +1313,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeglobalvme
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeGlobalVmExtensionPolicy.ComputeGlobalVmExtensionPolicyExtensionPolicies.property.extensionName">ExtensionName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_global_vm_extension_policy#extension_name ComputeGlobalVmExtensionPolicy#extension_name}. |
+| <code><a href="#@cdktn/provider-google.computeGlobalVmExtensionPolicy.ComputeGlobalVmExtensionPolicyExtensionPolicies.property.extensionName">ExtensionName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_global_vm_extension_policy#extension_name ComputeGlobalVmExtensionPolicy#extension_name}. |
 | <code><a href="#@cdktn/provider-google.computeGlobalVmExtensionPolicy.ComputeGlobalVmExtensionPolicyExtensionPolicies.property.pinnedVersion">PinnedVersion</a></code> | <code>*string</code> | The version pinning for the extension. |
 | <code><a href="#@cdktn/provider-google.computeGlobalVmExtensionPolicy.ComputeGlobalVmExtensionPolicyExtensionPolicies.property.stringConfig">StringConfig</a></code> | <code>*string</code> | String configuration payload. |
 
@@ -1327,7 +1327,7 @@ ExtensionName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_global_vm_extension_policy#extension_name ComputeGlobalVmExtensionPolicy#extension_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_global_vm_extension_policy#extension_name ComputeGlobalVmExtensionPolicy#extension_name}.
 
 ---
 
@@ -1341,7 +1341,7 @@ PinnedVersion *string
 
 The version pinning for the extension.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_global_vm_extension_policy#pinned_version ComputeGlobalVmExtensionPolicy#pinned_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_global_vm_extension_policy#pinned_version ComputeGlobalVmExtensionPolicy#pinned_version}
 
 ---
 
@@ -1355,7 +1355,7 @@ StringConfig *string
 
 String configuration payload.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_global_vm_extension_policy#string_config ComputeGlobalVmExtensionPolicy#string_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_global_vm_extension_policy#string_config ComputeGlobalVmExtensionPolicy#string_config}
 
 ---
 
@@ -1364,10 +1364,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeGlobalVmExtensionPolicy.ComputeGlobalVmExtensionPolicyInstanceSelectors.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeglobalvmextensionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeglobalvmextensionpolicy"
 
 &computeglobalvmextensionpolicy.ComputeGlobalVmExtensionPolicyInstanceSelectors {
-	LabelSelector: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeGlobalVmExtensionPolicy.ComputeGlobalVmExtensionPolicyInstanceSelectorsLabelSelector,
+	LabelSelector: github.com/cdktn-io/cdktn-provider-google-go/google/v21.computeGlobalVmExtensionPolicy.ComputeGlobalVmExtensionPolicyInstanceSelectorsLabelSelector,
 }
 ```
 
@@ -1389,7 +1389,7 @@ LabelSelector ComputeGlobalVmExtensionPolicyInstanceSelectorsLabelSelector
 
 label_selector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_global_vm_extension_policy#label_selector ComputeGlobalVmExtensionPolicy#label_selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_global_vm_extension_policy#label_selector ComputeGlobalVmExtensionPolicy#label_selector}
 
 ---
 
@@ -1398,7 +1398,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeGlobalVmExtensionPolicy.ComputeGlobalVmExtensionPolicyInstanceSelectorsLabelSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeglobalvmextensionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeglobalvmextensionpolicy"
 
 &computeglobalvmextensionpolicy.ComputeGlobalVmExtensionPolicyInstanceSelectorsLabelSelector {
 	InclusionLabels: *map[string]*string,
@@ -1423,7 +1423,7 @@ InclusionLabels *map[string]*string
 
 Labels as key value pairs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_global_vm_extension_policy#inclusion_labels ComputeGlobalVmExtensionPolicy#inclusion_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_global_vm_extension_policy#inclusion_labels ComputeGlobalVmExtensionPolicy#inclusion_labels}
 
 ---
 
@@ -1432,10 +1432,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeGlobalVmExtensionPolicy.ComputeGlobalVmExtensionPolicyRolloutOperation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeglobalvmextensionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeglobalvmextensionpolicy"
 
 &computeglobalvmextensionpolicy.ComputeGlobalVmExtensionPolicyRolloutOperation {
-	RolloutInput: github.com/cdktn-io/cdktn-provider-google-go/google/v20.computeGlobalVmExtensionPolicy.ComputeGlobalVmExtensionPolicyRolloutOperationRolloutInput,
+	RolloutInput: github.com/cdktn-io/cdktn-provider-google-go/google/v21.computeGlobalVmExtensionPolicy.ComputeGlobalVmExtensionPolicyRolloutOperationRolloutInput,
 }
 ```
 
@@ -1457,7 +1457,7 @@ RolloutInput ComputeGlobalVmExtensionPolicyRolloutOperationRolloutInput
 
 rollout_input block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_global_vm_extension_policy#rollout_input ComputeGlobalVmExtensionPolicy#rollout_input}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_global_vm_extension_policy#rollout_input ComputeGlobalVmExtensionPolicy#rollout_input}
 
 ---
 
@@ -1466,7 +1466,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeGlobalVmExtensionPolicy.ComputeGlobalVmExtensionPolicyRolloutOperationRolloutInput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeglobalvmextensionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeglobalvmextensionpolicy"
 
 &computeglobalvmextensionpolicy.ComputeGlobalVmExtensionPolicyRolloutOperationRolloutInput {
 	ConflictBehavior: *string,
@@ -1497,7 +1497,7 @@ ConflictBehavior *string
 
 Specifies the behavior of the rollout if a conflict is detected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_global_vm_extension_policy#conflict_behavior ComputeGlobalVmExtensionPolicy#conflict_behavior}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_global_vm_extension_policy#conflict_behavior ComputeGlobalVmExtensionPolicy#conflict_behavior}
 
 ---
 
@@ -1511,7 +1511,7 @@ Name *string
 
 The name of the rollout plan.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_global_vm_extension_policy#name ComputeGlobalVmExtensionPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_global_vm_extension_policy#name ComputeGlobalVmExtensionPolicy#name}
 
 ---
 
@@ -1525,7 +1525,7 @@ PredefinedRolloutPlan *string
 
 Specifies the predefined rollout plan for the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_global_vm_extension_policy#predefined_rollout_plan ComputeGlobalVmExtensionPolicy#predefined_rollout_plan}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_global_vm_extension_policy#predefined_rollout_plan ComputeGlobalVmExtensionPolicy#predefined_rollout_plan}
 
 ---
 
@@ -1541,7 +1541,7 @@ The UUID that identifies a policy rollout retry attempt.
 
 It should only be set when retrying an existing rollout. Updating this field along with other policy fields (description, extension_policies, instance_selectors, priority) in the same plan will return an error.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_global_vm_extension_policy#retry_uuid ComputeGlobalVmExtensionPolicy#retry_uuid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_global_vm_extension_policy#retry_uuid ComputeGlobalVmExtensionPolicy#retry_uuid}
 
 ---
 
@@ -1550,7 +1550,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeGlobalVmExtensionPolicy.ComputeGlobalVmExtensionPolicyRolloutOperationRolloutStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeglobalvmextensionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeglobalvmextensionpolicy"
 
 &computeglobalvmextensionpolicy.ComputeGlobalVmExtensionPolicyRolloutOperationRolloutStatus {
 
@@ -1563,7 +1563,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeglobalvme
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeGlobalVmExtensionPolicy.ComputeGlobalVmExtensionPolicyRolloutOperationRolloutStatusCurrentRollouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeglobalvmextensionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeglobalvmextensionpolicy"
 
 &computeglobalvmextensionpolicy.ComputeGlobalVmExtensionPolicyRolloutOperationRolloutStatusCurrentRollouts {
 
@@ -1576,7 +1576,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeglobalvme
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeGlobalVmExtensionPolicy.ComputeGlobalVmExtensionPolicyRolloutOperationRolloutStatusCurrentRolloutsLocationRolloutStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeglobalvmextensionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeglobalvmextensionpolicy"
 
 &computeglobalvmextensionpolicy.ComputeGlobalVmExtensionPolicyRolloutOperationRolloutStatusCurrentRolloutsLocationRolloutStatus {
 
@@ -1589,7 +1589,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeglobalvme
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeGlobalVmExtensionPolicy.ComputeGlobalVmExtensionPolicyRolloutOperationRolloutStatusPreviousRollout.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeglobalvmextensionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeglobalvmextensionpolicy"
 
 &computeglobalvmextensionpolicy.ComputeGlobalVmExtensionPolicyRolloutOperationRolloutStatusPreviousRollout {
 
@@ -1602,7 +1602,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeglobalvme
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeGlobalVmExtensionPolicy.ComputeGlobalVmExtensionPolicyRolloutOperationRolloutStatusPreviousRolloutLocationRolloutStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeglobalvmextensionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeglobalvmextensionpolicy"
 
 &computeglobalvmextensionpolicy.ComputeGlobalVmExtensionPolicyRolloutOperationRolloutStatusPreviousRolloutLocationRolloutStatus {
 
@@ -1615,7 +1615,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeglobalvme
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeGlobalVmExtensionPolicy.ComputeGlobalVmExtensionPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeglobalvmextensionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeglobalvmextensionpolicy"
 
 &computeglobalvmextensionpolicy.ComputeGlobalVmExtensionPolicyTimeouts {
 	Create: *string,
@@ -1628,9 +1628,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeglobalvme
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.computeGlobalVmExtensionPolicy.ComputeGlobalVmExtensionPolicyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_global_vm_extension_policy#create ComputeGlobalVmExtensionPolicy#create}. |
-| <code><a href="#@cdktn/provider-google.computeGlobalVmExtensionPolicy.ComputeGlobalVmExtensionPolicyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_global_vm_extension_policy#delete ComputeGlobalVmExtensionPolicy#delete}. |
-| <code><a href="#@cdktn/provider-google.computeGlobalVmExtensionPolicy.ComputeGlobalVmExtensionPolicyTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_global_vm_extension_policy#update ComputeGlobalVmExtensionPolicy#update}. |
+| <code><a href="#@cdktn/provider-google.computeGlobalVmExtensionPolicy.ComputeGlobalVmExtensionPolicyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_global_vm_extension_policy#create ComputeGlobalVmExtensionPolicy#create}. |
+| <code><a href="#@cdktn/provider-google.computeGlobalVmExtensionPolicy.ComputeGlobalVmExtensionPolicyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_global_vm_extension_policy#delete ComputeGlobalVmExtensionPolicy#delete}. |
+| <code><a href="#@cdktn/provider-google.computeGlobalVmExtensionPolicy.ComputeGlobalVmExtensionPolicyTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_global_vm_extension_policy#update ComputeGlobalVmExtensionPolicy#update}. |
 
 ---
 
@@ -1642,7 +1642,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_global_vm_extension_policy#create ComputeGlobalVmExtensionPolicy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_global_vm_extension_policy#create ComputeGlobalVmExtensionPolicy#create}.
 
 ---
 
@@ -1654,7 +1654,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_global_vm_extension_policy#delete ComputeGlobalVmExtensionPolicy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_global_vm_extension_policy#delete ComputeGlobalVmExtensionPolicy#delete}.
 
 ---
 
@@ -1666,7 +1666,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/compute_global_vm_extension_policy#update ComputeGlobalVmExtensionPolicy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/compute_global_vm_extension_policy#update ComputeGlobalVmExtensionPolicy#update}.
 
 ---
 
@@ -1677,7 +1677,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeGlobalVmExtensionPolicy.ComputeGlobalVmExtensionPolicyExtensionPoliciesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeglobalvmextensionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeglobalvmextensionpolicy"
 
 computeglobalvmextensionpolicy.NewComputeGlobalVmExtensionPolicyExtensionPoliciesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeGlobalVmExtensionPolicyExtensionPoliciesList
 ```
@@ -1837,7 +1837,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeGlobalVmExtensionPolicy.ComputeGlobalVmExtensionPolicyExtensionPoliciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeglobalvmextensionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeglobalvmextensionpolicy"
 
 computeglobalvmextensionpolicy.NewComputeGlobalVmExtensionPolicyExtensionPoliciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeGlobalVmExtensionPolicyExtensionPoliciesOutputReference
 ```
@@ -2184,7 +2184,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeGlobalVmExtensionPolicy.ComputeGlobalVmExtensionPolicyInstanceSelectorsLabelSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeglobalvmextensionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeglobalvmextensionpolicy"
 
 computeglobalvmextensionpolicy.NewComputeGlobalVmExtensionPolicyInstanceSelectorsLabelSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeGlobalVmExtensionPolicyInstanceSelectorsLabelSelectorOutputReference
 ```
@@ -2462,7 +2462,7 @@ func InternalValue() ComputeGlobalVmExtensionPolicyInstanceSelectorsLabelSelecto
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeGlobalVmExtensionPolicy.ComputeGlobalVmExtensionPolicyInstanceSelectorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeglobalvmextensionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeglobalvmextensionpolicy"
 
 computeglobalvmextensionpolicy.NewComputeGlobalVmExtensionPolicyInstanceSelectorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeGlobalVmExtensionPolicyInstanceSelectorsList
 ```
@@ -2622,7 +2622,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeGlobalVmExtensionPolicy.ComputeGlobalVmExtensionPolicyInstanceSelectorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeglobalvmextensionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeglobalvmextensionpolicy"
 
 computeglobalvmextensionpolicy.NewComputeGlobalVmExtensionPolicyInstanceSelectorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeGlobalVmExtensionPolicyInstanceSelectorsOutputReference
 ```
@@ -2931,7 +2931,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeGlobalVmExtensionPolicy.ComputeGlobalVmExtensionPolicyRolloutOperationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeglobalvmextensionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeglobalvmextensionpolicy"
 
 computeglobalvmextensionpolicy.NewComputeGlobalVmExtensionPolicyRolloutOperationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeGlobalVmExtensionPolicyRolloutOperationOutputReference
 ```
@@ -3226,7 +3226,7 @@ func InternalValue() ComputeGlobalVmExtensionPolicyRolloutOperation
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeGlobalVmExtensionPolicy.ComputeGlobalVmExtensionPolicyRolloutOperationRolloutInputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeglobalvmextensionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeglobalvmextensionpolicy"
 
 computeglobalvmextensionpolicy.NewComputeGlobalVmExtensionPolicyRolloutOperationRolloutInputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeGlobalVmExtensionPolicyRolloutOperationRolloutInputOutputReference
 ```
@@ -3591,7 +3591,7 @@ func InternalValue() ComputeGlobalVmExtensionPolicyRolloutOperationRolloutInput
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeGlobalVmExtensionPolicy.ComputeGlobalVmExtensionPolicyRolloutOperationRolloutStatusCurrentRolloutsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeglobalvmextensionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeglobalvmextensionpolicy"
 
 computeglobalvmextensionpolicy.NewComputeGlobalVmExtensionPolicyRolloutOperationRolloutStatusCurrentRolloutsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeGlobalVmExtensionPolicyRolloutOperationRolloutStatusCurrentRolloutsList
 ```
@@ -3740,7 +3740,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeGlobalVmExtensionPolicy.ComputeGlobalVmExtensionPolicyRolloutOperationRolloutStatusCurrentRolloutsLocationRolloutStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeglobalvmextensionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeglobalvmextensionpolicy"
 
 computeglobalvmextensionpolicy.NewComputeGlobalVmExtensionPolicyRolloutOperationRolloutStatusCurrentRolloutsLocationRolloutStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeGlobalVmExtensionPolicyRolloutOperationRolloutStatusCurrentRolloutsLocationRolloutStatusList
 ```
@@ -3889,7 +3889,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeGlobalVmExtensionPolicy.ComputeGlobalVmExtensionPolicyRolloutOperationRolloutStatusCurrentRolloutsLocationRolloutStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeglobalvmextensionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeglobalvmextensionpolicy"
 
 computeglobalvmextensionpolicy.NewComputeGlobalVmExtensionPolicyRolloutOperationRolloutStatusCurrentRolloutsLocationRolloutStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeGlobalVmExtensionPolicyRolloutOperationRolloutStatusCurrentRolloutsLocationRolloutStatusOutputReference
 ```
@@ -4178,7 +4178,7 @@ func InternalValue() ComputeGlobalVmExtensionPolicyRolloutOperationRolloutStatus
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeGlobalVmExtensionPolicy.ComputeGlobalVmExtensionPolicyRolloutOperationRolloutStatusCurrentRolloutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeglobalvmextensionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeglobalvmextensionpolicy"
 
 computeglobalvmextensionpolicy.NewComputeGlobalVmExtensionPolicyRolloutOperationRolloutStatusCurrentRolloutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeGlobalVmExtensionPolicyRolloutOperationRolloutStatusCurrentRolloutsOutputReference
 ```
@@ -4489,7 +4489,7 @@ func InternalValue() ComputeGlobalVmExtensionPolicyRolloutOperationRolloutStatus
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeGlobalVmExtensionPolicy.ComputeGlobalVmExtensionPolicyRolloutOperationRolloutStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeglobalvmextensionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeglobalvmextensionpolicy"
 
 computeglobalvmextensionpolicy.NewComputeGlobalVmExtensionPolicyRolloutOperationRolloutStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeGlobalVmExtensionPolicyRolloutOperationRolloutStatusList
 ```
@@ -4638,7 +4638,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeGlobalVmExtensionPolicy.ComputeGlobalVmExtensionPolicyRolloutOperationRolloutStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeglobalvmextensionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeglobalvmextensionpolicy"
 
 computeglobalvmextensionpolicy.NewComputeGlobalVmExtensionPolicyRolloutOperationRolloutStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeGlobalVmExtensionPolicyRolloutOperationRolloutStatusOutputReference
 ```
@@ -4927,7 +4927,7 @@ func InternalValue() ComputeGlobalVmExtensionPolicyRolloutOperationRolloutStatus
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeGlobalVmExtensionPolicy.ComputeGlobalVmExtensionPolicyRolloutOperationRolloutStatusPreviousRolloutList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeglobalvmextensionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeglobalvmextensionpolicy"
 
 computeglobalvmextensionpolicy.NewComputeGlobalVmExtensionPolicyRolloutOperationRolloutStatusPreviousRolloutList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeGlobalVmExtensionPolicyRolloutOperationRolloutStatusPreviousRolloutList
 ```
@@ -5076,7 +5076,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeGlobalVmExtensionPolicy.ComputeGlobalVmExtensionPolicyRolloutOperationRolloutStatusPreviousRolloutLocationRolloutStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeglobalvmextensionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeglobalvmextensionpolicy"
 
 computeglobalvmextensionpolicy.NewComputeGlobalVmExtensionPolicyRolloutOperationRolloutStatusPreviousRolloutLocationRolloutStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeGlobalVmExtensionPolicyRolloutOperationRolloutStatusPreviousRolloutLocationRolloutStatusList
 ```
@@ -5225,7 +5225,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeGlobalVmExtensionPolicy.ComputeGlobalVmExtensionPolicyRolloutOperationRolloutStatusPreviousRolloutLocationRolloutStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeglobalvmextensionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeglobalvmextensionpolicy"
 
 computeglobalvmextensionpolicy.NewComputeGlobalVmExtensionPolicyRolloutOperationRolloutStatusPreviousRolloutLocationRolloutStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeGlobalVmExtensionPolicyRolloutOperationRolloutStatusPreviousRolloutLocationRolloutStatusOutputReference
 ```
@@ -5514,7 +5514,7 @@ func InternalValue() ComputeGlobalVmExtensionPolicyRolloutOperationRolloutStatus
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeGlobalVmExtensionPolicy.ComputeGlobalVmExtensionPolicyRolloutOperationRolloutStatusPreviousRolloutOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeglobalvmextensionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeglobalvmextensionpolicy"
 
 computeglobalvmextensionpolicy.NewComputeGlobalVmExtensionPolicyRolloutOperationRolloutStatusPreviousRolloutOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeGlobalVmExtensionPolicyRolloutOperationRolloutStatusPreviousRolloutOutputReference
 ```
@@ -5825,7 +5825,7 @@ func InternalValue() ComputeGlobalVmExtensionPolicyRolloutOperationRolloutStatus
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeGlobalVmExtensionPolicy.ComputeGlobalVmExtensionPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/computeglobalvmextensionpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/computeglobalvmextensionpolicy"
 
 computeglobalvmextensionpolicy.NewComputeGlobalVmExtensionPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeGlobalVmExtensionPolicyTimeoutsOutputReference
 ```

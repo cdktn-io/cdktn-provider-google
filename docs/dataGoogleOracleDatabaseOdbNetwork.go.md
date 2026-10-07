@@ -4,12 +4,12 @@
 
 ### DataGoogleOracleDatabaseOdbNetwork <a name="DataGoogleOracleDatabaseOdbNetwork" id="@cdktn/provider-google.dataGoogleOracleDatabaseOdbNetwork.DataGoogleOracleDatabaseOdbNetwork"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/oracle_database_odb_network google_oracle_database_odb_network}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/oracle_database_odb_network google_oracle_database_odb_network}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleOracleDatabaseOdbNetwork.DataGoogleOracleDatabaseOdbNetwork.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleoracledatabaseodbnetwork"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleoracledatabaseodbnetwork"
 
 datagoogleoracledatabaseodbnetwork.NewDataGoogleOracleDatabaseOdbNetwork(scope Construct, id *string, config DataGoogleOracleDatabaseOdbNetworkConfig) DataGoogleOracleDatabaseOdbNetwork
 ```
@@ -312,7 +312,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleOracleDatabaseOdbNetwork.DataGoogleOracleDatabaseOdbNetwork.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleoracledatabaseodbnetwork"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleoracledatabaseodbnetwork"
 
 datagoogleoracledatabaseodbnetwork.DataGoogleOracleDatabaseOdbNetwork_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleOracleDatabaseOdbNetwork.DataGoogleOracleDatabaseOdbNetwork.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleoracledatabaseodbnetwork"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleoracledatabaseodbnetwork"
 
 datagoogleoracledatabaseodbnetwork.DataGoogleOracleDatabaseOdbNetwork_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datagoogleoracledatabaseodbnetwork.DataGoogleOracleDatabaseOdbNetwork_IsTerrafor
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleOracleDatabaseOdbNetwork.DataGoogleOracleDatabaseOdbNetwork.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleoracledatabaseodbnetwork"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleoracledatabaseodbnetwork"
 
 datagoogleoracledatabaseodbnetwork.DataGoogleOracleDatabaseOdbNetwork_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datagoogleoracledatabaseodbnetwork.DataGoogleOracleDatabaseOdbNetwork_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleOracleDatabaseOdbNetwork.DataGoogleOracleDatabaseOdbNetwork.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleoracledatabaseodbnetwork"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleoracledatabaseodbnetwork"
 
 datagoogleoracledatabaseodbnetwork.DataGoogleOracleDatabaseOdbNetwork_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataGoogleOracleDatabaseOd
 
 The id of the existing DataGoogleOracleDatabaseOdbNetwork that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/oracle_database_odb_network#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/oracle_database_odb_network#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -788,7 +788,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleOracleDatabaseOdbNetwork.DataGoogleOracleDatabaseOdbNetworkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleoracledatabaseodbnetwork"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleoracledatabaseodbnetwork"
 
 &datagoogleoracledatabaseodbnetwork.DataGoogleOracleDatabaseOdbNetworkConfig {
 	Connection: interface{},
@@ -818,8 +818,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/datagoogleoracle
 | <code><a href="#@cdktn/provider-google.dataGoogleOracleDatabaseOdbNetwork.DataGoogleOracleDatabaseOdbNetworkConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleOracleDatabaseOdbNetwork.DataGoogleOracleDatabaseOdbNetworkConfig.property.location">Location</a></code> | <code>*string</code> | Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122. |
 | <code><a href="#@cdktn/provider-google.dataGoogleOracleDatabaseOdbNetwork.DataGoogleOracleDatabaseOdbNetworkConfig.property.odbNetworkId">OdbNetworkId</a></code> | <code>*string</code> | The ID of the OdbNetwork to create. |
-| <code><a href="#@cdktn/provider-google.dataGoogleOracleDatabaseOdbNetwork.DataGoogleOracleDatabaseOdbNetworkConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/oracle_database_odb_network#id DataGoogleOracleDatabaseOdbNetwork#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleOracleDatabaseOdbNetwork.DataGoogleOracleDatabaseOdbNetworkConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/oracle_database_odb_network#project DataGoogleOracleDatabaseOdbNetwork#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleOracleDatabaseOdbNetwork.DataGoogleOracleDatabaseOdbNetworkConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/oracle_database_odb_network#id DataGoogleOracleDatabaseOdbNetwork#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleOracleDatabaseOdbNetwork.DataGoogleOracleDatabaseOdbNetworkConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/oracle_database_odb_network#project DataGoogleOracleDatabaseOdbNetwork#project}. |
 
 ---
 
@@ -903,7 +903,7 @@ Location *string
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/oracle_database_odb_network#location DataGoogleOracleDatabaseOdbNetwork#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/oracle_database_odb_network#location DataGoogleOracleDatabaseOdbNetwork#location}
 
 ---
 
@@ -922,7 +922,7 @@ to (^[a-z](%5Ba-z0-9-%5D%7B0,61%7D%5Ba-z0-9%5D)?$) and must be a maximum of 63
 characters in length. The value must start with a letter and end with
 a letter or a number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/oracle_database_odb_network#odb_network_id DataGoogleOracleDatabaseOdbNetwork#odb_network_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/oracle_database_odb_network#odb_network_id DataGoogleOracleDatabaseOdbNetwork#odb_network_id}
 
 ---
 
@@ -934,7 +934,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/oracle_database_odb_network#id DataGoogleOracleDatabaseOdbNetwork#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/oracle_database_odb_network#id DataGoogleOracleDatabaseOdbNetwork#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -949,7 +949,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/data-sources/oracle_database_odb_network#project DataGoogleOracleDatabaseOdbNetwork#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/oracle_database_odb_network#project DataGoogleOracleDatabaseOdbNetwork#project}.
 
 ---
 

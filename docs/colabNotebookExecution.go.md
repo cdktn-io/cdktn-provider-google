@@ -4,12 +4,12 @@
 
 ### ColabNotebookExecution <a name="ColabNotebookExecution" id="@cdktn/provider-google.colabNotebookExecution.ColabNotebookExecution"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/colab_notebook_execution google_colab_notebook_execution}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/colab_notebook_execution google_colab_notebook_execution}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.colabNotebookExecution.ColabNotebookExecution.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/colabnotebookexecution"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/colabnotebookexecution"
 
 colabnotebookexecution.NewColabNotebookExecution(scope Construct, id *string, config ColabNotebookExecutionConfig) ColabNotebookExecution
 ```
@@ -576,7 +576,7 @@ func ResetWorkbenchRuntime()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.colabNotebookExecution.ColabNotebookExecution.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/colabnotebookexecution"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/colabnotebookexecution"
 
 colabnotebookexecution.ColabNotebookExecution_IsConstruct(x interface{}) *bool
 ```
@@ -608,7 +608,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.colabNotebookExecution.ColabNotebookExecution.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/colabnotebookexecution"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/colabnotebookexecution"
 
 colabnotebookexecution.ColabNotebookExecution_IsTerraformElement(x interface{}) *bool
 ```
@@ -622,7 +622,7 @@ colabnotebookexecution.ColabNotebookExecution_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.colabNotebookExecution.ColabNotebookExecution.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/colabnotebookexecution"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/colabnotebookexecution"
 
 colabnotebookexecution.ColabNotebookExecution_IsTerraformResource(x interface{}) *bool
 ```
@@ -636,7 +636,7 @@ colabnotebookexecution.ColabNotebookExecution_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.colabNotebookExecution.ColabNotebookExecution.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/colabnotebookexecution"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/colabnotebookexecution"
 
 colabnotebookexecution.ColabNotebookExecution_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -665,7 +665,7 @@ The construct id used in the generated config for the ColabNotebookExecution to 
 
 The id of the existing ColabNotebookExecution that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/colab_notebook_execution#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/colab_notebook_execution#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1239,7 +1239,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.colabNotebookExecution.ColabNotebookExecutionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/colabnotebookexecution"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/colabnotebookexecution"
 
 &colabnotebookexecution.ColabNotebookExecutionConfig {
 	Connection: interface{},
@@ -1252,20 +1252,20 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/colabnotebookexe
 	DisplayName: *string,
 	GcsOutputUri: *string,
 	Location: *string,
-	CustomEnvironmentSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v20.colabNotebookExecution.ColabNotebookExecutionCustomEnvironmentSpec,
-	DataformRepositorySource: github.com/cdktn-io/cdktn-provider-google-go/google/v20.colabNotebookExecution.ColabNotebookExecutionDataformRepositorySource,
+	CustomEnvironmentSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v21.colabNotebookExecution.ColabNotebookExecutionCustomEnvironmentSpec,
+	DataformRepositorySource: github.com/cdktn-io/cdktn-provider-google-go/google/v21.colabNotebookExecution.ColabNotebookExecutionDataformRepositorySource,
 	DeletionPolicy: *string,
-	DirectNotebookSource: github.com/cdktn-io/cdktn-provider-google-go/google/v20.colabNotebookExecution.ColabNotebookExecutionDirectNotebookSource,
+	DirectNotebookSource: github.com/cdktn-io/cdktn-provider-google-go/google/v21.colabNotebookExecution.ColabNotebookExecutionDirectNotebookSource,
 	ExecutionTimeout: *string,
 	ExecutionUser: *string,
-	GcsNotebookSource: github.com/cdktn-io/cdktn-provider-google-go/google/v20.colabNotebookExecution.ColabNotebookExecutionGcsNotebookSource,
+	GcsNotebookSource: github.com/cdktn-io/cdktn-provider-google-go/google/v21.colabNotebookExecution.ColabNotebookExecutionGcsNotebookSource,
 	Id: *string,
 	NotebookExecutionJobId: *string,
 	NotebookRuntimeTemplateResourceName: *string,
 	Project: *string,
 	ServiceAccount: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.colabNotebookExecution.ColabNotebookExecutionTimeouts,
-	WorkbenchRuntime: github.com/cdktn-io/cdktn-provider-google-go/google/v20.colabNotebookExecution.ColabNotebookExecutionWorkbenchRuntime,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.colabNotebookExecution.ColabNotebookExecutionTimeouts,
+	WorkbenchRuntime: github.com/cdktn-io/cdktn-provider-google-go/google/v21.colabNotebookExecution.ColabNotebookExecutionWorkbenchRuntime,
 }
 ```
 
@@ -1290,10 +1290,10 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/colabnotebookexe
 | <code><a href="#@cdktn/provider-google.colabNotebookExecution.ColabNotebookExecutionConfig.property.executionTimeout">ExecutionTimeout</a></code> | <code>*string</code> | Max running time of the execution job in seconds (default 86400s / 24 hrs). |
 | <code><a href="#@cdktn/provider-google.colabNotebookExecution.ColabNotebookExecutionConfig.property.executionUser">ExecutionUser</a></code> | <code>*string</code> | The user email to run the execution as. |
 | <code><a href="#@cdktn/provider-google.colabNotebookExecution.ColabNotebookExecutionConfig.property.gcsNotebookSource">GcsNotebookSource</a></code> | <code><a href="#@cdktn/provider-google.colabNotebookExecution.ColabNotebookExecutionGcsNotebookSource">ColabNotebookExecutionGcsNotebookSource</a></code> | gcs_notebook_source block. |
-| <code><a href="#@cdktn/provider-google.colabNotebookExecution.ColabNotebookExecutionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/colab_notebook_execution#id ColabNotebookExecution#id}. |
+| <code><a href="#@cdktn/provider-google.colabNotebookExecution.ColabNotebookExecutionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/colab_notebook_execution#id ColabNotebookExecution#id}. |
 | <code><a href="#@cdktn/provider-google.colabNotebookExecution.ColabNotebookExecutionConfig.property.notebookExecutionJobId">NotebookExecutionJobId</a></code> | <code>*string</code> | User specified ID for the Notebook Execution Job. |
 | <code><a href="#@cdktn/provider-google.colabNotebookExecution.ColabNotebookExecutionConfig.property.notebookRuntimeTemplateResourceName">NotebookRuntimeTemplateResourceName</a></code> | <code>*string</code> | The NotebookRuntimeTemplate to source compute configuration from. |
-| <code><a href="#@cdktn/provider-google.colabNotebookExecution.ColabNotebookExecutionConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/colab_notebook_execution#project ColabNotebookExecution#project}. |
+| <code><a href="#@cdktn/provider-google.colabNotebookExecution.ColabNotebookExecutionConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/colab_notebook_execution#project ColabNotebookExecution#project}. |
 | <code><a href="#@cdktn/provider-google.colabNotebookExecution.ColabNotebookExecutionConfig.property.serviceAccount">ServiceAccount</a></code> | <code>*string</code> | The service account to run the execution as. |
 | <code><a href="#@cdktn/provider-google.colabNotebookExecution.ColabNotebookExecutionConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.colabNotebookExecution.ColabNotebookExecutionTimeouts">ColabNotebookExecutionTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-google.colabNotebookExecution.ColabNotebookExecutionConfig.property.workbenchRuntime">WorkbenchRuntime</a></code> | <code><a href="#@cdktn/provider-google.colabNotebookExecution.ColabNotebookExecutionWorkbenchRuntime">ColabNotebookExecutionWorkbenchRuntime</a></code> | workbench_runtime block. |
@@ -1380,7 +1380,7 @@ DisplayName *string
 
 Required. The display name of the Notebook Execution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/colab_notebook_execution#display_name ColabNotebookExecution#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/colab_notebook_execution#display_name ColabNotebookExecution#display_name}
 
 ---
 
@@ -1394,7 +1394,7 @@ GcsOutputUri *string
 
 The Cloud Storage location to upload the result to. Format:'gs://bucket-name'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/colab_notebook_execution#gcs_output_uri ColabNotebookExecution#gcs_output_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/colab_notebook_execution#gcs_output_uri ColabNotebookExecution#gcs_output_uri}
 
 ---
 
@@ -1408,7 +1408,7 @@ Location *string
 
 The location for the resource: https://cloud.google.com/colab/docs/locations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/colab_notebook_execution#location ColabNotebookExecution#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/colab_notebook_execution#location ColabNotebookExecution#location}
 
 ---
 
@@ -1422,7 +1422,7 @@ CustomEnvironmentSpec ColabNotebookExecutionCustomEnvironmentSpec
 
 custom_environment_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/colab_notebook_execution#custom_environment_spec ColabNotebookExecution#custom_environment_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/colab_notebook_execution#custom_environment_spec ColabNotebookExecution#custom_environment_spec}
 
 ---
 
@@ -1436,7 +1436,7 @@ DataformRepositorySource ColabNotebookExecutionDataformRepositorySource
 
 dataform_repository_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/colab_notebook_execution#dataform_repository_source ColabNotebookExecution#dataform_repository_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/colab_notebook_execution#dataform_repository_source ColabNotebookExecution#dataform_repository_source}
 
 ---
 
@@ -1457,7 +1457,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/colab_notebook_execution#deletion_policy ColabNotebookExecution#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/colab_notebook_execution#deletion_policy ColabNotebookExecution#deletion_policy}
 
 ---
 
@@ -1471,7 +1471,7 @@ DirectNotebookSource ColabNotebookExecutionDirectNotebookSource
 
 direct_notebook_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/colab_notebook_execution#direct_notebook_source ColabNotebookExecution#direct_notebook_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/colab_notebook_execution#direct_notebook_source ColabNotebookExecution#direct_notebook_source}
 
 ---
 
@@ -1485,7 +1485,7 @@ ExecutionTimeout *string
 
 Max running time of the execution job in seconds (default 86400s / 24 hrs).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/colab_notebook_execution#execution_timeout ColabNotebookExecution#execution_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/colab_notebook_execution#execution_timeout ColabNotebookExecution#execution_timeout}
 
 ---
 
@@ -1499,7 +1499,7 @@ ExecutionUser *string
 
 The user email to run the execution as.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/colab_notebook_execution#execution_user ColabNotebookExecution#execution_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/colab_notebook_execution#execution_user ColabNotebookExecution#execution_user}
 
 ---
 
@@ -1513,7 +1513,7 @@ GcsNotebookSource ColabNotebookExecutionGcsNotebookSource
 
 gcs_notebook_source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/colab_notebook_execution#gcs_notebook_source ColabNotebookExecution#gcs_notebook_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/colab_notebook_execution#gcs_notebook_source ColabNotebookExecution#gcs_notebook_source}
 
 ---
 
@@ -1525,7 +1525,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/colab_notebook_execution#id ColabNotebookExecution#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/colab_notebook_execution#id ColabNotebookExecution#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1542,7 +1542,7 @@ NotebookExecutionJobId *string
 
 User specified ID for the Notebook Execution Job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/colab_notebook_execution#notebook_execution_job_id ColabNotebookExecution#notebook_execution_job_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/colab_notebook_execution#notebook_execution_job_id ColabNotebookExecution#notebook_execution_job_id}
 
 ---
 
@@ -1556,7 +1556,7 @@ NotebookRuntimeTemplateResourceName *string
 
 The NotebookRuntimeTemplate to source compute configuration from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/colab_notebook_execution#notebook_runtime_template_resource_name ColabNotebookExecution#notebook_runtime_template_resource_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/colab_notebook_execution#notebook_runtime_template_resource_name ColabNotebookExecution#notebook_runtime_template_resource_name}
 
 ---
 
@@ -1568,7 +1568,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/colab_notebook_execution#project ColabNotebookExecution#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/colab_notebook_execution#project ColabNotebookExecution#project}.
 
 ---
 
@@ -1582,7 +1582,7 @@ ServiceAccount *string
 
 The service account to run the execution as.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/colab_notebook_execution#service_account ColabNotebookExecution#service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/colab_notebook_execution#service_account ColabNotebookExecution#service_account}
 
 ---
 
@@ -1596,7 +1596,7 @@ Timeouts ColabNotebookExecutionTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/colab_notebook_execution#timeouts ColabNotebookExecution#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/colab_notebook_execution#timeouts ColabNotebookExecution#timeouts}
 
 ---
 
@@ -1610,7 +1610,7 @@ WorkbenchRuntime ColabNotebookExecutionWorkbenchRuntime
 
 workbench_runtime block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/colab_notebook_execution#workbench_runtime ColabNotebookExecution#workbench_runtime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/colab_notebook_execution#workbench_runtime ColabNotebookExecution#workbench_runtime}
 
 ---
 
@@ -1619,13 +1619,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.colabNotebookExecution.ColabNotebookExecutionCustomEnvironmentSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/colabnotebookexecution"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/colabnotebookexecution"
 
 &colabnotebookexecution.ColabNotebookExecutionCustomEnvironmentSpec {
-	MachineSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v20.colabNotebookExecution.ColabNotebookExecutionCustomEnvironmentSpecMachineSpec,
-	NetworkSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v20.colabNotebookExecution.ColabNotebookExecutionCustomEnvironmentSpecNetworkSpec,
-	PersistentDiskSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v20.colabNotebookExecution.ColabNotebookExecutionCustomEnvironmentSpecPersistentDiskSpec,
-	ShieldedInstanceConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v20.colabNotebookExecution.ColabNotebookExecutionCustomEnvironmentSpecShieldedInstanceConfig,
+	MachineSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v21.colabNotebookExecution.ColabNotebookExecutionCustomEnvironmentSpecMachineSpec,
+	NetworkSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v21.colabNotebookExecution.ColabNotebookExecutionCustomEnvironmentSpecNetworkSpec,
+	PersistentDiskSpec: github.com/cdktn-io/cdktn-provider-google-go/google/v21.colabNotebookExecution.ColabNotebookExecutionCustomEnvironmentSpecPersistentDiskSpec,
+	ShieldedInstanceConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v21.colabNotebookExecution.ColabNotebookExecutionCustomEnvironmentSpecShieldedInstanceConfig,
 }
 ```
 
@@ -1650,7 +1650,7 @@ MachineSpec ColabNotebookExecutionCustomEnvironmentSpecMachineSpec
 
 machine_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/colab_notebook_execution#machine_spec ColabNotebookExecution#machine_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/colab_notebook_execution#machine_spec ColabNotebookExecution#machine_spec}
 
 ---
 
@@ -1664,7 +1664,7 @@ NetworkSpec ColabNotebookExecutionCustomEnvironmentSpecNetworkSpec
 
 network_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/colab_notebook_execution#network_spec ColabNotebookExecution#network_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/colab_notebook_execution#network_spec ColabNotebookExecution#network_spec}
 
 ---
 
@@ -1678,7 +1678,7 @@ PersistentDiskSpec ColabNotebookExecutionCustomEnvironmentSpecPersistentDiskSpec
 
 persistent_disk_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/colab_notebook_execution#persistent_disk_spec ColabNotebookExecution#persistent_disk_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/colab_notebook_execution#persistent_disk_spec ColabNotebookExecution#persistent_disk_spec}
 
 ---
 
@@ -1692,7 +1692,7 @@ ShieldedInstanceConfig ColabNotebookExecutionCustomEnvironmentSpecShieldedInstan
 
 shielded_instance_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/colab_notebook_execution#shielded_instance_config ColabNotebookExecution#shielded_instance_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/colab_notebook_execution#shielded_instance_config ColabNotebookExecution#shielded_instance_config}
 
 ---
 
@@ -1701,7 +1701,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.colabNotebookExecution.ColabNotebookExecutionCustomEnvironmentSpecMachineSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/colabnotebookexecution"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/colabnotebookexecution"
 
 &colabnotebookexecution.ColabNotebookExecutionCustomEnvironmentSpecMachineSpec {
 	AcceleratorCount: *f64,
@@ -1730,7 +1730,7 @@ AcceleratorCount *f64
 
 The number of accelerators used by the runtime.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/colab_notebook_execution#accelerator_count ColabNotebookExecution#accelerator_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/colab_notebook_execution#accelerator_count ColabNotebookExecution#accelerator_count}
 
 ---
 
@@ -1744,7 +1744,7 @@ AcceleratorType *string
 
 The type of hardware accelerator used by the runtime. If specified, acceleratorCount must also be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/colab_notebook_execution#accelerator_type ColabNotebookExecution#accelerator_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/colab_notebook_execution#accelerator_type ColabNotebookExecution#accelerator_type}
 
 ---
 
@@ -1758,7 +1758,7 @@ MachineType *string
 
 The Compute Engine machine type selected for the runtime.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/colab_notebook_execution#machine_type ColabNotebookExecution#machine_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/colab_notebook_execution#machine_type ColabNotebookExecution#machine_type}
 
 ---
 
@@ -1767,7 +1767,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.colabNotebookExecution.ColabNotebookExecutionCustomEnvironmentSpecNetworkSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/colabnotebookexecution"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/colabnotebookexecution"
 
 &colabnotebookexecution.ColabNotebookExecutionCustomEnvironmentSpecNetworkSpec {
 	EnableInternetAccess: interface{},
@@ -1796,7 +1796,7 @@ EnableInternetAccess interface{}
 
 Enable public internet access for the runtime.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/colab_notebook_execution#enable_internet_access ColabNotebookExecution#enable_internet_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/colab_notebook_execution#enable_internet_access ColabNotebookExecution#enable_internet_access}
 
 ---
 
@@ -1810,7 +1810,7 @@ Network *string
 
 The name of the VPC that this runtime is in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/colab_notebook_execution#network ColabNotebookExecution#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/colab_notebook_execution#network ColabNotebookExecution#network}
 
 ---
 
@@ -1824,7 +1824,7 @@ Subnetwork *string
 
 The name of the subnetwork that this runtime is in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/colab_notebook_execution#subnetwork ColabNotebookExecution#subnetwork}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/colab_notebook_execution#subnetwork ColabNotebookExecution#subnetwork}
 
 ---
 
@@ -1833,7 +1833,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.colabNotebookExecution.ColabNotebookExecutionCustomEnvironmentSpecPersistentDiskSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/colabnotebookexecution"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/colabnotebookexecution"
 
 &colabnotebookexecution.ColabNotebookExecutionCustomEnvironmentSpecPersistentDiskSpec {
 	DiskSizeGb: *string,
@@ -1862,7 +1862,7 @@ The disk size of the runtime in GB.
 
 If specified, the diskType must also be specified. The minimum size is 10GB and the maximum is 65536GB.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/colab_notebook_execution#disk_size_gb ColabNotebookExecution#disk_size_gb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/colab_notebook_execution#disk_size_gb ColabNotebookExecution#disk_size_gb}
 
 ---
 
@@ -1876,7 +1876,7 @@ DiskType *string
 
 The type of the persistent disk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/colab_notebook_execution#disk_type ColabNotebookExecution#disk_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/colab_notebook_execution#disk_type ColabNotebookExecution#disk_type}
 
 ---
 
@@ -1885,7 +1885,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.colabNotebookExecution.ColabNotebookExecutionCustomEnvironmentSpecShieldedInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/colabnotebookexecution"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/colabnotebookexecution"
 
 &colabnotebookexecution.ColabNotebookExecutionCustomEnvironmentSpecShieldedInstanceConfig {
 	EnableIntegrityMonitoring: interface{},
@@ -1916,7 +1916,7 @@ Defines whether the instance has integrity monitoring enabled.
 
 Enables monitoring and attestation of the boot integrity of the instance. The attestation is performed against the integrity policy baseline. This baseline is initially derived from the implicitly trusted boot image when the instance is created. Enabled by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/colab_notebook_execution#enable_integrity_monitoring ColabNotebookExecution#enable_integrity_monitoring}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/colab_notebook_execution#enable_integrity_monitoring ColabNotebookExecution#enable_integrity_monitoring}
 
 ---
 
@@ -1932,7 +1932,7 @@ Defines whether the instance has Secure Boot enabled.
 
 Secure Boot helps ensure that the system only runs authentic software by verifying the digital signature of all boot components, and halting the boot process if signature verification fails. Disabled by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/colab_notebook_execution#enable_secure_boot ColabNotebookExecution#enable_secure_boot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/colab_notebook_execution#enable_secure_boot ColabNotebookExecution#enable_secure_boot}
 
 ---
 
@@ -1946,7 +1946,7 @@ EnableVtpm interface{}
 
 Defines whether the instance has the vTPM enabled. Enabled by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/colab_notebook_execution#enable_vtpm ColabNotebookExecution#enable_vtpm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/colab_notebook_execution#enable_vtpm ColabNotebookExecution#enable_vtpm}
 
 ---
 
@@ -1955,7 +1955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.colabNotebookExecution.ColabNotebookExecutionDataformRepositorySource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/colabnotebookexecution"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/colabnotebookexecution"
 
 &colabnotebookexecution.ColabNotebookExecutionDataformRepositorySource {
 	DataformRepositoryResourceName: *string,
@@ -1982,7 +1982,7 @@ DataformRepositoryResourceName *string
 
 The resource name of the Dataform Repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/colab_notebook_execution#dataform_repository_resource_name ColabNotebookExecution#dataform_repository_resource_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/colab_notebook_execution#dataform_repository_resource_name ColabNotebookExecution#dataform_repository_resource_name}
 
 ---
 
@@ -1996,7 +1996,7 @@ CommitSha *string
 
 The commit SHA to read repository with. If unset, the file will be read at HEAD.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/colab_notebook_execution#commit_sha ColabNotebookExecution#commit_sha}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/colab_notebook_execution#commit_sha ColabNotebookExecution#commit_sha}
 
 ---
 
@@ -2005,7 +2005,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.colabNotebookExecution.ColabNotebookExecutionDirectNotebookSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/colabnotebookexecution"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/colabnotebookexecution"
 
 &colabnotebookexecution.ColabNotebookExecutionDirectNotebookSource {
 	Content: *string,
@@ -2030,7 +2030,7 @@ Content *string
 
 The base64-encoded contents of the input notebook file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/colab_notebook_execution#content ColabNotebookExecution#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/colab_notebook_execution#content ColabNotebookExecution#content}
 
 ---
 
@@ -2039,7 +2039,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.colabNotebookExecution.ColabNotebookExecutionGcsNotebookSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/colabnotebookexecution"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/colabnotebookexecution"
 
 &colabnotebookexecution.ColabNotebookExecutionGcsNotebookSource {
 	Uri: *string,
@@ -2066,7 +2066,7 @@ Uri *string
 
 The Cloud Storage uri pointing to the ipynb file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/colab_notebook_execution#uri ColabNotebookExecution#uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/colab_notebook_execution#uri ColabNotebookExecution#uri}
 
 ---
 
@@ -2082,7 +2082,7 @@ The version of the Cloud Storage object to read.
 
 If unset, the current version of the object is read. See https://cloud.google.com/storage/docs/metadata#generation-number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/colab_notebook_execution#generation ColabNotebookExecution#generation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/colab_notebook_execution#generation ColabNotebookExecution#generation}
 
 ---
 
@@ -2091,7 +2091,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.colabNotebookExecution.ColabNotebookExecutionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/colabnotebookexecution"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/colabnotebookexecution"
 
 &colabnotebookexecution.ColabNotebookExecutionTimeouts {
 	Create: *string,
@@ -2103,8 +2103,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/colabnotebookexe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.colabNotebookExecution.ColabNotebookExecutionTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/colab_notebook_execution#create ColabNotebookExecution#create}. |
-| <code><a href="#@cdktn/provider-google.colabNotebookExecution.ColabNotebookExecutionTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/colab_notebook_execution#delete ColabNotebookExecution#delete}. |
+| <code><a href="#@cdktn/provider-google.colabNotebookExecution.ColabNotebookExecutionTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/colab_notebook_execution#create ColabNotebookExecution#create}. |
+| <code><a href="#@cdktn/provider-google.colabNotebookExecution.ColabNotebookExecutionTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/colab_notebook_execution#delete ColabNotebookExecution#delete}. |
 
 ---
 
@@ -2116,7 +2116,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/colab_notebook_execution#create ColabNotebookExecution#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/colab_notebook_execution#create ColabNotebookExecution#create}.
 
 ---
 
@@ -2128,7 +2128,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/colab_notebook_execution#delete ColabNotebookExecution#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/colab_notebook_execution#delete ColabNotebookExecution#delete}.
 
 ---
 
@@ -2137,10 +2137,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.colabNotebookExecution.ColabNotebookExecutionWorkbenchRuntime.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/colabnotebookexecution"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/colabnotebookexecution"
 
 &colabnotebookexecution.ColabNotebookExecutionWorkbenchRuntime {
-	VmImage: github.com/cdktn-io/cdktn-provider-google-go/google/v20.colabNotebookExecution.ColabNotebookExecutionWorkbenchRuntimeVmImage,
+	VmImage: github.com/cdktn-io/cdktn-provider-google-go/google/v21.colabNotebookExecution.ColabNotebookExecutionWorkbenchRuntimeVmImage,
 }
 ```
 
@@ -2162,7 +2162,7 @@ VmImage ColabNotebookExecutionWorkbenchRuntimeVmImage
 
 vm_image block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/colab_notebook_execution#vm_image ColabNotebookExecution#vm_image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/colab_notebook_execution#vm_image ColabNotebookExecution#vm_image}
 
 ---
 
@@ -2171,7 +2171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.colabNotebookExecution.ColabNotebookExecutionWorkbenchRuntimeVmImage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/colabnotebookexecution"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/colabnotebookexecution"
 
 &colabnotebookexecution.ColabNotebookExecutionWorkbenchRuntimeVmImage {
 	Family: *string,
@@ -2200,7 +2200,7 @@ Family *string
 
 Use this VM image family to find the image; the newest image in this family will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/colab_notebook_execution#family ColabNotebookExecution#family}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/colab_notebook_execution#family ColabNotebookExecution#family}
 
 ---
 
@@ -2214,7 +2214,7 @@ Name *string
 
 Use VM image name to find the image.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/colab_notebook_execution#name ColabNotebookExecution#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/colab_notebook_execution#name ColabNotebookExecution#name}
 
 ---
 
@@ -2228,7 +2228,7 @@ Project *string
 
 The name of the Google Cloud project that this VM image belongs to. Format: {project_id}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/colab_notebook_execution#project ColabNotebookExecution#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/colab_notebook_execution#project ColabNotebookExecution#project}
 
 ---
 
@@ -2239,7 +2239,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.colabNotebookExecution.ColabNotebookExecutionCustomEnvironmentSpecMachineSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/colabnotebookexecution"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/colabnotebookexecution"
 
 colabnotebookexecution.NewColabNotebookExecutionCustomEnvironmentSpecMachineSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ColabNotebookExecutionCustomEnvironmentSpecMachineSpecOutputReference
 ```
@@ -2575,7 +2575,7 @@ func InternalValue() ColabNotebookExecutionCustomEnvironmentSpecMachineSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.colabNotebookExecution.ColabNotebookExecutionCustomEnvironmentSpecNetworkSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/colabnotebookexecution"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/colabnotebookexecution"
 
 colabnotebookexecution.NewColabNotebookExecutionCustomEnvironmentSpecNetworkSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ColabNotebookExecutionCustomEnvironmentSpecNetworkSpecOutputReference
 ```
@@ -2911,7 +2911,7 @@ func InternalValue() ColabNotebookExecutionCustomEnvironmentSpecNetworkSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.colabNotebookExecution.ColabNotebookExecutionCustomEnvironmentSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/colabnotebookexecution"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/colabnotebookexecution"
 
 colabnotebookexecution.NewColabNotebookExecutionCustomEnvironmentSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ColabNotebookExecutionCustomEnvironmentSpecOutputReference
 ```
@@ -3328,7 +3328,7 @@ func InternalValue() ColabNotebookExecutionCustomEnvironmentSpec
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.colabNotebookExecution.ColabNotebookExecutionCustomEnvironmentSpecPersistentDiskSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/colabnotebookexecution"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/colabnotebookexecution"
 
 colabnotebookexecution.NewColabNotebookExecutionCustomEnvironmentSpecPersistentDiskSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ColabNotebookExecutionCustomEnvironmentSpecPersistentDiskSpecOutputReference
 ```
@@ -3635,7 +3635,7 @@ func InternalValue() ColabNotebookExecutionCustomEnvironmentSpecPersistentDiskSp
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.colabNotebookExecution.ColabNotebookExecutionCustomEnvironmentSpecShieldedInstanceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/colabnotebookexecution"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/colabnotebookexecution"
 
 colabnotebookexecution.NewColabNotebookExecutionCustomEnvironmentSpecShieldedInstanceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ColabNotebookExecutionCustomEnvironmentSpecShieldedInstanceConfigOutputReference
 ```
@@ -3971,7 +3971,7 @@ func InternalValue() ColabNotebookExecutionCustomEnvironmentSpecShieldedInstance
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.colabNotebookExecution.ColabNotebookExecutionDataformRepositorySourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/colabnotebookexecution"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/colabnotebookexecution"
 
 colabnotebookexecution.NewColabNotebookExecutionDataformRepositorySourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ColabNotebookExecutionDataformRepositorySourceOutputReference
 ```
@@ -4271,7 +4271,7 @@ func InternalValue() ColabNotebookExecutionDataformRepositorySource
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.colabNotebookExecution.ColabNotebookExecutionDirectNotebookSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/colabnotebookexecution"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/colabnotebookexecution"
 
 colabnotebookexecution.NewColabNotebookExecutionDirectNotebookSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ColabNotebookExecutionDirectNotebookSourceOutputReference
 ```
@@ -4542,7 +4542,7 @@ func InternalValue() ColabNotebookExecutionDirectNotebookSource
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.colabNotebookExecution.ColabNotebookExecutionGcsNotebookSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/colabnotebookexecution"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/colabnotebookexecution"
 
 colabnotebookexecution.NewColabNotebookExecutionGcsNotebookSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ColabNotebookExecutionGcsNotebookSourceOutputReference
 ```
@@ -4842,7 +4842,7 @@ func InternalValue() ColabNotebookExecutionGcsNotebookSource
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.colabNotebookExecution.ColabNotebookExecutionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/colabnotebookexecution"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/colabnotebookexecution"
 
 colabnotebookexecution.NewColabNotebookExecutionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ColabNotebookExecutionTimeoutsOutputReference
 ```
@@ -5149,7 +5149,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.colabNotebookExecution.ColabNotebookExecutionWorkbenchRuntimeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/colabnotebookexecution"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/colabnotebookexecution"
 
 colabnotebookexecution.NewColabNotebookExecutionWorkbenchRuntimeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ColabNotebookExecutionWorkbenchRuntimeOutputReference
 ```
@@ -5433,7 +5433,7 @@ func InternalValue() ColabNotebookExecutionWorkbenchRuntime
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.colabNotebookExecution.ColabNotebookExecutionWorkbenchRuntimeVmImageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/colabnotebookexecution"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/colabnotebookexecution"
 
 colabnotebookexecution.NewColabNotebookExecutionWorkbenchRuntimeVmImageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ColabNotebookExecutionWorkbenchRuntimeVmImageOutputReference
 ```

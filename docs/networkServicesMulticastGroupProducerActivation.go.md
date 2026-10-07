@@ -4,12 +4,12 @@
 
 ### NetworkServicesMulticastGroupProducerActivation <a name="NetworkServicesMulticastGroupProducerActivation" id="@cdktn/provider-google.networkServicesMulticastGroupProducerActivation.NetworkServicesMulticastGroupProducerActivation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_multicast_group_producer_activation google_network_services_multicast_group_producer_activation}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_multicast_group_producer_activation google_network_services_multicast_group_producer_activation}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesMulticastGroupProducerActivation.NetworkServicesMulticastGroupProducerActivation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastgroupproduceractivation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networkservicesmulticastgroupproduceractivation"
 
 networkservicesmulticastgroupproduceractivation.NewNetworkServicesMulticastGroupProducerActivation(scope Construct, id *string, config NetworkServicesMulticastGroupProducerActivationConfig) NetworkServicesMulticastGroupProducerActivation
 ```
@@ -455,7 +455,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.networkServicesMulticastGroupProducerActivation.NetworkServicesMulticastGroupProducerActivation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastgroupproduceractivation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networkservicesmulticastgroupproduceractivation"
 
 networkservicesmulticastgroupproduceractivation.NetworkServicesMulticastGroupProducerActivation_IsConstruct(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.networkServicesMulticastGroupProducerActivation.NetworkServicesMulticastGroupProducerActivation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastgroupproduceractivation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networkservicesmulticastgroupproduceractivation"
 
 networkservicesmulticastgroupproduceractivation.NetworkServicesMulticastGroupProducerActivation_IsTerraformElement(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ networkservicesmulticastgroupproduceractivation.NetworkServicesMulticastGroupPro
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.networkServicesMulticastGroupProducerActivation.NetworkServicesMulticastGroupProducerActivation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastgroupproduceractivation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networkservicesmulticastgroupproduceractivation"
 
 networkservicesmulticastgroupproduceractivation.NetworkServicesMulticastGroupProducerActivation_IsTerraformResource(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ networkservicesmulticastgroupproduceractivation.NetworkServicesMulticastGroupPro
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.networkServicesMulticastGroupProducerActivation.NetworkServicesMulticastGroupProducerActivation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastgroupproduceractivation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networkservicesmulticastgroupproduceractivation"
 
 networkservicesmulticastgroupproduceractivation.NetworkServicesMulticastGroupProducerActivation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -544,7 +544,7 @@ The construct id used in the generated config for the NetworkServicesMulticastGr
 
 The id of the existing NetworkServicesMulticastGroupProducerActivation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_multicast_group_producer_activation#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_multicast_group_producer_activation#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1041,7 +1041,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkServicesMulticastGroupProducerActivation.NetworkServicesMulticastGroupProducerActivationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastgroupproduceractivation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networkservicesmulticastgroupproduceractivation"
 
 &networkservicesmulticastgroupproduceractivation.NetworkServicesMulticastGroupProducerActivationConfig {
 	Connection: interface{},
@@ -1060,7 +1060,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesm
 	Id: *string,
 	Labels: *map[string]*string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v20.networkServicesMulticastGroupProducerActivation.NetworkServicesMulticastGroupProducerActivationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.networkServicesMulticastGroupProducerActivation.NetworkServicesMulticastGroupProducerActivationTimeouts,
 }
 ```
 
@@ -1081,9 +1081,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesm
 | <code><a href="#@cdktn/provider-google.networkServicesMulticastGroupProducerActivation.NetworkServicesMulticastGroupProducerActivationConfig.property.multicastProducerAssociation">MulticastProducerAssociation</a></code> | <code>*string</code> | The resource name of the multicast producer association that is in the same zone as this multicast group producer activation. |
 | <code><a href="#@cdktn/provider-google.networkServicesMulticastGroupProducerActivation.NetworkServicesMulticastGroupProducerActivationConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.networkServicesMulticastGroupProducerActivation.NetworkServicesMulticastGroupProducerActivationConfig.property.description">Description</a></code> | <code>*string</code> | An optional text description of the multicast group producer activation. |
-| <code><a href="#@cdktn/provider-google.networkServicesMulticastGroupProducerActivation.NetworkServicesMulticastGroupProducerActivationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_multicast_group_producer_activation#id NetworkServicesMulticastGroupProducerActivation#id}. |
+| <code><a href="#@cdktn/provider-google.networkServicesMulticastGroupProducerActivation.NetworkServicesMulticastGroupProducerActivationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_multicast_group_producer_activation#id NetworkServicesMulticastGroupProducerActivation#id}. |
 | <code><a href="#@cdktn/provider-google.networkServicesMulticastGroupProducerActivation.NetworkServicesMulticastGroupProducerActivationConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | Labels as key-value pairs. |
-| <code><a href="#@cdktn/provider-google.networkServicesMulticastGroupProducerActivation.NetworkServicesMulticastGroupProducerActivationConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_multicast_group_producer_activation#project NetworkServicesMulticastGroupProducerActivation#project}. |
+| <code><a href="#@cdktn/provider-google.networkServicesMulticastGroupProducerActivation.NetworkServicesMulticastGroupProducerActivationConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_multicast_group_producer_activation#project NetworkServicesMulticastGroupProducerActivation#project}. |
 | <code><a href="#@cdktn/provider-google.networkServicesMulticastGroupProducerActivation.NetworkServicesMulticastGroupProducerActivationConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.networkServicesMulticastGroupProducerActivation.NetworkServicesMulticastGroupProducerActivationTimeouts">NetworkServicesMulticastGroupProducerActivationTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1168,7 +1168,7 @@ Location *string
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_multicast_group_producer_activation#location NetworkServicesMulticastGroupProducerActivation#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_multicast_group_producer_activation#location NetworkServicesMulticastGroupProducerActivation#location}
 
 ---
 
@@ -1186,7 +1186,7 @@ The name is restricted to letters, numbers, and hyphen, with the first
 character a letter, and the last a letter or a number. The name must not
 exceed 48 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_multicast_group_producer_activation#multicast_group_producer_activation_id NetworkServicesMulticastGroupProducerActivation#multicast_group_producer_activation_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_multicast_group_producer_activation#multicast_group_producer_activation_id NetworkServicesMulticastGroupProducerActivation#multicast_group_producer_activation_id}
 
 ---
 
@@ -1204,7 +1204,7 @@ Use the
 following format:
 // 'projects/* /locations/* /multicastGroupRangeActivations/*'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_multicast_group_producer_activation#multicast_group_range_activation NetworkServicesMulticastGroupProducerActivation#multicast_group_range_activation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_multicast_group_producer_activation#multicast_group_range_activation NetworkServicesMulticastGroupProducerActivation#multicast_group_range_activation}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -1223,7 +1223,7 @@ The resource name of the multicast producer association that is in the same zone
 Use the following format:
 'projects/* /locations/* /multicastProducerAssociations/*'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_multicast_group_producer_activation#multicast_producer_association NetworkServicesMulticastGroupProducerActivation#multicast_producer_association}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_multicast_group_producer_activation#multicast_producer_association NetworkServicesMulticastGroupProducerActivation#multicast_producer_association}
 
 Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
@@ -1246,7 +1246,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_multicast_group_producer_activation#deletion_policy NetworkServicesMulticastGroupProducerActivation#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_multicast_group_producer_activation#deletion_policy NetworkServicesMulticastGroupProducerActivation#deletion_policy}
 
 ---
 
@@ -1260,7 +1260,7 @@ Description *string
 
 An optional text description of the multicast group producer activation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_multicast_group_producer_activation#description NetworkServicesMulticastGroupProducerActivation#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_multicast_group_producer_activation#description NetworkServicesMulticastGroupProducerActivation#description}
 
 ---
 
@@ -1272,7 +1272,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_multicast_group_producer_activation#id NetworkServicesMulticastGroupProducerActivation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_multicast_group_producer_activation#id NetworkServicesMulticastGroupProducerActivation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1292,7 +1292,7 @@ Labels as key-value pairs.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_multicast_group_producer_activation#labels NetworkServicesMulticastGroupProducerActivation#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_multicast_group_producer_activation#labels NetworkServicesMulticastGroupProducerActivation#labels}
 
 ---
 
@@ -1304,7 +1304,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_multicast_group_producer_activation#project NetworkServicesMulticastGroupProducerActivation#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_multicast_group_producer_activation#project NetworkServicesMulticastGroupProducerActivation#project}.
 
 ---
 
@@ -1318,7 +1318,7 @@ Timeouts NetworkServicesMulticastGroupProducerActivationTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_multicast_group_producer_activation#timeouts NetworkServicesMulticastGroupProducerActivation#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_multicast_group_producer_activation#timeouts NetworkServicesMulticastGroupProducerActivation#timeouts}
 
 ---
 
@@ -1327,7 +1327,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkServicesMulticastGroupProducerActivation.NetworkServicesMulticastGroupProducerActivationState.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastgroupproduceractivation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networkservicesmulticastgroupproduceractivation"
 
 &networkservicesmulticastgroupproduceractivation.NetworkServicesMulticastGroupProducerActivationState {
 
@@ -1340,7 +1340,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesm
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkServicesMulticastGroupProducerActivation.NetworkServicesMulticastGroupProducerActivationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastgroupproduceractivation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networkservicesmulticastgroupproduceractivation"
 
 &networkservicesmulticastgroupproduceractivation.NetworkServicesMulticastGroupProducerActivationTimeouts {
 	Create: *string,
@@ -1353,9 +1353,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesm
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.networkServicesMulticastGroupProducerActivation.NetworkServicesMulticastGroupProducerActivationTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_multicast_group_producer_activation#create NetworkServicesMulticastGroupProducerActivation#create}. |
-| <code><a href="#@cdktn/provider-google.networkServicesMulticastGroupProducerActivation.NetworkServicesMulticastGroupProducerActivationTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_multicast_group_producer_activation#delete NetworkServicesMulticastGroupProducerActivation#delete}. |
-| <code><a href="#@cdktn/provider-google.networkServicesMulticastGroupProducerActivation.NetworkServicesMulticastGroupProducerActivationTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_multicast_group_producer_activation#update NetworkServicesMulticastGroupProducerActivation#update}. |
+| <code><a href="#@cdktn/provider-google.networkServicesMulticastGroupProducerActivation.NetworkServicesMulticastGroupProducerActivationTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_multicast_group_producer_activation#create NetworkServicesMulticastGroupProducerActivation#create}. |
+| <code><a href="#@cdktn/provider-google.networkServicesMulticastGroupProducerActivation.NetworkServicesMulticastGroupProducerActivationTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_multicast_group_producer_activation#delete NetworkServicesMulticastGroupProducerActivation#delete}. |
+| <code><a href="#@cdktn/provider-google.networkServicesMulticastGroupProducerActivation.NetworkServicesMulticastGroupProducerActivationTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_multicast_group_producer_activation#update NetworkServicesMulticastGroupProducerActivation#update}. |
 
 ---
 
@@ -1367,7 +1367,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_multicast_group_producer_activation#create NetworkServicesMulticastGroupProducerActivation#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_multicast_group_producer_activation#create NetworkServicesMulticastGroupProducerActivation#create}.
 
 ---
 
@@ -1379,7 +1379,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_multicast_group_producer_activation#delete NetworkServicesMulticastGroupProducerActivation#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_multicast_group_producer_activation#delete NetworkServicesMulticastGroupProducerActivation#delete}.
 
 ---
 
@@ -1391,7 +1391,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/7.46.1/docs/resources/network_services_multicast_group_producer_activation#update NetworkServicesMulticastGroupProducerActivation#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_services_multicast_group_producer_activation#update NetworkServicesMulticastGroupProducerActivation#update}.
 
 ---
 
@@ -1402,7 +1402,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesMulticastGroupProducerActivation.NetworkServicesMulticastGroupProducerActivationStateList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastgroupproduceractivation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networkservicesmulticastgroupproduceractivation"
 
 networkservicesmulticastgroupproduceractivation.NewNetworkServicesMulticastGroupProducerActivationStateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkServicesMulticastGroupProducerActivationStateList
 ```
@@ -1551,7 +1551,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesMulticastGroupProducerActivation.NetworkServicesMulticastGroupProducerActivationStateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastgroupproduceractivation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networkservicesmulticastgroupproduceractivation"
 
 networkservicesmulticastgroupproduceractivation.NewNetworkServicesMulticastGroupProducerActivationStateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkServicesMulticastGroupProducerActivationStateOutputReference
 ```
@@ -1829,7 +1829,7 @@ func InternalValue() NetworkServicesMulticastGroupProducerActivationState
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesMulticastGroupProducerActivation.NetworkServicesMulticastGroupProducerActivationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v20/networkservicesmulticastgroupproduceractivation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/networkservicesmulticastgroupproduceractivation"
 
 networkservicesmulticastgroupproduceractivation.NewNetworkServicesMulticastGroupProducerActivationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkServicesMulticastGroupProducerActivationTimeoutsOutputReference
 ```
