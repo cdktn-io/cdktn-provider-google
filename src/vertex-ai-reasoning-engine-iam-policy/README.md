@@ -1,3 +1,3 @@
 # `google_vertex_ai_reasoning_engine_iam_policy`
 
-Refer to the Terraform Registry for docs: [`google_vertex_ai_reasoning_engine_iam_policy`](https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_reasoning_engine_iam_policy).
+Refer to the Terraform Registry for docs: [`google_vertex_ai_reasoning_engine_iam_policy`](https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_reasoning_engine_iam_policy).

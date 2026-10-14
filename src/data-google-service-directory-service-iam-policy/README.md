@@ -1,3 +1,3 @@
 # `data_google_service_directory_service_iam_policy`
 
-Refer to the Terraform Registry for docs: [`data_google_service_directory_service_iam_policy`](https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/service_directory_service_iam_policy).
+Refer to the Terraform Registry for docs: [`data_google_service_directory_service_iam_policy`](https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/service_directory_service_iam_policy).

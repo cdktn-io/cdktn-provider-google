@@ -768,6 +768,10 @@ Object.defineProperty(exports, 'folderOrganizationPolicy', { get: function () { 
 Object.defineProperty(exports, 'geminiCodeRepositoryIndex', { get: function () { return require('./gemini-code-repository-index'); } });
 Object.defineProperty(exports, 'geminiCodeToolsSetting', { get: function () { return require('./gemini-code-tools-setting'); } });
 Object.defineProperty(exports, 'geminiCodeToolsSettingBinding', { get: function () { return require('./gemini-code-tools-setting-binding'); } });
+Object.defineProperty(exports, 'geminiDataAnalyticsDataAgent', { get: function () { return require('./gemini-data-analytics-data-agent'); } });
+Object.defineProperty(exports, 'geminiDataAnalyticsDataAgentIamBinding', { get: function () { return require('./gemini-data-analytics-data-agent-iam-binding'); } });
+Object.defineProperty(exports, 'geminiDataAnalyticsDataAgentIamMember', { get: function () { return require('./gemini-data-analytics-data-agent-iam-member'); } });
+Object.defineProperty(exports, 'geminiDataAnalyticsDataAgentIamPolicy', { get: function () { return require('./gemini-data-analytics-data-agent-iam-policy'); } });
 Object.defineProperty(exports, 'geminiDataSharingWithGoogleSetting', { get: function () { return require('./gemini-data-sharing-with-google-setting'); } });
 Object.defineProperty(exports, 'geminiDataSharingWithGoogleSettingBinding', { get: function () { return require('./gemini-data-sharing-with-google-setting-binding'); } });
 Object.defineProperty(exports, 'geminiGdaObservabilitySetting', { get: function () { return require('./gemini-gda-observability-setting'); } });
@@ -1337,6 +1341,7 @@ Object.defineProperty(exports, 'vertexAiFeaturestoreEntitytypeFeature', { get: f
 Object.defineProperty(exports, 'vertexAiIndex', { get: function () { return require('./vertex-ai-index'); } });
 Object.defineProperty(exports, 'vertexAiIndexEndpoint', { get: function () { return require('./vertex-ai-index-endpoint'); } });
 Object.defineProperty(exports, 'vertexAiIndexEndpointDeployedIndex', { get: function () { return require('./vertex-ai-index-endpoint-deployed-index'); } });
+Object.defineProperty(exports, 'vertexAiOnlineEvaluator', { get: function () { return require('./vertex-ai-online-evaluator'); } });
 Object.defineProperty(exports, 'vertexAiPersistentResource', { get: function () { return require('./vertex-ai-persistent-resource'); } });
 Object.defineProperty(exports, 'vertexAiRagCorpus', { get: function () { return require('./vertex-ai-rag-corpus'); } });
 Object.defineProperty(exports, 'vertexAiRagEngineConfig', { get: function () { return require('./vertex-ai-rag-engine-config'); } });
@@ -1624,6 +1629,7 @@ Object.defineProperty(exports, 'dataGoogleFolder', { get: function () { return r
 Object.defineProperty(exports, 'dataGoogleFolderIamPolicy', { get: function () { return require('./data-google-folder-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleFolderOrganizationPolicy', { get: function () { return require('./data-google-folder-organization-policy'); } });
 Object.defineProperty(exports, 'dataGoogleFolders', { get: function () { return require('./data-google-folders'); } });
+Object.defineProperty(exports, 'dataGoogleGeminiDataAnalyticsDataAgentIamPolicy', { get: function () { return require('./data-google-gemini-data-analytics-data-agent-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleGeminiRepositoryGroupIamPolicy', { get: function () { return require('./data-google-gemini-repository-group-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleGkeBackupBackupPlanIamPolicy', { get: function () { return require('./data-google-gke-backup-backup-plan-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleGkeBackupRestorePlanIamPolicy', { get: function () { return require('./data-google-gke-backup-restore-plan-iam-policy'); } });
