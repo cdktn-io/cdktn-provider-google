@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_notification_service_account
+// https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/scc_notification_service_account
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,38 +13,38 @@ import * as cdktn from 'cdktn';
 
 export interface SccNotificationServiceAccountConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_notification_service_account#id SccNotificationServiceAccount#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/scc_notification_service_account#id SccNotificationServiceAccount#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_notification_service_account#organization SccNotificationServiceAccount#organization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/scc_notification_service_account#organization SccNotificationServiceAccount#organization}
   */
   readonly organization?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_notification_service_account#project SccNotificationServiceAccount#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/scc_notification_service_account#project SccNotificationServiceAccount#project}
   */
   readonly project?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_notification_service_account#timeouts SccNotificationServiceAccount#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/scc_notification_service_account#timeouts SccNotificationServiceAccount#timeouts}
   */
   readonly timeouts?: SccNotificationServiceAccountTimeouts;
 }
 export interface SccNotificationServiceAccountTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_notification_service_account#create SccNotificationServiceAccount#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/scc_notification_service_account#create SccNotificationServiceAccount#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_notification_service_account#delete SccNotificationServiceAccount#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/scc_notification_service_account#delete SccNotificationServiceAccount#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_notification_service_account#read SccNotificationServiceAccount#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/scc_notification_service_account#read SccNotificationServiceAccount#read}
   */
   readonly read?: string;
 }
@@ -196,7 +196,7 @@ export class SccNotificationServiceAccountTimeoutsOutputReference extends cdktn.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_notification_service_account google_scc_notification_service_account}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/scc_notification_service_account google_scc_notification_service_account}
 */
 export class SccNotificationServiceAccount extends cdktn.TerraformResource {
 
@@ -212,7 +212,7 @@ export class SccNotificationServiceAccount extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a SccNotificationServiceAccount resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SccNotificationServiceAccount to import
-  * @param importFromId The id of the existing SccNotificationServiceAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_notification_service_account#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SccNotificationServiceAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/scc_notification_service_account#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SccNotificationServiceAccount to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -224,7 +224,7 @@ export class SccNotificationServiceAccount extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_notification_service_account google_scc_notification_service_account} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/scc_notification_service_account google_scc_notification_service_account} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -235,7 +235,7 @@ export class SccNotificationServiceAccount extends cdktn.TerraformResource {
       terraformResourceType: 'google_scc_notification_service_account',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.6.0',
+        providerVersion: '8.7.0',
         providerVersionConstraint: '~> 8.0'
       },
       provider: config.provider,

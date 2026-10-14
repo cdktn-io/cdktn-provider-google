@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control
+// https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface CloudSecurityComplianceCloudControlConfig extends cdktn.Terrafo
   /**
   * The categories of the cloud control.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#categories CloudSecurityComplianceCloudControl#categories}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#categories CloudSecurityComplianceCloudControl#categories}
   */
   readonly categories?: string[];
   /**
@@ -23,7 +23,7 @@ export interface CloudSecurityComplianceCloudControlConfig extends cdktn.Terrafo
   * This is the last segment of the CloudControl resource name.
   * Format: '^a-zA-Z{0,61}[a-zA-Z0-9]$'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#cloud_control_id CloudSecurityComplianceCloudControl#cloud_control_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#cloud_control_id CloudSecurityComplianceCloudControl#cloud_control_id}
   */
   readonly cloudControlId: string;
   /**
@@ -35,31 +35,31 @@ export interface CloudSecurityComplianceCloudControlConfig extends cdktn.Terrafo
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#deletion_policy CloudSecurityComplianceCloudControl#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#deletion_policy CloudSecurityComplianceCloudControl#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * A description of the cloud control. The maximum length is 2000 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#description CloudSecurityComplianceCloudControl#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#description CloudSecurityComplianceCloudControl#description}
   */
   readonly description?: string;
   /**
   * The display name of the cloud control. The maximum length is 200
   * characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#display_name CloudSecurityComplianceCloudControl#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#display_name CloudSecurityComplianceCloudControl#display_name}
   */
   readonly displayName?: string;
   /**
   * The finding_category of the cloud control. The maximum length is 255
   * characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#finding_category CloudSecurityComplianceCloudControl#finding_category}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#finding_category CloudSecurityComplianceCloudControl#finding_category}
   */
   readonly findingCategory?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#id CloudSecurityComplianceCloudControl#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#id CloudSecurityComplianceCloudControl#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -68,13 +68,13 @@ export interface CloudSecurityComplianceCloudControlConfig extends cdktn.Terrafo
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122. Currently, only "global" is supported as a location.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#location CloudSecurityComplianceCloudControl#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#location CloudSecurityComplianceCloudControl#location}
   */
   readonly location: string;
   /**
   * Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#organization CloudSecurityComplianceCloudControl#organization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#organization CloudSecurityComplianceCloudControl#organization}
   */
   readonly organization?: string;
   /**
@@ -83,14 +83,14 @@ export interface CloudSecurityComplianceCloudControlConfig extends cdktn.Terrafo
   * * 'projects/{{project}}'
   * * 'organizations/{{organization}}'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#parent CloudSecurityComplianceCloudControl#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#parent CloudSecurityComplianceCloudControl#parent}
   */
   readonly parent?: string;
   /**
   * The remediation steps for the findings generated by the cloud control. The
   * maximum length is 400 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#remediation_steps CloudSecurityComplianceCloudControl#remediation_steps}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#remediation_steps CloudSecurityComplianceCloudControl#remediation_steps}
   */
   readonly remediationSteps?: string;
   /**
@@ -100,434 +100,39 @@ export interface CloudSecurityComplianceCloudControlConfig extends cdktn.Terrafo
   * MEDIUM
   * LOW
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#severity CloudSecurityComplianceCloudControl#severity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#severity CloudSecurityComplianceCloudControl#severity}
   */
   readonly severity?: string;
   /**
   * cloud providers supported
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#supported_cloud_providers CloudSecurityComplianceCloudControl#supported_cloud_providers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#supported_cloud_providers CloudSecurityComplianceCloudControl#supported_cloud_providers}
   */
   readonly supportedCloudProviders?: string[];
   /**
   * parameter_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#parameter_spec CloudSecurityComplianceCloudControl#parameter_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#parameter_spec CloudSecurityComplianceCloudControl#parameter_spec}
   */
   readonly parameterSpec?: CloudSecurityComplianceCloudControlParameterSpec[] | cdktn.IResolvable;
   /**
   * rules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#rules CloudSecurityComplianceCloudControl#rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#rules CloudSecurityComplianceCloudControl#rules}
   */
   readonly rules?: CloudSecurityComplianceCloudControlRules[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#timeouts CloudSecurityComplianceCloudControl#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#timeouts CloudSecurityComplianceCloudControl#timeouts}
   */
   readonly timeouts?: CloudSecurityComplianceCloudControlTimeouts;
-}
-export interface CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueParameterValueStringListValue {
-  /**
-  * The strings in the list.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
-  */
-  readonly values: string[];
-}
-
-export function cloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueParameterValueStringListValueToTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueParameterValueStringListValueOutputReference | CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueParameterValueStringListValue): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
-  }
-}
-
-
-export function cloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueParameterValueStringListValueToHclTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueParameterValueStringListValueOutputReference | CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueParameterValueStringListValue): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-    values: {
-      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueParameterValueStringListValueOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueParameterValueStringListValue | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._values !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.values = this._values;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueParameterValueStringListValue | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._values = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._values = value.values;
-    }
-  }
-
-  // values - computed: false, optional: false, required: true
-  private _values?: string[]; 
-  public get values() {
-    return this.getListAttribute('values');
-  }
-  public set values(value: string[]) {
-    this._values = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get valuesInput() {
-    return this._values;
-  }
-}
-export interface CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueParameterValue {
-  /**
-  * Represents a boolean value.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#bool_value CloudSecurityComplianceCloudControl#bool_value}
-  */
-  readonly boolValue?: boolean | cdktn.IResolvable;
-  /**
-  * Represents a double value.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#number_value CloudSecurityComplianceCloudControl#number_value}
-  */
-  readonly numberValue?: number;
-  /**
-  * Represents a string value.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#string_value CloudSecurityComplianceCloudControl#string_value}
-  */
-  readonly stringValue?: string;
-  /**
-  * string_list_value block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#string_list_value CloudSecurityComplianceCloudControl#string_list_value}
-  */
-  readonly stringListValue?: CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueParameterValueStringListValue;
-}
-
-export function cloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueParameterValueToTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueParameterValueOutputReference | CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueParameterValue): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-    bool_value: cdktn.booleanToTerraform(struct!.boolValue),
-    number_value: cdktn.numberToTerraform(struct!.numberValue),
-    string_value: cdktn.stringToTerraform(struct!.stringValue),
-    string_list_value: cloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueParameterValueStringListValueToTerraform(struct!.stringListValue),
-  }
-}
-
-
-export function cloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueParameterValueToHclTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueParameterValueOutputReference | CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueParameterValue): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-    bool_value: {
-      value: cdktn.booleanToHclTerraform(struct!.boolValue),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "boolean",
-    },
-    number_value: {
-      value: cdktn.numberToHclTerraform(struct!.numberValue),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "number",
-    },
-    string_value: {
-      value: cdktn.stringToHclTerraform(struct!.stringValue),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    string_list_value: {
-      value: cloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueParameterValueStringListValueToHclTerraform(struct!.stringListValue),
-      isBlock: true,
-      type: "list",
-      storageClassType: "CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueParameterValueStringListValueList",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueParameterValueOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueParameterValue | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._boolValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.boolValue = this._boolValue;
-    }
-    if (this._numberValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.numberValue = this._numberValue;
-    }
-    if (this._stringValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.stringValue = this._stringValue;
-    }
-    if (this._stringListValue?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.stringListValue = this._stringListValue?.internalValue;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueParameterValue | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._boolValue = undefined;
-      this._numberValue = undefined;
-      this._stringValue = undefined;
-      this._stringListValue.internalValue = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._boolValue = value.boolValue;
-      this._numberValue = value.numberValue;
-      this._stringValue = value.stringValue;
-      this._stringListValue.internalValue = value.stringListValue;
-    }
-  }
-
-  // bool_value - computed: false, optional: true, required: false
-  private _boolValue?: boolean | cdktn.IResolvable; 
-  public get boolValue() {
-    return this.getBooleanAttribute('bool_value');
-  }
-  public set boolValue(value: boolean | cdktn.IResolvable) {
-    this._boolValue = value;
-  }
-  public resetBoolValue() {
-    this._boolValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get boolValueInput() {
-    return this._boolValue;
-  }
-
-  // number_value - computed: false, optional: true, required: false
-  private _numberValue?: number; 
-  public get numberValue() {
-    return this.getNumberAttribute('number_value');
-  }
-  public set numberValue(value: number) {
-    this._numberValue = value;
-  }
-  public resetNumberValue() {
-    this._numberValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get numberValueInput() {
-    return this._numberValue;
-  }
-
-  // string_value - computed: false, optional: true, required: false
-  private _stringValue?: string; 
-  public get stringValue() {
-    return this.getStringAttribute('string_value');
-  }
-  public set stringValue(value: string) {
-    this._stringValue = value;
-  }
-  public resetStringValue() {
-    this._stringValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get stringValueInput() {
-    return this._stringValue;
-  }
-
-  // string_list_value - computed: false, optional: true, required: false
-  private _stringListValue = new CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueParameterValueStringListValueOutputReference(this, "string_list_value");
-  public get stringListValue() {
-    return this._stringListValue;
-  }
-  public putStringListValue(value: CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueParameterValueStringListValue) {
-    this._stringListValue.internalValue = value;
-  }
-  public resetStringListValue() {
-    this._stringListValue.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get stringListValueInput() {
-    return this._stringListValue.internalValue;
-  }
-}
-export interface CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValue {
-  /**
-  * The name of the parameter.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#name CloudSecurityComplianceCloudControl#name}
-  */
-  readonly name?: string;
-  /**
-  * parameter_value block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#parameter_value CloudSecurityComplianceCloudControl#parameter_value}
-  */
-  readonly parameterValue?: CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueParameterValue;
-}
-
-export function cloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueToTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueOutputReference | CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValue): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-    name: cdktn.stringToTerraform(struct!.name),
-    parameter_value: cloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueParameterValueToTerraform(struct!.parameterValue),
-  }
-}
-
-
-export function cloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueToHclTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueOutputReference | CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValue): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-    name: {
-      value: cdktn.stringToHclTerraform(struct!.name),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    parameter_value: {
-      value: cloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueParameterValueToHclTerraform(struct!.parameterValue),
-      isBlock: true,
-      type: "list",
-      storageClassType: "CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueParameterValueList",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValue | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._name !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.name = this._name;
-    }
-    if (this._parameterValue?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.parameterValue = this._parameterValue?.internalValue;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValue | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._name = undefined;
-      this._parameterValue.internalValue = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._name = value.name;
-      this._parameterValue.internalValue = value.parameterValue;
-    }
-  }
-
-  // name - computed: false, optional: true, required: false
-  private _name?: string; 
-  public get name() {
-    return this.getStringAttribute('name');
-  }
-  public set name(value: string) {
-    this._name = value;
-  }
-  public resetName() {
-    this._name = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name;
-  }
-
-  // parameter_value - computed: false, optional: true, required: false
-  private _parameterValue = new CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueParameterValueOutputReference(this, "parameter_value");
-  public get parameterValue() {
-    return this._parameterValue;
-  }
-  public putParameterValue(value: CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueParameterValue) {
-    this._parameterValue.internalValue = value;
-  }
-  public resetParameterValue() {
-    this._parameterValue.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get parameterValueInput() {
-    return this._parameterValue.internalValue;
-  }
 }
 export interface CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueStringListValue {
   /**
   * The strings in the list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
   */
   readonly values: string[];
 }
@@ -610,31 +215,31 @@ export interface CloudSecurityComplianceCloudControlParameterSpecDefaultValueOne
   /**
   * Represents a boolean value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#bool_value CloudSecurityComplianceCloudControl#bool_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#bool_value CloudSecurityComplianceCloudControl#bool_value}
   */
   readonly boolValue?: boolean | cdktn.IResolvable;
   /**
   * Represents a double value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#number_value CloudSecurityComplianceCloudControl#number_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#number_value CloudSecurityComplianceCloudControl#number_value}
   */
   readonly numberValue?: number;
   /**
   * Represents a string value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#string_value CloudSecurityComplianceCloudControl#string_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#string_value CloudSecurityComplianceCloudControl#string_value}
   */
   readonly stringValue?: string;
   /**
   * oneof_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#oneof_value CloudSecurityComplianceCloudControl#oneof_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#oneof_value CloudSecurityComplianceCloudControl#oneof_value}
   */
-  readonly oneofValue?: CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValue;
+  readonly oneofValue?: CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValue;
   /**
   * string_list_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#string_list_value CloudSecurityComplianceCloudControl#string_list_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#string_list_value CloudSecurityComplianceCloudControl#string_list_value}
   */
   readonly stringListValue?: CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueStringListValue;
 }
@@ -648,7 +253,7 @@ export function cloudSecurityComplianceCloudControlParameterSpecDefaultValueOneo
     bool_value: cdktn.booleanToTerraform(struct!.boolValue),
     number_value: cdktn.numberToTerraform(struct!.numberValue),
     string_value: cdktn.stringToTerraform(struct!.stringValue),
-    oneof_value: cloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueToTerraform(struct!.oneofValue),
+    oneof_value: cloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueToTerraform(struct!.oneofValue),
     string_list_value: cloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueStringListValueToTerraform(struct!.stringListValue),
   }
 }
@@ -679,10 +284,10 @@ export function cloudSecurityComplianceCloudControlParameterSpecDefaultValueOneo
       storageClassType: "string",
     },
     oneof_value: {
-      value: cloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueToHclTerraform(struct!.oneofValue),
+      value: cloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueToHclTerraform(struct!.oneofValue),
       isBlock: true,
       type: "list",
-      storageClassType: "CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueList",
+      storageClassType: "CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueList",
     },
     string_list_value: {
       value: cloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueStringListValueToHclTerraform(struct!.stringListValue),
@@ -801,11 +406,11 @@ export class CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofVa
   }
 
   // oneof_value - computed: false, optional: true, required: false
-  private _oneofValue = new CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValueOutputReference(this, "oneof_value");
+  private _oneofValue = new CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueOutputReference(this, "oneof_value");
   public get oneofValue() {
     return this._oneofValue;
   }
-  public putOneofValue(value: CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOneofValue) {
+  public putOneofValue(value: CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValue) {
     this._oneofValue.internalValue = value;
   }
   public resetOneofValue() {
@@ -836,13 +441,13 @@ export interface CloudSecurityComplianceCloudControlParameterSpecDefaultValueOne
   /**
   * The name of the parameter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#name CloudSecurityComplianceCloudControl#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#name CloudSecurityComplianceCloudControl#name}
   */
   readonly name?: string;
   /**
   * parameter_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#parameter_value CloudSecurityComplianceCloudControl#parameter_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#parameter_value CloudSecurityComplianceCloudControl#parameter_value}
   */
   readonly parameterValue?: CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValue;
 }
@@ -957,7 +562,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecDefaultValueStr
   /**
   * The strings in the list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
   */
   readonly values: string[];
 }
@@ -1040,31 +645,31 @@ export interface CloudSecurityComplianceCloudControlParameterSpecDefaultValue {
   /**
   * Represents a boolean value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#bool_value CloudSecurityComplianceCloudControl#bool_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#bool_value CloudSecurityComplianceCloudControl#bool_value}
   */
   readonly boolValue?: boolean | cdktn.IResolvable;
   /**
   * Represents a double value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#number_value CloudSecurityComplianceCloudControl#number_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#number_value CloudSecurityComplianceCloudControl#number_value}
   */
   readonly numberValue?: number;
   /**
   * Represents a string value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#string_value CloudSecurityComplianceCloudControl#string_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#string_value CloudSecurityComplianceCloudControl#string_value}
   */
   readonly stringValue?: string;
   /**
   * oneof_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#oneof_value CloudSecurityComplianceCloudControl#oneof_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#oneof_value CloudSecurityComplianceCloudControl#oneof_value}
   */
   readonly oneofValue?: CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValue;
   /**
   * string_list_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#string_list_value CloudSecurityComplianceCloudControl#string_list_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#string_list_value CloudSecurityComplianceCloudControl#string_list_value}
   */
   readonly stringListValue?: CloudSecurityComplianceCloudControlParameterSpecDefaultValueStringListValue;
 }
@@ -1262,406 +867,11 @@ export class CloudSecurityComplianceCloudControlParameterSpecDefaultValueOutputR
     return this._stringListValue.internalValue;
   }
 }
-export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueParameterValueStringListValue {
-  /**
-  * The strings in the list.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
-  */
-  readonly values: string[];
-}
-
-export function cloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueParameterValueStringListValueToTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueParameterValueStringListValueOutputReference | CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueParameterValueStringListValue): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
-  }
-}
-
-
-export function cloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueParameterValueStringListValueToHclTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueParameterValueStringListValueOutputReference | CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueParameterValueStringListValue): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-    values: {
-      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueParameterValueStringListValueOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueParameterValueStringListValue | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._values !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.values = this._values;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueParameterValueStringListValue | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._values = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._values = value.values;
-    }
-  }
-
-  // values - computed: false, optional: false, required: true
-  private _values?: string[]; 
-  public get values() {
-    return this.getListAttribute('values');
-  }
-  public set values(value: string[]) {
-    this._values = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get valuesInput() {
-    return this._values;
-  }
-}
-export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueParameterValue {
-  /**
-  * Represents a boolean value.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#bool_value CloudSecurityComplianceCloudControl#bool_value}
-  */
-  readonly boolValue?: boolean | cdktn.IResolvable;
-  /**
-  * Represents a double value.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#number_value CloudSecurityComplianceCloudControl#number_value}
-  */
-  readonly numberValue?: number;
-  /**
-  * Represents a string value.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#string_value CloudSecurityComplianceCloudControl#string_value}
-  */
-  readonly stringValue?: string;
-  /**
-  * string_list_value block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#string_list_value CloudSecurityComplianceCloudControl#string_list_value}
-  */
-  readonly stringListValue?: CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueParameterValueStringListValue;
-}
-
-export function cloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueParameterValueToTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueParameterValueOutputReference | CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueParameterValue): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-    bool_value: cdktn.booleanToTerraform(struct!.boolValue),
-    number_value: cdktn.numberToTerraform(struct!.numberValue),
-    string_value: cdktn.stringToTerraform(struct!.stringValue),
-    string_list_value: cloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueParameterValueStringListValueToTerraform(struct!.stringListValue),
-  }
-}
-
-
-export function cloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueParameterValueToHclTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueParameterValueOutputReference | CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueParameterValue): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-    bool_value: {
-      value: cdktn.booleanToHclTerraform(struct!.boolValue),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "boolean",
-    },
-    number_value: {
-      value: cdktn.numberToHclTerraform(struct!.numberValue),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "number",
-    },
-    string_value: {
-      value: cdktn.stringToHclTerraform(struct!.stringValue),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    string_list_value: {
-      value: cloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueParameterValueStringListValueToHclTerraform(struct!.stringListValue),
-      isBlock: true,
-      type: "list",
-      storageClassType: "CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueParameterValueStringListValueList",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueParameterValueOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueParameterValue | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._boolValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.boolValue = this._boolValue;
-    }
-    if (this._numberValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.numberValue = this._numberValue;
-    }
-    if (this._stringValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.stringValue = this._stringValue;
-    }
-    if (this._stringListValue?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.stringListValue = this._stringListValue?.internalValue;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueParameterValue | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._boolValue = undefined;
-      this._numberValue = undefined;
-      this._stringValue = undefined;
-      this._stringListValue.internalValue = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._boolValue = value.boolValue;
-      this._numberValue = value.numberValue;
-      this._stringValue = value.stringValue;
-      this._stringListValue.internalValue = value.stringListValue;
-    }
-  }
-
-  // bool_value - computed: false, optional: true, required: false
-  private _boolValue?: boolean | cdktn.IResolvable; 
-  public get boolValue() {
-    return this.getBooleanAttribute('bool_value');
-  }
-  public set boolValue(value: boolean | cdktn.IResolvable) {
-    this._boolValue = value;
-  }
-  public resetBoolValue() {
-    this._boolValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get boolValueInput() {
-    return this._boolValue;
-  }
-
-  // number_value - computed: false, optional: true, required: false
-  private _numberValue?: number; 
-  public get numberValue() {
-    return this.getNumberAttribute('number_value');
-  }
-  public set numberValue(value: number) {
-    this._numberValue = value;
-  }
-  public resetNumberValue() {
-    this._numberValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get numberValueInput() {
-    return this._numberValue;
-  }
-
-  // string_value - computed: false, optional: true, required: false
-  private _stringValue?: string; 
-  public get stringValue() {
-    return this.getStringAttribute('string_value');
-  }
-  public set stringValue(value: string) {
-    this._stringValue = value;
-  }
-  public resetStringValue() {
-    this._stringValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get stringValueInput() {
-    return this._stringValue;
-  }
-
-  // string_list_value - computed: false, optional: true, required: false
-  private _stringListValue = new CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueParameterValueStringListValueOutputReference(this, "string_list_value");
-  public get stringListValue() {
-    return this._stringListValue;
-  }
-  public putStringListValue(value: CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueParameterValueStringListValue) {
-    this._stringListValue.internalValue = value;
-  }
-  public resetStringListValue() {
-    this._stringListValue.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get stringListValueInput() {
-    return this._stringListValue.internalValue;
-  }
-}
-export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValue {
-  /**
-  * The name of the parameter.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#name CloudSecurityComplianceCloudControl#name}
-  */
-  readonly name?: string;
-  /**
-  * parameter_value block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#parameter_value CloudSecurityComplianceCloudControl#parameter_value}
-  */
-  readonly parameterValue?: CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueParameterValue;
-}
-
-export function cloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueToTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueOutputReference | CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValue): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-    name: cdktn.stringToTerraform(struct!.name),
-    parameter_value: cloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueParameterValueToTerraform(struct!.parameterValue),
-  }
-}
-
-
-export function cloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueToHclTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueOutputReference | CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValue): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-    name: {
-      value: cdktn.stringToHclTerraform(struct!.name),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    parameter_value: {
-      value: cloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueParameterValueToHclTerraform(struct!.parameterValue),
-      isBlock: true,
-      type: "list",
-      storageClassType: "CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueParameterValueList",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValue | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._name !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.name = this._name;
-    }
-    if (this._parameterValue?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.parameterValue = this._parameterValue?.internalValue;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValue | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._name = undefined;
-      this._parameterValue.internalValue = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._name = value.name;
-      this._parameterValue.internalValue = value.parameterValue;
-    }
-  }
-
-  // name - computed: false, optional: true, required: false
-  private _name?: string; 
-  public get name() {
-    return this.getStringAttribute('name');
-  }
-  public set name(value: string) {
-    this._name = value;
-  }
-  public resetName() {
-    this._name = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name;
-  }
-
-  // parameter_value - computed: false, optional: true, required: false
-  private _parameterValue = new CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueParameterValueOutputReference(this, "parameter_value");
-  public get parameterValue() {
-    return this._parameterValue;
-  }
-  public putParameterValue(value: CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueParameterValue) {
-    this._parameterValue.internalValue = value;
-  }
-  public resetParameterValue() {
-    this._parameterValue.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get parameterValueInput() {
-    return this._parameterValue.internalValue;
-  }
-}
 export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueStringListValue {
   /**
   * The strings in the list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
   */
   readonly values: string[];
 }
@@ -1744,31 +954,31 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersDe
   /**
   * Represents a boolean value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#bool_value CloudSecurityComplianceCloudControl#bool_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#bool_value CloudSecurityComplianceCloudControl#bool_value}
   */
   readonly boolValue?: boolean | cdktn.IResolvable;
   /**
   * Represents a double value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#number_value CloudSecurityComplianceCloudControl#number_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#number_value CloudSecurityComplianceCloudControl#number_value}
   */
   readonly numberValue?: number;
   /**
   * Represents a string value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#string_value CloudSecurityComplianceCloudControl#string_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#string_value CloudSecurityComplianceCloudControl#string_value}
   */
   readonly stringValue?: string;
   /**
   * oneof_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#oneof_value CloudSecurityComplianceCloudControl#oneof_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#oneof_value CloudSecurityComplianceCloudControl#oneof_value}
   */
-  readonly oneofValue?: CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValue;
+  readonly oneofValue?: CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValue;
   /**
   * string_list_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#string_list_value CloudSecurityComplianceCloudControl#string_list_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#string_list_value CloudSecurityComplianceCloudControl#string_list_value}
   */
   readonly stringListValue?: CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueStringListValue;
 }
@@ -1782,7 +992,7 @@ export function cloudSecurityComplianceCloudControlParameterSpecSubParametersDef
     bool_value: cdktn.booleanToTerraform(struct!.boolValue),
     number_value: cdktn.numberToTerraform(struct!.numberValue),
     string_value: cdktn.stringToTerraform(struct!.stringValue),
-    oneof_value: cloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueToTerraform(struct!.oneofValue),
+    oneof_value: cloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueToTerraform(struct!.oneofValue),
     string_list_value: cloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueStringListValueToTerraform(struct!.stringListValue),
   }
 }
@@ -1813,10 +1023,10 @@ export function cloudSecurityComplianceCloudControlParameterSpecSubParametersDef
       storageClassType: "string",
     },
     oneof_value: {
-      value: cloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueToHclTerraform(struct!.oneofValue),
+      value: cloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueToHclTerraform(struct!.oneofValue),
       isBlock: true,
       type: "list",
-      storageClassType: "CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueList",
+      storageClassType: "CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueList",
     },
     string_list_value: {
       value: cloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueStringListValueToHclTerraform(struct!.stringListValue),
@@ -1935,11 +1145,11 @@ export class CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaul
   }
 
   // oneof_value - computed: false, optional: true, required: false
-  private _oneofValue = new CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValueOutputReference(this, "oneof_value");
+  private _oneofValue = new CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueOutputReference(this, "oneof_value");
   public get oneofValue() {
     return this._oneofValue;
   }
-  public putOneofValue(value: CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValueOneofValue) {
+  public putOneofValue(value: CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValue) {
     this._oneofValue.internalValue = value;
   }
   public resetOneofValue() {
@@ -1970,13 +1180,13 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersDe
   /**
   * The name of the parameter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#name CloudSecurityComplianceCloudControl#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#name CloudSecurityComplianceCloudControl#name}
   */
   readonly name?: string;
   /**
   * parameter_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#parameter_value CloudSecurityComplianceCloudControl#parameter_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#parameter_value CloudSecurityComplianceCloudControl#parameter_value}
   */
   readonly parameterValue?: CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValueParameterValue;
 }
@@ -2091,7 +1301,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersDe
   /**
   * The strings in the list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
   */
   readonly values: string[];
 }
@@ -2174,31 +1384,31 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersDe
   /**
   * Represents a boolean value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#bool_value CloudSecurityComplianceCloudControl#bool_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#bool_value CloudSecurityComplianceCloudControl#bool_value}
   */
   readonly boolValue?: boolean | cdktn.IResolvable;
   /**
   * Represents a double value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#number_value CloudSecurityComplianceCloudControl#number_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#number_value CloudSecurityComplianceCloudControl#number_value}
   */
   readonly numberValue?: number;
   /**
   * Represents a string value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#string_value CloudSecurityComplianceCloudControl#string_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#string_value CloudSecurityComplianceCloudControl#string_value}
   */
   readonly stringValue?: string;
   /**
   * oneof_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#oneof_value CloudSecurityComplianceCloudControl#oneof_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#oneof_value CloudSecurityComplianceCloudControl#oneof_value}
   */
   readonly oneofValue?: CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueOneofValue;
   /**
   * string_list_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#string_list_value CloudSecurityComplianceCloudControl#string_list_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#string_list_value CloudSecurityComplianceCloudControl#string_list_value}
   */
   readonly stringListValue?: CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValueStringListValue;
 }
@@ -2400,7 +1610,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersSu
   /**
   * The strings in the list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
   */
   readonly values: string[];
 }
@@ -2483,25 +1693,31 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersSu
   /**
   * Represents a boolean value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#bool_value CloudSecurityComplianceCloudControl#bool_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#bool_value CloudSecurityComplianceCloudControl#bool_value}
   */
   readonly boolValue?: boolean | cdktn.IResolvable;
   /**
   * Represents a double value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#number_value CloudSecurityComplianceCloudControl#number_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#number_value CloudSecurityComplianceCloudControl#number_value}
   */
   readonly numberValue?: number;
   /**
+  * Sub-parameter values, in JSON format.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#oneof_value CloudSecurityComplianceCloudControl#oneof_value}
+  */
+  readonly oneofValue?: string;
+  /**
   * Represents a string value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#string_value CloudSecurityComplianceCloudControl#string_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#string_value CloudSecurityComplianceCloudControl#string_value}
   */
   readonly stringValue?: string;
   /**
   * string_list_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#string_list_value CloudSecurityComplianceCloudControl#string_list_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#string_list_value CloudSecurityComplianceCloudControl#string_list_value}
   */
   readonly stringListValue?: CloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueOneofValueParameterValueStringListValue;
 }
@@ -2514,6 +1730,7 @@ export function cloudSecurityComplianceCloudControlParameterSpecSubParametersSub
   return {
     bool_value: cdktn.booleanToTerraform(struct!.boolValue),
     number_value: cdktn.numberToTerraform(struct!.numberValue),
+    oneof_value: cdktn.stringToTerraform(struct!.oneofValue),
     string_value: cdktn.stringToTerraform(struct!.stringValue),
     string_list_value: cloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueOneofValueParameterValueStringListValueToTerraform(struct!.stringListValue),
   }
@@ -2537,6 +1754,12 @@ export function cloudSecurityComplianceCloudControlParameterSpecSubParametersSub
       isBlock: false,
       type: "simple",
       storageClassType: "number",
+    },
+    oneof_value: {
+      value: cdktn.stringToHclTerraform(struct!.oneofValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
     },
     string_value: {
       value: cdktn.stringToHclTerraform(struct!.stringValue),
@@ -2578,6 +1801,10 @@ export class CloudSecurityComplianceCloudControlParameterSpecSubParametersSubPar
       hasAnyValues = true;
       internalValueResult.numberValue = this._numberValue;
     }
+    if (this._oneofValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.oneofValue = this._oneofValue;
+    }
     if (this._stringValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.stringValue = this._stringValue;
@@ -2594,6 +1821,7 @@ export class CloudSecurityComplianceCloudControlParameterSpecSubParametersSubPar
       this.isEmptyObject = false;
       this._boolValue = undefined;
       this._numberValue = undefined;
+      this._oneofValue = undefined;
       this._stringValue = undefined;
       this._stringListValue.internalValue = undefined;
     }
@@ -2601,6 +1829,7 @@ export class CloudSecurityComplianceCloudControlParameterSpecSubParametersSubPar
       this.isEmptyObject = Object.keys(value).length === 0;
       this._boolValue = value.boolValue;
       this._numberValue = value.numberValue;
+      this._oneofValue = value.oneofValue;
       this._stringValue = value.stringValue;
       this._stringListValue.internalValue = value.stringListValue;
     }
@@ -2636,6 +1865,22 @@ export class CloudSecurityComplianceCloudControlParameterSpecSubParametersSubPar
   // Temporarily expose input value. Use with caution.
   public get numberValueInput() {
     return this._numberValue;
+  }
+
+  // oneof_value - computed: false, optional: true, required: false
+  private _oneofValue?: string; 
+  public get oneofValue() {
+    return this.getStringAttribute('oneof_value');
+  }
+  public set oneofValue(value: string) {
+    this._oneofValue = value;
+  }
+  public resetOneofValue() {
+    this._oneofValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get oneofValueInput() {
+    return this._oneofValue;
   }
 
   // string_value - computed: false, optional: true, required: false
@@ -2674,13 +1919,13 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersSu
   /**
   * The name of the parameter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#name CloudSecurityComplianceCloudControl#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#name CloudSecurityComplianceCloudControl#name}
   */
   readonly name?: string;
   /**
   * parameter_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#parameter_value CloudSecurityComplianceCloudControl#parameter_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#parameter_value CloudSecurityComplianceCloudControl#parameter_value}
   */
   readonly parameterValue?: CloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueOneofValueParameterValue;
 }
@@ -2795,7 +2040,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersSu
   /**
   * The strings in the list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
   */
   readonly values: string[];
 }
@@ -2878,31 +2123,31 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersSu
   /**
   * Represents a boolean value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#bool_value CloudSecurityComplianceCloudControl#bool_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#bool_value CloudSecurityComplianceCloudControl#bool_value}
   */
   readonly boolValue?: boolean | cdktn.IResolvable;
   /**
   * Represents a double value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#number_value CloudSecurityComplianceCloudControl#number_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#number_value CloudSecurityComplianceCloudControl#number_value}
   */
   readonly numberValue?: number;
   /**
   * Represents a string value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#string_value CloudSecurityComplianceCloudControl#string_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#string_value CloudSecurityComplianceCloudControl#string_value}
   */
   readonly stringValue?: string;
   /**
   * oneof_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#oneof_value CloudSecurityComplianceCloudControl#oneof_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#oneof_value CloudSecurityComplianceCloudControl#oneof_value}
   */
   readonly oneofValue?: CloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueOneofValue;
   /**
   * string_list_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#string_list_value CloudSecurityComplianceCloudControl#string_list_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#string_list_value CloudSecurityComplianceCloudControl#string_list_value}
   */
   readonly stringListValue?: CloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueStringListValue;
 }
@@ -3105,7 +2350,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersSu
   * Fully qualified proto attribute path (in dot notation).
   * Example: rules[0].cel_expression.resource_types_values
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#attribute CloudSecurityComplianceCloudControl#attribute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#attribute CloudSecurityComplianceCloudControl#attribute}
   */
   readonly attribute?: string;
 }
@@ -3191,7 +2436,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersSu
   /**
   * Fully qualified proto attribute path (e.g., dot notation)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#attribute CloudSecurityComplianceCloudControl#attribute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#attribute CloudSecurityComplianceCloudControl#attribute}
   */
   readonly attribute?: string;
 }
@@ -3277,13 +2522,13 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersSu
   /**
   * attribute_substitution_rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#attribute_substitution_rule CloudSecurityComplianceCloudControl#attribute_substitution_rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#attribute_substitution_rule CloudSecurityComplianceCloudControl#attribute_substitution_rule}
   */
   readonly attributeSubstitutionRule?: CloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersSubstitutionRulesAttributeSubstitutionRule;
   /**
   * placeholder_substitution_rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#placeholder_substitution_rule CloudSecurityComplianceCloudControl#placeholder_substitution_rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#placeholder_substitution_rule CloudSecurityComplianceCloudControl#placeholder_substitution_rule}
   */
   readonly placeholderSubstitutionRule?: CloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersSubstitutionRulesPlaceholderSubstitutionRule;
 }
@@ -3430,7 +2675,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersSu
   /**
   * The strings in the list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
   */
   readonly values: string[];
 }
@@ -3513,25 +2758,31 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersSu
   /**
   * Represents a boolean value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#bool_value CloudSecurityComplianceCloudControl#bool_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#bool_value CloudSecurityComplianceCloudControl#bool_value}
   */
   readonly boolValue?: boolean | cdktn.IResolvable;
   /**
   * Represents a double value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#number_value CloudSecurityComplianceCloudControl#number_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#number_value CloudSecurityComplianceCloudControl#number_value}
   */
   readonly numberValue?: number;
   /**
+  * Sub-parameter values, in JSON format.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#oneof_value CloudSecurityComplianceCloudControl#oneof_value}
+  */
+  readonly oneofValue?: string;
+  /**
   * Represents a string value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#string_value CloudSecurityComplianceCloudControl#string_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#string_value CloudSecurityComplianceCloudControl#string_value}
   */
   readonly stringValue?: string;
   /**
   * string_list_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#string_list_value CloudSecurityComplianceCloudControl#string_list_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#string_list_value CloudSecurityComplianceCloudControl#string_list_value}
   */
   readonly stringListValue?: CloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesOneofValueParameterValueStringListValue;
 }
@@ -3544,6 +2795,7 @@ export function cloudSecurityComplianceCloudControlParameterSpecSubParametersSub
   return {
     bool_value: cdktn.booleanToTerraform(struct!.boolValue),
     number_value: cdktn.numberToTerraform(struct!.numberValue),
+    oneof_value: cdktn.stringToTerraform(struct!.oneofValue),
     string_value: cdktn.stringToTerraform(struct!.stringValue),
     string_list_value: cloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesOneofValueParameterValueStringListValueToTerraform(struct!.stringListValue),
   }
@@ -3567,6 +2819,12 @@ export function cloudSecurityComplianceCloudControlParameterSpecSubParametersSub
       isBlock: false,
       type: "simple",
       storageClassType: "number",
+    },
+    oneof_value: {
+      value: cdktn.stringToHclTerraform(struct!.oneofValue),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
     },
     string_value: {
       value: cdktn.stringToHclTerraform(struct!.stringValue),
@@ -3608,6 +2866,10 @@ export class CloudSecurityComplianceCloudControlParameterSpecSubParametersSubPar
       hasAnyValues = true;
       internalValueResult.numberValue = this._numberValue;
     }
+    if (this._oneofValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.oneofValue = this._oneofValue;
+    }
     if (this._stringValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.stringValue = this._stringValue;
@@ -3624,6 +2886,7 @@ export class CloudSecurityComplianceCloudControlParameterSpecSubParametersSubPar
       this.isEmptyObject = false;
       this._boolValue = undefined;
       this._numberValue = undefined;
+      this._oneofValue = undefined;
       this._stringValue = undefined;
       this._stringListValue.internalValue = undefined;
     }
@@ -3631,6 +2894,7 @@ export class CloudSecurityComplianceCloudControlParameterSpecSubParametersSubPar
       this.isEmptyObject = Object.keys(value).length === 0;
       this._boolValue = value.boolValue;
       this._numberValue = value.numberValue;
+      this._oneofValue = value.oneofValue;
       this._stringValue = value.stringValue;
       this._stringListValue.internalValue = value.stringListValue;
     }
@@ -3666,6 +2930,22 @@ export class CloudSecurityComplianceCloudControlParameterSpecSubParametersSubPar
   // Temporarily expose input value. Use with caution.
   public get numberValueInput() {
     return this._numberValue;
+  }
+
+  // oneof_value - computed: false, optional: true, required: false
+  private _oneofValue?: string; 
+  public get oneofValue() {
+    return this.getStringAttribute('oneof_value');
+  }
+  public set oneofValue(value: string) {
+    this._oneofValue = value;
+  }
+  public resetOneofValue() {
+    this._oneofValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get oneofValueInput() {
+    return this._oneofValue;
   }
 
   // string_value - computed: false, optional: true, required: false
@@ -3704,13 +2984,13 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersSu
   /**
   * The name of the parameter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#name CloudSecurityComplianceCloudControl#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#name CloudSecurityComplianceCloudControl#name}
   */
   readonly name?: string;
   /**
   * parameter_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#parameter_value CloudSecurityComplianceCloudControl#parameter_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#parameter_value CloudSecurityComplianceCloudControl#parameter_value}
   */
   readonly parameterValue?: CloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesOneofValueParameterValue;
 }
@@ -3825,7 +3105,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersSu
   /**
   * The strings in the list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
   */
   readonly values: string[];
 }
@@ -3908,31 +3188,31 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersSu
   /**
   * Represents a boolean value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#bool_value CloudSecurityComplianceCloudControl#bool_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#bool_value CloudSecurityComplianceCloudControl#bool_value}
   */
   readonly boolValue?: boolean | cdktn.IResolvable;
   /**
   * Represents a double value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#number_value CloudSecurityComplianceCloudControl#number_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#number_value CloudSecurityComplianceCloudControl#number_value}
   */
   readonly numberValue?: number;
   /**
   * Represents a string value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#string_value CloudSecurityComplianceCloudControl#string_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#string_value CloudSecurityComplianceCloudControl#string_value}
   */
   readonly stringValue?: string;
   /**
   * oneof_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#oneof_value CloudSecurityComplianceCloudControl#oneof_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#oneof_value CloudSecurityComplianceCloudControl#oneof_value}
   */
   readonly oneofValue?: CloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesOneofValue;
   /**
   * string_list_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#string_list_value CloudSecurityComplianceCloudControl#string_list_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#string_list_value CloudSecurityComplianceCloudControl#string_list_value}
   */
   readonly stringListValue?: CloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValuesStringListValue;
 }
@@ -4166,7 +3446,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersSu
   /**
   * values block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
   */
   readonly values: CloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValuesValues[] | cdktn.IResolvable;
 }
@@ -4249,13 +3529,13 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersSu
   /**
   * Maximum allowed value for the numeric parameter (inclusive).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#max CloudSecurityComplianceCloudControl#max}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#max CloudSecurityComplianceCloudControl#max}
   */
   readonly max: string;
   /**
   * Minimum allowed value for the numeric parameter (inclusive).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#min CloudSecurityComplianceCloudControl#min}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#min CloudSecurityComplianceCloudControl#min}
   */
   readonly min: string;
 }
@@ -4364,7 +3644,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersSu
   /**
   * Regex Pattern to match the value(s) of parameter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#pattern CloudSecurityComplianceCloudControl#pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#pattern CloudSecurityComplianceCloudControl#pattern}
   */
   readonly pattern: string;
 }
@@ -4447,19 +3727,19 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersSu
   /**
   * allowed_values block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#allowed_values CloudSecurityComplianceCloudControl#allowed_values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#allowed_values CloudSecurityComplianceCloudControl#allowed_values}
   */
   readonly allowedValues?: CloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationAllowedValues;
   /**
   * int_range block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#int_range CloudSecurityComplianceCloudControl#int_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#int_range CloudSecurityComplianceCloudControl#int_range}
   */
   readonly intRange?: CloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationIntRange;
   /**
   * regexp_pattern block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#regexp_pattern CloudSecurityComplianceCloudControl#regexp_pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#regexp_pattern CloudSecurityComplianceCloudControl#regexp_pattern}
   */
   readonly regexpPattern?: CloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidationRegexpPattern;
 }
@@ -4603,27 +3883,33 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersSu
   /**
   * The description of the parameter. The maximum length is 2000 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#description CloudSecurityComplianceCloudControl#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#description CloudSecurityComplianceCloudControl#description}
   */
   readonly description?: string;
   /**
   * The display name of the parameter. The maximum length is 200 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#display_name CloudSecurityComplianceCloudControl#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#display_name CloudSecurityComplianceCloudControl#display_name}
   */
   readonly displayName?: string;
   /**
   * if the parameter is required
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#is_required CloudSecurityComplianceCloudControl#is_required}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#is_required CloudSecurityComplianceCloudControl#is_required}
   */
   readonly isRequired: boolean | cdktn.IResolvable;
   /**
   * The name of the parameter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#name CloudSecurityComplianceCloudControl#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#name CloudSecurityComplianceCloudControl#name}
   */
   readonly name: string;
+  /**
+  * The parameter spec of the cloud control, in JSON format.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#sub_parameters CloudSecurityComplianceCloudControl#sub_parameters}
+  */
+  readonly subParameters?: string;
   /**
   * Parameter value type.
   * Possible values:
@@ -4633,25 +3919,25 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersSu
   * NUMBER
   * ONEOF
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#value_type CloudSecurityComplianceCloudControl#value_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#value_type CloudSecurityComplianceCloudControl#value_type}
   */
   readonly valueType: string;
   /**
   * default_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#default_value CloudSecurityComplianceCloudControl#default_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#default_value CloudSecurityComplianceCloudControl#default_value}
   */
   readonly defaultValue?: CloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValue;
   /**
   * substitution_rules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#substitution_rules CloudSecurityComplianceCloudControl#substitution_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#substitution_rules CloudSecurityComplianceCloudControl#substitution_rules}
   */
   readonly substitutionRules?: CloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersSubstitutionRules[] | cdktn.IResolvable;
   /**
   * validation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#validation CloudSecurityComplianceCloudControl#validation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#validation CloudSecurityComplianceCloudControl#validation}
   */
   readonly validation?: CloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersValidation;
 }
@@ -4666,6 +3952,7 @@ export function cloudSecurityComplianceCloudControlParameterSpecSubParametersSub
     display_name: cdktn.stringToTerraform(struct!.displayName),
     is_required: cdktn.booleanToTerraform(struct!.isRequired),
     name: cdktn.stringToTerraform(struct!.name),
+    sub_parameters: cdktn.stringToTerraform(struct!.subParameters),
     value_type: cdktn.stringToTerraform(struct!.valueType),
     default_value: cloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersDefaultValueToTerraform(struct!.defaultValue),
     substitution_rules: cdktn.listMapper(cloudSecurityComplianceCloudControlParameterSpecSubParametersSubParametersSubstitutionRulesToTerraform, true)(struct!.substitutionRules),
@@ -4700,6 +3987,12 @@ export function cloudSecurityComplianceCloudControlParameterSpecSubParametersSub
     },
     name: {
       value: cdktn.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sub_parameters: {
+      value: cdktn.stringToHclTerraform(struct!.subParameters),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4770,6 +4063,10 @@ export class CloudSecurityComplianceCloudControlParameterSpecSubParametersSubPar
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
+    if (this._subParameters !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.subParameters = this._subParameters;
+    }
     if (this._valueType !== undefined) {
       hasAnyValues = true;
       internalValueResult.valueType = this._valueType;
@@ -4797,6 +4094,7 @@ export class CloudSecurityComplianceCloudControlParameterSpecSubParametersSubPar
       this._displayName = undefined;
       this._isRequired = undefined;
       this._name = undefined;
+      this._subParameters = undefined;
       this._valueType = undefined;
       this._defaultValue.internalValue = undefined;
       this._substitutionRules.internalValue = undefined;
@@ -4813,6 +4111,7 @@ export class CloudSecurityComplianceCloudControlParameterSpecSubParametersSubPar
       this._displayName = value.displayName;
       this._isRequired = value.isRequired;
       this._name = value.name;
+      this._subParameters = value.subParameters;
       this._valueType = value.valueType;
       this._defaultValue.internalValue = value.defaultValue;
       this._substitutionRules.internalValue = value.substitutionRules;
@@ -4876,6 +4175,22 @@ export class CloudSecurityComplianceCloudControlParameterSpecSubParametersSubPar
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name;
+  }
+
+  // sub_parameters - computed: false, optional: true, required: false
+  private _subParameters?: string; 
+  public get subParameters() {
+    return this.getStringAttribute('sub_parameters');
+  }
+  public set subParameters(value: string) {
+    this._subParameters = value;
+  }
+  public resetSubParameters() {
+    this._subParameters = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subParametersInput() {
+    return this._subParameters;
   }
 
   // value_type - computed: false, optional: false, required: true
@@ -4964,7 +4279,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersSu
   * Fully qualified proto attribute path (in dot notation).
   * Example: rules[0].cel_expression.resource_types_values
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#attribute CloudSecurityComplianceCloudControl#attribute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#attribute CloudSecurityComplianceCloudControl#attribute}
   */
   readonly attribute?: string;
 }
@@ -5050,7 +4365,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersSu
   /**
   * Fully qualified proto attribute path (e.g., dot notation)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#attribute CloudSecurityComplianceCloudControl#attribute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#attribute CloudSecurityComplianceCloudControl#attribute}
   */
   readonly attribute?: string;
 }
@@ -5136,13 +4451,13 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersSu
   /**
   * attribute_substitution_rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#attribute_substitution_rule CloudSecurityComplianceCloudControl#attribute_substitution_rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#attribute_substitution_rule CloudSecurityComplianceCloudControl#attribute_substitution_rule}
   */
   readonly attributeSubstitutionRule?: CloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRulesAttributeSubstitutionRule;
   /**
   * placeholder_substitution_rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#placeholder_substitution_rule CloudSecurityComplianceCloudControl#placeholder_substitution_rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#placeholder_substitution_rule CloudSecurityComplianceCloudControl#placeholder_substitution_rule}
   */
   readonly placeholderSubstitutionRule?: CloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRulesPlaceholderSubstitutionRule;
 }
@@ -5285,406 +4600,11 @@ export class CloudSecurityComplianceCloudControlParameterSpecSubParametersSubsti
     return new CloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRulesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueStringListValue {
-  /**
-  * The strings in the list.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
-  */
-  readonly values: string[];
-}
-
-export function cloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueStringListValueToTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueStringListValueOutputReference | CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueStringListValue): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
-  }
-}
-
-
-export function cloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueStringListValueToHclTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueStringListValueOutputReference | CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueStringListValue): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-    values: {
-      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueStringListValueOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueStringListValue | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._values !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.values = this._values;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueStringListValue | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._values = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._values = value.values;
-    }
-  }
-
-  // values - computed: false, optional: false, required: true
-  private _values?: string[]; 
-  public get values() {
-    return this.getListAttribute('values');
-  }
-  public set values(value: string[]) {
-    this._values = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get valuesInput() {
-    return this._values;
-  }
-}
-export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValue {
-  /**
-  * Represents a boolean value.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#bool_value CloudSecurityComplianceCloudControl#bool_value}
-  */
-  readonly boolValue?: boolean | cdktn.IResolvable;
-  /**
-  * Represents a double value.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#number_value CloudSecurityComplianceCloudControl#number_value}
-  */
-  readonly numberValue?: number;
-  /**
-  * Represents a string value.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#string_value CloudSecurityComplianceCloudControl#string_value}
-  */
-  readonly stringValue?: string;
-  /**
-  * string_list_value block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#string_list_value CloudSecurityComplianceCloudControl#string_list_value}
-  */
-  readonly stringListValue?: CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueStringListValue;
-}
-
-export function cloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueToTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueOutputReference | CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValue): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-    bool_value: cdktn.booleanToTerraform(struct!.boolValue),
-    number_value: cdktn.numberToTerraform(struct!.numberValue),
-    string_value: cdktn.stringToTerraform(struct!.stringValue),
-    string_list_value: cloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueStringListValueToTerraform(struct!.stringListValue),
-  }
-}
-
-
-export function cloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueToHclTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueOutputReference | CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValue): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-    bool_value: {
-      value: cdktn.booleanToHclTerraform(struct!.boolValue),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "boolean",
-    },
-    number_value: {
-      value: cdktn.numberToHclTerraform(struct!.numberValue),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "number",
-    },
-    string_value: {
-      value: cdktn.stringToHclTerraform(struct!.stringValue),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    string_list_value: {
-      value: cloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueStringListValueToHclTerraform(struct!.stringListValue),
-      isBlock: true,
-      type: "list",
-      storageClassType: "CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueStringListValueList",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValue | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._boolValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.boolValue = this._boolValue;
-    }
-    if (this._numberValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.numberValue = this._numberValue;
-    }
-    if (this._stringValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.stringValue = this._stringValue;
-    }
-    if (this._stringListValue?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.stringListValue = this._stringListValue?.internalValue;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValue | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._boolValue = undefined;
-      this._numberValue = undefined;
-      this._stringValue = undefined;
-      this._stringListValue.internalValue = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._boolValue = value.boolValue;
-      this._numberValue = value.numberValue;
-      this._stringValue = value.stringValue;
-      this._stringListValue.internalValue = value.stringListValue;
-    }
-  }
-
-  // bool_value - computed: false, optional: true, required: false
-  private _boolValue?: boolean | cdktn.IResolvable; 
-  public get boolValue() {
-    return this.getBooleanAttribute('bool_value');
-  }
-  public set boolValue(value: boolean | cdktn.IResolvable) {
-    this._boolValue = value;
-  }
-  public resetBoolValue() {
-    this._boolValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get boolValueInput() {
-    return this._boolValue;
-  }
-
-  // number_value - computed: false, optional: true, required: false
-  private _numberValue?: number; 
-  public get numberValue() {
-    return this.getNumberAttribute('number_value');
-  }
-  public set numberValue(value: number) {
-    this._numberValue = value;
-  }
-  public resetNumberValue() {
-    this._numberValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get numberValueInput() {
-    return this._numberValue;
-  }
-
-  // string_value - computed: false, optional: true, required: false
-  private _stringValue?: string; 
-  public get stringValue() {
-    return this.getStringAttribute('string_value');
-  }
-  public set stringValue(value: string) {
-    this._stringValue = value;
-  }
-  public resetStringValue() {
-    this._stringValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get stringValueInput() {
-    return this._stringValue;
-  }
-
-  // string_list_value - computed: false, optional: true, required: false
-  private _stringListValue = new CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueStringListValueOutputReference(this, "string_list_value");
-  public get stringListValue() {
-    return this._stringListValue;
-  }
-  public putStringListValue(value: CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueStringListValue) {
-    this._stringListValue.internalValue = value;
-  }
-  public resetStringListValue() {
-    this._stringListValue.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get stringListValueInput() {
-    return this._stringListValue.internalValue;
-  }
-}
-export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValue {
-  /**
-  * The name of the parameter.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#name CloudSecurityComplianceCloudControl#name}
-  */
-  readonly name?: string;
-  /**
-  * parameter_value block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#parameter_value CloudSecurityComplianceCloudControl#parameter_value}
-  */
-  readonly parameterValue?: CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValue;
-}
-
-export function cloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueToTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueOutputReference | CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValue): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-    name: cdktn.stringToTerraform(struct!.name),
-    parameter_value: cloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueToTerraform(struct!.parameterValue),
-  }
-}
-
-
-export function cloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueToHclTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueOutputReference | CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValue): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-    name: {
-      value: cdktn.stringToHclTerraform(struct!.name),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    parameter_value: {
-      value: cloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueToHclTerraform(struct!.parameterValue),
-      isBlock: true,
-      type: "list",
-      storageClassType: "CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueList",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValue | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._name !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.name = this._name;
-    }
-    if (this._parameterValue?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.parameterValue = this._parameterValue?.internalValue;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValue | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._name = undefined;
-      this._parameterValue.internalValue = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._name = value.name;
-      this._parameterValue.internalValue = value.parameterValue;
-    }
-  }
-
-  // name - computed: false, optional: true, required: false
-  private _name?: string; 
-  public get name() {
-    return this.getStringAttribute('name');
-  }
-  public set name(value: string) {
-    this._name = value;
-  }
-  public resetName() {
-    this._name = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name;
-  }
-
-  // parameter_value - computed: false, optional: true, required: false
-  private _parameterValue = new CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueOutputReference(this, "parameter_value");
-  public get parameterValue() {
-    return this._parameterValue;
-  }
-  public putParameterValue(value: CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValue) {
-    this._parameterValue.internalValue = value;
-  }
-  public resetParameterValue() {
-    this._parameterValue.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get parameterValueInput() {
-    return this._parameterValue.internalValue;
-  }
-}
 export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueStringListValue {
   /**
   * The strings in the list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
   */
   readonly values: string[];
 }
@@ -5767,31 +4687,31 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersVa
   /**
   * Represents a boolean value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#bool_value CloudSecurityComplianceCloudControl#bool_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#bool_value CloudSecurityComplianceCloudControl#bool_value}
   */
   readonly boolValue?: boolean | cdktn.IResolvable;
   /**
   * Represents a double value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#number_value CloudSecurityComplianceCloudControl#number_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#number_value CloudSecurityComplianceCloudControl#number_value}
   */
   readonly numberValue?: number;
   /**
   * Represents a string value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#string_value CloudSecurityComplianceCloudControl#string_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#string_value CloudSecurityComplianceCloudControl#string_value}
   */
   readonly stringValue?: string;
   /**
   * oneof_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#oneof_value CloudSecurityComplianceCloudControl#oneof_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#oneof_value CloudSecurityComplianceCloudControl#oneof_value}
   */
-  readonly oneofValue?: CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValue;
+  readonly oneofValue?: CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValue;
   /**
   * string_list_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#string_list_value CloudSecurityComplianceCloudControl#string_list_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#string_list_value CloudSecurityComplianceCloudControl#string_list_value}
   */
   readonly stringListValue?: CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueStringListValue;
 }
@@ -5805,7 +4725,7 @@ export function cloudSecurityComplianceCloudControlParameterSpecSubParametersVal
     bool_value: cdktn.booleanToTerraform(struct!.boolValue),
     number_value: cdktn.numberToTerraform(struct!.numberValue),
     string_value: cdktn.stringToTerraform(struct!.stringValue),
-    oneof_value: cloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueToTerraform(struct!.oneofValue),
+    oneof_value: cloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueToTerraform(struct!.oneofValue),
     string_list_value: cloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueStringListValueToTerraform(struct!.stringListValue),
   }
 }
@@ -5836,10 +4756,10 @@ export function cloudSecurityComplianceCloudControlParameterSpecSubParametersVal
       storageClassType: "string",
     },
     oneof_value: {
-      value: cloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueToHclTerraform(struct!.oneofValue),
+      value: cloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueToHclTerraform(struct!.oneofValue),
       isBlock: true,
       type: "list",
-      storageClassType: "CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueList",
+      storageClassType: "CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueList",
     },
     string_list_value: {
       value: cloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueStringListValueToHclTerraform(struct!.stringListValue),
@@ -5958,11 +4878,11 @@ export class CloudSecurityComplianceCloudControlParameterSpecSubParametersValida
   }
 
   // oneof_value - computed: false, optional: true, required: false
-  private _oneofValue = new CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValueOutputReference(this, "oneof_value");
+  private _oneofValue = new CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueOutputReference(this, "oneof_value");
   public get oneofValue() {
     return this._oneofValue;
   }
-  public putOneofValue(value: CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValueOneofValue) {
+  public putOneofValue(value: CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValue) {
     this._oneofValue.internalValue = value;
   }
   public resetOneofValue() {
@@ -5993,13 +4913,13 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersVa
   /**
   * The name of the parameter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#name CloudSecurityComplianceCloudControl#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#name CloudSecurityComplianceCloudControl#name}
   */
   readonly name?: string;
   /**
   * parameter_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#parameter_value CloudSecurityComplianceCloudControl#parameter_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#parameter_value CloudSecurityComplianceCloudControl#parameter_value}
   */
   readonly parameterValue?: CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValueParameterValue;
 }
@@ -6114,7 +5034,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersVa
   /**
   * The strings in the list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
   */
   readonly values: string[];
 }
@@ -6197,31 +5117,31 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersVa
   /**
   * Represents a boolean value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#bool_value CloudSecurityComplianceCloudControl#bool_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#bool_value CloudSecurityComplianceCloudControl#bool_value}
   */
   readonly boolValue?: boolean | cdktn.IResolvable;
   /**
   * Represents a double value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#number_value CloudSecurityComplianceCloudControl#number_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#number_value CloudSecurityComplianceCloudControl#number_value}
   */
   readonly numberValue?: number;
   /**
   * Represents a string value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#string_value CloudSecurityComplianceCloudControl#string_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#string_value CloudSecurityComplianceCloudControl#string_value}
   */
   readonly stringValue?: string;
   /**
   * oneof_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#oneof_value CloudSecurityComplianceCloudControl#oneof_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#oneof_value CloudSecurityComplianceCloudControl#oneof_value}
   */
   readonly oneofValue?: CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesOneofValue;
   /**
   * string_list_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#string_list_value CloudSecurityComplianceCloudControl#string_list_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#string_list_value CloudSecurityComplianceCloudControl#string_list_value}
   */
   readonly stringListValue?: CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValuesStringListValue;
 }
@@ -6455,7 +5375,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersVa
   /**
   * values block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
   */
   readonly values: CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValuesValues[] | cdktn.IResolvable;
 }
@@ -6538,13 +5458,13 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersVa
   /**
   * Maximum allowed value for the numeric parameter (inclusive).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#max CloudSecurityComplianceCloudControl#max}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#max CloudSecurityComplianceCloudControl#max}
   */
   readonly max: string;
   /**
   * Minimum allowed value for the numeric parameter (inclusive).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#min CloudSecurityComplianceCloudControl#min}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#min CloudSecurityComplianceCloudControl#min}
   */
   readonly min: string;
 }
@@ -6653,7 +5573,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersVa
   /**
   * Regex Pattern to match the value(s) of parameter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#pattern CloudSecurityComplianceCloudControl#pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#pattern CloudSecurityComplianceCloudControl#pattern}
   */
   readonly pattern: string;
 }
@@ -6736,19 +5656,19 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParametersVa
   /**
   * allowed_values block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#allowed_values CloudSecurityComplianceCloudControl#allowed_values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#allowed_values CloudSecurityComplianceCloudControl#allowed_values}
   */
   readonly allowedValues?: CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationAllowedValues;
   /**
   * int_range block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#int_range CloudSecurityComplianceCloudControl#int_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#int_range CloudSecurityComplianceCloudControl#int_range}
   */
   readonly intRange?: CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationIntRange;
   /**
   * regexp_pattern block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#regexp_pattern CloudSecurityComplianceCloudControl#regexp_pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#regexp_pattern CloudSecurityComplianceCloudControl#regexp_pattern}
   */
   readonly regexpPattern?: CloudSecurityComplianceCloudControlParameterSpecSubParametersValidationRegexpPattern;
 }
@@ -6892,25 +5812,25 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParameters {
   /**
   * The description of the parameter. The maximum length is 2000 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#description CloudSecurityComplianceCloudControl#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#description CloudSecurityComplianceCloudControl#description}
   */
   readonly description?: string;
   /**
   * The display name of the parameter. The maximum length is 200 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#display_name CloudSecurityComplianceCloudControl#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#display_name CloudSecurityComplianceCloudControl#display_name}
   */
   readonly displayName?: string;
   /**
   * if the parameter is required
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#is_required CloudSecurityComplianceCloudControl#is_required}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#is_required CloudSecurityComplianceCloudControl#is_required}
   */
   readonly isRequired: boolean | cdktn.IResolvable;
   /**
   * The name of the parameter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#name CloudSecurityComplianceCloudControl#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#name CloudSecurityComplianceCloudControl#name}
   */
   readonly name: string;
   /**
@@ -6922,31 +5842,31 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubParameters {
   * NUMBER
   * ONEOF
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#value_type CloudSecurityComplianceCloudControl#value_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#value_type CloudSecurityComplianceCloudControl#value_type}
   */
   readonly valueType: string;
   /**
   * default_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#default_value CloudSecurityComplianceCloudControl#default_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#default_value CloudSecurityComplianceCloudControl#default_value}
   */
   readonly defaultValue?: CloudSecurityComplianceCloudControlParameterSpecSubParametersDefaultValue;
   /**
   * sub_parameters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#sub_parameters CloudSecurityComplianceCloudControl#sub_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#sub_parameters CloudSecurityComplianceCloudControl#sub_parameters}
   */
   readonly subParameters?: CloudSecurityComplianceCloudControlParameterSpecSubParametersSubParameters[] | cdktn.IResolvable;
   /**
   * substitution_rules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#substitution_rules CloudSecurityComplianceCloudControl#substitution_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#substitution_rules CloudSecurityComplianceCloudControl#substitution_rules}
   */
   readonly substitutionRules?: CloudSecurityComplianceCloudControlParameterSpecSubParametersSubstitutionRules[] | cdktn.IResolvable;
   /**
   * validation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#validation CloudSecurityComplianceCloudControl#validation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#validation CloudSecurityComplianceCloudControl#validation}
   */
   readonly validation?: CloudSecurityComplianceCloudControlParameterSpecSubParametersValidation;
 }
@@ -7288,7 +6208,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubstitutionRul
   * Fully qualified proto attribute path (in dot notation).
   * Example: rules[0].cel_expression.resource_types_values
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#attribute CloudSecurityComplianceCloudControl#attribute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#attribute CloudSecurityComplianceCloudControl#attribute}
   */
   readonly attribute?: string;
 }
@@ -7374,7 +6294,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubstitutionRul
   /**
   * Fully qualified proto attribute path (e.g., dot notation)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#attribute CloudSecurityComplianceCloudControl#attribute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#attribute CloudSecurityComplianceCloudControl#attribute}
   */
   readonly attribute?: string;
 }
@@ -7460,13 +6380,13 @@ export interface CloudSecurityComplianceCloudControlParameterSpecSubstitutionRul
   /**
   * attribute_substitution_rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#attribute_substitution_rule CloudSecurityComplianceCloudControl#attribute_substitution_rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#attribute_substitution_rule CloudSecurityComplianceCloudControl#attribute_substitution_rule}
   */
   readonly attributeSubstitutionRule?: CloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesAttributeSubstitutionRule;
   /**
   * placeholder_substitution_rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#placeholder_substitution_rule CloudSecurityComplianceCloudControl#placeholder_substitution_rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#placeholder_substitution_rule CloudSecurityComplianceCloudControl#placeholder_substitution_rule}
   */
   readonly placeholderSubstitutionRule?: CloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesPlaceholderSubstitutionRule;
 }
@@ -7609,406 +6529,11 @@ export class CloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesLi
     return new CloudSecurityComplianceCloudControlParameterSpecSubstitutionRulesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
-export interface CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueStringListValue {
-  /**
-  * The strings in the list.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
-  */
-  readonly values: string[];
-}
-
-export function cloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueStringListValueToTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueStringListValueOutputReference | CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueStringListValue): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
-  }
-}
-
-
-export function cloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueStringListValueToHclTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueStringListValueOutputReference | CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueStringListValue): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-    values: {
-      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
-      isBlock: false,
-      type: "list",
-      storageClassType: "stringList",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueStringListValueOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueStringListValue | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._values !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.values = this._values;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueStringListValue | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._values = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._values = value.values;
-    }
-  }
-
-  // values - computed: false, optional: false, required: true
-  private _values?: string[]; 
-  public get values() {
-    return this.getListAttribute('values');
-  }
-  public set values(value: string[]) {
-    this._values = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get valuesInput() {
-    return this._values;
-  }
-}
-export interface CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValue {
-  /**
-  * Represents a boolean value.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#bool_value CloudSecurityComplianceCloudControl#bool_value}
-  */
-  readonly boolValue?: boolean | cdktn.IResolvable;
-  /**
-  * Represents a double value.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#number_value CloudSecurityComplianceCloudControl#number_value}
-  */
-  readonly numberValue?: number;
-  /**
-  * Represents a string value.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#string_value CloudSecurityComplianceCloudControl#string_value}
-  */
-  readonly stringValue?: string;
-  /**
-  * string_list_value block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#string_list_value CloudSecurityComplianceCloudControl#string_list_value}
-  */
-  readonly stringListValue?: CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueStringListValue;
-}
-
-export function cloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueToTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueOutputReference | CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValue): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-    bool_value: cdktn.booleanToTerraform(struct!.boolValue),
-    number_value: cdktn.numberToTerraform(struct!.numberValue),
-    string_value: cdktn.stringToTerraform(struct!.stringValue),
-    string_list_value: cloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueStringListValueToTerraform(struct!.stringListValue),
-  }
-}
-
-
-export function cloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueToHclTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueOutputReference | CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValue): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-    bool_value: {
-      value: cdktn.booleanToHclTerraform(struct!.boolValue),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "boolean",
-    },
-    number_value: {
-      value: cdktn.numberToHclTerraform(struct!.numberValue),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "number",
-    },
-    string_value: {
-      value: cdktn.stringToHclTerraform(struct!.stringValue),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    string_list_value: {
-      value: cloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueStringListValueToHclTerraform(struct!.stringListValue),
-      isBlock: true,
-      type: "list",
-      storageClassType: "CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueStringListValueList",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValue | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._boolValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.boolValue = this._boolValue;
-    }
-    if (this._numberValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.numberValue = this._numberValue;
-    }
-    if (this._stringValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.stringValue = this._stringValue;
-    }
-    if (this._stringListValue?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.stringListValue = this._stringListValue?.internalValue;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValue | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._boolValue = undefined;
-      this._numberValue = undefined;
-      this._stringValue = undefined;
-      this._stringListValue.internalValue = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._boolValue = value.boolValue;
-      this._numberValue = value.numberValue;
-      this._stringValue = value.stringValue;
-      this._stringListValue.internalValue = value.stringListValue;
-    }
-  }
-
-  // bool_value - computed: false, optional: true, required: false
-  private _boolValue?: boolean | cdktn.IResolvable; 
-  public get boolValue() {
-    return this.getBooleanAttribute('bool_value');
-  }
-  public set boolValue(value: boolean | cdktn.IResolvable) {
-    this._boolValue = value;
-  }
-  public resetBoolValue() {
-    this._boolValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get boolValueInput() {
-    return this._boolValue;
-  }
-
-  // number_value - computed: false, optional: true, required: false
-  private _numberValue?: number; 
-  public get numberValue() {
-    return this.getNumberAttribute('number_value');
-  }
-  public set numberValue(value: number) {
-    this._numberValue = value;
-  }
-  public resetNumberValue() {
-    this._numberValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get numberValueInput() {
-    return this._numberValue;
-  }
-
-  // string_value - computed: false, optional: true, required: false
-  private _stringValue?: string; 
-  public get stringValue() {
-    return this.getStringAttribute('string_value');
-  }
-  public set stringValue(value: string) {
-    this._stringValue = value;
-  }
-  public resetStringValue() {
-    this._stringValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get stringValueInput() {
-    return this._stringValue;
-  }
-
-  // string_list_value - computed: false, optional: true, required: false
-  private _stringListValue = new CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueStringListValueOutputReference(this, "string_list_value");
-  public get stringListValue() {
-    return this._stringListValue;
-  }
-  public putStringListValue(value: CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueStringListValue) {
-    this._stringListValue.internalValue = value;
-  }
-  public resetStringListValue() {
-    this._stringListValue.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get stringListValueInput() {
-    return this._stringListValue.internalValue;
-  }
-}
-export interface CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValue {
-  /**
-  * The name of the parameter.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#name CloudSecurityComplianceCloudControl#name}
-  */
-  readonly name?: string;
-  /**
-  * parameter_value block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#parameter_value CloudSecurityComplianceCloudControl#parameter_value}
-  */
-  readonly parameterValue?: CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValue;
-}
-
-export function cloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueToTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueOutputReference | CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValue): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  return {
-    name: cdktn.stringToTerraform(struct!.name),
-    parameter_value: cloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueToTerraform(struct!.parameterValue),
-  }
-}
-
-
-export function cloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueToHclTerraform(struct?: CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueOutputReference | CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValue): any {
-  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
-  }
-  const attrs = {
-    name: {
-      value: cdktn.stringToHclTerraform(struct!.name),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "string",
-    },
-    parameter_value: {
-      value: cloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueToHclTerraform(struct!.parameterValue),
-      isBlock: true,
-      type: "list",
-      storageClassType: "CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueList",
-    },
-  };
-
-  // remove undefined attributes
-  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
-}
-
-export class CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueOutputReference extends cdktn.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  */
-  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
-  }
-
-  public get internalValue(): CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValue | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    if (this._name !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.name = this._name;
-    }
-    if (this._parameterValue?.internalValue !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.parameterValue = this._parameterValue?.internalValue;
-    }
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValue | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-      this._name = undefined;
-      this._parameterValue.internalValue = undefined;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-      this._name = value.name;
-      this._parameterValue.internalValue = value.parameterValue;
-    }
-  }
-
-  // name - computed: false, optional: true, required: false
-  private _name?: string; 
-  public get name() {
-    return this.getStringAttribute('name');
-  }
-  public set name(value: string) {
-    this._name = value;
-  }
-  public resetName() {
-    this._name = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nameInput() {
-    return this._name;
-  }
-
-  // parameter_value - computed: false, optional: true, required: false
-  private _parameterValue = new CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValueOutputReference(this, "parameter_value");
-  public get parameterValue() {
-    return this._parameterValue;
-  }
-  public putParameterValue(value: CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueParameterValue) {
-    this._parameterValue.internalValue = value;
-  }
-  public resetParameterValue() {
-    this._parameterValue.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get parameterValueInput() {
-    return this._parameterValue.internalValue;
-  }
-}
 export interface CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueStringListValue {
   /**
   * The strings in the list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
   */
   readonly values: string[];
 }
@@ -8091,31 +6616,31 @@ export interface CloudSecurityComplianceCloudControlParameterSpecValidationAllow
   /**
   * Represents a boolean value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#bool_value CloudSecurityComplianceCloudControl#bool_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#bool_value CloudSecurityComplianceCloudControl#bool_value}
   */
   readonly boolValue?: boolean | cdktn.IResolvable;
   /**
   * Represents a double value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#number_value CloudSecurityComplianceCloudControl#number_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#number_value CloudSecurityComplianceCloudControl#number_value}
   */
   readonly numberValue?: number;
   /**
   * Represents a string value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#string_value CloudSecurityComplianceCloudControl#string_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#string_value CloudSecurityComplianceCloudControl#string_value}
   */
   readonly stringValue?: string;
   /**
   * oneof_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#oneof_value CloudSecurityComplianceCloudControl#oneof_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#oneof_value CloudSecurityComplianceCloudControl#oneof_value}
   */
-  readonly oneofValue?: CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValue;
+  readonly oneofValue?: CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValue;
   /**
   * string_list_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#string_list_value CloudSecurityComplianceCloudControl#string_list_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#string_list_value CloudSecurityComplianceCloudControl#string_list_value}
   */
   readonly stringListValue?: CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueStringListValue;
 }
@@ -8129,7 +6654,7 @@ export function cloudSecurityComplianceCloudControlParameterSpecValidationAllowe
     bool_value: cdktn.booleanToTerraform(struct!.boolValue),
     number_value: cdktn.numberToTerraform(struct!.numberValue),
     string_value: cdktn.stringToTerraform(struct!.stringValue),
-    oneof_value: cloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueToTerraform(struct!.oneofValue),
+    oneof_value: cloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueToTerraform(struct!.oneofValue),
     string_list_value: cloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueStringListValueToTerraform(struct!.stringListValue),
   }
 }
@@ -8160,10 +6685,10 @@ export function cloudSecurityComplianceCloudControlParameterSpecValidationAllowe
       storageClassType: "string",
     },
     oneof_value: {
-      value: cloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueToHclTerraform(struct!.oneofValue),
+      value: cloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueToHclTerraform(struct!.oneofValue),
       isBlock: true,
       type: "list",
-      storageClassType: "CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueList",
+      storageClassType: "CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueList",
     },
     string_list_value: {
       value: cloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueStringListValueToHclTerraform(struct!.stringListValue),
@@ -8282,11 +6807,11 @@ export class CloudSecurityComplianceCloudControlParameterSpecValidationAllowedVa
   }
 
   // oneof_value - computed: false, optional: true, required: false
-  private _oneofValue = new CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValueOutputReference(this, "oneof_value");
+  private _oneofValue = new CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueOutputReference(this, "oneof_value");
   public get oneofValue() {
     return this._oneofValue;
   }
-  public putOneofValue(value: CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValueOneofValue) {
+  public putOneofValue(value: CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValue) {
     this._oneofValue.internalValue = value;
   }
   public resetOneofValue() {
@@ -8317,13 +6842,13 @@ export interface CloudSecurityComplianceCloudControlParameterSpecValidationAllow
   /**
   * The name of the parameter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#name CloudSecurityComplianceCloudControl#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#name CloudSecurityComplianceCloudControl#name}
   */
   readonly name?: string;
   /**
   * parameter_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#parameter_value CloudSecurityComplianceCloudControl#parameter_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#parameter_value CloudSecurityComplianceCloudControl#parameter_value}
   */
   readonly parameterValue?: CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValueParameterValue;
 }
@@ -8438,7 +6963,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecValidationAllow
   /**
   * The strings in the list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
   */
   readonly values: string[];
 }
@@ -8521,31 +7046,31 @@ export interface CloudSecurityComplianceCloudControlParameterSpecValidationAllow
   /**
   * Represents a boolean value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#bool_value CloudSecurityComplianceCloudControl#bool_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#bool_value CloudSecurityComplianceCloudControl#bool_value}
   */
   readonly boolValue?: boolean | cdktn.IResolvable;
   /**
   * Represents a double value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#number_value CloudSecurityComplianceCloudControl#number_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#number_value CloudSecurityComplianceCloudControl#number_value}
   */
   readonly numberValue?: number;
   /**
   * Represents a string value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#string_value CloudSecurityComplianceCloudControl#string_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#string_value CloudSecurityComplianceCloudControl#string_value}
   */
   readonly stringValue?: string;
   /**
   * oneof_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#oneof_value CloudSecurityComplianceCloudControl#oneof_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#oneof_value CloudSecurityComplianceCloudControl#oneof_value}
   */
   readonly oneofValue?: CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesOneofValue;
   /**
   * string_list_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#string_list_value CloudSecurityComplianceCloudControl#string_list_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#string_list_value CloudSecurityComplianceCloudControl#string_list_value}
   */
   readonly stringListValue?: CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValuesStringListValue;
 }
@@ -8779,7 +7304,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecValidationAllow
   /**
   * values block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
   */
   readonly values: CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValuesValues[] | cdktn.IResolvable;
 }
@@ -8862,13 +7387,13 @@ export interface CloudSecurityComplianceCloudControlParameterSpecValidationIntRa
   /**
   * Maximum allowed value for the numeric parameter (inclusive).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#max CloudSecurityComplianceCloudControl#max}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#max CloudSecurityComplianceCloudControl#max}
   */
   readonly max: string;
   /**
   * Minimum allowed value for the numeric parameter (inclusive).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#min CloudSecurityComplianceCloudControl#min}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#min CloudSecurityComplianceCloudControl#min}
   */
   readonly min: string;
 }
@@ -8977,7 +7502,7 @@ export interface CloudSecurityComplianceCloudControlParameterSpecValidationRegex
   /**
   * Regex Pattern to match the value(s) of parameter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#pattern CloudSecurityComplianceCloudControl#pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#pattern CloudSecurityComplianceCloudControl#pattern}
   */
   readonly pattern: string;
 }
@@ -9060,19 +7585,19 @@ export interface CloudSecurityComplianceCloudControlParameterSpecValidation {
   /**
   * allowed_values block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#allowed_values CloudSecurityComplianceCloudControl#allowed_values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#allowed_values CloudSecurityComplianceCloudControl#allowed_values}
   */
   readonly allowedValues?: CloudSecurityComplianceCloudControlParameterSpecValidationAllowedValues;
   /**
   * int_range block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#int_range CloudSecurityComplianceCloudControl#int_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#int_range CloudSecurityComplianceCloudControl#int_range}
   */
   readonly intRange?: CloudSecurityComplianceCloudControlParameterSpecValidationIntRange;
   /**
   * regexp_pattern block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#regexp_pattern CloudSecurityComplianceCloudControl#regexp_pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#regexp_pattern CloudSecurityComplianceCloudControl#regexp_pattern}
   */
   readonly regexpPattern?: CloudSecurityComplianceCloudControlParameterSpecValidationRegexpPattern;
 }
@@ -9216,25 +7741,25 @@ export interface CloudSecurityComplianceCloudControlParameterSpec {
   /**
   * The description of the parameter. The maximum length is 2000 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#description CloudSecurityComplianceCloudControl#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#description CloudSecurityComplianceCloudControl#description}
   */
   readonly description?: string;
   /**
   * The display name of the parameter. The maximum length is 200 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#display_name CloudSecurityComplianceCloudControl#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#display_name CloudSecurityComplianceCloudControl#display_name}
   */
   readonly displayName?: string;
   /**
   * if the parameter is required
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#is_required CloudSecurityComplianceCloudControl#is_required}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#is_required CloudSecurityComplianceCloudControl#is_required}
   */
   readonly isRequired: boolean | cdktn.IResolvable;
   /**
   * The name of the parameter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#name CloudSecurityComplianceCloudControl#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#name CloudSecurityComplianceCloudControl#name}
   */
   readonly name: string;
   /**
@@ -9246,31 +7771,31 @@ export interface CloudSecurityComplianceCloudControlParameterSpec {
   * NUMBER
   * ONEOF
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#value_type CloudSecurityComplianceCloudControl#value_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#value_type CloudSecurityComplianceCloudControl#value_type}
   */
   readonly valueType: string;
   /**
   * default_value block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#default_value CloudSecurityComplianceCloudControl#default_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#default_value CloudSecurityComplianceCloudControl#default_value}
   */
   readonly defaultValue?: CloudSecurityComplianceCloudControlParameterSpecDefaultValue;
   /**
   * sub_parameters block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#sub_parameters CloudSecurityComplianceCloudControl#sub_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#sub_parameters CloudSecurityComplianceCloudControl#sub_parameters}
   */
   readonly subParameters?: CloudSecurityComplianceCloudControlParameterSpecSubParameters[] | cdktn.IResolvable;
   /**
   * substitution_rules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#substitution_rules CloudSecurityComplianceCloudControl#substitution_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#substitution_rules CloudSecurityComplianceCloudControl#substitution_rules}
   */
   readonly substitutionRules?: CloudSecurityComplianceCloudControlParameterSpecSubstitutionRules[] | cdktn.IResolvable;
   /**
   * validation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#validation CloudSecurityComplianceCloudControl#validation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#validation CloudSecurityComplianceCloudControl#validation}
   */
   readonly validation?: CloudSecurityComplianceCloudControlParameterSpecValidation;
 }
@@ -9611,7 +8136,7 @@ export interface CloudSecurityComplianceCloudControlRulesCelExpressionResourceTy
   /**
   * The strings in the list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#values CloudSecurityComplianceCloudControl#values}
   */
   readonly values: string[];
 }
@@ -9695,13 +8220,13 @@ export interface CloudSecurityComplianceCloudControlRulesCelExpression {
   * Logic expression in CEL language.
   * The max length of the condition is 1000 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#expression CloudSecurityComplianceCloudControl#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#expression CloudSecurityComplianceCloudControl#expression}
   */
   readonly expression: string;
   /**
   * resource_types_values block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#resource_types_values CloudSecurityComplianceCloudControl#resource_types_values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#resource_types_values CloudSecurityComplianceCloudControl#resource_types_values}
   */
   readonly resourceTypesValues?: CloudSecurityComplianceCloudControlRulesCelExpressionResourceTypesValues;
 }
@@ -9813,19 +8338,19 @@ export interface CloudSecurityComplianceCloudControlRules {
   /**
   * Description of the Rule. The maximum length is 2000 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#description CloudSecurityComplianceCloudControl#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#description CloudSecurityComplianceCloudControl#description}
   */
   readonly description?: string;
   /**
   * The functionality enabled by the Rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#rule_action_types CloudSecurityComplianceCloudControl#rule_action_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#rule_action_types CloudSecurityComplianceCloudControl#rule_action_types}
   */
   readonly ruleActionTypes: string[];
   /**
   * cel_expression block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#cel_expression CloudSecurityComplianceCloudControl#cel_expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#cel_expression CloudSecurityComplianceCloudControl#cel_expression}
   */
   readonly celExpression?: CloudSecurityComplianceCloudControlRulesCelExpression;
 }
@@ -9996,15 +8521,15 @@ export class CloudSecurityComplianceCloudControlRulesList extends cdktn.ComplexL
 }
 export interface CloudSecurityComplianceCloudControlTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#create CloudSecurityComplianceCloudControl#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#create CloudSecurityComplianceCloudControl#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#delete CloudSecurityComplianceCloudControl#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#delete CloudSecurityComplianceCloudControl#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#update CloudSecurityComplianceCloudControl#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#update CloudSecurityComplianceCloudControl#update}
   */
   readonly update?: string;
 }
@@ -10156,7 +8681,7 @@ export class CloudSecurityComplianceCloudControlTimeoutsOutputReference extends 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control google_cloud_security_compliance_cloud_control}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control google_cloud_security_compliance_cloud_control}
 */
 export class CloudSecurityComplianceCloudControl extends cdktn.TerraformResource {
 
@@ -10172,7 +8697,7 @@ export class CloudSecurityComplianceCloudControl extends cdktn.TerraformResource
   * Generates CDKTN code for importing a CloudSecurityComplianceCloudControl resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudSecurityComplianceCloudControl to import
-  * @param importFromId The id of the existing CloudSecurityComplianceCloudControl that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CloudSecurityComplianceCloudControl that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudSecurityComplianceCloudControl to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -10184,7 +8709,7 @@ export class CloudSecurityComplianceCloudControl extends cdktn.TerraformResource
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/cloud_security_compliance_cloud_control google_cloud_security_compliance_cloud_control} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/cloud_security_compliance_cloud_control google_cloud_security_compliance_cloud_control} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -10195,7 +8720,7 @@ export class CloudSecurityComplianceCloudControl extends cdktn.TerraformResource
       terraformResourceType: 'google_cloud_security_compliance_cloud_control',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.6.0',
+        providerVersion: '8.7.0',
         providerVersionConstraint: '~> 8.0'
       },
       provider: config.provider,

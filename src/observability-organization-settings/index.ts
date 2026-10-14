@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/observability_organization_settings
+// https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_organization_settings
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface ObservabilityOrganizationSettingsConfig extends cdktn.Terraform
   /**
   * The default storage location for new resources, e.g. buckets. Only valid for global location.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/observability_organization_settings#default_storage_location ObservabilityOrganizationSettings#default_storage_location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_organization_settings#default_storage_location ObservabilityOrganizationSettings#default_storage_location}
   */
   readonly defaultStorageLocation?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/observability_organization_settings#id ObservabilityOrganizationSettings#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_organization_settings#id ObservabilityOrganizationSettings#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,39 +28,39 @@ export interface ObservabilityOrganizationSettingsConfig extends cdktn.Terraform
   /**
   * The default Cloud KMS key to use for new resources. Only valid for regional locations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/observability_organization_settings#kms_key_name ObservabilityOrganizationSettings#kms_key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_organization_settings#kms_key_name ObservabilityOrganizationSettings#kms_key_name}
   */
   readonly kmsKeyName?: string;
   /**
   * The location of the settings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/observability_organization_settings#location ObservabilityOrganizationSettings#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_organization_settings#location ObservabilityOrganizationSettings#location}
   */
   readonly location: string;
   /**
   * The organization ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/observability_organization_settings#organization ObservabilityOrganizationSettings#organization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_organization_settings#organization ObservabilityOrganizationSettings#organization}
   */
   readonly organization: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/observability_organization_settings#timeouts ObservabilityOrganizationSettings#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_organization_settings#timeouts ObservabilityOrganizationSettings#timeouts}
   */
   readonly timeouts?: ObservabilityOrganizationSettingsTimeouts;
 }
 export interface ObservabilityOrganizationSettingsTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/observability_organization_settings#create ObservabilityOrganizationSettings#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_organization_settings#create ObservabilityOrganizationSettings#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/observability_organization_settings#delete ObservabilityOrganizationSettings#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_organization_settings#delete ObservabilityOrganizationSettings#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/observability_organization_settings#update ObservabilityOrganizationSettings#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_organization_settings#update ObservabilityOrganizationSettings#update}
   */
   readonly update?: string;
 }
@@ -212,7 +212,7 @@ export class ObservabilityOrganizationSettingsTimeoutsOutputReference extends cd
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/observability_organization_settings google_observability_organization_settings}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_organization_settings google_observability_organization_settings}
 */
 export class ObservabilityOrganizationSettings extends cdktn.TerraformResource {
 
@@ -228,7 +228,7 @@ export class ObservabilityOrganizationSettings extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ObservabilityOrganizationSettings resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ObservabilityOrganizationSettings to import
-  * @param importFromId The id of the existing ObservabilityOrganizationSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/observability_organization_settings#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ObservabilityOrganizationSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_organization_settings#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ObservabilityOrganizationSettings to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -240,7 +240,7 @@ export class ObservabilityOrganizationSettings extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/observability_organization_settings google_observability_organization_settings} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_organization_settings google_observability_organization_settings} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -251,7 +251,7 @@ export class ObservabilityOrganizationSettings extends cdktn.TerraformResource {
       terraformResourceType: 'google_observability_organization_settings',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.6.0',
+        providerVersion: '8.7.0',
         providerVersionConstraint: '~> 8.0'
       },
       provider: config.provider,

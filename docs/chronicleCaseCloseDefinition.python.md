@@ -4,7 +4,7 @@
 
 ### ChronicleCaseCloseDefinition <a name="ChronicleCaseCloseDefinition" id="@cdktn/provider-google.chronicleCaseCloseDefinition.ChronicleCaseCloseDefinition"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_case_close_definition google_chronicle_case_close_definition}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_close_definition google_chronicle_case_close_definition}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.chronicleCaseCloseDefinition.ChronicleCaseCloseDefinition.Initializer"></a>
 
@@ -48,8 +48,8 @@ chronicleCaseCloseDefinition.ChronicleCaseCloseDefinition(
 | <code><a href="#@cdktn/provider-google.chronicleCaseCloseDefinition.ChronicleCaseCloseDefinition.Initializer.parameter.location">location</a></code> | <code>str</code> | The location of the resource. |
 | <code><a href="#@cdktn/provider-google.chronicleCaseCloseDefinition.ChronicleCaseCloseDefinition.Initializer.parameter.rootCause">root_cause</a></code> | <code>str</code> | Provides detailed description about the specific root cause option. |
 | <code><a href="#@cdktn/provider-google.chronicleCaseCloseDefinition.ChronicleCaseCloseDefinition.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.chronicleCaseCloseDefinition.ChronicleCaseCloseDefinition.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_case_close_definition#id ChronicleCaseCloseDefinition#id}. |
-| <code><a href="#@cdktn/provider-google.chronicleCaseCloseDefinition.ChronicleCaseCloseDefinition.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_case_close_definition#project ChronicleCaseCloseDefinition#project}. |
+| <code><a href="#@cdktn/provider-google.chronicleCaseCloseDefinition.ChronicleCaseCloseDefinition.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_close_definition#id ChronicleCaseCloseDefinition#id}. |
+| <code><a href="#@cdktn/provider-google.chronicleCaseCloseDefinition.ChronicleCaseCloseDefinition.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_close_definition#project ChronicleCaseCloseDefinition#project}. |
 | <code><a href="#@cdktn/provider-google.chronicleCaseCloseDefinition.ChronicleCaseCloseDefinition.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.chronicleCaseCloseDefinition.ChronicleCaseCloseDefinitionTimeouts">ChronicleCaseCloseDefinitionTimeouts</a></code> | timeouts block. |
 
 ---
@@ -120,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 Specify why the case was closed. Possible values: ["MALICIOUS", "NOT_MALICIOUS", "MAINTENANCE", "INCONCLUSIVE"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_case_close_definition#close_reason ChronicleCaseCloseDefinition#close_reason}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_close_definition#close_reason ChronicleCaseCloseDefinition#close_reason}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The unique identifier for the Chronicle instance, which is the same as the customer ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_case_close_definition#instance ChronicleCaseCloseDefinition#instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_close_definition#instance ChronicleCaseCloseDefinition#instance}
 
 ---
 
@@ -142,7 +142,7 @@ The location of the resource.
 
 This is the geographical region where the Chronicle instance resides, such as "us" or "europe-west2".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_case_close_definition#location ChronicleCaseCloseDefinition#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_close_definition#location ChronicleCaseCloseDefinition#location}
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Provides detailed description about the specific root cause option.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_case_close_definition#root_cause ChronicleCaseCloseDefinition#root_cause}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_close_definition#root_cause ChronicleCaseCloseDefinition#root_cause}
 
 ---
 
@@ -169,7 +169,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_case_close_definition#deletion_policy ChronicleCaseCloseDefinition#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_close_definition#deletion_policy ChronicleCaseCloseDefinition#deletion_policy}
 
 ---
 
@@ -177,7 +177,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_case_close_definition#id ChronicleCaseCloseDefinition#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_close_definition#id ChronicleCaseCloseDefinition#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -188,7 +188,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_case_close_definition#project ChronicleCaseCloseDefinition#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_close_definition#project ChronicleCaseCloseDefinition#project}.
 
 ---
 
@@ -198,7 +198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_case_close_definition#timeouts ChronicleCaseCloseDefinition#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_close_definition#timeouts ChronicleCaseCloseDefinition#timeouts}
 
 ---
 
@@ -600,7 +600,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_case_close_definition#create ChronicleCaseCloseDefinition#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_close_definition#create ChronicleCaseCloseDefinition#create}.
 
 ---
 
@@ -608,7 +608,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_case_close_definition#delete ChronicleCaseCloseDefinition#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_close_definition#delete ChronicleCaseCloseDefinition#delete}.
 
 ---
 
@@ -616,7 +616,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_case_close_definition#update ChronicleCaseCloseDefinition#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_close_definition#update ChronicleCaseCloseDefinition#update}.
 
 ---
 
@@ -758,7 +758,7 @@ The construct id used in the generated config for the ChronicleCaseCloseDefiniti
 
 The id of the existing ChronicleCaseCloseDefinition that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_case_close_definition#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_close_definition#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1193,8 +1193,8 @@ chronicleCaseCloseDefinition.ChronicleCaseCloseDefinitionConfig(
 | <code><a href="#@cdktn/provider-google.chronicleCaseCloseDefinition.ChronicleCaseCloseDefinitionConfig.property.location">location</a></code> | <code>str</code> | The location of the resource. |
 | <code><a href="#@cdktn/provider-google.chronicleCaseCloseDefinition.ChronicleCaseCloseDefinitionConfig.property.rootCause">root_cause</a></code> | <code>str</code> | Provides detailed description about the specific root cause option. |
 | <code><a href="#@cdktn/provider-google.chronicleCaseCloseDefinition.ChronicleCaseCloseDefinitionConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.chronicleCaseCloseDefinition.ChronicleCaseCloseDefinitionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_case_close_definition#id ChronicleCaseCloseDefinition#id}. |
-| <code><a href="#@cdktn/provider-google.chronicleCaseCloseDefinition.ChronicleCaseCloseDefinitionConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_case_close_definition#project ChronicleCaseCloseDefinition#project}. |
+| <code><a href="#@cdktn/provider-google.chronicleCaseCloseDefinition.ChronicleCaseCloseDefinitionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_close_definition#id ChronicleCaseCloseDefinition#id}. |
+| <code><a href="#@cdktn/provider-google.chronicleCaseCloseDefinition.ChronicleCaseCloseDefinitionConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_close_definition#project ChronicleCaseCloseDefinition#project}. |
 | <code><a href="#@cdktn/provider-google.chronicleCaseCloseDefinition.ChronicleCaseCloseDefinitionConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.chronicleCaseCloseDefinition.ChronicleCaseCloseDefinitionTimeouts">ChronicleCaseCloseDefinitionTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1279,7 +1279,7 @@ close_reason: str
 
 Specify why the case was closed. Possible values: ["MALICIOUS", "NOT_MALICIOUS", "MAINTENANCE", "INCONCLUSIVE"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_case_close_definition#close_reason ChronicleCaseCloseDefinition#close_reason}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_close_definition#close_reason ChronicleCaseCloseDefinition#close_reason}
 
 ---
 
@@ -1293,7 +1293,7 @@ instance: str
 
 The unique identifier for the Chronicle instance, which is the same as the customer ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_case_close_definition#instance ChronicleCaseCloseDefinition#instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_close_definition#instance ChronicleCaseCloseDefinition#instance}
 
 ---
 
@@ -1309,7 +1309,7 @@ The location of the resource.
 
 This is the geographical region where the Chronicle instance resides, such as "us" or "europe-west2".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_case_close_definition#location ChronicleCaseCloseDefinition#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_close_definition#location ChronicleCaseCloseDefinition#location}
 
 ---
 
@@ -1323,7 +1323,7 @@ root_cause: str
 
 Provides detailed description about the specific root cause option.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_case_close_definition#root_cause ChronicleCaseCloseDefinition#root_cause}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_close_definition#root_cause ChronicleCaseCloseDefinition#root_cause}
 
 ---
 
@@ -1344,7 +1344,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_case_close_definition#deletion_policy ChronicleCaseCloseDefinition#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_close_definition#deletion_policy ChronicleCaseCloseDefinition#deletion_policy}
 
 ---
 
@@ -1356,7 +1356,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_case_close_definition#id ChronicleCaseCloseDefinition#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_close_definition#id ChronicleCaseCloseDefinition#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1371,7 +1371,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_case_close_definition#project ChronicleCaseCloseDefinition#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_close_definition#project ChronicleCaseCloseDefinition#project}.
 
 ---
 
@@ -1385,7 +1385,7 @@ timeouts: ChronicleCaseCloseDefinitionTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_case_close_definition#timeouts ChronicleCaseCloseDefinition#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_close_definition#timeouts ChronicleCaseCloseDefinition#timeouts}
 
 ---
 
@@ -1407,9 +1407,9 @@ chronicleCaseCloseDefinition.ChronicleCaseCloseDefinitionTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.chronicleCaseCloseDefinition.ChronicleCaseCloseDefinitionTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_case_close_definition#create ChronicleCaseCloseDefinition#create}. |
-| <code><a href="#@cdktn/provider-google.chronicleCaseCloseDefinition.ChronicleCaseCloseDefinitionTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_case_close_definition#delete ChronicleCaseCloseDefinition#delete}. |
-| <code><a href="#@cdktn/provider-google.chronicleCaseCloseDefinition.ChronicleCaseCloseDefinitionTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_case_close_definition#update ChronicleCaseCloseDefinition#update}. |
+| <code><a href="#@cdktn/provider-google.chronicleCaseCloseDefinition.ChronicleCaseCloseDefinitionTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_close_definition#create ChronicleCaseCloseDefinition#create}. |
+| <code><a href="#@cdktn/provider-google.chronicleCaseCloseDefinition.ChronicleCaseCloseDefinitionTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_close_definition#delete ChronicleCaseCloseDefinition#delete}. |
+| <code><a href="#@cdktn/provider-google.chronicleCaseCloseDefinition.ChronicleCaseCloseDefinitionTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_close_definition#update ChronicleCaseCloseDefinition#update}. |
 
 ---
 
@@ -1421,7 +1421,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_case_close_definition#create ChronicleCaseCloseDefinition#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_close_definition#create ChronicleCaseCloseDefinition#create}.
 
 ---
 
@@ -1433,7 +1433,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_case_close_definition#delete ChronicleCaseCloseDefinition#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_close_definition#delete ChronicleCaseCloseDefinition#delete}.
 
 ---
 
@@ -1445,7 +1445,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/chronicle_case_close_definition#update ChronicleCaseCloseDefinition#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/chronicle_case_close_definition#update ChronicleCaseCloseDefinition#update}.
 
 ---
 

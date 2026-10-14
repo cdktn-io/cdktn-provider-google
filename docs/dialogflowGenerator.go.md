@@ -4,7 +4,7 @@
 
 ### DialogflowGenerator <a name="DialogflowGenerator" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dialogflow_generator google_dialogflow_generator}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator google_dialogflow_generator}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.Initializer"></a>
 
@@ -74,17 +74,23 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.putAgentCoachingContext">PutAgentCoachingContext</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.putFreeFormContext">PutFreeFormContext</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.putInferenceParameter">PutInferenceParameter</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.putSummarizationContext">PutSummarizationContext</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.resetAgentCoachingContext">ResetAgentCoachingContext</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.resetDescription">ResetDescription</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.resetFreeFormContext">ResetFreeFormContext</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.resetGeneratorId">ResetGeneratorId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.resetInferenceParameter">ResetInferenceParameter</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.resetProject">ResetProject</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.resetPublishedModel">ResetPublishedModel</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.resetSummarizationContext">ResetSummarizationContext</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.resetTools">ResetTools</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.resetTriggerEvent">ResetTriggerEvent</a></code> | *No description.* |
 
 ---
@@ -398,6 +404,30 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `PutAgentCoachingContext` <a name="PutAgentCoachingContext" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.putAgentCoachingContext"></a>
+
+```go
+func PutAgentCoachingContext(value DialogflowGeneratorAgentCoachingContext)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.putAgentCoachingContext.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContext">DialogflowGeneratorAgentCoachingContext</a>
+
+---
+
+##### `PutFreeFormContext` <a name="PutFreeFormContext" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.putFreeFormContext"></a>
+
+```go
+func PutFreeFormContext(value DialogflowGeneratorFreeFormContext)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.putFreeFormContext.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorFreeFormContext">DialogflowGeneratorFreeFormContext</a>
+
+---
+
 ##### `PutInferenceParameter` <a name="PutInferenceParameter" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.putInferenceParameter"></a>
 
 ```go
@@ -434,6 +464,12 @@ func PutTimeouts(value DialogflowGeneratorTimeouts)
 
 ---
 
+##### `ResetAgentCoachingContext` <a name="ResetAgentCoachingContext" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.resetAgentCoachingContext"></a>
+
+```go
+func ResetAgentCoachingContext()
+```
+
 ##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.resetDeletionPolicy"></a>
 
 ```go
@@ -444,6 +480,12 @@ func ResetDeletionPolicy()
 
 ```go
 func ResetDescription()
+```
+
+##### `ResetFreeFormContext` <a name="ResetFreeFormContext" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.resetFreeFormContext"></a>
+
+```go
+func ResetFreeFormContext()
 ```
 
 ##### `ResetGeneratorId` <a name="ResetGeneratorId" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.resetGeneratorId"></a>
@@ -476,10 +518,22 @@ func ResetProject()
 func ResetPublishedModel()
 ```
 
+##### `ResetSummarizationContext` <a name="ResetSummarizationContext" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.resetSummarizationContext"></a>
+
+```go
+func ResetSummarizationContext()
+```
+
 ##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.resetTimeouts"></a>
 
 ```go
 func ResetTimeouts()
+```
+
+##### `ResetTools` <a name="ResetTools" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.resetTools"></a>
+
+```go
+func ResetTools()
 ```
 
 ##### `ResetTriggerEvent` <a name="ResetTriggerEvent" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.resetTriggerEvent"></a>
@@ -591,7 +645,7 @@ The construct id used in the generated config for the DialogflowGenerator to imp
 
 The id of the existing DialogflowGenerator that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dialogflow_generator#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -621,12 +675,16 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6
 | <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.property.agentCoachingContext">AgentCoachingContext</a></code> | <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference">DialogflowGeneratorAgentCoachingContextOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.property.freeFormContext">FreeFormContext</a></code> | <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorFreeFormContextOutputReference">DialogflowGeneratorFreeFormContextOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.property.inferenceParameter">InferenceParameter</a></code> | <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorInferenceParameterOutputReference">DialogflowGeneratorInferenceParameterOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.property.summarizationContext">SummarizationContext</a></code> | <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorSummarizationContextOutputReference">DialogflowGeneratorSummarizationContextOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorTimeoutsOutputReference">DialogflowGeneratorTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.property.agentCoachingContextInput">AgentCoachingContextInput</a></code> | <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContext">DialogflowGeneratorAgentCoachingContext</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.property.freeFormContextInput">FreeFormContextInput</a></code> | <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorFreeFormContext">DialogflowGeneratorFreeFormContext</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.property.generatorIdInput">GeneratorIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.property.inferenceParameterInput">InferenceParameterInput</a></code> | <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorInferenceParameter">DialogflowGeneratorInferenceParameter</a></code> | *No description.* |
@@ -635,6 +693,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6
 | <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.property.publishedModelInput">PublishedModelInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.property.summarizationContextInput">SummarizationContextInput</a></code> | <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorSummarizationContext">DialogflowGeneratorSummarizationContext</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.property.toolsInput">ToolsInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.property.triggerEventInput">TriggerEventInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.property.description">Description</a></code> | <code>*string</code> | *No description.* |
@@ -643,6 +702,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6
 | <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.property.location">Location</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.property.project">Project</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.property.publishedModel">PublishedModel</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.property.tools">Tools</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.property.triggerEvent">TriggerEvent</a></code> | <code>*string</code> | *No description.* |
 
 ---
@@ -789,6 +849,26 @@ func Provisioners() *[]interface{}
 
 ---
 
+##### `AgentCoachingContext`<sup>Required</sup> <a name="AgentCoachingContext" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.property.agentCoachingContext"></a>
+
+```go
+func AgentCoachingContext() DialogflowGeneratorAgentCoachingContextOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference">DialogflowGeneratorAgentCoachingContextOutputReference</a>
+
+---
+
+##### `FreeFormContext`<sup>Required</sup> <a name="FreeFormContext" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.property.freeFormContext"></a>
+
+```go
+func FreeFormContext() DialogflowGeneratorFreeFormContextOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorFreeFormContextOutputReference">DialogflowGeneratorFreeFormContextOutputReference</a>
+
+---
+
 ##### `InferenceParameter`<sup>Required</sup> <a name="InferenceParameter" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.property.inferenceParameter"></a>
 
 ```go
@@ -829,6 +909,16 @@ func Timeouts() DialogflowGeneratorTimeoutsOutputReference
 
 ---
 
+##### `AgentCoachingContextInput`<sup>Optional</sup> <a name="AgentCoachingContextInput" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.property.agentCoachingContextInput"></a>
+
+```go
+func AgentCoachingContextInput() DialogflowGeneratorAgentCoachingContext
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContext">DialogflowGeneratorAgentCoachingContext</a>
+
+---
+
 ##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.property.deletionPolicyInput"></a>
 
 ```go
@@ -846,6 +936,16 @@ func DescriptionInput() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `FreeFormContextInput`<sup>Optional</sup> <a name="FreeFormContextInput" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.property.freeFormContextInput"></a>
+
+```go
+func FreeFormContextInput() DialogflowGeneratorFreeFormContext
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorFreeFormContext">DialogflowGeneratorFreeFormContext</a>
 
 ---
 
@@ -929,6 +1029,16 @@ func TimeoutsInput() interface{}
 
 ---
 
+##### `ToolsInput`<sup>Optional</sup> <a name="ToolsInput" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.property.toolsInput"></a>
+
+```go
+func ToolsInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
 ##### `TriggerEventInput`<sup>Optional</sup> <a name="TriggerEventInput" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.property.triggerEventInput"></a>
 
 ```go
@@ -1009,6 +1119,16 @@ func PublishedModel() *string
 
 ---
 
+##### `Tools`<sup>Required</sup> <a name="Tools" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.property.tools"></a>
+
+```go
+func Tools() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
 ##### `TriggerEvent`<sup>Required</sup> <a name="TriggerEvent" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGenerator.property.triggerEvent"></a>
 
 ```go
@@ -1039,6 +1159,202 @@ func TfResourceType() *string
 
 ## Structs <a name="Structs" id="Structs"></a>
 
+### DialogflowGeneratorAgentCoachingContext <a name="DialogflowGeneratorAgentCoachingContext" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContext"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContext.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/dialogflowgenerator"
+
+&dialogflowgenerator.DialogflowGeneratorAgentCoachingContext {
+	Instructions: interface{},
+	OutputLanguageCode: *string,
+	OverarchingGuidance: *string,
+	Version: *string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContext.property.instructions">Instructions</a></code> | <code>interface{}</code> | instructions block. |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContext.property.outputLanguageCode">OutputLanguageCode</a></code> | <code>*string</code> | Optional. Output language code. |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContext.property.overarchingGuidance">OverarchingGuidance</a></code> | <code>*string</code> | Optional. The overarching guidance for the agent coaching. This should be set only for v1.5 and later versions. |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContext.property.version">Version</a></code> | <code>*string</code> | Optional. Version of the feature. If not set, default to latest version. Current candidates are ["2.5"]. |
+
+---
+
+##### `Instructions`<sup>Optional</sup> <a name="Instructions" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContext.property.instructions"></a>
+
+```go
+Instructions interface{}
+```
+
+- *Type:* interface{}
+
+instructions block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#instructions DialogflowGenerator#instructions}
+
+---
+
+##### `OutputLanguageCode`<sup>Optional</sup> <a name="OutputLanguageCode" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContext.property.outputLanguageCode"></a>
+
+```go
+OutputLanguageCode *string
+```
+
+- *Type:* *string
+
+Optional. Output language code.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#output_language_code DialogflowGenerator#output_language_code}
+
+---
+
+##### `OverarchingGuidance`<sup>Optional</sup> <a name="OverarchingGuidance" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContext.property.overarchingGuidance"></a>
+
+```go
+OverarchingGuidance *string
+```
+
+- *Type:* *string
+
+Optional. The overarching guidance for the agent coaching. This should be set only for v1.5 and later versions.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#overarching_guidance DialogflowGenerator#overarching_guidance}
+
+---
+
+##### `Version`<sup>Optional</sup> <a name="Version" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContext.property.version"></a>
+
+```go
+Version *string
+```
+
+- *Type:* *string
+
+Optional. Version of the feature. If not set, default to latest version. Current candidates are ["2.5"].
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#version DialogflowGenerator#version}
+
+---
+
+### DialogflowGeneratorAgentCoachingContextInstructions <a name="DialogflowGeneratorAgentCoachingContextInstructions" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructions"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructions.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/dialogflowgenerator"
+
+&dialogflowgenerator.DialogflowGeneratorAgentCoachingContextInstructions {
+	AgentAction: *string,
+	Condition: *string,
+	DisplayDetails: *string,
+	DisplayName: *string,
+	SystemAction: *string,
+	TriggeringEvent: *string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructions.property.agentAction">AgentAction</a></code> | <code>*string</code> | Optional. The action that human agent should take. |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructions.property.condition">Condition</a></code> | <code>*string</code> | Optional. The condition of the instruction. |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructions.property.displayDetails">DisplayDetails</a></code> | <code>*string</code> | Optional. The detailed description of this instruction. |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructions.property.displayName">DisplayName</a></code> | <code>*string</code> | Optional. Display name for the instruction. |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructions.property.systemAction">SystemAction</a></code> | <code>*string</code> | Optional. The action that system should take. |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructions.property.triggeringEvent">TriggeringEvent</a></code> | <code>*string</code> | Optional. The trigger event of the instruction. Possible values: ["END_OF_UTTERANCE", "MANUAL_CALL", "CUSTOMER_MESSAGE", "AGENT_MESSAGE", "TOOL_CALL_COMPLETION"]. |
+
+---
+
+##### `AgentAction`<sup>Optional</sup> <a name="AgentAction" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructions.property.agentAction"></a>
+
+```go
+AgentAction *string
+```
+
+- *Type:* *string
+
+Optional. The action that human agent should take.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#agent_action DialogflowGenerator#agent_action}
+
+---
+
+##### `Condition`<sup>Optional</sup> <a name="Condition" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructions.property.condition"></a>
+
+```go
+Condition *string
+```
+
+- *Type:* *string
+
+Optional. The condition of the instruction.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#condition DialogflowGenerator#condition}
+
+---
+
+##### `DisplayDetails`<sup>Optional</sup> <a name="DisplayDetails" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructions.property.displayDetails"></a>
+
+```go
+DisplayDetails *string
+```
+
+- *Type:* *string
+
+Optional. The detailed description of this instruction.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#display_details DialogflowGenerator#display_details}
+
+---
+
+##### `DisplayName`<sup>Optional</sup> <a name="DisplayName" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructions.property.displayName"></a>
+
+```go
+DisplayName *string
+```
+
+- *Type:* *string
+
+Optional. Display name for the instruction.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#display_name DialogflowGenerator#display_name}
+
+---
+
+##### `SystemAction`<sup>Optional</sup> <a name="SystemAction" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructions.property.systemAction"></a>
+
+```go
+SystemAction *string
+```
+
+- *Type:* *string
+
+Optional. The action that system should take.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#system_action DialogflowGenerator#system_action}
+
+---
+
+##### `TriggeringEvent`<sup>Optional</sup> <a name="TriggeringEvent" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructions.property.triggeringEvent"></a>
+
+```go
+TriggeringEvent *string
+```
+
+- *Type:* *string
+
+Optional. The trigger event of the instruction. Possible values: ["END_OF_UTTERANCE", "MANUAL_CALL", "CUSTOMER_MESSAGE", "AGENT_MESSAGE", "TOOL_CALL_COMPLETION"].
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#triggering_event DialogflowGenerator#triggering_event}
+
+---
+
 ### DialogflowGeneratorConfig <a name="DialogflowGeneratorConfig" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorConfig"></a>
 
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorConfig.Initializer"></a>
@@ -1055,15 +1371,18 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/dialogflowgenera
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Location: *string,
-	SummarizationContext: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dialogflowGenerator.DialogflowGeneratorSummarizationContext,
+	AgentCoachingContext: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dialogflowGenerator.DialogflowGeneratorAgentCoachingContext,
 	DeletionPolicy: *string,
 	Description: *string,
+	FreeFormContext: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dialogflowGenerator.DialogflowGeneratorFreeFormContext,
 	GeneratorId: *string,
 	Id: *string,
 	InferenceParameter: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dialogflowGenerator.DialogflowGeneratorInferenceParameter,
 	Project: *string,
 	PublishedModel: *string,
+	SummarizationContext: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dialogflowGenerator.DialogflowGeneratorSummarizationContext,
 	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v21.dialogflowGenerator.DialogflowGeneratorTimeouts,
+	Tools: *[]*string,
 	TriggerEvent: *string,
 }
 ```
@@ -1080,15 +1399,18 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/dialogflowgenera
 | <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorConfig.property.location">Location</a></code> | <code>*string</code> | desc. |
-| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorConfig.property.summarizationContext">SummarizationContext</a></code> | <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorSummarizationContext">DialogflowGeneratorSummarizationContext</a></code> | summarization_context block. |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorConfig.property.agentCoachingContext">AgentCoachingContext</a></code> | <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContext">DialogflowGeneratorAgentCoachingContext</a></code> | agent_coaching_context block. |
 | <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorConfig.property.description">Description</a></code> | <code>*string</code> | Optional. Human readable description of the generator. |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorConfig.property.freeFormContext">FreeFormContext</a></code> | <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorFreeFormContext">DialogflowGeneratorFreeFormContext</a></code> | free_form_context block. |
 | <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorConfig.property.generatorId">GeneratorId</a></code> | <code>*string</code> | Optional. The ID to use for the generator, which will become the final component of the generator's resource name. |
-| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dialogflow_generator#id DialogflowGenerator#id}. |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#id DialogflowGenerator#id}. |
 | <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorConfig.property.inferenceParameter">InferenceParameter</a></code> | <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorInferenceParameter">DialogflowGeneratorInferenceParameter</a></code> | inference_parameter block. |
-| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dialogflow_generator#project DialogflowGenerator#project}. |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#project DialogflowGenerator#project}. |
 | <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorConfig.property.publishedModel">PublishedModel</a></code> | <code>*string</code> | Optional. |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorConfig.property.summarizationContext">SummarizationContext</a></code> | <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorSummarizationContext">DialogflowGeneratorSummarizationContext</a></code> | summarization_context block. |
 | <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorTimeouts">DialogflowGeneratorTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorConfig.property.tools">Tools</a></code> | <code>*[]*string</code> | Optional. Resource names of the tools that the generator can choose from. Format: 'projects/<Project ID>/locations/<Location ID>/tools/<tool ID>'. |
 | <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorConfig.property.triggerEvent">TriggerEvent</a></code> | <code>*string</code> | Optional. |
 
 ---
@@ -1173,21 +1495,21 @@ Location *string
 
 desc.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dialogflow_generator#location DialogflowGenerator#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#location DialogflowGenerator#location}
 
 ---
 
-##### `SummarizationContext`<sup>Required</sup> <a name="SummarizationContext" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorConfig.property.summarizationContext"></a>
+##### `AgentCoachingContext`<sup>Optional</sup> <a name="AgentCoachingContext" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorConfig.property.agentCoachingContext"></a>
 
 ```go
-SummarizationContext DialogflowGeneratorSummarizationContext
+AgentCoachingContext DialogflowGeneratorAgentCoachingContext
 ```
 
-- *Type:* <a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorSummarizationContext">DialogflowGeneratorSummarizationContext</a>
+- *Type:* <a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContext">DialogflowGeneratorAgentCoachingContext</a>
 
-summarization_context block.
+agent_coaching_context block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dialogflow_generator#summarization_context DialogflowGenerator#summarization_context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#agent_coaching_context DialogflowGenerator#agent_coaching_context}
 
 ---
 
@@ -1208,7 +1530,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dialogflow_generator#deletion_policy DialogflowGenerator#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#deletion_policy DialogflowGenerator#deletion_policy}
 
 ---
 
@@ -1222,7 +1544,21 @@ Description *string
 
 Optional. Human readable description of the generator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dialogflow_generator#description DialogflowGenerator#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#description DialogflowGenerator#description}
+
+---
+
+##### `FreeFormContext`<sup>Optional</sup> <a name="FreeFormContext" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorConfig.property.freeFormContext"></a>
+
+```go
+FreeFormContext DialogflowGeneratorFreeFormContext
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorFreeFormContext">DialogflowGeneratorFreeFormContext</a>
+
+free_form_context block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#free_form_context DialogflowGenerator#free_form_context}
 
 ---
 
@@ -1236,7 +1572,7 @@ GeneratorId *string
 
 Optional. The ID to use for the generator, which will become the final component of the generator's resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dialogflow_generator#generator_id DialogflowGenerator#generator_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#generator_id DialogflowGenerator#generator_id}
 
 ---
 
@@ -1248,7 +1584,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dialogflow_generator#id DialogflowGenerator#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#id DialogflowGenerator#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1265,7 +1601,7 @@ InferenceParameter DialogflowGeneratorInferenceParameter
 
 inference_parameter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dialogflow_generator#inference_parameter DialogflowGenerator#inference_parameter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#inference_parameter DialogflowGenerator#inference_parameter}
 
 ---
 
@@ -1277,7 +1613,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dialogflow_generator#project DialogflowGenerator#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#project DialogflowGenerator#project}.
 
 ---
 
@@ -1293,7 +1629,21 @@ Optional.
 
 The published Large Language Model name. * To use the latest model version, specify the model name without version number. Example: text-bison * To use a stable model version, specify the version number as well. Example: text-bison@002.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dialogflow_generator#published_model DialogflowGenerator#published_model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#published_model DialogflowGenerator#published_model}
+
+---
+
+##### `SummarizationContext`<sup>Optional</sup> <a name="SummarizationContext" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorConfig.property.summarizationContext"></a>
+
+```go
+SummarizationContext DialogflowGeneratorSummarizationContext
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorSummarizationContext">DialogflowGeneratorSummarizationContext</a>
+
+summarization_context block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#summarization_context DialogflowGenerator#summarization_context}
 
 ---
 
@@ -1307,7 +1657,21 @@ Timeouts DialogflowGeneratorTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dialogflow_generator#timeouts DialogflowGenerator#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#timeouts DialogflowGenerator#timeouts}
+
+---
+
+##### `Tools`<sup>Optional</sup> <a name="Tools" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorConfig.property.tools"></a>
+
+```go
+Tools *[]*string
+```
+
+- *Type:* *[]*string
+
+Optional. Resource names of the tools that the generator can choose from. Format: 'projects/<Project ID>/locations/<Location ID>/tools/<tool ID>'.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#tools DialogflowGenerator#tools}
 
 ---
 
@@ -1323,7 +1687,41 @@ Optional.
 
 The trigger event of the generator. It defines when the generator is triggered in a conversation. Possible values: ["END_OF_UTTERANCE", "MANUAL_CALL", "CUSTOMER_MESSAGE", "AGENT_MESSAGE"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dialogflow_generator#trigger_event DialogflowGenerator#trigger_event}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#trigger_event DialogflowGenerator#trigger_event}
+
+---
+
+### DialogflowGeneratorFreeFormContext <a name="DialogflowGeneratorFreeFormContext" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorFreeFormContext"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorFreeFormContext.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/dialogflowgenerator"
+
+&dialogflowgenerator.DialogflowGeneratorFreeFormContext {
+	Text: *string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorFreeFormContext.property.text">Text</a></code> | <code>*string</code> | Optional. Free form text input to LLM. |
+
+---
+
+##### `Text`<sup>Optional</sup> <a name="Text" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorFreeFormContext.property.text"></a>
+
+```go
+Text *string
+```
+
+- *Type:* *string
+
+Optional. Free form text input to LLM.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#text DialogflowGenerator#text}
 
 ---
 
@@ -1363,7 +1761,7 @@ MaxOutputTokens *f64
 
 Optional. Maximum number of the output tokens for the generator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dialogflow_generator#max_output_tokens DialogflowGenerator#max_output_tokens}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#max_output_tokens DialogflowGenerator#max_output_tokens}
 
 ---
 
@@ -1379,7 +1777,7 @@ Optional.
 
 Controls the randomness of LLM predictions. Low temperature = less random. High temperature = more random. If unset (or 0), uses a default value of 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dialogflow_generator#temperature DialogflowGenerator#temperature}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#temperature DialogflowGenerator#temperature}
 
 ---
 
@@ -1395,7 +1793,7 @@ Optional.
 
 Top-k changes how the model selects tokens for output. A top-k of 1 means the selected token is the most probable among all tokens in the model's vocabulary (also called greedy decoding), while a top-k of 3 means that the next token is selected from among the 3 most probable tokens (using temperature). For each token selection step, the top K tokens with the highest probabilities are sampled. Then tokens are further filtered based on topP with the final token selected using temperature sampling. Specify a lower value for less random responses and a higher value for more random responses. Acceptable value is [1, 40], default to 40.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dialogflow_generator#top_k DialogflowGenerator#top_k}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#top_k DialogflowGenerator#top_k}
 
 ---
 
@@ -1411,7 +1809,7 @@ Optional.
 
 Top-p changes how the model selects tokens for output. Tokens are selected from most K (see topK parameter) probable to least until the sum of their probabilities equals the top-p value. For example, if tokens A, B, and C have a probability of 0.3, 0.2, and 0.1 and the top-p value is 0.5, then the model will select either A or B as the next token (using temperature) and doesn't consider C. The default top-p value is 0.95. Specify a lower value for less random responses and a higher value for more random responses. Acceptable value is [0.0, 1.0], default to 0.95.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dialogflow_generator#top_p DialogflowGenerator#top_p}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#top_p DialogflowGenerator#top_p}
 
 ---
 
@@ -1437,7 +1835,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/dialogflowgenera
 | <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorSummarizationContext.property.fewShotExamples">FewShotExamples</a></code> | <code>interface{}</code> | few_shot_examples block. |
 | <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorSummarizationContext.property.outputLanguageCode">OutputLanguageCode</a></code> | <code>*string</code> | Optional. |
 | <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorSummarizationContext.property.summarizationSections">SummarizationSections</a></code> | <code>interface{}</code> | summarization_sections block. |
-| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorSummarizationContext.property.version">Version</a></code> | <code>*string</code> | Optional. Version of the feature. If not set, default to latest version. Current candidates are ["1.0"]. |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorSummarizationContext.property.version">Version</a></code> | <code>*string</code> | Optional. Version of the feature. If not set, default to latest version. Current candidates are ["5.0", "6.0"]. |
 
 ---
 
@@ -1451,7 +1849,7 @@ FewShotExamples interface{}
 
 few_shot_examples block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dialogflow_generator#few_shot_examples DialogflowGenerator#few_shot_examples}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#few_shot_examples DialogflowGenerator#few_shot_examples}
 
 ---
 
@@ -1467,7 +1865,7 @@ Optional.
 
 The target language of the generated summary. The language code for conversation will be used if this field is empty. Supported 2.0 and later versions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dialogflow_generator#output_language_code DialogflowGenerator#output_language_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#output_language_code DialogflowGenerator#output_language_code}
 
 ---
 
@@ -1481,7 +1879,7 @@ SummarizationSections interface{}
 
 summarization_sections block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dialogflow_generator#summarization_sections DialogflowGenerator#summarization_sections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#summarization_sections DialogflowGenerator#summarization_sections}
 
 ---
 
@@ -1493,9 +1891,9 @@ Version *string
 
 - *Type:* *string
 
-Optional. Version of the feature. If not set, default to latest version. Current candidates are ["1.0"].
+Optional. Version of the feature. If not set, default to latest version. Current candidates are ["5.0", "6.0"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dialogflow_generator#version DialogflowGenerator#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#version DialogflowGenerator#version}
 
 ---
 
@@ -1535,7 +1933,7 @@ Output DialogflowGeneratorSummarizationContextFewShotExamplesOutput
 
 output block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dialogflow_generator#output DialogflowGenerator#output}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#output DialogflowGenerator#output}
 
 ---
 
@@ -1549,7 +1947,7 @@ ConversationContext DialogflowGeneratorSummarizationContextFewShotExamplesConver
 
 conversation_context block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dialogflow_generator#conversation_context DialogflowGenerator#conversation_context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#conversation_context DialogflowGenerator#conversation_context}
 
 ---
 
@@ -1565,7 +1963,7 @@ Optional.
 
 Key is the placeholder field name in input, value is the value of the placeholder. E.g. instruction contains "@price", and ingested data has <"price", "10">
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dialogflow_generator#extra_info DialogflowGenerator#extra_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#extra_info DialogflowGenerator#extra_info}
 
 ---
 
@@ -1579,7 +1977,7 @@ SummarizationSectionList DialogflowGeneratorSummarizationContextFewShotExamplesS
 
 summarization_section_list block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dialogflow_generator#summarization_section_list DialogflowGenerator#summarization_section_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#summarization_section_list DialogflowGenerator#summarization_section_list}
 
 ---
 
@@ -1613,7 +2011,7 @@ MessageEntries interface{}
 
 message_entries block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dialogflow_generator#message_entries DialogflowGenerator#message_entries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#message_entries DialogflowGenerator#message_entries}
 
 ---
 
@@ -1653,7 +2051,7 @@ CreateTime *string
 
 Optional. Create time of the message entry.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dialogflow_generator#create_time DialogflowGenerator#create_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#create_time DialogflowGenerator#create_time}
 
 ---
 
@@ -1667,7 +2065,7 @@ LanguageCode *string
 
 Optional. The language of the text.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dialogflow_generator#language_code DialogflowGenerator#language_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#language_code DialogflowGenerator#language_code}
 
 ---
 
@@ -1681,7 +2079,7 @@ Role *string
 
 Optional. Participant role of the message. Possible values: ["HUMAN_AGENT", "AUTOMATED_AGENT", "END_USER"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dialogflow_generator#role DialogflowGenerator#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#role DialogflowGenerator#role}
 
 ---
 
@@ -1695,7 +2093,7 @@ Text *string
 
 Optional. Transcript content of the message.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dialogflow_generator#text DialogflowGenerator#text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#text DialogflowGenerator#text}
 
 ---
 
@@ -1731,7 +2129,7 @@ SummarySuggestion DialogflowGeneratorSummarizationContextFewShotExamplesOutputSu
 
 summary_suggestion block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dialogflow_generator#summary_suggestion DialogflowGenerator#summary_suggestion}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#summary_suggestion DialogflowGenerator#summary_suggestion}
 
 ---
 
@@ -1745,7 +2143,7 @@ ToolCallInfo interface{}
 
 tool_call_info block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dialogflow_generator#tool_call_info DialogflowGenerator#tool_call_info}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#tool_call_info DialogflowGenerator#tool_call_info}
 
 ---
 
@@ -1779,7 +2177,7 @@ SummarySections interface{}
 
 summary_sections block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dialogflow_generator#summary_sections DialogflowGenerator#summary_sections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#summary_sections DialogflowGenerator#summary_sections}
 
 ---
 
@@ -1815,7 +2213,7 @@ Section *string
 
 Required. Name of the section.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dialogflow_generator#section DialogflowGenerator#section}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#section DialogflowGenerator#section}
 
 ---
 
@@ -1829,7 +2227,7 @@ Summary *string
 
 Required. Summary text for the section.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dialogflow_generator#summary DialogflowGenerator#summary}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#summary DialogflowGenerator#summary}
 
 ---
 
@@ -1865,7 +2263,7 @@ ToolCall DialogflowGeneratorSummarizationContextFewShotExamplesOutputToolCallInf
 
 tool_call block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dialogflow_generator#tool_call DialogflowGenerator#tool_call}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#tool_call DialogflowGenerator#tool_call}
 
 ---
 
@@ -1879,7 +2277,7 @@ ToolCallResult DialogflowGeneratorSummarizationContextFewShotExamplesOutputToolC
 
 tool_call_result block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dialogflow_generator#tool_call_result DialogflowGenerator#tool_call_result}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#tool_call_result DialogflowGenerator#tool_call_result}
 
 ---
 
@@ -1915,7 +2313,7 @@ Action *string
 
 The name of the tool's action associated with this call.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dialogflow_generator#action DialogflowGenerator#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#action DialogflowGenerator#action}
 
 ---
 
@@ -1929,7 +2327,7 @@ Tool *string
 
 The tool associated with this call.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dialogflow_generator#tool DialogflowGenerator#tool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#tool DialogflowGenerator#tool}
 
 ---
 
@@ -1965,7 +2363,7 @@ Action *string
 
 The name of the tool's action associated with this call.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dialogflow_generator#action DialogflowGenerator#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#action DialogflowGenerator#action}
 
 ---
 
@@ -1979,7 +2377,7 @@ Error DialogflowGeneratorSummarizationContextFewShotExamplesOutputToolCallInfoTo
 
 error block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dialogflow_generator#error DialogflowGenerator#error}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#error DialogflowGenerator#error}
 
 ---
 
@@ -2015,7 +2413,7 @@ Message *string
 
 The error message of the function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dialogflow_generator#message DialogflowGenerator#message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#message DialogflowGenerator#message}
 
 ---
 
@@ -2029,7 +2427,7 @@ Retryable interface{}
 
 Specifies whether the tool call is retryable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dialogflow_generator#retryable DialogflowGenerator#retryable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#retryable DialogflowGenerator#retryable}
 
 ---
 
@@ -2063,7 +2461,7 @@ SummarizationSections interface{}
 
 summarization_sections block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dialogflow_generator#summarization_sections DialogflowGenerator#summarization_sections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#summarization_sections DialogflowGenerator#summarization_sections}
 
 ---
 
@@ -2101,7 +2499,7 @@ Definition *string
 
 Optional. Definition of the section, for example, "what the customer needs help with or has question about.".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dialogflow_generator#definition DialogflowGenerator#definition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#definition DialogflowGenerator#definition}
 
 ---
 
@@ -2115,7 +2513,7 @@ Key *string
 
 Optional. Name of the section, for example, "situation".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dialogflow_generator#key DialogflowGenerator#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#key DialogflowGenerator#key}
 
 ---
 
@@ -2129,7 +2527,7 @@ Type *string
 
 Optional. Type of the summarization section. Possible values: ["SITUATION", "ACTION", "RESOLUTION", "REASON_FOR_CANCELLATION", "CUSTOMER_SATISFACTION", "ENTITIES", "CUSTOMER_DEFINED", "SITUATION_CONCISE", "ACTION_CONCISE"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dialogflow_generator#type DialogflowGenerator#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#type DialogflowGenerator#type}
 
 ---
 
@@ -2167,7 +2565,7 @@ Definition *string
 
 Optional. Definition of the section, for example, "what the customer needs help with or has question about.".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dialogflow_generator#definition DialogflowGenerator#definition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#definition DialogflowGenerator#definition}
 
 ---
 
@@ -2181,7 +2579,7 @@ Key *string
 
 Optional. Name of the section, for example, "situation".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dialogflow_generator#key DialogflowGenerator#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#key DialogflowGenerator#key}
 
 ---
 
@@ -2195,7 +2593,7 @@ Type *string
 
 Optional. Type of the summarization section. Possible values: ["SITUATION", "ACTION", "RESOLUTION", "REASON_FOR_CANCELLATION", "CUSTOMER_SATISFACTION", "ENTITIES", "CUSTOMER_DEFINED", "SITUATION_CONCISE", "ACTION_CONCISE"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dialogflow_generator#type DialogflowGenerator#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#type DialogflowGenerator#type}
 
 ---
 
@@ -2217,9 +2615,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/dialogflowgenera
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dialogflow_generator#create DialogflowGenerator#create}. |
-| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dialogflow_generator#delete DialogflowGenerator#delete}. |
-| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dialogflow_generator#update DialogflowGenerator#update}. |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#create DialogflowGenerator#create}. |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#delete DialogflowGenerator#delete}. |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#update DialogflowGenerator#update}. |
 
 ---
 
@@ -2231,7 +2629,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dialogflow_generator#create DialogflowGenerator#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#create DialogflowGenerator#create}.
 
 ---
 
@@ -2243,7 +2641,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dialogflow_generator#delete DialogflowGenerator#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#delete DialogflowGenerator#delete}.
 
 ---
 
@@ -2255,11 +2653,1268 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/dialogflow_generator#update DialogflowGenerator#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#update DialogflowGenerator#update}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### DialogflowGeneratorAgentCoachingContextInstructionsList <a name="DialogflowGeneratorAgentCoachingContextInstructionsList" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsList.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/dialogflowgenerator"
+
+dialogflowgenerator.NewDialogflowGeneratorAgentCoachingContextInstructionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DialogflowGeneratorAgentCoachingContextInstructionsList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsList.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsList.get"></a>
+
+```go
+func Get(index *f64) DialogflowGeneratorAgentCoachingContextInstructionsOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsList.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsList.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### DialogflowGeneratorAgentCoachingContextInstructionsOutputReference <a name="DialogflowGeneratorAgentCoachingContextInstructionsOutputReference" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/dialogflowgenerator"
+
+dialogflowgenerator.NewDialogflowGeneratorAgentCoachingContextInstructionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DialogflowGeneratorAgentCoachingContextInstructionsOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.resetAgentAction">ResetAgentAction</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.resetCondition">ResetCondition</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.resetDisplayDetails">ResetDisplayDetails</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.resetDisplayName">ResetDisplayName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.resetSystemAction">ResetSystemAction</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.resetTriggeringEvent">ResetTriggeringEvent</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetAgentAction` <a name="ResetAgentAction" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.resetAgentAction"></a>
+
+```go
+func ResetAgentAction()
+```
+
+##### `ResetCondition` <a name="ResetCondition" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.resetCondition"></a>
+
+```go
+func ResetCondition()
+```
+
+##### `ResetDisplayDetails` <a name="ResetDisplayDetails" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.resetDisplayDetails"></a>
+
+```go
+func ResetDisplayDetails()
+```
+
+##### `ResetDisplayName` <a name="ResetDisplayName" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.resetDisplayName"></a>
+
+```go
+func ResetDisplayName()
+```
+
+##### `ResetSystemAction` <a name="ResetSystemAction" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.resetSystemAction"></a>
+
+```go
+func ResetSystemAction()
+```
+
+##### `ResetTriggeringEvent` <a name="ResetTriggeringEvent" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.resetTriggeringEvent"></a>
+
+```go
+func ResetTriggeringEvent()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.property.agentActionInput">AgentActionInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.property.conditionInput">ConditionInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.property.displayDetailsInput">DisplayDetailsInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.property.displayNameInput">DisplayNameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.property.systemActionInput">SystemActionInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.property.triggeringEventInput">TriggeringEventInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.property.agentAction">AgentAction</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.property.condition">Condition</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.property.displayDetails">DisplayDetails</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.property.displayName">DisplayName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.property.systemAction">SystemAction</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.property.triggeringEvent">TriggeringEvent</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `AgentActionInput`<sup>Optional</sup> <a name="AgentActionInput" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.property.agentActionInput"></a>
+
+```go
+func AgentActionInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ConditionInput`<sup>Optional</sup> <a name="ConditionInput" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.property.conditionInput"></a>
+
+```go
+func ConditionInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `DisplayDetailsInput`<sup>Optional</sup> <a name="DisplayDetailsInput" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.property.displayDetailsInput"></a>
+
+```go
+func DisplayDetailsInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `DisplayNameInput`<sup>Optional</sup> <a name="DisplayNameInput" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.property.displayNameInput"></a>
+
+```go
+func DisplayNameInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `SystemActionInput`<sup>Optional</sup> <a name="SystemActionInput" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.property.systemActionInput"></a>
+
+```go
+func SystemActionInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `TriggeringEventInput`<sup>Optional</sup> <a name="TriggeringEventInput" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.property.triggeringEventInput"></a>
+
+```go
+func TriggeringEventInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `AgentAction`<sup>Required</sup> <a name="AgentAction" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.property.agentAction"></a>
+
+```go
+func AgentAction() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Condition`<sup>Required</sup> <a name="Condition" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.property.condition"></a>
+
+```go
+func Condition() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `DisplayDetails`<sup>Required</sup> <a name="DisplayDetails" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.property.displayDetails"></a>
+
+```go
+func DisplayDetails() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `DisplayName`<sup>Required</sup> <a name="DisplayName" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.property.displayName"></a>
+
+```go
+func DisplayName() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `SystemAction`<sup>Required</sup> <a name="SystemAction" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.property.systemAction"></a>
+
+```go
+func SystemAction() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `TriggeringEvent`<sup>Required</sup> <a name="TriggeringEvent" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.property.triggeringEvent"></a>
+
+```go
+func TriggeringEvent() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### DialogflowGeneratorAgentCoachingContextOutputReference <a name="DialogflowGeneratorAgentCoachingContextOutputReference" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/dialogflowgenerator"
+
+dialogflowgenerator.NewDialogflowGeneratorAgentCoachingContextOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowGeneratorAgentCoachingContextOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.putInstructions">PutInstructions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.resetInstructions">ResetInstructions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.resetOutputLanguageCode">ResetOutputLanguageCode</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.resetOverarchingGuidance">ResetOverarchingGuidance</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.resetVersion">ResetVersion</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `PutInstructions` <a name="PutInstructions" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.putInstructions"></a>
+
+```go
+func PutInstructions(value interface{})
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.putInstructions.parameter.value"></a>
+
+- *Type:* interface{}
+
+---
+
+##### `ResetInstructions` <a name="ResetInstructions" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.resetInstructions"></a>
+
+```go
+func ResetInstructions()
+```
+
+##### `ResetOutputLanguageCode` <a name="ResetOutputLanguageCode" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.resetOutputLanguageCode"></a>
+
+```go
+func ResetOutputLanguageCode()
+```
+
+##### `ResetOverarchingGuidance` <a name="ResetOverarchingGuidance" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.resetOverarchingGuidance"></a>
+
+```go
+func ResetOverarchingGuidance()
+```
+
+##### `ResetVersion` <a name="ResetVersion" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.resetVersion"></a>
+
+```go
+func ResetVersion()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.property.instructions">Instructions</a></code> | <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsList">DialogflowGeneratorAgentCoachingContextInstructionsList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.property.instructionsInput">InstructionsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.property.outputLanguageCodeInput">OutputLanguageCodeInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.property.overarchingGuidanceInput">OverarchingGuidanceInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.property.versionInput">VersionInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.property.outputLanguageCode">OutputLanguageCode</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.property.overarchingGuidance">OverarchingGuidance</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.property.version">Version</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContext">DialogflowGeneratorAgentCoachingContext</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Instructions`<sup>Required</sup> <a name="Instructions" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.property.instructions"></a>
+
+```go
+func Instructions() DialogflowGeneratorAgentCoachingContextInstructionsList
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextInstructionsList">DialogflowGeneratorAgentCoachingContextInstructionsList</a>
+
+---
+
+##### `InstructionsInput`<sup>Optional</sup> <a name="InstructionsInput" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.property.instructionsInput"></a>
+
+```go
+func InstructionsInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `OutputLanguageCodeInput`<sup>Optional</sup> <a name="OutputLanguageCodeInput" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.property.outputLanguageCodeInput"></a>
+
+```go
+func OutputLanguageCodeInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `OverarchingGuidanceInput`<sup>Optional</sup> <a name="OverarchingGuidanceInput" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.property.overarchingGuidanceInput"></a>
+
+```go
+func OverarchingGuidanceInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `VersionInput`<sup>Optional</sup> <a name="VersionInput" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.property.versionInput"></a>
+
+```go
+func VersionInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `OutputLanguageCode`<sup>Required</sup> <a name="OutputLanguageCode" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.property.outputLanguageCode"></a>
+
+```go
+func OutputLanguageCode() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `OverarchingGuidance`<sup>Required</sup> <a name="OverarchingGuidance" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.property.overarchingGuidance"></a>
+
+```go
+func OverarchingGuidance() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Version`<sup>Required</sup> <a name="Version" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.property.version"></a>
+
+```go
+func Version() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContextOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() DialogflowGeneratorAgentCoachingContext
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorAgentCoachingContext">DialogflowGeneratorAgentCoachingContext</a>
+
+---
+
+
+### DialogflowGeneratorFreeFormContextOutputReference <a name="DialogflowGeneratorFreeFormContextOutputReference" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorFreeFormContextOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorFreeFormContextOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/dialogflowgenerator"
+
+dialogflowgenerator.NewDialogflowGeneratorFreeFormContextOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowGeneratorFreeFormContextOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorFreeFormContextOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorFreeFormContextOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorFreeFormContextOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorFreeFormContextOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorFreeFormContextOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorFreeFormContextOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorFreeFormContextOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorFreeFormContextOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorFreeFormContextOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorFreeFormContextOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorFreeFormContextOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorFreeFormContextOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorFreeFormContextOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorFreeFormContextOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorFreeFormContextOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorFreeFormContextOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorFreeFormContextOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorFreeFormContextOutputReference.resetText">ResetText</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorFreeFormContextOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorFreeFormContextOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorFreeFormContextOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorFreeFormContextOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorFreeFormContextOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorFreeFormContextOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorFreeFormContextOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorFreeFormContextOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorFreeFormContextOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorFreeFormContextOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorFreeFormContextOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorFreeFormContextOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorFreeFormContextOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorFreeFormContextOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorFreeFormContextOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorFreeFormContextOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorFreeFormContextOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorFreeFormContextOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorFreeFormContextOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorFreeFormContextOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorFreeFormContextOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorFreeFormContextOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorFreeFormContextOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorFreeFormContextOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetText` <a name="ResetText" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorFreeFormContextOutputReference.resetText"></a>
+
+```go
+func ResetText()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorFreeFormContextOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorFreeFormContextOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorFreeFormContextOutputReference.property.textInput">TextInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorFreeFormContextOutputReference.property.text">Text</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorFreeFormContextOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorFreeFormContext">DialogflowGeneratorFreeFormContext</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorFreeFormContextOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorFreeFormContextOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `TextInput`<sup>Optional</sup> <a name="TextInput" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorFreeFormContextOutputReference.property.textInput"></a>
+
+```go
+func TextInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Text`<sup>Required</sup> <a name="Text" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorFreeFormContextOutputReference.property.text"></a>
+
+```go
+func Text() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorFreeFormContextOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() DialogflowGeneratorFreeFormContext
+```
+
+- *Type:* <a href="#@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorFreeFormContext">DialogflowGeneratorFreeFormContext</a>
+
+---
+
 
 ### DialogflowGeneratorInferenceParameterOutputReference <a name="DialogflowGeneratorInferenceParameterOutputReference" id="@cdktn/provider-google.dialogflowGenerator.DialogflowGeneratorInferenceParameterOutputReference"></a>
 

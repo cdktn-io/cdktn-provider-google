@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/iam_workload_identity_pool_jwks
+// https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/iam_workload_identity_pool_jwks
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface DataGoogleIamWorkloadIdentityPoolJwksConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/iam_workload_identity_pool_jwks#id DataGoogleIamWorkloadIdentityPoolJwks#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/iam_workload_identity_pool_jwks#id DataGoogleIamWorkloadIdentityPoolJwks#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,13 +22,13 @@ export interface DataGoogleIamWorkloadIdentityPoolJwksConfig extends cdktn.Terra
   /**
   * The JWKS URI to retrieve the public keys from (e.g. from google_iam_workload_identity_pool_openid_config.jwks_uri).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/iam_workload_identity_pool_jwks#resource_name DataGoogleIamWorkloadIdentityPoolJwks#resource_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/iam_workload_identity_pool_jwks#resource_name DataGoogleIamWorkloadIdentityPoolJwks#resource_name}
   */
   readonly resourceName: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/iam_workload_identity_pool_jwks#timeouts DataGoogleIamWorkloadIdentityPoolJwks#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/iam_workload_identity_pool_jwks#timeouts DataGoogleIamWorkloadIdentityPoolJwks#timeouts}
   */
   readonly timeouts?: DataGoogleIamWorkloadIdentityPoolJwksTimeouts;
 }
@@ -134,7 +134,7 @@ export class DataGoogleIamWorkloadIdentityPoolJwksKeysList extends cdktn.Complex
 }
 export interface DataGoogleIamWorkloadIdentityPoolJwksTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/iam_workload_identity_pool_jwks#read DataGoogleIamWorkloadIdentityPoolJwks#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/iam_workload_identity_pool_jwks#read DataGoogleIamWorkloadIdentityPoolJwks#read}
   */
   readonly read?: string;
 }
@@ -228,7 +228,7 @@ export class DataGoogleIamWorkloadIdentityPoolJwksTimeoutsOutputReference extend
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/iam_workload_identity_pool_jwks google_iam_workload_identity_pool_jwks}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/iam_workload_identity_pool_jwks google_iam_workload_identity_pool_jwks}
 */
 export class DataGoogleIamWorkloadIdentityPoolJwks extends cdktn.TerraformDataSource {
 
@@ -244,7 +244,7 @@ export class DataGoogleIamWorkloadIdentityPoolJwks extends cdktn.TerraformDataSo
   * Generates CDKTN code for importing a DataGoogleIamWorkloadIdentityPoolJwks resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGoogleIamWorkloadIdentityPoolJwks to import
-  * @param importFromId The id of the existing DataGoogleIamWorkloadIdentityPoolJwks that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/iam_workload_identity_pool_jwks#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGoogleIamWorkloadIdentityPoolJwks that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/iam_workload_identity_pool_jwks#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGoogleIamWorkloadIdentityPoolJwks to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -256,7 +256,7 @@ export class DataGoogleIamWorkloadIdentityPoolJwks extends cdktn.TerraformDataSo
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/iam_workload_identity_pool_jwks google_iam_workload_identity_pool_jwks} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/iam_workload_identity_pool_jwks google_iam_workload_identity_pool_jwks} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -267,7 +267,7 @@ export class DataGoogleIamWorkloadIdentityPoolJwks extends cdktn.TerraformDataSo
       terraformResourceType: 'google_iam_workload_identity_pool_jwks',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.6.0',
+        providerVersion: '8.7.0',
         providerVersionConstraint: '~> 8.0'
       },
       provider: config.provider,

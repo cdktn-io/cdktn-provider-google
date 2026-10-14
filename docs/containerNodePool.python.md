@@ -4,7 +4,7 @@
 
 ### ContainerNodePool <a name="ContainerNodePool" id="@cdktn/provider-google.containerNodePool.ContainerNodePool"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool google_container_node_pool}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool google_container_node_pool}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePool.Initializer"></a>
 
@@ -23,6 +23,7 @@ containerNodePool.ContainerNodePool(
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   cluster: str,
   autoscaling: ContainerNodePoolAutoscaling = None,
+  best_effort_provisioning: ContainerNodePoolBestEffortProvisioning = None,
   deletion_policy: str = None,
   id: str = None,
   ignore_node_count_changes: bool | IResolvable = None,
@@ -60,8 +61,9 @@ containerNodePool.ContainerNodePool(
 | <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePool.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePool.Initializer.parameter.cluster">cluster</a></code> | <code>str</code> | The cluster to create the node pool for. Cluster must be present in location provided for zonal clusters. |
 | <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePool.Initializer.parameter.autoscaling">autoscaling</a></code> | <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePoolAutoscaling">ContainerNodePoolAutoscaling</a></code> | autoscaling block. |
+| <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePool.Initializer.parameter.bestEffortProvisioning">best_effort_provisioning</a></code> | <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioning">ContainerNodePoolBestEffortProvisioning</a></code> | best_effort_provisioning block. |
 | <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePool.Initializer.parameter.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePool.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#id ContainerNodePool#id}. |
+| <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePool.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#id ContainerNodePool#id}. |
 | <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePool.Initializer.parameter.ignoreNodeCountChanges">ignore_node_count_changes</a></code> | <code>bool \| cdktn.IResolvable</code> | When true, the provider ignores external changes (drift) to the node count by skipping GCE API queries to the Instance Group Managers. |
 | <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePool.Initializer.parameter.initialNodeCount">initial_node_count</a></code> | <code>typing.Union[int, float]</code> | The initial number of nodes for the pool. |
 | <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePool.Initializer.parameter.location">location</a></code> | <code>str</code> | The location (region or zone) of the cluster. |
@@ -150,7 +152,7 @@ Must be unique amongst siblings in the same scope
 
 The cluster to create the node pool for. Cluster must be present in location provided for zonal clusters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#cluster ContainerNodePool#cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#cluster ContainerNodePool#cluster}
 
 ---
 
@@ -160,7 +162,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 autoscaling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#autoscaling ContainerNodePool#autoscaling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#autoscaling ContainerNodePool#autoscaling}
+
+---
+
+##### `best_effort_provisioning`<sup>Optional</sup> <a name="best_effort_provisioning" id="@cdktn/provider-google.containerNodePool.ContainerNodePool.Initializer.parameter.bestEffortProvisioning"></a>
+
+- *Type:* <a href="#@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioning">ContainerNodePoolBestEffortProvisioning</a>
+
+best_effort_provisioning block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#best_effort_provisioning ContainerNodePool#best_effort_provisioning}
 
 ---
 
@@ -177,7 +189,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#deletion_policy ContainerNodePool#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#deletion_policy ContainerNodePool#deletion_policy}
 
 ---
 
@@ -185,7 +197,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#id ContainerNodePool#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#id ContainerNodePool#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -200,7 +212,7 @@ When true, the provider ignores external changes (drift) to the node count by sk
 
 This is a performance optimization for large clusters that saves API quota. Setting this to true will result in missing managed_instance_group_urls in the state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#ignore_node_count_changes ContainerNodePool#ignore_node_count_changes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#ignore_node_count_changes ContainerNodePool#ignore_node_count_changes}
 
 ---
 
@@ -212,7 +224,7 @@ The initial number of nodes for the pool.
 
 In regional or multi-zonal clusters, this is the number of nodes per zone. Changing this will force recreation of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#initial_node_count ContainerNodePool#initial_node_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#initial_node_count ContainerNodePool#initial_node_count}
 
 ---
 
@@ -222,7 +234,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The location (region or zone) of the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#location ContainerNodePool#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#location ContainerNodePool#location}
 
 ---
 
@@ -232,7 +244,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 maintenance_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#maintenance_policy ContainerNodePool#maintenance_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#maintenance_policy ContainerNodePool#maintenance_policy}
 
 ---
 
@@ -242,7 +254,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 management block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#management ContainerNodePool#management}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#management ContainerNodePool#management}
 
 ---
 
@@ -254,7 +266,7 @@ The maximum number of pods per node in this node pool.
 
 Note that this does not work on node pools which are "route-based" - that is, node pools belonging to clusters that do not have IP Aliasing enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#max_pods_per_node ContainerNodePool#max_pods_per_node}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#max_pods_per_node ContainerNodePool#max_pods_per_node}
 
 ---
 
@@ -264,7 +276,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The name of the node pool. If left blank, Terraform will auto-generate a unique name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#name ContainerNodePool#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#name ContainerNodePool#name}
 
 ---
 
@@ -276,7 +288,7 @@ Creates a unique name for the node pool beginning with the specified prefix.
 
 Conflicts with name. Max length is 31 characters. Prefixes with lengths longer than 14 characters will use a shortened UUID that will be more prone to collisions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#name_prefix ContainerNodePool#name_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#name_prefix ContainerNodePool#name_prefix}
 
 ---
 
@@ -286,7 +298,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 network_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#network_config ContainerNodePool#network_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#network_config ContainerNodePool#network_config}
 
 ---
 
@@ -296,7 +308,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 node_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#node_config ContainerNodePool#node_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#node_config ContainerNodePool#node_config}
 
 ---
 
@@ -308,7 +320,7 @@ The number of nodes per instance group.
 
 This field can be used to update the number of nodes per instance group but should not be used alongside autoscaling.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#node_count ContainerNodePool#node_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#node_count ContainerNodePool#node_count}
 
 ---
 
@@ -318,7 +330,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 node_drain_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#node_drain_config ContainerNodePool#node_drain_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#node_drain_config ContainerNodePool#node_drain_config}
 
 ---
 
@@ -330,7 +342,7 @@ The list of zones in which the node pool's nodes should be located.
 
 Nodes must be in the region of their regional cluster or in the same region as their cluster's zone for zonal clusters. If unspecified, the cluster-level node_locations will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#node_locations ContainerNodePool#node_locations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#node_locations ContainerNodePool#node_locations}
 
 ---
 
@@ -340,7 +352,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 placement_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#placement_policy ContainerNodePool#placement_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#placement_policy ContainerNodePool#placement_policy}
 
 ---
 
@@ -352,7 +364,7 @@ The ID of the project in which to create the node pool.
 
 If blank, the provider-configured project will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#project ContainerNodePool#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#project ContainerNodePool#project}
 
 ---
 
@@ -362,7 +374,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 queued_provisioning block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#queued_provisioning ContainerNodePool#queued_provisioning}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#queued_provisioning ContainerNodePool#queued_provisioning}
 
 ---
 
@@ -372,7 +384,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#timeouts ContainerNodePool#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#timeouts ContainerNodePool#timeouts}
 
 ---
 
@@ -382,7 +394,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 upgrade_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#upgrade_settings ContainerNodePool#upgrade_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#upgrade_settings ContainerNodePool#upgrade_settings}
 
 ---
 
@@ -394,7 +406,7 @@ The Kubernetes version for the nodes in this pool.
 
 Note that if this field and auto_upgrade are both specified, they will fight each other for what the node version should be, so setting both is highly discouraged. While a fuzzy version can be specified, it's recommended that you specify explicit versions as Terraform will see spurious diffs when fuzzy versions are used. See the google_container_engine_versions data source's version_prefix field to approximate fuzzy versions in a Terraform-compatible way.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#version ContainerNodePool#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#version ContainerNodePool#version}
 
 ---
 
@@ -427,6 +439,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePool.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePool.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePool.putAutoscaling">put_autoscaling</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePool.putBestEffortProvisioning">put_best_effort_provisioning</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePool.putMaintenancePolicy">put_maintenance_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePool.putManagement">put_management</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePool.putNetworkConfig">put_network_config</a></code> | *No description.* |
@@ -437,6 +450,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePool.putTimeouts">put_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePool.putUpgradeSettings">put_upgrade_settings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePool.resetAutoscaling">reset_autoscaling</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePool.resetBestEffortProvisioning">reset_best_effort_provisioning</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePool.resetDeletionPolicy">reset_deletion_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePool.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePool.resetIgnoreNodeCountChanges">reset_ignore_node_count_changes</a></code> | *No description.* |
@@ -829,7 +843,7 @@ Location policy specifies the algorithm used when scaling-up the node pool.
 
 "BALANCED" - Is a best effort policy that aims to balance the sizes of available zones. "ANY" - Instructs the cluster autoscaler to prioritize utilization of unused reservations, and reduces preemption risk for Spot VMs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#location_policy ContainerNodePool#location_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#location_policy ContainerNodePool#location_policy}
 
 ---
 
@@ -841,7 +855,7 @@ Maximum number of nodes per zone in the node pool.
 
 Must be >= min_node_count. Cannot be used with total limits.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#max_node_count ContainerNodePool#max_node_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#max_node_count ContainerNodePool#max_node_count}
 
 ---
 
@@ -853,7 +867,7 @@ Minimum number of nodes per zone in the node pool.
 
 Must be >=0 and <= max_node_count. Cannot be used with total limits.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#min_node_count ContainerNodePool#min_node_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#min_node_count ContainerNodePool#min_node_count}
 
 ---
 
@@ -865,7 +879,7 @@ Maximum number of all nodes in the node pool.
 
 Must be >= total_min_node_count. Cannot be used with per zone limits.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#total_max_node_count ContainerNodePool#total_max_node_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#total_max_node_count ContainerNodePool#total_max_node_count}
 
 ---
 
@@ -877,7 +891,38 @@ Minimum number of all nodes in the node pool.
 
 Must be >=0 and <= total_max_node_count. Cannot be used with per zone limits.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#total_min_node_count ContainerNodePool#total_min_node_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#total_min_node_count ContainerNodePool#total_min_node_count}
+
+---
+
+##### `put_best_effort_provisioning` <a name="put_best_effort_provisioning" id="@cdktn/provider-google.containerNodePool.ContainerNodePool.putBestEffortProvisioning"></a>
+
+```python
+def put_best_effort_provisioning(
+  enabled: bool | IResolvable,
+  min_provision_nodes: typing.Union[int, float] = None
+) -> None
+```
+
+###### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktn/provider-google.containerNodePool.ContainerNodePool.putBestEffortProvisioning.parameter.enabled"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether node pool creation ignores non-fatal errors like stockout to provision as many nodes as possible, eventually bringing up the target number of nodes.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#enabled ContainerNodePool#enabled}
+
+---
+
+###### `min_provision_nodes`<sup>Optional</sup> <a name="min_provision_nodes" id="@cdktn/provider-google.containerNodePool.ContainerNodePool.putBestEffortProvisioning.parameter.minProvisionNodes"></a>
+
+- *Type:* typing.Union[int, float]
+
+Minimum number of nodes that must be provisioned for the creation to be considered successful.
+
+Can only be set when enabled is true.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#min_provision_nodes ContainerNodePool#min_provision_nodes}
 
 ---
 
@@ -910,7 +955,7 @@ def put_management(
 
 Whether the nodes will be automatically repaired. Enabled by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#auto_repair ContainerNodePool#auto_repair}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#auto_repair ContainerNodePool#auto_repair}
 
 ---
 
@@ -920,7 +965,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Whether the nodes will be automatically upgraded. Enabled by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#auto_upgrade ContainerNodePool#auto_upgrade}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#auto_upgrade ContainerNodePool#auto_upgrade}
 
 ---
 
@@ -947,7 +992,7 @@ def put_network_config(
 
 The accelerator network profile to use for this node pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#accelerator_network_profile ContainerNodePool#accelerator_network_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#accelerator_network_profile ContainerNodePool#accelerator_network_profile}
 
 ---
 
@@ -957,7 +1002,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 additional_node_network_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#additional_node_network_configs ContainerNodePool#additional_node_network_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#additional_node_network_configs ContainerNodePool#additional_node_network_configs}
 
 ---
 
@@ -967,7 +1012,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 additional_pod_network_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#additional_pod_network_configs ContainerNodePool#additional_pod_network_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#additional_pod_network_configs ContainerNodePool#additional_pod_network_configs}
 
 ---
 
@@ -979,7 +1024,7 @@ Whether to create a new range for pod IPs in this node pool.
 
 Defaults are provided for pod_range and pod_ipv4_cidr_block if they are not specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#create_pod_range ContainerNodePool#create_pod_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#create_pod_range ContainerNodePool#create_pod_range}
 
 ---
 
@@ -989,7 +1034,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Whether nodes have internal IP addresses only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#enable_private_nodes ContainerNodePool#enable_private_nodes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#enable_private_nodes ContainerNodePool#enable_private_nodes}
 
 ---
 
@@ -999,7 +1044,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 network_performance_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#network_performance_config ContainerNodePool#network_performance_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#network_performance_config ContainerNodePool#network_performance_config}
 
 ---
 
@@ -1009,7 +1054,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 pod_cidr_overprovision_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#pod_cidr_overprovision_config ContainerNodePool#pod_cidr_overprovision_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#pod_cidr_overprovision_config ContainerNodePool#pod_cidr_overprovision_config}
 
 ---
 
@@ -1021,7 +1066,7 @@ The IP address range for pod IPs in this node pool.
 
 Only applicable if create_pod_range is true. Set to blank to have a range chosen with the default size. Set to /netmask (e.g. /14) to have a range chosen with a specific netmask. Set to a CIDR notation (e.g. 10.96.0.0/14) to pick a specific range to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#pod_ipv4_cidr_block ContainerNodePool#pod_ipv4_cidr_block}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#pod_ipv4_cidr_block ContainerNodePool#pod_ipv4_cidr_block}
 
 ---
 
@@ -1033,7 +1078,7 @@ The ID of the secondary range for pod IPs.
 
 If create_pod_range is true, this ID is used for the new range. If create_pod_range is false, uses an existing secondary range with this ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#pod_range ContainerNodePool#pod_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#pod_range ContainerNodePool#pod_range}
 
 ---
 
@@ -1045,7 +1090,7 @@ The subnetwork name/path for the node pool.
 
 Format: subnetwork or projects/{project}/regions/{region}/subnetworks/{subnetwork}. This value may be specified via the nested network_config block (setting this attribute directly is supported for backward compatibility). Once created the node pool's subnetwork is immutable. If not set, the provider/API will choose the subnetwork (e.g. based on IP utilization) and report it here.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#subnetwork ContainerNodePool#subnetwork}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#subnetwork ContainerNodePool#subnetwork}
 
 ---
 
@@ -1108,7 +1153,7 @@ def put_node_config(
 
 advanced_machine_features block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#advanced_machine_features ContainerNodePool#advanced_machine_features}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#advanced_machine_features ContainerNodePool#advanced_machine_features}
 
 ---
 
@@ -1118,7 +1163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 boot_disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#boot_disk ContainerNodePool#boot_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#boot_disk ContainerNodePool#boot_disk}
 
 ---
 
@@ -1128,7 +1173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The Customer Managed Encryption Key used to encrypt the boot disk attached to each node in the node pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#boot_disk_kms_key ContainerNodePool#boot_disk_kms_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#boot_disk_kms_key ContainerNodePool#boot_disk_kms_key}
 
 ---
 
@@ -1138,7 +1183,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 confidential_nodes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#confidential_nodes ContainerNodePool#confidential_nodes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#confidential_nodes ContainerNodePool#confidential_nodes}
 
 ---
 
@@ -1148,7 +1193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 containerd_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#containerd_config ContainerNodePool#containerd_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#containerd_config ContainerNodePool#containerd_config}
 
 ---
 
@@ -1158,7 +1203,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Size of the disk attached to each node, specified in GB. The smallest allowed disk size is 10GB.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#disk_size_gb ContainerNodePool#disk_size_gb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#disk_size_gb ContainerNodePool#disk_size_gb}
 
 ---
 
@@ -1168,7 +1213,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Type of the disk attached to each node. Such as pd-standard, pd-balanced or pd-ssd.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#disk_type ContainerNodePool#disk_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#disk_type ContainerNodePool#disk_type}
 
 ---
 
@@ -1178,7 +1223,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 If enabled boot disks are configured with confidential mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#enable_confidential_storage ContainerNodePool#enable_confidential_storage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#enable_confidential_storage ContainerNodePool#enable_confidential_storage}
 
 ---
 
@@ -1188,7 +1233,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ephemeral_storage_local_ssd_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#ephemeral_storage_local_ssd_config ContainerNodePool#ephemeral_storage_local_ssd_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#ephemeral_storage_local_ssd_config ContainerNodePool#ephemeral_storage_local_ssd_config}
 
 ---
 
@@ -1198,7 +1243,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 fast_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#fast_socket ContainerNodePool#fast_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#fast_socket ContainerNodePool#fast_socket}
 
 ---
 
@@ -1208,7 +1253,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Enables Flex Start provisioning model for the node pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#flex_start ContainerNodePool#flex_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#flex_start ContainerNodePool#flex_start}
 
 ---
 
@@ -1218,7 +1263,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 gcfs_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#gcfs_config ContainerNodePool#gcfs_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#gcfs_config ContainerNodePool#gcfs_config}
 
 ---
 
@@ -1228,7 +1273,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The type of GPUDirect strategy to enable on the node.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#gpudirect_strategy ContainerNodePool#gpudirect_strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#gpudirect_strategy ContainerNodePool#gpudirect_strategy}
 
 ---
 
@@ -1238,7 +1283,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 guest_accelerator block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#guest_accelerator ContainerNodePool#guest_accelerator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#guest_accelerator ContainerNodePool#guest_accelerator}
 
 ---
 
@@ -1248,7 +1293,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 gvnic block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#gvnic ContainerNodePool#gvnic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#gvnic ContainerNodePool#gvnic}
 
 ---
 
@@ -1260,7 +1305,7 @@ The image type to use for this node.
 
 Note that for a given image type, the latest version of it will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#image_type ContainerNodePool#image_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#image_type ContainerNodePool#image_type}
 
 ---
 
@@ -1270,7 +1315,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 kubelet_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#kubelet_config ContainerNodePool#kubelet_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#kubelet_config ContainerNodePool#kubelet_config}
 
 ---
 
@@ -1282,7 +1327,7 @@ The map of Kubernetes labels (key/value pairs) to be applied to each node.
 
 These will added in addition to any default label(s) that Kubernetes may apply to the node.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#labels ContainerNodePool#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#labels ContainerNodePool#labels}
 
 ---
 
@@ -1292,7 +1337,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 linux_node_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#linux_node_config ContainerNodePool#linux_node_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#linux_node_config ContainerNodePool#linux_node_config}
 
 ---
 
@@ -1302,7 +1347,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 local_nvme_ssd_block_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#local_nvme_ssd_block_config ContainerNodePool#local_nvme_ssd_block_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#local_nvme_ssd_block_config ContainerNodePool#local_nvme_ssd_block_config}
 
 ---
 
@@ -1312,7 +1357,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The number of local SSD disks to be attached to the node.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#local_ssd_count ContainerNodePool#local_ssd_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#local_ssd_count ContainerNodePool#local_ssd_count}
 
 ---
 
@@ -1322,7 +1367,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 LocalSsdEncryptionMode specified the method used for encrypting the local SSDs attached to the node.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#local_ssd_encryption_mode ContainerNodePool#local_ssd_encryption_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#local_ssd_encryption_mode ContainerNodePool#local_ssd_encryption_mode}
 
 ---
 
@@ -1334,7 +1379,7 @@ Type of logging agent that is used as the default value for node pools in the cl
 
 Valid values include DEFAULT and MAX_THROUGHPUT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#logging_variant ContainerNodePool#logging_variant}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#logging_variant ContainerNodePool#logging_variant}
 
 ---
 
@@ -1344,7 +1389,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The name of a Google Compute Engine machine type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#machine_type ContainerNodePool#machine_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#machine_type ContainerNodePool#machine_type}
 
 ---
 
@@ -1354,7 +1399,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The runtime of each node in the node pool in seconds, terminated by 's'. Example: "3600s".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#max_run_duration ContainerNodePool#max_run_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#max_run_duration ContainerNodePool#max_run_duration}
 
 ---
 
@@ -1364,7 +1409,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The metadata key/value pairs assigned to instances in the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#metadata ContainerNodePool#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#metadata ContainerNodePool#metadata}
 
 ---
 
@@ -1376,7 +1421,7 @@ Minimum CPU platform to be used by this instance.
 
 The instance may be scheduled on the specified or newer CPU platform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#min_cpu_platform ContainerNodePool#min_cpu_platform}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#min_cpu_platform ContainerNodePool#min_cpu_platform}
 
 ---
 
@@ -1388,7 +1433,7 @@ Setting this field will assign instances of this pool to run on the specified no
 
 This is useful for running workloads on sole tenant nodes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#node_group ContainerNodePool#node_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#node_group ContainerNodePool#node_group}
 
 ---
 
@@ -1398,7 +1443,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 node_image_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#node_image_config ContainerNodePool#node_image_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#node_image_config ContainerNodePool#node_image_config}
 
 ---
 
@@ -1408,7 +1453,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The set of Google API scopes to be made available on all of the node VMs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#oauth_scopes ContainerNodePool#oauth_scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#oauth_scopes ContainerNodePool#oauth_scopes}
 
 ---
 
@@ -1418,7 +1463,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Whether the nodes are created as preemptible VM instances.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#preemptible ContainerNodePool#preemptible}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#preemptible ContainerNodePool#preemptible}
 
 ---
 
@@ -1428,7 +1473,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 reservation_affinity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#reservation_affinity ContainerNodePool#reservation_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#reservation_affinity ContainerNodePool#reservation_affinity}
 
 ---
 
@@ -1438,7 +1483,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The GCE resource labels (a map of key/value pairs) to be applied to the node pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#resource_labels ContainerNodePool#resource_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#resource_labels ContainerNodePool#resource_labels}
 
 ---
 
@@ -1450,7 +1495,7 @@ A map of resource manager tags.
 
 Resource manager tag keys and values have the same definition as resource manager tags. Keys must be in the format tagKeys/{tag_key_id}, and values are in the format tagValues/456. The field is ignored (both PUT & PATCH) when empty.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#resource_manager_tags ContainerNodePool#resource_manager_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#resource_manager_tags ContainerNodePool#resource_manager_tags}
 
 ---
 
@@ -1460,7 +1505,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 sandbox_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#sandbox_config ContainerNodePool#sandbox_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#sandbox_config ContainerNodePool#sandbox_config}
 
 ---
 
@@ -1470,7 +1515,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 secondary_boot_disks block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#secondary_boot_disks ContainerNodePool#secondary_boot_disks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#secondary_boot_disks ContainerNodePool#secondary_boot_disks}
 
 ---
 
@@ -1480,7 +1525,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The Google Cloud Platform Service Account to be used by the node VMs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#service_account ContainerNodePool#service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#service_account ContainerNodePool#service_account}
 
 ---
 
@@ -1490,7 +1535,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 shielded_instance_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#shielded_instance_config ContainerNodePool#shielded_instance_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#shielded_instance_config ContainerNodePool#shielded_instance_config}
 
 ---
 
@@ -1500,7 +1545,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 sole_tenant_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#sole_tenant_config ContainerNodePool#sole_tenant_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#sole_tenant_config ContainerNodePool#sole_tenant_config}
 
 ---
 
@@ -1510,7 +1555,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Whether the nodes are created as spot VM instances.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#spot ContainerNodePool#spot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#spot ContainerNodePool#spot}
 
 ---
 
@@ -1520,7 +1565,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The list of Storage Pools where boot disks are provisioned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#storage_pools ContainerNodePool#storage_pools}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#storage_pools ContainerNodePool#storage_pools}
 
 ---
 
@@ -1530,7 +1575,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The list of instance tags applied to all nodes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#tags ContainerNodePool#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#tags ContainerNodePool#tags}
 
 ---
 
@@ -1540,7 +1585,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 taint block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#taint ContainerNodePool#taint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#taint ContainerNodePool#taint}
 
 ---
 
@@ -1550,7 +1595,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 taint_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#taint_config ContainerNodePool#taint_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#taint_config ContainerNodePool#taint_config}
 
 ---
 
@@ -1560,7 +1605,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 windows_node_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#windows_node_config ContainerNodePool#windows_node_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#windows_node_config ContainerNodePool#windows_node_config}
 
 ---
 
@@ -1570,7 +1615,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 workload_metadata_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#workload_metadata_config ContainerNodePool#workload_metadata_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#workload_metadata_config ContainerNodePool#workload_metadata_config}
 
 ---
 
@@ -1604,7 +1649,7 @@ def put_placement_policy(
 
 Type defines the type of placement policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#type ContainerNodePool#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#type ContainerNodePool#type}
 
 ---
 
@@ -1616,7 +1661,7 @@ If set, refers to the name of a custom resource policy supplied by the user.
 
 The resource policy must be in the same project and region as the node pool. If not found, InvalidArgument error is returned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#policy_name ContainerNodePool#policy_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#policy_name ContainerNodePool#policy_name}
 
 ---
 
@@ -1626,7 +1671,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The TPU topology like "2x4" or "2x2x2". https://cloud.google.com/kubernetes-engine/docs/concepts/plan-tpus#topology.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#tpu_topology ContainerNodePool#tpu_topology}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#tpu_topology ContainerNodePool#tpu_topology}
 
 ---
 
@@ -1644,7 +1689,7 @@ def put_queued_provisioning(
 
 Whether nodes in this node pool are obtainable solely through the ProvisioningRequest API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#enabled ContainerNodePool#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#enabled ContainerNodePool#enabled}
 
 ---
 
@@ -1662,7 +1707,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#create ContainerNodePool#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#create ContainerNodePool#create}.
 
 ---
 
@@ -1670,7 +1715,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#delete ContainerNodePool#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#delete ContainerNodePool#delete}.
 
 ---
 
@@ -1678,7 +1723,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#update ContainerNodePool#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#update ContainerNodePool#update}.
 
 ---
 
@@ -1699,7 +1744,7 @@ def put_upgrade_settings(
 
 blue_green_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#blue_green_settings ContainerNodePool#blue_green_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#blue_green_settings ContainerNodePool#blue_green_settings}
 
 ---
 
@@ -1711,7 +1756,7 @@ The number of additional nodes that can be added to the node pool during an upgr
 
 Increasing max_surge raises the number of nodes that can be upgraded simultaneously. Can be set to 0 or greater.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#max_surge ContainerNodePool#max_surge}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#max_surge ContainerNodePool#max_surge}
 
 ---
 
@@ -1723,7 +1768,7 @@ The number of nodes that can be simultaneously unavailable during an upgrade.
 
 Increasing max_unavailable raises the number of nodes that can be upgraded in parallel. Can be set to 0 or greater.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#max_unavailable ContainerNodePool#max_unavailable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#max_unavailable ContainerNodePool#max_unavailable}
 
 ---
 
@@ -1733,7 +1778,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Update strategy for the given nodepool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#strategy ContainerNodePool#strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#strategy ContainerNodePool#strategy}
 
 ---
 
@@ -1741,6 +1786,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ```python
 def reset_autoscaling() -> None
+```
+
+##### `reset_best_effort_provisioning` <a name="reset_best_effort_provisioning" id="@cdktn/provider-google.containerNodePool.ContainerNodePool.resetBestEffortProvisioning"></a>
+
+```python
+def reset_best_effort_provisioning() -> None
 ```
 
 ##### `reset_deletion_policy` <a name="reset_deletion_policy" id="@cdktn/provider-google.containerNodePool.ContainerNodePool.resetDeletionPolicy"></a>
@@ -1983,7 +2034,7 @@ The construct id used in the generated config for the ContainerNodePool to impor
 
 The id of the existing ContainerNodePool that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -2014,6 +2065,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6
 | <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePool.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePool.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePool.property.autoscaling">autoscaling</a></code> | <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePoolAutoscalingOutputReference">ContainerNodePoolAutoscalingOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePool.property.bestEffortProvisioning">best_effort_provisioning</a></code> | <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioningOutputReference">ContainerNodePoolBestEffortProvisioningOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePool.property.instanceGroupUrls">instance_group_urls</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePool.property.maintenancePolicy">maintenance_policy</a></code> | <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePoolMaintenancePolicyList">ContainerNodePoolMaintenancePolicyList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePool.property.managedInstanceGroupUrls">managed_instance_group_urls</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -2027,6 +2079,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6
 | <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePool.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePoolTimeoutsOutputReference">ContainerNodePoolTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePool.property.upgradeSettings">upgrade_settings</a></code> | <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePoolUpgradeSettingsOutputReference">ContainerNodePoolUpgradeSettingsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePool.property.autoscalingInput">autoscaling_input</a></code> | <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePoolAutoscaling">ContainerNodePoolAutoscaling</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePool.property.bestEffortProvisioningInput">best_effort_provisioning_input</a></code> | <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioning">ContainerNodePoolBestEffortProvisioning</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePool.property.clusterInput">cluster_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePool.property.deletionPolicyInput">deletion_policy_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePool.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
@@ -2217,6 +2270,16 @@ autoscaling: ContainerNodePoolAutoscalingOutputReference
 
 ---
 
+##### `best_effort_provisioning`<sup>Required</sup> <a name="best_effort_provisioning" id="@cdktn/provider-google.containerNodePool.ContainerNodePool.property.bestEffortProvisioning"></a>
+
+```python
+best_effort_provisioning: ContainerNodePoolBestEffortProvisioningOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioningOutputReference">ContainerNodePoolBestEffortProvisioningOutputReference</a>
+
+---
+
 ##### `instance_group_urls`<sup>Required</sup> <a name="instance_group_urls" id="@cdktn/provider-google.containerNodePool.ContainerNodePool.property.instanceGroupUrls"></a>
 
 ```python
@@ -2344,6 +2407,16 @@ autoscaling_input: ContainerNodePoolAutoscaling
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.containerNodePool.ContainerNodePoolAutoscaling">ContainerNodePoolAutoscaling</a>
+
+---
+
+##### `best_effort_provisioning_input`<sup>Optional</sup> <a name="best_effort_provisioning_input" id="@cdktn/provider-google.containerNodePool.ContainerNodePool.property.bestEffortProvisioningInput"></a>
+
+```python
+best_effort_provisioning_input: ContainerNodePoolBestEffortProvisioning
+```
+
+- *Type:* <a href="#@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioning">ContainerNodePoolBestEffortProvisioning</a>
 
 ---
 
@@ -2757,7 +2830,7 @@ Location policy specifies the algorithm used when scaling-up the node pool.
 
 "BALANCED" - Is a best effort policy that aims to balance the sizes of available zones. "ANY" - Instructs the cluster autoscaler to prioritize utilization of unused reservations, and reduces preemption risk for Spot VMs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#location_policy ContainerNodePool#location_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#location_policy ContainerNodePool#location_policy}
 
 ---
 
@@ -2773,7 +2846,7 @@ Maximum number of nodes per zone in the node pool.
 
 Must be >= min_node_count. Cannot be used with total limits.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#max_node_count ContainerNodePool#max_node_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#max_node_count ContainerNodePool#max_node_count}
 
 ---
 
@@ -2789,7 +2862,7 @@ Minimum number of nodes per zone in the node pool.
 
 Must be >=0 and <= max_node_count. Cannot be used with total limits.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#min_node_count ContainerNodePool#min_node_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#min_node_count ContainerNodePool#min_node_count}
 
 ---
 
@@ -2805,7 +2878,7 @@ Maximum number of all nodes in the node pool.
 
 Must be >= total_min_node_count. Cannot be used with per zone limits.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#total_max_node_count ContainerNodePool#total_max_node_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#total_max_node_count ContainerNodePool#total_max_node_count}
 
 ---
 
@@ -2821,7 +2894,59 @@ Minimum number of all nodes in the node pool.
 
 Must be >=0 and <= total_max_node_count. Cannot be used with per zone limits.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#total_min_node_count ContainerNodePool#total_min_node_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#total_min_node_count ContainerNodePool#total_min_node_count}
+
+---
+
+### ContainerNodePoolBestEffortProvisioning <a name="ContainerNodePoolBestEffortProvisioning" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioning"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioning.Initializer"></a>
+
+```python
+from cdktn_provider_google import container_node_pool
+
+containerNodePool.ContainerNodePoolBestEffortProvisioning(
+  enabled: bool | IResolvable,
+  min_provision_nodes: typing.Union[int, float] = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioning.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether node pool creation ignores non-fatal errors like stockout to provision as many nodes as possible, eventually bringing up the target number of nodes. |
+| <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioning.property.minProvisionNodes">min_provision_nodes</a></code> | <code>typing.Union[int, float]</code> | Minimum number of nodes that must be provisioned for the creation to be considered successful. |
+
+---
+
+##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioning.property.enabled"></a>
+
+```python
+enabled: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether node pool creation ignores non-fatal errors like stockout to provision as many nodes as possible, eventually bringing up the target number of nodes.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#enabled ContainerNodePool#enabled}
+
+---
+
+##### `min_provision_nodes`<sup>Optional</sup> <a name="min_provision_nodes" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioning.property.minProvisionNodes"></a>
+
+```python
+min_provision_nodes: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Minimum number of nodes that must be provisioned for the creation to be considered successful.
+
+Can only be set when enabled is true.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#min_provision_nodes ContainerNodePool#min_provision_nodes}
 
 ---
 
@@ -2842,6 +2967,7 @@ containerNodePool.ContainerNodePoolConfig(
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   cluster: str,
   autoscaling: ContainerNodePoolAutoscaling = None,
+  best_effort_provisioning: ContainerNodePoolBestEffortProvisioning = None,
   deletion_policy: str = None,
   id: str = None,
   ignore_node_count_changes: bool | IResolvable = None,
@@ -2879,8 +3005,9 @@ containerNodePool.ContainerNodePoolConfig(
 | <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePoolConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePoolConfig.property.cluster">cluster</a></code> | <code>str</code> | The cluster to create the node pool for. Cluster must be present in location provided for zonal clusters. |
 | <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePoolConfig.property.autoscaling">autoscaling</a></code> | <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePoolAutoscaling">ContainerNodePoolAutoscaling</a></code> | autoscaling block. |
+| <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePoolConfig.property.bestEffortProvisioning">best_effort_provisioning</a></code> | <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioning">ContainerNodePoolBestEffortProvisioning</a></code> | best_effort_provisioning block. |
 | <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePoolConfig.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePoolConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#id ContainerNodePool#id}. |
+| <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePoolConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#id ContainerNodePool#id}. |
 | <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePoolConfig.property.ignoreNodeCountChanges">ignore_node_count_changes</a></code> | <code>bool \| cdktn.IResolvable</code> | When true, the provider ignores external changes (drift) to the node count by skipping GCE API queries to the Instance Group Managers. |
 | <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePoolConfig.property.initialNodeCount">initial_node_count</a></code> | <code>typing.Union[int, float]</code> | The initial number of nodes for the pool. |
 | <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePoolConfig.property.location">location</a></code> | <code>str</code> | The location (region or zone) of the cluster. |
@@ -2983,7 +3110,7 @@ cluster: str
 
 The cluster to create the node pool for. Cluster must be present in location provided for zonal clusters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#cluster ContainerNodePool#cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#cluster ContainerNodePool#cluster}
 
 ---
 
@@ -2997,7 +3124,21 @@ autoscaling: ContainerNodePoolAutoscaling
 
 autoscaling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#autoscaling ContainerNodePool#autoscaling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#autoscaling ContainerNodePool#autoscaling}
+
+---
+
+##### `best_effort_provisioning`<sup>Optional</sup> <a name="best_effort_provisioning" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolConfig.property.bestEffortProvisioning"></a>
+
+```python
+best_effort_provisioning: ContainerNodePoolBestEffortProvisioning
+```
+
+- *Type:* <a href="#@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioning">ContainerNodePoolBestEffortProvisioning</a>
+
+best_effort_provisioning block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#best_effort_provisioning ContainerNodePool#best_effort_provisioning}
 
 ---
 
@@ -3018,7 +3159,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#deletion_policy ContainerNodePool#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#deletion_policy ContainerNodePool#deletion_policy}
 
 ---
 
@@ -3030,7 +3171,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#id ContainerNodePool#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#id ContainerNodePool#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -3049,7 +3190,7 @@ When true, the provider ignores external changes (drift) to the node count by sk
 
 This is a performance optimization for large clusters that saves API quota. Setting this to true will result in missing managed_instance_group_urls in the state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#ignore_node_count_changes ContainerNodePool#ignore_node_count_changes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#ignore_node_count_changes ContainerNodePool#ignore_node_count_changes}
 
 ---
 
@@ -3065,7 +3206,7 @@ The initial number of nodes for the pool.
 
 In regional or multi-zonal clusters, this is the number of nodes per zone. Changing this will force recreation of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#initial_node_count ContainerNodePool#initial_node_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#initial_node_count ContainerNodePool#initial_node_count}
 
 ---
 
@@ -3079,7 +3220,7 @@ location: str
 
 The location (region or zone) of the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#location ContainerNodePool#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#location ContainerNodePool#location}
 
 ---
 
@@ -3093,7 +3234,7 @@ maintenance_policy: IResolvable | typing.List[ContainerNodePoolMaintenancePolicy
 
 maintenance_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#maintenance_policy ContainerNodePool#maintenance_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#maintenance_policy ContainerNodePool#maintenance_policy}
 
 ---
 
@@ -3107,7 +3248,7 @@ management: ContainerNodePoolManagement
 
 management block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#management ContainerNodePool#management}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#management ContainerNodePool#management}
 
 ---
 
@@ -3123,7 +3264,7 @@ The maximum number of pods per node in this node pool.
 
 Note that this does not work on node pools which are "route-based" - that is, node pools belonging to clusters that do not have IP Aliasing enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#max_pods_per_node ContainerNodePool#max_pods_per_node}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#max_pods_per_node ContainerNodePool#max_pods_per_node}
 
 ---
 
@@ -3137,7 +3278,7 @@ name: str
 
 The name of the node pool. If left blank, Terraform will auto-generate a unique name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#name ContainerNodePool#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#name ContainerNodePool#name}
 
 ---
 
@@ -3153,7 +3294,7 @@ Creates a unique name for the node pool beginning with the specified prefix.
 
 Conflicts with name. Max length is 31 characters. Prefixes with lengths longer than 14 characters will use a shortened UUID that will be more prone to collisions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#name_prefix ContainerNodePool#name_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#name_prefix ContainerNodePool#name_prefix}
 
 ---
 
@@ -3167,7 +3308,7 @@ network_config: ContainerNodePoolNetworkConfig
 
 network_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#network_config ContainerNodePool#network_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#network_config ContainerNodePool#network_config}
 
 ---
 
@@ -3181,7 +3322,7 @@ node_config: ContainerNodePoolNodeConfig
 
 node_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#node_config ContainerNodePool#node_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#node_config ContainerNodePool#node_config}
 
 ---
 
@@ -3197,7 +3338,7 @@ The number of nodes per instance group.
 
 This field can be used to update the number of nodes per instance group but should not be used alongside autoscaling.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#node_count ContainerNodePool#node_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#node_count ContainerNodePool#node_count}
 
 ---
 
@@ -3211,7 +3352,7 @@ node_drain_config: IResolvable | typing.List[ContainerNodePoolNodeDrainConfig]
 
 node_drain_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#node_drain_config ContainerNodePool#node_drain_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#node_drain_config ContainerNodePool#node_drain_config}
 
 ---
 
@@ -3227,7 +3368,7 @@ The list of zones in which the node pool's nodes should be located.
 
 Nodes must be in the region of their regional cluster or in the same region as their cluster's zone for zonal clusters. If unspecified, the cluster-level node_locations will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#node_locations ContainerNodePool#node_locations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#node_locations ContainerNodePool#node_locations}
 
 ---
 
@@ -3241,7 +3382,7 @@ placement_policy: ContainerNodePoolPlacementPolicy
 
 placement_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#placement_policy ContainerNodePool#placement_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#placement_policy ContainerNodePool#placement_policy}
 
 ---
 
@@ -3257,7 +3398,7 @@ The ID of the project in which to create the node pool.
 
 If blank, the provider-configured project will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#project ContainerNodePool#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#project ContainerNodePool#project}
 
 ---
 
@@ -3271,7 +3412,7 @@ queued_provisioning: ContainerNodePoolQueuedProvisioning
 
 queued_provisioning block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#queued_provisioning ContainerNodePool#queued_provisioning}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#queued_provisioning ContainerNodePool#queued_provisioning}
 
 ---
 
@@ -3285,7 +3426,7 @@ timeouts: ContainerNodePoolTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#timeouts ContainerNodePool#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#timeouts ContainerNodePool#timeouts}
 
 ---
 
@@ -3299,7 +3440,7 @@ upgrade_settings: ContainerNodePoolUpgradeSettings
 
 upgrade_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#upgrade_settings ContainerNodePool#upgrade_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#upgrade_settings ContainerNodePool#upgrade_settings}
 
 ---
 
@@ -3315,7 +3456,7 @@ The Kubernetes version for the nodes in this pool.
 
 Note that if this field and auto_upgrade are both specified, they will fight each other for what the node version should be, so setting both is highly discouraged. While a fuzzy version can be specified, it's recommended that you specify explicit versions as Terraform will see spurious diffs when fuzzy versions are used. See the google_container_engine_versions data source's version_prefix field to approximate fuzzy versions in a Terraform-compatible way.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#version ContainerNodePool#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#version ContainerNodePool#version}
 
 ---
 
@@ -3349,7 +3490,7 @@ exclusion_until_end_of_support: IResolvable | typing.List[ContainerNodePoolMaint
 
 exclusion_until_end_of_support block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#exclusion_until_end_of_support ContainerNodePool#exclusion_until_end_of_support}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#exclusion_until_end_of_support ContainerNodePool#exclusion_until_end_of_support}
 
 ---
 
@@ -3383,7 +3524,7 @@ enabled: bool | IResolvable
 
 Whether to enable the maintenance exclusion until the end of support for this NodePool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#enabled ContainerNodePool#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#enabled ContainerNodePool#enabled}
 
 ---
 
@@ -3419,7 +3560,7 @@ auto_repair: bool | IResolvable
 
 Whether the nodes will be automatically repaired. Enabled by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#auto_repair ContainerNodePool#auto_repair}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#auto_repair ContainerNodePool#auto_repair}
 
 ---
 
@@ -3433,7 +3574,7 @@ auto_upgrade: bool | IResolvable
 
 Whether the nodes will be automatically upgraded. Enabled by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#auto_upgrade ContainerNodePool#auto_upgrade}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#auto_upgrade ContainerNodePool#auto_upgrade}
 
 ---
 
@@ -3485,7 +3626,7 @@ accelerator_network_profile: str
 
 The accelerator network profile to use for this node pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#accelerator_network_profile ContainerNodePool#accelerator_network_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#accelerator_network_profile ContainerNodePool#accelerator_network_profile}
 
 ---
 
@@ -3499,7 +3640,7 @@ additional_node_network_configs: IResolvable | typing.List[ContainerNodePoolNetw
 
 additional_node_network_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#additional_node_network_configs ContainerNodePool#additional_node_network_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#additional_node_network_configs ContainerNodePool#additional_node_network_configs}
 
 ---
 
@@ -3513,7 +3654,7 @@ additional_pod_network_configs: IResolvable | typing.List[ContainerNodePoolNetwo
 
 additional_pod_network_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#additional_pod_network_configs ContainerNodePool#additional_pod_network_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#additional_pod_network_configs ContainerNodePool#additional_pod_network_configs}
 
 ---
 
@@ -3529,7 +3670,7 @@ Whether to create a new range for pod IPs in this node pool.
 
 Defaults are provided for pod_range and pod_ipv4_cidr_block if they are not specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#create_pod_range ContainerNodePool#create_pod_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#create_pod_range ContainerNodePool#create_pod_range}
 
 ---
 
@@ -3543,7 +3684,7 @@ enable_private_nodes: bool | IResolvable
 
 Whether nodes have internal IP addresses only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#enable_private_nodes ContainerNodePool#enable_private_nodes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#enable_private_nodes ContainerNodePool#enable_private_nodes}
 
 ---
 
@@ -3557,7 +3698,7 @@ network_performance_config: ContainerNodePoolNetworkConfigNetworkPerformanceConf
 
 network_performance_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#network_performance_config ContainerNodePool#network_performance_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#network_performance_config ContainerNodePool#network_performance_config}
 
 ---
 
@@ -3571,7 +3712,7 @@ pod_cidr_overprovision_config: ContainerNodePoolNetworkConfigPodCidrOverprovisio
 
 pod_cidr_overprovision_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#pod_cidr_overprovision_config ContainerNodePool#pod_cidr_overprovision_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#pod_cidr_overprovision_config ContainerNodePool#pod_cidr_overprovision_config}
 
 ---
 
@@ -3587,7 +3728,7 @@ The IP address range for pod IPs in this node pool.
 
 Only applicable if create_pod_range is true. Set to blank to have a range chosen with the default size. Set to /netmask (e.g. /14) to have a range chosen with a specific netmask. Set to a CIDR notation (e.g. 10.96.0.0/14) to pick a specific range to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#pod_ipv4_cidr_block ContainerNodePool#pod_ipv4_cidr_block}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#pod_ipv4_cidr_block ContainerNodePool#pod_ipv4_cidr_block}
 
 ---
 
@@ -3603,7 +3744,7 @@ The ID of the secondary range for pod IPs.
 
 If create_pod_range is true, this ID is used for the new range. If create_pod_range is false, uses an existing secondary range with this ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#pod_range ContainerNodePool#pod_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#pod_range ContainerNodePool#pod_range}
 
 ---
 
@@ -3619,7 +3760,7 @@ The subnetwork name/path for the node pool.
 
 Format: subnetwork or projects/{project}/regions/{region}/subnetworks/{subnetwork}. This value may be specified via the nested network_config block (setting this attribute directly is supported for backward compatibility). Once created the node pool's subnetwork is immutable. If not set, the provider/API will choose the subnetwork (e.g. based on IP utilization) and report it here.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#subnetwork ContainerNodePool#subnetwork}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#subnetwork ContainerNodePool#subnetwork}
 
 ---
 
@@ -3655,7 +3796,7 @@ network: str
 
 Name of the VPC where the additional interface belongs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#network ContainerNodePool#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#network ContainerNodePool#network}
 
 ---
 
@@ -3669,7 +3810,7 @@ subnetwork: str
 
 Name of the subnetwork where the additional interface belongs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#subnetwork ContainerNodePool#subnetwork}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#subnetwork ContainerNodePool#subnetwork}
 
 ---
 
@@ -3707,7 +3848,7 @@ max_pods_per_node: typing.Union[int, float]
 
 The maximum number of pods per node which use this pod network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#max_pods_per_node ContainerNodePool#max_pods_per_node}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#max_pods_per_node ContainerNodePool#max_pods_per_node}
 
 ---
 
@@ -3721,7 +3862,7 @@ secondary_pod_range: str
 
 The name of the secondary range on the subnet which provides IP address for this pod range.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#secondary_pod_range ContainerNodePool#secondary_pod_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#secondary_pod_range ContainerNodePool#secondary_pod_range}
 
 ---
 
@@ -3735,7 +3876,7 @@ subnetwork: str
 
 Name of the subnetwork where the additional pod network belongs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#subnetwork ContainerNodePool#subnetwork}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#subnetwork ContainerNodePool#subnetwork}
 
 ---
 
@@ -3769,7 +3910,7 @@ total_egress_bandwidth_tier: str
 
 Specifies the total network bandwidth tier for the NodePool. [Valid values](https://cloud.google.com/kubernetes-engine/docs/reference/rest/v1/projects.locations.clusters.nodePools#NodePool.Tier) include: "TIER_1" and "TIER_UNSPECIFIED".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#total_egress_bandwidth_tier ContainerNodePool#total_egress_bandwidth_tier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#total_egress_bandwidth_tier ContainerNodePool#total_egress_bandwidth_tier}
 
 ---
 
@@ -3789,7 +3930,7 @@ containerNodePool.ContainerNodePoolNetworkConfigPodCidrOverprovisionConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePoolNetworkConfigPodCidrOverprovisionConfig.property.disabled">disabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#disabled ContainerNodePool#disabled}. |
+| <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePoolNetworkConfigPodCidrOverprovisionConfig.property.disabled">disabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#disabled ContainerNodePool#disabled}. |
 
 ---
 
@@ -3801,7 +3942,7 @@ disabled: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#disabled ContainerNodePool#disabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#disabled ContainerNodePool#disabled}.
 
 ---
 
@@ -3925,7 +4066,7 @@ advanced_machine_features: ContainerNodePoolNodeConfigAdvancedMachineFeatures
 
 advanced_machine_features block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#advanced_machine_features ContainerNodePool#advanced_machine_features}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#advanced_machine_features ContainerNodePool#advanced_machine_features}
 
 ---
 
@@ -3939,7 +4080,7 @@ boot_disk: ContainerNodePoolNodeConfigBootDisk
 
 boot_disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#boot_disk ContainerNodePool#boot_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#boot_disk ContainerNodePool#boot_disk}
 
 ---
 
@@ -3953,7 +4094,7 @@ boot_disk_kms_key: str
 
 The Customer Managed Encryption Key used to encrypt the boot disk attached to each node in the node pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#boot_disk_kms_key ContainerNodePool#boot_disk_kms_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#boot_disk_kms_key ContainerNodePool#boot_disk_kms_key}
 
 ---
 
@@ -3967,7 +4108,7 @@ confidential_nodes: ContainerNodePoolNodeConfigConfidentialNodes
 
 confidential_nodes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#confidential_nodes ContainerNodePool#confidential_nodes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#confidential_nodes ContainerNodePool#confidential_nodes}
 
 ---
 
@@ -3981,7 +4122,7 @@ containerd_config: ContainerNodePoolNodeConfigContainerdConfig
 
 containerd_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#containerd_config ContainerNodePool#containerd_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#containerd_config ContainerNodePool#containerd_config}
 
 ---
 
@@ -3995,7 +4136,7 @@ disk_size_gb: typing.Union[int, float]
 
 Size of the disk attached to each node, specified in GB. The smallest allowed disk size is 10GB.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#disk_size_gb ContainerNodePool#disk_size_gb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#disk_size_gb ContainerNodePool#disk_size_gb}
 
 ---
 
@@ -4009,7 +4150,7 @@ disk_type: str
 
 Type of the disk attached to each node. Such as pd-standard, pd-balanced or pd-ssd.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#disk_type ContainerNodePool#disk_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#disk_type ContainerNodePool#disk_type}
 
 ---
 
@@ -4023,7 +4164,7 @@ enable_confidential_storage: bool | IResolvable
 
 If enabled boot disks are configured with confidential mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#enable_confidential_storage ContainerNodePool#enable_confidential_storage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#enable_confidential_storage ContainerNodePool#enable_confidential_storage}
 
 ---
 
@@ -4037,7 +4178,7 @@ ephemeral_storage_local_ssd_config: ContainerNodePoolNodeConfigEphemeralStorageL
 
 ephemeral_storage_local_ssd_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#ephemeral_storage_local_ssd_config ContainerNodePool#ephemeral_storage_local_ssd_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#ephemeral_storage_local_ssd_config ContainerNodePool#ephemeral_storage_local_ssd_config}
 
 ---
 
@@ -4051,7 +4192,7 @@ fast_socket: ContainerNodePoolNodeConfigFastSocket
 
 fast_socket block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#fast_socket ContainerNodePool#fast_socket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#fast_socket ContainerNodePool#fast_socket}
 
 ---
 
@@ -4065,7 +4206,7 @@ flex_start: bool | IResolvable
 
 Enables Flex Start provisioning model for the node pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#flex_start ContainerNodePool#flex_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#flex_start ContainerNodePool#flex_start}
 
 ---
 
@@ -4079,7 +4220,7 @@ gcfs_config: ContainerNodePoolNodeConfigGcfsConfig
 
 gcfs_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#gcfs_config ContainerNodePool#gcfs_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#gcfs_config ContainerNodePool#gcfs_config}
 
 ---
 
@@ -4093,7 +4234,7 @@ gpudirect_strategy: str
 
 The type of GPUDirect strategy to enable on the node.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#gpudirect_strategy ContainerNodePool#gpudirect_strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#gpudirect_strategy ContainerNodePool#gpudirect_strategy}
 
 ---
 
@@ -4107,7 +4248,7 @@ guest_accelerator: IResolvable | typing.List[ContainerNodePoolNodeConfigGuestAcc
 
 guest_accelerator block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#guest_accelerator ContainerNodePool#guest_accelerator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#guest_accelerator ContainerNodePool#guest_accelerator}
 
 ---
 
@@ -4121,7 +4262,7 @@ gvnic: ContainerNodePoolNodeConfigGvnic
 
 gvnic block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#gvnic ContainerNodePool#gvnic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#gvnic ContainerNodePool#gvnic}
 
 ---
 
@@ -4137,7 +4278,7 @@ The image type to use for this node.
 
 Note that for a given image type, the latest version of it will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#image_type ContainerNodePool#image_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#image_type ContainerNodePool#image_type}
 
 ---
 
@@ -4151,7 +4292,7 @@ kubelet_config: ContainerNodePoolNodeConfigKubeletConfig
 
 kubelet_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#kubelet_config ContainerNodePool#kubelet_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#kubelet_config ContainerNodePool#kubelet_config}
 
 ---
 
@@ -4167,7 +4308,7 @@ The map of Kubernetes labels (key/value pairs) to be applied to each node.
 
 These will added in addition to any default label(s) that Kubernetes may apply to the node.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#labels ContainerNodePool#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#labels ContainerNodePool#labels}
 
 ---
 
@@ -4181,7 +4322,7 @@ linux_node_config: ContainerNodePoolNodeConfigLinuxNodeConfig
 
 linux_node_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#linux_node_config ContainerNodePool#linux_node_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#linux_node_config ContainerNodePool#linux_node_config}
 
 ---
 
@@ -4195,7 +4336,7 @@ local_nvme_ssd_block_config: ContainerNodePoolNodeConfigLocalNvmeSsdBlockConfig
 
 local_nvme_ssd_block_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#local_nvme_ssd_block_config ContainerNodePool#local_nvme_ssd_block_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#local_nvme_ssd_block_config ContainerNodePool#local_nvme_ssd_block_config}
 
 ---
 
@@ -4209,7 +4350,7 @@ local_ssd_count: typing.Union[int, float]
 
 The number of local SSD disks to be attached to the node.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#local_ssd_count ContainerNodePool#local_ssd_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#local_ssd_count ContainerNodePool#local_ssd_count}
 
 ---
 
@@ -4223,7 +4364,7 @@ local_ssd_encryption_mode: str
 
 LocalSsdEncryptionMode specified the method used for encrypting the local SSDs attached to the node.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#local_ssd_encryption_mode ContainerNodePool#local_ssd_encryption_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#local_ssd_encryption_mode ContainerNodePool#local_ssd_encryption_mode}
 
 ---
 
@@ -4239,7 +4380,7 @@ Type of logging agent that is used as the default value for node pools in the cl
 
 Valid values include DEFAULT and MAX_THROUGHPUT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#logging_variant ContainerNodePool#logging_variant}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#logging_variant ContainerNodePool#logging_variant}
 
 ---
 
@@ -4253,7 +4394,7 @@ machine_type: str
 
 The name of a Google Compute Engine machine type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#machine_type ContainerNodePool#machine_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#machine_type ContainerNodePool#machine_type}
 
 ---
 
@@ -4267,7 +4408,7 @@ max_run_duration: str
 
 The runtime of each node in the node pool in seconds, terminated by 's'. Example: "3600s".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#max_run_duration ContainerNodePool#max_run_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#max_run_duration ContainerNodePool#max_run_duration}
 
 ---
 
@@ -4281,7 +4422,7 @@ metadata: typing.Mapping[str]
 
 The metadata key/value pairs assigned to instances in the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#metadata ContainerNodePool#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#metadata ContainerNodePool#metadata}
 
 ---
 
@@ -4297,7 +4438,7 @@ Minimum CPU platform to be used by this instance.
 
 The instance may be scheduled on the specified or newer CPU platform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#min_cpu_platform ContainerNodePool#min_cpu_platform}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#min_cpu_platform ContainerNodePool#min_cpu_platform}
 
 ---
 
@@ -4313,7 +4454,7 @@ Setting this field will assign instances of this pool to run on the specified no
 
 This is useful for running workloads on sole tenant nodes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#node_group ContainerNodePool#node_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#node_group ContainerNodePool#node_group}
 
 ---
 
@@ -4327,7 +4468,7 @@ node_image_config: IResolvable | typing.List[ContainerNodePoolNodeConfigNodeImag
 
 node_image_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#node_image_config ContainerNodePool#node_image_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#node_image_config ContainerNodePool#node_image_config}
 
 ---
 
@@ -4341,7 +4482,7 @@ oauth_scopes: typing.List[str]
 
 The set of Google API scopes to be made available on all of the node VMs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#oauth_scopes ContainerNodePool#oauth_scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#oauth_scopes ContainerNodePool#oauth_scopes}
 
 ---
 
@@ -4355,7 +4496,7 @@ preemptible: bool | IResolvable
 
 Whether the nodes are created as preemptible VM instances.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#preemptible ContainerNodePool#preemptible}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#preemptible ContainerNodePool#preemptible}
 
 ---
 
@@ -4369,7 +4510,7 @@ reservation_affinity: ContainerNodePoolNodeConfigReservationAffinity
 
 reservation_affinity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#reservation_affinity ContainerNodePool#reservation_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#reservation_affinity ContainerNodePool#reservation_affinity}
 
 ---
 
@@ -4383,7 +4524,7 @@ resource_labels: typing.Mapping[str]
 
 The GCE resource labels (a map of key/value pairs) to be applied to the node pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#resource_labels ContainerNodePool#resource_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#resource_labels ContainerNodePool#resource_labels}
 
 ---
 
@@ -4399,7 +4540,7 @@ A map of resource manager tags.
 
 Resource manager tag keys and values have the same definition as resource manager tags. Keys must be in the format tagKeys/{tag_key_id}, and values are in the format tagValues/456. The field is ignored (both PUT & PATCH) when empty.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#resource_manager_tags ContainerNodePool#resource_manager_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#resource_manager_tags ContainerNodePool#resource_manager_tags}
 
 ---
 
@@ -4413,7 +4554,7 @@ sandbox_config: ContainerNodePoolNodeConfigSandboxConfig
 
 sandbox_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#sandbox_config ContainerNodePool#sandbox_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#sandbox_config ContainerNodePool#sandbox_config}
 
 ---
 
@@ -4427,7 +4568,7 @@ secondary_boot_disks: IResolvable | typing.List[ContainerNodePoolNodeConfigSecon
 
 secondary_boot_disks block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#secondary_boot_disks ContainerNodePool#secondary_boot_disks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#secondary_boot_disks ContainerNodePool#secondary_boot_disks}
 
 ---
 
@@ -4441,7 +4582,7 @@ service_account: str
 
 The Google Cloud Platform Service Account to be used by the node VMs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#service_account ContainerNodePool#service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#service_account ContainerNodePool#service_account}
 
 ---
 
@@ -4455,7 +4596,7 @@ shielded_instance_config: ContainerNodePoolNodeConfigShieldedInstanceConfig
 
 shielded_instance_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#shielded_instance_config ContainerNodePool#shielded_instance_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#shielded_instance_config ContainerNodePool#shielded_instance_config}
 
 ---
 
@@ -4469,7 +4610,7 @@ sole_tenant_config: ContainerNodePoolNodeConfigSoleTenantConfig
 
 sole_tenant_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#sole_tenant_config ContainerNodePool#sole_tenant_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#sole_tenant_config ContainerNodePool#sole_tenant_config}
 
 ---
 
@@ -4483,7 +4624,7 @@ spot: bool | IResolvable
 
 Whether the nodes are created as spot VM instances.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#spot ContainerNodePool#spot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#spot ContainerNodePool#spot}
 
 ---
 
@@ -4497,7 +4638,7 @@ storage_pools: typing.List[str]
 
 The list of Storage Pools where boot disks are provisioned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#storage_pools ContainerNodePool#storage_pools}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#storage_pools ContainerNodePool#storage_pools}
 
 ---
 
@@ -4511,7 +4652,7 @@ tags: typing.List[str]
 
 The list of instance tags applied to all nodes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#tags ContainerNodePool#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#tags ContainerNodePool#tags}
 
 ---
 
@@ -4525,7 +4666,7 @@ taint: IResolvable | typing.List[ContainerNodePoolNodeConfigTaint]
 
 taint block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#taint ContainerNodePool#taint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#taint ContainerNodePool#taint}
 
 ---
 
@@ -4539,7 +4680,7 @@ taint_config: ContainerNodePoolNodeConfigTaintConfig
 
 taint_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#taint_config ContainerNodePool#taint_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#taint_config ContainerNodePool#taint_config}
 
 ---
 
@@ -4553,7 +4694,7 @@ windows_node_config: ContainerNodePoolNodeConfigWindowsNodeConfig
 
 windows_node_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#windows_node_config ContainerNodePool#windows_node_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#windows_node_config ContainerNodePool#windows_node_config}
 
 ---
 
@@ -4567,7 +4708,7 @@ workload_metadata_config: ContainerNodePoolNodeConfigWorkloadMetadataConfig
 
 workload_metadata_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#workload_metadata_config ContainerNodePool#workload_metadata_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#workload_metadata_config ContainerNodePool#workload_metadata_config}
 
 ---
 
@@ -4607,7 +4748,7 @@ The number of threads per physical core.
 
 To disable simultaneous multithreading (SMT) set this to 1. If unset, the maximum number of threads supported per core by the underlying processor is assumed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#threads_per_core ContainerNodePool#threads_per_core}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#threads_per_core ContainerNodePool#threads_per_core}
 
 ---
 
@@ -4621,7 +4762,7 @@ enable_nested_virtualization: bool | IResolvable
 
 Whether the node should have nested virtualization enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#enable_nested_virtualization ContainerNodePool#enable_nested_virtualization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#enable_nested_virtualization ContainerNodePool#enable_nested_virtualization}
 
 ---
 
@@ -4637,7 +4778,7 @@ Level of Performance Monitoring Unit (PMU) requested.
 
 If unset, no access to the PMU is assumed. For existing node pools with no PMU, setting STANDARD may not produce a diff; recreate the node pool to apply it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#performance_monitoring_unit ContainerNodePool#performance_monitoring_unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#performance_monitoring_unit ContainerNodePool#performance_monitoring_unit}
 
 ---
 
@@ -4677,7 +4818,7 @@ disk_type: str
 
 Type of the disk attached to each node. Such as pd-standard, pd-balanced or pd-ssd.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#disk_type ContainerNodePool#disk_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#disk_type ContainerNodePool#disk_type}
 
 ---
 
@@ -4691,7 +4832,7 @@ provisioned_iops: typing.Union[int, float]
 
 Configured IOPs provisioning. Only valid with disk type hyperdisk-balanced.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#provisioned_iops ContainerNodePool#provisioned_iops}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#provisioned_iops ContainerNodePool#provisioned_iops}
 
 ---
 
@@ -4705,7 +4846,7 @@ provisioned_throughput: typing.Union[int, float]
 
 Configured throughput provisioning. Only valid with disk type hyperdisk-balanced.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#provisioned_throughput ContainerNodePool#provisioned_throughput}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#provisioned_throughput ContainerNodePool#provisioned_throughput}
 
 ---
 
@@ -4719,7 +4860,7 @@ size_gb: typing.Union[int, float]
 
 Size of the disk attached to each node, specified in GB. The smallest allowed disk size is 10GB.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#size_gb ContainerNodePool#size_gb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#size_gb ContainerNodePool#size_gb}
 
 ---
 
@@ -4755,7 +4896,7 @@ enabled: bool | IResolvable
 
 Whether Confidential Nodes feature is enabled for all nodes in this pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#enabled ContainerNodePool#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#enabled ContainerNodePool#enabled}
 
 ---
 
@@ -4769,7 +4910,7 @@ confidential_instance_type: str
 
 Defines the type of technology used by the confidential node.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#confidential_instance_type ContainerNodePool#confidential_instance_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#confidential_instance_type ContainerNodePool#confidential_instance_type}
 
 ---
 
@@ -4807,7 +4948,7 @@ private_registry_access_config: ContainerNodePoolNodeConfigContainerdConfigPriva
 
 private_registry_access_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#private_registry_access_config ContainerNodePool#private_registry_access_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#private_registry_access_config ContainerNodePool#private_registry_access_config}
 
 ---
 
@@ -4821,7 +4962,7 @@ registry_hosts: IResolvable | typing.List[ContainerNodePoolNodeConfigContainerdC
 
 registry_hosts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#registry_hosts ContainerNodePool#registry_hosts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#registry_hosts ContainerNodePool#registry_hosts}
 
 ---
 
@@ -4835,7 +4976,7 @@ writable_cgroups: ContainerNodePoolNodeConfigContainerdConfigWritableCgroups
 
 writable_cgroups block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#writable_cgroups ContainerNodePool#writable_cgroups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#writable_cgroups ContainerNodePool#writable_cgroups}
 
 ---
 
@@ -4871,7 +5012,7 @@ enabled: bool | IResolvable
 
 Whether or not private registries are configured.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#enabled ContainerNodePool#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#enabled ContainerNodePool#enabled}
 
 ---
 
@@ -4885,7 +5026,7 @@ certificate_authority_domain_config: IResolvable | typing.List[ContainerNodePool
 
 certificate_authority_domain_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#certificate_authority_domain_config ContainerNodePool#certificate_authority_domain_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#certificate_authority_domain_config ContainerNodePool#certificate_authority_domain_config}
 
 ---
 
@@ -4921,7 +5062,7 @@ fqdns: typing.List[str]
 
 List of fully-qualified-domain-names. IPv4s and port specification are supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#fqdns ContainerNodePool#fqdns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#fqdns ContainerNodePool#fqdns}
 
 ---
 
@@ -4935,7 +5076,7 @@ gcp_secret_manager_certificate_config: ContainerNodePoolNodeConfigContainerdConf
 
 gcp_secret_manager_certificate_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#gcp_secret_manager_certificate_config ContainerNodePool#gcp_secret_manager_certificate_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#gcp_secret_manager_certificate_config ContainerNodePool#gcp_secret_manager_certificate_config}
 
 ---
 
@@ -4969,7 +5110,7 @@ secret_uri: str
 
 URI for the secret that hosts a certificate. Must be in the format 'projects/PROJECT_NUM/secrets/SECRET_NAME/versions/VERSION_OR_LATEST'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#secret_uri ContainerNodePool#secret_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#secret_uri ContainerNodePool#secret_uri}
 
 ---
 
@@ -5005,7 +5146,7 @@ server: str
 
 Defines the host name of the registry server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#server ContainerNodePool#server}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#server ContainerNodePool#server}
 
 ---
 
@@ -5019,7 +5160,7 @@ hosts: IResolvable | typing.List[ContainerNodePoolNodeConfigContainerdConfigRegi
 
 hosts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#hosts ContainerNodePool#hosts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#hosts ContainerNodePool#hosts}
 
 ---
 
@@ -5065,7 +5206,7 @@ host: str
 
 Configures the registry host/mirror.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#host ContainerNodePool#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#host ContainerNodePool#host}
 
 ---
 
@@ -5079,7 +5220,7 @@ ca: IResolvable | typing.List[ContainerNodePoolNodeConfigContainerdConfigRegistr
 
 ca block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#ca ContainerNodePool#ca}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#ca ContainerNodePool#ca}
 
 ---
 
@@ -5093,7 +5234,7 @@ capabilities: typing.List[str]
 
 Represent the capabilities of the registry host, specifying what operations a host is capable of performing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#capabilities ContainerNodePool#capabilities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#capabilities ContainerNodePool#capabilities}
 
 ---
 
@@ -5107,7 +5248,7 @@ client: IResolvable | typing.List[ContainerNodePoolNodeConfigContainerdConfigReg
 
 client block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#client ContainerNodePool#client}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#client ContainerNodePool#client}
 
 ---
 
@@ -5121,7 +5262,7 @@ dial_timeout: str
 
 Specifies the maximum duration allowed for a connection attempt to complete.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#dial_timeout ContainerNodePool#dial_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#dial_timeout ContainerNodePool#dial_timeout}
 
 ---
 
@@ -5135,7 +5276,7 @@ header: IResolvable | typing.List[ContainerNodePoolNodeConfigContainerdConfigReg
 
 header block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#header ContainerNodePool#header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#header ContainerNodePool#header}
 
 ---
 
@@ -5149,7 +5290,7 @@ override_path: bool | IResolvable
 
 Indicate the host's API root endpoint is defined in the URL path rather than by the API specification.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#override_path ContainerNodePool#override_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#override_path ContainerNodePool#override_path}
 
 ---
 
@@ -5183,7 +5324,7 @@ gcp_secret_manager_secret_uri: str
 
 URI for the Secret Manager secret that hosts the certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#gcp_secret_manager_secret_uri ContainerNodePool#gcp_secret_manager_secret_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#gcp_secret_manager_secret_uri ContainerNodePool#gcp_secret_manager_secret_uri}
 
 ---
 
@@ -5219,7 +5360,7 @@ cert: ContainerNodePoolNodeConfigContainerdConfigRegistryHostsHostsClientCert
 
 cert block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#cert ContainerNodePool#cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#cert ContainerNodePool#cert}
 
 ---
 
@@ -5233,7 +5374,7 @@ key: ContainerNodePoolNodeConfigContainerdConfigRegistryHostsHostsClientKey
 
 key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#key ContainerNodePool#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#key ContainerNodePool#key}
 
 ---
 
@@ -5267,7 +5408,7 @@ gcp_secret_manager_secret_uri: str
 
 URI for the Secret Manager secret that hosts the client certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#gcp_secret_manager_secret_uri ContainerNodePool#gcp_secret_manager_secret_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#gcp_secret_manager_secret_uri ContainerNodePool#gcp_secret_manager_secret_uri}
 
 ---
 
@@ -5301,7 +5442,7 @@ gcp_secret_manager_secret_uri: str
 
 URI for the Secret Manager secret that hosts the private key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#gcp_secret_manager_secret_uri ContainerNodePool#gcp_secret_manager_secret_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#gcp_secret_manager_secret_uri ContainerNodePool#gcp_secret_manager_secret_uri}
 
 ---
 
@@ -5337,7 +5478,7 @@ key: str
 
 Configures the header key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#key ContainerNodePool#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#key ContainerNodePool#key}
 
 ---
 
@@ -5351,7 +5492,7 @@ value: typing.List[str]
 
 Configures the header value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#value ContainerNodePool#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#value ContainerNodePool#value}
 
 ---
 
@@ -5385,7 +5526,7 @@ enabled: bool | IResolvable
 
 Whether writable cgroups are enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#enabled ContainerNodePool#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#enabled ContainerNodePool#enabled}
 
 ---
 
@@ -5434,7 +5575,7 @@ Number of local SSDs to use to back ephemeral storage.
 
 Uses NVMe interfaces. Each local SSD must be 375 or 3000 GB in size, and all local SSDs must share the same size.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#local_ssd_count ContainerNodePool#local_ssd_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#local_ssd_count ContainerNodePool#local_ssd_count}
 
 ---
 
@@ -5448,7 +5589,7 @@ data_cache_count: typing.Union[int, float]
 
 Number of local SSDs to be utilized for GKE Data Cache. Uses NVMe interfaces.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#data_cache_count ContainerNodePool#data_cache_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#data_cache_count ContainerNodePool#data_cache_count}
 
 ---
 
@@ -5482,7 +5623,7 @@ enabled: bool | IResolvable
 
 Whether or not NCCL Fast Socket is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#enabled ContainerNodePool#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#enabled ContainerNodePool#enabled}
 
 ---
 
@@ -5516,7 +5657,7 @@ enabled: bool | IResolvable
 
 Whether or not GCFS is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#enabled ContainerNodePool#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#enabled ContainerNodePool#enabled}
 
 ---
 
@@ -5558,7 +5699,7 @@ count: typing.Union[int, float]
 
 The number of the accelerator cards exposed to an instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#count ContainerNodePool#count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#count ContainerNodePool#count}
 
 ---
 
@@ -5572,7 +5713,7 @@ type: str
 
 The accelerator type resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#type ContainerNodePool#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#type ContainerNodePool#type}
 
 ---
 
@@ -5586,7 +5727,7 @@ gpu_driver_installation_config: ContainerNodePoolNodeConfigGuestAcceleratorGpuDr
 
 gpu_driver_installation_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#gpu_driver_installation_config ContainerNodePool#gpu_driver_installation_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#gpu_driver_installation_config ContainerNodePool#gpu_driver_installation_config}
 
 ---
 
@@ -5600,7 +5741,7 @@ gpu_partition_size: str
 
 Size of partitions to create on the GPU. Valid values are described in the NVIDIA mig user guide (https://docs.nvidia.com/datacenter/tesla/mig-user-guide/#partitioning).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#gpu_partition_size ContainerNodePool#gpu_partition_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#gpu_partition_size ContainerNodePool#gpu_partition_size}
 
 ---
 
@@ -5614,7 +5755,7 @@ gpu_sharing_config: ContainerNodePoolNodeConfigGuestAcceleratorGpuSharingConfig
 
 gpu_sharing_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#gpu_sharing_config ContainerNodePool#gpu_sharing_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#gpu_sharing_config ContainerNodePool#gpu_sharing_config}
 
 ---
 
@@ -5648,7 +5789,7 @@ gpu_driver_version: str
 
 Mode for how the GPU driver is installed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#gpu_driver_version ContainerNodePool#gpu_driver_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#gpu_driver_version ContainerNodePool#gpu_driver_version}
 
 ---
 
@@ -5686,7 +5827,7 @@ The type of GPU sharing strategy to enable on the GPU node.
 
 Possible values are described in the API package (https://pkg.go.dev/google.golang.org/api/container/v1#GPUSharingConfig)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#gpu_sharing_strategy ContainerNodePool#gpu_sharing_strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#gpu_sharing_strategy ContainerNodePool#gpu_sharing_strategy}
 
 ---
 
@@ -5700,7 +5841,7 @@ max_shared_clients_per_gpu: typing.Union[int, float]
 
 The maximum number of containers that can share a GPU.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#max_shared_clients_per_gpu ContainerNodePool#max_shared_clients_per_gpu}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#max_shared_clients_per_gpu ContainerNodePool#max_shared_clients_per_gpu}
 
 ---
 
@@ -5734,7 +5875,7 @@ enabled: bool | IResolvable
 
 Whether or not gvnic is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#enabled ContainerNodePool#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#enabled ContainerNodePool#enabled}
 
 ---
 
@@ -5812,7 +5953,7 @@ allowed_unsafe_sysctls: typing.List[str]
 
 Defines a comma-separated allowlist of unsafe sysctls or sysctl patterns which can be set on the Pods.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#allowed_unsafe_sysctls ContainerNodePool#allowed_unsafe_sysctls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#allowed_unsafe_sysctls ContainerNodePool#allowed_unsafe_sysctls}
 
 ---
 
@@ -5826,7 +5967,7 @@ container_log_max_files: typing.Union[int, float]
 
 Defines the maximum number of container log files that can be present for a container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#container_log_max_files ContainerNodePool#container_log_max_files}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#container_log_max_files ContainerNodePool#container_log_max_files}
 
 ---
 
@@ -5840,7 +5981,7 @@ container_log_max_size: str
 
 Defines the maximum size of the container log file before it is rotated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#container_log_max_size ContainerNodePool#container_log_max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#container_log_max_size ContainerNodePool#container_log_max_size}
 
 ---
 
@@ -5854,7 +5995,7 @@ cpu_cfs_quota: bool | IResolvable
 
 Enable CPU CFS quota enforcement for containers that specify CPU limits.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#cpu_cfs_quota ContainerNodePool#cpu_cfs_quota}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#cpu_cfs_quota ContainerNodePool#cpu_cfs_quota}
 
 ---
 
@@ -5868,7 +6009,7 @@ cpu_cfs_quota_period: str
 
 Set the CPU CFS quota period value 'cpu.cfs_period_us'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#cpu_cfs_quota_period ContainerNodePool#cpu_cfs_quota_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#cpu_cfs_quota_period ContainerNodePool#cpu_cfs_quota_period}
 
 ---
 
@@ -5882,7 +6023,7 @@ cpu_manager_policy: str
 
 Control the CPU management policy on the node.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#cpu_manager_policy ContainerNodePool#cpu_manager_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#cpu_manager_policy ContainerNodePool#cpu_manager_policy}
 
 ---
 
@@ -5896,7 +6037,7 @@ crash_loop_back_off: ContainerNodePoolNodeConfigKubeletConfigCrashLoopBackOff
 
 crash_loop_back_off block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#crash_loop_back_off ContainerNodePool#crash_loop_back_off}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#crash_loop_back_off ContainerNodePool#crash_loop_back_off}
 
 ---
 
@@ -5910,7 +6051,7 @@ eviction_max_pod_grace_period_seconds: typing.Union[int, float]
 
 Defines the maximum allowed grace period (in seconds) to use when terminating pods in response to a soft eviction threshold being met.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#eviction_max_pod_grace_period_seconds ContainerNodePool#eviction_max_pod_grace_period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#eviction_max_pod_grace_period_seconds ContainerNodePool#eviction_max_pod_grace_period_seconds}
 
 ---
 
@@ -5924,7 +6065,7 @@ eviction_minimum_reclaim: ContainerNodePoolNodeConfigKubeletConfigEvictionMinimu
 
 eviction_minimum_reclaim block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#eviction_minimum_reclaim ContainerNodePool#eviction_minimum_reclaim}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#eviction_minimum_reclaim ContainerNodePool#eviction_minimum_reclaim}
 
 ---
 
@@ -5938,7 +6079,7 @@ eviction_soft: ContainerNodePoolNodeConfigKubeletConfigEvictionSoft
 
 eviction_soft block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#eviction_soft ContainerNodePool#eviction_soft}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#eviction_soft ContainerNodePool#eviction_soft}
 
 ---
 
@@ -5952,7 +6093,7 @@ eviction_soft_grace_period: ContainerNodePoolNodeConfigKubeletConfigEvictionSoft
 
 eviction_soft_grace_period block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#eviction_soft_grace_period ContainerNodePool#eviction_soft_grace_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#eviction_soft_grace_period ContainerNodePool#eviction_soft_grace_period}
 
 ---
 
@@ -5966,7 +6107,7 @@ image_gc_high_threshold_percent: typing.Union[int, float]
 
 Defines the percent of disk usage after which image garbage collection is always run.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#image_gc_high_threshold_percent ContainerNodePool#image_gc_high_threshold_percent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#image_gc_high_threshold_percent ContainerNodePool#image_gc_high_threshold_percent}
 
 ---
 
@@ -5982,7 +6123,7 @@ Defines the percent of disk usage before which image garbage collection is never
 
 Lowest disk usage to garbage collect to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#image_gc_low_threshold_percent ContainerNodePool#image_gc_low_threshold_percent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#image_gc_low_threshold_percent ContainerNodePool#image_gc_low_threshold_percent}
 
 ---
 
@@ -5996,7 +6137,7 @@ image_maximum_gc_age: str
 
 Defines the maximum age an image can be unused before it is garbage collected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#image_maximum_gc_age ContainerNodePool#image_maximum_gc_age}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#image_maximum_gc_age ContainerNodePool#image_maximum_gc_age}
 
 ---
 
@@ -6010,7 +6151,7 @@ image_minimum_gc_age: str
 
 Defines the minimum age for an unused image before it is garbage collected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#image_minimum_gc_age ContainerNodePool#image_minimum_gc_age}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#image_minimum_gc_age ContainerNodePool#image_minimum_gc_age}
 
 ---
 
@@ -6026,7 +6167,7 @@ Controls whether the kubelet read-only port is enabled.
 
 It is strongly recommended to set this to `FALSE`. Possible values: `TRUE`, `FALSE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#insecure_kubelet_readonly_port_enabled ContainerNodePool#insecure_kubelet_readonly_port_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#insecure_kubelet_readonly_port_enabled ContainerNodePool#insecure_kubelet_readonly_port_enabled}
 
 ---
 
@@ -6040,7 +6181,7 @@ max_parallel_image_pulls: typing.Union[int, float]
 
 Set the maximum number of image pulls in parallel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#max_parallel_image_pulls ContainerNodePool#max_parallel_image_pulls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#max_parallel_image_pulls ContainerNodePool#max_parallel_image_pulls}
 
 ---
 
@@ -6054,7 +6195,7 @@ memory_manager: ContainerNodePoolNodeConfigKubeletConfigMemoryManager
 
 memory_manager block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#memory_manager ContainerNodePool#memory_manager}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#memory_manager ContainerNodePool#memory_manager}
 
 ---
 
@@ -6068,7 +6209,7 @@ pod_pids_limit: typing.Union[int, float]
 
 Controls the maximum number of processes allowed to run in a pod.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#pod_pids_limit ContainerNodePool#pod_pids_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#pod_pids_limit ContainerNodePool#pod_pids_limit}
 
 ---
 
@@ -6082,7 +6223,7 @@ shutdown_grace_period_critical_pods_seconds: typing.Union[int, float]
 
 Controls the portion of total grace period (in seconds) that is specifically reserved for terminating critical pods.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#shutdown_grace_period_critical_pods_seconds ContainerNodePool#shutdown_grace_period_critical_pods_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#shutdown_grace_period_critical_pods_seconds ContainerNodePool#shutdown_grace_period_critical_pods_seconds}
 
 ---
 
@@ -6096,7 +6237,7 @@ shutdown_grace_period_seconds: typing.Union[int, float]
 
 Controls the total duration of time (in seconds) the node delays shutdown.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#shutdown_grace_period_seconds ContainerNodePool#shutdown_grace_period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#shutdown_grace_period_seconds ContainerNodePool#shutdown_grace_period_seconds}
 
 ---
 
@@ -6110,7 +6251,7 @@ single_process_oom_kill: bool | IResolvable
 
 Defines whether to enable single process OOM killer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#single_process_oom_kill ContainerNodePool#single_process_oom_kill}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#single_process_oom_kill ContainerNodePool#single_process_oom_kill}
 
 ---
 
@@ -6124,7 +6265,7 @@ topology_manager: ContainerNodePoolNodeConfigKubeletConfigTopologyManager
 
 topology_manager block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#topology_manager ContainerNodePool#topology_manager}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#topology_manager ContainerNodePool#topology_manager}
 
 ---
 
@@ -6158,7 +6299,7 @@ max_container_restart_period: str
 
 The maximum duration the backoff delay can accrue to for container restarts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#max_container_restart_period ContainerNodePool#max_container_restart_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#max_container_restart_period ContainerNodePool#max_container_restart_period}
 
 ---
 
@@ -6202,7 +6343,7 @@ imagefs_available: str
 
 Defines percentage of minimum reclaim for imagefs.available.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#imagefs_available ContainerNodePool#imagefs_available}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#imagefs_available ContainerNodePool#imagefs_available}
 
 ---
 
@@ -6216,7 +6357,7 @@ imagefs_inodes_free: str
 
 Defines percentage of minimum reclaim for imagefs.inodesFree.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#imagefs_inodes_free ContainerNodePool#imagefs_inodes_free}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#imagefs_inodes_free ContainerNodePool#imagefs_inodes_free}
 
 ---
 
@@ -6230,7 +6371,7 @@ memory_available: str
 
 Defines percentage of minimum reclaim for memory.available.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#memory_available ContainerNodePool#memory_available}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#memory_available ContainerNodePool#memory_available}
 
 ---
 
@@ -6244,7 +6385,7 @@ nodefs_available: str
 
 Defines percentage of minimum reclaim for nodefs.available.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#nodefs_available ContainerNodePool#nodefs_available}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#nodefs_available ContainerNodePool#nodefs_available}
 
 ---
 
@@ -6258,7 +6399,7 @@ nodefs_inodes_free: str
 
 Defines percentage of minimum reclaim for nodefs.inodesFree.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#nodefs_inodes_free ContainerNodePool#nodefs_inodes_free}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#nodefs_inodes_free ContainerNodePool#nodefs_inodes_free}
 
 ---
 
@@ -6272,7 +6413,7 @@ pid_available: str
 
 Defines percentage of minimum reclaim for pid.available.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#pid_available ContainerNodePool#pid_available}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#pid_available ContainerNodePool#pid_available}
 
 ---
 
@@ -6316,7 +6457,7 @@ imagefs_available: str
 
 Defines percentage of soft eviction threshold for imagefs.available.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#imagefs_available ContainerNodePool#imagefs_available}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#imagefs_available ContainerNodePool#imagefs_available}
 
 ---
 
@@ -6330,7 +6471,7 @@ imagefs_inodes_free: str
 
 Defines percentage of soft eviction threshold for imagefs.inodesFree.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#imagefs_inodes_free ContainerNodePool#imagefs_inodes_free}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#imagefs_inodes_free ContainerNodePool#imagefs_inodes_free}
 
 ---
 
@@ -6344,7 +6485,7 @@ memory_available: str
 
 Defines quantity of soft eviction threshold for memory.available.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#memory_available ContainerNodePool#memory_available}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#memory_available ContainerNodePool#memory_available}
 
 ---
 
@@ -6358,7 +6499,7 @@ nodefs_available: str
 
 Defines percentage of soft eviction threshold for nodefs.available.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#nodefs_available ContainerNodePool#nodefs_available}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#nodefs_available ContainerNodePool#nodefs_available}
 
 ---
 
@@ -6372,7 +6513,7 @@ nodefs_inodes_free: str
 
 Defines percentage of soft eviction threshold for nodefs.inodesFree.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#nodefs_inodes_free ContainerNodePool#nodefs_inodes_free}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#nodefs_inodes_free ContainerNodePool#nodefs_inodes_free}
 
 ---
 
@@ -6386,7 +6527,7 @@ pid_available: str
 
 Defines percentage of soft eviction threshold for pid.available.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#pid_available ContainerNodePool#pid_available}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#pid_available ContainerNodePool#pid_available}
 
 ---
 
@@ -6430,7 +6571,7 @@ imagefs_available: str
 
 Defines grace period for the imagefs.available soft eviction threshold.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#imagefs_available ContainerNodePool#imagefs_available}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#imagefs_available ContainerNodePool#imagefs_available}
 
 ---
 
@@ -6444,7 +6585,7 @@ imagefs_inodes_free: str
 
 Defines grace period for the imagefs.inodesFree soft eviction threshold.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#imagefs_inodes_free ContainerNodePool#imagefs_inodes_free}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#imagefs_inodes_free ContainerNodePool#imagefs_inodes_free}
 
 ---
 
@@ -6458,7 +6599,7 @@ memory_available: str
 
 Defines grace period for the memory.available soft eviction threshold.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#memory_available ContainerNodePool#memory_available}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#memory_available ContainerNodePool#memory_available}
 
 ---
 
@@ -6472,7 +6613,7 @@ nodefs_available: str
 
 Defines grace period for the nodefs.available soft eviction threshold.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#nodefs_available ContainerNodePool#nodefs_available}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#nodefs_available ContainerNodePool#nodefs_available}
 
 ---
 
@@ -6486,7 +6627,7 @@ nodefs_inodes_free: str
 
 Defines grace period for the nodefs.inodesFree soft eviction threshold.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#nodefs_inodes_free ContainerNodePool#nodefs_inodes_free}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#nodefs_inodes_free ContainerNodePool#nodefs_inodes_free}
 
 ---
 
@@ -6500,7 +6641,7 @@ pid_available: str
 
 Defines grace period for the pid.available soft eviction threshold.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#pid_available ContainerNodePool#pid_available}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#pid_available ContainerNodePool#pid_available}
 
 ---
 
@@ -6536,7 +6677,7 @@ The Memory Manager policy to use.
 
 This policy guides how memory and hugepages are allocated and managed for pods on the node, influencing NUMA affinity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#policy ContainerNodePool#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#policy ContainerNodePool#policy}
 
 ---
 
@@ -6572,7 +6713,7 @@ policy: str
 
 The Topology Manager policy to use. This policy dictates how resource alignment is handled on the node.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#policy ContainerNodePool#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#policy ContainerNodePool#policy}
 
 ---
 
@@ -6588,7 +6729,7 @@ The Topology Manager scope, defining the granularity at which policy decisions a
 
 Valid values are "container" (resources are aligned per container within a pod) or "pod" (resources are aligned for the entire pod).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#scope ContainerNodePool#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#scope ContainerNodePool#scope}
 
 ---
 
@@ -6638,7 +6779,7 @@ accurate_time_config: ContainerNodePoolNodeConfigLinuxNodeConfigAccurateTimeConf
 
 accurate_time_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#accurate_time_config ContainerNodePool#accurate_time_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#accurate_time_config ContainerNodePool#accurate_time_config}
 
 ---
 
@@ -6652,7 +6793,7 @@ cgroup_mode: str
 
 cgroupMode specifies the cgroup mode to be used on the node.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#cgroup_mode ContainerNodePool#cgroup_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#cgroup_mode ContainerNodePool#cgroup_mode}
 
 ---
 
@@ -6666,7 +6807,7 @@ custom_node_init: ContainerNodePoolNodeConfigLinuxNodeConfigCustomNodeInit
 
 custom_node_init block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#custom_node_init ContainerNodePool#custom_node_init}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#custom_node_init ContainerNodePool#custom_node_init}
 
 ---
 
@@ -6680,7 +6821,7 @@ hugepages_config: ContainerNodePoolNodeConfigLinuxNodeConfigHugepagesConfig
 
 hugepages_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#hugepages_config ContainerNodePool#hugepages_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#hugepages_config ContainerNodePool#hugepages_config}
 
 ---
 
@@ -6694,7 +6835,7 @@ node_kernel_module_loading: ContainerNodePoolNodeConfigLinuxNodeConfigNodeKernel
 
 node_kernel_module_loading block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#node_kernel_module_loading ContainerNodePool#node_kernel_module_loading}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#node_kernel_module_loading ContainerNodePool#node_kernel_module_loading}
 
 ---
 
@@ -6708,7 +6849,7 @@ swap_config: ContainerNodePoolNodeConfigLinuxNodeConfigSwapConfig
 
 swap_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#swap_config ContainerNodePool#swap_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#swap_config ContainerNodePool#swap_config}
 
 ---
 
@@ -6722,7 +6863,7 @@ sysctls: typing.Mapping[str]
 
 The Linux kernel parameters to be applied to the nodes and all pods running on the nodes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#sysctls ContainerNodePool#sysctls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#sysctls ContainerNodePool#sysctls}
 
 ---
 
@@ -6736,7 +6877,7 @@ transparent_hugepage_defrag: str
 
 The Linux kernel transparent hugepage defrag setting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#transparent_hugepage_defrag ContainerNodePool#transparent_hugepage_defrag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#transparent_hugepage_defrag ContainerNodePool#transparent_hugepage_defrag}
 
 ---
 
@@ -6750,7 +6891,7 @@ transparent_hugepage_enabled: str
 
 The Linux kernel transparent hugepage setting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#transparent_hugepage_enabled ContainerNodePool#transparent_hugepage_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#transparent_hugepage_enabled ContainerNodePool#transparent_hugepage_enabled}
 
 ---
 
@@ -6784,7 +6925,7 @@ enable_ptp_kvm_time_sync: bool | IResolvable
 
 Whether to enable accurate time synchronization with PTP-KVM.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#enable_ptp_kvm_time_sync ContainerNodePool#enable_ptp_kvm_time_sync}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#enable_ptp_kvm_time_sync ContainerNodePool#enable_ptp_kvm_time_sync}
 
 ---
 
@@ -6818,7 +6959,7 @@ init_script: ContainerNodePoolNodeConfigLinuxNodeConfigCustomNodeInitInitScript
 
 init_script block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#init_script ContainerNodePool#init_script}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#init_script ContainerNodePool#init_script}
 
 ---
 
@@ -6856,7 +6997,7 @@ gcp_secret_manager_secret_uri: str
 
 The Secret Manager secret URI of the init script.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#gcp_secret_manager_secret_uri ContainerNodePool#gcp_secret_manager_secret_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#gcp_secret_manager_secret_uri ContainerNodePool#gcp_secret_manager_secret_uri}
 
 ---
 
@@ -6870,7 +7011,7 @@ gcs_generation: typing.Union[int, float]
 
 The GCS generation of the init script.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#gcs_generation ContainerNodePool#gcs_generation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#gcs_generation ContainerNodePool#gcs_generation}
 
 ---
 
@@ -6884,7 +7025,7 @@ gcs_uri: str
 
 The GCS URI of the init script.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#gcs_uri ContainerNodePool#gcs_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#gcs_uri ContainerNodePool#gcs_uri}
 
 ---
 
@@ -6920,7 +7061,7 @@ hugepage_size1_g: typing.Union[int, float]
 
 Amount of 1G hugepages.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#hugepage_size_1g ContainerNodePool#hugepage_size_1g}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#hugepage_size_1g ContainerNodePool#hugepage_size_1g}
 
 ---
 
@@ -6934,7 +7075,7 @@ hugepage_size2_m: typing.Union[int, float]
 
 Amount of 2M hugepages.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#hugepage_size_2m ContainerNodePool#hugepage_size_2m}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#hugepage_size_2m ContainerNodePool#hugepage_size_2m}
 
 ---
 
@@ -6968,7 +7109,7 @@ policy: str
 
 The policy for kernel module loading.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#policy ContainerNodePool#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#policy ContainerNodePool#policy}
 
 ---
 
@@ -7010,7 +7151,7 @@ boot_disk_profile: ContainerNodePoolNodeConfigLinuxNodeConfigSwapConfigBootDiskP
 
 boot_disk_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#boot_disk_profile ContainerNodePool#boot_disk_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#boot_disk_profile ContainerNodePool#boot_disk_profile}
 
 ---
 
@@ -7024,7 +7165,7 @@ dedicated_local_ssd_profile: ContainerNodePoolNodeConfigLinuxNodeConfigSwapConfi
 
 dedicated_local_ssd_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#dedicated_local_ssd_profile ContainerNodePool#dedicated_local_ssd_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#dedicated_local_ssd_profile ContainerNodePool#dedicated_local_ssd_profile}
 
 ---
 
@@ -7038,7 +7179,7 @@ enabled: bool | IResolvable
 
 Enables or disables swap for the node pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#enabled ContainerNodePool#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#enabled ContainerNodePool#enabled}
 
 ---
 
@@ -7052,7 +7193,7 @@ encryption_config: ContainerNodePoolNodeConfigLinuxNodeConfigSwapConfigEncryptio
 
 encryption_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#encryption_config ContainerNodePool#encryption_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#encryption_config ContainerNodePool#encryption_config}
 
 ---
 
@@ -7066,7 +7207,7 @@ ephemeral_local_ssd_profile: ContainerNodePoolNodeConfigLinuxNodeConfigSwapConfi
 
 ephemeral_local_ssd_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#ephemeral_local_ssd_profile ContainerNodePool#ephemeral_local_ssd_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#ephemeral_local_ssd_profile ContainerNodePool#ephemeral_local_ssd_profile}
 
 ---
 
@@ -7102,7 +7243,7 @@ swap_size_gib: typing.Union[int, float]
 
 Specifies the size of the swap space in gibibytes (GiB).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#swap_size_gib ContainerNodePool#swap_size_gib}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#swap_size_gib ContainerNodePool#swap_size_gib}
 
 ---
 
@@ -7116,7 +7257,7 @@ swap_size_percent: typing.Union[int, float]
 
 Specifies the size of the swap space as a percentage of the boot disk size.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#swap_size_percent ContainerNodePool#swap_size_percent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#swap_size_percent ContainerNodePool#swap_size_percent}
 
 ---
 
@@ -7150,7 +7291,7 @@ disk_count: typing.Union[int, float]
 
 The number of physical local NVMe SSD disks to attach.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#disk_count ContainerNodePool#disk_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#disk_count ContainerNodePool#disk_count}
 
 ---
 
@@ -7184,7 +7325,7 @@ disabled: bool | IResolvable
 
 If true, swap space will not be encrypted. Defaults to false (encrypted).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#disabled ContainerNodePool#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#disabled ContainerNodePool#disabled}
 
 ---
 
@@ -7220,7 +7361,7 @@ swap_size_gib: typing.Union[int, float]
 
 Specifies the size of the swap space in gibibytes (GiB).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#swap_size_gib ContainerNodePool#swap_size_gib}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#swap_size_gib ContainerNodePool#swap_size_gib}
 
 ---
 
@@ -7234,7 +7375,7 @@ swap_size_percent: typing.Union[int, float]
 
 Specifies the size of the swap space as a percentage of the ephemeral local SSD capacity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#swap_size_percent ContainerNodePool#swap_size_percent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#swap_size_percent ContainerNodePool#swap_size_percent}
 
 ---
 
@@ -7270,7 +7411,7 @@ Number of raw-block local NVMe SSD disks to be attached to the node.
 
 Each local SSD is 375 GB in size.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#local_ssd_count ContainerNodePool#local_ssd_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#local_ssd_count ContainerNodePool#local_ssd_count}
 
 ---
 
@@ -7308,7 +7449,7 @@ The Operating System image for the node pool.
 
 This is a private feature, please contact your Google account team for allowlisting this feature.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#image ContainerNodePool#image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#image ContainerNodePool#image}
 
 ---
 
@@ -7324,7 +7465,7 @@ The GCP project storing the Operating System image for the node pool.
 
 This is a private feature, please contact your Google account team for allowlisting this feature.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#image_project ContainerNodePool#image_project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#image_project ContainerNodePool#image_project}
 
 ---
 
@@ -7362,7 +7503,7 @@ consume_reservation_type: str
 
 Corresponds to the type of reservation consumption.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#consume_reservation_type ContainerNodePool#consume_reservation_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#consume_reservation_type ContainerNodePool#consume_reservation_type}
 
 ---
 
@@ -7376,7 +7517,7 @@ key: str
 
 The label key of a reservation resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#key ContainerNodePool#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#key ContainerNodePool#key}
 
 ---
 
@@ -7390,7 +7531,7 @@ values: typing.List[str]
 
 The label values of the reservation resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#values ContainerNodePool#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#values ContainerNodePool#values}
 
 ---
 
@@ -7424,7 +7565,7 @@ type: str
 
 Type of the sandbox to use for the node (e.g. 'GVISOR').
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#type ContainerNodePool#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#type ContainerNodePool#type}
 
 ---
 
@@ -7460,7 +7601,7 @@ disk_image: str
 
 Disk image to create the secondary boot disk from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#disk_image ContainerNodePool#disk_image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#disk_image ContainerNodePool#disk_image}
 
 ---
 
@@ -7474,7 +7615,7 @@ mode: str
 
 Mode for how the secondary boot disk is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#mode ContainerNodePool#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#mode ContainerNodePool#mode}
 
 ---
 
@@ -7510,7 +7651,7 @@ enable_integrity_monitoring: bool | IResolvable
 
 Defines whether the instance has integrity monitoring enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#enable_integrity_monitoring ContainerNodePool#enable_integrity_monitoring}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#enable_integrity_monitoring ContainerNodePool#enable_integrity_monitoring}
 
 ---
 
@@ -7524,7 +7665,7 @@ enable_secure_boot: bool | IResolvable
 
 Defines whether the instance has Secure Boot enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#enable_secure_boot ContainerNodePool#enable_secure_boot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#enable_secure_boot ContainerNodePool#enable_secure_boot}
 
 ---
 
@@ -7560,7 +7701,7 @@ node_affinity: IResolvable | typing.List[ContainerNodePoolNodeConfigSoleTenantCo
 
 node_affinity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#node_affinity ContainerNodePool#node_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#node_affinity ContainerNodePool#node_affinity}
 
 ---
 
@@ -7576,7 +7717,7 @@ Specifies the minimum number of vCPUs that each sole tenant node must have to us
 
 If not specified, the CPU overcommit feature is disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#min_node_cpus ContainerNodePool#min_node_cpus}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#min_node_cpus ContainerNodePool#min_node_cpus}
 
 ---
 
@@ -7614,7 +7755,7 @@ key: str
 
 .
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#key ContainerNodePool#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#key ContainerNodePool#key}
 
 ---
 
@@ -7628,7 +7769,7 @@ operator: str
 
 .
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#operator ContainerNodePool#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#operator ContainerNodePool#operator}
 
 ---
 
@@ -7642,7 +7783,7 @@ values: typing.List[str]
 
 .
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#values ContainerNodePool#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#values ContainerNodePool#values}
 
 ---
 
@@ -7680,7 +7821,7 @@ effect: str
 
 Effect for taint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#effect ContainerNodePool#effect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#effect ContainerNodePool#effect}
 
 ---
 
@@ -7694,7 +7835,7 @@ key: str
 
 Key for taint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#key ContainerNodePool#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#key ContainerNodePool#key}
 
 ---
 
@@ -7708,7 +7849,7 @@ value: str
 
 Value for taint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#value ContainerNodePool#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#value ContainerNodePool#value}
 
 ---
 
@@ -7742,7 +7883,7 @@ architecture_taint_behavior: str
 
 Architecture taint behavior. Controls, how we apply taints based on the node architecture.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#architecture_taint_behavior ContainerNodePool#architecture_taint_behavior}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#architecture_taint_behavior ContainerNodePool#architecture_taint_behavior}
 
 ---
 
@@ -7776,7 +7917,7 @@ osversion: str
 
 The OS Version of the windows nodepool.Values are OS_VERSION_UNSPECIFIED,OS_VERSION_LTSC2019 and OS_VERSION_LTSC2022.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#osversion ContainerNodePool#osversion}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#osversion ContainerNodePool#osversion}
 
 ---
 
@@ -7810,7 +7951,7 @@ mode: str
 
 Mode is the configuration for how to expose metadata to workloads running on the node.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#mode ContainerNodePool#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#mode ContainerNodePool#mode}
 
 ---
 
@@ -7848,7 +7989,7 @@ grace_termination_duration: str
 
 The duration of the grace termination period for node drain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#grace_termination_duration ContainerNodePool#grace_termination_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#grace_termination_duration ContainerNodePool#grace_termination_duration}
 
 ---
 
@@ -7862,7 +8003,7 @@ pdb_timeout_duration: str
 
 The duration of the PDB timeout period for node drain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#pdb_timeout_duration ContainerNodePool#pdb_timeout_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#pdb_timeout_duration ContainerNodePool#pdb_timeout_duration}
 
 ---
 
@@ -7876,7 +8017,7 @@ respect_pdb_during_node_pool_deletion: bool | IResolvable
 
 Whether to respect PodDisruptionBudget policy during node pool deletion.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#respect_pdb_during_node_pool_deletion ContainerNodePool#respect_pdb_during_node_pool_deletion}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#respect_pdb_during_node_pool_deletion ContainerNodePool#respect_pdb_during_node_pool_deletion}
 
 ---
 
@@ -7914,7 +8055,7 @@ type: str
 
 Type defines the type of placement policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#type ContainerNodePool#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#type ContainerNodePool#type}
 
 ---
 
@@ -7930,7 +8071,7 @@ If set, refers to the name of a custom resource policy supplied by the user.
 
 The resource policy must be in the same project and region as the node pool. If not found, InvalidArgument error is returned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#policy_name ContainerNodePool#policy_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#policy_name ContainerNodePool#policy_name}
 
 ---
 
@@ -7944,7 +8085,7 @@ tpu_topology: str
 
 The TPU topology like "2x4" or "2x2x2". https://cloud.google.com/kubernetes-engine/docs/concepts/plan-tpus#topology.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#tpu_topology ContainerNodePool#tpu_topology}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#tpu_topology ContainerNodePool#tpu_topology}
 
 ---
 
@@ -7978,7 +8119,7 @@ enabled: bool | IResolvable
 
 Whether nodes in this node pool are obtainable solely through the ProvisioningRequest API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#enabled ContainerNodePool#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#enabled ContainerNodePool#enabled}
 
 ---
 
@@ -8000,9 +8141,9 @@ containerNodePool.ContainerNodePoolTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePoolTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#create ContainerNodePool#create}. |
-| <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePoolTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#delete ContainerNodePool#delete}. |
-| <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePoolTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#update ContainerNodePool#update}. |
+| <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePoolTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#create ContainerNodePool#create}. |
+| <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePoolTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#delete ContainerNodePool#delete}. |
+| <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePoolTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#update ContainerNodePool#update}. |
 
 ---
 
@@ -8014,7 +8155,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#create ContainerNodePool#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#create ContainerNodePool#create}.
 
 ---
 
@@ -8026,7 +8167,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#delete ContainerNodePool#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#delete ContainerNodePool#delete}.
 
 ---
 
@@ -8038,7 +8179,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#update ContainerNodePool#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#update ContainerNodePool#update}.
 
 ---
 
@@ -8078,7 +8219,7 @@ blue_green_settings: ContainerNodePoolUpgradeSettingsBlueGreenSettings
 
 blue_green_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#blue_green_settings ContainerNodePool#blue_green_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#blue_green_settings ContainerNodePool#blue_green_settings}
 
 ---
 
@@ -8094,7 +8235,7 @@ The number of additional nodes that can be added to the node pool during an upgr
 
 Increasing max_surge raises the number of nodes that can be upgraded simultaneously. Can be set to 0 or greater.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#max_surge ContainerNodePool#max_surge}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#max_surge ContainerNodePool#max_surge}
 
 ---
 
@@ -8110,7 +8251,7 @@ The number of nodes that can be simultaneously unavailable during an upgrade.
 
 Increasing max_unavailable raises the number of nodes that can be upgraded in parallel. Can be set to 0 or greater.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#max_unavailable ContainerNodePool#max_unavailable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#max_unavailable ContainerNodePool#max_unavailable}
 
 ---
 
@@ -8124,7 +8265,7 @@ strategy: str
 
 Update strategy for the given nodepool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#strategy ContainerNodePool#strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#strategy ContainerNodePool#strategy}
 
 ---
 
@@ -8160,7 +8301,7 @@ standard_rollout_policy: ContainerNodePoolUpgradeSettingsBlueGreenSettingsStanda
 
 standard_rollout_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#standard_rollout_policy ContainerNodePool#standard_rollout_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#standard_rollout_policy ContainerNodePool#standard_rollout_policy}
 
 ---
 
@@ -8174,7 +8315,7 @@ node_pool_soak_duration: str
 
 Time needed after draining entire blue pool. After this period, blue pool will be cleaned up.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#node_pool_soak_duration ContainerNodePool#node_pool_soak_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#node_pool_soak_duration ContainerNodePool#node_pool_soak_duration}
 
 ---
 
@@ -8212,7 +8353,7 @@ batch_node_count: typing.Union[int, float]
 
 Number of blue nodes to drain in a batch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#batch_node_count ContainerNodePool#batch_node_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#batch_node_count ContainerNodePool#batch_node_count}
 
 ---
 
@@ -8226,7 +8367,7 @@ batch_percentage: typing.Union[int, float]
 
 Percentage of the blue pool nodes to drain in a batch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#batch_percentage ContainerNodePool#batch_percentage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#batch_percentage ContainerNodePool#batch_percentage}
 
 ---
 
@@ -8240,7 +8381,7 @@ batch_soak_duration: str
 
 Soak time after each batch gets drained.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#batch_soak_duration ContainerNodePool#batch_soak_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#batch_soak_duration ContainerNodePool#batch_soak_duration}
 
 ---
 
@@ -8661,6 +8802,331 @@ internal_value: ContainerNodePoolAutoscaling
 ```
 
 - *Type:* <a href="#@cdktn/provider-google.containerNodePool.ContainerNodePoolAutoscaling">ContainerNodePoolAutoscaling</a>
+
+---
+
+
+### ContainerNodePoolBestEffortProvisioningOutputReference <a name="ContainerNodePoolBestEffortProvisioningOutputReference" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioningOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioningOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_google import container_node_pool
+
+containerNodePool.ContainerNodePoolBestEffortProvisioningOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioningOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioningOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioningOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioningOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioningOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioningOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioningOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioningOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioningOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioningOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioningOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioningOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioningOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioningOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioningOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioningOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioningOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioningOutputReference.resetMinProvisionNodes">reset_min_provision_nodes</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioningOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioningOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioningOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioningOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioningOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioningOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioningOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioningOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioningOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioningOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioningOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioningOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioningOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioningOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioningOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioningOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioningOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioningOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioningOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioningOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioningOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioningOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioningOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioningOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_min_provision_nodes` <a name="reset_min_provision_nodes" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioningOutputReference.resetMinProvisionNodes"></a>
+
+```python
+def reset_min_provision_nodes() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioningOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioningOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioningOutputReference.property.enabledInput">enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioningOutputReference.property.minProvisionNodesInput">min_provision_nodes_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioningOutputReference.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioningOutputReference.property.minProvisionNodes">min_provision_nodes</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioningOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioning">ContainerNodePoolBestEffortProvisioning</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioningOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioningOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `enabled_input`<sup>Optional</sup> <a name="enabled_input" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioningOutputReference.property.enabledInput"></a>
+
+```python
+enabled_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `min_provision_nodes_input`<sup>Optional</sup> <a name="min_provision_nodes_input" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioningOutputReference.property.minProvisionNodesInput"></a>
+
+```python
+min_provision_nodes_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioningOutputReference.property.enabled"></a>
+
+```python
+enabled: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `min_provision_nodes`<sup>Required</sup> <a name="min_provision_nodes" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioningOutputReference.property.minProvisionNodes"></a>
+
+```python
+min_provision_nodes: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioningOutputReference.property.internalValue"></a>
+
+```python
+internal_value: ContainerNodePoolBestEffortProvisioning
+```
+
+- *Type:* <a href="#@cdktn/provider-google.containerNodePool.ContainerNodePoolBestEffortProvisioning">ContainerNodePoolBestEffortProvisioning</a>
 
 ---
 
@@ -11673,7 +12139,7 @@ def put_network_performance_config(
 
 Specifies the total network bandwidth tier for the NodePool. [Valid values](https://cloud.google.com/kubernetes-engine/docs/reference/rest/v1/projects.locations.clusters.nodePools#NodePool.Tier) include: "TIER_1" and "TIER_UNSPECIFIED".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#total_egress_bandwidth_tier ContainerNodePool#total_egress_bandwidth_tier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#total_egress_bandwidth_tier ContainerNodePool#total_egress_bandwidth_tier}
 
 ---
 
@@ -11689,7 +12155,7 @@ def put_pod_cidr_overprovision_config(
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#disabled ContainerNodePool#disabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#disabled ContainerNodePool#disabled}.
 
 ---
 
@@ -13633,7 +14099,7 @@ def put_private_registry_access_config(
 
 Whether or not private registries are configured.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#enabled ContainerNodePool#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#enabled ContainerNodePool#enabled}
 
 ---
 
@@ -13643,7 +14109,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 certificate_authority_domain_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#certificate_authority_domain_config ContainerNodePool#certificate_authority_domain_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#certificate_authority_domain_config ContainerNodePool#certificate_authority_domain_config}
 
 ---
 
@@ -13675,7 +14141,7 @@ def put_writable_cgroups(
 
 Whether writable cgroups are enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#enabled ContainerNodePool#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#enabled ContainerNodePool#enabled}
 
 ---
 
@@ -14538,7 +15004,7 @@ def put_gcp_secret_manager_certificate_config(
 
 URI for the secret that hosts a certificate. Must be in the format 'projects/PROJECT_NUM/secrets/SECRET_NAME/versions/VERSION_OR_LATEST'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#secret_uri ContainerNodePool#secret_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#secret_uri ContainerNodePool#secret_uri}
 
 ---
 
@@ -16506,7 +16972,7 @@ def put_cert(
 
 URI for the Secret Manager secret that hosts the client certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#gcp_secret_manager_secret_uri ContainerNodePool#gcp_secret_manager_secret_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#gcp_secret_manager_secret_uri ContainerNodePool#gcp_secret_manager_secret_uri}
 
 ---
 
@@ -16524,7 +16990,7 @@ def put_key(
 
 URI for the Secret Manager secret that hosts the private key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#gcp_secret_manager_secret_uri ContainerNodePool#gcp_secret_manager_secret_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#gcp_secret_manager_secret_uri ContainerNodePool#gcp_secret_manager_secret_uri}
 
 ---
 
@@ -21117,7 +21583,7 @@ def put_gpu_driver_installation_config(
 
 Mode for how the GPU driver is installed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#gpu_driver_version ContainerNodePool#gpu_driver_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#gpu_driver_version ContainerNodePool#gpu_driver_version}
 
 ---
 
@@ -21138,7 +21604,7 @@ The type of GPU sharing strategy to enable on the GPU node.
 
 Possible values are described in the API package (https://pkg.go.dev/google.golang.org/api/container/v1#GPUSharingConfig)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#gpu_sharing_strategy ContainerNodePool#gpu_sharing_strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#gpu_sharing_strategy ContainerNodePool#gpu_sharing_strategy}
 
 ---
 
@@ -21148,7 +21614,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The maximum number of containers that can share a GPU.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#max_shared_clients_per_gpu ContainerNodePool#max_shared_clients_per_gpu}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#max_shared_clients_per_gpu ContainerNodePool#max_shared_clients_per_gpu}
 
 ---
 
@@ -23843,7 +24309,7 @@ def put_crash_loop_back_off(
 
 The maximum duration the backoff delay can accrue to for container restarts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#max_container_restart_period ContainerNodePool#max_container_restart_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#max_container_restart_period ContainerNodePool#max_container_restart_period}
 
 ---
 
@@ -23866,7 +24332,7 @@ def put_eviction_minimum_reclaim(
 
 Defines percentage of minimum reclaim for imagefs.available.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#imagefs_available ContainerNodePool#imagefs_available}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#imagefs_available ContainerNodePool#imagefs_available}
 
 ---
 
@@ -23876,7 +24342,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Defines percentage of minimum reclaim for imagefs.inodesFree.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#imagefs_inodes_free ContainerNodePool#imagefs_inodes_free}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#imagefs_inodes_free ContainerNodePool#imagefs_inodes_free}
 
 ---
 
@@ -23886,7 +24352,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Defines percentage of minimum reclaim for memory.available.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#memory_available ContainerNodePool#memory_available}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#memory_available ContainerNodePool#memory_available}
 
 ---
 
@@ -23896,7 +24362,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Defines percentage of minimum reclaim for nodefs.available.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#nodefs_available ContainerNodePool#nodefs_available}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#nodefs_available ContainerNodePool#nodefs_available}
 
 ---
 
@@ -23906,7 +24372,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Defines percentage of minimum reclaim for nodefs.inodesFree.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#nodefs_inodes_free ContainerNodePool#nodefs_inodes_free}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#nodefs_inodes_free ContainerNodePool#nodefs_inodes_free}
 
 ---
 
@@ -23916,7 +24382,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Defines percentage of minimum reclaim for pid.available.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#pid_available ContainerNodePool#pid_available}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#pid_available ContainerNodePool#pid_available}
 
 ---
 
@@ -23939,7 +24405,7 @@ def put_eviction_soft(
 
 Defines percentage of soft eviction threshold for imagefs.available.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#imagefs_available ContainerNodePool#imagefs_available}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#imagefs_available ContainerNodePool#imagefs_available}
 
 ---
 
@@ -23949,7 +24415,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Defines percentage of soft eviction threshold for imagefs.inodesFree.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#imagefs_inodes_free ContainerNodePool#imagefs_inodes_free}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#imagefs_inodes_free ContainerNodePool#imagefs_inodes_free}
 
 ---
 
@@ -23959,7 +24425,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Defines quantity of soft eviction threshold for memory.available.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#memory_available ContainerNodePool#memory_available}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#memory_available ContainerNodePool#memory_available}
 
 ---
 
@@ -23969,7 +24435,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Defines percentage of soft eviction threshold for nodefs.available.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#nodefs_available ContainerNodePool#nodefs_available}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#nodefs_available ContainerNodePool#nodefs_available}
 
 ---
 
@@ -23979,7 +24445,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Defines percentage of soft eviction threshold for nodefs.inodesFree.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#nodefs_inodes_free ContainerNodePool#nodefs_inodes_free}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#nodefs_inodes_free ContainerNodePool#nodefs_inodes_free}
 
 ---
 
@@ -23989,7 +24455,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Defines percentage of soft eviction threshold for pid.available.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#pid_available ContainerNodePool#pid_available}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#pid_available ContainerNodePool#pid_available}
 
 ---
 
@@ -24012,7 +24478,7 @@ def put_eviction_soft_grace_period(
 
 Defines grace period for the imagefs.available soft eviction threshold.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#imagefs_available ContainerNodePool#imagefs_available}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#imagefs_available ContainerNodePool#imagefs_available}
 
 ---
 
@@ -24022,7 +24488,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Defines grace period for the imagefs.inodesFree soft eviction threshold.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#imagefs_inodes_free ContainerNodePool#imagefs_inodes_free}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#imagefs_inodes_free ContainerNodePool#imagefs_inodes_free}
 
 ---
 
@@ -24032,7 +24498,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Defines grace period for the memory.available soft eviction threshold.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#memory_available ContainerNodePool#memory_available}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#memory_available ContainerNodePool#memory_available}
 
 ---
 
@@ -24042,7 +24508,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Defines grace period for the nodefs.available soft eviction threshold.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#nodefs_available ContainerNodePool#nodefs_available}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#nodefs_available ContainerNodePool#nodefs_available}
 
 ---
 
@@ -24052,7 +24518,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Defines grace period for the nodefs.inodesFree soft eviction threshold.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#nodefs_inodes_free ContainerNodePool#nodefs_inodes_free}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#nodefs_inodes_free ContainerNodePool#nodefs_inodes_free}
 
 ---
 
@@ -24062,7 +24528,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Defines grace period for the pid.available soft eviction threshold.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#pid_available ContainerNodePool#pid_available}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#pid_available ContainerNodePool#pid_available}
 
 ---
 
@@ -24082,7 +24548,7 @@ The Memory Manager policy to use.
 
 This policy guides how memory and hugepages are allocated and managed for pods on the node, influencing NUMA affinity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#policy ContainerNodePool#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#policy ContainerNodePool#policy}
 
 ---
 
@@ -24101,7 +24567,7 @@ def put_topology_manager(
 
 The Topology Manager policy to use. This policy dictates how resource alignment is handled on the node.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#policy ContainerNodePool#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#policy ContainerNodePool#policy}
 
 ---
 
@@ -24113,7 +24579,7 @@ The Topology Manager scope, defining the granularity at which policy decisions a
 
 Valid values are "container" (resources are aligned per container within a pod) or "pod" (resources are aligned for the entire pod).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#scope ContainerNodePool#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#scope ContainerNodePool#scope}
 
 ---
 
@@ -26049,7 +26515,7 @@ def put_init_script(
 
 The Secret Manager secret URI of the init script.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#gcp_secret_manager_secret_uri ContainerNodePool#gcp_secret_manager_secret_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#gcp_secret_manager_secret_uri ContainerNodePool#gcp_secret_manager_secret_uri}
 
 ---
 
@@ -26059,7 +26525,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The GCS generation of the init script.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#gcs_generation ContainerNodePool#gcs_generation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#gcs_generation ContainerNodePool#gcs_generation}
 
 ---
 
@@ -26069,7 +26535,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The GCS URI of the init script.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#gcs_uri ContainerNodePool#gcs_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#gcs_uri ContainerNodePool#gcs_uri}
 
 ---
 
@@ -27038,7 +27504,7 @@ def put_accurate_time_config(
 
 Whether to enable accurate time synchronization with PTP-KVM.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#enable_ptp_kvm_time_sync ContainerNodePool#enable_ptp_kvm_time_sync}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#enable_ptp_kvm_time_sync ContainerNodePool#enable_ptp_kvm_time_sync}
 
 ---
 
@@ -27056,7 +27522,7 @@ def put_custom_node_init(
 
 init_script block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#init_script ContainerNodePool#init_script}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#init_script ContainerNodePool#init_script}
 
 ---
 
@@ -27075,7 +27541,7 @@ def put_hugepages_config(
 
 Amount of 1G hugepages.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#hugepage_size_1g ContainerNodePool#hugepage_size_1g}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#hugepage_size_1g ContainerNodePool#hugepage_size_1g}
 
 ---
 
@@ -27085,7 +27551,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Amount of 2M hugepages.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#hugepage_size_2m ContainerNodePool#hugepage_size_2m}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#hugepage_size_2m ContainerNodePool#hugepage_size_2m}
 
 ---
 
@@ -27103,7 +27569,7 @@ def put_node_kernel_module_loading(
 
 The policy for kernel module loading.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#policy ContainerNodePool#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#policy ContainerNodePool#policy}
 
 ---
 
@@ -27125,7 +27591,7 @@ def put_swap_config(
 
 boot_disk_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#boot_disk_profile ContainerNodePool#boot_disk_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#boot_disk_profile ContainerNodePool#boot_disk_profile}
 
 ---
 
@@ -27135,7 +27601,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 dedicated_local_ssd_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#dedicated_local_ssd_profile ContainerNodePool#dedicated_local_ssd_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#dedicated_local_ssd_profile ContainerNodePool#dedicated_local_ssd_profile}
 
 ---
 
@@ -27145,7 +27611,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Enables or disables swap for the node pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#enabled ContainerNodePool#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#enabled ContainerNodePool#enabled}
 
 ---
 
@@ -27155,7 +27621,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 encryption_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#encryption_config ContainerNodePool#encryption_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#encryption_config ContainerNodePool#encryption_config}
 
 ---
 
@@ -27165,7 +27631,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ephemeral_local_ssd_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#ephemeral_local_ssd_profile ContainerNodePool#ephemeral_local_ssd_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#ephemeral_local_ssd_profile ContainerNodePool#ephemeral_local_ssd_profile}
 
 ---
 
@@ -28989,7 +29455,7 @@ def put_boot_disk_profile(
 
 Specifies the size of the swap space in gibibytes (GiB).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#swap_size_gib ContainerNodePool#swap_size_gib}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#swap_size_gib ContainerNodePool#swap_size_gib}
 
 ---
 
@@ -28999,7 +29465,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies the size of the swap space as a percentage of the boot disk size.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#swap_size_percent ContainerNodePool#swap_size_percent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#swap_size_percent ContainerNodePool#swap_size_percent}
 
 ---
 
@@ -29017,7 +29483,7 @@ def put_dedicated_local_ssd_profile(
 
 The number of physical local NVMe SSD disks to attach.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#disk_count ContainerNodePool#disk_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#disk_count ContainerNodePool#disk_count}
 
 ---
 
@@ -29035,7 +29501,7 @@ def put_encryption_config(
 
 If true, swap space will not be encrypted. Defaults to false (encrypted).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#disabled ContainerNodePool#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#disabled ContainerNodePool#disabled}
 
 ---
 
@@ -29054,7 +29520,7 @@ def put_ephemeral_local_ssd_profile(
 
 Specifies the size of the swap space in gibibytes (GiB).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#swap_size_gib ContainerNodePool#swap_size_gib}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#swap_size_gib ContainerNodePool#swap_size_gib}
 
 ---
 
@@ -29064,7 +29530,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies the size of the swap space as a percentage of the ephemeral local SSD capacity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#swap_size_percent ContainerNodePool#swap_size_percent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#swap_size_percent ContainerNodePool#swap_size_percent}
 
 ---
 
@@ -30386,7 +30852,7 @@ The number of threads per physical core.
 
 To disable simultaneous multithreading (SMT) set this to 1. If unset, the maximum number of threads supported per core by the underlying processor is assumed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#threads_per_core ContainerNodePool#threads_per_core}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#threads_per_core ContainerNodePool#threads_per_core}
 
 ---
 
@@ -30396,7 +30862,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Whether the node should have nested virtualization enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#enable_nested_virtualization ContainerNodePool#enable_nested_virtualization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#enable_nested_virtualization ContainerNodePool#enable_nested_virtualization}
 
 ---
 
@@ -30408,7 +30874,7 @@ Level of Performance Monitoring Unit (PMU) requested.
 
 If unset, no access to the PMU is assumed. For existing node pools with no PMU, setting STANDARD may not produce a diff; recreate the node pool to apply it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#performance_monitoring_unit ContainerNodePool#performance_monitoring_unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#performance_monitoring_unit ContainerNodePool#performance_monitoring_unit}
 
 ---
 
@@ -30429,7 +30895,7 @@ def put_boot_disk(
 
 Type of the disk attached to each node. Such as pd-standard, pd-balanced or pd-ssd.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#disk_type ContainerNodePool#disk_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#disk_type ContainerNodePool#disk_type}
 
 ---
 
@@ -30439,7 +30905,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Configured IOPs provisioning. Only valid with disk type hyperdisk-balanced.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#provisioned_iops ContainerNodePool#provisioned_iops}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#provisioned_iops ContainerNodePool#provisioned_iops}
 
 ---
 
@@ -30449,7 +30915,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Configured throughput provisioning. Only valid with disk type hyperdisk-balanced.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#provisioned_throughput ContainerNodePool#provisioned_throughput}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#provisioned_throughput ContainerNodePool#provisioned_throughput}
 
 ---
 
@@ -30459,7 +30925,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Size of the disk attached to each node, specified in GB. The smallest allowed disk size is 10GB.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#size_gb ContainerNodePool#size_gb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#size_gb ContainerNodePool#size_gb}
 
 ---
 
@@ -30478,7 +30944,7 @@ def put_confidential_nodes(
 
 Whether Confidential Nodes feature is enabled for all nodes in this pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#enabled ContainerNodePool#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#enabled ContainerNodePool#enabled}
 
 ---
 
@@ -30488,7 +30954,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Defines the type of technology used by the confidential node.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#confidential_instance_type ContainerNodePool#confidential_instance_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#confidential_instance_type ContainerNodePool#confidential_instance_type}
 
 ---
 
@@ -30508,7 +30974,7 @@ def put_containerd_config(
 
 private_registry_access_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#private_registry_access_config ContainerNodePool#private_registry_access_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#private_registry_access_config ContainerNodePool#private_registry_access_config}
 
 ---
 
@@ -30518,7 +30984,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 registry_hosts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#registry_hosts ContainerNodePool#registry_hosts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#registry_hosts ContainerNodePool#registry_hosts}
 
 ---
 
@@ -30528,7 +30994,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 writable_cgroups block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#writable_cgroups ContainerNodePool#writable_cgroups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#writable_cgroups ContainerNodePool#writable_cgroups}
 
 ---
 
@@ -30549,7 +31015,7 @@ Number of local SSDs to use to back ephemeral storage.
 
 Uses NVMe interfaces. Each local SSD must be 375 or 3000 GB in size, and all local SSDs must share the same size.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#local_ssd_count ContainerNodePool#local_ssd_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#local_ssd_count ContainerNodePool#local_ssd_count}
 
 ---
 
@@ -30559,7 +31025,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Number of local SSDs to be utilized for GKE Data Cache. Uses NVMe interfaces.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#data_cache_count ContainerNodePool#data_cache_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#data_cache_count ContainerNodePool#data_cache_count}
 
 ---
 
@@ -30577,7 +31043,7 @@ def put_fast_socket(
 
 Whether or not NCCL Fast Socket is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#enabled ContainerNodePool#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#enabled ContainerNodePool#enabled}
 
 ---
 
@@ -30595,7 +31061,7 @@ def put_gcfs_config(
 
 Whether or not GCFS is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#enabled ContainerNodePool#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#enabled ContainerNodePool#enabled}
 
 ---
 
@@ -30627,7 +31093,7 @@ def put_gvnic(
 
 Whether or not gvnic is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#enabled ContainerNodePool#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#enabled ContainerNodePool#enabled}
 
 ---
 
@@ -30667,7 +31133,7 @@ def put_kubelet_config(
 
 Defines a comma-separated allowlist of unsafe sysctls or sysctl patterns which can be set on the Pods.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#allowed_unsafe_sysctls ContainerNodePool#allowed_unsafe_sysctls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#allowed_unsafe_sysctls ContainerNodePool#allowed_unsafe_sysctls}
 
 ---
 
@@ -30677,7 +31143,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Defines the maximum number of container log files that can be present for a container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#container_log_max_files ContainerNodePool#container_log_max_files}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#container_log_max_files ContainerNodePool#container_log_max_files}
 
 ---
 
@@ -30687,7 +31153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Defines the maximum size of the container log file before it is rotated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#container_log_max_size ContainerNodePool#container_log_max_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#container_log_max_size ContainerNodePool#container_log_max_size}
 
 ---
 
@@ -30697,7 +31163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Enable CPU CFS quota enforcement for containers that specify CPU limits.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#cpu_cfs_quota ContainerNodePool#cpu_cfs_quota}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#cpu_cfs_quota ContainerNodePool#cpu_cfs_quota}
 
 ---
 
@@ -30707,7 +31173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Set the CPU CFS quota period value 'cpu.cfs_period_us'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#cpu_cfs_quota_period ContainerNodePool#cpu_cfs_quota_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#cpu_cfs_quota_period ContainerNodePool#cpu_cfs_quota_period}
 
 ---
 
@@ -30717,7 +31183,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Control the CPU management policy on the node.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#cpu_manager_policy ContainerNodePool#cpu_manager_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#cpu_manager_policy ContainerNodePool#cpu_manager_policy}
 
 ---
 
@@ -30727,7 +31193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 crash_loop_back_off block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#crash_loop_back_off ContainerNodePool#crash_loop_back_off}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#crash_loop_back_off ContainerNodePool#crash_loop_back_off}
 
 ---
 
@@ -30737,7 +31203,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Defines the maximum allowed grace period (in seconds) to use when terminating pods in response to a soft eviction threshold being met.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#eviction_max_pod_grace_period_seconds ContainerNodePool#eviction_max_pod_grace_period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#eviction_max_pod_grace_period_seconds ContainerNodePool#eviction_max_pod_grace_period_seconds}
 
 ---
 
@@ -30747,7 +31213,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 eviction_minimum_reclaim block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#eviction_minimum_reclaim ContainerNodePool#eviction_minimum_reclaim}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#eviction_minimum_reclaim ContainerNodePool#eviction_minimum_reclaim}
 
 ---
 
@@ -30757,7 +31223,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 eviction_soft block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#eviction_soft ContainerNodePool#eviction_soft}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#eviction_soft ContainerNodePool#eviction_soft}
 
 ---
 
@@ -30767,7 +31233,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 eviction_soft_grace_period block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#eviction_soft_grace_period ContainerNodePool#eviction_soft_grace_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#eviction_soft_grace_period ContainerNodePool#eviction_soft_grace_period}
 
 ---
 
@@ -30777,7 +31243,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Defines the percent of disk usage after which image garbage collection is always run.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#image_gc_high_threshold_percent ContainerNodePool#image_gc_high_threshold_percent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#image_gc_high_threshold_percent ContainerNodePool#image_gc_high_threshold_percent}
 
 ---
 
@@ -30789,7 +31255,7 @@ Defines the percent of disk usage before which image garbage collection is never
 
 Lowest disk usage to garbage collect to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#image_gc_low_threshold_percent ContainerNodePool#image_gc_low_threshold_percent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#image_gc_low_threshold_percent ContainerNodePool#image_gc_low_threshold_percent}
 
 ---
 
@@ -30799,7 +31265,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Defines the maximum age an image can be unused before it is garbage collected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#image_maximum_gc_age ContainerNodePool#image_maximum_gc_age}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#image_maximum_gc_age ContainerNodePool#image_maximum_gc_age}
 
 ---
 
@@ -30809,7 +31275,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Defines the minimum age for an unused image before it is garbage collected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#image_minimum_gc_age ContainerNodePool#image_minimum_gc_age}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#image_minimum_gc_age ContainerNodePool#image_minimum_gc_age}
 
 ---
 
@@ -30821,7 +31287,7 @@ Controls whether the kubelet read-only port is enabled.
 
 It is strongly recommended to set this to `FALSE`. Possible values: `TRUE`, `FALSE`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#insecure_kubelet_readonly_port_enabled ContainerNodePool#insecure_kubelet_readonly_port_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#insecure_kubelet_readonly_port_enabled ContainerNodePool#insecure_kubelet_readonly_port_enabled}
 
 ---
 
@@ -30831,7 +31297,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Set the maximum number of image pulls in parallel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#max_parallel_image_pulls ContainerNodePool#max_parallel_image_pulls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#max_parallel_image_pulls ContainerNodePool#max_parallel_image_pulls}
 
 ---
 
@@ -30841,7 +31307,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 memory_manager block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#memory_manager ContainerNodePool#memory_manager}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#memory_manager ContainerNodePool#memory_manager}
 
 ---
 
@@ -30851,7 +31317,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Controls the maximum number of processes allowed to run in a pod.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#pod_pids_limit ContainerNodePool#pod_pids_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#pod_pids_limit ContainerNodePool#pod_pids_limit}
 
 ---
 
@@ -30861,7 +31327,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Controls the portion of total grace period (in seconds) that is specifically reserved for terminating critical pods.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#shutdown_grace_period_critical_pods_seconds ContainerNodePool#shutdown_grace_period_critical_pods_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#shutdown_grace_period_critical_pods_seconds ContainerNodePool#shutdown_grace_period_critical_pods_seconds}
 
 ---
 
@@ -30871,7 +31337,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Controls the total duration of time (in seconds) the node delays shutdown.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#shutdown_grace_period_seconds ContainerNodePool#shutdown_grace_period_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#shutdown_grace_period_seconds ContainerNodePool#shutdown_grace_period_seconds}
 
 ---
 
@@ -30881,7 +31347,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Defines whether to enable single process OOM killer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#single_process_oom_kill ContainerNodePool#single_process_oom_kill}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#single_process_oom_kill ContainerNodePool#single_process_oom_kill}
 
 ---
 
@@ -30891,7 +31357,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 topology_manager block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#topology_manager ContainerNodePool#topology_manager}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#topology_manager ContainerNodePool#topology_manager}
 
 ---
 
@@ -30917,7 +31383,7 @@ def put_linux_node_config(
 
 accurate_time_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#accurate_time_config ContainerNodePool#accurate_time_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#accurate_time_config ContainerNodePool#accurate_time_config}
 
 ---
 
@@ -30927,7 +31393,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 cgroupMode specifies the cgroup mode to be used on the node.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#cgroup_mode ContainerNodePool#cgroup_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#cgroup_mode ContainerNodePool#cgroup_mode}
 
 ---
 
@@ -30937,7 +31403,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 custom_node_init block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#custom_node_init ContainerNodePool#custom_node_init}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#custom_node_init ContainerNodePool#custom_node_init}
 
 ---
 
@@ -30947,7 +31413,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 hugepages_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#hugepages_config ContainerNodePool#hugepages_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#hugepages_config ContainerNodePool#hugepages_config}
 
 ---
 
@@ -30957,7 +31423,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 node_kernel_module_loading block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#node_kernel_module_loading ContainerNodePool#node_kernel_module_loading}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#node_kernel_module_loading ContainerNodePool#node_kernel_module_loading}
 
 ---
 
@@ -30967,7 +31433,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 swap_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#swap_config ContainerNodePool#swap_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#swap_config ContainerNodePool#swap_config}
 
 ---
 
@@ -30977,7 +31443,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The Linux kernel parameters to be applied to the nodes and all pods running on the nodes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#sysctls ContainerNodePool#sysctls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#sysctls ContainerNodePool#sysctls}
 
 ---
 
@@ -30987,7 +31453,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The Linux kernel transparent hugepage defrag setting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#transparent_hugepage_defrag ContainerNodePool#transparent_hugepage_defrag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#transparent_hugepage_defrag ContainerNodePool#transparent_hugepage_defrag}
 
 ---
 
@@ -30997,7 +31463,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The Linux kernel transparent hugepage setting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#transparent_hugepage_enabled ContainerNodePool#transparent_hugepage_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#transparent_hugepage_enabled ContainerNodePool#transparent_hugepage_enabled}
 
 ---
 
@@ -31017,7 +31483,7 @@ Number of raw-block local NVMe SSD disks to be attached to the node.
 
 Each local SSD is 375 GB in size.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#local_ssd_count ContainerNodePool#local_ssd_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#local_ssd_count ContainerNodePool#local_ssd_count}
 
 ---
 
@@ -31051,7 +31517,7 @@ def put_reservation_affinity(
 
 Corresponds to the type of reservation consumption.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#consume_reservation_type ContainerNodePool#consume_reservation_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#consume_reservation_type ContainerNodePool#consume_reservation_type}
 
 ---
 
@@ -31061,7 +31527,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The label key of a reservation resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#key ContainerNodePool#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#key ContainerNodePool#key}
 
 ---
 
@@ -31071,7 +31537,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The label values of the reservation resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#values ContainerNodePool#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#values ContainerNodePool#values}
 
 ---
 
@@ -31089,7 +31555,7 @@ def put_sandbox_config(
 
 Type of the sandbox to use for the node (e.g. 'GVISOR').
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#type ContainerNodePool#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#type ContainerNodePool#type}
 
 ---
 
@@ -31122,7 +31588,7 @@ def put_shielded_instance_config(
 
 Defines whether the instance has integrity monitoring enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#enable_integrity_monitoring ContainerNodePool#enable_integrity_monitoring}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#enable_integrity_monitoring ContainerNodePool#enable_integrity_monitoring}
 
 ---
 
@@ -31132,7 +31598,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Defines whether the instance has Secure Boot enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#enable_secure_boot ContainerNodePool#enable_secure_boot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#enable_secure_boot ContainerNodePool#enable_secure_boot}
 
 ---
 
@@ -31151,7 +31617,7 @@ def put_sole_tenant_config(
 
 node_affinity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#node_affinity ContainerNodePool#node_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#node_affinity ContainerNodePool#node_affinity}
 
 ---
 
@@ -31163,7 +31629,7 @@ Specifies the minimum number of vCPUs that each sole tenant node must have to us
 
 If not specified, the CPU overcommit feature is disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#min_node_cpus ContainerNodePool#min_node_cpus}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#min_node_cpus ContainerNodePool#min_node_cpus}
 
 ---
 
@@ -31195,7 +31661,7 @@ def put_taint_config(
 
 Architecture taint behavior. Controls, how we apply taints based on the node architecture.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#architecture_taint_behavior ContainerNodePool#architecture_taint_behavior}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#architecture_taint_behavior ContainerNodePool#architecture_taint_behavior}
 
 ---
 
@@ -31213,7 +31679,7 @@ def put_windows_node_config(
 
 The OS Version of the windows nodepool.Values are OS_VERSION_UNSPECIFIED,OS_VERSION_LTSC2019 and OS_VERSION_LTSC2022.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#osversion ContainerNodePool#osversion}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#osversion ContainerNodePool#osversion}
 
 ---
 
@@ -31231,7 +31697,7 @@ def put_workload_metadata_config(
 
 Mode is the configuration for how to expose metadata to workloads running on the node.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#mode ContainerNodePool#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#mode ContainerNodePool#mode}
 
 ---
 
@@ -38180,7 +38646,7 @@ def put_standard_rollout_policy(
 
 Number of blue nodes to drain in a batch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#batch_node_count ContainerNodePool#batch_node_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#batch_node_count ContainerNodePool#batch_node_count}
 
 ---
 
@@ -38190,7 +38656,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Percentage of the blue pool nodes to drain in a batch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#batch_percentage ContainerNodePool#batch_percentage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#batch_percentage ContainerNodePool#batch_percentage}
 
 ---
 
@@ -38200,7 +38666,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Soak time after each batch gets drained.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#batch_soak_duration ContainerNodePool#batch_soak_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#batch_soak_duration ContainerNodePool#batch_soak_duration}
 
 ---
 
@@ -38909,7 +39375,7 @@ def put_blue_green_settings(
 
 standard_rollout_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#standard_rollout_policy ContainerNodePool#standard_rollout_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#standard_rollout_policy ContainerNodePool#standard_rollout_policy}
 
 ---
 
@@ -38919,7 +39385,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Time needed after draining entire blue pool. After this period, blue pool will be cleaned up.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/container_node_pool#node_pool_soak_duration ContainerNodePool#node_pool_soak_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/container_node_pool#node_pool_soak_duration ContainerNodePool#node_pool_soak_duration}
 
 ---
 

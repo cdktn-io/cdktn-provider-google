@@ -4,7 +4,7 @@
 
 ### DataGoogleObservabilityFolderSettings <a name="DataGoogleObservabilityFolderSettings" id="@cdktn/provider-google.dataGoogleObservabilityFolderSettings.DataGoogleObservabilityFolderSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/observability_folder_settings google_observability_folder_settings}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/observability_folder_settings google_observability_folder_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleObservabilityFolderSettings.DataGoogleObservabilityFolderSettings.Initializer"></a>
 
@@ -40,7 +40,7 @@ dataGoogleObservabilityFolderSettings.DataGoogleObservabilityFolderSettings(
 | <code><a href="#@cdktn/provider-google.dataGoogleObservabilityFolderSettings.DataGoogleObservabilityFolderSettings.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleObservabilityFolderSettings.DataGoogleObservabilityFolderSettings.Initializer.parameter.folder">folder</a></code> | <code>str</code> | The folder ID. |
 | <code><a href="#@cdktn/provider-google.dataGoogleObservabilityFolderSettings.DataGoogleObservabilityFolderSettings.Initializer.parameter.location">location</a></code> | <code>str</code> | The location of the settings. |
-| <code><a href="#@cdktn/provider-google.dataGoogleObservabilityFolderSettings.DataGoogleObservabilityFolderSettings.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/observability_folder_settings#id DataGoogleObservabilityFolderSettings#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleObservabilityFolderSettings.DataGoogleObservabilityFolderSettings.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/observability_folder_settings#id DataGoogleObservabilityFolderSettings#id}. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 The folder ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/observability_folder_settings#folder DataGoogleObservabilityFolderSettings#folder}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/observability_folder_settings#folder DataGoogleObservabilityFolderSettings#folder}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The location of the settings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/observability_folder_settings#location DataGoogleObservabilityFolderSettings#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/observability_folder_settings#location DataGoogleObservabilityFolderSettings#location}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/observability_folder_settings#id DataGoogleObservabilityFolderSettings#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/observability_folder_settings#id DataGoogleObservabilityFolderSettings#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -521,7 +521,7 @@ The construct id used in the generated config for the DataGoogleObservabilityFol
 
 The id of the existing DataGoogleObservabilityFolderSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/observability_folder_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/observability_folder_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -838,7 +838,7 @@ dataGoogleObservabilityFolderSettings.DataGoogleObservabilityFolderSettingsConfi
 | <code><a href="#@cdktn/provider-google.dataGoogleObservabilityFolderSettings.DataGoogleObservabilityFolderSettingsConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleObservabilityFolderSettings.DataGoogleObservabilityFolderSettingsConfig.property.folder">folder</a></code> | <code>str</code> | The folder ID. |
 | <code><a href="#@cdktn/provider-google.dataGoogleObservabilityFolderSettings.DataGoogleObservabilityFolderSettingsConfig.property.location">location</a></code> | <code>str</code> | The location of the settings. |
-| <code><a href="#@cdktn/provider-google.dataGoogleObservabilityFolderSettings.DataGoogleObservabilityFolderSettingsConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/observability_folder_settings#id DataGoogleObservabilityFolderSettings#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleObservabilityFolderSettings.DataGoogleObservabilityFolderSettingsConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/observability_folder_settings#id DataGoogleObservabilityFolderSettings#id}. |
 
 ---
 
@@ -922,7 +922,7 @@ folder: str
 
 The folder ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/observability_folder_settings#folder DataGoogleObservabilityFolderSettings#folder}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/observability_folder_settings#folder DataGoogleObservabilityFolderSettings#folder}
 
 ---
 
@@ -936,7 +936,7 @@ location: str
 
 The location of the settings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/observability_folder_settings#location DataGoogleObservabilityFolderSettings#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/observability_folder_settings#location DataGoogleObservabilityFolderSettings#location}
 
 ---
 
@@ -948,7 +948,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/observability_folder_settings#id DataGoogleObservabilityFolderSettings#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/observability_folder_settings#id DataGoogleObservabilityFolderSettings#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -4,7 +4,7 @@
 
 ### ObservabilityLink <a name="ObservabilityLink" id="@cdktn/provider-google.observabilityLink.ObservabilityLink"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/observability_link google_observability_link}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_link google_observability_link}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.observabilityLink.ObservabilityLink.Initializer"></a>
 
@@ -544,7 +544,7 @@ The construct id used in the generated config for the ObservabilityLink to impor
 
 The id of the existing ObservabilityLink that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/observability_link#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_link#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1009,8 +1009,8 @@ const observabilityLinkConfig: observabilityLink.ObservabilityLinkConfig = { ...
 | <code><a href="#@cdktn/provider-google.observabilityLink.ObservabilityLinkConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | Whether Terraform will be prevented from destroying the instance. |
 | <code><a href="#@cdktn/provider-google.observabilityLink.ObservabilityLinkConfig.property.description">description</a></code> | <code>string</code> | Description of the link. |
 | <code><a href="#@cdktn/provider-google.observabilityLink.ObservabilityLinkConfig.property.displayName">displayName</a></code> | <code>string</code> | User friendly display name. |
-| <code><a href="#@cdktn/provider-google.observabilityLink.ObservabilityLinkConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/observability_link#id ObservabilityLink#id}. |
-| <code><a href="#@cdktn/provider-google.observabilityLink.ObservabilityLinkConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/observability_link#project ObservabilityLink#project}. |
+| <code><a href="#@cdktn/provider-google.observabilityLink.ObservabilityLinkConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_link#id ObservabilityLink#id}. |
+| <code><a href="#@cdktn/provider-google.observabilityLink.ObservabilityLinkConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_link#project ObservabilityLink#project}. |
 | <code><a href="#@cdktn/provider-google.observabilityLink.ObservabilityLinkConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.observabilityLink.ObservabilityLinkTimeouts">ObservabilityLinkTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1095,7 +1095,7 @@ public readonly bucket: string;
 
 The bucket of the link.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/observability_link#bucket ObservabilityLink#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_link#bucket ObservabilityLink#bucket}
 
 ---
 
@@ -1109,7 +1109,7 @@ public readonly dataset: string;
 
 The dataset of the link.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/observability_link#dataset ObservabilityLink#dataset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_link#dataset ObservabilityLink#dataset}
 
 ---
 
@@ -1123,7 +1123,7 @@ public readonly linkId: string;
 
 The client-assigned identifier for the link.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/observability_link#link_id ObservabilityLink#link_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_link#link_id ObservabilityLink#link_id}
 
 ---
 
@@ -1137,7 +1137,7 @@ public readonly location: string;
 
 The location of the link.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/observability_link#location ObservabilityLink#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_link#location ObservabilityLink#location}
 
 ---
 
@@ -1159,7 +1159,7 @@ management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/observability_link#deletion_policy ObservabilityLink#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_link#deletion_policy ObservabilityLink#deletion_policy}
 
 ---
 
@@ -1173,7 +1173,7 @@ public readonly description: string;
 
 Description of the link.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/observability_link#description ObservabilityLink#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_link#description ObservabilityLink#description}
 
 ---
 
@@ -1187,7 +1187,7 @@ public readonly displayName: string;
 
 User friendly display name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/observability_link#display_name ObservabilityLink#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_link#display_name ObservabilityLink#display_name}
 
 ---
 
@@ -1199,7 +1199,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/observability_link#id ObservabilityLink#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_link#id ObservabilityLink#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1214,7 +1214,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/observability_link#project ObservabilityLink#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_link#project ObservabilityLink#project}.
 
 ---
 
@@ -1228,7 +1228,7 @@ public readonly timeouts: ObservabilityLinkTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/observability_link#timeouts ObservabilityLink#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_link#timeouts ObservabilityLink#timeouts}
 
 ---
 
@@ -1246,9 +1246,9 @@ const observabilityLinkTimeouts: observabilityLink.ObservabilityLinkTimeouts = {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.observabilityLink.ObservabilityLinkTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/observability_link#create ObservabilityLink#create}. |
-| <code><a href="#@cdktn/provider-google.observabilityLink.ObservabilityLinkTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/observability_link#delete ObservabilityLink#delete}. |
-| <code><a href="#@cdktn/provider-google.observabilityLink.ObservabilityLinkTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/observability_link#update ObservabilityLink#update}. |
+| <code><a href="#@cdktn/provider-google.observabilityLink.ObservabilityLinkTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_link#create ObservabilityLink#create}. |
+| <code><a href="#@cdktn/provider-google.observabilityLink.ObservabilityLinkTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_link#delete ObservabilityLink#delete}. |
+| <code><a href="#@cdktn/provider-google.observabilityLink.ObservabilityLinkTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_link#update ObservabilityLink#update}. |
 
 ---
 
@@ -1260,7 +1260,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/observability_link#create ObservabilityLink#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_link#create ObservabilityLink#create}.
 
 ---
 
@@ -1272,7 +1272,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/observability_link#delete ObservabilityLink#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_link#delete ObservabilityLink#delete}.
 
 ---
 
@@ -1284,7 +1284,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/observability_link#update ObservabilityLink#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/observability_link#update ObservabilityLink#update}.
 
 ---
 

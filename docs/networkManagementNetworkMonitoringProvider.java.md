@@ -4,7 +4,7 @@
 
 ### NetworkManagementNetworkMonitoringProvider <a name="NetworkManagementNetworkMonitoringProvider" id="@cdktn/provider-google.networkManagementNetworkMonitoringProvider.NetworkManagementNetworkMonitoringProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_management_network_monitoring_provider google_network_management_network_monitoring_provider}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_management_network_monitoring_provider google_network_management_network_monitoring_provider}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkManagementNetworkMonitoringProvider.NetworkManagementNetworkMonitoringProvider.Initializer"></a>
 
@@ -44,8 +44,8 @@ NetworkManagementNetworkMonitoringProvider.Builder.create(Construct scope, java.
 | <code><a href="#@cdktn/provider-google.networkManagementNetworkMonitoringProvider.NetworkManagementNetworkMonitoringProvider.Initializer.parameter.networkMonitoringProviderId">networkMonitoringProviderId</a></code> | <code>java.lang.String</code> | The ID to use for the Network Monitoring Provider. This will become the last component of the provider's resource name. |
 | <code><a href="#@cdktn/provider-google.networkManagementNetworkMonitoringProvider.NetworkManagementNetworkMonitoringProvider.Initializer.parameter.providerType">providerType</a></code> | <code>java.lang.String</code> | The type of the Network Monitoring Provider. Currently only 'EXTERNAL' is supported. |
 | <code><a href="#@cdktn/provider-google.networkManagementNetworkMonitoringProvider.NetworkManagementNetworkMonitoringProvider.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | The deletion policy for the Network Monitoring Provider. |
-| <code><a href="#@cdktn/provider-google.networkManagementNetworkMonitoringProvider.NetworkManagementNetworkMonitoringProvider.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_management_network_monitoring_provider#id NetworkManagementNetworkMonitoringProvider#id}. |
-| <code><a href="#@cdktn/provider-google.networkManagementNetworkMonitoringProvider.NetworkManagementNetworkMonitoringProvider.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_management_network_monitoring_provider#project NetworkManagementNetworkMonitoringProvider#project}. |
+| <code><a href="#@cdktn/provider-google.networkManagementNetworkMonitoringProvider.NetworkManagementNetworkMonitoringProvider.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_management_network_monitoring_provider#id NetworkManagementNetworkMonitoringProvider#id}. |
+| <code><a href="#@cdktn/provider-google.networkManagementNetworkMonitoringProvider.NetworkManagementNetworkMonitoringProvider.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_management_network_monitoring_provider#project NetworkManagementNetworkMonitoringProvider#project}. |
 | <code><a href="#@cdktn/provider-google.networkManagementNetworkMonitoringProvider.NetworkManagementNetworkMonitoringProvider.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.networkManagementNetworkMonitoringProvider.NetworkManagementNetworkMonitoringProviderTimeouts">NetworkManagementNetworkMonitoringProviderTimeouts</a></code> | timeouts block. |
 
 ---
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 The location of the Network Monitoring Provider. Currently only 'global' is supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_management_network_monitoring_provider#location NetworkManagementNetworkMonitoringProvider#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_management_network_monitoring_provider#location NetworkManagementNetworkMonitoringProvider#location}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The ID to use for the Network Monitoring Provider. This will become the last component of the provider's resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_management_network_monitoring_provider#network_monitoring_provider_id NetworkManagementNetworkMonitoringProvider#network_monitoring_provider_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_management_network_monitoring_provider#network_monitoring_provider_id NetworkManagementNetworkMonitoringProvider#network_monitoring_provider_id}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The type of the Network Monitoring Provider. Currently only 'EXTERNAL' is supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_management_network_monitoring_provider#provider_type NetworkManagementNetworkMonitoringProvider#provider_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_management_network_monitoring_provider#provider_type NetworkManagementNetworkMonitoringProvider#provider_type}
 
 ---
 
@@ -149,7 +149,7 @@ The deletion policy for the Network Monitoring Provider.
 Setting 'deletion_policy = "FORCE"' forces the deletion of all nested resources
 (MonitoringPoints, NetworkPaths, WebPaths) belonging to this provider on deletion.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_management_network_monitoring_provider#deletion_policy NetworkManagementNetworkMonitoringProvider#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_management_network_monitoring_provider#deletion_policy NetworkManagementNetworkMonitoringProvider#deletion_policy}
 
 ---
 
@@ -157,7 +157,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_management_network_monitoring_provider#id NetworkManagementNetworkMonitoringProvider#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_management_network_monitoring_provider#id NetworkManagementNetworkMonitoringProvider#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -168,7 +168,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_management_network_monitoring_provider#project NetworkManagementNetworkMonitoringProvider#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_management_network_monitoring_provider#project NetworkManagementNetworkMonitoringProvider#project}.
 
 ---
 
@@ -178,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_management_network_monitoring_provider#timeouts NetworkManagementNetworkMonitoringProvider#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_management_network_monitoring_provider#timeouts NetworkManagementNetworkMonitoringProvider#timeouts}
 
 ---
 
@@ -668,7 +668,7 @@ The construct id used in the generated config for the NetworkManagementNetworkMo
 
 The id of the existing NetworkManagementNetworkMonitoringProvider that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_management_network_monitoring_provider#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_management_network_monitoring_provider#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1123,8 +1123,8 @@ NetworkManagementNetworkMonitoringProviderConfig.builder()
 | <code><a href="#@cdktn/provider-google.networkManagementNetworkMonitoringProvider.NetworkManagementNetworkMonitoringProviderConfig.property.networkMonitoringProviderId">networkMonitoringProviderId</a></code> | <code>java.lang.String</code> | The ID to use for the Network Monitoring Provider. This will become the last component of the provider's resource name. |
 | <code><a href="#@cdktn/provider-google.networkManagementNetworkMonitoringProvider.NetworkManagementNetworkMonitoringProviderConfig.property.providerType">providerType</a></code> | <code>java.lang.String</code> | The type of the Network Monitoring Provider. Currently only 'EXTERNAL' is supported. |
 | <code><a href="#@cdktn/provider-google.networkManagementNetworkMonitoringProvider.NetworkManagementNetworkMonitoringProviderConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | The deletion policy for the Network Monitoring Provider. |
-| <code><a href="#@cdktn/provider-google.networkManagementNetworkMonitoringProvider.NetworkManagementNetworkMonitoringProviderConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_management_network_monitoring_provider#id NetworkManagementNetworkMonitoringProvider#id}. |
-| <code><a href="#@cdktn/provider-google.networkManagementNetworkMonitoringProvider.NetworkManagementNetworkMonitoringProviderConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_management_network_monitoring_provider#project NetworkManagementNetworkMonitoringProvider#project}. |
+| <code><a href="#@cdktn/provider-google.networkManagementNetworkMonitoringProvider.NetworkManagementNetworkMonitoringProviderConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_management_network_monitoring_provider#id NetworkManagementNetworkMonitoringProvider#id}. |
+| <code><a href="#@cdktn/provider-google.networkManagementNetworkMonitoringProvider.NetworkManagementNetworkMonitoringProviderConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_management_network_monitoring_provider#project NetworkManagementNetworkMonitoringProvider#project}. |
 | <code><a href="#@cdktn/provider-google.networkManagementNetworkMonitoringProvider.NetworkManagementNetworkMonitoringProviderConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.networkManagementNetworkMonitoringProvider.NetworkManagementNetworkMonitoringProviderTimeouts">NetworkManagementNetworkMonitoringProviderTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1209,7 +1209,7 @@ public java.lang.String getLocation();
 
 The location of the Network Monitoring Provider. Currently only 'global' is supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_management_network_monitoring_provider#location NetworkManagementNetworkMonitoringProvider#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_management_network_monitoring_provider#location NetworkManagementNetworkMonitoringProvider#location}
 
 ---
 
@@ -1223,7 +1223,7 @@ public java.lang.String getNetworkMonitoringProviderId();
 
 The ID to use for the Network Monitoring Provider. This will become the last component of the provider's resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_management_network_monitoring_provider#network_monitoring_provider_id NetworkManagementNetworkMonitoringProvider#network_monitoring_provider_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_management_network_monitoring_provider#network_monitoring_provider_id NetworkManagementNetworkMonitoringProvider#network_monitoring_provider_id}
 
 ---
 
@@ -1237,7 +1237,7 @@ public java.lang.String getProviderType();
 
 The type of the Network Monitoring Provider. Currently only 'EXTERNAL' is supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_management_network_monitoring_provider#provider_type NetworkManagementNetworkMonitoringProvider#provider_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_management_network_monitoring_provider#provider_type NetworkManagementNetworkMonitoringProvider#provider_type}
 
 ---
 
@@ -1254,7 +1254,7 @@ The deletion policy for the Network Monitoring Provider.
 Setting 'deletion_policy = "FORCE"' forces the deletion of all nested resources
 (MonitoringPoints, NetworkPaths, WebPaths) belonging to this provider on deletion.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_management_network_monitoring_provider#deletion_policy NetworkManagementNetworkMonitoringProvider#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_management_network_monitoring_provider#deletion_policy NetworkManagementNetworkMonitoringProvider#deletion_policy}
 
 ---
 
@@ -1266,7 +1266,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_management_network_monitoring_provider#id NetworkManagementNetworkMonitoringProvider#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_management_network_monitoring_provider#id NetworkManagementNetworkMonitoringProvider#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1281,7 +1281,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_management_network_monitoring_provider#project NetworkManagementNetworkMonitoringProvider#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_management_network_monitoring_provider#project NetworkManagementNetworkMonitoringProvider#project}.
 
 ---
 
@@ -1295,7 +1295,7 @@ public NetworkManagementNetworkMonitoringProviderTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_management_network_monitoring_provider#timeouts NetworkManagementNetworkMonitoringProvider#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_management_network_monitoring_provider#timeouts NetworkManagementNetworkMonitoringProvider#timeouts}
 
 ---
 
@@ -1317,9 +1317,9 @@ NetworkManagementNetworkMonitoringProviderTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.networkManagementNetworkMonitoringProvider.NetworkManagementNetworkMonitoringProviderTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_management_network_monitoring_provider#create NetworkManagementNetworkMonitoringProvider#create}. |
-| <code><a href="#@cdktn/provider-google.networkManagementNetworkMonitoringProvider.NetworkManagementNetworkMonitoringProviderTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_management_network_monitoring_provider#delete NetworkManagementNetworkMonitoringProvider#delete}. |
-| <code><a href="#@cdktn/provider-google.networkManagementNetworkMonitoringProvider.NetworkManagementNetworkMonitoringProviderTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_management_network_monitoring_provider#update NetworkManagementNetworkMonitoringProvider#update}. |
+| <code><a href="#@cdktn/provider-google.networkManagementNetworkMonitoringProvider.NetworkManagementNetworkMonitoringProviderTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_management_network_monitoring_provider#create NetworkManagementNetworkMonitoringProvider#create}. |
+| <code><a href="#@cdktn/provider-google.networkManagementNetworkMonitoringProvider.NetworkManagementNetworkMonitoringProviderTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_management_network_monitoring_provider#delete NetworkManagementNetworkMonitoringProvider#delete}. |
+| <code><a href="#@cdktn/provider-google.networkManagementNetworkMonitoringProvider.NetworkManagementNetworkMonitoringProviderTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_management_network_monitoring_provider#update NetworkManagementNetworkMonitoringProvider#update}. |
 
 ---
 
@@ -1331,7 +1331,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_management_network_monitoring_provider#create NetworkManagementNetworkMonitoringProvider#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_management_network_monitoring_provider#create NetworkManagementNetworkMonitoringProvider#create}.
 
 ---
 
@@ -1343,7 +1343,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_management_network_monitoring_provider#delete NetworkManagementNetworkMonitoringProvider#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_management_network_monitoring_provider#delete NetworkManagementNetworkMonitoringProvider#delete}.
 
 ---
 
@@ -1355,7 +1355,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/network_management_network_monitoring_provider#update NetworkManagementNetworkMonitoringProvider#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/network_management_network_monitoring_provider#update NetworkManagementNetworkMonitoringProvider#update}.
 
 ---
 

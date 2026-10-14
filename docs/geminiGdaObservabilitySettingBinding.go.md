@@ -4,7 +4,7 @@
 
 ### GeminiGdaObservabilitySettingBinding <a name="GeminiGdaObservabilitySettingBinding" id="@cdktn/provider-google.geminiGdaObservabilitySettingBinding.GeminiGdaObservabilitySettingBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gemini_gda_observability_setting_binding google_gemini_gda_observability_setting_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/gemini_gda_observability_setting_binding google_gemini_gda_observability_setting_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.geminiGdaObservabilitySettingBinding.GeminiGdaObservabilitySettingBinding.Initializer"></a>
 
@@ -551,7 +551,7 @@ The construct id used in the generated config for the GeminiGdaObservabilitySett
 
 The id of the existing GeminiGdaObservabilitySettingBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gemini_gda_observability_setting_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/gemini_gda_observability_setting_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1064,11 +1064,11 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/geminigdaobserva
 | <code><a href="#@cdktn/provider-google.geminiGdaObservabilitySettingBinding.GeminiGdaObservabilitySettingBindingConfig.property.settingBindingId">SettingBindingId</a></code> | <code>*string</code> | Id of the setting binding. |
 | <code><a href="#@cdktn/provider-google.geminiGdaObservabilitySettingBinding.GeminiGdaObservabilitySettingBindingConfig.property.target">Target</a></code> | <code>*string</code> | Target of the binding. |
 | <code><a href="#@cdktn/provider-google.geminiGdaObservabilitySettingBinding.GeminiGdaObservabilitySettingBindingConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | Whether Terraform will be prevented from destroying the instance. |
-| <code><a href="#@cdktn/provider-google.geminiGdaObservabilitySettingBinding.GeminiGdaObservabilitySettingBindingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gemini_gda_observability_setting_binding#id GeminiGdaObservabilitySettingBinding#id}. |
+| <code><a href="#@cdktn/provider-google.geminiGdaObservabilitySettingBinding.GeminiGdaObservabilitySettingBindingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/gemini_gda_observability_setting_binding#id GeminiGdaObservabilitySettingBinding#id}. |
 | <code><a href="#@cdktn/provider-google.geminiGdaObservabilitySettingBinding.GeminiGdaObservabilitySettingBindingConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | Labels as key value pairs. |
 | <code><a href="#@cdktn/provider-google.geminiGdaObservabilitySettingBinding.GeminiGdaObservabilitySettingBindingConfig.property.location">Location</a></code> | <code>*string</code> | Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122. |
 | <code><a href="#@cdktn/provider-google.geminiGdaObservabilitySettingBinding.GeminiGdaObservabilitySettingBindingConfig.property.product">Product</a></code> | <code>*string</code> | Product type of the setting binding. Values include GEMINI_IN_LOOKER. See [product reference](https://cloud.google.com/gemini/docs/api/reference/rest/v1/projects.locations.gdaObservabilitySettings.settingBindings) for a complete list. |
-| <code><a href="#@cdktn/provider-google.geminiGdaObservabilitySettingBinding.GeminiGdaObservabilitySettingBindingConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gemini_gda_observability_setting_binding#project GeminiGdaObservabilitySettingBinding#project}. |
+| <code><a href="#@cdktn/provider-google.geminiGdaObservabilitySettingBinding.GeminiGdaObservabilitySettingBindingConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/gemini_gda_observability_setting_binding#project GeminiGdaObservabilitySettingBinding#project}. |
 | <code><a href="#@cdktn/provider-google.geminiGdaObservabilitySettingBinding.GeminiGdaObservabilitySettingBindingConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.geminiGdaObservabilitySettingBinding.GeminiGdaObservabilitySettingBindingTimeouts">GeminiGdaObservabilitySettingBindingTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1153,7 +1153,7 @@ GdaObservabilitySettingId *string
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gemini_gda_observability_setting_binding#gda_observability_setting_id GeminiGdaObservabilitySettingBinding#gda_observability_setting_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/gemini_gda_observability_setting_binding#gda_observability_setting_id GeminiGdaObservabilitySettingBinding#gda_observability_setting_id}
 
 ---
 
@@ -1167,7 +1167,7 @@ SettingBindingId *string
 
 Id of the setting binding.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gemini_gda_observability_setting_binding#setting_binding_id GeminiGdaObservabilitySettingBinding#setting_binding_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/gemini_gda_observability_setting_binding#setting_binding_id GeminiGdaObservabilitySettingBinding#setting_binding_id}
 
 ---
 
@@ -1181,7 +1181,7 @@ Target *string
 
 Target of the binding.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gemini_gda_observability_setting_binding#target GeminiGdaObservabilitySettingBinding#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/gemini_gda_observability_setting_binding#target GeminiGdaObservabilitySettingBinding#target}
 
 ---
 
@@ -1202,7 +1202,7 @@ When set to "ABANDON", the command will remove the resource from Terraform
 management without updating or deleting the resource in the API.
 When set to "DELETE", deleting the resource is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gemini_gda_observability_setting_binding#deletion_policy GeminiGdaObservabilitySettingBinding#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/gemini_gda_observability_setting_binding#deletion_policy GeminiGdaObservabilitySettingBinding#deletion_policy}
 
 ---
 
@@ -1214,7 +1214,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gemini_gda_observability_setting_binding#id GeminiGdaObservabilitySettingBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/gemini_gda_observability_setting_binding#id GeminiGdaObservabilitySettingBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1234,7 +1234,7 @@ Labels as key value pairs.
 **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
 Please refer to the field 'effective_labels' for all of the labels present on the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gemini_gda_observability_setting_binding#labels GeminiGdaObservabilitySettingBinding#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/gemini_gda_observability_setting_binding#labels GeminiGdaObservabilitySettingBinding#labels}
 
 ---
 
@@ -1248,7 +1248,7 @@ Location *string
 
 Resource ID segment making up resource 'name'. It identifies the resource within its parent collection as described in https://google.aip.dev/122.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gemini_gda_observability_setting_binding#location GeminiGdaObservabilitySettingBinding#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/gemini_gda_observability_setting_binding#location GeminiGdaObservabilitySettingBinding#location}
 
 ---
 
@@ -1262,7 +1262,7 @@ Product *string
 
 Product type of the setting binding. Values include GEMINI_IN_LOOKER. See [product reference](https://cloud.google.com/gemini/docs/api/reference/rest/v1/projects.locations.gdaObservabilitySettings.settingBindings) for a complete list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gemini_gda_observability_setting_binding#product GeminiGdaObservabilitySettingBinding#product}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/gemini_gda_observability_setting_binding#product GeminiGdaObservabilitySettingBinding#product}
 
 ---
 
@@ -1274,7 +1274,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gemini_gda_observability_setting_binding#project GeminiGdaObservabilitySettingBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/gemini_gda_observability_setting_binding#project GeminiGdaObservabilitySettingBinding#project}.
 
 ---
 
@@ -1288,7 +1288,7 @@ Timeouts GeminiGdaObservabilitySettingBindingTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gemini_gda_observability_setting_binding#timeouts GeminiGdaObservabilitySettingBinding#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/gemini_gda_observability_setting_binding#timeouts GeminiGdaObservabilitySettingBinding#timeouts}
 
 ---
 
@@ -1310,9 +1310,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/geminigdaobserva
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.geminiGdaObservabilitySettingBinding.GeminiGdaObservabilitySettingBindingTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gemini_gda_observability_setting_binding#create GeminiGdaObservabilitySettingBinding#create}. |
-| <code><a href="#@cdktn/provider-google.geminiGdaObservabilitySettingBinding.GeminiGdaObservabilitySettingBindingTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gemini_gda_observability_setting_binding#delete GeminiGdaObservabilitySettingBinding#delete}. |
-| <code><a href="#@cdktn/provider-google.geminiGdaObservabilitySettingBinding.GeminiGdaObservabilitySettingBindingTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gemini_gda_observability_setting_binding#update GeminiGdaObservabilitySettingBinding#update}. |
+| <code><a href="#@cdktn/provider-google.geminiGdaObservabilitySettingBinding.GeminiGdaObservabilitySettingBindingTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/gemini_gda_observability_setting_binding#create GeminiGdaObservabilitySettingBinding#create}. |
+| <code><a href="#@cdktn/provider-google.geminiGdaObservabilitySettingBinding.GeminiGdaObservabilitySettingBindingTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/gemini_gda_observability_setting_binding#delete GeminiGdaObservabilitySettingBinding#delete}. |
+| <code><a href="#@cdktn/provider-google.geminiGdaObservabilitySettingBinding.GeminiGdaObservabilitySettingBindingTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/gemini_gda_observability_setting_binding#update GeminiGdaObservabilitySettingBinding#update}. |
 
 ---
 
@@ -1324,7 +1324,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gemini_gda_observability_setting_binding#create GeminiGdaObservabilitySettingBinding#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/gemini_gda_observability_setting_binding#create GeminiGdaObservabilitySettingBinding#create}.
 
 ---
 
@@ -1336,7 +1336,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gemini_gda_observability_setting_binding#delete GeminiGdaObservabilitySettingBinding#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/gemini_gda_observability_setting_binding#delete GeminiGdaObservabilitySettingBinding#delete}.
 
 ---
 
@@ -1348,7 +1348,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/gemini_gda_observability_setting_binding#update GeminiGdaObservabilitySettingBinding#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/gemini_gda_observability_setting_binding#update GeminiGdaObservabilitySettingBinding#update}.
 
 ---
 

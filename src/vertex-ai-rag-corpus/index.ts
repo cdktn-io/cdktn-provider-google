@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_rag_corpus
+// https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,61 +21,61 @@ export interface VertexAiRagCorpusConfig extends cdktn.TerraformMetaArguments {
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_rag_corpus#deletion_policy VertexAiRagCorpus#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#deletion_policy VertexAiRagCorpus#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * Optional. The description of the RagCorpus.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_rag_corpus#description VertexAiRagCorpus#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#description VertexAiRagCorpus#description}
   */
   readonly description?: string;
   /**
   * Required. The display name of the RagCorpus. The name can be up to 128
   * characters long and can consist of any UTF-8 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_rag_corpus#display_name VertexAiRagCorpus#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#display_name VertexAiRagCorpus#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_rag_corpus#id VertexAiRagCorpus#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#id VertexAiRagCorpus#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_rag_corpus#project VertexAiRagCorpus#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#project VertexAiRagCorpus#project}
   */
   readonly project?: string;
   /**
   * The region of the RagCorpus. eg europe-west4
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_rag_corpus#region VertexAiRagCorpus#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#region VertexAiRagCorpus#region}
   */
   readonly region: string;
   /**
   * encryption_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_rag_corpus#encryption_spec VertexAiRagCorpus#encryption_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#encryption_spec VertexAiRagCorpus#encryption_spec}
   */
   readonly encryptionSpec?: VertexAiRagCorpusEncryptionSpec;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_rag_corpus#timeouts VertexAiRagCorpus#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#timeouts VertexAiRagCorpus#timeouts}
   */
   readonly timeouts?: VertexAiRagCorpusTimeouts;
   /**
   * vector_db_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_rag_corpus#vector_db_config VertexAiRagCorpus#vector_db_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#vector_db_config VertexAiRagCorpus#vector_db_config}
   */
   readonly vectorDbConfig?: VertexAiRagCorpusVectorDbConfig;
   /**
   * vertex_ai_search_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_rag_corpus#vertex_ai_search_config VertexAiRagCorpus#vertex_ai_search_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#vertex_ai_search_config VertexAiRagCorpus#vertex_ai_search_config}
   */
   readonly vertexAiSearchConfig?: VertexAiRagCorpusVertexAiSearchConfig;
 }
@@ -167,7 +167,7 @@ export interface VertexAiRagCorpusEncryptionSpec {
   * The key needs to be in the same region as where the resource is
   * created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_rag_corpus#kms_key_name VertexAiRagCorpus#kms_key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#kms_key_name VertexAiRagCorpus#kms_key_name}
   */
   readonly kmsKeyName: string;
 }
@@ -248,15 +248,15 @@ export class VertexAiRagCorpusEncryptionSpecOutputReference extends cdktn.Comple
 }
 export interface VertexAiRagCorpusTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_rag_corpus#create VertexAiRagCorpus#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#create VertexAiRagCorpus#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_rag_corpus#delete VertexAiRagCorpus#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#delete VertexAiRagCorpus#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_rag_corpus#update VertexAiRagCorpus#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#update VertexAiRagCorpus#update}
   */
   readonly update?: string;
 }
@@ -411,13 +411,13 @@ export interface VertexAiRagCorpusVectorDbConfigApiAuthApiKeyConfig {
   * The SecretManager secret version resource name storing API key.
   * e.g. projects/{project}/secrets/{secret}/versions/{version}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_rag_corpus#api_key_secret_version VertexAiRagCorpus#api_key_secret_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#api_key_secret_version VertexAiRagCorpus#api_key_secret_version}
   */
   readonly apiKeySecretVersion?: string;
   /**
   * The API key string.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_rag_corpus#api_key_string VertexAiRagCorpus#api_key_string}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#api_key_string VertexAiRagCorpus#api_key_string}
   */
   readonly apiKeyString?: string;
 }
@@ -532,7 +532,7 @@ export interface VertexAiRagCorpusVectorDbConfigApiAuth {
   /**
   * api_key_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_rag_corpus#api_key_config VertexAiRagCorpus#api_key_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#api_key_config VertexAiRagCorpus#api_key_config}
   */
   readonly apiKeyConfig?: VertexAiRagCorpusVectorDbConfigApiAuthApiKeyConfig;
 }
@@ -618,7 +618,7 @@ export interface VertexAiRagCorpusVectorDbConfigPinecone {
   /**
   * Pinecone index name. This value cannot be changed after it's set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_rag_corpus#index_name VertexAiRagCorpus#index_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#index_name VertexAiRagCorpus#index_name}
   */
   readonly indexName: string;
 }
@@ -703,7 +703,7 @@ export interface VertexAiRagCorpusVectorDbConfigRagEmbeddingModelConfigVertexPre
   * projects/{project}/locations/{location}/publishers/{publisher}/models/{model}
   * or projects/{project}/locations/{location}/endpoints/{endpoint}.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_rag_corpus#endpoint VertexAiRagCorpus#endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#endpoint VertexAiRagCorpus#endpoint}
   */
   readonly endpoint: string;
 }
@@ -796,7 +796,7 @@ export interface VertexAiRagCorpusVectorDbConfigRagEmbeddingModelConfig {
   /**
   * vertex_prediction_endpoint block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_rag_corpus#vertex_prediction_endpoint VertexAiRagCorpus#vertex_prediction_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#vertex_prediction_endpoint VertexAiRagCorpus#vertex_prediction_endpoint}
   */
   readonly vertexPredictionEndpoint?: VertexAiRagCorpusVectorDbConfigRagEmbeddingModelConfigVertexPredictionEndpoint;
 }
@@ -882,13 +882,13 @@ export interface VertexAiRagCorpusVectorDbConfigRagManagedDbAnn {
   /**
   * Number of leaf nodes in the tree-based structure. Default value is 500.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_rag_corpus#leaf_count VertexAiRagCorpus#leaf_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#leaf_count VertexAiRagCorpus#leaf_count}
   */
   readonly leafCount?: number;
   /**
   * The depth of the tree-based structure. Only depth values of 2 and 3 are supported. Default value is 2.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_rag_corpus#tree_depth VertexAiRagCorpus#tree_depth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#tree_depth VertexAiRagCorpus#tree_depth}
   */
   readonly treeDepth?: number;
 }
@@ -1052,13 +1052,13 @@ export interface VertexAiRagCorpusVectorDbConfigRagManagedDb {
   /**
   * ann block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_rag_corpus#ann VertexAiRagCorpus#ann}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#ann VertexAiRagCorpus#ann}
   */
   readonly ann?: VertexAiRagCorpusVectorDbConfigRagManagedDbAnn;
   /**
   * knn block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_rag_corpus#knn VertexAiRagCorpus#knn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#knn VertexAiRagCorpus#knn}
   */
   readonly knn?: VertexAiRagCorpusVectorDbConfigRagManagedDbKnn;
 }
@@ -1174,14 +1174,14 @@ export interface VertexAiRagCorpusVectorDbConfigVertexVectorSearch {
   * The resource name of the Index.
   * Format: projects/{project}/locations/{location}/indexes/{index}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_rag_corpus#index VertexAiRagCorpus#index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#index VertexAiRagCorpus#index}
   */
   readonly index: string;
   /**
   * The resource name of the Index Endpoint.
   * Format: projects/{project}/locations/{location}/indexEndpoints/{index_endpoint}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_rag_corpus#index_endpoint VertexAiRagCorpus#index_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#index_endpoint VertexAiRagCorpus#index_endpoint}
   */
   readonly indexEndpoint: string;
 }
@@ -1290,31 +1290,31 @@ export interface VertexAiRagCorpusVectorDbConfig {
   /**
   * api_auth block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_rag_corpus#api_auth VertexAiRagCorpus#api_auth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#api_auth VertexAiRagCorpus#api_auth}
   */
   readonly apiAuth?: VertexAiRagCorpusVectorDbConfigApiAuth;
   /**
   * pinecone block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_rag_corpus#pinecone VertexAiRagCorpus#pinecone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#pinecone VertexAiRagCorpus#pinecone}
   */
   readonly pinecone?: VertexAiRagCorpusVectorDbConfigPinecone;
   /**
   * rag_embedding_model_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_rag_corpus#rag_embedding_model_config VertexAiRagCorpus#rag_embedding_model_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#rag_embedding_model_config VertexAiRagCorpus#rag_embedding_model_config}
   */
   readonly ragEmbeddingModelConfig?: VertexAiRagCorpusVectorDbConfigRagEmbeddingModelConfig;
   /**
   * rag_managed_db block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_rag_corpus#rag_managed_db VertexAiRagCorpus#rag_managed_db}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#rag_managed_db VertexAiRagCorpus#rag_managed_db}
   */
   readonly ragManagedDb?: VertexAiRagCorpusVectorDbConfigRagManagedDb;
   /**
   * vertex_vector_search block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_rag_corpus#vertex_vector_search VertexAiRagCorpus#vertex_vector_search}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#vertex_vector_search VertexAiRagCorpus#vertex_vector_search}
   */
   readonly vertexVectorSearch?: VertexAiRagCorpusVectorDbConfigVertexVectorSearch;
 }
@@ -1519,7 +1519,7 @@ export interface VertexAiRagCorpusVertexAiSearchConfig {
   * or
   * projects/{project}/locations/{location}/collections/{collection}/dataStores/{data_store}/servingConfigs/{serving_config}.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_rag_corpus#serving_config VertexAiRagCorpus#serving_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#serving_config VertexAiRagCorpus#serving_config}
   */
   readonly servingConfig: string;
 }
@@ -1600,7 +1600,7 @@ export class VertexAiRagCorpusVertexAiSearchConfigOutputReference extends cdktn.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_rag_corpus google_vertex_ai_rag_corpus}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus google_vertex_ai_rag_corpus}
 */
 export class VertexAiRagCorpus extends cdktn.TerraformResource {
 
@@ -1616,7 +1616,7 @@ export class VertexAiRagCorpus extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a VertexAiRagCorpus resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VertexAiRagCorpus to import
-  * @param importFromId The id of the existing VertexAiRagCorpus that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_rag_corpus#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VertexAiRagCorpus that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VertexAiRagCorpus to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1628,7 +1628,7 @@ export class VertexAiRagCorpus extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/vertex_ai_rag_corpus google_vertex_ai_rag_corpus} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/vertex_ai_rag_corpus google_vertex_ai_rag_corpus} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1639,7 +1639,7 @@ export class VertexAiRagCorpus extends cdktn.TerraformResource {
       terraformResourceType: 'google_vertex_ai_rag_corpus',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.6.0',
+        providerVersion: '8.7.0',
         providerVersionConstraint: '~> 8.0'
       },
       provider: config.provider,
