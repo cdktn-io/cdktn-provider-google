@@ -4,7 +4,7 @@
 
 ### DataGoogleNetworkServicesGateway <a name="DataGoogleNetworkServicesGateway" id="@cdktn/provider-google.dataGoogleNetworkServicesGateway.DataGoogleNetworkServicesGateway"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/network_services_gateway google_network_services_gateway}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/network_services_gateway google_network_services_gateway}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleNetworkServicesGateway.DataGoogleNetworkServicesGateway.Initializer"></a>
 
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataGoogleNetworkServicesG
 
 The id of the existing DataGoogleNetworkServicesGateway that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/network_services_gateway#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/network_services_gateway#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -950,8 +950,8 @@ new DataGoogleNetworkServicesGatewayConfig {
 | <code><a href="#@cdktn/provider-google.dataGoogleNetworkServicesGateway.DataGoogleNetworkServicesGatewayConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleNetworkServicesGateway.DataGoogleNetworkServicesGatewayConfig.property.location">Location</a></code> | <code>string</code> | The location of the gateway. The default value is 'global'. |
 | <code><a href="#@cdktn/provider-google.dataGoogleNetworkServicesGateway.DataGoogleNetworkServicesGatewayConfig.property.name">Name</a></code> | <code>string</code> | Name of the Gateway resource. |
-| <code><a href="#@cdktn/provider-google.dataGoogleNetworkServicesGateway.DataGoogleNetworkServicesGatewayConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/network_services_gateway#id DataGoogleNetworkServicesGateway#id}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleNetworkServicesGateway.DataGoogleNetworkServicesGatewayConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/network_services_gateway#project DataGoogleNetworkServicesGateway#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleNetworkServicesGateway.DataGoogleNetworkServicesGatewayConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/network_services_gateway#id DataGoogleNetworkServicesGateway#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleNetworkServicesGateway.DataGoogleNetworkServicesGatewayConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/network_services_gateway#project DataGoogleNetworkServicesGateway#project}. |
 
 ---
 
@@ -1035,7 +1035,7 @@ public string Location { get; set; }
 
 The location of the gateway. The default value is 'global'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/network_services_gateway#location DataGoogleNetworkServicesGateway#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/network_services_gateway#location DataGoogleNetworkServicesGateway#location}
 
 ---
 
@@ -1049,7 +1049,7 @@ public string Name { get; set; }
 
 Name of the Gateway resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/network_services_gateway#name DataGoogleNetworkServicesGateway#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/network_services_gateway#name DataGoogleNetworkServicesGateway#name}
 
 ---
 
@@ -1061,7 +1061,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/network_services_gateway#id DataGoogleNetworkServicesGateway#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/network_services_gateway#id DataGoogleNetworkServicesGateway#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1076,7 +1076,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/network_services_gateway#project DataGoogleNetworkServicesGateway#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/network_services_gateway#project DataGoogleNetworkServicesGateway#project}.
 
 ---
 

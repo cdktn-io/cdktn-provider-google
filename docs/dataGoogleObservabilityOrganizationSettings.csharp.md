@@ -4,7 +4,7 @@
 
 ### DataGoogleObservabilityOrganizationSettings <a name="DataGoogleObservabilityOrganizationSettings" id="@cdktn/provider-google.dataGoogleObservabilityOrganizationSettings.DataGoogleObservabilityOrganizationSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/observability_organization_settings google_observability_organization_settings}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/observability_organization_settings google_observability_organization_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleObservabilityOrganizationSettings.DataGoogleObservabilityOrganizationSettings.Initializer"></a>
 
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataGoogleObservabilityOrg
 
 The id of the existing DataGoogleObservabilityOrganizationSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/observability_organization_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/observability_organization_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -711,7 +711,7 @@ new DataGoogleObservabilityOrganizationSettingsConfig {
 | <code><a href="#@cdktn/provider-google.dataGoogleObservabilityOrganizationSettings.DataGoogleObservabilityOrganizationSettingsConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleObservabilityOrganizationSettings.DataGoogleObservabilityOrganizationSettingsConfig.property.location">Location</a></code> | <code>string</code> | The location of the settings. |
 | <code><a href="#@cdktn/provider-google.dataGoogleObservabilityOrganizationSettings.DataGoogleObservabilityOrganizationSettingsConfig.property.organization">Organization</a></code> | <code>string</code> | The organization ID. |
-| <code><a href="#@cdktn/provider-google.dataGoogleObservabilityOrganizationSettings.DataGoogleObservabilityOrganizationSettingsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/observability_organization_settings#id DataGoogleObservabilityOrganizationSettings#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleObservabilityOrganizationSettings.DataGoogleObservabilityOrganizationSettingsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/observability_organization_settings#id DataGoogleObservabilityOrganizationSettings#id}. |
 
 ---
 
@@ -795,7 +795,7 @@ public string Location { get; set; }
 
 The location of the settings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/observability_organization_settings#location DataGoogleObservabilityOrganizationSettings#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/observability_organization_settings#location DataGoogleObservabilityOrganizationSettings#location}
 
 ---
 
@@ -809,7 +809,7 @@ public string Organization { get; set; }
 
 The organization ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/observability_organization_settings#organization DataGoogleObservabilityOrganizationSettings#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/observability_organization_settings#organization DataGoogleObservabilityOrganizationSettings#organization}
 
 ---
 
@@ -821,7 +821,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/observability_organization_settings#id DataGoogleObservabilityOrganizationSettings#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/observability_organization_settings#id DataGoogleObservabilityOrganizationSettings#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

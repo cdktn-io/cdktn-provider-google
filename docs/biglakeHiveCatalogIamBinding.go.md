@@ -4,7 +4,7 @@
 
 ### BiglakeHiveCatalogIamBinding <a name="BiglakeHiveCatalogIamBinding" id="@cdktn/provider-google.biglakeHiveCatalogIamBinding.BiglakeHiveCatalogIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/biglake_hive_catalog_iam_binding google_biglake_hive_catalog_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_catalog_iam_binding google_biglake_hive_catalog_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.biglakeHiveCatalogIamBinding.BiglakeHiveCatalogIamBinding.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the BiglakeHiveCatalogIamBindi
 
 The id of the existing BiglakeHiveCatalogIamBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/biglake_hive_catalog_iam_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_catalog_iam_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -879,9 +879,9 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/biglakehivecatal
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.biglakeHiveCatalogIamBinding.BiglakeHiveCatalogIamBindingCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/biglake_hive_catalog_iam_binding#expression BiglakeHiveCatalogIamBinding#expression}. |
-| <code><a href="#@cdktn/provider-google.biglakeHiveCatalogIamBinding.BiglakeHiveCatalogIamBindingCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/biglake_hive_catalog_iam_binding#title BiglakeHiveCatalogIamBinding#title}. |
-| <code><a href="#@cdktn/provider-google.biglakeHiveCatalogIamBinding.BiglakeHiveCatalogIamBindingCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/biglake_hive_catalog_iam_binding#description BiglakeHiveCatalogIamBinding#description}. |
+| <code><a href="#@cdktn/provider-google.biglakeHiveCatalogIamBinding.BiglakeHiveCatalogIamBindingCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_catalog_iam_binding#expression BiglakeHiveCatalogIamBinding#expression}. |
+| <code><a href="#@cdktn/provider-google.biglakeHiveCatalogIamBinding.BiglakeHiveCatalogIamBindingCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_catalog_iam_binding#title BiglakeHiveCatalogIamBinding#title}. |
+| <code><a href="#@cdktn/provider-google.biglakeHiveCatalogIamBinding.BiglakeHiveCatalogIamBindingCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_catalog_iam_binding#description BiglakeHiveCatalogIamBinding#description}. |
 
 ---
 
@@ -893,7 +893,7 @@ Expression *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/biglake_hive_catalog_iam_binding#expression BiglakeHiveCatalogIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_catalog_iam_binding#expression BiglakeHiveCatalogIamBinding#expression}.
 
 ---
 
@@ -905,7 +905,7 @@ Title *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/biglake_hive_catalog_iam_binding#title BiglakeHiveCatalogIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_catalog_iam_binding#title BiglakeHiveCatalogIamBinding#title}.
 
 ---
 
@@ -917,7 +917,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/biglake_hive_catalog_iam_binding#description BiglakeHiveCatalogIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_catalog_iam_binding#description BiglakeHiveCatalogIamBinding#description}.
 
 ---
 
@@ -956,12 +956,12 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/biglakehivecatal
 | <code><a href="#@cdktn/provider-google.biglakeHiveCatalogIamBinding.BiglakeHiveCatalogIamBindingConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.biglakeHiveCatalogIamBinding.BiglakeHiveCatalogIamBindingConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.biglakeHiveCatalogIamBinding.BiglakeHiveCatalogIamBindingConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.biglakeHiveCatalogIamBinding.BiglakeHiveCatalogIamBindingConfig.property.members">Members</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/biglake_hive_catalog_iam_binding#members BiglakeHiveCatalogIamBinding#members}. |
-| <code><a href="#@cdktn/provider-google.biglakeHiveCatalogIamBinding.BiglakeHiveCatalogIamBindingConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/biglake_hive_catalog_iam_binding#name BiglakeHiveCatalogIamBinding#name}. |
-| <code><a href="#@cdktn/provider-google.biglakeHiveCatalogIamBinding.BiglakeHiveCatalogIamBindingConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/biglake_hive_catalog_iam_binding#role BiglakeHiveCatalogIamBinding#role}. |
+| <code><a href="#@cdktn/provider-google.biglakeHiveCatalogIamBinding.BiglakeHiveCatalogIamBindingConfig.property.members">Members</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_catalog_iam_binding#members BiglakeHiveCatalogIamBinding#members}. |
+| <code><a href="#@cdktn/provider-google.biglakeHiveCatalogIamBinding.BiglakeHiveCatalogIamBindingConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_catalog_iam_binding#name BiglakeHiveCatalogIamBinding#name}. |
+| <code><a href="#@cdktn/provider-google.biglakeHiveCatalogIamBinding.BiglakeHiveCatalogIamBindingConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_catalog_iam_binding#role BiglakeHiveCatalogIamBinding#role}. |
 | <code><a href="#@cdktn/provider-google.biglakeHiveCatalogIamBinding.BiglakeHiveCatalogIamBindingConfig.property.condition">Condition</a></code> | <code><a href="#@cdktn/provider-google.biglakeHiveCatalogIamBinding.BiglakeHiveCatalogIamBindingCondition">BiglakeHiveCatalogIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktn/provider-google.biglakeHiveCatalogIamBinding.BiglakeHiveCatalogIamBindingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/biglake_hive_catalog_iam_binding#id BiglakeHiveCatalogIamBinding#id}. |
-| <code><a href="#@cdktn/provider-google.biglakeHiveCatalogIamBinding.BiglakeHiveCatalogIamBindingConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/biglake_hive_catalog_iam_binding#project BiglakeHiveCatalogIamBinding#project}. |
+| <code><a href="#@cdktn/provider-google.biglakeHiveCatalogIamBinding.BiglakeHiveCatalogIamBindingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_catalog_iam_binding#id BiglakeHiveCatalogIamBinding#id}. |
+| <code><a href="#@cdktn/provider-google.biglakeHiveCatalogIamBinding.BiglakeHiveCatalogIamBindingConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_catalog_iam_binding#project BiglakeHiveCatalogIamBinding#project}. |
 
 ---
 
@@ -1043,7 +1043,7 @@ Members *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/biglake_hive_catalog_iam_binding#members BiglakeHiveCatalogIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_catalog_iam_binding#members BiglakeHiveCatalogIamBinding#members}.
 
 ---
 
@@ -1055,7 +1055,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/biglake_hive_catalog_iam_binding#name BiglakeHiveCatalogIamBinding#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_catalog_iam_binding#name BiglakeHiveCatalogIamBinding#name}.
 
 ---
 
@@ -1067,7 +1067,7 @@ Role *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/biglake_hive_catalog_iam_binding#role BiglakeHiveCatalogIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_catalog_iam_binding#role BiglakeHiveCatalogIamBinding#role}.
 
 ---
 
@@ -1081,7 +1081,7 @@ Condition BiglakeHiveCatalogIamBindingCondition
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/biglake_hive_catalog_iam_binding#condition BiglakeHiveCatalogIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_catalog_iam_binding#condition BiglakeHiveCatalogIamBinding#condition}
 
 ---
 
@@ -1093,7 +1093,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/biglake_hive_catalog_iam_binding#id BiglakeHiveCatalogIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_catalog_iam_binding#id BiglakeHiveCatalogIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1108,7 +1108,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/biglake_hive_catalog_iam_binding#project BiglakeHiveCatalogIamBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_catalog_iam_binding#project BiglakeHiveCatalogIamBinding#project}.
 
 ---
 

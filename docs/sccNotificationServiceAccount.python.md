@@ -4,7 +4,7 @@
 
 ### SccNotificationServiceAccount <a name="SccNotificationServiceAccount" id="@cdktn/provider-google.sccNotificationServiceAccount.SccNotificationServiceAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_notification_service_account google_scc_notification_service_account}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/scc_notification_service_account google_scc_notification_service_account}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.sccNotificationServiceAccount.SccNotificationServiceAccount.Initializer"></a>
 
@@ -39,9 +39,9 @@ sccNotificationServiceAccount.SccNotificationServiceAccount(
 | <code><a href="#@cdktn/provider-google.sccNotificationServiceAccount.SccNotificationServiceAccount.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccNotificationServiceAccount.SccNotificationServiceAccount.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccNotificationServiceAccount.SccNotificationServiceAccount.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sccNotificationServiceAccount.SccNotificationServiceAccount.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_notification_service_account#id SccNotificationServiceAccount#id}. |
-| <code><a href="#@cdktn/provider-google.sccNotificationServiceAccount.SccNotificationServiceAccount.Initializer.parameter.organization">organization</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_notification_service_account#organization SccNotificationServiceAccount#organization}. |
-| <code><a href="#@cdktn/provider-google.sccNotificationServiceAccount.SccNotificationServiceAccount.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_notification_service_account#project SccNotificationServiceAccount#project}. |
+| <code><a href="#@cdktn/provider-google.sccNotificationServiceAccount.SccNotificationServiceAccount.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/scc_notification_service_account#id SccNotificationServiceAccount#id}. |
+| <code><a href="#@cdktn/provider-google.sccNotificationServiceAccount.SccNotificationServiceAccount.Initializer.parameter.organization">organization</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/scc_notification_service_account#organization SccNotificationServiceAccount#organization}. |
+| <code><a href="#@cdktn/provider-google.sccNotificationServiceAccount.SccNotificationServiceAccount.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/scc_notification_service_account#project SccNotificationServiceAccount#project}. |
 | <code><a href="#@cdktn/provider-google.sccNotificationServiceAccount.SccNotificationServiceAccount.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.sccNotificationServiceAccount.SccNotificationServiceAccountTimeouts">SccNotificationServiceAccountTimeouts</a></code> | timeouts block. |
 
 ---
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_notification_service_account#id SccNotificationServiceAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/scc_notification_service_account#id SccNotificationServiceAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -121,7 +121,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_notification_service_account#organization SccNotificationServiceAccount#organization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/scc_notification_service_account#organization SccNotificationServiceAccount#organization}.
 
 ---
 
@@ -129,7 +129,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_notification_service_account#project SccNotificationServiceAccount#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/scc_notification_service_account#project SccNotificationServiceAccount#project}.
 
 ---
 
@@ -139,7 +139,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_notification_service_account#timeouts SccNotificationServiceAccount#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/scc_notification_service_account#timeouts SccNotificationServiceAccount#timeouts}
 
 ---
 
@@ -541,7 +541,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_notification_service_account#create SccNotificationServiceAccount#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/scc_notification_service_account#create SccNotificationServiceAccount#create}.
 
 ---
 
@@ -549,7 +549,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_notification_service_account#delete SccNotificationServiceAccount#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/scc_notification_service_account#delete SccNotificationServiceAccount#delete}.
 
 ---
 
@@ -557,7 +557,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_notification_service_account#read SccNotificationServiceAccount#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/scc_notification_service_account#read SccNotificationServiceAccount#read}.
 
 ---
 
@@ -699,7 +699,7 @@ The construct id used in the generated config for the SccNotificationServiceAcco
 
 The id of the existing SccNotificationServiceAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_notification_service_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/scc_notification_service_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1037,9 +1037,9 @@ sccNotificationServiceAccount.SccNotificationServiceAccountConfig(
 | <code><a href="#@cdktn/provider-google.sccNotificationServiceAccount.SccNotificationServiceAccountConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccNotificationServiceAccount.SccNotificationServiceAccountConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.sccNotificationServiceAccount.SccNotificationServiceAccountConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.sccNotificationServiceAccount.SccNotificationServiceAccountConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_notification_service_account#id SccNotificationServiceAccount#id}. |
-| <code><a href="#@cdktn/provider-google.sccNotificationServiceAccount.SccNotificationServiceAccountConfig.property.organization">organization</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_notification_service_account#organization SccNotificationServiceAccount#organization}. |
-| <code><a href="#@cdktn/provider-google.sccNotificationServiceAccount.SccNotificationServiceAccountConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_notification_service_account#project SccNotificationServiceAccount#project}. |
+| <code><a href="#@cdktn/provider-google.sccNotificationServiceAccount.SccNotificationServiceAccountConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/scc_notification_service_account#id SccNotificationServiceAccount#id}. |
+| <code><a href="#@cdktn/provider-google.sccNotificationServiceAccount.SccNotificationServiceAccountConfig.property.organization">organization</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/scc_notification_service_account#organization SccNotificationServiceAccount#organization}. |
+| <code><a href="#@cdktn/provider-google.sccNotificationServiceAccount.SccNotificationServiceAccountConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/scc_notification_service_account#project SccNotificationServiceAccount#project}. |
 | <code><a href="#@cdktn/provider-google.sccNotificationServiceAccount.SccNotificationServiceAccountConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.sccNotificationServiceAccount.SccNotificationServiceAccountTimeouts">SccNotificationServiceAccountTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1122,7 +1122,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_notification_service_account#id SccNotificationServiceAccount#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/scc_notification_service_account#id SccNotificationServiceAccount#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1137,7 +1137,7 @@ organization: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_notification_service_account#organization SccNotificationServiceAccount#organization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/scc_notification_service_account#organization SccNotificationServiceAccount#organization}.
 
 ---
 
@@ -1149,7 +1149,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_notification_service_account#project SccNotificationServiceAccount#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/scc_notification_service_account#project SccNotificationServiceAccount#project}.
 
 ---
 
@@ -1163,7 +1163,7 @@ timeouts: SccNotificationServiceAccountTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_notification_service_account#timeouts SccNotificationServiceAccount#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/scc_notification_service_account#timeouts SccNotificationServiceAccount#timeouts}
 
 ---
 
@@ -1185,9 +1185,9 @@ sccNotificationServiceAccount.SccNotificationServiceAccountTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.sccNotificationServiceAccount.SccNotificationServiceAccountTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_notification_service_account#create SccNotificationServiceAccount#create}. |
-| <code><a href="#@cdktn/provider-google.sccNotificationServiceAccount.SccNotificationServiceAccountTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_notification_service_account#delete SccNotificationServiceAccount#delete}. |
-| <code><a href="#@cdktn/provider-google.sccNotificationServiceAccount.SccNotificationServiceAccountTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_notification_service_account#read SccNotificationServiceAccount#read}. |
+| <code><a href="#@cdktn/provider-google.sccNotificationServiceAccount.SccNotificationServiceAccountTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/scc_notification_service_account#create SccNotificationServiceAccount#create}. |
+| <code><a href="#@cdktn/provider-google.sccNotificationServiceAccount.SccNotificationServiceAccountTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/scc_notification_service_account#delete SccNotificationServiceAccount#delete}. |
+| <code><a href="#@cdktn/provider-google.sccNotificationServiceAccount.SccNotificationServiceAccountTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/scc_notification_service_account#read SccNotificationServiceAccount#read}. |
 
 ---
 
@@ -1199,7 +1199,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_notification_service_account#create SccNotificationServiceAccount#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/scc_notification_service_account#create SccNotificationServiceAccount#create}.
 
 ---
 
@@ -1211,7 +1211,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_notification_service_account#delete SccNotificationServiceAccount#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/scc_notification_service_account#delete SccNotificationServiceAccount#delete}.
 
 ---
 
@@ -1223,7 +1223,7 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/scc_notification_service_account#read SccNotificationServiceAccount#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/scc_notification_service_account#read SccNotificationServiceAccount#read}.
 
 ---
 

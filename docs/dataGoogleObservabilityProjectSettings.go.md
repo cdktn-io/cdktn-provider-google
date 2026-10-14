@@ -4,7 +4,7 @@
 
 ### DataGoogleObservabilityProjectSettings <a name="DataGoogleObservabilityProjectSettings" id="@cdktn/provider-google.dataGoogleObservabilityProjectSettings.DataGoogleObservabilityProjectSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/observability_project_settings google_observability_project_settings}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/observability_project_settings google_observability_project_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleObservabilityProjectSettings.DataGoogleObservabilityProjectSettings.Initializer"></a>
 
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataGoogleObservabilityPro
 
 The id of the existing DataGoogleObservabilityProjectSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/observability_project_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/observability_project_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -710,8 +710,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v21/datagoogleobserv
 | <code><a href="#@cdktn/provider-google.dataGoogleObservabilityProjectSettings.DataGoogleObservabilityProjectSettingsConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleObservabilityProjectSettings.DataGoogleObservabilityProjectSettingsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.dataGoogleObservabilityProjectSettings.DataGoogleObservabilityProjectSettingsConfig.property.location">Location</a></code> | <code>*string</code> | The location of the settings. |
-| <code><a href="#@cdktn/provider-google.dataGoogleObservabilityProjectSettings.DataGoogleObservabilityProjectSettingsConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/observability_project_settings#project DataGoogleObservabilityProjectSettings#project}. |
-| <code><a href="#@cdktn/provider-google.dataGoogleObservabilityProjectSettings.DataGoogleObservabilityProjectSettingsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/observability_project_settings#id DataGoogleObservabilityProjectSettings#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleObservabilityProjectSettings.DataGoogleObservabilityProjectSettingsConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/observability_project_settings#project DataGoogleObservabilityProjectSettings#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleObservabilityProjectSettings.DataGoogleObservabilityProjectSettingsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/observability_project_settings#id DataGoogleObservabilityProjectSettings#id}. |
 
 ---
 
@@ -795,7 +795,7 @@ Location *string
 
 The location of the settings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/observability_project_settings#location DataGoogleObservabilityProjectSettings#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/observability_project_settings#location DataGoogleObservabilityProjectSettings#location}
 
 ---
 
@@ -807,7 +807,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/observability_project_settings#project DataGoogleObservabilityProjectSettings#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/observability_project_settings#project DataGoogleObservabilityProjectSettings#project}.
 
 ---
 
@@ -819,7 +819,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/data-sources/observability_project_settings#id DataGoogleObservabilityProjectSettings#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/data-sources/observability_project_settings#id DataGoogleObservabilityProjectSettings#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

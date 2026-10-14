@@ -4,7 +4,7 @@
 
 ### BiglakeHiveDatabaseIamPolicy <a name="BiglakeHiveDatabaseIamPolicy" id="@cdktn/provider-google.biglakeHiveDatabaseIamPolicy.BiglakeHiveDatabaseIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/biglake_hive_database_iam_policy google_biglake_hive_database_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_policy google_biglake_hive_database_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.biglakeHiveDatabaseIamPolicy.BiglakeHiveDatabaseIamPolicy.Initializer"></a>
 
@@ -38,11 +38,11 @@ BiglakeHiveDatabaseIamPolicy.Builder.create(Construct scope, java.lang.String id
 | <code><a href="#@cdktn/provider-google.biglakeHiveDatabaseIamPolicy.BiglakeHiveDatabaseIamPolicy.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.biglakeHiveDatabaseIamPolicy.BiglakeHiveDatabaseIamPolicy.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.biglakeHiveDatabaseIamPolicy.BiglakeHiveDatabaseIamPolicy.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.biglakeHiveDatabaseIamPolicy.BiglakeHiveDatabaseIamPolicy.Initializer.parameter.catalog">catalog</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/biglake_hive_database_iam_policy#catalog BiglakeHiveDatabaseIamPolicy#catalog}. |
-| <code><a href="#@cdktn/provider-google.biglakeHiveDatabaseIamPolicy.BiglakeHiveDatabaseIamPolicy.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/biglake_hive_database_iam_policy#name BiglakeHiveDatabaseIamPolicy#name}. |
-| <code><a href="#@cdktn/provider-google.biglakeHiveDatabaseIamPolicy.BiglakeHiveDatabaseIamPolicy.Initializer.parameter.policyData">policyData</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/biglake_hive_database_iam_policy#policy_data BiglakeHiveDatabaseIamPolicy#policy_data}. |
-| <code><a href="#@cdktn/provider-google.biglakeHiveDatabaseIamPolicy.BiglakeHiveDatabaseIamPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/biglake_hive_database_iam_policy#id BiglakeHiveDatabaseIamPolicy#id}. |
-| <code><a href="#@cdktn/provider-google.biglakeHiveDatabaseIamPolicy.BiglakeHiveDatabaseIamPolicy.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/biglake_hive_database_iam_policy#project BiglakeHiveDatabaseIamPolicy#project}. |
+| <code><a href="#@cdktn/provider-google.biglakeHiveDatabaseIamPolicy.BiglakeHiveDatabaseIamPolicy.Initializer.parameter.catalog">catalog</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_policy#catalog BiglakeHiveDatabaseIamPolicy#catalog}. |
+| <code><a href="#@cdktn/provider-google.biglakeHiveDatabaseIamPolicy.BiglakeHiveDatabaseIamPolicy.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_policy#name BiglakeHiveDatabaseIamPolicy#name}. |
+| <code><a href="#@cdktn/provider-google.biglakeHiveDatabaseIamPolicy.BiglakeHiveDatabaseIamPolicy.Initializer.parameter.policyData">policyData</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_policy#policy_data BiglakeHiveDatabaseIamPolicy#policy_data}. |
+| <code><a href="#@cdktn/provider-google.biglakeHiveDatabaseIamPolicy.BiglakeHiveDatabaseIamPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_policy#id BiglakeHiveDatabaseIamPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.biglakeHiveDatabaseIamPolicy.BiglakeHiveDatabaseIamPolicy.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_policy#project BiglakeHiveDatabaseIamPolicy#project}. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/biglake_hive_database_iam_policy#catalog BiglakeHiveDatabaseIamPolicy#catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_policy#catalog BiglakeHiveDatabaseIamPolicy#catalog}.
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/biglake_hive_database_iam_policy#name BiglakeHiveDatabaseIamPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_policy#name BiglakeHiveDatabaseIamPolicy#name}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/biglake_hive_database_iam_policy#policy_data BiglakeHiveDatabaseIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_policy#policy_data BiglakeHiveDatabaseIamPolicy#policy_data}.
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/biglake_hive_database_iam_policy#id BiglakeHiveDatabaseIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_policy#id BiglakeHiveDatabaseIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -145,7 +145,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/biglake_hive_database_iam_policy#project BiglakeHiveDatabaseIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_policy#project BiglakeHiveDatabaseIamPolicy#project}.
 
 ---
 
@@ -608,7 +608,7 @@ The construct id used in the generated config for the BiglakeHiveDatabaseIamPoli
 
 The id of the existing BiglakeHiveDatabaseIamPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/biglake_hive_database_iam_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -958,11 +958,11 @@ BiglakeHiveDatabaseIamPolicyConfig.builder()
 | <code><a href="#@cdktn/provider-google.biglakeHiveDatabaseIamPolicy.BiglakeHiveDatabaseIamPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.biglakeHiveDatabaseIamPolicy.BiglakeHiveDatabaseIamPolicyConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.biglakeHiveDatabaseIamPolicy.BiglakeHiveDatabaseIamPolicyConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.biglakeHiveDatabaseIamPolicy.BiglakeHiveDatabaseIamPolicyConfig.property.catalog">catalog</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/biglake_hive_database_iam_policy#catalog BiglakeHiveDatabaseIamPolicy#catalog}. |
-| <code><a href="#@cdktn/provider-google.biglakeHiveDatabaseIamPolicy.BiglakeHiveDatabaseIamPolicyConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/biglake_hive_database_iam_policy#name BiglakeHiveDatabaseIamPolicy#name}. |
-| <code><a href="#@cdktn/provider-google.biglakeHiveDatabaseIamPolicy.BiglakeHiveDatabaseIamPolicyConfig.property.policyData">policyData</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/biglake_hive_database_iam_policy#policy_data BiglakeHiveDatabaseIamPolicy#policy_data}. |
-| <code><a href="#@cdktn/provider-google.biglakeHiveDatabaseIamPolicy.BiglakeHiveDatabaseIamPolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/biglake_hive_database_iam_policy#id BiglakeHiveDatabaseIamPolicy#id}. |
-| <code><a href="#@cdktn/provider-google.biglakeHiveDatabaseIamPolicy.BiglakeHiveDatabaseIamPolicyConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/biglake_hive_database_iam_policy#project BiglakeHiveDatabaseIamPolicy#project}. |
+| <code><a href="#@cdktn/provider-google.biglakeHiveDatabaseIamPolicy.BiglakeHiveDatabaseIamPolicyConfig.property.catalog">catalog</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_policy#catalog BiglakeHiveDatabaseIamPolicy#catalog}. |
+| <code><a href="#@cdktn/provider-google.biglakeHiveDatabaseIamPolicy.BiglakeHiveDatabaseIamPolicyConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_policy#name BiglakeHiveDatabaseIamPolicy#name}. |
+| <code><a href="#@cdktn/provider-google.biglakeHiveDatabaseIamPolicy.BiglakeHiveDatabaseIamPolicyConfig.property.policyData">policyData</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_policy#policy_data BiglakeHiveDatabaseIamPolicy#policy_data}. |
+| <code><a href="#@cdktn/provider-google.biglakeHiveDatabaseIamPolicy.BiglakeHiveDatabaseIamPolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_policy#id BiglakeHiveDatabaseIamPolicy#id}. |
+| <code><a href="#@cdktn/provider-google.biglakeHiveDatabaseIamPolicy.BiglakeHiveDatabaseIamPolicyConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_policy#project BiglakeHiveDatabaseIamPolicy#project}. |
 
 ---
 
@@ -1044,7 +1044,7 @@ public java.lang.String getCatalog();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/biglake_hive_database_iam_policy#catalog BiglakeHiveDatabaseIamPolicy#catalog}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_policy#catalog BiglakeHiveDatabaseIamPolicy#catalog}.
 
 ---
 
@@ -1056,7 +1056,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/biglake_hive_database_iam_policy#name BiglakeHiveDatabaseIamPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_policy#name BiglakeHiveDatabaseIamPolicy#name}.
 
 ---
 
@@ -1068,7 +1068,7 @@ public java.lang.String getPolicyData();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/biglake_hive_database_iam_policy#policy_data BiglakeHiveDatabaseIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_policy#policy_data BiglakeHiveDatabaseIamPolicy#policy_data}.
 
 ---
 
@@ -1080,7 +1080,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/biglake_hive_database_iam_policy#id BiglakeHiveDatabaseIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_policy#id BiglakeHiveDatabaseIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1095,7 +1095,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.6.0/docs/resources/biglake_hive_database_iam_policy#project BiglakeHiveDatabaseIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_policy#project BiglakeHiveDatabaseIamPolicy#project}.
 
 ---
 
