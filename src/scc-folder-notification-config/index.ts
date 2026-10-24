@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/scc_folder_notification_config
+// https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/scc_folder_notification_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,9 +15,15 @@ export interface SccFolderNotificationConfigConfig extends cdktn.TerraformMetaAr
   /**
   * This must be unique within the organization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/scc_folder_notification_config#config_id SccFolderNotificationConfig#config_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/scc_folder_notification_config#config_id SccFolderNotificationConfig#config_id}
   */
   readonly configId: string;
+  /**
+  * Indicates whether the notifications will be sent for deleted findings.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/scc_folder_notification_config#deletion_notifications_enabled SccFolderNotificationConfig#deletion_notifications_enabled}
+  */
+  readonly deletionNotificationsEnabled?: boolean | cdktn.IResolvable;
   /**
   * Whether Terraform will be prevented from destroying the instance. Defaults to "DELETE".
   * When a 'terraform destroy' or 'terraform apply' would delete the instance,
@@ -27,23 +33,23 @@ export interface SccFolderNotificationConfigConfig extends cdktn.TerraformMetaAr
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/scc_folder_notification_config#deletion_policy SccFolderNotificationConfig#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/scc_folder_notification_config#deletion_policy SccFolderNotificationConfig#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * The description of the notification config (max of 1024 characters).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/scc_folder_notification_config#description SccFolderNotificationConfig#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/scc_folder_notification_config#description SccFolderNotificationConfig#description}
   */
   readonly description?: string;
   /**
   * Numerical ID of the parent folder.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/scc_folder_notification_config#folder SccFolderNotificationConfig#folder}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/scc_folder_notification_config#folder SccFolderNotificationConfig#folder}
   */
   readonly folder: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/scc_folder_notification_config#id SccFolderNotificationConfig#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/scc_folder_notification_config#id SccFolderNotificationConfig#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -53,19 +59,19 @@ export interface SccFolderNotificationConfigConfig extends cdktn.TerraformMetaAr
   * The Pub/Sub topic to send notifications to. Its format is
   * "projects/[project_id]/topics/[topic]".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/scc_folder_notification_config#pubsub_topic SccFolderNotificationConfig#pubsub_topic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/scc_folder_notification_config#pubsub_topic SccFolderNotificationConfig#pubsub_topic}
   */
   readonly pubsubTopic: string;
   /**
   * streaming_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/scc_folder_notification_config#streaming_config SccFolderNotificationConfig#streaming_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/scc_folder_notification_config#streaming_config SccFolderNotificationConfig#streaming_config}
   */
   readonly streamingConfig: SccFolderNotificationConfigStreamingConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/scc_folder_notification_config#timeouts SccFolderNotificationConfig#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/scc_folder_notification_config#timeouts SccFolderNotificationConfig#timeouts}
   */
   readonly timeouts?: SccFolderNotificationConfigTimeouts;
 }
@@ -97,7 +103,7 @@ export interface SccFolderNotificationConfigStreamingConfig {
   * [Filtering notifications](https://cloud.google.com/security-command-center/docs/how-to-api-filter-notifications)
   * for information on how to write a filter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/scc_folder_notification_config#filter SccFolderNotificationConfig#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/scc_folder_notification_config#filter SccFolderNotificationConfig#filter}
   */
   readonly filter: string;
 }
@@ -178,15 +184,15 @@ export class SccFolderNotificationConfigStreamingConfigOutputReference extends c
 }
 export interface SccFolderNotificationConfigTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/scc_folder_notification_config#create SccFolderNotificationConfig#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/scc_folder_notification_config#create SccFolderNotificationConfig#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/scc_folder_notification_config#delete SccFolderNotificationConfig#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/scc_folder_notification_config#delete SccFolderNotificationConfig#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/scc_folder_notification_config#update SccFolderNotificationConfig#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/scc_folder_notification_config#update SccFolderNotificationConfig#update}
   */
   readonly update?: string;
 }
@@ -338,7 +344,7 @@ export class SccFolderNotificationConfigTimeoutsOutputReference extends cdktn.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/scc_folder_notification_config google_scc_folder_notification_config}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/scc_folder_notification_config google_scc_folder_notification_config}
 */
 export class SccFolderNotificationConfig extends cdktn.TerraformResource {
 
@@ -354,7 +360,7 @@ export class SccFolderNotificationConfig extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a SccFolderNotificationConfig resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SccFolderNotificationConfig to import
-  * @param importFromId The id of the existing SccFolderNotificationConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/scc_folder_notification_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SccFolderNotificationConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/scc_folder_notification_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SccFolderNotificationConfig to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -366,7 +372,7 @@ export class SccFolderNotificationConfig extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/scc_folder_notification_config google_scc_folder_notification_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/scc_folder_notification_config google_scc_folder_notification_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -377,7 +383,7 @@ export class SccFolderNotificationConfig extends cdktn.TerraformResource {
       terraformResourceType: 'google_scc_folder_notification_config',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.7.0',
+        providerVersion: '8.8.1',
         providerVersionConstraint: '~> 8.0'
       },
       provider: config.provider,
@@ -389,6 +395,7 @@ export class SccFolderNotificationConfig extends cdktn.TerraformResource {
       forEach: config.forEach
     });
     this._configId = config.configId;
+    this._deletionNotificationsEnabled = config.deletionNotificationsEnabled;
     this._deletionPolicy = config.deletionPolicy;
     this._description = config.description;
     this._folder = config.folder;
@@ -413,6 +420,22 @@ export class SccFolderNotificationConfig extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get configIdInput() {
     return this._configId;
+  }
+
+  // deletion_notifications_enabled - computed: false, optional: true, required: false
+  private _deletionNotificationsEnabled?: boolean | cdktn.IResolvable; 
+  public get deletionNotificationsEnabled() {
+    return this.getBooleanAttribute('deletion_notifications_enabled');
+  }
+  public set deletionNotificationsEnabled(value: boolean | cdktn.IResolvable) {
+    this._deletionNotificationsEnabled = value;
+  }
+  public resetDeletionNotificationsEnabled() {
+    this._deletionNotificationsEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionNotificationsEnabledInput() {
+    return this._deletionNotificationsEnabled;
   }
 
   // deletion_policy - computed: true, optional: true, required: false
@@ -535,6 +558,7 @@ export class SccFolderNotificationConfig extends cdktn.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       config_id: cdktn.stringToTerraform(this._configId),
+      deletion_notifications_enabled: cdktn.booleanToTerraform(this._deletionNotificationsEnabled),
       deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
       description: cdktn.stringToTerraform(this._description),
       folder: cdktn.stringToTerraform(this._folder),
@@ -552,6 +576,12 @@ export class SccFolderNotificationConfig extends cdktn.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      deletion_notifications_enabled: {
+        value: cdktn.booleanToHclTerraform(this._deletionNotificationsEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
       },
       deletion_policy: {
         value: cdktn.stringToHclTerraform(this._deletionPolicy),

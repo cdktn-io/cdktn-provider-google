@@ -1,3 +1,3 @@
 # `google_data_loss_prevention_content_policy`
 
-Refer to the Terraform Registry for docs: [`google_data_loss_prevention_content_policy`](https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/data_loss_prevention_content_policy).
+Refer to the Terraform Registry for docs: [`google_data_loss_prevention_content_policy`](https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/data_loss_prevention_content_policy).

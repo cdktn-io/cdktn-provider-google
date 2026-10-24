@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/scc_v2_organization_notification_config
+// https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/scc_v2_organization_notification_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,9 +15,15 @@ export interface SccV2OrganizationNotificationConfigConfig extends cdktn.Terrafo
   /**
   * This must be unique within the organization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/scc_v2_organization_notification_config#config_id SccV2OrganizationNotificationConfig#config_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/scc_v2_organization_notification_config#config_id SccV2OrganizationNotificationConfig#config_id}
   */
   readonly configId: string;
+  /**
+  * Indicates whether the notifications will be sent for deleted findings.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/scc_v2_organization_notification_config#deletion_notifications_enabled SccV2OrganizationNotificationConfig#deletion_notifications_enabled}
+  */
+  readonly deletionNotificationsEnabled?: boolean | cdktn.IResolvable;
   /**
   * Whether Terraform will be prevented from destroying the instance. Defaults to "DELETE".
   * When a 'terraform destroy' or 'terraform apply' would delete the instance,
@@ -27,17 +33,17 @@ export interface SccV2OrganizationNotificationConfigConfig extends cdktn.Terrafo
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/scc_v2_organization_notification_config#deletion_policy SccV2OrganizationNotificationConfig#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/scc_v2_organization_notification_config#deletion_policy SccV2OrganizationNotificationConfig#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * The description of the notification config (max of 1024 characters).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/scc_v2_organization_notification_config#description SccV2OrganizationNotificationConfig#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/scc_v2_organization_notification_config#description SccV2OrganizationNotificationConfig#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/scc_v2_organization_notification_config#id SccV2OrganizationNotificationConfig#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/scc_v2_organization_notification_config#id SccV2OrganizationNotificationConfig#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,33 +52,33 @@ export interface SccV2OrganizationNotificationConfigConfig extends cdktn.Terrafo
   /**
   * location Id is provided by organization. If not provided, Use global as default.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/scc_v2_organization_notification_config#location SccV2OrganizationNotificationConfig#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/scc_v2_organization_notification_config#location SccV2OrganizationNotificationConfig#location}
   */
   readonly location?: string;
   /**
   * The organization whose Cloud Security Command Center the Notification
   * Config lives in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/scc_v2_organization_notification_config#organization SccV2OrganizationNotificationConfig#organization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/scc_v2_organization_notification_config#organization SccV2OrganizationNotificationConfig#organization}
   */
   readonly organization: string;
   /**
   * The Pub/Sub topic to send notifications to. Its format is
   * "projects/[project_id]/topics/[topic]".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/scc_v2_organization_notification_config#pubsub_topic SccV2OrganizationNotificationConfig#pubsub_topic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/scc_v2_organization_notification_config#pubsub_topic SccV2OrganizationNotificationConfig#pubsub_topic}
   */
   readonly pubsubTopic: string;
   /**
   * streaming_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/scc_v2_organization_notification_config#streaming_config SccV2OrganizationNotificationConfig#streaming_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/scc_v2_organization_notification_config#streaming_config SccV2OrganizationNotificationConfig#streaming_config}
   */
   readonly streamingConfig: SccV2OrganizationNotificationConfigStreamingConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/scc_v2_organization_notification_config#timeouts SccV2OrganizationNotificationConfig#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/scc_v2_organization_notification_config#timeouts SccV2OrganizationNotificationConfig#timeouts}
   */
   readonly timeouts?: SccV2OrganizationNotificationConfigTimeouts;
 }
@@ -104,7 +110,7 @@ export interface SccV2OrganizationNotificationConfigStreamingConfig {
   * [Filtering notifications](https://cloud.google.com/security-command-center/docs/how-to-api-filter-notifications)
   * for information on how to write a filter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/scc_v2_organization_notification_config#filter SccV2OrganizationNotificationConfig#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/scc_v2_organization_notification_config#filter SccV2OrganizationNotificationConfig#filter}
   */
   readonly filter: string;
 }
@@ -185,15 +191,15 @@ export class SccV2OrganizationNotificationConfigStreamingConfigOutputReference e
 }
 export interface SccV2OrganizationNotificationConfigTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/scc_v2_organization_notification_config#create SccV2OrganizationNotificationConfig#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/scc_v2_organization_notification_config#create SccV2OrganizationNotificationConfig#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/scc_v2_organization_notification_config#delete SccV2OrganizationNotificationConfig#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/scc_v2_organization_notification_config#delete SccV2OrganizationNotificationConfig#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/scc_v2_organization_notification_config#update SccV2OrganizationNotificationConfig#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/scc_v2_organization_notification_config#update SccV2OrganizationNotificationConfig#update}
   */
   readonly update?: string;
 }
@@ -345,7 +351,7 @@ export class SccV2OrganizationNotificationConfigTimeoutsOutputReference extends 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/scc_v2_organization_notification_config google_scc_v2_organization_notification_config}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/scc_v2_organization_notification_config google_scc_v2_organization_notification_config}
 */
 export class SccV2OrganizationNotificationConfig extends cdktn.TerraformResource {
 
@@ -361,7 +367,7 @@ export class SccV2OrganizationNotificationConfig extends cdktn.TerraformResource
   * Generates CDKTN code for importing a SccV2OrganizationNotificationConfig resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SccV2OrganizationNotificationConfig to import
-  * @param importFromId The id of the existing SccV2OrganizationNotificationConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/scc_v2_organization_notification_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SccV2OrganizationNotificationConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/scc_v2_organization_notification_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SccV2OrganizationNotificationConfig to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -373,7 +379,7 @@ export class SccV2OrganizationNotificationConfig extends cdktn.TerraformResource
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/scc_v2_organization_notification_config google_scc_v2_organization_notification_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/scc_v2_organization_notification_config google_scc_v2_organization_notification_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -384,7 +390,7 @@ export class SccV2OrganizationNotificationConfig extends cdktn.TerraformResource
       terraformResourceType: 'google_scc_v2_organization_notification_config',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.7.0',
+        providerVersion: '8.8.1',
         providerVersionConstraint: '~> 8.0'
       },
       provider: config.provider,
@@ -396,6 +402,7 @@ export class SccV2OrganizationNotificationConfig extends cdktn.TerraformResource
       forEach: config.forEach
     });
     this._configId = config.configId;
+    this._deletionNotificationsEnabled = config.deletionNotificationsEnabled;
     this._deletionPolicy = config.deletionPolicy;
     this._description = config.description;
     this._id = config.id;
@@ -421,6 +428,22 @@ export class SccV2OrganizationNotificationConfig extends cdktn.TerraformResource
   // Temporarily expose input value. Use with caution.
   public get configIdInput() {
     return this._configId;
+  }
+
+  // deletion_notifications_enabled - computed: false, optional: true, required: false
+  private _deletionNotificationsEnabled?: boolean | cdktn.IResolvable; 
+  public get deletionNotificationsEnabled() {
+    return this.getBooleanAttribute('deletion_notifications_enabled');
+  }
+  public set deletionNotificationsEnabled(value: boolean | cdktn.IResolvable) {
+    this._deletionNotificationsEnabled = value;
+  }
+  public resetDeletionNotificationsEnabled() {
+    this._deletionNotificationsEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionNotificationsEnabledInput() {
+    return this._deletionNotificationsEnabled;
   }
 
   // deletion_policy - computed: true, optional: true, required: false
@@ -559,6 +582,7 @@ export class SccV2OrganizationNotificationConfig extends cdktn.TerraformResource
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       config_id: cdktn.stringToTerraform(this._configId),
+      deletion_notifications_enabled: cdktn.booleanToTerraform(this._deletionNotificationsEnabled),
       deletion_policy: cdktn.stringToTerraform(this._deletionPolicy),
       description: cdktn.stringToTerraform(this._description),
       id: cdktn.stringToTerraform(this._id),
@@ -577,6 +601,12 @@ export class SccV2OrganizationNotificationConfig extends cdktn.TerraformResource
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      deletion_notifications_enabled: {
+        value: cdktn.booleanToHclTerraform(this._deletionNotificationsEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
       },
       deletion_policy: {
         value: cdktn.stringToHclTerraform(this._deletionPolicy),

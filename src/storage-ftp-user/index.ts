@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/storage_ftp_user
+// https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/storage_ftp_user
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface StorageFtpUserConfig extends cdktn.TerraformMetaArguments {
   /**
   * The email address of the service account associated with the user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/storage_ftp_user#customer_service_account StorageFtpUser#customer_service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/storage_ftp_user#customer_service_account StorageFtpUser#customer_service_account}
   */
   readonly customerServiceAccount: string;
   /**
@@ -27,11 +27,11 @@ export interface StorageFtpUserConfig extends cdktn.TerraformMetaArguments {
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/storage_ftp_user#deletion_policy StorageFtpUser#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/storage_ftp_user#deletion_policy StorageFtpUser#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/storage_ftp_user#id StorageFtpUser#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/storage_ftp_user#id StorageFtpUser#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -44,47 +44,47 @@ export interface StorageFtpUserConfig extends cdktn.TerraformMetaArguments {
   * **Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
   * Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/storage_ftp_user#labels StorageFtpUser#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/storage_ftp_user#labels StorageFtpUser#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The location (region) of the Storage FTP User.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/storage_ftp_user#location StorageFtpUser#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/storage_ftp_user#location StorageFtpUser#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/storage_ftp_user#project StorageFtpUser#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/storage_ftp_user#project StorageFtpUser#project}
   */
   readonly project?: string;
   /**
   * The ID of the server.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/storage_ftp_user#server_id StorageFtpUser#server_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/storage_ftp_user#server_id StorageFtpUser#server_id}
   */
   readonly serverId: string;
   /**
   * The unique ID for the user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/storage_ftp_user#user_id StorageFtpUser#user_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/storage_ftp_user#user_id StorageFtpUser#user_id}
   */
   readonly userId: string;
   /**
   * storage_directory_mappings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/storage_ftp_user#storage_directory_mappings StorageFtpUser#storage_directory_mappings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/storage_ftp_user#storage_directory_mappings StorageFtpUser#storage_directory_mappings}
   */
   readonly storageDirectoryMappings?: StorageFtpUserStorageDirectoryMappings[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/storage_ftp_user#timeouts StorageFtpUser#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/storage_ftp_user#timeouts StorageFtpUser#timeouts}
   */
   readonly timeouts?: StorageFtpUserTimeouts;
   /**
   * user_credentials block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/storage_ftp_user#user_credentials StorageFtpUser#user_credentials}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/storage_ftp_user#user_credentials StorageFtpUser#user_credentials}
   */
   readonly userCredentials?: StorageFtpUserUserCredentials[] | cdktn.IResolvable;
 }
@@ -92,25 +92,25 @@ export interface StorageFtpUserStorageDirectoryMappings {
   /**
   * The Cloud Storage bucket name. Omit the gs://.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/storage_ftp_user#bucket StorageFtpUser#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/storage_ftp_user#bucket StorageFtpUser#bucket}
   */
   readonly bucket?: string;
   /**
   * The path of a folder within the bucket to set as the root directory for this directory mapping.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/storage_ftp_user#bucket_prefix StorageFtpUser#bucket_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/storage_ftp_user#bucket_prefix StorageFtpUser#bucket_prefix}
   */
   readonly bucketPrefix?: string;
   /**
   * The directory path in the virtual file system.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/storage_ftp_user#directory StorageFtpUser#directory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/storage_ftp_user#directory StorageFtpUser#directory}
   */
   readonly directory?: string;
   /**
   * The access level for the directory. For read-only access, set this value to READ_ONLY. For read and write access, set this value to READ_WRITE. Possible values: ["READ_ONLY", "READ_WRITE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/storage_ftp_user#permission StorageFtpUser#permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/storage_ftp_user#permission StorageFtpUser#permission}
   */
   readonly permission?: string;
 }
@@ -313,15 +313,15 @@ export class StorageFtpUserStorageDirectoryMappingsList extends cdktn.ComplexLis
 }
 export interface StorageFtpUserTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/storage_ftp_user#create StorageFtpUser#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/storage_ftp_user#create StorageFtpUser#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/storage_ftp_user#delete StorageFtpUser#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/storage_ftp_user#delete StorageFtpUser#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/storage_ftp_user#update StorageFtpUser#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/storage_ftp_user#update StorageFtpUser#update}
   */
   readonly update?: string;
 }
@@ -475,19 +475,19 @@ export interface StorageFtpUserUserCredentials {
   /**
   * The name of the credential.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/storage_ftp_user#credential_name StorageFtpUser#credential_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/storage_ftp_user#credential_name StorageFtpUser#credential_name}
   */
   readonly credentialName?: string;
   /**
   * The type of the credential.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/storage_ftp_user#credential_type StorageFtpUser#credential_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/storage_ftp_user#credential_type StorageFtpUser#credential_type}
   */
   readonly credentialType?: string;
   /**
   * The SSH public key body. A file either absolute or relative path should be provided which contains the ssh public key using file() interpolation in Terraform, not recommended to have key as a literal string in config.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/storage_ftp_user#ssh_public_key_body StorageFtpUser#ssh_public_key_body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/storage_ftp_user#ssh_public_key_body StorageFtpUser#ssh_public_key_body}
   */
   readonly sshPublicKeyBody?: string;
 }
@@ -661,7 +661,7 @@ export class StorageFtpUserUserCredentialsList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/storage_ftp_user google_storage_ftp_user}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/storage_ftp_user google_storage_ftp_user}
 */
 export class StorageFtpUser extends cdktn.TerraformResource {
 
@@ -677,7 +677,7 @@ export class StorageFtpUser extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a StorageFtpUser resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the StorageFtpUser to import
-  * @param importFromId The id of the existing StorageFtpUser that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/storage_ftp_user#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing StorageFtpUser that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/storage_ftp_user#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the StorageFtpUser to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -689,7 +689,7 @@ export class StorageFtpUser extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/storage_ftp_user google_storage_ftp_user} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/storage_ftp_user google_storage_ftp_user} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -700,7 +700,7 @@ export class StorageFtpUser extends cdktn.TerraformResource {
       terraformResourceType: 'google_storage_ftp_user',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.7.0',
+        providerVersion: '8.8.1',
         providerVersionConstraint: '~> 8.0'
       },
       provider: config.provider,

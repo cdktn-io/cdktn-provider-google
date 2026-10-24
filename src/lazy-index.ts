@@ -266,6 +266,10 @@ Object.defineProperty(exports, 'cloudRunService', { get: function () { return re
 Object.defineProperty(exports, 'cloudRunServiceIamBinding', { get: function () { return require('./cloud-run-service-iam-binding'); } });
 Object.defineProperty(exports, 'cloudRunServiceIamMember', { get: function () { return require('./cloud-run-service-iam-member'); } });
 Object.defineProperty(exports, 'cloudRunServiceIamPolicy', { get: function () { return require('./cloud-run-service-iam-policy'); } });
+Object.defineProperty(exports, 'cloudRunV2Instance', { get: function () { return require('./cloud-run-v2-instance'); } });
+Object.defineProperty(exports, 'cloudRunV2InstanceIamBinding', { get: function () { return require('./cloud-run-v2-instance-iam-binding'); } });
+Object.defineProperty(exports, 'cloudRunV2InstanceIamMember', { get: function () { return require('./cloud-run-v2-instance-iam-member'); } });
+Object.defineProperty(exports, 'cloudRunV2InstanceIamPolicy', { get: function () { return require('./cloud-run-v2-instance-iam-policy'); } });
 Object.defineProperty(exports, 'cloudRunV2Job', { get: function () { return require('./cloud-run-v2-job'); } });
 Object.defineProperty(exports, 'cloudRunV2JobIamBinding', { get: function () { return require('./cloud-run-v2-job-iam-binding'); } });
 Object.defineProperty(exports, 'cloudRunV2JobIamMember', { get: function () { return require('./cloud-run-v2-job-iam-member'); } });
@@ -698,6 +702,7 @@ Object.defineProperty(exports, 'dnsManagedZone', { get: function () { return req
 Object.defineProperty(exports, 'dnsManagedZoneIamBinding', { get: function () { return require('./dns-managed-zone-iam-binding'); } });
 Object.defineProperty(exports, 'dnsManagedZoneIamMember', { get: function () { return require('./dns-managed-zone-iam-member'); } });
 Object.defineProperty(exports, 'dnsManagedZoneIamPolicy', { get: function () { return require('./dns-managed-zone-iam-policy'); } });
+Object.defineProperty(exports, 'dnsOutboundEndpoint', { get: function () { return require('./dns-outbound-endpoint'); } });
 Object.defineProperty(exports, 'dnsPolicy', { get: function () { return require('./dns-policy'); } });
 Object.defineProperty(exports, 'dnsRecordSet', { get: function () { return require('./dns-record-set'); } });
 Object.defineProperty(exports, 'dnsResponsePolicy', { get: function () { return require('./dns-response-policy'); } });
@@ -705,6 +710,7 @@ Object.defineProperty(exports, 'dnsResponsePolicyRule', { get: function () { ret
 Object.defineProperty(exports, 'documentAiProcessor', { get: function () { return require('./document-ai-processor'); } });
 Object.defineProperty(exports, 'documentAiProcessorDefaultVersion', { get: function () { return require('./document-ai-processor-default-version'); } });
 Object.defineProperty(exports, 'documentAiSchema', { get: function () { return require('./document-ai-schema'); } });
+Object.defineProperty(exports, 'documentAiSchemaVersion', { get: function () { return require('./document-ai-schema-version'); } });
 Object.defineProperty(exports, 'documentAiWarehouseDocumentSchema', { get: function () { return require('./document-ai-warehouse-document-schema'); } });
 Object.defineProperty(exports, 'documentAiWarehouseLocation', { get: function () { return require('./document-ai-warehouse-location'); } });
 Object.defineProperty(exports, 'edgecontainerCluster', { get: function () { return require('./edgecontainer-cluster'); } });
@@ -1473,6 +1479,7 @@ Object.defineProperty(exports, 'dataGoogleCloudQuotasQuotaInfos', { get: functio
 Object.defineProperty(exports, 'dataGoogleCloudRunLocations', { get: function () { return require('./data-google-cloud-run-locations'); } });
 Object.defineProperty(exports, 'dataGoogleCloudRunService', { get: function () { return require('./data-google-cloud-run-service'); } });
 Object.defineProperty(exports, 'dataGoogleCloudRunServiceIamPolicy', { get: function () { return require('./data-google-cloud-run-service-iam-policy'); } });
+Object.defineProperty(exports, 'dataGoogleCloudRunV2InstanceIamPolicy', { get: function () { return require('./data-google-cloud-run-v2-instance-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleCloudRunV2Job', { get: function () { return require('./data-google-cloud-run-v2-job'); } });
 Object.defineProperty(exports, 'dataGoogleCloudRunV2JobIamPolicy', { get: function () { return require('./data-google-cloud-run-v2-job-iam-policy'); } });
 Object.defineProperty(exports, 'dataGoogleCloudRunV2Service', { get: function () { return require('./data-google-cloud-run-v2-service'); } });
