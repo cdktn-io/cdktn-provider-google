@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_member
+// https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/biglake_hive_database_iam_member
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,50 +13,50 @@ import * as cdktn from 'cdktn';
 
 export interface BiglakeHiveDatabaseIamMemberConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_member#catalog BiglakeHiveDatabaseIamMember#catalog}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/biglake_hive_database_iam_member#catalog BiglakeHiveDatabaseIamMember#catalog}
   */
   readonly catalog: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_member#id BiglakeHiveDatabaseIamMember#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/biglake_hive_database_iam_member#id BiglakeHiveDatabaseIamMember#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_member#member BiglakeHiveDatabaseIamMember#member}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/biglake_hive_database_iam_member#member BiglakeHiveDatabaseIamMember#member}
   */
   readonly member: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_member#name BiglakeHiveDatabaseIamMember#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/biglake_hive_database_iam_member#name BiglakeHiveDatabaseIamMember#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_member#project BiglakeHiveDatabaseIamMember#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/biglake_hive_database_iam_member#project BiglakeHiveDatabaseIamMember#project}
   */
   readonly project?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_member#role BiglakeHiveDatabaseIamMember#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/biglake_hive_database_iam_member#role BiglakeHiveDatabaseIamMember#role}
   */
   readonly role: string;
   /**
   * condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_member#condition BiglakeHiveDatabaseIamMember#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/biglake_hive_database_iam_member#condition BiglakeHiveDatabaseIamMember#condition}
   */
   readonly condition?: BiglakeHiveDatabaseIamMemberCondition;
 }
 export interface BiglakeHiveDatabaseIamMemberCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_member#description BiglakeHiveDatabaseIamMember#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/biglake_hive_database_iam_member#description BiglakeHiveDatabaseIamMember#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_member#expression BiglakeHiveDatabaseIamMember#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/biglake_hive_database_iam_member#expression BiglakeHiveDatabaseIamMember#expression}
   */
   readonly expression: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_member#title BiglakeHiveDatabaseIamMember#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/biglake_hive_database_iam_member#title BiglakeHiveDatabaseIamMember#title}
   */
   readonly title: string;
 }
@@ -192,7 +192,7 @@ export class BiglakeHiveDatabaseIamMemberConditionOutputReference extends cdktn.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_member google_biglake_hive_database_iam_member}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/biglake_hive_database_iam_member google_biglake_hive_database_iam_member}
 */
 export class BiglakeHiveDatabaseIamMember extends cdktn.TerraformResource {
 
@@ -208,7 +208,7 @@ export class BiglakeHiveDatabaseIamMember extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a BiglakeHiveDatabaseIamMember resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BiglakeHiveDatabaseIamMember to import
-  * @param importFromId The id of the existing BiglakeHiveDatabaseIamMember that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_member#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing BiglakeHiveDatabaseIamMember that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/biglake_hive_database_iam_member#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BiglakeHiveDatabaseIamMember to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -220,7 +220,7 @@ export class BiglakeHiveDatabaseIamMember extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_database_iam_member google_biglake_hive_database_iam_member} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/biglake_hive_database_iam_member google_biglake_hive_database_iam_member} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -231,7 +231,7 @@ export class BiglakeHiveDatabaseIamMember extends cdktn.TerraformResource {
       terraformResourceType: 'google_biglake_hive_database_iam_member',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.7.0',
+        providerVersion: '8.8.1',
         providerVersionConstraint: '~> 8.0'
       },
       provider: config.provider,

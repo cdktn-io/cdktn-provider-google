@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table_iam_binding
+// https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/biglake_hive_table_iam_binding
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,54 +13,54 @@ import * as cdktn from 'cdktn';
 
 export interface BiglakeHiveTableIamBindingConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table_iam_binding#catalog BiglakeHiveTableIamBinding#catalog}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/biglake_hive_table_iam_binding#catalog BiglakeHiveTableIamBinding#catalog}
   */
   readonly catalog: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table_iam_binding#database BiglakeHiveTableIamBinding#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/biglake_hive_table_iam_binding#database BiglakeHiveTableIamBinding#database}
   */
   readonly database: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table_iam_binding#id BiglakeHiveTableIamBinding#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/biglake_hive_table_iam_binding#id BiglakeHiveTableIamBinding#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table_iam_binding#members BiglakeHiveTableIamBinding#members}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/biglake_hive_table_iam_binding#members BiglakeHiveTableIamBinding#members}
   */
   readonly members: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table_iam_binding#name BiglakeHiveTableIamBinding#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/biglake_hive_table_iam_binding#name BiglakeHiveTableIamBinding#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table_iam_binding#project BiglakeHiveTableIamBinding#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/biglake_hive_table_iam_binding#project BiglakeHiveTableIamBinding#project}
   */
   readonly project?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table_iam_binding#role BiglakeHiveTableIamBinding#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/biglake_hive_table_iam_binding#role BiglakeHiveTableIamBinding#role}
   */
   readonly role: string;
   /**
   * condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table_iam_binding#condition BiglakeHiveTableIamBinding#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/biglake_hive_table_iam_binding#condition BiglakeHiveTableIamBinding#condition}
   */
   readonly condition?: BiglakeHiveTableIamBindingCondition;
 }
 export interface BiglakeHiveTableIamBindingCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table_iam_binding#description BiglakeHiveTableIamBinding#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/biglake_hive_table_iam_binding#description BiglakeHiveTableIamBinding#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table_iam_binding#expression BiglakeHiveTableIamBinding#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/biglake_hive_table_iam_binding#expression BiglakeHiveTableIamBinding#expression}
   */
   readonly expression: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table_iam_binding#title BiglakeHiveTableIamBinding#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/biglake_hive_table_iam_binding#title BiglakeHiveTableIamBinding#title}
   */
   readonly title: string;
 }
@@ -196,7 +196,7 @@ export class BiglakeHiveTableIamBindingConditionOutputReference extends cdktn.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table_iam_binding google_biglake_hive_table_iam_binding}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/biglake_hive_table_iam_binding google_biglake_hive_table_iam_binding}
 */
 export class BiglakeHiveTableIamBinding extends cdktn.TerraformResource {
 
@@ -212,7 +212,7 @@ export class BiglakeHiveTableIamBinding extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a BiglakeHiveTableIamBinding resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BiglakeHiveTableIamBinding to import
-  * @param importFromId The id of the existing BiglakeHiveTableIamBinding that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table_iam_binding#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing BiglakeHiveTableIamBinding that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/biglake_hive_table_iam_binding#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BiglakeHiveTableIamBinding to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -224,7 +224,7 @@ export class BiglakeHiveTableIamBinding extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/biglake_hive_table_iam_binding google_biglake_hive_table_iam_binding} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/biglake_hive_table_iam_binding google_biglake_hive_table_iam_binding} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -235,7 +235,7 @@ export class BiglakeHiveTableIamBinding extends cdktn.TerraformResource {
       terraformResourceType: 'google_biglake_hive_table_iam_binding',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.7.0',
+        providerVersion: '8.8.1',
         providerVersionConstraint: '~> 8.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/access_context_manager_gcp_user_access_binding
+// https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/access_context_manager_gcp_user_access_binding
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface AccessContextManagerGcpUserAccessBindingConfig extends cdktn.Te
   /**
   * Optional. Access level that a user must have to be granted access. Only one access level is supported, not multiple. This repeated field must have exactly one element. Example: "accessPolicies/9522/accessLevels/device_trusted"
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/access_context_manager_gcp_user_access_binding#access_levels AccessContextManagerGcpUserAccessBinding#access_levels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/access_context_manager_gcp_user_access_binding#access_levels AccessContextManagerGcpUserAccessBinding#access_levels}
   */
   readonly accessLevels?: string[];
   /**
@@ -27,7 +27,7 @@ export interface AccessContextManagerGcpUserAccessBindingConfig extends cdktn.Te
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/access_context_manager_gcp_user_access_binding#deletion_policy AccessContextManagerGcpUserAccessBinding#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/access_context_manager_gcp_user_access_binding#deletion_policy AccessContextManagerGcpUserAccessBinding#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
@@ -36,7 +36,7 @@ export interface AccessContextManagerGcpUserAccessBindingConfig extends cdktn.Te
   * level is supported, not multiple. This list must have exactly one element.
   * Example: "accessPolicies/9522/accessLevels/device_trusted"
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/access_context_manager_gcp_user_access_binding#dry_run_access_levels AccessContextManagerGcpUserAccessBinding#dry_run_access_levels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/access_context_manager_gcp_user_access_binding#dry_run_access_levels AccessContextManagerGcpUserAccessBinding#dry_run_access_levels}
   */
   readonly dryRunAccessLevels?: string[];
   /**
@@ -46,11 +46,11 @@ export interface AccessContextManagerGcpUserAccessBindingConfig extends cdktn.Te
   * This field does not accept group email addresses or aliases.
   * Example: "01d520gv4vjcrht"
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/access_context_manager_gcp_user_access_binding#group_key AccessContextManagerGcpUserAccessBinding#group_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/access_context_manager_gcp_user_access_binding#group_key AccessContextManagerGcpUserAccessBinding#group_key}
   */
   readonly groupKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/access_context_manager_gcp_user_access_binding#id AccessContextManagerGcpUserAccessBinding#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/access_context_manager_gcp_user_access_binding#id AccessContextManagerGcpUserAccessBinding#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -59,35 +59,53 @@ export interface AccessContextManagerGcpUserAccessBindingConfig extends cdktn.Te
   /**
   * Required. ID of the parent organization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/access_context_manager_gcp_user_access_binding#organization_id AccessContextManagerGcpUserAccessBinding#organization_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/access_context_manager_gcp_user_access_binding#organization_id AccessContextManagerGcpUserAccessBinding#organization_id}
   */
   readonly organizationId: string;
   /**
   * principal block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/access_context_manager_gcp_user_access_binding#principal AccessContextManagerGcpUserAccessBinding#principal}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/access_context_manager_gcp_user_access_binding#principal AccessContextManagerGcpUserAccessBinding#principal}
   */
   readonly principal?: AccessContextManagerGcpUserAccessBindingPrincipal;
   /**
   * scoped_access_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/access_context_manager_gcp_user_access_binding#scoped_access_settings AccessContextManagerGcpUserAccessBinding#scoped_access_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/access_context_manager_gcp_user_access_binding#scoped_access_settings AccessContextManagerGcpUserAccessBinding#scoped_access_settings}
   */
   readonly scopedAccessSettings?: AccessContextManagerGcpUserAccessBindingScopedAccessSettings[] | cdktn.IResolvable;
   /**
   * session_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/access_context_manager_gcp_user_access_binding#session_settings AccessContextManagerGcpUserAccessBinding#session_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/access_context_manager_gcp_user_access_binding#session_settings AccessContextManagerGcpUserAccessBinding#session_settings}
   */
   readonly sessionSettings?: AccessContextManagerGcpUserAccessBindingSessionSettings;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/access_context_manager_gcp_user_access_binding#timeouts AccessContextManagerGcpUserAccessBinding#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/access_context_manager_gcp_user_access_binding#timeouts AccessContextManagerGcpUserAccessBinding#timeouts}
   */
   readonly timeouts?: AccessContextManagerGcpUserAccessBindingTimeouts;
 }
 export interface AccessContextManagerGcpUserAccessBindingPrincipal {
+  /**
+  * Immutable. The IAM principal identifier of the federated workforce or workload to
+  * assign the policy to. Examples include the following:
+  * * Single principal:
+  * 'principal://iam.googleapis.com/projects/{project_number}/locations/global/workloadIdentityPools/{pool_id}/subject/{subject_attribute_value}'
+  * * All workloads in a workload identity pool:
+  * 'principalSet://iam.googleapis.com/projects/{project_number}/locations/global/workloadIdentityPools/{pool_id}/*'
+  * * All Workforce Pools in a Google Cloud organization:
+  * 'principalSet://cloudresourcemanager.googleapis.com/organizations/{organization_id}/type/WorkforcePool'
+  * 
+  * Bindings created for all Workforce Pools in a Google Cloud organization
+  * support only 'scoped_access_settings' with the 'restricted_project'
+  * client scope and active 'session_settings'. No other configurations are
+  * allowed.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/access_context_manager_gcp_user_access_binding#federated_principal AccessContextManagerGcpUserAccessBinding#federated_principal}
+  */
+  readonly federatedPrincipal?: string;
   /**
   * Immutable. Service account email used to assign policies to a single service account.
   * If a service account is subject to multiple policies (e.g., if there is a policy for all
@@ -95,13 +113,13 @@ export interface AccessContextManagerGcpUserAccessBindingPrincipal {
   * the most specific) dry-run policy will be used for the dry-run functionality and the
   * closest policy will be used for the enforcement.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/access_context_manager_gcp_user_access_binding#service_account AccessContextManagerGcpUserAccessBinding#service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/access_context_manager_gcp_user_access_binding#service_account AccessContextManagerGcpUserAccessBinding#service_account}
   */
   readonly serviceAccount?: string;
   /**
   * Immutable. Cloud project number used to assign policies to all service accounts owned by the project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/access_context_manager_gcp_user_access_binding#service_account_project_number AccessContextManagerGcpUserAccessBinding#service_account_project_number}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/access_context_manager_gcp_user_access_binding#service_account_project_number AccessContextManagerGcpUserAccessBinding#service_account_project_number}
   */
   readonly serviceAccountProjectNumber?: string;
 }
@@ -112,6 +130,7 @@ export function accessContextManagerGcpUserAccessBindingPrincipalToTerraform(str
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
+    federated_principal: cdktn.stringToTerraform(struct!.federatedPrincipal),
     service_account: cdktn.stringToTerraform(struct!.serviceAccount),
     service_account_project_number: cdktn.stringToTerraform(struct!.serviceAccountProjectNumber),
   }
@@ -124,6 +143,12 @@ export function accessContextManagerGcpUserAccessBindingPrincipalToHclTerraform(
     throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
+    federated_principal: {
+      value: cdktn.stringToHclTerraform(struct!.federatedPrincipal),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
     service_account: {
       value: cdktn.stringToHclTerraform(struct!.serviceAccount),
       isBlock: false,
@@ -156,6 +181,10 @@ export class AccessContextManagerGcpUserAccessBindingPrincipalOutputReference ex
   public get internalValue(): AccessContextManagerGcpUserAccessBindingPrincipal | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._federatedPrincipal !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.federatedPrincipal = this._federatedPrincipal;
+    }
     if (this._serviceAccount !== undefined) {
       hasAnyValues = true;
       internalValueResult.serviceAccount = this._serviceAccount;
@@ -170,14 +199,32 @@ export class AccessContextManagerGcpUserAccessBindingPrincipalOutputReference ex
   public set internalValue(value: AccessContextManagerGcpUserAccessBindingPrincipal | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._federatedPrincipal = undefined;
       this._serviceAccount = undefined;
       this._serviceAccountProjectNumber = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._federatedPrincipal = value.federatedPrincipal;
       this._serviceAccount = value.serviceAccount;
       this._serviceAccountProjectNumber = value.serviceAccountProjectNumber;
     }
+  }
+
+  // federated_principal - computed: false, optional: true, required: false
+  private _federatedPrincipal?: string; 
+  public get federatedPrincipal() {
+    return this.getStringAttribute('federated_principal');
+  }
+  public set federatedPrincipal(value: string) {
+    this._federatedPrincipal = value;
+  }
+  public resetFederatedPrincipal() {
+    this._federatedPrincipal = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get federatedPrincipalInput() {
+    return this._federatedPrincipal;
   }
 
   // service_account - computed: false, optional: true, required: false
@@ -216,33 +263,33 @@ export interface AccessContextManagerGcpUserAccessBindingScopedAccessSettingsAct
   /**
   * Optional. How long a user is allowed to take between actions before a new access token must be issued. Only set for Google Cloud apps.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/access_context_manager_gcp_user_access_binding#max_inactivity AccessContextManagerGcpUserAccessBinding#max_inactivity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/access_context_manager_gcp_user_access_binding#max_inactivity AccessContextManagerGcpUserAccessBinding#max_inactivity}
   */
   readonly maxInactivity?: string;
   /**
   * Optional. The session length. Setting this field to zero is equal to disabling session. Also can set infinite session by flipping the enabled bit to false below. If useOidcMaxAge is true, for OIDC apps, the session length will be the minimum of this field and OIDC max_age param.
   * If this field is set to zero, 'session_length_enabled' must be set to false or left unset.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/access_context_manager_gcp_user_access_binding#session_length AccessContextManagerGcpUserAccessBinding#session_length}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/access_context_manager_gcp_user_access_binding#session_length AccessContextManagerGcpUserAccessBinding#session_length}
   */
   readonly sessionLength?: string;
   /**
   * Optional. This field enables or disables Google Cloud session length. When false, all fields set above will be disregarded and the session length is basically infinite.
   * If 'session_length' is set to zero, this field must be false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/access_context_manager_gcp_user_access_binding#session_length_enabled AccessContextManagerGcpUserAccessBinding#session_length_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/access_context_manager_gcp_user_access_binding#session_length_enabled AccessContextManagerGcpUserAccessBinding#session_length_enabled}
   */
   readonly sessionLengthEnabled?: boolean | cdktn.IResolvable;
   /**
   * Optional. The session challenges proposed to users when the Google Cloud session length is up. Possible values: ["LOGIN", "SECURITY_KEY", "PASSWORD"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/access_context_manager_gcp_user_access_binding#session_reauth_method AccessContextManagerGcpUserAccessBinding#session_reauth_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/access_context_manager_gcp_user_access_binding#session_reauth_method AccessContextManagerGcpUserAccessBinding#session_reauth_method}
   */
   readonly sessionReauthMethod?: string;
   /**
   * Optional. Only useful for OIDC apps. When false, the OIDC max_age param, if passed in the authentication request will be ignored. When true, the re-auth period will be the minimum of the sessionLength field and the max_age OIDC param.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/access_context_manager_gcp_user_access_binding#use_oidc_max_age AccessContextManagerGcpUserAccessBinding#use_oidc_max_age}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/access_context_manager_gcp_user_access_binding#use_oidc_max_age AccessContextManagerGcpUserAccessBinding#use_oidc_max_age}
   */
   readonly useOidcMaxAge?: boolean | cdktn.IResolvable;
 }
@@ -444,13 +491,13 @@ export interface AccessContextManagerGcpUserAccessBindingScopedAccessSettingsAct
   /**
   * Optional. Access level that a user must have to be granted access. Only one access level is supported, not multiple. This repeated field must have exactly one element. Example: "accessPolicies/9522/accessLevels/device_trusted"
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/access_context_manager_gcp_user_access_binding#access_levels AccessContextManagerGcpUserAccessBinding#access_levels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/access_context_manager_gcp_user_access_binding#access_levels AccessContextManagerGcpUserAccessBinding#access_levels}
   */
   readonly accessLevels?: string[];
   /**
   * session_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/access_context_manager_gcp_user_access_binding#session_settings AccessContextManagerGcpUserAccessBinding#session_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/access_context_manager_gcp_user_access_binding#session_settings AccessContextManagerGcpUserAccessBinding#session_settings}
   */
   readonly sessionSettings?: AccessContextManagerGcpUserAccessBindingScopedAccessSettingsActiveSettingsSessionSettings;
 }
@@ -565,7 +612,7 @@ export interface AccessContextManagerGcpUserAccessBindingScopedAccessSettingsDry
   /**
   * Optional. Access level that a user must have to be granted access. Only one access level is supported, not multiple. This repeated field must have exactly one element. Example: "accessPolicies/9522/accessLevels/device_trusted"
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/access_context_manager_gcp_user_access_binding#access_levels AccessContextManagerGcpUserAccessBinding#access_levels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/access_context_manager_gcp_user_access_binding#access_levels AccessContextManagerGcpUserAccessBinding#access_levels}
   */
   readonly accessLevels?: string[];
 }
@@ -651,13 +698,13 @@ export interface AccessContextManagerGcpUserAccessBindingScopedAccessSettingsSco
   /**
   * The OAuth client ID of the application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/access_context_manager_gcp_user_access_binding#client_id AccessContextManagerGcpUserAccessBinding#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/access_context_manager_gcp_user_access_binding#client_id AccessContextManagerGcpUserAccessBinding#client_id}
   */
   readonly clientId?: string;
   /**
   * The name of the application. Example: "Cloud Console"
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/access_context_manager_gcp_user_access_binding#name AccessContextManagerGcpUserAccessBinding#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/access_context_manager_gcp_user_access_binding#name AccessContextManagerGcpUserAccessBinding#name}
   */
   readonly name?: string;
 }
@@ -768,13 +815,104 @@ export class AccessContextManagerGcpUserAccessBindingScopedAccessSettingsScopeCl
     return this._name;
   }
 }
+export interface AccessContextManagerGcpUserAccessBindingScopedAccessSettingsScopeClientScopeRestrictedProject {
+  /**
+  * The Google Cloud project resource name.
+  * Format: 'projects/{project_number}'. Only the project number is supported.
+  * Example: 'projects/1234567890'
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/access_context_manager_gcp_user_access_binding#name AccessContextManagerGcpUserAccessBinding#name}
+  */
+  readonly name: string;
+}
+
+export function accessContextManagerGcpUserAccessBindingScopedAccessSettingsScopeClientScopeRestrictedProjectToTerraform(struct?: AccessContextManagerGcpUserAccessBindingScopedAccessSettingsScopeClientScopeRestrictedProjectOutputReference | AccessContextManagerGcpUserAccessBindingScopedAccessSettingsScopeClientScopeRestrictedProject): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    name: cdktn.stringToTerraform(struct!.name),
+  }
+}
+
+
+export function accessContextManagerGcpUserAccessBindingScopedAccessSettingsScopeClientScopeRestrictedProjectToHclTerraform(struct?: AccessContextManagerGcpUserAccessBindingScopedAccessSettingsScopeClientScopeRestrictedProjectOutputReference | AccessContextManagerGcpUserAccessBindingScopedAccessSettingsScopeClientScopeRestrictedProject): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    name: {
+      value: cdktn.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class AccessContextManagerGcpUserAccessBindingScopedAccessSettingsScopeClientScopeRestrictedProjectOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): AccessContextManagerGcpUserAccessBindingScopedAccessSettingsScopeClientScopeRestrictedProject | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AccessContextManagerGcpUserAccessBindingScopedAccessSettingsScopeClientScopeRestrictedProject | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._name = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._name = value.name;
+    }
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+}
 export interface AccessContextManagerGcpUserAccessBindingScopedAccessSettingsScopeClientScope {
   /**
   * restricted_client_application block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/access_context_manager_gcp_user_access_binding#restricted_client_application AccessContextManagerGcpUserAccessBinding#restricted_client_application}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/access_context_manager_gcp_user_access_binding#restricted_client_application AccessContextManagerGcpUserAccessBinding#restricted_client_application}
   */
   readonly restrictedClientApplication?: AccessContextManagerGcpUserAccessBindingScopedAccessSettingsScopeClientScopeRestrictedClientApplication;
+  /**
+  * restricted_project block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/access_context_manager_gcp_user_access_binding#restricted_project AccessContextManagerGcpUserAccessBinding#restricted_project}
+  */
+  readonly restrictedProject?: AccessContextManagerGcpUserAccessBindingScopedAccessSettingsScopeClientScopeRestrictedProject;
 }
 
 export function accessContextManagerGcpUserAccessBindingScopedAccessSettingsScopeClientScopeToTerraform(struct?: AccessContextManagerGcpUserAccessBindingScopedAccessSettingsScopeClientScopeOutputReference | AccessContextManagerGcpUserAccessBindingScopedAccessSettingsScopeClientScope): any {
@@ -784,6 +922,7 @@ export function accessContextManagerGcpUserAccessBindingScopedAccessSettingsScop
   }
   return {
     restricted_client_application: accessContextManagerGcpUserAccessBindingScopedAccessSettingsScopeClientScopeRestrictedClientApplicationToTerraform(struct!.restrictedClientApplication),
+    restricted_project: accessContextManagerGcpUserAccessBindingScopedAccessSettingsScopeClientScopeRestrictedProjectToTerraform(struct!.restrictedProject),
   }
 }
 
@@ -799,6 +938,12 @@ export function accessContextManagerGcpUserAccessBindingScopedAccessSettingsScop
       isBlock: true,
       type: "list",
       storageClassType: "AccessContextManagerGcpUserAccessBindingScopedAccessSettingsScopeClientScopeRestrictedClientApplicationList",
+    },
+    restricted_project: {
+      value: accessContextManagerGcpUserAccessBindingScopedAccessSettingsScopeClientScopeRestrictedProjectToHclTerraform(struct!.restrictedProject),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AccessContextManagerGcpUserAccessBindingScopedAccessSettingsScopeClientScopeRestrictedProjectList",
     },
   };
 
@@ -824,6 +969,10 @@ export class AccessContextManagerGcpUserAccessBindingScopedAccessSettingsScopeCl
       hasAnyValues = true;
       internalValueResult.restrictedClientApplication = this._restrictedClientApplication?.internalValue;
     }
+    if (this._restrictedProject?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.restrictedProject = this._restrictedProject?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -831,10 +980,12 @@ export class AccessContextManagerGcpUserAccessBindingScopedAccessSettingsScopeCl
     if (value === undefined) {
       this.isEmptyObject = false;
       this._restrictedClientApplication.internalValue = undefined;
+      this._restrictedProject.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._restrictedClientApplication.internalValue = value.restrictedClientApplication;
+      this._restrictedProject.internalValue = value.restrictedProject;
     }
   }
 
@@ -853,12 +1004,28 @@ export class AccessContextManagerGcpUserAccessBindingScopedAccessSettingsScopeCl
   public get restrictedClientApplicationInput() {
     return this._restrictedClientApplication.internalValue;
   }
+
+  // restricted_project - computed: false, optional: true, required: false
+  private _restrictedProject = new AccessContextManagerGcpUserAccessBindingScopedAccessSettingsScopeClientScopeRestrictedProjectOutputReference(this, "restricted_project");
+  public get restrictedProject() {
+    return this._restrictedProject;
+  }
+  public putRestrictedProject(value: AccessContextManagerGcpUserAccessBindingScopedAccessSettingsScopeClientScopeRestrictedProject) {
+    this._restrictedProject.internalValue = value;
+  }
+  public resetRestrictedProject() {
+    this._restrictedProject.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get restrictedProjectInput() {
+    return this._restrictedProject.internalValue;
+  }
 }
 export interface AccessContextManagerGcpUserAccessBindingScopedAccessSettingsScope {
   /**
   * client_scope block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/access_context_manager_gcp_user_access_binding#client_scope AccessContextManagerGcpUserAccessBinding#client_scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/access_context_manager_gcp_user_access_binding#client_scope AccessContextManagerGcpUserAccessBinding#client_scope}
   */
   readonly clientScope?: AccessContextManagerGcpUserAccessBindingScopedAccessSettingsScopeClientScope;
 }
@@ -944,19 +1111,19 @@ export interface AccessContextManagerGcpUserAccessBindingScopedAccessSettings {
   /**
   * active_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/access_context_manager_gcp_user_access_binding#active_settings AccessContextManagerGcpUserAccessBinding#active_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/access_context_manager_gcp_user_access_binding#active_settings AccessContextManagerGcpUserAccessBinding#active_settings}
   */
   readonly activeSettings?: AccessContextManagerGcpUserAccessBindingScopedAccessSettingsActiveSettings;
   /**
   * dry_run_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/access_context_manager_gcp_user_access_binding#dry_run_settings AccessContextManagerGcpUserAccessBinding#dry_run_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/access_context_manager_gcp_user_access_binding#dry_run_settings AccessContextManagerGcpUserAccessBinding#dry_run_settings}
   */
   readonly dryRunSettings?: AccessContextManagerGcpUserAccessBindingScopedAccessSettingsDryRunSettings;
   /**
   * scope block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/access_context_manager_gcp_user_access_binding#scope AccessContextManagerGcpUserAccessBinding#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/access_context_manager_gcp_user_access_binding#scope AccessContextManagerGcpUserAccessBinding#scope}
   */
   readonly scope?: AccessContextManagerGcpUserAccessBindingScopedAccessSettingsScope;
 }
@@ -1132,33 +1299,33 @@ export interface AccessContextManagerGcpUserAccessBindingSessionSettings {
   /**
   * Optional. How long a user is allowed to take between actions before a new access token must be issued. Only set for Google Cloud apps.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/access_context_manager_gcp_user_access_binding#max_inactivity AccessContextManagerGcpUserAccessBinding#max_inactivity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/access_context_manager_gcp_user_access_binding#max_inactivity AccessContextManagerGcpUserAccessBinding#max_inactivity}
   */
   readonly maxInactivity?: string;
   /**
   * Optional. The session length. Setting this field to zero is equal to disabling session. Also can set infinite session by flipping the enabled bit to false below. If useOidcMaxAge is true, for OIDC apps, the session length will be the minimum of this field and OIDC max_age param.
   * If this field is set to zero, 'session_length_enabled' must be set to false or left unset.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/access_context_manager_gcp_user_access_binding#session_length AccessContextManagerGcpUserAccessBinding#session_length}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/access_context_manager_gcp_user_access_binding#session_length AccessContextManagerGcpUserAccessBinding#session_length}
   */
   readonly sessionLength?: string;
   /**
   * Optional. This field enables or disables Google Cloud session length. When false, all fields set above will be disregarded and the session length is basically infinite.
   * If 'session_length' is set to zero, this field must be false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/access_context_manager_gcp_user_access_binding#session_length_enabled AccessContextManagerGcpUserAccessBinding#session_length_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/access_context_manager_gcp_user_access_binding#session_length_enabled AccessContextManagerGcpUserAccessBinding#session_length_enabled}
   */
   readonly sessionLengthEnabled?: boolean | cdktn.IResolvable;
   /**
   * Optional. The session challenges proposed to users when the Google Cloud session length is up. Possible values: ["LOGIN", "SECURITY_KEY", "PASSWORD"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/access_context_manager_gcp_user_access_binding#session_reauth_method AccessContextManagerGcpUserAccessBinding#session_reauth_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/access_context_manager_gcp_user_access_binding#session_reauth_method AccessContextManagerGcpUserAccessBinding#session_reauth_method}
   */
   readonly sessionReauthMethod?: string;
   /**
   * Optional. Only useful for OIDC apps. When false, the OIDC max_age param, if passed in the authentication request will be ignored. When true, the re-auth period will be the minimum of the sessionLength field and the max_age OIDC param.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/access_context_manager_gcp_user_access_binding#use_oidc_max_age AccessContextManagerGcpUserAccessBinding#use_oidc_max_age}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/access_context_manager_gcp_user_access_binding#use_oidc_max_age AccessContextManagerGcpUserAccessBinding#use_oidc_max_age}
   */
   readonly useOidcMaxAge?: boolean | cdktn.IResolvable;
 }
@@ -1358,15 +1525,15 @@ export class AccessContextManagerGcpUserAccessBindingSessionSettingsOutputRefere
 }
 export interface AccessContextManagerGcpUserAccessBindingTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/access_context_manager_gcp_user_access_binding#create AccessContextManagerGcpUserAccessBinding#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/access_context_manager_gcp_user_access_binding#create AccessContextManagerGcpUserAccessBinding#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/access_context_manager_gcp_user_access_binding#delete AccessContextManagerGcpUserAccessBinding#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/access_context_manager_gcp_user_access_binding#delete AccessContextManagerGcpUserAccessBinding#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/access_context_manager_gcp_user_access_binding#update AccessContextManagerGcpUserAccessBinding#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/access_context_manager_gcp_user_access_binding#update AccessContextManagerGcpUserAccessBinding#update}
   */
   readonly update?: string;
 }
@@ -1518,7 +1685,7 @@ export class AccessContextManagerGcpUserAccessBindingTimeoutsOutputReference ext
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/access_context_manager_gcp_user_access_binding google_access_context_manager_gcp_user_access_binding}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/access_context_manager_gcp_user_access_binding google_access_context_manager_gcp_user_access_binding}
 */
 export class AccessContextManagerGcpUserAccessBinding extends cdktn.TerraformResource {
 
@@ -1534,7 +1701,7 @@ export class AccessContextManagerGcpUserAccessBinding extends cdktn.TerraformRes
   * Generates CDKTN code for importing a AccessContextManagerGcpUserAccessBinding resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AccessContextManagerGcpUserAccessBinding to import
-  * @param importFromId The id of the existing AccessContextManagerGcpUserAccessBinding that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/access_context_manager_gcp_user_access_binding#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AccessContextManagerGcpUserAccessBinding that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/access_context_manager_gcp_user_access_binding#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AccessContextManagerGcpUserAccessBinding to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1546,7 +1713,7 @@ export class AccessContextManagerGcpUserAccessBinding extends cdktn.TerraformRes
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/access_context_manager_gcp_user_access_binding google_access_context_manager_gcp_user_access_binding} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/access_context_manager_gcp_user_access_binding google_access_context_manager_gcp_user_access_binding} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1557,7 +1724,7 @@ export class AccessContextManagerGcpUserAccessBinding extends cdktn.TerraformRes
       terraformResourceType: 'google_access_context_manager_gcp_user_access_binding',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.7.0',
+        providerVersion: '8.8.1',
         providerVersionConstraint: '~> 8.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator
+// https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/dialogflow_generator
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -21,23 +21,23 @@ export interface DialogflowGeneratorConfig extends cdktn.TerraformMetaArguments 
   * When set to "DELETE", deleting the resource is allowed.
   * 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#deletion_policy DialogflowGenerator#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/dialogflow_generator#deletion_policy DialogflowGenerator#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * Optional. Human readable description of the generator.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#description DialogflowGenerator#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/dialogflow_generator#description DialogflowGenerator#description}
   */
   readonly description?: string;
   /**
   * Optional. The ID to use for the generator, which will become the final component of the generator's resource name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#generator_id DialogflowGenerator#generator_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/dialogflow_generator#generator_id DialogflowGenerator#generator_id}
   */
   readonly generatorId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#id DialogflowGenerator#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/dialogflow_generator#id DialogflowGenerator#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,59 +46,59 @@ export interface DialogflowGeneratorConfig extends cdktn.TerraformMetaArguments 
   /**
   * desc
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#location DialogflowGenerator#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/dialogflow_generator#location DialogflowGenerator#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#project DialogflowGenerator#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/dialogflow_generator#project DialogflowGenerator#project}
   */
   readonly project?: string;
   /**
   * Optional. The published Large Language Model name. * To use the latest model version, specify the model name without version number. Example: text-bison * To use a stable model version, specify the version number as well. Example: text-bison@002.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#published_model DialogflowGenerator#published_model}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/dialogflow_generator#published_model DialogflowGenerator#published_model}
   */
   readonly publishedModel?: string;
   /**
   * Optional. Resource names of the tools that the generator can choose from. Format: 'projects/<Project ID>/locations/<Location ID>/tools/<tool ID>'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#tools DialogflowGenerator#tools}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/dialogflow_generator#tools DialogflowGenerator#tools}
   */
   readonly tools?: string[];
   /**
   * Optional. The trigger event of the generator. It defines when the generator is triggered in a conversation. Possible values: ["END_OF_UTTERANCE", "MANUAL_CALL", "CUSTOMER_MESSAGE", "AGENT_MESSAGE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#trigger_event DialogflowGenerator#trigger_event}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/dialogflow_generator#trigger_event DialogflowGenerator#trigger_event}
   */
   readonly triggerEvent?: string;
   /**
   * agent_coaching_context block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#agent_coaching_context DialogflowGenerator#agent_coaching_context}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/dialogflow_generator#agent_coaching_context DialogflowGenerator#agent_coaching_context}
   */
   readonly agentCoachingContext?: DialogflowGeneratorAgentCoachingContext;
   /**
   * free_form_context block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#free_form_context DialogflowGenerator#free_form_context}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/dialogflow_generator#free_form_context DialogflowGenerator#free_form_context}
   */
   readonly freeFormContext?: DialogflowGeneratorFreeFormContext;
   /**
   * inference_parameter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#inference_parameter DialogflowGenerator#inference_parameter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/dialogflow_generator#inference_parameter DialogflowGenerator#inference_parameter}
   */
   readonly inferenceParameter?: DialogflowGeneratorInferenceParameter;
   /**
   * summarization_context block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#summarization_context DialogflowGenerator#summarization_context}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/dialogflow_generator#summarization_context DialogflowGenerator#summarization_context}
   */
   readonly summarizationContext?: DialogflowGeneratorSummarizationContext;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#timeouts DialogflowGenerator#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/dialogflow_generator#timeouts DialogflowGenerator#timeouts}
   */
   readonly timeouts?: DialogflowGeneratorTimeouts;
 }
@@ -106,37 +106,37 @@ export interface DialogflowGeneratorAgentCoachingContextInstructions {
   /**
   * Optional. The action that human agent should take.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#agent_action DialogflowGenerator#agent_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/dialogflow_generator#agent_action DialogflowGenerator#agent_action}
   */
   readonly agentAction?: string;
   /**
   * Optional. The condition of the instruction.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#condition DialogflowGenerator#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/dialogflow_generator#condition DialogflowGenerator#condition}
   */
   readonly condition?: string;
   /**
   * Optional. The detailed description of this instruction.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#display_details DialogflowGenerator#display_details}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/dialogflow_generator#display_details DialogflowGenerator#display_details}
   */
   readonly displayDetails?: string;
   /**
   * Optional. Display name for the instruction.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#display_name DialogflowGenerator#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/dialogflow_generator#display_name DialogflowGenerator#display_name}
   */
   readonly displayName?: string;
   /**
   * Optional. The action that system should take.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#system_action DialogflowGenerator#system_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/dialogflow_generator#system_action DialogflowGenerator#system_action}
   */
   readonly systemAction?: string;
   /**
   * Optional. The trigger event of the instruction. Possible values: ["END_OF_UTTERANCE", "MANUAL_CALL", "CUSTOMER_MESSAGE", "AGENT_MESSAGE", "TOOL_CALL_COMPLETION"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#triggering_event DialogflowGenerator#triggering_event}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/dialogflow_generator#triggering_event DialogflowGenerator#triggering_event}
   */
   readonly triggeringEvent?: string;
 }
@@ -399,25 +399,25 @@ export interface DialogflowGeneratorAgentCoachingContext {
   /**
   * Optional. Output language code.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#output_language_code DialogflowGenerator#output_language_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/dialogflow_generator#output_language_code DialogflowGenerator#output_language_code}
   */
   readonly outputLanguageCode?: string;
   /**
   * Optional. The overarching guidance for the agent coaching. This should be set only for v1.5 and later versions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#overarching_guidance DialogflowGenerator#overarching_guidance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/dialogflow_generator#overarching_guidance DialogflowGenerator#overarching_guidance}
   */
   readonly overarchingGuidance?: string;
   /**
   * Optional. Version of the feature. If not set, default to latest version. Current candidates are ["2.5"].
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#version DialogflowGenerator#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/dialogflow_generator#version DialogflowGenerator#version}
   */
   readonly version?: string;
   /**
   * instructions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#instructions DialogflowGenerator#instructions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/dialogflow_generator#instructions DialogflowGenerator#instructions}
   */
   readonly instructions?: DialogflowGeneratorAgentCoachingContextInstructions[] | cdktn.IResolvable;
 }
@@ -590,7 +590,7 @@ export interface DialogflowGeneratorFreeFormContext {
   /**
   * Optional. Free form text input to LLM.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#text DialogflowGenerator#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/dialogflow_generator#text DialogflowGenerator#text}
   */
   readonly text?: string;
 }
@@ -676,25 +676,25 @@ export interface DialogflowGeneratorInferenceParameter {
   /**
   * Optional. Maximum number of the output tokens for the generator.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#max_output_tokens DialogflowGenerator#max_output_tokens}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/dialogflow_generator#max_output_tokens DialogflowGenerator#max_output_tokens}
   */
   readonly maxOutputTokens?: number;
   /**
   * Optional. Controls the randomness of LLM predictions. Low temperature = less random. High temperature = more random. If unset (or 0), uses a default value of 0.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#temperature DialogflowGenerator#temperature}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/dialogflow_generator#temperature DialogflowGenerator#temperature}
   */
   readonly temperature?: number;
   /**
   * Optional. Top-k changes how the model selects tokens for output. A top-k of 1 means the selected token is the most probable among all tokens in the model's vocabulary (also called greedy decoding), while a top-k of 3 means that the next token is selected from among the 3 most probable tokens (using temperature). For each token selection step, the top K tokens with the highest probabilities are sampled. Then tokens are further filtered based on topP with the final token selected using temperature sampling. Specify a lower value for less random responses and a higher value for more random responses. Acceptable value is [1, 40], default to 40.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#top_k DialogflowGenerator#top_k}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/dialogflow_generator#top_k DialogflowGenerator#top_k}
   */
   readonly topK?: number;
   /**
   * Optional. Top-p changes how the model selects tokens for output. Tokens are selected from most K (see topK parameter) probable to least until the sum of their probabilities equals the top-p value. For example, if tokens A, B, and C have a probability of 0.3, 0.2, and 0.1 and the top-p value is 0.5, then the model will select either A or B as the next token (using temperature) and doesn't consider C. The default top-p value is 0.95. Specify a lower value for less random responses and a higher value for more random responses. Acceptable value is [0.0, 1.0], default to 0.95.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#top_p DialogflowGenerator#top_p}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/dialogflow_generator#top_p DialogflowGenerator#top_p}
   */
   readonly topP?: number;
 }
@@ -867,25 +867,25 @@ export interface DialogflowGeneratorSummarizationContextFewShotExamplesConversat
   /**
   * Optional. Create time of the message entry.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#create_time DialogflowGenerator#create_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/dialogflow_generator#create_time DialogflowGenerator#create_time}
   */
   readonly createTime?: string;
   /**
   * Optional. The language of the text.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#language_code DialogflowGenerator#language_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/dialogflow_generator#language_code DialogflowGenerator#language_code}
   */
   readonly languageCode?: string;
   /**
   * Optional. Participant role of the message. Possible values: ["HUMAN_AGENT", "AUTOMATED_AGENT", "END_USER"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#role DialogflowGenerator#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/dialogflow_generator#role DialogflowGenerator#role}
   */
   readonly role?: string;
   /**
   * Optional. Transcript content of the message.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#text DialogflowGenerator#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/dialogflow_generator#text DialogflowGenerator#text}
   */
   readonly text?: string;
 }
@@ -1090,7 +1090,7 @@ export interface DialogflowGeneratorSummarizationContextFewShotExamplesConversat
   /**
   * message_entries block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#message_entries DialogflowGenerator#message_entries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/dialogflow_generator#message_entries DialogflowGenerator#message_entries}
   */
   readonly messageEntries?: DialogflowGeneratorSummarizationContextFewShotExamplesConversationContextMessageEntries[] | cdktn.IResolvable;
 }
@@ -1176,13 +1176,13 @@ export interface DialogflowGeneratorSummarizationContextFewShotExamplesOutputSum
   /**
   * Required. Name of the section.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#section DialogflowGenerator#section}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/dialogflow_generator#section DialogflowGenerator#section}
   */
   readonly section: string;
   /**
   * Required. Summary text for the section.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#summary DialogflowGenerator#summary}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/dialogflow_generator#summary DialogflowGenerator#summary}
   */
   readonly summary: string;
 }
@@ -1323,7 +1323,7 @@ export interface DialogflowGeneratorSummarizationContextFewShotExamplesOutputSum
   /**
   * summary_sections block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#summary_sections DialogflowGenerator#summary_sections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/dialogflow_generator#summary_sections DialogflowGenerator#summary_sections}
   */
   readonly summarySections: DialogflowGeneratorSummarizationContextFewShotExamplesOutputSummarySuggestionSummarySections[] | cdktn.IResolvable;
 }
@@ -1406,13 +1406,13 @@ export interface DialogflowGeneratorSummarizationContextFewShotExamplesOutputToo
   /**
   * The name of the tool's action associated with this call.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#action DialogflowGenerator#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/dialogflow_generator#action DialogflowGenerator#action}
   */
   readonly action?: string;
   /**
   * The tool associated with this call.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#tool DialogflowGenerator#tool}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/dialogflow_generator#tool DialogflowGenerator#tool}
   */
   readonly tool?: string;
 }
@@ -1527,13 +1527,13 @@ export interface DialogflowGeneratorSummarizationContextFewShotExamplesOutputToo
   /**
   * The error message of the function.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#message DialogflowGenerator#message}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/dialogflow_generator#message DialogflowGenerator#message}
   */
   readonly message?: string;
   /**
   * Specifies whether the tool call is retryable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#retryable DialogflowGenerator#retryable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/dialogflow_generator#retryable DialogflowGenerator#retryable}
   */
   readonly retryable?: boolean | cdktn.IResolvable;
 }
@@ -1648,13 +1648,13 @@ export interface DialogflowGeneratorSummarizationContextFewShotExamplesOutputToo
   /**
   * The name of the tool's action associated with this call.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#action DialogflowGenerator#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/dialogflow_generator#action DialogflowGenerator#action}
   */
   readonly action?: string;
   /**
   * error block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#error DialogflowGenerator#error}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/dialogflow_generator#error DialogflowGenerator#error}
   */
   readonly error?: DialogflowGeneratorSummarizationContextFewShotExamplesOutputToolCallInfoToolCallResultError;
 }
@@ -1769,13 +1769,13 @@ export interface DialogflowGeneratorSummarizationContextFewShotExamplesOutputToo
   /**
   * tool_call block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#tool_call DialogflowGenerator#tool_call}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/dialogflow_generator#tool_call DialogflowGenerator#tool_call}
   */
   readonly toolCall: DialogflowGeneratorSummarizationContextFewShotExamplesOutputToolCallInfoToolCall;
   /**
   * tool_call_result block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#tool_call_result DialogflowGenerator#tool_call_result}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/dialogflow_generator#tool_call_result DialogflowGenerator#tool_call_result}
   */
   readonly toolCallResult: DialogflowGeneratorSummarizationContextFewShotExamplesOutputToolCallInfoToolCallResult;
 }
@@ -1916,13 +1916,13 @@ export interface DialogflowGeneratorSummarizationContextFewShotExamplesOutput {
   /**
   * summary_suggestion block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#summary_suggestion DialogflowGenerator#summary_suggestion}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/dialogflow_generator#summary_suggestion DialogflowGenerator#summary_suggestion}
   */
   readonly summarySuggestion?: DialogflowGeneratorSummarizationContextFewShotExamplesOutputSummarySuggestion;
   /**
   * tool_call_info block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#tool_call_info DialogflowGenerator#tool_call_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/dialogflow_generator#tool_call_info DialogflowGenerator#tool_call_info}
   */
   readonly toolCallInfo?: DialogflowGeneratorSummarizationContextFewShotExamplesOutputToolCallInfo[] | cdktn.IResolvable;
 }
@@ -2037,19 +2037,19 @@ export interface DialogflowGeneratorSummarizationContextFewShotExamplesSummariza
   /**
   * Optional. Definition of the section, for example, "what the customer needs help with or has question about."
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#definition DialogflowGenerator#definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/dialogflow_generator#definition DialogflowGenerator#definition}
   */
   readonly definition?: string;
   /**
   * Optional. Name of the section, for example, "situation".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#key DialogflowGenerator#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/dialogflow_generator#key DialogflowGenerator#key}
   */
   readonly key?: string;
   /**
   * Optional. Type of the summarization section. Possible values: ["SITUATION", "ACTION", "RESOLUTION", "REASON_FOR_CANCELLATION", "CUSTOMER_SATISFACTION", "ENTITIES", "CUSTOMER_DEFINED", "SITUATION_CONCISE", "ACTION_CONCISE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#type DialogflowGenerator#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/dialogflow_generator#type DialogflowGenerator#type}
   */
   readonly type?: string;
 }
@@ -2225,7 +2225,7 @@ export interface DialogflowGeneratorSummarizationContextFewShotExamplesSummariza
   /**
   * summarization_sections block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#summarization_sections DialogflowGenerator#summarization_sections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/dialogflow_generator#summarization_sections DialogflowGenerator#summarization_sections}
   */
   readonly summarizationSections?: DialogflowGeneratorSummarizationContextFewShotExamplesSummarizationSectionListSummarizationSections[] | cdktn.IResolvable;
 }
@@ -2311,25 +2311,25 @@ export interface DialogflowGeneratorSummarizationContextFewShotExamples {
   /**
   * Optional. Key is the placeholder field name in input, value is the value of the placeholder. E.g. instruction contains "@price", and ingested data has <"price", "10">
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#extra_info DialogflowGenerator#extra_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/dialogflow_generator#extra_info DialogflowGenerator#extra_info}
   */
   readonly extraInfo?: { [key: string]: string };
   /**
   * conversation_context block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#conversation_context DialogflowGenerator#conversation_context}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/dialogflow_generator#conversation_context DialogflowGenerator#conversation_context}
   */
   readonly conversationContext?: DialogflowGeneratorSummarizationContextFewShotExamplesConversationContext;
   /**
   * output block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#output DialogflowGenerator#output}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/dialogflow_generator#output DialogflowGenerator#output}
   */
   readonly output: DialogflowGeneratorSummarizationContextFewShotExamplesOutput;
   /**
   * summarization_section_list block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#summarization_section_list DialogflowGenerator#summarization_section_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/dialogflow_generator#summarization_section_list DialogflowGenerator#summarization_section_list}
   */
   readonly summarizationSectionList?: DialogflowGeneratorSummarizationContextFewShotExamplesSummarizationSectionListStruct;
 }
@@ -2531,19 +2531,19 @@ export interface DialogflowGeneratorSummarizationContextSummarizationSections {
   /**
   * Optional. Definition of the section, for example, "what the customer needs help with or has question about."
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#definition DialogflowGenerator#definition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/dialogflow_generator#definition DialogflowGenerator#definition}
   */
   readonly definition?: string;
   /**
   * Optional. Name of the section, for example, "situation".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#key DialogflowGenerator#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/dialogflow_generator#key DialogflowGenerator#key}
   */
   readonly key?: string;
   /**
   * Optional. Type of the summarization section. Possible values: ["SITUATION", "ACTION", "RESOLUTION", "REASON_FOR_CANCELLATION", "CUSTOMER_SATISFACTION", "ENTITIES", "CUSTOMER_DEFINED", "SITUATION_CONCISE", "ACTION_CONCISE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#type DialogflowGenerator#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/dialogflow_generator#type DialogflowGenerator#type}
   */
   readonly type?: string;
 }
@@ -2719,25 +2719,25 @@ export interface DialogflowGeneratorSummarizationContext {
   /**
   * Optional. The target language of the generated summary. The language code for conversation will be used if this field is empty. Supported 2.0 and later versions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#output_language_code DialogflowGenerator#output_language_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/dialogflow_generator#output_language_code DialogflowGenerator#output_language_code}
   */
   readonly outputLanguageCode?: string;
   /**
   * Optional. Version of the feature. If not set, default to latest version. Current candidates are ["5.0", "6.0"].
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#version DialogflowGenerator#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/dialogflow_generator#version DialogflowGenerator#version}
   */
   readonly version?: string;
   /**
   * few_shot_examples block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#few_shot_examples DialogflowGenerator#few_shot_examples}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/dialogflow_generator#few_shot_examples DialogflowGenerator#few_shot_examples}
   */
   readonly fewShotExamples?: DialogflowGeneratorSummarizationContextFewShotExamples[] | cdktn.IResolvable;
   /**
   * summarization_sections block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#summarization_sections DialogflowGenerator#summarization_sections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/dialogflow_generator#summarization_sections DialogflowGenerator#summarization_sections}
   */
   readonly summarizationSections?: DialogflowGeneratorSummarizationContextSummarizationSections[] | cdktn.IResolvable;
 }
@@ -2908,15 +2908,15 @@ export class DialogflowGeneratorSummarizationContextOutputReference extends cdkt
 }
 export interface DialogflowGeneratorTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#create DialogflowGenerator#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/dialogflow_generator#create DialogflowGenerator#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#delete DialogflowGenerator#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/dialogflow_generator#delete DialogflowGenerator#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#update DialogflowGenerator#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/dialogflow_generator#update DialogflowGenerator#update}
   */
   readonly update?: string;
 }
@@ -3068,7 +3068,7 @@ export class DialogflowGeneratorTimeoutsOutputReference extends cdktn.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator google_dialogflow_generator}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/dialogflow_generator google_dialogflow_generator}
 */
 export class DialogflowGenerator extends cdktn.TerraformResource {
 
@@ -3084,7 +3084,7 @@ export class DialogflowGenerator extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a DialogflowGenerator resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DialogflowGenerator to import
-  * @param importFromId The id of the existing DialogflowGenerator that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DialogflowGenerator that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/dialogflow_generator#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DialogflowGenerator to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -3096,7 +3096,7 @@ export class DialogflowGenerator extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.7.0/docs/resources/dialogflow_generator google_dialogflow_generator} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google/8.8.1/docs/resources/dialogflow_generator google_dialogflow_generator} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -3107,7 +3107,7 @@ export class DialogflowGenerator extends cdktn.TerraformResource {
       terraformResourceType: 'google_dialogflow_generator',
       terraformGeneratorMetadata: {
         providerName: 'google',
-        providerVersion: '8.7.0',
+        providerVersion: '8.8.1',
         providerVersionConstraint: '~> 8.0'
       },
       provider: config.provider,
